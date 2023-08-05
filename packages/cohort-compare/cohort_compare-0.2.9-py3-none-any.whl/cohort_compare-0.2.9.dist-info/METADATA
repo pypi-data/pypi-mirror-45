@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cohort-compare
+Version: 0.2.9
+Summary: A library of functions for comparing clinical cohorts to the populations of US counties
+Home-page: https://github.com/matthew-c-lenert/cohort_compare
+Author: MC Lenert
+Author-email: matthew.c.lenert@gmail.com
+License: MIT
+Keywords: clinical study cohort similarity mapping
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Dist: numpy (>=1.15.0)
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: fiona (>=1.8.6)
+Requires-Dist: geopandas (>=0.4.1)
+
+UNKNOWN
+
+
