@@ -1,0 +1,11 @@
+nanonispy/__init__.py,sha256=C-qgDwVohAw_v8TPzyrN0lYCfuR6IK8330RGM5dRELc,20
+nanonispy/constants.py,sha256=UCLp0yd0Ojbr_iodQ__SosvNA-n6SIas7QY9Vrd18nY,254
+nanonispy/read.py,sha256=Blms0266bhWX00sNrhKrex7CMXwGprbXv2wYHirMcCI,24485
+nanonispy/tests/Bias-Spectroscopy002.dat,sha256=K9tEMGMIxKU55RS-cdyGEtj9vm3tvYtE4gQ13LAgCAA,63213
+nanonispy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nanonispy/tests/test_read.py,sha256=WU83ypKRoyGFSxEvjCMI6-x3k81b2JF_cvme6PLOeGY,17897
+nanonispy-1.0.6.dist-info/LICENSE,sha256=mArPrXmM7E4FS3-athZqnydbrqprK9JjfGrQveSbDYk,1122
+nanonispy-1.0.6.dist-info/METADATA,sha256=LQYwKA81pBL9zcXBXu28-mZxzh3cYhAQvtbFHx22rFc,3146
+nanonispy-1.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+nanonispy-1.0.6.dist-info/top_level.txt,sha256=wr-o48oPGpprSjiTnAOdHKPI8BH--FjJBVSGH5xq2Pg,10
+nanonispy-1.0.6.dist-info/RECORD,,
