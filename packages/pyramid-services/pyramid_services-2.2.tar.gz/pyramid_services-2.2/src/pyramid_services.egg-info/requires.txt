@@ -1,0 +1,11 @@
+pyramid
+wired>=0.2
+zope.interface
+
+[testing]
+pyramid
+wired>=0.2
+zope.interface
+pytest
+pytest-cov
+webtest
