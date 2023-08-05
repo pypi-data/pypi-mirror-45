@@ -1,0 +1,9 @@
+README.md
+setup.py
+appsync_client.egg-info/PKG-INFO
+appsync_client.egg-info/SOURCES.txt
+appsync_client.egg-info/dependency_links.txt
+appsync_client.egg-info/top_level.txt
+appsyncclient/__init__.py
+appsyncclient/awssigner.py
+appsyncclient/index.py
