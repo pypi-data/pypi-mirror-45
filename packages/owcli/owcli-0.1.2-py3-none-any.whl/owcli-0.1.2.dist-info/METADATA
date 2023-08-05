@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: owcli
+Version: 0.1.2
+Summary: CLI framework which supports both command and subcommand.
+Home-page: https://github.com/tadashi-aikawa/owcli.git
+Author: tadashi-aikawa
+Author-email: syou.maman@gmail.com
+Maintainer: tadashi-aikawa
+Maintainer-email: syou.maman@gmail.com
+License: MIT
+Keywords: cli framework
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: docopt
+Requires-Dist: owlmixin
+Provides-Extra: test
+Requires-Dist: twine ; extra == 'test'
+Requires-Dist: wheel ; extra == 'test'
+Requires-Dist: pipenv ; extra == 'test'
+Requires-Dist: urllib3 (>=1.24.2) ; extra == 'test'
+
+# owcli
+CLI framework which supports both command and subcommand.
+
+
