@@ -1,0 +1,4 @@
+pyyaml
+dataclasses
+googleapis-common-protos
+grpcio
