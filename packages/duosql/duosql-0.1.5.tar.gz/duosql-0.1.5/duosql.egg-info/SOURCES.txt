@@ -1,0 +1,7 @@
+README.md
+setup.py
+bin/duosql
+duosql.egg-info/PKG-INFO
+duosql.egg-info/SOURCES.txt
+duosql.egg-info/dependency_links.txt
+duosql.egg-info/top_level.txt
