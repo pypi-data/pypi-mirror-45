@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+glogger/__init__.py
+glogger.egg-info/PKG-INFO
+glogger.egg-info/SOURCES.txt
+glogger.egg-info/dependency_links.txt
+glogger.egg-info/requires.txt
+glogger.egg-info/top_level.txt
