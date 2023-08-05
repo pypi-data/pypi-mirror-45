@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: livyclient
+Version: 0.0.2
+Summary: A Python client for Apache Livy.
+Home-page: https://github.com/deyoulee/livyclient
+Author: Deyou Lee
+Author-email: deyoulee@126.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.4
+Requires-Dist: requests (>=2.21.0)
+
+UNKNOWN
+
+
