@@ -1,0 +1,12 @@
+tronald/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+tronald/__main__.py,sha256=-TzAVRZMsUiXqwW44A7RWqwiRdFHDUdhxXtQzA7ylKo,90
+tronald/cli.py,sha256=UBX6ST3MFuberKiBR0I6RidYkVsBiqvGzHwZ57gFbNs,2263
+tronald/commands.py,sha256=bMVe9JVgNBtncHfO3pgTSHwlwuWR7rFrlXkaewuQF18,514
+tronald/config.py,sha256=m3JqCp09pIwiEEDrCZAJ4r3I8rqKkuh1XLspJSGTgdc,1923
+tronald/controllers.py,sha256=Fc0HpugiiYGMH_XGMGeNaEONcw9nc8WpdYNBZeUu1ZQ,1555
+tronald/initial.py,sha256=uf39_c06vkr5_5Fw163ROwpfTT1jP78xSJqIM6QNZdY,1406
+tronald/tronald.conf,sha256=ImYtS6j_EvvEXeFngHd0IE2rNkBWgnWlVupC2KfYWM0,16384
+tronald-0.1.1.dist-info/entry_points.txt,sha256=UZfpPtoj6yD-SWbs6neW3IVF5AX4QYs1QiECJiqi2sA,48
+tronald-0.1.1.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+tronald-0.1.1.dist-info/METADATA,sha256=kv9mogdCDPOctWLV4CX5cAfpAnw9j20Y7ds9e6VL7pY,481
+tronald-0.1.1.dist-info/RECORD,,
