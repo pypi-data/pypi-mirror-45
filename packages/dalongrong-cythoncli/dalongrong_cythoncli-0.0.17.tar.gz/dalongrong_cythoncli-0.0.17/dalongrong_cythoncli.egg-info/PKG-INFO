@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dalongrong-cythoncli
+Version: 0.0.17
+Summary: a simple cli project
+Home-page: UNKNOWN
+Author: dalongrong
+Author-email: 1141591465@qq.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/rongfengliang/cython-c-pip-demo.git
+Project-URL: Say Thanks!, https://github.com/rongfengliang/cython-c-pip-demo.git
+Project-URL: Source, https://github.com/rongfengliang/cython-c-pip-demo.git
+Project-URL: Tracker, https://github.com/rongfengliang/cython-c-pip-demo.git
+Description: # cpython pip demo
+        
+        
+        ## how to running
+        
+        * init python venv
+        
+        ```code
+        python3 -m venv .
+        ```
+        
+        * activate env
+        
+        ```code
+        
+        source bin/activate
+        
+        ```
+        * build cython
+        
+        ```code
+        make
+        ```
+        
+        * run test
+        
+        ```code
+        install pip cli
+        
+        pip install .
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
