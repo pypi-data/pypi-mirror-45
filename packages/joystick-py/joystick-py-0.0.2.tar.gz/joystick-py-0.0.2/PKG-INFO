@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: joystick-py
+Version: 0.0.2
+Summary: Invoke plume for uploading to cloud
+Home-page: https://pagure.io/joystick
+Author: Sayan Chowdhury
+Author-email: sayan.chowdhury2012@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
