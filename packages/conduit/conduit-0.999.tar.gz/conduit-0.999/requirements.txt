@@ -1,0 +1,15 @@
+## Dependencies
+numpy>=1.16
+scipy>=1.2
+
+## Optional Testing Dependencies (pip install -r tests/requirements.txt)
+# pytest>=4.2.0
+# pytest-cov>=2.6.1
+# pytest-flakes>=4.0.0
+# coverage>=4.5.2
+
+## Build dependencies (uncomment for deployment)
+# pip>=19.0.3
+# setuptools>=41.0.1
+# twine>=1.13.0
+# wheel>=0.33.1
