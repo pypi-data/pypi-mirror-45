@@ -1,0 +1,95 @@
+Metadata-Version: 1.2
+Name: triz2DAAD
+Version: 0.9b1
+Summary: Convierte mapas de aventuras de texto generados por Trizbort en código fuente para el DAAD.
+Home-page: http://www.zonafi.es/triz2DAAD/
+Author: Pedro Fernández
+Author-email: rockersuke@gmail.com
+License: MIT
+Description: Triz2DAAD
+        *********
+        
+        English instructions coming soon!
+        
+        Triz2DAAD versión 0.9b 190420 (c) 2019 Pedro Fernández
+        
+        Triz2DAAD es la fusión de los anteriores scripts de Python Triz2sce y Trizio2sce, que cargaban, en cada caso, ficheros procedentes de las utilidades Trizbort y Trizbort.io respectivamente. Este nuevo script carga indistintamente de una o de otra y realiza internamente la conversión necesaria para que un sólo script se puedan manjar ambos formatos.
+        
+        Triz2DAAD.py es un script de Python 3.x que transforma un fichero generado con la utilidad de escritorio Trizbort o su variante on-line Trizbort.io para mapear aventuras en un código fuente compatible con el compilador del DAAD. No es un diseñador visual de aventuras ni una aplicación para su desarrollo completo. Está concebido como herramienta para hacer prototipos iniciales de aventuras con rapidez y facilidad y, a su vez, como herramienta de apoyo a autores nóveles, ideal para su uso en talleres de aprendizaje.
+        
+        Uso:
+        ====
+        
+        Usar "Python triz2DAAD.py -h" en una linea de comandos o powershell para ver las opciones.
+        
+        El script requiere como argumentos un fichero de entrada (que debe ser un mapa generado por la utilidad Trizbort en formato XML (aunque con la extensión .trizbort) o por Trizbort.io en formato json) y, opcionalmente, el nombre de un fichero de salida, que será un código fuente en formato .SCE compatible con la versión 2.40-2.42 del compilador del DAAD. Si no se especifica se creará un fichero con el mismo nombre y la extensión .SCE
+        
+        - La opción -p1 generará un listado SCE con los mensajes del sistema en primera persona. Por defecto éstos se crearán en segunda persona.
+        - La opción -e generará un listado SCE con los textos y el vocabulario en inglés. Por defecto se crearán en español.
+        - La opción -md añadirá código (de compilación condicional) para el modo "dibujo invisible" en los Amstrad CPC.
+        - La opción -dsf generará un fichero DSF compatible con el nuevo compilador DAAD Reborn Compiler.
+        
+        Enlaces:
+        ========
+        - Trizbort:
+        
+         - http://trizbort.com
+        
+        - Trizbort.io:
+        
+         - http://trizbort.io/
+        
+        - DAAD
+        
+         - http://wiki.caad.es/DAAD
+         - http://www.caad.es/fichas/daad.html
+         - http://www.rockersuke.com/if/ebbp/
+         - http://8-bit.info/infinite-imaginations-aventuras-ad/
+         - https://github.com/Utodev/DRC
+        
+        
+        Hasta el momento parece convertir correctamente:
+        
+        - Habitaciones, incluyendo sus descripciones y estableciendo la localidad de comienzo.
+        - Conexiones comunes por puntos cardinales (N,S,E,O,NE,NO,SE,SO).
+        - Conexiones up/down o in/out.
+        - Conexiones de una sola dirección.
+        - Objetos incluidos en las habitaciones.
+        - Localidades marcadas como "oscuras".
+        
+        Triz2DAAD añade por su cuenta una barra de estado con el nombre de la localidad actual y el número de turnos transcurridos en la aventura.
+        También añade un listado automático de salidas y soporte para respuestas por defecto a los comandos "SALIDAS", "MIRAR","EXAMINAR", "AYUDA", "METER", "SACAR" Y "VACIAR". Esto gastará un número variable de mensajes en la sección /MTX y las banderas 100 y 101.
+        
+        Triz2DAAD usa los textos del cuadro de diálogo "map settings" como pantalla de presentación y créditos (añadiendo frases por defecto en caso de que estuviesen vacíos). Creará un texto por defecto de introducción a la aventura editable en el mensaje nº 14 que en el caso del Trizbort original se corresponderá con el campo "History" (inexistente en Trizbort.io).
+        
+        A su vez usará el campo "subtitle" de cada localidad como texto para su descripción corta en la barra de estado (máximo 26 caracteres). Si no lo hubiera usará el campo "name" y si éste fuera el elegido por defecto ("Room" o "Cave") lo cambiará por "Localidad xx". A su vez usará el campo "description" para la descripción larga de la localidad en la ventana de texto de la aventura (usando de nuevo un texto por defecto "Descripción localidad xx" si no encontrase ninguno).
+        
+        Igualmente, triz2DAAD usará el campo "Name" de los objetos como su palabra en el vocabulario. El campo "Description" se usará en los listados de objetos. Se recomienda usar el mismo nombre con el artículo indeterminado apropiado según género y número para su óptimo procesamiento por el motor del DAAD. Ej: "Libro" -> "Un libro", "Gafas" -> "Unas gafas".
+        En el caso de partir del Trizbrt de escritorio se reconocerán los atributos [f] y [2] en el campo "name" como indicadores de "femenino" y "plural" respectivamente (entendiéndose por defecto que el objeto tiene un nombre masculino y singular si no se indica nada) y se añadirá el artículo indeterminado (un, unos, una, unas) correspondiente al texto de los listados.
+        Siguiendo las convenciones del Trizbort original, Triz2DAAD buscará las cadenas [w] y [c] en el nombre de los objetos para añadirles los atributos ropa y contenedor (tanto en la aplicación de escritorio como en la de web).
+        
+        Y por el momento triz2DAAD no puede manejarse con:
+        
+        - Textos personalizados en los extremos de las conexiones.
+        - Conexiones con puntos intermedios en los espacios del mapa. Cualquier cosa que no sea una conexión directa entre una habitación y otra la ignorará.
+        
+        Bugs conocidos:
+        ===============
+        
+        - Debido al comportamiento ligeramente distinto del intérprete inglés, intentar meter un objeto contenedor dentro de sí mismo (o de un objeto inexistente) en una obra inglesa, en lugar de un mensaje de error hace que el jugador deje el objeto en la localidad actual.
+        
+        - Debido a que los condactos para meter y/o sacar objetos de contenedores usan un único mensaje del sistema, es probable que haya disonancias con el número (singular/plural) del objeto.
+        
+        HISTORIA
+        ========
+        
+        - 0.9b 190420
+         
+         - Priemra beta pública
+         - Carga ficheros tanto de Trizbort (aplicación de escritorio) como de Trizbort.io (aplicación web).
+         - Opción para exportar a formato DSF del DAAD Reborn Compiler.
+         
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
