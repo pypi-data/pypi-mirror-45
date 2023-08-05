@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: py-db-wrapper
+Version: 1.0.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # py-db-wrapper
+        Shallow wrapper for convenience tools for db management
+        
+        
+        ## Developer notes
+        
+        Package deployment etc
+        
+        ```sh
+        python setup.py test
+        ```
+        
+        ```sh
+        python setup.py sdist bdist_egg
+        ```
+        ```sh
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
