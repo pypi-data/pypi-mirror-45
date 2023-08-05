@@ -1,0 +1,87 @@
+## ABConfig
+
+#### Install
+
+```bash
+pip install abconfig
+```
+
+#### Example:
+
+```python
+from abconfig import ABConfig
+
+class DBConf(ABConfig):
+    plugins = 'Reserved for future use' # Don't need to use it
+    file = '/path/to/config/file' # None by default
+    env = True | False # False by default
+
+    # Your config
+    redis = '127.0.0.1:6379'
+    postgres = dict(
+        user='db_user', # default value or value type like str, int...
+        password='db_password',
+        host='localhost',
+        port=5432,
+    )
+```
+
+This class will be read file:
+
+##### Json
+
+```json
+{ 
+    "redis": "172.17.0.1:6379",
+    "postgres": {
+    "user": "db_user",
+        "password": "db_password",
+        "host": "172.17.0.1",
+        "port": "5432"
+    }
+}
+```
+
+or
+
+##### Yaml
+
+```yaml
+redis: "172.17.0.1:6379"
+postgres:
+  user: "db_user"
+  password: "db_password"
+  host: "172.17.0.1"
+  port: "5432"
+```
+
+Create instance and use ```.get()``` or ```.get(key, default)```
+
+```python
+>> conf = DBConf()
+>> conf.get()
+{'redis': '172.17.0.1:6379', 'postgres': {'user': 'db_user', 'password': 'db_password', 'host': '172.17.0.1', 'port': 5432}}
+>> conf.get('redis')
+172.17.0.1:6379
+>> conf['postgres']['user']
+db_user
+```
+If reading a file or environment variables results in a type other than that requred, ABConfig will try to convert it, if it fails to do so, an exception is raised.
+
+
+**To override** value with environment variables, add them to os env in uppercase:
+
+```bash
+export REDIS="172.17.0.3:6379"
+export POSTGRES_HOST="172.17.0.3"
+export POSTGRES_PORT="5432"
+```
+
+and create new class instance
+
+```python
+>> conf = DBConf()
+>> conf.get()
+{'redis': '172.17.0.3:6379', 'postgres': {'user': 'db_user', 'password': 'db_password', 'host': '172.17.0.3', 'port': '5432'}}
+```
+
