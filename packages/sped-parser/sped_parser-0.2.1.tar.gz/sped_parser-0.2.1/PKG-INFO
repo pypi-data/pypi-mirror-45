@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sped-parser
+Version: 0.2.1
+Summary: manipulate SPED nodes
+Home-page: https://gitlab.com/tilacog/sped_parser
+Author: Tiago Guimaraes
+Author-email: tilacog@protonmail.com
+Keywords: sped
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://gitlab.com/tilacog/sped_parser
