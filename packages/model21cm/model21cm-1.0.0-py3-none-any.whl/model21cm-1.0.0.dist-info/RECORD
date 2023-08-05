@@ -1,0 +1,9 @@
+model21cm/__init__.py,sha256=1ckfvG8UKPUFnZ2lesEhI7NYCmvQPzgp1IDWCAQz-9k,134
+model21cm/io.py,sha256=cb2LvNBqRbMFuyRLXvUC2aTd5WQLU_ZuO4aDnwLWPnY,2754
+model21cm/model.py,sha256=RqWApyY-zO0FEBNF51kTDkHUIraK9F9HMAauhp_TmYk,3203
+model21cm/parameter.py,sha256=EWYdX0u3_17QW94Gn6-OWu2Zc0pdFc9K6GQUH1fod98,2267
+model21cm/data/edges_data.csv,sha256=buv5zQpzKAwAL2MEBuZpLXQI5Z83vsGu82ZM6qwcsDA,7907
+model21cm-1.0.0.dist-info/METADATA,sha256=DhgWrxdX5Y43kcZNrUZDYT5_1DAaHpnHKCtiHviJCnY,465
+model21cm-1.0.0.dist-info/RECORD,,
+model21cm-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+model21cm-1.0.0.dist-info/top_level.txt,sha256=Zha79hHrUqE2PVRFPFsGH_p8sfzzJTS1zPxHfqyPcP8,10
