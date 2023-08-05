@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gps-tools-package
+Version: 0.1
+Summary: Tools for localization and gps coordinates handling.
+Home-page: https://github.com/me/myproject
+Author: PR&MG
+Author-email: asd@gmail.com
+License: MIT
+Description: Tools for localization and gps coordinates handling.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: Shapely

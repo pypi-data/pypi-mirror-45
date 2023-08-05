@@ -1,0 +1,15 @@
+descartes
+pyproj
+jupyter
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn
+tqdm
+opencv-python
+scipy
+h5py
+
+[Shapely]
+Shapely
