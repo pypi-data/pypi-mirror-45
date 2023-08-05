@@ -1,0 +1,14 @@
+vmine/__init__.py,sha256=eTbSXdKHiKdVGfw1PC7TueXFCsKpWoPcM122ZWqgGPk,105
+vmine/__main__.py,sha256=6oFIj9ZcAXiGatwlNTWESOTuUd5bIK6LiRrIqYPOLAY,539
+vmine/main.py,sha256=QERrFsdHwJ8eZTNHWczX9e_T091HT7sV3PZ1CL79ErU,224
+vmine/plugins/__init__.py,sha256=GEjrexZ-7UovIGqe34w7ZX5MnNula0j0SzGbbUqOpl4,45
+vmine/plugins/cseffects/__init__.py,sha256=GEjrexZ-7UovIGqe34w7ZX5MnNula0j0SzGbbUqOpl4,45
+vmine/plugins/cseffects/hat.png,sha256=MKep2Rtl5IcPmXY7SRsU0qVDDFD08BO8oPQEsJr_Kv0,306862
+vmine/plugins/cseffects/plugin.cp37-win32.pyd,sha256=SBdlFKPi4Q-5LHMIrsqHNhaqUlpdts197yARIJ-4om8,97792
+vmine/plugins/cseffects/plugin.py,sha256=qnLJOlPTlPJqY7liWx5f7cnPVGTPR5bhBG1CxeqmA5Q,5050
+vmine/plugins/cseffects/shape_predictor_5_face_landmarks.dat,sha256=xLHpgEeScH06QFwsFqgKICaeZnUCH2SkHTD_-vvEGIg,9150489
+vmine-1.0.0.1.dist-info/METADATA,sha256=blu-dXbUM30dvSBhu1T8t8ci7B5TSYNAjRPDCpzG6pg,1043
+vmine-1.0.0.1.dist-info/WHEEL,sha256=u4Efs1ohefs6i6rm-BSBkNuQzwmF2Y4Na3ETsbtk2VM,102
+vmine-1.0.0.1.dist-info/entry_points.txt,sha256=kK89iCHxfCjxpmQ3aiBiU9ct_PF8tucgzeKTS4ggyqU,66
+vmine-1.0.0.1.dist-info/top_level.txt,sha256=xAgjFlF7KyqUOLlvfrVxceU30V6ANo2XQ1VVxQSICGM,6
+vmine-1.0.0.1.dist-info/RECORD,,

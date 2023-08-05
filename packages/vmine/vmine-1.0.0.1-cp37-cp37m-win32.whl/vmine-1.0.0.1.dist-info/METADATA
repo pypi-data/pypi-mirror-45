@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vmine
+Version: 1.0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: shenghe
+Author-email: sheng.he.china@gmail.com
+License: Free for non-commercial use
+Keywords: a simple tool for learning AI
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: numpy
+Requires-Dist: dlib
+Requires-Dist: opencv-python
+
+
+
+
+
