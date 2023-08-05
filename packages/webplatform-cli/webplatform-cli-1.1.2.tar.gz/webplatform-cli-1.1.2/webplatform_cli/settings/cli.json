@@ -1,0 +1,46 @@
+
+{
+  "services": ["mongodb", "flask", "webpack"],
+  "paths": {
+    "rel": true,
+    "path": "/lib"
+  },
+  "setup-npm": "setup_npm.sh",
+  "applications": [
+    {
+      "name": "support-exceptions",
+      "module_base": "se",
+      "permissions": []
+    },
+    {
+      "name": "dashboards",
+      "module_base": "dashboards",
+      "permissions": []
+    },
+    {
+      "name": "bzcompliance",
+      "module_base": "bzcompliance",
+      "permissions": []
+    },
+    {
+      "name": "findsbr",
+      "module_base": "findsbr",
+      "permissions": []
+    },
+    {
+      "name": "release-planning",
+      "module_base": "release_planning",
+      "permissions": []
+    },
+    {
+      "name": "api-info",
+      "module_base": "api_info",
+      "permissions": []
+    },
+    {
+      "name": "jobs",
+      "module_base": "jobs",
+      "permissions": []
+    }
+  ]
+}
