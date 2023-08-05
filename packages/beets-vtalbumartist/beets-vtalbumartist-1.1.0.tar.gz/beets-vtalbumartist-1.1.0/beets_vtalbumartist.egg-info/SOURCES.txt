@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+beets_vtalbumartist.egg-info/PKG-INFO
+beets_vtalbumartist.egg-info/SOURCES.txt
+beets_vtalbumartist.egg-info/dependency_links.txt
+beets_vtalbumartist.egg-info/requires.txt
+beets_vtalbumartist.egg-info/top_level.txt
+beetsplug/__init__.py
+beetsplug/vtalbumartist.py
