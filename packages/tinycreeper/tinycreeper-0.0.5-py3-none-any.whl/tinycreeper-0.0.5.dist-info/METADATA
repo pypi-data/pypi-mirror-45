@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tinycreeper
+Version: 0.0.5
+Summary: Easily integrates linters into your projects.
+Home-page: UNKNOWN
+Author: James Salvatore
+Author-email: jimmy.c.salvatore@gmai.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Dist: Click
+Requires-Dist: pick
+Requires-Dist: black
+
+UNKNOWN
+
+
