@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: parl
+Version: 1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: pyzmq (>=17.1.2)
+Requires-Dist: pyarrow (>=0.12.0)
+
+UNKNOWN
+
+
