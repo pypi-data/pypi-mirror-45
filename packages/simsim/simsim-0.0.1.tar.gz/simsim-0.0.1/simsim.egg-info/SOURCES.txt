@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simsim/__init__.py
+simsim/checker.py
+simsim/cmd.py
+simsim.egg-info/PKG-INFO
+simsim.egg-info/SOURCES.txt
+simsim.egg-info/dependency_links.txt
+simsim.egg-info/entry_points.txt
+simsim.egg-info/not-zip-safe
+simsim.egg-info/top_level.txt
+simsim/tests/__init__.py
+simsim/tests/test_compare.py
+simsim/tests/test_parse.py

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simsim
+Version: 0.0.1
+Summary: Simple python code similarity checker
+Home-page: https://github.com/kidig/simsim
+Author: Dmitry Gerasimenko
+Author-email: kiddima@gmail.com
+License: UNKNOWN
+Description: # simsim
+        
+        Simple python code similatiry checker based on AST.
+        
+Keywords: plagiarism,plage,plagiary,similarity,ast
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
