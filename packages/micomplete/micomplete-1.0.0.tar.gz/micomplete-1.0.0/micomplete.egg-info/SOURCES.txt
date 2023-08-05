@@ -1,0 +1,30 @@
+CHANGES.txt
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+micomplete/__init__.py
+micomplete/completeness.py
+micomplete/linkageanalysis.py
+micomplete/micomplete.py
+micomplete/parseseqs.py
+micomplete.egg-info/PKG-INFO
+micomplete.egg-info/SOURCES.txt
+micomplete.egg-info/dependency_links.txt
+micomplete.egg-info/entry_points.txt
+micomplete.egg-info/requires.txt
+micomplete.egg-info/top_level.txt
+micomplete/share/Arch131.hmm
+micomplete/share/Arch131.weights
+micomplete/share/Bact105.hmm
+micomplete/share/Bact105.weights
+micomplete/test_data/; FS=n } {print $1}
+micomplete/test_data/; FS=n} {print $1}
+micomplete/test_data/coxiella-like_endosymbiont.fna
+micomplete/test_data/coxiella-like_endosymbiont.gbff
+micomplete/test_data/coxiella_burnetii.fna
+micomplete/test_data/coxiella_burnetii.gbff
+micomplete/test_data/legionella_longbeachae.fna
+micomplete/test_data/legionella_longbeachae.gbff
+micomplete/utils/miCompletelist.sh
