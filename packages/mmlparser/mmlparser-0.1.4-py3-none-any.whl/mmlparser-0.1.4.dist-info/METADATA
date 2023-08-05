@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mmlparser
+Version: 0.1.4
+Summary: MML (Music Macro Language) parser and player for Python
+Home-page: https://gitlab.com/cjaikaeo/mmlparser-python
+Author: Chaiporn Jaikaeo
+Author-email: chaiporn.j@ku.ac.th
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Sound/Audio
+Description-Content-Type: text/markdown
+
+MML Parser and Player for Python
+================================
+
+Python-based MML ([Music Macro Language](https://en.wikipedia.org/wiki/Music_Macro_Language)) parser and player.
+
+Installation
+------------
+
+    pip install mmlparser
+
+Running Examples
+----------------
+
+Examples, as well as simple songs written in MML, can be found in the
+directory `mmlparser/examples`, which can be played directly from a command
+line.
+
+    python -m mmlparser.examples.simple_player
+
+
+
+
