@@ -1,0 +1,12 @@
+goenrichment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goenrichment/enrichment.py,sha256=VNVUR6sVZ-jjFTEK5gTG3ZhmTeLNz_HQWpUyv8lDc48,1959
+goenrichment/go.py,sha256=nPHJJMmz3T4DTKnvgzvr9-AEjlClc8hmv702lm9n_gA,3652
+goenrichment/graph.py,sha256=9ByZ-EAG6us-GdExFS6OREg2tObPyVm2rn3rUF_PYlM,279
+goenrichment/parsers.py,sha256=_f4m9y3nklP8NP0ApoOXkPY56dPKHmJtnbOS7DEeT0I,3044
+goenrichment-0.0.5a3.data/scripts/goenrich.py,sha256=u6Jc_8SKc9J0rlE0f1aw2OAR44UJzK7A1sjtOE7lNB4,2917
+goenrichment-0.0.5a3.data/scripts/goenrichDB.py,sha256=PYsLjI06tD5CJNy7QsIZr1W0x_X6zo1WhO0dtXw3IVk,2995
+goenrichment-0.0.5a3.dist-info/LICENSE,sha256=4dXeufGUNb6WU0Ayv3MCzp5gQhR-25Fpoif0ClmlJBM,961
+goenrichment-0.0.5a3.dist-info/METADATA,sha256=cHHH2Xiyghevk9xkAfBPSHm-UA2cmoauvFBlul2c758,6866
+goenrichment-0.0.5a3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+goenrichment-0.0.5a3.dist-info/top_level.txt,sha256=iSVE1g68PPu9qXiO_zKMIx2GSPPyMhCu-L_9ExO6p8o,13
+goenrichment-0.0.5a3.dist-info/RECORD,,
