@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dag-manager
+Version: 0.1.5a0
+Summary: Manage airflow dags, synchronize updates to scheduler and webserver, so airflow does not depend on shared file system
+Home-page: http://gitlab.aibee.cn/platform/dag-manager
+Author: wutong
+Author-email: twu@aibee.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask (==1.0.2)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: redis (==3.2.1)
+Requires-Dist: apache-airflow (==1.10.3)
+
+UNKNOWN
+
+
