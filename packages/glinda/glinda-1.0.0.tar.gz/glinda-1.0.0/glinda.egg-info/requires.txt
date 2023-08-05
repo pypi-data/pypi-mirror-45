@@ -1,0 +1,2 @@
+ietfparse<2,>=1.2.2
+tornado<6.5,>=4.5
