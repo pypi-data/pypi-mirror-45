@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: libpuz
+Version: 0.1
+Summary: Puzzle Library.
+Home-page: https://github.com/blahblahblah5038/libpuz
+Author: blahblahblah5038, N6UDP
+Author-email: libpuz@thesyslab.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy
+Requires-Dist: svgwrite
+
+
+# libpuz
+it's in the name
+
+
