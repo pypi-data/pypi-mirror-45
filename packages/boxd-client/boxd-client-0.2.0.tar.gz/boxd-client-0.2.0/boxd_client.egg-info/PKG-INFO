@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: boxd-client
+Version: 0.2.0
+Summary: Python version sdk for boxd.
+Home-page: https://github.com/BOXFoundation/boxd-unpack-python
+Author: JarvisWang
+Author-email: wangjunbao2018@gmail.com
+License: MIT
+Description: boxd-sdk-python
+        ===============
+        
+Keywords: boxd-client
+Platform: MacOS X
+Platform: Posix
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: boxd-client
+Provides-Extra: dev
