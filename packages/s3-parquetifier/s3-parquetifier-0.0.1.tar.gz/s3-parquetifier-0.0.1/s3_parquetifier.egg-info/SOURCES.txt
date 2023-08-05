@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+s3_parquetifier/__init__.py
+s3_parquetifier/models.py
+s3_parquetifier.egg-info/PKG-INFO
+s3_parquetifier.egg-info/SOURCES.txt
+s3_parquetifier.egg-info/dependency_links.txt
+s3_parquetifier.egg-info/requires.txt
+s3_parquetifier.egg-info/top_level.txt
+s3_parquetifier/aws_client/__init__.py
+s3_parquetifier/aws_client/client.py
+s3_parquetifier/utils/__init__.py
+s3_parquetifier/utils/logger.py
+s3_parquetifier/utils/utils.py
+test/__init__.py
+test/test_utils.py
