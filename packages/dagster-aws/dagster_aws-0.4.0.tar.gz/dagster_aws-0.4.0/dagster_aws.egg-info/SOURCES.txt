@@ -1,0 +1,13 @@
+setup.py
+dagster_aws/__init__.py
+dagster_aws/solids.py
+dagster_aws/types.py
+dagster_aws/version.py
+dagster_aws.egg-info/PKG-INFO
+dagster_aws.egg-info/SOURCES.txt
+dagster_aws.egg-info/dependency_links.txt
+dagster_aws.egg-info/not-zip-safe
+dagster_aws.egg-info/requires.txt
+dagster_aws.egg-info/top_level.txt
+dagster_aws_tests/__init__.py
+dagster_aws_tests/test_version.py
