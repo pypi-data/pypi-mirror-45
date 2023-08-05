@@ -1,0 +1,5 @@
+setuptools-git
+future
+veryprettytable
+dateparser
+validus
