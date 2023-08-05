@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: facetswrapper
+Version: 0.1b1
+Summary: A wrapper for the Facets project (https://pair-code.github.io/facets/).
+Home-page: https://gitlab.com/sivan.altinakar/facetswrapper
+Author: Sivan Altinakar
+Author-email: sivan.altinakar@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://gitlab.com/sivan.altinakar/facetswrapper/blob/master/README.md
+Project-URL: Source, https://gitlab.com/sivan.altinakar/facetswrapper
+Keywords: dataviz data_visualization wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: protobuf
+Provides-Extra: test
+
+# facets-wrapper
+
+A wrapper to two visualizations in [Facets](https://pair-code.github.io/facets/), namely Facets Overview and Facets Dive.
+
+## Facets Overview wrapper
+* The general idea follows one of the provided [original examples](https://raw.githubusercontent.com/PAIR-code/facets/master/facets_overview/Overview_demo.ipynb).
+* The wrapper takes only one dataframe as input, but allows to use optionally a list of columns to perform a groupby. In such a case, the groups of the groupby correspond to the multiple datasets of the original example.
+* The CSS of the wrapping HTML page is used to tweak the HTML code returned by facets, in order to accommodate gracefully more than 2 groups of data. A sprinkle of JavaScript is also used to enhance some functionalities.
+
+## Facets Dive wrapper
+* Not yet implemented, planned for end of may 2019.
+
