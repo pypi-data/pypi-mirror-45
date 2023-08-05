@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Weblate 3.6\n"
+"Report-Msgid-Bugs-To: weblate@lists.cihar.com\n"
+"POT-Creation-Date: 2019-04-19 17:16+0000\n"
+"PO-Revision-Date: 2018-06-27 13:02+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/weblate/"
+"javascript/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.1-dev\n"
+
+#: weblate/static/loader-bootstrap.js:187
+msgid "Add to screenshot"
+msgstr "הוספה לצילום המסך"
+
+#: weblate/static/loader-bootstrap.js:204
+msgid "Error loading search results!"
+msgstr "שגיאה בטעינת תוצאות החיפוש!"
+
+#: weblate/static/loader-bootstrap.js:206
+msgid "No new matching source strings found."
+msgstr "לא נמצאה מחרוזת מקור חדשה תואמת."
+
+#: weblate/static/loader-bootstrap.js:286
+msgid "Copy"
+msgstr "העתקה"
+
+#: weblate/static/loader-bootstrap.js:293
+msgid "Copy and save"
+msgstr "העתקה ושמירה"
+
+#: weblate/static/loader-bootstrap.js:346
+#, javascript-format
+msgid "Ctrl+M then %s"
+msgstr "Ctrl+M ואז %s"
+
+#: weblate/static/loader-bootstrap.js:365
+#, javascript-format
+msgid "The request for machine translation using %s has failed:"
+msgstr "הבקשה לתרגום מכונה באמצעות %s נכשלה:"
+
+#: weblate/static/loader-bootstrap.js:378
+msgid "The request for machine translation has failed:"
+msgstr "הבקשה לתרגום מכונה נכשלה:"
+
+#: weblate/static/loader-bootstrap.js:439
+msgid "Sort this column"
+msgstr "מיון עמודה זו"
+
+#: weblate/static/loader-bootstrap.js:595
+msgid "Error while loading page:"
+msgstr "שגיאה בעת הטענת עמוד:"
+
+#: weblate/static/loader-bootstrap.js:896
+#, javascript-format
+msgid "Ctrl/Command+%s"
+msgstr "Ctrl/Command+%s"
+
+#: weblate/static/loader-bootstrap.js:1058
+msgid "There are some unsaved changes, are you sure you want to leave?"
+msgstr "חלק מהשינויים לא נשמרו, לצאת?"
+
+#: weblate/static/loader-bootstrap.js:1084
+#: weblate/static/loader-bootstrap.js:1086
+msgid "Sunday"
+msgstr "יום ראשון"
+
+#: weblate/static/loader-bootstrap.js:1084
+msgid "Monday"
+msgstr "יום שני"
+
+#: weblate/static/loader-bootstrap.js:1084
+msgid "Tuesday"
+msgstr "יום שלישי"
+
+#: weblate/static/loader-bootstrap.js:1085
+msgid "Wednesday"
+msgstr "יום רביעי"
+
+#: weblate/static/loader-bootstrap.js:1085
+msgid "Thursday"
+msgstr "יום חמישי"
+
+#: weblate/static/loader-bootstrap.js:1085
+msgid "Friday"
+msgstr "יום שישי"
+
+#: weblate/static/loader-bootstrap.js:1086
+msgid "Saturday"
+msgstr "שבת"
+
+#: weblate/static/loader-bootstrap.js:1089
+#: weblate/static/loader-bootstrap.js:1096
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Sun"
+msgstr "יום א׳"
+
+#: weblate/static/loader-bootstrap.js:1090
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Mon"
+msgstr "יום ב׳"
+
+#: weblate/static/loader-bootstrap.js:1091
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Tue"
+msgstr "יום ג׳"
+
+#: weblate/static/loader-bootstrap.js:1092
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Wed"
+msgstr "יום ד׳"
+
+#: weblate/static/loader-bootstrap.js:1093
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Thu"
+msgstr "יום ה"
+
+#: weblate/static/loader-bootstrap.js:1094
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Fri"
+msgstr "יום ו׳"
+
+#: weblate/static/loader-bootstrap.js:1095
+msgctxt "Short (eg. three letter) name of day in week"
+msgid "Sat"
+msgstr "שבת"
+
+#: weblate/static/loader-bootstrap.js:1099
+#: weblate/static/loader-bootstrap.js:1106
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Su"
+msgstr "א׳"
+
+#: weblate/static/loader-bootstrap.js:1100
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Mo"
+msgstr "ב׳"
+
+#: weblate/static/loader-bootstrap.js:1101
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Tu"
+msgstr "ג׳"
+
+#: weblate/static/loader-bootstrap.js:1102
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "We"
+msgstr "ד׳"
+
+#: weblate/static/loader-bootstrap.js:1103
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Th"
+msgstr "ה"
+
+#: weblate/static/loader-bootstrap.js:1104
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Fr"
+msgstr "ו׳"
+
+#: weblate/static/loader-bootstrap.js:1105
+msgctxt "Minimal (eg. two letter) name of day in week"
+msgid "Sa"
+msgstr "ש׳"
+
+#: weblate/static/loader-bootstrap.js:1109
+msgid "January"
+msgstr "ינואר"
+
+#: weblate/static/loader-bootstrap.js:1109
+msgid "February"
+msgstr "פברואר"
+
+#: weblate/static/loader-bootstrap.js:1109
+msgid "March"
+msgstr "מרץ"
+
+#: weblate/static/loader-bootstrap.js:1110
+msgid "April"
+msgstr "אפריל"
+
+#: weblate/static/loader-bootstrap.js:1110
+msgid "May"
+msgstr "מאי"
+
+#: weblate/static/loader-bootstrap.js:1110
+msgid "June"
+msgstr "יוני"
+
+#: weblate/static/loader-bootstrap.js:1110
+msgid "July"
+msgstr "יולי"
+
+#: weblate/static/loader-bootstrap.js:1111
+msgid "August"
+msgstr "אוגוסט"
+
+#: weblate/static/loader-bootstrap.js:1111
+msgid "September"
+msgstr "ספטמבר"
+
+#: weblate/static/loader-bootstrap.js:1111
+msgid "October"
+msgstr "אוקטובר"
+
+#: weblate/static/loader-bootstrap.js:1112
+msgid "November"
+msgstr "נובמבר"
+
+#: weblate/static/loader-bootstrap.js:1112
+msgid "December"
+msgstr "דצמבר"
+
+#: weblate/static/loader-bootstrap.js:1115
+msgctxt "Short name of month"
+msgid "Jan"
+msgstr "ינו׳"
+
+#: weblate/static/loader-bootstrap.js:1116
+msgctxt "Short name of month"
+msgid "Feb"
+msgstr "פבר׳"
+
+#: weblate/static/loader-bootstrap.js:1117
+msgctxt "Short name of month"
+msgid "Mar"
+msgstr "מרץ"
+
+#: weblate/static/loader-bootstrap.js:1118
+msgctxt "Short name of month"
+msgid "Apr"
+msgstr "אפר׳"
+
+#: weblate/static/loader-bootstrap.js:1119
+msgctxt "Short name of month"
+msgid "May"
+msgstr "מאי"
+
+#: weblate/static/loader-bootstrap.js:1120
+msgctxt "Short name of month"
+msgid "Jun"
+msgstr "יונ׳"
+
+#: weblate/static/loader-bootstrap.js:1121
+msgctxt "Short name of month"
+msgid "Jul"
+msgstr "יול׳"
+
+#: weblate/static/loader-bootstrap.js:1122
+msgctxt "Short name of month"
+msgid "Aug"
+msgstr "אוג׳"
+
+#: weblate/static/loader-bootstrap.js:1123
+msgctxt "Short name of month"
+msgid "Sep"
+msgstr "ספט׳"
+
+#: weblate/static/loader-bootstrap.js:1124
+msgctxt "Short name of month"
+msgid "Oct"
+msgstr "אוק׳"
+
+#: weblate/static/loader-bootstrap.js:1125
+msgctxt "Short name of month"
+msgid "Nov"
+msgstr "נוב׳"
+
+#: weblate/static/loader-bootstrap.js:1126
+msgctxt "Short name of month"
+msgid "Dec"
+msgstr "דצמ׳"
+
+#: weblate/static/loader-bootstrap.js:1128
+msgid "Today"
+msgstr "היום"
+
+#: weblate/static/loader-bootstrap.js:1129
+msgid "Clear"
+msgstr "פינוי"
+
+#: weblate/static/loader-bootstrap.js:1154
+#, javascript-format
+msgid "Ctrl+I then %s"
+msgstr "Ctrl+I ואז %s"
+
+#: weblate/static/loader-bootstrap.js:1362
+msgid "Copied"
+msgstr "הועתק"
+
+#: weblate/static/loader-bootstrap.js:1385
+msgid "Search…"
+msgstr "חיפוש…"
+
+#: weblate/static/loader-bootstrap.js:1386
+msgid "Available:"
+msgstr "זמין:"
+
+#: weblate/static/loader-bootstrap.js:1387
+msgid "Chosen:"
+msgstr "נבחר:"
+
+#~ msgid "Selected:"
+#~ msgstr "נבחרו:"
+
+#~ msgid "Alt+%s"
+#~ msgstr "Alt+%s"
+
+#~ msgid "Available %s"
+#~ msgstr "%s זמינים"
+
+#~ msgid "Now"
+#~ msgstr "עכשיו"
+
+#~ msgid "Cancel"
+#~ msgstr "ביטול"
+
+#~ msgid "Strings with any failing checks"
+#~ msgstr "מחרוזות עם בדיקות כלשהן שנכשלו"
+
+#~ msgid "Fuzzy strings"
+#~ msgstr "מחרוזות בספק"
+
+#~ msgid "Translated strings"
+#~ msgstr "מחרוזות מתורגמות"
+
+#~ msgid "Ok"
+#~ msgstr "אישור"
+
+#~ msgid "AJAX request to load this content has failed!"
+#~ msgstr "בקשת AJAX לטעון תוכן זה נכשל!"
+
+#~ msgid "Loading…"
+#~ msgstr "טוען…"
+
+#~ msgid "Confirm resetting repository"
+#~ msgstr "לאשר את מאגר איפוס"
+
+#~ msgid "Resetting the repository will throw away all local changes!"
+#~ msgstr "איפוס המאגר להשליך כל שינויים מקומיים!"
