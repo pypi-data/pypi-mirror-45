@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+comet/__init__.py
+comet/comet.py
+comet/config.py
+comet/parallel.py
+comet/terraform.py
+pycomet.egg-info/PKG-INFO
+pycomet.egg-info/SOURCES.txt
+pycomet.egg-info/dependency_links.txt
+pycomet.egg-info/entry_points.txt
+pycomet.egg-info/requires.txt
+pycomet.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+Click
+pyyaml
+pystache
+jsonschema
+python-terraform
