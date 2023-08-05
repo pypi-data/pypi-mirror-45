@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-contrib-auth2
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/mixkorshun/django-contrib-auth2
+Author: Vladislav Bakin
+Author-email: vladislav@bakin.me
+Maintainer: Vladislav Bakin
+Maintainer-email: vladislav@bakin.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=2.0)
+Requires-Dist: requests
+
+UNKNOWN
+
+
