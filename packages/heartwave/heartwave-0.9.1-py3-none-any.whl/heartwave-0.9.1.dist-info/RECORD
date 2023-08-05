@@ -1,0 +1,17 @@
+heartwave/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heartwave/app.py,sha256=56REe-ZGeLZFdyPRrRYHI5ep6j7m_kh8boEn1oRZjGg,3184
+heartwave/conf.py,sha256=h-0msTAoG7bxiRkHCJhSyfUXG5zQgF0JCkEv5r3k8W4,355
+heartwave/facetracker.py,sha256=PgLTOB55ADDCSBn7L4uBpHDtam05AMEovcQKZPGlkXo,3309
+heartwave/person.py,sha256=wmFmStXY0Q2TIn_rpKcTvZGJyMWJ1ggS_KDb7pxWiuU,5823
+heartwave/plot.py,sha256=S60YjB1zOx2naP0Mumhpa48ki18P5G9DrI9p3_I6Vic,1089
+heartwave/sceneanalyzer.py,sha256=2CyBetmvNH0tuxSAZKlMpgGgTUKsR3t03sx7lfLe_h8,986
+heartwave/util.py,sha256=x5q6HwSaKM0YL_hEHiMzJfx_nvysUatqk9Ft-D-OXEo,480
+heartwave/videostream.py,sha256=Yh1qBz6WxlNYTies1Hun-zYSYYATuAsi5E8TdA4IWt0,1592
+heartwave/widgets.py,sha256=d7XpcOeXq9E0Y5tBIgw7qSlV-md0og2bObO_5xj1e_s,2196
+heartwave/data/lbpcascade_frontalface_improved.xml,sha256=fDEzHUlPIOIWs5etmdgk2Sq5HrsV2zvNpqL45oTSONM,54039
+heartwave-0.9.1.dist-info/LICENSE,sha256=wVXmemzM4v_VlNCzedi7qFodW6NAhMiDQaSAy10WxtU,1317
+heartwave-0.9.1.dist-info/METADATA,sha256=mMdch68HQJbj-T7AK7_cSyLpvFPDCDED5OX5QY8UH-8,2285
+heartwave-0.9.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+heartwave-0.9.1.dist-info/entry_points.txt,sha256=cjGbyFL-7Rtsy9gi5BTAh3xKilAaPZEfUyaGNbiFQL4,50
+heartwave-0.9.1.dist-info/top_level.txt,sha256=ZQ_dvJwiD8YnfVdnCv1MJjYy57xDC5sU0oh3e5awLdE,10
+heartwave-0.9.1.dist-info/RECORD,,
