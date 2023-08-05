@@ -1,0 +1,7 @@
+requests>=1.0
+nose
+Click
+
+[testing]
+pytest
+pytest-cov
