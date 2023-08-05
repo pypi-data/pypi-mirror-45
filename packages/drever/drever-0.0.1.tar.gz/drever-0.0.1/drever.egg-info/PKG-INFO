@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: drever
+Version: 0.0.1
+Summary: A framework for handling testvectors                  within an HDL testbench.
+Home-page: https://www.elpra.de
+Author: Tobias Baumann
+Author-email: tobias.baumann@elpra.de
+License: UNKNOWN
+Description: # Drever Framework
+        
+        Drever is a framework for supporting the development of FPGA IPs using Python as specification entry.
+        
+        ## Documentation
+        
+        Auto-generated documentation for the latest version of the master branch can be found at [https://elpra.gitlab.io/drever-framework/drever](https://elpra.gitlab.io/drever-framework/drever).
+        
+        ## Test Reports
+        
+        Some test reports are generated for quality ensurance. These can be found at:
+        
+        - [Functional Verification / Unit Tests](https://elpra.gitlab.io/drever-framework/drever/reports/tests)
+        - [Code Coverage](https://elpra.gitlab.io/drever-framework/drever/reports/coverage)
+        - [Code Linting](https://elpra.gitlab.io/drever-framework/drever/reports/lint)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

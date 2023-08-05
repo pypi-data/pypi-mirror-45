@@ -1,0 +1,10 @@
+README.md
+setup.py
+drever/__init__.py
+drever/base_class.py
+drever/file_handler.py
+drever/pkg_info.py
+drever.egg-info/PKG-INFO
+drever.egg-info/SOURCES.txt
+drever.egg-info/dependency_links.txt
+drever.egg-info/top_level.txt
