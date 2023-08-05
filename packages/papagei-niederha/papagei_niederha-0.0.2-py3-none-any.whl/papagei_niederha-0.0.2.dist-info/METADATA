@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: papagei-niederha
+Version: 0.0.2
+Summary: A package for easy verbose logging, error and warnings.
+Home-page: https://github.com/niederha/papagei
+Author: Niederhauser Loïc
+Author-email: loic.niederhauser@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PAPAGEI
+Papagei is a module that proposes an implementation for verbose logging. Python has options to do verbose logging, 
+error warning and error handling and so on. However, multiple packages are often implied and implementing the desired 
+messages might require multiple lines of code. Papagei is an attempt to make a module that allows to do verbose logging 
+in a simple way without importing multiple packages imports and with a minimal number of lines of code for each call. 
+Despite being fairly simple, papagei has the downside of being more rigid. It is good for simple cases and debug. For
+more complex error handling or message formatting you might want to get back to python built in functions and packages.
+
+## Using papagei
+There are three major components in papagei:
+- VerboseLevel(Enum) (class)
+- VERBOSE (object of type VerboseLevel)
+- The display functions
+
+### VerboseLevel and verbose:
+In this implementation papagei has 6 verbose levels:
+- **SILENT:** Nothing will be displayed no errors will be raised no warnings will be returned.
+- **ERROR:** Only mock_errors() are displayed. errors are raised as usual. 
+- **WARNINGS:** Errors behave as usual, and warnings and mock_warnings as well.
+- **INFO:** All messages from the previous levels plus the info messages.
+- **DEBUG:** All messages from the previous levels plus the debug messages.
+- **FRIVOLOUS:** All messages from the previous levels plus the frivolity messages.
+
+The verbose level can be set using the VERBOSE variable and the VerboseLevel enum. For example:
+```python
+VERBOSE = VerboseLevel.INFO
+```
+**NOTE:** Due to its simple implementation the verbose level in papagei only works on the functions 
+form the papagei packages. In other words putting papagei.VERBOSE to silent will not silence errors raised outside of 
+the papagei package, won't implement any warning filter to cancel out warnings from outside of the papapgei module and 
+won't obliterate any print() done outside of the papagei module.
+
+### Functions
+All functions are link to a specific debug level. Two functions are available for the ERROR level and the WARNING level.
+One uses the actual python warnings and error the other one (preceded by "mock_") only print a message in the console 
+without interrupting the run of the program.
+
+* error(*args): (Level: ERROR) Formats the args into a string and uses it to raise an error.
+* mock_error(*args): (Level: ERROR) Formats the args into a string and prints them in an error-like format.
+* warning(*args, **kwargs): (Level: WARNING) Formats the args into a string and uses it to generate a warning. The 
+  warning type can be changed by passing a Waring class through the key-word 'type'. The warning is displayed and the
+  warning object is returned by the function.
+* mock_warning(*args): (Level: WARNING) Formats the args into a string and displays it into a warning-like format.
+* info(*args): (Level: INFO) Formats the args into a string and displays it into a specific info-format.
+* debug(*args): (Level: DEBUG) Formats the args into a string and displays it into a specific debug-format.
+* frivolity(*args): (Level: FRIVOLOUS) Formats the args into a string and displays it into a specific 
+  frivolity-format.
+
+### Example
+```python
+from papagei import papagei as ppg
+ppg.VERBOSE = ppg.VerboseLevel.DEBUG
+
+ppg.debug('This is example', 1)  # This message will show
+ppg.frivolity('This is example', 2)  # This won't show
+```
+**NOTE:** The import statement has a slight redundancy in it. This should be fixed later.
+
+## Modifying the source code
+Even if it is not possible to add classes from outside of the package, the source code was made in a way that should 
+make the adding, removing, moving or reformatting class easy.
+
+### Reformatting a class
+The formatting of a class is done through the text_format dictionary. The value of the dictionary is added before 
+each string of the corresponding level to format it. Chang the value in this dictionary to change the formats. 
+Same goes for the text_header dictionary which displays a header at the beginning of a message.
+
+### Adding, removing or moving a class
+To move a class in the hierarchy all that has to be done it to change its position in the VerboseLevel(Enum) enum. 
+This enum is auto-numbered so moving it will adapt the value of the item and the checks in every functions will be 
+adapted. To add an item the corresponding VerboseLevel should be added in the enum. Then the text_format and text_header 
+dictionaries should be updated. Finally a dedicated function for the new level can be written on the model debug, 
+info or frivolity, using _format_string_from_tuple(string_tuple) to format *args into a single string. Same process can 
+be followed in reverse to remove a class.
+
