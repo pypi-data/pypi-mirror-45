@@ -1,0 +1,13 @@
+README.md
+mk8sconf.py
+setup.py
+microk8s_configure.egg-info/PKG-INFO
+microk8s_configure.egg-info/SOURCES.txt
+microk8s_configure.egg-info/dependency_links.txt
+microk8s_configure.egg-info/entry_points.txt
+microk8s_configure.egg-info/requires.txt
+microk8s_configure.egg-info/top_level.txt
+mk8sconfig/__init__.py
+mk8sconfig/__main__.py
+mk8sconfig/main.py
+mk8sconfig/ssh_connection.py
