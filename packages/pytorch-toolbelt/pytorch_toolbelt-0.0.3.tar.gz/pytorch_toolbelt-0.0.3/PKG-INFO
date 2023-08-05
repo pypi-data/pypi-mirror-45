@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pytorch_toolbelt
+Version: 0.0.3
+Summary: PyTorch extensions for fast R&D prototyping and Kaggle farming
+Home-page: https://github.com/BloodAxe/pytorch-toolbelt
+Author: Eugene Khvedchenya
+Author-email: ekhvedchenya@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: 
+        # Pytorch-toolbelt
+        
+        [![Build Status](https://travis-ci.org/BloodAxe/pytorch-toolbelt.svg?branch=develop)](https://travis-ci.org/BloodAxe/pytorch-toolbelt)
+        [![Documentation Status](https://readthedocs.org/projects/pytorch-toolbelt/badge/?version=latest)](https://pytorch-toolbelt.readthedocs.io/en/latest/?badge=latest)
+        
+        
+        A `pytorch-toolbelt` is a Python library with a set of bells and whistles for PyTorch for fast R&D prototyping and Kaggle farming:
+        
+        * Easy model building using flexible encoder-decoder architecture.
+        * Modules: CoordConv, SCSE, Hypercolumn, Depthwise separable convolution and more
+        * GPU-friendly test-time augmentation
+        * GPU-friendly inference on huge (5000x5000) images
+        * Every-day common routines (fix/restore random seed, filesystem utils)
+        * Fancy losses: Focal, Lovasz, Jaccard and Dice losses
+        
+        # Quick start
+        
+        `TODO: Implement`
+        
+        # Installation
+        
+        `TODO: Implement`
+        
+        # Documentation
+        
+        `TODO: Implement`
+        
+Keywords: PyTorch,Kaggle,Deep Learning,Machine Learning,ResNet,VGG,ResNext,Unet,Focal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: tests
