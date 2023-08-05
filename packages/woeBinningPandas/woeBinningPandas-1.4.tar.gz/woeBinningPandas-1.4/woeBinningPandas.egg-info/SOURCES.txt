@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+woeBinningPandas/__init__.py
+woeBinningPandas/woebinningpandas.py
+woeBinningPandas.egg-info/PKG-INFO
+woeBinningPandas.egg-info/SOURCES.txt
+woeBinningPandas.egg-info/dependency_links.txt
+woeBinningPandas.egg-info/not-zip-safe
+woeBinningPandas.egg-info/requires.txt
+woeBinningPandas.egg-info/top_level.txt
