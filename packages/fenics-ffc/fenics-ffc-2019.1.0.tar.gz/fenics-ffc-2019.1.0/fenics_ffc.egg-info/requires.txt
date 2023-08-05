@@ -1,0 +1,4 @@
+numpy
+fenics-fiat<2019.2,>=2019.1.0
+fenics-ufl<2019.2,>=2019.1.0
+fenics-dijitso<2019.2,>=2019.1.0
