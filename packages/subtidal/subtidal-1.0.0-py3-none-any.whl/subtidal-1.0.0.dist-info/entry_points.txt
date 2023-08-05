@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            download-subtitles=subtidal.download:download_subtitles
+        
