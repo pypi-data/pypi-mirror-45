@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+primalytics/__init__.py
+primalytics/emblem.py
+primalytics/plotting.py
+primalytics.egg-info/PKG-INFO
+primalytics.egg-info/SOURCES.txt
+primalytics.egg-info/dependency_links.txt
+primalytics.egg-info/requires.txt
+primalytics.egg-info/top_level.txt
