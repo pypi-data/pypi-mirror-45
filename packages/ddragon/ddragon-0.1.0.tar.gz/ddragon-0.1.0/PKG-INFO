@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ddragon
+Version: 0.1.0
+Summary: Host your own ddragon mirror for League of Legends static data and images, relying on dragontail
+Home-page: https://github.com/Canisback/ddragon
+Author: Canisback
+Author-email: canisback@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,ddragon
+Platform: UNKNOWN
+Provides-Extra: image_resize
