@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+protobrain.egg-info/PKG-INFO
+protobrain.egg-info/SOURCES.txt
+protobrain.egg-info/dependency_links.txt
+protobrain.egg-info/requires.txt
+protobrain.egg-info/top_level.txt
