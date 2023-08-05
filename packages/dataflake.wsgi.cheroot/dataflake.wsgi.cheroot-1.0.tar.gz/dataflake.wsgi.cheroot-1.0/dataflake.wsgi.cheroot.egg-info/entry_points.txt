@@ -1,0 +1,6 @@
+[console_scripts]
+mkcherootinstance = dataflake.wsgi.cheroot.configurator:mkzope
+
+[paste.server_runner]
+main = dataflake.wsgi.cheroot:serve_paste
+
