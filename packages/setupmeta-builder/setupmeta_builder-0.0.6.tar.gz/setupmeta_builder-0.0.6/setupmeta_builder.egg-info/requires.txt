@@ -1,0 +1,5 @@
+fsoopify
+packaging
+pipfile
+prettyprinter
+pyyaml
