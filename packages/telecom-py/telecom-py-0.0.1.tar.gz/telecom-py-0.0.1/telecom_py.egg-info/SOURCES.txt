@@ -1,0 +1,8 @@
+setup.py
+telecom.c
+telecom/__init__.py
+telecom_py.egg-info/PKG-INFO
+telecom_py.egg-info/SOURCES.txt
+telecom_py.egg-info/dependency_links.txt
+telecom_py.egg-info/pbr.json
+telecom_py.egg-info/top_level.txt
