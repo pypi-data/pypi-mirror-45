@@ -1,0 +1,10 @@
+README.md
+setup.py
+hotxlfp/__init__.py
+hotxlfp/parser.py
+hotxlfp/tinyemitter.py
+hotxlfp.egg-info/PKG-INFO
+hotxlfp.egg-info/SOURCES.txt
+hotxlfp.egg-info/dependency_links.txt
+hotxlfp.egg-info/requires.txt
+hotxlfp.egg-info/top_level.txt
