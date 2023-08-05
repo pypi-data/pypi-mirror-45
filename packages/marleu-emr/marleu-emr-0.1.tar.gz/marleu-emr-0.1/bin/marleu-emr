@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+import marleu_emr
+marleu_emr.main()

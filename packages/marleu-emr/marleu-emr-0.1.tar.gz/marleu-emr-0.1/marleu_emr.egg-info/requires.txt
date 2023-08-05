@@ -1,0 +1,4 @@
+requests
+paramiko
+credstash
+cryptography==2.3
