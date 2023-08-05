@@ -1,0 +1,3 @@
+[console_scripts]
+journey = journeypy.__main__:main
+

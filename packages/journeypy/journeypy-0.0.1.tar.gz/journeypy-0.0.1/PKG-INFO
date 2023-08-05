@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: journeypy
+Version: 0.0.1
+Summary: This Are workflow Journey library
+Home-page: https://github.com/atmaramnaik/journeypy.git
+Author: Atmaram Naik
+Author-email: naik_atmaram@yahoo.com
+License: MIT
+Description: # journey-py
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
