@@ -1,0 +1,5 @@
+include dash_upload_components/dash_upload_components.min.js
+include dash_upload_components/dash_upload_components.dev.js
+include dash_upload_components/metadata.json
+include dash_upload_components/package.json
+include README.md

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dash_upload_components
+Version: 0.0.2
+Summary: Upload large files to Dash (based on https://github.com/rmarren1/dash-resumable-upload)
+Home-page: UNKNOWN
+Author: tracek lukasz.tracewski@outlook.com
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
