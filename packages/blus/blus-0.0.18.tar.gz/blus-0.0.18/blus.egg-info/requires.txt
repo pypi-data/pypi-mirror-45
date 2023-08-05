@@ -1,0 +1,6 @@
+setuptools
+docopt
+pydbus
+PyGObject
+hbmqtt
+certifi

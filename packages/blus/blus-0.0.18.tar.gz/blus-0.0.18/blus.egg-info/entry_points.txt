@@ -1,0 +1,3 @@
+[conusole_scripts]
+blus = blus.__main__:main
+
