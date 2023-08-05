@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mask-predictor
+Version: 0.0.7
+Summary: A wrapper of BERT to predict the covered word in a sentence
+Home-page: UNKNOWN
+Author: Tan Kim Yong
+Author-email: kimyong95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: spacy
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: pytorch-pretrained-bert
+
+UNKNOWN
+
+
