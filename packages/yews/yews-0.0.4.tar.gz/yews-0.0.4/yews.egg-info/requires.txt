@@ -1,0 +1,9 @@
+numpy
+torch>=1.0.0
+
+[all]
+scipy
+
+[testing]
+pytest
+pytest-cov
