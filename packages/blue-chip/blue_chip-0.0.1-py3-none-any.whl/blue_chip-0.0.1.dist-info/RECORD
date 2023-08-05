@@ -1,0 +1,9 @@
+blue_chip/__init__.py,sha256=yRyUr2hPfnkhAyEhRBwsTLHZfzonFJ54g-AtW6wOJNA,101
+blue_chip/__main__.py,sha256=zB1APVQ9fvqbNM-uF7SwYHsvsaPtc5YV5JZ_UmlnjQE,333
+blue_chip/constants.py,sha256=VU8rBq3TfCWmPt3MMjMQ_rq8hE2qWMqa6shh2Qo9pu8,133
+blue_chip/tasks.py,sha256=lWFk95XoOKJO55b0WAT4ol54TBlEqpyWYSJiCeKJ8SU,743
+blue_chip-0.0.1.dist-info/entry_points.txt,sha256=S5PdfW7cgYW4ly3lqgoJdzPshjFGYveAFp1BAXi2r08,53
+blue_chip-0.0.1.dist-info/LICENSE,sha256=8qTiCCjJPuHN5ES7yPgb7cBaaD3Ccszv6VfgwPoKJpg,1085
+blue_chip-0.0.1.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+blue_chip-0.0.1.dist-info/METADATA,sha256=MO1nfLwXuFunocS16hPR4sgHPF7mX_-_3qqpiZv7bJs,2008
+blue_chip-0.0.1.dist-info/RECORD,,
