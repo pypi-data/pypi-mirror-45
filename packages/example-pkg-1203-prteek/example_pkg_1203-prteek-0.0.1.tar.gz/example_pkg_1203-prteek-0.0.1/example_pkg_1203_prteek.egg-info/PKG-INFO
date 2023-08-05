@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: example-pkg-1203-prteek
+Version: 0.0.1
+Summary: First trial with packaging
+Home-page: UNKNOWN
+Author: Prateek
+Author-email: iprtk@icloud.com
+License: UNKNOWN
+Description: # Example Package 1203
+        This is a simple example package. You can use [Github-flavored 
+        Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free For Home Use
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
