@@ -1,0 +1,8 @@
+README.md
+setup.py
+versatility.py
+versatility.egg-info/PKG-INFO
+versatility.egg-info/SOURCES.txt
+versatility.egg-info/dependency_links.txt
+versatility.egg-info/requires.txt
+versatility.egg-info/top_level.txt
