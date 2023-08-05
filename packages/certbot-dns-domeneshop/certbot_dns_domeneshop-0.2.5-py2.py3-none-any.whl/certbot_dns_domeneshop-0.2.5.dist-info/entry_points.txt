@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-domeneshop = certbot_dns_domeneshop.dns_domeneshop:Authenticator
+
