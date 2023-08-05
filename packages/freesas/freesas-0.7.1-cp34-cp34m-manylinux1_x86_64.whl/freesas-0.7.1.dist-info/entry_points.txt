@@ -1,0 +1,5 @@
+[console_scripts]
+autorg.py = freesas.app.autorg:main
+cormap.py = freesas.app.cormap:main
+supycomb.py = freesas.app.supycomb:main
+
