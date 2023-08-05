@@ -1,0 +1,9 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* FIX: Docker build badge should point to cloud category
+* ENH: Initial add of flexfolio
+* Initial commit
