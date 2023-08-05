@@ -1,0 +1,11 @@
+optv/calibration.cpython-37m-darwin.so
+optv/correspondences.cpython-37m-darwin.so
+optv/epipolar.cpython-37m-darwin.so
+optv/image_processing.cpython-37m-darwin.so
+optv/imgcoord.cpython-37m-darwin.so
+optv/orientation.cpython-37m-darwin.so
+optv/parameters.cpython-37m-darwin.so
+optv/segmentation.cpython-37m-darwin.so
+optv/tracker.cpython-37m-darwin.so
+optv/tracking_framebuf.cpython-37m-darwin.so
+optv/transforms.cpython-37m-darwin.so
