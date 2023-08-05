@@ -1,0 +1,16 @@
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/web_fullscreen/README.rst,sha256=VbO809VwLbZvFuGcYTw3W3j76BkzdKXRtW7iOpGmQBE,1370
+odoo/addons/web_fullscreen/__init__.py,sha256=aXTgzp4Q3bYzrBKLomw78gq5lbN0n6Ngjf_9WytmeMw,93
+odoo/addons/web_fullscreen/__manifest__.py,sha256=uAeD-INC-HgNYmBSPQAaEX1_GeR1zm4Dcv2ju4SoJnM,653
+odoo/addons/web_fullscreen/i18n/web_fullscreen.pot,sha256=ONpGL4MI3H6dewf5YU5TOd4plkdxpLxxVkgwaeK-h_A,533
+odoo/addons/web_fullscreen/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_fullscreen/static/src/css/web_fullscreen.css,sha256=VXMNKQZC7nfSTiyAeGbZQPElNfssBCwgQ6e4BcT8a6Q,61
+odoo/addons/web_fullscreen/static/src/img/web_fullscreen.gif,sha256=pDWVxyfwUJMgWFEXVXGj65NdY4E2hEfQXmG0NukDBCY,749691
+odoo/addons/web_fullscreen/static/src/js/web_fullscreen.js,sha256=M5KkR_UpBCEiVA6mZ4EqAaPcGU_EwiJEyodf42ppIBI,462
+odoo/addons/web_fullscreen/static/src/xml/web_fullscreen_templates.xml,sha256=KH6ujW0_RsI2xzo2SnlXrxSOBCL-3mQzobradjlfLC0,589
+odoo/addons/web_fullscreen/views/web_fullscreen_view.xml,sha256=CEtnCkrMdLPZha3sLi18k02b3iOSCylFps6NDxBYOIY,495
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2.dist-info/METADATA,sha256=JEBp6Jl-2ugQS1ebDDZp9sCChNXRs6kHrtwFwP0Dpzs,1885
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_web_fullscreen-10.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
