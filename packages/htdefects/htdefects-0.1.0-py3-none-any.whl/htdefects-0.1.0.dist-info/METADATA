@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: htdefects
+Version: 0.1.0
+Summary: A Python package for high-throughput DFT calculations of defects
+Home-page: https://gitlab.com/hegdevinayi/citrine-defects
+Author: Vinay Hegde
+Author-email: hegdevinayi@gmail.com
+License: Apache License 2.0
+Keywords: DFT high-throughput defects materials
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: six
+Requires-Dist: numpy
+Requires-Dist: dfttopif
+Requires-Dist: dftinpgen
+Requires-Dist: ase
+
+htdefects
+---------
+
+A Python package for performing high-throughput defect calculations using
+density functional theory.
+
+
