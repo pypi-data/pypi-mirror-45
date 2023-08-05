@@ -1,0 +1,17 @@
+igoogle/__init__.py,sha256=8d-4LpzaOnb7vywMsylVhDN10OfsV1mblgMBJ1UWZcc,339
+igoogle/auth.py,sha256=nI6VYs9VzXDlkjgDXzIUadX6PYn0NezaIyCdLwTKeOw,1219
+igoogle/drive.py,sha256=blKagxnuwFmbnfJCQY0jqPY9P5acwC7yWT9Dm-D_aUI,701
+igoogle/gmail.py,sha256=BCq_HGjl4-mZy69OfO3z2rmHgdcuRFxRvndVco5Zpqk,12186
+igoogle/jupyter.py,sha256=llc9ucga-3c-A8pSvqcwyOc5dktUvwDO9bfl0aECC2g,533
+igoogle/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igoogle/tests/auth.py,sha256=cBNrT7Yhpmg9AGjtiQCCj7f-0T45KNP4FFkLhO2F354,804
+igoogle/tests/drive.py,sha256=U8nw7aT_eeYF8guLsfpf4HPh5OCwWjtqdkb_ihSlmlU,1049
+tests/__init__.py,sha256=2A9b5QEcadkKu-6D_nnJDS2YCUkE0ESMCgWHn2NUwbY,209
+tests/auth.py,sha256=uOGvRTbtO7fmajspTYT2yFXXjzah3j-pmSTTzVOnSic,844
+tests/dbg.py,sha256=M_VPp1KqefAgAde_vITp8JhZlh1Cpni36wZezWz6mNc,929
+tests/drive.py,sha256=ZINGk-RLOJF2suCZtdyYmytRMvQnCW3m9m25VbQoBvk,1243
+igoogle-0.0.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+igoogle-0.0.3.dist-info/METADATA,sha256=Zpxwp1n6BtZy8kEG_3yqKjcC0pKGPceeZiT6aeGB3KI,1253
+igoogle-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+igoogle-0.0.3.dist-info/top_level.txt,sha256=oFutebFn9s3cnLO54KT2bur4lUrPWu0REGGBsbplIDg,8
+igoogle-0.0.3.dist-info/RECORD,,
