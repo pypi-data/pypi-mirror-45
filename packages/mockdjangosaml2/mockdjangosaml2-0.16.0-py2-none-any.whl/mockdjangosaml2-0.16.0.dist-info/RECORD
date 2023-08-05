@@ -1,0 +1,13 @@
+mockdjangosaml2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mockdjangosaml2/settings.py,sha256=Xi0mK3H5V_5fwDzsJ47_k2jMbd478DJ87RLsTUi-2bI,2008
+mockdjangosaml2/urls.py,sha256=qK1baQiwNCwcjii71nIhQo4gFC1VIt_x6fIuAF_bOBo,305
+mockdjangosaml2/views.py,sha256=jgl7vkGNb_H3f38GvtbhlxjwE7ix0UXQ1xXpZi6x6Mo,5155
+mockdjangosaml2/static/mockdjangosaml2/aai_logo_localhost.png,sha256=GhgjttFLLnnY_DymkhvNBHqqKcnfsI7aq3nfWa36Oe8,7549
+mockdjangosaml2/static/mockdjangosaml2/login.css,sha256=pUCYvs6739JMwmZhPSqKkItSepFJ1ntZ4dhgkEnqwKo,4368
+mockdjangosaml2/templates/mockdjangosaml2/login.html,sha256=3lIfzo5GZmb8VlACwozyV9VcDg2u2Wd46YRpEyBjrtM,1746
+mockdjangosaml2-0.16.0.dist-info/DESCRIPTION.rst,sha256=5IFT6GWhvXgfDbLzShX79F36zf0CBh2blhBX2e1bV20,946
+mockdjangosaml2-0.16.0.dist-info/METADATA,sha256=z3sWYX8h0o4dph3FNv7Q20oLyGSMY8qqFWRYtU8qDFg,1721
+mockdjangosaml2-0.16.0.dist-info/RECORD,,
+mockdjangosaml2-0.16.0.dist-info/WHEEL,sha256=lzUwEtFmyjU_FlAT-CjHEe8XSsfe5tSQOHZ9I1rYDgo,97
+mockdjangosaml2-0.16.0.dist-info/metadata.json,sha256=Lx0RdAoAoIl3lKcebwu5VyViG_9JSVeDMTCYb1mo5ig,879
+mockdjangosaml2-0.16.0.dist-info/top_level.txt,sha256=FCoKJKIWkJhWxYX29fCFIqSkyb9ENfCemUqcZm5YudM,16
