@@ -1,0 +1,7 @@
+setup.py
+funniest/__init__.py
+ibbifunniest.egg-info/PKG-INFO
+ibbifunniest.egg-info/SOURCES.txt
+ibbifunniest.egg-info/dependency_links.txt
+ibbifunniest.egg-info/not-zip-safe
+ibbifunniest.egg-info/top_level.txt
