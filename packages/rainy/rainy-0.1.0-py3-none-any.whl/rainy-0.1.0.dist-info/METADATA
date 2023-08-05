@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: rainy
+Version: 0.1.0
+Summary: Algorithm and utilities for deep reinforcement learning
+Home-page: https://github.com/kngwyu/Rainy
+Author: Yuji Kanagawa
+Author-email: yuji.kngw.80s.revive@gmail.com
+License: UNKNOWN
+Project-URL: Code, https://github.com/kngwyu/Rainy
+Project-URL: Issue tracker, https://github.com/kngwyu/Rainy/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Provides-Extra: bullet
+Provides-Extra: ipython
+Requires-Dist: click (>=7.0)
+Requires-Dist: GitPython (>=2.0)
+Requires-Dist: gym[atari] (>=0.11.0)
+Requires-Dist: numpy (>=1.15.0)
+Requires-Dist: opencv-python (>=3.4)
+Requires-Dist: Pillow (>=5.0)
+Requires-Dist: torch (>=1.0)
+Provides-Extra: bullet
+Requires-Dist: pybullet (>=2.4); extra == 'bullet'
+Provides-Extra: ipython
+Requires-Dist: ipython (>=7.0); extra == 'ipython'
+Requires-Dist: matplotlib (>=3.0); extra == 'ipython'
+Requires-Dist: ptpython (>=2.0); extra == 'ipython'
+
+
+Rainy
+=====
+Reinforcement learning utilities and algrithm implementations using PyTorch.
+
+Please see https://github.com/kngwyu/Rainy for detail.
+
+
