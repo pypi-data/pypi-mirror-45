@@ -1,0 +1,8 @@
+README.md
+setup.py
+iPat/__init__.py
+iPat.egg-info/PKG-INFO
+iPat.egg-info/SOURCES.txt
+iPat.egg-info/dependency_links.txt
+iPat.egg-info/requires.txt
+iPat.egg-info/top_level.txt
