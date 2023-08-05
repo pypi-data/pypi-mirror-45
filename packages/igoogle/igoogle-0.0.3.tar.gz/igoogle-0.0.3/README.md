@@ -1,0 +1,25 @@
+# igoogle (innovata google apis)
+
+
+구글에서 제공하는 공식 API만 다룬다.
+
+#============================================================
+# 필수 사전작업
+#============================================================
+- Google-Auth를 위한 igoogle-auth.json 파일 위치를 수동으로 저장.
+
+
+#============================================================
+# 라이브러리
+#============================================================
+
+# gsheets
+https://github.com/xflr6/gsheets
+https://developers.google.com/drive/api/v3/quickstart/python
+https://gsheets.readthedocs.io/en/stable/index.html
+
+# google-api-python-client
+# google-auth-httplib2
+# google-auth-oauthlib
+export GOOGLE_AUTH_PATH=/Users/sambong/pjts/igoogle/igoogle-auth.json
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
