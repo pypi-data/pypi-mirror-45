@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hexaviz
+Version: 1.2.0
+Summary: Visualisation utility for an abstract hexagonal architecture
+Home-page: https://github.com/shawnchin/hexaviz
+Author: Shawn Chin
+Author-email: shawnchin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2
+
+# hexaviz
+Visualisation utility for an abstract hexagonal architecture
+
+
