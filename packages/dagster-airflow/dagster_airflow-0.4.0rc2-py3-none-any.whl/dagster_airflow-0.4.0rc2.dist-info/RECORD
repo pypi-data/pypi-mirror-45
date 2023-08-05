@@ -1,0 +1,16 @@
+dagster_airflow/__init__.py,sha256=iT8842uYtb80LaCasBJGDWcj1OSvtBlUmPA1vguBDNI,68
+dagster_airflow/compile.py,sha256=ZHfVEMQG3ofypK86jqjXkDNe5jluHp69-mZ3_EljiUQ,946
+dagster_airflow/factory.py,sha256=SfLk5YtdKO3j7_bj0Lx9QARHzHqxiNknNIQGdM902Vc,4364
+dagster_airflow/format.py,sha256=KbJdJQtfV0uu7_3uUwpjgsdsZu3hPw37pZw33cCnaJE,2697
+dagster_airflow/operators.py,sha256=_d9C1K1vgL7WARnW66Ry7UgSllQHDKWZOapICs1Enz8,17173
+dagster_airflow/query.py,sha256=KprqrVXlhjgqp5689-ockgkP01wWsSkdK8ZcSJAbZyE,1211
+dagster_airflow/resources.py,sha256=PZi1QIOKtMK1CAp78paU9xlg21il3ylV2x-YrykP5Ks,1064
+dagster_airflow/test_fixtures.py,sha256=E6_lJu8BmRou0TrkxMdUa4d3zB_kNDhhjfyJ3MsienY,4479
+dagster_airflow/version.py,sha256=TEqPj0MlBi7tIc9XUYJZ2hNg_aczVa5rlsxJ1MpZPME,51
+dagster_airflow_tests/test_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_airflow_tests/test_project/dagster_airflow_demo.py,sha256=nXIba63UNRZ5z5C0oHzLdCTQ2Zyy-Oj5IovAh58HviI,1309
+dagster_airflow-0.4.0rc2.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dagster_airflow-0.4.0rc2.dist-info/METADATA,sha256=kQMitfpra-gJK3yDi6VYgy3k2FosPqPg4oXxiuFQQNw,742
+dagster_airflow-0.4.0rc2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dagster_airflow-0.4.0rc2.dist-info/top_level.txt,sha256=mICPY-mLAwFUnGFbXUgz5-3fjPmClyD8Y2OjtgX1Hbw,38
+dagster_airflow-0.4.0rc2.dist-info/RECORD,,
