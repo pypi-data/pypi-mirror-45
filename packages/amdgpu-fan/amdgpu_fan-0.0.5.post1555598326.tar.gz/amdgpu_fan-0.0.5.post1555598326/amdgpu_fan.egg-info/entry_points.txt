@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        amdgpu-fan=amdgpu_fan.controller:main
+    
