@@ -1,0 +1,4 @@
+colorama
+Jinja2
+dns-lexicon
+bs4
