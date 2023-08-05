@@ -1,0 +1,9 @@
+@import "cluster-templates/cluster-templates";
+@import "clusters/clusters";
+
+.batch-action {
+  float: right;
+  action-list {
+    padding-left: 0.3em;
+  }
+}
