@@ -1,0 +1,16 @@
+eppy
+matplotlib
+pyclipper
+pypoly2tri
+shapely
+transforms3d
+
+[:python_version=="3.6"]
+mypy==0.630
+black==19.3b0
+
+[testing]
+codecov
+flake8
+pytest-cov
+typing
