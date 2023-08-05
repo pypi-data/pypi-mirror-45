@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tikkie
+Version: 0.0.1
+Summary: An unofficial Python library for communicating with the Tikkie API
+Home-page: https://gitlab.com/new10-public/python-tikkie-api
+Author: New10
+Author-email: pypi-admin@new10.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: cryptography
+Requires-Dist: PyJWT
+Requires-Dist: dataclasses ; python_version < "3.7"
+Provides-Extra: tests
+Requires-Dist: flake8 (==3.7.7) ; extra == 'tests'
+Requires-Dist: isort (==4.3.17) ; extra == 'tests'
+Requires-Dist: mypy (==0.700) ; extra == 'tests'
+Requires-Dist: pytest (==4.4.0) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'tests'
+Requires-Dist: black (==19.3b0) ; extra == 'tests'
+Requires-Dist: pre-commit (==1.15.1) ; extra == 'tests'
+
+Python Tikkie API
+=================
+
+An unofficial Python library for communicating with the Tikkie API
+
+Installing
+----------
+
+```
+pip install tikkie
+```
+
+
