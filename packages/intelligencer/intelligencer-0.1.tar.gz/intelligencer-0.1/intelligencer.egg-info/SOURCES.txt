@@ -1,0 +1,7 @@
+setup.py
+intelligencer/__init__.py
+intelligencer.egg-info/PKG-INFO
+intelligencer.egg-info/SOURCES.txt
+intelligencer.egg-info/dependency_links.txt
+intelligencer.egg-info/not-zip-safe
+intelligencer.egg-info/top_level.txt
