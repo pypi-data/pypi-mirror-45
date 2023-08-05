@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        matrix_registration=matrix_registration.__main__:main
+    
