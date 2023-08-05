@@ -1,0 +1,5 @@
+requests
+PySocks
+bs4
+mysql-connector
+stem
