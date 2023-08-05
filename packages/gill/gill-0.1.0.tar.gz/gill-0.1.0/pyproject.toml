@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gill"
+version = "0.1.0"
+description = "GIL Utilities"
+authors = ["Chris Hunt <chrahunt@gmail.com>"]
+license = "MIT"
+build = "build.py"
+readme = "README.md"
+include = ["build.py", "LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cython = "^0.29.7"
+
+[tool.poetry.dev-dependencies]
+Cython = "^0.29.3"
+twine = "^1.12"
+
+[build-system]
+requires = ["poetry>=0.12", "Cython"]
+build-backend = "poetry.masonry.api"
