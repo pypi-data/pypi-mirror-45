@@ -1,0 +1,11 @@
+#documentation
+recursive-include docs/*
+prune docs/_build
+
+#package
+include blend_modes.py
+include requirements.txt
+
+#Misc
+include LICENSE.txt
+include CHANGELOG.md
