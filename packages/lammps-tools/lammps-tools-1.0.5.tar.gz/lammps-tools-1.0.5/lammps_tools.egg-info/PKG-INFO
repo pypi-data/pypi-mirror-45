@@ -1,0 +1,228 @@
+Metadata-Version: 1.2
+Name: lammps-tools
+Version: 1.0.5
+Summary: lammps data process tools.
+Home-page: https://github.com/Roy-Kid/lammps-tools
+Author: Roy-Kid
+Author-email: lijichen365@126.com
+License: LICENSE
+Description: # lammps-tools
+        This python tools provide a ease way to process the data associated with lammps. You can use this series of tools to create polymer model, extract data and get data draft plot(TO-DO)
+        ## install
+        ```
+        pip install lammps_tools
+        ```
+        
+        ## use guide
+        ```
+        lammps_tools/
+            data_processing/
+        	dump.py
+        	fix.py
+        	log.py
+            model_builder/
+        	polymer_generator.py
+        	GP_generator.py
+        ```
+        
+        
+        
+        ## data-processing 
+        This package contains of models to extract data and format by a pythonic way
+        ### dump
+        **Usage**: 
+        1. Initiate Dump class. It will automatically search target dump file and store where it is. 
+           
+           ``` d = Dump(FilePath)```
+        
+        2. Interate this Instance. Every call will drive it to read a snapshot and return a dict including properties and raw data. 
+        
+            ``` 
+            for snap in d: 
+            ```
+        
+        **API**:
+        *Dump(fpath)*
+        * parameters: 
+            
+            * *fpath*: Note that you must give a str which is a relative path or absoluate path and relative path up to where you run this script not where this script in. Remember Windows platform must convert '/' into '//'.
+            * *every*: default 0. It specifies the frequency to read snap. If you assign every is n, that means return 0, n, 2n... 
+        
+        * return:
+            
+            * Dump return a instance but do nothing. Every function takes effect only after you iterate this instance. The reason is once your dump file is very big, this design can save memory.
+        
+            * Iterate instance will return a dict:
+            ```
+            snap := {
+                'TIMESTEP': 1000
+                'NUMBER_OF_ATOM': 10000
+                'BOUNDARY_CONDITION': ['pp', 'PP', 'PP']
+                'BOUNDARY_X': [0.00, 81.24]
+                'BOUNDARY_Y': [0.00, 81.24]
+                'BOUNDARY_Z': [0.00, 81.24]
+                'HEADER': ['id', 'mol', 'type', 'x', 'y', 'z', ....]
+                'DATA':[
+                    [1, 1, 1, 10.23, 12.32, 13.14],
+                    [2, 1, 1, 16.23, 13.32, 12.87],
+                    [3, 1, 1, 13.23, 17.32, 19.11],
+                    ...
+                ]
+            }
+            ```
+        
+        ### Fix
+        **Usage**
+        1. Initiate Fix class as Dump, also need to provide file path.
+            ```
+            f = Fix(fpath)
+            ```
+        2. Generally Fix only contains one stage data, so iterate it is unnecessary. But due to lazy function design, you still need read data manually.
+            ```
+            f.read_data()
+            ```
+        
+        **API**
+        *Fix(fpath)*
+        * parameters:
+        
+            * *fpath*: Aformentioned
+        
+        * return:
+        
+            * Fix return a instance but do nothing. Every function takes effect only after you iterate this instance.
+        
+        * method:
+            * Fix.get_col(index)
+                give a index of fix column and return a list of this. 
+            * Fix.read_data()
+                return a dict:
+                ```
+                stage = f.read_data()
+                stage := {
+                    'NUMBER_OF_DATA': 1234
+                    'DATA':[
+                        [123,234,345,654...], 
+                        [234,345,456,567...]
+                    ]
+                }
+        
+        ### Log
+        **Usage**
+        1. Initiate Log class as Fix, also need to provide file path.
+            ```
+            l = Log(fpath)
+            ```
+        2. Interate this Instance. Every call will drive it to read a stage and return a dict including properties and raw data. 
+           ```
+           for stage in l:
+           ```
+        **API**
+        *Log(fpath, summary)*
+        * parameters:
+        
+            * *fpath*: Aformentioned
+            * *summary*: default False. before use .get_col() you must set this to True
+        
+        * return:
+           
+            * Log return a instance but do nothing. Every function takes effect only after you iterate this instance.
+            * Iterate instance will return a dict:
+                ```
+                stage := {
+                    'STAGE' : 0, 
+                    'HEADER' : [Step, Temp, Press,...],
+                    'DATA' : [
+                        [0, 487.3, 1631.12],
+                        ...
+                    ]
+                }
+        
+        * method:
+        
+            * Log.get_col(item, *stage):
+                This can return whole item column in log file. Before use this, set *summary* to True.
+                Or if you pass a single stage as arg, then return this stage' column of item.
+        
+        
+        ## model-builder
+        ### 功能:
+        * 生成单链
+        * 生成支化链
+        * 生成石墨烯片（蜂窝状）（未经测试，使用方法同polymer_generator）
+        
+        ### 更新日志
+        1. 03/23:
+        * 逻辑重写, 修改了行走模式, 重构了折返算法 --> 增大了链与链间间隔
+        2. 04/22：
+        × 添加了生成石墨烯的脚本，增加了生成lt模板的方法
+          
+        ### 选项:
+        [DEFAULT]
+        * 简易名字 := simple_name (yes/no). 
+          ```
+          指定yes文件名为'polymer.lt', 分子名'Polymer'; 
+          no则文件名为: 'polymer-{main_chain_length}-{branch_length}\_{branch_number}.lt' , 分子名为 'Polymer-{main_chain_length}-{branch_length}_{(branch_number)}'
+          ```
+        
+        * 盒子尺寸 := box_*
+        * 单体文件 := monomer.ltname
+        
+        [BACKBONE]
+        * 主链长 := c_chain_length
+        * 主链键长 := c_bond_length
+        * 主链元原子 := C_atom
+        * 主链原子ID := C_ID #当单体为多原子时起作用
+        * 是否有支链 := isBranch
+        ```
+        C_atom inherits Forcefield{
+        
+            write("Data Atoms"){  ###保持元原子坐标在原点不变###
+                $atom:C_ID     $mol:...    @atom:C     0    0    0    0
+        }}
+        ```
+        [BRANCH]
+        
+        * 支链长度 := b_chain_length
+        * 支链键长 := b_bond_length
+        * 支化点 := b_point = p1, p2, p3...
+        * 支链元原子 := b_atom
+        * 支链原子ID := b_ID
+        
+        ```
+        b_atom inherits Forcefield{
+        
+            write("Data Atoms"){
+                $atom:B_ID     $mol:...    @atom:B     0    0    0    0   
+            }
+        }
+        ```
+        
+        
+        ### 使用方法
+        1. 准备分子链单元的文件, 其中包含主链原子及支链原子(如果有的话)的信息, 名称与monomer_ltname一致
+        或者生成模板：
+        ```
+        from lammps_tools.model_builder import polymer_generator
+        polymer_generator.generate_lt()
+        ```
+        2. 使用记事本或者vim打开polymer_init.ini文件, 修改参数
+        3. 新建python文件，导入模块
+        ```
+        polymer_generator.run()
+        ```
+        4. 得到单个分子链文件. 同时输出这个链所占据的矩体尺寸, 方便在system.lt中移动生成
+        5. 写system.lt文件, 使用```moltemplate.sh system.lt ```生成文件
+        
+        ### API
+        × .run() 配置好ini之后， 使用此开始生成
+        * .generate_lt() 生成moltemplate模板
+        
+        ### 编译树
+        
+        monomer.lt -> polymer.lt --(fieldforce.lt)--> system.lt
+        
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3
