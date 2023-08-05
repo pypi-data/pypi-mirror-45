@@ -1,0 +1,7 @@
+README.md
+setup.py
+nifverifier/__init__.py
+nifverifier.egg-info/PKG-INFO
+nifverifier.egg-info/SOURCES.txt
+nifverifier.egg-info/dependency_links.txt
+nifverifier.egg-info/top_level.txt
