@@ -1,0 +1,9 @@
+setup.py
+gradcafecli/__init__.py
+gradcafecli/gradcafeconfig.py
+gradcafecli/gradcafescraper.py
+gradcafecli.egg-info/PKG-INFO
+gradcafecli.egg-info/SOURCES.txt
+gradcafecli.egg-info/dependency_links.txt
+gradcafecli.egg-info/not-zip-safe
+gradcafecli.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gradcafecli
+Version: 0.1
+Summary: A little tool to track acceptance / rejections from grad schools,right from the command line.
+Home-page: https://github.com/karunk/GradCafeCLI
+Author: Karun
+Author-email: mail@vkarun.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
