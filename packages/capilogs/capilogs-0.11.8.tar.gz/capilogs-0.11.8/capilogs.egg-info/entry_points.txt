@@ -1,0 +1,3 @@
+[console_scripts]
+capilogs = capilogs.bin:main
+
