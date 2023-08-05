@@ -1,0 +1,17 @@
+README.md
+setup.py
+cytoolz-stubs/__init__.pyi
+cytoolz-stubs/_pipe.pyi
+cytoolz-stubs/dicttoolz.pyi
+cytoolz-stubs/functoolz.pyi
+cytoolz-stubs/itertoolz.pyi
+cytoolz-stubs/recipes.pyi
+cytoolz-stubs/utils.pyi
+cytoolz-stubs/curried/__init__.pyi
+cytoolz-stubs/curried/exceptions.pyi
+cytoolz_stubs.egg-info/PKG-INFO
+cytoolz_stubs.egg-info/SOURCES.txt
+cytoolz_stubs.egg-info/dependency_links.txt
+cytoolz_stubs.egg-info/not-zip-safe
+cytoolz_stubs.egg-info/requires.txt
+cytoolz_stubs.egg-info/top_level.txt
