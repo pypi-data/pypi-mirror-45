@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyrestful
+Version: 0.5.1
+Summary: A simple and useful Restful API for Tornado Web Server
+Home-page: UNKNOWN
+Author: Innovaser
+Author-email: rancavil@innovaser.cl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tornado (>=6.0.1)
+Requires-Dist: pyconvert
+
+UNKNOWN
+
+
