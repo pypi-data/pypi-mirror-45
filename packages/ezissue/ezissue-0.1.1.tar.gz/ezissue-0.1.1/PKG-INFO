@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ezissue
+Version: 0.1.1
+Summary: The ultimate aid in the issue creation process.
+Home-page: https://github.com/andre-filho/ezissue
+Author: Andre de Sousa Costa Filho
+Author-email: andre.filho001@outlook.com
+License: GNU
+Description: UNKNOWN
+Keywords: ezissue,issue,markdown,api,github,gitlab,markdown converter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Portuguese
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

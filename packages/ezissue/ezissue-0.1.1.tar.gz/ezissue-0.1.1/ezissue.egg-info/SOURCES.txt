@@ -1,0 +1,15 @@
+README.md
+setup.py
+converter/__init__.py
+converter/manipulation.py
+ezissue.egg-info/PKG-INFO
+ezissue.egg-info/SOURCES.txt
+ezissue.egg-info/dependency_links.txt
+ezissue.egg-info/entry_points.txt
+ezissue.egg-info/requires.txt
+ezissue.egg-info/top_level.txt
+secops/__init__.py
+secops/secops_basic.py
+tests/__init__.py
+tests/test_issue_conv.py
+tests/test_secops.py
