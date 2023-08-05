@@ -1,0 +1,6 @@
+termcolor
+
+[tests]
+coverage
+pytest==3.6.2
+tox==2.7.0
