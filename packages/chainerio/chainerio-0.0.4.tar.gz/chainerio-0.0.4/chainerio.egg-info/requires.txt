@@ -1,0 +1,7 @@
+krbticket
+pyarrow
+numpy<1.16.3,>1.16.0
+
+[test]
+pytest
+flake8

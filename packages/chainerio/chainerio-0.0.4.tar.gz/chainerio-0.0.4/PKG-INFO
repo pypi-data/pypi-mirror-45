@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chainerio
+Version: 0.0.4
+Summary: Chainer IO library
+Home-page: http://github.com/pfnet/chainerio
+Author: Tianqi Xu
+Author-email: tianqi@preferred.jp
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: test
