@@ -1,0 +1,9 @@
+ptrait/__init__.py,sha256=YXOcqu4Df50i81lV_trqJKeGGaWt4o1fgQbqNwNOA5E,83
+ptrait/trait.py,sha256=HTRXpPMAFDg8EqwK5ssZkoTNx-oAeu2swoYzisbpUPg,587
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_trait.py,sha256=1WaRm8sNBSVnhmEsdYq1zpH6OPfAbQMlmU2RXCHvHx4,531
+ptrait-0.0.1.dist-info/LICENSE,sha256=2MAbPVPDzNvSygbuuRyq0u_wkMqx0p-k-cAu2uekh8A,1063
+ptrait-0.0.1.dist-info/METADATA,sha256=KDCyLI5j491VKvAtoTD0h9CcTE3l6VE9GYKEVEk_7hc,343
+ptrait-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ptrait-0.0.1.dist-info/top_level.txt,sha256=E7INFTE3nFddA0GPS7zq3qBzLPNUBY6JUBbCtOgcCUY,13
+ptrait-0.0.1.dist-info/RECORD,,
