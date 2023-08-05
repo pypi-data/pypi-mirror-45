@@ -1,0 +1,12 @@
+d6dice/__init__.py,sha256=lS72FWG2Vy0q7og_pTkIb4l83xjTyhm2W7NhdMSGW0g,23
+d6dice/__main__.py,sha256=yWPImtIiOVY2HsxkJJQAqs2PJuH5_Tp3Fp1blBSWS0M,32
+d6dice/console.py,sha256=GJ0NlIjDEpt1b7NzjPIaFXWtoTYC-OPc7ASnbVrO5ng,1008
+d6dice/dice.py,sha256=3qSQ6uiqP9ZBU6pcFyJ5Q9wtDBQNORJYBzrEuBwzBI0,1452
+d6dice/main.py,sha256=TARR37i9YPUYCU7ybZhQImtO4xgyMUkZbAiYXJ2Wm9U,1426
+d6dice/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+d6dice/test/test_d6Dice.py,sha256=fxB5ifTNi4iWb4MVIIkXz8ayPv8dX89vvc_HSQdXPME,604
+d6dice-0.2.1.dist-info/entry_points.txt,sha256=NfpbG9ybHT63s5XW6MiwfA23TF0gaAJ0-vU4OHMf3WM,43
+d6dice-0.2.1.dist-info/LICENSE,sha256=jGi_r3Nn8haTy2GJ_tN1DcHB4bftDgURTsp9ePDPRCQ,35053
+d6dice-0.2.1.dist-info/WHEEL,sha256=qtAdCj-IU6QldWlMjaadKoVfLWgvJaW3ljh8ILtCNHs,85
+d6dice-0.2.1.dist-info/METADATA,sha256=QNwCkZj2tKtM419pR_IiwWidWQpLZ5rlnhCiSO9g-Yo,806
+d6dice-0.2.1.dist-info/RECORD,,
