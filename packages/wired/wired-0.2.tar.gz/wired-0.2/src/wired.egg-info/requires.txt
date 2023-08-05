@@ -1,0 +1,9 @@
+zope.interface
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+
+[testing]
+pytest
+pytest-cov
