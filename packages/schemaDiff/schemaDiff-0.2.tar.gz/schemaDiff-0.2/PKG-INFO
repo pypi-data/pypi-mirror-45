@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: schemaDiff
+Version: 0.2
+Summary: diff your mysql schema in different db
+Home-page: https://github.com/chenminhua/schemaDiff
+Author: chenminhua
+Author-email: chenmhgo@gmail.com
+License: GPL3
+Description: UNKNOWN
+Platform: UNKNOWN
