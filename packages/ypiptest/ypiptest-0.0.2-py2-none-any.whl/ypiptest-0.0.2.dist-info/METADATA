@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: ypiptest
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/pypa/example-project
+Author: gowthambalusamy
+Author-email: xxxxxxxxxxxxx@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
