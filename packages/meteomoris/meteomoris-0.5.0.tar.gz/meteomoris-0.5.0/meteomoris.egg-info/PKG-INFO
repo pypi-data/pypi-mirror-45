@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: meteomoris
+Version: 0.5.0
+Summary: Package to get weather information about Mauritius from the official meteo website.
+Home-page: https://github.com/Abdur-RahmaanJ/meteomoris
+Author: Abdur-Rahmaan Janhangeer
+Author-email: arj.python@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Abdur-RahmaanJ/meteomoris/issues
+Project-URL: Source, https://github.com/Abdur-RahmaanJ/meteomoris/
+Description: # meteomoris
+        
+        get info about the weather in mauritius!
+        
+        # examples
+        
+        ```python
+        >>> from meteomoris import meteo
+        
+        >>> print(meteo.get_weekforecast())
+        {0: {'condition': 'Few showers highgrounds',
+             'date': 'Apr 22',
+             'day': 'Mon',
+             'max': '32�',
+             'min': '21�',
+             'probability': 'High',
+             'sea condition': 'rough',
+             'wind': 'E25G50'},
+         1: {...
+        }
+        
+        >>> print(meteo.get_weekforecast(day=3))
+        {'condition': 'Few passing showers',
+         'date': 'Apr 25',
+         'day': 'Thu',
+         'max': '31�',
+         'min': '20�',
+         'probability': 'Medium',
+         'sea condition': 'moderate',
+         'wind': 'SE20'}
+        
+        >>> print(meteo.get_weekforecast(day=3)['condition'])
+        'Few passing showers'
+        
+        >>> print(get_cityforecast())
+        {0: {'condition': 'Partly cloudy',
+             'date': 'Apr 22',
+             'day': 'Mon',
+             'max': '31�',
+             'min': '26�',
+             'wind': 'E25G50'},
+         1: {'condition': ...
+        }
+        ```
+        
+Keywords: weather mauritius meteo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
