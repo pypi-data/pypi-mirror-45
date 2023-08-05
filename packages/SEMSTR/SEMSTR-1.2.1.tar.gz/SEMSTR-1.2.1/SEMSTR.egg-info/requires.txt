@@ -1,0 +1,16 @@
+numpy>=1.15.0
+tqdm>=4.31.1
+requests>=2.21.0
+configargparse>=0.14.0
+ucca>=1.2.2
+
+[amr]
+penman==0.6.2
+smatch==1.0.1
+nltk==3.4
+parsimonious==0.8.1
+word2number==1.1
+pyspotlight==0.7.2
+
+[ud]
+ufal.udpipe>=1.2.0.1
