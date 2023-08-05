@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+binheat.py
+setup.cfg
+setup.py
+binheat.egg-info/PKG-INFO
+binheat.egg-info/SOURCES.txt
+binheat.egg-info/dependency_links.txt
+binheat.egg-info/entry_points.txt
+binheat.egg-info/requires.txt
+binheat.egg-info/top_level.txt
