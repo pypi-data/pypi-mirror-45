@@ -1,0 +1,9 @@
+shopify_converter/__init__.py,sha256=eWbrWZXMO1c36ZS_YjKcKPqkwdMjWXCmTIZWtz-dVik,821
+shopify_converter/converter.py,sha256=hDrgEcp7VzzAuokmBSuWoRUcQ2qOx9J_v8NganD2N80,407
+shopify_converter/order_converter.py,sha256=2jqz37X6VtA7AM21sDgoVfaWcNWly_jYekWZ9lyciBQ,3536
+shopify_converter/product_converter.py,sha256=WerYOgQ0SL7Fchltnl-992-7BsB4gyNbNxwVr-G_Ijk,4403
+shopify_converter-1.2.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+shopify_converter-1.2.0.dist-info/METADATA,sha256=_jBVoYqr9lQuyE9xYRKPDTypI7EBryZK2FNU0Urr8j8,567
+shopify_converter-1.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+shopify_converter-1.2.0.dist-info/top_level.txt,sha256=wPb0FjGJvrErj_sWsZUIMcM6UrqzKxjeoYiZNUuj1Qo,18
+shopify_converter-1.2.0.dist-info/RECORD,,

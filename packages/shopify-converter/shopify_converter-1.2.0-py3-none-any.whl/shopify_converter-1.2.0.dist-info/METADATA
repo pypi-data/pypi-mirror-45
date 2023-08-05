@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shopify-converter
+Version: 1.2.0
+Summary: A tool which converts Shopify data to Upinus data.
+Home-page: https://git.upinus.com/upinus/shopify-api-converter.git
+Author: UPINUS
+Author-email: dev@upinus.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Upinus Shopify API Converter
+
+This REPO is used for converting orders, products from Shopify to Upinus data.
+
+
