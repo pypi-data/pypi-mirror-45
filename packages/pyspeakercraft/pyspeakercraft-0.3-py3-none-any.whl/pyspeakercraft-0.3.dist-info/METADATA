@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyspeakercraft
+Version: 0.3
+Summary: Speakercraft MZC controller
+Home-page: UNKNOWN
+Author: BLeBlanc
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: construct
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
