@@ -1,0 +1,3 @@
+[console_scripts]
+pickhost = pickhost.__main__:main
+
