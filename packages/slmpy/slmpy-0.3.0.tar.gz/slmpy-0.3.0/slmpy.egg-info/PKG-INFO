@@ -1,0 +1,49 @@
+Metadata-Version: 1.2
+Name: slmpy
+Version: 0.3.0
+Summary: Smart local moving (SLM) community detection in Python/C++
+Home-page: https://github.com/iosonofabio/slmpy
+Author: Fabio Zanini
+Author-email: fabio.zanini@stanford.edu
+Maintainer: Fabio Zanini
+Maintainer-email: fabio.zanini@fastmail.fm
+License: MIT
+Description: 
+        Smart local moving (SLM) community detection in Python/C++, modeled on the Java
+        version on https://github.com/mneedham/slm.
+        
+        - **Development**: https://github.com/iosonofabio/slmpy
+        - **Author**: Fabio Zanini
+        - **License**: MIT
+        - **Requirements**: ``pybind11>=2.2``, ``numpy``, ``pkgconfig`` (see ``requirements.txt``)
+        
+        
+        
+        .. code-block:: python
+        
+            import numpy as np
+            import slmpy
+        
+            # Load example data
+            edges = np.loadtxt(
+                    'data/karate_club.tsv',
+                    dtype=np.uint64)
+        
+            # Instantiate class
+            c = slmpy.SmartLocalMoving(
+                    data=data,
+        
+            # Call subroutine
+            clusters = c()
+        
+            # Check result
+            assert (clusters == [[2], [3], [0], [1]]).all()
+        
+              
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
