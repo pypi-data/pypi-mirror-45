@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Made it possible to use other variables from context in filters
+* Added Command.call
+* Test unused arguments
+* Modified commands
+
+0.1.0
+-----
+
+* Sort of working
+* Fixed spelling of Werkzeug
+* Added docs
+* Initial commit
