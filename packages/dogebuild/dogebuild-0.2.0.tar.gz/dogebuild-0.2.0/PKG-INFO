@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dogebuild
+Version: 0.2.0
+Summary: Builder with plugin system
+Home-page: https://github.com/dogebuild/dogebuild
+Author: Kirill Sulim
+Author-email: kirillsulim@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: dogebuild builder
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
