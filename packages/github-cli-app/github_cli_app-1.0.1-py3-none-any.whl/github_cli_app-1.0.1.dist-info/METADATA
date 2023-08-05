@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: github-cli-app
+Version: 1.0.1
+Summary: Command line interface for GitHub
+Home-page: https://github.com/miskopo/github_cli_app
+Author: Michal Polovka
+Author-email: michal.polovka@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/miskopo/github_cli_app
+Platform: linux
+Requires-Python: >=3.6
+Requires-Dist: pytest (==4.0.1)
+Requires-Dist: pytest-cov
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: codecov
+Requires-Dist: coverage
+Requires-Dist: codacy-coverage
+
+CLI client for GitHub using APIv4 and APIv3. For details see Wiki on https://github.com/miskopo/github_cli_app/wiki
+
+
