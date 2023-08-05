@@ -1,0 +1,27 @@
+language: python
+dist: xenial
+python:
+  - 2.7
+  - 3.5
+  - 3.6
+  - 3.7
+install:
+  - pip install coverage coveralls -e .[test]
+script:
+  - coverage run -m pytest
+after_success:
+  - coveralls
+notifications:
+  email:
+    recipients:
+      - marius@gedmin.as
+    on_success: change
+    on_failure: always
+  irc:
+    channels:
+      - "chat.freenode.net##mgedmin"
+    on_success: change
+    on_failure: always
+    template:
+      # ping my nick so I get a pushbullet notification on my phone
+      - "mgedmin: %{repository_name} (%{branch}) build %{result}: %{build_url}"
