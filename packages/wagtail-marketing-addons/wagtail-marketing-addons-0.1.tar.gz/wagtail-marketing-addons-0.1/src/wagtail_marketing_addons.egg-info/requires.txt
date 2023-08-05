@@ -1,0 +1,17 @@
+wagtail>=2.0
+
+[doc]
+mkdocs
+pymdown-extensions
+
+[test]
+pytest
+pytest-cov
+pytest-django
+pytest-pythonpath
+coverage
+factory-boy
+psycopg2>=2.5.4
+tox
+flake8
+isort
