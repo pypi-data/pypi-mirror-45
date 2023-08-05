@@ -1,0 +1,17 @@
+#############################################################
+Antiarrhythmic drug profiles (==AMIODARONE(CHRONIC)==)
+################### Ion channels & IC50 #####################
+ICaL	1.5
+IK1	1000000
+IKr	0.8
+IKs	20
+IKur	1000000	
+INa	5.0
+INaL	9.0
+INaK	1000000
+INCX	3.4
+Ito	3.8
+######################## AAD INFO ###########################
+Antiarrhythmic drug class	III
+Effective range	0 - 10
+#############################################################

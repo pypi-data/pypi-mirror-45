@@ -1,0 +1,3 @@
+[console_scripts]
+manta_maastricht-run = manta_maastricht.command_line:main
+
