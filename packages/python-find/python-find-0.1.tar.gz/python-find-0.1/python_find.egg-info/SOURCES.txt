@@ -1,0 +1,10 @@
+README.md
+setup.py
+python_find/__init__.py
+python_find/__main__.py
+python_find/find.py
+python_find/tree_search.py
+python_find.egg-info/PKG-INFO
+python_find.egg-info/SOURCES.txt
+python_find.egg-info/dependency_links.txt
+python_find.egg-info/top_level.txt
