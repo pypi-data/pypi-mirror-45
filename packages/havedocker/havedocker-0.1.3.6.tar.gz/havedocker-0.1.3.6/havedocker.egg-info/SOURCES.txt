@@ -1,0 +1,9 @@
+README.md
+setup.py
+havedocker/Docker.py
+havedocker/DockerError.py
+havedocker/__init__.py
+havedocker.egg-info/PKG-INFO
+havedocker.egg-info/SOURCES.txt
+havedocker.egg-info/dependency_links.txt
+havedocker.egg-info/top_level.txt
