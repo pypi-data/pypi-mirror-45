@@ -1,0 +1,9 @@
+{% extends "bee_django_course_simple/user_base.html" %}
+{% load bee_django_course_simple_filter %}
+{% load bootstrap3 %}
+{% block content %}
+
+    <h4>{{ user_section.section.title }}</h4>
+    <a href="{% url 'bee_django_course_simple:custom_user_section_list' user_id=user_section.user_course.user.id user_course_id=user_section.user_course.id %}">全部</a>
+
+{% endblock content %}
