@@ -1,0 +1,15 @@
+doxphinx/__init__.py,sha256=aVftnKZ1GTYS6XK3TcEY2kTsofkhfA2ZgVFc9Y0i5PQ,563
+doxphinx/layout.html,sha256=74b5YIc1K2SSicZO1YqdFKJQlDfM2-1t0msGsGvabFk,2134
+doxphinx/localtoc.html,sha256=F_oG90cXTBIdKBd4OpfBW_HCrNEPhrf_Ow3a6Ns7wyg,589
+doxphinx/searchbox.html,sha256=e813xt0FjuCTs62Z3muhDe_XI_7rawHt9d-KiPCKEIc,925
+doxphinx/theme.conf,sha256=_1A1hiSl170ib-QnWDTh7yNkoiGjqENCv-m-gdQkda0,864
+doxphinx/ext/localtoc/__init__.py,sha256=2UlOLlKh7GZArgS910n-GUUxnECpqZxMRtCQW2-dp8c,566
+doxphinx/ext/localtoc/localtoc.py,sha256=Sh6FJyDc1bbH2OdYEorz0GW9iTUwt2gq6C4Ge9IauO8,3331
+doxphinx/static/doxphinx.css_t,sha256=tqJsevbViNZWAer2HuLeD_3488LFGcS96ccMhiVuo7Q,11874
+doxphinx/static/doxphinx.js_t,sha256=6vbWyAmBysiZ4z4nwoMmFcxewVJOMAyNsS_AfX-bpuM,1856
+doxphinx-1.3.0.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+doxphinx-1.3.0.dist-info/METADATA,sha256=-OVw1YPt9VsSjSBxRu4fxpS8Fagrcqn4BQe2pbgUYyo,3154
+doxphinx-1.3.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+doxphinx-1.3.0.dist-info/entry_points.txt,sha256=h0tZ91NNELDadVwdQ1Yf3L10yKVm7n3tkSqnfUSwFkI,42
+doxphinx-1.3.0.dist-info/top_level.txt,sha256=wwLSsSfsSOF-_mCe3Rdzp2X2khbQ769dN67dpGFlJh8,9
+doxphinx-1.3.0.dist-info/RECORD,,
