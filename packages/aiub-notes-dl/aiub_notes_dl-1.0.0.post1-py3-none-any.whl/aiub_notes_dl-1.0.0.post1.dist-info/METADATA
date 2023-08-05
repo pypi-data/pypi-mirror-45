@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aiub-notes-dl
+Version: 1.0.0.post1
+Summary: Download notes from AIUB portal
+Author: Fahad Hossain
+Author-email: evilinfinite7@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: BeautifulSoup4 (>=4.7,<5.0)
+Requires-Dist: requests (>=2.21,<3.0)
