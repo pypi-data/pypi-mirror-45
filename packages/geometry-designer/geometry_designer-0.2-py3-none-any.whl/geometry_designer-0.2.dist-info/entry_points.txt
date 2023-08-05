@@ -1,0 +1,3 @@
+[console_scripts]
+geometry-designer = geometry_designer.__main__
+
