@@ -1,0 +1,13 @@
+fsfe_reuse-0.3.4.data/data/share/locale/eo/LC_MESSAGES/reuse.mo,sha256=SICXlRWAqdlrNem6vmhGeYFJgKCxwNfFdRrAeG70rOg,9112
+fsfe_reuse-0.3.4.data/data/share/locale/es/LC_MESSAGES/reuse.mo,sha256=-REfVvyG5KYG0NTptU15zUOHB1NpuqizetBmLfAmzkI,9398
+fsfe_reuse-0.3.4.data/data/share/locale/nl/LC_MESSAGES/reuse.mo,sha256=l_fL7e3SXUuzen7irjZPn_OnwMT0FSGHlkJEqOZuxX8,9386
+fsfe_reuse-0.3.4.dist-info/METADATA,sha256=p_tGCf9cnjfY-NXKQ7lFrOqWT4PATsVW3w87D3TNU0A,7799
+fsfe_reuse-0.3.4.dist-info/RECORD,,
+fsfe_reuse-0.3.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fsfe_reuse-0.3.4.dist-info/entry_points.txt,sha256=EKm9nx0SVmMC3wscDVLz6uh1obZqjPo8j0tr8VyVnSs,44
+fsfe_reuse-0.3.4.dist-info/top_level.txt,sha256=rni1sDVj5YL6dsvG1tlFvHXer_A_-Gk-I6bvIjZbpUw,6
+reuse/__init__.py,sha256=ZfsKr99MAo0gmuhnSC1HXvI66ANzxQLVbD4-BfrcZaU,24840
+reuse/_format.py,sha256=XNLMvg30f20Ma5pZpPM1C05rXxLbU2XZBla_qy8sWAc,1971
+reuse/_main.py,sha256=652-DIGujh_0GGfmpIbm0tBFX-N2Vklr_ropJHRVERA,9021
+reuse/_util.py,sha256=adCgS7dOuBzHEZM8hZRDZUoa3j9_s3-nxxKgF7ni9dc,4755
+reuse/licenses.py,sha256=nv3xMkqQqDSt5fOejLM1C7P_ADnW_il06d26jnlWHCc,8191
