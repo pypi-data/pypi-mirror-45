@@ -1,0 +1,16 @@
+rest_framework_auth0/__init__.py,sha256=zSfuEtaoqKY9ad1ZMJPPZ886tcT-mI0Sb0PXmUCc-Yo,229
+rest_framework_auth0/apps.py,sha256=YUEn3MEnUL2L4RPPmrAo_0_eo-Re5-YSV80Bq8J0EU8,119
+rest_framework_auth0/authentication.py,sha256=yn2FFLLXHsH5-Ny3wX5hFT1mu9HqNPUuQXpcP5THv50,5009
+rest_framework_auth0/decorators.py,sha256=6AsUdw0Ig39eA78J1jh8jIhxzkAypOOwfYzP2d-ssrY,3462
+rest_framework_auth0/models.py,sha256=VcAlmcuqskWWTb8MYslsBRgt3HLfmX5JrwCxzlerqp0,1689
+rest_framework_auth0/permissions.py,sha256=BZvGys0i6hxoIT-CTKXmp1Hxnk07030Bk05ym02Y4sg,1263
+rest_framework_auth0/serializers.py,sha256=kILl2U4qcwCHdbfZNjIdrOxQBgSNYBvYL_4OP0LDl78,290
+rest_framework_auth0/settings.py,sha256=kGTJSyTlA_CRcLZUUbYVL-CItYvFrlRcx4U3qVUeams,805
+rest_framework_auth0/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+rest_framework_auth0/utils.py,sha256=uRlXFFDhbjU1wbYS759XRcEckUMi5XlabB0vtIOUNBU,2370
+rest_framework_auth0/views.py,sha256=bFtYjBOA7YsT33LEsaN6sXJsRKM32rubkmyk34eYE5s,1055
+rest_framework_auth0-0.5.0.dist-info/LICENSE,sha256=MfpEGswksVlYK3nPR7Z2aGmv7eohHvI50D_GN9X6je4,1073
+rest_framework_auth0-0.5.0.dist-info/METADATA,sha256=ChteysYvxBzIM_4-f3aB5JRshIPheVzlmkBtLf4aOXU,6207
+rest_framework_auth0-0.5.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rest_framework_auth0-0.5.0.dist-info/top_level.txt,sha256=6VcwM5Gw_oPHzk1VDYcYxLsDBZc9b4SXIhrzVnRNsvQ,21
+rest_framework_auth0-0.5.0.dist-info/RECORD,,
