@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: drizzle
+Version: 1.13
+Summary: A package for combining dithered images into a single image
+Home-page: http://spacetelescope.github.io/drizzle/
+Author: STScI
+Author-email: help@stsci.edu
+License: BSD
+Description: 
+        A package for combining dithered images into a single image
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: docs
+Provides-Extra: test
