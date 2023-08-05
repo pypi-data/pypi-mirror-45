@@ -1,0 +1,11 @@
+azmlclient/__init__.py,sha256=1jnG4jmVjsHPm2NpaGzsRHx52wuacg7KTh2hlBh39y4,606
+azmlclient/data_binding.py,sha256=5eYU4hBPKt7TUL-uGyEqm2-XOZvqYFr-m6wxglz6Nag,37938
+azmlclient/service_calls.py,sha256=sEJRbq2UhykeiclyAqQ0R_u85MplklQYrjwLHD3DqOM,32878
+azmlclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azmlclient/tests/test_databinding.py,sha256=C7s_aovamHz1bJML4UnT-bRwFifPp6IX624wyUnP0bE,1846
+azmlclient/tests/test_databinding_cases.py,sha256=6mBAI_5VEhTlcX6VwommCII1Ytqir9T7Y8NoicKUX6A,2050
+azmlclient-1.2.0.dist-info/LICENSE,sha256=djZjUZ1r_v2Il9K4MwutKKxzyKKdENXfjbcbM92bkFE,1091
+azmlclient-1.2.0.dist-info/METADATA,sha256=_ZXOI-lTFiohAstylkhiTl3BlD-buqWKXoTESSQWst0,2773
+azmlclient-1.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+azmlclient-1.2.0.dist-info/top_level.txt,sha256=aObdGVmzbP9AOFVcQXna05TE1TVBhN1cGpwyJhPE8Kw,11
+azmlclient-1.2.0.dist-info/RECORD,,
