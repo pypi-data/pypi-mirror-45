@@ -1,0 +1,2 @@
+requests
+httpcore==0.1.*
