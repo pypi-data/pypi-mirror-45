@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: plotxel
+Version: 0.0.3
+Summary: A wordy but intuitive plotting library.
+Home-page: https://github.com/danhitchcock/plotxel
+Author: Daniel Hitchcock
+Author-email: daniel.s.hitchcock@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: svgwrite
+Requires-Dist: cairosvg
+Requires-Dist: Pillow
+
+First release! Mostly a test.
+
+
