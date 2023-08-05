@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tokenizesentences
+Version: 0.1
+Summary: Python3 module to tokenize english sentences.
+Home-page: https://github.com/carlosplanchon/tokenizesentences
+Author: Carlos A. Planchón
+Author-email: bubbledoloresuruguay2@gmail.com
+License: GPL3
+Download-URL: https://github.com/carlosplanchon/tokenizesentences/archive/v0.1.tar.gz
+Description: # tokenizesentences
+        *Python3 module to tokenize english sentences.*
+        Based on the answer of D Greenberg in StackOverflow:
+        https://stackoverflow.com/questions/4576077/python-split-text-on-sentences
+        
+        ## Installation
+        ### Install with pip
+        ```
+        pip3 install -U tokenizesentences
+        ```
+        
+        ## Usage
+        ```
+        In [1]: import tokenizesentences
+        
+        In [2]: m = tokenizesentences.SplitIntoSentences()
+        
+        In [3]: m.split_into_sentences(
+            "Mr. John Johnson Jr. was born in the U.S.A but earned his Ph.D. in Israel before joining Nike Inc. as an engineer. He also worked at craigslist.org as a business analyst."
+            )
+        
+        Out[3]: 
+        [
+            'Mr. John Johnson Jr. was born in the U.S.A but earned his Ph.D. in Israel before joining Nike Inc. as an engineer.',
+            'He also worked at craigslist.org as a business analyst.'
+        ]
+        ```
+        
+Keywords: tokenize,english,sentences
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
