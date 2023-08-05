@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dag-manager
+Version: 0.1.1a0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: requests
+
+UNKNOWN
+
+
