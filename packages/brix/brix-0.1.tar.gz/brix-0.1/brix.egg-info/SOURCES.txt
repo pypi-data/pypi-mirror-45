@@ -1,0 +1,7 @@
+README.md
+setup.py
+brix/__init__.py
+brix.egg-info/PKG-INFO
+brix.egg-info/SOURCES.txt
+brix.egg-info/dependency_links.txt
+brix.egg-info/top_level.txt
