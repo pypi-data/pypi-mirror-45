@@ -1,0 +1,7 @@
+aiowsgi
+prometheus_client
+pyyaml
+slixmpp
+
+[omemo]
+slixmpp-omemo
