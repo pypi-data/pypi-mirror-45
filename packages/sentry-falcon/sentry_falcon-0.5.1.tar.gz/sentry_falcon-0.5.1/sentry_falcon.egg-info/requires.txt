@@ -1,0 +1,8 @@
+falcon
+sentry_sdk
+
+[test]
+coverage
+pytest
+flake8
+isort
