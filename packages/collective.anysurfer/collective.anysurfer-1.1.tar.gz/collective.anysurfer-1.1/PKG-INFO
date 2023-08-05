@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: collective.anysurfer
+Version: 1.1
+Summary: Anysurfer (Belgian accessibility standard) support for Plone
+Home-page: http://svn.plone.org/svn/collective/
+Author: 
+Author-email: 
+License: gpl
+Description: .. contents::
+        
+        Introduction
+        ============
+        
+        
+        Contributors
+        ============
+        
+        Note:  place names and roles of the people who contribute to this package
+               in this file, one to a line, like so:
+        
+        - Joe Schmoe, Original Author
+        - Bob Slob, contributed monkey patches
+        - Jane Main, wrote flibberty module
+        
+        Changelog
+        =========
+        
+        1.1 (2012-11-12)
+        ----------------
+        
+        - Nothing changed yet.
+        
+        
+        1.0 (2012-11-09)
+        ----------------
+        
+        - Package created using zopeskel
+          []
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Provides-Extra: test
