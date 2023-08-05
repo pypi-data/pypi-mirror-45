@@ -1,0 +1,3 @@
+[console_scripts]
+gitbump = gitbump.cli:main
+
