@@ -1,0 +1,11 @@
+Django>=2.0.11
+voluptuous
+psycopg2-binary
+sorl-thumbnail
+django-private-storage
+phonenumberslite
+django-phonenumber-field
+django-crispy-forms
+djangorestframework
+sorl-thumbnail
+Pillow
