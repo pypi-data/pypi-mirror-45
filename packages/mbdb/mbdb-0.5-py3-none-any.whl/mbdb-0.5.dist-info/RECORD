@@ -1,0 +1,9 @@
+mbdb/__init__.py,sha256=V44GrF9Ziw6HYvg4XnwBwOJYiwbN9ycLAO-I--Eb-nI,41
+mbdb/mbdb.py,sha256=l5eiykMvkGFh2wj3KmlvQ-OAFA8KvSrnGG1990Lycyw,6631
+mbdb/parsetab.py,sha256=9Z8CehUdRAiPbtONm5QcZy_-QNgaPl8RPk_11ugqRTc,5213
+mbdb/sqlparser.py,sha256=iN5h-xDSLC3k7Fz9AfCkq7GbxHmFesYR6ebl3gn_eI4,3860
+mbdb-0.5.dist-info/LICENSE.md,sha256=K3ujKLh0Thqtcmps-lJ0xDcKKXLVikRXzhN5-aatTj4,1090
+mbdb-0.5.dist-info/METADATA,sha256=7uocZbEJdnchv7_9hJ_Do60HBBgWUnwES7ApJqoc7UQ,763
+mbdb-0.5.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+mbdb-0.5.dist-info/top_level.txt,sha256=MIIWgopmuXfQ7PHenX8TdM3eZTYfqjIeRq0lqLWYU_c,5
+mbdb-0.5.dist-info/RECORD,,
