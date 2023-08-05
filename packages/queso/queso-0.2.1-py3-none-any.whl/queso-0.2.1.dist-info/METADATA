@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: queso
+Version: 0.2.1
+Summary: Tasty development tooling for Bocadillo.
+Home-page: https://bocadilloproject.github.io/queso
+Author: Florimond Manca
+Author-email: florimond.manca@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/bocadilloproject/queso
+Project-URL: Documentation, https://bocadilloproject.github.io/queso
+Project-URL: Changelog, https://github.com/bocadilloproject/queso/blob/master/CHANGELOG.md
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Code Generators
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+![unmaintained](https://img.shields.io/badge/status-unmaintained-dd0000.svg)
+
+[pypi]: https://pypi.org/project/queso
+
+# DEPRECATED
+
+Queso is no longer maintained. Please use [Bocadillo CLI](https://github.com/bocadilloproject/bocadillo-cli) instead.
+
+
