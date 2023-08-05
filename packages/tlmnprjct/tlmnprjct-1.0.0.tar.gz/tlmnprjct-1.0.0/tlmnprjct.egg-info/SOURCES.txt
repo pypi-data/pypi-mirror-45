@@ -1,0 +1,10 @@
+README.md
+setup.py
+mymath/__init__.py
+mymath/sanamsargui.py
+mymath/hhh/__init__.py
+mymath/hhh/kheregluur.py
+tlmnprjct.egg-info/PKG-INFO
+tlmnprjct.egg-info/SOURCES.txt
+tlmnprjct.egg-info/dependency_links.txt
+tlmnprjct.egg-info/top_level.txt
