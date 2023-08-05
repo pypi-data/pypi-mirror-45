@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: Popet
+Version: 0.0.1
+Summary: The Useless Easy Tool to Handle Pope's Data
+Home-page: https://github.com/delta114514/Popet
+Author: Yamato Nagata
+Author-email: chickenwingswillfly@gmail.com
+License: MIT
+Description: 
+        The Useless Easy Tool to Handle Pope's Data
+        ===========================================
+        Powered by [Yamato Nagata](https://twitter.com/514YJ)
+        
+        Data by [Tako](https://twitter.com/TLE_Maker)
+        
+        [GitHub](https://github.com/delta114514/Popet)
+        
+        [ReadTheDocs](https://popet.readthedocs.io/en/latest/)
+        
+        
+        ```python
+        from datetime import date
+        
+        from popet import Popet
+        
+        pope = Popet.who(date(1970, 5, 1))
+        
+        print(pope)
+            # <Pope: Servant of God Paul VI, 21/06/1963-06/08/1978>
+        print(vars(pope))
+            # {'start': datetime.date(1963, 6, 21), 'end': datetime.date(1978, 8, 6), 'english_name': 'Servant of God Paul VI', 'regnal_name': 'PAULUS Sextus', 'personal_name': 'Giovanni Battista Enrico Antonio Maria Montini'}
+        
+        ```
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

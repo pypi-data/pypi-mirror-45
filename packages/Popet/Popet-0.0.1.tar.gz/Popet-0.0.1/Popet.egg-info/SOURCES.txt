@@ -1,0 +1,10 @@
+README.md
+setup.py
+Popet.egg-info/PKG-INFO
+Popet.egg-info/SOURCES.txt
+Popet.egg-info/dependency_links.txt
+Popet.egg-info/not-zip-safe
+Popet.egg-info/top_level.txt
+popet/__about__.py
+popet/__init__.py
+popet/popet.py
