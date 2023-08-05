@@ -1,0 +1,4 @@
+[console_scripts]
+trimragged = unassigner.trim:main
+unassign = unassigner.command:main
+
