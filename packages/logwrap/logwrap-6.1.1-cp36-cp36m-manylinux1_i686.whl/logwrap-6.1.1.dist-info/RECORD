@@ -1,0 +1,14 @@
+logwrap/class_decorator.py,sha256=b4zOn2SybXQwQnEiJUTHlD2HG26Z9PklPL5x0wGbpL4,3985
+logwrap/__init__.cpython-36m-i386-linux-gnu.so,sha256=WicJq0vqdNe86qPqdLhEQtyaVqyjqua1r4rNTUiXBW4,93999
+logwrap/log_on_access.py,sha256=J8SCbXQ_TsvuSPpnXttVmpuWLIf39B_E0GhYC-5VlHM,14922
+logwrap/repr_utils.py,sha256=q-girGMjtXq4Qag_dwTCmhs0kmeFShqJ1f5UqD3daLo,21095
+logwrap/log_wrap.py,sha256=3DfhgVml6l2Rd3s5cY-ndQeWgFG6aZNgd6FTq7iQajM,27779
+logwrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logwrap/__init__.py,sha256=H5HhedbZiH42bJewdzHKoNfsaMQ6vw71EA3gEEOoMXk,2312
+logwrap/log_wrap.cpython-36m-i386-linux-gnu.so,sha256=P-6NdPauaiH7c3e9swaHRqmxmrHrgJoR-5liK824Z9k,847430
+logwrap/class_decorator.cpython-36m-i386-linux-gnu.so,sha256=BpHbkOKoAWpAMO8BP8fjau_eIgyrX3cAnU7Y9qb83ik,231492
+logwrap/repr_utils.cpython-36m-i386-linux-gnu.so,sha256=WlaENuBcy_M2_o1hAoo83kNcrAiHRjkuWhMeoN0WNvo,779369
+logwrap-6.1.1.dist-info/top_level.txt,sha256=7q47MQq8ZedycLFMKaloOJ1NjkeTpxqwcdtYqVXduwM,8
+logwrap-6.1.1.dist-info/RECORD,,
+logwrap-6.1.1.dist-info/METADATA,sha256=gH1akknNUf6QraX40_oXJDGuT8ApufrNBp6DB9d8zSg,12680
+logwrap-6.1.1.dist-info/WHEEL,sha256=4RUeCnPOaAmHKINNrvtBwd3oNgi5_IueObVoFx2ZrXo,107
