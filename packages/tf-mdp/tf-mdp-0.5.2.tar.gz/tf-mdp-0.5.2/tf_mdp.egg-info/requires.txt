@@ -1,0 +1,6 @@
+rddl2tf>=0.5.2
+rddlgym>=0.5.8
+tfrddlsim>=0.7.0
+tensorflow
+tensorflow-tensorboard
+typing
