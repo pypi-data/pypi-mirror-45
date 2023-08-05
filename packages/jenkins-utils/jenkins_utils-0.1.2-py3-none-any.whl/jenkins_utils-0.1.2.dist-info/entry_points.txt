@@ -1,0 +1,3 @@
+[console_scripts]
+jenkins-secret = jenkins.utils.secret.__main__:execute
+
