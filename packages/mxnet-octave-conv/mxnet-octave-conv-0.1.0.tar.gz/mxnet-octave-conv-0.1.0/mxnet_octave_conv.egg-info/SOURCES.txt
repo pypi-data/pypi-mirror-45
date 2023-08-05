@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mxnet_octave_conv/__init__.py
+mxnet_octave_conv/octave.py
+mxnet_octave_conv.egg-info/PKG-INFO
+mxnet_octave_conv.egg-info/SOURCES.txt
+mxnet_octave_conv.egg-info/dependency_links.txt
+mxnet_octave_conv.egg-info/requires.txt
+mxnet_octave_conv.egg-info/top_level.txt
+tests/__init__.py
+tests/test_octave.py
