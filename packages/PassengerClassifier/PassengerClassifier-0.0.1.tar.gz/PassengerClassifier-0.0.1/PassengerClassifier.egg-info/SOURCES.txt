@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+PassengerClassifier/__init__.py
+PassengerClassifier/bentoml.yml
+PassengerClassifier/passenger_classifier.py
+PassengerClassifier.egg-info/PKG-INFO
+PassengerClassifier.egg-info/SOURCES.txt
+PassengerClassifier.egg-info/dependency_links.txt
+PassengerClassifier.egg-info/entry_points.txt
+PassengerClassifier.egg-info/top_level.txt
+PassengerClassifier/artifacts/__init__.py
+PassengerClassifier/artifacts/model.pkl

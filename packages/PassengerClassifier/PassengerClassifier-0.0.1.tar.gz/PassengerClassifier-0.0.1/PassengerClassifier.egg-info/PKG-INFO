@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PassengerClassifier
+Version: 0.0.1
+Summary: BentoML generated model module
+Home-page: https://github.com/atalaya-io/BentoML
+License: UNKNOWN
+Description: # BentoML(bentoml.ai) generated model archive
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

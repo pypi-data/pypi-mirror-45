@@ -1,0 +1,3 @@
+[console_scripts]
+PassengerClassifier = PassengerClassifier:cli
+
