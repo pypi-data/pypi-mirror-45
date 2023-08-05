@@ -1,0 +1,14 @@
+pspringaws/__init__.py,sha256=N_VWRH11BhTuY0DTKvNM4tw9npxU4VTxOfQ4AWD6vp0,26
+pspringaws/defaultvars.py,sha256=sZ_Whk_WNlXJbiJAidqs2MtH-3EmNrZZEeAX7KUFv8Q,218
+pspringaws/dynamodb.py,sha256=attWzl2gSkbsuTUTrkQas7P6up41nX2UctG2DNndmVc,1898
+pspringaws/lambdaexceptions.py,sha256=PqnAor2qkw4570UNq4b3Fm0eRVWgX7rIN9Mr0sw4ZWM,1559
+pspringaws/lambdahandler.py,sha256=YVdF1DrjLDegzanOwUArmcjbTDA5mq507O4f_wrb3dU,3312
+pspringaws/pspringaws.py,sha256=hWGo8ZXm7WU-AY6N2MgO8v3BeqIPlV_5ZTFB2bqOeE4,242
+pspringaws/realtimesecretsmngrconfigprovider.py,sha256=qwKaHEiFQG7McDSO3o7EB389z-ouYfHzwReOnzCa2Ns,1131
+pspringaws/secretsmngr.py,sha256=gZO8xG5P-er2Ux3u_H7IyEi_t4KPc7vVvDraQybrNzY,2427
+pspringaws/secretsmngrconfigprovider.py,sha256=kmtYqCBccQ-gvAU9CAGx9g7YSHBx9s2AWLC1BT_1-Wg,632
+pspring_aws-0.0.18.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pspring_aws-0.0.18.dist-info/METADATA,sha256=PYOcgFnDAtXgu5tTiaIJFwdIizlgYLnDVDZBZsKu5Tw,2768
+pspring_aws-0.0.18.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pspring_aws-0.0.18.dist-info/top_level.txt,sha256=SCMpc0UgG-dN3Bt2xKYsJZ1W_qcRSFC2kXAodDAOT-E,11
+pspring_aws-0.0.18.dist-info/RECORD,,
