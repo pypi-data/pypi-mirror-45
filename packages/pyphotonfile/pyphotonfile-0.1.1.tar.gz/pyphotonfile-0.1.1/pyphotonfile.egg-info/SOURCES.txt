@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyphotonfile/__init__.py
+pyphotonfile/newfile.photon
+pyphotonfile/photonfile.py
+pyphotonfile.egg-info/PKG-INFO
+pyphotonfile.egg-info/SOURCES.txt
+pyphotonfile.egg-info/dependency_links.txt
+pyphotonfile.egg-info/requires.txt
+pyphotonfile.egg-info/top_level.txt
