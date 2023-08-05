@@ -1,0 +1,3 @@
+[console_scripts]
+s3multipart=s3multipart.cli:main
+
