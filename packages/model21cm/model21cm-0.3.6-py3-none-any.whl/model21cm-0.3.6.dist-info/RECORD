@@ -1,0 +1,10 @@
+model21cm/__init__.py,sha256=jmQPpm3P4vLggL0r7jat25IMHzmWBRlBD7ZvOxL7fbY,180
+model21cm/hello.py,sha256=PWs2H24EydeJsZ_MMgLrPuhE8KEYcG56ZVAOBimJAys,78
+model21cm/io.py,sha256=6fcwaDFnGB-xcviqKyD4xXWTaTSdRLgObqErl2cDSn0,731
+model21cm/model.py,sha256=vdGBd3CtRZFTh-sjta9uy_skS9N76-6STBgrHr5JES4,1208
+model21cm/data/figure1_plotdata.csv,sha256=buv5zQpzKAwAL2MEBuZpLXQI5Z83vsGu82ZM6qwcsDA,7907
+model21cm-0.3.6.dist-info/LICENSE,sha256=cBeMXVteO5OdzHmrsKLbHss6yXMi8mEZTnRprq6HpaE,35150
+model21cm-0.3.6.dist-info/METADATA,sha256=SyqMbCITVgUvxvB3UiNxPT3Qr1uER0GcXK2vbFm5aSk,379
+model21cm-0.3.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+model21cm-0.3.6.dist-info/top_level.txt,sha256=Zha79hHrUqE2PVRFPFsGH_p8sfzzJTS1zPxHfqyPcP8,10
+model21cm-0.3.6.dist-info/RECORD,,
