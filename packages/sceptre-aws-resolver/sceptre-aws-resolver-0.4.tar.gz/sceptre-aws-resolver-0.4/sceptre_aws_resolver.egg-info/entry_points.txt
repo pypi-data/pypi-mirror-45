@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+aws = main:Aws
+
