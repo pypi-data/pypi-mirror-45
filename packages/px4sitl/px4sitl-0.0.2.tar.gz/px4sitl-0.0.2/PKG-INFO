@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: px4sitl
+Version: 0.0.2
+Summary: Entrypoints to launch SITL based operator training
+Home-page: https://github.com/tfoote/px4sitl
+Author: Tully Foote
+Author-email: tfoote@osrfoundation.org
+License: Apache License 2.0
+Description: Entrypoints to launch SITL based operator training
+Keywords: PX4,Gazebo,SITL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.0

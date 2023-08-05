@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+data/org.osrfoundation.mcmillan_sitl.desktop
+data/org.osrfoundation.yosemite_sitl.desktop
+src/px4sitl/__init__.py
+src/px4sitl/cli.py
+src/px4sitl.egg-info/PKG-INFO
+src/px4sitl.egg-info/SOURCES.txt
+src/px4sitl.egg-info/dependency_links.txt
+src/px4sitl.egg-info/entry_points.txt
+src/px4sitl.egg-info/not-zip-safe
+src/px4sitl.egg-info/requires.txt
+src/px4sitl.egg-info/top_level.txt

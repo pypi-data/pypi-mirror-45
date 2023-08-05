@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=YosemiteSITL
+Comment=3-D Robot simulator
+Exec=yosemite_px4sitl
+Icon=gazebo
+Type=Application
+Categories=Development;Education;Science;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;
+Name[en_US]=Yosemite SITL Trainer
+Terminal=true
