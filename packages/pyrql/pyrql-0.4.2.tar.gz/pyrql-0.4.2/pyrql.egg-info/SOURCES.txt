@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyrql/__init__.py
+pyrql/exceptions.py
+pyrql/parser.py
+pyrql/unparser.py
+pyrql.egg-info/PKG-INFO
+pyrql.egg-info/SOURCES.txt
+pyrql.egg-info/dependency_links.txt
+pyrql.egg-info/requires.txt
+pyrql.egg-info/top_level.txt
