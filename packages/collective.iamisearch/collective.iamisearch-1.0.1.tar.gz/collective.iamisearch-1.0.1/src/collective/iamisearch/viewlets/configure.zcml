@@ -1,0 +1,15 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="collective.iamisearch">
+
+  <browser:viewlet
+    name="collective.iamisearch.menu"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".menu.MenuViewlet"
+    permission="cmf.SetOwnPassword"
+    layer="..interfaces.ICollectiveIamisearchLayer"
+  />
+
+
+</configure>
