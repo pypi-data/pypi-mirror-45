@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pynetlify
+Version: 0.1.0
+Summary: Client and library to interact with Netlify API.
+Home-page: UNKNOWN
+Author: Toni Sissala
+Author-email: toni.sissala@gmail.com
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests
+
+UNKNOWN
+
+
