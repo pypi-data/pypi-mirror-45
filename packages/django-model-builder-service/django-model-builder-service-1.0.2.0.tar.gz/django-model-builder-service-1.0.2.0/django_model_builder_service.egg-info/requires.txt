@@ -1,0 +1,1 @@
+swiss-common-utils==1.0.23.0
