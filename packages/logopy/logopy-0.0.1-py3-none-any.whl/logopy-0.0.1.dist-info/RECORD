@@ -1,0 +1,13 @@
+logopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logopy/errors.py,sha256=225sD2h04mgcuiTELV-0-jcTMo4ZlOCoROOErdeQicE,243
+logopy/gui.py,sha256=Ay_OAs8pbs6C3gnycpV6nUIohk0SCFZpQToT2AGuEl4,7511
+logopy/procedure.py,sha256=yn74HK1vj57raloCPBU0dsMgzyj-1istBQaoaJyZSQA,80068
+logopy/svgturtle.py,sha256=elxQlXTlU65ESv7aCRatmZWNOur48obcdcvT1ffI814,30082
+logopy/trig.py,sha256=NH661VzOn3Dk_fRp2w_CplLUZA4JF8zdbO-qiAhksVU,922
+logopy-0.0.1.data/data/version.py,sha256=V1L9yFZr5TqyIsvDr4yscsV496WCJ2AUz2eDqiYuNPM,228
+logopy-0.0.1.data/scripts/logopycli.py,sha256=RyeDEFvX9VzBl17nIvci3nBWNnG4FAWpjlSs8hWvLYA,30284
+logopy-0.0.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+logopy-0.0.1.dist-info/METADATA,sha256=V5t6g6Fv8uKRBGFO2dCV_MR36_UeqLNrcTIT1kgfsTE,838
+logopy-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+logopy-0.0.1.dist-info/top_level.txt,sha256=OQo1FGDowOp0ve4vxXzKvXBbdbxxkeOO58LYlwejMCc,7
+logopy-0.0.1.dist-info/RECORD,,
