@@ -1,0 +1,32 @@
+EAM
+===
+
+Version 1.1.0
+-------------
+
+- Update cli tests to be more robust when run on different consoles (#32).
+- Update tests to be more robust when more than the default
+  eam_example_app entry point are installed (#33).
+- Support calling ``eam`` using ``python -m`` (#36).
+- rename package from ``ensetup`` to ``eam`` (#34).
+
+Version 1.0.1
+-------------
+
+(bugfix release)
+
+- Fix test_logging tests (#28).
+- Add Examples to the sdist (#30).
+
+Version 1.0.0
+-------------
+
+- Update package license to enthought opensource (#15).
+- Add options for logging support (#7).
+- Add example egg for mayavi application bundle (#26).
+- Add cli commands for the shortcut group (#4).
+- Add cli commands for `start`, `configure` and `remove` (#6).
+- Add cli command for `info` (#2).
+- Define V1 of the application metadata (#2, #4)
+- Support auto-discovering application metadata using package_resources (#2)
+- Setup automatic test builds on travis and appveyor (#1, #9, #10)

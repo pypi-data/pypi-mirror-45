@@ -1,0 +1,7 @@
+setuptools
+
+[:python_version < "3.4"]
+enum34
+
+[:sys_platform == "win32"]
+comtypes

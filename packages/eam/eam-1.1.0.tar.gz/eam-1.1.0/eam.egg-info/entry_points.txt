@@ -1,0 +1,3 @@
+[console_scripts]
+eam = eam.cli:cli
+

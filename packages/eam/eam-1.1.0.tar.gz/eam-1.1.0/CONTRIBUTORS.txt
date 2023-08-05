@@ -1,0 +1,7 @@
+Contributors
+============
+
+(alphabetically)
+
+Andrew Collette
+Ioannis Tziakos (main author and maintainer)

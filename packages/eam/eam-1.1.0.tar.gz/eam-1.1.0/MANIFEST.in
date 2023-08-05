@@ -1,0 +1,5 @@
+include *.rst
+include *.txt
+recursive-include doc/source *.rst
+recursive-include examples *.py
+prune ci
