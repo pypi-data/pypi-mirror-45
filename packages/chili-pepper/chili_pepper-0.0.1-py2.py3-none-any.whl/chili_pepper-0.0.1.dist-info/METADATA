@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: chili-pepper
+Version: 0.0.1
+Summary: Serverless asynchronous task execution
+Home-page: https://gitlab.com/william-richard/chili-pepper
+Author: William Richard
+Author-email: william.richard.no.s@gmail.com
+License: Apache 2.0
+Project-URL: Source, https://gitlab.com/william-richard/chili-pepper
+Keywords: cloud serverless task job queue distributed
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: awacs
+Requires-Dist: pathlib2
+Requires-Dist: troposphere
+
+# chili-pepper
+
+
