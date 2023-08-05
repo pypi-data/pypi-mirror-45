@@ -1,0 +1,1 @@
+      parameter(nmax0=500,npick0=500,nmc0=500)

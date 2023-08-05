@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: microquake-hashwrap
+Version: 0.0.3
+Summary: Routines for running HASH algorithms for earthquake focal mechanism
+Home-page: https://github.com/mikehagerty/hashwrap
+Author: Mike Hagerty
+Author-email: m.hagerty@isti.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: toml
+
+UNKNOWN
+
+
