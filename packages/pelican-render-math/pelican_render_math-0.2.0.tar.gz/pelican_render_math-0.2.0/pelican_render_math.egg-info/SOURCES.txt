@@ -1,0 +1,10 @@
+README.md
+setup.py
+pelican_render_math/__init__.py
+pelican_render_math/math.py
+pelican_render_math/pelican_mathjax_markdown_extension.py
+pelican_render_math.egg-info/PKG-INFO
+pelican_render_math.egg-info/SOURCES.txt
+pelican_render_math.egg-info/dependency_links.txt
+pelican_render_math.egg-info/not-zip-safe
+pelican_render_math.egg-info/top_level.txt
