@@ -1,0 +1,10 @@
+numpy
+pandas
+
+[dev]
+ipdb
+ipython
+jupyter
+
+[test]
+pytest-cov

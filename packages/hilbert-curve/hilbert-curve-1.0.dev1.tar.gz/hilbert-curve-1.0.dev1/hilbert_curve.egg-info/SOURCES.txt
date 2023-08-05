@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version.ini
+hilbert/__init__.py
+hilbert/algebra.py
+hilbert/spaces.py
+hilbert/stock.py
+hilbert/curves/__init__.py
+hilbert/curves/base.py
+hilbert_curve.egg-info/PKG-INFO
+hilbert_curve.egg-info/SOURCES.txt
+hilbert_curve.egg-info/dependency_links.txt
+hilbert_curve.egg-info/requires.txt
+hilbert_curve.egg-info/top_level.txt
