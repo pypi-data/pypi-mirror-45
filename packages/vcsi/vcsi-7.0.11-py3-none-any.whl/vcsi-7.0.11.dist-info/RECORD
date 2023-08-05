@@ -1,0 +1,9 @@
+vcsi/VERSION,sha256=HZf1W2wuYUwtZNMJJ6WPT5oboZ0nPCfbIyp5Z70IxQU,7
+vcsi/__init__.py,sha256=evqzPNNmxie1op8SxJiwaDiIQxpDGySkGZRTrDrLcD0,54
+vcsi/vcsi.py,sha256=wd9yMueRqjEHr_wKfzX487mFJq-Y0q_p7Yi936TM5OM,58147
+vcsi-7.0.11.dist-info/LICENSE,sha256=lCvx2-rrNYI5EvxNGsffxDptzZs4Zcr1a2ozoikUvdw,1079
+vcsi-7.0.11.dist-info/METADATA,sha256=C5u3wwUs_43z13RAwkrpJkfsFH_5yTOLUOdKbZozWb4,546
+vcsi-7.0.11.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+vcsi-7.0.11.dist-info/entry_points.txt,sha256=zG3x2LFN5jWqv8Kw3O753n3bfLUigpz8KQPRIDinxDc,36
+vcsi-7.0.11.dist-info/top_level.txt,sha256=M5RfO1KVPLLEofX3e6xh8CcSuZkT5Wgp6D6YCJbkV6E,5
+vcsi-7.0.11.dist-info/RECORD,,
