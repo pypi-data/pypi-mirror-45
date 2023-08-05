@@ -1,0 +1,8 @@
+shuup_channels/__init__.py,sha256=56qZ2WOPCL8KIf0xjqDUFSCZcHQ2HDEmeE6JXnR3ICg,74
+shuup_channels/apps.py,sha256=Y8MU_Lu30l8U-_9O-w9mKuRKJXvxO3Cya5q0YudtQdk,140
+shuup_channels/routing.py,sha256=IzVB-2-KqkAescwISC7DgtYLgDe9-9cLAHpLmZZxnIA,435
+shuup_channels-1.0.1.dist-info/METADATA,sha256=h9PTfB1xNkhxszGs3qc8GCBzbLt4ic55L9CzebwQ-Dg,1925
+shuup_channels-1.0.1.dist-info/RECORD,,
+shuup_channels-1.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+shuup_channels-1.0.1.dist-info/entry_points.txt,sha256=cds4HhY5iV3661aKLj0oQ4AggD6v35vmMHUXZBEwvUI,47
+shuup_channels-1.0.1.dist-info/top_level.txt,sha256=KEgJK5YwvLB4HjiQY7yhdPHtH61K-d8-OWcEp9kY89U,15
