@@ -1,0 +1,8 @@
+README.rst
+setup.py
+travis_pypi_integration/__init__.py
+travis_pypi_integration.egg-info/PKG-INFO
+travis_pypi_integration.egg-info/SOURCES.txt
+travis_pypi_integration.egg-info/dependency_links.txt
+travis_pypi_integration.egg-info/requires.txt
+travis_pypi_integration.egg-info/top_level.txt
