@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: latest-blender-url
+Version: 0.1.1
+Summary: A python package that retrieves the latest Blender download URL
+Home-page: https://github.com/justasb/latest_blender_url
+Author: Justas Birgiolas
+Author-email: justas@asu.edu
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Get the latest Blender download URL and use it in a Travis CI scipt to download the archive
+
+In travis.yml:
+
+```
+- pip install latest_blender_url
+- url="$(python -c 'import latest_blender_url as lbu; lbu.get_latest()')"
+- curl -L -o blender.tar.bz2 $url
+```
+
+
+
