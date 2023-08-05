@@ -1,0 +1,14 @@
+paso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paso/base.py,sha256=PEZfb625qEdtnpoxXtpc_ewvH3hZVUHl7p0h8QOlAkA,33326
+paso/pre/ContinuoustoCategory.py,sha256=STUVcCGeoWcnv5WBZV695liNUOksxMjJn-Cwe2ZwxaM,10106
+paso/pre/EliminateUnviableFeatures.py,sha256=-VbjwYduFE56nYrSUyzIBjv75l7gs_4zxZVU-1DOze0,8744
+paso/pre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paso/pre/misc.py,sha256=LoAKVONoPc7oxTpVhQwbUtiEfKByoVlqZD9H_EHUv-A,2698
+paso/pre/scale.py,sha256=7GqFgul3r08PlidxnyT3oxz9MM1IqJ35Xt7QgLWPRZA,18405
+paso/pre/toCategory.py,sha256=9DgjADKVgH-GOdSBDpRk19F6lX0p5rBtZTc5gAAVe9E,4199
+paso/pre/toDatetimeComponents.py,sha256=B3om4gSLEifaQxl2FaCd6AWyL4T9TLlUKBohZrAjAqg,5430
+paso-0.2.8.dist-info/LICENSE,sha256=pn3aJzlK6STDVwcxjo1gWVt1iMlQF-nfk_XOiq5k3Kw,1073
+paso-0.2.8.dist-info/METADATA,sha256=fAFjQW3fK-8VrdzBW2sA6KhHLhUr8Uv7M6BP5cF4G3c,2807
+paso-0.2.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+paso-0.2.8.dist-info/top_level.txt,sha256=aQ5KetZ-IHA_NdzdWJW-H7pYYj0uZMQg4gzJ8W_Jzjc,5
+paso-0.2.8.dist-info/RECORD,,
