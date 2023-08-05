@@ -1,0 +1,10 @@
+django_pyc/__init__.py,sha256=TWTtWWN9smxQC7urGsnhutfPPdNydZ1wkWEbzJcy5hM,62
+django_pyc/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyc/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyc/management/commands/clearpyc.py,sha256=TPEEahr7QKVJkjKVW8yqpejLIj44n1uxujJ37OIaLG0,2097
+django_pyc/management/commands/compilepyc.py,sha256=HyweQxYnoelgbAVet_D_7vPgO7hF_NuPjGk1TTSV7do,1505
+django_pyc-1.1.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+django_pyc-1.1.0.dist-info/METADATA,sha256=4vE1eRxxIaJH91onD8NmIYEuBkzj3iDbrqW7UTrj21w,3463
+django_pyc-1.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+django_pyc-1.1.0.dist-info/top_level.txt,sha256=YRTE6cntwXSKscKVAxXuYsmXjahtQtfbYr94tmD4ahQ,11
+django_pyc-1.1.0.dist-info/RECORD,,
