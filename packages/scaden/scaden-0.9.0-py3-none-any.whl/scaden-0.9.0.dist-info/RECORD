@@ -1,0 +1,15 @@
+scaden/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaden/scaden_main.py,sha256=DgtPD_KJ9pUZUISBRt7WWTQzK-neiTW3YC6bwWdEUQY,5399
+scaden/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaden/model/architectures.py,sha256=qU6P7NJ4erpPLIpmNTfwtgqo8UBsAwmZKdF09_M-RsM,491
+scaden/model/functions.py,sha256=IfCjTymqlu4ID2Ukc_PuDFMEsjQIAE0PkWBsJI5rb2Y,2174
+scaden/model/scaden.py,sha256=JnAcLORWnfIcm-QG9UREnH0KkmD80YhoHNdqguI7sjA,13097
+scaden/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaden/preprocessing/bulk_simulation.py,sha256=t2YJPGbQkDQK2G6YXV14CPvBb8IVIYkg8jTrs2dl1Vk,9890
+scaden/preprocessing/create_h5ad_file.py,sha256=yd7wteXadyo0HWsRRNvVteElRA4HWWvAw1XyPvRJ75g,3598
+scaden-0.9.0.data/scripts/scaden,sha256=87PzXQ17z2xsxgIr7kDO2ACdtd3vvu9eRokgE7RPgyM,2717
+scaden-0.9.0.dist-info/LICENSE,sha256=wztoQjrqpeFsX02hO_MsVcqq6IjIPpQXidODXtXAdCQ,1068
+scaden-0.9.0.dist-info/METADATA,sha256=1N0IdZH6hgxC0SyaaDHkIgJUF2eBI6uBFEEUM-gMKNI,1799
+scaden-0.9.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+scaden-0.9.0.dist-info/top_level.txt,sha256=-3syVx-C9afEQFGc5TL70bomPy2TB-QrHHocsKquj2g,7
+scaden-0.9.0.dist-info/RECORD,,
