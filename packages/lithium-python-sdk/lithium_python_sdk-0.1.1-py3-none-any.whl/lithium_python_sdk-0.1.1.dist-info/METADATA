@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lithium-python-sdk
+Version: 0.1.1
+Summary: Lithium Python SDK
+Home-page: https://github.com/laura-barkauskaite/lithium-python-sdk.git
+Author: Laura Barkauskaite
+Author-email: laura.barkauskaite@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: google-api-python-client
+
+
+Lithium Python SDK wrapping Lithium Rest API and Lithium BULK API.
+
+
