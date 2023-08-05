@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: extended_networkx_tools
+Version: 0.1.4.dev1
+Summary: Tools package for extending functionality of the networkx package.
+Home-page: https://github.com/vonNiklasson/extended-networkx-tools
+Author: Johan Niklasson, Oskar Hahr
+Author-email: jnikl@kth.se, ohahr@kth.se
+License: MIT
+Description: # extended-networkx-graph-tools
+        Python Package for for visualizing and converting networkx graphs.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: ~=3.0
+Description-Content-Type: text/markdown
