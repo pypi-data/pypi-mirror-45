@@ -1,0 +1,2 @@
+pystratum>=0.10.20
+psycopg2
