@@ -1,0 +1,3 @@
+[console_scripts]
+zookeeper-healthcheck = zookeeper_healthcheck.main:main
+
