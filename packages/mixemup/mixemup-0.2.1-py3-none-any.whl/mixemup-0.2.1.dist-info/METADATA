@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mixemup
+Version: 0.2.1
+Summary: Lists out permutations of lines in files.
+Home-page: https://github.com/tonikarppi/mixemup
+License: MIT
+Author: Toni Karppi
+Author-email: karppitoni@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Project-URL: Repository, https://github.com/tonikarppi/mixemup
