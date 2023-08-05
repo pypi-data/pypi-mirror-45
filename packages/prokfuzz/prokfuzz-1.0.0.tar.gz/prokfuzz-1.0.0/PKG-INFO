@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: prokfuzz
+Version: 1.0.0
+Summary: Tiny Fuzzer extension for Burp suite
+Home-page: UNKNOWN
+Author: chris pro
+License: UNKNOWN
+Description: # prokFuzz
+        Tiny Fuzzer extension for Burp suite 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
