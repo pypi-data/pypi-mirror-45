@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import yaml
+
+from pirogue.join import Join
+from pirogue.merge import Merge
+
+
+if __name__ == "__main__":
+    """
+    Main process
+    """
+
+    # create the top-level parser
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--version", help="print the version and exit", action='store_true')
+    parser.add_argument('-p', '--pg_service', help='postgres service')
+
+    subparsers = parser.add_subparsers(title='commands', description='pirogue command', dest='command')
+
+    # simple join view
+    join_parser = subparsers.add_parser('join', help='create a simple join view')
+    join_parser.add_argument('parent_table')
+    join_parser.add_argument('child_table')
+    join_parser.add_argument('-s', '--view-schema', help='schema for the created join view')
+    join_parser.add_argument('-v', '--view-name', help='name for the created join view')
+    join_parser.add_argument('-d', '--pkey-default-value', action='store_true',
+                             help='The primary key column of the view will have a default value'
+                                  ' according to the child primary key table')
+
+    # merge view
+    merger_parser = subparsers.add_parser('merge', help='create a merge view')
+    merger_parser.add_argument('definition_file', help='YAML definition of the merge view', type=argparse.FileType('r'))
+    merger_parser.add_argument('-j', '--create-joins', action='store_true',
+                               help='Create simple join view for all joined tables.')
+    merger_parser.add_argument('-v', '--var', nargs=3,
+                               help='Assign variable for running SQL deltas. '
+                                    'Format is: (string|float|int) name value. ',
+                               action='append', default=[])
+
+    args = parser.parse_args()
+
+    # print the version and exit
+    if args.version:
+        print('pirogue version: {}'.format('0.5.3'))
+        parser.exit()
+
+    # if no command is passed, print the help and exit
+    if not args.command:
+        parser.print_help()
+        parser.exit()
+
+    exit_val = 0
+
+    if args.pg_service:
+        pg_service = args.pg_service
+    else:
+        pg_service = os.getenv('PGSERVICE')
+
+    if args.command == 'join':
+        success = Join(args.parent_table, args.child_table,
+                       pg_service=pg_service,
+                       view_schema=args.view_schema,
+                       view_name=args.view_name,
+                       pkey_default_value=args.pkey_default_value).create()
+        if not success:
+            exit_val = 1
+
+    elif args.command == 'merge':
+        yaml_definition = yaml.safe_load(args.definition_file)
+        variables = {}
+        for v in args.var or ():
+            if v[0] == 'float':
+                variables[v[1]] = float(v[2])
+            elif v[0] == 'int':
+                variables[v[1]] = int(v[2])
+            else:
+                variables[v[1]] = v[2]
+        Merge(yaml_definition, variables=variables, create_joins=args.create_joins).create()
+
+    exit(exit_val)
