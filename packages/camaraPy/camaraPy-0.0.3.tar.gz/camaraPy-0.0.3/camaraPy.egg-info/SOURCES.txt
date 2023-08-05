@@ -1,0 +1,15 @@
+setup.py
+camaraPy/__init__.py
+camaraPy.egg-info/PKG-INFO
+camaraPy.egg-info/SOURCES.txt
+camaraPy.egg-info/dependency_links.txt
+camaraPy.egg-info/requires.txt
+camaraPy.egg-info/top_level.txt
+camaraPy/api_original/__init__.py
+camaraPy/api_original/deputados.py
+camaraPy/api_original/orgaos.py
+camaraPy/api_original/proposicoes.py
+camaraPy/api_original/sessoes_reunioes.py
+camaraPy/api_original/core/__init__.py
+camaraPy/api_original/core/core.py
+camaraPy/api_original/core/custom_exceptions.py
