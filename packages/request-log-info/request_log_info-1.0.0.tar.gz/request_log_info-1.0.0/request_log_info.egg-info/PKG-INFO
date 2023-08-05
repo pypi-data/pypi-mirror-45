@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: request-log-info
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/zhangruyu/request_log_info
+Author: zhangruyu
+Author-email: 1582034460@qq.com
+License: BSD
+Description: # request_log_info
+        
+        ## Installing
+        
+        ```bash
+        $ pip install request-log-info
+        ```
+        
+        Then add ```request_log.middleware.LoggingMiddleware``` to your ```MIDDLEWARE```.
+        
+        For example:
+        
+        ```python
+        MIDDLEWARE = (
+            ...,   
+            'request_log.middleware.LoggingMiddleware',
+            ...,
+        )
+        ```
+        
+        And configure logging in your app:
+        
+        ```python
+        LOGGING = {
+            'version': 1,
+            'disable_existing_loggers': False,
+            'formatters': {
+                'request': {
+                    'format': '%(type)s' + '[%(asctime)s]' + ' ip:%(ip)s,' + ' url:%(path)s,' +
+                              ' method:%(method)s, ' + '%(data)s '
+                },
+            },
+            'handlers': {
+                'info': {
+                    'class': 'request_log.utils.RequestRotatingFileLogger',
+                    'formatter': 'request'
+                },
+            },
+            'loggers': {
+                'request': {
+                    'level': 'DEBUG',  # change debug level as appropiate
+                    'handlers': ['info'],
+                    'propagate': False,
+                },
+            },
+        }
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
