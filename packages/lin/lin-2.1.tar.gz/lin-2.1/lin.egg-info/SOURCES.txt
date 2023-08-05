@@ -1,0 +1,9 @@
+README.rst
+setup.py
+lin/__init__.py
+lin/polyhedron.py
+lin.egg-info/PKG-INFO
+lin.egg-info/SOURCES.txt
+lin.egg-info/dependency_links.txt
+lin.egg-info/requires.txt
+lin.egg-info/top_level.txt
