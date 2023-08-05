@@ -1,0 +1,1 @@
+# realtime-aws-secretsmngr
