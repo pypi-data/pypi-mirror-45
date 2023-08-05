@@ -1,0 +1,9 @@
+aiotext/__init__.py,sha256=4Lp_8HRznav7GTNdHRg4SpUL0M0SQu79TQJUeVpqgw0,30
+aiotext/aiotext.py,sha256=AudMMUlfGwuHYKzdJUm6po0NL5B2p40r1Wqx62-uw00,5196
+aiotext/lemmatize.py,sha256=pALXnpprEiebvEgKniojSqvQ8ScczV5L0LBytEanrdU,3437
+aiotext/test_aiotext.py,sha256=7W7wBuivd96_7FQLsFjAGC6bja_tkgSBmn8KrAfoVx0,5132
+aiotext-1.0.5.dist-info/LICENSE,sha256=Y7Y0DVIGW41J4gumTDD177a7AJe1PPykvCsJVEhwlZQ,1055
+aiotext-1.0.5.dist-info/METADATA,sha256=WCRGV4DiLY9wE_xKiW2NlLRibm8-RWJExvByL9KYjy8,5581
+aiotext-1.0.5.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+aiotext-1.0.5.dist-info/top_level.txt,sha256=V_Nb_qp0mzmnfvuFdI49ta4mnb4adgZZ--1HMf3cROA,8
+aiotext-1.0.5.dist-info/RECORD,,
