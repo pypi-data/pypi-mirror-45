@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hallu
+Version: 0.0.1
+Summary: hallucinating a zine publishing tool and static site generator
+Home-page: https://github.com/archangelic/hallu
+Author: M. Hancock
+Author-email: mhancock@archangelic.space
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+
+# hallu
+1. hallucinating a zine publishing tool and static site generator
+2. saying hello like a weirdo
+
+## what is hallu?
+- a command line tool
+- rudimentary static site generator
+- microblog?
+- idiosyncratic zine publisher
+
+## technologies
+for posts and submissions:
+- latex
+- markdown
+- html
+- plaintext
+- restructured text
+
+for publishing
+- wkhtmltopdf
+
+for static site generation:
+- jinja2
+
+
+
