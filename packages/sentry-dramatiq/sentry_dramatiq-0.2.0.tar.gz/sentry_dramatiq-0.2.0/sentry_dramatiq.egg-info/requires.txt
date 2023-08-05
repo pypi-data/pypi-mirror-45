@@ -1,0 +1,8 @@
+dramatiq
+sentry_sdk
+
+[test]
+isort
+coverage
+pytest
+flake8
