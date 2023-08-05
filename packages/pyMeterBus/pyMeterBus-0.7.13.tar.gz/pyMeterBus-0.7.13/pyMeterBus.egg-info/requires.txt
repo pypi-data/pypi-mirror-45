@@ -1,0 +1,6 @@
+enum34
+simplejson
+pyaml
+pyserial
+future
+pycryptodome
