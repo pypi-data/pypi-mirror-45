@@ -1,0 +1,10 @@
+blacklisted_tests:
+    - 'cfme/tests/containers/'
+    - '\[.*rhev'
+    - 'test_.*blacklisted'
+
+whitelisted_tests:
+    - 'cfme/tests/infrastructure/test_quota_tagging.py::test_.*\[.*rhe?v'
+    - 'test_tenant_quota.py'
+    - 'cfme/tests/v2v'
+    - 'test_.*whitelisted'
