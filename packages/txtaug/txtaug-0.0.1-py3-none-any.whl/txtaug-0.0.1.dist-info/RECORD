@@ -1,0 +1,9 @@
+txtaugsrc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtaugsrc/baidu_trans.py,sha256=jeUQiC-a-dLMkDma3ShlCQGOdEp978HrjRQUcJMY7xQ,959
+txtaugsrc/config.py,sha256=BKBvv7NhdQb6ghhYgt252FgO3ryZC-HsrvsSDymfaa8,19
+txtaugsrc/txtaug.py,sha256=zUG0WmDauqgJqtTG3iz9p_J_BXK45axQiLhgVqHlzqE,2804
+txtaug-0.0.1.dist-info/METADATA,sha256=VyrlM46hWu_qbvonHgnCtqK4gxT5EvL0qCJPsWjcsFs,422
+txtaug-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+txtaug-0.0.1.dist-info/entry_points.txt,sha256=EgWcH80Lef8j0qemxV1E-h6CbPUvru_LAEm0y7O2ulg,50
+txtaug-0.0.1.dist-info/top_level.txt,sha256=OCVecsUx_fAAkfVNrP6akhoIPI36YKwUiU767A0PIIA,10
+txtaug-0.0.1.dist-info/RECORD,,

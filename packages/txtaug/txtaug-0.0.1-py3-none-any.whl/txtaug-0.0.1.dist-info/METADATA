@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: txtaug
+Version: 0.0.1
+Summary: Command line tool for text augmentation based on Baidu Translation API
+Home-page: http://josephzxy.me/2019/04/23/text-augmentation-command-line-tool-in-python/
+Author: josephzxy
+Author-email: josephchuh7@gmail.com
+License: MIT
+Keywords: python text augmentation terminal
+Platform: UNKNOWN
+
+Command line tool for text augmentation based on Baidu Translation API
+
+
