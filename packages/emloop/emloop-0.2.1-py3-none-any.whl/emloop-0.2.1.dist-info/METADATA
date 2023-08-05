@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: emloop
+Version: 0.2.1
+Summary: Smart machine learning trainer
+Home-page: https://github.com/iterait/emloop
+Author: Iterait a.s.
+Author-email: hello@iterait.com
+License: MIT
+Keywords: machine learning training framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0)
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: requests (>=2.21)
+Requires-Dist: ruamel.yaml (>=0.15)
+Requires-Dist: tabulate (>=0.8.3)
+Requires-Dist: babel (>=2.6)
+Requires-Dist: matplotlib (>=3.0)
+Requires-Dist: pandas (>=0.24)
+Provides-Extra: docs
+Requires-Dist: sphinx (>=2.0) ; extra == 'docs'
+Requires-Dist: autoapi (>=1.4) ; extra == 'docs'
+Requires-Dist: sphinx-argparse ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+Trainer of machine learning models that automatically manages the whole process of training,saving and restoring models and much more
+
+
