@@ -1,0 +1,16 @@
+crowdcurio_client/__init__.py,sha256=BdWMCWyx0HIKukgSfit1BbY11e2tgtfcwWavWuZNvaM,565
+crowdcurio_client/annotation.py,sha256=pbgPRubXHad655upRASwMZAXzytwHRq8rHntWekLzk0,566
+crowdcurio_client/crowdcurio.py,sha256=52E0uWnHZEII6luFjKGxM1K_btZENSRILEwS4J0Afdo,16518
+crowdcurio_client/data.py,sha256=yT4kMPPL3PSeg_3IX1MpCygLQqBak46srsY-fTwSWHA,2318
+crowdcurio_client/event.py,sha256=k39LsmMfA_XJWenT-CRwbtyGCnXjPE9GyiV5gCPNllU,384
+crowdcurio_client/experiment.py,sha256=eW1oMqI8xIaz6rdoBDGVi-WjnXs3zA1ew3COEd4MWQQ,4432
+crowdcurio_client/interface.py,sha256=0vuLwzHSkSz8o59hJSlJ9oZ430vD1cbKfhYVAZ6a4Ms,1182
+crowdcurio_client/project.py,sha256=_L6-WYQIEBKFOiTFr5fyDQFHpDcqmov1dwMVmrhgI3o,723
+crowdcurio_client/response.py,sha256=8_I5DqhfGL_0uUfjtFDilj1ujWRkFhlwhsuOlK40K0g,414
+crowdcurio_client/task.py,sha256=WVQG-T4-ZBh_qi8b36Uz3Jv2W8be6T-HAJ75bc2nudQ,3311
+crowdcurio_client/user.py,sha256=HRbpUQ8ZLaAkj_6aWDLTUaPxERwoJ_LuLpNMYFk4bnI,355
+crowdcurio_client-0.2.6.dist-info/LICENSE.txt,sha256=EfdbBrDlQBbTupvtWd9jtRqZxGvYdgevA9BIi0c9irM,1053
+crowdcurio_client-0.2.6.dist-info/METADATA,sha256=U-KzI6pCpmN7hSXniIElRHbKQcrHTOJ4U7cedlJIjb4,597
+crowdcurio_client-0.2.6.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+crowdcurio_client-0.2.6.dist-info/top_level.txt,sha256=fbMXQxfCzaoza9VDZkzN7kqOtYlH-GBLJ0bDcbp11bw,18
+crowdcurio_client-0.2.6.dist-info/RECORD,,
