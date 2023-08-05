@@ -1,0 +1,28 @@
+Orange Workflow Schema (.ows) File Format
+-----------------------------------------
+
+The Orange Workflow Schema file format
+
+::
+
+   <?xml version='1.0' encoding='utf-8'?>
+   <scheme description="" title="" version="2.0">
+       <nodes>
+           <node id="0" name="Paint Data" position="(-490.0, -272.0)"
+                project_name="Orange"
+                qualified_name="Orange.widgets.data.owpaintdata.OWPaintData"
+                title="Paint Data" version="" />
+       </nodes>
+       <links />
+       <annotations />
+       <thumbnail />
+       <node_properties>
+           <properties format="literal" node_id="0">
+               {'density': 7, 'commit_on_change': False,
+                'attr2': 'y', 'attr1': 'x',
+                'brushRadius': 75,
+                'plot': {'alpha_value': 255, 'show_grid': True, 'show_legend': False}}
+           </properties>
+       </node_properties>
+   </scheme>
+   

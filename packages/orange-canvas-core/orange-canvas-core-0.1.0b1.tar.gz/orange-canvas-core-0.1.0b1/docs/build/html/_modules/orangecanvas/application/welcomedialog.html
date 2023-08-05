@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>orangecanvas.application.welcomedialog &mdash; Orange Canvas Core 0.2.0rc0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'0.2.0rc0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Orange Canvas Core
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.0rc0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../orangecanvas/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orangecanvas/index.html">Orange Canvas Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Orange Canvas Core</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>orangecanvas.application.welcomedialog</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for orangecanvas.application.welcomedialog</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Orange Canvas Welcome Dialog</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">xml.sax.saxutils</span> <span class="k">import</span> <span class="n">escape</span>
+
+<span class="kn">from</span> <span class="nn">AnyQt.QtWidgets</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">QDialog</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QToolButton</span><span class="p">,</span> <span class="n">QCheckBox</span><span class="p">,</span> <span class="n">QAction</span><span class="p">,</span>
+    <span class="n">QHBoxLayout</span><span class="p">,</span> <span class="n">QVBoxLayout</span><span class="p">,</span> <span class="n">QSizePolicy</span><span class="p">,</span> <span class="n">QLabel</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">AnyQt.QtGui</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">QFont</span><span class="p">,</span> <span class="n">QIcon</span><span class="p">,</span> <span class="n">QPixmap</span><span class="p">,</span> <span class="n">QPainter</span><span class="p">,</span> <span class="n">QColor</span><span class="p">,</span> <span class="n">QBrush</span><span class="p">,</span> <span class="n">QActionEvent</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">AnyQt.QtCore</span> <span class="k">import</span> <span class="n">Qt</span><span class="p">,</span> <span class="n">QRect</span><span class="p">,</span> <span class="n">QSize</span><span class="p">,</span> <span class="n">QPoint</span>
+<span class="kn">from</span> <span class="nn">AnyQt.QtCore</span> <span class="k">import</span> <span class="n">pyqtSignal</span> <span class="k">as</span> <span class="n">Signal</span>
+
+<span class="kn">from</span> <span class="nn">..canvas.items.utils</span> <span class="k">import</span> <span class="n">radial_gradient</span>
+<span class="kn">from</span> <span class="nn">..registry</span> <span class="k">import</span> <span class="n">NAMED_COLORS</span>
+
+
+<span class="k">def</span> <span class="nf">decorate_welcome_icon</span><span class="p">(</span><span class="n">icon</span><span class="p">,</span> <span class="n">background_color</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a `QIcon` with a circle shaped background.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">welcome_icon</span> <span class="o">=</span> <span class="n">QIcon</span><span class="p">()</span>
+    <span class="n">sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">]</span>
+    <span class="n">background_color</span> <span class="o">=</span> <span class="n">NAMED_COLORS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">background_color</span><span class="p">,</span> <span class="n">background_color</span><span class="p">)</span>
+    <span class="n">background_color</span> <span class="o">=</span> <span class="n">QColor</span><span class="p">(</span><span class="n">background_color</span><span class="p">)</span>
+    <span class="n">grad</span> <span class="o">=</span> <span class="n">radial_gradient</span><span class="p">(</span><span class="n">background_color</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">sizes</span><span class="p">:</span>
+        <span class="n">icon_size</span> <span class="o">=</span> <span class="n">QSize</span><span class="p">(</span><span class="mi">5</span> <span class="o">*</span> <span class="n">size</span> <span class="o">/</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">size</span> <span class="o">/</span> <span class="mi">8</span><span class="p">)</span>
+        <span class="n">icon_rect</span> <span class="o">=</span> <span class="n">QRect</span><span class="p">(</span><span class="n">QPoint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">icon_size</span><span class="p">)</span>
+        <span class="n">pixmap</span> <span class="o">=</span> <span class="n">QPixmap</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">pixmap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">transparent</span><span class="p">)</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">QPainter</span><span class="p">(</span><span class="n">pixmap</span><span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setRenderHint</span><span class="p">(</span><span class="n">QPainter</span><span class="o">.</span><span class="n">Antialiasing</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setBrush</span><span class="p">(</span><span class="n">QBrush</span><span class="p">(</span><span class="n">grad</span><span class="p">))</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">NoPen</span><span class="p">)</span>
+        <span class="n">ellipse_rect</span> <span class="o">=</span> <span class="n">QRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">drawEllipse</span><span class="p">(</span><span class="n">ellipse_rect</span><span class="p">)</span>
+        <span class="n">icon_rect</span><span class="o">.</span><span class="n">moveCenter</span><span class="p">(</span><span class="n">ellipse_rect</span><span class="o">.</span><span class="n">center</span><span class="p">())</span>
+        <span class="n">icon</span><span class="o">.</span><span class="n">paint</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">icon_rect</span><span class="p">,</span> <span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">,</span> <span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+
+        <span class="n">welcome_icon</span><span class="o">.</span><span class="n">addPixmap</span><span class="p">(</span><span class="n">pixmap</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">welcome_icon</span>
+
+
+<span class="n">WELCOME_WIDGET_BUTTON_STYLE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">WelcomeActionButton {</span>
+<span class="s2">    border: none;</span>
+<span class="s2">    icon-size: 75px;</span>
+<span class="s2">    /*font: bold italic 14px &quot;Helvetica&quot;;*/</span>
+<span class="s2">}</span>
+
+<span class="s2">WelcomeActionButton:pressed {</span>
+<span class="s2">    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,</span>
+<span class="s2">                                      stop: 0 #dadbde, stop: 1 #f6f7fa);</span>
+<span class="s2">    border-radius: 10px;</span>
+<span class="s2">}</span>
+
+<span class="s2">WelcomeActionButton:focus {</span>
+<span class="s2">    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,</span>
+<span class="s2">                                      stop: 0 #dadbde, stop: 1 #f6f7fa);</span>
+<span class="s2">    border-radius: 10px;</span>
+<span class="s2">}</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">WelcomeActionButton</span><span class="p">(</span><span class="n">QToolButton</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">actionEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+        <span class="c1"># type: (QActionEvent) -&gt; None</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">actionEvent</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span><span class="p">()</span> <span class="o">==</span> <span class="n">QActionEvent</span><span class="o">.</span><span class="n">ActionChanged</span> \
+                <span class="ow">and</span> <span class="n">event</span><span class="o">.</span><span class="n">action</span><span class="p">()</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">defaultAction</span><span class="p">():</span>
+            <span class="c1"># The base does not update self visibility for defaultAction.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setVisible</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">action</span><span class="p">()</span><span class="o">.</span><span class="n">isVisible</span><span class="p">())</span>
+
+
+<div class="viewcode-block" id="WelcomeDialog"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog">[docs]</a><span class="k">class</span> <span class="nc">WelcomeDialog</span><span class="p">(</span><span class="n">QDialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A welcome widget shown at startup presenting a series</span>
+<span class="sd">    of buttons (actions) for a beginner to choose from.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">triggered</span> <span class="o">=</span> <span class="n">Signal</span><span class="p">(</span><span class="n">QAction</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">showAtStartup</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;showAtStartup&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">feedbackUrl</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;feedbackUrl&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__triggeredAction</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackUrl</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupUi</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFeedbackUrl</span><span class="p">(</span><span class="n">feedbackUrl</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setShowAtStartup</span><span class="p">(</span><span class="n">showAtStartup</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">QVBoxLayout</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="n">WELCOME_WIDGET_BUTTON_STYLE</span><span class="p">)</span>
+
+        <span class="n">bottom_bar</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">(</span><span class="n">objectName</span><span class="o">=</span><span class="s2">&quot;bottom-bar&quot;</span><span class="p">)</span>
+        <span class="n">bottom_bar_layout</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span>
+        <span class="n">bottom_bar_layout</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="n">bottom_bar</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">bottom_bar_layout</span><span class="p">)</span>
+        <span class="n">bottom_bar</span><span class="o">.</span><span class="n">setSizePolicy</span><span class="p">(</span><span class="n">QSizePolicy</span><span class="o">.</span><span class="n">MinimumExpanding</span><span class="p">,</span>
+                                 <span class="n">QSizePolicy</span><span class="o">.</span><span class="n">Maximum</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span> <span class="o">=</span> <span class="n">QCheckBox</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s2">&quot;Show at startup&quot;</span><span class="p">),</span> <span class="n">bottom_bar</span><span class="p">,</span> <span class="n">checked</span><span class="o">=</span><span class="kc">False</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span>
+            <span class="n">textInteractionFlags</span><span class="o">=</span><span class="n">Qt</span><span class="o">.</span><span class="n">TextBrowserInteraction</span><span class="p">,</span>
+            <span class="n">openExternalLinks</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">bottom_bar_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignVCenter</span> <span class="o">|</span> <span class="n">Qt</span><span class="o">.</span><span class="n">AlignLeft</span>
+        <span class="p">)</span>
+        <span class="n">bottom_bar_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignVCenter</span> <span class="o">|</span> <span class="n">Qt</span><span class="o">.</span><span class="n">AlignRight</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">bottom_bar</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignBottom</span><span class="p">,</span>
+                                <span class="n">stretch</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setSizeGripEnabled</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">620</span><span class="p">,</span> <span class="mi">390</span><span class="p">)</span>
+
+<div class="viewcode-block" id="WelcomeDialog.setShowAtStartup"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog.setShowAtStartup">[docs]</a>    <span class="k">def</span> <span class="nf">setShowAtStartup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">show</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set the &#39;Show at startup&#39; check box state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="o">!=</span> <span class="n">show</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="n">show</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="WelcomeDialog.showAtStartup"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog.showAtStartup">[docs]</a>    <span class="k">def</span> <span class="nf">showAtStartup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the &#39;Show at startup&#39; check box state.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__showAtStartupCheck</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="WelcomeDialog.setFeedbackUrl"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog.setFeedbackUrl">[docs]</a>    <span class="k">def</span> <span class="nf">setFeedbackUrl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+        <span class="c1"># type: (str) -&gt; None</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set an &#39;feedback&#39; url. When set a link is displayed in the bottom row.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackUrl</span> <span class="o">=</span> <span class="n">url</span>
+        <span class="k">if</span> <span class="n">url</span><span class="p">:</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s2">&quot;Help us improve!&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span>
+                <span class="s1">&#39;&lt;a href=&quot;</span><span class="si">{url}</span><span class="s1">&quot;&gt;</span><span class="si">{text}</span><span class="s1">&lt;/a&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">escape</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__feedbackLabel</span><span class="o">.</span><span class="n">setVisible</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="n">url</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="WelcomeDialog.addRow"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog.addRow">[docs]</a>    <span class="k">def</span> <span class="nf">addRow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;light-orange&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add a row with `actions`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">insertRow</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">background</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">insertRow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;light-orange&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Insert a row with `actions` at `index`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">widget</span> <span class="o">=</span> <span class="n">QWidget</span><span class="p">(</span><span class="n">objectName</span><span class="o">=</span><span class="s2">&quot;icon-row&quot;</span><span class="p">)</span>
+        <span class="n">layout</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">setSpacing</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>
+        <span class="n">widget</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">insertWidget</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">widget</span><span class="p">,</span> <span class="n">stretch</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                                       <span class="n">alignment</span><span class="o">=</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">action</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">actions</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insertAction</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">background</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">insertAction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span>
+                      <span class="n">background</span><span class="o">=</span><span class="s2">&quot;light-orange&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Insert `action` in `row` in position `index`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">button</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">createButton</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">background</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">insertButton</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">button</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">insertButton</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">button</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Insert `button` in `row` in position `index`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">itemAt</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        <span class="n">layout</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">insertWidget</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">button</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__on_actionTriggered</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">createButton</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;light-orange&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a tool button for action.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">button</span> <span class="o">=</span> <span class="n">WelcomeActionButton</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setDefaultAction</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">iconText</span><span class="p">())</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setIcon</span><span class="p">(</span><span class="n">decorate_welcome_icon</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">icon</span><span class="p">(),</span> <span class="n">background</span><span class="p">))</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">toolTip</span><span class="p">())</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setToolButtonStyle</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">ToolButtonTextUnderIcon</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setVisible</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">isVisible</span><span class="p">())</span>
+        <span class="n">font</span> <span class="o">=</span> <span class="n">QFont</span><span class="p">(</span><span class="n">button</span><span class="o">.</span><span class="n">font</span><span class="p">())</span>
+        <span class="n">font</span><span class="o">.</span><span class="n">setPointSize</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
+        <span class="n">button</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="n">font</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">button</span>
+
+<div class="viewcode-block" id="WelcomeDialog.buttonAt"><a class="viewcode-back" href="../../../orangecanvas/application.welcomedialog.html#orangecanvas.application.welcomedialog.WelcomeDialog.buttonAt">[docs]</a>    <span class="k">def</span> <span class="nf">buttonAt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the button at i-t row and j-th column.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__mainLayout</span><span class="o">.</span><span class="n">itemAt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">layout</span><span class="p">()</span><span class="o">.</span><span class="n">itemAt</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">item</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">triggeredAction</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the action that was triggered by the user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__triggeredAction</span>
+
+    <span class="k">def</span> <span class="nf">showEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+        <span class="c1"># Clear the triggered action before show.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__triggeredAction</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">showEvent</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__on_actionTriggered</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when the button action is triggered.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__triggeredAction</span> <span class="o">=</span> <span class="n">action</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Bioinformatics Laboratory, FRI UL
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
