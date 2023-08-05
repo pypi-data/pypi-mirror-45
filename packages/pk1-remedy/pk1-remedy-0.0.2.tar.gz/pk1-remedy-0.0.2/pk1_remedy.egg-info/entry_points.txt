@@ -1,0 +1,3 @@
+[console_scripts]
+ambari-host-clone = pk1.remedy.ambari.host_clone:main
+
