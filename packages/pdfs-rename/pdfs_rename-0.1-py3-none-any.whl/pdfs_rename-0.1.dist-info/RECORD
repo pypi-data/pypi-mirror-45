@@ -1,0 +1,10 @@
+pdfs_rename-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pdfs_rename-0.1.dist-info/METADATA,sha256=xyoLO06Lt73nSdlMCKq5IIhhKQWsIYr6yPJjZzG3ru8,488
+pdfs_rename-0.1.dist-info/RECORD,,
+pdfs_rename-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pdfs_rename-0.1.dist-info/entry_points.txt,sha256=ShM42lhSvJODTJxJbgspyquH2iw_6IlhtQ2hCI2yDzQ,50
+pdfs_rename-0.1.dist-info/metadata.json,sha256=B0shTAM8ovhkRWEGUi0Z4WzPgnxRF4OF-lIWeD10SQQ,829
+pdfs_rename-0.1.dist-info/top_level.txt,sha256=2IhtB-cuhErn1oF1qCq2NcAHTABqNdY0JbiY9VJTO8A,7
+rename/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rename/main.py,sha256=J6ZM5CAsjcFephh5wTusCifkqj-jNx0CAaEkJo71a1s,1299
+rename/utils.py,sha256=w75vDuvBdKHOO9dujUXKSXpkweX4XfkJjPteaApCdso,800
