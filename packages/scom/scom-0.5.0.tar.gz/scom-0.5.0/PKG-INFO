@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: scom
+Version: 0.5.0
+Summary: Studer devices control library
+Home-page: https://www.studer-innotec.com
+Maintainer: HES-SO Valais, School of Engineering, Sion
+Maintainer-email: thomas.sterren@hevs.ch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
