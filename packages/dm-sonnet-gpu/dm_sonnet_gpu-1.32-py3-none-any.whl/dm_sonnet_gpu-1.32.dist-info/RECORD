@@ -1,0 +1,5 @@
+sonnet/__init__.py,sha256=JoJoAkPJtnLmjN2KME0JvtQflX-QIPPdW-WeWnoNuts,167
+dm_sonnet_gpu-1.32.dist-info/METADATA,sha256=gMgV2Z_5skZjWL5C1xORPE28tXHlQhikE-EnjdsJa-M,810
+dm_sonnet_gpu-1.32.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dm_sonnet_gpu-1.32.dist-info/top_level.txt,sha256=woPYn-MOooR-yEikot_S0NdjDWRQBHnkkq_ESbUnzP8,7
+dm_sonnet_gpu-1.32.dist-info/RECORD,,
