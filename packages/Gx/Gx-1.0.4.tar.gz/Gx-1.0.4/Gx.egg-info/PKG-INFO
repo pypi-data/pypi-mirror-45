@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: Gx
+Version: 1.0.4
+Summary: A Scavenger `s code in his whole life
+Home-page: UNKNOWN
+Author: WRQ
+Author-email: wrq2149678246@qq.com
+Maintainer: wrq,
+Maintainer-email: wrq2149678246@qq.com
+License: BSD License
+Description: A Scavenger in his hometown
+         大风起兮云飞扬
+        威加海内兮归故乡
+        安得猛士兮守四方 
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
