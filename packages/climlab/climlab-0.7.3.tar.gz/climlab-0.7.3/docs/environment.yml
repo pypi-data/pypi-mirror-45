@@ -1,0 +1,20 @@
+name: climlab
+channels:
+  - conda-forge
+dependencies:
+    - python=3.7
+    - numpy=1.16.0
+    - pandas=0.23.3
+    - scipy=1.2.0
+    - matplotlib=3.0.2
+    - netCDF4=1.4.2
+    - xarray
+    - attrdict
+    - sphinx=1.8.2
+    - ipython=7.2.0
+    - jupyter
+    - future
+    - sphinx_rtd_theme=0.4.2
+    #- nbsphinx
+    - sphinxcontrib-bibtex
+    - numpydoc=0.8.0
