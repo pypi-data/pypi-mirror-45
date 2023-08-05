@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vtzero
+Version: 0.0.1b1
+Summary: Python wrapper for vtzero C++ library.
+Home-page: UNKNOWN
+Author: Yohan Boniface
+Author-email: yohan.boniface@data.gouv.fr
+License: MIT
+Description: UNKNOWN
+Keywords: mvt mapbox vector tile gis
+Platform: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering :: GIS
+Provides: vtzero
+Provides-Extra: test
