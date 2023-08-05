@@ -1,0 +1,59 @@
+asyncwebsockets (0.4.1-1) unstable; urgency=medium
+
+  * New release
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 12 Apr 2019 08:11:40 +0200
+
+asyncwebsockets (0.3.4-2) unstable; urgency=medium
+
+  * Tighten requirements
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 13 Mar 2019 08:41:14 +0100
+
+asyncwebsockets (0.3.4-1) unstable; urgency=medium
+
+  * Merge: superfluous print
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 06 Mar 2019 19:50:22 +0100
+
+asyncwebsockets (0.3.3-3) unstable; urgency=medium
+
+  * Merge: extra_headers defaults to an empty list
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 04 Mar 2019 12:12:26 +0100
+
+asyncwebsockets (0.3.3-2) unstable; urgency=medium
+
+  * Headers are optional and lists
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 04 Mar 2019 11:32:59 +0100
+
+asyncwebsockets (0.3.3-1) unstable; urgency=medium
+
+  * Merge
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 04 Mar 2019 11:17:01 +0100
+
+asyncwebsockets (0.3.2-1) unstable; urgency=medium
+
+  * export create_websocket
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 01 Mar 2019 14:14:27 +0100
+
+asyncwebsockets (0.3.1~dev6-2) unstable; urgency=medium
+
+  * Merge
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 01 Mar 2019 13:51:27 +0100
+
+asyncwebsockets (0.3.1~dev6-1) unstable; urgency=medium
+
+  * Merge after surgery
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 01 Mar 2019 13:45:55 +0100
+
+asyncwebsockets (0.3.1~dev5-1) smurf; urgency=low
+
+  * source package automatically created by stdeb 0.8.5
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 28 Feb 2019 20:48:04 +0100
