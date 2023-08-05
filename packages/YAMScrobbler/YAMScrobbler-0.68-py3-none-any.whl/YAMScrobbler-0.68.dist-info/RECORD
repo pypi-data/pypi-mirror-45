@@ -1,0 +1,10 @@
+YAMScrobbler-0.68.data/scripts/yams,sha256=0eoaKA5NYwkZLxxvrEwLljfm2dd3M2WHndohm3Thv80,945
+YAMScrobbler-0.68.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+YAMScrobbler-0.68.dist-info/METADATA,sha256=pDvlDbVXF2xYgNaNW2UMEgFOVHoPcMIMGYMzXYTTDZs,8351
+YAMScrobbler-0.68.dist-info/RECORD,,
+YAMScrobbler-0.68.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+YAMScrobbler-0.68.dist-info/top_level.txt,sha256=p6YS79tTPK6O1XO6gTt07_ls6Nm8fLTOV676d9EGfgc,5
+yams/__init__.py,sha256=cJCEy_NXfnpN1A4ehAP0UsPAaci2sw4mrU8BjCRig4k,52
+yams/__main__.py,sha256=kfDk0NJxD9UBw_I2QsOKLlJy5yKWQedAzqQ9nFmltZ0,45
+yams/configure.py,sha256=VFT-n5gRQIkQi1jI0yCHMbbWKnmdRFvJ6FGw2EF-8VI,13932
+yams/scrobble.py,sha256=neDRqbjra9qbC4bAkTJ-98nkfDn8yBoD49HJOkJaFI0,27442
