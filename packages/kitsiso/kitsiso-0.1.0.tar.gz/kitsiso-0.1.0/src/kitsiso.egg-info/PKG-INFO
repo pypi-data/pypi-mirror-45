@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kitsiso
+Version: 0.1.0
+Summary: Library for sending desktop notifications.
+Home-page: https://andreas19.github.io/kitsiso/
+Author: Andreas19
+Author-email: andreas19@posteo.eu
+License: BSD-3-Clause
+Project-URL: Source code, https://github.com/andreas19/kitsiso/
+Description: # kitsiso
+        
+        Library for sending [desktop notifications](https://people.gnome.org/~mccann/docs/notification-spec/notification-spec-latest.html).
+        
+        For more information see the [documentation](https://andreas19.github.io/kitsiso/overview.html).
+        
+        *Kitsiso* means [*notification*](https://glosbe.com/en/tn/notification) in [Setswana](https://en.wikipedia.org/wiki/Tswana_language).
+        
+        History
+        -------
+        
+        **2019-04-22 (0.1.0)**
+         - First public release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

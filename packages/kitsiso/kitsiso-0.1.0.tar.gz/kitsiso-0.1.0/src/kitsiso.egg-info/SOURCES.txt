@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/kitsiso/__init__.py
+src/kitsiso/_notification.py
+src/kitsiso/_notifier.py
+src/kitsiso.egg-info/PKG-INFO
+src/kitsiso.egg-info/SOURCES.txt
+src/kitsiso.egg-info/dependency_links.txt
+src/kitsiso.egg-info/requires.txt
+src/kitsiso.egg-info/top_level.txt
