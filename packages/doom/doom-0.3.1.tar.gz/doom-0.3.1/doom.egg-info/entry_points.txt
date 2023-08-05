@@ -1,0 +1,3 @@
+[console_scripts]
+get_local_ip = doom.sysinfo.get_local_ip:script
+
