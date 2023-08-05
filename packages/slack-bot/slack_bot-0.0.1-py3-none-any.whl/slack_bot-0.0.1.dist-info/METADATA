@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: slack-bot
+Version: 0.0.1
+Summary: Simple application for make slack bot
+Home-page: https://github.com/DKorytkin/slack-bot
+Author: Denis Korytkin
+Author-email: dkorytkin@gmail.com
+License: MIT license
+Keywords: bot,slack,app,slack_bot,app,application
+Platform: linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pip (==19.0.3)
+Requires-Dist: setuptools (==41.0.0)
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: urllib3 (==1.24.2)
+Requires-Dist: websocket-client (==0.47.0)
+Requires-Dist: slackclient (==1.3.1)
+Provides-Extra: tests
+Requires-Dist: atomicwrites (==1.3.0) ; extra == 'tests'
+Requires-Dist: attrs (==19.1.0) ; extra == 'tests'
+Requires-Dist: more-itertools (==7.0.0) ; extra == 'tests'
+Requires-Dist: pluggy (==0.9.0) ; extra == 'tests'
+Requires-Dist: py (==1.8.0) ; extra == 'tests'
+Requires-Dist: pytest (==4.4.1) ; extra == 'tests'
+Requires-Dist: wheel (==0.33.1) ; extra == 'tests'
+
+
+# slack_bot
+Application for easy make slack bot
+
+
+## Getting Started:
+
+### Installing:
+
+```bash
+pip install slack_bot
+```
+
+### Usage:
+
+```python
+import os
+
+from slack_bot.bot import Application, Response
+
+
+app = Application(token=os.getenv('SLACK_TOKEN'))
+
+
+@app.route('hello')
+def main(request):
+    return Response(request=request, text=f'Hi! {request.user}')
+
+
+if __name__ == '__main__':
+    app.run()
+```
+
+### Examples:
+
+ - [init routes in app as decorator](example/first_example.py) 
+ - [init routes in table](example/second_example.py) 
+ - [init routes in app](example/third_example.py) 
+
+## Authors:
+
+ - Denis Korytkin
+
+## License:
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+## Dependencies:
+
+*base*
+
+```bash
+pip==19.0.3
+setuptools==41.0.0
+```
+
+*application dependencies*
+
+```bash
+slackclient==1.3.1
+```
+
+*slackclient dependencies*
+
+```bash
+certifi==2019.3.9
+chardet==3.0.4
+idna==2.8
+requests==2.21.0
+six==1.12.0
+urllib3==1.24.2
+websocket-client==0.47.0
+```
+
+
