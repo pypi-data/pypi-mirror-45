@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wonderboy/__init__.py
+wonderboy/__version__.py
+wonderboy/core.py
+wonderboy.egg-info/PKG-INFO
+wonderboy.egg-info/SOURCES.txt
+wonderboy.egg-info/dependency_links.txt
+wonderboy.egg-info/top_level.txt
