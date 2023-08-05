@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: decisionlib-mhentges
+Version: 0.0.23
+Summary: Taskcluster task-builder
+Home-page: UNKNOWN
+Author: Mozilla Release Engineering
+Author-email: release+python@mozilla.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: gitpython (==2.1.11)
+Requires-Dist: taskcluster (==4.0.1)
+
+UNKNOWN
+
+
