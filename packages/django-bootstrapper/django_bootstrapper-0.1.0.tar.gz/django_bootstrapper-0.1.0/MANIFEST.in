@@ -1,0 +1,5 @@
+include README.md
+include django_bootstrapper/templates/*.tmpl
+include django_bootstrapper/templates/project_config/*.tmpl
+include django_bootstrapper/templates/scripts/*.tmpl
+include django_bootstrapper/templates/docker_config/*.tmpl
