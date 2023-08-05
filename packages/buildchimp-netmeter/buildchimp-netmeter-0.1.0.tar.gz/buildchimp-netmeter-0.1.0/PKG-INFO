@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: buildchimp-netmeter
+Version: 0.1.0
+Summary: Metrics for network connectivity
+Home-page: https://github.com/jdcasey/buildchimp-netmeter
+Author: John Casey
+Author-email: jdcasey@commonjava.org
+License: GPLv3+
+Description: Measurements to be pushed into Graphite/Elastic and monitor network connectivity
+Keywords: graphite metrics monitoring network mqtt amqp carbon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
