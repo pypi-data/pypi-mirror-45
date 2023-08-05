@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: JMI-MVM
+Version: 0.0.1
+Summary: A collection of our functions and classes from bootcamp. 
+Home-page: https://github.com/jirvingphd/JMI_MVM
+Author: James M. Irving, Michael V. Moravetz
+Author-email: james.irving.phd@outlook.com
+License: UNKNOWN
+Description: # Example Package
+        
+        - A collection of tools created for botcmap. 
+        - More information to be added later.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
