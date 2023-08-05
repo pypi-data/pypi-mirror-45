@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyflann-py3
+Version: 0.1.0
+Summary: pyflann is the python bindings for FLANN - Fast Library for Approximate Nearest Neighbors.
+Home-page: https://github.com/seantur/pyflann
+Author: Sean Turner
+Author-email: seanturner@outlook.com
+License: BSD
+Description: UNKNOWN
+Keywords: flann
+Platform: UNKNOWN
