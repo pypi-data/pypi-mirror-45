@@ -1,0 +1,8 @@
+setup.py
+telegram_words_back_taker/telegram_words_back_taker.py
+telegram_words_back_taker.egg-info/PKG-INFO
+telegram_words_back_taker.egg-info/SOURCES.txt
+telegram_words_back_taker.egg-info/dependency_links.txt
+telegram_words_back_taker.egg-info/not-zip-safe
+telegram_words_back_taker.egg-info/requires.txt
+telegram_words_back_taker.egg-info/top_level.txt
