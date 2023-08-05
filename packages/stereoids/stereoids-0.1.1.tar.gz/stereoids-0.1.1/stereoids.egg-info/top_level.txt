@@ -1,0 +1,3 @@
+corrector
+detector
+stereoids
