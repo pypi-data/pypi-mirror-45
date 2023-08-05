@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_immortalmodel.egg-info/PKG-INFO
+django_immortalmodel.egg-info/SOURCES.txt
+django_immortalmodel.egg-info/dependency_links.txt
+django_immortalmodel.egg-info/requires.txt
+django_immortalmodel.egg-info/top_level.txt
+immortalmodel/__init__.py
+immortalmodel/admin.py
+immortalmodel/models.py
+immortalmodel/tests.py
