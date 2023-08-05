@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: ramkit
+Version: 0.0.1
+Summary: An analysis kernel for raman spectrum.
+Home-page: https://github.com/niemingzhao/ramkit
+Author: Nie Mingzhao
+Author-email: 1432440963@qq.com
+License: MIT
+Download-URL: https://github.com/niemingzhao/ramkit/archive/master.zip
+Description: An analysis kernel for raman spectrum.
+Keywords: raman spectrum spectroscopy algorithm
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: ~=3.6
