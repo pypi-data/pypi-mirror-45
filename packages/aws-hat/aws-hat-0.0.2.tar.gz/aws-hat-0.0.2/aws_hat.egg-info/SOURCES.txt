@@ -1,0 +1,9 @@
+README.md
+setup.py
+aws_hat.egg-info/PKG-INFO
+aws_hat.egg-info/SOURCES.txt
+aws_hat.egg-info/dependency_links.txt
+aws_hat.egg-info/entry_points.txt
+aws_hat.egg-info/not-zip-safe
+aws_hat.egg-info/requires.txt
+aws_hat.egg-info/top_level.txt
