@@ -1,0 +1,16 @@
+yabc/__init__.py,sha256=Ba-wt8p59bLmeUONkYSo5MhrkH-_HdT4zE1Y9MVGrSQ,83
+yabc/basis.py,sha256=bwPtULZluTWbfgaxx1OTo6doj98IpEsW7O3Vo-dJoXQ,5789
+yabc/csv_to_json.py,sha256=XMjpXwwfj2GN394qAaCZRInqACGnY80mWAnG68_VzJs,2778
+yabc/taxdoc.py,sha256=yn__4fXyglgt998hF_dzBtsgdTAEaPzuPNhosXb_AeA,416
+yabc/transaction.py,sha256=ug42JwluTX21hOaY1P5bidtROWDJ_ByCWQLOgy2evrE,3963
+yabc/user.py,sha256=mx9NxKX5S3E1WNCbOELADljTk6Ho9t77KO4twqufKRY,172
+yabc/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yabc/server/inmemory_backend.py,sha256=HjlgExYeEKznWv49VeNium3uENPj3pJB5yBnlG5tA3A,2256
+yabc/server/server.py,sha256=oHNtbJv1ER8gr1BREjV5sk_V5CDhYE20H_oWg1rZqeQ,1395
+yabc/server/sql_backend.py,sha256=qWufO-J4NXpOgkqHG1IiLzS5QCPX-sHmkJRcmxl3Q8Y,2996
+yabc/server/yabc_api.py,sha256=82NOW_Wrsc2q2c-f-xoRPZ-SIrxVdYE5NjtqgH38Jls,2299
+yabc-0.0.3.dist-info/LICENSE,sha256=IG4UxmYrdAElVCpE6jwC49Ct8xMoxyXioTHoqT0f57k,1068
+yabc-0.0.3.dist-info/METADATA,sha256=4fTEyq8yqcTbICs78xN05-ovQLjqLg63ZkewyHdRcgY,1523
+yabc-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+yabc-0.0.3.dist-info/top_level.txt,sha256=0osQLRrTRnF9NNCc1jPs1nLCHRGVpI2_n9Qt5PgW3Xg,5
+yabc-0.0.3.dist-info/RECORD,,
