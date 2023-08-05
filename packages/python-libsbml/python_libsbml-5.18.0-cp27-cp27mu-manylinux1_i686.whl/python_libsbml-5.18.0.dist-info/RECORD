@@ -1,0 +1,6 @@
+libsbml/_libsbml.so,sha256=YU0_LmlgP3ltdfrzQr3HT8pxW2UCVC385KMMqZuE1I0,100126973
+libsbml/__init__.py,sha256=pl_Cymmx60AWtgcptMO_haVaYI1khlItCt3rOARI5oA,7057573
+python_libsbml-5.18.0.dist-info/RECORD,,
+python_libsbml-5.18.0.dist-info/METADATA,sha256=70e1Bz_MVtKbq6WWO3ct6Qn7jyEQ5hvWerws-1xd8wA,499
+python_libsbml-5.18.0.dist-info/top_level.txt,sha256=QL4uwL4aVn01KiiTM_rt1jyP8F8r4_bE9dBUfelj4Tw,17
+python_libsbml-5.18.0.dist-info/WHEEL,sha256=i5SA-7-fHe0jcG7-zARss1ArnqL6O_idGzRvU-4t9gw,108
