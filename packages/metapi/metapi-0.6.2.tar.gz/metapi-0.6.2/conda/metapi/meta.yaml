@@ -1,0 +1,73 @@
+{% set version = "0.6.1" %}
+
+
+package:
+  name: metapi
+  version: {{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/e8/bd/3e6375bb8545771110834d066d93ee147effc2392d1ecd9d4dd814f0d2a9/metapi-{{ version }}.tar.gz
+  sha256: 256dc3eb12ed2bc7365b39f629e3bef28d6f1cf5c731298ff2aadd5ecfb52e66
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    - metapi = metapi.core:main
+
+requirements:
+  host:
+    - python >=3.5
+    - pip
+    - setuptools
+    - pandas
+    - ruamel.yaml
+    - snakemake
+
+  run:
+    - python >=3.5
+    - setuptools
+    - pandas
+    - numpy
+    - biopython
+    - ruamel.yaml
+    - snakemake
+    - ncbi-genome-download
+    - pigz
+    - fastp
+    - sickle-trim
+    - multiqc
+    - bwa
+    - bowtie2
+    - samtools
+    - spades
+    - quast
+    - idba
+    - megahit
+    - maxbin2
+    - metabat2
+    - prodigal
+    - prokka
+    - drep
+    - vsearch
+    - mash
+    - checkm-genome
+
+test:
+  imports:
+    - metapi
+
+commands:
+  - metapi --version
+  - metapi init --help
+
+about:
+  home: https://github.com/ohmeta/metapi
+  license: GNU General Public License V3 (GPLv3)
+  summary: 'metapi is a pipeline to construct a genome catalogue from metagenomics data'
+  license_family: GPL3
+
+extra:
+  identifiers:
+    - biotools:metapi
