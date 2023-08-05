@@ -1,0 +1,2 @@
+cubicweb>=3.24.0
+cubicweb-iprogress>=0.1.1
