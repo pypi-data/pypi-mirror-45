@@ -1,0 +1,2 @@
+pyviews>=2.0.4
+wxpython
