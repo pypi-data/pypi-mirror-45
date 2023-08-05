@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: blocksparse
+Version: 1.13.0
+Summary: Tensorflow ops for blocksparse matmul, transformer, convolution and related operations.
+Home-page: https://github.com/openai/blocksparse
+Author: OpenAI
+Maintainer: Scott Gray
+Maintainer-email: scott@openai.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
