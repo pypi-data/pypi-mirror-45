@@ -1,0 +1,4 @@
+dissononce>=0.34.2
+python-axolotl-curve25519
+transitions
+protobuf
