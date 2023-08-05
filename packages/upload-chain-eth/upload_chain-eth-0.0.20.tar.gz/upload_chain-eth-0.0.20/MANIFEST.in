@@ -1,0 +1,18 @@
+include LICENSE
+include VERSION
+include README.md
+include README.rst
+include MANIFAST.in
+include requirements.txt
+include upload_chain.conf
+include Makefile
+include Dockerfile
+include docs docs/*
+
+# 针对的是目录
+graft contracts
+graft tests
+graft golang
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
