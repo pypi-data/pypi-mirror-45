@@ -1,0 +1,33 @@
+{% load i18n cms_tags %}
+{% comment %}Obviously, the context template variable "course" is required and must be a Course page extension{% endcomment %}
+{% with course_page=course.extended_object course_state=course.state main_org_title=course.get_main_organization.extended_object.get_title %}
+<div class="course-glimpse__media">
+    {% show_placeholder "course_cover" course_page as cover %}
+    {% if cover %}
+        {{ cover }}
+    {% else %}
+        <div class="course-glimpse__media__empty">
+        {% trans "Cover" %}
+        </div>
+    {% endif %}
+</div>
+<div class="course-glimpse__content">
+    <div class="course-glimpse__content__wrapper">
+        <p class="course-glimpse__content__title">{{ course_page.get_title }}</p>
+        {% if main_org_title %}
+        <p>{{ main_org_title }}</p>
+        {% endif %}
+    </div>
+    <div class="course-glimpse__footer">
+        <p class="course-glimpse__footer__date">
+            {{ course_state.text|title }}<br>
+            {{ course_state.datetime|date:"DATE_FORMAT" }}
+        </p>
+        {% if course_state.call_to_action %}
+        <div class="course-glimpse__footer__cta">
+            <button class="button">{{ course_state.call_to_action|title }}</button>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endwith %}
