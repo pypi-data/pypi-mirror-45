@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-viewsource
+Version: 0.1.3
+Summary: Add an "Edit on GitHub" button to your code examples.
+Home-page: https://github.com/dgarcia360/sphinxcontrib-viewsource
+Author: David Garcia
+Author-email: dgarcia360@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Documentation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
