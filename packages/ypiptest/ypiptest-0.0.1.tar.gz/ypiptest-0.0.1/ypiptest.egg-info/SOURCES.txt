@@ -1,0 +1,5 @@
+setup.py
+ypiptest.egg-info/PKG-INFO
+ypiptest.egg-info/SOURCES.txt
+ypiptest.egg-info/dependency_links.txt
+ypiptest.egg-info/top_level.txt
