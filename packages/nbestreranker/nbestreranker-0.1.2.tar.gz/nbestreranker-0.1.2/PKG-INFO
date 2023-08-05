@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: nbestreranker
+Version: 0.1.2
+Summary: nbest reranker nlp
+Home-page: https://github.com/GodsLeft
+Author: GodsLeft
+Author-email: 1456466573@qq.com
+License: MIT Licence
+Description-Content-Type: UNKNOWN
+Description: nbest reranker
+Keywords: pip,nbest,ranker
+Platform: any

@@ -1,0 +1,4 @@
+[console_scripts]
+nbestreranker-augmenter = bin.augmenter
+nbestreranker-reranker = bin.reranker
+
