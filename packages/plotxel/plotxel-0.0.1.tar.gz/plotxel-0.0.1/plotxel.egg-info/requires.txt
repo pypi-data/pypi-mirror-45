@@ -1,0 +1,3 @@
+svgwrite
+python3
+cairosvg
