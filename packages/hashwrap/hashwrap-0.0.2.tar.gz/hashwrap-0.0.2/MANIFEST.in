@@ -1,0 +1,4 @@
+include hashwrap/*.toml
+include hashwrap/docs/*
+include hashwrap/src/*.inc
+recursive-include hashwrap/sample *
