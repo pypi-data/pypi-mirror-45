@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+SpazUtils.egg-info/PKG-INFO
+SpazUtils.egg-info/SOURCES.txt
+SpazUtils.egg-info/dependency_links.txt
+SpazUtils.egg-info/requires.txt
+SpazUtils.egg-info/top_level.txt

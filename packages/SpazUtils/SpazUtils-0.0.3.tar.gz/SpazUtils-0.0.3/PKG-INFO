@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: SpazUtils
+Version: 0.0.3
+Summary: Utilities for Automating Moderation on Reddit
+Home-page: https://github.com/user/SpazUtils
+Author: Lil_SpazJoekp
+Author-email: lilspazjoekp@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/LilSpazJoekp/SpazUtils/archive/0.0.3.tar.gz
+Description: SpazUtils
+        =========
+        
+        Utilties for Automating Moderation on Reddit
+        --------------------------------------------
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        SpazUtils requires Python 3.5+ to run.
+        
+        
+        Install SpazUtils using ``pip`` via:
+        
+        .. code-block:: console
+        
+            pip install SpazUtils
+        
+        Simple Flair Bot Example:
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        -  Run ``dbSetup.py`` to generate Database config and follow its
+           instructions
+        -  Put info into ``config.py``
+        -  Put removal reasons into ``removalreasons.py``
+        -  Run ``__main__.py``
+        
+        TODO
+        ~~~~
+        
+        -  Finish and improve documentation
+        
+Keywords: spaz utils utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
