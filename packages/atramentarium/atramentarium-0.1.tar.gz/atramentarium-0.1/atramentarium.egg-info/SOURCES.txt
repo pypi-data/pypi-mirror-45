@@ -1,0 +1,8 @@
+README.md
+setup.py
+atramentarium/__init__.py
+atramentarium/atramentarium.py
+atramentarium.egg-info/PKG-INFO
+atramentarium.egg-info/SOURCES.txt
+atramentarium.egg-info/dependency_links.txt
+atramentarium.egg-info/top_level.txt
