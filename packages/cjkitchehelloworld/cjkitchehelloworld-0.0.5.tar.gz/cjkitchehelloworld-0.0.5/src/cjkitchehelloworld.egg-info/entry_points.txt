@@ -1,0 +1,3 @@
+[console_scripts]
+helloworld = cfn.__main__:main
+
