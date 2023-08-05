@@ -1,0 +1,7 @@
+appdirs
+arrow
+avendesora>=1.12
+docopt
+inform>=1.14
+python-gnupg>=0.4.3
+quantiphy
