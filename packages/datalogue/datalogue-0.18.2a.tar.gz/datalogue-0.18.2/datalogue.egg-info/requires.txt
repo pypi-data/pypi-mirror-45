@@ -1,0 +1,7 @@
+requests
+python-dateutil
+validators
+pytest
+numpy
+pyyaml
+pyarrow
