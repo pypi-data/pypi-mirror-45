@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ultimate-hosts-blacklist-input-repo-updater
+Version: 0.0.1
+Summary: The tool to update the input repositories of the Ultimate-Hosts-Blacklist project.
+Home-page: https://github.com/Ultimate-Hosts-Blacklist/dev-center/tree/input-repo-updater
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Keywords: Python,hosts,hosts file
+Platform: any
+Classifier: Environment :: Console
+Classifier: Topic :: Internet
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: colorama
+Requires-Dist: ultimate-hosts-blacklist-whitelist
+
+UNKNOWN
+
+
