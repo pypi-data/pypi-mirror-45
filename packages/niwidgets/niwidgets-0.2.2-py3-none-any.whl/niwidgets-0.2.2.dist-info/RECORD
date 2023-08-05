@@ -1,0 +1,23 @@
+niwidgets/__init__.py,sha256=BnlQu8u-Qs88-SnGFR4BrK13Nn3I1Ve1mHA5rC7flgM,423
+niwidgets/colormaps.py,sha256=yVvfOKgf0nrFbf7BPVzGlR6VvyFogRNGj4dZS8JoNS8,1044
+niwidgets/controls.py,sha256=8PRZKT6FNBj86Vsl6WgfByNrbADncNnNe0-_qE641Vo,1346
+niwidgets/data/T1.nii.gz,sha256=1jk9RUVYtUUepnZQTh3jXnBqDljco_PoXqnzkqnn-_I,3392069
+niwidgets/data/cc400_roi_atlas.nii,sha256=Y_uaLYNqTcdTx_lMTagibmHPMkO1iVqs1ZiF2cboTqk,580562
+niwidgets/data/cognitive control_pFgA_z.nii.gz,sha256=1aIGFGFZU7p02B2jVa7VxoVtKYqeI2LP3JlCWR3aVXY,1219628
+niwidgets/data/cognitive control_pFgA_z_FDR_0.01.nii.gz,sha256=6SmbFnDVJ-hURvY4fQLByqGTFQDeGQDKxDOdGwR8HE8,146922
+niwidgets/data/example_surfaces/aparc.annot.ctab,sha256=v000cuS7Qe1onajumUSKVPZiKjBhmIk9whwPNKaEjq4,1944
+niwidgets/data/example_surfaces/lh.aparc.annot,sha256=jqKA9TPdeZBBjya2gbLZYxn7bh_tH6Nr2Lw_s6Ry6sY,1070010
+niwidgets/data/example_surfaces/lh.area,sha256=hmF_laQDS-jyzo16tIR_ctco1GfR5-KLmzsk9jfji48,534263
+niwidgets/data/example_surfaces/lh.curv,sha256=jvqfLsPxJCnzzXwMHOqva7F0OHIH60glpkIF2zJrVhM,534263
+niwidgets/data/example_surfaces/lh.inflated,sha256=vhromV1HeSkldPj_rBFprTp8BWEyiTAkxaEiS4IIjOg,4810288
+niwidgets/data/example_surfaces/lh.thickness,sha256=eJVIMzglRVaBB18uVcLAX9uV34_RE2xEv20yQeyZk-g,534263
+niwidgets/data/streamlines.trk,sha256=LJO6QSvAK4_OUHkAnVz_UH9PPxKIr-47cY-947dRkhs,3928368
+niwidgets/exampledata.py,sha256=vG6_pVZtSQHrbLwEE2PER9YafgLUJ2yhSjtG9z3ehlo,824
+niwidgets/niwidget_surface.py,sha256=aGTCJlHJC1LTSyjKdDRQiNzDB-wimsgqW7Jh78BFjaQ,10545
+niwidgets/niwidget_volume.py,sha256=h4tsImxK3jFg4GxVl7Oynf53IohzpJWBC-MqskHTgcI,22043
+niwidgets/streamlines.py,sha256=9WqOyyFrIqWkoenutAtQYsktGmhGGa0mRJkH-gi_sX0,8860
+niwidgets/version.py,sha256=qvQscq4UYpNTs4DQLa9dkjXqz0B17YcqbMhyVPFpTVw,110
+niwidgets-0.2.2.dist-info/LICENSE.md,sha256=WUIok-Qa4ilyNjWugriAU3FLO96dOTkPCfUpbLfnWeM,561
+niwidgets-0.2.2.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+niwidgets-0.2.2.dist-info/METADATA,sha256=BKq8dzgEO5z-vm0pO8z0nrKWsBh572SvEMSi-0whK1o,5246
+niwidgets-0.2.2.dist-info/RECORD,,
