@@ -1,0 +1,10 @@
+README.md
+setup.py
+glplotlib/__init__.py
+glplotlib/glplot.py
+glplotlib/utilites.py
+glplotlib.egg-info/PKG-INFO
+glplotlib.egg-info/SOURCES.txt
+glplotlib.egg-info/dependency_links.txt
+glplotlib.egg-info/requires.txt
+glplotlib.egg-info/top_level.txt
