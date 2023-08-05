@@ -1,0 +1,52 @@
+mds-employee-timetracking
+=========================
+Working time recording for employees, with multiple time accounts, 
+time account rules, automatic pause control and report.
+
+Install
+=======
+
+pip install mds-employee-timetracking
+
+Requires
+========
+- Tryton 5.0
+
+HowTo
+=====
+
+For more information, read the files in the doc folder.
+
+ToDo
+====
+- extend manual
+- support for NFC door device
+
+Changes
+=======
+
+*5.0.12 - 15.04.2019*
+
+- new: holiday planning (new depency to mds-pim-calendar)
+
+*5.0.11 - 14.02.2019*
+
+- new: calendar view in evaluation + presence period + break time
+- new: colors of background/text in calendar view selectable 
+   for employee + type of presence, time account...
+- info: GooCalendar on client side is neccasary
+
+*5.0.10 - 11.02.2019*
+
+- new: Attendance wizard extended, employee can enter his break times
+- fix: report causes exception
+
+*5.0.9 - 30.01.2019*
+
+- fix: edit employee also corrects the associated company on the cronjob
+- updt: optimized tests
+- new: Time Entry Wizard accepts any number of Presence Types
+
+*5.0.8 - 17.01.2019*
+
+- checked compatibility to Tryton 5.0
