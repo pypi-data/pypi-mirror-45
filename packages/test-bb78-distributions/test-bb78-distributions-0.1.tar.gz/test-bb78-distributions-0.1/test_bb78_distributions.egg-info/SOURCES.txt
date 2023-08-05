@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+test-bb78-distributions/Binomialdistribution.py
+test-bb78-distributions/Gaussiandistribution.py
+test-bb78-distributions/Generaldistribution.py
+test-bb78-distributions/__init__.py
+test_bb78_distributions.egg-info/PKG-INFO
+test_bb78_distributions.egg-info/SOURCES.txt
+test_bb78_distributions.egg-info/dependency_links.txt
+test_bb78_distributions.egg-info/not-zip-safe
+test_bb78_distributions.egg-info/top_level.txt
