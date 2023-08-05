@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: zappa-secrets-manager
+Version: 0.5.0
+Summary: Enables seamless zappa integration with AWS Secrets Manager while still allowing local development via environment variables
+Home-page: UNKNOWN
+Author: AgileTek Engineering
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
