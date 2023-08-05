@@ -1,0 +1,14 @@
+pyglet_ffmpeg/__init__.py,sha256=yQu57YRG7aFdEdna1CIspxkNcT0zC98NBo2K02Zrtsk,87
+pyglet_ffmpeg/loader.py,sha256=X0kdcAdYNA-Wt5aOHqmoq3YSigw7PtLoWa3cSYFZ4dc,2877
+pyglet_ffmpeg/RPi/libavcodec.so.58.21.105,sha256=aikC6W2_vXgXoFihWIlJeu9eEa6vixtEpHKYmZiO5bM,12114068
+pyglet_ffmpeg/RPi/libavfilter.so.7.25.100,sha256=3DPifhU1HqHIZHNV_CBoBIZmk5X4qTC8GiuoudEj68U,2280696
+pyglet_ffmpeg/RPi/libavformat.so.58.17.101,sha256=2UANCGWO7HqXvV-b3fsyYY7_q-u0fWnwcEwsHuCUa9c,2162004
+pyglet_ffmpeg/RPi/libavutil.so.56.18.102,sha256=ttCqT4buKhzW95oFvxCnZ9b2whBvvvmbGI1MvAjloIY,474420
+pyglet_ffmpeg/RPi/libswresample.so.3.2.100,sha256=lKuEmZU46Uk1zLXKA7E1H3mzKneSAoHfjvGtwUxJPu0,91740
+pyglet_ffmpeg/RPi/libswscale.so.5.2.100,sha256=eq-lqBImLbVgnAxYMQpzOPNYvHZrv6YJZfIgJV4W_Yk,419496
+pyglet_ffmpeg2-0.1.6.dist-info/LICENSE,sha256=HZfPW9h_g0x_VTSyjKHdIoKqiQoktO9BPD24L-a0CCA,1541
+pyglet_ffmpeg2-0.1.6.dist-info/METADATA,sha256=616q9cvlkYjhExlKiWUiAtvU5-qcZl-jR4X1QXkJRBE,307
+pyglet_ffmpeg2-0.1.6.dist-info/NOTICE.txt,sha256=Alu5kMF9ZtN9prF-owfe5ynj9AVFZq28PHw-GwBeC7c,246
+pyglet_ffmpeg2-0.1.6.dist-info/WHEEL,sha256=dECbTM8x0i00QLl_5vIYa4osYqXhqyhZeqvLyuP16L0,106
+pyglet_ffmpeg2-0.1.6.dist-info/top_level.txt,sha256=0vd60-eX5cMDiA4hmX-IkxAoqX6DdEukYc2aTi9_ltE,14
+pyglet_ffmpeg2-0.1.6.dist-info/RECORD,,
