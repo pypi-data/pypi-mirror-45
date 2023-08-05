@@ -1,0 +1,8 @@
+README.md
+setup.py
+PlasmidPlots/PlasmidPlots.py
+PlasmidPlots/__init__.py
+PlasmidPlots.egg-info/PKG-INFO
+PlasmidPlots.egg-info/SOURCES.txt
+PlasmidPlots.egg-info/dependency_links.txt
+PlasmidPlots.egg-info/top_level.txt
