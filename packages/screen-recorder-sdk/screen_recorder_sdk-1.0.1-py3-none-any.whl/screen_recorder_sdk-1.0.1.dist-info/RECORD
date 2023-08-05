@@ -1,0 +1,9 @@
+screen_recorder_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+screen_recorder_sdk/exit_codes.py,sha256=gE_UAJwbRT19Y6zuJZxO0aCAZxHXt8ZtS0B4ogvyjmM,525
+screen_recorder_sdk/screen_recorder.py,sha256=a3Z21c6bf5WUxfMUQKns45VgaJveyYo9LHwIcOwUj0Q,5475
+screen_recorder_sdk/lib/ScreenRecorder.dll,sha256=LNAP_Q7ZLoVT5agv8KsWhfBJ0j6Dn_ghvCYIhtEo1ko,497664
+screen_recorder_sdk-1.0.1.dist-info/METADATA,sha256=PMU9Q7ma0__XJHq1wa7_NFAAIvLxM83djCqf7ou8qBE,2047
+screen_recorder_sdk-1.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+screen_recorder_sdk-1.0.1.dist-info/top_level.txt,sha256=kbRSMRYaM_ZFJ7Zp4VbY1vdHC0Ybfo96zRAoQGQLqA4,20
+screen_recorder_sdk-1.0.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+screen_recorder_sdk-1.0.1.dist-info/RECORD,,
