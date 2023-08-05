@@ -1,0 +1,10 @@
+dnstest/__init__.py,sha256=dBuoGmLImNIqM4JWky8r5UKttZbu7y4RQ_DS-Xs1Ybc,28
+dnstest/__main__.py,sha256=84_S8skgwpyChkXoftZHQ9Vnqq73-6ehXSx9f4CU-R8,61
+dnstest/check.py,sha256=yNAkELjFPxsY7miwBrH3L-1CLhsiA_naBopsYBUFFtk,1398
+dnstest/cli.py,sha256=2csPSb3tMnORNO394DwTz-vMozogPc3ERMVPOMckYt8,1936
+dnstest/matches.py,sha256=MceUhqRQocwbumO2UrJdJCHuj2R9EftZfx6DCbhl9b4,902
+dnstest/validator.py,sha256=g9L6yThK7jkAd96qnPyHMvnUCyrGmju8nyMbSQskfPE,3377
+dnstest-0.1.0a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dnstest-0.1.0a0.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+dnstest-0.1.0a0.dist-info/METADATA,sha256=C_JrIDeENtJ2AAuYAoD4WOUDU2_TFGUJ6G0ltkjdWZU,2444
+dnstest-0.1.0a0.dist-info/RECORD,,
