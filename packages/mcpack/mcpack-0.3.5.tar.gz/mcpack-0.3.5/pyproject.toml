@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mcpack"
+version = "0.3.5"
+description = "A python library for programmatically creating and editing Minecraft data packs"
+authors = ["Valentin Berlier <berlier.v@gmail.com>"]
+license = "MIT"
+
+homepage = "https://github.com/vberlier/mcpack"
+repository = "https://github.com/vberlier/mcpack"
+documentation = "https://github.com/vberlier/mcpack"
+
+readme = "README.md"
+
+keywords = [
+  "minecraft",
+  "datapack",
+  "mcfunction",
+  "structure-file",
+  "advancement",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nbtlib = "^1.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
