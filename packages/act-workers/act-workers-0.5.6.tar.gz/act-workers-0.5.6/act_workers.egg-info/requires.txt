@@ -1,0 +1,6 @@
+act-api>=0.5.4
+requests
+RashlyOutlaid
+virustotal-api
+stix2
+pyexcel_xlsx
