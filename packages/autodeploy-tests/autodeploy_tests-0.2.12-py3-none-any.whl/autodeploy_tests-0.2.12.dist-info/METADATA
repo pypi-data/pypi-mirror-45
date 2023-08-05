@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: autodeploy-tests
+Version: 0.2.12
+Summary: 
+Author: Marco Acierno
+Author-email: marcoaciernoemail@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=2.2,<3.0)
