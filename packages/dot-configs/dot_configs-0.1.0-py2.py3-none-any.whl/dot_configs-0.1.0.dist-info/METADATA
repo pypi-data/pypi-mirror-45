@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: dot-configs
+Version: 0.1.0
+Summary: Import and handle project configurations as dot-separated configs object
+Home-page: https://gitlab.com/loxosceles/dot_configs
+Author: Magnus "Loxosceles" Henkel
+Author-email: loxosceles@gmx.de
+License: GNU GPL v3.0
+Keywords: dot_configs
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+=============================
+Dot Configs
+=============================
+
+.. image:: https://badge.fury.io/py/dot_configs.png
+    :target: http://badge.fury.io/py/dot_configs
+
+Import and handle project configurations as dot-separated configs object
+
+
+Features
+--------
+
+* TODO
+
+
+
+
+Documentation
+-------------
+
+The full documentation is at http://dot_configs.rtfd.org.
+
+
+
+History
+-------
+
+0.1.0 (2019-04-30)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
