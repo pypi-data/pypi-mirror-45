@@ -1,0 +1,6 @@
+pytest
+requests>=1.2
+https://hg.logilab.org/master/cubes/calendar/archive/default.tar.bz2
+https://hg.logilab.org/master/cubes/iprogress/archive/default.tar.bz2
+https://hg.logilab.org/master/cubes/workorder/archive/default.tar.bz2
+https://hg.logilab.org/master/cubes/rqlcontroller/archive/default.tar.bz2
