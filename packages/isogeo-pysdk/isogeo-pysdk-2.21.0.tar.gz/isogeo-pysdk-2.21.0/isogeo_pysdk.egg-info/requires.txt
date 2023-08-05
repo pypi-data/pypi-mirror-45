@@ -1,0 +1,12 @@
+requests>=2.20.0
+
+[api-write]
+requests_oauthlib
+
+[dev]
+configparser
+
+[test]
+coverage
+pycodestyle
+python-dateutil
