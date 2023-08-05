@@ -1,0 +1,10 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include LICENSE
+include LICENSE_datacube
+
+recursive-include test *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include sphinx *.rst conf.py Makefile make.bat *.jpg *.png *.gif
