@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: scratchrelaxtv
+Version: 0.1.1
+Summary: Convenience tool to extract and list variables from HCL (.tf) files.
+Home-page: https://github.com/YakDriver/scratchrelaxtv
+Author: YakDriver
+Author-email: projects@plus3it.com
+License: Apache Software License 2.0
+Platform: Linux
+Platform: Windows
+Platform: Darwin
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# scratchrelaxtv
+Convenience tool to extract and list variables from HCL (.tf) files.
+
+# CHANGE LOG
+
+
+## 0.1.0 - 2019.04.12
+
+* Initial release!
+
+
