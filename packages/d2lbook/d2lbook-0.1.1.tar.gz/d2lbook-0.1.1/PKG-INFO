@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: d2lbook
+Version: 0.1.1
+Summary: Create an online book with Jupyter Notebooks and Sphinx
+Home-page: https://book.d2l.ai
+Author: Mu Li
+Author-email: muli.cmu@google.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
