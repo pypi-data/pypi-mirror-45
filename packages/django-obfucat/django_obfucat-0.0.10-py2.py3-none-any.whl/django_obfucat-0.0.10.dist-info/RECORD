@@ -1,0 +1,14 @@
+django_obfucat/__init__.py,sha256=dr8RVxR8CZMgE7WCf2CECgdhI-qrTuKY1U6VOfsz-Nw,74
+django_obfucat/obfuscators.py,sha256=OkZ_XKpl-gTZICIHMNqc_r8qPC0yNLa-4H9vwBP6R_Y,5955
+django_obfucat/utils.py,sha256=-BChjKEo3f0rk11M4RerW5vQGVvHOEgH6M1mAKAbDeM,722
+django_obfucat/management/__init__.py,sha256=8aWJg__JTONMIlOpC_N-lSugFQazi4axZHSD8brpXUU,55
+django_obfucat/management/commands/__init__.py,sha256=8aWJg__JTONMIlOpC_N-lSugFQazi4axZHSD8brpXUU,55
+django_obfucat/management/commands/obfucat_list.py,sha256=rJgHuJrKzyTkxsYUwkQ9N-Ke46a9uAVJZH3UA6fSI-M,471
+django_obfucat/management/commands/obfucat_obfuscate.py,sha256=zZ0a-gIBr02RjuBoyvoBaHu60aD9vl8CHCofAnup5BA,3904
+django_obfucat/management/commands/obfucat_update.py,sha256=ZbR75HmRvbAm9rRWk5C26FD2HpAo8HLT7-s8NW-TUOg,3032
+django_obfucat/management/commands/obfucat_validate.py,sha256=1OmbhXmfK8mX9mDvrQJGrONaZThBm-F_RYLae4daEao,1769
+django_obfucat-0.0.10.dist-info/LICENSE,sha256=nSRbJme1zoH8yjDEoAASiLTO96-qkIn5YDVMcYyLeEA,1078
+django_obfucat-0.0.10.dist-info/METADATA,sha256=OQOeTpIxCzYxi63sPeuaQDv9ZDEbACGRftBhV2vsBrM,4807
+django_obfucat-0.0.10.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+django_obfucat-0.0.10.dist-info/top_level.txt,sha256=uKjkiktiE0VLP-CSIzuZ9tAvMFRP72lj0uwxfKZxgN4,15
+django_obfucat-0.0.10.dist-info/RECORD,,
