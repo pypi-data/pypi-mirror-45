@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: tap-onfleet
+Version: 0.0.2
+Summary: Singer.io tap for extracting data from the onfleet API
+Home-page: http://github.com/lambtron/tap-onfleet
+Author: Stitch
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only

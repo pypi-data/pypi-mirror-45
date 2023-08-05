@@ -1,0 +1,61 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timeCreated": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "timeLastModified": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "workers": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
+    },
+    "managers": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
+    },
+    "hub": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tasks": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
+    }
+  }
+}
