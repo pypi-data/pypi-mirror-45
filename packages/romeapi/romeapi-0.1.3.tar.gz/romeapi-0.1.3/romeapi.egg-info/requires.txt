@@ -1,0 +1,3 @@
+requests
+coincurve
+graphenelib==0.6.1
