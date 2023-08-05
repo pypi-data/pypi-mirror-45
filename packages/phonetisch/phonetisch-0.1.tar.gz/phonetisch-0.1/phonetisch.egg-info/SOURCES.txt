@@ -1,0 +1,12 @@
+README.md
+setup.py
+phonetisch/__init__.py
+phonetisch.egg-info/PKG-INFO
+phonetisch.egg-info/SOURCES.txt
+phonetisch.egg-info/dependency_links.txt
+phonetisch.egg-info/not-zip-safe
+phonetisch.egg-info/top_level.txt
+phonetisch/cologne/CologneProcess.py
+phonetisch/cologne/__init__.py
+phonetisch/soundex/Soundex.py
+phonetisch/soundex/__init__.py

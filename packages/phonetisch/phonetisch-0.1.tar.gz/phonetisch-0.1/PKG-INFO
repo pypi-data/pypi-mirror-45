@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: phonetisch
+Version: 0.1
+Summary: Python implementation of phonetisch algorithms e.g. soundex and Cologne phonetics which are phonetic algorithms for English and German. The homophones are encoded to the same representation so that they can be matched despite minor differences in spellings.
+Home-page: https://github.com/muhammad-ahsan/soundex-py.git
+Author: Muhammad Ahsan
+Author-email: muhammad.ahsan@gmail.com
+License: MIT
+Description: Reference: https://en.wikipedia.org/wiki/Soundex
+Platform: UNKNOWN
