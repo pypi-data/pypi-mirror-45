@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SDurian
+Version: 1.0.0
+Summary: A package that allows Python developers to quickly develop available programs on Windows
+Home-page: UNKNOWN
+Author: Binn Louis Zeng
+Author-email: binnlouiszeng@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+
+UNKNOWN
+
+
