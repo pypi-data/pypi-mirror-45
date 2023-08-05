@@ -1,0 +1,71 @@
+Metadata-Version: 1.1
+Name: test-earlybirds
+Version: 0.1.4
+Summary: technical test for Earlybirds
+Home-page: https://github.com/simonmeoni/test_earlybirds
+Author: Simon Meoni
+Author-email: simonmeoni@aol.com
+License: Apache Software License 2.0
+Description: ===============
+        Test Earlybirds
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/test_earlybirds.svg
+                :target: https://pypi.python.org/pypi/test_earlybirds
+        
+        .. image:: https://img.shields.io/travis/simonmeoni/test_earlybirds.svg
+                :target: https://travis-ci.org/simonmeoni/test_earlybirds
+        
+        .. image:: https://readthedocs.org/projects/test-earlybirds/badge/?version=latest
+                :target: https://test-earlybirds.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/simonmeoni/test_earlybirds/shield.svg
+             :target: https://pyup.io/repos/github/simonmeoni/test_earlybirds/
+             :alt: Updates
+        
+        
+        
+        technical test for Earlybirds
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://test-earlybirds.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * I tried to implement this method from this following article : https://www.itm-conferences.org/articles/itmconf/pdf/2017/04/itmconf_ita2017_04008.pdf
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-04-14)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: test_earlybirds
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
