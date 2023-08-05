@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: py-db-wrapper
+Version: 1.0.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # py-db-wrapper
+        Shallow wrapper for convenience tools for db management
+        
+        
+        ## TODO:
+        *  Utils - HiveUtils.get_table_columns(). This should probabkly be generic not in Hive utils.
+        *  Statements - standardise the use of database (or schema) and table (or tablename)
+        
+        ## Examples
+        
+        ## Connections
+        The connection class is a simple wrapper to simplify connecting to know database types.Currently supports MSSQL, MYSQL and HIVE.
+        ### Making a sql alchemy engine
+        
+        ```py
+        azure_sre_connection = AzureConnection(
+            host=env('AZURE_HOST'), 
+            port=env('AZURE_PORT'), 
+            database=env('AZURE_DB'), 
+            user=env('AZURE_USER'), 
+            password=env('AZURE_PASSWORD')
+        )
+        
+        
+        azure_sre_engine = azure_sre_connection.connect()
+        ```
+        
+        ## Statements
+        Statement classes are designed to help make various sql statements for different dialect.
+        
+        ```py
+        columns = HiveUtils.get_table_columns(hive_engine=engine, database='foo', tablename='bar')
+        
+        stmt = CreateTableStatement(dialect=dialect.Mssql, columns=columns)
+        sql = stmt.get_sql(schema='doo',table='dar')
+        print(sql)
+        ```
+        
+        ## Developer notes
+        
+        Package deployment etc
+        
+        ```sh
+        python setup.py test
+        ```
+        
+        ```sh
+        python setup.py sdist bdist_egg
+        ```
+        ```sh
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        twine upload dist/*
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
