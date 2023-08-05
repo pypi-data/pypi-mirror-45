@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: realtime-aws-secretsmngr
+Version: 0.0.1
+Summary: Interface to provide callback or push events when secret is updated in aws
+Home-page: https://github.com/vasudevan-palani/realtime-aws-secretsmngr
+Author: Vasudevan Palani
+Author-email: vasudevan.palani@gmail.com
+License: TBD
+Description: # realtime-aws-secretsmngr
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
