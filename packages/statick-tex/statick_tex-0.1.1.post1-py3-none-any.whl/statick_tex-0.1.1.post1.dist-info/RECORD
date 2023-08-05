@@ -1,0 +1,15 @@
+plugins/__init__.py,sha256=TrmYETlXdfmXfs7DH--x4nsg1d6OO62N2MnGpz4CoY8,44
+plugins/chktex_tool_plugin/__init__.py,sha256=GTotrQXKr0mMmbzzJWhJFATRGjXJBMGJSPDs-Scrx_g,26
+plugins/chktex_tool_plugin/chktex_tool_plugin.py,sha256=WBf15Z9uQcyatQ4Mb9Qg1KeDfOI939JIJgleqfGyZGs,3132
+plugins/chktex_tool_plugin/chktex_tool_plugin.yapsy-plugin,sha256=_cGo_C8SHEkdv-HDnWnT4yJgzAgiPv8ZO41_gSGFlWg,61
+plugins/lacheck_tool_plugin/__init__.py,sha256=B4Lj0UPw2-3Uh-IXcg0FIX5OUaHPM3tERRPlNCJUs_U,27
+plugins/lacheck_tool_plugin/lacheck_tool_plugin.py,sha256=g3Lt4Lur6tNvYK4895fb8FWY8GTJwsi4YdaxBkR5ffQ,2578
+plugins/lacheck_tool_plugin/lacheck_tool_plugin.yapsy-plugin,sha256=yqz2JdU9qrlTN6G5Ce2a8Tt6vdMDAAtJFoC4Hv7_Llg,63
+plugins/tex_discovery_plugin/__init__.py,sha256=W4ZdAFHUcHEgxGqrcg_EKGLn_4jKAMrkd1t23VPvbtk,33
+plugins/tex_discovery_plugin/tex_discovery_plugin.py,sha256=XNHtoyaxWUi9fpXiwjNe1W8G5--E93lP-Pj1ZMVaOl0,2346
+plugins/tex_discovery_plugin/tex_discovery_plugin.yapsy-plugin,sha256=lP17BnlMfgTY-nkPzNJIvnJ6LHaETNDdiB7_ZiXKqgs,65
+statick_tex-0.1.1.post1.dist-info/LICENSE,sha256=9lA3UIJt10DWMibeKdJjcpeAVQPVJPegMJS4xGAOHh8,6401
+statick_tex-0.1.1.post1.dist-info/METADATA,sha256=EU4jguHArlCJttgOCtKP4x9suAx6ecL_kT4-4PccPQY,1950
+statick_tex-0.1.1.post1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+statick_tex-0.1.1.post1.dist-info/top_level.txt,sha256=fHL7_5RTK3hGVJJUps3wVE-qs6ITKpjUyuz6IQT0lr4,8
+statick_tex-0.1.1.post1.dist-info/RECORD,,
