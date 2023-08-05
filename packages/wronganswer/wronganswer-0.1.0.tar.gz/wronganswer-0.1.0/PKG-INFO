@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: wronganswer
+Version: 0.1.0
+Summary: online judge clients
+Home-page: https://github.com/bhuztez/wronganswer
+Author: bhuztez
+Author-email: bhuztez@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
