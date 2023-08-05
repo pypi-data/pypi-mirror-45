@@ -1,0 +1,14 @@
+#!python
+# -*- coding: utf-8 -*-
+# @Time    : 2019-04-16 10:44
+# @Author  : WuTong
+# @Email   : twu@aibee.com
+# @FileName: dmc
+# @Software: PyCharm
+
+from dmc.bin.cli import CLIFactory
+
+
+if __name__ == '__main__':
+    args = CLIFactory.get_parser().parse_args()
+    args.func(args)
