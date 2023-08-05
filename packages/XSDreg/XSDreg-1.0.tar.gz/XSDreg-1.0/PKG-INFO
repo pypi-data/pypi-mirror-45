@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: XSDreg
+Version: 1.0
+Summary: A simple library that returns regular expressions XML Schema Definitions.
+Home-page: https://github.com/aksw/XSDreg
+Author: Fabian Niehoff, Norman Radtke
+Author-email: radtke@infai.org
+License: MIT
+Description: 
+        # XSDreg
+        A simple library that returns regular expressions for XML Schema Definitions
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
