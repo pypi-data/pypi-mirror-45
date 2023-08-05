@@ -1,0 +1,3 @@
+[console_scripts]
+dba = dba.cli:main
+

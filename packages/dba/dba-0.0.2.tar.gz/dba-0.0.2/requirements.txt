@@ -1,0 +1,2 @@
+boto3
+pysecret>=0.0.2
