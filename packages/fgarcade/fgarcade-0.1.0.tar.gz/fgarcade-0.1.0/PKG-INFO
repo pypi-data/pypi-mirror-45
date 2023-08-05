@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: fgarcade
+Version: 0.1.0
+Summary: FGA + Arcade: A simple abstraction on top of the Arcade library to easily create
+Home-page: http://github.com/fabiommendes/fgarcade/
+Author: Fábio Macêdo Mendes
+Author-email: fabiomacedomendes@gmail.com
