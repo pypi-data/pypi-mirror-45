@@ -1,0 +1,5 @@
+ruamel.yaml>=0.15
+requests>=2.9
+
+[:platform_system == "Windows"]
+pywin32
