@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/SambathModule.py
+src/SambathModule.egg-info/PKG-INFO
+src/SambathModule.egg-info/SOURCES.txt
+src/SambathModule.egg-info/dependency_links.txt
+src/SambathModule.egg-info/requires.txt
+src/SambathModule.egg-info/top_level.txt
