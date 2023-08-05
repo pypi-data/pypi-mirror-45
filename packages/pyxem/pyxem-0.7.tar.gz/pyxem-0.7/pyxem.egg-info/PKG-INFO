@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pyxem
+Version: 0.7
+Summary: An open-source Python library for crystallographic electronmicroscopy.
+Home-page: https://github.com/pyxem/pyxem
+Author: Duncan Johnstone
+Author-email: dnj23@cam.ac.uk
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
