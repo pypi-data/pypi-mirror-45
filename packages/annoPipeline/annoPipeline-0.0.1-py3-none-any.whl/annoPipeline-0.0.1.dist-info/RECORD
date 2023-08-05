@@ -1,0 +1,10 @@
+annoPipeline/__init__.py,sha256=RZEHtlg4X1MM9P5THzDgYCpbMZa20MCjYZx0RZBAJX0,415
+annoPipeline/addBibs.py,sha256=40_dXQ8U0xBzjw3xstej-7r3h6T0uJIcJUKJvPu3CWo,1550
+annoPipeline/getAnno.py,sha256=AojzuMeen2Bls2cJYE-cb-knWKhoiunUPA_OdEgodlQ,1943
+annoPipeline/queryGenes.py,sha256=rRtCsx-NAGguGtSS5U-X9BVYOa4Jp_6Sr9zKsX0ICBM,799
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annoPipeline-0.0.1.dist-info/LICENSE.txt,sha256=qu1iU8GPGpGTw5OR30oX6FuSyJw_yyCYdTJ3stdUNSs,1066
+annoPipeline-0.0.1.dist-info/METADATA,sha256=7Zo0KrT-ejotbnR08QvfDwubxjdS9AYSGcXwlwaEtH4,4602
+annoPipeline-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+annoPipeline-0.0.1.dist-info/top_level.txt,sha256=T0zB-ht6Dpodau_mrk3C2A0FSfiW5V_k05LrR7KB6n4,18
+annoPipeline-0.0.1.dist-info/RECORD,,
