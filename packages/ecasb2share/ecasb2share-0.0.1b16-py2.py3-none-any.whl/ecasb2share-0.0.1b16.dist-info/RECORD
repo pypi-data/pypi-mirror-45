@@ -1,0 +1,15 @@
+ecasb2share/__init__.py,sha256=yyOEZs7wkWnAiJ-_czLqwNuP5y25NoK1CpDasPXkGhQ,26
+ecasb2share/ecasb2shareclient.py,sha256=AhX8BG7dFCZQvH9KgLyQjxIkmNaA9APH_Ijjs5EwgwY,12846
+ecasb2share/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share/requests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share/tests/test_client.py,sha256=MfpZ2BIDosCtCbqE5SapL5ZDA8NDyMpQ-oJvNOdvlu8,37
+ecasb2share/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share/utils/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share/utils/loggerhandler.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecasb2share-0.0.1b16.dist-info/AUTHORS.rst,sha256=94pqwNSnwCjNty2mEyr-8o_tIkhXV5RCzjvv0stnTeo,80
+ecasb2share-0.0.1b16.dist-info/LICENSE.txt,sha256=PCkm78XZVRaAYgnOX9z9KEPfzHrdr8_hjKgxAybMRCM,1084
+ecasb2share-0.0.1b16.dist-info/METADATA,sha256=z-wjWsWPhpcFXDYdU1XMvf63XiShVdiid2kiTGug8UE,1697
+ecasb2share-0.0.1b16.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+ecasb2share-0.0.1b16.dist-info/top_level.txt,sha256=9TUjYnShU3N6uRQ72dBpSmHsU-3JdbCCjUnmTbvIrAI,12
+ecasb2share-0.0.1b16.dist-info/RECORD,,
