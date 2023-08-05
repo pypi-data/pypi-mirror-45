@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: mct-sdk
+Version: 0.1.1
+Summary: MCT python SKD
+Home-page: https://github.com/Underlor/mct_sdk
+Author: IO-HOST DEV
+Author-email: admin@1-0.su
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: # MCT Python SDK 
+        https://mc-t.ru/api_info/ - документация
+        
+        ###Установка:
+        pip install mct-sdk
+        
+        ###Примеры использования:
+        ```pythonstub
+        from mct_sdk.client import MctClient
+        
+        client = MctClient('Your key')
+        client.get_votes(30)
+        
+        # Response example
+        # {'data': {'votes': 999}, 'error': '', 'status': 'ok'}
+        ```
+        
+Platform: UNKNOWN
