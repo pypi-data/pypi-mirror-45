@@ -1,0 +1,13 @@
+HISTORY.md
+MANIFEST.in
+README.md
+setup.py
+subdivx/__init__.py
+subdivx/cli.py
+subdivx/lib.py
+subdivx_download.egg-info/PKG-INFO
+subdivx_download.egg-info/SOURCES.txt
+subdivx_download.egg-info/dependency_links.txt
+subdivx_download.egg-info/entry_points.txt
+subdivx_download.egg-info/requires.txt
+subdivx_download.egg-info/top_level.txt
