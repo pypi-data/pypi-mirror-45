@@ -1,0 +1,10 @@
+lfdfiles/__init__.py,sha256=5H1jhBp8zX75_W1PRK5LnydUdWnZJz0CUh3QPkE4AgI,129
+lfdfiles/__main__.py,sha256=IKThaviDa1xugVzbomF5oU3X_8EuCu3qU281DCk37k0,160
+lfdfiles/_lfdfiles.pyd,sha256=Yazs-12ZE_HiBXNmg78ClCo9h8a01hM2mn1JBXEXjK8,153088
+lfdfiles/lfdfiles.py,sha256=HbOe8aoNByryIo-9umjh161elKqSHoE-EV7Zoxw_XoQ,145628
+lfdfiles-2019.4.22.dist-info/LICENSE,sha256=qFp7AU193ebo5tDtbPRY-SGhpFKQviyO_QDU6qeyM7s,1652
+lfdfiles-2019.4.22.dist-info/METADATA,sha256=YxaIjsU1d9S2UKRcP1N6L9YQd1QoAkYJbNNjqj_TyXI,5549
+lfdfiles-2019.4.22.dist-info/WHEEL,sha256=bIuiZDYMUGBgJak0wCClR8ErkEXGYOpZVIqarxK9hXA,102
+lfdfiles-2019.4.22.dist-info/entry_points.txt,sha256=ukPntaWhZs8848nicQajQ4us9NdEh9TceauTkAgMefM,53
+lfdfiles-2019.4.22.dist-info/top_level.txt,sha256=57ed1wWaI26xMH0KgmUMy6MefsknRrCIetAITP7OtBU,9
+lfdfiles-2019.4.22.dist-info/RECORD,,
