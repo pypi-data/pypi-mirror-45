@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Commi3
+Version: 1.0.1
+Summary: Is an Automated Commando Line Tool for pentesting and other fun stuff
+Home-page: https://github.com/VanirLab/commi3
+Author: Chris Pro
+Author-email: UNKNOWN
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: colorama
+Requires-Dist: Jinja2
+Requires-Dist: dns-lexicon
+Requires-Dist: bs4
+
+
+This file is part of Commi3 Vanir Project.
+Copyright (c) 2019.
+
+For more see the file 'readme/COPYING' for copying permission.
+
+
