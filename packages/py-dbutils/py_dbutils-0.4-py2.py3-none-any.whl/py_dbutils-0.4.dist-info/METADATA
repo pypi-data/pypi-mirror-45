@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: py-dbutils
+Version: 0.4
+Summary: Add a short description here!
+Home-page: https://github.com/hung135/py-dbutils/
+Author: hnguyen
+Author-email: hung135@hotmail.com
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+==========
+py-dbutils
+==========
+
+
+Python Wrapper to interface with various databases.
+
+
+
+Description
+===========
+
+This package wraps high level calls needed to interface with a database.
+Get the programmer out of worrying about how to connect to and manage a database connection.
+Start using it.
+    Currently supports:
+        postgres
+        mysql
+        mssql
+        msaccess
+        sqlite
+
+
+
+
+
