@@ -1,0 +1,3 @@
+[console_scripts]
+windbell = windbell.cli:_cli_main
+
