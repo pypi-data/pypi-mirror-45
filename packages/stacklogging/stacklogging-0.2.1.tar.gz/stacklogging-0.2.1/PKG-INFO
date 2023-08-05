@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: stacklogging
+Version: 0.2.1
+Summary: Python structured logging with Google Cloud Stackdriver API integration
+Home-page: https://github.com/bufferapp/stacklogging
+Author: David Gasquez
+Author-email: davidgasquez@buffer.com
+License: MIT
+Description: UNKNOWN
+Keywords: stackdriver,logging,google-cloud
+Platform: UNKNOWN

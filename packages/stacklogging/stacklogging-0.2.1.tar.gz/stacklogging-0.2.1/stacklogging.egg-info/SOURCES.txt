@@ -1,0 +1,8 @@
+README.md
+setup.py
+stacklogging/__init__.py
+stacklogging/main.py
+stacklogging.egg-info/PKG-INFO
+stacklogging.egg-info/SOURCES.txt
+stacklogging.egg-info/dependency_links.txt
+stacklogging.egg-info/top_level.txt
