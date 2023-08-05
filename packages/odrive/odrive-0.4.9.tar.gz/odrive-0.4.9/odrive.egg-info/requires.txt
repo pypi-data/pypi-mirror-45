@@ -1,0 +1,10 @@
+ipython
+PyUSB
+PySerial
+requests
+IntelHex
+matplotlib
+monotonic
+
+[:platform_system == "Windows"]
+pywin32>=222
