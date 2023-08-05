@@ -1,0 +1,1 @@
+metadata = {'name': 'randomart', 'author': 'Anton Semjonov', 'author_email': 'anton@semjonov.de', 'url': 'https://github.com/ansemjo/randomart', 'license': 'MIT', 'description': 'Generate ASCII randomart by hashing input with BLAKE2b and using an adapted drunken bishop alogirthm.', 'keywords': 'randomart drunken bishop openssh blake2b blake2 hash comparison', 'version': '0.2.3'}
