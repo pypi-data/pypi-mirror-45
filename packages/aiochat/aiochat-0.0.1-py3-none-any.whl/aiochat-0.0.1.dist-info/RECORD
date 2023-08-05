@@ -1,0 +1,10 @@
+aiochat/__init__.py,sha256=ZHDzdMY6-fzzEoEyrJdZq8P7GYUgqWHSZnRFUE0ufvM,155
+aiochat/agent.py,sha256=Hf4Vvq5KRSw8aWZrwco73ebJqMlcl0Y-r2QkSYXqx7I,3389
+aiochat/channel.py,sha256=8BGtgpsdNEM3qr_u1KazXLzDeAPmbcg15k1ki4VydI8,1715
+aiochat/engine.py,sha256=41MF9_BUxHftHabuDx6lODvpPeehFqBp1X2l_B6Uk1Y,4063
+aiochat/helpers.py,sha256=qFTfXZ-cf1EodOZauEnvjXlN1O-n9Grd3elXP-m_Flc,920
+aiochat-0.0.1.dist-info/LICENCE,sha256=3T7-vsjOBAnMZF_F0c-CID1cGqsmI5kdpyQVnVJmZ8Y,1078
+aiochat-0.0.1.dist-info/METADATA,sha256=D5FKCOE22n6G7V9M-a5iAIE9YhzXYKpS8tE0zyJmoXU,2942
+aiochat-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiochat-0.0.1.dist-info/top_level.txt,sha256=_RpSXD-NGu-qfGSrblsUxZbwgwXzMXnPGKzP7xahQVQ,8
+aiochat-0.0.1.dist-info/RECORD,,
