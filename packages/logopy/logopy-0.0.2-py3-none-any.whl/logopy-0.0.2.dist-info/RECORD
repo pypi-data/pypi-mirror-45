@@ -1,0 +1,15 @@
+logopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logopy/errors.py,sha256=225sD2h04mgcuiTELV-0-jcTMo4ZlOCoROOErdeQicE,243
+logopy/gui.py,sha256=Ay_OAs8pbs6C3gnycpV6nUIohk0SCFZpQToT2AGuEl4,7511
+logopy/procedure.py,sha256=yn74HK1vj57raloCPBU0dsMgzyj-1istBQaoaJyZSQA,80068
+logopy/svgturtle.py,sha256=NHQOrzDm16io4Krxv8s-p9XusdDBVtNkYyoASGin4Bw,30255
+logopy/trig.py,sha256=NH661VzOn3Dk_fRp2w_CplLUZA4JF8zdbO-qiAhksVU,922
+logopy/resources/html/README.rst,sha256=bYcXFVumE6Le2P87uxm2s0BEy-sMB8voCv8I97SdM1M,155
+logopy/resources/html/svg.html.jinja2,sha256=ET0pQvtLgGO1G2rHfy09HxiwbYGvP5QB5T3JUAjRO8o,884
+logopy/resources/html/vivus.min.js,sha256=u_d_ZywUFyU_VmJ_TjCml5Hvl0GbgEvr3BvOvBGp5P8,12022
+logopy-0.0.2.data/scripts/logopycli.py,sha256=2lm3jNvSfRsOFAEZ-gcLDILKZEHw_zLbaPdRR_in3VU,30546
+logopy-0.0.2.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+logopy-0.0.2.dist-info/METADATA,sha256=Hzn9oy4nh-b7oeLeJeKFeOPAs6W1AfEPoG_yiKEp8cM,933
+logopy-0.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+logopy-0.0.2.dist-info/top_level.txt,sha256=OQo1FGDowOp0ve4vxXzKvXBbdbxxkeOO58LYlwejMCc,7
+logopy-0.0.2.dist-info/RECORD,,
