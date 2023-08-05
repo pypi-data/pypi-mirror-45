@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: spider-common
+Version: 0.0.1
+Summary: utils for spider, like middlewares, pipelines, common design implementation, etc
+Home-page: https://gitlab.baixing.cn/spider/spider-common
+Author: huangzhen
+Author-email: huangzhen@baixing.com
+License: MIT
+Description: # spider-common
+        
+        Common code used in python spider.
+        
+        ## Changelog
+        See [CHANGELOG](CHANGELOG.md)
+        
+        ## Project Structure
+        - common_utils
+            >通用全局函数
+        - clue
+            >clue(爬虫线索)模块
+        - notify
+            >事件、信号通知
+        - persistent
+            >通用数据模型
+            
+            >抓取数据持久化
+            
+        代码结构：
+        ```
+        ├── clue
+        │   ├── api.py
+        │   ├── constants.py
+        │   ├── __init__.py
+        │   ├── models.py
+        │   └── scrapy
+        │       ├── extensions.py
+        │       ├── __init__.py
+        │       ├── items.py
+        │       ├── middlewares.py
+        │       ├── pipelines.py
+        │       └── spider.py
+        ├── common_utils
+        │   ├── exceptions.py
+        │   ├── __init__.py
+        │   └── time.py
+        ├── __init__.py
+        ├── notify
+        │   ├── constants
+        │   │   ├── __init__.py
+        │   │   └── signals.py
+        │   ├── __init__.py
+        │   ├── __pycache__
+        │   └── scrapy
+        │       ├── extensions
+        │       │   ├── __init__.py
+        │       │   └── signal_handler.py
+        │       └── __init__.py
+        ├── persistent
+        │   ├── __init__.py
+        │   ├── items
+        │   │   ├── base.py
+        │   │   ├── __init__.py
+        │   │   └── shop.py
+        │   └── scrapy
+        │       ├── dw_logger.py
+        │       ├── __init__.py
+        │       └── pipelines
+        │           ├── dw_pipeline.py
+        │           ├── __init__.py
+        │           └── mysql_pipeline.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

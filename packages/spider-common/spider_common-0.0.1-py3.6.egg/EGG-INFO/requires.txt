@@ -1,0 +1,7 @@
+six
+simplejson
+jsonpath-rw
+scrapy
+scrapy_redis
+requests
+peewee
