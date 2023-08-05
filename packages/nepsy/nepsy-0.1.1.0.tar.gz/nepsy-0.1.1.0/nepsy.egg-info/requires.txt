@@ -1,0 +1,6 @@
+nep
+tinydb
+Flask
+gevent
+kapuccino
+requests
