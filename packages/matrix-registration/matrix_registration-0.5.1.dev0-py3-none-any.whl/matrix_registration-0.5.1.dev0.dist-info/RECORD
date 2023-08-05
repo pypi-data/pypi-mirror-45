@@ -1,0 +1,17 @@
+matrix_registration/__init__.py,sha256=bviPuYvwg6eGRct548hTEDFOqSB4gJADck3psG0D0es,114
+matrix_registration/__main__.py,sha256=fFDhiXDOrMHXqlnGxpkwA1_OgUEFsvyNZJkmSu8JwuQ,2786
+matrix_registration/api.py,sha256=Zz-k03Mtw4_eyRMTAOlQmozU4fVJ_6Duf-YYIK9wYaQ,6834
+matrix_registration/config.py,sha256=cgVm9GzUZgX_7wGKU3ArBmWBxYhh46nI1_9ATr9_bnw,1255
+matrix_registration/constants.py,sha256=QnWzC4vAI878NY-beh7LtN81aNkitXnx8HODfu621K4,219
+matrix_registration/matrix_api.py,sha256=wPH2JXDLRN4SqLkNSd3k5kjli9KTxenXWvl7Ov2TTJg,1136
+matrix_registration/tokens.py,sha256=2GqN2Eo8se0V3zAEvIcpXqBeIwxJAA-1ZN2TOH57crU,5086
+matrix_registration-0.5.1.dev0.data/data/config/config.sample.yaml,sha256=WSlNYGqHpRg538xiGhcOzPbJWQWAbfpcGq8FLKIrdRY,795
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=WrJ_TrmbwuRlPqsNGQe3VKH0_nEdM4rIXNmNc2kOxNQ,148
+tests/test_registration.py,sha256=nPmqdF40vgYYpE6EOx1ENu7vPr2ylG-d5-oWiMYtbJ8,17649
+matrix_registration-0.5.1.dev0.dist-info/LICENSE,sha256=J6W8Ea7Z_vIYzllVO09knec-D3pmx2Fa3B5DtrBugWY,1072
+matrix_registration-0.5.1.dev0.dist-info/METADATA,sha256=2Cpgj6qcNqAMYmDQh0leE4v9Lq98pvCU-xtHmxEuFp4,3081
+matrix_registration-0.5.1.dev0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+matrix_registration-0.5.1.dev0.dist-info/entry_points.txt,sha256=Syl6Os7V-rePYrAGiOu96vgkuG_PzV3QR7Jgy8tdUwk,93
+matrix_registration-0.5.1.dev0.dist-info/top_level.txt,sha256=lKlznyTLfnnM0yBNBMNI-Q1OvScpHIlXXMl-vU_ZDnk,26
+matrix_registration-0.5.1.dev0.dist-info/RECORD,,
