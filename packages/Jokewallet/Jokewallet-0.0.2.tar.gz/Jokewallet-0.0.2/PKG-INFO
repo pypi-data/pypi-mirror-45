@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Jokewallet
+Version: 0.0.2
+Summary: A simple bitcoin demo wallet
+Home-page: https://github.com/zots0127/Jokewallet
+Author: Jams Rich
+Author-email: zots0127@gmail.com
+License: UNKNOWN
+Description: https://github.com/zots0127/Jokewallet.git
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
