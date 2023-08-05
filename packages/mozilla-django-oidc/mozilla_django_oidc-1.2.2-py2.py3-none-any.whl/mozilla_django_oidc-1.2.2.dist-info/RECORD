@@ -1,0 +1,14 @@
+mozilla_django_oidc/__init__.py,sha256=TyoJr5e3yETpfn6Cqp5KwpweiqaDNZKKhK7N7U81GVQ,22
+mozilla_django_oidc/auth.py,sha256=zkc_R3kMpE8k2aIpaUcAL1iD91WoJrMUj8vPrrNPwiM,12723
+mozilla_django_oidc/middleware.py,sha256=LLCJypZcfQZZML8K2sc2TTF5smpR9XK6vPI2uR1-0mQ,5146
+mozilla_django_oidc/urls.py,sha256=QJI3Ab5L2s36NdkagdQoB1yt21ohy8qu8yLvKp8-ADE,973
+mozilla_django_oidc/utils.py,sha256=6dStaUWhMBSB_6lG1sOuidViI1tDa7nEwAM2UwtNH9Q,1562
+mozilla_django_oidc/views.py,sha256=i2-_78Dia0anGn03WYwFYUmmpYrFSBrC1M8zfDYXn94,7071
+mozilla_django_oidc/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mozilla_django_oidc/contrib/drf.py,sha256=pHwzfnruBSWSxcnVy-8QqS8uqlpjXhHUCE_uPbKvIJU,4850
+mozilla_django_oidc-1.2.2.dist-info/AUTHORS.rst,sha256=0FMzat_kFygWFFPsDJke1y_2geUWdvOKIXRdkjO3Ack,1324
+mozilla_django_oidc-1.2.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+mozilla_django_oidc-1.2.2.dist-info/METADATA,sha256=CmbUodU2qfidDpT5U8xbAHtIbjD5xy3fRgIwEMvYEwk,11955
+mozilla_django_oidc-1.2.2.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+mozilla_django_oidc-1.2.2.dist-info/top_level.txt,sha256=83PYkmYdt4WCTqxxP8INCNRNxQsrkp7bVU1Mx5UFPeI,20
+mozilla_django_oidc-1.2.2.dist-info/RECORD,,
