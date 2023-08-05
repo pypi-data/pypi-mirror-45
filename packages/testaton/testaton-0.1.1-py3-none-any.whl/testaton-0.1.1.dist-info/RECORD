@@ -1,0 +1,13 @@
+testaton/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testaton/__main__.py,sha256=7f_eA5bU5_6dt8sM047j3MmTL9bY9NYKjS-nP0omUrU,53
+testaton/cli.py,sha256=U7WBfNpv7cwLjbkaqRJoXCIo6Wcj_5resB_cVy0TcIU,906
+testaton/common_functions.py,sha256=GK8Qo27hvNiz6IEnnUBKQec4fMQRJtTCVQZ4LuVFztQ,2534
+testaton/generate_sql.py,sha256=jhpZ0MH3SLegutbCS6w5lqMsx2WoDvqg8okcIsrRw7c,2210
+testaton/test_executor.py,sha256=QlqOSjwLCSoppP_Ceag6L9dFOCAFwHmUIIQCqNIUhbo,619
+testaton/tests_processor.py,sha256=Ru7pFLDcIHG1OrqvyRpmu9l5oKvWYry6zVFaEUg7yu0,6584
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testaton-0.1.1.dist-info/METADATA,sha256=cna4iSufwdIbSfdrg5fMqOY7IES317IfFFq8G7ZwShI,2234
+testaton-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+testaton-0.1.1.dist-info/entry_points.txt,sha256=xGzUUpvyuid8c4A_BZf6ORoRT2kLqVDJq1RHtaqdwqw,48
+testaton-0.1.1.dist-info/top_level.txt,sha256=8q5AO81olvm1iOKfY2cihde5a5Wg_iai8I_eqoBVaeQ,15
+testaton-0.1.1.dist-info/RECORD,,
