@@ -1,0 +1,8 @@
+README.md
+setup.py
+MPCdata/MPC_parser.py
+MPCdata/__init__.py
+MPCdata_Aplysia.egg-info/PKG-INFO
+MPCdata_Aplysia.egg-info/SOURCES.txt
+MPCdata_Aplysia.egg-info/dependency_links.txt
+MPCdata_Aplysia.egg-info/top_level.txt
