@@ -1,0 +1,11 @@
+setup.py
+Museu.egg-info/PKG-INFO
+Museu.egg-info/SOURCES.txt
+Museu.egg-info/dependency_links.txt
+Museu.egg-info/top_level.txt
+mt/__init__.py
+mt/decroate/__init__.py
+mt/decroate/decroate.py
+mt/decroate/test_decroate.py
+mt/test/__init__.py
+mt/test/quote.py
