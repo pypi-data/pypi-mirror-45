@@ -1,0 +1,13 @@
+crossclip/__init__.py,sha256=WWSaAFY3UDZdZFNnN7YaMzKkIZzSOEt2CoNfoBDtgoU,2397
+crossclip/absbackend.py,sha256=ftlOye2ly-K6dDu-xZrmva9K4WlUCBrMeVN1E8o2cPA,2426
+crossclip/clipboard.py,sha256=BgN5pj6KM4dc9WPFMPo0nst3SkbhSsJdPXtSQV_219s,3698
+crossclip/gtkbackend.py,sha256=bE3VXcHrV8B6z2X3uD5lTYMKpnfLVqb-1skgOk2dZfg,7036
+crossclip/qtbackend.py,sha256=CreDDPN0Y-9neniJWSQDIdj0Yi2m5KJuNrzZHI22F7g,2678
+crossclip/winbackend.py,sha256=zr269qcMcdU8Oqd_Gq65EE7xlljZqhD4xTXJDQ5qJdo,2694
+crossclip/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossclip/tests/clipboard_test.py,sha256=hEMLemnNhmhNC0-3-hoJi6DlTfaH_CBihRdMJDFWRZc,3459
+crossclip-0.2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+crossclip-0.2.2.dist-info/METADATA,sha256=kBX23pU9d-wG5cUY30jQLCZqC71wwaI50HYevaVhYns,2987
+crossclip-0.2.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+crossclip-0.2.2.dist-info/top_level.txt,sha256=jOZm0J_lR_54KjRvbbO19__FMsuPhs9jKBcfoGCajSg,10
+crossclip-0.2.2.dist-info/RECORD,,
