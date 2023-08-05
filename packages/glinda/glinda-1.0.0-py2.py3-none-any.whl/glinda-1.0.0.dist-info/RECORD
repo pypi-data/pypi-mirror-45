@@ -1,0 +1,11 @@
+glinda/__init__.py,sha256=ZgxjzP-_kY6IiaSCBGkRMV6qGuCtSFSwfFEhTU2IgvE,78
+glinda/content.py,sha256=Wnb7V7cseLrS1-AYEb1P5MrVe2w5u0Wi-FsCrYNh1gA,8776
+glinda/httpcompat.py,sha256=1wgx3y3jm3leEoP6f86aC7UAgtbzkExdJjq8tE9zRCo,415
+glinda/testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glinda/testing/services.py,sha256=XLY69m1g1mvKWkL4QDQdrWZV8_TiJKuS0nreochi8pQ,14491
+glinda-1.0.0.dist-info/LICENSE,sha256=YVvFm1RL5hOVleJgybt6abNKHt7b6Nk3JI5UFVlQ6N8,1493
+glinda-1.0.0.dist-info/METADATA,sha256=S1jUe4jZW28DfmtLAWD_djwHq4CJSzW_wd0xgn6mVxg,7842
+glinda-1.0.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+glinda-1.0.0.dist-info/top_level.txt,sha256=jjuw-jS6SyuXD9WkUQJTYMyyLznM-36mjd66GkBK15M,7
+glinda-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+glinda-1.0.0.dist-info/RECORD,,
