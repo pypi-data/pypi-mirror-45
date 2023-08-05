@@ -1,0 +1,7 @@
+# -e https://github.com/jaredlunde/awstools
+boto3
+humanfriendly
+# Debugging
+psutil
+vital-tools
+awstools-py
