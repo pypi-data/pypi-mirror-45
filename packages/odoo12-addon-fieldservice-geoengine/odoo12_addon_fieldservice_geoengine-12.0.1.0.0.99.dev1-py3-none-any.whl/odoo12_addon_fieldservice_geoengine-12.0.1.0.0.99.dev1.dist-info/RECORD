@@ -1,0 +1,12 @@
+odoo/addons/fieldservice_geoengine/__init__.py,sha256=S6YG0_2BYDTAuBewBiDXsyCH3nRRZe5fEQo_UTRFb1s,140
+odoo/addons/fieldservice_geoengine/__manifest__.py,sha256=TNnK_v4s4XXlwYoTbc6qdK4CYWQPsY9JuhGhx1vHHAg,707
+odoo/addons/fieldservice_geoengine/models/__init__.py,sha256=XUjapHQuDBja4sD6zhZF_mZdh_C11UOSEYE6o9iTTzE,170
+odoo/addons/fieldservice_geoengine/models/fsm_location.py,sha256=T9trpaPNQfoPabeg2Lk74upzPjVvA7A5MSep-1jOEkI,2018
+odoo/addons/fieldservice_geoengine/models/fsm_order.py,sha256=0srhV0zvKV6Dk8_KTUCAJs1UCZ2wnufR19LZDgCDI-E,1221
+odoo/addons/fieldservice_geoengine/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/fieldservice_geoengine/views/fsm_order.xml,sha256=1iSwDAL_1jYrnOMmnsLzo0ExAlpBw1IAq4xLv5U-Qno,2953
+odoo/addons/fieldservice_geoengine/views/fsm_team.xml,sha256=sezsdDg81RuxhaZLgMpiutZ9UL6-wiLvVIiGpLXTRLA,467
+odoo12_addon_fieldservice_geoengine-12.0.1.0.0.99.dev1.dist-info/METADATA,sha256=yGnrsX-aU9gy5Tsvvc3naooxuadrwiK7nZP5TBqaqoM,693
+odoo12_addon_fieldservice_geoengine-12.0.1.0.0.99.dev1.dist-info/RECORD,,
+odoo12_addon_fieldservice_geoengine-12.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+odoo12_addon_fieldservice_geoengine-12.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
