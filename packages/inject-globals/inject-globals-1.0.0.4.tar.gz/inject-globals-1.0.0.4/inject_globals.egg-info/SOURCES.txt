@@ -1,0 +1,8 @@
+README.md
+setup.py
+inject_globals/__init__.py
+inject_globals/inject_globals.py
+inject_globals.egg-info/PKG-INFO
+inject_globals.egg-info/SOURCES.txt
+inject_globals.egg-info/dependency_links.txt
+inject_globals.egg-info/top_level.txt
