@@ -1,0 +1,55 @@
+Metadata-Version: 1.1
+Name: django-collecstatic-daemon
+Version: 0.3
+Summary: A simple daemon to watch and collectstatic files for django projects
+Home-page: UNKNOWN
+Author: John Furr
+Author-email: john.furr@gmail.com
+License: GNU General Public License v3.0
+Description: django-collectstatic-daemon
+        ===========================
+        
+        This is a simple daemon that will watch your project directory and
+        collectstatic files whenever there is a change. This is often times
+        useful when you are working with node/npm project and you need to
+        collectstatic files after npm build/prod/watch converts the statis
+        resources.
+        
+        Install
+        =======
+        
+        1) Install the package
+        
+           ``pip install django-collectstatic-daemon``
+        
+        2) Add ‘watcher’ to your list of INSTALLED_APPS in settings.py
+        
+           ::
+        
+              INSTALLED_APPS = [
+                  ...
+                  ...
+                  'watcher'
+              ]
+        
+        Using
+        =====
+        
+        Using the command is as simple as running
+        
+        ::
+        
+           ./manage.py watcher
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

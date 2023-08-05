@@ -1,0 +1,2 @@
+watchdog
+python-color-logger==0.3.7
