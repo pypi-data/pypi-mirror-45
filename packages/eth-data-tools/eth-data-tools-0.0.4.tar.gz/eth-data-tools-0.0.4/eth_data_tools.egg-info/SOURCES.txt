@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+eth_data_tools.egg-info/PKG-INFO
+eth_data_tools.egg-info/SOURCES.txt
+eth_data_tools.egg-info/dependency_links.txt
+eth_data_tools.egg-info/requires.txt
+eth_data_tools.egg-info/top_level.txt
+ethdata/__init__.py
+ethdata/ethdata.py

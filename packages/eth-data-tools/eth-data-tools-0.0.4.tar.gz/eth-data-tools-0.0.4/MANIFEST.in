@@ -1,0 +1,3 @@
+prune tests
+exclude .travis.yml
+exclude gcloud_credentials.json.enc
