@@ -1,0 +1,5 @@
+xdg>=4.0.0
+xerox>=0.4.1
+pynput>=1.4.2
+pykeepass>=3.0.3
+keyring>=19.0.1
