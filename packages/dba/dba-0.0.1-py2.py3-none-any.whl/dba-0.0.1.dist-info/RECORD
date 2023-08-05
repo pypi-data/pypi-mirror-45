@@ -1,0 +1,13 @@
+dba/__init__.py,sha256=FfSOuBqCxn6bX6WQ4sY79fbsQYRprwJAMz43BZBoGLM,261
+dba/_version.py,sha256=cW-ZWkvI8hd2WB45U48UUY3NqYDy4rPf0etHg29ZU5s,93
+dba/cli.py,sha256=z2I1WlNrO27ebFSMQtHoUICeyh7xnJqCNoJzm0VC2tQ,401
+dba/__pycache__/__init__.cpython-36.pyc,sha256=EoSE9Q_8e9z4etK1TnBDe6GksWz7p2jW1YWhOQeggR8,415
+dba/__pycache__/_version.cpython-36.pyc,sha256=ez7im8qBsKT8mWHBGd6A_KDg52LxJHoDGAl-9MNg_KU,210
+dba/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+dba-0.0.1.dist-info/AUTHORS.rst,sha256=3Gm1CahEXjS16SnhbNFm1g4QS8tcRr0qRqeP8l0hN2E,600
+dba-0.0.1.dist-info/LICENSE.txt,sha256=dniujsqU87T844NDdTKpe2nektLdjdi8kP8uPBaV28o,1113
+dba-0.0.1.dist-info/METADATA,sha256=LfSdyvZiMh6kvqxG-weHRTUzXNIEDPvz6pUtvoj3ETg,3605
+dba-0.0.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+dba-0.0.1.dist-info/entry_points.txt,sha256=to1WxG0WqHjxv3mJFokzqYUUm4AT7JdM10rItbI3uzM,38
+dba-0.0.1.dist-info/top_level.txt,sha256=ZS9GV8Hia1ZoSQb98SmG4lcU--0Q5IA5pIJjawJu9lA,4
+dba-0.0.1.dist-info/RECORD,,
