@@ -1,0 +1,4 @@
+click
+colorama
+pyyaml
+snips_nlu_parsers
