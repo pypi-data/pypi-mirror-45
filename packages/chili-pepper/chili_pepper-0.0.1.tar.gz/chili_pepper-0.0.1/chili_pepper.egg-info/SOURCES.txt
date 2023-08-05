@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+version.py
+chili_pepper/__init__.py
+chili_pepper/app.py
+chili_pepper/deployer.py
+chili_pepper/exception.py
+chili_pepper/main.py
+chili_pepper.egg-info/PKG-INFO
+chili_pepper.egg-info/SOURCES.txt
+chili_pepper.egg-info/dependency_links.txt
+chili_pepper.egg-info/entry_points.txt
+chili_pepper.egg-info/requires.txt
+chili_pepper.egg-info/top_level.txt
