@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jms-leftpad
+Version: 0.1.1
+Summary: Python leftpad
+Home-page: https://github.com/jms7446/pyleftpad
+Author: jms7446
+Author-email: jms7446@gmail.com
+License: GPLv3
+Keywords: leftpad,pyleftpad
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=1.7.6); extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: flake8; extra == 'tests'
+Requires-Dist: flake8-import-order (<0.19,>=0.18); extra == 'tests'
+Requires-Dist: flake8-import-order-spoqa (<1.5,>=1.4.1); extra == 'tests'
+Requires-Dist: pytest (>=3.7.1); extra == 'tests'
+Requires-Dist: pytest-flake8 (<1.1,>=1.0.2); extra == 'tests'
+Requires-Dist: tox (>=3.2.1); extra == 'tests'
+
+# pyleftpad
+
+
