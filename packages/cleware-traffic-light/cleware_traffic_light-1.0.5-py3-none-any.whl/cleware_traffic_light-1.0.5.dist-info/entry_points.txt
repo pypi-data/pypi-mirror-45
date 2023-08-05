@@ -1,0 +1,3 @@
+[console_scripts]
+ctl = traffic_light.__main__:main
+
