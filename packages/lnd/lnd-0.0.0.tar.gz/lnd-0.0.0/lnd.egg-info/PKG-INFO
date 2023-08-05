@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lnd
+Version: 0.0.0
+Summary: The lnd gRPC client
+Home-page: http://github.com/
+Author: yyforyongyu
+Author-email: yy2452@columbia.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
