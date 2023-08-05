@@ -1,0 +1,343 @@
+Metadata-Version: 2.1
+Name: pipl
+Version: 0.0.1.dev13
+Summary: Package Index PipeLine
+Home-page: https://gitlab.com/open-minds-group/pipl
+Author: Damien "dee" Coureau
+Author-email: dee909@gmail.com
+License: LGPLv3+
+Description: pipl
+        ====
+        
+        **Package Index PipeLine**
+        
+        Experimental pip/devpi based pipeline dependency platform
+        
+        
+        Installing
+        ----------
+        
+        Create a virtual env, install and update using pip:
+        
+        .. code-block:: text
+        
+            $ pip install pipl
+        
+        
+        Usage
+        -----
+        
+        The package defines the `pipl` command line tool.
+        
+        Use `pipl --help` to list available commands:
+        
+        .. code-block:: text
+        
+            (venv) $ pipl --help
+            Usage: pipl [OPTIONS] COMMANDS [ARGS]...
+        
+        
+            Options:
+              --help  Show this message and exit.
+        
+            Commands:
+              proj
+              work
+              pack
+        
+        Use `pipl COMMAND --help` to list sub commands:
+        
+        .. code-block:: text
+        
+            (venv) $ pipl proj --help
+            Usage: pipl proj [OPTIONS] COMMANDS [ARGS]...
+        
+        
+            Options:
+              --help  Show this message and exit.
+        
+            Commands:
+              index  Project indexes administration.
+              new    Creates a new project.
+              start  Start current project's server in **foreground**.
+              user   Project users administration.
+        
+        When appropriate, commands will guess the *current* project/workspace/package from
+        current path. Use the -p to override current path.
+        
+        .. code-block:: text
+        
+            (venv) $ pipl proj start --help
+            Usage: pipl proj start [OPTIONS]
+        
+              Start current project's server in **foreground**.
+        
+            Options:
+              -p, --project-path TEXT  Override current path
+              --help                   Show this message and exit.
+        
+        Project Init
+        ------------
+        
+        Create a project and navigate into it:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl proj new MyProject path/to/proj_dir
+            (venv) $ cd path/to/proj_dir/MyProject
+        
+        Open a new shell within the same virtualenv, and start the project's server:
+        
+        .. code-block:: text
+            
+            (venv) $ start cmd.exe
+            (venv) $ pipl proj start
+        
+        Now in your first shell, you can list users:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl proj user list
+            Found project at path/to/proj_dir/MyProject
+            1 Users:
+                            root
+        
+        Root's default password is an empty string.
+        Admin commands will request it, be sure to use "" and not '' in command lines.
+        
+        The best is to change it asap:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl proj user set --password 123 "" root 
+        
+        Now you can create some users using the new root password:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl proj user add 123 bob b0b bob@cyb.org
+        
+        
+        You will need some index to store your package. The default one can be 
+        created with:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl proj index create-default 123
+            (venv) $ pipl proj index list-indexes
+            1 Indexes:
+                       root/PROJ
+        
+        
+        Workspaces Creation
+        -------------------
+        
+        Packages are created inside `workspaces`.
+        
+        A workspace can exist inside the project or inside a workspace group.
+        A workspace group can in turn exist inside the project or inside another workspace group.
+        
+        The list of workspace groups leading to a workspace builds up the workspace 
+        "namespace".
+        
+        Every package contained by this workspace will have this "namespace" (lowered) as a preffix. 
+        
+        Let's create a "Tools" package without namespace:
+        
+        .. code-block:: text
+            
+            (venv) $ pipl work create Tools
+        
+        This has created the folder `<proj_root>/MyProject/workspaces/Tools` and all its content.
+        
+        Each workspace has its own virtualenv that will host all dependecies of every package
+        it contains. You can inspect the workspace by activating its virtualenv, but that's 
+        not advisable since you will lose the current pipl virtualenv in the process.
+        
+        A better option is to let pipl create a new shell or a new python session for the
+        workspace:
+        
+        .. code-block:: text
+        
+            (venv) $ cd path/to/proj_dir/MyProject/workspaces/Tools
+            (venv) $ pipl work shell
+        
+        This spawns a new shell with the Tools' workspace virtualenv prompt `{Tools} path/to/here>`
+        
+        or:
+        
+        .. code-block:: text
+        
+            (venv) $ cd path/to/proj_dir/MyProject/workspaces/Tools
+            (venv) $ pipl work py
+        
+        This spawns a new shell with an active python session showing the pipl project prompt `[MyProject] {Tools} >>>` 
+        
+        
+        Package Creation
+        ----------------
+        
+        Now we can create a package "core" inside our "Tools" workspace:
+        
+        .. code-block:: text
+        
+            (venv) $ cd path/to/proj_dir/MyProject/workspaces/Tools
+            (venv) $ pipl pack create core
+        
+        This has created the folder `<proj_root>/workspaces/Tools/src/tools_core` and all its contents.
+        
+        You can see that the package's name starts with its workspace's namespace.
+        
+        Package Setup
+        -------------
+        
+        You can inspect a package with the command:
+        
+        .. code-block:: text
+        
+            (venv) $ cd path/to/proj_dir/MyProject/workspaces/Tools/src/tools_core
+            (venv) $ pipl pack show
+            Package <proj_root>\workspaces\Tools\src\tools_core:
+                            name=u'tools_core'
+                        packages=[u'tools_core']
+                         version='1.0.0'
+        
+        You can bump the package version with the commands:
+        
+        .. code-block:: text
+        
+            (venv) $ pipl pack bump major "testing major bump"
+            (venv) $ pipl pack bump minor "testing minor bump"
+            (venv) $ pipl pack bump patch "testing patch bump"
+        
+        See how the version number increased accordingly:
+        
+        .. code-block:: text
+        
+            (venv) $ pipl pack show
+            Package <proj_root>\workspaces\Tools\src\tools_core:
+                            name=u'tools_core'
+                        packages=[u'tools_core']
+                         version='2.1.1'
+        
+        Those commands edit a special file in the package `<package_path>/_setup.py`
+        
+        This file is not to be edited by hand, but we dont have all the command to automate edition with `pipl` yet...
+        
+        A quick look at it will show the history of edits:
+        
+        .. code-block:: python
+        
+            """
+            tools_core setup file
+            """
+        
+        
+            version = "1.0.0"# on Mon Apr 22 15:37:59 2019 by dee
+            # Minor Version Bump
+            version = '1.1.0'
+            # on Mon Apr 22 15:38:17 2019 by dee
+            # Minor Version Bump
+            version = '1.2.0'
+            # on Mon Apr 22 15:39:22 2019 by dee
+            # Patch Version Bump
+            version = '1.2.1'
+        
+        Every name defined in this module will be used as a keyword argurment to `setuptools.setup()` unless is starts with `_` ...
+        
+        Until `pipl` has commands to do so, you can hand edit values like `description`, `long_description`, `author`, `author_email`, ...
+        
+        A few arguments to `setuptools.setup()` are treated with a special manner:
+            - name
+            - packages
+            - install_requires
+            - extras_requires
+        
+        Most importantly, the `install_requires` list is automatically built with the names of all import made inside the `<package_name>._use_reqs` module.
+        
+        Until `pipl` has a command like `pipl pack add cool_pack` command, you should hand edit the file `<package_dir>/_use_reqs.py` to had a line like `import cool_pack`.
+        
+        
+        Package Edition
+        ---------------
+        
+        In a working system, the `tools_core` package would be able to edit itself with
+        something like `pipl pack run edit`.
+        
+        This would be provided by a dependency to a 'pipl_packedit' package that would provide this functionnality...
+        
+        Such functionnality should be provided by `pipl` and here is a (yet) unsolved chicken and egg situation :/
+        
+        In the meantime, let's just edit the file `<package_dir>__init__.py` with your favorite text editor and declare a simple Node class:
+        
+        .. code-block:: python
+        
+            class Node(object):
+        
+                def __init__(self):
+                    super(Node, self).__init__()
+        
+                def __call__(self):
+                    print 'Calling Node', self
+        
+        Now you can test you package by installing it in editable mode and use the workspace python shell to execute a Node:
+        
+        .. code-block:: text
+        
+            # be sure to be in the package folder (....<pack_name>/src/<pack_name>),
+            # there must be the setup.py file here.
+            (venv) $ pip install -e .
+            (venv) $ pipl work py
+        
+            **opens a shell with python**
+        
+            [MyProject] {Tools} >>> import tools_core
+            [MyProject] {Tools} >>> node = tools_core.Node()
+            [MyProject] {Tools} >>> n()
+            Calling Node <tools_core.Node object at 0x02667F90>
+            [MyProject] {Tools} >>> import tools_core
+        
+        Note that you can edit the "__init__.py" file and directly relaod the module without leaving this python session.
+        
+        Package Upload
+        --------------
+        
+        Now that we have a package that defines what's a Node, we want to make it usable by others. We need to updload our package to the project index:
+        
+        .. code-block:: text
+        
+            # be sure you are in a folder inside the workspace and enter:
+            (venv) $ pipl work upload core
+        
+        You can see the package in the index list:
+        
+        .. code-block:: text
+        
+            (venv) $ pipl proj index list
+            1 Packages:
+                                tools-core
+        
+        Next
+        ----
+        
+        Next step would be to create another package that specialize the Node class by inheriting it. Something like a class Asset in a `bases-asset` package...
+        
+        Then yet another package would defines an instance of the class `bases_asset.Asset` and return it from a global `get()` function.
+        
+        And so on... creating a web of dependencies that `pipl` will help inspect and manage.
+        
+        We call this the `obscure part of the idea` ^o^ 
+        
+        
+Keywords: pipeline dataflow dependency asset
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*
+Description-Content-Type: text/markdown
