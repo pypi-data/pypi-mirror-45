@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: micromez
+Version: 0.0.4
+Summary: Python library for support of 96board mezzanine micromez
+Home-page: https://github.com/ukBaz/python-micromez
+Author: Barry Byford
+Author-email: barry_byford@yahoo.co.uk
+Maintainer: Barry Byford
+Maintainer-email: barry_byford@yahoo.co.uk
+License: MIT
+Description: Overview
+        ========
+        This is the Python library to support the micromez add-on board that is part of the 96Boards Mezzanine Community effort:
+        https://github.com/96boards/mezzanine-community/tree/master/boards/other/micromez
+        
+        Documentation
+        =============
+        https://micromez.readthedocs.io/en/latest/overview.html
+        
+        
+        Building mraa
+        =============
+        This library has a dependancy on the mraa GPIO library which can be installed with Python bindings as follows:
+        ```
+        sudo apt-get install git build-essential swig3.0 python3-dev nodejs-dev cmake libjson-c-dev
+        
+        git clone https://github.com/intel-iot-devkit/mraa.git
+        cd mraa
+        mkdir build
+        cd build
+        cmake -DBUILDSWIG=ON \
+              -DBUILDSWIGPYTHON=ON \
+              -DBUILDSWIGPYTHON3=ON \
+              -DBUILDSWIGNODE=OFF \
+              -DBUILDSWIGJAVA=OFF \
+              ..
+        
+        make
+        
+        sudo make install
+        ```
+        
+        Load additional Fonts
+        =====================
+        If more fonts are required in addition to the three provided, the following will need to be done:
+        ```
+        sudo apt-get install python3-pip
+        sudo pip3 install setuptools
+        sudo pip3 install freetype-py
+        sudo apt-get install libfreetype6-dev
+        ./font_to_py.py /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf 16 myfont.py
+        ```
+        
+Keywords: 96boards Dragonboard 410c
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+Provides-Extra: rel
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: dev
