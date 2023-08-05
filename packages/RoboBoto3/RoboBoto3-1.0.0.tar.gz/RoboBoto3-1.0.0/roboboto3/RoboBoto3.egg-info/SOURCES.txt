@@ -1,0 +1,8 @@
+README.md
+setup.py
+roboboto3/RoboBoto3.py
+roboboto3/RoboBoto3.egg-info/PKG-INFO
+roboboto3/RoboBoto3.egg-info/SOURCES.txt
+roboboto3/RoboBoto3.egg-info/dependency_links.txt
+roboboto3/RoboBoto3.egg-info/requires.txt
+roboboto3/RoboBoto3.egg-info/top_level.txt
