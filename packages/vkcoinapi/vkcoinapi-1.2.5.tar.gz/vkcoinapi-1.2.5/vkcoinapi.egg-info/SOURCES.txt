@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+vkcoinapi/__init__.py
+vkcoinapi/vkcoinapi.py
+vkcoinapi.egg-info/PKG-INFO
+vkcoinapi.egg-info/SOURCES.txt
+vkcoinapi.egg-info/dependency_links.txt
+vkcoinapi.egg-info/requires.txt
+vkcoinapi.egg-info/top_level.txt
