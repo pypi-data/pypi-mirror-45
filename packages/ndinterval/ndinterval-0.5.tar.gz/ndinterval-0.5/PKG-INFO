@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ndinterval
+Version: 0.5
+Summary: construct N-D Intervals and allow for operations on this data strucutre
+Home-page: https://github.com/ajhamdi/ndinterval
+Author: Abdullah Hamdi
+Author-email: abdullah.hamdi@kaust.edu.sa
+License: MIT
+Download-URL: https://github.com/ajhamdi/ndinterval/archive/v0.5.tar.gz
+Description: UNKNOWN
+Keywords: intervals,n-dimensions,bounds
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
