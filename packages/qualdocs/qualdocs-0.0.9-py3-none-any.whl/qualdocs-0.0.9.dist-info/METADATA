@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: qualdocs
+Version: 0.0.9
+Summary: Qualitative data analysis based on Google Docs comments
+Home-page: http://github.com/qualdocs/qualdocs
+Author: Stuart Geiger
+Author-email: stuart@stuartgeiger.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: httplib2
+Requires-Dist: apiclient
+Requires-Dist: oauth2client
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: PyDrive
+Requires-Dist: google-api-python-client
+
+UNKNOWN
+
+
