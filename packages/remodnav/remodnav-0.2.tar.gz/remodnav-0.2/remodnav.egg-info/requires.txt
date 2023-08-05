@@ -1,0 +1,7 @@
+numpy
+scipy
+statsmodels
+matplotlib
+
+[devel-docs]
+pypandoc
