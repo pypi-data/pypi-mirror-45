@@ -1,0 +1,16 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dot_configs/__init__.py
+dot_configs/dot_configs.py
+dot_configs.egg-info/PKG-INFO
+dot_configs.egg-info/SOURCES.txt
+dot_configs.egg-info/dependency_links.txt
+dot_configs.egg-info/not-zip-safe
+dot_configs.egg-info/top_level.txt
+test/test_dot_configs.py

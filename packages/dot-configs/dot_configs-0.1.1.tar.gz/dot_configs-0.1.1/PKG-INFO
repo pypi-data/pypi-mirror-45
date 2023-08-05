@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: dot_configs
+Version: 0.1.1
+Summary: Import and handle project configurations as dot-separated configs object
+Home-page: https://gitlab.com/loxosceles/dot_configs
+Author: Magnus "Loxosceles" Henkel
+Author-email: loxosceles@gmx.de
+License: GNU GPL v3.0
+Description: =============================
+        Dot Configs
+        =============================
+        
+        .. image:: https://badge.fury.io/py/dot-configs.svg
+            :target: https://badge.fury.io/py/dot-configs
+        
+        Import and handle project configurations as dot-separated configs object
+        
+        Full documentation can be found here:
+        https://dot-configs.readthedocs.io/en/latest/
+        
+        
+        Features
+        --------
+        
+        * Easy parsing and handling of project options by using a modifiable configuration object
+        * Simple setup
+        * Splittable configs
+        * Backlinks: Every end-node can trace back its connection to the root node
+        * Dot-seperated object chain, convenient for addressing nodes and properties
+        * Configurations can quickly be inspected inside a command line interpreter, like
+          Jupyter/iPython
+        
+        
+        
+        
+        Documentation
+        -------------
+        
+        The full documentation is at http://dot_configs.rtfd.org.
+        
+        
+        
+        History
+        -------
+        
+        0.1.0 (2019-04-30)
+        ++++++++++++++++++
+        
+        * First release on PyPI.
+        
+Keywords: dot_configs
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
