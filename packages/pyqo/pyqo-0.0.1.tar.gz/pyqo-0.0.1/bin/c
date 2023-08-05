@@ -1,0 +1,6 @@
+#!/bin/bash
+var=$(c_ $@ 1>&1)
+ret=$?
+if [ $ret -ne 0 ]; then
+  cd $var
+fi
