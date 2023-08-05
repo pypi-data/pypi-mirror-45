@@ -1,0 +1,11 @@
+jms_pyleftpad-0.1.1.dist-info/METADATA,sha256=wltwXTgBS6ROdhx1egUPoVTLtu3Nyyv9LAfbqKH8kYA,1000
+jms_pyleftpad-0.1.1.dist-info/RECORD,,
+jms_pyleftpad-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+jms_pyleftpad-0.1.1.dist-info/entry_points.txt,sha256=r6KFm4c4UTIeqRljXANcQLgaBuj698KpYX2Tvp79QGk,46
+jms_pyleftpad-0.1.1.dist-info/top_level.txt,sha256=cB31cX3Z7vbyk07skeLOUDA4vIEfTZSd9Hov3x4_G3Y,18
+pymyleftpad/__init__.py,sha256=bVQB1GpGQseL5TXFfnd9kC7iRkKJdBAYEelPFrlNA00,50
+pymyleftpad/cli.py,sha256=HhitXrshJ8XDg1vDHUVNyUI9WWbkU24TYFhblnObFmQ,1127
+pymyleftpad/func.py,sha256=dokX-o8Tn-JQISoaIrygw1XQZLRLn5o_tvJOT-VUMz0,1485
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cli_test.py,sha256=6nPJx7siU3zzy69TRMpnLh8iUY7wVdEMY3vVbjga92c,841
+tests/test_f.py,sha256=_IEQYD5lHWfgPhrVCDf3kVZqRbNHa5t0_G3oS56pbM4,2132
