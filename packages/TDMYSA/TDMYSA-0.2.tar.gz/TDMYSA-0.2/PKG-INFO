@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: TDMYSA
+Version: 0.2
+Summary: scores
+Home-page: https://shahabks.github.io/Speech-Rater/
+Author: Shahab Sabahi
+Author-email: shahab.sabahi@gmail.com
+License: MIT
+Description:  TDMYSA 
+Keywords: acoustic and signal processing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7

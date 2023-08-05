@@ -1,0 +1,8 @@
+setup.py
+TDMYSA/__init__.py
+TDMYSA.egg-info/PKG-INFO
+TDMYSA.egg-info/SOURCES.txt
+TDMYSA.egg-info/dependency_links.txt
+TDMYSA.egg-info/not-zip-safe
+TDMYSA.egg-info/requires.txt
+TDMYSA.egg-info/top_level.txt
