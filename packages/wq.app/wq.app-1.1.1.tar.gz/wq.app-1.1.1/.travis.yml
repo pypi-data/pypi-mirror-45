@@ -1,0 +1,19 @@
+language: python
+sudo: false
+python: 3.6
+env:
+ - LINT=
+ - LINT=1
+install:
+ - pip install .
+ - pip install html-json-forms
+ - npm install -g node-qunit-phantomjs
+ - npm install -g jshint
+before_script:
+ - python -m tests.server &
+ - cd tests
+ - wq collectjson
+ - mkdir css && wq init && wq scss --indir scss --outdir css
+ - cd ..
+script:
+ - ./runtests.sh
