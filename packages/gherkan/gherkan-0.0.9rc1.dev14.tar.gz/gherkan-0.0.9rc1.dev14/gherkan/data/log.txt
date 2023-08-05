@@ -1,0 +1,130 @@
+WARNING:py.warnings:/app/gherkan/flask_api/api_fsa.py:145: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config = yaml.load(cfg)
+
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+WARNING:py.warnings:/app/gherkan/flask_api/api_fsa.py:145: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config = yaml.load(cfg)
+
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:08] "[37mGET /reset HTTP/1.1[0m" 200 -
+ERROR:root:Failed to detect {} actions. Please make the actors clearer
+WARNING:py.warnings:/app/gherkan/processing/TreeProcessor.py:321: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.templ_dic = yaml.load(stream)
+
+WARNING:py.warnings:/app/gherkan/utils/word_morpho.py:278: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  verb_dic = yaml.load(stream)
+
+WARNING:py.warnings:/app/gherkan/encoder/NL2Temp.py:125: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  vocab = yaml.load(stream)
+
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:09] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+WARNING:py.warnings:/app/gherkan/flask_api/api_fsa.py:133: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config = yaml.load(cfg)
+
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:09] "[37mGET /signals HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:09] "[37mGET /reset HTTP/1.1[0m" 200 -
+ERROR:root:Failed to detect {} actions. Please make the actors clearer
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[37mGET /reset HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[37mPOST /signals HTTP/1.1[0m" 200 -
+ERROR:flask.app:Exception on /nltext [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/app/gherkan/flask_api/resources/nl_text.py", line 18, in get
+    response = API_FSA.requestNLText()
+  File "/app/gherkan/flask_api/api_fsa.py", line 336, in requestNLText
+    signalToNL(signalFilePath)
+  File "/app/gherkan/flask_api/signal_to_nl.py", line 31, in process
+    nlFileWriter = NLFileWriter(signalBatch)
+  File "/app/gherkan/encoder/NLFileWriter.py", line 18, in __init__
+    self.encode(signalBatch)
+  File "/app/gherkan/encoder/NLFileWriter.py", line 28, in encode
+    g.GIVEN, self.tree_to_str(signalBatch.context)))
+  File "/app/gherkan/encoder/NLFileWriter.py", line 53, in tree_to_str
+    tree.root, TreeProcessor.Direction.SIGNAL_TO_NL)
+  File "/app/gherkan/processing/TreeProcessor.py", line 41, in process_tree
+    return self.process_tree_recursive(node)
+  File "/app/gherkan/processing/TreeProcessor.py", line 88, in process_tree_recursive
+    node = self.process_operand(node, [match], template)
+  File "/app/gherkan/processing/TreeProcessor.py", line 136, in process_operand
+    self.translate_to_nl(node, sp)
+  File "/app/gherkan/processing/TreeProcessor.py", line 200, in translate_to_nl
+    fill_action = FillActions()
+  File "/app/gherkan/processing/Temp2NL.py", line 21, in __init__
+    self.finetune = Finetuner(lang="cs")
+  File "/app/gherkan/utils/word_morpho.py", line 16, in __init__
+    self.morpho = CZMorph()
+  File "/app/gherkan/utils/czech_morpho.py", line 13, in __init__
+    self.load_tagger()
+  File "/app/gherkan/utils/czech_morpho.py", line 47, in load_tagger
+    self.tokenizer = self.tagger.newTokenizer()
+AttributeError: 'NoneType' object has no attribute 'newTokenizer'
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[1m[35mGET /nltext HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[37mGET /reset HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:09:10] "[37mPOST /signals HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:12] "[37mGET /reset HTTP/1.1[0m" 200 -
+ERROR:root:Failed to detect {} actions. Please make the actors clearer
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:13] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:13] "[37mGET /signals HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:13] "[37mGET /reset HTTP/1.1[0m" 200 -
+ERROR:root:Failed to detect {} actions. Please make the actors clearer
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[37mGET /reset HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[37mPOST /signals HTTP/1.1[0m" 200 -
+ERROR:flask.app:Exception on /nltext [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/app/gherkan/flask_api/resources/nl_text.py", line 18, in get
+    response = API_FSA.requestNLText()
+  File "/app/gherkan/flask_api/api_fsa.py", line 336, in requestNLText
+    signalToNL(signalFilePath)
+  File "/app/gherkan/flask_api/signal_to_nl.py", line 31, in process
+    nlFileWriter = NLFileWriter(signalBatch)
+  File "/app/gherkan/encoder/NLFileWriter.py", line 18, in __init__
+    self.encode(signalBatch)
+  File "/app/gherkan/encoder/NLFileWriter.py", line 28, in encode
+    g.GIVEN, self.tree_to_str(signalBatch.context)))
+  File "/app/gherkan/encoder/NLFileWriter.py", line 53, in tree_to_str
+    tree.root, TreeProcessor.Direction.SIGNAL_TO_NL)
+  File "/app/gherkan/processing/TreeProcessor.py", line 41, in process_tree
+    return self.process_tree_recursive(node)
+  File "/app/gherkan/processing/TreeProcessor.py", line 88, in process_tree_recursive
+    node = self.process_operand(node, [match], template)
+  File "/app/gherkan/processing/TreeProcessor.py", line 136, in process_operand
+    self.translate_to_nl(node, sp)
+  File "/app/gherkan/processing/TreeProcessor.py", line 200, in translate_to_nl
+    fill_action = FillActions()
+  File "/app/gherkan/processing/Temp2NL.py", line 21, in __init__
+    self.finetune = Finetuner(lang="cs")
+  File "/app/gherkan/utils/word_morpho.py", line 16, in __init__
+    self.morpho = CZMorph()
+  File "/app/gherkan/utils/czech_morpho.py", line 13, in __init__
+    self.load_tagger()
+  File "/app/gherkan/utils/czech_morpho.py", line 47, in load_tagger
+    self.tokenizer = self.tagger.newTokenizer()
+AttributeError: 'NoneType' object has no attribute 'newTokenizer'
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[1m[35mGET /nltext HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[37mGET /reset HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.3 - - [02/Apr/2019 09:33:14] "[37mPOST /signals HTTP/1.1[0m" 200 -
+WARNING:py.warnings:/app/gherkan/flask_api/api_fsa.py:145: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config = yaml.load(cfg)
+
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)

@@ -1,0 +1,5 @@
+flush: false
+host: 0.0.0.0
+lastSignalFile: /app/gherkan/data/2019_Apr_02-09_33_14_signals.feature
+port: 5000
+responseMode: responseModeFile
