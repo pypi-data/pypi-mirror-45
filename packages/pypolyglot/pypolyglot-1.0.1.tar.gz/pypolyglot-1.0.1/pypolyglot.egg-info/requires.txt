@@ -1,0 +1,5 @@
+pyyaml
+pypolyglot
+fundamentals
+requests
+bs4
