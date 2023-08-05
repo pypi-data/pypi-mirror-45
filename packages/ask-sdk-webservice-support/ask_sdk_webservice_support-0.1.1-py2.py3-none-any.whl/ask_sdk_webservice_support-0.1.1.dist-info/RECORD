@@ -1,0 +1,9 @@
+ask_sdk_webservice_support/__init__.py,sha256=IcoO9pX-nozlYUnlElCiO8wqGpqxzPftaJzYujSHWbc,593
+ask_sdk_webservice_support/__version__.py,sha256=_YHmr6OH7SdIcTW1uxtoP9Gld6n8DMGO4Krgsx3i9F4,1197
+ask_sdk_webservice_support/verifier.py,sha256=JpFmPAECw5ODNwoTVfiNvDQjnYy_pMUTEla1XZSLZds,19445
+ask_sdk_webservice_support/verifier_constants.py,sha256=rhvvtXdo_f0zo27YPGBKGcTdXHPaIRheaHkp_7oRsTM,3027
+ask_sdk_webservice_support/webservice_handler.py,sha256=9x3i4xuyMMv1PNNu_5vMt61CJKZ5k6uT0tObKc156us,5590
+ask_sdk_webservice_support-0.1.1.dist-info/METADATA,sha256=o1wPe_KZczBuB3L5wXXk-NiWs3CbG5JcoeJKqSy02uk,4027
+ask_sdk_webservice_support-0.1.1.dist-info/RECORD,,
+ask_sdk_webservice_support-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ask_sdk_webservice_support-0.1.1.dist-info/top_level.txt,sha256=-9kynO04fjgGS20gTDpEbrEZLOez97ekF4TOisCuTq0,27
