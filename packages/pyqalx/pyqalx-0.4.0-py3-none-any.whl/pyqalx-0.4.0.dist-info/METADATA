@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyqalx
+Version: 0.4.0
+Summary: High-level interfaces to the qalx API
+Home-page: https://docs.qalx.io
+Author: AgileTek Engineering
+Author-email: UNKNOWN
+License: GNU
+Keywords: qalx engineering simulation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: boto3
+Requires-Dist: dill
+
+pyqalx
+======
+
+Interfaces to qalx. For more details, see `project documentation,<'http://docs.qalx.io'>`_.
+
+Installation
+------------
+
+.. code-block:: bash
+
+   $ pip install pyqalx
+
+
+
+Requirements
+------------
+boto3
+requests
+
+
+Usage
+-----
+
+.. code-block:: python
+
+   >>> from pyqalx import Qalx
+   >>> qalx = Qalx()
+   >>> data_item = qalx.add_item_data({"some_number":5})
+
+
+
+
+
