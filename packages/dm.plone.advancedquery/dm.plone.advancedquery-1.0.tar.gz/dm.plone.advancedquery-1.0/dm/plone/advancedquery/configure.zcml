@@ -1,0 +1,5 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+  <include package="Products.AdvancedQuery" />
+  <subscriber factory=".catalogtool.Restrict" provides="Products.AdvancedQuery.eval.interfaces.IQueryRestrict" />
+  <subscriber factory=".extendedpathindex.PathIndexQueryConverter" provides="Products.AdvancedQuery.eval.interfaces.IQueryConverter" />
+</configure>

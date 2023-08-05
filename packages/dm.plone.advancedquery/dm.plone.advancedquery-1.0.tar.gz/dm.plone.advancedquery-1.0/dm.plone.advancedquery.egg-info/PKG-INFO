@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: dm.plone.advancedquery
+Version: 1.0
+Summary: "Products.AdvancedQuery" extensions for Plone
+Home-page: https://pypi.org/project/dm.plone.advancedquery
+Author: Dieter Maurer
+Author-email: dieter@handshake.de
+License: GPL
+Description: Small package to allow the use of ``Products.AdvancedQuery`` (version 4+)
+        in Plone 5.2+.
+        
+        It provides a (required) adapter for Plone's ``CatalogTool``
+        and an (optional) adapter for Plone's ``ExtendedPathIndex``.
+        
+        You must ensure that its ``configure.zcml`` is "executed" at startup.
+        This usually is ensured by extending the ``buildout`` definition
+        ``zcml`` with ``dm.plone.advancedquery``.
+Keywords: Plone AdvancedQuery search
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Framework :: Plone
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities

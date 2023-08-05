@@ -1,0 +1,17 @@
+setup.py
+dm/__init__.py
+dm.plone.advancedquery.egg-info/PKG-INFO
+dm.plone.advancedquery.egg-info/SOURCES.txt
+dm.plone.advancedquery.egg-info/dependency_links.txt
+dm.plone.advancedquery.egg-info/namespace_packages.txt
+dm.plone.advancedquery.egg-info/not-zip-safe
+dm.plone.advancedquery.egg-info/requires.txt
+dm.plone.advancedquery.egg-info/top_level.txt
+dm/plone/__init__.py
+dm/plone/advancedquery/README.txt
+dm/plone/advancedquery/VERSION.txt
+dm/plone/advancedquery/__init__.py
+dm/plone/advancedquery/catalogtool.py
+dm/plone/advancedquery/configure.zcml
+dm/plone/advancedquery/extendedpathindex.py
+dm/plone/advancedquery/tests.py
