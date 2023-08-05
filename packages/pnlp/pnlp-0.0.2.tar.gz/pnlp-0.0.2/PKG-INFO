@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pnlp
+Version: 0.0.2
+Summary: A pre-processing tool for NLP.
+Home-page: https://github.com/hscspring/pnlp
+Author: Yam
+Author-email: haoshaochun@gmail.com
+License: UNKNOWN
+Description: # pnlp
+        This is a pre-processing tool for NLP in Chinese.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

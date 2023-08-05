@@ -1,0 +1,9 @@
+README.md
+setup.py
+pnlp/__init__.py
+pnlp/iopipe.py
+pnlp/text.py
+pnlp.egg-info/PKG-INFO
+pnlp.egg-info/SOURCES.txt
+pnlp.egg-info/dependency_links.txt
+pnlp.egg-info/top_level.txt
