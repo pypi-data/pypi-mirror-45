@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gameofthrones
+Version: 0.0.2
+Summary: CLI for gameofthrones content requester
+Home-page: https://github.com/qxlsz/game_of_thrones
+Author: Rajasekhar Josyula
+Author-email: rajasekhar.josyula@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: twine
+
+CLI for gameofthrones content requester
+
+
