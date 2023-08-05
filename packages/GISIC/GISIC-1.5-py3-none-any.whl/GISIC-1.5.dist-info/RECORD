@@ -1,0 +1,11 @@
+GISIC/__init__.py,sha256=ZZSo7BshvDfhI2nDtxKjKT2jvlfQhAb3gZCHyK2kH2w,139
+GISIC/norm_functions.py,sha256=DKYTbOWKwRVN-DNGkaboIAHdEQM7mGUE8PGo-q1hcUs,602
+GISIC/normalize.py,sha256=zIEsh6X9fT_WbPOTlZ5pJIE_XmgWqVKlJTEGQsZV6fc,703
+GISIC/segment.py,sha256=_XjmBbJeMS9VgEWM3VRSFtstR7VBHx_PxpLEQHC1xb4,1988
+GISIC/spectrum.py,sha256=EAAX8kLOyKFdzD8fHcZTGHyN_b24VR8cwA-HXdcRqCs,8231
+GISIC-1.5.dist-info/DESCRIPTION.rst,sha256=nhJZAEWnzPHuWj0TyBe1q95Ag0CkPLsDJhH6SYd9frM,1092
+GISIC-1.5.dist-info/METADATA,sha256=8A212uz2gX4HVhZqjuHvAYtiYJlqKvQ4VEyl8zqBfTQ,1344
+GISIC-1.5.dist-info/RECORD,,
+GISIC-1.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+GISIC-1.5.dist-info/metadata.json,sha256=kKC3P8UKQnZZGA20JdXpujTW0grxEmTN4D2SvgKjfog,406
+GISIC-1.5.dist-info/top_level.txt,sha256=YZij70OoQ9L8GvKLlUqm11E9_0S6XFjxvhH8QbMWwlA,6
