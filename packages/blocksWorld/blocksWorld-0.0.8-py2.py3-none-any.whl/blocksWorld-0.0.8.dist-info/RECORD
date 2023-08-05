@@ -1,0 +1,11 @@
+blocksWorld/__init__.py,sha256=dhBbfHg8bcBuKGBMvOnHHluRA2Qs41n0GYm6o3wMATI,269
+blocksWorld/draw.py,sha256=uqOA5JWG9T8D10pr4Yet0mqeDlmxitVvLKcPS3is8d0,2205
+blocksWorld/polygon.py,sha256=pFpSUt8S0_ZsLAVOgMlOTrDh4A_VPkqXbRVGuvpTpQs,1852
+blocksWorld/transform.py,sha256=riMw7y5TGA8iy9KgdTxFzFdwGxVGlh9BTJfiCT7hFI8,1477
+blocksWorld-0.0.8.dist-info/DESCRIPTION.rst,sha256=R80txjFfw4is-QOu2sTf-HDA84byyA0I91tdlJ7zZ_g,1484
+blocksWorld-0.0.8.dist-info/LICENSE.txt,sha256=_I41k1B2hL3Btexp6re-dvF7Pd2hWWOTHJa3LksCuDM,1076
+blocksWorld-0.0.8.dist-info/METADATA,sha256=sxNfMImapfUz8jXLbUHFlPvLBoISfPt-Yn4IJ-TyRZg,2587
+blocksWorld-0.0.8.dist-info/RECORD,,
+blocksWorld-0.0.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+blocksWorld-0.0.8.dist-info/metadata.json,sha256=bBH36VCG9go6ui91wH6gkFgmy9lPltF1FqGY3DjZC7I,1210
+blocksWorld-0.0.8.dist-info/top_level.txt,sha256=UnGL2APLIOniNY8Lhl8I1zahzWIkiuZvsMzGeS8n8wU,12
