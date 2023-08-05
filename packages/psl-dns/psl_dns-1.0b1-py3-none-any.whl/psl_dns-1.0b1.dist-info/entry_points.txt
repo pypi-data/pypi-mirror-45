@@ -1,0 +1,5 @@
+[console_scripts]
+psl-dns_check = psl.commands.check:main
+psl-dns_parse = psl.commands.parse:main
+psl-dns_query = psl.commands.query:main
+
