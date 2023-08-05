@@ -1,0 +1,10 @@
+discord/ext/test/__init__.py,sha256=xbYef4-MevM2nvFGPPoUO3Mxg-UZFLMcXwq8r57Q0Lk,186
+discord/ext/test/backend.py,sha256=VrQt__jrRk0zig7rPs1KQzE_JtXonf63uwidX3c6VnM,9743
+discord/ext/test/factories.py,sha256=NvPENcbN0I-RV2NZD_m_7pzIVROjxCY4Umkdu1VF88Q,8445
+discord/ext/test/runner.py,sha256=q1e2p5cfTBltkwfvcSdnf8FBr4vyIlo6kVfDJvaEIlk,5495
+dpytest-0.0.9.dist-info/DESCRIPTION.rst,sha256=X6yvOAc8MFtTVKLxnFFlLRWWL_qiBubn3q2408XXruU,885
+dpytest-0.0.9.dist-info/METADATA,sha256=shFr_sNCXhCLPN57TPSu9ZB1drCqTEJdmAicaJBNMUk,1428
+dpytest-0.0.9.dist-info/RECORD,,
+dpytest-0.0.9.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dpytest-0.0.9.dist-info/metadata.json,sha256=cKWAA0YptQDOHeEAM7c5qepb0ywx6fLxhx1Bmc42b-A,684
+dpytest-0.0.9.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
