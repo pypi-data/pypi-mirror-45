@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/tspyo/__init__.py
+src/tspyo/singletons.py
+src/tspyo.egg-info/PKG-INFO
+src/tspyo.egg-info/SOURCES.txt
+src/tspyo.egg-info/dependency_links.txt
+src/tspyo.egg-info/requires.txt
+src/tspyo.egg-info/top_level.txt
