@@ -1,0 +1,16 @@
+README.md
+setup.py
+yetu/__init__.py
+yetu.egg-info/PKG-INFO
+yetu.egg-info/SOURCES.txt
+yetu.egg-info/dependency_links.txt
+yetu.egg-info/top_level.txt
+yetu/person/__init__.py
+yetu/person/classes/__init__.py
+yetu/person/classes/person.py
+yetu/person/decorators/__init__.py
+yetu/person/decorators/debugger.py
+yetu/person/descriptors/__init__.py
+yetu/person/descriptors/person.py
+yetu/person/metas/__init__.py
+yetu/person/metas/person.py
