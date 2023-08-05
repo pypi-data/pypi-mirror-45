@@ -1,0 +1,11 @@
+six
+
+[:python_version < "3.0"]
+typing
+
+[docs-builder]
+sphinx
+sphinx_rtd_theme
+
+[test-runner]
+detox
