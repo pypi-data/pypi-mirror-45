@@ -1,0 +1,1 @@
+jupyter-tools @ git://github.com/CermakM/jupyter-tools.git@master
