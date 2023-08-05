@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+dchunk/__init__.py
+dchunk/chunking.py
+dchunk/tests.py
+dchunk.egg-info/PKG-INFO
+dchunk.egg-info/SOURCES.txt
+dchunk.egg-info/dependency_links.txt
+dchunk.egg-info/top_level.txt
