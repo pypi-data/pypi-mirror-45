@@ -1,0 +1,4 @@
+fsoopify
+packaging
+pipfile
+pyyaml
