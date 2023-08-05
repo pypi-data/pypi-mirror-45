@@ -1,0 +1,11 @@
+README.md
+setup.py
+YTClient/RequestEngine.py
+YTClient/YTClient.py
+YTClient/YTDataClasses.py
+YTClient/__init__.py
+YTClient.egg-info/PKG-INFO
+YTClient.egg-info/SOURCES.txt
+YTClient.egg-info/dependency_links.txt
+YTClient.egg-info/requires.txt
+YTClient.egg-info/top_level.txt
