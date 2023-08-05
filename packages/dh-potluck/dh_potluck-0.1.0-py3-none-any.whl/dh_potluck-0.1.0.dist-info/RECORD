@@ -1,0 +1,6 @@
+dh_potluck/__init__.py,sha256=Go4Pp6-eIrbxuUrS7UgOv2tbYpcPZgwQCZ3mIdBL3pc,155
+dh_potluck/auth.py,sha256=RQjElxemTqBBEOyE3vNpovOWIfNhLtZDGmuBkS5eiRQ,1424
+dh_potluck/extension.py,sha256=OmpzH-E0vPjwKLraqu9ZcX7tGmm02Kb0C4b1noOhvk0,586
+dh_potluck-0.1.0.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+dh_potluck-0.1.0.dist-info/METADATA,sha256=nYrNKhLJif6I4Pq_zX8PuxuU48FkkhR6Jy04uiBNTgM,274
+dh_potluck-0.1.0.dist-info/RECORD,,
