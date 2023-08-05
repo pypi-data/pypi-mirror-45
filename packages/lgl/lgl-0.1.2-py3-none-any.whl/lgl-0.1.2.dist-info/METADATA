@@ -1,0 +1,65 @@
+Metadata-Version: 2.0
+Name: lgl
+Version: 0.1.2
+Summary: launch python.
+Home-page: https://github.com/libgirlenterprise/lgl
+Author: Team Libgirl
+Author-email: team@libgirl.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: toml
+Requires-Dist: importmagic
+
+## lgl - python packaging manager launcher
+
+libgirl launcher is a packaging manager to create python project
+
+## Installation
+
+```
+pip install lgl
+```
+
+## Features
+
+* Create project directory.
+* Find lacking packge and install after analyze source code.
+* manage `import` forms for the package.
+* Launch application.
+
+## Usage
+
+```
+$ lgl
+usage: lgl [-h] {run,install,fmt,init} ...
+
+positional arguments:
+  {run,install,fmt,init}
+    run                 see `run -h`
+    install             see `install -h`
+    fmt                 see `fmt -h`
+    init                see `init -h`
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
+
+    $ lgl init project-name # create project directory
+    $ lgl install           # install depending libraries.
+    $ lgl fmt               # manage `import` forms
+    $ lgl run [arguments]   # launch application
+
+## Author
+Team Libgirl(team@libgirl.com)
+
+## License
+Licensed under the Apache License 2.0 License.
+
+
