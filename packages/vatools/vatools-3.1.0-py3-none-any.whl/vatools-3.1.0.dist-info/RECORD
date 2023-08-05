@@ -1,0 +1,15 @@
+vatools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vatools/vcf_expression_annotator.py,sha256=1i1UQiB8O5Xk8Xj08U2wzQpeObOzu19e4JJUdT0vmZw,10247
+vatools/vcf_info_annotator.py,sha256=Bn89Dj9WNMBPq1Djdn3GRZ67cE6TDTr4PmLaMi9A6mk,4452
+vatools/vcf_readcount_annotator.py,sha256=n8eUoJmZGCYkgL8ethuuTbjdkq64vZSBiKVw7f1DE4M,14456
+vatools/vep_annotation_reporter.py,sha256=CgG1ld--JYhSKZFV3QMon3uLYOk5oDXUDChiwZsm6TI,7492
+vatools-3.1.0.dist-info/METADATA,sha256=joWbZ6LhPjHLlbk_u5-VCR8VQjBbBwqwFmdM4v5VNnM,798
+vatools-3.1.0.dist-info/RECORD,,
+vatools-3.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+vatools-3.1.0.dist-info/entry_points.txt,sha256=_td_LunYcWMPV12tWRsoT0nVwPxmNKK1HstuLMhTfRw,263
+vatools-3.1.0.dist-info/top_level.txt,sha256=_ELTP9c7fUb0apWjZrXJhqy0FPlvlfoLJfccZRLqcik,8
+vcf_annotation_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vcf_annotation_tools/vcf_expression_annotator.py,sha256=1i1UQiB8O5Xk8Xj08U2wzQpeObOzu19e4JJUdT0vmZw,10247
+vcf_annotation_tools/vcf_info_annotator.py,sha256=Bn89Dj9WNMBPq1Djdn3GRZ67cE6TDTr4PmLaMi9A6mk,4452
+vcf_annotation_tools/vcf_readcount_annotator.py,sha256=3oOt_tN6Uji59rsndX5KauNjwbXC_L9Y6UTdtzVgYJY,14008
+vcf_annotation_tools/vep_annotation_reporter.py,sha256=75rofYyHsnK5ObZSfgycCy8Rt-S2X7JgsFK7RsNq1-0,7232
