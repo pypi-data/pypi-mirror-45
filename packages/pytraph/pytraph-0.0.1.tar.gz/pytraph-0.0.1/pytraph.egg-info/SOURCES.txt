@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+pytraph/__init__.py
+pytraph.egg-info/PKG-INFO
+pytraph.egg-info/SOURCES.txt
+pytraph.egg-info/dependency_links.txt
+pytraph.egg-info/requires.txt
+pytraph.egg-info/top_level.txt
+pytraph/core/__init__.py
+pytraph/core/_traph_tensor.pyd
+pytraph/core/dtype.py
+pytraph/core/tensor.py
+pytraph/core/traph_tensor.py
