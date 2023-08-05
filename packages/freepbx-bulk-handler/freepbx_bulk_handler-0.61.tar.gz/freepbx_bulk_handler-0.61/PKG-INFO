@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: freepbx_bulk_handler
+Version: 0.61
+Summary: Assist administrators of FreePBX systems when they need to use the Bulk Handler module
+Home-page: https://gitlab.com/daxm/FreePBX_Bulk_Handler
+Author: Dax Mickelson
+Author-email: daxm@daxm.net
+License: BSD
+Description: This python package is designed to assist administrators of FreePBX systems when
+        they need to use the Bulk Handler module.
+Keywords: FreePBX,bulk handler,freepbx
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Telephony
+Classifier: Topic :: Communications :: Internet Phone
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
