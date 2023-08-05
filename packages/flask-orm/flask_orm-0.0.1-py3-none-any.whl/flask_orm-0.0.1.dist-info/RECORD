@@ -1,0 +1,9 @@
+flask_orm/__init__.py,sha256=8pDUk6Q5KhWekh75WvaRt3arLoseIgYNGaitAOsMC94,1724
+flask_orm/base_model.py,sha256=Zhka86cRi238aRD3I_3qBE61R9IAtdlqXi9RymmNt_8,902
+flask_orm/base_query.py,sha256=NKT_uPNB6PrHvoFQJLXw-_Oz54P0MfpqqZQdg1ccvA8,545
+flask_orm/engine.py,sha256=9W1llaOocdaQYRpeV99HNSymC-WfJ50JtGzx1XL1Kk0,375
+flask_orm/orm_settings.py,sha256=ST2Q88FImBpmCdIZNGsLa8H5VlfMms4fCtn1hjZdr4k,365
+flask_orm-0.0.1.dist-info/METADATA,sha256=Z8x_R42g3mNUO-yGrVe7DL0K0U2_SnOGCkywrZ4qNSQ,216
+flask_orm-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+flask_orm-0.0.1.dist-info/top_level.txt,sha256=5IBXFxb8MvkjmNRr0C-zNya3r6XmVBvRpRQJwiaJM4c,10
+flask_orm-0.0.1.dist-info/RECORD,,
