@@ -1,0 +1,8 @@
+multigzip/__init__.py,sha256=yalzVLpa3rqx8Vg2Fpo0Mqq1k5SjXE9rYUaIPe6VJmI,75
+multigzip/gzip.py,sha256=8hOA5ZJbDzPwuVgfy5ZYa6vSg4T8WGMeGnbgeVq9bJQ,19032
+multigzip/gzip2.py,sha256=_MFShLNHLwe6noVSUV-Mi9kvILcxLR7KjavpczLAqGE,4109
+multigzip-0.0.1.dist-info/LICENSE,sha256=8k4SGyO2xvvBuozj6p6QFuHRtDppfCY2PWMD6a0mkdo,1050
+multigzip-0.0.1.dist-info/METADATA,sha256=2F5EU69Ey9adUZ6UK4GOGt4UiMJML4rW8lJCyHqULeE,1362
+multigzip-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+multigzip-0.0.1.dist-info/top_level.txt,sha256=AEZLxjtqPE4SdGAmquo6VWEwfiH257YcAWpS6letvEw,10
+multigzip-0.0.1.dist-info/RECORD,,
