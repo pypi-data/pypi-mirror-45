@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: deskew
+Version: 0.5.0
+Summary: Skew detection and correction in images containing text
+Home-page: https://hub.docker.com/r/sbrunner/deskew/
+Author: Stéphane Brunner
+Author-email: stephane.brunner@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+
+## Skew detection and correction in images containing text
+
+<img src="doc/input.jpeg" width=400px />
+<h5>Image with skew</h5>
+<img src="doc/sample_output.jpeg" height=300px />
+<h5>Image after deskew</h5>
+
+
+Inspired by Alyn: https://github.com/kakul/Alyn
+
+
