@@ -1,0 +1,32 @@
+include MANIFEST.in
+include benchmark.py
+include test.py
+include pyspacewar.pyw
+include *.txt
+include *.rst
+include tox.ini
+include *.yml
+include Makefile
+include .gitignore
+include src/pyspacewar/images/*
+include src/pyspacewar/icons/*
+include src/pyspacewar/sounds/*
+include src/pyspacewar/music/*
+include src/pyspacewar/tests/*.py
+
+# added by check_manifest.py
+include .coveragerc
+
+# added by check_manifest.py
+include *.desktop
+
+# added by check_manifest.py
+include LICENSE
+
+# added by check_manifest.py
+include *.mk
+
+# added by check_manifest.py
+include *.py
+include *.xml
+include pytest.ini
