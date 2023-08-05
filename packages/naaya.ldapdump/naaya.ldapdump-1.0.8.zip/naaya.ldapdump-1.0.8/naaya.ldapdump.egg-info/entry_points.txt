@@ -1,0 +1,3 @@
+[console_scripts]
+dump_ldap = naaya.ldapdump.main:dump_ldap
+
