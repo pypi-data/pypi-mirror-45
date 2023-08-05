@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+examples/example1.py
+spkit/__init__.py
+spkit/infotheory.py
+spkit.egg-info/PKG-INFO
+spkit.egg-info/SOURCES.txt
+spkit.egg-info/dependency_links.txt
+spkit.egg-info/requires.txt
+spkit.egg-info/top_level.txt
