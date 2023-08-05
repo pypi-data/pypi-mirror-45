@@ -1,0 +1,3 @@
+[console_scripts]
+dice=d6dice.console:cli
+

@@ -1,0 +1,4 @@
+"""
+d6dice module
+
+"""
