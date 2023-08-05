@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cp2webhook/__init__.py
+cp2webhook/__main__.py
+cp2webhook/config.py
+cp2webhook.egg-info/PKG-INFO
+cp2webhook.egg-info/SOURCES.txt
+cp2webhook.egg-info/dependency_links.txt
+cp2webhook.egg-info/entry_points.txt
+cp2webhook.egg-info/requires.txt
+cp2webhook.egg-info/top_level.txt
