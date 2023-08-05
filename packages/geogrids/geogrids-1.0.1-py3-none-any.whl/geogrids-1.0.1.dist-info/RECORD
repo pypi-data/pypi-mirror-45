@@ -1,0 +1,11 @@
+geogrids/__init__.py,sha256=eHw_HzLrCgLPxafUHfEZThax_74TMl4gFSU2KCFeGZw,308
+geogrids/encoders/__init__.py,sha256=GPlujJhPIN0hkaLGnMTrcPvHwODqb5qQEwinOyowYT8,424
+geogrids/encoders/encoder.py,sha256=EP-gzWZzoyGeECPY1vCFHPJRRAZ2FOBhjyukphjT4HQ,3765
+geogrids/encoders/wordlists.py,sha256=Um9nf0y539CGbuYQ0ArKxzvUtATPNP0OcFSHUp3KUKc,24593
+geogrids/gdgg/__init__.py,sha256=PonjSR9lLxEQyo-4V5QXUgnjTlehqmXkbB_EvgGlcRw,271
+geogrids/gdgg/oqtm.py,sha256=J5cxkgfykwLIMfGtXbvhuTLWNyxQDIMTmx_kDLyrsPE,14738
+geogrids-1.0.1.dist-info/LICENSE,sha256=QPJ5GuhOCXzJZLdAy9l054KWo2qhSQ3LdtzABL-GWsg,487
+geogrids-1.0.1.dist-info/METADATA,sha256=cQGjQZsgiQHjf9O8VUY4BlQX0bMf5ALhVySMvhKHAck,6729
+geogrids-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+geogrids-1.0.1.dist-info/top_level.txt,sha256=inXHpmlexDSeDwNdvIszrsNz2mOu7ViIsOtoYRJPA0I,9
+geogrids-1.0.1.dist-info/RECORD,,
