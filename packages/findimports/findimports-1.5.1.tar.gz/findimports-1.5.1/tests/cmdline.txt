@@ -1,0 +1,35 @@
+Command-line parsing
+====================
+
+An invalid argument causes a short error message
+
+    >>> from findimports import main
+    >>> exitcode = main(['findimports', '--nosuchargument'])
+    Usage: findimports [options] [filename|dirname ...]
+    <BLANKLINE>
+    findimports: error: no such option: --nosuchargument
+
+    >>> exitcode
+    2
+
+You can ask for a help message
+
+    >>> exitcode = main(['findimports', '--help'])  # doctest: +ELLIPSIS
+    Usage: findimports [options] [filename|dirname ...]
+    <BLANKLINE>
+    FindImports is a script that processes Python module dependencies...
+    ...
+
+The default pathname is '.'
+
+    >>> import os
+    >>> os.chdir(sample_tree)
+    >>> exitcode = main(['findimports', '-pil1'])
+    apple:
+      os
+      sys
+    box:
+      gc
+    orange:
+      gc
+
