@@ -1,0 +1,12 @@
+README.md
+setup.py
+copypasta/__init__.py
+copypasta/cli.py
+copypasta/param_parser.py
+copypasta/transformers.py
+copypasta.egg-info/PKG-INFO
+copypasta.egg-info/SOURCES.txt
+copypasta.egg-info/dependency_links.txt
+copypasta.egg-info/entry_points.txt
+copypasta.egg-info/requires.txt
+copypasta.egg-info/top_level.txt
