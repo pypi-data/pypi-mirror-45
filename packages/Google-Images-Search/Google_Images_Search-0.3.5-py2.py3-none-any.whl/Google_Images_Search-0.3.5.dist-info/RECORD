@@ -1,0 +1,10 @@
+google_images_search/__init__.py,sha256=WX6Cdah6qT6mrY4355pCM6IAIwEFurDEaM8nFs3ZE3U,162
+google_images_search/cli.py,sha256=nQ8cpjPT3ArP1GyHTdtj2SCxhvEvmPk8sYQtpO9BJrQ,2946
+google_images_search/fetch_resize_save.py,sha256=3ptmsmTRyMRDSIdyYd8GbWEv5SqhOM77mVG-8_0_vMs,4875
+google_images_search/google_api.py,sha256=FYU7WutsSB_Qwszo6I3DZMLML2DWpiLrQ9piZf_XzkU,2728
+Google_Images_Search-0.3.5.dist-info/LICENSE,sha256=gFs-f7Ta2KbluTCG0S-Vi6oY6oLWiPzkeyK7oUBr4ZQ,1066
+Google_Images_Search-0.3.5.dist-info/METADATA,sha256=WAAbjgpYEsM9JFKGeK_u6JoDrsyCdfM4t9Hk68B--JI,6386
+Google_Images_Search-0.3.5.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+Google_Images_Search-0.3.5.dist-info/entry_points.txt,sha256=1HmhgrK31LtkRx4R0xOkTxLdqAFfbulX-N__Bol4mp4,58
+Google_Images_Search-0.3.5.dist-info/top_level.txt,sha256=W3mvaCEjgJM68hsQypjJyblrTotImPAyO9M7hnzIahM,21
+Google_Images_Search-0.3.5.dist-info/RECORD,,
