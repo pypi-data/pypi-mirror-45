@@ -1,0 +1,9 @@
+go_template/__init__.py,sha256=Pqjujgb3ymkk9Hz2kDcNU2NyWcSj3EP1NnwyXPDUrME,75
+go_template/utils.py,sha256=G-nxKfYtGf0UYqILXexenoMq5HNoxgtmIoqanHPAvlk,272
+go_template/wrapper.py,sha256=VRephLnr3YILGpk6nLC-z-elO7b4GLT3ji6PwUB0Ir8,805
+go_template/bind/template.so,sha256=rdflzbzBS3QTCebUM3YLtF6UNBwQCbUQ4Ww21eKeAzo,4666744
+go_template-0.0.3.dist-info/LICENSE,sha256=hD2J-qbJ2vUBwo8w_VMYGAo50EjjuQotPMCsKoAFpYg,1068
+go_template-0.0.3.dist-info/METADATA,sha256=dDWYxBjwjpkTQZElDwCkifCizbbqYwdlH2YznGyjV2w,3988
+go_template-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+go_template-0.0.3.dist-info/top_level.txt,sha256=Od-bNUkdJXENKqOTdJ4zvVMJJ7TSLM_BkYGVCPIsmAQ,12
+go_template-0.0.3.dist-info/RECORD,,
