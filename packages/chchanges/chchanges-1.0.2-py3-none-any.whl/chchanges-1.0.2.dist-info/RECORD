@@ -1,0 +1,11 @@
+chchanges/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chchanges/bayesian_online.py,sha256=glPM9f81D4oASyhYhp44B2Vk8tTWarAL0CQyS5uuvgk,13492
+chchanges/demos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chchanges/demos/mean.py,sha256=-cyT374uxA1I1mM1vfBWxqbFUcLEyP-5Dou3-4jZXyA,2574
+chchanges/demos/variance.py,sha256=ZRVR8P-HQk96sUQ86iyqZ-ROFgYIrTE76LzVMiSOang,2819
+chchanges/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chchanges/test/test_bayesian_online.py,sha256=K1sR7pyQPH-ZFuzQ_M9FcjOzpWGWrJ9P2flKM5hd8V0,1695
+chchanges-1.0.2.dist-info/LICENSE,sha256=2SBfWkWKzrTq1V4mZCLNmQfE_d8oDdF7UODxTgN93Rg,1070
+chchanges-1.0.2.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+chchanges-1.0.2.dist-info/METADATA,sha256=ZYcG1Ye9TKmAnAwRwdYPcYGPWj43HjjqA2ytAx7um5M,599
+chchanges-1.0.2.dist-info/RECORD,,
