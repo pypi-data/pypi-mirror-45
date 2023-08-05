@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-ndarray
+Version: 0.0.1
+Summary: Numpy n-dimensional field for Django.
+Home-page: http://github.com/sorl/django-ndarray
+Author: Mikko Hellsing
+Author-email: mikko@sumsum.se
+License: ICS
+Description: # django-ndarray
+        
+        ## Description
+        N-Dimensional numpy array field for django.
+        
+        ## Usage
+        ```python
+        from ndarray import NDArrayField
+        
+        class Model(models.Model):
+            ar = NDArrayField()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown
