@@ -1,0 +1,8 @@
+README.md
+setup.py
+servussymtowords/__init__.py
+servussymtowords/servussymtowords.py
+servussymtowords.egg-info/PKG-INFO
+servussymtowords.egg-info/SOURCES.txt
+servussymtowords.egg-info/dependency_links.txt
+servussymtowords.egg-info/top_level.txt

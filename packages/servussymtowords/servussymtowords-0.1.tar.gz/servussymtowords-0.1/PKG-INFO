@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: servussymtowords
+Version: 0.1
+Summary: Python3 module to convert temperature units and Km to words.
+Home-page: https://github.com/carlosplanchon/servussymtowords
+Author: Carlos A. Planchón
+Author-email: bubbledoloresuruguay2@gmail.com
+License: GPL3
+Download-URL: https://github.com/carlosplanchon/servussymtowords/archive/v0.1.tar.gz
+Description: # servussymtowords
+        *Python3 module to convert temperature units and Km to words.*
+        
+        ## Installation
+        ### Install with pip
+        ```
+        pip3 install -U servussymtowords
+        ```
+        
+        ## Usage
+        ```
+        In [1]: import servussymtowords
+        
+        In [2]: servussymtowords.units_and_numbers_to_words(
+            "Actual temperature is of 5°C, with a wind of 1Km/h"
+            )
+        Out[2]: 'Actual temperature is of five Celsius degrees, with a wind of one Kilometer per hour'
+        ```
+        
+Keywords: convert,units,words
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
