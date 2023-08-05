@@ -1,0 +1,17 @@
+it/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+it/si3p/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+it/si3p/supwsd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+it/si3p/supwsd/analysis.py,sha256=vSgCY_mgzxk14NRkm5j92GLTTkBaEFbrOq7bQG7tIe8,2334
+it/si3p/supwsd/api.py,sha256=ArndL8K2ulnXomYT1ReOTHhfQiLYcc0zkLBYHyTfZTA,2828
+it/si3p/supwsd/config.py,sha256=5JDVbFIw30FZM9I9GPmq8oEZKrkxn9UAz3Zceg8oYos,1930
+supwsd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supwsd/app.py,sha256=MTetrNtN9dO2Z86-BDclDcLYETrX8PfVovUJzQ4yX3w,1784
+supwsd/model.py,sha256=JEJ_TnQKjgIc-B4JuEdCBBkL7pZCvFk-sqAGFsDamoA,3005
+supwsd/params.py,sha256=D7hJ2xc3wJEXWi0z5Kmlu5-HQe80AYOUtCbHTkMa1ck,519
+supwsd/service.py,sha256=s11SMzo9p4ihz5Zdtug7olS8mjbYk4U4E6yrawOTcfw,1528
+supwsd/wsd.py,sha256=m4fUAzrbJamcWm5KefCGrv7Z9QLvQ6b2zEl2izRuhmI,2618
+supwsd-1.2.1.dist-info/LICENSE.txt,sha256=C1kbFrFJ0SMBa2pb55kxDSKYX9crPpy0DeOES2wgu2c,272
+supwsd-1.2.1.dist-info/METADATA,sha256=kOovDkbwQ4BXfe1gw-DlsiLFaQdvYnzzWHSqyzRC5LE,2282
+supwsd-1.2.1.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+supwsd-1.2.1.dist-info/top_level.txt,sha256=0ryBs8btxV5Ld12JumeXCGEMekF9RcaWgZ6opzYgyoI,3
+supwsd-1.2.1.dist-info/RECORD,,
