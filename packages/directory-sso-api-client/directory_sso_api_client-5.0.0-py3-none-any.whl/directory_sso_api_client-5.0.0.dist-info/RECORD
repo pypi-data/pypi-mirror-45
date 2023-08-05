@@ -1,0 +1,10 @@
+directory_sso_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+directory_sso_api_client/client.py,sha256=B3jeyrt2lJEx1S9sjQXLh9mUoJGcyYPqQUPsYAi51rQ,836
+directory_sso_api_client/testapiclient.py,sha256=sfkErhZzcBUg90L0jIRaFlNPFPzrNRBzfSMA7f4ELqk,785
+directory_sso_api_client/user.py,sha256=3BGXDajUuC70Pz3C6gyDfXLc-5kPCDQDoPGfsXpMrjE,2533
+directory_sso_api_client/version.py,sha256=JzYPYpvaglqIJRGCDrh5-hYmXI0ISrDDed0V1QQZAGU,22
+directory_sso_api_client-5.0.0.dist-info/LICENSE,sha256=y-ArErAQz98OorLek2xntwEp9bo3ZcqfQMtAIcjBdvQ,1091
+directory_sso_api_client-5.0.0.dist-info/METADATA,sha256=sK4FpVC1HnxGIiKWVopdMdAb8Tic6i-Qx5ks8rp2JJU,3905
+directory_sso_api_client-5.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+directory_sso_api_client-5.0.0.dist-info/top_level.txt,sha256=ctlxm_U43nCbxD69iYv-O5DI5b0YqkVCljjoLnmQnV0,25
+directory_sso_api_client-5.0.0.dist-info/RECORD,,
