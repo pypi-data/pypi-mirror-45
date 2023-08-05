@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: propor
+Version: 2019.4.23
+Summary: Project porter.
+Home-page: https://github.com/Czw96/propor
+Author: Czw_96
+Author-email: 459749926@qq.com
+License: UNKNOWN
+Description: # Propor
+        
+        ## 介绍
+        项目传输 (支持文件夹，仅支持传输到 MacOS、Linux)
+        
+        ## 安装
+        ```
+        pip3 install propor --upgrade
+        ```
+        
+        ## 使用
+        ```
+        # propor 192.168.0.1 root 123456 project
+        >>> propor <host> <username> <password> <to_path>
+        ```
+        - 将当前目录传输到远程主机指定目录
+        - `host`: 远程主机地址
+        - `username`: 远程主机用户名
+        - `password`: 远程主机密码
+        - `to_path`: 传输到指定目录 (可为空, 默认为 './')
+        - 在程序中可以通过 `from propor import transfer` 导入方法
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
