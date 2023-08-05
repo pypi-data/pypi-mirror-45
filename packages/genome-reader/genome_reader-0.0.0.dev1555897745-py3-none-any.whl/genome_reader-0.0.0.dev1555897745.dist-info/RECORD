@@ -1,0 +1,11 @@
+genome_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genome_reader/genome.py,sha256=CidA71lzbpvsiWtgiVpSR_K8QT-Vvs7BXZEdIZ0I4eY,59
+genome_reader/version.py,sha256=DVOXM3g3bfLOrVg3gwgFfcuNLSAen5BRcz2idvrq1zA,211
+genome_reader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genome_reader/tests/test_genome.py,sha256=Zy54f_h_4eNc9R8rn3dzE714lUfa7UrZXPyLd5JleGU,37
+genome_reader-0.0.0.dev1555897745.data/scripts/genome,sha256=NKJyCC0fONcaYytG9mysca37TZf8wBDISvRNAW-78pQ,9
+genome_reader-0.0.0.dev1555897745.dist-info/LICENSE,sha256=pbg_xdRBhW23VObmd2ina6GY-lD3OSZYfFYBfRUX2UE,1064
+genome_reader-0.0.0.dev1555897745.dist-info/METADATA,sha256=9VFuXXF-yC44UcdG-b9h5ugcAGrdY8CjSXPNAr8InN4,1173
+genome_reader-0.0.0.dev1555897745.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+genome_reader-0.0.0.dev1555897745.dist-info/top_level.txt,sha256=VhttIWdCuiy5sy9spC8rqvICIrNQ3aTvaTD5fSeY5iE,14
+genome_reader-0.0.0.dev1555897745.dist-info/RECORD,,
