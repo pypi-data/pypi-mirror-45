@@ -1,0 +1,3 @@
+[console_scripts]
+lgl = lgl.lgl:main
+
