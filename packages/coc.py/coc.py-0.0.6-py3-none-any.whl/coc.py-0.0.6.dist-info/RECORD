@@ -1,0 +1,12 @@
+coc/__init__.py,sha256=tEavftAj04m3hsEZIf-NY9aEYFmSyxe_v2RPfBTLi6w,750
+coc/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coc/client.py,sha256=ApcC_Rg-PV2RAyeqw9owQGhOgAcOczhrmdBrRuW5a0E,29897
+coc/dataclasses.py,sha256=GfWre3X4oIlI2RPk1sLNBTTpZx5GCBrsL7YD6Rrpwfw,37788
+coc/errors.py,sha256=ySyARUBH4QLQPGd9F-eIqlro0SU5mMmh93deU4DW3k8,3471
+coc/http.py,sha256=Cdu12iuv8LNYKVulxZd2ge7bFKFUjVsvKiXxQ7pCpdw,11244
+coc/utils.py,sha256=xOT056SLhj4Xo1w1dVFZTODn8rQQLfU5vTABLoiZmAk,1154
+coc.py-0.0.6.dist-info/LICENSE,sha256=G-FfMZ44WNn7kwu7NLAbHvHsAK4KWEmaqqIh3r79leU,1090
+coc.py-0.0.6.dist-info/METADATA,sha256=aVY7biJisG3KWkUyG7roz9SB_z8VN8slRhBHtZRGuP0,1624
+coc.py-0.0.6.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+coc.py-0.0.6.dist-info/top_level.txt,sha256=kWxFgsh2n6dAvdFzOA4ozEUFDyknG4ul8JwIJhCSFZ4,4
+coc.py-0.0.6.dist-info/RECORD,,
