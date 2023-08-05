@@ -1,0 +1,6 @@
+requests
+nltk
+argparse
+requests-html
+lxml
+urllib3
