@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: datalogue
+Version: 0.18.2
+Summary: Datalogue SDK
+Home-page: UNKNOWN
+Author: Datalogue
+Author-email: info@datalogue.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: validators
+Requires-Dist: pytest
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: pyarrow
+
+# Datalogue SDK
+
+The Datalogue SDK allows you to connect to Datalogue platforms.
+
+Visit us at www.datalogue.io to learn more
+
+
