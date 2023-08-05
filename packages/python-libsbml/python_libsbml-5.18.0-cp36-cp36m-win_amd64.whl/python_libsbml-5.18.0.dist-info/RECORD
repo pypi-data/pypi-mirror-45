@@ -1,0 +1,9 @@
+libsbml/__init__.py,sha256=TsitlHlQ_E6JKqFJI1kW02Kq8kA7aPtW-TyM6hbseHI,7232808
+libsbml/_libsbml.pyd,sha256=Vkdg02EeBwmdIlXIbu_Ekvv9zW6H1Uf8JWx4rcLJ81g,18059776
+libsbml/__pycache__/__init__.cpython-36.pyc,sha256=NQi9B4CqZRlC6QINOKgYoDolYTWjq75i1QzpweZCHdk,7345453
+python_libsbml-5.18.0.dist-info/DESCRIPTION.rst,sha256=6uAxlxjYvfeNgEyDjmUGQpTWpgRWLHvY2axkBBxJS5I,290
+python_libsbml-5.18.0.dist-info/METADATA,sha256=1IN5X3vFineGdy7ZD_7vYz1Sd2O4RbV-5nxF8fbSgh0,499
+python_libsbml-5.18.0.dist-info/RECORD,,
+python_libsbml-5.18.0.dist-info/WHEEL,sha256=4fkP9V5fUlnPlEu2h0nt7u0cPpJipYsJO32nXNevnFk,106
+python_libsbml-5.18.0.dist-info/metadata.json,sha256=Vv79WYAEs6VeGctfmQll66l_FgGF4iK1C0a0J8yB9Go,395
+python_libsbml-5.18.0.dist-info/top_level.txt,sha256=QL4uwL4aVn01KiiTM_rt1jyP8F8r4_bE9dBUfelj4Tw,17
