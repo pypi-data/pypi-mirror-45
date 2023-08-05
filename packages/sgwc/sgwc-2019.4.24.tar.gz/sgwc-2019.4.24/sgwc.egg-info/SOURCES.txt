@@ -1,0 +1,14 @@
+README.md
+setup.py
+sgwc/__init__.py
+sgwc/setting.py
+sgwc/sogou.py
+sgwc/wechat.py
+sgwc.egg-info/PKG-INFO
+sgwc.egg-info/SOURCES.txt
+sgwc.egg-info/dependency_links.txt
+sgwc.egg-info/requires.txt
+sgwc.egg-info/top_level.txt
+trash/tests/__init__.py
+trash/tests/test_sougo.py
+trash/tests/test_wechat.py
