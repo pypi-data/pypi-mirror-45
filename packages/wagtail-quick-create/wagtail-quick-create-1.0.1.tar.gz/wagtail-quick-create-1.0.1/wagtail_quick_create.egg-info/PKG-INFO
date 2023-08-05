@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wagtail-quick-create
+Version: 1.0.1
+Summary: Offer links to the admin user to create content under sections quickly.
+Home-page: https://github.com/kevinhowbrook/wagtailquickcreate
+Author: Kevin Howbrook - Torchbox
+Author-email: kevin.howbrook@torchbox.com
+License: MIT
+Description: Offer links to the admin user to create content under sections quickly.
+Platform: UNKNOWN
