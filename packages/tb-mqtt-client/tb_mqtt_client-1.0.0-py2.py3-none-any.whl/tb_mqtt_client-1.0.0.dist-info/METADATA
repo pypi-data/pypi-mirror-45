@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tb-mqtt-client
+Version: 1.0.0
+Summary: ThingsBoard MQTT client Python SDK
+Home-page: https://github.com/thingsboard/tb_mqtt_client
+Author: ThingsBoard
+Author-email: info@thingsboard.io
+License: Apache Software License 2.0
+Project-URL: Changelog, https://github.com/thingsboard/tb_mqtt_client/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/thingsboard/tb_mqtt_client/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4*
+Requires-Dist: jsonschema (>=3.0.1)
+Requires-Dist: paho-mqtt (==1.4.0)
+
+========
+Overview
+========
+
+
+
+ThingsBoard MQTT client SDK. Docs can be found on the `GitHub page <https://github.com/thingsboard/thingsboard_python_client_sdk>`_.
+
+* Free software: Apache Software License 2.0
+
+
+
