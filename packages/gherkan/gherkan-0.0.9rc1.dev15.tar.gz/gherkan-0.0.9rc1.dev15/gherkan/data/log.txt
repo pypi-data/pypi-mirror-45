@@ -1,0 +1,1979 @@
+[2019-04-24 16:06:44,352] INFO: The RESTful API to the Gherkan NL Instruction Processing system is starting...
+[2019-04-24 16:06:44,352] INFO: Host address: 127.0.0.1
+Port number: 5000
+[2019-04-24 16:06:44,354] DEBUG: FSA> Setting configuration parameter: host = 127.0.0.1
+[2019-04-24 16:06:44,354] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:44,354] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_34_signals.feature', 'responseMode': 'responseModeFile', 'host': '127.0.0.1'}
+[2019-04-24 16:06:44,360] DEBUG: FSA> Setting configuration parameter: port = 5000
+[2019-04-24 16:06:44,360] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:44,360] DEBUG: {'flush': False, 'host': '127.0.0.1', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_34_signals.feature', 'responseMode': 'responseModeFile', 'port': 5000}
+[2019-04-24 16:06:44,360] INFO: Checking done, checking state from previous run...
+[2019-04-24 16:06:44,360] DEBUG: FSA> Requested state: 0
+[2019-04-24 16:06:44,360] DEBUG: FSA> Current states:
+[]
+[2019-04-24 16:06:44,360] INFO: System ready, state set to IDLE.
+[2019-04-24 16:06:44,360] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:44,361] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:44,361] INFO: Loading NLP models
+[2019-04-24 16:06:46,941] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2019-04-24 16:06:51,430] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:51,431] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,431] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,431] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,435] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,435] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,435] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,435] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,435] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:51,435] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,437] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud linka je zapnutá', 'text_raw': 'scenario Když robot R3 zvedne kostku a vyloží kostku.'}
+[2019-04-24 16:06:51,442] INFO: Processing scenario: Když robot R3 zvedne kostku a vyloží kostku.
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: R3
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: R3
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,444] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,445] INFO: Detected actions connected with robots: ['robot R3 zvednout kostku']
+[2019-04-24 16:06:51,445] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:51,449] INFO: Updated program list: {'robot r1': {'1': 'seřadit všechny kostička', '2': 'zvednout kostička 1', '3': 'vyložit kostka 3x2', '4': 'vyložit všechny kostka 4x2', '5': 'položit kostička 1 na vozíček XY na pozice 1'}, 'robot r2': {'1': 'vyrábět produkt'}, 'robot r3': {'1': 'vyložit všechny kostka 2x2', '2': 'vyložit všechny kostka 2x4', '4': 'zvednout kostka', '5': 'vyložit kostka'}, 'robot r4': {'1': 'vyložit všechny kostka 3x2', '2': 'vyložit všechny kostka 4x2'}}
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,479] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,504] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:51,504] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: R3
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: R3
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: R3
+[2019-04-24 16:06:51,505] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,513] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,513] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,513] DEBUG: Warning: did not detect any verb in sentence: kostku
+[2019-04-24 16:06:51,521] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature
+[2019-04-24 16:06:51,521] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,521] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature'}
+[2019-04-24 16:06:51,522] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,522] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,522] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature'}
+[2019-04-24 16:06:51,522] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:51,522] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,522] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:51,522] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,522] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,525] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,525] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,525] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,525] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,525] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,526] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:51,526] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,527] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,527] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,527] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,527] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,529] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:51,530] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,530] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,531] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,536] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,536] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,537] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,537] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,537] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:51,537] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,537] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given line is on', 'text_raw': 'scenario When shuttle XX goes to station Z.'}
+[2019-04-24 16:06:51,543] INFO: Processing scenario: When shuttle XX goes to station Z.
+[2019-04-24 16:06:51,669] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:51,669] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:51,767] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature
+[2019-04-24 16:06:51,767] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,767] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature'}
+[2019-04-24 16:06:51,768] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,768] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,768] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature'}
+[2019-04-24 16:06:51,768] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:51,769] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,769] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:51,769] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,769] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,771] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,771] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,771] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,771] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,772] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,772] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:51,773] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,773] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,773] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,773] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,773] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,776] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,776] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,776] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,776] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,776] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:51,776] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,776] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud linka je zapnutá', 'text_raw': 'scenario Když vozíček XX jede do stanice Z.'}
+[2019-04-24 16:06:51,781] INFO: Processing scenario: Když vozíček XX jede do stanice Z.
+[2019-04-24 16:06:51,781] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:51,781] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:51,804] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,805] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,805] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,805] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,805] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:51,805] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: XX
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: XX
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:51,828] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: XX
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:51,829] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:51,841] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature
+[2019-04-24 16:06:51,841] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,841] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:51,842] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,842] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,842] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:51,842] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:51,842] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,842] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:51,842] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,842] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,845] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,845] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,845] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,845] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,845] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,846] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:51,846] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,846] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,846] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,846] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,846] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,849] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:51,850] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,850] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,850] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,853] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,853] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,854] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,854] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,854] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:51,854] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:51,855] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,855] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,855] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature'}
+[2019-04-24 16:06:51,856] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,859] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:51,859] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:51,859] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:51,859] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:51,860] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,881] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:51,881] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:51,881] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,881] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,882] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:51,883] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /signals_negated HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,885] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:51,885] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,886] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,886] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,889] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,889] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,889] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,889] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,889] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:51,889] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,889] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given shuttle Z goes to station RRR by table R', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:51,894] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:51,895] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:51,895] INFO: Processing scenario: given shuttle Z goes to station RRR by table R
+[2019-04-24 16:06:51,966] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature
+[2019-04-24 16:06:51,966] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,966] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature'}
+[2019-04-24 16:06:51,967] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,967] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:51,967] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature'}
+[2019-04-24 16:06:51,967] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:51,967] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,967] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:51,967] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,968] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,970] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,970] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,970] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,970] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,971] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:51,971] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:51,971] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:51,971] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:51,971] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:51,972] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,972] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:51] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:51,974] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,974] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,974] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:51,975] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:51,975] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:51,975] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:51,975] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud vozík Z jede do stanice RRR u stolu R', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:51,979] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:51,980] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:51,980] INFO: Processing scenario: pokud vozík Z jede do stanice RRR u stolu R
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,005] DEBUG: Warning: did not detect any verb in sentence: RRR
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: RRR
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: u
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: u
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: stolu
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: stolu
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: R
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: R
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: Z
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: RRR
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: u
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: stolu
+[2019-04-24 16:06:52,006] DEBUG: Warning: did not detect any verb in sentence: R
+[2019-04-24 16:06:52,033] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,034] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,034] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,034] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,034] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,034] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,043] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature
+[2019-04-24 16:06:52,043] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,043] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,044] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:52,044] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,044] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,044] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,044] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,044] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,044] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,045] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,047] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,047] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,047] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,047] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,048] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_51_signals.feature
+[2019-04-24 16:06:52,048] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,048] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,048] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,048] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,049] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,049] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,051] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:52,052] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,052] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,052] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,055] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,056] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,056] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,056] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,056] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,056] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,056] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given line is on', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,062] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,063] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,063] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,122] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,122] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,122] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature'}
+[2019-04-24 16:06:52,123] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,123] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,123] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature'}
+[2019-04-24 16:06:52,123] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,123] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,123] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,123] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,123] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,126] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,126] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,126] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,126] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,126] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,127] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,127] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,127] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,127] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,127] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,128] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,130] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,130] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,130] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,130] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,130] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,130] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,131] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud je linka zapnutá', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,135] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,136] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,136] INFO: Processing scenario: pokud je linka zapnutá
+[2019-04-24 16:06:52,159] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,159] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,159] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,160] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,160] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,160] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,182] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,182] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,183] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,183] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,183] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,183] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,192] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,192] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,192] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,194] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,194] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,194] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,194] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,194] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,194] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,195] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,195] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,197] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,197] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,197] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,197] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,198] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,199] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,199] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,199] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,199] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,199] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,199] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,202] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,203] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,203] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,203] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,203] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,203] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,203] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud linka je zapnutá', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,208] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,208] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,208] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,230] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,253] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,253] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,253] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,253] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,253] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,254] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,263] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,263] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,263] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,264] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,264] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,265] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,265] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,265] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,265] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,265] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,265] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,267] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,267] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,267] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,267] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,268] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,269] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,269] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,269] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,269] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,269] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,269] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,272] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:52,272] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,272] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,273] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,276] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,276] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,277] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,277] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,277] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,277] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,277] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given robot R1 picks up cube 1', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,282] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,283] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,283] INFO: Processing scenario: given robot R1 picks up cube 1
+[2019-04-24 16:06:52,290] INFO: Updated program list: {'robot r1': {'1': 'sort all cubes', '2': 'pick up cube 1', '3': 'unload cube 3x2', '4': 'unload all cube 4x2', '5': 'put cube 1 on shuttle xy on position 1'}, 'robot r2': {'1': 'make product'}, 'robot r3': {'1': 'unload all cube 2x2', '2': 'unload all cube 2x4', '4': 'pick up cube', '5': 'unload cube'}, 'robot r4': {'1': 'unload all cube 3x2', '2': 'unload all cube 4x2'}}
+[2019-04-24 16:06:52,356] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,356] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,356] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature'}
+[2019-04-24 16:06:52,357] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,357] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,357] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature'}
+[2019-04-24 16:06:52,358] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,358] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,358] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,358] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,358] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,360] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,360] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,360] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,360] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,361] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,361] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,362] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,362] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,362] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,362] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,362] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,365] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,365] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,365] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,365] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,365] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,365] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,365] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given robot R1 picks up cube one', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,370] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,371] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,371] INFO: Processing scenario: given robot R1 picks up cube one
+[2019-04-24 16:06:52,377] INFO: Updated program list: {'robot r1': {'1': 'sort all cubes', '2': 'pick up cube 1', '3': 'unload cube 3x2', '4': 'unload all cube 4x2', '5': 'put cube 1 on shuttle xy on position 1'}, 'robot r2': {'1': 'make product'}, 'robot r3': {'1': 'unload all cube 2x2', '2': 'unload all cube 2x4', '4': 'pick up cube', '5': 'unload cube'}, 'robot r4': {'1': 'unload all cube 3x2', '2': 'unload all cube 4x2'}}
+[2019-04-24 16:06:52,440] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,440] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,440] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,441] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,441] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,441] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,441] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,441] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,441] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,441] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,442] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,444] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,444] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,444] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,444] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,444] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,445] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,445] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,445] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,445] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,445] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,446] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,448] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,448] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,448] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,448] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,448] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,448] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,449] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given robot R1 picks up cube number 1', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,453] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,454] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,454] INFO: Processing scenario: given robot R1 picks up cube number 1
+[2019-04-24 16:06:52,462] INFO: Updated program list: {'robot r1': {'1': 'sort all cubes', '2': 'pick up cube 1', '3': 'unload cube 3x2', '4': 'unload all cube 4x2', '5': 'put cube 1 on shuttle xy on position 1'}, 'robot r2': {'1': 'make product'}, 'robot r3': {'1': 'unload all cube 2x2', '2': 'unload all cube 2x4', '4': 'pick up cube', '5': 'unload cube'}, 'robot r4': {'1': 'unload all cube 3x2', '2': 'unload all cube 4x2'}}
+[2019-04-24 16:06:52,525] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,525] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,525] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,527] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,527] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,527] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,527] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,527] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,527] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,527] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,527] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,529] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,529] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,530] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,530] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,530] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,531] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,531] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,531] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,531] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,531] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,531] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,534] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,534] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,534] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,534] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,534] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,534] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,534] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud robot R1 zvedne kostičku 1', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,539] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,539] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,539] INFO: Processing scenario: pokud robot R1 zvedne kostičku 1
+[2019-04-24 16:06:52,540] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,540] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,541] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,544] INFO: Updated program list: {'robot r1': {'1': 'seřadit všechny kostička', '2': 'zvednout kostička 1', '3': 'vyložit kostka 3x2', '4': 'vyložit všechny kostka 4x2', '5': 'položit kostička 1 na vozíček XY na pozice 1'}, 'robot r2': {'1': 'vyrábět produkt'}, 'robot r3': {'1': 'vyložit všechny kostka 2x2', '2': 'vyložit všechny kostka 2x4', '4': 'zvednout kostka', '5': 'vyložit kostka'}, 'robot r4': {'1': 'vyložit všechny kostka 3x2', '2': 'vyložit všechny kostka 4x2'}}
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,566] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,567] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,567] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,567] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,589] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,598] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,599] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,599] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,600] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,600] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,600] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,600] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,600] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,600] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,600] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,600] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,603] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,603] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,603] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,603] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,603] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,604] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,604] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,604] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,604] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,604] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,605] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,607] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,607] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,607] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,607] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,607] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,607] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,608] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud robot R1 zvedne kostičku jedna', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,612] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,613] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,613] INFO: Processing scenario: pokud robot R1 zvedne kostičku jedna
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,614] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,617] INFO: Updated program list: {'robot r1': {'1': 'seřadit všechny kostička', '2': 'zvednout kostička 1', '3': 'vyložit kostka 3x2', '4': 'vyložit všechny kostka 4x2', '5': 'položit kostička 1 na vozíček XY na pozice 1'}, 'robot r2': {'1': 'vyrábět produkt'}, 'robot r3': {'1': 'vyložit všechny kostka 2x2', '2': 'vyložit všechny kostka 2x4', '4': 'zvednout kostka', '5': 'vyložit kostka'}, 'robot r4': {'1': 'vyložit všechny kostka 3x2', '2': 'vyložit všechny kostka 4x2'}}
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,640] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,641] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,663] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,672] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,672] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,672] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,673] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,673] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,673] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,673] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,673] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,673] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,673] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,674] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,676] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,676] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,676] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,676] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,677] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,677] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,678] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,678] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,678] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,678] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,678] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,681] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,681] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,681] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,681] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,681] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,681] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,681] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud robot R1 zvedne kostičku číslo 1', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,686] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,686] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,686] INFO: Processing scenario: pokud robot R1 zvedne kostičku číslo 1
+[2019-04-24 16:06:52,687] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,687] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,688] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,691] INFO: Updated program list: {'robot r1': {'1': 'seřadit všechny kostička', '2': 'zvednout kostička 1', '3': 'vyložit kostka 3x2', '4': 'vyložit všechny kostka 4x2', '5': 'položit kostička 1 na vozíček XY na pozice 1'}, 'robot r2': {'1': 'vyrábět produkt'}, 'robot r3': {'1': 'vyložit všechny kostka 2x2', '2': 'vyložit všechny kostka 2x4', '4': 'zvednout kostka', '5': 'vyložit kostka'}, 'robot r4': {'1': 'vyložit všechny kostka 3x2', '2': 'vyložit všechny kostka 4x2'}}
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,715] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:52,716] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:52,716] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:52,716] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:52,739] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,739] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,739] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,739] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,739] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,740] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,749] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,749] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,749] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,750] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,750] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,750] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,750] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,750] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,750] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,750] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,750] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,752] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,753] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,753] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,753] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,753] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,754] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,754] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,754] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,754] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,754] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,754] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,757] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:52,758] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,758] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,758] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,762] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,762] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,762] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,762] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,762] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,762] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,762] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given shuttle Y goes to station XZZ', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,767] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,768] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,768] INFO: Processing scenario: given shuttle Y goes to station XZZ
+[2019-04-24 16:06:52,837] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,837] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,837] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature'}
+[2019-04-24 16:06:52,838] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,838] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,838] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature'}
+[2019-04-24 16:06:52,838] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,838] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,838] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,838] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,839] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,841] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,841] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,841] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,841] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,842] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,842] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,843] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,843] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,843] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,843] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,843] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,845] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,846] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,846] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,846] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,846] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,846] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,846] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud vozíček Y jede do stanice XZZ', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:52,850] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:52,851] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,851] INFO: Processing scenario: pokud vozíček Y jede do stanice XZZ
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: XZZ
+[2019-04-24 16:06:52,874] DEBUG: Warning: did not detect any verb in sentence: XZZ
+[2019-04-24 16:06:52,875] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:52,875] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:52,875] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:52,875] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:52,875] DEBUG: Warning: did not detect any verb in sentence: XZZ
+[2019-04-24 16:06:52,900] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,900] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,900] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,901] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,901] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:52,901] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:52,910] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,910] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,910] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,911] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,911] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,911] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:52,911] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:52,911] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,911] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:52,911] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,912] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,914] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,914] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,914] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,914] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,915] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:52,915] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:52,915] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:52,915] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:52,916] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,916] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,916] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,918] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:52,919] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:52,919] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,919] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:52] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:52,923] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,923] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,923] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:52,923] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:52,923] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:52,923] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:52,923] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given station XZX is free', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:52,928] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:52,930] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:52,930] INFO: Processing scenario: given station XZX is free
+[2019-04-24 16:06:52,998] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature
+[2019-04-24 16:06:52,999] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:52,999] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature'}
+[2019-04-24 16:06:53,000] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:53,000] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,000] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature'}
+[2019-04-24 16:06:53,000] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,000] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,000] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,000] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,000] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,003] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,003] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,003] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,003] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,003] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature
+[2019-04-24 16:06:53,004] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,004] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,004] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,004] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,004] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,005] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,007] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,007] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,007] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,007] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,007] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,007] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,008] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud je stanice XZX volná', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:53,013] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:53,013] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,013] INFO: Processing scenario: pokud je stanice XZX volná
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,037] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,038] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,038] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,061] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,062] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,062] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,062] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,062] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,062] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,071] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,071] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,071] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_52_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:53,072] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,072] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,072] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:53,073] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,073] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,073] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,073] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,073] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,075] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,075] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,075] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,075] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,076] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,077] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,077] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,077] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,077] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,077] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,077] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,080] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,080] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,080] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,081] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,083] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,084] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,084] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,084] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,084] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,084] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,084] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'en', 'background': 'given storage is empty', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:53,090] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:53,091] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,091] INFO: Processing scenario: given storage is empty
+[2019-04-24 16:06:53,155] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,155] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,155] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:53,156] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,156] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,156] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:53,156] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,156] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,156] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,156] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,156] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,159] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,159] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,159] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,159] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,160] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,160] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,160] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,160] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,160] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,160] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,161] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,163] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,163] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,163] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,163] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,163] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,163] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,164] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'StatementTest', 'feature_desc': 'StatementTest dummy description', 'language': 'cs', 'background': 'pokud sklad je prázdný', 'text_raw': 'scenario pokud linka je zapnutá'}
+[2019-04-24 16:06:53,169] INFO: Processing scenario: pokud linka je zapnutá
+[2019-04-24 16:06:53,169] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,169] INFO: Processing scenario: pokud sklad je prázdný
+[2019-04-24 16:06:53,192] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,192] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,192] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,192] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,193] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,193] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,219] DEBUG: Warning: did not detect any verb in sentence: zapnutá
+[2019-04-24 16:06:53,229] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,229] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,229] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:53,230] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,230] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,231] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:53,231] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,231] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,231] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,231] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,231] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,233] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,233] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,233] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,233] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,234] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,235] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,235] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,235] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,235] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,235] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,235] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,238] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,238] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,238] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,239] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,243] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,243] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,243] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,243] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,243] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,243] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,243] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac', 'language': 'en', 'background': 'Given line is on', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:53,248] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:53,249] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,249] INFO: Processing scenario: Given line is on
+[2019-04-24 16:06:53,311] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,311] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,311] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:53,312] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,312] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,312] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:53,312] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,312] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,312] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,312] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,313] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,315] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,315] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,315] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,315] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,316] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,316] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,317] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,317] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,317] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,317] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,317] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,319] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,320] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,320] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,320] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,324] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,324] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,324] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,324] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,324] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,324] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,324] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac', 'language': 'en', 'background': 'Given line is on', 'text_raw': 'scenario given line is on'}
+[2019-04-24 16:06:53,329] INFO: Processing scenario: given line is on
+[2019-04-24 16:06:53,330] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,330] INFO: Processing scenario: Given line is on
+[2019-04-24 16:06:53,391] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,391] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,391] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:53,392] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,392] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,392] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:53,392] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,392] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,392] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,392] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,393] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,395] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,396] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,396] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,396] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,399] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,399] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,399] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,399] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,399] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,399] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,399] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.', 'language': 'en', 'background': 'given robot r3 picks up cube and robot r3 unloads cube', 'text_raw': 'scenario given robot r3 pick up cube and robot r3 unloads cube'}
+[2019-04-24 16:06:53,405] INFO: Processing scenario: given robot r3 pick up cube and robot r3 unloads cube
+[2019-04-24 16:06:53,413] INFO: Detected actions connected with robots: ['robot r3 pick up cube', 'robot r3 unloads cube']
+[2019-04-24 16:06:53,413] INFO: Processing scenario: given robot r3 picks up cube and robot r3 unloads cube
+[2019-04-24 16:06:53,426] INFO: Updated program list: {'robot r1': {'1': 'sort all cubes', '2': 'pick up cube 1', '3': 'unload cube 3x2', '4': 'unload all cube 4x2', '5': 'put cube 1 on shuttle xy on position 1'}, 'robot r2': {'1': 'make product'}, 'robot r3': {'1': 'unload all cube 2x2', '2': 'unload all cube 2x4', '4': 'pick up cube', '5': 'unload cube'}, 'robot r4': {'1': 'unload all cube 3x2', '2': 'unload all cube 4x2'}}
+[2019-04-24 16:06:53,527] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,527] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,527] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:53,528] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,528] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,528] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:53,528] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,528] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,528] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,528] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,529] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,531] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,531] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,531] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,531] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,532] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,532] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,533] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,533] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,533] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,533] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,533] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,536] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,536] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,536] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,537] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,541] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,541] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,541] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,541] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,541] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,541] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,541] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.', 'language': 'en', 'background': 'given shuttle Z goes to station RRR by table R', 'text_raw': 'scenario given shuttle Z goes to station RRR'}
+[2019-04-24 16:06:53,547] INFO: Processing scenario: given shuttle Z goes to station RRR
+[2019-04-24 16:06:53,549] INFO: Detected actions connected with robots: []
+[2019-04-24 16:06:53,549] INFO: Processing scenario: given shuttle Z goes to station RRR by table R
+[2019-04-24 16:06:53,630] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:53,630] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,630] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:53,631] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,631] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:53,631] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:53,632] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:53,632] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,632] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:53,632] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,632] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,635] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,635] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,635] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,635] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,636] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:53,636] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:53,637] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:53,637] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:53,637] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,637] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,637] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,639] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:53,640] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:53,640] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,640] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:53] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:53,646] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,646] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,646] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:53,646] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:53,646] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:53,646] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:53,646] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.', 'language': 'cs', 'background': 'Pokud je linka v provozu', 'text_raw': 'scenario Jakmile stanice XZX je volná, pak vozíček XY jede do stanice XZX.\n scenario Jakmile robot R1 zvedne kostičku 1, pak robot R1 položí kostičku 1 na vozíček XY na pozici 1.\n scenario Když stanice XXX je volná a robot R1 skončil vykládání kostičky 3x2, pak vozíček X jede do stanice XXX.\n scenario Pokud je sklad XYZ prázdný, když robot R2 začne vyrábět produkt, pak vozíček Y jede do stanice XXX.'}
+[2019-04-24 16:06:53,652] INFO: Processing scenario: Jakmile stanice XZX je volná, pak vozíček XY jede do stanice XZX.
+[2019-04-24 16:06:53,653] INFO: Processing scenario: Jakmile robot R1 zvedne kostičku 1, pak robot R1 položí kostičku 1 na vozíček XY na pozici 1.
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,655] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,657] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: pozici
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: pozici
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,658] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,659] INFO: Processing scenario: Když stanice XXX je volná a robot R1 skončil vykládání kostičky 3x2, pak vozíček X jede do stanice XXX.
+[2019-04-24 16:06:53,661] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,661] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,661] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,661] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,662] INFO: Processing scenario: Pokud je sklad XYZ prázdný, když robot R2 začne vyrábět produkt, pak vozíček Y jede do stanice XXX.
+[2019-04-24 16:06:53,663] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,663] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,663] DEBUG: Warning: did not detect any verb in sentence: R2
+[2019-04-24 16:06:53,663] DEBUG: Warning: did not detect any verb in sentence: R2
+[2019-04-24 16:06:53,664] INFO: Detected actions connected with robots: ['robot R1 zvednout kostičku 1', 'robot R2 vyrábět produkt', 'robot R1 vyložit kostky 3x2', 'robot R1 položit kostičku 1 na vozíček XY na pozici 1']
+[2019-04-24 16:06:53,664] INFO: Processing scenario: Pokud je linka v provozu
+[2019-04-24 16:06:53,675] INFO: Updated program list: {'robot r1': {'1': 'seřadit všechny kostička', '2': 'zvednout kostička 1', '3': 'vyložit kostka 3x2', '4': 'vyložit všechny kostka 4x2', '5': 'položit kostička 1 na vozíček XY na pozice 1'}, 'robot r2': {'1': 'vyrábět produkt'}, 'robot r3': {'1': 'vyložit všechny kostka 2x2', '2': 'vyložit všechny kostka 2x4', '4': 'zvednout kostka', '5': 'vyložit kostka'}, 'robot r4': {'1': 'vyložit všechny kostka 3x2', '2': 'vyložit všechny kostka 4x2'}}
+[2019-04-24 16:06:53,725] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,725] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,726] DEBUG: Warning: did not detect any verb in sentence: zapnutý
+[2019-04-24 16:06:53,726] DEBUG: Warning: did not detect any verb in sentence: zapnutý
+[2019-04-24 16:06:53,726] DEBUG: Warning: did not detect any verb in sentence: linka
+[2019-04-24 16:06:53,726] DEBUG: Warning: did not detect any verb in sentence: zapnutý
+[2019-04-24 16:06:53,753] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,753] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,753] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,753] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,754] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,754] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,754] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,754] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,754] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,779] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,779] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,779] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,780] DEBUG: Warning: did not detect any verb in sentence: XZX
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,808] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,809] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,837] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,837] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,837] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,837] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,837] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,838] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: pozici
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: pozici
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,839] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: kostičku
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: XY
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: na
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: pozici
+[2019-04-24 16:06:53,840] DEBUG: Warning: did not detect any verb in sentence: 1
+[2019-04-24 16:06:53,868] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,869] DEBUG: Warning: did not detect any verb in sentence: volná
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: R1
+[2019-04-24 16:06:53,882] DEBUG: Warning: did not detect any verb in sentence: kostky
+[2019-04-24 16:06:53,883] DEBUG: Warning: did not detect any verb in sentence: 3x2
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: X
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: X
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,919] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,920] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:53,920] DEBUG: Warning: did not detect any verb in sentence: X
+[2019-04-24 16:06:53,920] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:53,920] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:53,920] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:53,954] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,954] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,954] DEBUG: Warning: did not detect any verb in sentence: XYZ
+[2019-04-24 16:06:53,954] DEBUG: Warning: did not detect any verb in sentence: XYZ
+[2019-04-24 16:06:53,955] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,955] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,955] DEBUG: Warning: did not detect any verb in sentence: sklad
+[2019-04-24 16:06:53,955] DEBUG: Warning: did not detect any verb in sentence: XYZ
+[2019-04-24 16:06:53,955] DEBUG: Warning: did not detect any verb in sentence: prázdný
+[2019-04-24 16:06:53,983] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: R2
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: R2
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: robot
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: R2
+[2019-04-24 16:06:53,984] DEBUG: Warning: did not detect any verb in sentence: produkt
+[2019-04-24 16:06:54,021] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:54,022] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: vozíček
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: Y
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: do
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: stanice
+[2019-04-24 16:06:54,023] DEBUG: Warning: did not detect any verb in sentence: XXX
+[2019-04-24 16:06:54,036] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature
+[2019-04-24 16:06:54,036] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,036] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature'}
+[2019-04-24 16:06:54,042] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:54,042] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,042] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature'}
+[2019-04-24 16:06:54,042] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:54,042] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:54,042] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:54,042] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,042] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,045] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,045] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,045] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,045] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,045] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_53_signals.feature
+[2019-04-24 16:06:54,046] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,046] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,046] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,047] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,047] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,047] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,049] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:54,050] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,050] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,050] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,053] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,054] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,054] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,054] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,054] DEBUG: FSA> Setting state to: 2
+[2019-04-24 16:06:54,054] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:54,054] DEBUG: Calling nlToSignal; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54
+Data: {'feature': 'Montrac', 'feature_desc': ' Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.', 'language': 'en', 'background': 'Given line is on', 'text_raw': 'scenario As soon as station XZX is free, then shuttle XY goes to station XZX.\nscenario As soon as robot R1 picks up cube 1, then robot R1 puts cube 1 on shuttle XY on position 1.\nscenario When station XXX is free and robot R1 finished unloading cube 3x2, then shuttle X goes to station XXX. \n scenario Given storage XYZ is empty, when robot R2 starts making product, then shuttle Y goes to station XXX'}
+[2019-04-24 16:06:54,062] INFO: Processing scenario: As soon as station XZX is free, then shuttle XY goes to station XZX.
+[2019-04-24 16:06:54,067] INFO: Processing scenario: As soon as robot R1 picks up cube 1, then robot R1 puts cube 1 on shuttle XY on position 1.
+[2019-04-24 16:06:54,082] INFO: Processing scenario: When station XXX is free and robot R1 finished unloading cube 3x2, then shuttle X goes to station XXX.
+[2019-04-24 16:06:54,093] INFO: Processing scenario: Given storage XYZ is empty, when robot R2 starts making product, then shuttle Y goes to station XXX
+[2019-04-24 16:06:54,101] INFO: Detected actions connected with robots: ['robot R1 unloading cube 3x2', 'robot R1 puts cube 1 on shuttle XY on position 1', 'robot R1 picks up cube 1', 'robot R2 making product']
+[2019-04-24 16:06:54,101] INFO: Processing scenario: Given line is on
+[2019-04-24 16:06:54,108] INFO: Updated program list: {'robot r1': {'1': 'sort all cubes', '2': 'pick up cube 1', '3': 'unload cube 3x2', '4': 'unload all cube 4x2', '5': 'put cube 1 on shuttle xy on position 1'}, 'robot r2': {'1': 'make product'}, 'robot r3': {'1': 'unload all cube 2x2', '2': 'unload all cube 2x4', '4': 'pick up cube', '5': 'unload cube'}, 'robot r4': {'1': 'unload all cube 3x2', '2': 'unload all cube 4x2'}}
+[2019-04-24 16:06:54,536] DEBUG: FSA> Setting configuration parameter: lastNLTextFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54.feature
+[2019-04-24 16:06:54,536] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,536] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54.feature'}
+[2019-04-24 16:06:54,543] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,543] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,543] DEBUG: {'flush': False, 'lastNLTextFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54.feature', 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature'}
+[2019-04-24 16:06:54,543] DEBUG: FSA> Requested state: 2
+[2019-04-24 16:06:54,543] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT']
+[2019-04-24 16:06:54,543] DEBUG: FSA> Setting state to: 10
+[2019-04-24 16:06:54,543] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,543] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,546] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,546] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,546] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,546] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,547] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,547] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,548] DEBUG: FSA> Requested state: 10
+[2019-04-24 16:06:54,548] DEBUG: FSA> Current states:
+['S_RECEIVED_NL_TEXT', 'S_FINISHED_PROCESSING_NL_TEXT']
+[2019-04-24 16:06:54,548] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,548] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,548] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,551] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:54,551] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,551] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,551] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,554] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,554] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,554] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,554] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,555] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:54,555] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,556] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,556] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,556] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature'}
+[2019-04-24 16:06:54,556] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,558] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,558] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,558] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,559] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,559] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,559] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,642] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,642] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,642] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,643] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,644] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,644] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,647] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,647] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,647] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,647] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,647] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:54,648] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,649] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,649] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,649] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:54,649] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,651] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,651] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,651] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,651] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,652] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,652] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,733] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,733] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,733] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,733] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,734] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,734] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,737] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:54,737] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,738] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,738] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,741] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,741] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,741] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,741] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,741] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:54,741] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,743] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,743] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,743] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature'}
+[2019-04-24 16:06:54,743] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,748] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,748] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,748] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,748] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,749] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,750] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,839] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,839] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,839] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,839] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,840] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,841] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,845] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,845] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,845] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,845] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,845] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:54,845] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,846] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,846] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,846] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:54,847] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,849] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,849] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,849] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,849] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,850] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,850] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,934] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,935] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,935] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,935] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,935] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:54,936] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,938] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:54,939] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:54,939] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,939] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,944] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,944] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,944] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:54,944] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:54,944] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:54,944] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,945] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,945] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:54,945] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature'}
+[2019-04-24 16:06:54,946] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:54] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:54,950] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,950] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,950] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:54,950] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:54,951] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:54,951] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_54_signals.feature
+[2019-04-24 16:06:55,036] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,036] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,036] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,036] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,037] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,037] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,041] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,042] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,042] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,042] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,042] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,042] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,043] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,043] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,044] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:55,044] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,048] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,048] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,048] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,049] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,049] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,050] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,136] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,136] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,137] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,137] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,137] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,138] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,141] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:55,142] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,142] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,143] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,147] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,147] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,147] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,147] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,147] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,147] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,148] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,149] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,149] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature'}
+[2019-04-24 16:06:55,149] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,151] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,152] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,152] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,152] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,152] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,152] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,235] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,235] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,235] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,235] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,236] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,236] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,239] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,239] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,239] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,240] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,240] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,240] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,242] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,242] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,242] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:55,242] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,245] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,245] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,245] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,245] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,246] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,246] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,318] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,319] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,319] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,319] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,319] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,320] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,322] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:55,323] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,323] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,323] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,326] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,326] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,326] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,326] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,326] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,326] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,327] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,327] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,327] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature'}
+[2019-04-24 16:06:55,327] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,330] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,330] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,330] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,330] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,330] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,331] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,372] DEBUG: Warning: did not detect any verb in sentence: storage contain 0 pieces
+[2019-04-24 16:06:55,405] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,405] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,405] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,405] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,406] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,406] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,409] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,409] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,409] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,409] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,409] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,409] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,410] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,410] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,410] DEBUG: {'flush': False, 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature', 'responseMode': 'responseModeFile'}
+[2019-04-24 16:06:55,411] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,413] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,413] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,413] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,413] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,414] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,414] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,485] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,485] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,485] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,485] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,485] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,486] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,488] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:55,489] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,489] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,489] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,492] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,492] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,492] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,492] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,492] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,492] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,493] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,493] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,493] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature'}
+[2019-04-24 16:06:55,493] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,496] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,496] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,496] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,496] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,496] DEBUG: FSA> Requested value of configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,496] DEBUG: Calling SignalToNL; associated file: /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,570] DEBUG: FSA> Requested state: 16
+[2019-04-24 16:06:55,570] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,570] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,570] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,571] DEBUG: FSA> Requested value of configuration parameter: responseMode = responseModeFile
+[2019-04-24 16:06:55,571] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /nltext HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,574] DEBUG: FSA> Regenerating configuration file
+[2019-04-24 16:06:55,574] DEBUG: FSA> Setting state to: 1
+[2019-04-24 16:06:55,574] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,575] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mGET /reset HTTP/1.1[0m" 200 -
+[2019-04-24 16:06:55,577] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,577] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,577] DEBUG: FSA> Requested state: 1
+[2019-04-24 16:06:55,578] DEBUG: FSA> Current states:
+['S_IDLE']
+[2019-04-24 16:06:55,578] DEBUG: FSA> Setting state to: 16
+[2019-04-24 16:06:55,578] DEBUG: FSA> Current states:
+['S_RECEIVED_SIGNAL']
+[2019-04-24 16:06:55,578] DEBUG: FSA> Setting configuration parameter: lastSignalFile = /home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature
+[2019-04-24 16:06:55,579] DEBUG: Configuration yaml file:
+[2019-04-24 16:06:55,579] DEBUG: {'flush': False, 'responseMode': 'responseModeFile', 'lastSignalFile': '/home/imitrob/nl_instruction_processing/gherkan/data/2019_Apr_24-16_06_55_signals.feature'}
+[2019-04-24 16:06:55,579] INFO: 127.0.0.1 - - [24/Apr/2019 16:06:55] "[37mPOST /signals HTTP/1.1[0m" 200 -
