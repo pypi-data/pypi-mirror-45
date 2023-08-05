@@ -1,0 +1,9 @@
+bistiming/__init__.py,sha256=QOSce8ixz7SFAnfEuNBDv1iJVMDfIofyytaWZQ0REgg,218
+bistiming/stopwatch.py,sha256=mX3wtNR2ZzdT3xAXa46eeUWjHpwE81bcNu4zhcAw8S8,6465
+bistiming/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bistiming/tests/test_stopwatch.py,sha256=IHJXj6XEU0m1za-Io_KZNbyHm5yaewpnxTPXgxMGtTk,1826
+bistiming-0.3.0.dist-info/LICENSE,sha256=gn5tMYPHvBe81dtLd1vkP75jyNjwnpGeq0YXR2DRKKQ,1312
+bistiming-0.3.0.dist-info/METADATA,sha256=ZZracRAxOLx10iaaWLeAq5CddfMrP9iCODpNez4H4vw,11795
+bistiming-0.3.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+bistiming-0.3.0.dist-info/top_level.txt,sha256=QFfia69QLrCSZUrJceRqX6RBJVJIoTk2biSmMXYDRgA,10
+bistiming-0.3.0.dist-info/RECORD,,
