@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tensorflow-compression
+Version: 1.2b1
+Summary: Data compression in TensorFlow
+Home-page: https://tensorflow.github.io/compression/
+Author: Google LLC
+Author-email: opensource@google.com
+License: Apache 2.0
+Project-URL: Tracker, https://github.com/tensorflow/compression/issues
+Project-URL: Documentation, https://tensorflow.github.io/compression/docs/api_docs/python/tfc.html
+Project-URL: Source, https://github.com/tensorflow/compression
+Project-URL: Discussion, https://groups.google.com/forum/#!forum/tensorflow-compression
+Keywords: compression data-compression tensorflow machine-learning python deep-learning deep-neural-networks neural-network ml
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: tensorflow (>=1.13.0)
+
+UNKNOWN
+
+
