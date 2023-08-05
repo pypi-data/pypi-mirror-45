@@ -1,0 +1,13 @@
+setup.py
+segmentation_module/API_test.py
+segmentation_module/__init__.py
+segmentation_module/segmentation_models/BilinearUpSampling.py
+segmentation_module/segmentation_models/__init__.py
+segmentation_module/segmentation_models/fcn.py
+segmentation_module/segmentation_models/pspnet.py
+segmentation_module/segmentation_models/unet.py
+segmentation_package.egg-info/PKG-INFO
+segmentation_package.egg-info/SOURCES.txt
+segmentation_package.egg-info/dependency_links.txt
+segmentation_package.egg-info/requires.txt
+segmentation_package.egg-info/top_level.txt
