@@ -1,0 +1,5 @@
+setup.py
+consonance.egg-info/PKG-INFO
+consonance.egg-info/SOURCES.txt
+consonance.egg-info/dependency_links.txt
+consonance.egg-info/top_level.txt
