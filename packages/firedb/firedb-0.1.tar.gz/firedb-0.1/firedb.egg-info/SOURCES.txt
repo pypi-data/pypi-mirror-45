@@ -1,0 +1,8 @@
+README.txt
+setup.cfg
+setup.py
+firedb/__init__.py
+firedb.egg-info/PKG-INFO
+firedb.egg-info/SOURCES.txt
+firedb.egg-info/dependency_links.txt
+firedb.egg-info/top_level.txt
