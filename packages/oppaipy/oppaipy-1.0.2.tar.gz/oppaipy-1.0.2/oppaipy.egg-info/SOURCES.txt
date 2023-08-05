@@ -1,0 +1,9 @@
+README.md
+setup.py
+oppaipy/__init__.py
+oppaipy/oppaipy.py
+oppaipy.egg-info/PKG-INFO
+oppaipy.egg-info/SOURCES.txt
+oppaipy.egg-info/dependency_links.txt
+oppaipy.egg-info/requires.txt
+oppaipy.egg-info/top_level.txt
