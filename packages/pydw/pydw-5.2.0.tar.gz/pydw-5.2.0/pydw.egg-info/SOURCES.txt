@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pydw/__init__.py
+pydw/__version__.py
+pydw/core.py
+pydw.egg-info/PKG-INFO
+pydw.egg-info/SOURCES.txt
+pydw.egg-info/dependency_links.txt
+pydw.egg-info/top_level.txt
