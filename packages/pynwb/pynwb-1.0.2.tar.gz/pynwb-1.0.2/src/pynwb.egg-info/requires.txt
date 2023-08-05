@@ -1,0 +1,12 @@
+certifi
+chardet
+h5py
+idna
+numpy
+python-dateutil
+requests
+ruamel.yaml
+six
+urllib3
+pandas
+hdmf
