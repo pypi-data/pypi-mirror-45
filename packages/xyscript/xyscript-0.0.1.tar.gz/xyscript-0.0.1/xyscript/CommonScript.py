@@ -1,0 +1,202 @@
+#!/usr/bin/env python
+# coding=utf-8
+#-*- encoding:utf-8 -*-
+# from __future__ import print_function
+
+import json
+
+import os
+import sys
+import stat
+
+from git import Repo
+
+from xyscript import pull
+
+project_name = ''
+branch_name = ''
+platform = ''
+
+project_repo = None
+
+PROJECTS = [
+    {'name': "driver", 'url': ""},
+    {'name': "passenger",
+     'url': ""},
+    {'name': "test", 'url': "git@github.com:littertwo/iosTestDemo.git"}
+]
+
+
+def package_project_with_enter(projects):
+    global project_name, branch_name, platform
+    url = ''
+    for index, project in enumerate(projects):
+        if project['name'] == project_name:
+            # 拉取项目
+            package_project(project)
+            return
+
+    if url == '':
+        print("没有找到项目名为：", project_name, "的项目")
+
+# def select_project_to_package(projects=None):
+#     project_count = len(projects)
+
+#     if project_count > 0 :
+#         print("发现",project_count,"个可打包工程，请选择：")
+#         for index ,project_objc in enumerate(projects):
+#             print(index+1,")",project_objc['name'])
+#         print(project_count+1,"）above all")
+
+#         project_index = input("请输入要打包的工程:")
+#         package_project_with_index(project_index,projects)
+#     else:
+#         print("当前不存在可以打包的项目")
+
+# def package_project_with_index(project_index,projects):
+#     try:
+#         index = int(project_index)
+#         # 索引值正确
+#         if index >0 and index<len(projects)+1:
+#             package_projectlist([projects[index-1]])
+#         elif index == len(projects)+1:
+#             package_projectlist(projects)
+#         else:
+#             reinput_index = input("索引值不存在，请重新输入:")
+#             package_project_with_index(reinput_index,projects)
+#         # print(index)
+#     except ValueError:
+#         reinput_index = input("索引值应该为数字，请重新输入:")
+#         package_project_with_index(reinput_index,projects)
+
+
+def package_projectlist(project_list):
+    for project in project_list:
+        package_project(project)
+
+
+def package_project(project):
+    print("开始打包名为：", project['name'], "的项目...")
+    # 创建目录
+    try:
+        os.mkdir(project['name'])
+        pass
+    except IOError as error:
+        print(format(error))
+    else:
+        # print(os.getcwd())
+        pass
+        project_path = os.getcwd() + "/" + project['name']
+        print(project_path)
+        gitLabTool = GitLabTool(project_path)
+        repo = gitLabTool.clone_project(project['url'], project['name'])
+        gitLabTool.change_branch(repo, project_path)
+        # print(os.getcwd())
+        os.chdir(project_path)
+        # 执行拉取子模块脚本
+        project_tool = IOSProjectTool()
+        project_tool.run_script('ProjConfig.py')
+        project_tool.run_pod_install()
+        project_tool.fastlane_to_package()
+
+
+class IOSProjectTool:
+    def run_script(self, path):
+        print("执行脚本，路径是", path)
+        shell_str = "python3 " + path
+        print(os.system(shell_str))
+
+    def run_pod_install(self):
+        print("项目执行pod install")
+        shell_str = "pod install --repo-update"
+        print(os.system(shell_str))
+
+    def run_cert_syn(self):
+        print("项目执行fastlane syn")
+        shell_str = "fastlane syn"
+        print(os.system(shell_str))
+
+    def fastlane_to_package(self):
+        global platform
+        print("fastlane 自动打包")
+        shell_str = "fastlane package" + platform
+        print(os.system(shell_str))
+
+
+class GitLabTool:
+    def __init__(self, local_path=None):
+        # repo = Repo("git@github.com:littertwo/iosTestDemo.git")
+        # self.repo = repo
+        pass
+
+    # 克隆项目
+    def clone_project(self, url, local_path):
+        global project_repo
+        try:
+            # 更改权限
+            os.chmod('./', stat.S_IRWXU)
+            # 克隆仓库
+            project_repo = Repo.clone_from(
+                url=url, to_path=local_path, progress=None)
+            # print(project_repo.create_head('branchname'))
+        except IOError as error:
+            print(format(error))
+        else:
+            print("克隆项目成功")
+            return project_repo
+
+    # 切换dev分支
+    def change_dev_branch(self):
+        git = Repo().git
+        #查看当前分支
+        git.a
+        branch_name = 'Develop'
+        branch = "origin/" + branch_name
+        git.checkout('-b', branch_name, branch)
+
+    # 切换分支    
+    def change_branch(self, repo, workspace):
+        global branch_name
+        print("切换分支......")
+        # print(workspace)
+        # print(os.chdir(workspace))
+        # print(os.getcwd())
+
+        branch = "origin/" + branch_name
+        git = repo.git
+        git.checkout('-b', branch_name, branch)
+        print("切换分支成功")
+        # print(repo.remote(name=branch))
+
+        # if os.chdir(workspace):
+        #     branch = "origin/" + branch_name
+        #     print(repo.remote(name=branch))
+        # else:
+        #     os.chmod('./', stat.S_IRWXU+stat.S_IRWXU)
+        #     print("当前工作目录没有访问权限")
+        #     self.change_branch(repo,workspace)
+
+    def get_all_projects(self):
+        return PROJECTS
+
+# parm1：项目名称 parm2：分支名称 parm3：打包的平台
+
+
+def main(argv):
+    global project_name, branch_name, platform
+
+    project_name = argv[1]
+    branch_name = argv[2]
+    platform = argv[3]
+
+    print('开始打包....')
+
+    # gitLabTool = GitLabTool("")
+    # projects = gitLabTool.get_all_projects()
+    # select_project_to_package(projects)
+    package_project_with_enter(PROJECTS)
+
+
+if __name__ == "__main__":
+    print('开始执行脚本.....')
+    main(sys.argv)
