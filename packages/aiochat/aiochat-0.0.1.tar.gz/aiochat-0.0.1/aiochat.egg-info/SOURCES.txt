@@ -1,0 +1,11 @@
+README.md
+setup.py
+aiochat/__init__.py
+aiochat/agent.py
+aiochat/channel.py
+aiochat/engine.py
+aiochat/helpers.py
+aiochat.egg-info/PKG-INFO
+aiochat.egg-info/SOURCES.txt
+aiochat.egg-info/dependency_links.txt
+aiochat.egg-info/top_level.txt
