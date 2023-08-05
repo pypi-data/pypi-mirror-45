@@ -1,0 +1,7 @@
+bigtiff_lzw_decompress.cpp
+setup.py
+bigtiff_lzw_decompress.egg-info/PKG-INFO
+bigtiff_lzw_decompress.egg-info/SOURCES.txt
+bigtiff_lzw_decompress.egg-info/dependency_links.txt
+bigtiff_lzw_decompress.egg-info/requires.txt
+bigtiff_lzw_decompress.egg-info/top_level.txt
