@@ -1,0 +1,3 @@
+[console_scripts]
+fortunate_pkg = fortunate_pkg.__main__:maybe_install_pkgs
+
