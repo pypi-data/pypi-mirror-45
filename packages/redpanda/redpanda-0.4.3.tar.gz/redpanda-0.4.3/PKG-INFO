@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: redpanda
+Version: 0.4.3
+Summary: Pandas-ORM Integration.
+Home-page: https://github.com/amancevice/redpanda
+Author: amancevice
+Author-email: smallweirdnum@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

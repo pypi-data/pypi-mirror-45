@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redpanda:
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/redpanda
+    working_dir: /redpanda/notebooks
