@@ -1,0 +1,10 @@
+notechat/__init__.py,sha256=P44xi6tpr6Qx6DWEfQko7ItAfrGKPoifftkyFmApO-c,257
+notechat/game/sudoku/Test3.py,sha256=phkiF6BlZIdelPVv7OoeKD6O4u2PlERCgY9FcjzSTuQ,3419
+notechat/game/sudoku/__init__.py,sha256=P5CmQ84ww4qId-na3EOTomKKyGoDJGfjP1ctKZqd3gc,234
+notechat/game/sudoku/auto_adb.py,sha256=8GDp6iOP9W0fFCEBquzYBVXDJquKJIc7KH3KFtmRkaY,8578
+notechat/game/sudoku/screenshot.py,sha256=7m8liM_s2mU1Y6zkK9vjKjoCLePNAjUCQGAJrFSB-Yw,2183
+notechat/game/sudoku/sudoku.py,sha256=jQwcH_luzoYVF46O394hTBUkCHtDU-TVxCvwgOagK_Y,18783
+notechat-0.0.8.5.dist-info/METADATA,sha256=29xD0-0R0C0u37AzptH78vZB3FpznK4P1jxrx95MbCo,379
+notechat-0.0.8.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+notechat-0.0.8.5.dist-info/top_level.txt,sha256=ucffzq0MwoRtfkXVPmRY-C_fpblZlidG4HA45TRIqeY,30
+notechat-0.0.8.5.dist-info/RECORD,,
