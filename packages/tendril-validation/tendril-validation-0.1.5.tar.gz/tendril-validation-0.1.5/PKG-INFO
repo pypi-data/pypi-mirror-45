@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: tendril-validation
+Version: 0.1.5
+Summary: Validation Infrastructure for Tendril
+Home-page: https://github.com/chintal/tendril-validation
+Author: Chintalagiri Shashank
+Author-email: shashank@chintal.in
+License: AGPLv3
+Description: =====================================
+        Validation Infrastructure for Tendril
+        =====================================
+        
+        .. image:: https://img.shields.io/travis/chintal/tendril-validation.svg
+                :target: https://travis-ci.org/chintal/tendril-validation
+        
+        .. image:: https://img.shields.io/pypi/v/tendril-validation.svg
+                :target: https://pypi.python.org/pypi/tendril-validation
+        
+        * License: AGPLv3
+        * Documentation: http://tendril-validation.readthedocs.org
+        
+        
+        Validation Infrastructure for Tendril
+        
+Keywords: tendril
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
