@@ -1,0 +1,6 @@
+README.md
+setup.py
+netmaker.egg-info/PKG-INFO
+netmaker.egg-info/SOURCES.txt
+netmaker.egg-info/dependency_links.txt
+netmaker.egg-info/top_level.txt
