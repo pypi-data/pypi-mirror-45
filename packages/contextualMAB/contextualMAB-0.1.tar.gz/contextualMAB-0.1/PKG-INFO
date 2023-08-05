@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: contextualMAB
+Version: 0.1
+Summary: Modules for solving contextual Multi arm bandit problems
+Home-page: http://github.com/karthickrajas/contextualMAB
+Author: Karthick Raja
+Author-email: karthick11b36@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
