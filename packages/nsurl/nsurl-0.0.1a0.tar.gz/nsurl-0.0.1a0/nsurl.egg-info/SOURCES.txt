@@ -1,0 +1,9 @@
+README.md
+setup.py
+nsurl/__init__.py
+nsurl/urls.py
+nsurl.egg-info/PKG-INFO
+nsurl.egg-info/SOURCES.txt
+nsurl.egg-info/dependency_links.txt
+nsurl.egg-info/requires.txt
+nsurl.egg-info/top_level.txt
