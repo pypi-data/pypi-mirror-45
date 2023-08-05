@@ -1,0 +1,10 @@
+pelp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelp/cli.py,sha256=v-0uTnGoz_oU-9xvBNdqcgWASF2dYmx-ka5jiPsBzKc,1785
+pelp/jsutils.py,sha256=lkjZspf4_BQ0WeAd38j6YnbzfClF5AoH6x_WSKoBIi0,12268
+pelp/utils.py,sha256=eiTOY4f06bBUS6eQNElOJsrpoDRA_HSOKeWUflds8FU,14341
+Pelp-1.0.0.dist-info/LICENSE,sha256=tupy2nn8zvhWmq2-QGqb5YUIjol7y0c5bP0f_QqyhO8,1075
+Pelp-1.0.0.dist-info/METADATA,sha256=8CnW5PvOchnH1WThUPTdoVZuvI5zq4vkFeyrY2jwYWM,883
+Pelp-1.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+Pelp-1.0.0.dist-info/entry_points.txt,sha256=ll7d4sStg50cnoudBOFdEoF4SNWmBn8x0cbgFUTV-8M,40
+Pelp-1.0.0.dist-info/top_level.txt,sha256=GiOd3hoGb4rOOPXR0D0xakMQ1tSCbiNPMvdWlhz-XXw,5
+Pelp-1.0.0.dist-info/RECORD,,

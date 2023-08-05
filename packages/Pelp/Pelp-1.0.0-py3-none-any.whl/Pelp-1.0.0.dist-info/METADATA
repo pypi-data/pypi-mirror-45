@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: Pelp
+Version: 1.0.0
+Summary: A cli for Programming Language Documentation
+Home-page: https://github.com/gosulap/Pelp
+Author: Pradhit Gosula
+Author-email: pradhitg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Pelp
+
+CLI for Programming Language Documentation
+
+### Installing
+
+```
+pip install pelp
+``` 
+
+## Usage
+
+```
+Python
+
+pelp python (string/list/dict/set/all) 
+```
+
+```
+Javascript
+
+pelp javascript (string/array/map/all)
+```
+
+## Note from me
+
+Thank you for taking the time to look at this. 
+If you see anything that you would like to change/add
+please don't hesitate to do so. I would really like Pelp 
+to be the one stop shop for all of our documentation needs
+
+
