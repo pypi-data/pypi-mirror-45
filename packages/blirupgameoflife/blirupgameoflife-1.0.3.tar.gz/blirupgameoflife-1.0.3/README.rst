@@ -1,0 +1,63 @@
+Conway's Game of Life
+=====================
+
+Simple pygame implementation of Conway's Game of Life.
+
+Screenshot
+----------
+
+.. image:: screenshots/screenshot.png
+
+Installation
+------------
+
+Install with pip::
+
+    pip install blirupgameoflife
+
+Install from source::
+
+    python setup.py install
+
+
+Running
+-------
+
+Run via launch script installed with pip package::
+
+    blirupgameoflife
+
+Run as a Python module::
+
+    python -m blirupgameoflife
+
+Using inside of code
+--------------------
+
+To import the class in to your own code::
+
+    from blirupgameoflife.LifeGame import LifeGame
+    LifeGame().run()
+
+
+Controls
+--------
+
+There are a couple keybinds available
+
+- q - Quit
+- s - Start/stop (toggle pause)
+- r - Randomize the grid
+
+Source code
+-----------
+
+https://github.com/Blirup/gameoflife.git
+
+Contact
+-------
+
+Blirup <martin.blirup@gmail.com>
+
+Changelog
+---------
