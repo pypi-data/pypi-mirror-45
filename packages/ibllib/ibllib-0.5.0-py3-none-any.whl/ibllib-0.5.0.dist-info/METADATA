@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ibllib
+Version: 0.5.0
+Summary: IBL libraries
+Home-page: https://www.internationalbrainlab.com/
+Author: IBL Staff
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: colorlog (>=4.0.2)
+Requires-Dist: dataclasses (>=0.6)
+Requires-Dist: globus-sdk (>=1.7.1)
+Requires-Dist: matplotlib (>=3.0.3)
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: seaborn (>=0.9.0)
+
+#Note:
+These libs are still in alpha. Vesion numbers 0.\*.\* are considered unstable and
+not completely documented.
+Syntax may not be preserved among releases.
+
+## Documentation
+https://ibllib.readthedocs.io/en/latest/
+
+## Installation
+https://ibllib.readthedocs.io/en/latest/01b_installation_general.html#
+
+## Demonstration
+https://ibllib.readthedocs.io/en/latest/_static/one_demo.html
+
+## Requirements
+**OS**: Linux and Windows. Untested on Mac.
+
+**Python Module**: Python 3.6 or higher.
+
+**Matlab Module**: Matlab R2016b or higher (jsonencode function).
+
+
+## Development practices
+Gitflow and Semantic Versioning.
+
+Python
+-   run tests
+-   flake8
+-   build documentation
+
+Matlab
+-   run tests
+
+
