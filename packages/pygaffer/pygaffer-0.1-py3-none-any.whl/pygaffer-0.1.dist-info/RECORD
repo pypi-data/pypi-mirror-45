@@ -1,0 +1,10 @@
+gaffer/__init__.py,sha256=03Ms_t0dJoWmP09uad2KX7DEIF2KdnT56EO1uUJV0vg,111
+gaffer/errors.py,sha256=nAzqIzZHB8iBfIC22zZMA7Ob80e12RfKtVqA7r6j3RE,348
+gaffer/operations.py,sha256=OBjV1WpXwT3WKFv5onRsSs8QGWb7vc_vozz9Gva_DNo,4925
+gaffer/store.py,sha256=dyHaGUCNC7a-Ti5shrJ20JdiVRPxl1CEQAzQZ2MnDSI,2821
+pygaffer-0.1.dist-info/DESCRIPTION.rst,sha256=AuSWdKj8hAMvp8-T276nszNY8zy3ZaKYh8YnH6qSbKg,533
+pygaffer-0.1.dist-info/METADATA,sha256=EGoDs2Kxzt_IrtshAQjg2HUvqYU52T6A9Ef4HCDi0Bs,918
+pygaffer-0.1.dist-info/RECORD,,
+pygaffer-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pygaffer-0.1.dist-info/metadata.json,sha256=WfyFzPH3ZGCsFbzRbPiPhmMkNAvgU8f42CkjSqOL8VI,589
+pygaffer-0.1.dist-info/top_level.txt,sha256=GmROMWjo4L_i_YGpp43u5UxiHVRAP2cwcYKj5w8BKo8,7
