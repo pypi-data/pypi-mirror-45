@@ -1,0 +1,8 @@
+README.md
+setup.py
+dwdpollen/__init__.py
+dwdpollen.egg-info/PKG-INFO
+dwdpollen.egg-info/SOURCES.txt
+dwdpollen.egg-info/dependency_links.txt
+dwdpollen.egg-info/requires.txt
+dwdpollen.egg-info/top_level.txt
