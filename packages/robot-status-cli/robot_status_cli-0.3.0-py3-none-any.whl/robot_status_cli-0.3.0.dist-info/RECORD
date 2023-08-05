@@ -1,0 +1,7 @@
+robot_status_cli/__init__.py,sha256=gTggO06fb2c9XKEwlQYUSPlUfy82yVlM9pzLMOUqVcY,21
+robot_status_cli/base.py,sha256=RavOj-ee7rOM-0diHcgZT8k6y9BFLM6LQG26h2W4Xkg,829
+robot_status_cli/client.py,sha256=Ni3RMWXukLqVFLhNMCd0sAgOLiZXdC0oPFxMtOaET30,1011
+robot_status_cli-0.3.0.dist-info/METADATA,sha256=a3RV2k0zqlyp1ivh4KDWPh6KgYfuYgJ8MeSl3EU7O24,618
+robot_status_cli-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+robot_status_cli-0.3.0.dist-info/top_level.txt,sha256=nJZZ4ySctmC7qfUfCLAjcw66DXOp1svWEw6PZNWEpKk,17
+robot_status_cli-0.3.0.dist-info/RECORD,,
