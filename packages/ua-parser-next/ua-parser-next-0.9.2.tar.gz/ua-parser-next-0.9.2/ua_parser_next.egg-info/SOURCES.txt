@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+./ua_parser_next/__init__.py
+./ua_parser_next/user_agent_parser.py
+./ua_parser_next/user_agent_parser_test.py
+ua_parser_next.egg-info/PKG-INFO
+ua_parser_next.egg-info/SOURCES.txt
+ua_parser_next.egg-info/dependency_links.txt
+ua_parser_next.egg-info/not-zip-safe
+ua_parser_next.egg-info/top_level.txt
