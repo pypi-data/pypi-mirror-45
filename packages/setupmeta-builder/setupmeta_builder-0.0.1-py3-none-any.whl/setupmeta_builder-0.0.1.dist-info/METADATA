@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: setupmeta-builder
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Cologler/setupmeta_builder-python
+Author: Cologler
+Author-email: skyoflw@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pipfile
+
+# Setupmeta Builder
+
+## Usage
+
+Replace your `setup.py` file to:
+
+```py
+from setupmeta_builder import setup_it
+
+setup_it(
+    version='1.0.0'
+)
+```
+
+Done!
+
+`setupmeta_builder` try resolve other values like `install_requires` for you.
+
+
