@@ -1,0 +1,5 @@
+numpy
+joblib
+PyMySQL
+pandas
+DBUtils
