@@ -1,0 +1,86 @@
+# DevLGram - Telegram MTProto API Client Library for Python
+# Copyright (C) 2017-2019 Dan Tès <https://github.com/devladityanugraha>
+#
+# This file is part of DevLGram.
+#
+# DevLGram is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# DevLGram is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with DevLGram.  If not, see <http://www.gnu.org/licenses/>.
+
+from io import BytesIO
+
+from DevLGram.api.core import *
+
+
+class SignUp(Object):
+    """Attributes:
+        ID: ``0x1b067634``
+
+    Args:
+        phone_number: ``str``
+        phone_code_hash: ``str``
+        phone_code: ``str``
+        first_name: ``str``
+        last_name: ``str``
+
+    Raises:
+        :obj:`RPCError <DevLGram.RPCError>`
+
+    Returns:
+        :obj:`auth.Authorization <DevLGram.api.types.auth.Authorization>`
+    """
+
+    __slots__ = ["phone_number", "phone_code_hash", "phone_code", "first_name", "last_name"]
+
+    ID = 0x1b067634
+    QUALNAME = "auth.SignUp"
+
+    def __init__(self, *, phone_number: str, phone_code_hash: str, phone_code: str, first_name: str, last_name: str):
+        self.phone_number = phone_number  # string
+        self.phone_code_hash = phone_code_hash  # string
+        self.phone_code = phone_code  # string
+        self.first_name = first_name  # string
+        self.last_name = last_name  # string
+
+    @staticmethod
+    def read(b: BytesIO, *args) -> "SignUp":
+        # No flags
+        
+        phone_number = String.read(b)
+        
+        phone_code_hash = String.read(b)
+        
+        phone_code = String.read(b)
+        
+        first_name = String.read(b)
+        
+        last_name = String.read(b)
+        
+        return SignUp(phone_number=phone_number, phone_code_hash=phone_code_hash, phone_code=phone_code, first_name=first_name, last_name=last_name)
+
+    def write(self) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(String(self.phone_number))
+        
+        b.write(String(self.phone_code_hash))
+        
+        b.write(String(self.phone_code))
+        
+        b.write(String(self.first_name))
+        
+        b.write(String(self.last_name))
+        
+        return b.getvalue()

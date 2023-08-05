@@ -1,0 +1,59 @@
+# DevLGram - Telegram MTProto API Client Library for Python
+# Copyright (C) 2017-2019 Dan Tès <https://github.com/devladityanugraha>
+#
+# This file is part of DevLGram.
+#
+# DevLGram is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# DevLGram is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with DevLGram.  If not, see <http://www.gnu.org/licenses/>.
+
+from typing import Union
+
+from DevLGram.api import functions, types
+from ...ext import BaseClient
+
+
+class UnbanChatMember(BaseClient):
+    async def unban_chat_member(
+        self,
+        chat_id: Union[int, str],
+        user_id: Union[int, str]
+    ) -> bool:
+        """Use this method to unban a previously kicked user in a supergroup or channel.
+        The user will **not** return to the group or channel automatically, but will be able to join via link, etc.
+        You must be an administrator for this to work.
+
+        Args:
+            chat_id (``int`` | ``str``):
+                Unique identifier (int) or username (str) of the target chat.
+
+            user_id (``int`` | ``str``):
+                Unique identifier (int) or username (str) of the target user.
+                For a contact that exists in your Telegram address book you can use his phone number (str).
+
+        Returns:
+            True on success.
+
+        Raises:
+            :class:`RPCError <DevLGram.RPCError>` in case of a Telegram RPC error.
+        """
+        await self.send(
+            functions.channels.EditBanned(
+                channel=await self.resolve_peer(chat_id),
+                user_id=await self.resolve_peer(user_id),
+                banned_rights=types.ChatBannedRights(
+                    until_date=0
+                )
+            )
+        )
+
+        return True

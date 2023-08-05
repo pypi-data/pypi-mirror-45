@@ -1,0 +1,62 @@
+# DevLGram - Telegram MTProto API Client Library for Python
+# Copyright (C) 2017-2019 Dan Tès <https://github.com/devladityanugraha>
+#
+# This file is part of DevLGram.
+#
+# DevLGram is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# DevLGram is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with DevLGram.  If not, see <http://www.gnu.org/licenses/>.
+
+from io import BytesIO
+
+from DevLGram.api.core import *
+
+
+class RpcDropAnswer(Object):
+    """Attributes:
+        ID: ``0x58e4a740``
+
+    Args:
+        req_msg_id: ``int`` ``64-bit``
+
+    Raises:
+        :obj:`RPCError <DevLGram.RPCError>`
+
+    Returns:
+        Either :obj:`RpcAnswerUnknown <DevLGram.api.types.RpcAnswerUnknown>`, :obj:`RpcAnswerDroppedRunning <DevLGram.api.types.RpcAnswerDroppedRunning>` or :obj:`RpcAnswerDropped <DevLGram.api.types.RpcAnswerDropped>`
+    """
+
+    __slots__ = ["req_msg_id"]
+
+    ID = 0x58e4a740
+    QUALNAME = "RpcDropAnswer"
+
+    def __init__(self, *, req_msg_id: int):
+        self.req_msg_id = req_msg_id  # long
+
+    @staticmethod
+    def read(b: BytesIO, *args) -> "RpcDropAnswer":
+        # No flags
+        
+        req_msg_id = Long.read(b)
+        
+        return RpcDropAnswer(req_msg_id=req_msg_id)
+
+    def write(self) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(Long(self.req_msg_id))
+        
+        return b.getvalue()

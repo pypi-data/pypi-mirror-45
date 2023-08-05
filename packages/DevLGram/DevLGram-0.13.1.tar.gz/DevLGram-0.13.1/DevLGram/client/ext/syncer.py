@@ -1,0 +1,126 @@
+# DevLGram - Telegram MTProto API Client Library for Python
+# Copyright (C) 2017-2019 Dan Tès <https://github.com/devladityanugraha>
+#
+# This file is part of DevLGram.
+#
+# DevLGram is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# DevLGram is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with DevLGram.  If not, see <http://www.gnu.org/licenses/>.
+
+import asyncio
+import base64
+import json
+import logging
+import os
+import shutil
+import time
+
+from . import utils
+
+log = logging.getLogger(__name__)
+
+
+class Syncer:
+    INTERVAL = 20
+
+    clients = {}
+    event = asyncio.Event()
+    lock = asyncio.Lock()
+
+    @classmethod
+    async def add(cls, client):
+        with await cls.lock:
+            cls.sync(client)
+
+            cls.clients[id(client)] = client
+
+            if len(cls.clients) == 1:
+                cls.start()
+
+    @classmethod
+    async def remove(cls, client):
+        with await cls.lock:
+            cls.sync(client)
+
+            del cls.clients[id(client)]
+
+            if len(cls.clients) == 0:
+                cls.stop()
+
+    @classmethod
+    def start(cls):
+        cls.event.clear()
+        asyncio.ensure_future(cls.worker())
+
+    @classmethod
+    def stop(cls):
+        cls.event.set()
+
+    @classmethod
+    async def worker(cls):
+        while True:
+            try:
+                await asyncio.wait_for(cls.event.wait(), cls.INTERVAL)
+            except asyncio.TimeoutError:
+                with await cls.lock:
+                    for client in cls.clients.values():
+                        cls.sync(client)
+            else:
+                break
+
+    @classmethod
+    def sync(cls, client):
+        temporary = os.path.join(client.workdir, "{}.sync".format(client.session_name))
+        persistent = os.path.join(client.workdir, "{}.session".format(client.session_name))
+
+        try:
+            auth_key = base64.b64encode(client.auth_key).decode()
+            auth_key = [auth_key[i: i + 43] for i in range(0, len(auth_key), 43)]
+
+            data = dict(
+                dc_id=client.dc_id,
+                test_mode=client.test_mode,
+                auth_key=auth_key,
+                user_id=client.user_id,
+                date=int(time.time()),
+                is_bot=client.is_bot,
+                peers_by_id={
+                    k: getattr(v, "access_hash", None)
+                    for k, v in client.peers_by_id.copy().items()
+                },
+                peers_by_username={
+                    k: utils.get_peer_id(v)
+                    for k, v in client.peers_by_username.copy().items()
+                },
+                peers_by_phone={
+                    k: utils.get_peer_id(v)
+                    for k, v in client.peers_by_phone.copy().items()
+                }
+            )
+
+            os.makedirs(client.workdir, exist_ok=True)
+
+            with open(temporary, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4)
+
+                f.flush()
+                os.fsync(f.fileno())
+        except Exception as e:
+            log.critical(e, exc_info=True)
+        else:
+            shutil.move(temporary, persistent)
+            log.info("Synced {}".format(client.session_name))
+        finally:
+            try:
+                os.remove(temporary)
+            except OSError:
+                pass
