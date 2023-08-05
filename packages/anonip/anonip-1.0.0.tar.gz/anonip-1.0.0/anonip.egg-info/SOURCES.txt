@@ -1,0 +1,10 @@
+README.md
+anonip.py
+setup.cfg
+setup.py
+anonip.egg-info/PKG-INFO
+anonip.egg-info/SOURCES.txt
+anonip.egg-info/dependency_links.txt
+anonip.egg-info/entry_points.txt
+anonip.egg-info/requires.txt
+anonip.egg-info/top_level.txt
