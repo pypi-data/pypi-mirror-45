@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+qasdad/__init__.py
+qasdad.egg-info/PKG-INFO
+qasdad.egg-info/SOURCES.txt
+qasdad.egg-info/dependency_links.txt
+qasdad.egg-info/requires.txt
+qasdad.egg-info/top_level.txt
