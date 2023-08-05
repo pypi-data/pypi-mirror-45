@@ -1,0 +1,11 @@
+dataparcel/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+dataparcel/__init__.py,sha256=KUpnjvb-GgzN4Wu2du4MzzQdzhzaYjNcZlSbrZHbTIQ,140
+dataparcel/datapackage.py,sha256=7ptAM8SwTxv1EGOW830iFwBus9wZ2jw3kB6oBWyIdPM,4552
+dataparcel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataparcel/utils/metadata_utils.py,sha256=lthVWksFjcyrhNturyx8slvRUXxjUquHfUmEij0aNZk,549
+dataparcel/utils/validators.py,sha256=eC2vwsIX2ys165NAABPPY25SE8eVEwIpkXa0TxbupYE,616
+dataparcel-0.0.1.dist-info/LICENSE.md,sha256=3BDZas32evph0pN1yu7uahlDY4uLihVkcwCqoIODugQ,1166
+dataparcel-0.0.1.dist-info/METADATA,sha256=hCq_Q3mcfyGVRCsCSC53zbe-8uFgp8fw8lMkQA4AW-0,1645
+dataparcel-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+dataparcel-0.0.1.dist-info/top_level.txt,sha256=EyzqMEpNq5nzkpsYhzUxJAhUj_PxvKAdYH4Q3ytcUs8,11
+dataparcel-0.0.1.dist-info/RECORD,,
