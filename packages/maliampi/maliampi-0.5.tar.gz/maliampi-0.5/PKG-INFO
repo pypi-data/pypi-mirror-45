@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: maliampi
+Version: 0.5
+Summary: Maximum Likelihood Amplicon Pipeline
+Home-page: https://github.com/jgolob/maliampi
+Author: Jonathan Golob
+Author-email: j-dev@golob.org
+License: UNKNOWN
+Description: # MaLiAmPi
+        ### Maximum Likelihood Amplicon Pipeline: An amplicon (PCR / 16S) microbiome pipeline.
+        
+        A typical workflow
+        1) Create sequence variants
+        2) Make a reference package
+        3) Place on the reference package
+        4) Classify
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

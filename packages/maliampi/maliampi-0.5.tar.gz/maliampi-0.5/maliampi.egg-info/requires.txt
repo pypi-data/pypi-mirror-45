@@ -1,0 +1,3 @@
+sciluigi@ git+git://github.com/jgolob/sciluigi@containertask#egg=sciluigui
+biopython
+pytz
