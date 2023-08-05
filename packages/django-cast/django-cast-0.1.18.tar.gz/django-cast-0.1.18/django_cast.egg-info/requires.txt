@@ -1,0 +1,6 @@
+Pillow
+django-model-utils
+django-ckeditor
+django-imagekit
+django-filepond
+python-slugify
