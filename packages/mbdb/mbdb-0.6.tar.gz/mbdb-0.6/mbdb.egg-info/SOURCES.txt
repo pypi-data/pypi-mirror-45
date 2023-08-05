@@ -1,0 +1,10 @@
+README.md
+setup.py
+mbdb/__init__.py
+mbdb/mbdb.py
+mbdb/sqlparser.py
+mbdb.egg-info/PKG-INFO
+mbdb.egg-info/SOURCES.txt
+mbdb.egg-info/dependency_links.txt
+mbdb.egg-info/requires.txt
+mbdb.egg-info/top_level.txt
