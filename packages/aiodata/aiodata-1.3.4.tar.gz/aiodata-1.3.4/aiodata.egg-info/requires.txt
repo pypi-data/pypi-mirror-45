@@ -1,0 +1,4 @@
+aiohttp
+yarl
+aiocogs
+peewee
