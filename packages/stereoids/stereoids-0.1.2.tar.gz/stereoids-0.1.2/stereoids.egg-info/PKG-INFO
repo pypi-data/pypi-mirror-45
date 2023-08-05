@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: stereoids
+Version: 0.1.2
+Summary: a simple library for 3d positioning markers via stereo vision
+Home-page: https://github.com/sebastian-tschen/stereoids
+Author: Sebastian Behrens
+Author-email: sebastian.tschen.behrens@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
