@@ -1,0 +1,8 @@
+valid8>=2.1
+requests
+azure-storage==0.33.0
+numpy
+pandas
+
+[:python_version < "3.3"]
+functools32
