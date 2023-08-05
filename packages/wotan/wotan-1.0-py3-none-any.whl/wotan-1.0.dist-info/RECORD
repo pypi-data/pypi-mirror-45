@@ -1,0 +1,17 @@
+wotan/__init__.py,sha256=Re_EOnCFC3CznYMGm04TwtK2YDPXY97QOtIHP4lHP1E,111
+wotan/cofiam.py,sha256=w8H4JlFnQinjfdibUzvTEvMVQis3oD-LsUignOhUaJM,2082
+wotan/constants.py,sha256=1a1nrV43LBfLuKgArt76_32EUE-ZX5A41gyguB4ICjc,1720
+wotan/flatten.py,sha256=ULvDU20MBRNpYJ8HyJljm-kGq_sWCTOT7d98HgXYkrM,11350
+wotan/gaps.py,sha256=IkpGFDxVt4M9QKoMZnZC9ZK9LI6MHRPInZtvHlkOrM4,619
+wotan/gp.py,sha256=8SKx3bNU0LMKBGEupt_iC6XY69jYreJYEATfeR60dOo,3033
+wotan/huber_spline.py,sha256=P2owomkp6t6wwDhZRrNPeafNIwvB62L9SE3H2iT42i8,2372
+wotan/location_estimates.py,sha256=9hGSSKOatYVqnSrJKpHSh7ae5Lf7dJCFWcqR80O7O2Y,3201
+wotan/slider.py,sha256=ik565gam-XqMfft2MEWkV0TCndMUW-nj5ZfzyTaP3UI,4408
+wotan/t14.py,sha256=iF0OrEh7hT3xBdD1qjXw82BpEA_4sCDoiRw3rzTzmAA,1083
+wotan/tests.py,sha256=g_2xM6n5ljJEkRav_eaWFsGTD4-v65v6pbyzo6tFoKI,7801
+wotan/version.py,sha256=_-bUBe94k990k0LeQavTlS3ZJgHP-nkwdPBDw6l2sIw,24
+wotan-1.0.dist-info/LICENSE,sha256=A3eK6M9LCqwSwP6iBI71r-UZiEgPKUbam4za9jX7vfU,1071
+wotan-1.0.dist-info/METADATA,sha256=5chgvoL0wLSkOVwr8ysF9eRi5YrWIGDabvyAsQjZc_8,6466
+wotan-1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+wotan-1.0.dist-info/top_level.txt,sha256=86rVNemRLwh4qTD4UDDQe63GWkQlCmhNPggJoob4ZBs,6
+wotan-1.0.dist-info/RECORD,,
