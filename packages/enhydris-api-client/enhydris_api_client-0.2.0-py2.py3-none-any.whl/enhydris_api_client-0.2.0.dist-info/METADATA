@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: enhydris-api-client
+Version: 0.2.0
+Summary: Python API client for Enhydris
+Home-page: https://github.com/openmeteo/enhydris-api-client
+Author: Antonis Christofides
+Author-email: antonis@antonischristofides.com
+License: GNU General Public License v3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: iso8601
+Requires-Dist: pandas (>=0.20)
+Requires-Dist: requests (<3,>=1)
+Requires-Dist: htimeseries (>=0.2.0)
+
+===================
+enhydris-api-client
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/enhydris_api_client.svg
+        :target: https://pypi.python.org/pypi/enhydris-api-client
+        :alt: Pypi
+
+.. image:: https://img.shields.io/travis/openmeteo/enhydris-api-client.svg
+        :target: https://travis-ci.org/openmeteo/enhydris-api-client
+        :alt: Build
+
+.. image:: https://codecov.io/github/openmeteo/enhydris-api-client/coverage.svg
+        :target: https://codecov.io/gh/openmeteo/enhydris-api-client
+        :alt: Coverage
+
+.. image:: https://pyup.io/repos/github/openmeteo/enhydris-api-client/shield.svg
+         :target: https://pyup.io/repos/github/openmeteo/enhydris-api-client/
+         :alt: Updates
+
+Python API client for Enhydris
+
+* Free software: GNU General Public License v3
+
+This package has some functionality to make it easier to use the
+Enhydris API.
+
+Installation
+============
+
+``pip install enhydris-api-client``
+
+Example
+=======
+
+::
+
+    from enhydris_api_client import EnhydrisApiClient
+
+    api_client = EnhydrisApiClient("https://openmeteo.org")
+    api_client.login("joe", "topsecret")
+
+    # Get a dict with attrs of station with id=42
+    station = api_client.get_model(Station, 42)
+
+    # Create a new station
+    api_client.post_model(Station, data={"name": "my station"})
+
+
+Reference
+=========
+
+**EnhydrisApiClient(base_url)**
+
+Creates a client. It has the following methods.
+
+**.login(username, password)**
+
+Logins to Enhydris. Raises an exception if unsuccessful.
+
+**.get_station(id)**
+
+Returns a dict with the data for the station with the given ``id``.
+
+**.get_timeseries(station_id, timeseries_id)**
+
+Returns a dict with the data for the given time series.
+
+**.post_timeseries(station_id, data)**
+
+Creates a new time series, with its data given by dictionary ``data``,
+and returns its id.
+
+**.delete_timeseries(station_id, timeseries_id)**
+
+Deletes the specified time series.
+
+**.read_tsdata(station_id, timeseries_id)**
+
+Retrieves the time series data into a htimeseries object that it
+returns.
+
+**.post_tsdata(station_id, timeseries_id, ts)**
+
+Posts a time series to Enhydris, appending the records to any already
+existing.  ``ts`` is a htimeseries object.
+
+**.get_ts_end_date(station_id, timeseries_id)**
+
+Returns a ``datetime`` object which is the last timestamp of the time
+series. If the time series is empty it returns ``None``.
+
+
+=======
+History
+=======
+
+0.2.0 (2019-04-17)
+------------------
+
+- Support new API of Enhydris 3
+
+0.1.0 (2019-03-06)
+------------------
+
+- Initial release
+
+
