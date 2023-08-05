@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xmscore
+Version: 3.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Aquaveo
+License: BSD 2-Clause License
+Platform: UNKNOWN
+Requires-Python: ==3.6.*
+Requires-Dist: numpy
+
+UNKNOWN
+
+
