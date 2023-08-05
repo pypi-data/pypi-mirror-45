@@ -1,0 +1,6 @@
+global-exclude .gitignore
+exclude .gitlab-ci.yml
+include README.rst
+include LICENSE
+graft django_adminstats/templates
+graft django_adminstats/static
