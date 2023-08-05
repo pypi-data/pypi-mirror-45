@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/RemoteTransfer/__init__.py
+src/RemoteTransfer/version.py
+src/robotframework_remotetransfer.egg-info/PKG-INFO
+src/robotframework_remotetransfer.egg-info/SOURCES.txt
+src/robotframework_remotetransfer.egg-info/dependency_links.txt
+src/robotframework_remotetransfer.egg-info/requires.txt
+src/robotframework_remotetransfer.egg-info/top_level.txt
