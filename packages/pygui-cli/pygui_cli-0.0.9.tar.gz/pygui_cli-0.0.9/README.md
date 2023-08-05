@@ -1,0 +1,58 @@
+
+Baidumap Python Module
+======================
+
+
+<!-- TOC -->
+
+- [百度地图Web API Python模块](#百度地图web-api-python模块)
+    - [描述](#描述)
+    - [快速开始](#快速开始)
+    - [调用方法](#调用方法)
+        - 
+
+<!-- /TOC -->
+
+## 描述
+
+本篇内容基于模块baidumap==1.2.4
+
+百度地图Web API给了开发者们很大的自由发挥空间，百度地图官方提供了C， Java以及Android的开发SDK，但没有提供Python的开发包，本人虽然技术很有限，但是兴趣使然，就开发了第一个Python模块，用来简化百度地图API的调用流程
+
+详细的内容参见[百度地图开放平台](http://lbsyun.baidu.com/index.php?title=webapi)
+
+Github地址: https://github.com/cpak00/baidumap
+
+作者: cpak00@github
+
+邮箱: cymcpak00@gmail.com
+
+## 快速开始
+
+```bash
+pip install baidumap
+```
+
+## 
+
+*baidumap.config.filename*
+
+value      | description
+-----------|-------------
+None       | 直接打印在控制台
+**Logger** | 使用logging模块代理日志
+
+
+## 附录
+
+### 部分句柄名称表
+
+句柄名称|作用|参数&返回值
+------|----|------
+place/v2/search|地点检索V2|[文档](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi)
+place/v2/detail|地点详情v2|[文档](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi)
+place_abroad/v1/search|国际化地点检索V1|[文档](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi-abroad)
+geocoder/v2/|地理编码V2|[文档](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding)
+direction/v2/transit|路线规划V2|[文档](http://lbsyun.baidu.com/index.php?title=webapi/direction-api-v2)
+routematrix/v2/driving(walking, riding)|批量算路V2驾车(步行，骑行)|[文档](http://lbsyun.baidu.com/index.php?title=webapi/route-matrix-api-v2)
+location/ip|ip定位|[文档](http://lbsyun.baidu.com/index.php?title=webapi/ip-api)

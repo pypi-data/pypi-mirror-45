@@ -1,0 +1,168 @@
+2019-04-14 22:21:18,576 - main.py - excepthook - <class 'UnicodeDecodeError'>: 
+'gbk' codec can't decode byte 0xaa in position 212: illegal multibyte sequence  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 152, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 145, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 84, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 69, in main
+    framelessWindow = CommonHelper.FrameCustomerTitle(ui, "Wow", )
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 31, in FrameCustomerTitle
+    qssStyle = CommonHelper.readQss(styleFile)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 24, in readQss
+    return f.read()
+
+2019-04-14 22:22:34,125 - main.py - excepthook - <class 'UnicodeDecodeError'>: 
+'gbk' codec can't decode byte 0xaa in position 212: illegal multibyte sequence  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 152, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 145, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 84, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 69, in main
+    framelessWindow = CommonHelper.FrameCustomerTitle(ui, "Wow", )
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 31, in FrameCustomerTitle
+    qssStyle = CommonHelper.readQss(styleFile)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 24, in readQss
+    return f.read()
+
+2019-04-14 22:29:18,362 - main.py - excepthook - <class 'AttributeError'>: 
+'FramelessWindow' object has no attribute 'toolButton'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 152, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 145, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 84, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 69, in main
+    framelessWindow = CommonHelper.FrameCustomerTitle(ui, "Wow", )
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 28, in FrameCustomerTitle
+    framelessWindow = FramelessWindow(title);
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 38, in __init__
+    self.icon = QIcon('./db/360ask.png')  # 创建图标
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 80, in icon
+    self.setIcon(self._icon)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 84, in setIcon
+    self.toolButton.setIcon(icon)
+
+2019-04-14 22:32:04,790 - main.py - excepthook - <class 'AttributeError'>: 
+'FramelessWindow' object has no attribute 'toolButton'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 152, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 145, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 84, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 69, in main
+    framelessWindow = CommonHelper.FrameCustomerTitle(ui, "Wow", )
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 28, in FrameCustomerTitle
+    framelessWindow = FramelessWindow(title);
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 38, in __init__
+    self.icon = QIcon('./db/360ask.png')  # 创建图标
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 80, in icon
+    self.setIcon(self._icon)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 84, in setIcon
+    self.toolButton.setIcon(icon)
+
+2019-04-14 23:19:26,737 - main.py - excepthook - <class 'AttributeError'>: 
+'QApplication' object has no attribute 'isRunning'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 156, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 136, in showSplashScreen
+    if app.isRunning():
+
+2019-04-15 00:11:45,367 - main.py - excepthook - <class 'TypeError'>: 
+super() argument 1 must be type, not MainWindow  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 328, in closeEvent
+    super(self.subUI,self.subUI).closeEvent(event)
+
+2019-04-15 00:13:04,148 - main.py - excepthook - <class 'NameError'>: 
+name 'e' is not defined  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 329, in closeEvent
+    super().closeEvent(e)
+
+2019-04-15 00:18:38,526 - main.py - excepthook - <class 'NameError'>: 
+name 'e' is not defined  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 327, in closeEvent
+    self.subUI.m_closeEvent(e)
+
+2019-04-15 00:18:49,703 - main.py - excepthook - <class 'AttributeError'>: 
+'super' object has no attribute 'closeEvent'  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 327, in closeEvent
+    self.subUI.m_closeEvent(event)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Tools\main_setting.py", line 66, in m_closeEvent
+    super().closeEvent(e)
+
+2019-04-15 00:19:07,804 - main.py - excepthook - <class 'AttributeError'>: 
+'super' object has no attribute 'closeEvent'  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 327, in closeEvent
+    self.subUI.m_closeEvent(event)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Tools\main_setting.py", line 66, in m_closeEvent
+    super().closeEvent(e)
+
+2019-04-15 00:21:45,969 - main.py - excepthook - <class 'TypeError'>: 
+enterEvent() takes 1 positional argument but 2 were given  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 300, in m_enterEvent
+    return self.subUI.origin_enterEvent(e)
+
+2019-04-15 00:25:07,872 - main.py - excepthook - <class 'TypeError'>: 
+invalid result from FramelessWindow.closeEvent()
+2019-04-15 00:51:08,101 - main.py - excepthook - <class 'AttributeError'>: 
+'MainWindow' object has no attribute 'resize'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 163, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 156, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 95, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 67, in main
+    ui = MainWindow()
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 48, in __init__
+    self.setupUi(self)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Ui_main.py", line 14, in setupUi
+    MainWindow.resize(510, 378)
+
+2019-04-15 00:53:16,573 - main.py - excepthook - <class 'AttributeError'>: 
+'MainWindow' object has no attribute 'returnTo'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 163, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 156, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 95, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 67, in main
+    ui = MainWindow()
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 54, in __init__
+    self.returnTo(1)
+
+2019-04-15 00:53:42,577 - main.py - excepthook - <class 'TypeError'>: 
+fm_returnTo() missing 1 required positional argument: 'toIndex'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 163, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 156, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 95, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 67, in main
+    ui = MainWindow()
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 54, in __init__
+    self.fm_returnTo(1)
+
+2019-04-15 00:57:27,158 - main.py - excepthook - <class 'AttributeError'>: 
+'super' object has no attribute 'closeEvent'  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Tools\main_setting.py", line 65, in closeEvent
+    super().closeEvent(e)
+
+2019-04-15 01:18:59,454 - main.py - excepthook - <class 'AttributeError'>: 
+'super' object has no attribute 'enterEvent'  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 326, in enterEvent
+    return super(QWidget, self.subUI).enterEvent(event)
+
+2019-04-15 01:24:56,804 - main.py - excepthook - <class 'AttributeError'>: 
+'super' object has no attribute 'enterEvent'  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 318, in enterEvent
+    return super(QWidget, self.subUI).enterEvent(event)
+
+2019-04-15 01:37:17,116 - main.py - excepthook - <class 'TypeError'>: 
+QPixmap(): argument 1 has unexpected type 'QIcon'  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 164, in <module>
+    style=3)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 157, in showSplashScreen
+    mainfun(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 96, in pageMain
+    main(style)
+  File "D:/QGroup_432987409/WoHowLearn/pygui_cli/source/main.py", line 81, in main
+    icon=":/button_Ima/icon_window_close.png")
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CommonHelper.py", line 28, in FrameCustomerTitle
+    framelessWindow = FramelessWindow(title,icon=icon);
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 30, in __init__
+    self.icon = "./git.ico"
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 259, in icon
+    self._icon = self.setIcon(value)
+  File "D:\QGroup_432987409\WoHowLearn\pygui_cli\source\Styles\CustomTitlebar\framelesswindow.py", line 268, in setIcon
+    icon.addPixmap(QPixmap(icon),
+
