@@ -1,0 +1,10 @@
+osgeo_easy/__init__.py,sha256=ciEvc8-m0c4lxjC5apwJmDdC2UbknRw0tdUvVnhraQE,21
+osgeo_easy/crs.py,sha256=z8r8wNJWJ5ZrrOloA2YVDy0exYm7OERQleY-QPa7UJg,867
+osgeo_easy/multitype.py,sha256=oCvPywi2Ijbx46LDNKzDH0ScIpBwA3u09B12yiecIec,5276
+osgeo_easy/raster.py,sha256=08qcg0KS8PGLoUwyf6VOyM6JEryvy-kqehIOygJh_lw,3825
+osgeo_easy/vector.py,sha256=9ZeY41Emq7MfIY8Kn2zDaJHAvWG8VxdXb0OI-aAm0Ow,3969
+OSGeo_Easy-0.0.1.dev3.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+OSGeo_Easy-0.0.1.dev3.dist-info/METADATA,sha256=oSzjut-HiHMQrkuM_ryrtrviGPwWH8l9H1GPgNXXef8,578
+OSGeo_Easy-0.0.1.dev3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+OSGeo_Easy-0.0.1.dev3.dist-info/top_level.txt,sha256=8ya1fj1ZH_ebcWFNIzG8HBXVvrcg-f9uLJpXnf63Xwc,11
+OSGeo_Easy-0.0.1.dev3.dist-info/RECORD,,
