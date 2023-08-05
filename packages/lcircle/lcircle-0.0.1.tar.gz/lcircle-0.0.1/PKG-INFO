@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: lcircle
+Version: 0.0.1
+Summary: local test runner for circleci
+Home-page: https://github.com/chestm007/lcircle
+Author: Max Chesterfield
+Author-email: chestm007@hotmail.com
+Maintainer: Max Chesterfield
+Maintainer-email: chestm007@hotmail.com
+License: GPL-2.0
+Description: local test runner for circle ci scripts.  
+        i wrote this to test my circleci scripts on my machine using docker to limit container
+        time being used from my quota.
+Platform: UNKNOWN
