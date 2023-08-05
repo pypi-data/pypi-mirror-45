@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: minigram
+Version: 0.1
+Summary: Minimalistic client API for Telegram
+Home-page: https://github.com/DomJob/minigram
+Author: DomJob
+Author-email: dominic.jobin@gmail.com
+License: GPLv3
+Description: *Work in progress*
+        
+        Minimalistic Telegram Client API (TDJson wrapper)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

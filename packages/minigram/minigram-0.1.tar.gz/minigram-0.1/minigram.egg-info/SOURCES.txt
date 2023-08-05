@@ -1,0 +1,8 @@
+README.md
+setup.py
+minigram/__init__.py
+minigram/td.py
+minigram.egg-info/PKG-INFO
+minigram.egg-info/SOURCES.txt
+minigram.egg-info/dependency_links.txt
+minigram.egg-info/top_level.txt
