@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qz7.shell
+Version: 0.0.3
+Summary: Run code locally or remotely via ssh
+Home-page: http://github.com/parantapa/qz7.shell
+Author: Parantapa Bhattacharya
+Author-email: pb+pypi@parantapa.net
+License: UNKNOWN
+Description: # qz7.shell
+        
+        Run code locally or remotely via ssh
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
