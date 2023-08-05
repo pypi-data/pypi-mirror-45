@@ -1,0 +1,8 @@
+README.md
+setup.py
+apkdownload/__init__.py
+apkdownloader.egg-info/PKG-INFO
+apkdownloader.egg-info/SOURCES.txt
+apkdownloader.egg-info/dependency_links.txt
+apkdownloader.egg-info/requires.txt
+apkdownloader.egg-info/top_level.txt
