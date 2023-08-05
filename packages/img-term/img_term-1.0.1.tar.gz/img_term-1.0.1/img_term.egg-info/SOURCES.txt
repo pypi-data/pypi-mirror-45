@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+img_term/__init__.py
+img_term/img_term.py
+img_term.egg-info/PKG-INFO
+img_term.egg-info/SOURCES.txt
+img_term.egg-info/dependency_links.txt
+img_term.egg-info/entry_points.txt
+img_term.egg-info/requires.txt
+img_term.egg-info/top_level.txt
+img_term/__pycache__/__init__.cpython-36.pyc
+img_term/__pycache__/img_term.cpython-36.pyc
