@@ -1,0 +1,7 @@
+README.md
+setup.py
+biodb/__init__.py
+biodb.egg-info/PKG-INFO
+biodb.egg-info/SOURCES.txt
+biodb.egg-info/dependency_links.txt
+biodb.egg-info/top_level.txt
