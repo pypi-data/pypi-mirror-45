@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+target_parquet.py
+target_parquet.egg-info/PKG-INFO
+target_parquet.egg-info/SOURCES.txt
+target_parquet.egg-info/dependency_links.txt
+target_parquet.egg-info/entry_points.txt
+target_parquet.egg-info/requires.txt
+target_parquet.egg-info/top_level.txt
