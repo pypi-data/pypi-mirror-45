@@ -1,0 +1,10 @@
+dglib3/__init__.py,sha256=3C11J9Go82EPu-acG3Mq9Qr5YsVVQ3qFaHnden3zuZI,67
+dglib3/codecs.py,sha256=ze-CY0QIjB1kOgzHH_t9ECSOPtx5bGAnsPMQd-7kfpg,546
+dglib3/dumper.py,sha256=RRT5yUncyv7LheGV6Qy4UV14LhT_ecp-hWtb_J4tkY0,752
+dglib3/utils.py,sha256=jN_lIgxLzK0y2b6xQnRKR1G3Yn15FNeGLjrSSjDfZx0,6088
+dglib3/win_util.py,sha256=kdWWqA1G9wiczPRy6J2LIvBcJhTone1ROcx35LUx9bI,5990
+dglib3-0.0.2.dist-info/LICENSE,sha256=ULKueyzuY3juudXduTPi2ek-V_oQESUghSJAY9E2OFs,1092
+dglib3-0.0.2.dist-info/METADATA,sha256=mC9esiskYqlXADb6R0jYGozM_C4rfxLEseW6zg3NSPk,1034
+dglib3-0.0.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+dglib3-0.0.2.dist-info/top_level.txt,sha256=MWDKK548gWwsWJtHrc5RXPucVp0vSjtxiyZOJzhAPoY,7
+dglib3-0.0.2.dist-info/RECORD,,
