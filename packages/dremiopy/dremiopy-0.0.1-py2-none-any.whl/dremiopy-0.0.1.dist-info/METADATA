@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dremiopy
+Version: 0.0.1
+Summary: A Python API to interact with Dremio
+Home-page: https://github.com/allansene/dremiopy
+Author: Allan Sene Oliveira
+Author-email: allanseneoliveira@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# dremiopy
+Python Library API to interact with Dremio (www.dremio.com)
+
+# Instalation
+
+On Terminal, run:
+
+```pip install dremiopy```
+
+
+
