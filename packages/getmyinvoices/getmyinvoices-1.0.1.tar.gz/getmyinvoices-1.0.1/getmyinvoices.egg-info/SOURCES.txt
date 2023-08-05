@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+getmyinvoices/__init__.py
+getmyinvoices/client.py
+getmyinvoices.egg-info/PKG-INFO
+getmyinvoices.egg-info/SOURCES.txt
+getmyinvoices.egg-info/dependency_links.txt
+getmyinvoices.egg-info/requires.txt
+getmyinvoices.egg-info/top_level.txt
