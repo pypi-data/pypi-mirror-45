@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: wradex
+Version: 0.1
+Summary: RADEX wrapper written in Python 3
+Home-page: https://github.com/astropenguin/wradex
+Author: astropenguin
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: astronomy radex wrapper
+Platform: UNKNOWN
