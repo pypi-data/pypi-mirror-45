@@ -1,0 +1,10 @@
+pysnooper/__init__.py,sha256=QG6U4F66U4mloRtRqfV68GPq3UUBrSzhr8jgJFOa-Cg,203
+pysnooper/pycompat.py,sha256=iLeEgG_HrUsg3NGvAP_98UZCDmhzJewTucf9pjfCy4I,867
+pysnooper/pysnooper.py,sha256=I35HyNnrfSmCbQx_o_pqILeNGmEeSFjUS_0Ow0GMprM,2029
+pysnooper/tracer.py,sha256=5lNl2Vukjzdp-3_TiN6HREkXO9DqIw_jEkIcpOQvk9I,7206
+pysnooper/utils.py,sha256=WTvTqkfrGlO-94wWBHlRFlDc0zSEaNqNgJUZl2K0Y5E,732
+PySnooper-0.0.6.dist-info/LICENSE,sha256=DEJQ0qnw450CRZPt5E61BE5fvRF1qJYuyWWdis403p4,1067
+PySnooper-0.0.6.dist-info/METADATA,sha256=cC8kq3_OCgYGl4jSDiykW_ujPfaJa7mXd7AzWItwx2c,4564
+PySnooper-0.0.6.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+PySnooper-0.0.6.dist-info/top_level.txt,sha256=FSDQVJ8ETZs3IAz1qj6BZasYgd8_zSTx5ZCp8wj_5v4,10
+PySnooper-0.0.6.dist-info/RECORD,,
