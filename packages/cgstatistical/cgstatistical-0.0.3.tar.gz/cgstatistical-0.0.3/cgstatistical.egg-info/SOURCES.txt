@@ -1,0 +1,9 @@
+README.md
+setup.py
+cgstatistical/__init__.py
+cgstatistical/cgstatistic.py
+cgstatistical/util.py
+cgstatistical.egg-info/PKG-INFO
+cgstatistical.egg-info/SOURCES.txt
+cgstatistical.egg-info/dependency_links.txt
+cgstatistical.egg-info/top_level.txt
