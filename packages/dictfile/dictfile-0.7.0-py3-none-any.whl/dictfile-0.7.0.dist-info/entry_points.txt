@@ -1,0 +1,3 @@
+[console_scripts]
+dictfile = dictfile.shell.main:app
+
