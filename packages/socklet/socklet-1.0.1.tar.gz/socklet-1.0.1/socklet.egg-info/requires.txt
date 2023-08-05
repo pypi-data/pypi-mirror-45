@@ -1,0 +1,6 @@
+
+[:python_version == "0.5.7.2"]
+socketIO-client
+
+[:python_version >= "6.0.0"]
+websockets
