@@ -1,0 +1,5 @@
+autodeploy-tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodeploy-tests/test.py,sha256=KZC_tU9Bc7YH26wfqGXuqIzjH1dwcfo0nhear-ZCWyo,31
+autodeploy_tests-0.8.0.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+autodeploy_tests-0.8.0.dist-info/METADATA,sha256=v_aYcIAmam4yTCOKGBzOg2WSKOfxJNxQOMZbpBSqgFU,339
+autodeploy_tests-0.8.0.dist-info/RECORD,,
