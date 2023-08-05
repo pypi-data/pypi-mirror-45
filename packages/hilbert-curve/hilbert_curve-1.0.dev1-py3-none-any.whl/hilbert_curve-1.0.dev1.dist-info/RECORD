@@ -1,0 +1,14 @@
+hilbert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hilbert/algebra.py,sha256=yb2OF8tOiE8Xgb7SdIlBlODFC1tvvSRRPg7j10HHyN4,1916
+hilbert/spaces.py,sha256=X10Nx1rO8M3lDTTYfjDxf0htoZ7lvGA4CH8RgQYJwWU,2010
+hilbert/stock.py,sha256=fw8rYIhQH0w-_HCVLiwF-47mj9UyN_wPrtNWW2itbnY,556
+hilbert/curves/__init__.py,sha256=_D_h0IlkpedFTcOec27nrpYAiX1uOAGtOAJEDsWECZg,1437
+hilbert/curves/base.py,sha256=5sBh03F-5iftikZt1Yxve25fFH7VCs_c3nwSVTGOoio,4888
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_curves.py,sha256=9UWzhXIeVyXF4r411xkOOVuB31YHEvl6jy0_L62f5J4,4088
+tests/test_spaces.py,sha256=35EWQHmz7DMTbsd0MNOh58ofs0aaNBxwfF7ti11zD-U,553
+hilbert_curve-1.0.dev1.dist-info/LICENSE,sha256=uRyooStkvStqKi0HEhPNucjv32gIEKFpedKRLY-qyz4,1155
+hilbert_curve-1.0.dev1.dist-info/METADATA,sha256=5C6VyfR6CQx-f54Eop2MHb4MMYLu8kY5BwFYspKuc6E,851
+hilbert_curve-1.0.dev1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+hilbert_curve-1.0.dev1.dist-info/top_level.txt,sha256=4WvwArag9NymBTvOPH8H_KGVl8G-ad0rdD8GgIzyzq8,14
+hilbert_curve-1.0.dev1.dist-info/RECORD,,
