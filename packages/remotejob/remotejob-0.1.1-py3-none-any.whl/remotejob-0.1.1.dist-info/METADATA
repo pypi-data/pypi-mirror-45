@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: remotejob
+Version: 0.1.1
+Summary: Run python functions in a remote docker container
+Home-page: https://github.com/gillesdami/remotejob
+Author: Damien GILLES
+Author-email: damien.gilles.pro@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: docker
+Requires-Dist: Pyro4
+Requires-Dist: dill
+
+UNKNOWN
+
+
