@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyramid-wtforms
+Version: 2.6.0
+Summary: pyramid_wtforms provides bindings for the Pyramid web framework to the WTForms library.
+Home-page: https://github.com/pylabs/pyramid-wtforms
+Author: PyLabs
+Author-email: contact@pylabs.org
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+Requires-Dist: pyramid (>=1.5)
+Requires-Dist: WTForms (<3,>=2.1)
+
+The API of this extension is inspired by `Flask-WTF <https://flask-wtf.readthedocs.org/en/latest/>`_ .
+
+Features
+========
+
+* Consistent APIs, users do not need to be confused with different name spaces.
+* Provide single file / multi files field validation and handling which meet
+  request model of Pyramid web framework.
+* Support csrf support using builtin pyramid.session facility.
+
+
