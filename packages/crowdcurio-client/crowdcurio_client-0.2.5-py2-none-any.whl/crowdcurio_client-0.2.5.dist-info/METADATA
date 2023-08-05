@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: crowdcurio-client
+Version: 0.2.5
+Summary: UNKNOWN
+Home-page: https://github.com/crowdcurio/crowdcurio-python-client
+Author: Alex Williams
+Author-email: alex.williams@uwaterloo.ca
+License: UNKNOWN
+Keywords: crowdcurio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests (>=2.4.2)
+
+UNKNOWN
+
+
