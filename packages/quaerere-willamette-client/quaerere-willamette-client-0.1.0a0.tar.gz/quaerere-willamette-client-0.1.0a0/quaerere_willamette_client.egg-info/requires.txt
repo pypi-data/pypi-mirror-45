@@ -1,0 +1,3 @@
+requests
+quaerere-base-client
+quaerere-willamette-common
