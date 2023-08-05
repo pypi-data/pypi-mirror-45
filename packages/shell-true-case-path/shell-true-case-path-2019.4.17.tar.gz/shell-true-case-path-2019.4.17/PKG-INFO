@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: shell-true-case-path
+Version: 2019.4.17
+Summary: get case exact path as stored in the filesystem
+Home-page: https://github.com/looking-for-a-job/shell-true-case-path
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install shell-true-case-path
+        ```
+        
+        #### Scripts usage
+        ```bash
+        usage: true-case-path path
+        ```
+        
+        #### Examples
+        ```bash
+        $ true-case-path ~/downloads
+        ~/Downloads
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: case path
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
