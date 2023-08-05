@@ -1,0 +1,8 @@
+scons_tool_clang-0.2.8-py3.7-nspkg.pth,sha256=K-evxfATS_KMSc8W9xb6BTG2JIWBeWbSkp8OFupMQjE,554
+sconstool/clang/__init__.py,sha256=tNcoVDDrYVQn3UQ3p_aRjeaLiy3ThTj_qjq6R6TpKkU,3268
+sconstool/clang/runtest.py,sha256=_AhWyJV6znZiJkiJWqAZMm6_RNZaZaDSkNiMxt8Zf3I,32486
+scons_tool_clang-0.2.8.dist-info/METADATA,sha256=uxpl29gp5KF1ZXqtpbCca3EvLVruvTlAqpn4CyFagS8,4015
+scons_tool_clang-0.2.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+scons_tool_clang-0.2.8.dist-info/namespace_packages.txt,sha256=tuub_RQZ7m4zLPVVdJyKxskMHVS7nSrKO-Mfk_wsvgU,10
+scons_tool_clang-0.2.8.dist-info/top_level.txt,sha256=tuub_RQZ7m4zLPVVdJyKxskMHVS7nSrKO-Mfk_wsvgU,10
+scons_tool_clang-0.2.8.dist-info/RECORD,,
