@@ -1,0 +1,4 @@
+[console_scripts]
+ezissue = ezissue
+ezissue config = ezissue.config
+
