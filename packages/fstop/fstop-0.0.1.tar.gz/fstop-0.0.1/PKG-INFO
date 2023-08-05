@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fstop
+Version: 0.0.1
+Summary: The fstop Engine
+Home-page: https://github.com/NoelKaczmarek/fstop
+Author: Noel Kaczmarek
+Author-email: noel.kaczmarek@gmail.com
+License: UNKNOWN
+Description: The f-stop Engine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
