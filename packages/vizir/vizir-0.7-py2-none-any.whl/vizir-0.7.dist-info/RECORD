@@ -1,0 +1,11 @@
+vizir/__init__.py,sha256=Dz3p5w1MnSW8KM6M1JsMwyY1uywL6cQP0lLfBVpuTX8,289
+vizir/app.py,sha256=Ghpw3QK2I_HCPL8t8QSfsPQY7pblfXrpLXJKSRFM_Y4,470
+vizir/data.py,sha256=FrG_y_htOXWKqusrWjwGYuGzEw4yzlACsF_FGdya3Uk,2570
+vizir/index.py,sha256=9rJa3CB5bzXEYQ36B3DeWkBYvU0gkzVK_oBpx8Ep4TA,9264
+vizir/logic.py,sha256=Dmx0PSwFoKE02cCe3kR7F9K85UhKYMEH6llm2xZEsZM,4323
+vizir-0.7.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+vizir-0.7.dist-info/METADATA,sha256=Bmol7djTxxZ7n51H2D_6Qw_RprCfP8w-5Kcbc26zj2s,268
+vizir-0.7.dist-info/RECORD,,
+vizir-0.7.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+vizir-0.7.dist-info/metadata.json,sha256=p1NYKgjPfaCUnZJmu2zYayQuRcseA06cBEZTSapsciM,444
+vizir-0.7.dist-info/top_level.txt,sha256=tTjhcRD8BzsZvleuSH8WmDQa1Bf4432Dt1bDmA_nRfc,6
