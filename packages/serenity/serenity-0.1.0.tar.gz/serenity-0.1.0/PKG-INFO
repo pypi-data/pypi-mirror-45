@@ -1,0 +1,73 @@
+Metadata-Version: 1.1
+Name: serenity
+Version: 0.1.0
+Summary: Renderfarm framework
+Home-page: https://github.com/aldmbmtl/serenity
+Author: Alex Hatfield
+Author-email: alex@hatfieldfx.com
+License: MIT license
+Description: ========
+        serenity
+        ========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/serenity.svg
+                :target: https://pypi.python.org/pypi/serenity
+        
+        .. image:: https://img.shields.io/travis/aldmbmtl/serenity.svg
+                :target: https://travis-ci.org/aldmbmtl/serenity
+        
+        .. image:: https://readthedocs.org/projects/serenity/badge/?version=latest
+                :target: https://serenity.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/aldmbmtl/serenity/shield.svg
+             :target: https://pyup.io/repos/github/aldmbmtl/serenity/
+             :alt: Updates
+        
+        
+        
+        Renderfarm framework
+        
+        
+        * Free software: MIT license
+        * Documentation: https://serenity.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-04-21)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: serenity
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
