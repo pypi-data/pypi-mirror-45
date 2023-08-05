@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+qz7.shell.egg-info/PKG-INFO
+qz7.shell.egg-info/SOURCES.txt
+qz7.shell.egg-info/dependency_links.txt
+qz7.shell.egg-info/requires.txt
+qz7.shell.egg-info/top_level.txt
+qz7/shell/__init__.py
+qz7/shell/cmdlist.py
+qz7/shell/run.py
+qz7/shell/ssh.py
+qz7/shell/utils.py
