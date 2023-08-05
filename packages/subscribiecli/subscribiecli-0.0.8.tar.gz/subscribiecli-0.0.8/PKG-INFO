@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: subscribiecli
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Karma Computing
+Author-email: subscribie@karmacomputing.co.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
