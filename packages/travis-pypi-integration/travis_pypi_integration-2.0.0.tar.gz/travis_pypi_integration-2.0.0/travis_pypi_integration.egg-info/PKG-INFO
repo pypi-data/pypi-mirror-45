@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: travis-pypi-integration
+Version: 2.0.0
+Summary: Sample Travis CI + Pypi integration
+Home-page: https://github.com/musyoka-morris/travis-pypi-integration
+Author: Musyoka Morris
+Author-email: musyokamorris@gmail.com
+License: MIT
+Description: Travis CI + Pypi Integration
+        ========================
+        
+        This is a guide to automatically deploy python packages to Pypi using Travis CI
+        
+        
+        
+Keywords: Travis CI,Pypi,integration,CI,CD,automated distribution
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
