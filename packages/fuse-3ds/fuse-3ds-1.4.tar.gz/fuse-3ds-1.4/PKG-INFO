@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fuse-3ds
+Version: 1.4
+Summary: Mirror package for ninfs
+Home-page: https://github.com/ihaveamac/ninfs
+Author: ihaveamac
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: This is a mirror package for ninfs, the new name for fuse-3ds.
+Platform: UNKNOWN

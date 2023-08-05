@@ -1,0 +1,6 @@
+setup.py
+fuse_3ds.egg-info/PKG-INFO
+fuse_3ds.egg-info/SOURCES.txt
+fuse_3ds.egg-info/dependency_links.txt
+fuse_3ds.egg-info/requires.txt
+fuse_3ds.egg-info/top_level.txt
