@@ -1,0 +1,8 @@
+README.md
+setup.py
+papagei/__init__.py
+papagei/papagei.py
+papagei_niederha.egg-info/PKG-INFO
+papagei_niederha.egg-info/SOURCES.txt
+papagei_niederha.egg-info/dependency_links.txt
+papagei_niederha.egg-info/top_level.txt
