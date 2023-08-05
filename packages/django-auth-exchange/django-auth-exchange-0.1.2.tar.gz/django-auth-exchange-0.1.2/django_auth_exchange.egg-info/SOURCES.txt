@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+django_auth_exchange/VERSION_STAMP
+django_auth_exchange/__init__.py
+django_auth_exchange/apps.py
+django_auth_exchange/backends.py
+django_auth_exchange/settings.py
+django_auth_exchange/urls.py
+django_auth_exchange/version.py
+django_auth_exchange/wsgi.py
+django_auth_exchange.egg-info/PKG-INFO
+django_auth_exchange.egg-info/SOURCES.txt
+django_auth_exchange.egg-info/dependency_links.txt
+django_auth_exchange.egg-info/requires.txt
+django_auth_exchange.egg-info/top_level.txt
