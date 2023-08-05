@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pdfs-rename
+Version: 0.1
+Summary: Makes geojson from EXIF data.
+Home-page: https://github.com/visgean/pdfs-rename
+Author: Visgean
+Author-email: visgean@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: photos geojson exif
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pdfs_rename.egg-info/PKG-INFO
+pdfs_rename.egg-info/SOURCES.txt
+pdfs_rename.egg-info/dependency_links.txt
+pdfs_rename.egg-info/entry_points.txt
+pdfs_rename.egg-info/requires.txt
+pdfs_rename.egg-info/top_level.txt
+rename/__init__.py
+rename/main.py
+rename/utils.py
