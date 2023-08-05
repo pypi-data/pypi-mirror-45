@@ -1,0 +1,6 @@
+click<8,>=4
+pip<19.2,>=8
+
+[:python_version < "3.0"]
+backports.tempfile
+contextlib2
