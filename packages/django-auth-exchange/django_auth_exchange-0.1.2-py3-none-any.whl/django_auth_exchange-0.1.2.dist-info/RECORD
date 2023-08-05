@@ -1,0 +1,13 @@
+django_auth_exchange/VERSION_STAMP,sha256=KXtQ8IOG01Ifj9ry94642dCs30UtLmFZaQX7o3IIx5I,6
+django_auth_exchange/__init__.py,sha256=xUxzU9SVIOKtygD3sy-1fgGg0nBWjcMOhH-HkqCdXPA,62
+django_auth_exchange/apps.py,sha256=36hsDkHatlBa8QAuGDvyKjTVjsq8RyY0uUDm2L9OYEw,136
+django_auth_exchange/backends.py,sha256=HHm_2mExj1e_7ya6QgSz8-m8C5pzv2AjH8yT3LNR2jQ,4941
+django_auth_exchange/settings.py,sha256=xIyvbPmeLsKMEHW545wyOUNFFX3wjIxwyOpt_n4SLak,3407
+django_auth_exchange/urls.py,sha256=iCTSLZkugwTz4jf-F2aFTpUCqKxq6f4-rQXy4ij38eM,119
+django_auth_exchange/version.py,sha256=gr4rwqpTBye2KqKvcgp3rnMspOGyHpPliIfHqyWoJ6g,1299
+django_auth_exchange/wsgi.py,sha256=MdKnmZGcyFKiUELI56nUvJ5dadYLuvlqP6MvEo8rQBk,180
+django_auth_exchange-0.1.2.dist-info/LICENSE,sha256=i6KYKElsx1_aia5LlJzYJByZKl4qyZhaUgeSLL95K_U,1074
+django_auth_exchange-0.1.2.dist-info/METADATA,sha256=v4XuSIMUJVFtDZiQ0Cadj64ncg_QboLLzl3mnszOZfM,3758
+django_auth_exchange-0.1.2.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+django_auth_exchange-0.1.2.dist-info/top_level.txt,sha256=CmQhu_vLkchi9YaCa7WYxVEn988JsQ81iSBIB7ksJSM,21
+django_auth_exchange-0.1.2.dist-info/RECORD,,
