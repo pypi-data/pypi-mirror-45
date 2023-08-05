@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grammarian
+Version: 0.1.1
+Summary: 
+Author: Gabriel Falcão
+Author-email: gabriel@nacaolivre.org
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4 (>=4.7,<5.0)
+Requires-Dist: pydictionary (>=1.5,<2.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Requires-Dist: urbandictionary (>=1.1,<2.0)
+Requires-Dist: wikipedia (>=1.4,<2.0)
