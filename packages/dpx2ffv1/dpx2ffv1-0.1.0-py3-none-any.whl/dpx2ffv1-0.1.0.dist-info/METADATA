@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dpx2ffv1
+Version: 0.1.0
+Summary: dpx2ffv1 is a simple module to convert a set of dpx to ffv1 codec
+Home-page: https://github.com/DerouineauNicolas/dpx_to_ffv1
+Author: N. DEROUINEAU
+Author-email: nicolas.derouineau@ymagis.com
+License: WTFPL
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
