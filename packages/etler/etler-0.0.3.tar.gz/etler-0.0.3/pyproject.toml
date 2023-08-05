@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "etler"
+author = "Sasha Illarionov"
+author-email = "sasha@sdll.space"
+home-page = "https://github.com/sdll/etler"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
