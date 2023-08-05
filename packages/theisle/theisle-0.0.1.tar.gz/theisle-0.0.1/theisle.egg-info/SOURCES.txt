@@ -1,0 +1,9 @@
+README.md
+setup.py
+theisle/Player.py
+theisle/Server.py
+theisle/__init__.py
+theisle.egg-info/PKG-INFO
+theisle.egg-info/SOURCES.txt
+theisle.egg-info/dependency_links.txt
+theisle.egg-info/top_level.txt
