@@ -1,0 +1,60 @@
+{% extends "richie/fullwidth.html" %}
+{% load cms_tags i18n extra_tags %}
+{% block content %}
+{% spaceless %}
+<div class="blogpost-detail">
+  <h1 class="blogpost-detail__title">{% render_model current_page "title" %}</h1>
+
+  <div class="blogpost-detail__subhead">
+    <p class="blogpost-detail__subhead__date">
+      {{ current_page.creation_date|date:"SHORT_DATE_FORMAT" }}
+    </p>
+
+    {% with form_factor="tag" %}
+      {% if current_page.publisher_is_draft or not current_page|is_empty_placeholder:"author" %}
+      <div class="blogpost-detail__subhead__author">
+        {% page_placeholder "author" current_page or %}
+          <span class="blogpost-detail__subhead__author__empty">{% trans 'No author yet.' %}</span>
+        {% endpage_placeholder %}
+      </div>
+      {% endif %}
+    {% endwith %}
+
+    {% include "social-networks/blogpost-badges.html" with page_title=request.current_page.get_title page_url=request.current_page.get_absolute_url %}
+  </div>
+
+  {% with form_factor="tag" %}
+    {% if current_page.publisher_is_draft or not current_page|is_empty_placeholder:"categories" %}
+    <div class="blogpost-detail__categories">
+      {% page_placeholder "categories" current_page or %}
+        <span class="blogpost-detail__categories__empty">{% trans 'No categories yet.' %}</span>
+      {% endpage_placeholder %}
+    </div>
+    {% endif %}
+  {% endwith %}
+
+  <div class="blogpost-detail__cover">
+    {% placeholder "cover" or %}
+      <p class="blogpost-detail__cover__empty">{% trans "Cover" %}</p>
+    {% endplaceholder %}
+  </div>
+
+  <div class="blogpost-detail__excerpt">
+    {% placeholder "excerpt" or %}
+      <p class="blogpost-detail__excerpt__empty">
+        {% trans "No excerpt content" %}
+      </p>
+    {% endplaceholder %}
+  </div>
+
+  <div class="blogpost-detail__body">
+    {% placeholder "body" or %}
+      <p class="blogpost-detail__body__empty">
+        {% trans "No body content" %}
+      </p>
+    {% endplaceholder %}
+  </div>
+
+</div>
+{% endspaceless %}
+{% endblock content %}
