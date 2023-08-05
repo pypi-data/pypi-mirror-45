@@ -1,0 +1,16 @@
+minik/__init__.py,sha256=0fEgUkBW9zTxIbWd-TgfKC_b-WcUcZQ2k8jDbI5WVKE,191
+minik/builders.py,sha256=d4L-Dm32XjW3l41lYZgCuRVe1tLSq9LqZtq4lU9PWBE,896
+minik/constants.py,sha256=4hcI00Bk-O6kJ94FUWatcqmQE20mQVPNHSYopd2tOhs,351
+minik/core.py,sha256=JGo6pAZvljIsT01k8k1nNUkbULPOjUV8aHsQwEy1jKg,5951
+minik/exceptions.py,sha256=LJpGYgyuna4wUmTfKqUcDRi66MMOPznyGC8UBNN_w9M,521
+minik/fields.py,sha256=I6z2kzwBxsfl97aTAhNfrGsGiE819ZhwmJPEOcq9uyI,3305
+minik/middleware.py,sha256=pdqJ-Hyk6HY-pZrnyHOLkU08P5MbfFbzFsC_2-nbqWI,2475
+minik/models.py,sha256=TgQrbKB3PflX16twRuFEy906o8dsn1m1qDFeSBCypP4,2091
+minik/status_codes.py,sha256=gQcpfDcTXKPmDRzpzhp4wvi8G-QX_vHy5yTa_lCkKKc,4203
+minik/structures.py,sha256=oQionD7pW-uZS6l2W6_za0SkIM0HJ_b4yPy0gfozVeU,1209
+minik-0.4.0.dist-info/AUTHORS,sha256=RTZLUaCLAPuofiDsUq1TNCIW3WF9ZkN5DIwrc8nRIKs,247
+minik-0.4.0.dist-info/LICENSE,sha256=sSDE3T0OCqIrSN4kHfMKOVR50IaK1dbIv8n7AnM64JI,11338
+minik-0.4.0.dist-info/METADATA,sha256=2uo4Xx7zVlRO3dQiZ--XyVDm50rqT5Cuk1hOMUz0EB4,6827
+minik-0.4.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+minik-0.4.0.dist-info/top_level.txt,sha256=IMMei-wmMny6wkVv2I-RFASzQCfLFZLDsjmtcVpMkTY,6
+minik-0.4.0.dist-info/RECORD,,
