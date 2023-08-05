@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rakuten-pay
+Version: 0.0.4
+Summary: Rackuten Pay Package
+Home-page: https://github.com/ivcmartello/rakuten_pay
+Author: Ivan Carlos Martello
+Author-email: ivcmartello@gmail.com
+License: MIT License
+Keywords: rakuten pay payment pagamento ecommerce
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
