@@ -1,0 +1,33 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import json
+
+import requests
+
+from homevee.items.Gateway import Gateway
+
+
+def do_zwave_request(path, db):
+    try:
+        gateway = Gateway.load_from_db("Z-Wave", db)
+        port = ""
+        if (gateway.port != None and gateway.port != ""):
+            port = ":" + str(gateway.port)
+
+        url = "http://" + gateway.key1 + ':' + gateway.key2 + '@' + gateway.ip + port + path
+
+        #print url
+
+        headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
+        request = requests.get(url, headers=headers)
+        data = request.content
+
+        #print data
+
+        json_data = json.loads(data)
+
+        #print url, json_data
+
+        return json_data
+    except:
+        return None

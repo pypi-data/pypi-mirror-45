@@ -1,0 +1,19 @@
+
+STATUS_OK = 'ok'
+STATUS_ERROR = 'error'
+STATUS_NO_ADMIN = 'noadmin'
+STATUS_NO_PERMISSION = 'nopermission'
+STATUS_NO_SUCH_TYPE = 'nosuchtype'
+STATUS_USER_NOT_FOUND = 'usernotfound'
+STATUS_WRONG_DATA = 'wrongdata'
+
+class Status():
+    def __init__(self, type, message=None):
+        self.type = type
+        self.message = message
+
+    def get_dict(self):
+        return {
+            'status': self.type,
+            'message': self.message
+        }
