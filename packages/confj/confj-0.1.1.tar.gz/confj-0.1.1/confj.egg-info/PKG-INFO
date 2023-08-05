@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: confj
+Version: 0.1.1
+Summary: Load configs from json files
+Home-page: https://github.com/aleosd/confj
+Author: Alekey Osadchuk
+Author-email: osdalex@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/aleosd/confj/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/aleosd
+Project-URL: Source, https://github.com/aleosd/confj/
+Description: # jconf
+        
+        Package is used to load config from json files. Path to config can lead either
+        to directory with a bunch of json files, or to a single json file. Contents is
+        parsed and stored into config object, allowing attribute-based access to 
+        different options.
+        
+        [![Build Status](https://travis-ci.com/aleosd/confj.svg?branch=master)](https://travis-ci.com/aleosd/confj)
+        
+        ## Installation
+        
+        Package can be installed with pip:
+        
+        ```bash
+        pip install confj
+        ```
+        
+        ## Usage
+        
+        Usage of this utility is very simple: import `Config` class and load your config
+        with `load` method. Path to configs might be set via environment variable
+        `JSON_CONFIG_PATH` or passed directly to the `load` call:
+        
+        ```python
+        from confj import Config
+        
+        
+        config = Config()
+        config.load('/path/to/config')
+        ```
+        
+        If path to config is a directory, each file will be available as an attribute
+        of `config` object. Otherwise, if path is a file, `config` object will store
+        parsed json from given file, allowing access to first-level json-data via
+        attributes.
+        
+Keywords: json configs loader
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
