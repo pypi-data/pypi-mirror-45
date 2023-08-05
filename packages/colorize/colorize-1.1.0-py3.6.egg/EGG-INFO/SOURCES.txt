@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+bin/colorize
+colorize/__init__.py
+colorize/__main__.py
+colorize/colorize.py
+colorize.egg-info/PKG-INFO
+colorize.egg-info/SOURCES.txt
+colorize.egg-info/dependency_links.txt
+colorize.egg-info/entry_points.txt
+colorize.egg-info/top_level.txt
+tests/integration/__init__.py
+tests/unit/__init__.py
+tests/unit/color_test.py
+tests/unit/printer_test.py
