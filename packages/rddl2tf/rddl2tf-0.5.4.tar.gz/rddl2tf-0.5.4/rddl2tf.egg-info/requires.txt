@@ -1,0 +1,5 @@
+pyrddl>=0.1.9
+rddlgym>=0.5.8
+tensorflow
+tensorflow-tensorboard
+typing
