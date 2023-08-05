@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rs3clans
+Version: 1.1.0
+Summary: A Python 3 module wrapper for RuneScape 3's API
+License: MIT
+Author: johnvictorfs
+Author-email: johnvictorfs@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: dataclasses (>=0.6,<0.7); python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: requests (>=2.21,<3.0)
