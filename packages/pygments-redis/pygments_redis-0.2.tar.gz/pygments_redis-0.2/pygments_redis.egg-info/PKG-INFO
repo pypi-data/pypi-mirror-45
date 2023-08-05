@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pygments-redis
+Version: 0.2
+Summary: A Pygments lexer for the Redis CLI.
+Home-page: https://github.com/realpython/pygments-redis
+Author: Real Python
+Author-email: office@realpython.com
+License: MIT
+Description: # pygments-redis
+        
+        CircleCI: [![CircleCI](https://circleci.com/gh/realpython/pygments-redis/tree/master.svg?style=svg)](https://circleci.com/gh/realpython/pygments-redis/tree/master)
+        
+        ----
+        
+         A minimalistic Pygments lexer for the [Redis](https://redis.io/) CLI.
+        
+         This lexer differentiates four components of input/output from the `redis-cli` shell:
+        
+         - The prompt
+         - A command
+         - A reply type
+         - "Everything else"
+        
+Keywords: lexer,redis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

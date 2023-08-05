@@ -1,0 +1,3 @@
+[pygments.lexers]
+redis = pygments_redis:RedisLexer
+

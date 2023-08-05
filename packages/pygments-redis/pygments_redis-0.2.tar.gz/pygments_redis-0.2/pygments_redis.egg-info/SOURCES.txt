@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pygments_redis/__init__.py
+pygments_redis/redis.py
+pygments_redis.egg-info/PKG-INFO
+pygments_redis.egg-info/SOURCES.txt
+pygments_redis.egg-info/dependency_links.txt
+pygments_redis.egg-info/entry_points.txt
+pygments_redis.egg-info/requires.txt
+pygments_redis.egg-info/top_level.txt
