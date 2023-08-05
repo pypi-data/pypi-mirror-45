@@ -1,0 +1,9 @@
+setup.py
+learnfuntest/__init__.py
+learnfuntest/try1.py
+learnfuntest.egg-info/PKG-INFO
+learnfuntest.egg-info/SOURCES.txt
+learnfuntest.egg-info/dependency_links.txt
+learnfuntest.egg-info/not-zip-safe
+learnfuntest.egg-info/requires.txt
+learnfuntest.egg-info/top_level.txt
