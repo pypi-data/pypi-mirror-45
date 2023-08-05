@@ -1,0 +1,8 @@
+flask_performance/__init__.py,sha256=U2Za5SK1PW1qVfmP0bfStt7_pI2VSQPkx2EslVRhCGQ,57
+flask_performance/_compat.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_performance/performance_collector.py,sha256=Vxyai6rCmmP5Ri6-4WD9Quxued6jrcyxwmfk09DTHC8,1338
+Flask_Performance-0.0.3.dist-info/LICENSE,sha256=Y6ioJQsGmFJPTgLPG5KPCR2kGn_KgK1yGS0Ly1COmcg,1082
+Flask_Performance-0.0.3.dist-info/METADATA,sha256=pAA85umKyD5Dbrb-s_0poRgQNye9SNO41jF9Il2vNyU,2428
+Flask_Performance-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+Flask_Performance-0.0.3.dist-info/top_level.txt,sha256=4tlNxeylFdg2q6bl_EfVdWgGf_mEG4Fh-AO8D7LGi44,18
+Flask_Performance-0.0.3.dist-info/RECORD,,
