@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ax-tools
+Version: 0.4
+Summary: Tools for Axyl AX System
+Home-page: http://github.com/Omega0x013/ax-tools
+Author: Alexander Bielby
+Author-email: xanderbielby@gmail.com
+License: GNU GPLv3
+Description: # AX-Tools Module
+        The AX-Tools Module provides utilities for use with Axyl. These are licensed under the GNU GPLv3 so are free to use and modify.
+        
+        [My Reddit](https://www.reddit.com/user/Omega0x013)
+        
+        [My StackOverflow](https://stackoverflow.com/users/8357167/omega0x013?tab=profile)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
