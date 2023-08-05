@@ -1,0 +1,10 @@
+pytraph/__init__.py,sha256=IQpRMroKn4FrubRqHStJwFNydwIKTl4MejExvuWd53Q,66
+pytraph/core/__init__.py,sha256=s654gMGLlzvKH4Wxa8AxuiX0Y7FWFryn0D6wJQp0LnE,109
+pytraph/core/_traph_tensor.pyd,sha256=0Ibtafec19BTVWodbu8jxgqsbLep27NGt4VcH2jcE0o,418304
+pytraph/core/dtype.py,sha256=_AZsOFv47gJkgrc__dv7SovMEMgpaxgh1Kvdqo_BRic,262
+pytraph/core/tensor.py,sha256=Og-vHPtOO6rak2RTIbxi8vX45_t5K_Ep-n8r0QRrPEA,1352
+pytraph/core/traph_tensor.py,sha256=5TyuI2IkVfdu1qqnY27DZNOge_m0788NpwS0g73pprg,30641
+pytraph-0.0.1.dist-info/METADATA,sha256=gfLsmcSPj7C7GjA5owbw2OkKtnqcHUGmZK-w_hF6iQg,291
+pytraph-0.0.1.dist-info/WHEEL,sha256=4MWKnU79UwuVmfDf_0O5xTF3JjAgsSzJkvi7FI0hFSI,103
+pytraph-0.0.1.dist-info/top_level.txt,sha256=gYAWvAL6TO9Y29c7u8j3dzAbRLC6kA8-tD5VeuM4YKs,8
+pytraph-0.0.1.dist-info/RECORD,,

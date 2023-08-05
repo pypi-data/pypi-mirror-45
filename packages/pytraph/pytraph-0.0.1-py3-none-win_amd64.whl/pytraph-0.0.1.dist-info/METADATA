@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytraph
+Version: 0.0.1
+Summary: Deep learning framework
+Home-page: https://github.com/toyteam/traph.git
+Author: JunWang
+Author-email: jstzwj@aliyun.com
+License: MIT Licence
+Keywords: pip,deep learning
+Platform: any
+Requires-Dist: numpy
+
+Deep learning framework
+
+
