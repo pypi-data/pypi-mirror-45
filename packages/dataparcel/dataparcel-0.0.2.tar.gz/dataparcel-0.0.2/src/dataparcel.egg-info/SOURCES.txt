@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/dataparcel/VERSION
+src/dataparcel/__init__.py
+src/dataparcel/datapackage.py
+src/dataparcel.egg-info/PKG-INFO
+src/dataparcel.egg-info/SOURCES.txt
+src/dataparcel.egg-info/dependency_links.txt
+src/dataparcel.egg-info/requires.txt
+src/dataparcel.egg-info/top_level.txt
+src/dataparcel/utils/__init__.py
+src/dataparcel/utils/metadata_utils.py
+src/dataparcel/utils/validators.py
