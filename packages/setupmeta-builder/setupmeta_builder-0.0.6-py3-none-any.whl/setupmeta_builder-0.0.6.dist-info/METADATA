@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: setupmeta-builder
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/Cologler/setupmeta_builder-python
+Author: Cologler
+Author-email: skyoflw@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fsoopify
+Requires-Dist: packaging
+Requires-Dist: pipfile
+Requires-Dist: prettyprinter
+Requires-Dist: pyyaml
+
+# Setupmeta Builder
+
+![GitHub](https://img.shields.io/github/license/Cologler/setupmeta_builder-python.svg)
+[![Build Status](https://travis-ci.com/Cologler/setupmeta_builder-python.svg?branch=master)](https://travis-ci.com/Cologler/setupmeta_builder-python)
+[![PyPI](https://img.shields.io/pypi/v/setupmeta_builder.svg)](https://pypi.org/project/setupmeta_builder/)
+
+## Usage
+
+Replace your `setup.py` file to:
+
+```py
+from setupmeta_builder import setup_it
+
+setup_it()
+```
+
+Done!
+
+`setupmeta_builder` try resolve other values like `install_requires` for you.
+
+|meta|resolve source|
+|:-|:-|
+|`packages`|`find_packages()`|
+|`name`|packages|
+|`version`|`git.tag`|
+|`long_description`|file: `README.[md|rst]`|
+|`author` and `author_email`|file: `.pkgit.json`|
+|`url`|`git.origin.url`|
+|`license`|file: `LICENSE`|
+|`classifiers`|license and file `.travis.yml`|
+|`install_requires`|files: `requirements.txt` or `pipfile`|
+|`tests_require`|file: `pipfile`|
+|`entry_points.console_scripts`|parse from file `YOUR_PKG\entry_points_console_scripts.py`|
+
+Current project is the first example.
+
+**You can always print attrs using `python setup.py print_attrs`**
+
+
