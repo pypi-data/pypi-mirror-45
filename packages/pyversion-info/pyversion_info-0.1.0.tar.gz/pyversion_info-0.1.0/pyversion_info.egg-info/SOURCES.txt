@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyversion_info.py
+setup.cfg
+setup.py
+tox.ini
+pyversion_info.egg-info/PKG-INFO
+pyversion_info.egg-info/SOURCES.txt
+pyversion_info.egg-info/dependency_links.txt
+pyversion_info.egg-info/requires.txt
+pyversion_info.egg-info/top_level.txt
+test/test_pyversion_info.py
+test/data/pyversion-info-data.json
