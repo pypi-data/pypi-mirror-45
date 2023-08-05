@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+agilent_visa_control/__init__.py
+agilent_visa_control/agilent.py
+agilent_visa_control/frequency.py
+agilent_visa_control.egg-info/PKG-INFO
+agilent_visa_control.egg-info/SOURCES.txt
+agilent_visa_control.egg-info/dependency_links.txt
+agilent_visa_control.egg-info/requires.txt
+agilent_visa_control.egg-info/top_level.txt
