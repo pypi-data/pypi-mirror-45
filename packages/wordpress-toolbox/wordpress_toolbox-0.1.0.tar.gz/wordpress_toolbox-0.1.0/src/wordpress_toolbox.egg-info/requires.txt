@@ -1,0 +1,5 @@
+requests
+click
+python-slugify
+pytz
+css_html_js_minify
