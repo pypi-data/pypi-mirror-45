@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: neolith
+Version: 0.0.1
+Summary: Reference client/server for the neolith protocol.
+Home-page: https://github.com/dcwatson/neolith
+Author: Dan Watson
+Author-email: dcwatson@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: u-msgpack-python
+
+Nothing to see here yet...
+
+
