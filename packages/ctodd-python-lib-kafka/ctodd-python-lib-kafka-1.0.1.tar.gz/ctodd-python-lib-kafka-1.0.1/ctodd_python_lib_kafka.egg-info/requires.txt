@@ -1,0 +1,2 @@
+simplejson
+confluent_kafka
