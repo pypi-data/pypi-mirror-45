@@ -1,0 +1,13 @@
+opencensus/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+opencensus/ext/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+opencensus/ext/azure/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+opencensus/ext/azure/common/__init__.py,sha256=XWsPZ9tjr0iFwSeZEJzRzmTdojmnZ9FUVC5aFUqML-g,914
+opencensus/ext/azure/common/protocol.py,sha256=OmfHBr1c5c0shS4Ni0riG472ccc-ZbL7_sTf3d3Oht0,3995
+opencensus/ext/azure/common/utils.py,sha256=-xd82otKm9x4AyOuQ-EmEMc5xCJOc_ftvVwupagCuD0,2023
+opencensus/ext/azure/common/version.py,sha256=_rp-DLGa_9YQprQw3fGrfh6S-0L38xKkY3SXZOvY7vY,606
+opencensus/ext/azure/trace_exporter/__init__.py,sha256=BBZx4fE_MKGUMdxgy4T6EwSZWczQEFOdUPwADUxdE60,5705
+opencensus_ext_azure-0.1.0.dist-info/METADATA,sha256=7wt-NfqRjklk4cpeskCqTD7DY9SdX4k5uUxKs2EB5DE,3243
+opencensus_ext_azure-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+opencensus_ext_azure-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+opencensus_ext_azure-0.1.0.dist-info/top_level.txt,sha256=J24OU61lnFeMMuwOLPtTNywYsd2Bzp5KbBCPtAhDgaI,11
+opencensus_ext_azure-0.1.0.dist-info/RECORD,,
