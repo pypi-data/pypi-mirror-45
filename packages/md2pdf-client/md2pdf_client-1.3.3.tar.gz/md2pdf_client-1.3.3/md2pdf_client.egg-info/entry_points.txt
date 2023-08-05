@@ -1,0 +1,3 @@
+[console_scripts]
+md2pdf-client = md2pdf_client.md2pdf_client:main
+
