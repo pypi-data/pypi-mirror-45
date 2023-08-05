@@ -1,0 +1,3 @@
+[console_scripts]
+pyuwsgimemhog = pyuwsgimemhog.cli:main
+
