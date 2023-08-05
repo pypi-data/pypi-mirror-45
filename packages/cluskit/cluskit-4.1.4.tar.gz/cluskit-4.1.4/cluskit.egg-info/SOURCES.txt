@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cluskit/__init__.py
+cluskit/build.py
+cluskit/cluster.py
+cluskit/delaunay.py
+cluskit/utils.py
+cluskit.egg-info/PKG-INFO
+cluskit.egg-info/SOURCES.txt
+cluskit.egg-info/dependency_links.txt
+cluskit.egg-info/requires.txt
+cluskit.egg-info/top_level.txt
+src/cluskit.c
