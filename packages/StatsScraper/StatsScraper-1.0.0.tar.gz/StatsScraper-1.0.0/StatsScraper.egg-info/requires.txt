@@ -1,0 +1,3 @@
+requests
+contextlib2
+bs4
