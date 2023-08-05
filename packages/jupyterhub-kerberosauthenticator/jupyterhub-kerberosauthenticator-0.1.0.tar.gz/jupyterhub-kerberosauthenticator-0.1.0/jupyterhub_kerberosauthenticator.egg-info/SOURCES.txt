@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+jupyterhub_kerberosauthenticator.egg-info/PKG-INFO
+jupyterhub_kerberosauthenticator.egg-info/SOURCES.txt
+jupyterhub_kerberosauthenticator.egg-info/dependency_links.txt
+jupyterhub_kerberosauthenticator.egg-info/requires.txt
+jupyterhub_kerberosauthenticator.egg-info/top_level.txt
+kerberosauthenticator/__init__.py
+kerberosauthenticator/_version.py
+kerberosauthenticator/auth.py
+kerberosauthenticator/templates/kerberos_login_error.html
+kerberosauthenticator/tests/conftest.py
+kerberosauthenticator/tests/test_authenticator.py

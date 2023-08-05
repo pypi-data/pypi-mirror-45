@@ -1,0 +1,7 @@
+jupyterhub
+
+[:platform_system != "Windows"]
+pykerberos
+
+[:platform_system == "Windows"]
+winkerberos
