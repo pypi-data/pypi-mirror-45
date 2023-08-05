@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pyalsi
+Version: 0.5.3
+Summary: python rewrite of alsi (Arch Linux System Information) to support multiple systems
+Home-page: https://github.com/chestm007/pyalsi
+Author: chestm007
+Author-email: chestm007@hotmail.com
+License: GPL2
+Download-URL: https://github.com/chestm007/pyalsi/mypackage/archive/0.4.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: nose
+Requires: mock
+Requires: click
