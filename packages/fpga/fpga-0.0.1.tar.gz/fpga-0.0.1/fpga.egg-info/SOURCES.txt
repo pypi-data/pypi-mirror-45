@@ -1,0 +1,8 @@
+README.md
+setup.py
+fpga/__init__.py
+fpga/a7.py
+fpga.egg-info/PKG-INFO
+fpga.egg-info/SOURCES.txt
+fpga.egg-info/dependency_links.txt
+fpga.egg-info/top_level.txt
