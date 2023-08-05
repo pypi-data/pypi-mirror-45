@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: woeBinningPandas
+Version: 0.0.6
+Summary: My package from github repo
+Home-page: https://github.com/V1ad98/woeBinningPandas.git
+Author: V1ad98
+Author-email: 47775603+V1ad98@users.noreply.github.com
+License: unlicense
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
