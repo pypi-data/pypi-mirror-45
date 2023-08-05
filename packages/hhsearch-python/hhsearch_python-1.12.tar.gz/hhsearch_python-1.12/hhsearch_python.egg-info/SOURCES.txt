@@ -1,0 +1,7 @@
+README.md
+setup.py
+hhsearch_python/__init__.py
+hhsearch_python.egg-info/PKG-INFO
+hhsearch_python.egg-info/SOURCES.txt
+hhsearch_python.egg-info/dependency_links.txt
+hhsearch_python.egg-info/top_level.txt
