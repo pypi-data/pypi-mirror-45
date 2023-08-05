@@ -1,0 +1,8 @@
+README.md
+setup.py
+intelligence/__init__.py
+intelligence.egg-info/PKG-INFO
+intelligence.egg-info/SOURCES.txt
+intelligence.egg-info/dependency_links.txt
+intelligence.egg-info/not-zip-safe
+intelligence.egg-info/top_level.txt
