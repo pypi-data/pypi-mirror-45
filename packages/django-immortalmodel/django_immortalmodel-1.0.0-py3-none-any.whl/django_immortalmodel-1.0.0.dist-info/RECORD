@@ -1,0 +1,8 @@
+django_immortalmodel-1.0.0.dist-info/METADATA,sha256=_G9J3B8_HBKbG-KH2qFOAl4KJ1IK1pQ1KDNd4L6D5JY,329
+django_immortalmodel-1.0.0.dist-info/RECORD,,
+django_immortalmodel-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_immortalmodel-1.0.0.dist-info/top_level.txt,sha256=FxLy0lZMT6-32SR9BoJK8QEJwl5klYhQ8kU0HsadNmw,14
+immortalmodel/__init__.py,sha256=gdBGrHEBPUohW1AEqfN3rXv4MWIbKNjzImIba9Wwpp4,81
+immortalmodel/admin.py,sha256=dNGhP9WniAn4FIqKUtL81umpic-DiWLDFVFm6i7Nh3c,259
+immortalmodel/models.py,sha256=wyyDnt7nPHxlrh0x6mwz-kObLsBG7lYJxO4X_2i98zg,1067
+immortalmodel/tests.py,sha256=DILJZ_ZXnlcBX0AwPZjYYuwEQkd_0nWc4mZYXTGoV9E,979

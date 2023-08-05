@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-immortalmodel
+Version: 1.0.0
+Summary: A django model, manager and queryset implementing undeletable models
+Home-page: https://github.com/20tab/django-immortalmodel
+Author: 20Tab S.r.l.
+Author-email: info@20tab.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: Django (>=2.1)
+
+UNKNOWN
+
+
