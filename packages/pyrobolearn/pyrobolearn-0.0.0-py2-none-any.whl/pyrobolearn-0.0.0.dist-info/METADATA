@@ -1,0 +1,47 @@
+Metadata-Version: 2.0
+Name: pyrobolearn
+Version: 0.0.0
+Summary: A Python framework for roboticists and machine learning practitioners
+Home-page: https://github.com/robotlearn/pyrobolearn
+Author: Brian Delhaisse
+Author-email: briandelhaisse@gmail.com
+Maintainer: Brian Delhaisse
+Maintainer-email: briandelhaisse@gmail.com
+License: (c) Brian Delhaisse
+Platform: Linux Ubuntu
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: GPy (>=1.9.6)
+Requires-Dist: GPyOpt (>=1.2.5)
+Requires-Dist: autograd (>=1.2)
+Requires-Dist: cma (>=2.6.0)
+Requires-Dist: control (>=0.8.1)
+Requires-Dist: cvxopt (>=1.2.3)
+Requires-Dist: cvxpy (>=1.0.15)
+Requires-Dist: gTTS (>=2.0.3)
+Requires-Dist: gym (>=0.10.9)
+Requires-Dist: inputs (>=0.5)
+Requires-Dist: matplotlib (>=2.0.2)
+Requires-Dist: neat-python (>=0.92)
+Requires-Dist: nlopt (>=2.4.2.post2)
+Requires-Dist: numba (>=0.42.0)
+Requires-Dist: numpy-quaternion
+Requires-Dist: opencv-python (>=4.0.0.21)
+Requires-Dist: pathos (>=0.2.3)
+Requires-Dist: pybullet (>=2.4.1)
+Requires-Dist: qpsolvers (>=1.0.4)
+Requires-Dist: quadprog (>=0.1.6)
+Requires-Dist: scipy (>=0.19.1)
+Requires-Dist: sklearn (>=0.0)
+Requires-Dist: slycot (>=0.3.3)
+Requires-Dist: sympy (>=1.3)
+Requires-Dist: torch (>=1.0.0)
+Requires-Dist: torchvision (>=0.2.1)
+Requires-Dist: urdf-parser-py (>=0.0.3)
+
+# PyRoboLearn
+
+
