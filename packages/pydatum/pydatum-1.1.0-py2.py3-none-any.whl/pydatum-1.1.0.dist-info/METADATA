@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pydatum
+Version: 1.1.0
+Summary: datetime and calendar utilities
+Home-page: https://github.com/MisterY/pydatum
+Author: Alen Siljak
+Author-email: alen.siljak@gmx.com
+License: GPL version 3
+Requires-Dist: python-dateutil
+
+# pyDatum
+
+
