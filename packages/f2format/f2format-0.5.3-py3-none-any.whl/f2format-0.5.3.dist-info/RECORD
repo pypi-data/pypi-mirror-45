@@ -1,0 +1,12 @@
+f2format/__init__.py,sha256=nvqqYgq7rqnFOeaO1NujoJQl6P2k9-RL8y63_NJHVE8,342
+f2format/__main__.py,sha256=_mB8sDVXqbVCkza6_skAwbOB8ssvFj6MzCtlYLO6uwk,4742
+f2format/core.py,sha256=tRTozq4_Zc0W4CZi2oHRSVPCKoAAYh5hpeQg6qwbN3w,10257
+f2format/token.py,sha256=EBIZVxrmTHQH3vcFSWqBAka4L0XZmus5X67Z76N1Ljg,3763
+f2format/tokenize.py,sha256=E2MLCeOGFFaxj6RbMZOuGqRAaIEoYQ_eXi4q7ZJ9nUQ,27030
+f2format-0.5.3.dist-info/LICENSE,sha256=O5-4K9CHhbCEEWFGDJXLOEPJ1OhBl8kPr4_XC6fnYyI,11341
+f2format-0.5.3.dist-info/METADATA,sha256=OluQ96JhxFZkCGlg_qBxVsqdajjkR7bO4OJA0s_ipis,7185
+f2format-0.5.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+f2format-0.5.3.dist-info/entry_points.txt,sha256=ZcLE9s5YSnWaJFkMWKqSawEd_eEW3Qj5bfbV3zwO6fA,53
+f2format-0.5.3.dist-info/top_level.txt,sha256=6_G8pj0ZIlI-Zf6wNIP-ymzVbVwjqcqqGqKJLBqu8Ao,9
+f2format-0.5.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+f2format-0.5.3.dist-info/RECORD,,
