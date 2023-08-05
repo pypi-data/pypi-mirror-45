@@ -1,0 +1,5 @@
+tellurium
+sympy
+click
+halo
+seaborn
