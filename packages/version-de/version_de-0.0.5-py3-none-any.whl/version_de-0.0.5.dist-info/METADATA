@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: version-de
+Version: 0.0.5
+Summary: Just demo for checking how is version work
+Home-page: https://bitbucket.org/avneesh111995/mrchantintionpythonlibrary/
+Author: ishaan.kumar
+Author-email: ishaan.kumar@paytm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+This is version demo.
+
+
