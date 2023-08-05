@@ -1,0 +1,10 @@
+ctodd_python_lib_exceptions-1.0.0.dist-info/LICENSE.txt,sha256=5mKLJyB0Ss5xtpI4A_chgQCf9Z5ZZQsCItUlXM4xyOQ,1073
+ctodd_python_lib_exceptions-1.0.0.dist-info/METADATA,sha256=DVHvorIuoDP426CTDFUgRZyVT_dqh3htnNrVNPZ9BYU,4802
+ctodd_python_lib_exceptions-1.0.0.dist-info/RECORD,,
+ctodd_python_lib_exceptions-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ctodd_python_lib_exceptions-1.0.0.dist-info/top_level.txt,sha256=opkVBuhyt63mPjwWywP70xhpP6BHkWNiZStj3-fH7Y8,18
+exception_helpers/__init__.py,sha256=KPMQJVJHxMvkNwScnpM6XEeYDiYMJFSGkh_G5bOKWMU,141
+exception_helpers/create_exceptions.py,sha256=xsLGDFtHV04-nDmoPFMmWzQZ1xlztUV7kBl4fldpOtk,4131
+exception_helpers/unsupported_exception.py,sha256=pEmBcPDOTjOd-l-HPnsYvpb9SBRGrU6nU4NHp3nHHW0,499
+exception_helpers/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exception_helpers/tests/test_create_exceptions.py,sha256=f55RctMMCuxnPYYnPBo0SnqRr8uclBddGR6NFRwK-bY,5682
