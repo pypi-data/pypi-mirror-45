@@ -1,0 +1,8 @@
+numpy
+scipy
+skimage
+astropy
+matplotlib
+pyregion
+uncertainties
+pymorph
