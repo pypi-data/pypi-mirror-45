@@ -1,0 +1,5 @@
+SSEClient
+crc16
+ed25519
+numpy
+requests
