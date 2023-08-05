@@ -1,0 +1,17 @@
+fuzzysearch/__init__.py,sha256=VRFeFSTxXgN1QTYYr39U8Nhf7m9n7xkFtuXNEJUDBpM,3795
+fuzzysearch/_common.pyd,sha256=Nhuzfct_pR1SalmX4aJk6FZyVMI1ABjNzzocZ6xFe8E,8192
+fuzzysearch/_generic_search.pyd,sha256=o2X7CyXIvMOllDVtGrNMnUoaiP-wZGy9WNI2foUI4Ro,44032
+fuzzysearch/_levenshtein_ngrams.pyd,sha256=NLwhmMQeuRVnv9SGmO9mg14b1XblxlnYqyRRJAUNr4A,31232
+fuzzysearch/_substitutions_only.pyd,sha256=-UBAoAAyYWSnajCBjbpLtyNXZ9i_n2Imx2YLGzMh4-o,11264
+fuzzysearch/common.py,sha256=QidW6iWveUlMzyQIH02xWtCGh3m_2nyLyTTV-D8biu8,7280
+fuzzysearch/generic_search.py,sha256=1Uk6TOJ_Rbh_eRfO8Dst9W2M6mQ_gM13QFKnmbuiQbs,11619
+fuzzysearch/levenshtein.py,sha256=CFjqKWX1wElP2DV8pGku7fYaIGYFKUfIORwXQzRSoDI,6264
+fuzzysearch/levenshtein_ngram.py,sha256=Qw0Jdyp7PtE8hJukdBTy6eihFVzCvMsVBHAFtklBSxg,7333
+fuzzysearch/no_deletions.py,sha256=5gIzRAOA58zm7VIIJ4GtyYvLcauVUK7RzKmkPaVxbOo,5049
+fuzzysearch/substitutions_only.py,sha256=7Ztz9443aMzfyo2EaQ3rteX9OoP0IBwfI_DS4Tu-jew,11296
+fuzzysearch-0.6.2.dist-info/AUTHORS.rst,sha256=eOEqfwdyaf6isqIXNd9LarOa8WdSVv5GZsGW9cthm10,152
+fuzzysearch-0.6.2.dist-info/LICENSE,sha256=-AvwHGqOGrjA-6O3uGIdTuH1M4et42_vNsxgcb5mvw0,1080
+fuzzysearch-0.6.2.dist-info/METADATA,sha256=r2qpPiwmbTI_zaRqapj7O2NLNAKN-0rT4J7Ex8rirwM,7558
+fuzzysearch-0.6.2.dist-info/WHEEL,sha256=bIuiZDYMUGBgJak0wCClR8ErkEXGYOpZVIqarxK9hXA,102
+fuzzysearch-0.6.2.dist-info/top_level.txt,sha256=Pnb5x1VkaFRT2xdNPCRQ4icA4hcFGV4RQkBTojhCehw,12
+fuzzysearch-0.6.2.dist-info/RECORD,,
