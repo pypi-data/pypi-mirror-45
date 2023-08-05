@@ -1,0 +1,8 @@
+pylfsr/__init__.py,sha256=ng_Ygg_DLjB6oAioIHX2X8C1kCrwuYu9FdqOgHg39EA,491
+pylfsr/primitive_polynomials_GF2_dict.txt,sha256=iXQO7IrjxXDqchqTulKrY-qfYvJrsOe7JQWZVkKzedU,6402
+pylfsr/pylfsr.py,sha256=raAt6hSS77oJmmfsyWFi9qZSzCKufMc6Ae0Ts8DEp74,9681
+pylfsr-1.0.1.dist-info/LICENSE.txt,sha256=man0MlvIllQpvHayBjk2CzKcgC2euN2KvDoHA7HTx6w,1074
+pylfsr-1.0.1.dist-info/METADATA,sha256=cPcOJnojr8g_d_6e4mrl2SEjXAkuMgoy7_rUmMBLmQE,4087
+pylfsr-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pylfsr-1.0.1.dist-info/top_level.txt,sha256=l8FDUPwUpqn9tJuMihYopZREuBObt3QHlPFZ1R_uyXM,7
+pylfsr-1.0.1.dist-info/RECORD,,
