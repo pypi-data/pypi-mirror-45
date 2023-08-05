@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pysetup
+Version: 2019.4.22
+Summary: Pypi upload tool.
+Home-page: https://github.com/Czw96/PySetup
+Author: Czw_96
+Author-email: 459749926@qq.com
+License: UNKNOWN
+Description: # PySetup
+        Pypi 上传工具
+        
+        ## 安装
+        ```
+        pip3 install pysetup --upgrade
+        ```
+        
+        ## 使用
+        查看命令列表
+        ```
+        >>> pysetup help
+        ```
+        创建 setup.py 文件
+        ```
+        >>> pysetup create_setup
+        ```
+        打包/上传 项目
+        ```
+        >>> pysetup upload <username> <password>
+        ```
+        打包/上传 test 项目
+        ```
+        >>> pysetup upload_test <username> <password>
+        ```
+        打包项目
+        ```
+        >>> pysetup package
+        ```
+        删除打包文件
+        ```
+        >>> pysetup remove_packaged
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
