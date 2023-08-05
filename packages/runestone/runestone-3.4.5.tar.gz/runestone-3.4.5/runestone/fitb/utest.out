@@ -1,0 +1,458 @@
+..EEEEEEEEEEEEEEEEEEEEEE
+======================================================================
+ERROR: test_fitb (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 69, in test_fitb
+    self.find_fitb("fill1412")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill1412"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb2 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 78, in test_fitb2
+    self.find_fitb("fill1412")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill1412"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb2 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb3 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 86, in test_fitb3
+    self.find_fitb("fill1412")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill1412"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb3 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb4 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 94, in test_fitb4
+    self.find_fitb("fill1412")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill1412"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitb4 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitbfillrange (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 122, in test_fitbfillrange
+    self.find_fitb("fill_2pi")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill_2pi"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitbfillrange (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitboneblank_too_low (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 108, in test_fitboneblank_too_low
+    self.find_fitb("fill_2pi")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill_2pi"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitboneblank_too_low (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitboneblank_wildcard (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 115, in test_fitboneblank_wildcard
+    self.find_fitb("fill_2pi")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fill_2pi"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitboneblank_wildcard (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitbregex (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 129, in test_fitbregex
+    self.find_fitb("fillregex")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"fillregex"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_fitbregex (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_regexescapes1 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 139, in test_regexescapes1
+    self.find_fitb("regexescapes1")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"regexescapes1"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_regexescapes1 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_regexescapes2 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 146, in test_regexescapes2
+    self.find_fitb("regexescapes2")
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 47, in find_fitb
+    self.fitb = self.driver.find_element_by_id(elem_id)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"regexescapes2"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_regexescapes2 (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_timed (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/test_fitb.py", line 156, in test_timed
+    self.driver.find_element_by_id('start').click()
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"start"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+======================================================================
+ERROR: test_timed (test.test_fitb.FITBtests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bradleymiller/Runestone/RunestoneComponents/runestone/unittest_base.py", line 115, in tearDown
+    self.driver.execute_script('window.localStorage.clear();')
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 636, in execute_script
+    'args': converted_args})['value']
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/bradleymiller/.virtualenvs/components_noconda/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: move target out of bounds: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.14.4 x86_64)
+
+
+----------------------------------------------------------------------
+Ran 13 tests in 8.093s
+
+FAILED (errors=22)
+Building with Runestone 3.4.3
+---> runestone.build
+git describe --long
+Building into  ./build/testfitb
+mkdir_p path('././build/testfitb')
+mkdir_p path('./build/testfitb')
+mkdir_p path('././build/testfitb/doctrees')
+sphinx-build -b html -d ././build/testfitb/doctrees -c . -a -E -Acourse_id=testfitb -Alogin_required=false -Aappname=runestone -Aloglevel=0 -Acourse_url=http://127.0.0.1:8000 -Ause_services=false -Apython3=false -Adburl=postgresql://bradleymiller:@localhost/bmiller -Adefault_ac_lang=python -Abasecourse=testfitb -Ajobe_server=http://jobe2.cosc.canterbury.ac.nz -Aproxy_uri_runs=/jobe/index.php/restapi/runs/ -Aproxy_uri_files=/jobe/index.php/restapi/files/ -Adownloads_enabled=false -Aenable_chatcodes=false -Aallow_pairs=false -Arunestone_version=3.4.3 -Abuild_info=3.4.3 ./_sources ./build/testfitb
+Running Sphinx v2.0.1
+building [mo]: all of 0 po files
+building [html]: all source files
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index
+
+Cleaning up old chapters info
+Populating the database with Chapter information
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 4 warnings.
+
+The HTML pages are in build/testfitb.
+Done, build successful
+/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/_sources/index.rst:38: WARNING: Content block expected for the "fillintheblank" directive; none found.
+/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/_sources/index.rst:40: WARNING: On line 42, the last item in a fill-in-the-blank question must be a bulleted list.
+/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/_sources/index.rst:44: WARNING: On line 48, each list item in a fill-in-the-blank problems must contain only one item, a field list.
+/Users/bradleymiller/Runestone/RunestoneComponents/runestone/fitb/test/_sources/index.rst:50: WARNING: Not enough feedback for the number of blanks supplied.
+
