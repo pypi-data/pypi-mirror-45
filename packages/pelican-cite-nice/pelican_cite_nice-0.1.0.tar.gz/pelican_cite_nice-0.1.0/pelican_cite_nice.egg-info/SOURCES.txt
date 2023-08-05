@@ -1,0 +1,10 @@
+README.md
+setup.py
+pelican_cite_nice/__init__.py
+pelican_cite_nice/author_year.py
+pelican_cite_nice/pelican_cite.py
+pelican_cite_nice.egg-info/PKG-INFO
+pelican_cite_nice.egg-info/SOURCES.txt
+pelican_cite_nice.egg-info/dependency_links.txt
+pelican_cite_nice.egg-info/not-zip-safe
+pelican_cite_nice.egg-info/top_level.txt
