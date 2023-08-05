@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: aldebaran
+Version: 0.1.2
+Summary: Aldebaran Python Client
+Home-page: https://aldebaran.signate.jp
+Author: SIGNATE Inc.
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Aldebaran Python Client is a client library for accessing Aldebaran from python code. This library also gets bundled with any Python algorithms in Aldebaran.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
