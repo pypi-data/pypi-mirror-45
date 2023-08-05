@@ -1,0 +1,11 @@
+vidtext/__init__.py,sha256=vOv1inCcQwNjoAzNZ6nsdNYx8_H9_zmr3RC6wiLOuvQ,238
+vidtext/directory.py,sha256=7MXMAlnvH4CQt-CRcLVzlktyEmu2X2aWmd7mznTMtdw,306
+vidtext/image_utils.py,sha256=w2T85jIIm5elQRbLhNbOgq6bNEIFXkHLA8sGR0brL00,5562
+vidtext/imagesource.py,sha256=o0WYrAWDybYKWkY-fPjjqnDSEH6MOWtz05SM5JLQwqQ,506
+vidtext/text.py,sha256=kIsbWY3cXMcusCiXl6Jv_nniye3F5v4HzgyNp98gR1I,179
+vidtext/textTovideo.py,sha256=x2DBub3_PAUD1_9Hz6XGSVGhqVMPW_VkGUXu8g2MfDc,1504
+vidtext-1.1.dist-info/LICENSE,sha256=IFp1PwyMsrTh0NiX2HFQHow_naCUHDHZASfXq3VKAQs,1135
+vidtext-1.1.dist-info/METADATA,sha256=dsjJt-S_GxG4A8p7ldKWt1EGbJzN1TTqXsLTehrUV6Q,1384
+vidtext-1.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+vidtext-1.1.dist-info/top_level.txt,sha256=KmWI1giTMIDlhOxTYPr2zDj1Xu1QcMJHdXbtZRCMD-Y,8
+vidtext-1.1.dist-info/RECORD,,
