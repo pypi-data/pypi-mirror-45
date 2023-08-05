@@ -1,0 +1,5 @@
+argparse
+nbconvert
+nbformat
+pytest
+traitlets
