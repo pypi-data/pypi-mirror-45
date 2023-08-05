@@ -1,0 +1,11 @@
+jackmatchmaker/__init__.py,sha256=ZsCBofHiOHWwbC0d3VQ1bERHxKfqs9PVMnnF2w_3gNU,16381
+jackmatchmaker/__main__.py,sha256=qtHZqbCKS--s1c1ft-KGpC7gcYEcjwLurHkfqMvJ2ww,200
+jackmatchmaker/jacklib.py,sha256=v3mYto3oO2ENKp1xSam3siaK_0MLtK53etXI0BaZtOM,55988
+jackmatchmaker/jacklib_helpers.py,sha256=dGMB14Ax9PuMhRLok0AxLUBpXaGnyyjyclKQZTtXTog,4341
+jackmatchmaker/version.py,sha256=_hTjHryrBBUv61iOpggmbS_-owF5LBlVywIwus6mZuw,47
+jack_matchmaker-0.7.0.dist-info/LICENSE,sha256=2MMg_8ADDRsJauRzK1DSuBHPlemptzd8ESeyVj4KA4g,15220
+jack_matchmaker-0.7.0.dist-info/METADATA,sha256=SdDvfXwR4ZaZJwHFNsU_UOGmd6FthVunQt7VZbXRwnw,10841
+jack_matchmaker-0.7.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jack_matchmaker-0.7.0.dist-info/entry_points.txt,sha256=cNMHwzsMDH9kePoacRZWOFzuKXIk33ABMv5vk-1YWHw,57
+jack_matchmaker-0.7.0.dist-info/top_level.txt,sha256=ABZ1WuL63fTsRk9V4fcAyBdT_lhyeXt9hJFcjZ_PTwo,15
+jack_matchmaker-0.7.0.dist-info/RECORD,,
