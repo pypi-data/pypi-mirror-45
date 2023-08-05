@@ -1,0 +1,9 @@
+#+TITLE: TODO list for spiral_ganglion
+#+AUTHOR: Marek Rudnicki
+#+CATEGORY: sg
+
+* TODO Implement run_ci_simulation using thorns.util.map()
+* MAYBE find_threshold() should accept stimulus in an analytical form
+
+ATM find_threshold() accepts a numerical array as stimulus, which
+might lead to some imprecision.
