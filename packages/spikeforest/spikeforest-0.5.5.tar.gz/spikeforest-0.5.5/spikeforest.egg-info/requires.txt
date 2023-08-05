@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+requests
+pillow
+pandas
+ipython
+h5py
+setuptools-git
+scikit-learn
+spikeextractors<0.4,>=0.3
