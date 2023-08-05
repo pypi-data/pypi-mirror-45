@@ -1,0 +1,9 @@
+numpy
+scipy
+sklearn
+pandas
+tensorflow
+kears
+align-it
+deepchem
+rdkit
