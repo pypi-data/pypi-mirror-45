@@ -1,0 +1,50 @@
+{% extends "richie/fullwidth.html" %}
+{% load cms_tags i18n static %}
+
+{% block content %}{% spaceless %}
+{% with organization=current_page.organization header_level=2 %}
+<div class="organization-detail">
+  <div class="organization-detail__banner">
+    {% placeholder "banner" or %}
+      <div class="organization-detail__banner__empty">{% trans "Banner" %}</div>
+    {% endplaceholder %}
+  </div>
+
+  <div class="organization-detail__logo">
+    {% with width=216 height=120 %}
+      {% placeholder "logo" or %}
+        <div class="organization-detail__logo__empty">{% trans "Logo" %}</div>
+      {% endplaceholder %}
+    {% endwith %}
+  </div>
+
+  <h1 class="organization-detail__title">{% render_model request.current_page "title" %}</h1>
+
+  <div class="organization-detail__content">
+    <div class="organization-detail__content__description">
+      {% placeholder "description" %}
+    </div>
+  </div>
+</div>
+
+{% with courses=organization.get_courses %}
+  {% if courses %}
+  <div class="course-glimpse-list">
+    <h2 class="course-glimpse-list__title">{% trans "Related courses" %}</h2>
+    {% for course in courses %}
+      {% if course.extended_object.publisher_is_draft is True %}
+        <a class="course-glimpse course-glimpse--link course-glimpse--draft" href="{{ course.extended_object.get_absolute_url }}">
+          {% include "courses/cms/fragment_course_glimpse.html" %}
+        </a>
+      {% elif course.check_publication is True %}
+        <a class="course-glimpse course-glimpse--link" href="{{ course.extended_object.get_absolute_url }}">
+          {% include "courses/cms/fragment_course_glimpse.html" %}
+        </a>
+      {% endif %}
+    {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+{% endwith %}
+{% endspaceless %}{% endblock content %}
