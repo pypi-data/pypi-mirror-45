@@ -1,0 +1,5 @@
+requests
+datacite
+progressbar2
+idutils
+caltechdata_api
