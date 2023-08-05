@@ -1,0 +1,2 @@
+include README.md
+include pelican_render_math/mathjax_script_template.js
