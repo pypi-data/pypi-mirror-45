@@ -1,0 +1,3 @@
+[console_scripts]
+schtex = schtex:main
+
