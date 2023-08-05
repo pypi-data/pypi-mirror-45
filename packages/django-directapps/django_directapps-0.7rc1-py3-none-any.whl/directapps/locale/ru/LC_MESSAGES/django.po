@@ -1,0 +1,106 @@
+# DirectApps.
+# Copyright (c) 2016, Grigoriy Kramarenko
+# All rights reserved.
+# This file is distributed under the same license as the current project.
+#
+# Translators:
+# Григорий Крамаренко <djbaldey@gmail.com>, 2019
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: directapps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-19 17:46+1000\n"
+"PO-Revision-Date: 2019-04-19 07:42+0000\n"
+"Last-Translator: Григорий Крамаренко <djbaldey@gmail.com>, 2019\n"
+"Language-Team: Russian (https://www.transifex.com/rosix/teams/98306/ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps.py:12
+msgid "Direct Apps"
+msgstr "Direct Apps"
+
+#: controllers.py:154
+msgid "hash"
+msgstr "хеш"
+
+#: controllers.py:210
+msgid "The request body does not contain the list id."
+msgstr "Тело запроса не содержит списка идентификаторов."
+
+#: controllers.py:226
+msgid "Not contains fields for object."
+msgstr "Не содержит поля для объекта."
+
+#: controllers.py:284
+msgid "The action name must be in lower case."
+msgstr "Имя действия должно быть в нижнем регистре."
+
+#: controllers.py:289
+#, python-format
+msgid "Method '%s' is forbidden for action."
+msgstr "Метод '%s' запрещён для действия."
+
+#: controllers.py:304
+#, python-format
+msgid "Action '%s' not exist."
+msgstr "Действия '%s' не существует."
+
+#: controllers.py:458
+msgid "Please send correct relation name."
+msgstr "Пожалуйста, отправьте правильное название связи."
+
+#: controllers.py:866
+#, python-format
+msgid "Relation '%s' not exist."
+msgstr "Отношения '%s' не существует."
+
+#: views.py:46
+msgid "You need to login."
+msgstr "Вам нужно авторизоваться."
+
+#: views.py:49
+msgid "You don't have access to this page."
+msgstr "Вы не имеете доступа на эту страницу."
+
+#: views.py:59
+msgid "You don't have access to this application."
+msgstr "Вы не имеете доступа к этому приложению."
+
+#: views.py:63
+msgid "Application is disabled."
+msgstr "Приложение отключено."
+
+#: views.py:68
+msgid "Application not found."
+msgstr "Приложение не найдено."
+
+#: views.py:77
+msgid "Model not found."
+msgstr "Модель не найдена."
+
+#: views.py:79
+msgid "Model is disabled."
+msgstr "Модель отключена."
+
+#: views.py:84
+msgid "You don't have access to this model."
+msgstr "Вы не имеете доступа к этой модели."
+
+#: views.py:104
+msgid "You don't have access to this action."
+msgstr "Вы не имеете доступа к этому действию."
+
+#: views.py:107
+msgid "Object not found."
+msgstr "Объект не найден."
+
+#: views.py:111
+msgid "Not implemented."
+msgstr "Не реализовано."
