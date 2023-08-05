@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mlo
+Version: 0.0.1
+Summary: Machine learning objects
+Home-page: https://github.com/laghaout/machine-learning-toolbox
+Author: Amine Laghaout
+Author-email: aknary@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Longer description to come
+
+
