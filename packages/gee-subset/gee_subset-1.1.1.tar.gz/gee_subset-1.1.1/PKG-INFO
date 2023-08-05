@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: gee_subset
+Version: 1.1.1
+Summary: Subset Google Earth Engine data
+Home-page: https://github.com/khufkens/gee_subset
+Author: Koen Hufkens
+Author-email: koen.hufkens@gmail.com
+License: AGPL-3
+Download-URL: https://github.com/khufkens/gee_subset/archive/1.1.0.tar.gz
+Description: UNKNOWN
+Keywords: remote sensing,api,subsets
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2.6
