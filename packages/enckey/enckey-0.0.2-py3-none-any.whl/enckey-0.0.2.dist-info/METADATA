@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: enckey
+Version: 0.0.2
+Summary: a tools to encrypt personal private keys
+Home-page: https://github.com/maxsuren/enckey
+Author: hammo
+Author-email: hammo@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: pycrypto
+
+UNKNOWN
+
+
