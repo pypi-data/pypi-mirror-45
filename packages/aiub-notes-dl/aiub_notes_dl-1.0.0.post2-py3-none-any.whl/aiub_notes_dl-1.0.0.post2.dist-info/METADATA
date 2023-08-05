@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: aiub-notes-dl
+Version: 1.0.0.post2
+Summary: Download notes from AIUB portal
+License: MIT
+Author: Fahad Hossain
+Author-email: evilinfinite7@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: BeautifulSoup4 (>=4.7,<5.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Description-Content-Type: text/x-rst
+
+aiub-notes-dl
+=============
+
+Download notes from AIUB Portal
+
+Originally created by `Niaz Ahmed`_
+
+.. _Niaz Ahmed: mailto:mr.niaz@live.com
+
+Installation
+------------
+
+The package is available on PyPI as ``aiub-notes-dl``. So, it can be
+easily installed using pip.
+
+.. code:: sh
+
+   pip install aiub-notes-dl
+
+Usage
+-----
+
+``cd`` to your desired directory and run ``aiubnotesdl``.
+
+Follow the instructions on the CLI.
+
+License
+-------
+
+MIT
+
