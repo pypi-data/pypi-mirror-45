@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+pubsub_queue/__init__.py
+pubsub_queue/queue_consumer.py
+pubsub_queue/queue_publisher.py
+pubsub_queue.egg-info/PKG-INFO
+pubsub_queue.egg-info/SOURCES.txt
+pubsub_queue.egg-info/dependency_links.txt
+pubsub_queue.egg-info/requires.txt
+pubsub_queue.egg-info/top_level.txt

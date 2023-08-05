@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pubsub-queue
+Version: 0.0.7
+Summary: PubSub Queue Manager
+Home-page: https://github.com/N2BBrasil/pubsub-queue
+Author: Samuel Heinrichs
+Author-email: samuel@n2bbrasil.com
+License: UNKNOWN
+Description: PubSub Queue Manager
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
