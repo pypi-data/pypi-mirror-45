@@ -1,0 +1,6 @@
+nltk==3.2.1
+scikit-learn==0.19.1
+python-docx
+requests
+pdfminer.six
+pattern==3.6
