@@ -1,0 +1,8 @@
+README.md
+setup.py
+cassandra_csv.egg-info/PKG-INFO
+cassandra_csv.egg-info/SOURCES.txt
+cassandra_csv.egg-info/dependency_links.txt
+cassandra_csv.egg-info/top_level.txt
+cassandracsv/__init__.py
+cassandracsv/cassandracsv.py

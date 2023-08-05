@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cassandra-csv
+Version: 0.1
+Summary: Export cassandra query result to CSV
+Home-page: https://github.com/wmarquardt/cassandra-csv
+Author: William Marquardt
+Author-email: williammqt@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
