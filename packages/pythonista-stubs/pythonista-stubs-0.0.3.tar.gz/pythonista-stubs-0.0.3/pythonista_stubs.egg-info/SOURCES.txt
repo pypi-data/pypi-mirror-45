@@ -1,0 +1,13 @@
+README.md
+setup.py
+pythonista_stubs.egg-info/PKG-INFO
+pythonista_stubs.egg-info/SOURCES.txt
+pythonista_stubs.egg-info/dependency_links.txt
+pythonista_stubs.egg-info/requires.txt
+pythonista_stubs.egg-info/top_level.txt
+stubs/appex/__init__.pyi
+stubs/clipboard/__init__.pyi
+stubs/console/__init__.pyi
+stubs/reminders/__init__.pyi
+stubs/sound/__init__.pyi
+stubs/speech/__init__.pyi

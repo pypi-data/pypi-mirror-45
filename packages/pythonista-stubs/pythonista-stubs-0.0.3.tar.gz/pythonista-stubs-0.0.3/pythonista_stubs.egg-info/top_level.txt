@@ -1,0 +1,6 @@
+appex-stubs
+clipboard-stubs
+console-stubs
+reminders-stubs
+sound-stubs
+speech-stubs
