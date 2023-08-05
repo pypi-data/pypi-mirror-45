@@ -1,0 +1,11 @@
+d2a/__init__.py,sha256=NGF26PPNGTGVJ-8WmBMI-4UGC3SOdYD3S6g3CPAD9oM,5339
+d2a/apps.py,sha256=L_RpGy1dRv15IHMgJf02stug9hPyDzYnfV1CdgykKxc,550
+d2a/compat.py,sha256=YyXw05Rqrrirn0wNWkNK8O3q8TDM__23ON8o7VFOuYY,197
+d2a/db.py,sha256=mtHcan6CaN-3wzFx8R84M6uvYDBiYYKVONhyNdad2Zc,8619
+d2a/fields.py,sha256=0WKLa4Bu1GE5mxHTnPoOLVD-ayc7p-2CDBnAp820lNA,14218
+d2a/parsers.py,sha256=Rz8g_uq0RjTgYQMygkutjtVXypMysF0vxmT6oMicgQw,2038
+d2a/utils.py,sha256=_mW4lQyruntNalmWJxKJG26QkMQjhyrwZEZ7ocFHp0Q,261
+d2a-2.1.0.dist-info/METADATA,sha256=OpIDSUuTcqX3sF_OjOcN7_JXtD9ShBnzhmgktCxQAPY,13271
+d2a-2.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+d2a-2.1.0.dist-info/top_level.txt,sha256=idhJCLBMEzqbjC0U_MQmjKu7TzF120SqHW14soXWLig,4
+d2a-2.1.0.dist-info/RECORD,,
