@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyrotools
+Version: 1.0.1
+Summary: General utils for python, used mainly for development
+Home-page: https://github.com/NaturalBornCamper/pyrotools
+Author: NaturalBornCamper
+Author-email: pypi@naturalborncamper.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Pyro Tools for Python
+======================
+
+Installation:
+
+    pip install pyrotools
+
+Usage
+
+    # Print array/dictionary in readable format
+    from pyrotools.print import pprint
+
+    var = ["Bob", 1, 2]
+    pprint(var)
+
