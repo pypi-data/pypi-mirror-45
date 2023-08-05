@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spoffy
+Version: 0.1.0
+Summary: Spotify API client with async and sync support
+Home-page: None
+Author: Steinthor Palsson
+Author-email: steini90@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=19,<20)
+Requires-Dist: cattrs (>=0.9,<0.10)
+Requires-Dist: urlobject (>=2,<3)
