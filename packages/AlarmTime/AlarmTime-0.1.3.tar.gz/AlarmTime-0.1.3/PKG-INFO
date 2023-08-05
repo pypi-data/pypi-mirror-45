@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AlarmTime
+Version: 0.1.3
+Summary: Detect alarm time from natural sentence and calculate time difference from current time to target time.
+Home-page: https://github.com/shohan98/alarm_time_claculate
+Author: Md. Shohanur Rahman
+Author-email: dshohan112@gmail.com
+License: MIT
+Description: For calculating time difference from current time to Target time and can detect a time from our natural language
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
