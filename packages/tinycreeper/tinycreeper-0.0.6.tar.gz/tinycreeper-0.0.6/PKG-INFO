@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: tinycreeper
+Version: 0.0.6
+Summary: Easily integrates linters into your projects.
+Home-page: UNKNOWN
+Author: James Salvatore
+Author-email: jimmy.c.salvatore@gmail.com
+License: MIT
+Description: # Tiny Creeper
+        
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/jsal13/tiny-creeper/master/public/images/creeper1.gif">
+        </p>
+        
+        Tiny Creeper is a CLI that automates putting linting and pre-commit hooks into your repo.  It currently supports:
+        
+        - [x] Python (black, 110 lines)
+        - [ ] R (lintr, styler) (Need help here...)
+        - [ ] Vue + JS + HTML + CSS (prettier, eslint)
+        
+        ## Quickstart
+        
+        To install and use:
+        
+        ```bash
+        pip install tinycreeper
+        cd your_repo_root
+        tinycreeper init
+        ```
+        
+        That's it.  To lint before pre-commit, run
+        
+        ```bash
+        tinycreeper lint
+        ```
+        
+        and for help run
+        
+        ```bash
+        tinycreeper --help
+        ```
+        
+        ---
+        
+        > Creepers are generally unobtrusive and are often indifferent to humans.  
+        > Their bills are gently down-curved and rather long, used for probing bark for bugs.
+        
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/jsal13/tiny-creeper/master/public/images/creeper3_lg.gif">
+        </p>
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Description-Content-Type: text/markdown
