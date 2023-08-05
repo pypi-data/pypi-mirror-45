@@ -1,0 +1,7 @@
+cohort_compare/__init__.py,sha256=ytviLt8IkdX0372eS_SHZmB0IcgMFgHt05ZcbdWV_4Q,15669
+cohort_compare/data/County_Data_after_impute_after_scaling.csv,sha256=Ne5SUcKsuCbf9xIzmlsDdnW5jpctmf4INsn9k5_4IV4,3602985
+cohort_compare/data/us-albers-counties.json,sha256=vgG8lCMB_yYsI_Y3OeXn4h7-5HWX4vkOrsH-WHEzeW0,1240597
+cohort_compare-0.2.5.dist-info/METADATA,sha256=YL5PJQ8l9yhppoJ1U1jsfYo727NVvxlj-fG1ON0IYK4,819
+cohort_compare-0.2.5.dist-info/RECORD,,
+cohort_compare-0.2.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+cohort_compare-0.2.5.dist-info/top_level.txt,sha256=HaBkGDQ3Fwo3DlcFmjpf_4Eu8Uuh28Ty37tnEpi1M5M,15
