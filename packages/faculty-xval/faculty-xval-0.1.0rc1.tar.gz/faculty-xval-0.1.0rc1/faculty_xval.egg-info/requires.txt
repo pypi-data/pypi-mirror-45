@@ -1,0 +1,6 @@
+click
+faculty
+keras>=2.2.4
+numpy
+scikit_learn
+tensorflow

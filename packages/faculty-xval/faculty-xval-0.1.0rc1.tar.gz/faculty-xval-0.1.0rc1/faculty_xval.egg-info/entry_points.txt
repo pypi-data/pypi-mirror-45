@@ -1,0 +1,3 @@
+[console_scripts]
+faculty_xval_jobs_xval = faculty_xval.bin.jobs_cross_validation_executor:main
+
