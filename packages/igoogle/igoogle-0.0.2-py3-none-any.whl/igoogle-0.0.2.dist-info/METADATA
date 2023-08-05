@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: igoogle
+Version: 0.0.2
+Summary: innovata-sambong-google
+Home-page: https://github.com/innovata/igoogle
+Author: innovata sambong
+Author-email: iinnovata@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# igoogle (innovata google apis)
+
+
+구글에서 제공하는 공식 API만 다룬다.
+
+#============================================================
+# 필수 사전작업
+#============================================================
+- Google-Auth를 위한 client-secret.json 파일 위치를 수동으로 저장.
+export GOOGLE_AUTH_PATH=<your "client_secret.json" file's folder path>
+
+
+#============================================================
+# 라이브러리
+#============================================================
+
+# gsheets
+https://github.com/xflr6/gsheets
+https://developers.google.com/drive/api/v3/quickstart/python
+https://gsheets.readthedocs.io/en/stable/index.html
+
+

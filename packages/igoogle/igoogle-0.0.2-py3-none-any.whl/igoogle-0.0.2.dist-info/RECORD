@@ -1,0 +1,13 @@
+igoogle/__init__.py,sha256=9gWn5_uCtAwvRjPUd2pjhDnNlMoye3AYJNDjPMzdkU4,381
+igoogle/auth.py,sha256=223jMW9FExCY8YVreBMzRgnHyzlULyXf8tyFYe8RirY,1457
+igoogle/drive.py,sha256=mv0vn-VoXjbpK0c09J4SxIHr_wzu8YiSHyEdqYOHWvI,767
+igoogle/gmail.py,sha256=BCq_HGjl4-mZy69OfO3z2rmHgdcuRFxRvndVco5Zpqk,12186
+tests/__init__.py,sha256=2A9b5QEcadkKu-6D_nnJDS2YCUkE0ESMCgWHn2NUwbY,209
+tests/auth.py,sha256=uOGvRTbtO7fmajspTYT2yFXXjzah3j-pmSTTzVOnSic,844
+tests/dbg.py,sha256=M_VPp1KqefAgAde_vITp8JhZlh1Cpni36wZezWz6mNc,929
+tests/drive.py,sha256=ZINGk-RLOJF2suCZtdyYmytRMvQnCW3m9m25VbQoBvk,1243
+igoogle-0.0.2.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+igoogle-0.0.2.dist-info/METADATA,sha256=0pJUf-F8RGgWx3TVKo_9Rdq7pEvFUSb7_hc_sDIPRWk,1100
+igoogle-0.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+igoogle-0.0.2.dist-info/top_level.txt,sha256=lJc5Wc1P3b2PmjHhEJg00ONP9afNNMUZ5T9MTMqhgbk,14
+igoogle-0.0.2.dist-info/RECORD,,
