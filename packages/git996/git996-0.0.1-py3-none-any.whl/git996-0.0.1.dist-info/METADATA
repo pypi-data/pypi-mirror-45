@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: git996
+Version: 0.0.1
+Summary: One command to sync multiple git repositories
+Home-page: https://github.com/chengyi818/git996
+Author: chengyi
+Author-email: chengyi818@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: toml
+Requires-Dist: arghandler
+Requires-Dist: gitpython
+Requires-Dist: texttable
+
+UNKNOWN
+
+
