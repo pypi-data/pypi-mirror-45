@@ -1,0 +1,10 @@
+pvcastro_iberlef/__init__.py,sha256=RG4VXdPTahrcTbQzedhJwuyMrGwN3BOHt6oj2a-BWJ4,101
+pvcastro_iberlef/evaluate_ner.py,sha256=XwTXRbl2OWdqqrhCACtxqBvEi8CIWtJvf5FbCbIpIFU,2530
+pvcastro_iberlef/iberlef_ner_input_reader.py,sha256=C-wvk8N11zYhLl--DRHU-pE4fbn_CfMAcFyvpoWaaE4,4227
+pvcastro_iberlef/predict_ner.py,sha256=0g5BcXbYL-RkqrUV8N_VAHjDGn7J04aGP5G701dU9c4,2448
+pvcastro_iberlef/tagging_scheme.py,sha256=Uhjqk6A5fOrAuQOj8QhDxijwzYe8_LdBc82SbhiIq94,1075
+pvcastro_iberlef-0.3.4.dist-info/METADATA,sha256=-1Lpxgd8rEb4Hk634HMtT2bvt6heMzhk5QIEHUe2dYY,3939
+pvcastro_iberlef-0.3.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pvcastro_iberlef-0.3.4.dist-info/top_level.txt,sha256=YxCiRFrnlIqI3ohVRkggA6xiB12VE6tRq4wWo_411Ks,17
+pvcastro_iberlef-0.3.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pvcastro_iberlef-0.3.4.dist-info/RECORD,,
