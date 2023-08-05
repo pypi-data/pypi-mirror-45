@@ -1,0 +1,8 @@
+README.md
+setup.py
+iso639_1/__init__.py
+iso639_1/language.py
+iso639_1.egg-info/PKG-INFO
+iso639_1.egg-info/SOURCES.txt
+iso639_1.egg-info/dependency_links.txt
+iso639_1.egg-info/top_level.txt
