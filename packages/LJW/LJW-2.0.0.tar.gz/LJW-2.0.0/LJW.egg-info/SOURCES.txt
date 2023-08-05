@@ -1,0 +1,10 @@
+README.md
+setup.py
+LJW/LJW_Upgrade.py
+LJW/LJW_legacy.py
+LJW/LJW_old.py
+LJW/__init__.py
+LJW.egg-info/PKG-INFO
+LJW.egg-info/SOURCES.txt
+LJW.egg-info/dependency_links.txt
+LJW.egg-info/top_level.txt
