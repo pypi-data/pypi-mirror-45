@@ -1,0 +1,6 @@
+statick
+backports.tempfile
+
+[test]
+pytest
+mock
