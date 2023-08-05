@@ -1,0 +1,3 @@
+[console_scripts]
+pipstripper = pip_stripper._pip_stripper:main
+
