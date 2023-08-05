@@ -1,0 +1,9 @@
+README.md
+setup.py
+shopify_converter/__init__.py
+shopify_converter/order_converter.py
+shopify_converter/product_converter.py
+shopify_converter.egg-info/PKG-INFO
+shopify_converter.egg-info/SOURCES.txt
+shopify_converter.egg-info/dependency_links.txt
+shopify_converter.egg-info/top_level.txt
