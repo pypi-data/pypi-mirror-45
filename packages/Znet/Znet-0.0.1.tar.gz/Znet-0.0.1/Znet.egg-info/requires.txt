@@ -1,0 +1,5 @@
+numpy>=1.6
+pandas>=0.22.0
+matplotlib>=2.0.2
+rpy2>=2.8.6
+ascii_graph>=1.5.1
