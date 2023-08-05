@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+fuck996/__init__.py
+fuck996/fuck996.py
+fuck996.egg-info/PKG-INFO
+fuck996.egg-info/SOURCES.txt
+fuck996.egg-info/dependency_links.txt
+fuck996.egg-info/top_level.txt
