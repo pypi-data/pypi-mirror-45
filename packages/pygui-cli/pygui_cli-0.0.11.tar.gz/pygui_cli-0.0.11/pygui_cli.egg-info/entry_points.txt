@@ -1,0 +1,3 @@
+[console_scripts]
+pygui_cli = source.template_cli.tpl:main
+
