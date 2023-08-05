@@ -1,0 +1,39 @@
+Metadata-Version: 1.0
+Name: GXBubble
+Version: 0.1.26
+Summary: GameBox Bubble Python Package
+Home-page: UNKNOWN
+Author: mouguangyi
+Author-email: mouguangyi@ztgame.com
+License: MIT
+Description: # GameBox Bubble
+        
+        项目流管理
+        
+        ## 资产命令
+        
+        - 添加环境变量:ASSET_CONSOLE=资产命令行目录
+        - 命令行参数里中划线(-)改成下划线(_),如：project-id=>project_id
+        
+            ```python
+            AssetCli().run(
+                user="user",
+                password="password",
+                project_id=项目id,
+                channel_id=渠道id,
+                asset="上传路径",
+                app_version="1.0.0.0", # 指定应用版本
+                # asset_version="1.0.0.1", # 不指定使用自动累加
+                auto_version=True, # 自动累加资产版本号
+            )
+            ```
+        
+        ## 上传命令
+        
+        - 修改版本号后
+        - python setup.py sdist upload
+        
+        ## Mac
+        
+        pip3 install --upgrade GXBubble
+Platform: UNKNOWN
