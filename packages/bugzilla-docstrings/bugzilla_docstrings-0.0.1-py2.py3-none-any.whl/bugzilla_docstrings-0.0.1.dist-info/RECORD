@@ -1,0 +1,10 @@
+bugzilla_docstrings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bugzilla_docstrings/checker.py,sha256=W38x8nIjkjK1W4OpQTvAVYXzPBkA8OUa-xQHvU0jqR8,6114
+bugzilla_docstrings/flake8_plugin.py,sha256=y1xsR99ONQDvCVgxzzDZh_Q-P6K_q67OX9PHrQzerhk,1617
+bugzilla_docstrings/parser.py,sha256=8HVNojlYfh_KipPvhmd1BxDeQclJC8h--CcOkgkcbBY,8113
+bugzilla_docstrings/utils.py,sha256=2_cR_jsOQdJ6TNnXidsZ3Jycqvx7dFNSHboCfi7aP4k,802
+bugzilla_docstrings-0.0.1.dist-info/METADATA,sha256=i_0qJIa6Iro_Z6_lRHN-vxrNUQYRFZP0FWDeJXsh_oQ,2164
+bugzilla_docstrings-0.0.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+bugzilla_docstrings-0.0.1.dist-info/entry_points.txt,sha256=qMjHdObXkDrS_K8mOGG-mx08LDCYAoSOzrlJohMDSxk,85
+bugzilla_docstrings-0.0.1.dist-info/top_level.txt,sha256=Y6devij2tS4BP0qgt60NefCMO6t3A5tVSEBggBOAEVE,20
+bugzilla_docstrings-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[flake8.extension]
+B66 = bugzilla_docstrings.flake8_plugin:BugzillaDocstringsPlugin
+
