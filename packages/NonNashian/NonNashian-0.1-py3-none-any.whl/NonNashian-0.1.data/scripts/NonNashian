@@ -1,0 +1,111 @@
+from ExtensiveFormEquilibria import spe as __spe, ppe as __spe, shiffrin as __shiffrin
+from ExtensiveFormGenerator import sample_extensive_form_random_dup as __sample_extensive_form_random_dup, sample_extensive_form_random_nodup as __sample_extensive_form_random_nodup, sample_extensive_form_alternating_dup as __sample_extensive_form_alternating_dup, sample_extensive_form_alternating_nodup as __sample_extensive_form_alternating_nodup, convert_two_player_ef_to_nf as __convert_two_player_ef_to_nf
+
+from NormalFormEquilibria import nash as __nash, rationalizability as __rationalizability, individual as __individual, idip as __idip, hofstader as __hofstader, pte as __pte, minimax as __minimax, translucent as __translucent, pce as __pce, mpce as __mpce, irmme as __irmme, get_equilibria as __get_equilibria
+from NormalFormGenerator import generate_games as __generate_games, game_generation as __game_generation
+
+
+'''
+
+	Normal Form Game Generation
+
+'''
+def generate_games(num_actions, num_players, duplicates=False, symmetric=False, sample=None):
+	return __generate_games(num_actions, num_players, duplicates, symmetric, sample)
+
+
+def game_generation(num_actions, num_players, duplicates, symmetric, sample, save_route=None, the_file=None):
+	return __game_generation(num_actions, num_players, duplicates, symmetric, sample, save_route, the_file)
+
+
+
+'''
+
+	Normal Form Equilibria
+
+'''
+
+def nash(gameDict):
+	return __nash(gameDict)
+
+def rationalizability(gameDict):
+	return __rationalizability(gameDict)
+
+def individual(gameDict):
+	return __individual(gameDict)
+
+def idip(gameDict):
+	return __idip(gameDict)
+
+def hofstader(gameDict):
+	return __hofstader(gameDict)
+
+def pte(gameDict):
+	return __pte(gameDict)
+
+def minimax(gameDict):
+	return __minimax(gameDict)
+
+def translucent(gameDict):
+	return __translucent(gameDict)
+
+def pce(gameDict):
+	return __pce(gameDict)
+
+def mpce(gameDict):
+	return __mpce(gameDict)
+
+def irmme(gameDict):
+	return __irmme(gameDict)
+
+def get_equilibria(equilibria, game_list):
+	return __get_equilibria(equilibria, game_list)
+
+
+
+'''
+
+	Extensive Form Game Generation
+
+'''
+
+
+def sample_extensive_form_random_dup(max_num_actions, max_depth):
+	return __sample_extensive_form_random_dup(max_num_actions, max_depth)
+
+def sample_extensive_form_random_nodup(max_num_actions, max_depth):
+	return __sample_extensive_form_random_nodup(max_num_actions, max_depth)
+
+def sample_extensive_form_alternating_dup(num_actions, depth):
+	return __sample_extensive_form_alternating_dup(num_actions, depth)
+
+def sample_extensive_form_alternating_nodup(num_actions, depth):
+	return __sample_extensive_form_alternating_nodup(num_actions, depth)
+
+def convert_two_player_ef_to_nf(game):
+	return __convert_two_player_ef_to_nf(game)
+
+
+
+'''
+
+	Extensive Form Equilibria
+
+'''
+def spe(game):
+	return __spe(game)
+
+def ppe(game):
+	return __ppe(game)
+
+def shiffrin(game):
+	return __shiffrin(game)
+
+
+
+
+
+
+
+
+

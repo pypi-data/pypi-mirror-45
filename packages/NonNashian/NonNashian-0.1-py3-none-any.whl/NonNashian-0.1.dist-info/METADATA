@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: NonNashian
+Version: 0.1
+Summary: Non Nashian Game Theory Python Module to Generate Games and to compute Equilibria
+Home-page: https://github.com/FelipeSulser/NonNashianGameTheory
+Author: Felipe Sulser
+Author-email: felipesulser@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+
+Non Nashian Game Theory Python Module to Generate Games and to compute Equilibria
+
+
