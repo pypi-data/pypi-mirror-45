@@ -1,0 +1,9 @@
+pelican_render_math/__init__.py,sha256=Jx48aKaJy2GEWEuj9pN4N0BcYUiqNr198cDaJ6HRhy8,252
+pelican_render_math/math.py,sha256=XUYeP-I_U34tYIM2yL4fPckmbnYwyfHltEmMTlSnM6E,14186
+pelican_render_math/mathjax_script_template.js,sha256=lGH_s28E2PTOs1YpTlZJ73-UdGjTTqXgsEkLeBQHASY,2994
+pelican_render_math/pelican_mathjax_markdown_extension.py,sha256=gQdfwXxeuksQYNj8M3rt4oJo-MQ4tIRnjpRLzsK-zbc,6929
+pelican_render_math-0.3.0.dist-info/LICENSE,sha256=oTdNssQkkkMIGejDtRPwvoSTAuQjkwZB0hzCLbuuvgY,1069
+pelican_render_math-0.3.0.dist-info/METADATA,sha256=AbhYTComBljWCZeBJ2QNFIaH1CnNYhs39RCmbzloaaQ,8299
+pelican_render_math-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pelican_render_math-0.3.0.dist-info/top_level.txt,sha256=xiDiZw4IkEgeLc_TWN5BYCZPqGP3OYYk1QahnXLgW_c,20
+pelican_render_math-0.3.0.dist-info/RECORD,,
