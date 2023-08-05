@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: time_operators
+Version: 0.0.1
+Summary: A library to perform math operations with time and timezones
+Home-page: https://github.com/williamcaesar/Time-Operators
+Author: William Cæsar
+Author-email: williamcaesar@pm.me
+License: UNKNOWN
+Description: Time Operators
+        ---
+        A library to perform math operations with time and timezones.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_timeFormater.py
+time_operators/__init__.py
+time_operators/operators.py
+time_operators.egg-info/PKG-INFO
+time_operators.egg-info/SOURCES.txt
+time_operators.egg-info/dependency_links.txt
+time_operators.egg-info/top_level.txt
