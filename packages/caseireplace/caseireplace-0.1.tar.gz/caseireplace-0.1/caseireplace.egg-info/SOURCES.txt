@@ -1,0 +1,8 @@
+README.md
+setup.py
+caseireplace/__init__.py
+caseireplace/caseireplace.py
+caseireplace.egg-info/PKG-INFO
+caseireplace.egg-info/SOURCES.txt
+caseireplace.egg-info/dependency_links.txt
+caseireplace.egg-info/top_level.txt
