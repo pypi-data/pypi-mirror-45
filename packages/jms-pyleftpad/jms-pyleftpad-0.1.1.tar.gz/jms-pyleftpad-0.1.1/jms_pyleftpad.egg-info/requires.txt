@@ -1,0 +1,11 @@
+
+[docs]
+Sphinx>=1.7.6
+
+[tests]
+flake8
+flake8-import-order<0.19,>=0.18
+flake8-import-order-spoqa<1.5,>=1.4.1
+pytest>=3.7.1
+pytest-flake8<1.1,>=1.0.2
+tox>=3.2.1

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jms-pyleftpad
+Version: 0.1.1
+Summary: Python leftpad
+Home-page: https://github.com/jms7446/pyleftpad
+Author: jms7446
+Author-email: jms7446@gmail.com
+License: GPLv3
+Description: # pyleftpad
+Keywords: leftpad,pyleftpad
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests

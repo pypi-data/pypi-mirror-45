@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+jms_pyleftpad.egg-info/PKG-INFO
+jms_pyleftpad.egg-info/SOURCES.txt
+jms_pyleftpad.egg-info/dependency_links.txt
+jms_pyleftpad.egg-info/entry_points.txt
+jms_pyleftpad.egg-info/requires.txt
+jms_pyleftpad.egg-info/top_level.txt
+pymyleftpad/__init__.py
+pymyleftpad/cli.py
+pymyleftpad/func.py
+tests/__init__.py
+tests/cli_test.py
+tests/test_f.py
