@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: d6dice
+Version: 0.2.1
+Summary: Simulated dice object
+Home-page: https://d6engine.org
+Author: Chuck Mo
+Author-email: chuck@d6engine.org
+Keywords: dice,d6engine,opend6
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Project-URL: Repository, https://gitlab.com/thechuckmo/d6dice
