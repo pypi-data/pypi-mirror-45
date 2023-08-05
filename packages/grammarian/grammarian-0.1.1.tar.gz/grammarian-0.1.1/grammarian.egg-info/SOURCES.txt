@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+grammarian/__init__.py
+grammarian/definitions.py
+grammarian/pydictionary.py
+grammarian/version.py
+grammarian.egg-info/PKG-INFO
+grammarian.egg-info/SOURCES.txt
+grammarian.egg-info/dependency_links.txt
+grammarian.egg-info/not-zip-safe
+grammarian.egg-info/requires.txt
+grammarian.egg-info/top_level.txt
