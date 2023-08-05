@@ -1,0 +1,6 @@
+include setup.py
+include README
+recursive-include cubicweb_varnish/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_varnish/i18n *.po
+recursive-include test/data bootstrap_cubes *.py
+include tox.ini

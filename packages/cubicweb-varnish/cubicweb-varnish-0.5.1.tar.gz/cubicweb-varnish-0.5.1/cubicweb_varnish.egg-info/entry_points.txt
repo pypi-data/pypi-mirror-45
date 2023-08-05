@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+varnish = cubicweb_varnish
+
