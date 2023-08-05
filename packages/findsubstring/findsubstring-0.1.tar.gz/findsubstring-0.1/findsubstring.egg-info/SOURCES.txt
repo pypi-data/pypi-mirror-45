@@ -1,0 +1,8 @@
+README.md
+setup.py
+findsubstring/__init__.py
+findsubstring/findsubstring.py
+findsubstring.egg-info/PKG-INFO
+findsubstring.egg-info/SOURCES.txt
+findsubstring.egg-info/dependency_links.txt
+findsubstring.egg-info/top_level.txt
