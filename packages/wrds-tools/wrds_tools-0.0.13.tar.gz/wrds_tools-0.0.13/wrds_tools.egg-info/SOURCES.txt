@@ -1,0 +1,9 @@
+README.md
+setup.py
+wrds_tools/__init__.py
+wrds_tools/wrds_connection.py
+wrds_tools.egg-info/PKG-INFO
+wrds_tools.egg-info/SOURCES.txt
+wrds_tools.egg-info/dependency_links.txt
+wrds_tools.egg-info/requires.txt
+wrds_tools.egg-info/top_level.txt
