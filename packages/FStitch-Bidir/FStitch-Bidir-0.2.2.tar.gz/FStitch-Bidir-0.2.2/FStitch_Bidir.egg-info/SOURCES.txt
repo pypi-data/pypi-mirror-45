@@ -1,0 +1,9 @@
+setup.py
+FStitch_Bidir.egg-info/PKG-INFO
+FStitch_Bidir.egg-info/SOURCES.txt
+FStitch_Bidir.egg-info/dependency_links.txt
+FStitch_Bidir.egg-info/entry_points.txt
+FStitch_Bidir.egg-info/requires.txt
+FStitch_Bidir.egg-info/top_level.txt
+bidir/__init__.py
+bidir/bidir.py
