@@ -1,0 +1,11 @@
+px4sitl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+px4sitl/cli.py,sha256=5DnqziPUpeqvA3gKnSIPsdGBhOZ825YeJz8XV92mhf8,945
+px4sitl-0.0.2.data/data/share/applications/org.osrfoundation.mcmillan_sitl.desktop,sha256=K6cKDpE74UUjvlNEEg3iSzquMHTe9VAzp8zJve9ZaN0,260
+px4sitl-0.0.2.data/data/share/applications/org.osrfoundation.yosemite_sitl.desktop,sha256=FuHsTs2NtzR3TGUlM6HnKCuNlyM4_Ft0aBRxoPyT14w,260
+px4sitl-0.0.2.dist-info/DESCRIPTION.rst,sha256=nIMKbKBMu7HcBvN7f2kQ-PcUQLIgJeIQRZbrEWW0CV0,53
+px4sitl-0.0.2.dist-info/METADATA,sha256=fGAn5_x-OKStmJW1U881XqJ1xJ5wS3SWVX2q-Nt2vmg,540
+px4sitl-0.0.2.dist-info/RECORD,,
+px4sitl-0.0.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+px4sitl-0.0.2.dist-info/entry_points.txt,sha256=i3FncFX95Hn05L35gwRJX2_0x8uuL-gEO2u19spOvds,99
+px4sitl-0.0.2.dist-info/metadata.json,sha256=2jMBc3fmXeojcCTljdb0lnIKZ0wKJ7AhfMSAe0GYzLw,973
+px4sitl-0.0.2.dist-info/top_level.txt,sha256=ZSW4N5Q34F8p9M-r1Q45Cz7cR9TbXaRUHpJTwZYPIh8,8

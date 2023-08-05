@@ -1,0 +1,4 @@
+[console_scripts]
+mcmillan_px4sitl = px4sitl.cli:mcmillan
+yosemite_px4sitl = px4sitl.cli:yosemite
+

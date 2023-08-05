@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=McMillanSITL
+Comment=3-D Robot simulator
+Exec=mcmillan_px4sitl
+Icon=gazebo
+Type=Application
+Categories=Development;Education;Science;
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Keywords=Run;
+Name[en_US]=McMillan SITL Trainer
+Terminal=true
