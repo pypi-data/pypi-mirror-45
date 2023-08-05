@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: syspath_fixer
+Version: 1.0.0
+Summary: add modules to syspath easily
+Home-page: https://github.com/TeodorIvanov/feedfinder3
+Author: Teodor Ivanov
+Author-email: tdrivanov@gmail.com
+License: MIT
+Description: add modules to syspath easily
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
