@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: hotxlfp
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/aidhound/hotxlfp
+Author: Leonel Câmara
+Author-email: leonelcamara@gmail.com
+License: MIT
+Download-URL: https://github.com/aidhound/hotxlfp/archive/0.0.1.tar.gz
+Description: # hotxlfp
+        
+        
+        
+        
+        
+        hotxlfp intends to be a python version of the javascript [handsontable excel formula parser](https://github.com/handsontable/formula-parser) differences are acceptable to make it more pythonic or the function implementations more correct.
+        
+        
+        
+        # Contributing
+        
+        
+        
+        Fork the project
+        
+        
+        
+        ## Installing Deppendencies  
+        
+          
+        
+        Depends on ply and python-dateutil.  
+        
+           
+        
+        To install dependencies automatically using pip run:
+        
+        
+        
+            pip install -r requirements.txt
+        
+          
+        
+        ## Testing   
+        
+        
+        
+            python setup.py test
+        
+        
+        
+        ## Coverage
+        
+        
+        
+            coverage run --source hotxlfp setup.py test
+        
+Keywords: excel,formula,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
