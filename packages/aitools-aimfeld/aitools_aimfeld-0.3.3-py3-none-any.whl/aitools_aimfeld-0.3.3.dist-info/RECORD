@@ -1,0 +1,9 @@
+aitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aitools/features.py,sha256=FyU9lweZZjc0e7QydP5oWFdS0pZwhwpmoGFVizxHlSI,277
+aitools/mlearn.py,sha256=eplQugsi6X3JqEatD2AvlM7uil0ML4SzlBzo361N608,3847
+aitools/plot.py,sha256=ndVC87kjvdQ2mo96GfwrJMo9aVo4G382FBkGo7d4Id8,5175
+aitools/roc.py,sha256=KbIyI0-dAHxk2bGJZzCypAXwVU1SWZXCjm4bXdbhblw,2616
+aitools_aimfeld-0.3.3.dist-info/METADATA,sha256=gMPBLquMU50Kpc676lpj-nuK0R9HAaum2nLpugFAuAA,393
+aitools_aimfeld-0.3.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+aitools_aimfeld-0.3.3.dist-info/top_level.txt,sha256=ofTKwCfSFSJKMZ_R-lBiKWalByjYkHr2N2fMpp1Ar_Q,8
+aitools_aimfeld-0.3.3.dist-info/RECORD,,
