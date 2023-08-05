@@ -1,0 +1,4 @@
+[console_scripts]
+microk8s-configure = microk8s_configure.main:main
+mk8sconfig = microk8s_configure.main:main
+
