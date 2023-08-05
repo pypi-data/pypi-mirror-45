@@ -1,0 +1,11 @@
+README.md
+setup.py
+wayscript/__init__.py
+wayscript/client.py
+wayscript/exceptions.py
+wayscript.egg-info/PKG-INFO
+wayscript.egg-info/SOURCES.txt
+wayscript.egg-info/dependency_links.txt
+wayscript.egg-info/not-zip-safe
+wayscript.egg-info/requires.txt
+wayscript.egg-info/top_level.txt
