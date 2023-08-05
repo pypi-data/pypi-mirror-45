@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smartsmspy
+Version: 1.0.0
+Summary: Python wrapper for Smart SMS API service.
+Home-page: https://github.com/jcobhams/smartsms-py
+Author: Joseph Cobhams
+Author-email: jcobhams@gmail.com
+License: MIT
+Keywords: SmartSMS,Nigeria,API Wrapper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# smartsms-py
+An API wrapper around the Smart SMS service.
+
+
