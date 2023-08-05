@@ -1,0 +1,9 @@
+almath/__init__.py,sha256=c6N0wV77sCoBgiJb0ioTy2_JCGds5gd3hCB67F6Ngfw,834
+almath/almathswig.py,sha256=Qo2gA-gxY1M7Mg_fM0z3NeJzABI3PXI2_qh7__OltV4,141202
+almath/libalmath.dylib,sha256=rF45214iMbgOS90JBhfcGKBWLLXCwqEa9mR8vQCLl9M,710988
+almath/python2.7/site-packages/_almathswig.so,sha256=r_a-rRu-QYRVokQ90Jgd0TzXxZb8FJhy_DCXh46825E,932720
+almath-1.6.8.dist-info/LICENSE.txt,sha256=JzQA36qe9hGYgJxwt2LysExpjUZe8xvERreMYqVJjVo,36
+almath-1.6.8.dist-info/METADATA,sha256=PjbOLQ3TtLH447Tipog8f2WZa-ekSkXTH4Qf4GMC_cA,721
+almath-1.6.8.dist-info/WHEEL,sha256=MTfBMChtePch2EdLgtUWwOfthxAaEJyP6OWfKyaPUeY,108
+almath-1.6.8.dist-info/top_level.txt,sha256=wU4QuyEJ8RhgbPTb22KDkyemfr2d4cWyVnZBh_pqEvA,7
+almath-1.6.8.dist-info/RECORD,,
