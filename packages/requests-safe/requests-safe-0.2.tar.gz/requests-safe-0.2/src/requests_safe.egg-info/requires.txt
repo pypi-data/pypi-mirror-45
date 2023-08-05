@@ -1,0 +1,11 @@
+requests
+urllib3
+
+[:python_version == "2.7"]
+ipaddress
+
+[testing]
+pytest
+pytest-cov
+coverage
+mocket
