@@ -1,0 +1,3 @@
+notechat
+notechat/game/sudoku
+notechat/weidian
