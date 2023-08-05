@@ -1,0 +1,13 @@
+indic_transliteration
+lxml
+networkx
+tinydb
+python-constraint
+requests
+six
+flask
+jsonpickle
+sanskrit_util
+sqlalchemy==1.0.11
+sentencepiece
+gensim
