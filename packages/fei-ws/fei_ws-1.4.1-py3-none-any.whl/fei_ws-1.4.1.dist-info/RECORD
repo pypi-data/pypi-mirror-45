@@ -1,0 +1,12 @@
+fei_ws/__init__.py,sha256=8eomI2YquXg-VxirGLoAIh7CJVvDVfkf5hLIigeFxSA,35
+fei_ws/config.py,sha256=W6tFH6GuBEneBHdVVE8x4XIRcSMhDOBouYFmvyO2IUc,506
+fei_ws/clients/__init__.py,sha256=NbN84jLroSPa9_OeYE3ZPagdmrpEnmRdGq7MWkvoQqM,32
+fei_ws/clients/base.py,sha256=7Qt_D70mD9BbcpqXQDe23mWJfBJGBSfFTGZQy4mQGS4,4596
+fei_ws/clients/client.py,sha256=YrIkc8bgtY0ySkPGOgn-gwVQ0JOupdUccmPXYJSyYUw,9890
+fei_ws/clients/client10.py,sha256=oGXAIWXIOHLOByAEy93vH6DZCTvO9-SX6pze-Oz4kfI,20016
+fei_ws/clients/client11.py,sha256=P56L2BZy3XGg3zeHHYOUtRGXGThxmbK6owsUsPxaEqA,9849
+fei_ws-1.4.1.dist-info/LICENSE.txt,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+fei_ws-1.4.1.dist-info/METADATA,sha256=beQV6-hqaPhzgTr3JMqeNoT7piR8OOBIiA8Ibm0jWZ8,1234
+fei_ws-1.4.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fei_ws-1.4.1.dist-info/top_level.txt,sha256=1mKNPwhAVFzSBEVTeZIu-019S7BmMJWMhy5f-RuJSzQ,7
+fei_ws-1.4.1.dist-info/RECORD,,
