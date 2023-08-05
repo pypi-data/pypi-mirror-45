@@ -1,0 +1,6 @@
+README.md
+setup.py
+fkimpdf.egg-info/PKG-INFO
+fkimpdf.egg-info/SOURCES.txt
+fkimpdf.egg-info/dependency_links.txt
+fkimpdf.egg-info/top_level.txt
