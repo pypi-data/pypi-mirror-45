@@ -1,0 +1,9 @@
+README.md
+setup.py
+fstop/__init__.py
+fstop/engine.py
+fstop/pak.py
+fstop.egg-info/PKG-INFO
+fstop.egg-info/SOURCES.txt
+fstop.egg-info/dependency_links.txt
+fstop.egg-info/top_level.txt
