@@ -1,0 +1,66 @@
+from ..parser import Parser as BaseParser
+from ..CTLS.parser import AST_to_TemporalLogics
+
+
+class Parser(BaseParser):
+    grammar = r"""
+        s_formula: "{}"     -> true
+                 | "{}"    -> false
+                 | a_prop
+                 | "{}" p_formula       -> forall_formula
+                 | "{}" p_formula       -> exists_formula
+                 | "{}" s_formula       -> not_formula
+                 | "(" u_formula ")"
+
+        u_formula: s_formula
+                  | s_formula ( "{}" s_formula )+      -> or_formula
+                  | s_formula ( "{}" s_formula )+      -> and_formula
+                  | s_formula "{}" s_formula           -> imply_formula
+
+        p_formula: "{}" s_formula  -> next_formula
+                 | "{}" s_formula  -> eventually_formula
+                 | "{}" s_formula  -> globally_formula
+                 | s_formula "{}" s_formula -> until_formula
+                 | s_formula "{}" s_formula -> release_formula
+                 | "(" p_formula ")"
+
+        a_prop: /[a-zA-Z_][a-zA-Z_0-9]*/ -> string
+              | ESCAPED_STRING           -> e_string
+
+        formula: p_formula | u_formula
+
+        %import common.ESCAPED_STRING
+        %import common.WS
+        %ignore WS
+        """
+
+    def __init__(self, language=None):
+        if language is None:
+            import pyModelChecking.CTL as CTL
+
+            language = CTL
+
+        super(Parser, self).__init__(grammar=Parser.grammar,
+                                     language=language,
+                                     AST_Transformer=AST_to_TemporalLogics)
+
+
+def init_submodule():
+    from .language import alphabet
+
+    Parser.grammar = Parser.grammar.format(alphabet['Bool'].symbols[True],
+                                           alphabet['Bool'].symbols[False],
+                                           alphabet['A'].symbol,
+                                           alphabet['E'].symbol,
+                                           alphabet['Not'].symbol,
+                                           alphabet['Or'].symbol,
+                                           alphabet['And'].symbol,
+                                           alphabet['Imply'].symbol,
+                                           alphabet['X'].symbol,
+                                           alphabet['F'].symbol,
+                                           alphabet['G'].symbol,
+                                           alphabet['U'].symbol,
+                                           alphabet['R'].symbol)
+
+
+init_submodule()
