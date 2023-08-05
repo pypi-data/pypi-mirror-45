@@ -1,0 +1,36 @@
+# SupWSD
+
+SupWSD is a Python binding to an HTTP RESTful service that gives you programmatic access to SupWSD, a framework for supervised Word Sense Disambiguation (WSD). 
+
+Before using the services, you must first register on SupWSD. At the end of the registration process, you will receive an email with the API key. 
+
+The SupWSD service is available for English, French, German, Italian and Spanish and enforces a default limit of 5.000 free requests per 1 hour period.
+
+The SupWSD Python API requires python 2.7 or above.
+
+LICENSES: All the data of the external resources are released under the terms of the respective <a target="_blank" href="https://supwsd.net/supwsd/licenses">licenses</a>.
+
+## Installation
+```
+pip install supwsd
+```
+
+## Code Example
+```
+from it.si3p.supwsd.api import SupWSD
+from it.si3p.supwsd.config import Model, Language
+
+text="The human " + SupWSD.SENSE_TAG + "brain" + SupWSD.SENSE_TAG + " is quite proficient at word-sense disambiguation. The fact that natural language is formed "+ SupWSD.SENSE_TAG+"in a way"+ SupWSD.SENSE_TAG+" that requires so much of it is a " + SupWSD.SENSE_TAG + "reflection" + SupWSD.SENSE_TAG + " of that neurologic reality."
+
+for result in SupWSD('apiKey').disambiguate(text,Language.EN,Model.SEMCOR_OMSTI):
+        token=result.token
+        print("Word: {}\tLemma: {}\tPOS: {}\tTag: {}".format(token.word, token.lemma,token.pos,token.tag))
+
+        if not result.miss():
+            for sense in result.senses:
+                print("Sense {}\tProbability: {}".format(sense.id, sense.probability))     
+```
+
+## Links
+
+* <a target="_blank" href="https://supwsd.net/supwsd">SupWSD.net</a>
