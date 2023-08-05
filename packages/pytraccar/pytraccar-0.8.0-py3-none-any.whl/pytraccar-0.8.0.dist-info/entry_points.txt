@@ -1,0 +1,3 @@
+[console_scripts]
+traccar = pytraccar.cli:cli
+
