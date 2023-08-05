@@ -1,0 +1,9 @@
+libowei/__init__.py,sha256=bxE5YhE1qGLepTMz3y4YNz4gtDMNrH1h55VQDtD4BMg,81
+libowei/math.db,sha256=U09wPlvqJaGLMTTIbxUMCdDyc50YKhzImbsn-QgrB5o,12288
+libowei/math.dll,sha256=PtgHQgiB6FNQfuzP5mzQtr4RIvvoD55suxQLdktTwcM,52518
+libowei/math.so,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libowei/science.py,sha256=cnGLwNrAxxZ4i5cedAhw5kCXOsam4vVfi9Ax9r4ecm4,1993
+libowei-6.0.0.dist-info/METADATA,sha256=co7xEs597dITLGiF9S4ncfMS_sdxVn-jqYx6L-PutlA,258
+libowei-6.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+libowei-6.0.0.dist-info/top_level.txt,sha256=CORQyqLix5iLpMYGIDfAM9XcmjCIxi2RguIBSVvZoJw,8
+libowei-6.0.0.dist-info/RECORD,,
