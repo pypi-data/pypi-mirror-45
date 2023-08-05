@@ -1,0 +1,11 @@
+include MANIFEST.in
+include LICENSE
+include tox.ini
+include requirements.txt
+
+graft plugins
+graft rsc
+graft tests
+
+global-exclude *.py[co]
+global-exclude *.sw[op]
