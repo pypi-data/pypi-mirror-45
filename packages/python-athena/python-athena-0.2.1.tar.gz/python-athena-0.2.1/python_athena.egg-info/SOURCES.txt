@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_athena.egg-info/PKG-INFO
+python_athena.egg-info/SOURCES.txt
+python_athena.egg-info/dependency_links.txt
+python_athena.egg-info/top_level.txt
