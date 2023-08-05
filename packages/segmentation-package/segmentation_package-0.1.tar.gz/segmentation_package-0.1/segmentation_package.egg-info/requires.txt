@@ -1,0 +1,12 @@
+jupyter
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn
+tqdm
+opencv-python
+keras
+scipy
+tensorflow
+h5py
