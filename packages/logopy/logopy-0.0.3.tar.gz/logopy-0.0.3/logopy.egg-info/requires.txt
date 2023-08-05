@@ -1,0 +1,4 @@
+parsley
+attrs
+svgwrite
+jinja2
