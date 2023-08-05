@@ -1,0 +1,4 @@
+http://sci-hub.se
+http://sci-hub.tw
+https://sci-hub.tw
+https://sci-hub.se
