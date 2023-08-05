@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/hellbox/jobs/fontmake/__init__.py
+src/hellbox/jobs/fontmake/__version__.py
+src/hellbox/jobs/fontmake/generate_otf.py
+src/hellbox/jobs/fontmake/generate_ttf.py
+src/hellbox_fontmake.egg-info/PKG-INFO
+src/hellbox_fontmake.egg-info/SOURCES.txt
+src/hellbox_fontmake.egg-info/dependency_links.txt
+src/hellbox_fontmake.egg-info/requires.txt
+src/hellbox_fontmake.egg-info/top_level.txt
