@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+trackball/__init__.py
+trackball.egg-info/PKG-INFO
+trackball.egg-info/SOURCES.txt
+trackball.egg-info/dependency_links.txt
+trackball.egg-info/requires.txt
+trackball.egg-info/top_level.txt
