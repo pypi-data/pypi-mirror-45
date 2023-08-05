@@ -1,0 +1,10 @@
+README.md
+setup.py
+nsfsearch/__init__.py
+nsfsearch/nsfsearch.py
+nsfsearch.egg-info/PKG-INFO
+nsfsearch.egg-info/SOURCES.txt
+nsfsearch.egg-info/dependency_links.txt
+nsfsearch.egg-info/entry_points.txt
+nsfsearch.egg-info/requires.txt
+nsfsearch.egg-info/top_level.txt
