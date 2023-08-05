@@ -1,0 +1,12 @@
+rtry/__init__.py,sha256=BI3GkcZyjQDFUy-fWODlGO4lbBPDVoRSxyFW8GDJA6g,329
+rtry/_errors.py,sha256=tZpLC9Xokcf8BdkdOsJVBAyoDbMPjqlnIZDGRLIT0Fg,42
+rtry/_retry.py,sha256=VK2t63pwl4nx98LiVOI4AaZvGFeBkmCrBPezmnbszE8,2694
+rtry/_scheduler.py,sha256=InOnkdSkej0YkipVx4-hDZESi_tD3Ptyq9nrso6mYlQ,1949
+rtry/_timeout.py,sha256=umS9W__i7bDCRnBcWUdk8ZtCCvP9bvUVoZG9NyzdXJY,1489
+rtry/_types.py,sha256=YDpN7-PiDDE1nq50sPL6TxDpcdQP9SB8ISLFpfOIRO0,779
+rtry/types/__init__.py,sha256=fjnBB2kHFXDXo5aW1nVtDVRLBpZcvsxjAgayWLmN16c,544
+rtry-1.1.0.dist-info/LICENSE.txt,sha256=5aGchmuEiwN-3of8CwmYNT-_4BMB5gwWMIe4oCFYplk,1072
+rtry-1.1.0.dist-info/METADATA,sha256=t29y3waaIllJIVKMXTK5_mE4prJ8Fgt0bds531wwMcY,5427
+rtry-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rtry-1.1.0.dist-info/top_level.txt,sha256=BbSSLaCM8keXIi8vlOCo7Crqmf6dpNHkCDUB36R52pM,5
+rtry-1.1.0.dist-info/RECORD,,
