@@ -1,0 +1,17 @@
+proxytest/__init__.py,sha256=cH74aRlJa9ELJHw4krE4it8KguN9QT_IbDL4rQqsmRM,59
+proxytest/__main__.py,sha256=OF37sjjgs1pwN3uzYmA-X7ka9D7C_MSxeKXfiXZLJvw,71
+proxytest/_async.py,sha256=j1XB6ql0u_aYBJjvTowAIRPb3Dd-NmnR0q9nsq4yO9A,1362
+proxytest/_info.py,sha256=9aIM7kgvPE98pDnMCDgyTLSenFt9XSRlouT5ZchQz1U,2179
+proxytest/_request.py,sha256=1Lq5BcIgg0zrZvB54sgmOsA0YxLJjTHKHC3FLZJc8P0,1081
+proxytest/_sync.py,sha256=eOpzyH7T7R8BdTzBq6031ULgvaog16GUEzTO7LwMyNI,903
+proxytest/backend_aiohttp.py,sha256=c0C8aymjzNuijxivRoaYVh4zgMGEl1Qro1JZ4MmeYsM,1797
+proxytest/backend_requests.py,sha256=OZGdp6jMq0OOcngKdtk88ZaTbgxcXdy4Dpf7KRvj7OY,1704
+proxytest/proxytest.py,sha256=Wddj5NtEV0d-xfZ91JDh5JhzAeG0MvftTzpmfljCl-8,11622
+proxytest/version.py,sha256=JesUX4l-WbBsW2sAJo4aNAPk-naV4qIYKvegERUT6dQ,108
+proxytest-0.2.7.dist-info/DESCRIPTION.rst,sha256=TRRiyn6arkKqvorcBB6R-xuCs6vt1KOZLZ9wQemN4QI,952
+proxytest-0.2.7.dist-info/METADATA,sha256=A3J7_EmRLQeLtmO6X0FXa7eLZe5qerYrJ9cTw6Fxii8,1723
+proxytest-0.2.7.dist-info/RECORD,,
+proxytest-0.2.7.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+proxytest-0.2.7.dist-info/entry_points.txt,sha256=JYmaBJRXH6hvldhEIiq8YXTT9VHrWQtxwhmsyt0vWhQ,56
+proxytest-0.2.7.dist-info/metadata.json,sha256=GerkbyhK-Kl_6hpWhtu-WDsgNzioQC4nHgFLcJM8ToU,1176
+proxytest-0.2.7.dist-info/top_level.txt,sha256=yRolea2GmCXpqzrVJNwKdVg7Z4exuC5YO9geKhtYzs0,10
