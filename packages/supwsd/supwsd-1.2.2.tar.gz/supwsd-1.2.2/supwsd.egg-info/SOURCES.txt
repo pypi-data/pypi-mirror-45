@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+it/__init__.py
+it/si3p/__init__.py
+it/si3p/supwsd/__init__.py
+it/si3p/supwsd/analysis.py
+it/si3p/supwsd/api.py
+it/si3p/supwsd/config.py
+supwsd.egg-info/PKG-INFO
+supwsd.egg-info/SOURCES.txt
+supwsd.egg-info/dependency_links.txt
+supwsd.egg-info/top_level.txt
