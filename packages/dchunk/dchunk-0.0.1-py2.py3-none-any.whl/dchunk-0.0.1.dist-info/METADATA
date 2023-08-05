@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dchunk
+Version: 0.0.1
+Summary: Split an iterable into chunks in Python.
+Home-page: https://github.com/ianlini/dchunk
+Author: Ian Lin
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+
+Please visit  the `GitHub repository <https://github.com/ianlini/dchunk>`_
+for more information.
+
+dchunk
+======
+Split an iterable into chunks in Python.
+
+
