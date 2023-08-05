@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_math/__init__.py
+my_math/kheregluur.py
+my_math/sanamsargui.py
+turuumymath.egg-info/PKG-INFO
+turuumymath.egg-info/SOURCES.txt
+turuumymath.egg-info/dependency_links.txt
+turuumymath.egg-info/top_level.txt
