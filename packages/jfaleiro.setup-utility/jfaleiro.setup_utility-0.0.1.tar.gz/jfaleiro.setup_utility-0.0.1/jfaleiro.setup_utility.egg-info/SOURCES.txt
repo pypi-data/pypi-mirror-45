@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+setup_utility.py
+jfaleiro.setup_utility.egg-info/PKG-INFO
+jfaleiro.setup_utility.egg-info/SOURCES.txt
+jfaleiro.setup_utility.egg-info/dependency_links.txt
+jfaleiro.setup_utility.egg-info/requires.txt
+jfaleiro.setup_utility.egg-info/top_level.txt

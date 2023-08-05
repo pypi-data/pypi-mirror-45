@@ -1,0 +1,7 @@
+behave
+nose>=1.0
+coverage
+mock
+pytest-runner
+pytest
+PyHamcrest
