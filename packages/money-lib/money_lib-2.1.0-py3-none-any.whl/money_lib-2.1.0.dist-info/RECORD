@@ -1,0 +1,13 @@
+money/__init__.py,sha256=TNEIFzIUU0D6OGkFq6LrXlptE0aXRXIIOd1Tie9_7ws,127
+money/currency.py,sha256=5UWyQ5E3eX35WCvlcU60sgAh69OuuY7ZG9rgGNyqL0k,1775
+money/exceptions.py,sha256=DUnDIZqng4VchFawU7Qvs-O3ags4edeQt5HUDvMxuv4,1066
+money/exchange.py,sha256=ahJn3MAWF5lYJcWoMJZBYvSo1RCaVKPjM8G_9x3ezEQ,2584
+money/fields.py,sha256=uC_vlzUDIOCd5McFVDz7NYJlxIRDfvmfkINTSuFRFGk,3246
+money/forms.py,sha256=0ozRHopt4mS4qC-kU6v33a0OXg0PPsMkUWOQ5ZccxN8,1290
+money/money.py,sha256=6WTjs90a-OeVAaDimu_WnpI5XFjJCHd1GKzyhSIOeIs,4845
+money/widgets.py,sha256=xHJLD7jumbnZVYS5QpNPCLW95a0vg60DowgcEbZHzJk,564
+money_lib-2.1.0.dist-info/LICENSE,sha256=KaHIIG76jMOEup4LtvpPFCg6NjCaMVnWQ0jteJjwyGQ,1068
+money_lib-2.1.0.dist-info/METADATA,sha256=WXzMJQDQFiWMcrm1oo4E5G30D9NHxXUxve7-d3eKEPY,4685
+money_lib-2.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+money_lib-2.1.0.dist-info/top_level.txt,sha256=vdBw5Trtkfk7dPoYJznUTYn612ctlznGUhzl8NNh0tE,6
+money_lib-2.1.0.dist-info/RECORD,,
