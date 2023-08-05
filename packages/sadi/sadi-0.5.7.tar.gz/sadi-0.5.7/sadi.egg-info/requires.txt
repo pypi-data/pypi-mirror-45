@@ -1,0 +1,6 @@
+rdflib>=4.0
+Werkzeug
+webob
+python-dateutil
+pytidylib
+future
