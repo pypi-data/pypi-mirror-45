@@ -1,0 +1,14 @@
+README.md
+setup.py
+makegit/__init__.py
+makegit/__main__.py
+makegit.egg-info/PKG-INFO
+makegit.egg-info/SOURCES.txt
+makegit.egg-info/dependency_links.txt
+makegit.egg-info/top_level.txt
+makegit/main/__init__.py
+makegit/main/exceptions.py
+makegit/main/gitconfig.py
+makegit/main/makegit.py
+makegit/main/system_execute.py
+makegit/main/validators.py
