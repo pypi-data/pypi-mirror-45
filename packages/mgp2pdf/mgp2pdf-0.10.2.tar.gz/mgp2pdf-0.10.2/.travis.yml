@@ -1,0 +1,15 @@
+language: python
+dist: xenial
+python:
+    - 2.7
+    - 3.5
+    - 3.6
+    - 3.7
+install:
+    - travis_retry pip install coverage coveralls -e .
+script:
+    - coverage run --source=mgp2pdf.py tests.py
+after_success:
+    - coveralls
+notifications:
+    email: false

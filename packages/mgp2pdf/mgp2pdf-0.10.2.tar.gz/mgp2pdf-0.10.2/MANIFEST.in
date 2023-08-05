@@ -1,0 +1,13 @@
+include *.md
+include *.py
+include *.rst
+include *.ini
+include *.yml
+include LICENSE
+include Makefile
+include .gitignore
+include .coveragerc
+prune samples
+
+# added by check_manifest.py
+include *.mk
