@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+s3path.py
+setup.cfg
+setup.py
+docs/advance.rst
+docs/comparison.rst
+docs/interface.rst
+docs/s3path_graph.jpg
+s3path.egg-info/PKG-INFO
+s3path.egg-info/SOURCES.txt
+s3path.egg-info/dependency_links.txt
+s3path.egg-info/requires.txt
+s3path.egg-info/top_level.txt
