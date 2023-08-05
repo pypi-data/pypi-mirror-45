@@ -1,0 +1,3 @@
+[console_scripts]
+bigga = bigga.main:program.run
+

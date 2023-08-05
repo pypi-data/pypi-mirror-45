@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bigga/__init__.py
+bigga/main.py
+bigga/tasks.py
+bigga.egg-info/PKG-INFO
+bigga.egg-info/SOURCES.txt
+bigga.egg-info/dependency_links.txt
+bigga.egg-info/entry_points.txt
+bigga.egg-info/requires.txt
+bigga.egg-info/top_level.txt
+bigga/data/.infra.json
