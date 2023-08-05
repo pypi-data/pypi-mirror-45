@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: logopy
+Version: 0.0.1
+Summary: LogoPy: An implementation of the Logo programming language in Python with TK and SVG turtle back ends.
+Home-page: https://github.com/cwaldbieser/logopy
+Author: Carl (https://github.com/cwaldbieser)
+Author-email: cwaldbieser@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: Logo,Turtle,SVG
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Logo
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Editors :: Vector-Based
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
