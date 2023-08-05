@@ -1,0 +1,304 @@
+*** Setting ***
+Resource    api-imports.txt
+
+*** Variables ***
+${dev_lb_base_url}    http://internal-dev-int-cwt-bpg-lb-1412987045.us-west-2.elb.amazonaws.com
+${test_lb_base_url}    http://internal-test-int-cwt-bpg-lb-1345055561.us-west-2.elb.amazonaws.com
+${dev_base_url}    https://dev.int.us-west-2.bpg-aws-cwt.com/service/ap
+${test_base_url}    https://test.int.us-west-2.bpg-aws-cwt.com/service/ap
+${portrait_mock_base_url}    https://dev.nextgen.us-west-2.cbt-aws-cwt.com
+${dev_mock_base_url}    http://172.16.4.9:8080
+${test_mock_base_url}    http://172.16.4.224:8080
+${dev_ccr_base_url}    https://dev.int.us-west-2.bpg-aws-cwt.com/service/repo/powerbaseaws/
+${test_ccr_base_url}    https://test.int.us-west-2.bpg-aws-cwt.com/service/repo/powerbaseaws/
+
+*** Keywords ***
+Create CCR Access Token Post Stub
+    ${request_body}        Set Variable    {"request":{"url": "/oauth2/token","method": "POST"}
+    ${response_body}    Set Variable    "response":{"status": 200,"headers": {"Content-Type": "application/json;charset=UTF-8"},"jsonBody": {"token_type": "bearer","access_token": "8CEPlGb4kD50DMWNJxSm9zfPgSnhxvUP","expires_in": 900}}}
+    ${jsonBody}    Set Variable    ${request_body},${response_body}
+    ${jsonBody}    Replace String    ${jsonBody}    "null"    null
+    Log    ${jsonBody}
+    Create Session    ap    ${${env}_mock_base_url}    verify=True
+    ${response}    Post Request    ap    /__admin/mappings    data=${jsonBody}
+    Set Suite Variable    ${response}
+    Log    ${response.content}
+    Run Keyword If    "${response.status_code}"=="201"    Get Stub ID And Append To Stub List
+
+Clear Cache    
+    [Arguments]    ${api}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${response}    Delete Request    ap    /${api}/api/caches    
+    Set Test Variable    ${response}
+    Log    ${response.headers}
+    Log    ${response.content}
+    
+Create Get Request
+    [Arguments]    ${request_url}=${EMPTY}    ${request_params}=${EMPTY}    ${content_type}=application/json;charset=UTF-8    ${api_flag}=${EMPTY}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${headers}    Create Dictionary    Content-Type=${content_type}
+    ${response}    Get Request    alias=ap    uri=${request_url}    params=${request_params}     headers=${headers}
+    Set Test Variable    ${response}
+    Log    ${response.headers}
+    Log    ${response.content}
+    Set Test Variable    ${api_flag}
+    
+Create Post Request
+    [Arguments]    ${request_url}=${EMPTY}    ${content_type}=application/json    ${api_flag}=${EMPTY}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${headers}    Create Dictionary    Content-Type=${content_type}
+    ${response}    Post Request    alias=ap    uri=${request_url}    data=${request_body}    headers=${headers}
+    Set Test Variable    ${response}
+    Log    ${response.content}
+    Log    ${response.headers}
+    Set Test Variable    ${api_flag}
+ 
+Create Put Request
+    [Arguments]    ${request_url}=${EMPTY}    ${content_type}=application/json    ${api_flag}=${EMPTY}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${headers}    Create Dictionary    Content-Type=${content_type}
+    ${response}    Put Request    alias=ap    uri=${request_url}    data=${request_body}    headers=${headers}
+    Set Test Variable    ${response}
+    Log    ${response.content}
+    Log    ${response.headers}
+    Set Test Variable    ${api_flag} 
+    
+Create Stub
+    [Arguments]    ${file_name}=test    ${test_data}=Get_Stub    ${error_code}=${EMPTY}    ${encoding}=iso-8859-1    ${encoding_errors}=strict
+   ${json_file_object}    Get File    ${file_name}.json     encoding=${encoding}    encoding_errors=${encoding_errors}
+   Log    ${json_file_object}
+   ${request_body}    Get Json Value From File    ${json_file_object}    $.['${test_data}'].request
+   ${request_body}        Set Variable    {"request":${request_body}
+   ${response_body}    Get Json Value From File    ${json_file_object}    $.['${test_data}'].response
+   ${response_body}    Set Variable If    "${error_code}"=="${EMPTY}"    "response":${response_body}    "response":{"status":${error_code},"jsonBody":[
+   ${json_body}    Set Variable If    "${error_code}"=="${EMPTY}"    ${request_body},${response_body}}    ${request_body},${response_body}]}}
+   ${json_body}    Replace String    ${json_body}    "null"    null
+   Log    ${json_body}
+   Create Session    ap    ${${env}_mock_base_url}    verify=True
+   ${response}    Post Request    ap    /__admin/mappings    data=${json_body}
+   Set Test Variable    ${response}
+   Log    ${response.content}
+   Run Keyword If    "${response.status_code}"=="201"    Get Stub ID And Append To Stub List
+
+Create Test Data
+   [Arguments]    ${file_name}=test    ${test_data}=${EMPTY}    ${error_code}=${EMPTY}    ${get_request_body}=false    ${get_response_body}=false    ${convert_to_dict}=true    ${encoding}=iso-8859-1    ${encoding_errors}=strict
+   ${json_file_object}    Get File    ${file_name}.json     encoding=${encoding}    encoding_errors=${encoding_errors}
+   Log    ${json_file_object}
+   ${request_data}    Run Keyword If    "${get_request_body}"=="true"    Get Json Value From File    ${json_file_object}    $.['${test_data}'].request    ELSE    Set Variable    ${EMPTY}
+   ${response_data}    Run Keyword If    "${get_response_body}"=="true"    Get Json Value From File    ${json_file_object}    $.['${test_data}'].response    ELSE    Set Variable    ${EMPTY}
+   ${response_data}    Run Keyword If    "${convert_to_dict}"=="true"    Convert Response Data To Dictionary    ${response_data}    ELSE    Set Variable    ${response_data}
+   [Return]    ${request_data}    ${response_data}
+
+Convert Response Data To Dictionary
+   [Arguments]    ${response_data}
+   ${response_data}    To Json    ${response_data}
+   ${response_data}    Convert To Dictionary    ${response_data}
+   [Return]    ${response_data}
+
+Delete Stubs
+    Create Session    ap    ${${env}_mock_base_url}    verify=True
+    : FOR    ${stubs}    IN    @{stub_list}
+    \    Run Keyword If    "${stubs}" != "${EMPTY}"    Proceed To Delete Stubs    ${stubs}    ELSE    Log    No Stubs Deleted
+    Set Suite Variable    @{stub_list}    ${EMPTY}
+    Remove From List    ${stub_list}    0
+    Set Suite Variable    ${create_stub_list_flag}    false
+
+Delete Stubs And Update CCR URL To Integrated
+    [Arguments]    ${api}
+    Delete Stubs
+    Update CCR URL To Integrated    ${api}
+    
+Proceed To Delete Stubs
+    [ARGUMENTS]    ${stubs}
+    Log    Deleting Stubs
+    ${response}    Delete Request    ap    /__admin/mappings/${stubs}
+    Log    ${response.content}
+   
+Check If Parameter Is A Number
+    [Arguments]    ${parameter}
+    ${is_number}    Run Keyword And Return Status    Should Match RegExp    ${parameter}    ^[0-9]+$
+    [Return]    ${is_number}
+    
+Generate Stub List
+    @{stub_list}    Create List
+    Set Suite Variable    @{stub_list}
+    Set Suite Variable    ${create_stub_list_flag}    true
+
+Generate Stub List And Create CCR Access Token Post Stub
+    Generate Stub List
+    Create CCR Access Token Post Stub
+
+Get CCR URL
+    [Arguments]    ${api}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${response}    Get Request    ap    /${api}/api/config    
+    Set Test Variable    ${response}
+    Log    ${response.headers}
+    Log    ${response.content}
+    ${ccr_base_url}    Get Json Value As String    ${response.content}    $.baseUrl
+    Set Test Variable    ${ccr_base_url}
+   
+Get Json Array Length
+    [Arguments]    ${json_object}=${response.content}    ${split_item}=id
+    ${response_list}    To Json    ${json_object}
+    ${response_list}    Convert JSON To String    ${response_list}    
+    ${response_list}  Split String    ${response_list}  ${split_item}
+    Log    ${response_list}
+    ${item_count}    Get Length    ${response_list}
+    ${item_count}    Evaluate    ${item_count} - 1
+    [Return]    ${item_count}    
+
+Get Json Value As String
+    [Arguments]    ${json_object}    ${json_path}
+    ${res_content}=    To Json    ${json_object}
+    ${actual_value}    Get Value From Json    ${res_content}    ${json_path}
+    ${actual_value}    Convert JSON To String    ${actual_value}
+    Comment    ${actual_value}    Evaluate    json.dumps(${actual_value})    json
+    ${actual_value}    Remove String    ${actual_value}    [    "    ]
+    [Return]    ${actual_value}
+    
+Get Json Value From File
+    [Arguments]    ${json_object}    ${json_path}
+    ${res_content}=    To Json    ${json_object}
+    ${actual_value}    Get Value From Json    ${res_content}    ${json_path}
+    ${actual_value}    Evaluate    json.dumps(${actual_value}[0])    json
+    [Return]    ${actual_value}
+    
+Get Request Body For Test Case
+    [Arguments]    ${filename}    ${request}=${EMPTY}    ${dir_folder}=${EMPTY}    ${encoding}=UTF-8   ${encoding_error}=strict
+    ${request}    Replace String Using Regexp    ${request}    \\s    _    
+    Log    ${request}     
+    ${json_data}    Run Keyword If    '${dir_folder}'=='${EMPTY}'    Get File    ${CURDIR}/test-data/${filename}.json   ${encoding}   ${encoding_error}
+    ...    ELSE    Get File    ${CURDIR}/test-data/${dir_folder}/${filename}.json   ${encoding}   ${encoding_error}
+    Log    ${json_data}
+    ${json_data}    To Json    ${json_data}
+    ${request_body}    Run Keyword If    "${request}"!="${EMPTY}"    Get Value From Json    ${json_data}    $.${request}[*]
+    ...    ELSE    Get Value From Json    ${json_data}    $.[*]
+    Log    ${request_body}
+    Set Test Variable    ${request_body}    ${request_body[0]}
+    
+Get Stub ID And Append To Stub List
+    ${stub_id}    Get Json Value As String    ${response.content}    $.id
+    ${stub_id}    Remove String    ${stub_id}    "
+    Append To List    ${stub_list}    ${stub_id}
+
+Put CCR URL
+    [Arguments]    ${api}    ${simulated}
+    Create Session    ap    ${${env}_base_url}    verify=True
+    ${request_params}    Set Variable If    "${simulated}"=="false"    baseUrl=${${env}_ccr_base_url}    baseUrl=${${env}_mock_base_url}
+    ${response}    Put Request    ap    /${api}/api/config    params=${request_params}
+    Set Test Variable    ${response}
+    Log    ${response.headers}
+    Log    ${response.content}
+
+Update CCR URL To Integrated
+    [Arguments]    ${api}
+    Get CCR URL    ${api}
+    Run Keyword If    "${ccr_base_url}"!="${${env}_ccr_base_url}"    Run Keywords    Put CCR URL    ${api}    false    AND    Clear Cache    ${api}
+    Get CCR URL    ${api}
+    Should Be Equal As Strings    ${${env}_ccr_base_url}    ${ccr_base_url}    
+    
+Update CCR URL To Simulated
+    [Arguments]    ${api}
+    Put CCR URL    ${api}    true
+    Clear Cache    ${api}
+    Get CCR URL    ${api}
+    Should Be Equal As Strings    ${${env}_mock_base_url}    ${ccr_base_url}   
+    
+Verify Actual Numerical Value Matches Expected Numerical Value
+    [Arguments]    ${actual_value}    ${expected_value}
+    Log    Actual Value: ${actual_value}
+    Log    Expected Value: ${expected_value}
+    ${actual_value}    Convert To Number    ${actual_value}
+    ${expected_value}    Convert To Number    ${expected_value}
+    Run Keyword And Continue On Failure    Should Be Equal As Numbers    ${actual_value}    ${expected_value}    Actual value "${actual_value}" does not match expected value "${expected_value}"    FALSE
+
+Verify Actual Value Does Not Match Expected Value
+    [Arguments]    ${actual_value}    ${expected_value}
+    Log    Actual Value: ${actual_value}
+    Log    Expected Value: ${expected_value}
+    ${actual_value}    Convert To String    ${actual_value}
+    ${expected_value}    Convert To String    ${expected_value}
+    Run Keyword And Continue On Failure    Should Not Be Equal    ${actual_value}    ${expected_value}    Actual value "${actual_value}" matches expected value "${expected_value}"    FALSE
+
+Verify Actual Value Matches Expected Value
+    [Arguments]    ${actual_value}    ${expected_value}
+    Log    Actual Value: ${actual_value}
+    Log    Expected Value: ${expected_value}
+    ${actual_value}    Convert To String    ${actual_value}
+    ${expected_value}    Convert To String    ${expected_value}
+    Run Keyword And Continue On Failure    Should Be Equal    ${actual_value}    ${expected_value}    Actual value "${actual_value}" does not match expected value "${expected_value}"    FALSE
+
+Verify Json Element Does Not Exist
+    [Arguments]    ${json_path}
+    Log    Json Object: ${json_path}
+    ${json_object}    To Json    ${response.content}
+    ${json_value}    Get Value From Json    ${json_object}    ${json_path}
+    Run Keyword And Continue On Failure    Should Be Empty    ${json_value}
+
+Verify Json Element Exists
+    [Arguments]    ${json_path}
+    Log    Json Object: ${json_path}
+    ${json_object}    To Json    ${response.content}
+    ${json_value}    Get Value From Json    ${json_object}    ${json_path}
+    Run Keyword And Continue On Failure    Should Not Be Empty    ${json_value}
+
+Verify Json Value Is Correct
+    [Arguments]    ${json_path}    ${expected_value}    ${data_type}=string    ${handle_null}=true
+    Log    Json Object: ${json_path}
+    Log    Expected Value: ${expected_value}
+    ${expected_value}    Set Variable If    "${data_type}" == "array"    [${expected_value}]    ${expected_value}
+    ${expected_value}    Convert To String    ${expected_value}
+    ${expected_value}    Run Keyword If    "${handle_null}" == "true"    Replace String    ${expected_value}    "null"    null
+    ...    ELSE    Set Variable    ${expected_value}
+    ${expected_value}    Run Keyword If    "${handle_null}" == "true"    Replace String    ${expected_value}    [null]    null
+    ...    ELSE    Set Variable    ${expected_value}
+    ${actual_value}    Get Json Value As String    ${response.content}    ${json_path}
+    Run Keyword And Continue On Failure    Should Be Equal As Strings    ${actual_value.rstrip()}    ${expected_value.rstrip()}
+
+Verify Json Value Matches Pattern
+    [Arguments]    ${json_path}    ${expected_pattern}
+    Log    Json Object: ${json_path}
+    Log    Expected Pattern: ${expected_pattern}
+    ${actual_value}    Get Json Value As String    ${response.content}    ${json_path}
+    Verify String Matches Pattern    ${actual_value}    ${expected_pattern}
+
+Verify List Contains Value
+    [Arguments]    ${list}    ${value}
+    Log    Actual List: ${list}
+    Log    Expected Value: ${value}
+    Run Keyword And Continue On Failure    List Should Contain Value    ${list}    ${value}    List "${list}" does not contain value "${value}"
+
+Verify Response Status Code Is Correct
+    [Arguments]    ${status_code}
+    Verify Actual Value Matches Expected Value    ${response.status_code}    ${status_code}
+
+Verify String Contains Substring
+    [Arguments]    ${string}    ${substring}
+    Log    Actual String: ${string}
+    Log    Expected Substring: ${substring}
+    Run Keyword And Continue On Failure    Should Contain    ${string}    ${substring}    String "${string}" does not contain substring "${substring}"    FALSE
+
+Verify String Contains Substring X Times
+    [Arguments]    ${string}    ${substring}    ${occurence}
+    Log    Actual String: ${string}
+    Log    Expected Substring: ${substring} (displayed ${occurence} time/s only)
+    Run Keyword And Continue On Failure    Should Contain X Times    ${string}    ${substring}    ${occurence}    Substring "${substring}" is not found ${occurence} time/s
+
+Verify String Does Not Contain Substring
+    [Arguments]    ${string}    ${substring}
+    Log    Actual String: ${string}
+    Log    Expected Substring: ${substring}
+    Run Keyword And Continue On Failure    Should Not Contain    ${string}    ${substring}    String "${string}" contains substring "${substring}"    FALSE
+
+Verify String Does Not Match Pattern
+    [Arguments]    ${string}    ${pattern}
+    Log    Actual String: ${string}
+    Log    Expected Pattern: ${pattern}
+    Run Keyword And Continue On Failure    Should Not Match RegExp    ${string}    ${pattern}    String "${string}" matches pattern "${pattern}"    FALSE
+
+Verify String Matches Pattern
+    [Arguments]    ${string}    ${pattern}
+    Log    Actual String: ${string}
+    Log    Expected Pattern: ${pattern}
+    Run Keyword And Continue On Failure    Should Match RegExp    ${string}    ${pattern}    String "${string}" does not match pattern "${pattern}"    FALSE
