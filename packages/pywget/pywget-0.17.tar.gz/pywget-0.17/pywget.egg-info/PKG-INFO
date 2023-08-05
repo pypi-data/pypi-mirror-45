@@ -1,0 +1,74 @@
+Metadata-Version: 1.2
+Name: pywget
+Version: 0.17
+Summary: command line wget downloader alternative, this can be module/package
+Home-page: https://bitbucket.org/licface/pywget
+Author: cumulus13 Team
+Author-email: cumulus13@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: pywget
+        ==================
+        
+        command line wget downloader alternative, this can be module/package
+        
+        
+        Installing
+        ----------
+        
+        Install and update using `pip`_:
+        
+        .. code-block:: text
+        
+            $ pip install pywget
+        
+        pywget supports Python 2 and newer, Python 3 and newer, and PyPy.
+        
+        .. _pip: https://pip.pypa.io/en/stable/quickstart/
+        
+        
+        Example
+        ----------------
+        
+        What does it look like? Here is an example of a simple pywget program:
+        
+        .. code-block:: python
+        
+            from pywget import wget
+        
+            link = "http://www.test.com/test.tar.gz"
+            wget.download(link, "/home/root/Downloads")
+        
+        
+        or run on terminal
+        
+        .. code-block:: text
+        
+            $ python wget.py "http://www.test.com/test.tar.gz" -p /home/root/Downloads
+            
+        Support
+        ------
+        
+        *   Python 2.7 +, Python 3.x
+        *   Windows, Linux
+        
+        Links
+        -----
+        
+        *   License: `BSD <https://bitbucket.org/licface/pywget/src/default/LICENSE.rst>`_
+        *   Code: https://bitbucket.org/licface/pywget
+        *   Issue tracker: https://bitbucket.org/licface/pywget/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
