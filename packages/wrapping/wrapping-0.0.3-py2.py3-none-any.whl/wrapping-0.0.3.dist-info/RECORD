@@ -1,0 +1,13 @@
+wrapping/__init__.py,sha256=v0q84qWXrbkwu8J7nfCFNezTt02BslXStzTtUwr2K0g,1802
+wrapping/_version.py,sha256=RCja3SnJR4giCITB8kZXdCG-gUd0dfPxyDBV6aUKpD0,1278
+wrapping/box_extension.py,sha256=3JZ2pFRtEfLIhkeXlwLBYRuPTxQHEg6Uh4tEyNlW6hI,6369
+wrapping/decorators.py,sha256=k2_3elAoLCdfW_hXugyDlkdgexLmu_AwLzpgp90GRgg,1994
+wrapping/extender.py,sha256=UX9Lo6xvk6KUo1a5im8nvnPKnEiirKntFJnTG_b80N8,1330
+wrapping/importer.py,sha256=Md-U_GJ92LeGkCUCcxKkALQLxyVLd2jnifgdbSOjC8Y,5038
+wrapping/wrappers.py,sha256=cea8zeoUul91hUH-eVJeTG8SIeiy6YPDI5-5-fT6Igk,14139
+wrapping/extended/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wrapping-0.0.3.dist-info/LICENSE,sha256=Rr87nHe9TcetkeOkRYgUURlfmuFtF2Z-6i33U00c22Q,1070
+wrapping-0.0.3.dist-info/METADATA,sha256=VAcx6Pb7GjEfkMom1TAPY4U9u8X7sZ5y1MmQm9Ggo7Q,1781
+wrapping-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+wrapping-0.0.3.dist-info/top_level.txt,sha256=NFf79IJQQ6qyDidJr9ewDA-iBrHnRPgLdGgeCdgxkjs,9
+wrapping-0.0.3.dist-info/RECORD,,
