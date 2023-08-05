@@ -1,0 +1,10 @@
+README.md
+certibot.py
+setup.cfg
+setup.py
+./bin/certibot
+bin/certibot
+certibot.egg-info/PKG-INFO
+certibot.egg-info/SOURCES.txt
+certibot.egg-info/dependency_links.txt
+certibot.egg-info/top_level.txt
