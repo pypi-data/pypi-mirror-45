@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PValidator
+Version: 0.0.0
+Summary: Pvalidaor provides general validations for the given class
+Home-page: UNKNOWN
+Author: Itay Bardugo
+Author-email: itaybardugo91@gmail.com
+License: UNKNOWN
+Description: Pvalidaor provides general validations for the given class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
