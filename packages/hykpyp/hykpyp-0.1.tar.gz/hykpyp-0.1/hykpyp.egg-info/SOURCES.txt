@@ -1,0 +1,6 @@
+setup.py
+hykpyp.egg-info/PKG-INFO
+hykpyp.egg-info/SOURCES.txt
+hykpyp.egg-info/dependency_links.txt
+hykpyp.egg-info/not-zip-safe
+hykpyp.egg-info/top_level.txt
