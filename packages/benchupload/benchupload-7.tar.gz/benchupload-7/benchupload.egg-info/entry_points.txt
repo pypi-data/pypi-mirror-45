@@ -1,0 +1,4 @@
+[console_scripts]
+benchupload = benchupload.__main__:main
+metricupload = metricupload.__main__:main
+
