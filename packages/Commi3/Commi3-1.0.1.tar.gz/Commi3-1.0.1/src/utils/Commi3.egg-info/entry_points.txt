@@ -1,0 +1,4 @@
+
+  [console_scripts]
+  commi3=commi3.cli:main
+  
