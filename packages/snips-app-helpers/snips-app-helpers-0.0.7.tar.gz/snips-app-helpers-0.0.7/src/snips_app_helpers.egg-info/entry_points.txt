@@ -1,0 +1,3 @@
+[console_scripts]
+snips-app = snips_app_helpers.cli:main
+
