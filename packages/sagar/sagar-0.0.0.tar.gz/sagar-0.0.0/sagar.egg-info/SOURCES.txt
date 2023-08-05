@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+sagar/__init__.py
+sagar/version.py
+sagar.egg-info/PKG-INFO
+sagar.egg-info/SOURCES.txt
+sagar.egg-info/dependency_links.txt
+sagar.egg-info/entry_points.txt
+sagar.egg-info/requires.txt
+sagar.egg-info/top_level.txt
