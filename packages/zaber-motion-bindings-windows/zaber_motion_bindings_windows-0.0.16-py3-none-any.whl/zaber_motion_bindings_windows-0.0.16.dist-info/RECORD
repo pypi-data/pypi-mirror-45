@@ -1,0 +1,9 @@
+zaber_motion_bindings_windows/__init__.py,sha256=QQ2YCSwnqI2aNMlNTQzyDPEdwyHeMufe5nlojEdw5UE,34
+zaber_motion_bindings_windows/bindings.py,sha256=9cUgmHtOgVjiquzpVSMd5Ir7Ax9SuIvRW9binsbVs64,149
+zaber_motion_bindings_windows/zaber-motion-lib-windows-386.dll,sha256=e-scPxDDRcg7aUH3BQRG7q0BGi9uEB3YFt6xLvB8T_s,16434523
+zaber_motion_bindings_windows/zaber-motion-lib-windows-amd64.dll,sha256=PhDt86x4eKWb2zDgxtCy3YIZiX2OUCubfv3kRGg-sCY,19610695
+zaber_motion_bindings_windows-0.0.16.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+zaber_motion_bindings_windows-0.0.16.dist-info/METADATA,sha256=3ixShY6cx6kGmRJ9sbVwQN3I9deFkBQiMW1xI4PTXaU,680
+zaber_motion_bindings_windows-0.0.16.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+zaber_motion_bindings_windows-0.0.16.dist-info/top_level.txt,sha256=UHBeOPaZOLbI1E_1ET602S5GnXnxNV-qqBRAORRuXZM,30
+zaber_motion_bindings_windows-0.0.16.dist-info/RECORD,,
