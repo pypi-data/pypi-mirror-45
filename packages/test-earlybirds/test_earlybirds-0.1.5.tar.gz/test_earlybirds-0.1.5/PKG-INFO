@@ -1,0 +1,90 @@
+Metadata-Version: 1.1
+Name: test_earlybirds
+Version: 0.1.5
+Summary: technical test for Earlybirds
+Home-page: https://github.com/simonmeoni/test_earlybirds
+Author: Simon Meoni
+Author-email: simonmeoni@aol.com
+License: Apache Software License 2.0
+Description: ===============
+        Test Earlybirds
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/test_earlybirds.svg
+                :target: https://pypi.python.org/pypi/test_earlybirds
+        
+        .. image:: https://img.shields.io/travis/simonmeoni/test_earlybirds.svg
+                :target: https://travis-ci.org/simonmeoni/test_earlybirds
+        
+        .. image:: https://readthedocs.org/projects/test-earlybirds/badge/?version=latest
+                :target: https://test-earlybirds.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/simonmeoni/test_earlybirds/shield.svg
+             :target: https://pyup.io/repos/github/simonmeoni/test_earlybirds/
+             :alt: Updates
+        
+        
+        
+        technical test for Earlybirds
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://test-earlybirds.readthedocs.io.
+        
+        Install
+        --------
+        
+        To install the package : `pip3 install test-earlybirds`
+        
+        CLI
+        --------
+        To launch the application with CLI, enter the following commands :
+        
+            test_ealybirds --k 5 \
+                           --output ./output/path/to/csv/result/file \
+                           --learn ./output/path/to/csv/learning/file \
+                           --evaluation ./output/path/to/csv/evaluation/file
+        
+            here is a description of arguments :
+              - k: the number of the neighbors
+              - output: the output path
+              - learn: the input path of the train set
+              - evaluation: the input path of the evaluation set
+              - user_limit: limit the number of user to evaluate
+        Features
+        --------
+        
+        * I tried to implement this method from this following article : https://www.itm-conferences.org/articles/itmconf/pdf/2017/04/itmconf_ita2017_04008.pdf
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-04-14)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: test_earlybirds
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
