@@ -1,0 +1,6 @@
+README.md
+setup.py
+Jean_spdf.egg-info/PKG-INFO
+Jean_spdf.egg-info/SOURCES.txt
+Jean_spdf.egg-info/dependency_links.txt
+Jean_spdf.egg-info/top_level.txt
