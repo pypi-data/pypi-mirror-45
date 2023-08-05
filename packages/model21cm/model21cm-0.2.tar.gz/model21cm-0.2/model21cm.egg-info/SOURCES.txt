@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+model21cm/__init__.py
+model21cm.egg-info/PKG-INFO
+model21cm.egg-info/SOURCES.txt
+model21cm.egg-info/dependency_links.txt
+model21cm.egg-info/not-zip-safe
+model21cm.egg-info/requires.txt
+model21cm.egg-info/top_level.txt
