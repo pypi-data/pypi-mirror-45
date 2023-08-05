@@ -1,0 +1,6 @@
+compat
+doom
+fslib
+lning
+sysinfo
+utils

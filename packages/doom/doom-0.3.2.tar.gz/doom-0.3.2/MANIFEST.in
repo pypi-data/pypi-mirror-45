@@ -1,0 +1,5 @@
+include *.txt
+include *.py
+exclude *wheel*
+include versioneer.py
+include doom/_version.py
