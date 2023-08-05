@@ -1,0 +1,9 @@
+datasetscraper/Scraper.py,sha256=raq-NaXGTm5qCBTWu4LEa_oITN_E9oky447LLMrY3O0,3203
+datasetscraper/__init__.py,sha256=1wCzuyHkIvRSuqTG0KG1qV0Ia7-NJfDdVmjUpGMAnNA,24
+datasetscraper/downloader.py,sha256=4kEw4435QARXES8luJJ0P3i4sdNP8y1ikX6JF7P3eHY,3662
+datasetscraper/pageagent.py,sha256=uoWOzc24_Ez6lFMyEiSubTSksicoIGZNVjaEOH2XryI,5472
+datasetscraper-0.0.4.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+datasetscraper-0.0.4.dist-info/METADATA,sha256=dKaMhntIlpgjpf1JJks-leGqst8GtI5psqoGxOtUqY0,2620
+datasetscraper-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+datasetscraper-0.0.4.dist-info/top_level.txt,sha256=BNvCF1Phlb9HeXUJHkBK3ubsaKcWE4gwNH_VNzvErRI,15
+datasetscraper-0.0.4.dist-info/RECORD,,
