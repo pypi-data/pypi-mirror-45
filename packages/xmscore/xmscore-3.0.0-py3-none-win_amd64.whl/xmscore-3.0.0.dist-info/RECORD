@@ -1,0 +1,8 @@
+xmscore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmscore/_xmscore.cp35-win_amd64.pyd,sha256=WKMsIgHGySXtl74_9_xwgyU6-DI6su6FBterI6ELptE,364032
+xmscore/misc/__init__.py,sha256=DlGRIMIDrXySvd_upfE7ThrVm83LD2YF9v8f_dfEcrM,30
+xmscore/misc/observer.py,sha256=c7Flllml3znTj1KizuTZFZxGlngrLKbBMZFcyVBxwXA,1581
+xmscore-3.0.0.dist-info/METADATA,sha256=-XDfTwkHryF7N3IY0fiGGRUDFskA4v-c4sJIrlfpDtY,230
+xmscore-3.0.0.dist-info/WHEEL,sha256=4MWKnU79UwuVmfDf_0O5xTF3JjAgsSzJkvi7FI0hFSI,103
+xmscore-3.0.0.dist-info/top_level.txt,sha256=zx0ApvbRI-8Ewo8WdtGdMwGLX6YzAuQshHknnsROJUs,8
+xmscore-3.0.0.dist-info/RECORD,,
