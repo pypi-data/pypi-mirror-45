@@ -1,0 +1,10 @@
+import bot.base
+import bot.cmds
+import bot.event
+import bot.kernel
+import bot.run
+import bot.entry
+import bot.fleet  
+import bot.irc
+import bot.rss
+import bot.users

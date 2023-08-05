@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+
+import obj
+import os
+
+from bot.run import kernel
+from obj.shell import start, startup, reset
+
+startup()
+
+try:
+    k = kernel.start("botlib")
+    k.walk("bot")
+    k.show_prompt()
+    k.wait()
+except KeyboardInterrupt:
+    print("")
+finally:
+    reset()
+    os._exit(0)
