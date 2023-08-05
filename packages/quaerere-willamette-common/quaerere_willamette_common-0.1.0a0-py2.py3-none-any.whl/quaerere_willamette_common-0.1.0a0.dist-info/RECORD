@@ -1,0 +1,14 @@
+willamette_common/__init__.py,sha256=RZMEmrXjO42MouuvmUwSQqsEdVk_bJ-auFl1nGy6wrU,866
+willamette_common/models/__init__.py,sha256=aEwlu3YQwuaru0sPcUIFzkfJPnstYj1SDq5VmYSC7es,112
+willamette_common/models/web_pages.py,sha256=xy_DvKihANXRQaeneY7w6YVjiB1_6reOhmdcMGEk5lA,204
+willamette_common/models/web_sites.py,sha256=iCXnDpjWwVeL-DZa1B4PQ-sn3pyrbarKNPx00fiCc2k,175
+willamette_common/schemas/__init__.py,sha256=1n_7TY2XEPX491Ke4nogG5YkZtnH05xNG6DWIVYMaeY,120
+willamette_common/schemas/base.py,sha256=Jmt4PrZCWtlvhMo9azKPzFY410a_WbuzAeJn-UKzSwk,321
+willamette_common/schemas/web_pages.py,sha256=tgxYLzGUwqLeU9H5CbQneXVsSep4KpV1ARv_-f0okjo,170
+willamette_common/schemas/web_sites.py,sha256=XmxDWKhTES6RXaBiyYEcjhl4Awg4_Zqc19pIt4VpUB8,170
+quaerere_willamette_common-0.1.0a0.dist-info/LICENSE.txt,sha256=TfPDBt3ar0uv_f9cqCDMZ5rIzW3CY8anRRd4PkL6ejs,34522
+quaerere_willamette_common-0.1.0a0.dist-info/METADATA,sha256=hdi71sTPprsdZfz9TgMeI1w71Cu1qX1wROWN0uFTNmw,1608
+quaerere_willamette_common-0.1.0a0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+quaerere_willamette_common-0.1.0a0.dist-info/entry_points.txt,sha256=1UxpyOr7nB2tVa4OhZPS2FelCx_UwzilnMrPkLviUlA,67
+quaerere_willamette_common-0.1.0a0.dist-info/top_level.txt,sha256=KStPe4XZLSv2MTvaxQjJMznF7fA88RjG1C5z4a7YmhY,18
+quaerere_willamette_common-0.1.0a0.dist-info/RECORD,,
