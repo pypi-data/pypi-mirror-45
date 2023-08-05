@@ -1,0 +1,6 @@
+six
+pyspark
+pandas
+sqlalchemy
+dtest-framework
+pyhamcrest
