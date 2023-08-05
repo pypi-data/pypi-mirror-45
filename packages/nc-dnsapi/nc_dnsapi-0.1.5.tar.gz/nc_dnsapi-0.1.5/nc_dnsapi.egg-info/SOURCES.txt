@@ -1,0 +1,8 @@
+README.md
+setup.py
+nc_dnsapi/__init__.py
+nc_dnsapi.egg-info/PKG-INFO
+nc_dnsapi.egg-info/SOURCES.txt
+nc_dnsapi.egg-info/dependency_links.txt
+nc_dnsapi.egg-info/requires.txt
+nc_dnsapi.egg-info/top_level.txt

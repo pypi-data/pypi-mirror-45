@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: nc_dnsapi
+Version: 0.1.5
+Summary: API wrapper for the netcup DNS api
+Home-page: https://github.com/nbuchwitz/nc_dnsapi
+Author: Nicolai Buchwitz
+Author-email: nb@tipi-net.de
+License: UNKNOWN
+Description: # nc_dnsapi
+        A simple API wrapper for the netcup DNS API
+        
+        ```python
+        from nc_dnsapi import Client, DNSRecord
+        
+        customer = 123456
+        api_key = "your-personal-api-key"
+        api_password = "your-private-api-password"
+        
+        with Client(customer, api_key, api_password) as api:
+            # fetch records
+            records = api.dns_records("example.com")
+            for record in records:
+        	print(record)
+            
+            # fetch zone details
+            zone = api.dns_zone("example.com")
+            print(zone)
+            
+            # update single record
+            api.update_dns_record("example.com", DNSRecord("my-hostname", "A", "127.0.0.2", id=108125))
+            
+            # update list of records
+            api.update_dns_record("example.com", [ DNSRecord("my-hostname", "A", "127.0.0.2", id=108125), 
+                DNSRecord("my-hostname2", "A", "127.0.0.2", id=108126)])
+                
+            # delete record
+            api.delete_dns_record("example.com", DNSRecord("my-hostname", "A", "127.0.0.2", id=108125))
+            
+            # add record
+            api.add_dns_record("example.com", DNSRecord("another-host", "AAAA", "::1"))
+        
+            # update zone
+            zone = api.dns_zone("example.com")
+            zone.refresh = 3600
+            api.update_dns_zone("example.com", zone)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
