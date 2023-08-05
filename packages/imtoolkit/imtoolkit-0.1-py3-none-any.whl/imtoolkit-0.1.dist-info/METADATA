@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: imtoolkit
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://ishikawa.cc/imtoolkit/
+Author: Naoki Ishikawa
+Author-email: contact@ishikawa.cc
+License: MIT
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: tqdm
+
+# IMToolkit
+
+
