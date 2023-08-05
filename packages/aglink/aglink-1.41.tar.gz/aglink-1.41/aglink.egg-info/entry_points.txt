@@ -1,0 +1,3 @@
+[console_scripts]
+aglink = aglink.__main__:usage
+
