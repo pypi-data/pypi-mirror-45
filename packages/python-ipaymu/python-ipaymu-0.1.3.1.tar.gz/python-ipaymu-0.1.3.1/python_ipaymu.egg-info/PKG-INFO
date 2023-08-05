@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-ipaymu
+Version: 0.1.3.1
+Summary: Integrasi iPaymu
+Home-page: https://github.com/BayuWardani/python-ipaymu.git
+Author: Bayu Wardani
+Author-email: bayuwardani51@gmail.com
+License: UNKNOWN
+Description: Memudahkan ada bagi pengguna python untuk integrasi dengan iPaymu
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Flask
+Classifier: Natural Language :: Indonesian
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
