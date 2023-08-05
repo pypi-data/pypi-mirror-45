@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: contextualMAB
+Version: 0.1
+Summary: Modules for solving contextual Multi arm bandit problems
+Home-page: http://github.com/karthickrajas/contextualMAB
+Author: Karthick Raja
+Author-email: karthick11b36@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
