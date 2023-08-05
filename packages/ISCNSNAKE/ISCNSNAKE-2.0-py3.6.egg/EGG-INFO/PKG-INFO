@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: ISCNSNAKE
+Version: 2.0
+Summary: A parser for ISCN data.
+Home-page: https://gitlab.com/connordenomy/ISCN-SNAKE
+Author: Connor Denomy
+Author-email: connordenomy@gmail.com
+License: MIT
+Description: 
+        #
+        # ISCNSNAKE : ISCN Structural and Numerical Analysis of Karyotype Entries
+        #
+        
+        ISCNSNAKE is a tool to use with ISCN : the International System for
+        Cytogenic Nomenclature written in python 3.7. The repository contains
+        three python files, one is the core of the module (ISCNParser.py) and the
+        second (run_SNAKE.py) is a quick script that executes the main function of
+        ISCNParser. Most features are accessible through the console menu that
+        opens when the script is ran but if you want to automate multiple files
+        or do something more complicated it is suggested that you import the
+        module into your own script. The third script (quick_run_SNAKE.py)
+        runs ISCNParser at the default settings with users only having to specify
+        the location of the Mitelman database on their computer, the desired output
+        folder and filenames, and any criteria they wish to use as filters. For a 
+        description on how to use these filters consult readthedocs.org/ISCNSNAKE/
+        
+        
+        #
+        # SYSTEM REQUIREMENTS
+        #
+        
+        Python 3.6 or greater
+        
+        Python modules
+        - pandas
+        - numpy
+        
+        #
+        # INSTALLATION
+        #
+        
+        1. Open either terminal or command line in the fold you place the download (this folder).
+        2. Input " python setup.py install --user "
+        3. You should be able to run the program from anywhere with the upcoming instructions.
+        
+        #
+        # TUTORIAL
+        #
+        
+        
+        
+        ## Authors
+        
+        * **Connor Denomy** (connordenomy@gmail.com) - *Lead author*
+        
+        #
+        # Acknowledgments
+        #
+        
+        * Samuel Germain for creating the prototype of this program in shell/perl and providing the basis for the core algorithm
+        * cyDAS(cyDAS.org) for helping to check proper function. Unfortunately became abandonware late 2018.
+        * Bjorn Haave for assisting
+        * Vizeacoumar lab
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
