@@ -1,0 +1,11 @@
+owcli/__init__.py,sha256=vUB-ff0EruQ1QfUIV07vEh4ixiwlZZJYKD1Cjp6xP1E,3731
+owcli/main.py,sha256=dsuXWxMbuInjh-5UhVmhVO8VBh9Ya2d6T0BQWLTbnaU,325
+owcli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+owcli/commands/init/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+owcli/commands/init/main.py,sha256=uGcKlnMBfuQtjkzQWiDTCA3ryq2oT5vbtRU4HB8Af2o,1853
+owcli-0.1.0.dist-info/LICENSE,sha256=ZaYPR3o5-IKUTM5GQJ-_tgNJ-EDp1yhYsAjJLaOrQes,1071
+owcli-0.1.0.dist-info/METADATA,sha256=KmUHbjv55nm-9OeQdUA2SlXLu6yJOev3-VTzzsn46pI,1100
+owcli-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+owcli-0.1.0.dist-info/entry_points.txt,sha256=0dUrO17L00RK-Nx14PdO1u5UghxGA8Y8sAqbcPuRcxc,43
+owcli-0.1.0.dist-info/top_level.txt,sha256=UVQ9nkJe4Wz2Iz4odjV_aDi0CgNw5xBze5dj4OrMlxc,6
+owcli-0.1.0.dist-info/RECORD,,
