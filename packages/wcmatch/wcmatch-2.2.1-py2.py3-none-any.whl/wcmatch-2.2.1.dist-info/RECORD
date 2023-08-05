@@ -1,0 +1,14 @@
+wcmatch/__init__.py,sha256=dgkdYYvx3al_pJEksUDKvo0Y6bMwyluByyxStKm8oP8,1930
+wcmatch/__meta__.py,sha256=BuK2KjKWJ2fGFOqaagmAPw4eVM4_QgBEryP5ZOS6t_w,6621
+wcmatch/_wcparse.py,sha256=DjrSxdio8TkOpYKwx_uAMhOgQQ6XzrTcFTGH5P-WF40,41169
+wcmatch/file_hidden.py,sha256=BVXRv_DtB7RaUrnlK0sjWQkft0doR6ABwjEs6S0RAsU,5471
+wcmatch/fnmatch.py,sha256=_9q0Fz_t59Hqgxvli4WimFR8NgRAEzUEUHEkhCvdPVA,3055
+wcmatch/glob.py,sha256=uKAxM4E_DxCDBy2RI9eulZ7pGXKpHzd9EqWr0EQG6Jw,17838
+wcmatch/pep562.py,sha256=00mHtYhXUYAXMY4eW6OXbkXuUpB-ruYu4qtS5i_4Sxs,8977
+wcmatch/util.py,sha256=Xqk7qRINJRRlRxmXe10GkA96RkHvKfC5HS2NmjcJh2I,5114
+wcmatch/wcmatch.py,sha256=XdJ9rUjv0kOvrus8oaiTHJMyBqZ0k9ehUHbJ7eXnb9M,8609
+wcmatch-2.2.1.dist-info/LICENSE.md,sha256=XVXE_QGdey5e0EDzQUxfnxar7EJoKKbvA5_suAZIzGk,1076
+wcmatch-2.2.1.dist-info/METADATA,sha256=vJvj056P0mITGBob2nfErdR2j8yiq6WxKrA9EcUUF5s,4566
+wcmatch-2.2.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+wcmatch-2.2.1.dist-info/top_level.txt,sha256=n0uLo7IwWxe6Yw6hzGUVUfKD0r89ZS0Uw0z2lJMVYO4,8
+wcmatch-2.2.1.dist-info/RECORD,,
