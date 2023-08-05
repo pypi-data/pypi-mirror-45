@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: openstack_customer_portal
+Version: 0.1
+Summary: openstack portal for customer, focus on monitoring
+Home-page: https://github.com/ngohoa211/openstack_customer_portal
+Author: hoa ngo
+Author-email: ngohoa211@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/ngohoa211/openstack_customer_portal/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: MONITOR,OPENSTACK,PORTAL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
