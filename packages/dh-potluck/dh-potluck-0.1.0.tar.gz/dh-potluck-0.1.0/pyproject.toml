@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dh-potluck"
+version = "0.1.0"
+authors = []
+description = ""
+
+[tool.poetry.dependencies]
+python = "^3.6"
+flask = "^1.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+pytest = "^4.4"
+flake8-quotes = "^1.0"
+flake8-import-order = "^0.18.1"
