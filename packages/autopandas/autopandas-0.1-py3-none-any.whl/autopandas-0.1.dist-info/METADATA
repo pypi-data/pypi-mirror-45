@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: autopandas
+Version: 0.1
+Summary: Process, visualize and use data easily.
+Home-page: https://github.com/didayolo/autodata
+Author: Adrien Pavao
+Author-email: deepak.kumar.iet@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+# AutoData
+
+### Process, visualize and use data easily.
+
+![logo](logo_autodata.png)
+
+Forked from [medi-chal project](https://github.com/Didayolo/medi-chal).
+
+
