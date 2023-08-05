@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+licenseheaders.py
+setup.cfg
+setup.py
+licenseheaders.egg-info/PKG-INFO
+licenseheaders.egg-info/SOURCES.txt
+licenseheaders.egg-info/dependency_links.txt
+licenseheaders.egg-info/entry_points.txt
+licenseheaders.egg-info/top_level.txt
