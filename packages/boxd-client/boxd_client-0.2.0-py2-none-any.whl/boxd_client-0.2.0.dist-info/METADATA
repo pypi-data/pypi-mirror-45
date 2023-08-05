@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: boxd-client
+Version: 0.2.0
+Summary: Python version sdk for boxd.
+Home-page: https://github.com/BOXFoundation/boxd-unpack-python
+Author: JarvisWang
+Author-email: wangjunbao2018@gmail.com
+License: MIT
+Keywords: boxd-client
+Platform: MacOS X
+Platform: Posix
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: boxd-client
+Provides-Extra: dev
+Requires-Dist: eth-utils (<2,>=1.3.0)
+Requires-Dist: eth-keys (<0.3.0,>=0.2.1)
+Requires-Dist: pycryptodome (<4,>=3.6.6)
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: utilitybelt
+Requires-Dist: Crypto
+Requires-Dist: secp256k1
+Provides-Extra: boxd-client
+Requires-Dist: eth-utils (<2,>=1.3.0); extra == 'boxd-client'
+Requires-Dist: eth-keys (<0.3.0,>=0.2.1); extra == 'boxd-client'
+Requires-Dist: pycryptodome (<4,>=3.6.6); extra == 'boxd-client'
+Requires-Dist: grpcio; extra == 'boxd-client'
+Requires-Dist: grpcio-tools; extra == 'boxd-client'
+Requires-Dist: utilitybelt; extra == 'boxd-client'
+Requires-Dist: Crypto; extra == 'boxd-client'
+Requires-Dist: secp256k1; extra == 'boxd-client'
+Provides-Extra: dev
+Requires-Dist: eth-utils (<2,>=1.3.0); extra == 'dev'
+Requires-Dist: eth-keys (<0.3.0,>=0.2.1); extra == 'dev'
+Requires-Dist: pycryptodome (<4,>=3.6.6); extra == 'dev'
+Requires-Dist: grpcio; extra == 'dev'
+Requires-Dist: grpcio-tools; extra == 'dev'
+Requires-Dist: utilitybelt; extra == 'dev'
+Requires-Dist: Crypto; extra == 'dev'
+Requires-Dist: secp256k1; extra == 'dev'
+Requires-Dist: bumpversion (<1,>=0.5.3); extra == 'dev'
+Requires-Dist: wheel; extra == 'dev'
+Requires-Dist: setuptools (>=36.2.0); extra == 'dev'
+Requires-Dist: pluggy (==0.7.1); extra == 'dev'
+Requires-Dist: idna (==2.7); extra == 'dev'
+Requires-Dist: requests (<3,>=2.20); extra == 'dev'
+Requires-Dist: tox (>=2.7.0); extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: pytest (<3.7,>=3.6); extra == 'dev'
+Requires-Dist: flake8 (==3.5.0); extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: flake8 (==3.5.0); extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest (<3.7,>=3.6); extra == 'test'
+
+boxd-sdk-python
+===============
+
+
