@@ -1,0 +1,7 @@
+README.md
+puissance4C.py
+setup.py
+puissance4C.egg-info/PKG-INFO
+puissance4C.egg-info/SOURCES.txt
+puissance4C.egg-info/dependency_links.txt
+puissance4C.egg-info/top_level.txt
