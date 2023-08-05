@@ -1,0 +1,8 @@
+{
+  "core/app/tests/test_services.py::TestCases::test_service_quota": true,
+  "core/node/tests/test_node.py::TestCases::test_base_client": true,
+  "core/node/tests/test_node.py::TestCases::test_base_sync": true,
+  "core/node/tests/test_node.py::TestCases::test_node_connect": true,
+  "core/node/tests/test_node.py::TestCases::test_node_delivery": true,
+  "core/tests/test_peer.py::TestCases::test_base": true
+}
