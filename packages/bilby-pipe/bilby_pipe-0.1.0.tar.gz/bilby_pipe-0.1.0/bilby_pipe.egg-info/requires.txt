@@ -1,0 +1,7 @@
+future
+pycondor>=0.5
+configargparse
+ligo-gracedb
+bilby>=0.4.1
+scipy>=1.2.0
+pesummary
