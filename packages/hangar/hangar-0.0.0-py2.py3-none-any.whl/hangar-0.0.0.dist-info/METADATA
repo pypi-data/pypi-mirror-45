@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: hangar
+Version: 0.0.0
+Summary: Hangar is version control for tensor data. Commit, branch, merge, revert, and collaborate in the data-defined software era.
+Home-page: https://github.com/tensorwerk/hangar-py
+Author: Richard Izzo
+Author-email: rick@tensorwerk.com
+License: MIT license
+Project-URL: Documentation, https://hangar-py.readthedocs.io/
+Project-URL: Changelog, https://hangar-py.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/tensorwerk/hangar-py/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >= 3.6.0
+Requires-Dist: click
+Requires-Dist: dictdiffer
+Requires-Dist: lmdb (==0.94)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: msgpack (==0.6.1)
+Requires-Dist: blosc
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: tqdm
+
+========
+Overview
+========
+
+
+
+Hangar is version control for tensor data. Commit, branch, merge, revert, and
+collaborate in the data-defined software era.
+
+* Free software: Apache 2.0 license
+
+What is Hangar?
+===============
+
+Hangar is based off of the founded from the belief that too much time is spent collecting,
+managing, and creating home-brewed version control systems for data. Hangar is
+a `Git` inspired tool to version and work with data!
+
+Installation
+============
+
+Hangar is in early alpha development release!
+
+::
+
+    pip install hangar
+
+Documentation
+=============
+
+https://hangar-py.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+Changelog
+=========
+
+0.0.0 (2019-04-15)
+------------------
+
+* First Public Release of Hangar!
+
+
