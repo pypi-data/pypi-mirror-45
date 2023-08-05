@@ -1,0 +1,9 @@
+faiss-1.5.3.data/purelib/faiss/__init__.py,sha256=QCjKjbf1kdoqlShhoA3tnWHQLpjdMrAxHCVwYAM_s_c,19423
+faiss-1.5.3.data/purelib/faiss/_swigfaiss.so,sha256=AZ98eRddDvWdevhyQV8OyqG3FApvR_4JjaK8qyEXsnE,3620204
+faiss-1.5.3.data/purelib/faiss/swigfaiss.py,sha256=_Tr3lnGZFuT5yW7Ms7KDC85-BuUFhhpdcr0hNAs73kw,285898
+faiss-1.5.3.data/purelib/faiss/__pycache__/__init__.cpython-37.pyc,sha256=6aR3LQ7PqKUuWVGvCYzsOBDm22N2xCiLanTxnuifUQ4,18997
+faiss-1.5.3.data/purelib/faiss/__pycache__/swigfaiss.cpython-37.pyc,sha256=YoifAZ5rlNJ5DMOER6tiIcBb16RMr1IY9QWH0geqOkc,273990
+faiss-1.5.3.dist-info/METADATA,sha256=W8Lh5QrJyMm3nYul7YHt9tqEVnV-eQ6tnRxEMJgUYAc,1247
+faiss-1.5.3.dist-info/WHEEL,sha256=RRvoBjGSBWGSvOG2Ydig-4Us3kL0igx7zdRekTD06oU,111
+faiss-1.5.3.dist-info/top_level.txt,sha256=nr2S-1YAhqAuAlFJukntDvRGXfI1KmwnUNs_iFlNiig,6
+faiss-1.5.3.dist-info/RECORD,,
