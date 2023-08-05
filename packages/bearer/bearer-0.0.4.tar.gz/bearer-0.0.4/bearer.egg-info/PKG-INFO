@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bearer
+Version: 0.0.4
+Summary: Bearer Python Client
+Home-page: https://github.com/Bearer/bearer-python
+Author: Bearer Engineering
+Author-email: engineering@bearer.sh
+License: UNKNOWN
+Description: # Bearer python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
