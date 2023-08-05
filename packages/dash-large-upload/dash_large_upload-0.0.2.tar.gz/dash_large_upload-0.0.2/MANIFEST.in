@@ -1,0 +1,5 @@
+include dash_large_upload/dash_large_upload.min.js
+include dash_large_upload/dash_large_upload.dev.js
+include dash_large_upload/metadata.json
+include dash_large_upload/package.json
+include README.md
