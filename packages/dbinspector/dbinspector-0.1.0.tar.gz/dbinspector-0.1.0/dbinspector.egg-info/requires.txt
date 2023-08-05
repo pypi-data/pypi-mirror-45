@@ -1,0 +1,9 @@
+psycopg2-binary
+sqlalchemy
+
+[dev]
+black
+ipdb
+ipython
+pytest
+wheel

@@ -1,0 +1,10 @@
+README.md
+setup.py
+dbinspector.egg-info/PKG-INFO
+dbinspector.egg-info/SOURCES.txt
+dbinspector.egg-info/dependency_links.txt
+dbinspector.egg-info/requires.txt
+dbinspector.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_dbinspector.py
