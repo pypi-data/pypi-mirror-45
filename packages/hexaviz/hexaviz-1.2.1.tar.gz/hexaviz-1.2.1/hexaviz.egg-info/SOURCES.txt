@@ -1,0 +1,8 @@
+README.md
+setup.py
+hexaviz/__init__.py
+hexaviz.egg-info/PKG-INFO
+hexaviz.egg-info/SOURCES.txt
+hexaviz.egg-info/dependency_links.txt
+hexaviz.egg-info/requires.txt
+hexaviz.egg-info/top_level.txt
