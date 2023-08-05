@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: python4DBI
+Version: 1.0
+Summary: The python 4DBI
+Home-page: https://gitlab.com/marcianobarros/python4dbi
+Author: Marciano Barros
+Author-email: marciano.barros@pestana.com
+License: MIT
+Keywords: datababase drivers DBI 4d
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+Requires-Dist: texttable
+
+# Python4DBI
+
+##### In Memory Of Edson de Sousa (14/04/94 - 16/08/18), i will see you again
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+* 4D is an incredibly productive development platform that lets you focus on your data model and your business rules. 
+* The 4D framework takes care of running your application code natively on macOS and Windows.
+* The 4DBI is written in pure python and allows a python program to use SQL to access one or more databases from a single application without using the 4D ODBC driver. 
+* 4D and 4D Server both provide a native SQL server that enables this functionality.
+
+## Technologies
+Project is created with:
+* Python
+* texttable - https://github.com/foutaise/texttable/
+
+
+## Setup
+To run this project, install it locally using pip:
+
+```
+$ pip install python4DBI
+```
+
+
+
+
+
+
+
+
