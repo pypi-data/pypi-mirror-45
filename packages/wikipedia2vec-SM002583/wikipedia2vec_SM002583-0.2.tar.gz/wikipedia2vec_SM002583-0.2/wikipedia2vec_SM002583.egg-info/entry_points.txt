@@ -1,0 +1,3 @@
+[console_scripts]
+wikipedia2vec_SM002583 = wikipedia2vec_SM002583.cli:cli
+
