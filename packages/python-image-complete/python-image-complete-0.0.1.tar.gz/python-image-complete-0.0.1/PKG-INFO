@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: python-image-complete
+Version: 0.0.1
+Summary: Python3 library for checking whether images are complete.
+Home-page: https://github.com/waikato-datamining/python-image-complete
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: The **python-iamge-complete** package allows you to check for various
+        image types to check whether the image is complete or not. For doing
+        this, it looks for EOF (end of file) markers in the files.
+        
+        Changelog
+        =========
+        
+        0.0.1 (2019-04-17)
+        ------------------
+        
+        - initial release
+        - support for: GIF, JPG, PNG
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3
