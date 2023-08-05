@@ -1,0 +1,50 @@
+Metadata-Version: 1.2
+Name: pdfannot
+Version: 0.0.1
+Summary: PDF Annotation Utils
+Home-page: https://bitbucket.org/ArthurRenaud/pdfannot/0.0.1
+Author: Arthur RENAUD ; Antoine MARULLAZ => Stackadoc
+Author-email: arthur.b.renaud@gmail.com
+License: UNKNOWN
+Description: 
+        # pdfannot
+        
+        This package aims to create a two-way link between annotated pdf and excel data frame.
+        
+        It allows you to :
+        
+           - create an excel file containing each string annotated of the pdf in a column 'annot_text', along with its 
+           annotation in a column 'content'.
+            
+           - annotate a pdf given an excel file of the form described above.
+           
+        It can be really useful for generating automatically annotated pdf documents with NLP models capable to
+        infer annotations from raw texts in a data frame.
+        
+        
+        ### Prerequisites
+        
+        fitz
+        
+        ### Installing
+        
+        pip install pymupdf
+        (pipenv install pymupdf)
+        
+        import fitz
+        
+        ### Authors
+        
+        Arthur Renaud, Antoine Marullaz
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications
+Requires-Python: >=3.5
