@@ -1,0 +1,5 @@
+[console_scripts]
+uploadchain_service = upload_chain.main:upload_chain
+validation_multiproc_service = upload_chain.main:validation_chain_multi_proc
+validation_service = upload_chain.main:validation_chain
+
