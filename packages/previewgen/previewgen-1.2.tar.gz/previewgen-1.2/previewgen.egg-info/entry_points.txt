@@ -1,0 +1,3 @@
+[console_scripts]
+preview-gen = previewgen.__main__:main
+
