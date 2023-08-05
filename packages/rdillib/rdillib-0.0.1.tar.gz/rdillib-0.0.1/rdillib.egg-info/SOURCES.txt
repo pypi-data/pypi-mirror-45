@@ -1,0 +1,7 @@
+README.md
+setup.py
+rdillib/__init__.py
+rdillib.egg-info/PKG-INFO
+rdillib.egg-info/SOURCES.txt
+rdillib.egg-info/dependency_links.txt
+rdillib.egg-info/top_level.txt
