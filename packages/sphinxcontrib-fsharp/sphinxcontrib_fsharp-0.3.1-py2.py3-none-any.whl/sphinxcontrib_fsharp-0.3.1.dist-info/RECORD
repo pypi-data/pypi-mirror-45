@@ -1,0 +1,10 @@
+sphinxcontrib_fsharp-0.3.1-py3.7-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/fsharp/__init__.py,sha256=C5lEueMdvel3iaaLvZWXDfSl-num08NPkdCK6FB0gm8,772
+sphinxcontrib/fsharp/autodocumenters.py,sha256=WN5CAVjmXoyk-yh91fF7jBo3SNIksnCBZ1fITe08sIQ,7572
+sphinxcontrib/fsharp/domain.py,sha256=XkHbN3k4vWDDvL3R1JOx3pmr2Emxr9i2QowGBbVd2iU,12179
+sphinxcontrib_fsharp-0.3.1.dist-info/LICENCE.txt,sha256=5ZaVyja41cXUGY7fwqQTZWFa0MuvS5RmQ_pqqfgVKv0,1102
+sphinxcontrib_fsharp-0.3.1.dist-info/METADATA,sha256=d-R6606Rx4XLHE_H31q_8tvN7ZIq29xg8C31-p3my0I,2080
+sphinxcontrib_fsharp-0.3.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+sphinxcontrib_fsharp-0.3.1.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_fsharp-0.3.1.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_fsharp-0.3.1.dist-info/RECORD,,
