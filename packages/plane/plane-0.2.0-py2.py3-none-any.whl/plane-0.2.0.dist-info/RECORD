@@ -1,0 +1,10 @@
+plane/__init__.py,sha256=iOmVripnlWkaTccQgJVrVSWaMO2cRyMaUPgPRnegiTU,488
+plane/func.py,sha256=mOCfHRoss6nniSaUvS3tQrWBeLhiuWM4rXsdCOBub8w,2378
+plane/pattern.py,sha256=OqV2SEES4f2Pqc3j6HlUWhFFeRp-xvuQvzlHdTbmSR0,6765
+plane/pipeline.py,sha256=BE3zr9i3qWsmZsgbpm_H5MfpXmsOdU1IX7pm-_AQYG8,1780
+plane/plane.py,sha256=rhnfkcdfGshUSzTmOCOXm8uSss0bpAu0AdNtV0bgDRc,3348
+plane/punctuation.py,sha256=TWaF4QotGVKWe4-izb-rRpaQQiIXnIrXQycZz_kvqBc,3169
+plane-0.2.0.dist-info/METADATA,sha256=2jd9zFISO4ncYQyruMcqwz-3a1QPHmYIzTSOwzBndQk,6466
+plane-0.2.0.dist-info/RECORD,,
+plane-0.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+plane-0.2.0.dist-info/top_level.txt,sha256=F6NlRhRKo9lhGZucwldfimYyXWvC2_rmUqyi-GKLz2g,6
