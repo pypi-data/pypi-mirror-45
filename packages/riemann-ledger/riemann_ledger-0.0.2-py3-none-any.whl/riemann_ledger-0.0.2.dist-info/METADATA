@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: riemann-ledger
+Version: 0.0.2
+Summary: Sign Bitcoin transactions on your Ledger Nano S
+Home-page: UNKNOWN
+Author: ['James Prestwich']
+License: LGPLv3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: ledgerblue
+Requires-Dist: riemann-tx
+Requires-Dist: mypy-extensions
+
+UNKNOWN
+
+
