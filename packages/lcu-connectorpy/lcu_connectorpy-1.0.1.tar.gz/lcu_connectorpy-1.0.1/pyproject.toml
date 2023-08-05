@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "lcu_connectorpy"
+version = "1.0.1"
+description = "An interface for the LoL client API."
+license = "MIT"
+authors = ["Noah <noah@coronasoftware.net>"]
+readme = "README.md"
+repository = "https://github.com/Zer0897/lcu_connectorpy"
+documentation = "https://zer0897.github.io/lcu_connectorpy/lcu_connectorpy/index.html"
+keywords = ['league-of-legends', 'api-client']
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+watchdog = "^0.9.0"
+psutil = "^5.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+flake8 = "^3.7"
+pdoc3 = "^0.5.3"
+
+[tool.poetry.scripts]
+doc = "scripts:doc"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
