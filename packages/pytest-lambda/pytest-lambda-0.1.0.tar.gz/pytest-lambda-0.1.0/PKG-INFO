@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pytest-lambda
+Version: 0.1.0
+Summary: Define pytest fixtures using lambda functions
+Home-page: https://github.com/theY4Kman/pytest-lambda
+Author: Zach "theY4Kman" Kanzler
+Author-email: they4kman@gmail.com
