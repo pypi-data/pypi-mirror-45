@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-6.0.dtd">
+<!-- eric project file for project pygui_cli -->
+<!-- Saved: 2019-04-14, 12:49:12 -->
+<!-- Copyright (C) 2019 ,  -->
+<Project version="6.0">
+  <Language></Language>
+  <Hash>c219fea892c624adaf6b342810eab0d3cc942f32</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>Style/CommonHelper.py</Source>
+    <Source>Style/CustomTitlebar/Ui_framelesswindow.py</Source>
+    <Source>Style/CustomTitlebar/__init__.py</Source>
+    <Source>Style/CustomTitlebar/framelesswindow.py</Source>
+    <Source>Style/CustomTitlebar/framelesswindow_rc.py</Source>
+    <Source>Style/CustomTitlebar/windowdragger.py</Source>
+    <Source>Style/__init__.py</Source>
+    <Source>Tools/BasePara.py</Source>
+    <Source>Tools/FuncMixin.py</Source>
+    <Source>Tools/LogError.py</Source>
+    <Source>UUI/Components/C_Application.py</Source>
+    <Source>UUI/Components/C_SplashScreen.py</Source>
+    <Source>Ui_main.py</Source>
+    <Source>__init__.py</Source>
+    <Source>main.py</Source>
+    <Source>main_preinit_ui.py</Source>
+    <Source>resource_rc.py</Source>
+    <Source>setup.py</Source>
+    <Source>src/__init__.py</Source>
+  </Sources>
+  <Forms>
+    <Form>Style/CustomTitlebar/framelesswindow.ui</Form>
+    <Form>main.ui</Form>
+  </Forms>
+  <Resources>
+    <Resource>Style/CustomTitlebar/framelesswindow.qrc</Resource>
+    <Resource>resource.qrc</Resource>
+  </Resources>
+  <Others>
+    <Other>Config/log.txt</Other>
+    <Other>README.md</Other>
+    <Other>doc</Other>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.proto" type="PROTOCOLS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+  </FiletypeAssociations>
+  <Documentation>
+    <DocumentationParams>
+      <dict>
+        <key>
+          <string>ERIC4DOC</string>
+        </key>
+        <value>
+          <dict>
+            <key>
+              <string>ignoreFilePatterns</string>
+            </key>
+            <value>
+              <list>
+                <string>Ui_*.py</string>
+                <string>resource_rc.py</string>
+              </list>
+            </value>
+            <key>
+              <string>outputDirectory</string>
+            </key>
+            <value>
+              <string>doc</string>
+            </value>
+            <key>
+              <string>qtHelpEnabled</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+          </dict>
+        </value>
+      </dict>
+    </DocumentationParams>
+  </Documentation>
+</Project>
