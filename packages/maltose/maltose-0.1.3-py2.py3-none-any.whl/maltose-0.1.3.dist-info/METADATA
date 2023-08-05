@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: maltose
+Version: 0.1.3
+Summary: A static blog builder power by django
+Home-page: https://github.com/MaltoseEditor/maltose
+Author: Aber Sheeran
+Author-email: abersheeran@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: Pillow
+Requires-Dist: Markdown
+Requires-Dist: Pygments
+
+
+# Maltose
+
+一个使用Django编写的静态博客生成器。
+
+## 安装
+
+```
+pip install maltose
+```
+
+
