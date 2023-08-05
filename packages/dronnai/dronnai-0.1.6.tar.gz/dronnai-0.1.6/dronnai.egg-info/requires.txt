@@ -1,0 +1,11 @@
+numpy
+pandas
+torch
+torchtext
+spacy
+scikit-learn
+tqdm
+google.cloud
+flatten_dict
+sacred
+tensorboardX
