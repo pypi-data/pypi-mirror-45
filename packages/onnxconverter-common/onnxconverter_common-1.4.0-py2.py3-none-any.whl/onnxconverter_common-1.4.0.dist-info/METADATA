@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: onnxconverter-common
+Version: 1.4.0
+Summary: ONNX Converter and Optimization Tools
+Home-page: https://github.com/onnx/onnxmltools
+Author: Microsoft Corporation
+Author-email: onnx@microsoft.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: six
+Requires-Dist: numpy
+Requires-Dist: protobuf
+Requires-Dist: onnx
+
+# Introduction
+The onnxconverter-common package provides some common functions and utilities for use in converters from various frameworks to ONNX. And it also enables the different converter work together to convert the model from the mixed frameworks, like a scikit-learn pipeline embedding a xgboost model.
+
+
+# License
+[MIT License](LICENSE)
+
+
