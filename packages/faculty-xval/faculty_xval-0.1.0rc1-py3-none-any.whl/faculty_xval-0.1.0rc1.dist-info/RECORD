@@ -1,0 +1,12 @@
+faculty_xval/__init__.py,sha256=Y6cVEqPfLwQblxhUrDJuryFmaj81PSPBYJiagoJkERY,67
+faculty_xval/splitting.py,sha256=R-d1wX28tRX1EvBCBQ-K8351fhR45yAoS-zYkaNlCVA,2000
+faculty_xval/utilities.py,sha256=4nTPmW7ErcPDnrYbXDNLnu8Wro-fNZh2Xcofl9or6wk,4004
+faculty_xval/validation.py,sha256=CNMxjUKe4PbTaZWHrZKuoI-hSBsonsMF0hT7qO0SkzI,13523
+faculty_xval/bin/__init__.py,sha256=Y6cVEqPfLwQblxhUrDJuryFmaj81PSPBYJiagoJkERY,67
+faculty_xval/bin/jobs_cross_validation_executor.py,sha256=8JRsqPHx-ULBs1y0WonWZAYRubs0SWQ7FZFU8RF6fTI,6599
+faculty_xval-0.1.0rc1.dist-info/LICENSE-2.0.txt,sha256=qVYmmCwpJ4asYKI-VE6Wo1dLDfmTkE_TqZ_2gA1hUgY,11349
+faculty_xval-0.1.0rc1.dist-info/METADATA,sha256=MTWugS4rJrVS7Zlfrr4d5arC7a_nrGE7NRT8yBXN0sc,5188
+faculty_xval-0.1.0rc1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+faculty_xval-0.1.0rc1.dist-info/entry_points.txt,sha256=Re4Cp5v-gKgUF6uH3ahRvEQi5dnvFs1ehcd5imbBXcg,97
+faculty_xval-0.1.0rc1.dist-info/top_level.txt,sha256=hTi19_RDwzMMVTP4oUh8uFScWf-xKTW2KyhIPEMkJv8,13
+faculty_xval-0.1.0rc1.dist-info/RECORD,,
