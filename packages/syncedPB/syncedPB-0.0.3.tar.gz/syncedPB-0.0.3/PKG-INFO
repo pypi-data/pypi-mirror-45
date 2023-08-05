@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: syncedPB
+Version: 0.0.3
+Summary: Synced progress bar
+Home-page: https://github.com/javirrs/syncedPB
+Author: javirrs
+Author-email: javi.rasines@gmail.com
+License: UNKNOWN
+Description: Synced progress bar for Python and iPython environments.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent

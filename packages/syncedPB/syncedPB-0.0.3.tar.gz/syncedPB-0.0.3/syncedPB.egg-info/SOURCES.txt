@@ -1,0 +1,6 @@
+setup.py
+syncedPB/__init__.py
+syncedPB.egg-info/PKG-INFO
+syncedPB.egg-info/SOURCES.txt
+syncedPB.egg-info/dependency_links.txt
+syncedPB.egg-info/top_level.txt
