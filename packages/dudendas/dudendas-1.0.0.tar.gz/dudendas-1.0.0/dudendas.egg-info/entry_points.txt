@@ -1,0 +1,3 @@
+[console_scripts]
+dudendas = dudendas.dudendas:main
+
