@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pydig
+Version: 0.1.0
+Summary: Python wrapper library for the 'dig' command line tool
+Home-page: https://github.com/leonsmith/pydig
+License: GPL-3.0
+Keywords: dig,dns,pydig,resolver,lookup
+Author: Leon Smith
+Author-email: _@leonmarksmith.com
+Requires-Python: >=3.4,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Project-URL: Repository, https://github.com/leonsmith/pydig
+Description-Content-Type: text/x-rst
+
+
