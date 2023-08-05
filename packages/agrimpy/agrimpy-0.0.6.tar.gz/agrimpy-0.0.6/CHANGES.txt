@@ -1,0 +1,13 @@
+v0.0.6, 11 abr 2019 -- Actualización de las dependencias.
+v0.0.5, 24 sep 2018 -- Actualización de las dependencias.
+v0.0.4, 07 sep 2016 -- Se agrega capa Cotas a la salida de archivo DXF.
+v0.0.3, 08 dic 2014 -- Reemplazo de numpy por math.
+v0.0.2, 08 dic 2014 -- Fix de las dependencias.
+                       Mueve el archivo de requerimientos.
+                       Hay un cast para asegurar el tipo de datos en geod_proy.py
+
+
+v0.0.1, 17 nov 2014 -- Versión inicial.
+                       Clona pyproj-ej en un commit particular:
+                       git clone https://github.com/quijot/pyproj-ej.git
+                       git checkout agrimpy c7bff416be225c9a3b2c971416b9b37a98622bef
