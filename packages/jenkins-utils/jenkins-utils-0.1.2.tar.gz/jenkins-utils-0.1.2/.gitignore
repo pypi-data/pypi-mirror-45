@@ -1,0 +1,13 @@
+*.py[co]
+*.iml
+*.iws
+*.egg-info
+.idea
+.coverage
+.tox
+htmlcov
+dist
+build
+.pytest_cache
+jenkins/_version.py
+.eggs
