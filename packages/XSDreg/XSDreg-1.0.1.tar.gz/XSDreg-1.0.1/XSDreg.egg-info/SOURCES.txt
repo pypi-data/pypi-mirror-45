@@ -1,0 +1,9 @@
+README.md
+setup.py
+XSDreg/XSDreg.py
+XSDreg/__init__.py
+XSDreg.egg-info/PKG-INFO
+XSDreg.egg-info/SOURCES.txt
+XSDreg.egg-info/dependency_links.txt
+XSDreg.egg-info/requires.txt
+XSDreg.egg-info/top_level.txt
