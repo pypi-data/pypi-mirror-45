@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: airflow-impatient
+Version: 0.0.1
+Summary: Customized logging handlers, hooks and operators for Airflow to be run in K8s
+Home-page: UNKNOWN
+Author: Shengyi Pan
+Author-email: shengyi.pan@ibm.com
+License: Apache
+Platform: UNKNOWN
+
+UNKNOWN
+
+
