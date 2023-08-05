@@ -1,0 +1,11 @@
+setupmeta_builder/__init__.py,sha256=I589I0mhxmdmBb0M1QFFVnjfqRT873VuLBgNVx0VSnw,563
+setupmeta_builder/classifiers.py,sha256=2C0ud9UE0Ae56bI7nFhi_SIlE__aEJzxg_Wy4bCjHUk,1714
+setupmeta_builder/core.py,sha256=jajtLU-sUM_SGMf3XEXB5177viPm9qq1mOlppL4D9XI,7200
+setupmeta_builder/licenses.py,sha256=hR97MZFdZflmoiiZOLsvt1IZTy7YRAklC7EHEyLBfZU,605
+setupmeta_builder/requires_resolver.py,sha256=4YxF5iNswqJc2UFisgTfW51agcr2Xi3rHLeMzdbHz0c,4544
+setupmeta_builder/utils.py,sha256=j9OpfL3BDXG8rerlKplEhfnzu4h0AW_MBiWY-L1X0Fc,699
+setupmeta_builder-0.0.4.dist-info/LICENSE,sha256=M62EPzLD09CYAF0FLN2tjc_-Zurt_YsasyKDzsdPh7Q,1064
+setupmeta_builder-0.0.4.dist-info/METADATA,sha256=LBh0WS7JpaeNlIHnVmObkmTnF1aLj8w3mmvqn6XIER4,1456
+setupmeta_builder-0.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+setupmeta_builder-0.0.4.dist-info/top_level.txt,sha256=AyM8M_AkSwaRLGJZuujYgNGBZrrEIULHA-pKdDhb-ho,18
+setupmeta_builder-0.0.4.dist-info/RECORD,,
