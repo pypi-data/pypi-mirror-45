@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: aiida
+Version: 0.6.0.1
+Summary: UNKNOWN
+Home-page: http://www.aiida.net/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT license, see LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: django (==1.7.4)
+Requires-Dist: django-extensions (==1.5)
+Requires-Dist: pytz (==2014.10)
+Requires-Dist: django-celery (==3.1.16)
+Requires-Dist: celery (==3.1.17)
+Requires-Dist: kombu (==3.0.24)
+Requires-Dist: billiard (==3.3.0.19)
+Requires-Dist: amqp (==1.4.6)
+Requires-Dist: anyjson (==0.3.3)
+Requires-Dist: six (==1.9)
+Requires-Dist: supervisor (==3.1.3)
+Requires-Dist: meld3 (==1.0.0)
+Requires-Dist: paramiko (==1.15.2)
+Requires-Dist: ecdsa (==0.13)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: numpy
+Requires-Dist: django-tastypie (==0.12.1)
+Requires-Dist: python-dateutil (==2.4.0)
+Requires-Dist: python-mimeparse (==0.1.4)
+Requires-Dist: SQLAlchemy (==1.0.9)
+Requires-Dist: SQLAlchemy-Utils (==0.31.2)
+Requires-Dist: ujson (==1.35)
+
+=====
+AiiDA
+=====
+**Automated Interactive Infrastructure and Database for Computational Science**
+
+AiiDA is a sophisticated framework designed from scratch to be a flexible
+and scalable infrastructure for computational science. Being able to store
+the full data provenance of each simulation, and based on a tailored
+database solution built for efficient data mining implementations,
+AiiDA gives the user the ability to interact seamlessly with any
+number of HPC machines and codes thanks to its flexible plugin
+interface, together with a powerful workflow engine for the automation 
+of simulations.
+
+The official homepage is at http://www.aiida.net.
+
+How to cite AiiDA
+-----------------
+If you use AiiDA in your research, please consider citing the following work:
+
+  Giovanni Pizzi, Andrea Cepellotti, Riccardo Sabatini, Nicola Marzari,
+  and Boris Kozinsky, *AiiDA: automated interactive infrastructure and database 
+  for computational science*, Comp. Mat. Sci 111, 218-230 (2016);
+  http://dx.doi.org/10.1016/j.commatsci.2015.09.013; http://www.aiida.net.
+
+License
+-------
+The terms of the AiiDA license can be found in the LICENSE.txt file.
+
+
