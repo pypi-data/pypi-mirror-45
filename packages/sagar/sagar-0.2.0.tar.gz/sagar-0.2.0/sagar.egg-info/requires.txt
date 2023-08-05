@@ -1,0 +1,12 @@
+numpy
+spglib
+click>=6
+colorama
+ase==3.16
+
+[dev]
+pip
+pytest
+pytest-cov
+twine
+ipython

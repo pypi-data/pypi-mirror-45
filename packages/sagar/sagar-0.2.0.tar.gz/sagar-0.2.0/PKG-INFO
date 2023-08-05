@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sagar
+Version: 0.2.0
+Summary: Structures of Alloys Generation And Recognition
+Home-page: UNKNOWN
+Author: Jason Eu
+Author-email: morty.yu@yahoo.com
+License: MIT
+Description: # sagar
+        
+        [![Build Status](https://travis-ci.org/scut-ccmp/sagar.svg?branch=master)](https://travis-ci.org/scut-ccmp/sagar)
+        [![codecov](https://codecov.io/gh/scut-ccmp/sagar/branch/master/graph/badge.svg)](https://codecov.io/gh/scut-ccmp/sagar)
+        [![Documentation Status](https://readthedocs.org/projects/sagar/badge/?version=latest)](https://sagar.readthedocs.io/)
+        [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+        [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+        
+        ## Introduction
+        sagar is short for (S)Tructures of (A)lloys (G)eneration (A)nd (R)ecognition.
+        
+        It is a library with some uitils to deal grid site
+         structures.
+        
+Keywords: crystal material strucutre DFT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Provides-Extra: dev
