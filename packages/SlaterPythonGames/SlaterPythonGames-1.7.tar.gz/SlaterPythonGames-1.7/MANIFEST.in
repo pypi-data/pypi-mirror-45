@@ -1,0 +1,4 @@
+include runner README
+include SlaterPythonGames/WarshipsIcon.png
+include SlaterPythonGames/2048Icon.png
+recursive-include SlaterPythonGames/icons *
