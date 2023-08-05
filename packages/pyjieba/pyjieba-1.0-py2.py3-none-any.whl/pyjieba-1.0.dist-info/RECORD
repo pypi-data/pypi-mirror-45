@@ -1,0 +1,16 @@
+pyjieba/__init__.py,sha256=LgVJmNG2bgWi8AnAZRHCd5gAKeQiWbWb_TYGvouW9Y4,11973
+pyjieba/dict/README.md,sha256=i8x8Ltff8ILZqZwJ3gv9ciSb87XEKYo68yjaQMvYz9E,683
+pyjieba/dict/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+pyjieba/dict/hmm_model.utf8,sha256=8XeQWGrIbdBIyK3_7QUsS9KyjtBoKXLBJ15ZBAwFiac,519739
+pyjieba/dict/idf.utf8,sha256=29HgPXKyJjzI2EpDBO13Z37tnn3q9DoaUTO7upcztTU,5998717
+pyjieba/dict/jieba.dict.utf8,sha256=MEO3cGjgnJkE8nytgvErbr6dvbWu_zsl5Fq3-cESK1U,5071204
+pyjieba/dict/stop_words.utf8,sha256=t4i4qTnS4v4Hmr1XnqmPEvn7hDcL_Q3d2Bu5OB96tCw,8974
+pyjieba/dict/user.dict.utf8,sha256=2Aia5cQUQ9kjf5FB83mJuXk13lEFCqBnmdtwGOeGLsw,69
+pyjieba/libs/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+pyjieba/libs/cppjieba_API_linux64.so,sha256=EzrQL8lXDkRSRFjOXfa10-wQBC6EzqafZ0sdda8g_gw,1067753
+pyjieba/libs/cppjieba_API_osx64.so,sha256=ORtmvuMbFFQ8KJtqpqxrRDLDbPOQ-4ReAx78LXb6Zcw,679444
+pyjieba/libs/cppjieba_API_win64.dll,sha256=oiJBYXXUn5Lj9p5ZJpyzbMZebefu7qGw-ra5xDQjYpQ,1709740
+pyjieba-1.0.dist-info/METADATA,sha256=GkY1-HgqGVmOTzKAa7hiYQ2lATlH22ebHtoHpFQIXFI,4148
+pyjieba-1.0.dist-info/RECORD,,
+pyjieba-1.0.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+pyjieba-1.0.dist-info/top_level.txt,sha256=8VgnLwYwgSSNqoWfPpecjcN_xBfnU7xPA0cQAl3y-LI,8
