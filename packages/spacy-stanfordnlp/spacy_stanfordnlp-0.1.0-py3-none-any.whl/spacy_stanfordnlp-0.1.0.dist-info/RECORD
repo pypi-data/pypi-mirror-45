@@ -1,0 +1,9 @@
+spacy_stanfordnlp/__init__.py,sha256=k0GSbpk5-Tmhc3baQnGezVS0c_dKemv_0vMxLAIdAa0,57
+spacy_stanfordnlp/about.py,sha256=0dghXCDCLPWoqg564PUBsHZkr7AHnprucRbxDAHlCpA,244
+spacy_stanfordnlp/language.py,sha256=6FX2_TkJ01D3vVLgFribRkYg0T-HjlAzC6wRe_4E6Hw,8275
+spacy_stanfordnlp-0.1.0.dist-info/LICENSE,sha256=9_dOqC-aENfOK6Bd1-RgyMK7QqbMfZrnGrNWYbX3HJs,1073
+spacy_stanfordnlp-0.1.0.dist-info/METADATA,sha256=gSJpHPNU5K-rPi3JzvShYmvfddrfLkMYETsictA2Uwo,6289
+spacy_stanfordnlp-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+spacy_stanfordnlp-0.1.0.dist-info/entry_points.txt,sha256=IiNN5mR_jSUQyd2p5hqiE6p-LsBU84jbZMKQ22iyki0,74
+spacy_stanfordnlp-0.1.0.dist-info/top_level.txt,sha256=nbLsgKumZcKTCtMEOpH9m74-Mh4M18jXFDjXzEJKmG8,18
+spacy_stanfordnlp-0.1.0.dist-info/RECORD,,
