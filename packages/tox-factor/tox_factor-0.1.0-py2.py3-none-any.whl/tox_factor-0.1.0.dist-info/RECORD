@@ -1,0 +1,10 @@
+tox_factor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_factor/factor.py,sha256=cUfi5LYEoLzj4VyghR0BYSzneDahpTKGEkeZkFCiorA,3189
+tox_factor/hooks.py,sha256=dOtrDm8bfGAvi7ErYUJbmDTqN1dz8LVazgS4ORsZWOQ,1938
+tox_factor/test.py,sha256=_hd0sl4MwREIL5NWmiC2zcrCNA9AvAA61AwOvFfvUVg,3594
+tox_factor-0.1.0.dist-info/LICENSE,sha256=adnKVumqAd9EkLApRTtpH_S6fX4hPPV591mFS0MsZRE,1512
+tox_factor-0.1.0.dist-info/METADATA,sha256=-mkZaDWluYNnWLi2JdwF9giWTLSXvRRhaaaNKhgWrkw,7241
+tox_factor-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+tox_factor-0.1.0.dist-info/entry_points.txt,sha256=Bd1c64ngm8RkMwPvqXYn-vgNqAdm1MctotIBDIy_8FI,33
+tox_factor-0.1.0.dist-info/top_level.txt,sha256=S_FYGoh3Auh1ECLjS2A802KqVJgpKqhQ3J2m42XPkiE,11
+tox_factor-0.1.0.dist-info/RECORD,,
