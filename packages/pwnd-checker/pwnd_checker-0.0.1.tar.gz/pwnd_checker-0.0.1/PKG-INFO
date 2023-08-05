@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pwnd_checker
+Version: 0.0.1
+Summary: Pwnd Checker
+Home-page: https://github.com/lucifercr07/pwnd_checker
+Author: Prashant Shubham
+Author-email: prashant1996cr07@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: password checker tool cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7

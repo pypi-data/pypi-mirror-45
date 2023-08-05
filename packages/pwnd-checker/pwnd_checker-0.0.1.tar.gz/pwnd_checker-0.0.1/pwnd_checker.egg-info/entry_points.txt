@@ -1,0 +1,3 @@
+[console_scripts]
+pwnd_checker = pwnd_checker.main:main
+
