@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+freepbx_bulk_handler/Extension.py
+freepbx_bulk_handler/__init__.py
+freepbx_bulk_handler.egg-info/PKG-INFO
+freepbx_bulk_handler.egg-info/SOURCES.txt
+freepbx_bulk_handler.egg-info/dependency_links.txt
+freepbx_bulk_handler.egg-info/top_level.txt
