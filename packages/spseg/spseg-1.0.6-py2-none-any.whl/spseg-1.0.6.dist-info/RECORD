@@ -1,0 +1,11 @@
+spseg/__init__.py,sha256=zB4a2t4XLXsvvUCnvKRvo8sd3fJSNXS-MgL9ysS-m-A,247
+spseg/so/cythonsp.cpython-36m-x86_64-linux-gnu.so,sha256=_dhp2HHYupM3x_1B6aGV45zFMGi4EmZDC-jp21JAj5k,11832706
+spseg/so/cythonsp.so,sha256=_SZUI5qNgdo3pO6fwceb-YIlbbOVCpAY6g6FyxeCr5c,9269843
+spseg-1.0.6.data/data/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+spseg-1.0.6.data/data/MANIFEST.in,sha256=NzylI5Lx1sdMPD0HcvwXerIDTaN7xDngVfAoIyto_MM,141
+spseg-1.0.6.data/data/README.md,sha256=Tk_ITf5LZrwt_h8MXeLMjpgoYSS9zOcuigdswj21Y9M,5357
+spseg-1.0.6.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+spseg-1.0.6.dist-info/METADATA,sha256=FJKQlUogH-VuBo6yYBZ6NM1P2lPUmD2gMJOg0IK-qwY,218
+spseg-1.0.6.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+spseg-1.0.6.dist-info/top_level.txt,sha256=GSb3lrvHojzvyO3eohAUoy8Cp4bBcUsc2NV3J4mhSnA,6
+spseg-1.0.6.dist-info/RECORD,,
