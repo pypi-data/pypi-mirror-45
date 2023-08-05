@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-viewsource
+Version: 0.1.1
+Summary: Add a "View Code" button to the literalinclude directive.
+Home-page: https://github.com/dgarcia360/sphinxcontrib-viewsource
+Author: dgarcia360
+Author-email: dgarcia360@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Documentation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
