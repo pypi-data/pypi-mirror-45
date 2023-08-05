@@ -1,0 +1,3 @@
+[console_scripts]
+svdb = svdb.__main__:main
+
