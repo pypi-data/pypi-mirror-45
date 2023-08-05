@@ -1,0 +1,9 @@
+README.md
+setup.py
+showme/__init__.py
+showme/text.py
+showme_akomaty.egg-info/PKG-INFO
+showme_akomaty.egg-info/SOURCES.txt
+showme_akomaty.egg-info/dependency_links.txt
+showme_akomaty.egg-info/requires.txt
+showme_akomaty.egg-info/top_level.txt
