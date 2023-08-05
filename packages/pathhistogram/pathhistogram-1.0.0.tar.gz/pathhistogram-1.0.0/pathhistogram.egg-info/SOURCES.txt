@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+pathhistogram/__init__.py
+pathhistogram/histogram.py
+pathhistogram/test_support.py
+pathhistogram.egg-info/PKG-INFO
+pathhistogram.egg-info/SOURCES.txt
+pathhistogram.egg-info/dependency_links.txt
+pathhistogram.egg-info/not-zip-safe
+pathhistogram.egg-info/requires.txt
+pathhistogram.egg-info/top_level.txt
+pathhistogram/resources/README.md
+pathhistogram/resources/requirements.txt
+pathhistogram/resources/scripts/ph_files
+tests/scripts/__init__.py
+tests/scripts/test_ph_files.py
