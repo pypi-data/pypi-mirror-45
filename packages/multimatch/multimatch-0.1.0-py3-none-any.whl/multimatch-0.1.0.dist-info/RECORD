@@ -1,0 +1,12 @@
+multimatch/__init__.py,sha256=YEtJdn5QLY1Dqb2Qkt9_xekBc6IiCF90VwmZCRXP1jU,611
+multimatch/__main__.py,sha256=daF5bO68PrROiIOPvM8dwX-cJHTqXpEHzGrXT_SAuTA,430
+multimatch/multimatch.py,sha256=eqxeqAOFQoFK5xiZlBDX0J8--AlL49QiSprLFUOU3tk,44771
+multimatch/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multimatch/tests/test_MultiMatch.py,sha256=xa2TkBDwe4u3Sk2uBMm7Gyzm2eKstpQ8RpmEoNrJI4c,12400
+multimatch/tests/utils.py,sha256=i2d78CluHWi3K2dpOD6of2Uv5U3DcVCIFUTECo1eqZE,20468
+multimatch-0.1.0.dist-info/LICENSE,sha256=lz_5TqgQ59LUHgpIzObw3qS5Rs-DJBki-6FfvHrZb4E,1069
+multimatch-0.1.0.dist-info/METADATA,sha256=krSN6IRQUXvDjwx1zmj1fCzWov4TMOBTfsV-N3unNrg,4970
+multimatch-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+multimatch-0.1.0.dist-info/entry_points.txt,sha256=pA3-y5AB5PvYa4GDu1ZcrrtyR-XlakVA6qsTsr-g_nQ,59
+multimatch-0.1.0.dist-info/top_level.txt,sha256=CiDXlHeeSsYNZaGXXT932t2m3csaLka5hIW_jwt8s54,11
+multimatch-0.1.0.dist-info/RECORD,,
