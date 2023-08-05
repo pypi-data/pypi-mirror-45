@@ -1,0 +1,14 @@
+slipo/__init__.py,sha256=bzrdY7BYQo8d3psSdnfoWWX3zJ22joDPxuFrHJryKgQ,31
+slipo/__version__.py,sha256=aENMUOn4UU5P2yk9VUM23UgN6qUaP5mzZs-ScHfgqtk,48
+slipo/catalog.py,sha256=YpyIJZfQwe7qT2c7YmJTo-HSJtLFKiSwHCth1C4u8jc,3275
+slipo/client.py,sha256=gtzjkcK9WKsI_MSz1Bub0VfCh2QLVgR0QU31IKhA66g,15926
+slipo/exceptions.py,sha256=ZfJmcjFE9PArTfND15iWdvXr375sHb2B_SQsxGFCxos,194
+slipo/filesystem.py,sha256=gB-03iuYmxK3-K67JprbT80UUme8RkYOtDMC9gwTHWw,4084
+slipo/operation.py,sha256=Sg8NH8zCPItrmAAXm0MKKtmk5LD8DClaWlh9f9lNzFw,13022
+slipo/process.py,sha256=jBPlJAXpBBveTH4mYaBW58ipqgWyRTM5jPukcTJdhjA,5909
+slipo/utils.py,sha256=dES3qnl_WR9U_uSwdTOkK3hzYyyFRkEUDn4fI1Kyie0,1610
+slipo-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slipo-0.1.2.dist-info/METADATA,sha256=m9JvKU_9cAk4OJBb1YF620FW1zQsvjwn2T-Kno-O5fU,1223
+slipo-0.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+slipo-0.1.2.dist-info/top_level.txt,sha256=CqHU-oQFzgZqhnS5pN2CbigPm69_lguv1h2wQC9fyhc,6
+slipo-0.1.2.dist-info/RECORD,,
