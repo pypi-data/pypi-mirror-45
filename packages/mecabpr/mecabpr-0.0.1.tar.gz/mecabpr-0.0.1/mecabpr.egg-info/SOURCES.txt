@@ -1,0 +1,12 @@
+README.md
+setup.py
+mecabpr/__init__.py
+mecabpr/mecabpr.py
+mecabpr/pos_dictionary.py
+mecabpr.egg-info/PKG-INFO
+mecabpr.egg-info/SOURCES.txt
+mecabpr.egg-info/dependency_links.txt
+mecabpr.egg-info/requires.txt
+mecabpr.egg-info/top_level.txt
+tests/__init__.py
+tests/test_posregex.py

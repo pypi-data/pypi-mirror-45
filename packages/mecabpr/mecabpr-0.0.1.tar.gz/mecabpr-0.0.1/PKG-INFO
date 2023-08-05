@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: mecabpr
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/yagays/mecabpr
+Author: yag_ays
+Author-email: yanagi.ayase@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: MeCab,japanese,part-of-speech
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: Japanese
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
