@@ -1,0 +1,17 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dictionary_profanity_filter/__init__.py
+dictionary_profanity_filter/__main__.py
+dictionary_profanity_filter/profanity_filter.py
+dictionary_profanity_filter.egg-info/PKG-INFO
+dictionary_profanity_filter.egg-info/SOURCES.txt
+dictionary_profanity_filter.egg-info/dependency_links.txt
+dictionary_profanity_filter.egg-info/entry_points.txt
+dictionary_profanity_filter.egg-info/requires.txt
+dictionary_profanity_filter.egg-info/top_level.txt
+dictionary_profanity_filter/data/default_list.txt
+tests/__init__.py
+tests/test_profanity_filter.py
