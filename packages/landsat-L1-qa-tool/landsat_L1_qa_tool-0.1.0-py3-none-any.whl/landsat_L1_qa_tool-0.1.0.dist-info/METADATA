@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: landsat-L1-qa-tool
+Version: 0.1.0
+Summary: Unpack Landsat-8 BQA band into individual layers and create a composite image of each quality indicator.
+Home-page: https://github.com/and-viceversa/landsat_L1_qa_tool
+Author: AdamR
+Author-email: 25871157+and-viceversa@users.noreply.github.com
+License: This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+Description: ## Background
+        
+        Landsat-8 Level 1 scenes come with a quality assessment band (BQA) that shows various forms of atmospheric and other interference present in the image.
+        
+        The accompanying BQA file is a GeoTIFF with bit-packed values corresponding to an internal USGS numbering scheme. You can learn about these values and the BQA band in general by reading the USGS overview located [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1-level-1-quality-assessment-band?qt-science_support_page_related_con=0#qt-science_support_page_related_con). There is also a more in-depth PDF titled 'Landsat Quality Assessment (QA) Tools User's Guide'.
+        
+        ## Usage
+        
+        This CLI tool may be useful to you if you are working with Landsat-8 quality assessment data in Python 3.
+        
+        This tool is written to search the directory where it is run, and all sub-directories for Landsat-8 BQA bands. It then 'unpacks' the bit packed BQA raster and creates a new GeoTIFF for each USGS quality measure that the user specifies. Finally, the tool takes the new quality bands for each scene and creates a composite image stack for each quality control measure.
+        
+        For example, you can take a directory of Landsat-8 scenes, pull out all cloudy pixels, and create a composite image showing all cloudy pixels in the stack.
+        
+        This is helpful for time series analysis because you can identify atmospheric interference over time.
+        
+        Flags correspond to each quality assessment layer identified by USGS.
+        The following will produce individual BQA band files for every quality assessment type identified by USGS and then build composites from each quality assessment type.
+        
+        ```commandline
+        cd /filepath/to/top_dir_for_landsat_scenes
+        landsat_L1_qa_tool -c -f -t -r -cl -cc -cs -ci -s
+        ```
+        
+        Quality assessment types:
+        ```commandline
+        -c --clear-terrain
+        -f --fill
+        -t --terrain-occlusion
+        -r --radiometric-saturation
+        -cl --clouds
+        -cc --cloud-confidence
+        -cs --cloud-shadow
+        -ci --cirrus
+        -s --snow-ice
+        ```
+        
+        ## Other Tools
+        
+        Other great tools exist, and are more comprehensive.
+        
+        -USGS has several offerings [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-quality-assessment-tools).
+        -USGS EROS offers [landsat-qa-arcgis-toolbox](https://github.com/USGS-EROS/landsat-qa-arcgis-toolbox), [espa-science-validation](https://github.com/USGS-EROS/espa-science-validation), and [espa-l2qa-tools](https://github.com/USGS-EROS/espa-l2qa-tools).
+        -Rasterio's Landsat-8 QA tools is [here](https://github.com/mapbox/rio-l8qa).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Unlicense
+Classifier: Topic :: Landsat :: data conversion
+Description-Content-Type: text/markdown
