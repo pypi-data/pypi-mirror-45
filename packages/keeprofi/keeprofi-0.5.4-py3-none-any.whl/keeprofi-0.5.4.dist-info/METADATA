@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: keeprofi
+Version: 0.5.4
+Summary: Python util that provide access to keepass database using rofi drun menu.
+Home-page: https://gitlab.com/hxss/keeprofi
+Author: hxss
+Author-email: hxss@ya.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: xdg (>=4.0.0)
+Requires-Dist: xerox (>=0.4.1)
+Requires-Dist: pynput (>=1.4.2)
+Requires-Dist: pykeepass (>=3.0.3)
+Requires-Dist: keyring (>=19.0.1)
+
+# Keeprofi
+
+Python util that provide access to keepass database using rofi drun menu.
+
+
