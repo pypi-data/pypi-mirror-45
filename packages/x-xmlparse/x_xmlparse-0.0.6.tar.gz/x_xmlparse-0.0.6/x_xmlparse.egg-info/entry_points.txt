@@ -1,0 +1,4 @@
+[console_scripts]
+eq = x_xmlparse_src.cmd_xlsx:main
+xq = x_xmlparse_src.cmd:main
+
