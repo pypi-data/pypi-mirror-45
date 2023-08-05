@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: proxytest
+Version: 0.1.0
+Summary: A simple script to test if one or more proxies are working by fetching a webpage.
+Home-page: https://github.com/yoleg/proxytest
+Author: Oleg Pryadko
+Author-email: oleg@olegpryadko.com
+Maintainer: Oleg Pryadko
+Maintainer-email: oleg@olegpryadko.com
+License: MIT
+Description: UNKNOWN
+Keywords: proxy test command multiple proxies
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
