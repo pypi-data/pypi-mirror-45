@@ -1,0 +1,15 @@
+renderspec/__init__.py,sha256=cBYY2-tjsuriwb55hEarV_k7pR44Q1-cPL0nRo9my0Q,7844
+renderspec/contextfuncs.py,sha256=hwoWxMdCVGe_MCfhNLb-zOAt6jD3XaYGOrBdrGG4BA4,11578
+renderspec/distloader.py,sha256=pIom3yI7Fw57dX7Dwvk9tgTbR0W14I5g6RwSdvxSSOI,2522
+renderspec/utils.py,sha256=8OjopNa2-4Uy6Bc5mEHmltV_5URrUn9IxRwDFjlm70U,3243
+renderspec/versions.py,sha256=yXzR6_4jZJmkCt9_X0_N-q2iTD7hMkNJrQMfUBriuSY,2112
+renderspec/dist-templates/fedora.spec.j2,sha256=abRwpWMfiVkF1JgXvwNH3nbecrsvUQlKl110U_3BzOg,318
+renderspec/dist-templates/suse.spec.j2,sha256=cit2QVu_oMKuCTblr-0NWcalw4wlc3LsYIDN3eM0Ebk,97
+renderspec-1.10.0.dist-info/AUTHORS,sha256=IJ6dfIWQvsNNWTHGCve-LDCXkhaDIV1VQeQjy7WQ_wc,726
+renderspec-1.10.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+renderspec-1.10.0.dist-info/METADATA,sha256=83Drjtl9UdAU9FhI71N5iA6FI0wtQ4qA2x0yCe42Ppc,2475
+renderspec-1.10.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+renderspec-1.10.0.dist-info/entry_points.txt,sha256=tFB487RoqtkSU0F68rfbpk_Bg0JbuO7cLAYQNkODqew,48
+renderspec-1.10.0.dist-info/pbr.json,sha256=NHiE88sUVhz6VkBXo1y9iYBPrnndjLUEqMYUTbFfi_4,46
+renderspec-1.10.0.dist-info/top_level.txt,sha256=p0_b1jcA_6igXBseGt6nCUPVMdZ232DUQbqCZuPudiI,11
+renderspec-1.10.0.dist-info/RECORD,,
