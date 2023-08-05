@@ -1,0 +1,9 @@
+satsuki/__init__.py,sha256=HbvWHaxvtiJMSAclP7StbF3ToNaNrfaaMEnzIyev9r4,36200
+satsuki/cli.py,sha256=jH1rno_gXiADkcMDIgDeSnHa3dgCLNTTkq5l9pwDmww,6095
+satsuki/logging.conf,sha256=zvCwKyKOnViFa-vQg2b24-0F4YvNwFaJ3qBnDCj-dxU,428
+satsuki-0.1.14.dist-info/LICENSE,sha256=gD6UiRR01Jc_jJPbKpeEZiQ7o_P0Z67CXy_dRpHix4o,11338
+satsuki-0.1.14.dist-info/METADATA,sha256=4F7mKTqiYKd9bLqgXclHGq6DWdVVdUXktKcO41Wt_yA,22728
+satsuki-0.1.14.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+satsuki-0.1.14.dist-info/entry_points.txt,sha256=YUhDlXM76SFvxE0Ek9xSw2dVPixdB7Hp156tqIzi6jk,46
+satsuki-0.1.14.dist-info/top_level.txt,sha256=v5I-JInTYthZBjl3bQN7Naz9_-06L7gsqAoSZ083rbs,8
+satsuki-0.1.14.dist-info/RECORD,,
