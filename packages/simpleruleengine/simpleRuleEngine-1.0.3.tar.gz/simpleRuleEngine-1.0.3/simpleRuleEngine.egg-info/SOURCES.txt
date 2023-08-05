@@ -1,0 +1,7 @@
+README.md
+setup.py
+parser/__init__.py
+simpleRuleEngine.egg-info/PKG-INFO
+simpleRuleEngine.egg-info/SOURCES.txt
+simpleRuleEngine.egg-info/dependency_links.txt
+simpleRuleEngine.egg-info/top_level.txt
