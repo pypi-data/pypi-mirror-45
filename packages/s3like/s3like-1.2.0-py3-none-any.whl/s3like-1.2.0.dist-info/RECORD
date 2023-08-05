@@ -1,0 +1,7 @@
+s3like/__init__.py,sha256=UKwxJHojZ4BJTVcrRZU2dgjEkV8JmPPZXfzZAXqtD8w,5173
+s3like/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3like/tests/test_s3like.py,sha256=eGUy6eWeZR6qIBhT8ayCnDHv0Z7opaW0ArYfDwSGxII,2926
+s3like-1.2.0.dist-info/METADATA,sha256=B3_n2bIOWnDS8gZnfMhEqZTIww9288jaHFDIGgQwAlw,1397
+s3like-1.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+s3like-1.2.0.dist-info/top_level.txt,sha256=s8iNdcnxwclAnxUAWbX3HJZnt8gs2-wuSABOEhU5zus,7
+s3like-1.2.0.dist-info/RECORD,,
