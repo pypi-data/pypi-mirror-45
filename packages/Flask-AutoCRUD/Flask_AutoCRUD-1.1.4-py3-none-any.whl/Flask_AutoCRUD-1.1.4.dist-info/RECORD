@@ -1,0 +1,14 @@
+flask_autocrud/__init__.py,sha256=agCX6fGEDgyx816T68NQ4PsHyZW4Y9IK6uRrAtpkCfM,72
+flask_autocrud/autocrud.py,sha256=PfS7Ijic_4qILFxgleXHpNIkofh3SLwBE3Y-l109Npo,6202
+flask_autocrud/config.py,sha256=hvCVSrVfythnIsR5xRtPDXxfgo5XXc-hwtUY9gXix1o,1515
+flask_autocrud/model.py,sha256=4-AaT1DDEf06T6ukS6a6ylAGfGy8myb1eLAi7akpF5U,3507
+flask_autocrud/service.py,sha256=N0d04AL3fQlpz5s1HQ-bmTv2l44ED5czTsLPM89YbGg,4261
+flask_autocrud/utils.py,sha256=rr941TTHLYjqmmWObRgU0T6m3nfsexQWLYczaMQZm5M,830
+flask_autocrud/validators.py,sha256=ZH9OQc5LxqyaFAoZzY7xRGadXxpIdUIDJfw547f1VJ8,3237
+flask_autocrud/version.py,sha256=tYHRO4PwfJWyihjDX6gDTkWZFPKKja4UrSM4tBWM1_M,214
+flask_autocrud/wrapper.py,sha256=3bUCL19Fb0rt4LP5O8GkqXeHcB8sqe0r4hkOyXwHbzc,2457
+Flask_AutoCRUD-1.1.4.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_AutoCRUD-1.1.4.dist-info/METADATA,sha256=gqi3n0KnUQ7ChGikREdgQDeFPBxdgH-0idQ-y7pZkck,3896
+Flask_AutoCRUD-1.1.4.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_AutoCRUD-1.1.4.dist-info/top_level.txt,sha256=Q6roWFvmYs5IAAR7tR3Yt30u51_TT9_1ee_xbdVVE5Q,15
+Flask_AutoCRUD-1.1.4.dist-info/RECORD,,
