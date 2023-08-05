@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1997-2019  Hideki Banno
+# This file is distributed under the same license as the spAudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: spAudio \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-11 19:44+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../examples.rst:2
+msgid "Examples"
+msgstr "サンプルコード"
+
+#: ../examples.rst:4
+msgid ":ref:`spaudioExamples`"
+msgstr ""
+
+#: ../examples.rst:5
+msgid ":ref:`sppluginExamples`"
+msgstr ""
+
+#: ../examples.rst:11
+msgid ":doc:`spaudio</spaudio>`"
+msgstr ""
+
+#: ../examples.rst:14
+msgid "Fullduplex I/O"
+msgstr "フルデュプレックスI/O"
+
+#: ../examples.rst:16
+msgid ":download:`iotest.py <../examples/iotest.py>`"
+msgstr ""
+
+#: ../examples.rst:22
+msgid "Read and plot (Python array version)"
+msgstr "読み込みとプロット（Python配列バージョン）"
+
+#: ../examples.rst:24
+msgid ":download:`readplot.py <../examples/readplot.py>`"
+msgstr ""
+
+#: ../examples.rst:30
+msgid "Read and plot (raw data version)"
+msgstr "読み込みとプロット（生データバージョン）"
+
+#: ../examples.rst:32
+msgid ":download:`readplotraw.py <../examples/readplotraw.py>`"
+msgstr ""
+
+#: ../examples.rst:38
+msgid "Read and plot (Numpy ndarray version)"
+msgstr "読み込みとプロット（Numpy ndarrayバージョン）"
+
+#: ../examples.rst:40
+msgid ":download:`readndarray.py <../examples/readndarray.py>`"
+msgstr ""
+
+#: ../examples.rst:46
+msgid "Read and plot (Numpy raw ndarray version)"
+msgstr "読み込みとプロット（Numpy 生ndarrayバージョン）"
+
+#: ../examples.rst:48
+msgid ":download:`readrawndarray.py <../examples/readrawndarray.py>`"
+msgstr ""
+
+#: ../examples.rst:54
+msgid "Play a Wav file"
+msgstr "Wavファイルの再生"
+
+#: ../examples.rst:56
+msgid ":download:`playfromwav.py <../examples/playfromwav.py>`"
+msgstr ""
+
+#: ../examples.rst:62
+msgid "Play a Wav file with callback"
+msgstr "Wavファイルの再生（コールバックあり）"
+
+#: ../examples.rst:64
+msgid ":download:`playfromwavcb.py <../examples/playfromwavcb.py>`"
+msgstr ""
+
+#: ../examples.rst:72
+msgid ":doc:`spplugin</spplugin>`"
+msgstr ""
+
+#: ../examples.rst:75
+msgid "Plot an Audio File Contents by Plugin"
+msgstr "プラグインによる音声ファイルの読み込みと，その内容のプロット"
+
+#: ../examples.rst:76
+msgid ":download:`plotfilebyplugin.py <../examples/plotfilebyplugin.py>`"
+msgstr ""
+
+#: ../examples.rst:82
+msgid "Read an Audio File by Plugin and Write it"
+msgstr "プラグインによる音声ファイルの読み込み"
+
+#: ../examples.rst:83
+msgid ":download:`writefrombyplugin.py <../examples/writefrombyplugin.py>`"
+msgstr ""
+
+#: ../examples.rst:89
+msgid "Convert an Audio File by Plugin"
+msgstr "プラグインによる音声ファイルの変換"
+
+#: ../examples.rst:90
+msgid ":download:`convbyplugin.py <../examples/convbyplugin.py>`"
+msgstr ""
+
