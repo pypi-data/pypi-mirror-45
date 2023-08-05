@@ -1,0 +1,13 @@
+pysnooper/__init__.py,sha256=QG6U4F66U4mloRtRqfV68GPq3UUBrSzhr8jgJFOa-Cg,203
+pysnooper/pycompat.py,sha256=iLeEgG_HrUsg3NGvAP_98UZCDmhzJewTucf9pjfCy4I,867
+pysnooper/pysnooper.py,sha256=rqKpK1kZ-ZluZG3Q33ryIlGE9Nxvsi4fDYfxSjmYewU,1224
+pysnooper/tracer.py,sha256=5lNl2Vukjzdp-3_TiN6HREkXO9DqIw_jEkIcpOQvk9I,7206
+pysnooper/utils.py,sha256=WTvTqkfrGlO-94wWBHlRFlDc0zSEaNqNgJUZl2K0Y5E,732
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pysnooper.py,sha256=XAYSWJs-eF9rJX_b1QPd6n92DDnW1llPYyo022V6_t8,4081
+tests/utils.py,sha256=fmDp3XL44RlqMsscokBuPFaxm7ZU39riUOO0Tx8HNSw,4315
+PySnooper-0.0.5.dist-info/LICENSE,sha256=DEJQ0qnw450CRZPt5E61BE5fvRF1qJYuyWWdis403p4,1067
+PySnooper-0.0.5.dist-info/METADATA,sha256=MhUY9pNRazAL7qkbP8YkfcPuri5gtuyRKvvgQhYHh9w,4570
+PySnooper-0.0.5.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+PySnooper-0.0.5.dist-info/top_level.txt,sha256=_ow82b8tyKQDiDntNT8BHGTIuZPLbypsY6x2eSKmw0w,16
+PySnooper-0.0.5.dist-info/RECORD,,
