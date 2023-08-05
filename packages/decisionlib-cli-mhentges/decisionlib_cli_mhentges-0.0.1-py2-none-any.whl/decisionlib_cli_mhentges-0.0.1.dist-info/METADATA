@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: decisionlib-cli-mhentges
+Version: 0.0.1
+Summary: Taskcluster task-builder
+Home-page: UNKNOWN
+Author: Mozilla Release Engineering
+Author-email: release+python@mozilla.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=2.7
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: json-e (==3.0.0)
+Requires-Dist: mohawk (==1.0.0)
+Requires-Dist: PyYAML (==5.1)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: slugid (==2.0.0)
+Requires-Dist: taskcluster (==7.0.1)
+Requires-Dist: taskcluster-urls (==11.0.0)
+Requires-Dist: urllib3 (==1.24.2)
+
+UNKNOWN
+
+
