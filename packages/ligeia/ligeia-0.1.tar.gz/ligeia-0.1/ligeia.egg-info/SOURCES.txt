@@ -1,0 +1,9 @@
+README.md
+setup.py
+ligeia/__init__.py
+ligeia/ligeia.py
+ligeia.egg-info/PKG-INFO
+ligeia.egg-info/SOURCES.txt
+ligeia.egg-info/dependency_links.txt
+ligeia.egg-info/requires.txt
+ligeia.egg-info/top_level.txt
