@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: setuptools-black
+Version: 0.1.0
+Summary: black command for setuptools
+Home-page: https://github.com/agrenott/setuptools-black
+Author: Aurelien Grenotton
+Author-email: agrenott@gmail.com
+License: MIT
+Description: Custom setuptools command for black formatting tool (see https://github.com/ambv/black).
+        
+        This package adds the `format` command to setuptools, which uses black to reformat code:
+        
+        ```bash
+        > python setup.py format
+        running format
+        All done! ✨ 🍰 ✨
+        5 files left unchanged
+        ```
+        
+        
+        You may also use customize the `build_py` command to enforce format validation at build time.
+        In your setup.py:
+        ```python
+        import setuptools_black
+        ...
+        setuptools.setup(
+        ...
+            setup_requires=["setuptools-black"],
+        ...
+            cmdclass={
+                "build_py": setuptools_black.BuildCommand,
+            },
+        ...
+        )
+        ```
+Keywords: black setuptools plugin
+Platform: UNKNOWN
+Classifier: Framework :: Setuptools Plugin
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
