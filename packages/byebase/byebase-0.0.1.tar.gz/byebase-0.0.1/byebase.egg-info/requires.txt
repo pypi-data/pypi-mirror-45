@@ -1,0 +1,9 @@
+elasticsearch
+pika
+
+[dev]
+pep8
+yapf
+
+[test]
+coverage
