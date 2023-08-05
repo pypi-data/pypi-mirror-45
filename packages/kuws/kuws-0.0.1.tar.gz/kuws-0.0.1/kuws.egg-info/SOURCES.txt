@@ -1,0 +1,11 @@
+README.md
+setup.py
+classes/__init__.py
+kuws.egg-info/PKG-INFO
+kuws.egg-info/SOURCES.txt
+kuws.egg-info/dependency_links.txt
+kuws.egg-info/requires.txt
+kuws.egg-info/top_level.txt
+scripts/__init__.py
+scripts/redirects.py
+scripts/youtube_utilities.py
