@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: doom
+Version: 0.3.2
+Summary: UNKNOWN
+Home-page: https://github.com/jbrockmendel/doom
+Author: Brock Mendel
+Author-email: jbrockmendel@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: psutil (>=5.0.0)
+Requires-Dist: geocoder
+
+doom collects well-tested utility code that I find myself repeating in other
+projects.
+
+doom is *not* well-scoped.
+
+doom is actively used and maintained (as of 2019-04-17).
+
+doom tries to avoid inter-module dependencies.
+
+
