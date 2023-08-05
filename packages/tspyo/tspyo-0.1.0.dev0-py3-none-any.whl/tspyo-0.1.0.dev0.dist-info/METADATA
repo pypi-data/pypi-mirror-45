@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tspyo
+Version: 0.1.0.dev0
+Summary: TS's Python object utility
+Home-page: https://github.com/restlessbandit/tspyo
+Author: Taro Sato
+Author-email: okomestudio@gmail.com
+License: MIT
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: black (==18.9b0) ; extra == 'test'
+Requires-Dist: coverage (==4.5.2) ; extra == 'test'
+Requires-Dist: pre-commit (==1.14.4) ; extra == 'test'
+Requires-Dist: pytest (==4.2.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'test'
+
+[![CircleCI](https://circleci.com/gh/okomestudio/tspyo.svg?style=svg)](https://circleci.com/gh/okomestudio/tspyo)
+
+
+# tspyo
+
+TS's Python object utility.
+
+
