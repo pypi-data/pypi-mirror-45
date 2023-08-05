@@ -1,0 +1,17 @@
+matrix_registration/__init__.py,sha256=HulAz10gu1hFPBCp0i9wYXOqz9PD1_S_dhr8GJ_4zEE,118
+matrix_registration/__main__.py,sha256=fFDhiXDOrMHXqlnGxpkwA1_OgUEFsvyNZJkmSu8JwuQ,2786
+matrix_registration/api.py,sha256=Ian0biLuNLMwAOcOU5lKBRmIiKF9YR91d-szGebomOU,7339
+matrix_registration/config.py,sha256=nCgtG75iMZmyKd06GdrSAw4TwIadznsLbTbR2mWMbyY,1279
+matrix_registration/constants.py,sha256=GP5L8O4mQ5bawywc-xet_DQer8Yv0GYt7lwXpTl0sB0,218
+matrix_registration/matrix_api.py,sha256=wPH2JXDLRN4SqLkNSd3k5kjli9KTxenXWvl7Ov2TTJg,1136
+matrix_registration/tokens.py,sha256=2GqN2Eo8se0V3zAEvIcpXqBeIwxJAA-1ZN2TOH57crU,5086
+matrix_registration/wordlist.txt,sha256=xm7vPxhPhXzZ0yWyq4ib9Jt-W8tNVsZyiQZOUolvEDs,11027
+matrix_registration/static/css/style.css,sha256=8S6Spezt_iJLcTZWAnCEBt_O4SRT2U7LZa5lIxU3fIk,3764
+matrix_registration/static/images/valley.jpg,sha256=kkbxSacAkydaYF2ScC5bmAPeFR5rYX21ra5qeOPkWcQ,542433
+matrix_registration/templates/register.html,sha256=UffRBj1kb-psyIF0anW4u4ghkayVjex7a8gVSbhg6z4,4782
+matrix_registration-0.5.2.dev4.dist-info/LICENSE,sha256=J6W8Ea7Z_vIYzllVO09knec-D3pmx2Fa3B5DtrBugWY,1072
+matrix_registration-0.5.2.dev4.dist-info/METADATA,sha256=ltS_Uz6bUeig78YBLQJLjibZZWxzacTNFc_fOfNG6-A,3905
+matrix_registration-0.5.2.dev4.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+matrix_registration-0.5.2.dev4.dist-info/entry_points.txt,sha256=Syl6Os7V-rePYrAGiOu96vgkuG_PzV3QR7Jgy8tdUwk,93
+matrix_registration-0.5.2.dev4.dist-info/top_level.txt,sha256=1theSTsFrhs1KMk7QjEE3u0gbuq6hFrHQNCvcQ4HTJo,20
+matrix_registration-0.5.2.dev4.dist-info/RECORD,,
