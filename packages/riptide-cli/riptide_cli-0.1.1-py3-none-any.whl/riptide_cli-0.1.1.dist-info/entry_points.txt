@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        riptide=riptide_cli.main:cli
+    
