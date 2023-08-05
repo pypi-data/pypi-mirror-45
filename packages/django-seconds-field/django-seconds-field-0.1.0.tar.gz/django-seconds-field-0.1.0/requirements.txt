@@ -1,0 +1,5 @@
+django >= 2; python_version >= '3'
+django >= 1.10, < 2; python_version < '3'
+djangorestframework
+graphene
+graphene-django
