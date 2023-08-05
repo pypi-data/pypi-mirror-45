@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+mchmm/__init__.py
+mchmm/_hmm.py
+mchmm/_mc.py
+mchmm.egg-info/PKG-INFO
+mchmm.egg-info/SOURCES.txt
+mchmm.egg-info/dependency_links.txt
+mchmm.egg-info/not-zip-safe
+mchmm.egg-info/requires.txt
+mchmm.egg-info/top_level.txt
