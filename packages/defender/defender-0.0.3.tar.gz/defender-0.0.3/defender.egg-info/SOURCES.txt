@@ -1,0 +1,7 @@
+README.md
+setup.py
+defender/__init__.py
+defender.egg-info/PKG-INFO
+defender.egg-info/SOURCES.txt
+defender.egg-info/dependency_links.txt
+defender.egg-info/top_level.txt

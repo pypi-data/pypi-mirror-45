@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: defender
+Version: 0.0.3
+Summary: defender
+Home-page: https://quantumblack.com/
+Author: QuantumBlack Labs
+Author-email: opensource@quantumblack.com
+License: Apache 2.0
+Description: # Defender
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
