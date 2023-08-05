@@ -1,0 +1,12 @@
+pyitd/__init__.py,sha256=-Trd9BVr1rFeItl07MU2zZ33x4yUIhMGQlXm6px8Eo8,287
+pyitd/boundary_conditions.py,sha256=ROcxKYYnsfTrcryP0y265ZhVOguwP_HlRJHOAejGxfM,3858
+pyitd/common.py,sha256=DtGTzEB0svCSkqbq9M20aK-F88Lq12gBPKT_rbeSuEs,521
+pyitd/extr.py,sha256=RGh_kXG5fnKX-pLvqk-Y-gWTYylSH9AFF-KXFPzSfUw,854
+pyitd/extrema_1.py,sha256=p_kuA3kf_yffJ68i0w-93gciMnI3vhylGhMSAsXK3Ow,649
+pyitd/itd.py,sha256=l7B5iHc1t88qLEksdNagA3tylN7UJKMZnyD5mal--6I,5735
+snowland_itd-0.0.1.dist-info/DESCRIPTION.rst,sha256=zs59cAHo3WEMY9GQmhJjkdjOb5D-VWxqeM7Sjbpokd4,24
+snowland_itd-0.0.1.dist-info/METADATA,sha256=v0CijjOIw3Mnut0_GvFkaLDAc2uVhx6hJa49QmK0DQM,824
+snowland_itd-0.0.1.dist-info/RECORD,,
+snowland_itd-0.0.1.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+snowland_itd-0.0.1.dist-info/metadata.json,sha256=EJNdEZ9YmfjXc6_SBaaxT1pSY-DFm7R8yZlYWPlsbHk,986
+snowland_itd-0.0.1.dist-info/top_level.txt,sha256=AYE7owORX2xU2Exb3CvaJ6gyrXHUydozXiTBFn0rGx8,6

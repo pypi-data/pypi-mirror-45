@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: snowland-itd
+Version: 0.0.1
+Summary: 固有时间尺度分解(itd)
+Home-page: https://gitee.com/snowlandltd/snowland-itd-python
+Author: A.Star
+Author-email: astar@snowland.ltd
+License: Apache v2.0
+Description-Content-Type: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy (>=1.0)
+Requires-Dist: scipy (>=0.13)
+Requires-Dist: matplotlib
+
+# snowland-itd-python
+
+
