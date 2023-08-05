@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: django_bread
+Version: 0.6.0
+Summary: Helper for building BREAD interfaces
+Home-page: https://github.com/caktus/django_bread
+Author: Dan Poirier
+Author-email: dpoirier@caktusgroup.com
+License: APL2
+Description: Django Bread
+        ============
+        
+        Django Bread is a Django app to help build BREAD (Browse, Read, Edit,
+        Add, Delete) views for Django models.
+        
+        It helps with default templates, url generation, permissions, filters,
+        pagination, and more.
+        
+        This is relatively stable. We're using it in production and have attempted
+        to document the important parts, but feedback is welcome.
+        
+        Supported versions
+        ------------------
+        
+        Django: 2.0, 2.1, 2.2
+        Python: 3.5, 3.6, 3.7
+        
+        For Python 2.7 and/or Django 1.11 support, the 0.5 release series is identical (features-wise)
+        to 0.6 and is available on PyPI: https://pypi.org/project/django-bread/#history
+        
+        Testing
+        -------
+        
+        To run the tests, install "tox" ("pip install tox") and just run it:
+        
+            $ tox
+            ...
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
