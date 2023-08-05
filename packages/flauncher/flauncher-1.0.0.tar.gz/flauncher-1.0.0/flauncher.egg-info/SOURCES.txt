@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+conf/audio_exts.json
+conf/default_launchers.json
+conf/image_exts.json
+conf/video_exts.json
+flauncher/__init__.py
+flauncher/flauncher.py
+flauncher/logger.py
+flauncher.egg-info/PKG-INFO
+flauncher.egg-info/SOURCES.txt
+flauncher.egg-info/dependency_links.txt
+flauncher.egg-info/entry_points.txt
+flauncher.egg-info/top_level.txt

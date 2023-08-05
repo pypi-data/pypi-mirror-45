@@ -1,0 +1,14 @@
+{
+  "audio": "mpv",
+  "image": "feh",
+  "pdf": "evince -f",
+  "rar": "unrar x ARCHIVE_PATH",
+  "tar": "tar --directory FOLDER_PATH -xf ARCHIVE_PATH",
+  "tar_gz": "tar --directory FOLDER_PATH -zxf ARCHIVE_PATH",
+  "tar_xz": "tar --directory FOLDER_PATH -xJf ARCHIVE_PATH",
+  "tar_bz2": "tar --directory FOLDER_PATH -xvjf ARCHIVE_PATH",
+  "text": "gedit",
+  "tgz": "tar -xvzf ARCHIVE_PATH",
+  "zip": "unzip -d FOLDER_PATH ARCHIVE_PATH",
+  "video": "mpv"
+}
