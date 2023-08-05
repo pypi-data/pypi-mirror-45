@@ -1,0 +1,16 @@
+README.md
+bigimg2019
+setup.cfg
+setup.py
+bigimg/__init__.py
+bigimg/fourier.py
+bigimg/load_data.py
+bigimg/lowest_dims.py
+bigimg/plot_data.py
+bigimg/preprocess.py
+bigimg/segmentation.py
+bigimg2019.egg-info/PKG-INFO
+bigimg2019.egg-info/SOURCES.txt
+bigimg2019.egg-info/dependency_links.txt
+bigimg2019.egg-info/requires.txt
+bigimg2019.egg-info/top_level.txt
