@@ -1,0 +1,13 @@
+README.md
+setup.py
+./app/extract.py
+./app/grammar.py
+./app/lemm.py
+./app/normalize.py
+./app/stemm.py
+./app/stopwords.py
+app/bda_chatbot.egg-info/PKG-INFO
+app/bda_chatbot.egg-info/SOURCES.txt
+app/bda_chatbot.egg-info/dependency_links.txt
+app/bda_chatbot.egg-info/requires.txt
+app/bda_chatbot.egg-info/top_level.txt
