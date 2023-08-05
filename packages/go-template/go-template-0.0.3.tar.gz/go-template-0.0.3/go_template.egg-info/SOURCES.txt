@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+go_template/__init__.py
+go_template/utils.py
+go_template/wrapper.py
+go_template.egg-info/PKG-INFO
+go_template.egg-info/SOURCES.txt
+go_template.egg-info/dependency_links.txt
+go_template.egg-info/top_level.txt
+go_template/bind/template.so
