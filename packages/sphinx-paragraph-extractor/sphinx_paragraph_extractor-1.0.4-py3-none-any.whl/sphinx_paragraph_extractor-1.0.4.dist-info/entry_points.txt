@@ -1,0 +1,3 @@
+[sphinx.builders]
+paragraph-extractor = sphinx_paragraph_extractor
+
