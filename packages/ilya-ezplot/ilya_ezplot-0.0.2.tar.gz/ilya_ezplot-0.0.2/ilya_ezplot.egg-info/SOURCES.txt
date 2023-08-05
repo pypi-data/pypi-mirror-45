@@ -1,0 +1,7 @@
+README.md
+setup.py
+ilya_ezplot/__init__.py
+ilya_ezplot.egg-info/PKG-INFO
+ilya_ezplot.egg-info/SOURCES.txt
+ilya_ezplot.egg-info/dependency_links.txt
+ilya_ezplot.egg-info/top_level.txt
