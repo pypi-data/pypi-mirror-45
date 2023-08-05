@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bda-chatbot
+Version: 0.0.3
+Summary: Source code for the bda chatbot bachelor thesis fs19
+Home-page: https://github.com/bda-19fs/bda-chatbot
+Author: Alan Meile, Cyrill Jauner
+Author-email: alan.meile@gmail.com
+License: UNKNOWN
+Description: 
+        BDA Chatbot fs19
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
