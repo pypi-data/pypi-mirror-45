@@ -1,0 +1,32 @@
+{% extends 'bee_django_course/base.html' %}
+
+{% block content %}
+    <video width='320' height='240' controls id="videos_1">
+        <source src="http://dv.manxuetang.com/1555125586110334.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video width='320' height='240' controls id="video_2">
+        <source src="http://dv.manxuetang.com/%E6%B5%8B%E8%AF%95.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+{% endblock content %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var vids = document.getElementsByTagName('video');
+            var vid1 = vids[0];
+            var vid2 = vids[1];
+            vid1.onended = function (ev) {
+                console.log('完毕');
+                alert('播放完毕');
+            };
+            vid2.onended = function (ev) {
+                console.log('完毕');
+                alert('播放完毕');
+            };
+        });
+    </script>
+
+{% endblock scripts %}
