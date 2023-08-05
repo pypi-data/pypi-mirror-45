@@ -1,0 +1,9 @@
+fps_inspector_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_inspector_sdk/exit_codes.py,sha256=oq5nf_QprlJPYpHsQoY_1MUv_xOaL0WW7KNHPb5eicc,373
+fps_inspector_sdk/fps_inspector.py,sha256=763PA4wOsSaLLyBwd940hdDxy-ImnRFy42uWTev9xQ0,5487
+fps_inspector_sdk/lib/PresentMon.dll,sha256=pLjOeVrnw0oIsNDKvOxd4OfCt7SD31NR5qethoZBYR4,574976
+fps_inspector_sdk-1.0.8.dist-info/METADATA,sha256=B9TyGbekRHotPBTL5RhA9jgJ2qUmEIIlMRT8bZlTQ5c,2521
+fps_inspector_sdk-1.0.8.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+fps_inspector_sdk-1.0.8.dist-info/top_level.txt,sha256=5s_EE6KJO3BLZ-frHlUj13WunnkKJw3cXz3Obfk75RA,18
+fps_inspector_sdk-1.0.8.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+fps_inspector_sdk-1.0.8.dist-info/RECORD,,
