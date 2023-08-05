@@ -1,0 +1,10 @@
+phonetisch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phonetisch/cologne/CologneProcess.py,sha256=zeVxBWywlNBtBWlB95YjT6Ph5Kox37XfhFZ3dtq-Ybk,82
+phonetisch/cologne/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phonetisch/soundex/Soundex.py,sha256=YLE_iImZ3JKapp1GRE-mSJu48qeK8DJgQYrNOMuD0os,1008
+phonetisch/soundex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phonetisch-0.1.dist-info/LICENSE,sha256=NzngXOXfOnG2hl8LGWCY67LiQsEhFVUFF2qG4xWsz4k,1071
+phonetisch-0.1.dist-info/METADATA,sha256=EsQMvEfWsSuPfuTXjKjG6n70nQ123wT7h3dgkTBsg4U,524
+phonetisch-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+phonetisch-0.1.dist-info/top_level.txt,sha256=RYXnrJWfAGaYyOeO57Cke2MsQ7LZxkBUtjfe-EaFR80,11
+phonetisch-0.1.dist-info/RECORD,,
