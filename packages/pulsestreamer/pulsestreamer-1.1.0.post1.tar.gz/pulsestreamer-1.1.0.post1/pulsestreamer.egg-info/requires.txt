@@ -1,0 +1,12 @@
+requests
+tinyrpc
+gevent-websocket
+numpy
+matplotlib
+
+[:python_version < "3.4"]
+enum34
+
+[grpc]
+grpcio
+protobuf
