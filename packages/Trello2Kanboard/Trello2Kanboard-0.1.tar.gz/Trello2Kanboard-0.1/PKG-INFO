@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: Trello2Kanboard
+Version: 0.1
+Summary: Simple Python Package for Importing Trello Projects from JSON Files Using the Kanboard API.
+Home-page: https://github.com/wiltonsr/Trello2Kanboard
+Author: Wilton Rodrigues
+Author-email: wiltonsr94@gmail.com
+License: BSD
+Description: # trello2kanboard
+        Simple Python Package for Importing Trello Projects from JSON Files Using the Kanboard API
+        
+Platform: UNKNOWN
