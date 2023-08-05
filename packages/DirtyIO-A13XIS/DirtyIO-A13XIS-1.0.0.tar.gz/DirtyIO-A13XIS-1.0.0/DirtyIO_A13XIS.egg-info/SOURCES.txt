@@ -1,0 +1,9 @@
+README.md
+setup.py
+DirtyIO/__init__.py
+DirtyIO/dirtyReader.py
+DirtyIO/dirtyWriter.py
+DirtyIO_A13XIS.egg-info/PKG-INFO
+DirtyIO_A13XIS.egg-info/SOURCES.txt
+DirtyIO_A13XIS.egg-info/dependency_links.txt
+DirtyIO_A13XIS.egg-info/top_level.txt
