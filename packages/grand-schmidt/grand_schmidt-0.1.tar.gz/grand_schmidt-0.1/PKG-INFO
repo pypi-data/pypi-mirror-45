@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: grand_schmidt
+Version: 0.1
+Summary: Grand Schmidt Factorization
+Home-page: https://github.com/beayancan/grand_schmidt
+Author: Benjamín Ayancán
+Author-email: beayancan@uc.cl
+License: MIT
+Download-URL: https://github.com/beayancan/grand_schmidt/archive/Setup.tar.gz
+Description: UNKNOWN
+Keywords: Matrix Factorization,Grand Schmidt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
