@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>src/bootstrap.min.css</file>
+    <file>src/tmp.html</file>
+  </qresource>
+</RCC>
