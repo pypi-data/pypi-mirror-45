@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+CRank/CRank.py
+CRank/__init__.py
+CRank/porterStemmer.py
+C_Rank.egg-info/PKG-INFO
+C_Rank.egg-info/SOURCES.txt
+C_Rank.egg-info/dependency_links.txt
+C_Rank.egg-info/requires.txt
+C_Rank.egg-info/top_level.txt
+C_Rank.egg-info/zip-safe
