@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+django_access_and_compliance/__init__.py
+django_access_and_compliance/apps.py
+django_access_and_compliance/config.py
+django_access_and_compliance/signals.py
+django_access_and_compliance.egg-info/PKG-INFO
+django_access_and_compliance.egg-info/SOURCES.txt
+django_access_and_compliance.egg-info/dependency_links.txt
+django_access_and_compliance.egg-info/requires.txt
+django_access_and_compliance.egg-info/top_level.txt
