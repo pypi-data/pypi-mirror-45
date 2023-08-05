@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: fiddler-client
+Version: 0.2
+Summary: Python client for Fiddler Service
+Home-page: https://fiddler.ai
+Author: Fiddler Labs
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Fiddler Client
+=============
+
+Python client for sending events to Fiddler Service.
+
+Installation
+------------
+From the top-level repo directory install Fiddler CLI package (notice `/` after `client`).
+
+    $ pip3 install client/
+
+Example Usage
+-------------
+
+    import fiddler
+
+    fdl = fiddler.Fiddler(token, org, project, model)
+
+    # Publish and event. An event is a dictionary of fields where fields correspond to
+    # input and output schema of the model.
+    fdl.publish_event({
+        "feature_a": 10.5,
+        "feature_b": 3.2,
+        "predicttion": 0.72
+    })
+
+
