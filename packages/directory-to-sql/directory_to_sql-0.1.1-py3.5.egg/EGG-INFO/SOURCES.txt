@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+directory_to_sql/__init__.py
+directory_to_sql/add_folders_files.py
+directory_to_sql/create_db.py
+directory_to_sql/example_queries.py
+directory_to_sql.egg-info/PKG-INFO
+directory_to_sql.egg-info/SOURCES.txt
+directory_to_sql.egg-info/dependency_links.txt
+directory_to_sql.egg-info/not-zip-safe
+directory_to_sql.egg-info/requires.txt
+directory_to_sql.egg-info/top_level.txt
