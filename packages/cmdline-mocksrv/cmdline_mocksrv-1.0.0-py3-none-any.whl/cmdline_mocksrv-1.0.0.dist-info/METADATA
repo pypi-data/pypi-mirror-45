@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cmdline-mocksrv
+Version: 1.0.0
+Summary: Mocking service
+Home-page: https://github.com/nntarasov/mocksrv
+Author: Nikita Tarasov
+Author-email: mail@ntarasov.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: pathvalidate
+
+UNKNOWN
+
+
