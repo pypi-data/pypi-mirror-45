@@ -1,0 +1,84 @@
+{% macro course_complete(complete, grade) %}
+    {% if complete %}
+        <td style="text-align: center">{{ '✔' }}</td>
+        <td style="text-align: center">{{ grade }}</td>
+    {% else %}
+        <td> {{ '' }}</td>
+        <td> {{ '' }}</td>
+    {% endif %}
+{% endmacro %}
+
+
+{% macro course_row(complete, grade, courseid, coursename, credits) %}
+    <tr>
+        {{ course_complete(complete, grade) }}
+        <td nowrap>{{ courseid }}</td>
+        <td nowrap>{{ coursename }}</td>
+        <td style="text-align: center">{{ credits }}</td>
+        <td></td>
+    </tr>
+{% endmacro %}
+
+{% macro req_row(complete, req) %}
+    <tr>
+        {% if complete %}
+            <td style="color: limegreen"><b>{{ 'Complete' }}</b></td>
+        {% else %}
+            <td> {{ '' }}</td>
+        {% endif %}
+        <td>{{""}}</td>
+        <td style="font-size: medium" nowrap><b>{{req}}</b></td>
+        <td> {{ '' }}</td>
+        <td> {{ '' }}</td>
+        <td> {{ '' }}</td>
+    </tr>
+{% endmacro %}
+
+{% macro credits_display(creds, gpa) %}
+    <h4>Total Credits Required: 30</h4>
+    {% if creds >= 30 %}
+        <h4 style="color: green", >Completed Credits: {{creds}} </h4>
+    {% else %}
+        <h5 style="color: red", >Completed Credits: {{creds}} </h5>
+    {% endif %}
+{% endmacro %}
+
+{% macro getRSSFeeds(value) %}
+    {{ value }}
+{% endmacro %}
+
+
+{% macro allInfo(value) %}
+    {{ value }}
+{% endmacro %}
+
+
+{% macro getRssFeeds_Weather(value) %}
+    {% for info in value %}
+        {% if loop.index == 1 %}
+            <tr>
+                <th colspan="2">{{ info }}</th>
+            </tr>
+        {% elif loop.index == 2 %}
+            <tr>
+                <td width="50">
+                    <img src="{{ info }}" border="1" height="50" width="50" />
+                </td>
+        {% elif loop.index == 3 %}
+                <td width="200">
+                    <div style="width: 150px">
+                        {{ info }}
+                    </div>
+        {% else %}
+                    <div style="width: 150px">
+                        Last Updated: {{ info }}
+                    </div>
+                </td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+
+
+

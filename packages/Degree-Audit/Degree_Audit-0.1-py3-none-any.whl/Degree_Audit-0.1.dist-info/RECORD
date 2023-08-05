@@ -1,0 +1,8 @@
+Degree_Audit/__init__.py,sha256=YNMRmsGx4zySsq97MTySY44zwlo0nH2N6oY0HXRzzQs,19
+Degree_Audit/auditor.py,sha256=2FkzLpSbhBtLz4dvlQRj3tU4n7mqkRBKlI78NyRrr04,13230
+Degree_Audit/templates/audit.html,sha256=KFWIwdJhQ0-mmtWLFUijACgn-Om4JO1oZ5pR9TM7oeg,2173
+Degree_Audit/templates/macros.html,sha256=pvcTT85Q7QPZFwRfuIrbF3bvHhJ2Jx7jEKPg3xeLuO4,2277
+Degree_Audit-0.1.dist-info/METADATA,sha256=bmVHXe_aLhh5qfrRmBtr0ESmE7cU251PkOirsFSEc6U,235
+Degree_Audit-0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+Degree_Audit-0.1.dist-info/top_level.txt,sha256=OphseGkIlcVqr5wTVbj2-10yfa91bXZgsyBxoLwMFW4,13
+Degree_Audit-0.1.dist-info/RECORD,,

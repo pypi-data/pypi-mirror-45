@@ -1,0 +1,56 @@
+{% import 'macros.html' as macros %}
+
+<html>
+	<head>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="span10 offset1">
+					{% block header %}
+						<div class="page-header">
+							<h1>{% block title %}Degree Requirements Audit{% endblock title %}</h1>
+						</div>
+					{% endblock header %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="span7 offset1">
+                    {{ macros.credits_display(creds, gpa) }}
+                </div>
+                <div class="span3">
+					{% block sidebar %}
+						<h4>GPA: {{gpa}}</h4>
+					{% endblock sidebar %}
+				</div>
+            </div>
+            <div class="row">
+                {% block content %}
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Complete</th>
+                                <th>Grade</th>
+                                <th>Course</th>
+                                <th></th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for course in courses %}
+                                {{ macros.course_row(coursedata[course]['Grade'], coursedata[course]['Complete'], course, coursedata[course]['Name'], coursedata[course]['Credits']) }}
+                            {% endfor %}
+                            {% for i in range(index-1) %}
+                                {% if group_data[i]['Grade'] == 'G' %}
+                                    {{ macros.req_row(group_data[i]['Complete'], group_data[i]['Course']) }}
+                                {% else %}
+                                    {{ macros.course_row(group_data[i]['Complete'], group_data[i]['Grade'], group_data[i]['Course'], group_data[i]['Name'], group_data[i]['Credits']) }}
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endblock content %}
+			</div>
+		</div>
+	</body>
+</html>
