@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/lss
+datainfo/__init__.py
+datainfo/file_hdf4.py
+datainfo/file_hdf5.py
+datainfo/file_idl.py
+datainfo/file_netcdf.py
+datainfo/util.py
+datainfo.egg-info/PKG-INFO
+datainfo.egg-info/SOURCES.txt
+datainfo.egg-info/dependency_links.txt
+datainfo.egg-info/not-zip-safe
+datainfo.egg-info/requires.txt
+datainfo.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+nose
+numpy
+scipy
+h5py
+netcdf4
+pyhdf
