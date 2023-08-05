@@ -1,0 +1,10 @@
+README.md
+setup.py
+matchenc/__init__.py
+matchenc/__main__.py
+matchenc.egg-info/PKG-INFO
+matchenc.egg-info/SOURCES.txt
+matchenc.egg-info/dependency_links.txt
+matchenc.egg-info/not-zip-safe
+matchenc.egg-info/requires.txt
+matchenc.egg-info/top_level.txt
