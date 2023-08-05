@@ -1,0 +1,15 @@
+README.md
+setup.py
+ascii_films.egg-info/PKG-INFO
+ascii_films.egg-info/SOURCES.txt
+ascii_films.egg-info/dependency_links.txt
+ascii_films.egg-info/top_level.txt
+film/demo.py
+film/film.py
+film/frame/poursuiteci
+film/frame/poursuiteic
+film/frame/roflflyingmoto
+film/frames/bon00
+film/frames/bon10
+film/frames/bon20
+film/frames/bon30
