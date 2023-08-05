@@ -1,0 +1,5 @@
+lxml
+termcolor
+cssselect
+requests
+requests[socks]
