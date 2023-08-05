@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: slidedown
+Version: 0.1.0
+Summary: Simple slide decks with Markdown and Python
+Home-page: UNKNOWN
+License: MIT
+Author: rmorshea
+Author-email: ryan.morshead@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cmarkgfm (>=0.4.2,<0.5.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: idom (>=0.1.2,<0.2.0)
+Requires-Dist: pygments (>=2.3,<3.0)
