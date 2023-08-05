@@ -1,0 +1,15 @@
+setuptools
+werkzeug
+Zope
+
+[:python_version == "2.7"]
+ipaddress
+
+[docs]
+sphinx_rtd_theme
+
+[docs:python_version < "3"]
+Sphinx<2
+
+[docs:python_version >= "3"]
+Sphinx
