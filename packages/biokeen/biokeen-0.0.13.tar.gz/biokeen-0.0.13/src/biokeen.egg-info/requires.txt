@@ -1,0 +1,14 @@
+mock
+pybel
+bio2bel
+tqdm
+pandas
+pykeen
+click-default-group
+click
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-click
+sphinx_autodoc_typehints
