@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: glplotlib
+Version: 0.1.0
+Summary: a thin wrapper around PyQtGraph with Matplotlib style API
+Home-page: https://github.com/chichengumich/glplotlib
+Author: Cheng Chi
+Author-email: chicheng@umich.edu
+License: MIT
+Description: 
+        GLPlotLib is a thin wrapper around PyQtGraph with Matplotlib style API.
+        
+        GLPlotLib launches 3D OpenGL visualizations of PyQtGraph in a separate thread, allowing 
+        it to be used in a interactive python shell, without blocking the main thread.
+        
+Platform: UNKNOWN
