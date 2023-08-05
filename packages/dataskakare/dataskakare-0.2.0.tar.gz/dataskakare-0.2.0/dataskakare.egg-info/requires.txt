@@ -1,0 +1,4 @@
+requests
+google-auth
+google-cloud-vision
+google-cloud-translate

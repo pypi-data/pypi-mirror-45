@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+dataskakare/Europeana.py
+dataskakare/GoogleTranslate.py
+dataskakare/GoogleVision.py
+dataskakare/__init__.py
+dataskakare/data_transformation.py
+dataskakare.egg-info/PKG-INFO
+dataskakare.egg-info/SOURCES.txt
+dataskakare.egg-info/dependency_links.txt
+dataskakare.egg-info/requires.txt
+dataskakare.egg-info/top_level.txt

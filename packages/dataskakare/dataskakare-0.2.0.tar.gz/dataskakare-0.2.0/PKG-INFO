@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: dataskakare
+Version: 0.2.0
+Summary: Python package with not so common data wrangling functions and API wrappers.
+Home-page: https://github.com/riksantikvareambetet/dataskakare
+Author: Albin Larsson
+Author-email: albin.larsson@raa.se
+License: MIT
+Download-URL: https://github.com/riksantikvareambetet/dataskakare/tarball/0.2.0
+Description: UNKNOWN
+Keywords: heritage,cultural
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.6.0
