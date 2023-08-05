@@ -1,0 +1,17 @@
+cleepcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cleepcli/cleepapi.py,sha256=JLcuU5I14SZg-zq8-12kUE8dqPvGXoKTbKza8xw6Rj0,976
+cleepcli/config.py,sha256=WvDHxERLZW2LBIsP59k-qFKhlrBAVSlN2z97pW8bFKo,699
+cleepcli/console.py,sha256=RQepF-IxxGGG0Y1RLHOpHF-BU2Cv-czHW89nw6bPQKc,12089
+cleepcli/distrib.py,sha256=f7OAZrJTqFibCBw2CreAw8xN6PnGJSOHDd_tSA3icsE,5992
+cleepcli/file.py,sha256=ntN0DQ4NmOGXsZntAjwsM4f6bpIYk3KGMkWedLuBPUs,3594
+cleepcli/git.py,sha256=lC7ibPvtz0rZSE0TufRg927ntAC2mn3Ov6dL2a5tU0k,2199
+cleepcli/git_password.sh,sha256=cmjmtTMPqpp9PWjcDnzO260JYe0-U00E9gnCeo0FwNo,37
+cleepcli/module.py,sha256=UVEtfyERmSN9HsOij3itdYw1lyFgBXLPhJ3i0G64rXU,6468
+cleepcli/test.py,sha256=TkwciIJ7b0OmAKGBHoiZSDSYfcsKpid9UatihJ-wE7I,4733
+cleepcli/watch.py,sha256=3QgnTwY5PLmCeNNXQF_Fy_8LTIxzDHyf2KLzbem7LU0,10804
+cleepcli-1.1.0.data/scripts/cleep-cli,sha256=TWr8rJHjbRJ9Ug_0Orla7zPJ8W9GEqqjo6lSAlKndl8,3729
+cleepcli-1.1.0.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+cleepcli-1.1.0.dist-info/METADATA,sha256=KzLdxF0vFuQjk3RKxucAMJpAwjD7_yLe6jQpPhz42ww,527
+cleepcli-1.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+cleepcli-1.1.0.dist-info/top_level.txt,sha256=Vdsmd2huLilY8Z7qfrBf88-Epw5dvYEi7MFq_LBsv88,9
+cleepcli-1.1.0.dist-info/RECORD,,
