@@ -1,0 +1,9 @@
+requests
+gym==0.10.9
+pycrayon==0.5
+psutil
+
+[distributed]
+ray==0.6.1
+redis==2.10.6
+boto3
