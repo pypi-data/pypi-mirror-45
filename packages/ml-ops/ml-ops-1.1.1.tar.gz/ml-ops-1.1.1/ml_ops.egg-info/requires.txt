@@ -1,0 +1,7 @@
+pandas
+termcolor
+kazoo
+protobuf
+requests
+py4j
+scikit-learn
