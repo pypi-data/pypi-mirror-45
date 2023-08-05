@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: HABApp
+Version: 0.4.7
+Summary: Easy automation with MQTT and/or openHAB. Create home automation rules in python.
+Home-page: https://github.com/spacemanspiff2007/HABApp
+Author: spaceman_spiff
+License: UNKNOWN
+Project-URL: Documentation, https://habapp.readthedocs.io/
+Project-URL: GitHub, https://github.com/spacemanspiff2007/HABApp
+Description: # HABApp
+        [![Build Status](https://travis-ci.org/spacemanspiff2007/HABApp.svg?branch=master)](https://travis-ci.org/spacemanspiff2007/HABApp)
+        [![Documentation Status](https://readthedocs.org/projects/habapp/badge/?version=latest)](https://habapp.readthedocs.io/en/latest/?badge=latest)
+        
+        _Easy automation with MQTT and/or openHAB_
+        
+        
+        HABApp is a asyncio/multithread application that connects to an openhab instance and/or a MQTT broker.
+        It is possible to create rules that listen to events from these instances and then react accordingly.
+        
+        ## Goals
+        The goal of this application is to provide a simple way to create home automation rules in python.
+        With full syntax highlighting and descriptive names it should almost never be required to look something up in the documentation
+        
+        ## Documentation
+        [The documentation can be found at here](https://habapp.readthedocs.io)
+        
+Keywords: mqtt,openhab,habapp,home automation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown
