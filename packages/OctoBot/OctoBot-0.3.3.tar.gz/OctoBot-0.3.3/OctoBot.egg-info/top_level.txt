@@ -1,0 +1,12 @@
+backtesting
+config
+core
+evaluator
+interfaces
+octobot
+services
+start
+tentacles
+tests
+tools
+trading
