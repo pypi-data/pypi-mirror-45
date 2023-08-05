@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: napari
+Version: 0.0.7
+Summary: n-dimensional array viewer in Python.
+Home-page: UNKNOWN
+License: BSD 3-Clause
+Download-URL: https://github.com/napari/napari
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: scipy (>=1.2.0)
+Requires-Dist: vispy (>=0.5.3)
+Requires-Dist: PyOpenGL (>=3.1.0)
+Requires-Dist: PyQt5 (>=5.10.1)
+Requires-Dist: SIP (>=0.1.5)
+
+Napari GUI
+
+GUI component of Napari.
+
+
