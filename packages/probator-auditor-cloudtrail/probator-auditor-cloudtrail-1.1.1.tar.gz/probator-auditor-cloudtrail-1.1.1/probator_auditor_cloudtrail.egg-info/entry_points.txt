@@ -1,0 +1,3 @@
+[probator.plugins.auditors]
+auditor_cloudtrail = probator_auditor_cloudtrail:CloudTrailAuditor
+
