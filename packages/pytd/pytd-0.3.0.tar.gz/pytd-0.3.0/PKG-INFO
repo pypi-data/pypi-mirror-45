@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytd
+Version: 0.3.0
+Summary: Treasure Data Driver for Python
+Home-page: https://github.com/treasure-data/pytd
+Author: Arm Treasure Data
+Author-email: support@treasure-data.com
+Maintainer: Arm Treasure Data
+Maintainer-email: support@treasure-data.com
+License: Apache License 2.0
+Description: Treasure Data Driver for Python
+        
+        pytd is a Python interface to Treasure Data data management platform. Unlike
+        the other official Treasure Data API libraries for Python, td-client-python and
+        pandas-td, pytd gives a direct access to their back-end query and storage
+        engines. The seamless connection allows your Python code to read and write a
+        large volume of data in a shorter time. It eventually makes your day-to-day
+        data analytics work more efficient and productive.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: spark
