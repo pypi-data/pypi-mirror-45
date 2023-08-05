@@ -1,0 +1,15 @@
+bulky/__init__.py,sha256=_JEfE7ugJOCDOhtQ917cvuhXFvDvw_3pgQge8pqI9E4,131
+bulky/consts.py,sha256=nBm4ug4_oKQ2dpy8eCyD0HKmrn8SRte-jNHTqeOrBh0,72
+bulky/errors.py,sha256=G4McLsaIoY2MJtef6FK4OQqOQBCQ-YzWc9vSjXWKSGE,565
+bulky/types.py,sha256=ar9Sr4XLDrXtDn9CVUZmwYE4eiBJg5_j67c0f6EN-Yg,913
+bulky/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulky/functions/insert.py,sha256=VB65lP3FMsx-x6flUoRESAuyxWRpz7rg37C58HF_BDM,2345
+bulky/functions/update.py,sha256=1oRtnZz1WdMeWuv6bm-B7-B9zDyulwVrDVzI084IwfE,2744
+bulky/internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulky/internals/sql.py,sha256=RLVY__wDedhUPPt9TZfMr9ZcAaaujuICU4Zb8rETETw,2225
+bulky/internals/utils.py,sha256=8QXrtrRZc8dNKcl1_nf-NvCR0McvAcB7NORliEcX8bQ,9156
+bulky-1.0.1.dist-info/LICENSE,sha256=3RnLtYjdJxsCnVtvtEg67gOin86QDO2j0Xe9e4HIEco,11347
+bulky-1.0.1.dist-info/METADATA,sha256=YGmPdsc5sFNgODKLO3Ck21_7kGNhepGEIgTo2WNN8lw,964
+bulky-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bulky-1.0.1.dist-info/top_level.txt,sha256=Zl2NuwvA7JnUUQbtSWD7ESYnZ0gX_DwQbSI_HRPDITc,6
+bulky-1.0.1.dist-info/RECORD,,
