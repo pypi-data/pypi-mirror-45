@@ -1,0 +1,9 @@
+README.md
+setup.py
+mask_predictor/__init__.py
+mask_predictor/mask_predictor.py
+mask_predictor.egg-info/PKG-INFO
+mask_predictor.egg-info/SOURCES.txt
+mask_predictor.egg-info/dependency_links.txt
+mask_predictor.egg-info/requires.txt
+mask_predictor.egg-info/top_level.txt
