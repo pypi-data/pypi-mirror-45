@@ -1,0 +1,7 @@
+Pillow
+
+[GTK]
+pygobject
+
+[Qt]
+PyQt5
