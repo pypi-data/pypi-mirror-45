@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-leaflet-point
+Version: 0.3.1
+Summary: Use Leaflet with point data (lat, lng)
+Home-page: https://github.com/Anton-vBR/django-leaflet-point
+Author: Anton van Berlekom
+Author-email: anton@berlekom.com
+License: MIT
+Download-URL: https://pypi.org/project/django-leaflet-point/
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: docs
