@@ -1,0 +1,71 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item accumulate\_line() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item add\_error() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item add\_warning() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+
+  \indexspace
+  \bigletter B
+  \item bytes() (in module phreeqpy.iphreeqc.phreeqc\_dll), \hyperpage{4}
+
+  \indexspace
+  \bigletter C
+  \item clear\_accumlated\_lines() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item column\_count (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc attribute), \hyperpage{3}
+  \item component\_count (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc attribute), \hyperpage{3}
+  \item create\_iphreeqc() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+
+  \indexspace
+  \bigletter D
+  \item destroy\_iphreeqc() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+
+  \indexspace
+  \bigletter G
+  \item get\_component() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item get\_component\_list() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item get\_error\_string() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{3}
+  \item get\_selected\_output\_array() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+  \item get\_selected\_output\_column() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+  \item get\_selected\_output\_row() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+  \item get\_selected\_output\_value() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter I
+  \item IPhreeqc (class in phreeqpy.iphreeqc.phreeqc\_dll), \hyperpage{3}
+
+  \indexspace
+  \bigletter L
+  \item load\_database() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{4}
+  \item load\_database\_string() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{4}
+
+  \indexspace
+  \bigletter P
+  \item PhreeqcException, \hyperpage{4}
+  \item phreeqpy.iphreeqc.phreeqc\_dll (module), \hyperpage{3}
+
+  \indexspace
+  \bigletter R
+  \item raise\_ipq\_error() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc static method), \hyperpage{4}
+  \item raise\_string\_error() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{4}
+  \item row\_count (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc attribute), \hyperpage{4}
+  \item run\_string() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), \hyperpage{4}
+
+  \indexspace
+  \bigletter S
+  \item set\_selected\_output\_file\_off() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+  \item set\_selected\_output\_file\_on() (phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method), 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter V
+  \item VAR (class in phreeqpy.iphreeqc.phreeqc\_dll), \hyperpage{4}
+  \item VARUNION (class in phreeqpy.iphreeqc.phreeqc\_dll), \hyperpage{4}
+
+\end{theindex}
