@@ -1,0 +1,10 @@
+API_callers/__init__.py,sha256=Wg2tmEdyAvInv0wnTYMPtmm7Im7AbLqKE6vZTcv_x2s,158
+API_callers/base.py,sha256=p2tS4ptjItNJ9CvP7LfAqKegTMVcLpuWh_MDFPv2tIg,266
+API_callers/callers.py,sha256=Hg6g5lW-q67ABF6KwZtr5eiEi3bpr7BSs0J23rx8mAs,561
+API_callers/user.py,sha256=cY4JykZWOWinkFPerYhp_zYdQRmeWxIHYNA5uIz54zQ,703
+API_callers-0.1.0.dist-info/AUTHORS.rst,sha256=F6w5YLSQcrGTkx3tlCIKDzKZoGYFdGobZT0TrlaIZhI,159
+API_callers-0.1.0.dist-info/LICENSE,sha256=45lv0ptwMbaXlph6ZVFMU9YCPbVErXIEtXDRuAbP_RY,1553
+API_callers-0.1.0.dist-info/METADATA,sha256=LlXvO92V2koD-0OiUgzH14sTubUG8B5kM0nGPVaNn_I,2053
+API_callers-0.1.0.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+API_callers-0.1.0.dist-info/top_level.txt,sha256=CHGNiDsYhS3CmKrg4qC48ZKcl47lgzJ0NRWGIGHT9fM,12
+API_callers-0.1.0.dist-info/RECORD,,
