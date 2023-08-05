@@ -1,0 +1,206 @@
+---  # document start
+
+# Comments in YAML look like this.
+
+################
+# track packages that are part of the stdlib 
+# but dont get recognized as such
+################
+
+extra_stdlib:
+  - "time"
+  - "sys"
+  - "itertools"
+  - "math"
+  - "mock"
+
+vars:
+  filenames:
+    imports: "tmp.pip-stripper.imports.rpt"
+    freeze: "tmp.pip-stripper.freeze.rpt"
+    liststdlib: "tmp.pip-stripper.liststdlib.rpt"
+    scan: "pip-stripper.scan.yaml"
+    log: "pip-stripper.log"
+    tmp: "tmp.pip-stripper.tmp"
+    
+
+
+
+
+
+Scanner:
+
+  tasknames: 
+    - grep_1
+    - grep_2
+    - freeze
+
+
+Command:
+
+
+
+  #####################
+  # please note:  
+  #   to keep yaml happy double the \ escapes used in regex or others
+  #     ex: \s => \\s
+  #   to keep subprocess happy, don't use as in '^\\s*import\\s'
+  ######################
+
+
+
+  tasks:
+
+    ########################################
+    # for future portability, commands should probably be keyed by OS
+    ########################################
+
+    grep_1:
+      cmdline: "egrep ^\\s*from\\s.+\\simport\\s --include=*.py --exclude=*/migrations/* --exclude-dir=node_modules -r -n $scandir" 
+      filename: "$filenames_imports"
+
+    grep_2:
+      cmdline: "egrep ^\\s*import\\s --include=*.py --exclude=*/migrations/* --exclude-dir=node_modules -r -n $scandir" 
+      filename: "$filenames_imports"
+      append: True      
+
+    freeze:
+      cmdline: "pip freeze"
+      filename: "$filenames_freeze"
+
+
+
+##############################
+# classifies the imports
+##############################
+
+ClassifierImport:
+
+
+  pattern_splitline: ":\\d+:"
+
+  ######################
+  # A bucket holds package names and maps to a requirements.xxx.txt file.
+  ######################
+  buckets:
+
+    #this basically says, if module `x` is found in several buckets then put 
+    #it in the highest one.  i.e. `jinja2` in prod AND dev is 
+    #only kept in prod
+    precedence:
+      #leave it alone!
+      - "prod"
+      - "tests"
+      - "dev"
+      - "workstation"
+
+  unmatched:
+    #any code directory that isn't matched goes here.
+    #leave it alone!
+    - prod
+
+  regex_dirs:
+
+    # uncomment workstation and dev if you want to partition certain directories
+    # into those buckets.  remember, this is a first-match regex
+
+    workstation: []
+
+    dev: []
+
+    tests:
+      - "/tests/"
+    prod: []
+      # - "."
+
+  default_bucket: "prod"
+
+  requirements_mapping:
+    #each requirements file gets filled from 1 or more buckets
+    prod:
+      - prod
+    dev:
+      - dev
+      - tests
+
+
+##################
+# Note:  `pass` is used as a placeholder for actual package names
+##################
+
+untracked:
+  #replace with actual packages you don't want to track
+  - cStringIO # 2 to  3 changes, won't find it on 3
+  - urlparse  # 2 to  3 changes, won't find it on 3
+
+workdir: %(workdir)s
+
+#########################
+#
+#########################
+
+ClassifierPip:
+
+
+  pattern_splitline: "=="
+
+  bucket_precedence:
+    - prod
+    - tests
+    - dev
+    - workstation
+
+  #you typically dont want anything here
+  warnings: []
+
+  #the following are used to "hardcode" package names to given buckets.
+  buckets:
+
+    #dont put anything in unknown here...!
+    unknown: []
+
+    workstation:
+      # mostly modules that are used to develop/audit even if they dont
+      # show up in the source code:
+      # so you may have installed say `ansible` to build servers, but it makes
+      # no sense to install `ansible` on those servers
+      - pass 
+      - PyQt5
+      - PyQt5-sip
+
+    prod:
+      # enter packages that you _know_ you want to put in `requirements.prod.txt` but are not
+      # getting picked up for some reason.  `psycopg2` doesn't show up an `import` of a Django
+      # site using postgresql but is still required.
+      - psycopg2
+      - cx-Oracle
+
+    # enter packages that are need for tests.  `pytest` might be an example.
+    tests: []
+
+    dev: []
+      # enter packages that are need for dev.  in practice, tests and dev are mapped the 
+      # same...
+
+hardcoded_aliases:
+  #put in matches in the form...
+  #pip package name : import name
+  backports.functools-lru-cache: backports.functools_lru_cache
+  cached-property: cached_property
+  cx-Oracle: cx_Oracle
+  PyYAML: yaml
+
+Builder:
+
+  t_filename_out: "requirements.$req.txt"
+
+  req_mapper:
+    dev:
+      buckets:
+        - dev
+        - tests
+    prod:
+      buckets:
+        - prod
+
+
