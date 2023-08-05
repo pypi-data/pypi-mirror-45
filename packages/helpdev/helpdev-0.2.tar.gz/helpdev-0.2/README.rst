@@ -1,0 +1,576 @@
+HelpDev
+=======
+
+Helping users and developers to get information about the environment to
+report bugs or even test your system without spending a day on it. It can
+get information about hardware, OS, paths, Python distribution and packages,
+including Qt-things. Operates in Linux, Windows and Mac. You must run it
+inside your running Python environment along with the application you would
+report something or test!
+
+If you want to get information at runtime of your application, you need
+to call using the same environment (and process) in which your application
+is running. This module can be imported and integrated into your application,
+providing a report about the current environment.
+
+Some information can be depedent or independent of your Python environment,
+and some others can be dependent your running application. So, there are some
+acronymn used to refer to them:
+
+    - PEI: Python environment independent;
+
+    - PED: Python environment DEPENDENT;
+
+    - PEAD: Python environment and application DEPENDENT.
+
+
+Caution:
+    - This script is not supposed to get personal information using the option
+    ``--all``, but you must check the information before using the output.
+    - Using the option ``--sure-all`` it is added information about paths and
+    variables that can show personal information. So, be sure when using this
+    option when publishing.
+
+
+To install and/or update, do
+
+``$ pip install -U helpdev``
+
+
+To run from terminal
+
+``$ helpdev``
+
+
+To remove
+
+``$ pip uninstall helpdev``
+
+
+To get some help information
+
+``$ helpdev --help``
+
+
+Help output from v0.2 ::
+
+
+usage: helpdev [-h] [--hardware] [--os] [--thread] [--network [NETWORK]]
+            [--python] [--conda] [--qt] [--packages] [--packages-pip]
+            [--packages-pip-e] [--packages-conda] [--packages-conda-e]
+            [--numbers] [--float] [--int] [--personal] [--path] [--scope]
+            [--all] [--all-for-sure] [--version]
+
+HelpDev - Extracts information about the Python environment (hardware, OS,
+distribution, packages, paths, etc).
+
+optional arguments:
+
+--hardware           CPU, memory and architecture (PEI) (default: False)
+--os                 Operating system (PEI) (default: False)
+--thread             Threads specification in the system (PEI) (default: False)
+--network [NETWORK]  Network information, DNS and load for usual sites
+                        (PEI)NETWORK timeout defaults to 10s. 0 is disabled. (default: 10)
+--python             Python distribution (PED) (default: False)
+--conda              Conda/Anaconda Python distribution (PED) (default: False)
+--qt                 All about Qt, abstractions (QtPy/Qt.Py/PyQtGraph),
+                        bindings (PyQt/PySide) and Qt (C++)(PEAD) (default: False)
+
+--packages           All options of packages below (PED) (default: False)
+--packages-pip       PIP installed packages + PIP check (PED) (default: False)
+--packages-pip-e     PIP locally installed packages + PIP check (PED) (default: False)
+--packages-conda     CONDA installed packages (PED) (default: False)
+--packages-conda-e   CONDA locally installed packages (PED) (default: False)
+
+--numbers            All options above, 'float' and 'int' (PEI) (default: False)
+--float              Float representation in the system (PEI) (default: False)
+--int                Integer representation in the system (PEI) (default: False)
+
+--personal           All options below, 'path' and 'scope' (PEAD) (default: False)
+--path               Show Python current paths i.e. 'sys.path' (PEAD) (default: False)
+--scope              Show Python current scope i.e. 'dir()' (PEAD) (default: False)
+
+--all                Run all options, except 'personal' (PEAD) (default: False)
+--all-for-sure       Run all options, INCLUDING 'PERSONAL' folder paths and
+                        information (PEAD) (default: False)
+
+-h, --help           show this help message and exit
+--version, -v        show program's version number and exit
+
+
+
+Using ``--all`` (no personal information)
+
+``$ helpdev --all``
+
+
+Example of output from v0.2 ::
+
+* HARDWARE------------------------------------------------------------------------------------------------------
+    - Machine....................... x86_64
+    - Processor..................... Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+    - Total Memory.................. 16689 MB
+    - Free Memory................... 400 MB
+    - Total Swap.................... 19999 MB
+    - Free Swap..................... 19648 MB
+* OPERATING SYSTEM----------------------------------------------------------------------------------------------
+    - System........................ Linux
+    - Release....................... 4.15.0-47-generic
+    - Platform...................... Linux-4.15.0-47-generic-x86_64-with-debian-buster-sid
+    - Version....................... #50-Ubuntu SMP Wed Mar 13 10:44:52 UTC 2019
+* THREADS-------------------------------------------------------------------------------------------------------
+    - Version....................... NPTL 2.27
+    - Name.......................... pthread
+    - Lock.......................... semaphore
+* NETWORK-------------------------------------------------------------------------------------------------------
+    - Timeout....................... 10
+    - PyPI.......................... DNS: 0.0142s LOAD: 0.5517s URL: https://pypi.python.org/pypi/pip
+    - Conda......................... DNS: 0.0296s LOAD: 0.0859s URL: https://repo.continuum.io/pkgs/free/
+    - GitLab........................ DNS: 0.0203s LOAD: 0.8076s URL: https://gitlab.com
+    - GitHub........................ DNS: 0.0212s LOAD: 0.5494s URL: https://github.com
+    - Google........................ DNS: 0.0034s LOAD: 0.3495s URL: https://google.com
+* PYTHON DISTRIBUTION-------------------------------------------------------------------------------------------
+    - Version....................... 3.6.8
+    - C Compiler.................... GCC 7.3.0
+    - C API Version................. 1013
+    - Implementation................ cpython
+    - Implementation Version........ 3.6.8
+* CONDA DISTRIBUTION--------------------------------------------------------------------------------------------
+    - Version....................... 4.6.12
+    - Build......................... 3.17.8
+* QT ABSTRACTIONS-----------------------------------------------------------------------------------------------
+    - qtpy Version.................. 1.7.0
+    - qtpy Binding.................. pyqt5
+    - pyqtgraph Version............. 0.10.0
+    - pyqtgraph Binding............. Not set or inexistent
+    - Qt Version.................... 1.1.0
+    - Qt Binding.................... PySide2
+* QT BINDINGS---------------------------------------------------------------------------------------------------
+    - PyQt5 Version................. 5.12.1
+    - PyQt5 Qt Version.............. 5.12.2
+    - PySide2 Version............... 5.12.2
+    - PySide2 Qt Version............ 5.12.2
+* FLOAT---------------------------------------------------------------------------------------------------------
+    - Epsilon....................... 2.220446049250313e-16
+    - Digits........................ 15
+    - Precision..................... 53
+    - Maximum....................... 1.7976931348623157e+308
+    - Maximum Exp................... 1024
+    - Max. 10 Exp................... 308
+    - Minimum....................... 2.2250738585072014e-308
+    - Miminim Exp................... -1021
+    - Min. 10 Exp................... -307
+    - Radix......................... 2
+    - Rounds........................ 1
+* INTEGER-------------------------------------------------------------------------------------------------------
+    - Bits per Digit................ 30
+    - Size of Digit................. 4
+* PYTHON PACKAGES-----------------------------------------------------------------------------------------------
+    - alabaster..................... 0.7.12
+    - appdirs....................... 1.4.3
+    - asn1crypto.................... 0.24.0
+    - aspy.yaml..................... 1.2.0
+    - astroid....................... 2.2.5
+    - atomicwrites.................. 1.3.0
+    - attrs......................... 19.1.0
+    - autopep8...................... 1.4.4
+    - Babel......................... 2.6.0
+    - backcall...................... 0.1.0
+    - bandit........................ 1.5.1
+    - bleach........................ 3.1.0
+    - certifi....................... 2019.3.9
+    - cffi.......................... 1.12.2
+    - cfgv.......................... 1.6.0
+    - chardet....................... 3.0.4
+    - ciermag-spec.................. 0.2
+    - ciermag-spec2................. 2.1
+    - Click......................... 7.0
+    - click-completion.............. 0.5.1
+    - cloudpickle................... 0.8.1
+    - colorama...................... 0.4.1
+    - coverage...................... 4.5.3
+    - crayons....................... 0.2.0
+    - cryptography.................. 2.6.1
+    - cycler........................ 0.10.0
+    - decorator..................... 4.4.0
+    - defusedxml.................... 0.5.0
+    - doc8.......................... 0.8.0
+    - docformatter.................. 1.1
+    - docutils...................... 0.14
+    - dparse........................ 0.4.1
+    - entrypoints................... 0.3
+    - eradicate..................... 1.0
+    - filelock...................... 3.0.10
+    - flake8........................ 3.7.7
+    - flake8-polyfill............... 1.0.2
+    - gitdb2........................ 2.0.5
+    - GitPython..................... 2.1.11
+    - h5py.......................... 2.9.0
+    - helpdev....................... 0.2
+    - identify...................... 1.4.1
+    - idna.......................... 2.8
+    - imagesize..................... 1.1.0
+    - importlib-metadata............ 0.9
+    - importlib-resources........... 1.0.2
+    - ipykernel..................... 5.1.0
+    - ipython....................... 7.4.0
+    - ipython-genutils.............. 0.2.0
+    - isort......................... 4.3.17
+    - jedi.......................... 0.13.3
+    - jeepney....................... 0.4
+    - Jinja2........................ 2.10.1
+    - jsonpickle.................... 1.1
+    - jsonschema.................... 3.0.1
+    - jupyter-client................ 5.2.4
+    - jupyter-core.................. 4.4.0
+    - keyring....................... 19.0.1
+    - kiwisolver.................... 1.0.1
+    - latexcodec.................... 1.0.6
+    - lazy-object-proxy............. 1.3.1
+    - lml........................... 0.0.9
+    - lxml.......................... 4.3.3
+    - mando......................... 0.6.4
+    - MarkupSafe.................... 1.1.1
+    - matplotlib.................... 3.0.3
+    - mccabe........................ 0.6.1
+    - mistune....................... 0.8.4
+    - more-itertools................ 7.0.0
+    - mpmath........................ 1.1.0
+    - nbconvert..................... 5.4.1
+    - nbformat...................... 4.4.0
+    - networkx...................... 2.3
+    - nodeenv....................... 1.3.3
+    - numpy......................... 1.16.2
+    - numpydoc...................... 0.8.0
+    - oset.......................... 0.1.3
+    - packaging..................... 19.0
+    - pandocfilters................. 1.4.2
+    - parso......................... 0.4.0
+    - pbr........................... 5.1.3
+    - pexpect....................... 4.7.0
+    - pickleshare................... 0.7.5
+    - Pint.......................... 0.9
+    - pip........................... 19.0.3
+    - pipdate....................... 0.3.2
+    - pipdeptree.................... 0.13.2
+    - pkginfo....................... 1.5.0.1
+    - pluggy........................ 0.9.0
+    - pre-commit.................... 1.15.1
+    - prescription.................. 0.2
+    - prompt-toolkit................ 2.0.9
+    - psutil........................ 5.6.1
+    - ptyprocess.................... 0.6.0
+    - py............................ 1.8.0
+    - pybtex........................ 0.22.2
+    - pybtex-docutils............... 0.2.1
+    - pycodestyle................... 2.5.0
+    - pycparser..................... 2.19
+    - pycycle....................... 0.0.8
+    - pydicom....................... 1.2.2
+    - pydocstyle.................... 3.0.0
+    - pyexcel....................... 0.5.13
+    - pyexcel-handsontable.......... 0.0.2
+    - pyexcel-io.................... 0.5.17
+    - pyexcel-odsr.................. 0.5.2
+    - pyexcel-xls................... 0.5.8
+    - pyflakes...................... 2.1.1
+    - pyftpdlib..................... 1.5.5
+    - Pygments...................... 2.3.1
+    - pylama........................ 7.7.1
+    - pylint........................ 2.3.1
+    - pymr.......................... 0.45
+    - pymr2......................... 2.5
+    - PyOpenGL...................... 3.1.0
+    - pyparsing..................... 2.4.0
+    - PyQt5......................... 5.12.1
+    - PyQt5-sip..................... 4.19.15
+    - pyqtgraph..................... 0.10.0
+    - PyQtWebEngine................. 5.12.1
+    - pyrsistent.................... 0.14.11
+    - PySide2....................... 5.12.2
+    - pytest........................ 4.4.1
+    - pytest-cov.................... 2.6.1
+    - pytest-qt..................... 3.2.2
+    - python-dateutil............... 2.8.0
+    - pytz.......................... 2019.1
+    - pyusb......................... 1.0.2
+    - PyYAML........................ 5.1
+    - pyzmq......................... 18.0.1
+    - QDarkStyle.................... 2.6.5
+    - Qt.py......................... 1.1.0
+    - QtAwesome..................... 0.5.7
+    - qtconsole..................... 4.4.3
+    - QtPy.......................... 1.7.0
+    - radon......................... 3.0.1
+    - readme-renderer............... 24.0
+    - requests...................... 2.21.0
+    - requests-toolbelt............. 0.9.1
+    - restructuredtext-lint......... 1.3.0
+    - rope.......................... 0.14.0
+    - safety........................ 1.8.5
+    - scipy......................... 1.2.1
+    - scspell3k..................... 2.2
+    - SecretStorage................. 3.1.1
+    - setuptools.................... 40.8.0
+    - shellingham................... 1.3.1
+    - shiboken2..................... 5.12.2
+    - six........................... 1.12.0
+    - smmap2........................ 2.0.5
+    - snowballstemmer............... 1.2.1
+    - Sphinx........................ 2.0.1
+    - sphinx-rtd-theme.............. 0.4.3
+    - sphinxcontrib-applehelp....... 1.0.1
+    - sphinxcontrib-bibtex.......... 0.4.2
+    - sphinxcontrib-devhelp......... 1.0.1
+    - sphinxcontrib-excel........... 0.0.1
+    - sphinxcontrib-fulltoc......... 1.2.0
+    - sphinxcontrib-htmlhelp........ 1.0.2
+    - sphinxcontrib-jsmath.......... 1.0.1
+    - sphinxcontrib-plantuml........ 0.15
+    - sphinxcontrib-qthelp.......... 1.0.2
+    - sphinxcontrib-serializinghtml. 1.1.3
+    - spyder........................ 3.3.4
+    - spyder-kernels................ 0.4.3
+    - spyder-pymr................... 0.2
+    - spyder-pymr2.................. 2.1
+    - stevedore..................... 1.30.1
+    - sympy......................... 1.4
+    - termcolor..................... 1.1.0
+    - testpath...................... 0.4.2
+    - texttable..................... 1.6.1
+    - toml.......................... 0.10.0
+    - torm-console.................. 1.4
+    - torm-ide...................... 1.22
+    - torm-processing............... 0.11
+    - tornado....................... 6.0.2
+    - tox........................... 3.8.6
+    - tqdm.......................... 4.31.1
+    - traitlets..................... 4.3.2
+    - twine......................... 1.13.0
+    - typed-ast..................... 1.3.1
+    - untokenize.................... 0.1.1
+    - urllib3....................... 1.24.1
+    - virtualenv.................... 16.4.3
+    - wcwidth....................... 0.1.7
+    - webencodings.................. 0.5.1
+    - wheel......................... 0.33.1
+    - wrapt......................... 1.11.1
+    - wurlitzer..................... 1.0.2
+    - xlrd.......................... 1.2.0
+    - xlwt.......................... 1.3.0
+    - zipp.......................... 0.3.3
+* CONDA PACKAGES------------------------------------------------------------------------------------------------
+    - alabaster..................... 0.7.12
+    - appdirs....................... 1.4.3
+    - asn1crypto.................... 0.24.0
+    - aspy-yaml..................... 1.2.0
+    - astroid....................... 2.2.5
+    - atomicwrites.................. 1.3.0
+    - attrs......................... 19.1.0
+    - autopep8...................... 1.4.4
+    - babel......................... 2.6.0
+    - backcall...................... 0.1.0
+    - bandit........................ 1.5.1
+    - bleach........................ 3.1.0
+    - ca-certificates............... 2019.1.23
+    - certifi....................... 2019.3.9
+    - cffi.......................... 1.12.2
+    - cfgv.......................... 1.6.0
+    - chardet....................... 3.0.4
+    - ciermag-spec.................. 0.2
+    - ciermag-spec2................. 2.1
+    - click......................... 7.0
+    - click-completion.............. 0.5.1
+    - cloudpickle................... 0.8.1
+    - colorama...................... 0.4.1
+    - coverage...................... 4.5.3
+    - crayons....................... 0.2.0
+    - cryptography.................. 2.6.1
+    - cycler........................ 0.10.0
+    - decorator..................... 4.4.0
+    - defusedxml.................... 0.5.0
+    - doc8.......................... 0.8.0
+    - docformatter.................. 1.1
+    - docutils...................... 0.14
+    - dparse........................ 0.4.1
+    - entrypoints................... 0.3
+    - eradicate..................... 1.0
+    - filelock...................... 3.0.10
+    - flake8........................ 3.7.7
+    - flake8-polyfill............... 1.0.2
+    - gitdb2........................ 2.0.5
+    - gitpython..................... 2.1.11
+    - h5py.......................... 2.9.0
+    - helpdev....................... 0.2
+    - identify...................... 1.4.1
+    - idna.......................... 2.8
+    - imagesize..................... 1.1.0
+    - importlib-metadata............ 0.9
+    - importlib-resources........... 1.0.2
+    - ipykernel..................... 5.1.0
+    - ipython....................... 7.4.0
+    - ipython-genutils.............. 0.2.0
+    - isort......................... 4.3.17
+    - jedi.......................... 0.13.3
+    - jeepney....................... 0.4
+    - jinja2........................ 2.10.1
+    - jsonpickle.................... 1.1
+    - jsonschema.................... 3.0.1
+    - jupyter-client................ 5.2.4
+    - jupyter-core.................. 4.4.0
+    - keyring....................... 19.0.1
+    - kiwisolver.................... 1.0.1
+    - latexcodec.................... 1.0.6
+    - lazy-object-proxy............. 1.3.1
+    - libedit....................... 3.1.20181209
+    - libffi........................ 3.2.1
+    - libgcc-ng..................... 8.2.0
+    - libstdcxx-ng.................. 8.2.0
+    - lml........................... 0.0.9
+    - lxml.......................... 4.3.3
+    - mando......................... 0.6.4
+    - markupsafe.................... 1.1.1
+    - matplotlib.................... 3.0.3
+    - mccabe........................ 0.6.1
+    - mistune....................... 0.8.4
+    - more-itertools................ 7.0.0
+    - mpmath........................ 1.1.0
+    - nbconvert..................... 5.4.1
+    - nbformat...................... 4.4.0
+    - ncurses....................... 6.1
+    - networkx...................... 2.3
+    - nodeenv....................... 1.3.3
+    - numpy......................... 1.16.2
+    - numpydoc...................... 0.8.0
+    - openssl....................... 1.1.1b
+    - oset.......................... 0.1.3
+    - packaging..................... 19.0
+    - pandocfilters................. 1.4.2
+    - parso......................... 0.4.0
+    - pbr........................... 5.1.3
+    - pexpect....................... 4.7.0
+    - pickleshare................... 0.7.5
+    - pint.......................... 0.9
+    - pip........................... 19.0.3
+    - pipdate....................... 0.3.2
+    - pipdeptree.................... 0.13.2
+    - pkginfo....................... 1.5.0.1
+    - pluggy........................ 0.9.0
+    - pre-commit.................... 1.15.1
+    - prescription.................. 0.2
+    - prompt-toolkit................ 2.0.9
+    - psutil........................ 5.6.1
+    - ptyprocess.................... 0.6.0
+    - py............................ 1.8.0
+    - pybtex........................ 0.22.2
+    - pybtex-docutils............... 0.2.1
+    - pycodestyle................... 2.5.0
+    - pycparser..................... 2.19
+    - pycycle....................... 0.0.8
+    - pydicom....................... 1.2.2
+    - pydocstyle.................... 3.0.0
+    - pyexcel....................... 0.5.13
+    - pyexcel-handsontable.......... 0.0.2
+    - pyexcel-io.................... 0.5.17
+    - pyexcel-odsr.................. 0.5.2
+    - pyexcel-xls................... 0.5.8
+    - pyflakes...................... 2.1.1
+    - pyftpdlib..................... 1.5.5
+    - pygments...................... 2.3.1
+    - pylama........................ 7.7.1
+    - pylint........................ 2.3.1
+    - pymr.......................... 0.45
+    - pymr2......................... 2.5
+    - pyopengl...................... 3.1.0
+    - pyparsing..................... 2.4.0
+    - pyqt5......................... 5.12.1
+    - pyqt5-sip..................... 4.19.15
+    - pyqtgraph..................... 0.10.0
+    - pyqtwebengine................. 5.12.1
+    - pyrsistent.................... 0.14.11
+    - pyside2....................... 5.12.2
+    - pytest........................ 4.4.1
+    - pytest-cov.................... 2.6.1
+    - pytest-qt..................... 3.2.2
+    - python........................ 3.6.8
+    - python-dateutil............... 2.8.0
+    - pytz.......................... 2019.1
+    - pyusb......................... 1.0.2
+    - pyyaml........................ 5.1
+    - pyzmq......................... 18.0.1
+    - qdarkstyle.................... 2.6.5
+    - qt-py......................... 1.1.0
+    - qtawesome..................... 0.5.7
+    - qtconsole..................... 4.4.3
+    - qtpy.......................... 1.7.0
+    - radon......................... 3.0.1
+    - readline...................... 7.0
+    - readme-renderer............... 24.0
+    - requests...................... 2.21.0
+    - requests-toolbelt............. 0.9.1
+    - restructuredtext-lint......... 1.3.0
+    - rope.......................... 0.14.0
+    - safety........................ 1.8.5
+    - scipy......................... 1.2.1
+    - scspell3k..................... 2.2
+    - secretstorage................. 3.1.1
+    - setuptools.................... 40.8.0
+    - shellingham................... 1.3.1
+    - shiboken2..................... 5.12.2
+    - six........................... 1.12.0
+    - smmap2........................ 2.0.5
+    - snowballstemmer............... 1.2.1
+    - sphinx........................ 2.0.1
+    - sphinx-rtd-theme.............. 0.4.3
+    - sphinxcontrib-applehelp....... 1.0.1
+    - sphinxcontrib-bibtex.......... 0.4.2
+    - sphinxcontrib-devhelp......... 1.0.1
+    - sphinxcontrib-excel........... 0.0.1
+    - sphinxcontrib-fulltoc......... 1.2.0
+    - sphinxcontrib-htmlhelp........ 1.0.2
+    - sphinxcontrib-jsmath.......... 1.0.1
+    - sphinxcontrib-plantuml........ 0.15
+    - sphinxcontrib-qthelp.......... 1.0.2
+    - sphinxcontrib-serializinghtml. 1.1.3
+    - spyder........................ 3.3.4
+    - spyder-kernels................ 0.4.3
+    - spyder-pymr................... 0.2
+    - spyder-pymr2.................. 2.1
+    - sqlite........................ 3.27.2
+    - stevedore..................... 1.30.1
+    - sympy......................... 1.4
+    - termcolor..................... 1.1.0
+    - testpath...................... 0.4.2
+    - texttable..................... 1.6.1
+    - tk............................ 8.6.8
+    - toml.......................... 0.10.0
+    - torm-console.................. 1.4
+    - torm-ide...................... 1.22
+    - torm-processing............... 0.11
+    - tornado....................... 6.0.2
+    - tox........................... 3.8.6
+    - tqdm.......................... 4.31.1
+    - traitlets..................... 4.3.2
+    - twine......................... 1.13.0
+    - typed-ast..................... 1.3.1
+    - untokenize.................... 0.1.1
+    - urllib3....................... 1.24.1
+    - virtualenv.................... 16.4.3
+    - wcwidth....................... 0.1.7
+    - webencodings.................. 0.5.1
+    - wheel......................... 0.33.1
+    - wrapt......................... 1.11.1
+    - wurlitzer..................... 1.0.2
+    - xlrd.......................... 1.2.0
+    - xlwt.......................... 1.3.0
+    - xz............................ 5.2.4
+    - zipp.......................... 0.3.3
+    - zlib.......................... 1.2.11
+
+
+
+This code is based on many other scripts from:
+
+   - zhreshold <https://gist.github.com/zhreshold/f4defab409cc0e6f6a0e75237f73ca99>
+   - QDarkStyle <https://github.com/ColinDuquesnoy/QDarkStyleSheet>
+   - QtPy <https://github.com/spyder-ide/qtpy>
