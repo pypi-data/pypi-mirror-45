@@ -1,0 +1,8 @@
+README.md
+setup.py
+sentry_falcon/__init__.py
+sentry_falcon.egg-info/PKG-INFO
+sentry_falcon.egg-info/SOURCES.txt
+sentry_falcon.egg-info/dependency_links.txt
+sentry_falcon.egg-info/requires.txt
+sentry_falcon.egg-info/top_level.txt
