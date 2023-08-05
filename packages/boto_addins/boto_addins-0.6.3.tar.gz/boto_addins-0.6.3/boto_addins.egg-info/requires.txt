@@ -1,0 +1,3 @@
+tornado-botocore>=1.5.0
+boto
+YURL
