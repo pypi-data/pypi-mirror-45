@@ -1,0 +1,10 @@
+gimmebio.assembly-0.6.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/assembly/__init__.py,sha256=ZJW9iw_Hlb0ECla-PZW0RhjD84JGGhQVKyAPuMjWwO0,114
+gimmebio/assembly/assign_contigs.py,sha256=p5VzBGuaqgw9rj8EB_k30DtKS53_tmehmexg8_9k8Qs,5328
+gimmebio/assembly/cli.py,sha256=9AR0m9PdRQVnAq-TasuYcdvoDUJ3yaDtLfUU0yHdwNo,4834
+gimmebio/assembly/filter_process.py,sha256=n7b5Gi0aqFuHU_H78nEwgLFJZQsvyorf_FUJmxH4c_o,3438
+gimmebio.assembly-0.6.0.dist-info/METADATA,sha256=pxvGo2e_SN97kJmL2EFEZYkrsOeNSUpx5Jg2JLuVxQ0,387
+gimmebio.assembly-0.6.0.dist-info/RECORD,,
+gimmebio.assembly-0.6.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.assembly-0.6.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.assembly-0.6.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
