@@ -1,0 +1,6 @@
+include ICS_IPA/_DataFileIOLibraryInterface-py3.6-v4.12-32.py
+include ICS_IPA/_DataFileIOLibraryInterface-py3.6-v4.12-64.py
+include ICS_IPA/_DataFileIOLibraryInterface-py3.6-v4.12-64.so
+include ICS_IPA/_DataFileIOLibraryInterface-py3.7-v4.12-32.py
+include ICS_IPA/_DataFileIOLibraryInterface-py3.7-v4.12-64.py
+include ICS_IPA/_DataFileIOLibraryInterface-py3.4-v4.12-64.so
