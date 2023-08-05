@@ -1,0 +1,5 @@
+ADSPipelineMsg
+-------------
+Interpipeline communication messages
+
+
