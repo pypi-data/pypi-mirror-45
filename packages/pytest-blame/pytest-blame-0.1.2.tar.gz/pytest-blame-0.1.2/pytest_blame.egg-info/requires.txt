@@ -1,0 +1,4 @@
+pygithub
+pytest>=4.4.0
+gitpython
+requests
