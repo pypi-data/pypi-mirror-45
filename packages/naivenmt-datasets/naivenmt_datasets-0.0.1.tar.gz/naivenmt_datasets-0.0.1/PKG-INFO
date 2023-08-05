@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: naivenmt_datasets
+Version: 0.0.1
+Summary: A dataset utils repository. For tensorflow 2.x only!
+Home-page: https://github.com/naivenmt/datasets
+Author: ZhouYang Luo
+Author-email: zhouyang.luo@gmail.com
+License: MIT License
+Description: # datasets
+        A dataset utils repository. **For tensorflow 2.x only!**
+        
+        ## env
+        
+        We recommend to use anaconda to create environment:
+        
+        ```bash
+        conda create -n datasets python=3.6
+        ```
+        
+        install requirements:
+        
+        ```bash
+        conda install --file requirements.txt
+        or
+        pip install -r requirements.txt
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
