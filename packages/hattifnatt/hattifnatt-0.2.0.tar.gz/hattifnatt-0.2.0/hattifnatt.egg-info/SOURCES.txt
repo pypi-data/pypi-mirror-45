@@ -1,0 +1,12 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+hattifnatt.py
+setup.py
+hattifnatt.egg-info/PKG-INFO
+hattifnatt.egg-info/SOURCES.txt
+hattifnatt.egg-info/dependency_links.txt
+hattifnatt.egg-info/entry_points.txt
+hattifnatt.egg-info/requires.txt
+hattifnatt.egg-info/top_level.txt
