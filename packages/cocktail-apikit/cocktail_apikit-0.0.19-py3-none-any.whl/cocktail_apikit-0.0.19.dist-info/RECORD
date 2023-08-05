@@ -1,0 +1,14 @@
+cocktail_apikit/__init__.py,sha256=cUFiw0PAeSueYHR3sqS382qB_sdlOjWvCXGxXl_hzMQ,555
+cocktail_apikit/auth_kit.py,sha256=U7Oiw-AYijBfSqvse1xyWD3mgP9K8Xi3am9ADEp10zg,3198
+cocktail_apikit/aws_kit.py,sha256=bJw9c5tOzfIL68Drj5qO7BkhLzKHVQle1V7biopafrE,1484
+cocktail_apikit/bottle_kit.py,sha256=qJj1_3OWoTmWVdwjAlWspnDQsGj-6urlRVFEwXb326I,12104
+cocktail_apikit/constants.py,sha256=j59CUfirrj1eQgJPqMkGdakxl69n_7svVGvXKr0Nkk0,3024
+cocktail_apikit/marshmallow_kit.py,sha256=CLRmmgzFkQxxmp1iroI0Wc3dzzafDYnOPnMx5i_b3l0,6586
+cocktail_apikit/mongo_kit.py,sha256=zf4Fu5xFPyVym_beitVnKXJNYRvcDmpwI0ITcgpf9SA,20922
+cocktail_apikit/settings_kit.py,sha256=Jkd-SyMbugJbTcgdepGho3iXH0rOqaSfw3t4p3RBM0s,5797
+cocktail_apikit/utils_kit.py,sha256=apdskFg0sOozjgwhoqJG6EnwD1kd-XpsKkLFJt25f_s,2604
+cocktail_apikit-0.0.19.dist-info/LICENSE,sha256=2-cSUcAJUx7dfYJ8xQftd1G8jPv2zese5C0z6v5fMKc,1072
+cocktail_apikit-0.0.19.dist-info/METADATA,sha256=J85qTFLXyyw1_9MXr-0gpCVKkg_i3WEFVhJmFkRtF0A,9178
+cocktail_apikit-0.0.19.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cocktail_apikit-0.0.19.dist-info/top_level.txt,sha256=d2rVnbrjxdPYzN4G23_6UDMegnymJM7svevUab34m4Q,16
+cocktail_apikit-0.0.19.dist-info/RECORD,,
