@@ -1,0 +1,7 @@
+README.md
+setup.py
+zboxfs/__init__.py
+zboxfs.egg-info/PKG-INFO
+zboxfs.egg-info/SOURCES.txt
+zboxfs.egg-info/dependency_links.txt
+zboxfs.egg-info/top_level.txt
