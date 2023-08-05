@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: PySAIS
+Version: 1.0.7
+Summary: Suffix array computation with induced sorting algorithm.
+Home-page: https://bitbucket.org/alex-warwickvesztrocy/pysais
+Author: Alex Warwick Vesztrocy
+Author-email: alex@warwickvesztrocy.co.uk
+License: MIT
+Description: PySAIS is a wrapper to Yuta Mori's implementation of the induced sorting algorithm to create suffix arrays. Both 32 bit and 64 bit indices are supported and automatically recognised.
+        
+        If you encounter a GLIBC_2.14 not found error, try re-installing with the environment variable GLIBC_FIX=1 set.
+        
+        Please raise issues on the tracker on bitbucket: https://bitbucket.org/alex-warwickvesztrocy/pysais
+Platform: UNKNOWN
