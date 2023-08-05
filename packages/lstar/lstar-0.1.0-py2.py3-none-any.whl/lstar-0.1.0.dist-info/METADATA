@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lstar
+Version: 0.1.0
+Summary: Python implementation of lstar automata learning algorithm.
+Home-page: https://github.com/mvcisback/lstar
+Author: Marcell Vazquez-Chanlatte
+Author-email: marcell.vc@eecs.berkeley.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: attrs
+Requires-Dist: dfa
+Requires-Dist: funcy
+
+UNKNOWN
+
+
