@@ -1,0 +1,7 @@
+---
+dachary:
+  hosts:
+    wereport-host:
+    cloud-host:
+  children:
+    common:

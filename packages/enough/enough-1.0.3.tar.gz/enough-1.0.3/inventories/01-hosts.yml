@@ -1,0 +1,7 @@
+all:
+  hosts:
+    bind-host: {ansible_host: 51.75.95.112, ansible_port: '22', ansible_user: debian}
+    gitlab-host: {ansible_port: 2222}
+    icinga-host: {ansible_host: 51.75.88.128, ansible_port: '22', ansible_user: debian}
+    monitoring-client-host: {ansible_host: 51.75.91.72, ansible_port: '22', ansible_user: debian}
+    monitoring-client2-host: {ansible_host: 51.75.94.216, ansible_port: '22', ansible_user: debian}
