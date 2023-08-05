@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: budbt
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: David Gasquez
+Author-email: davidgasquez@buffer.com
+License: MIT license
+Platform: UNKNOWN
+Requires-Dist: stacklogging
+Requires-Dist: dbt
+
+UNKNOWN
+
+
