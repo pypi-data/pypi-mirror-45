@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: webpack-loader-remote
+Version: 0.1.1
+Summary: Load webpack stats from a local or remote file
+Home-page: https://github.com/alexseitsinger/webpack_loader_remote
+Author: Alex Seitsinger
+Author-email: contact@alexseitsinger.com
+License: MIT License
+Description: # Webpack Loader Remote
+        
+        Fork of Django Webpack Loader. Load webpack stats from a local or remote file.
+        
+        ## Install
+        
+        ```pip install webpack_loader_remote```
+        
+        or
+        
+        ```pipenv install webpack_loader_remote```
+        
+Keywords: django,webpack
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
