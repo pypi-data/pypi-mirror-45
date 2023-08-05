@@ -1,0 +1,7 @@
+Keras==2.0.8
+numpy==1.16.2
+tensorflow==1.13.1
+h5py==2.7.1
+yapf==0.17.0
+pylint==1.7.2
+pynt==0.8.2
