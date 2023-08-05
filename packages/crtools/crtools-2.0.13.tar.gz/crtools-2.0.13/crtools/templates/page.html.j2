@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="description" content="Clash Royale Dashboard for clan {{clan.name}} {{clan.tag}}. Here we post clan information, member standings, and war data." />
+
+    <meta name="generator" content="crtools {{version}} [https://github.com/AaronTraas/Clash-Royale-Clan-Tools]" />
+
+    <title>{{clan.name}} Clan Dashboard | crtools</title>
+
+    <link rel="icon" href="favicon.ico"/>
+    {% if config.www.canonical_url != False %}
+    <link rel="canonical" href="{{config.www.canonical_url}}" />
+    {% endif %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,300i,700,700i" />
+    <link rel="stylesheet" href="static/crtools.css?version={{version}}" />
+</head>
+<body>
+    <header><div class="inner">
+        <h1>{{clan.name}} Clan Dashboard</h1>
+    </div></header>
+    <main>
+        <section id="hero">
+            <div class="section-wrap">
+
+                <div id="clan-description">
+                {% if clan_hero %}
+                    {{clan_hero}}
+                {% else %}
+                    <h1>{{clan.name}} ({{clan.tag}})</h1>
+                    <h3>{{clan.description}}
+                {% endif %}
+                </div>
+                <div id="clan-stats">
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Clan Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><th>Clan Score</th><td>{{clan.clanScore}}</td></tr>
+                                <tr><th>Clan Name</th><td>{{clan.name}}</td></tr>
+                                <tr><th>Donations/week</th><td>{{clan.donationsPerWeek}}</td></tr>
+                                <tr><th>Required Trophies</th><td>{{clan.requiredTrophies}}</td></tr>
+                                <tr>
+                                    <th>War Trophies</th>
+                                    <td>
+                                        {{clan.clanWarTrophies}}
+                                        <img class="war-league" title="{{clan.warLeagueName}}" src="static/images/war-league-{{clan.warLeague}}.svg" />
+                                    </td>
+                                </tr>
+                                <tr><th>Clan Tag</th><td>{{clan.tag}}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="last-update">Last update: {{update_date}}</p>
+                    {% if clan.members < 50 %}
+                    <div class="join-cta">
+                        <h3>Looking for a clan?</h3>
+                        <a class="button join" href="https://link.clashroyale.com/invite/clan/en?tag={{clan.tag}}">Join us!</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        <section id="info">
+            <div class="section-wrap">
+                {% include 'current-war.html.j2' %}
+
+                <article>
+                    <header>
+                        <h3>Member list<span class="no-mobile"> and stats</span>:</h3>
+                        <div class="filters">
+                            <label>
+                                Filter:
+                                <select id="member-filter">
+                                    <option value="none">None</option>
+                                    <option value="leadership">Leadership</option>
+                                    <option value="role-elder">Role: Elder</option>
+                                    <option value="role-member">Role: Member</option>
+                                    <option value="new">New Members</option>
+                                {% if current_war.state in ['collectionDay', 'warDay'] %}
+                                    <option value="currentwar">In current war</option>
+                                {% endif %}
+                                    <option value="activity">Inactive</option>
+                                    <option value="danger">In danger</option>
+                                </select>
+                            </label>
+                        </div>
+                    </header>
+
+                    {% include 'member-table.html.j2' %}
+                </article>
+
+                <div class="row">
+                    <article id="suggestions">
+                        <header>
+                            <h3>Suggestions:</h3>
+                        </header>
+                        <div class="column">
+                            <div class="list">
+                                <ul>
+                                {% for suggestion in suggestions %}
+                                    <li>{{suggestion}}</li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    Members with a <strong class="bad">score below 0</strong> will be recommended for
+                                    kicking or demotion.
+                                </p>
+                                <p>
+                                    Members inactive for <strong class="bad">{{config.activity.threshold_kick}} days</strong>
+                                    will be kicked.
+                                </p>
+                                <p>
+                                    A member who achieves <strong class="good">{{config.score.threshold_promote}} points</strong>
+                                    is elegible for promotion to <strong>Elder</strong> at the discretion of leadership.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>Score explanation:</h3>
+                        </header>
+                        <p>
+                            Score is made of two components: <strong>donation score</strong>
+                            and <strong>war participation score</strong>.
+                        </p>
+                        <h4>Donation Score:</h4>
+                        <p>
+                            You are expected to donate <strong>{{config.score.min_donations_daily}}
+                            cards per day</strong>, on average. If you make more, you will
+                            gain points. If you make fewer, you will lose points. If you have
+                            zero, you will be penalized
+                            <strong class="bad">{{config.score.donations_zero}} points</strong>
+                        </p>
+                        <h4>War Participation Score:</h4>
+                        <table class="rules">
+                            <thead>
+                                <tr>
+                                    <th>For each of the last 10 wars, did member...</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for rule in scoring_rules %}
+                                <tr>
+                                    <td>{{rule.name}}</td>
+                                    <td class="yes"><strong class="{{rule.yes_status}}">{{"{0:+}".format(rule.yes)}}</strong></td>
+                                    <td class="no"><strong class="{{rule.no_status}}">{{"{0:+}".format(rule.no)}}</strong></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><div class="inner">
+        <ul>
+            <li><a rel="external" target="_blank" href="https://github.com/AaronTraas/Clash-Royale-Clan-Tools">Github</a></li>
+            <li><a rel="external" target="_blank" href="https://developer.clashroyale.com/">Clash Royale API</a></li>
+        </ul>
+        <a class="version" rel="external" target="_blank" href="https://github.com/AaronTraas/Clash-Royale-Clan-Tools">crtools {{version}}</a>
+    </div></footer>
+
+    <a class="github-fork-ribbon" target="_blank" href="https://github.com/AaronTraas/Clash-Royale-Clan-Tools" title="Fork me on GitHub">Fork me on GitHub</a>
+
+    <script>
+        (function() {
+            var startTimestamp = new Date();
+            var HALF_HOUR = 30 * 60 * 1000;
+            var refreshInterval = null;
+            var script_load_semaphor = 0;
+
+            function refreshAfterHalfHour() {
+                if((new Date()) - startTimestamp > HALF_HOUR) {
+                    clearInterval(refreshInterval)
+                    location.reload(true);
+                }
+            }
+
+            function assetsDoneLoading() {
+                if( script_load_semaphor > 1 ) {
+                    --script_load_semaphor;
+                    return;
+                }
+
+                var memberTable = document.getElementById('member-table');
+
+                var tooltip = new TooltipManager();
+                var filter = new MemberTableFilter();
+                new Tablesort(memberTable);
+
+                refreshInterval = setInterval(refreshAfterHalfHour, 3000)
+            }
+
+            function loadScript(script_url) {
+                ++script_load_semaphor;
+                var element = document.createElement( 'script' );
+                element.setAttribute( 'src', script_url + '?version={{version}}' );
+                element.onload = assetsDoneLoading;
+
+                document.body.appendChild( element );
+            }
+
+            // delay startup of app until first render if possible.
+            window.requestAnimationFrame( function() {
+                loadScript('static/tablesort-with-number.min.js');
+                loadScript('static/crtools.js');
+            });
+        })();
+    </script>
+</body>
+</html>
