@@ -1,0 +1,3 @@
+[console_scripts]
+protobrain-experiment = protobrain.cli.experiment:main
+
