@@ -1,0 +1,11 @@
+git2net/__init__.py,sha256=-8ps4Xq-r7cLOZ3ZY5FK3UvpKI_bN8KlCOtyWnBjGjs,671
+git2net/anonymize.py,sha256=PsQbZqs7blsVsTHLxsLmD0O4_OBbnGcZN_nD9SQDHQA,3004
+git2net/extraction.py,sha256=BYzZI8wcT-CGad-JJgXOGoFwkGNZHSfer0bH7Gjuyvw,53603
+git2net/visualisation.py,sha256=JpMt531KLgKCtG6mlAdVKe3wnn2B5WyZuKXS4fCYKx0,18147
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_functions.py,sha256=8dtLt2QNBewKCZTZFDv2dsrMl_NN4F56dkvh4sIK0SQ,8886
+git2net-0.9.1.dist-info/LICENSE.txt,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+git2net-0.9.1.dist-info/METADATA,sha256=xZltnO2sxm504TJgdgPcDbJBWRPZLgFQhfP5fsvIpGo,2447
+git2net-0.9.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+git2net-0.9.1.dist-info/top_level.txt,sha256=YaSA9i-0VhdiiJXn-kwLJ6r2chUUcsGW3ylpgBv0188,14
+git2net-0.9.1.dist-info/RECORD,,
