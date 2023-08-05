@@ -1,0 +1,8 @@
+beautifulsoup4
+opencv-python
+pytesseract
+keras
+numpy
+tushare
+pymysql
+pyhtml
