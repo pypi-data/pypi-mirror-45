@@ -1,0 +1,11 @@
+microk8s_configure-0.0.4.data/scripts/mk8sconf.py,sha256=alaLJZhjt5i_Wtl1uEiKIdOCQTY0Pru_V4KLHt_nwyk,57
+mk8sconfig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mk8sconfig/__main__.py,sha256=zgsc5y7Ab17CSSSdCLQelMjBGjFFCDMN27hx5AGE9HQ,71
+mk8sconfig/main.py,sha256=CyToTB4J9Mthpwma6LNFn6fa7IOtdXXqvM72rbWEnPc,6979
+mk8sconfig/ssh_connection.py,sha256=R-fL2yvWIHdCagkUXnU6EQZiScFDzrRQHTtyYIZsiLM,564
+microk8s_configure-0.0.4.dist-info/LICENSE,sha256=Z9vFRsn5iLIisNPQx0fnfu5TxTFGJXsX3r-CqixWfz4,1062
+microk8s_configure-0.0.4.dist-info/METADATA,sha256=Lbo-mntcpORAbNhF13whqMHVFJd2Jzf6o6d43_n1yco,1272
+microk8s_configure-0.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+microk8s_configure-0.0.4.dist-info/entry_points.txt,sha256=-83KD1ylXhkjnD7PkKnFAlLDgJN49WQhaQZy8dwMn4c,95
+microk8s_configure-0.0.4.dist-info/top_level.txt,sha256=c4sLClEOIwEBHMfIQmVRMcaOsQO2ON180CmwjNnLn1Y,11
+microk8s_configure-0.0.4.dist-info/RECORD,,
