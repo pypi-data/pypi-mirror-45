@@ -1,0 +1,9 @@
+django
+python-dateutil
+django-hardcopy
+django-celery-beat
+jsonfield
+pypandoc
+
+[:python_version < "3.4"]
+pathlib
