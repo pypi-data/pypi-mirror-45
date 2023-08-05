@@ -1,0 +1,13 @@
+websocket_communication_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+websocket_communication_server/connection.py,sha256=keUVbBea_fsPwOoe0Op28lr7ITX9ic3ykgPeEQD08xg,2703
+websocket_communication_server/messagetemplates.py,sha256=UwmqPL4OAQx2bXRUMQyB3CmIVUo4cA3lfxNUa42APgs,1344
+websocket_communication_server/ping_pong_example.py,sha256=h3o-p3u2YqLHNYVxuuj9PLl4ps4Wdk99KweGDBEQg8c,2884
+websocket_communication_server/socketclient.py,sha256=7xQA4MRIiu_Jluj6VL3mgtM95GDR_KohLqViEMGrcY4,6197
+websocket_communication_server/socketserver.py,sha256=Eq5llsLnPUrjxQFHGDxf4vFarBPhm2hSjaEUViOlnoQ,5214
+websocket_communication_server/www_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+websocket_communication_server/www_data/websocket_communication_server.js,sha256=N673HrsW0CQGfSIAoGEkRqTaRGL6FMfIbQPlmwReizk,3739
+WsComSrv-0.1.1555408076.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+WsComSrv-0.1.1555408076.dist-info/METADATA,sha256=Sdm7AgxnfQtmD4_LZN0UP687NfsUjlkb1i09LdJ7Kcw,6045
+WsComSrv-0.1.1555408076.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+WsComSrv-0.1.1555408076.dist-info/top_level.txt,sha256=lBO-7evrhX4Vc8kpklqiBZmQiGskZTOOjuAYrN0hqHk,31
+WsComSrv-0.1.1555408076.dist-info/RECORD,,
