@@ -1,0 +1,80 @@
+# Global config to run the suite
+config:
+    # Global timeout to run the program
+    timeout: 20
+
+# List of call registered tags
+tags:
+    - naostro
+    - nanecisto
+
+
+# List of all tasks executed before tasks
+
+suite:
+    name: 'hw01'
+    description: 'HW01 - Build a space ship'
+
+    # Actions that will be executed before all tasks defined for the suite
+    before_all:
+        - fs:
+              tool: copy
+              test_files:
+                  - '*.c'
+                  - '../*.h'
+              submission:
+                  - pattern: '*.c'
+                    output_subdir: 'src'
+
+    # Actions that will be executed in order defined
+    tasks:
+        - build:
+              tool: cmake
+              required: true
+
+        - build:
+              tool: c_raw
+              executable: hello
+              # Files are relative to workspace
+              files:
+                  - hello.c
+              required: true
+
+    tests:
+        - name: 'simple_test_engine'
+          description: 'Spaceship should have an engine'
+          tasks:
+              - execute:
+                    executable: engine
+                    executor: valgrind
+                    input:
+                        file: simple_test.in
+                    checks:
+                        - type: stdout
+                          equals: "Engine works!"
+                        - type: stderr
+                          regex: 'some regex'
+                        - type: return_code
+                          greater: 10
+
+        - name: 'simple_test_navigation'
+              description: 'Spaceship should have an navigation'
+              tasks:
+                  - execute:
+                        executable: 'navigation'
+                        input: 'Print this'
+                        checks:
+                            - type: stdout
+                              diff:
+                                  file: navigation.out
+                            - type: stderr
+                              empty: true
+                            - type: return_code
+                              euquals: 0
+
+
+
+
+
+
+
