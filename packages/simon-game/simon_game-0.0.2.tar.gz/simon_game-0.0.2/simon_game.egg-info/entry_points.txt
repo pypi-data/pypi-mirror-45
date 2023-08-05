@@ -1,0 +1,3 @@
+[console_scripts]
+simon_game = simon_game:main
+

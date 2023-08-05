@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+simon_game/__init__.py
+simon_game/simon.py
+simon_game.egg-info/PKG-INFO
+simon_game.egg-info/SOURCES.txt
+simon_game.egg-info/dependency_links.txt
+simon_game.egg-info/entry_points.txt
+simon_game.egg-info/top_level.txt
