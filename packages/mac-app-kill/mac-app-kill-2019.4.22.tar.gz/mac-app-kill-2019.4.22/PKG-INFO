@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mac-app-kill
+Version: 2019.4.22
+Summary: kill macOS app(s) by name, bundleID, path
+Home-page: https://github.com/looking-for-a-job/mac-app-kill
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install mac-app-kill
+        ```
+        
+        #### Scripts usage
+        ```bash
+        usage: app-kill app ...
+        ```
+        
+        #### Examples
+        ```bash
+        $ app-kill  "VLC" "com.apple.iTunes" "/Applications/iBooks.app"
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: mac app
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
