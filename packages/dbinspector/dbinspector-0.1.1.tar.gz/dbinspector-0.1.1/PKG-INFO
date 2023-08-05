@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: dbinspector
+Version: 0.1.1
+Summary: A libray for use with SQLAlchemy to count queires, log queries, etc...
+Home-page: https://github.com/cgons/dbinspector
+Author: Chrys Gonsalves
+Author-email: cgons@pcxchange.ca
+License: UNKNOWN
+Description: # DBInspector
+        
+        A Python context manager for use with SQLAlchemy.
+        
+        ### Features
+        - Count the number of queires issued.
+        - Capture/print the statements/queries issued.
+        
+        ---
+        
+        ### Installation
+        ```
+        pip install dbinspector
+        ```
+        
+        ### Usage
+        
+        ```
+        with DBInspector(conn) as inspector:
+            conn.execute("SELECT 1")
+            conn.execute("SELECT 1")
+        
+            # Get query count
+            assert inspector.get_count() == 2
+            
+            # Print queries issued
+            inspector.print_queries(pretty=True)
+        
+            # Example pretty printed output:
+            """
+            QUERY #1
+            ----------
+            SELECT 1
+        
+            QUERY #2
+            ----------
+            SELECT 1
+            """
+        
+        ```
+        
+        ### API
+        ```
+        DBInspector.get_count() -> int
+        
+        DBInspector.print_queries(pretty=False)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
