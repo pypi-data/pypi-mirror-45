@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-fastest
+Version: 0.0.9
+Summary: Use SCM and coverage to run only needed tests
+Home-page: https://github.com/kstrauser/pytest-fastest
+Author: Kirk Strauser
+Author-email: kirk@amino.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: pytest (>=4.4,<5.0)
+Project-URL: Documentation, http://pytest-fastest.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/kstrauser/pytest-fastest
