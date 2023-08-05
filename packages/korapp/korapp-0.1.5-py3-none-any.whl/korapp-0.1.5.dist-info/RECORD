@@ -1,0 +1,15 @@
+korapp/__init__.py,sha256=0ywnCLCjS9JUKF5743Rv-rG-BOMSgjtqSxdu7jECLB0,1377
+korapp/html_template.py,sha256=E8V4JGQ5YNK61bKPINh9sNtY0fHJjhPb84tbyZNsfnE,160
+korapp/kordir.py,sha256=OSgNsM0JXULa9wXkISeZ39C90v-dRHzSm2RpE3YsSKE,506
+korapp/kordoc.py,sha256=kBLWG50P-wGwOiFocBsbRb_Bi_GB-SbdVGvaIGyFs70,1287
+korapp/korgen.py,sha256=qbFXDxCTza0CBxbU1am-84apM6M4kEy9rlbLbSOIFOg,2600
+korapp/kornew.py,sha256=lcaVzEbu394M_3cU4StTJRgJfgQ0belgN3ic9MF1BRg,1628
+korapp/utils.py,sha256=dhUR8p6eyoEz76-mkttIJ0E-uLXIbCHmH8fmIStFDjM,2423
+korapp/water.css,sha256=cZgksSPWrJ_dWRxH9KSrGj88EahKTmKw06JLuJQ7X2Q,2905
+korapp-0.1.5.dist-info/DESCRIPTION.rst,sha256=5euv3OxEyuHzDqbB5cue9cfl9tBLCw7zYCt2q1s9n1Q,3660
+korapp-0.1.5.dist-info/METADATA,sha256=bUSMLfwL0tFM-GcIjiQvvIODMLysOCTNKKG2RCbNZsE,4415
+korapp-0.1.5.dist-info/RECORD,,
+korapp-0.1.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+korapp-0.1.5.dist-info/entry_points.txt,sha256=RXwBOQFTBQmGQQqAnmk7BBAFBY2F8840ERMcGuT5wi8,39
+korapp-0.1.5.dist-info/metadata.json,sha256=PJcNOtlS-T9yKbcGwWM1mugXX1c7vKdf-vZKnxRKSJQ,1015
+korapp-0.1.5.dist-info/top_level.txt,sha256=3JYGlZ0Ipaq32-ZFgz1G91RBy4NcCXKEEmg8qAlrBTA,7
