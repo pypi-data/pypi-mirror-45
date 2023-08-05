@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+dash_upload_components/Upload.py
+dash_upload_components/__init__.py
+dash_upload_components/_imports_.py
+dash_upload_components/dash_upload_components.dev.js
+dash_upload_components/dash_upload_components.min.js
+dash_upload_components/metadata.json
+dash_upload_components/package.json
+dash_upload_components.egg-info/PKG-INFO
+dash_upload_components.egg-info/SOURCES.txt
+dash_upload_components.egg-info/dependency_links.txt
+dash_upload_components.egg-info/top_level.txt
