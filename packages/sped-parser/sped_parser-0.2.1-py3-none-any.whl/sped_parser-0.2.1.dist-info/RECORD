@@ -1,0 +1,8 @@
+sped_parser/__init__.py,sha256=UOZV_1paWqjox3tDdO7q4e5NEEmwgXjEuKulEZLJq3Y,72
+sped_parser/compare.py,sha256=mzD0H3pNeyIegTPbZjIJiOejWTaESA_SJNVMITe-aX0,824
+sped_parser/nodes.py,sha256=aCmuahRGPypo0LQuGBsOcP6j0_krRFidlwOVCEWOlQM,6363
+sped_parser/record_relations.py,sha256=ef5JFBQh3RI0nts2yZqvXhqLsE8gJUOgsUfXKz0U9hU,882
+sped_parser-0.2.1.dist-info/LICENSE,sha256=7xOPkFqzJT54_-o-fUw9yMhAxP8ycnBHp0l8RGRHD5w,1073
+sped_parser-0.2.1.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+sped_parser-0.2.1.dist-info/METADATA,sha256=yiY8kN2JRZFl2-oL7y3l95PlXAGeCRQ5IkGff-Qm_6g,466
+sped_parser-0.2.1.dist-info/RECORD,,
