@@ -1,0 +1,9 @@
+README
+setup.py
+iris/__init__.py
+iris/iris_client.py
+irispyc.egg-info/PKG-INFO
+irispyc.egg-info/SOURCES.txt
+irispyc.egg-info/dependency_links.txt
+irispyc.egg-info/requires.txt
+irispyc.egg-info/top_level.txt
