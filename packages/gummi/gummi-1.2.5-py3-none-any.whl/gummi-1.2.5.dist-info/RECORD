@@ -1,0 +1,17 @@
+gummi/__init__.py,sha256=7GT8WhZaN62TDsxKH05GnjUlRoC-zyHGYQt-i98RyRE,64
+gummi/constants.py,sha256=XyyrAJVT-pYo9WUualOwPcFHkCxAh3sc3rE5x4t7g8s,124
+gummi/exit_code.py,sha256=eHt1k1zhx1LsQn3EsoWMdtq0OOv8kfmVTu8uTNhClMI,176
+gummi/main.py,sha256=nLmC5P79vUIU2a7WP_04PoDcYpxaW8CXnbq5SMV-9Jw,3600
+gummi/commands/__init__.py,sha256=RQ6CQ5DY39-UX3zj0bNEyrHA7e7HnqXXLepF6OVOmuw,103
+gummi/commands/check.py,sha256=b508TihiEvfQFICaYignuLdz__9PCNF7bdIPjWIFbKs,855
+gummi/commands/detach.py,sha256=wF9HXeY1qM52V8XTyyoZyoW6ztAHyakaIsyHp6P906Y,849
+gummi/commands/init.py,sha256=ge8XfOY5NUDcJm831TNeMPM7eRid4NyyQaW_na2i-Ng,1568
+gummi/commands/update.py,sha256=ycMmcXzksmHjHFoB-3qF7wtzpJ6YE1T4KxQnrbpFmy0,3427
+gummi/util/__init__.py,sha256=Vljb-n8dnUOYKGWczvgsuw3xZDxCUOBP-oqL51Qlw4g,26
+gummi/util/files.py,sha256=TSOZcYc1esyontevKkWmvo7iK9rSHsvZzJx7mRR6_Ek,1921
+gummi-1.2.5.dist-info/LICENSE,sha256=AF85YRqBn8mZ7aTu0UtlDYK-uG3V2YvaFlsUfqDKe7k,1057
+gummi-1.2.5.dist-info/METADATA,sha256=QazAtqU8rH1IZ2hWNL0Elq4kgqi1dPz6jWMzd6mmvCQ,3836
+gummi-1.2.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gummi-1.2.5.dist-info/entry_points.txt,sha256=32Vqf4R_7420yMoXgosn6AfXoJ83D8iwxHKDgNqLTsc,43
+gummi-1.2.5.dist-info/top_level.txt,sha256=wLhZgOodhnDDfqqozrswFJXEIgGf8Yf211R2VbNkd2s,6
+gummi-1.2.5.dist-info/RECORD,,
