@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+build.sh
+setup.cfg
+setup.py
+upload.sh
+yaml.yaml
+docx_coreprop_writer/__init__.py
+docx_coreprop_writer/version.py
+docx_coreprop_writer.egg-info/PKG-INFO
+docx_coreprop_writer.egg-info/SOURCES.txt
+docx_coreprop_writer.egg-info/dependency_links.txt
+docx_coreprop_writer.egg-info/entry_points.txt
+docx_coreprop_writer.egg-info/requires.txt
+docx_coreprop_writer.egg-info/top_level.txt
