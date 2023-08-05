@@ -1,0 +1,12 @@
+PennyLane_qsharp-0.1.0.dist-info/DESCRIPTION.rst,sha256=YssfEvlNCY2aWgbyBlUSRAydiYXDDSZk7fm5K0Hcn2o,3112
+PennyLane_qsharp-0.1.0.dist-info/METADATA,sha256=h-dn_KIfq7PcOscuWaIPgFENTrr6lvgypcglzCttHTc,4164
+PennyLane_qsharp-0.1.0.dist-info/RECORD,,
+PennyLane_qsharp-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+PennyLane_qsharp-0.1.0.dist-info/entry_points.txt,sha256=MulvEzVC4_qDRKO4Q6vP1keiUIKsW60JBprinIWmW3g,90
+PennyLane_qsharp-0.1.0.dist-info/metadata.json,sha256=auWbxHsbK0Tu0dUkwAPeuqhKv7wqyc7ynrtfDkbgHhY,1282
+PennyLane_qsharp-0.1.0.dist-info/top_level.txt,sha256=rNRvm1GK2X3jQJpZPUpAPWFoAQrsepmhZEQq4n51nVQ,17
+pennylane_qsharp/__init__.py,sha256=WCkeIJRDgxo3AuXESMEFDu9hnc8JrVeXGumOFUWoC8s,752
+pennylane_qsharp/_version.py,sha256=fqk3fEuboedsIKgqfaPPCWMTeAuyZnoWX3qItci9aKI,691
+pennylane_qsharp/device.py,sha256=-go28asAxyPDztCG-jOHSQz7U_fHQyEM4XFWj9GGNSY,5015
+pennylane_qsharp/ops.py,sha256=qX-WE8dGX-e1hg0VPFci12GxiZpgdQEfAB39Yr9xpCU,2266
+pennylane_qsharp/quantum_simulator.py,sha256=hrxl1pzQGou2nQxu3g7mKbt4cuhicFAIjAwzF18AICU,1880
