@@ -1,0 +1,15 @@
+shio/__init__.py,sha256=CrBQCJZ-EnHmOk-Ivbm1vPn7UQT4K09niShrLD3U95A,4403
+shio/core.cp35-win_amd64.pyd,sha256=xSTiKLPn8aMV6Wfz1TKKnSvfGCUzkYjTK6PkLJYE9pg,2000896
+shio/debug.cp35-win_amd64.pyd,sha256=700pCA5au6m-Ygvps4cZP-RRAbDFqDwUqlj0iZLPv9I,78848
+shio/expr.cp35-win_amd64.pyd,sha256=1JlpNJMt1ULrlePui1mzxWZjJsjZeJPaduLCeLGFetg,176640
+shio/version.cp35-win_amd64.pyd,sha256=LXmUSw8zUXVYwxACrTC3RKcAYGxHvYxJzM7Y5Rqvgw8,17408
+shio/lib/__init__.py,sha256=fUkrilHvnB63C7qJVkl-58I23LBcfoYnVXhrjVL7ueo,1342
+shio/lib/binary.cp35-win_amd64.pyd,sha256=Ni2d18ZvFhY2c9VQ4h3vVm86HHEp1fZD9EEA9uPWglQ,105984
+shio/lib/bitstream.cp35-win_amd64.pyd,sha256=ztt_LVJN85B02Cifdo2zUxPzN5oFP9phPGcIMu_dQDA,86016
+shio/lib/containers.cp35-win_amd64.pyd,sha256=lX_2yq5w--9fUBSqaPexM4Z90s8acxyi9vmE4IwBHBA,185344
+shio/lib/hex.cp35-win_amd64.pyd,sha256=2Eg2BLu-CFt_eCwmmQ-TD41sU2UTQYT0xcyE7gjuF0k,91648
+shio/lib/py3compat.cp35-win_amd64.pyd,sha256=le398IcRRl6qqngnKhqjTB_gkt5lmIi6hR1FxGYbaXA,98816
+shio-2.10.1.dist-info/METADATA,sha256=Nc77pB2_LqEKLZ5Jqm_l0PH6Op3vVPQnUtDNF03rLBA,3940
+shio-2.10.1.dist-info/RECORD,,
+shio-2.10.1.dist-info/WHEEL,sha256=5t140dZF8EIt8zPJ1QBOWmhybl_bZudh5t7xSibKWHU,106
+shio-2.10.1.dist-info/top_level.txt,sha256=zufKXs0RMNcMReerGeeCf7fqEMeKQeu4Rqzpo0akYvc,5
