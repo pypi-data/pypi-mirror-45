@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+ludicrousdns/__init__.py
+ludicrousdns/cli.py
+ludicrousdns/resolver.py
+ludicrousdns/resolverpool.py
+ludicrousdns/util.py
+ludicrousdns.egg-info/PKG-INFO
+ludicrousdns.egg-info/SOURCES.txt
+ludicrousdns.egg-info/dependency_links.txt
+ludicrousdns.egg-info/entry_points.txt
+ludicrousdns.egg-info/not-zip-safe
+ludicrousdns.egg-info/requires.txt
+ludicrousdns.egg-info/top_level.txt
+ludicrousdns/data/nameservers.txt
