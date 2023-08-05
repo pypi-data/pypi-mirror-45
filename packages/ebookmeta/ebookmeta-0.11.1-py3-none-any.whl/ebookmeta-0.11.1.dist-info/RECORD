@@ -1,0 +1,14 @@
+ebookmeta/__init__.py,sha256=vy9lTi7-SsETfOmNPXQtYZSIJW1cGn3dvFAte8tijyg,897
+ebookmeta/epub2.py,sha256=LErdhHpBTW30aMsLfAkS9rLOGUOwmmp1ztikZwlWyZs,9083
+ebookmeta/epub3.py,sha256=_mJJmWouNKauID98s0yUcQhf6q4ah_etbLEo4Xxrguo,10441
+ebookmeta/exceptions.py,sha256=2Entvg5DBDeFVz1PrmbjAMw9AHQ2pVTEXz8wa3zYiL8,516
+ebookmeta/fb2.py,sha256=hruRT2ZJVd13CLLu1k0CDi6fezoUW5GAqE8lrF3EWcs,8912
+ebookmeta/fb2genres.py,sha256=DIg-_kSOYUG6PN62UNLAiFHCqHehnovFBwJx4e7d9KQ,48990
+ebookmeta/metadata.py,sha256=vs_o7ncM2Lh9Ef_8jLKE6t0-E9gca3qEOj1u5lSQILE,2508
+ebookmeta/myzipfile.py,sha256=96Oay4LTL-PuUb4BLWOBSQcwl_VmENy8LHsVskgGx2c,77886
+ebookmeta/utils.py,sha256=zSGnpkxcWabV6K9-jAZHeNCAPzqRDofGirsCFUplSCY,417
+ebookmeta-0.11.1.dist-info/LICENSE.txt,sha256=moavx1uFve6Us8vkhQ6Igb1NB88xo-KQqByS5e9r0QU,1095
+ebookmeta-0.11.1.dist-info/METADATA,sha256=O7hRcVk_be1vo5dp3kr9vJ-KU0q9C_XXHHOHji1xqAs,736
+ebookmeta-0.11.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+ebookmeta-0.11.1.dist-info/top_level.txt,sha256=TQtloD1xOhJikvucGUWtc2D9ozB7WJG1BdjWHI7QTI4,10
+ebookmeta-0.11.1.dist-info/RECORD,,
