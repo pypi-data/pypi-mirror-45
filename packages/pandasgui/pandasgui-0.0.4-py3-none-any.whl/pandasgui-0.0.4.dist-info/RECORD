@@ -1,0 +1,14 @@
+pandasgui/__init__.py,sha256=AWYFQijibbfLMa0jiYaGFEqJQrxgKHWkTlR4Vmf4uMo,48
+pandasgui/dataframe_viewer.py,sha256=MzYYa0_FXWJKagB3Jg3yDwAkfWI4CIO7nhgi595Tv9k,26407
+pandasgui/dialogs.py,sha256=NGPdeigFFvbcAKtgO-qTiD8Ui4uP00c9EPSoX1tq50A,12452
+pandasgui/functions.py,sha256=esMheUCnOj8GmZJy5d165ZQ-icdYK9VpkHgf2ljXsqQ,3209
+pandasgui/gui.py,sha256=R12MqdxVm6WuviFxF6ouGm042HNuViCIqT4q31bBLrg,14942
+pandasgui/image_viewer.py,sha256=cz_h7kvecPlqecp5_-PJEGz6wNNbSEztOovmkfyk_54,6327
+pandasgui/nonblocking.py,sha256=7B3R2QQ_8F97n2xnA8mD-f31qnvqrj2pElDuBdLw-J8,870
+pandasgui/scratch.py,sha256=0Z2QIp7v7Sn_t7ZNn-8ltcmWcCerw-9h25YcwSXRGa0,1943
+pandasgui/speed_test_scratch.py,sha256=O5-G3idn-YWFO30iNyPOtdMr01ULIytSavaaSTlx-yc,925
+pandasgui-0.0.4.dist-info/LICENSE.txt,sha256=V9f7PmJnfBOE-yEpaoaU31WjvDXAjIdRI09UVfY7MF8,1087
+pandasgui-0.0.4.dist-info/METADATA,sha256=vUN8-EUXshg4GF9mkhWRw9o82Z48U9CNjx9jMbip_jk,1538
+pandasgui-0.0.4.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pandasgui-0.0.4.dist-info/top_level.txt,sha256=ipdEHUPGYCBb_96lPkaSDMzXJT7ZqoqVh8DfeMwvH4o,10
+pandasgui-0.0.4.dist-info/RECORD,,
