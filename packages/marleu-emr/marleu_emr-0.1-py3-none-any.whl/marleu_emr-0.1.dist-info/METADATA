@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: marleu-emr
+Version: 0.1
+Summary: Deployment tools for EMR
+Home-page: https://github.com/mleuthold/python-tooling
+Author: Martin Leuthold
+Author-email: martinleuthold88+github@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: paramiko
+Requires-Dist: credstash
+Requires-Dist: cryptography (==2.3)
+
+UNKNOWN
+
+
