@@ -1,0 +1,9 @@
+cfn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfn/__main__.py,sha256=ru4zxG_1Ys6SH7QEvxHKyXRTDwS9IDU4MX7RZG_Z8RM,166
+cfn/hello/__init__.py,sha256=1BrH6o1MMDmMaqrojrO8vBKM56ENl16ued0t9CNa17U,28
+cfn/hello/hello.py,sha256=ITRTI95SF5828Po9mBnW16hGyGn5eb4PnUnuDZlvHSQ,41
+cjkitchehelloworld-0.0.5.dist-info/METADATA,sha256=wpU5sKn86_5OoqwzjI4pSyrsrkRQwDuUUsLe7F1djWY,208
+cjkitchehelloworld-0.0.5.dist-info/RECORD,,
+cjkitchehelloworld-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+cjkitchehelloworld-0.0.5.dist-info/entry_points.txt,sha256=WOtMAQq28W7rlYsDg253yI7HBo_R4QLl2BxrKGB65Ac,50
+cjkitchehelloworld-0.0.5.dist-info/top_level.txt,sha256=Gzb_f4BcqZ7gSnlSxI31_zuM_2Y_NtrEH4av7i6td3o,4
