@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    helloworld=cli:main
+  
