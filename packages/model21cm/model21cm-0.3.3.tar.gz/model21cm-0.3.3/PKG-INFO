@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: model21cm
+Version: 0.3.3
+Summary: Infer parameters of a 21cm cosmology model.
+Home-page: http://github.com/phys201/model21cm
+Author: I. Davenport, N. DePorzio
+Author-email: iandavenport@g.harvard.edu, nicholasdeporzio@g.harvard.edu
+License: GNU GPL-3.0
+Description: UNKNOWN
+Platform: UNKNOWN
