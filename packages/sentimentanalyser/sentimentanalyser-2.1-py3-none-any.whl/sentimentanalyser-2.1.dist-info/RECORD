@@ -1,0 +1,9 @@
+sentimentanalyser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentimentanalyser/preprocess.py,sha256=UnNQJNAZJ8X3HzgbC0qiRAZ29ZITYihuLsVnIzae2ig,3406
+sentimentanalyser/test.py,sha256=r2UVjV68g3zwUXPyN9C_abkMMCEY0SR0ZnITyqr5LRo,6771
+sentimentanalyser/train.py,sha256=u87Bk6DAwK5EtzyQyzai6dic8DXgX7Dgyr6frqMjfVc,7063
+sentimentanalyser-2.1.dist-info/LICENSE.rst,sha256=0lskTQxUhrk-cvnUEloYMKQ5n0wqPjEtCfsWIfGPU9Y,1071
+sentimentanalyser-2.1.dist-info/METADATA,sha256=CMY9oQCukj8ByAVdtx2RwjGMiDtUo63B-Ead_k3LIl4,819
+sentimentanalyser-2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+sentimentanalyser-2.1.dist-info/top_level.txt,sha256=E8nF3B94RnYObwri5UarHMBssqs19Gato1l1DuLHXys,18
+sentimentanalyser-2.1.dist-info/RECORD,,
