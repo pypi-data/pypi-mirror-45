@@ -1,0 +1,10 @@
+genysis/__init__.py,sha256=wMwGxLC-ODCAE3CSYz8n0CGn1Kd1VWZz9WIZaV-Egws,489
+genysis/genysis.py,sha256=dIRHX6BKGvWolnLxETfLIbJz55a6JNR_KGBIhhB9wA8,24884
+genysis/meshRepair.py,sha256=XJJD2O69SOj0umapHoHltIZcsfPFUum1SMtxsltBOvg,2779
+genysis/meshRepair_v2.py,sha256=QA93SYNANhYwySG6XBSC-jhFlzxCAskXIzIeUhnJu3U,4269
+genysis-0.3.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+genysis-0.3.6.dist-info/METADATA,sha256=XK_CjTEVKC2ZDvkQJh_JxVY8Yyw8t0slVB1oNWoWmQU,412
+genysis-0.3.6.dist-info/RECORD,,
+genysis-0.3.6.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+genysis-0.3.6.dist-info/metadata.json,sha256=G4iNyB7dIvQFVF-MgfBk1PuPh4wD-WOVqv4CoqxwjhE,605
+genysis-0.3.6.dist-info/top_level.txt,sha256=KRaT36GK5M8uTjSo6S7NwBns38AU6e59FdyzSD1OffI,8
