@@ -1,0 +1,74 @@
+#!/usr/bin/env snakemake
+import sys
+from metapi import sample
+from metapi import summary
+
+shell.executable("bash")
+
+configfile: "config.yaml"
+
+_samples = sample.parse_samples(config["params"]["samples"],
+                                config["params"]["type"])
+
+if config["params"]["begin"] == "assembly":
+    cancel_task = False
+    if config["params"]["type"] == "fastq":
+        for i in _samples.index.unique():
+            count = len(_samples.loc[[i], "fq1"].dropna().tolist())
+            if count > 1:
+                cancel_task = True
+                print("exists duplicated sample: %s" % i)
+    if cancel_task:
+        sys.exit(1)
+
+_samples_id = []
+
+if config["params"]["cobinning"]["do"]:
+    _samples_id = sample.parse_cobin_samples_id(config["params"]["cobinning"]["samples_id"])
+    if config["params"]["cobinning"]["rename"]:
+        rename_dict = { k : "S" + str(v + 1) \
+                        for k,v in zip(_samples.index.unique(),
+                                       range(len(_samples.index.unique())))}
+        _samples = _samples.assign(id_2=_samples.id.apply(lambda x: rename_dict[x]))
+        _samples.loc[:, ["id", "id_2"]]\
+                .drop_duplicates(["id", "id_2"])\
+                .to_csv(config["params"]["cobinning"]["renamed_id"], sep='\t', index=False)
+
+include: "rules/step.smk"
+
+if config["params"]["type"] == "sra":
+    include: "rules/sra2fq.smk"
+
+if config["params"]["simulation"]["do"]:
+    include: "rules/simulation.smk"
+
+if config["params"]["begin"] == "raw":
+    include: "rules/fastqc.smk"
+    include: "rules/trimming.smk"
+    include: "rules/rmhost.smk"
+
+include: "rules/assembly.smk"
+include: "rules/coassembly.smk"
+include: "rules/metaquast.smk"
+include: "rules/prediction.smk"
+include: "rules/alignment.smk"
+include: "rules/binning.smk"
+include: "rules/cobinning.smk"
+include: "rules/checkm.smk"
+include: "rules/annotation.smk"
+include: "rules/profilling.smk"
+include: "rules/burst.smk"
+
+
+'''
+include: "rules/dereplication.smk"
+include: "rules/classification.smk"
+'''
+
+rule all:
+    input:
+        burst_target
+
+rule debug:
+    input:
+        all_target
