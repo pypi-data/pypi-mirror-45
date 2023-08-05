@@ -1,0 +1,8 @@
+aws_cdk/assets_docker/__init__.py,sha256=4tDGFcVNl_US959bzU1fyGeo9goAynkJh7xAJXwaSoI,3007
+aws_cdk/assets_docker/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/assets_docker/_jsii/__init__.py,sha256=MnjXasme2K1nSex0ibWutsg6-YJr5_IGx4BYPDi4xFs,371
+aws_cdk/assets_docker/_jsii/assets-docker@0.29.0.jsii.tgz,sha256=XzfDQKKUZ9M8QXRrL8RBfr_kdUU_MxOp2MZS6uuax74,28670
+aws_cdk.assets_docker-0.29.0.dist-info/METADATA,sha256=xZ7YUJQCf1_1m1zzqUOoMNACw1PYofJzJ9cT_v2ASeE,2338
+aws_cdk.assets_docker-0.29.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aws_cdk.assets_docker-0.29.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.assets_docker-0.29.0.dist-info/RECORD,,
