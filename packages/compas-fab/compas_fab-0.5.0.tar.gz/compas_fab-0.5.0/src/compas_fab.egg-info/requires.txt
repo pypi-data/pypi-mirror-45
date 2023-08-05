@@ -1,0 +1,3 @@
+compas==0.5.2
+roslibpy>=0.4.1
+pyserial
