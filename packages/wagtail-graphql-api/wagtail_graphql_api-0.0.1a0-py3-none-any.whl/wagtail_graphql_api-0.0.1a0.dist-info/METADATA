@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wagtail-graphql-api
+Version: 0.0.1a0
+Summary: wagtail-graphql-api
+Home-page: https://github.com/tm-kn/wagtail-graphql-api
+License: BSD
+Author: Tomasz Knapik
+Author-email: hi@tmkn.org
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: graphene-django >=2.2,<3
+Requires-Dist: wagtail >=2.4,<3
+
+wagtail-graphql-api
+===================
+
+Test description.
+
