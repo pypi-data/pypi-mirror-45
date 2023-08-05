@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+cmnLib3.egg-info/PKG-INFO
+cmnLib3.egg-info/SOURCES.txt
+cmnLib3.egg-info/dependency_links.txt
+cmnLib3.egg-info/not-zip-safe
+cmnLib3.egg-info/requires.txt
+cmnLib3.egg-info/top_level.txt
