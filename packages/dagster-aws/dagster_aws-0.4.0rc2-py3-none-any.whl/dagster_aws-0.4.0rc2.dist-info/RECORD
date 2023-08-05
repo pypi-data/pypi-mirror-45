@@ -1,0 +1,10 @@
+dagster_aws/__init__.py,sha256=HC8pZBmgTGBcCwEBZoiyL15zTKojycecl0b-4Bi16Pk,104
+dagster_aws/solids.py,sha256=k68iOboJ_-Ir2V6la1iWt15JPZEesaecdxGkJBigccQ,2615
+dagster_aws/types.py,sha256=_MrhN3-GKC5SZ-MS_-SRn_oqSVYvT43hRVAjMwZMCIc,422
+dagster_aws/version.py,sha256=TEqPj0MlBi7tIc9XUYJZ2hNg_aczVa5rlsxJ1MpZPME,51
+dagster_aws_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_aws_tests/test_version.py,sha256=IUgyB8IHbB4XUqLR9Gg70YdRDMyIEm3DhkhBdtxRrQU,89
+dagster_aws-0.4.0rc2.dist-info/METADATA,sha256=IA854KfbBXkGkJwXGw5PO0H-rKQ9kqTVSDuIo3OAD8k,641
+dagster_aws-0.4.0rc2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dagster_aws-0.4.0rc2.dist-info/top_level.txt,sha256=3Xmg4R1hXwg1SzyB41H9Y4crBsq-mB7T0MCe4J_hTIk,30
+dagster_aws-0.4.0rc2.dist-info/RECORD,,
