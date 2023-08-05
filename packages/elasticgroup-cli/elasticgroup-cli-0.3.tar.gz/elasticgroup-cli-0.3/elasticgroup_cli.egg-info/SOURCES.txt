@@ -1,0 +1,8 @@
+README.md
+setup.py
+./elasticgroup-cli
+elasticgroup_cli.egg-info/PKG-INFO
+elasticgroup_cli.egg-info/SOURCES.txt
+elasticgroup_cli.egg-info/dependency_links.txt
+elasticgroup_cli.egg-info/requires.txt
+elasticgroup_cli.egg-info/top_level.txt
