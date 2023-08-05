@@ -1,0 +1,88 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="unikold.connector">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <!--
+    Be careful if you use general includeDependencies, it can have sideffects!
+    Better import explicite packages or configurations ;)
+  -->
+  <!--<includeDependencies package="." />-->
+
+  <include package=".browser" />
+
+  <include file="permissions.zcml" />
+
+  <include file="upgrades.zcml" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="unikold.connector"
+      directory="profiles/default"
+      description="Installs the unikold.connector add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="unikold.connector (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the unikold.connector add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="unikold.connector-hiddenprofiles"
+      />
+
+  <!-- Following adapters make sure add forms for the different types of queries
+       can only be used by admins.
+       We want authenticated users to have the permission to create new
+       queries, but not via add forms. -->
+
+  <!-- for SOAPQuery -->
+  <adapter
+      for="Products.CMFCore.interfaces.IFolderish
+        zope.publisher.interfaces.browser.IDefaultBrowserLayer
+        plone.dexterity.interfaces.IDexterityFTI"
+      provides="zope.publisher.interfaces.browser.IBrowserPage"
+      factory=".browser.views.DummyAddView"
+      name="SOAPQuery"
+      />
+
+  <!-- for LSFQuery -->
+  <adapter
+   for="Products.CMFCore.interfaces.IFolderish
+     zope.publisher.interfaces.browser.IDefaultBrowserLayer
+     plone.dexterity.interfaces.IDexterityFTI"
+   provides="zope.publisher.interfaces.browser.IBrowserPage"
+   factory=".browser.views.DummyAddView"
+   name="LSFQuery"
+   />
+
+  <!-- for LSFSearchQuery -->
+  <adapter
+   for="Products.CMFCore.interfaces.IFolderish
+     zope.publisher.interfaces.browser.IDefaultBrowserLayer
+     plone.dexterity.interfaces.IDexterityFTI"
+   provides="zope.publisher.interfaces.browser.IBrowserPage"
+   factory=".browser.views.DummyAddView"
+   name="LSFSearchQuery"
+   />
+
+  <class class=".browser.views.DummyAddView">
+  <require
+     permission="cmf.ManagePortal"
+     interface="zope.publisher.interfaces.browser.IBrowserPage"
+     />
+  </class>
+
+
+</configure>

@@ -1,0 +1,75 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="unikold.connector">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="unikold.connector.interfaces.IUnikoldConnectorLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="unikold.connector"
+      type="plone"
+      directory="static"
+      />
+
+  <!-- SOAP test view -->
+  <browser:page
+      name="test_soap"
+      for="*"
+      layer="unikold.connector.interfaces.IUnikoldConnectorLayer"
+      class=".views.SOAPTestView"
+      template="templates/soap_test_view.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- SOAP object view -->
+  <browser:page
+      name="view"
+      for="unikold.connector.content.soap_query.ISOAPQuery"
+      class=".views.SOAPQueryView"
+      template="templates/soap_query_view.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- Controlpanel for connector settings -->
+  <browser:page
+      name="unikold-connector-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.UniKoLdConnectorControlPanelView"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- Controlpanel for LSF settings -->
+  <browser:page
+      name="unikold-connector-lsf-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel_lsf.UniKoLdConnectorLSFControlPanelView"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- Custom edit form since only admins should be allowed to edit queries
+       via forms. -->
+  <browser:page
+      name="edit"
+      for="unikold.connector.content.soap_query.ISOAPQuery"
+      class=".forms.DummyEditForm"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- method for asyncronous task to update all queries -->
+  <browser:page
+      name="unikold.connector.update"
+      for="*"
+      layer="unikold.connector.interfaces.IUnikoldConnectorLayer"
+      class=".controlpanel.Tasks"
+      attribute="updateAllQueries"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>

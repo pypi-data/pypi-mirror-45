@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      tal:define="authenticator context/@@authenticator;
+                  authToken authenticator/token;"
+      i18n:domain="unikold.connector">
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+        <p class="documentDescription" tal:content="context/description" />
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+
+        <h1 class="documentFirstHeading" tal:content="context/Title"/>
+
+        <div tal:repeat="widgetName view/widgets"
+             tal:condition="view/canUpdateFromView">
+          <tal:widget define="widget python: view.w.get(widgetName)"
+                      tal:condition="python: widgetName != 'soap_response'">
+            <label tal:content="widget/label"/>
+            <div tal:content="structure widget/render" />
+          </tal:widget>
+        </div>
+        <br/>
+
+        <tal:search-results condition="python: hasattr(context, 'search_results')">
+          <label>Search results as python list</label>
+          <pre style="max-height: 300px">
+            <tal:result repeat="result context/search_results">
+              <span tal:replace="result"/>
+            </tal:result>
+          </pre>
+          <br/>
+        </tal:search-results>
+
+        <tal:soap-response condition="context/soap_response">
+          <label tal:content="view/w/soap_response/label"/>
+          <pre style="max-height: 300px" tal:content="context/soap_response"/>
+        </tal:soap-response>
+
+        <tal:soap-error condition="context/soap_error">
+          <label tal:content="view/w/soap_error/label"/>
+          <pre style="max-height: 300px" tal:content="context/soap_error"/>
+        </tal:soap-error>
+
+        <form tal:condition="view/canUpdateFromView"
+              tal:attributes="action python: context.absolute_url() + '?_authenticator=' + authToken"
+              method="POST">
+          <input type="hidden" id="update-request" name="update-request" value="1"/>
+          <button id="btn-update-request"
+                  type="submit" class="standalone">
+             <i class="fa fa-refresh"></i>
+             <span i18n:translate="">Update</span>
+          </button>
+        </form>
+
+        <span>Last update:
+          <span tal:content="view/getModifiedLocalized"></span>
+        </span>
+
+        <span id="soap-loading" style="display:none">
+          <span i18n:translate="">Loading</span> ...
+        </span>
+
+        <script>
+          $(document).ready(function() {
+            $('#btn-update-request').click(function() {
+              $('#btn-update-request').addClass('disabled');
+              $('#btn-update-request i.fa-refresh').addClass('fa-spin');
+            });
+          })
+        </script>
+
+    </tal:main-macro>
+</metal:main>
+</body>
+</html>
