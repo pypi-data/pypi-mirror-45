@@ -1,0 +1,7 @@
+setup.py
+yapatch.egg-info/PKG-INFO
+yapatch.egg-info/SOURCES.txt
+yapatch.egg-info/dependency_links.txt
+yapatch.egg-info/entry_points.txt
+yapatch.egg-info/requires.txt
+yapatch.egg-info/top_level.txt
