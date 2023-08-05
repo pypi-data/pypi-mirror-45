@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: htf-demo
+Version: 0.0.1
+Summary: htf_demo placeholder
+Home-page: https://hilster.de
+Author: HILSTER
+Author-email: mail@hilster.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# htf demo
+
+This is a placeholder.
+
+
