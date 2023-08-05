@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: geolibs-aiohttp-apispec
+Version: 0.0.2
+Summary: GeoLibs aiohttp-apispec
+Home-page: https://github.com/GeographicaGS/GeoLibs-aiohttp-apispec
+License: MIT
+Author: Geographica
+Author-email: hello@geographica.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: aiohttp (>=3.5,<4.0)
+Requires-Dist: apispec (>=1.2.0,<2.0.0)
+Requires-Dist: jinja2 (>=2.10.1,<3.0.0)
+Requires-Dist: marshmallow (>=2.19,<3.0)
+Description-Content-Type: text/markdown
+
+# GeoLibs-aiohttp-apispec
+
+### TODO
+- OpenAPI 3
+- Tests
+- Documentation
+  - Installation
+  - Use
+
