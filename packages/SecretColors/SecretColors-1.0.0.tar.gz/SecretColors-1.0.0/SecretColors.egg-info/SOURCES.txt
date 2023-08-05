@@ -1,0 +1,12 @@
+README.md
+setup.py
+SecretColors/__color.py
+SecretColors/__colors.py
+SecretColors/__init__.py
+SecretColors/palette.py
+SecretColors/test.py
+SecretColors/utils.py
+SecretColors.egg-info/PKG-INFO
+SecretColors.egg-info/SOURCES.txt
+SecretColors.egg-info/dependency_links.txt
+SecretColors.egg-info/top_level.txt
