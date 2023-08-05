@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jupyterhub-kerberosauthenticator
+Version: 0.1.0
+Summary: A JupyterHub authenticator using Kerberos
+Home-page: http://github.com/jcrist/kerberosauthenticator
+Maintainer: Jim Crist
+Maintainer-email: jiminy.crist@gmail.com
+License: BSD
+Project-URL: Source, https://github.com/jcrist/kerberosauthenticator
+Project-URL: Issue Tracker, https://github.com/jcrist/kerberosauthenticator/issues
+Keywords: jupyter contentsmanager HDFS Hadoop
+Platform: UNKNOWN
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Requires-Dist: jupyterhub
+Requires-Dist: pykerberos; platform_system != "Windows"
+Requires-Dist: winkerberos; platform_system == "Windows"
+
+kerberosauthenticator
+=====================
+
+|travis|
+
+A JupyterHub Authenticator_ using Kerberos. See the documentation_ for more
+information.
+
+LICENSE
+-------
+
+New BSD. See the `License File`_.
+
+.. |travis| image:: https://travis-ci.org/jcrist/kerberosauthenticator.svg?branch=master
+   :target: https://travis-ci.org/jcrist/kerberosauthenticator
+
+.. _Authenticator: https://jupyterhub.readthedocs.io/en/stable/reference/authenticators.html
+.. _License File: https://github.com/jcrist/kerberosauthenticator/blob/master/LICENSE
+.. _documentation: https://jcrist.github.io/kerberosauthenticator/
+
+
