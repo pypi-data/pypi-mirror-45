@@ -1,0 +1,3 @@
+[console_scripts]
+start-landlab-sketchbook = landlab_rest.run:main
+
