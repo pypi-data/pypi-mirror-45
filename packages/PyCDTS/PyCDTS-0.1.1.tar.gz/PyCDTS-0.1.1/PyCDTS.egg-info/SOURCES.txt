@@ -1,0 +1,12 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+PyCDTS.egg-info/PKG-INFO
+PyCDTS.egg-info/SOURCES.txt
+PyCDTS.egg-info/dependency_links.txt
+PyCDTS.egg-info/requires.txt
+PyCDTS.egg-info/top_level.txt
+pycdts/__init__.py
+pycdts/test/__init__.py
