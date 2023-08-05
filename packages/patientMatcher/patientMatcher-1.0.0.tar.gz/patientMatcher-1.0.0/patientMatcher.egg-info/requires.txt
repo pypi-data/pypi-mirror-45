@@ -1,0 +1,7 @@
+Flask
+Flask-Mail
+flask_negotiate
+requests
+jsonschema
+pymongo<3.7
+enlighten
