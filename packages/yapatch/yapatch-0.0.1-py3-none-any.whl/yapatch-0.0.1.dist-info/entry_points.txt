@@ -1,0 +1,3 @@
+[console_scripts]
+yapatch = yapatch.main:main
+
