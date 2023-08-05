@@ -1,0 +1,214 @@
+help 
+ipy
+quit
+help 
+! echo "history" > input.txt
+!ls
+!cat input.txt 
+help < input.text
+quit
+help alias 
+help alias create 
+quit
+help alias create 
+quit
+py
+help 
+quit
+help 
+help alias 
+help alias create 
+alias create -h
+quit
+pyscript scripts/arg_printer.py foo bar "baz gee"
+quit
+pyscript scripts/script.py 
+pyscript scripts/script.py > out.txt
+!bat out.txt 
+!rm out.txt
+!bat scripts/save_help_text.py 
+!bat scripts/arg_printer.py 
+qit
+!vim scripts/s
+!vim scripts/redirect.py
+pyscript scripts/redirect.py 
+help py
+help pyscript 
+set -l
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+set debug true
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+set debug true
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.pypy | less
+pyscript scripts/redirect.py | less
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+edit scripts/redirect.py 
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+set debug true
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py | less
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+pyscript scripts/redirect.py 
+pyscript scripts/redirect.py > out.txt
+@scripts/script.txt 
+@scripts/script.txt > foo.txt
+@scripts/script.txt
+@scripts/script.txt | less
+load scripts/script.txt 
+load scripts/script.txt > out.txt
+pyscript script.py 
+pyscript script.py > out.txt
+set -l
+show
+help 
+set -a
+pyscript script.py 
+pyscript script.py > out.txt
+py x = 5
+py x = 5 > out.txt
+py cmd('help')
+py app('help')
+py app('help') > out.txt
+py x = 5
+py app('help')
+py x = 5 > out.txt
+py app('help') > out.txt
+py print('hi')
+py print('hi') | less
+py print('hi') > out.txt
+!cat out.txt 
+py print('hi') | grep 'h'
+py print('hi') | less
+py app('help')
+py app('help') | grep 'alias'
+py app('help') > out.txt
+py app('help') | grep alias
+py app('help') >> out.txt
+py app('help') >
+py app('help')
+py app('help') > out.txt
+py
+ipython
+ipy
+ipy > out.txt
+py > out.txt
+py | less
+py > out.txt
+ipy
+ipy | less
+ipy > out.txt
+@scripts/script.txt 
+@scripts/script.txt | less
+@scripts/script.txt > out.txt
+quit
+help load 
+quit
+help load 
+load scripts/script.txt 
+load scripts/script.txt -r
+load scripts/script.txt -r tran.txt
+ls
+!cat tran.txt 
+quit
+help 
+help history 
+history 
+history -t tran.txt
+quit
+load scripts/script.txt -r tran.txt
+quit
+load scripts/script.txt -r tran.txt
+load scripts/script.txt
+history 
+quit
+help load 
+load scripts/script.txt > out.txt
+load scripts/script.txt -r tran.txt > out.txt
+load scripts/script.txt -r tran.txt
+quit
+help load 
+quit
+help load 
+load scripts/script.txt 
+load scripts/script.txt -r tran.txt
+quit
+help 
+help history 
+history -t tran2.txt
+quit
+help 
+help history 
+history -t tran.txt
+help > out.txt
+!bat out.txt 
+quit
+load scripts/script.txt -r transcript.txt
+quit
+load scripts/script.txt -r t
+quit
+load scripts/script.txt -r tran.txt 
+quit
+help 
+help history 
+history -t tran.txt > out.txt
+quit
+help 
+help history 
+history -t tran.txt > out.txt
+quit
+py app('help') > out.txt
+load scripts/script.txt 
+load scripts/script.txt -t tran.txt
+quit
+load scripts/script.txt -t tran.txt
+quit
+py app('help') > out.txt
+!cat out.txt 
+py app('help')
+py app('help > help.txt')
+quit
+help > out.txt 
+!cat out.txt 
+help >
+Documented commands (type help <topic>):
+========================================
+alias  help     ipy   macro  pyscript  set    shortcuts
+edit   history  load  py     quit      shell
+help 
+help | grep py
+help | grep script
+quit
+help 
+help | grep py
+quit
+edit 
+help 
+help | less
+quit
+help 
+help history 
+history 
+history -t tran.txt > out.txt
+!cat tran.txt
+!cat out.txt 
+load scripts/script.txt 
+load scripts/script.txt -t tran.txt
+!cat tran.txt 
+quit
+help 
+help | less
+q
+quit
