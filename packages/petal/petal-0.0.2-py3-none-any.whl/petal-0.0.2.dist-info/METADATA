@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: petal
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Tom Forbes
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: loguru
+Requires-Dist: requests
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: click
+Requires-Dist: mypy-protobuf
+
+UNKNOWN
+
+
