@@ -1,0 +1,5 @@
+sqlalchemy<2,>=1.2.9
+kaptan<0.6,>=0.5.10
+colorama<=0.5
+appdirs<1.5,>=1.4.3
+unihan-etl<1.0,>=0.9.5
