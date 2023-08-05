@@ -1,0 +1,11 @@
+README.md
+setup.py
+himawaripy/__init__.py
+himawaripy/__main__.py
+himawaripy/utils.py
+himawaripy.egg-info/PKG-INFO
+himawaripy.egg-info/SOURCES.txt
+himawaripy.egg-info/dependency_links.txt
+himawaripy.egg-info/entry_points.txt
+himawaripy.egg-info/requires.txt
+himawaripy.egg-info/top_level.txt
