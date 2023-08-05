@@ -1,0 +1,15 @@
+odoo/addons/project_parent_task_filter/README.rst,sha256=gfF51hd9kd-PPbLIWQBGT19gL71lLNgfFRC0Mi1caSE,3023
+odoo/addons/project_parent_task_filter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/project_parent_task_filter/__manifest__.py,sha256=56IyHZu0Abfs6V_l-yniV9pXcn99FJAU-v2IzjKkk3A,607
+odoo/addons/project_parent_task_filter/i18n/project_parent_task_filter.pot,sha256=PathxNcALrvAFA9o_e5Oz1JMSdSbJ1jLRIts4rHyaOw,680
+odoo/addons/project_parent_task_filter/readme/CONTRIBUTORS.rst,sha256=W9QJgr4rWZz68aBhUE5h7RGF5-VzoJO6gWdi04_SRDA,92
+odoo/addons/project_parent_task_filter/readme/DESCRIPTION.rst,sha256=uNPJmrWmVnXXK9E87oBIeHG-xj4nKJUxqi7_pTOKjVo,117
+odoo/addons/project_parent_task_filter/readme/ROADMAP.rst,sha256=dxFB4Np8jqUOvHrk0GAb34UjB9of3rnoWRz_SXc4umA,108
+odoo/addons/project_parent_task_filter/readme/USAGE.rst,sha256=alyGOj6fTPfh1gS8ptlkTW4UyZWSdqfjBeoN6aAX_Xo,84
+odoo/addons/project_parent_task_filter/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/project_parent_task_filter/static/description/index.html,sha256=SqNyubxcPKvRaL_59BZI1teNK2GPjqs2l8U-Quy2nKI,12585
+odoo/addons/project_parent_task_filter/views/project_task.xml,sha256=M8Uql7f4BdmqtlUF-BNU_8wFmu-xhbIjZqautAdT1ls,1062
+odoo12_addon_project_parent_task_filter-12.0.1.1.0.99.dev2.dist-info/METADATA,sha256=eK0SHTO_V_8NB4oOlh3uyocmBSV3cn6pTZLqVPlqsBM,3558
+odoo12_addon_project_parent_task_filter-12.0.1.1.0.99.dev2.dist-info/RECORD,,
+odoo12_addon_project_parent_task_filter-12.0.1.1.0.99.dev2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+odoo12_addon_project_parent_task_filter-12.0.1.1.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
