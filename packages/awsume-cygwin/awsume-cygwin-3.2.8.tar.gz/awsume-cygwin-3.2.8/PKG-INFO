@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: awsume-cygwin
+Version: 3.2.8
+Summary: Awsume-Cygwin - same as Awsume, minus psutil dependency, which means it can run on Cygwin
+Home-page: https://github.com/Sodki/awsume-cygwin
+Author: Henrique Rodrigues
+Author-email: henrique.rodrigues@ist.utl.pt
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
