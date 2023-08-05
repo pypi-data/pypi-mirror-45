@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: data_extractor
+Version: 0.1.2
+Summary: Combine XPath, CSS Selector and JSONPath for Web data extracting.
+Home-page: https://github.com/linw1995/data_extractor
+Author: 林玮
+Author-email: linw1995@icloud.com
+License: MIT
+Project-URL: GitHub: issues, https://github.com/linw1995/data_extractor/issues
+Project-URL: GitHub: repo, https://github.com/linw1995/data_extractor
+Description: [![license](https://img.shields.io/github/license/linw1995/data_extractor.svg)](https://github.com/linw1995/data_extractor/blob/master/LICENSE)
+        [![Pypi Status](https://img.shields.io/pypi/status/data_extractor.svg)](https://pypi.org/project/data_extractor)
+        [![Python version](https://img.shields.io/pypi/pyversions/data_extractor.svg)](https://pypi.org/project/data_extractor)
+        [![Package version](https://img.shields.io/pypi/v/data_extractor.svg)](https://pypi.org/project/data_extractor)
+        [![GitHub last commit](https://img.shields.io/github/last-commit/linw1995/data_extractor.svg)](https://github.com/linw1995/data_extractor)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        [![Build Status](https://travis-ci.org/linw1995/data_extractor.svg?branch=master)](https://travis-ci.org/linw1995/data_extractor)
+        [![codecov](https://codecov.io/gh/linw1995/data_extractor/branch/master/graph/badge.svg)](https://codecov.io/gh/linw1995/data_extractor)
+        
+        # Data Extractor
+        
+        Combine XPath, CSS Selector and JSONPath for Web data extracting.
+        
+        
+        # Changelog
+        
+        ## v0.1.2
+        
+        - Add exceptions.py and ExprError
+        - Change travis-ci deploy stage condition
+        - Add travis-ci deploy github release
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
