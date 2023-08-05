@@ -1,0 +1,9 @@
+certbot_dns_domeneshop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_domeneshop/dns_domeneshop.py,sha256=lhS6dej8wjmdPPxGji19whykEDu9U76wY7g5zfU_WVc,4778
+certbot_dns_domeneshop/domeneshop.py,sha256=6RgkXBxGekfCLcCrFAHGzvAhJSuviKWvX_pfqqYzwjQ,3937
+certbot_dns_domeneshop-0.2.5.post1.dist-info/LICENSE.txt,sha256=7sZ7LLBMhFYTSVRQywQ39OwcQP7QEUFF0Km7lJRs1Wc,10785
+certbot_dns_domeneshop-0.2.5.post1.dist-info/METADATA,sha256=IFNF_F8c2LXfb2PeroXu4WZjDkqxpNW8vQnMrmSSt0c,4613
+certbot_dns_domeneshop-0.2.5.post1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+certbot_dns_domeneshop-0.2.5.post1.dist-info/entry_points.txt,sha256=mtMze8Yb1VlqT63vYsSf2rEAkPZjPYpuEtA-Fxl6R_E,88
+certbot_dns_domeneshop-0.2.5.post1.dist-info/top_level.txt,sha256=hCiHzScpHqgH205cS6T6X-adF6d4iwDpGZonoFpH4eM,23
+certbot_dns_domeneshop-0.2.5.post1.dist-info/RECORD,,
