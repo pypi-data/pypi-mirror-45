@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: woeBinningPandas
+Version: 1.3
+Summary: My package from github repo
+Home-page: https://github.com/V1ad98/woeBinningPandas.git
+Author: V1ad98
+Author-email: 47775603+V1ad98@users.noreply.github.com
+License: MIT
+Description: My package from github repo
+Keywords: Package from github repo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Linguistic
