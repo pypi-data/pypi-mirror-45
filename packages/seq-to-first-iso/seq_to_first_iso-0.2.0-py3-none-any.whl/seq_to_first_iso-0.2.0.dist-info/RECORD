@@ -1,0 +1,10 @@
+flask_app/__init__.py,sha256=kWO2LmIPggIJ3rUtVxG3LM01ZgssO7TQHqVEHtMnkoA,77
+flask_app/routes.py,sha256=14BMKEoXD3pPaknTcjYv9s35FaEAJeWAV4W7Dm55_Zw,8787
+seq_to_first_iso/__init__.py,sha256=fDeSQxcYr9FdFg7p2_awnMZz90Cs21kSXEtz56_VfAs,1501
+seq_to_first_iso/seq_to_first_iso.py,sha256=_JzEfcTvrX9vx8iveA1SC60qSENwGwZvc0CIn_nOeQo,13085
+seq_to_first_iso-0.2.0.dist-info/LICENSE.txt,sha256=QV5ONBw5HHQOBCbD6VoyRTd5ne63r0YHHd0wAAyZ2-c,1565
+seq_to_first_iso-0.2.0.dist-info/METADATA,sha256=qz_GAOWmwWVG2RwL5-WgUIRUhmGiyj7nHZ5XAWBzErg,6327
+seq_to_first_iso-0.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+seq_to_first_iso-0.2.0.dist-info/entry_points.txt,sha256=AGJ_TgwnUvMrz-XatpFDsWgJTQsrzfmZUSrxdqfS_xo,76
+seq_to_first_iso-0.2.0.dist-info/top_level.txt,sha256=4usCN9hiyC3fsoYpdcVFo0edmdVfXHt0iup6xY_OB5s,27
+seq_to_first_iso-0.2.0.dist-info/RECORD,,
