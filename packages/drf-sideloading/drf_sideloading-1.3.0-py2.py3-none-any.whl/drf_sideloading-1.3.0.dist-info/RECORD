@@ -1,0 +1,10 @@
+drf_sideloading/__init__.py,sha256=F5mW07pSyGrqDNY2Ehr-UpDzpBtN-FsYU0QGZWf6PJE,22
+drf_sideloading/mixins.py,sha256=Yj3FoV6I8SVhah-bwMkglZMcqfNT-CNNYh0G9HFAsRg,9948
+drf_sideloading/renderers.py,sha256=am7fSn3yc3Ye7cOcBsPl0HDgFEPwiEdbzi2tBSphGL8,500
+drf_sideloading/serializers.py,sha256=BP42yikPJlbZeeD20zamL2QEKLhQtEqWv_nQeP9v7cE,1588
+drf_sideloading-1.3.0.dist-info/AUTHORS.md,sha256=w6xJ3bJOlg7p1cHG4GJgUB50pppEtoiH9Ys_r2x4i8Y,327
+drf_sideloading-1.3.0.dist-info/LICENSE,sha256=0jv2nRUfY4tAfngEgdvJY304_EhGAPw0vN6v655n6uM,1083
+drf_sideloading-1.3.0.dist-info/METADATA,sha256=cy0wGpxEA85D8zlAwHQf6w6eUsqFemWUd98QDzhWM_w,6432
+drf_sideloading-1.3.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+drf_sideloading-1.3.0.dist-info/top_level.txt,sha256=szPQDJ6zmbqxtTvlnoOF7IBVmh-xyeCAuON-69-5kDQ,16
+drf_sideloading-1.3.0.dist-info/RECORD,,
