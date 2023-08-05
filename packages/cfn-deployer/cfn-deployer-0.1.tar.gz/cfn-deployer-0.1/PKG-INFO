@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cfn-deployer
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: cfndeployer allows the automation of deploying CloudFormation Stacks
+Platform: UNKNOWN

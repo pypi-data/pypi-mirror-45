@@ -1,0 +1,9 @@
+README.md
+cfndeployer.py
+setup.py
+cfn_deployer.egg-info/PKG-INFO
+cfn_deployer.egg-info/SOURCES.txt
+cfn_deployer.egg-info/dependency_links.txt
+cfn_deployer.egg-info/entry_points.txt
+cfn_deployer.egg-info/requires.txt
+cfn_deployer.egg-info/top_level.txt
