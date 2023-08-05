@@ -1,0 +1,14 @@
+cwlbrowser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwlbrowser/basic_similaritychecker.py,sha256=Qlg5Dmq6NIrPNYyKZoIZE3wqZ14aUMjwSs9Fy8aQrCo,2306
+cwlbrowser/browser.py,sha256=PjMn71T_YvWPn87yyEc6COt3PrkrqzkOQ6fNieQeeVY,8762
+cwlbrowser/input_output.py,sha256=D34KYuTAiVkHa0L80GkusxMS43wQdaql5CUxzDKHxk8,674
+cwlbrowser/similaritychecker.py,sha256=panMY4npHAUYPHBkbbd-u468MFLl8e3jPNj3aJeUIyE,1078
+cwlbrowser/step.py,sha256=6uS5-9danPoAQKoYMW1zwKXf2cEGfAgosYOLwz6yzXs,1256
+cwlbrowser/util.py,sha256=7iA5_L3912lcur0pYrO1c9gh68_SkI5J5DN4SR5NObI,1757
+cwlbrowser/workflow.py,sha256=WIx_nwI1MA00VvBnjC92s6gdun0lJW7kk4RvA8Pv6GU,2244
+cwlbrowser-4.0.dist-info/DESCRIPTION.rst,sha256=QsErOCpeRNIE4qKoIRM_mQNCzt2YbyLCYhp3q6Lvtns,354
+cwlbrowser-4.0.dist-info/METADATA,sha256=EttbW1jUfs1AELlB3xGdth2rWYTytlrLOay_SenvgN4,754
+cwlbrowser-4.0.dist-info/RECORD,,
+cwlbrowser-4.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+cwlbrowser-4.0.dist-info/metadata.json,sha256=v-KVG-1mgHT1bRrpokW_oiBmsDQUC1TndBBVzT7AzjI,624
+cwlbrowser-4.0.dist-info/top_level.txt,sha256=dkCGktxdulPwXg_--4nOR3IU5V-8_Q27CEGIjztbzvg,11

@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: cwlbrowser
+Version: 4.0
+Summary: Python library that browses and analyses workflows in CWL
+Home-page: https://gitlab.cs.man.ac.uk/mbaxasp7/cwlbrowser
+Author: Sean Pertet
+Author-email: sean.pertet@student.manchester.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cwlref-runner
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+# `cwlbrowser`
+## `cwlbrowser` is a python library that allows you to open, browse and compare scientific workflows written in CWL on a Jupyter notebook
+
+### Installation
+`pip install cwlbrowser`
+
+### Documentation
+Detailed documentation of usage can be found [here:](https://gitlab.cs.man.ac.uk/mbaxasp7/cwlbrowser/blob/master/doc/documentation.md)
+
+
+
+
