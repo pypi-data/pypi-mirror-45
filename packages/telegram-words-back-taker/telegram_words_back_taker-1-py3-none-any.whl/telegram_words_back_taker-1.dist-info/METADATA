@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: telegram-words-back-taker
+Version: 1
+Summary: Delete on both sides all of your messages in non-admin chats
+Home-page: https://github.com/Meeksher/TelegramWordsBackTaker
+Author: Mikhail Solodov
+Author-email: workclock359@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: telethon
+
+UNKNOWN
+
+
