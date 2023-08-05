@@ -1,0 +1,2 @@
+spotinst_sdk
+terminaltables
