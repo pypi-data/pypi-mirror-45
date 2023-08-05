@@ -1,0 +1,4 @@
+flake8
+black
+twine
+-r requirements-test.txt

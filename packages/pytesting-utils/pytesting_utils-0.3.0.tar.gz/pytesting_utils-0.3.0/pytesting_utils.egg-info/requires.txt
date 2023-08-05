@@ -1,0 +1,11 @@
+virtualenv
+
+[dev]
+flake8
+black
+twine
+
+[test]
+coverage
+pytest
+pytest-cov
