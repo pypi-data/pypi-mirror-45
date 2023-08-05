@@ -1,0 +1,10 @@
+oopycql/__init__.py,sha256=SQ0suPB40okdcHWWcKbSMYsyKkgm5PZ8P8FvitRWBjo,52
+oopycql/cypher.py,sha256=yos7D9vZb13bgu2pI1uWcwWHmfpDP8Js6PiUCILip6c,913
+oopycql/errors.py,sha256=ee2aCCKVM-6jpwMBZWLQE3Zr_zGx0JrRTlZ4MvLLWlQ,178
+oopycql/oopycql_collections.py,sha256=cJkn7XwAQ3znafFH9ZQSEzkX8kAtHheHXI26SvHUi3k,2223
+oopycql/query.py,sha256=sTQ7qy-AYhNJWD2WGM8t0R4_wXmfKWqsdoJI9Ym3Sww,7699
+oopycql-1.1.5a2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+oopycql-1.1.5a2.dist-info/METADATA,sha256=HnrgJKEhOwRB3JCfZnwKxFIl7GfwEYXUDFZQWw35MBA,1178
+oopycql-1.1.5a2.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+oopycql-1.1.5a2.dist-info/top_level.txt,sha256=K7muWCGkPhG7D4U1i3ZQSNmgmqyJW-F0RpuzfBgFxXo,8
+oopycql-1.1.5a2.dist-info/RECORD,,
