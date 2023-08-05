@@ -1,0 +1,10 @@
+pyuwsgi.so,sha256=HU80aKydoj-fxcXoodTSUQRBCCge_71yFavBT0QCT9M,1535336
+uwsgidecorators.py,sha256=_h8_gbFYC6qOy7x5zp6iJrtyxns9Rm_h1oHEOLX6eVI,10392
+pyuwsgi-2.0.18.post0.dist-info/WHEEL,sha256=1WjuLAWbF8SHwO5ixqVFxbwzJ_6w-ZHLj1rb5V81IyU,112
+pyuwsgi-2.0.18.post0.dist-info/top_level.txt,sha256=2hUbP7rqnIuGkFflVcnATIpi9ZVtMjLRsX3VG4ApvlE,24
+pyuwsgi-2.0.18.post0.dist-info/METADATA,sha256=QLBNcAgzCjRlE4BHg73uhVKXY3GMGrYwQpr6vu8xB_A,3187
+pyuwsgi-2.0.18.post0.dist-info/RECORD,,
+pyuwsgi-2.0.18.post0.dist-info/entry_points.txt,sha256=Y5sa_aLm2nEHKDg115cLGWKbml-8_tUvNFse-Pq24nQ,61
+.libspyuwsgi/libjansson-aa83a0bb.so.4.11.0,sha256=Lf_KVw9uF2RHVZ8xjvTUNuH3qxsVpGwqTxYDPKjrPtg,71920
+.libspyuwsgi/libpcre-000d95a1.so.1.2.6,sha256=_dQU0vzHBJS3p-NpMWtdKwI4jEV8vFP6gAuTctvcfFI,156800
+.libspyuwsgi/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
