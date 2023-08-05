@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: matchenc
+Version: 1.0
+Summary: Checks which standard encoding can open the given file, and if ontains the expected terms are encoded as such.
+Home-page: https://github.com/gythaogg/matchenc
+Author: Gytha Ogg
+Author-email: gythaoggscat@gmail.com
+License: MIT
+Keywords: Standard Encoding Decoding
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/x-rst
+Requires-Dist: markdown
+
+## MATCHENC
+A script to check which of the [standard encodings](https://docs.python.org/3.6/library/codecs.html#standard-encodings) can be used to read a file. Expected terms or characters may be passed as argument to narrow the encoding matches better.
+
+### Usage
+
+python -m matchenc --help
+
+
+
