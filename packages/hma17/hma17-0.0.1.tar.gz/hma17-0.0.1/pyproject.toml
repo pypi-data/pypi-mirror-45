@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "hma17"
+author = "Matthias Bussonnier"
+author-email = "mbussonnier@ucmerced.edu"
+home-page = "https://github.com/Carreau/hma17"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+[tool.flit.scripts]
+hma = "hma17:main"
+
