@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tensorhive
+Version: 0.2.4
+Summary: Lightweight computing resource management tool for executing distributed TensorFlow programs
+Home-page: https://github.com/roscisz/TensorHive
+Author: Pawel Rosciszewski, Michal Martyniak, Filip Schodowski, Tomasz Menet
+Author-email: pawel.rosciszewski@pg.edu.pl
+License: Apache License 2.0
+Download-URL: https://github.com/roscisz/TensorHive/archive/0.2.4.tar.gz
+Keywords: distributed machine learning tensorflow resource management
+Platform: UNKNOWN
+Requires-Dist: parallel-ssh (==1.9.1)
+Requires-Dist: passlib (==1.7.1)
+Requires-Dist: sqlalchemy (==1.2.14)
+Requires-Dist: sqlalchemy-utils (==0.33.8)
+Requires-Dist: click (==7.0)
+Requires-Dist: connexion (==1.5.3)
+Requires-Dist: flask-cors (==3.0.7)
+Requires-Dist: flask-jwt-extended (==3.13.1)
+Requires-Dist: gunicorn (==19.9.0)
+Requires-Dist: coloredlogs (==10.0)
+Requires-Dist: Safe (==0.4)
+Requires-Dist: python-usernames (==0.2.2)
+
+UNKNOWN
+
+
