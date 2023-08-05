@@ -1,0 +1,10 @@
+copypasta-0.0.1.dist-info/DESCRIPTION.rst,sha256=CF0-tnj957urEU4Bh1xcAMQGGaJ_HiEiN9CpxqF_-hI,47
+copypasta-0.0.1.dist-info/METADATA,sha256=AAClZvrKaaUx8yrVVgstBvxczf2-28wiJT_3HCSO6i8,457
+copypasta-0.0.1.dist-info/RECORD,,
+copypasta-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+copypasta-0.0.1.dist-info/metadata.json,sha256=Vu0pE4lu2qPPu176VZIH4Oqine6TE-TMYzpH3X1Jw9Q,569
+copypasta-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=10NOiimvuqdX9mxC-7kGpgN_dI7PyumYsxjOlobXz_E,2580
+src/param_parser.py,sha256=k63iFoy30UOOHO9M3hIkyrxAiiaExjC7hkD1N4QT_p8,105
+src/transformers.py,sha256=u_S4ub8zdrR5JZTFN-DMjNYx7I3X988jFvE6viTGUiA,1150
