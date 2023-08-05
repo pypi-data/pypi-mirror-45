@@ -1,0 +1,4 @@
+awscli
+dirutility>=0.6.1
+tldextract
+validators
