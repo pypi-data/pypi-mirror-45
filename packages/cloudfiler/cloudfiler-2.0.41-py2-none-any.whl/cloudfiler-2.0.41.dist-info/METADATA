@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: cloudfiler
+Version: 2.0.41
+Summary: An S3 file storage GUI client with pre-internet, TNO encryption.
+Home-page: https://www.cloudfiler.org/
+Author: Colin Wills
+Author-email: colin@nuvovis.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: boto
+Requires-Dist: keyring
+Requires-Dist: passlib
+Requires-Dist: pycrypto
+
+UNKNOWN
+
+
