@@ -1,0 +1,7 @@
+setup.py
+pyspeakercraft/__init__.py
+pyspeakercraft.egg-info/PKG-INFO
+pyspeakercraft.egg-info/SOURCES.txt
+pyspeakercraft.egg-info/dependency_links.txt
+pyspeakercraft.egg-info/requires.txt
+pyspeakercraft.egg-info/top_level.txt
