@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: redpanda
+Version: 0.4.1
+Summary: Pandas-ORM Integration.
+Home-page: https://github.com/amancevice/redpanda
+Author: amancevice
+Author-email: smallweirdnum@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
