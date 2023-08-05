@@ -1,0 +1,13 @@
+ankipandas/__init__.py,sha256=uxKWtmWSxz7N1d2NziqWwDctJmsKYXZLiqZJn698r6s,87
+ankipandas/anki_fields.csv,sha256=J7-73zyoWEfocHr45ZKkOhEHyPFXB6PwcndOii34ACc,2920
+ankipandas/convenience_functions.py,sha256=vsNObBYHxyrYZN6vk-52bP5yN-OjNJLWvsfhyoib33U,6482
+ankipandas/core_functions.py,sha256=_Ut1BLAZ3y6EjnA0SG6rgOrgLbAdOYpyAxC0pMznmsc,12701
+ankipandas/version.txt,sha256=bBai1coaYq05TY-BOqCoVd3h6t3q3P3F-_87jl8gfd0,9
+ankipandas/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ankipandas/test/test_ankipandas.py,sha256=Rq5slz5HKcad2T4X-941mg-1bw71ApJ3kssZON8rh5Q,743
+ankipandas-0.0.dev2.dist-info/DESCRIPTION.rst,sha256=-wd15dRzTpJKospTfGZUbbT-txrOzngx4PduOX-EzwM,2872
+ankipandas-0.0.dev2.dist-info/METADATA,sha256=921RNy--pURJEL5KHJj-vJjjDjAhNR6PP6FpH9CeC5M,3611
+ankipandas-0.0.dev2.dist-info/RECORD,,
+ankipandas-0.0.dev2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ankipandas-0.0.dev2.dist-info/metadata.json,sha256=t3043zFFF8E5m0V4pZpus7KeuymyQn-W2-qA39A0l4w,775
+ankipandas-0.0.dev2.dist-info/top_level.txt,sha256=8ypB19XIWGJStKyXnu2eQrskT0-oEOB-Kbeyv11x47M,11
