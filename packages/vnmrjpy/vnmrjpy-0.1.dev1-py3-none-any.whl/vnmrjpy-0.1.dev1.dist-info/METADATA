@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vnmrjpy
+Version: 0.1.dev1
+Summary: Handle VnmrJ MRI data and recostruction with Python
+Home-page: https://github.com/hlatkydavid/vnmrjpy
+Author: David Hlatky
+Author-email: hlatkydavid@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+Python stuff to work with Vnmrj.
+
+This is a work-in-progress version, most things are not working properly at this stage.
+
+Developmental release is for easier grid engine deployment and testing.
+
+
