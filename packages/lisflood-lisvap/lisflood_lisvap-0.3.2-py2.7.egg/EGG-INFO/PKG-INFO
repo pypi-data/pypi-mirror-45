@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: lisflood-lisvap
+Version: 0.3.2
+Summary: LISVAP model python module
+Home-page: https://github.com/ec-jrc/lisflood-lisvap
+Author: Ad de Roo, Peter Burek, Johan van der Knijff, Domenico Nappo
+Author-email: domenico.nappo@ext.ec.europa.eu
+License: EUPL 1.2
+Description: UNKNOWN
+Keywords: lisflood lisvap efas evapotranspiration evaporation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Physics

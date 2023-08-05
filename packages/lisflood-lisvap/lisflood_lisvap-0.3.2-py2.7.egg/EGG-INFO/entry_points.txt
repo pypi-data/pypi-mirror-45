@@ -1,0 +1,3 @@
+[console_scripts]
+lisvap = lisvap.lisvap1:main
+
