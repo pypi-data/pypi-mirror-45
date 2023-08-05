@@ -1,0 +1,15 @@
+imod/__init__.py,sha256=7MEo530fPhSsg-MQ4LSAfeO6tk2yM6qqPMzKZ_XXanQ,7443
+imod/_version.py,sha256=gm9pBEi6RrmL4yoPLso_4i1pQJthnnnKsYbiQeE69eU,518
+imod/idf.py,sha256=7IejmxrBp4KmKFT-At-PIHVE94qRW6ksIhKKXYH6HfA,24373
+imod/ipf.py,sha256=vfEMf9-NgYQESYk0fQOLC7iBpeczXS96-5X0dfj6_4g,17136
+imod/rasterio.py,sha256=Y_u1GCBSS2N48tltmBpVpFErtqXxcH9kIBgC5Ef7hdQ,11783
+imod/run.py,sha256=jqf4lalLwk1y3e9EoZ11cuUlWU_NUPe8wqY277nOiI8,30040
+imod/tec.py,sha256=xs6ZbyM4tGQtjdK9NJsYANaBikDIa1eFiW2XlKnjIhM,6225
+imod/util.py,sha256=BOI09qR9RL6TeYvyDTxQy4wqvolPABijUMlfOxPwicE,5960
+imod/templates/runfile.j2,sha256=smk3un4R0_W_Z-9nvp5XbyZpd_wGhBI9B3c7cq6l1bk,1806
+imod/templates/seawat_runfile.j2,sha256=gjtDbZ7ilvGYLQzPy1b0ZO9JSHeJJ3wJuioxuVOgsGU,8103
+imod-0.6.1.dist-info/LICENSE,sha256=1SdsGnnrzHYS40DvZjRVmsTY_YpgoCHqSBbdc8IF79U,1081
+imod-0.6.1.dist-info/METADATA,sha256=l4NYw4mpIKk5hMQoI5Ur7xnw3bzZquY-fBZC8sOM0IY,3721
+imod-0.6.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+imod-0.6.1.dist-info/top_level.txt,sha256=a15Z2tKDkuSPm52fAxtuKfF53Jr5oiadc--Ag9wirhQ,5
+imod-0.6.1.dist-info/RECORD,,
