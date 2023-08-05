@@ -1,0 +1,10 @@
+plover_dictionary_builder/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plover_dictionary_builder/dictionary_builder.py,sha256=WJPLg_6f8HZN2xWQH1htN9NSxmHQhV_qB80FwUpU9q0,10485
+plover_dictionary_builder/dictionary_builder_ui.py,sha256=-CO3md0Rsy7gKcMszwaxLTO6VcqdLmflakihp6LKqjs,8893
+plover_dictionary_builder/resources_rc.py,sha256=8criW7utqhXKayWLixhwPifeHawFsbJSyPZ6aFKUBhw,20604
+plover_dictionary_builder-0.1.0.dist-info/METADATA,sha256=wvrJ3d8V_lmZEhpwiCo5Jf8A0ndCL-7Au4GF6q35lLg,3999
+plover_dictionary_builder-0.1.0.dist-info/WHEEL,sha256=NvLheO0f8_uAcwoMijaCN7IVIIaldpzEnN1plXS6P6E,97
+plover_dictionary_builder-0.1.0.dist-info/entry_points.txt,sha256=h5xbEjdV2IH8f0_E75kGTFEUlw26X1ELR2UZYCFK-Q8,106
+plover_dictionary_builder-0.1.0.dist-info/top_level.txt,sha256=_bHtEUj7xchb2CDN6OAR7r55P1bW02QQnjjx4kOOmlw,26
+plover_dictionary_builder-0.1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+plover_dictionary_builder-0.1.0.dist-info/RECORD,,
