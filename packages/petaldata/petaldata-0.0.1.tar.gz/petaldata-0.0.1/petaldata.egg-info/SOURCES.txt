@@ -1,0 +1,7 @@
+README.md
+setup.py
+petaldata/__init__.py
+petaldata.egg-info/PKG-INFO
+petaldata.egg-info/SOURCES.txt
+petaldata.egg-info/dependency_links.txt
+petaldata.egg-info/top_level.txt

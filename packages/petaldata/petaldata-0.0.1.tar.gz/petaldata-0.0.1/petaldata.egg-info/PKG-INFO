@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: petaldata
+Version: 0.0.1
+Summary: Python bindings for the PetalData API
+Home-page: https://github.com/petaldata/petaldata-python
+Author: Derek Haynes
+Author-email: derek@petaldata.com
+License: UNKNOWN
+Description: # PetalData Python Library
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
