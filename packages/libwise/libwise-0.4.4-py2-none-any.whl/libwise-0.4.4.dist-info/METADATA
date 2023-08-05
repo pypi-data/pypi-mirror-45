@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: libwise
+Version: 0.4.4
+Summary: Various utilities for the WISE package
+Home-page: https://github.com/flomertens/libwise
+Author: Florent Mertens
+Author-email: flomertens@gmail.com
+License: GPL2
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: skimage
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: pyregion
+Requires-Dist: uncertainties
+Requires-Dist: pymorph
+
+UNKNOWN
+
+
