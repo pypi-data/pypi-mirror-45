@@ -1,0 +1,4 @@
+[distutils.commands]
+build = setuptools_black.setuptools_command:BuildCommand
+format = setuptools_black.setuptools_command:FormatCommand
+
