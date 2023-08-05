@@ -1,0 +1,9 @@
+_aws_crt_python.cpython-34m.so,sha256=jPv8YxfM65EPOYAf_zOo6yN9I3W3owaNUGLW5GV3TgI,3084869
+awscrt/io.py,sha256=0snyyc8V9Gav5qzmto3pHIkAGHKDC02MBCTO7_em3IE,3844
+awscrt/__init__.py,sha256=Pn9vcp3SuGZzaqETEgRtmrgIa-XlW0balQFHYHDD4ko,602
+awscrt/crypto.py,sha256=AQ7yOrbzQsBltgqEzJFMt_LT3Q5Ym_dPhHrPTcSzBJM,1858
+awscrt/mqtt.py,sha256=EZwR8LgSevQjreNMDQeKBQpuvhV2OYqPnWKwY1BJ1A4,6409
+awscrt-0.2.10.dist-info/RECORD,,
+awscrt-0.2.10.dist-info/METADATA,sha256=NFUPfe6UeVLgVY3pC4FSsjdT17Jdv-enbhUXrX-vLsg,580
+awscrt-0.2.10.dist-info/top_level.txt,sha256=K-iDGDVCqPZjWTzX2DJlk1rOgBGkQWMqGIHBWtq9Q_w,23
+awscrt-0.2.10.dist-info/WHEEL,sha256=Tw3x8FyoUar3492cISWq7lBHsUFHyGB986JcxD9jR4Q,107
