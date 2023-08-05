@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyportus
+Version: 0.5.0
+Summary: Should not be used directly! Please use the 'Portus' package (https://pypi.org/project/portus/).
+Home-Page: https://ccp-project.github.io
+Author: Frank Cangialosi <frankc@csail.mit.edu>
+Author-Email: Frank Cangialosi <frankc@csail.mit.edu>
+License: ISC
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+This package is an internal dependency and should not be used directly. Please use https://pypi.org/project/portus/.
+
+### More details
+
+This package provides Python bindings for the Portus library (an implementation of CCP in Rust). We have also written a Python class interface and some safety checking in Python on top of this package, which provides a much nicer interface to Portus. However, the bindings are currently built with pyo3-pack, which unfortunately does not yet support mixing Python and native Rust code in the same wheel. Thus, this package contains just the Rust part, and the 'Portus' python package contains the Python interface and uses this package as a dependency. Please use the 'Portus' package linked above and not this one. 
+
