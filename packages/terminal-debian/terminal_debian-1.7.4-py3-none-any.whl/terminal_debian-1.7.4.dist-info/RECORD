@@ -1,0 +1,16 @@
+terminal_debian/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_debian/apt.py,sha256=8x51Du71zzwxl9rdNYQw063rKxzm2SnMABTsZMf1lME,1340
+terminal_debian/menu.py,sha256=e8pGDJXV0SKynvZs-_d2HwkYC0xrNv3KyLwM-KEsqjs,4594
+terminal_debian/style.py,sha256=uANEhhWeet1MIhMakiiwihf27K2wudd0okoZHq78cRk,1391
+terminal_debian/users.py,sha256=Vqa63QMlDhZRXK2N-q6qFnoAC3_A9q5XF_qtpqx9dCU,6113
+terminal_debian/utils.py,sha256=gmz6i1red0bbBiQ8A05ATrw0K8v_AN4PSusU6tgHn2k,6555
+terminal_debian/drives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_debian/drives/common.py,sha256=qwr3pWxkEbZ3Qa686CatgsGqwl9MZgxpIoq0HkRiIkU,6539
+terminal_debian/drives/drive.py,sha256=ImQ1Lr-sFwd1rpgChnriL0ZKjPtMwJwddvI2uPXLyD4,13047
+terminal_debian/drives/logical_volume.py,sha256=mOdOTvOpFZCRlQyO_r0eyqsA5jR5tqIRgt40JMqGyvo,10596
+terminal_debian/drives/volume_group.py,sha256=xzjvwy6-zjmYJitFRASN3VVI36LIS83lfElt3Yg1rQk,5534
+terminal_debian-1.7.4.dist-info/METADATA,sha256=n5SPfOQIJfIls0tdeBqJ6Ha1KFHwCEIR7pEXROUJPdU,990
+terminal_debian-1.7.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+terminal_debian-1.7.4.dist-info/top_level.txt,sha256=aBznY4od6v7J1cA4bxP4pLtNrc0f_QgGwM3Mu1Vi3iU,16
+terminal_debian-1.7.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+terminal_debian-1.7.4.dist-info/RECORD,,
