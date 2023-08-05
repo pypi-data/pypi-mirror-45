@@ -1,0 +1,195 @@
+QWidget
+{
+    font-size: 24px;
+}
+
+/*** Elements ***/
+
+QWidget#Element
+{
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+QLabel#PathParameterName
+{
+     margin-top: 10px;
+}
+
+QLineEdit#PathParameterValue
+{
+    width: 156px;
+    margin-top: 6px;
+}
+
+QPushButton#PathParameterButton
+{
+    padding: 4;
+    padding-bottom: 2;
+}
+
+QWidget#InOutButton
+{
+    margin: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+}
+
+QLabel#ElementLabel
+{
+    padding: 4px;
+    padding-bottom: 6px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border-bottom: 2px dotted gray;
+}
+
+QLabel#ElementStatusLabel
+{
+    font-size: 18px;
+}
+
+QLabel#OutputPreview
+{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+QWidget#OutputsPreview
+{
+    border-top: 2px dotted gray;
+}
+
+/* PushButton params */
+QPushButton {
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    height: 25px;
+    width: 24px;
+    margin-top: 1;  /*to align with combobox*/
+}
+
+/* SpinBox params */
+QSpinBox, QDoubleSpinBox
+{
+    border-width: 2px;
+    border-radius: 5px;
+    padding-right: 3px;
+}
+QSpinBox::up-button, QSpinBox::down-button, QDoubleSpinBox::up-button, QDoubleSpinBox::down-button
+{
+    height: 4px;
+    width: 10px;
+    padding: 7px;
+}
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow
+{
+    width: 6px;
+    height: 6px;
+}
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow
+{
+    width: 6px;
+    height: 6px;
+}
+
+/* Combobox */
+QComboBox, QWidget#Element QLineEdit
+{
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+    height: 25px;
+}
+QComboBox::drop-down
+{
+    width: 10px;
+    padding: 6px;
+}
+QComboBox::down-arrow {
+
+    width: 6px;
+    height: 6px;
+}
+
+
+/*** Dialogs ***/
+
+QDialog#CodeDialog QLabel, QDialog#CodeDialog QPlainTextEdit
+{
+}
+
+QDialog#CodeDialog QPlainTextEdit
+{
+}
+
+
+/*** Toolbox ***/
+
+QLabel#ToolboxTitle
+{
+    padding: 12px;
+}
+
+/* Search box */
+QLineEdit
+{
+    border: 2px solid;
+    border-radius: 14px;
+    margin: 5px;
+}
+
+/* Toolbox items */
+QTreeView#ToolboxTree:item
+{
+    padding: 10px;
+    border-bottom: 2px dotted gray;
+}
+
+/*** Tabs ***/
+
+QTabBar::tab {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 0px;
+}
+
+
+/*** Scrollbars ***/
+
+QScrollBar:horizontal
+{
+     height: 17px;
+}
+
+QScrollBar:vertical
+{
+      width: 17px;
+}
+
+
+/*** Menu ***/
+
+QMenuBar::item
+{
+    padding: 8px;
+}
