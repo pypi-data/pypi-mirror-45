@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: isp_sdk
+Version: 0.4.3
+Summary: ISP Panel Api SDK
+Home-page: https://github.com/Underlor/isp_api
+Author: Popov Aleksander
+Author-email: admin@alexue4.ru
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: Данная библиотека разработана для удобного общения с API ISP Panel
+        
+        Реализованы только методы используемые нашей командой, но вы достаточно просто можете расширить функционал
+        
+        PyPi: https://pypi.org/project/ISP-SDK/
+Platform: UNKNOWN
