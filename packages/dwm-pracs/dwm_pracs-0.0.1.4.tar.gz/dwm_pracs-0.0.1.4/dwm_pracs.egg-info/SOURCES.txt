@@ -1,0 +1,8 @@
+README.md
+setup.py
+apriori/__init__.py
+dwm_pracs/__init__.py
+dwm_pracs.egg-info/PKG-INFO
+dwm_pracs.egg-info/SOURCES.txt
+dwm_pracs.egg-info/dependency_links.txt
+dwm_pracs.egg-info/top_level.txt
