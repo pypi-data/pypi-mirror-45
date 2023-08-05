@@ -1,0 +1,3 @@
+[console_scripts]
+ass = aws3.cli:main
+
