@@ -1,0 +1,192 @@
+2019-04-23 07:38:19,082 - ktdk.config - INFO - [CFG] Config: {
+    "test_files": "test_files",
+    "workspace": "workspace",
+    "submission": "submission",
+    "kontr_tests": "kontr_tests",
+    "entry_point": "instructions.py",
+    "results": null,
+    "timeout": 300,
+    "suite_timeout": 3000,
+    "registered_tags": [],
+    "dump_result": false,
+    "dump_log": false,
+    "dump_passed": false,
+    "safe_suffixes": false,
+    "webhook_url": null,
+    "webhook_token": "None",
+    "cpp_compiler": "clang++",
+    "cpp_compiler_flags": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-g"
+    ],
+    "c_compiler": "gcc",
+    "c_compiler_flags": [
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-g"
+    ],
+    "valgrind_penalization": 0.7,
+    "valgrind_args": [
+        "--leak-check=full",
+        "--track-fds=yes"
+    ],
+    "make_command": "make",
+    "make_timeout": 300,
+    "make_args": [],
+    "cmake_command": "cmake",
+    "cmake_timeout": 300,
+    "cmake_args": [],
+    "submission_config_file": "submission_config.yml",
+    "clang_format_style": "pb161",
+    "clang_format_styles_dir": "codestyles",
+    "clang_format_avail_styles": [
+        "PB071",
+        "PB161",
+        "LLVM",
+        "Google",
+        "Chromium",
+        "Mozilla",
+        "WebKit",
+        "Mesos",
+        "VisualStudio",
+        "Linux"
+    ],
+    "ktdk_config_path": ".ktdk_config.yml",
+    "log_level": "DEBUG",
+    "devel": true,
+    "submission_config": null
+}
+2019-04-23 07:38:19,082 - ktdk - INFO - [KTDK] Version 0.4.1
+2019-04-23 07:38:19,117 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-23 07:38:19,117 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-23 07:38:19,117 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-23 07:38:19,124 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-23 07:38:19,129 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-23 07:38:19,133 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-23 07:38:19,144 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Expected: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-23 07:38:19,144 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Provided: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-23 07:38:19,148 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Expected: Ahoj svet ako sa mas?
+Ja sa mam zle.
+Same
+
+2019-04-23 07:38:19,149 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Provided: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Not same
+
+2019-04-23 07:38:19,178 - ktdk.asserts - WARNING - [CHK] Failed: False
+2019-04-23 07:38:19,192 - ktdk.declarative.resolvers - DEBUG - [RESOLV] Resolved using BuildTaskResolver: CCompilerTask: {'name': 'c_compiler_task', 'namespace': '.c_compiler_task', 'description': None, 'tags': ['compile', 'command', 'build'], 'result': {'type': 'task', 'subtasks': {'state': 'PASS', 'ok': True}, 'effective': {'state': 'NONE', 'ok': False}, 'current': {'state': 'NONE', 'ok': False}}, 'type': 'required'}
+2019-04-23 07:38:19,305 - ktdk.config - DEBUG - [LOAD] CFG /home/pstanko/GDrive/School/Prog/kontr2/ktdk/ktdk/resources/config/defaults.yml: {'test_files': 'test_files', 'workspace': 'workspace', 'submission': 'submission', 'kontr_tests': 'kontr_tests', 'entry_point': 'instructions.py', 'results': None, 'timeout': 300, 'suite_timeout': 3000, 'registered_tags': [], 'dump_result': False, 'dump_log': False, 'dump_passed': False, 'safe_suffixes': False, 'webhook_url': None, 'webhook_token': 'None', 'cpp_compiler': 'clang++', 'cpp_compiler_flags': ['-std=c++17', '-Wall', '-Wextra', '-pedantic', '-g'], 'c_compiler': 'gcc', 'c_compiler_flags': ['-std=c99', '-Wall', '-Wextra', '-pedantic', '-g'], 'valgrind_penalization': 0.7, 'valgrind_args': ['--leak-check=full', '--track-fds=yes'], 'make_command': 'make', 'make_timeout': 300, 'make_args': [], 'cmake_command': 'cmake', 'cmake_timeout': 300, 'cmake_args': [], 'submission_config_file': 'submission_config.yml', 'clang_format_style': 'pb161', 'clang_format_styles_dir': 'codestyles', 'clang_format_avail_styles': ['PB071', 'PB161', 'LLVM', 'Google', 'Chromium', 'Mozilla', 'WebKit', 'Mesos', 'VisualStudio', 'Linux'], 'ktdk_config_path': '.ktdk_config.yml'}
+2019-04-23 07:38:19,305 - ktdk.config - DEBUG - [CFG] KTDK config not provided: /tmp/pytest-of-pstanko/pytest-66/test_decl_hello_test0/test_files/.ktdk_config.yml]
+2019-04-23 07:38:19,306 - ktdk - DEBUG - [CONFIG] Submission config files has not been provided - /tmp/pytest-of-pstanko/pytest-66/test_decl_hello_test0/submission/submission_config.yml
+2019-04-24 08:54:13,582 - ktdk.config - INFO - [CFG] Config: {
+    "test_files": "test_files",
+    "workspace": "workspace",
+    "submission": "submission",
+    "kontr_tests": "kontr_tests",
+    "entry_point": "instructions.py",
+    "results": null,
+    "timeout": 300,
+    "suite_timeout": 3000,
+    "registered_tags": [],
+    "dump_result": false,
+    "dump_log": false,
+    "dump_passed": false,
+    "safe_suffixes": false,
+    "webhook_url": null,
+    "webhook_token": "None",
+    "cpp_compiler": "clang++",
+    "cpp_compiler_flags": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-g"
+    ],
+    "c_compiler": "gcc",
+    "c_compiler_flags": [
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-g"
+    ],
+    "valgrind_penalization": 0.7,
+    "valgrind_args": [
+        "--leak-check=full",
+        "--track-fds=yes"
+    ],
+    "make_command": "make",
+    "make_timeout": 300,
+    "make_args": [],
+    "cmake_command": "cmake",
+    "cmake_timeout": 300,
+    "cmake_args": [],
+    "submission_config_file": "submission_config.yml",
+    "clang_format_style": "pb161",
+    "clang_format_styles_dir": "codestyles",
+    "clang_format_avail_styles": [
+        "PB071",
+        "PB161",
+        "LLVM",
+        "Google",
+        "Chromium",
+        "Mozilla",
+        "WebKit",
+        "Mesos",
+        "VisualStudio",
+        "Linux"
+    ],
+    "ktdk_config_path": ".ktdk_config.yml",
+    "log_level": "DEBUG",
+    "devel": true,
+    "submission_config": null
+}
+2019-04-24 08:54:13,583 - ktdk - INFO - [KTDK] Version 0.4.0
+2019-04-24 08:54:13,609 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-24 08:54:13,609 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-24 08:54:13,610 - ktdk.runtime.tags - WARNING - There is some error: 'NoneType' object is not subscriptable
+2019-04-24 08:54:13,615 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-24 08:54:13,618 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-24 08:54:13,622 - ktdk.asserts - WARNING - [CHK] Failed: must fail
+2019-04-24 08:54:13,633 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Expected: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-24 08:54:13,633 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Provided: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-24 08:54:13,633 - ktdk.utils - DEBUG - [DECODE] Decoding[<class 'str'>]: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-24 08:54:13,633 - ktdk.utils - DEBUG - [DECODE] Decoding[<class 'str'>]: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Same
+2019-04-24 08:54:13,637 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Expected: Ahoj svet ako sa mas?
+Ja sa mam zle.
+Same
+
+2019-04-24 08:54:13,638 - ktdk.asserts.matchers.basic - DEBUG - [DIFF] Provided: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Not same
+
+2019-04-24 08:54:13,638 - ktdk.utils - DEBUG - [DECODE] Decoding[<class 'str'>]: Ahoj svet ako sa mas?
+Ja sa mam dobre.
+Not same
+
+2019-04-24 08:54:13,638 - ktdk.utils - DEBUG - [DECODE] Decoding[<class 'str'>]: Ahoj svet ako sa mas?
+Ja sa mam zle.
+Same
+
+2019-04-24 08:54:13,669 - ktdk.asserts - WARNING - [CHK] Failed: False
+2019-04-24 08:54:13,683 - ktdk.declarative.resolvers - DEBUG - [RESOLV] Resolved using BuildTaskResolver: CCompilerTask: {'name': 'c_compiler_task', 'namespace': '.c_compiler_task', 'description': None, 'tags': ['build', 'command', 'compile'], 'result': {'type': 'task', 'subtasks': {'state': 'PASS', 'ok': True}, 'effective': {'state': 'NONE', 'ok': False}, 'current': {'state': 'NONE', 'ok': False}}, 'type': 'required'}
+2019-04-24 08:54:13,705 - ktdk.config - DEBUG - [LOAD] CFG /home/pstanko/GDrive/School/Prog/kontr2/ktdk/ktdk/resources/config/defaults.yml: {'test_files': 'test_files', 'workspace': 'workspace', 'submission': 'submission', 'kontr_tests': 'kontr_tests', 'entry_point': 'instructions.py', 'results': None, 'timeout': 300, 'suite_timeout': 3000, 'registered_tags': [], 'dump_result': False, 'dump_log': False, 'dump_passed': False, 'safe_suffixes': False, 'webhook_url': None, 'webhook_token': 'None', 'cpp_compiler': 'clang++', 'cpp_compiler_flags': ['-std=c++17', '-Wall', '-Wextra', '-pedantic', '-g'], 'c_compiler': 'gcc', 'c_compiler_flags': ['-std=c99', '-Wall', '-Wextra', '-pedantic', '-g'], 'valgrind_penalization': 0.7, 'valgrind_args': ['--leak-check=full', '--track-fds=yes'], 'make_command': 'make', 'make_timeout': 300, 'make_args': [], 'cmake_command': 'cmake', 'cmake_timeout': 300, 'cmake_args': [], 'submission_config_file': 'submission_config.yml', 'clang_format_style': 'pb161', 'clang_format_styles_dir': 'codestyles', 'clang_format_avail_styles': ['PB071', 'PB161', 'LLVM', 'Google', 'Chromium', 'Mozilla', 'WebKit', 'Mesos', 'VisualStudio', 'Linux'], 'ktdk_config_path': '.ktdk_config.yml'}
+2019-04-24 08:54:13,705 - ktdk.config - DEBUG - [CFG] KTDK config not provided: /tmp/pytest-of-pstanko/pytest-0/test_decl_hello_test0/test_files/.ktdk_config.yml]
+2019-04-24 08:54:13,706 - ktdk - DEBUG - [CONFIG] Submission config files has not been provided - /tmp/pytest-of-pstanko/pytest-0/test_decl_hello_test0/submission/submission_config.yml
