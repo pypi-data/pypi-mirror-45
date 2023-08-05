@@ -1,0 +1,13 @@
+MANIFEST.in
+README.txt
+setup.py
+isovectpy/__init__.py
+isovectpy/ifs.py
+isovectpy/ifsData.npy
+isovectpy/isoData.npy
+isovectpy.egg-info/PKG-INFO
+isovectpy.egg-info/SOURCES.txt
+isovectpy.egg-info/dependency_links.txt
+isovectpy.egg-info/not-zip-safe
+isovectpy.egg-info/requires.txt
+isovectpy.egg-info/top_level.txt

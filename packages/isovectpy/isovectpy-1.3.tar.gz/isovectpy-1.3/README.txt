@@ -1,0 +1,1 @@
+The program computes both isotope aggregated and fine structure in mass spectrometry.
