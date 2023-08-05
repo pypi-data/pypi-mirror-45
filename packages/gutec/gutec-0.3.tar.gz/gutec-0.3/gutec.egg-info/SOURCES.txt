@@ -1,0 +1,17 @@
+README.md
+setup.py
+gutec/__init__.py
+gutec/cli.py
+gutec/gparser.py
+gutec/grammar.py
+gutec/gutec.py
+gutec/lexer.py
+gutec/scope.py
+gutec/semantic_analysis.py
+gutec/tokens.py
+gutec/utilities.py
+gutec.egg-info/PKG-INFO
+gutec.egg-info/SOURCES.txt
+gutec.egg-info/dependency_links.txt
+gutec.egg-info/entry_points.txt
+gutec.egg-info/top_level.txt
