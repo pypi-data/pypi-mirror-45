@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: opsgenie_swagger
+Version: 1.0.7
+Summary: OpsGenie REST API
+Home-page: https://github.com/opsgenie/opsgenie-python-sdk
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description:     OpsGenie OpenAPI Specification  # noqa: E501
+            
+Keywords: Swagger,OpsGenie REST API
+Platform: UNKNOWN
