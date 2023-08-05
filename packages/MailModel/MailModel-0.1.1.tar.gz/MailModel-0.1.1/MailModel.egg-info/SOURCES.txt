@@ -1,0 +1,9 @@
+README.md
+setup.py
+MailModel/Mail.py
+MailModel/__init__.py
+MailModel.egg-info/PKG-INFO
+MailModel.egg-info/SOURCES.txt
+MailModel.egg-info/dependency_links.txt
+MailModel.egg-info/requires.txt
+MailModel.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: MailModel
+Version: 0.1.1
+Summary: mail to tell model situation
+Home-page: https://github.com/lcylmhlcy/MailModel
+Author: lcylmhlcy
+Author-email: lcylmhlcy@163.com
+License: MIT Licence
+Description: mail to tell model training situation
+Keywords: pip,mailtool,modeltrain
+Platform: any
+Requires-Python: >=3.6
