@@ -1,0 +1,10 @@
+libwise
+numpy
+scipy
+scikit-image
+astropy
+matplotlib
+pyregion
+uncertainties
+pymorph
+jsonpickle
