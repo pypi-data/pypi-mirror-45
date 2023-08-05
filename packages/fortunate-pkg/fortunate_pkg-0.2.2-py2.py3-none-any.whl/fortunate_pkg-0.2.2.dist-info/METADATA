@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: fortunate-pkg
+Version: 0.2.2
+Summary: Failure-ignoring installer
+Home-page: UNKNOWN
+Author: Sviatoslav Sydorenko
+Author-email: wk+open-source@sydorenko.org.ua
+License: UNKNOWN
+Project-URL: CI: Travis, https://travis-ci.com/webknjaz/fortunate-pkg
+Project-URL: GitHub: issues, https://github.com/webknjaz/fortunate-pkg/issues
+Project-URL: GitHub: repo, https://github.com/webknjaz/fortunate-pkg
+Keywords: hack,package,installer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.6,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Requires-Dist: pip
+Provides-Extra: pep517
+Requires-Dist: setuptools (>=41.0.0) ; extra == 'pep517'
+Requires-Dist: toml ; extra == 'pep517'
+Requires-Dist: wheel ; extra == 'pep517'
+
+.. image:: https://img.shields.io/pypi/v/fortunate-pkg.svg
+   :target: https://pypi.org/project/fortunate-pkg
+
+.. image:: https://img.shields.io/travis/com/webknjaz/fortunate-pkg/master.svg?label=Linux%20build%20%40%20Travis%20CI
+   :target: https://travis-ci.com/webknjaz/fortunate-pkg
+
+This is a failure-ignoring installer.
+
+Status
+======
+
+Experimental.
+
+Contribute Fortunate Pkg
+========================
+**Want to add something to upstream?** Feel free to submit a PR or file an issue
+if unsure.
+Note that PR is more likely to be accepted if it includes tests and detailed
+description helping maintainers to understand it better :tada:
+
+Oh, and be pythonic, please :snake:
+
+**Don't know how?** Check out `How to Contribute to Open Source
+<https://opensource.guide/how-to-contribute/>`_ article by GitHub :rocket:
+
+
