@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mac-app-pid
+Version: 2019.4.15
+Summary: get macOS app pid
+Home-page: https://github.com/looking-for-a-job/mac-app-pid
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install mac-app-pid
+        ```
+        
+        #### Features
+        +   accepts app name, bundleID, path
+        
+        #### Scripts usage
+        ```bash
+        usage: app-pid app
+        ```
+        
+        #### Examples
+        ```bash
+        $ app-pid "itunes"
+        <pid>
+        $ app-pid "com.apple.iTunes"
+        <pid>
+        $ app-pid "/Applications/iTunes.app"
+        <pid>
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: mac app
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
