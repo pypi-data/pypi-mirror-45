@@ -1,0 +1,10 @@
+python-dateutil
+pytz
+watchdog
+
+[json-path]
+jsonpath-ng
+
+[mkdocs]
+mkdocs-material
+markdown-include

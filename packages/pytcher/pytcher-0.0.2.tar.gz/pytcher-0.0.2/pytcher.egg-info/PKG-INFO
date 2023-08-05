@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytcher
+Version: 0.0.2
+Summary: Micro framework for Python
+Home-page: http://github.com/chimpler/pytcher
+Author: Francois Dang Ngoc
+Author-email: francois.dangngoc@gmail.com
+License: Apache License 2.0
+Description: Micro framework for Python
+Keywords: python rest routing framework
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: json-path
+Provides-Extra: mkdocs
