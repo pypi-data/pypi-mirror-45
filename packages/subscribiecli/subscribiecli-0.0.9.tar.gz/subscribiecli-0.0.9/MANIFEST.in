@@ -1,0 +1,3 @@
+include logging.conf
+recursive-include examples *.txt *.py
+prune examples/sample?/build
