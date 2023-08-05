@@ -1,0 +1,17 @@
+README.md
+setup.py
+bin/genome
+genome_reader/__init__.py
+genome_reader/genome.py
+genome_reader/genotype.py
+genome_reader/snp.py
+genome_reader/version.py
+genome_reader.egg-info/PKG-INFO
+genome_reader.egg-info/SOURCES.txt
+genome_reader.egg-info/dependency_links.txt
+genome_reader.egg-info/requires.txt
+genome_reader.egg-info/top_level.txt
+genome_reader/tests/__init__.py
+genome_reader/tests/conftest.py
+genome_reader/tests/test.txt
+genome_reader/tests/test_genome.py
