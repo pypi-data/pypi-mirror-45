@@ -1,0 +1,9 @@
+README.md
+setup.py
+pelican_github_activity/__init__.py
+pelican_github_activity/github_activity.py
+pelican_github_activity.egg-info/PKG-INFO
+pelican_github_activity.egg-info/SOURCES.txt
+pelican_github_activity.egg-info/dependency_links.txt
+pelican_github_activity.egg-info/not-zip-safe
+pelican_github_activity.egg-info/top_level.txt
