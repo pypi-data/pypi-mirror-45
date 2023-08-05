@@ -1,0 +1,15 @@
+kidx_core_sdk/__init__.py,sha256=7_bmBQOncrw26GqWmxHjr1xWS2MbM_ceSGKFfB7AgZw,7282
+kidx_core_sdk/constants.py,sha256=B4-sv5BMmJjLc6ndRG2IV5c534xdtPKlCjAAeDPsrX4,27
+kidx_core_sdk/endpoint.py,sha256=3Kn32TQfmZzncGs9SFz6k_5jV4CRH02tPWzp0MDsg2E,4716
+kidx_core_sdk/events.py,sha256=KirIznIRqav0XjCrTEC6hCeczErMGFs4f2F4gU2o_Jw,3785
+kidx_core_sdk/executor.py,sha256=1iXTawnvEpUMVO1mfN4mdpP0ksotfzjLoLNPF6dVrmA,6253
+kidx_core_sdk/forms.py,sha256=TtKDI2EyzOzKwCmzvy22DdmztHUx5DcSxkdLv1d64ug,18392
+kidx_core_sdk/utils.py,sha256=Hco61OS1sM3XeMllb9S1ohKQuGOPvWxpcRmUfP4G7MQ,2027
+kidx_core_sdk/version.py,sha256=pMbDZZlrwvz8tU4ZBBHw1d_YzWhR9xj8opqRu3aVVBM,174
+kidx_core_sdk/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kidx_core_sdk/cli/arguments.py,sha256=yeki6k4PVNzWibYQv_v9g8xaBJKnVVY6EDeSqrHf2Zc,871
+kidx_core_sdk-0.0.1a1.dist-info/LICENSE.txt,sha256=r_Z2dK3z9XAxPg7PppkVw7S0NDGJaID5rrjCl1Gm878,11561
+kidx_core_sdk-0.0.1a1.dist-info/METADATA,sha256=5aPy7epsjAckjVCIGU4nQmG5K1igktbc_ld0D-pUffw,5124
+kidx_core_sdk-0.0.1a1.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+kidx_core_sdk-0.0.1a1.dist-info/top_level.txt,sha256=m0Is38jKJ-Jgw0azOZbItsTzEsbwnkHkl6w0J1xfjTk,14
+kidx_core_sdk-0.0.1a1.dist-info/RECORD,,
