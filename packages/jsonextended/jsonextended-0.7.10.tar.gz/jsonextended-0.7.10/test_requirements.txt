@@ -1,0 +1,7 @@
+pytest>=3.6
+pytest-cov
+ijson
+numpy
+pint
+h5py
+ruamel.yaml
