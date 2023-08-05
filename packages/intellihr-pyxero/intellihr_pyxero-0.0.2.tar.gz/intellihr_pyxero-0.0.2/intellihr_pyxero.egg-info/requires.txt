@@ -1,0 +1,6 @@
+six>=1.8.0
+requests>=1.1.0
+requests-oauthlib>=0.3.0
+python-dateutil>=2.1
+PyJWT>=1.6.4
+cryptography>=1.3.1
