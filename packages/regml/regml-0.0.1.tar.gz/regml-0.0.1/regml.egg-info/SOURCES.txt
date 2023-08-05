@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+examples/Getting_Started_Demo.ipynb
+regml/RegML.py
+regml/RegML_GUI.py
+regml/__init__.py
+regml.egg-info/PKG-INFO
+regml.egg-info/SOURCES.txt
+regml.egg-info/dependency_links.txt
+regml.egg-info/requires.txt
+regml.egg-info/top_level.txt
