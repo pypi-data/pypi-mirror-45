@@ -1,0 +1,15 @@
+launchcontainer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+launchcontainer/browser_tests.py,sha256=HlTPScOZ0SWcIzgljF3DGZW2E3TjLee4OBrWIpcN-CA,1425
+launchcontainer/launchcontainer.py,sha256=rDgLmdz0mUwd2_rwH5kvaS8QYulBIQRk-cENIHLbYuI,12677
+launchcontainer/tests.py,sha256=G--Jqbf2vQp4XSWnfgiw2HWcYpRtbnToeWrRXvihSLQ,7680
+launchcontainer/static/css/launchcontainer.css,sha256=CYiGwKWkQ-NaQmEVlJT5T6zsHKfb5FiJoijAX1QiRB0,432
+launchcontainer/static/css/launchcontainer_edit.css,sha256=hB_bwz57-NdclF402pemdonqG3WNJqznZ49CLUJlfi0,76
+launchcontainer/static/html/launchcontainer.html,sha256=_Lz0xkroK_ifTNKE0kc0YC8blhyXaBBwdRtNGNGPg8w,855
+launchcontainer/static/html/launchcontainer_edit.html,sha256=9L3g2E_An18AHs-SHMI_hIkBP578ZZJseHurdpLUSRc,1489
+launchcontainer/static/js/src/launchcontainer.js,sha256=OCwLIPHwHmUWE8c2miSQYWqmWdEfkq6VQNtZrrryS64,6161
+launchcontainer/static/js/src/launchcontainer_edit.js,sha256=b1fkdPtE4mNvkejR26rW_hSZgC4GXPL7gaZ4ZgWTF4I,1366
+xblock_launchcontainer-2.2.0.dist-info/METADATA,sha256=SXRUOmx2W3hREszEtyU_TS_L26VTCUlhjZU_yhEApoQ,383
+xblock_launchcontainer-2.2.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+xblock_launchcontainer-2.2.0.dist-info/entry_points.txt,sha256=5mgicrDvkn6EyucKLePbANNQtAzNkom2TYVIApfsHzU,85
+xblock_launchcontainer-2.2.0.dist-info/top_level.txt,sha256=EjuMHfaKdpSTh51eI0cr9uZ3ZX8wd6dGjXujcrGDtew,16
+xblock_launchcontainer-2.2.0.dist-info/RECORD,,
