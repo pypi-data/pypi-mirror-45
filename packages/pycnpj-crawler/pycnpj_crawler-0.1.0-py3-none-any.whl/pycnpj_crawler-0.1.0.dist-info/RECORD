@@ -1,0 +1,9 @@
+pycnpj_crawler/__init__.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+pycnpj_crawler/crawler.py,sha256=LoziXEiKVhT9uICzL7wAVoJA-eKPzBJBYl4v4tkT978,529
+pycnpj_crawler/states/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycnpj_crawler/states/ba.py,sha256=QF0_pJkVaZHmnuqY6mq8Qv2ycw9UwpphvfyUeHaTXvM,3222
+pycnpj_crawler/states/crawling.py,sha256=6QKRUColbd-Xt3laa6UxcptbcqZrEzv2pnDvoJsxRTA,4136
+pycnpj_crawler/states/util.py,sha256=nGX45OouwoiP93SDSHpZjptGlAggiBOR4xPgGC7te-o,298
+pycnpj_crawler-0.1.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+pycnpj_crawler-0.1.0.dist-info/METADATA,sha256=OnJ08KyBX210LHDwj87y0rp83vOdKiBsxDyibPYpHzI,415
+pycnpj_crawler-0.1.0.dist-info/RECORD,,

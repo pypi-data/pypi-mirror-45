@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycnpj-crawler
+Version: 0.1.0
+Summary: 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Matheus Cardoso
+Author-email: matheus.mcas@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pycpfcnpj (>=1.5,<2.0)
+Requires-Dist: requests-html (>=0.10.0,<0.11.0)
+Requires-Dist: unidecode (>=1.0,<2.0)
