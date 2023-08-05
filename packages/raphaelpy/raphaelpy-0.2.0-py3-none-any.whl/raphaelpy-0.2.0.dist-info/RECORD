@@ -1,0 +1,12 @@
+raphaelpy/__init__.py,sha256=Gq90tlY8IRpsO6dLVABvmWomRFxsF6WW4i-Db82jVT8,1011
+raphaelpy/defs.py,sha256=z1NojOyG2U6OLOIQiV1kSeyF728hOWqJL5hf1DGg0AA,1342
+raphaelpy/element.py,sha256=xh3pyF-tgtiMFi3_NIweTJZUR2QPyVB9MxgX7uh6lR0,5978
+raphaelpy/paper.py,sha256=stO7H5VlUr6MbUNLkNqvjH5VtqCjuSgQ-S034G2xNe4,10581
+raphaelpy/raphael.py,sha256=fFf9aR0MNGfy4kwoMCFq8H4g9K5XRorbsLzJ6hOdXmQ,4179
+raphaelpy/set.py,sha256=3rBOnugOA5m3oPxENYsltUp6YT4Pdry2p6d35qvP4Fk,1770
+raphaelpy/utils.py,sha256=seOQhiYM6tN-2eWXEcM1UYdlyVipUbmSj_G6lboQfLg,11026
+raphaelpy-0.2.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+raphaelpy-0.2.0.dist-info/METADATA,sha256=TMXUsmfgU6ANabvWSWSRHufzDsO04lBotYoC4rc_ryQ,3213
+raphaelpy-0.2.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+raphaelpy-0.2.0.dist-info/top_level.txt,sha256=ZN9jyKqJi6X-LwsegK82WUhYLb8IOaHHyhyM1gm-pZA,10
+raphaelpy-0.2.0.dist-info/RECORD,,
