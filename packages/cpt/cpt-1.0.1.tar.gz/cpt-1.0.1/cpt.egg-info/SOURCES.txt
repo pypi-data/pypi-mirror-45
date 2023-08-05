@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cpt/alphabet.c
+cpt/cpt.cpp
+cpt.egg-info/PKG-INFO
+cpt.egg-info/SOURCES.txt
+cpt.egg-info/dependency_links.txt
+cpt.egg-info/top_level.txt
