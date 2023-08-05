@@ -1,0 +1,6 @@
+README.md
+setup.py
+JK_Accounts.egg-info/PKG-INFO
+JK_Accounts.egg-info/SOURCES.txt
+JK_Accounts.egg-info/dependency_links.txt
+JK_Accounts.egg-info/top_level.txt

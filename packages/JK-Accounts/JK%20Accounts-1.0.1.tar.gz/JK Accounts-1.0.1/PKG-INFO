@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: JK Accounts
+Version: 1.0.1
+Summary: Make accounts for JK apps with this module. Just run jk-accounts.main()
+Home-page: https://github.com/Jackkillian/JK-Accounts
+Author: jackkillian
+License: UNKNOWN
+Description: # JK Accounts v1.0.0
+        
+        [JK Accounts wiki](https://github.com/Jackkillian/JK-Accounts/wiki)
+        [JK Accounts on GitHub](https://github.com/Jackkillian/JK-Accounts)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Description-Content-Type: text/markdown
