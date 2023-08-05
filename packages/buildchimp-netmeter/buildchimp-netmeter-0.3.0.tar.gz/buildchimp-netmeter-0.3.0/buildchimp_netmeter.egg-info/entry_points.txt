@@ -1,0 +1,7 @@
+[console_scripts]
+netmeter-fping = netmeter.command:fping
+netmeter-init = netmeter.command:init
+netmeter-relay = netmeter.command:relay
+netmeter-send = netmeter.command:send
+netmeter-speedtest = netmeter.command:speedtest
+
