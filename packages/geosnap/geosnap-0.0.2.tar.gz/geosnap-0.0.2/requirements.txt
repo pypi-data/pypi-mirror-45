@@ -1,0 +1,16 @@
+pandas
+cython
+geopandas
+hdbscan
+matplotlib
+scikit-learn
+seaborn
+pyarrow
+libpysal
+mapclassify
+spenc
+giddy
+xlrd
+cenpy
+quilt
+region @ git+https://github.com/pysal/region@master#egg=region
