@@ -1,0 +1,64 @@
+Metadata-Version: 2.0
+Name: proxytest
+Version: 0.2.8
+Summary: A simple script to test if one or more HTTP proxies are working by fetching a webpage.
+Home-page: https://github.com/yoleg/proxytest
+Author: Oleg Pryadko
+Author-email: oleg@olegpryadko.com
+Maintainer: Oleg Pryadko
+Maintainer-email: oleg@olegpryadko.com
+License: MIT
+Keywords: proxy test command multiple proxies
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (<3.0,>=2.21.0); python_version < "3.5.3"
+Requires-Dist: typing (<4.0,>=3.6.6); python_version < "3.5.3"
+Requires-Dist: aiohttp (<4.0,>=3.5.4); python_version > "3.5.3"
+
+# proxytest
+
+[![Build Status](https://travis-ci.org/yoleg/proxytest.svg?branch=master)](https://travis-ci.org/yoleg/proxytest)
+[![PyPI version](https://badge.fury.io/py/proxytest.svg)](https://badge.fury.io/py/proxytest)
+
+Simple command-line script to check if multiple proxies are up by fetching a webpage through each.
+
+## Installation:
+
+Requires Python 3 (tested on 3.5 and above).
+
+```
+python3 -m pip install proxytest
+```
+
+## Usage examples:
+
+```
+proxytest 1.2.3.4:8080 1.2.3.4:8081
+
+proxytest 1.2.3.4:8080-8081  # same as above
+
+proxytest "http://user:pass@exampleproxy.com:3128" "111.222.333.444:8080-8082" "111.222.333.444:8085-8090" --verbose
+
+proxytest "1.2.3.4:1234" --url="https://example.com"  --print
+
+proxytest --help
+
+python3 -m proxytest --version
+```
+
+## Exit codes:
+
+* 0 - all proxy requests succeeded
+* 1 - one or more proxy requests failed
+* 2 - could not test proxies (e.g. due to input error or system error)
+
+## Links:
+
+Homepage: https://github.com/yoleg/proxytest
+
+A list of free proxies that may be useful for testing (not verified or in any way associated with this project): https://hidemyna.me/en/proxy-list/
+
+
