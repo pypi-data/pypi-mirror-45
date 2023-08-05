@@ -1,0 +1,10 @@
+README.md
+setup.py
+siderunner/__init__.py
+siderunner/__version__.py
+siderunner/siderunner.py
+siderunner.egg-info/PKG-INFO
+siderunner.egg-info/SOURCES.txt
+siderunner.egg-info/dependency_links.txt
+siderunner.egg-info/requires.txt
+siderunner.egg-info/top_level.txt
