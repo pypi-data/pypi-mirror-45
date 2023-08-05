@@ -1,0 +1,8 @@
+setup.py
+package/__init__.py
+package/rtsp_curl.py
+rtsp_curl.egg-info/PKG-INFO
+rtsp_curl.egg-info/SOURCES.txt
+rtsp_curl.egg-info/dependency_links.txt
+rtsp_curl.egg-info/requires.txt
+rtsp_curl.egg-info/top_level.txt
