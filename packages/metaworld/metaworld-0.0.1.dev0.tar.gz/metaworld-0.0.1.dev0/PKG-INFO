@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: metaworld
+Version: 0.0.1.dev0
+Summary: Environments for benchmarking meta-learning and multi-task learning
+Home-page: https://github.com/rlworkgroup/metaworlds
+Author: Reinforcement Learning Working Group
+License: MIT
+Description: [![Build Status](https://travis-ci.com/rlworkgroup/metaworlds.svg?branch=master)](https://travis-ci.com/rlworkgroup/metaworlds)
+        [![Coverage Status](https://coveralls.io/repos/github/rlworkgroup/metaworlds/badge.svg?branch=skeleton)](https://coveralls.io/github/rlworkgroup/metaworlds?branch=skeleton)
+        [![Docs](https://readthedocs.org/projects/metaworlds/badge)](http://metaworlds.readthedocs.org/en/latest/)
+        [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rlworkgroup/metaworlds/blob/master/LICENSE)
+        
+        # metaworlds
+        Environments for bencharking meta-learning and multi-task learning
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: mujoco
+Provides-Extra: dev
+Provides-Extra: all
+Provides-Extra: box2d
