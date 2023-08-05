@@ -1,0 +1,6 @@
+README.md
+setup.py
+xoop.egg-info/PKG-INFO
+xoop.egg-info/SOURCES.txt
+xoop.egg-info/dependency_links.txt
+xoop.egg-info/top_level.txt
