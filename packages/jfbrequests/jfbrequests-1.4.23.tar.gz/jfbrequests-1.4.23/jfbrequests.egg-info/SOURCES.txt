@@ -1,0 +1,10 @@
+COPYING.txt
+MANIFEST.in
+README.rst
+setup.py
+jfbrequests/__init__.py
+jfbrequests.egg-info/PKG-INFO
+jfbrequests.egg-info/SOURCES.txt
+jfbrequests.egg-info/dependency_links.txt
+jfbrequests.egg-info/top_level.txt
+jfbrequests.egg-info/zip-safe

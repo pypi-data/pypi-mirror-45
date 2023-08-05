@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: jfbrequests
+Version: 1.4.23
+Summary: this is a test package for packing python liberaries tutorial.
+Home-page: https://github.com/jiangfubang/jfbrequests
+Author: jiangfubang
+Author-email: luckybang@163.com
+License: MIT
+Description: UNKNOWN
+Keywords: test python package
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
