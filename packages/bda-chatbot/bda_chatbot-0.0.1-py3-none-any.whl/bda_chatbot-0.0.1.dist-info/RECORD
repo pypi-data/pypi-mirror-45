@@ -1,0 +1,11 @@
+bda_chatbot-0.0.1.data/scripts/extract.py,sha256=OVZ-JxGu0VcIa14c70QCVQ3psLdL04uHfemeCIfZmSA,822
+bda_chatbot-0.0.1.data/scripts/grammar.py,sha256=ZPv8sz8mz9dt4alPi2N8g5NL7AH8vw-O7ARpwwvt_Pc,730
+bda_chatbot-0.0.1.data/scripts/lemm.py,sha256=6AImp4rn4Idg_O6980c9VAQcrw_VVYCZCVRRwUuhPNY,619
+bda_chatbot-0.0.1.data/scripts/normalize.py,sha256=Q7YDBPrGYWLLfY0D5nDYiz1aO-LmTS9rnGrksSMUYhA,511
+bda_chatbot-0.0.1.data/scripts/stemm.py,sha256=vxHFIszU-MNiCBakJM9d18bZb4RvpkrxGjatwef3vOs,627
+bda_chatbot-0.0.1.data/scripts/stopwords.py,sha256=H2qadcXIth73nhS_JAjmftAtGahXo9flvc2L7jCkMYo,745
+bda_chatbot-0.0.1.dist-info/LICENSE,sha256=4629YbUIlCenXNjZJnTQxjHbSRgG5u_KNmJLIF9Vanc,1065
+bda_chatbot-0.0.1.dist-info/METADATA,sha256=Len5zuwpZ6CTC5GZNYNNwF0FzwiLyhslbPUvSQt3Sww,2741
+bda_chatbot-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bda_chatbot-0.0.1.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bda_chatbot-0.0.1.dist-info/RECORD,,
