@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pepsepy/__init__.py
+pepsepy/__version__.py
+pepsepy/core.py
+pepsepy/util.py
+pepsepy.egg-info/PKG-INFO
+pepsepy.egg-info/SOURCES.txt
+pepsepy.egg-info/dependency_links.txt
+pepsepy.egg-info/requires.txt
+pepsepy.egg-info/top_level.txt
+pepsepy/autoreporting/__init__.py
+pepsepy/autoreporting/autoreporting.py
