@@ -1,0 +1,11 @@
+accountkitlogin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accountkitlogin/apps.py,sha256=-RwzHr3OS5QyTdpQjxHqXrO79t4OQVfszdniGqX8c5s,178
+accountkitlogin/authenticate.py,sha256=zloev2bVKd9Euror5f8Bgu42sxJPIpqfjSeH0MbBb2s,777
+accountkitlogin/tests.py,sha256=mtTIAkJ8Fh5bWxITiq9gcVWfbzcVtoMT1q8soFvYsZM,131
+accountkitlogin/views.py,sha256=8R6_lINDVwplIjpFVZIXsejVbzDq1T8VrKpq92Gf9K0,3449
+accountkitlogin/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accountkitlogin/templatetags/accountkit.py,sha256=-mNZM3VM7a3pnUTeLIjgAxbyFodpUaZ828_DwbcWG3w,2188
+django_accountkit-0.2.1.dist-info/METADATA,sha256=8-0Yf8nAG11hyHS7d22k3g-iiil5Xqpp0v-0j4keu4w,1018
+django_accountkit-0.2.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+django_accountkit-0.2.1.dist-info/top_level.txt,sha256=AtpT7ZEHJ4nIpHjUekCiXoEYMiWqBU0TE73PTkNp9oE,16
+django_accountkit-0.2.1.dist-info/RECORD,,
