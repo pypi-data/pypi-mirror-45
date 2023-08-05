@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: RepresentativeLogging
+Version: 0.1
+Summary: a logging module for RL to the Topl blockchain via LokiPy
+Home-page: UNKNOWN
+Author: Alex Bruns
+Author-email: a.bruns@topl.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

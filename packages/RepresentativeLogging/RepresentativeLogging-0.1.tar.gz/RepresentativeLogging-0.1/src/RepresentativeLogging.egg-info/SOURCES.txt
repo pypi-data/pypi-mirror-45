@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/Operations.py
+src/RepresentativeLogging.egg-info/PKG-INFO
+src/RepresentativeLogging.egg-info/SOURCES.txt
+src/RepresentativeLogging.egg-info/dependency_links.txt
+src/RepresentativeLogging.egg-info/top_level.txt
