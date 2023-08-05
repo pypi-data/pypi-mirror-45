@@ -1,0 +1,12 @@
+[appurl.urls]
+census: = publicdata.census.files.appurl:CensusFile
+censusgeo: = publicdata.census.files.appurl:CensusGeoUrl
+censusreporter: = publicdata.census.censusreporter:CensusReporterURL
+censusreportergeo: = publicdata.census.censusreporter:CensusReporterShapeURL
+nlsy+ = publicdata.nlsy.appurl:NlsyUrl
+
+[rowgenerators]
+CRJSON+ = publicdata.census.censusreporter:CensusReporterSource
+census: = publicdata.census.files.generators:CensusSource
+censusgeo: = publicdata.census.files.generators:CensusGeoSource
+

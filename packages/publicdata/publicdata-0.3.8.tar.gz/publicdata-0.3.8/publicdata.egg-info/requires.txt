@@ -1,0 +1,9 @@
+fs>=2
+rowgenerators
+pandas
+requests
+geoid
+tqdm
+fuzzy
+nltk
+stringdist
