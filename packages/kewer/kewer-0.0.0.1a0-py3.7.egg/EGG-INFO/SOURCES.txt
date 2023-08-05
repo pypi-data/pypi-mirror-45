@@ -1,0 +1,8 @@
+setup.py
+kewer/__init__.py
+kewer/kewer.py
+kewer.egg-info/PKG-INFO
+kewer.egg-info/SOURCES.txt
+kewer.egg-info/dependency_links.txt
+kewer.egg-info/not-zip-safe
+kewer.egg-info/top_level.txt
