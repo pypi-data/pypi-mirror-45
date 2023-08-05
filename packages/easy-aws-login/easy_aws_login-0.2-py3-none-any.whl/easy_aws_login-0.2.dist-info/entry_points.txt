@@ -1,0 +1,3 @@
+[console_scripts]
+easy-aws-login = easy_aws_login.index:main
+
