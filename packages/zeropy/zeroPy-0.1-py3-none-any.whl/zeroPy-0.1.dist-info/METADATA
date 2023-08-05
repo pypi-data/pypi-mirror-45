@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zeroPy
+Version: 0.1
+Summary: api impl on python3
+Home-page: UNKNOWN
+Author: Zerolevel team
+Author-email: zerolevel@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: racrypt (==0.1)
+
+# zeroPy
+
+Python3 Binary Api for blockchain
+
