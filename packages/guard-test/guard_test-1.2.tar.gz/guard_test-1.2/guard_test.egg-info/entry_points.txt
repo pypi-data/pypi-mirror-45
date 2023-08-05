@@ -1,0 +1,3 @@
+[console_scripts]
+androguard_test = guardtest.cli.entry_points:entry_point
+
