@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: transpopy
+Version: 0.2.0
+Summary: A simple script to translate po files.
+Home-page: http://github.com/kanazux/transpopy
+Author: Silvio Ap Silva a.k.a Kanazuchi
+Author-email: contato@kanazuchi.com
+License: BSD2CLAUSE
+Description: Read a po file and translate the msgids with the google translate API.
+Platform: UNKNOWN

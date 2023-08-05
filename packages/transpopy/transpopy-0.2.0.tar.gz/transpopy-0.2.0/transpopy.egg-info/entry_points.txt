@@ -1,0 +1,3 @@
+[console_scripts]
+transpopy = transpopy.__main__:main
+

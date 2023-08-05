@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+transpopy/__init__.py
+transpopy/__main__.py
+transpopy/translate.py
+transpopy/transparse.py
+transpopy.egg-info/PKG-INFO
+transpopy.egg-info/SOURCES.txt
+transpopy.egg-info/dependency_links.txt
+transpopy.egg-info/entry_points.txt
+transpopy.egg-info/not-zip-safe
+transpopy.egg-info/requires.txt
+transpopy.egg-info/top_level.txt
