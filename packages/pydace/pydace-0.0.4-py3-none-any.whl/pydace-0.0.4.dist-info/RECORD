@@ -1,0 +1,17 @@
+aux_functions/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+aux_functions/getvertices.py,sha256=lIlidBWZosDJuCa84LmHKF9EhyRrBqm3IonEbyg-wNg,1356
+aux_functions/lhsdesign.py,sha256=ur2Zq4Fm6VGog4GgNIBgyO-B3Ps3KGILvt5TE3aC3jk,2657
+aux_functions/matrixdivide.py,sha256=gxwFY35FCTIp8AgQwC16BHxm6jUWxPayFGGpendfv-s,1951
+pydace/__init__.py,sha256=PYQwlf8-gAmOql-iQ1zVvfxNp8NaJ6lNGmEvlFTdHOU,12570
+pydace/boxmin.py,sha256=79RsIWPKpxdtuUWCQEhqdyz_HXmcwgzs6SoTVPNINos,7229
+pydace/corr.py,sha256=TtCY8JZp8sNzZAwqtBsNxUTOmBQMfCISKxPYN-HT2yA,2444
+pydace/regr.py,sha256=bzSaPWDb9JEfC1SR6XVU8Sdb_jm8270j9EIesvakGA8,3104
+pydace/aux_functions/__init__.py,sha256=5iukH4zhW_JUHWPVhmdu6NN-vkWWKo8aHegF9yohC8s,3358
+pydace/aux_functions/matrixdivide.py,sha256=gxwFY35FCTIp8AgQwC16BHxm6jUWxPayFGGpendfv-s,1951
+tests/csv_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/csv_data/csv_read.py,sha256=iYLqs_333Q1lW_e57I8ooV8DKMBdsmrpEgLyMFOBs54,1002
+pydace-0.0.4.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+pydace-0.0.4.dist-info/METADATA,sha256=3C54RfDf7WQ3qOYidPu-T_7F7v1alVNivzgW3ac4i7g,1519
+pydace-0.0.4.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pydace-0.0.4.dist-info/top_level.txt,sha256=CoqC4rH4dp6sq_JqFKYwM4ynx_lrPbrx6hsEli7yyxs,13
+pydace-0.0.4.dist-info/RECORD,,
