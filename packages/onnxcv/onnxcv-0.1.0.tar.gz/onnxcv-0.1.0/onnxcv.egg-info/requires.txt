@@ -1,0 +1,10 @@
+decorator==4.4.0
+imageio==2.5.0
+networkx==2.3
+numpy==1.16.2
+onnxruntime==0.3.0
+opencv-python==4.1.0.25
+Pillow==6.0.0
+PyWavelets==1.0.3
+scikit-image==0.15.0
+scipy==1.2.1

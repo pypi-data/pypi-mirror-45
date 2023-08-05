@@ -1,0 +1,7 @@
+README.md
+setup.py
+onnxcv.egg-info/PKG-INFO
+onnxcv.egg-info/SOURCES.txt
+onnxcv.egg-info/dependency_links.txt
+onnxcv.egg-info/requires.txt
+onnxcv.egg-info/top_level.txt
