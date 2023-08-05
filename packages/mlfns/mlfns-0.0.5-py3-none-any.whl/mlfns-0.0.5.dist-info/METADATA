@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mlfns
+Version: 0.0.5
+Summary: Machine Learning Python utility functions
+Home-page: UNKNOWN
+Author: Explore AI for Good
+Author-email: gcloudex@gmail.com
+License: UNKNOWN
+Keywords: development artificial intelligent machine learning ai ml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Machine Learning - Python utility functions
+
+Convenient Python utility functions commonly used in the AI machine learning 
+projects.
+
+## Build Package
+
+References:
+- [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/#uploading-your-project-to-pypi)
+
+Dependencies: `setuptools`, `wheel` and `twine`
+
+```
+$ python setup.py sdist bdist_wheel
+
+# For testing, upload to test.pypi.org
+$ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+# Install package from test.pypi.org
+pip install --index-url https://test.pypi.org/simple/ --no-deps mlfns
+
+# Release upload to pypi.org
+$ twine upload --repository-url https://pypi.org/legacy/ dist/*
+
+# Install package from test.pypi.org
+pip install --index-url https://pypi.org/simple/ --no-deps mlfns
+```
+
