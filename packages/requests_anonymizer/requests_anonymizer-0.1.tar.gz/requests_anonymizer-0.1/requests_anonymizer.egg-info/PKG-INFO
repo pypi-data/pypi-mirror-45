@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: requests-anonymizer
+Version: 0.1
+Summary: An anonymizing tool to be used for requests api calls
+Home-page: https://github.com/assem-ch/python-requests-anonymizer
+Author: Assem Chelli; Niboucha Redouane
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
