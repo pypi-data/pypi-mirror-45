@@ -1,0 +1,6 @@
+#!/bin/bash
+c_ $@ 2>&1
+ret=$?
+if [ $ret -ne 0 ]; then
+  cd $1
+fi
