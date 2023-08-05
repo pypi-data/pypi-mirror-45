@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rdillib
+Version: 0.0.1
+Summary: Private utility
+Home-page: https://rdil.rocks
+Author: area4 Team
+Author-email: me@rdil.rocks
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Lib
+
+Small, private utility. Required by [area4](https://pypi.org/project/area4).
+
+
