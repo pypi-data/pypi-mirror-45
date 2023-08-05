@@ -1,0 +1,8 @@
+README.md
+setup.py
+latest_blender_url/__init__.py
+latest_blender_url.egg-info/PKG-INFO
+latest_blender_url.egg-info/SOURCES.txt
+latest_blender_url.egg-info/dependency_links.txt
+latest_blender_url.egg-info/requires.txt
+latest_blender_url.egg-info/top_level.txt
