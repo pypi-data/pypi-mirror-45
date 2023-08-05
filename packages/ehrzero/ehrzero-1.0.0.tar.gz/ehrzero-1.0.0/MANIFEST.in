@@ -1,0 +1,5 @@
+include *.txt
+recursive-include docs *.txt
+recursive-include XG3/predictor/ *
+include XG3/predictor/ZERO_example.dat
+recursive-include XG3/shapefiles/ *

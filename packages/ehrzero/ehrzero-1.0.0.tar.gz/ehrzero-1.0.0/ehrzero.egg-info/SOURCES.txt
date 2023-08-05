@@ -1,0 +1,11 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ehrzero.egg-info/PKG-INFO
+ehrzero.egg-info/SOURCES.txt
+ehrzero.egg-info/dependency_links.txt
+ehrzero.egg-info/requires.txt
+ehrzero.egg-info/top_level.txt
