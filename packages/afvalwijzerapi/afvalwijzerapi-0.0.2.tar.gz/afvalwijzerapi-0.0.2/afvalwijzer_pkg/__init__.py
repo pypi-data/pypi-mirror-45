@@ -1,0 +1,1 @@
+from afvalwijzer_pkg.afvalwijzerapi import AfvalwijzerAPI

@@ -1,0 +1,8 @@
+README.md
+setup.py
+afvalwijzer_pkg/__init__.py
+afvalwijzer_pkg/afvalwijzerapi.py
+afvalwijzerapi.egg-info/PKG-INFO
+afvalwijzerapi.egg-info/SOURCES.txt
+afvalwijzerapi.egg-info/dependency_links.txt
+afvalwijzerapi.egg-info/top_level.txt
