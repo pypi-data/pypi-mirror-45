@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mtneedlet
+Version: 0.0.1
+Summary: A Python package for needlet filtering and Multiple Testing
+Home-page: UNKNOWN
+Author: Javier Carron Duque
+Author-email: javier.carron@uniroma1.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: healpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+# MTNeedlet
+
+This is a Python Package aimed at the use of needlets to filter spherical maps,
+detecting the maxima within the maps and analysing them using a multiple
+testing approach.
+
+The documentation can be found at https://mtneedlet.readthedocs.io
+
+For more information on the theoretical background that inspired this work, see:
+
+Cheng, D., Cammarota, V., Fantaye, Y., Marinucci, D., & Schwartzman, A. (2016). Multiple testing of local maxima for detection of peaks on the (celestial) sphere. *Bernoulli, in press*, arXiv preprint arXiv:1602.08296.
+
+Carron Duque, J., Buzzelli, A., Fantaye, Y., Marinucci, D., Schwartzman, A., & Vittorio, N. (2019). Point Source Detection and False Discovery Rate Control on CMB Maps. arXiv preprint arXiv:1902.06636.
+
+
+
