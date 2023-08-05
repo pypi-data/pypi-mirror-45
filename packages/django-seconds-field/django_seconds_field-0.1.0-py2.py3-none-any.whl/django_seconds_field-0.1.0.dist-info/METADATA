@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: django-seconds-field
+Version: 0.1.0
+Summary: Store a number of seconds in Django model
+Home-page: https://github.com/dex4er/django-seconds-field
+Author: Piotr Roszatycki
+Author-email: piotr.roszatycki@gmail.com
+License: LGPL
+Keywords: django model field duration seconds
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Requires-Dist: django (<2) ; python_version < "3"
+Requires-Dist: django (>=2) ; python_version >= "3"
+Provides-Extra: dev
+Requires-Dist: docutils ; extra == 'dev'
+Requires-Dist: Pygments ; extra == 'dev'
+
+.. image:: https://img.shields.io/pypi/v/django-seconds-field.svg
+   :target: https://pypi.python.org/pypi/django-seconds-field
+.. image:: https://travis-ci.org/dex4er/django-seconds-field.svg?branch=master
+   :target: https://travis-ci.org/dex4er/django-seconds-field
+.. image:: https://readthedocs.org/projects/django-seconds-field/badge/?version=latest
+   :target: http://django-seconds-field.readthedocs.org/en/latest/
+.. image:: https://img.shields.io/pypi/pyversions/django-seconds-field.svg
+   :target: https://www.python.org/
+.. image:: https://img.shields.io/pypi/djversions/django-seconds-field.svg
+   :target: https://www.djangoproject.com/
+
+django-seconds-field
+====================
+
+``django-seconds-field`` provides additional ``SecondsField`` type for Django
+model which stores ``datetime.timedelta`` object as a number of seconds in a
+database's ``INTEGER`` type.
+
+
+Installation
+------------
+
+Install with ``pip`` or ``pipenv``:
+
+.. code:: python
+
+  pip install django-seconds-field
+
+
+Usage
+-----
+
+**models.py**
+
+.. code:: python
+
+  from django.db import models
+  from django_seconds_field import SecondsField
+
+  class FooBar(models.Model):
+      ttl = SecondsField()
+
+
+Documentation
+-------------
+
+See http://django-seconds-field.readthedocs.org/
+
+
+License
+-------
+
+Copyright © 2019, Piotr Roszatycki
+
+This software is distributed under the GNU Lesser General Public License (LGPL
+3 or greater).
+
+
