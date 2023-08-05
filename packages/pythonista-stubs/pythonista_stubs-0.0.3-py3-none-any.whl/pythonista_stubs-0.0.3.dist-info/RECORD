@@ -1,0 +1,15 @@
+appex/__init__.pyi,sha256=WXs6q-9teAv0OGav24Uk-W2pyOuDptxTKM2K9H1k5GM,684
+appex-stubs/__init__.pyi,sha256=WXs6q-9teAv0OGav24Uk-W2pyOuDptxTKM2K9H1k5GM,684
+clipboard/__init__.pyi,sha256=hP-_Z4ILc0vY5zw0E-nFTofi7Kvc6TXzw0XBjt92Jfs,274
+clipboard-stubs/__init__.pyi,sha256=hP-_Z4ILc0vY5zw0E-nFTofi7Kvc6TXzw0XBjt92Jfs,274
+console/__init__.pyi,sha256=c06ExZwGtLBpDQ8s9ngC8Kx5wxJdO6vtG3FWvvK7fA0,1486
+console-stubs/__init__.pyi,sha256=c06ExZwGtLBpDQ8s9ngC8Kx5wxJdO6vtG3FWvvK7fA0,1486
+reminders/__init__.pyi,sha256=nOES9PyjLw-6hJWCOKtwwXO0A4XhG4zLfyHsRZxUoMU,888
+reminders-stubs/__init__.pyi,sha256=nOES9PyjLw-6hJWCOKtwwXO0A4XhG4zLfyHsRZxUoMU,888
+sound-stubs/__init__.pyi,sha256=vDG2X47l-U4S4xCqsAI5eCd2rLTCPAyDfsDVYB-L3lw,1374
+speech-stubs/__init__.pyi,sha256=oI4hL5uFy_F1MJ1bqhMtnbgWyjB9_J6Viaj23WuatAM,443
+pythonista_stubs-0.0.3.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pythonista_stubs-0.0.3.dist-info/METADATA,sha256=qMaW8D2Yu1-n3xxJGoVC4x03hS2GijqUYLHGgCPa6WM,5941
+pythonista_stubs-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pythonista_stubs-0.0.3.dist-info/top_level.txt,sha256=Z12uDBWop58rt28cFYXpAIvftZCe8YgTUctm_ZTXhn4,83
+pythonista_stubs-0.0.3.dist-info/RECORD,,
