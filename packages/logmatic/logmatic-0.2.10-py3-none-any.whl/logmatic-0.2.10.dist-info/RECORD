@@ -1,0 +1,10 @@
+logmatic/__init__.py,sha256=vzS0kENghqkjoSOhHhIDyNOlMKPKFEG7CX8-h9KltSQ,245
+logmatic/log.py,sha256=ysxcKDmyMvfmSbWMu3ICfZzEBtZ_ppZe-ZYJfv29-8c,1429
+logmatic/logger.py,sha256=Cgs6GDXVQUjpxCX8RHw-yz_X9QOAh4fCFIUIX3gUrbQ,13342
+logmatic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logmatic/utils/pather.py,sha256=fmD26PUzeyhHpn1Up5ytZTyYH_1vdz7_DXetXMrTImo,1224
+logmatic/utils/truncate.py,sha256=wSLYaf4pICew7B-t4Q4kQ-TkpQKGf9nNEQfghRTLCR0,737
+logmatic-0.2.10.dist-info/METADATA,sha256=0Z_Ke_hEBC-APBpEKy8sfSDxAhOaRmtrxA8qy6FOEWQ,333
+logmatic-0.2.10.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+logmatic-0.2.10.dist-info/top_level.txt,sha256=81Tj68p6NKiFq7YUcviQi1eBrliqgNcBbZURwFbRMt0,9
+logmatic-0.2.10.dist-info/RECORD,,
