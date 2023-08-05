@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ringcentral_chatbot_server
+Version: 0.0.1b1
+Summary: Cli tool to run RingCentral chatbot.
+Home-page: https://github.com/zxdong262/ringcentral-chatbot-server
+Author: Drake Zhao
+Author-email: drake.zhao@ringcentral.com
+License: UNKNOWN
+Description: # [ringcentral-chatbot-server](https://github.com/zxdong262/ringcentral-chatbot-server)
+        
+        Module/Cli tool to generate/run RingCentral chatbot project.
+        
+        ## Dev
+        
+        ```bash
+        virtualenv venv --python=python3
+        source ./venv/bin/activate
+        pip install -r requirements.txt
+        pip install pylint ringcentral_bot_framework twine
+        ```
+        
+        ## License
+        
+        MIT
+        
+Keywords: ringcentral,bot,server
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
