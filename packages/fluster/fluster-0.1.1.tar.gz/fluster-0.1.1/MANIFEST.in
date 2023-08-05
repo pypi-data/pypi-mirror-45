@@ -1,0 +1,5 @@
+recursive-include fluster *
+include *.rst
+include *.md
+include *.txt
+include LICENSE
