@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: aws-hat
+Version: 0.0.1
+Summary: Assume a role
+Home-page: https://github.com/binxio/aws-hat
+Author: Martijn van Dongen
+Author-email: martijnvandongen@binx.io
+License: UNKNOWN
+Description: # aws-hat
+        
+        AWS CLI for putting on a different hat (assume role)
+Platform: any
