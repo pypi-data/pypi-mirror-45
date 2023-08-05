@@ -1,0 +1,7 @@
+[console_scripts]
+biokeen = biokeen.cli:main
+
+[pykeen.data.importer]
+bel_commons = biokeen.content:handle_bel_commons
+bio2bel = biokeen.content:handle_bio2bel
+
