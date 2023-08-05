@@ -1,0 +1,7 @@
+README.md
+setup.py
+frctbaapi/__init__.py
+frctbaapi.egg-info/PKG-INFO
+frctbaapi.egg-info/SOURCES.txt
+frctbaapi.egg-info/dependency_links.txt
+frctbaapi.egg-info/top_level.txt
