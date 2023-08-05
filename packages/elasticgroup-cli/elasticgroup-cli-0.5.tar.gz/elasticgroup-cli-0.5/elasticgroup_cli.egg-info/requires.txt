@@ -1,0 +1,3 @@
+spotinst_sdk
+terminaltables
+pyyaml<5
