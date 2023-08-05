@@ -1,0 +1,7 @@
+README.md
+setup.py
+bsearch/bsearch.py
+bsearch/bsearch.egg-info/PKG-INFO
+bsearch/bsearch.egg-info/SOURCES.txt
+bsearch/bsearch.egg-info/dependency_links.txt
+bsearch/bsearch.egg-info/top_level.txt
