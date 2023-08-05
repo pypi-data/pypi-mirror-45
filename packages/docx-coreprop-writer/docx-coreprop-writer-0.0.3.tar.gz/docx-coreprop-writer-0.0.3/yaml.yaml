@@ -1,0 +1,25 @@
+---
+docx_coreprop:
+  author: "K4ZUKI" # str
+  category: "Category" # str
+  comments: "Comment" # str
+  created: "31-Dec-2018" # datetime DD-MMM-YYYY set externally
+  keywords: "Keyword1 Keyword2" # str
+  last_modified_by: "K4ZUKI" # str
+  last_printed: "31-Dec-2018" # datetime DD-MMM-YYYY
+  modified: "31-Dec-2018" # datetime DD-MMM-YYYY
+  revision: 1123 # int < 32768
+  subject: "SubjecT" # str
+  title: "Title" # str
+
+  content_status: "Status" # ignored?
+  identifier: "ID" # ignored?
+  language: "Japanese" # ignored?
+  version: "Version" # ignored?
+
+  table:
+    "Normal Table": "Centered"
+  paragraph:
+    "Normal": "Body Text"
+    "First Paragraph": "Body Text"
+...
