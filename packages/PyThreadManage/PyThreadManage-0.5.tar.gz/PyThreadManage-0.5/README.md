@@ -1,0 +1,1 @@
+Encapsulate functions of thread module
