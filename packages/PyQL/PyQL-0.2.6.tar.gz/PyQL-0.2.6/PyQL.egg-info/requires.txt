@@ -1,0 +1,14 @@
+graphql-core
+aniso8601
+
+[dev]
+pytest
+pytest-cov
+sphinx
+
+[sanic]
+sanic>=0.7.0
+sanic-cors>=0.9.4
+sanic-graphql
+graphql-ws>=0.2.0
+graphene>=2.0
