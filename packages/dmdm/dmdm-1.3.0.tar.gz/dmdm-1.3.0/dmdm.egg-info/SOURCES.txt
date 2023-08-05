@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+dmdm/__init__.py
+dmdm/mail.py
+dmdm.egg-info/PKG-INFO
+dmdm.egg-info/SOURCES.txt
+dmdm.egg-info/dependency_links.txt
+dmdm.egg-info/top_level.txt
