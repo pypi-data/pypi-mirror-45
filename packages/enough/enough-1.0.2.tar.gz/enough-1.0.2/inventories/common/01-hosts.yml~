@@ -1,0 +1,14 @@
+all:
+  hosts:
+    bind-host: {ansible_host: 51.68.78.253, ansible_port: '22', ansible_user: debian}
+    chat-host: {ansible_host: 51.68.79.56, ansible_port: '22', ansible_user: debian}
+    cloud-host: {ansible_host: 51.68.79.68, ansible_port: '22', ansible_user: debian}
+    gitlab-host: {ansible_host: 51.68.79.69, ansible_port: '2222', ansible_user: debian}
+    icinga-host: {ansible_host: 51.68.78.250, ansible_port: '22', ansible_user: debian}
+    packages-host: {ansible_host: 51.68.78.249, ansible_port: '22', ansible_user: debian}
+    postfix-host: {ansible_host: 51.68.79.54, ansible_port: '22', ansible_user: debian}
+    runner-host: {ansible_host: 51.68.79.70, ansible_port: '22', ansible_user: debian}
+    trusty-host: {ansible_user: ubuntu}
+    ubuntu-host: {ansible_user: ubuntu}
+    weblate-host: {ansible_host: 51.68.79.61, ansible_port: '22', ansible_user: debian}
+    website-host: {ansible_host: 51.68.79.73, ansible_port: '22', ansible_user: debian}

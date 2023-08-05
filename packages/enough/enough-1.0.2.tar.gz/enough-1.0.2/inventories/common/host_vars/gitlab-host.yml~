@@ -1,0 +1,11 @@
+---
+gitlab_password: leb!Ods0ottuqu
+gitlab_secrets_db_key_base: HPjf37kvjWRJtNLCpTqm93wK3pzhdRgPMLMX7TFFMXqvF7HmKw7bHq7z9Js3NNsv
+gitlab_secrets_otp_key_base: v7FNLcXvXTKthh7gqHN7nq7pPhsCTmRFkkvfFVzdHJ9dTwwCcwxK3qmpjpJrvk3M
+gitlab_secrets_secret_key_base: JPchkXLRFVmkpCfmtqbFvRJRtXgWxg4cTcTKTjPprf7jbNvTzm3xHnzcMddvc4Vq
+# this is using the securedrop.club
+gitlab_os_auth_url: https://auth.cloud.ovh.net/v2.0/
+gitlab_os_tenant_name: 5347165894383271
+gitlab_os_username: GDUYJrN8tkSP
+gitlab_os_password: 7PAVRKE7UyEMu23pzvWfGTkUw52BmKFb
+gitlab_os_region_name: DE1
