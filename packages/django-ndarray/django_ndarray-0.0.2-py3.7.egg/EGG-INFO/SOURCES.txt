@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_ndarray.egg-info/PKG-INFO
+django_ndarray.egg-info/SOURCES.txt
+django_ndarray.egg-info/dependency_links.txt
+django_ndarray.egg-info/requires.txt
+django_ndarray.egg-info/top_level.txt
+ndarray/__init__.py
+ndarray/fields.py
