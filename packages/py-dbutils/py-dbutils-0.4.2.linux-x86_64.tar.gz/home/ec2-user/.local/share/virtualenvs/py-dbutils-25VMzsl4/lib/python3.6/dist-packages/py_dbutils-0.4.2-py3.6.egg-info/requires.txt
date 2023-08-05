@@ -1,0 +1,8 @@
+sqlalchemy
+pandas
+psycopg2-binary
+jaydebeapi
+
+[testing]
+pytest
+pytest-cov
