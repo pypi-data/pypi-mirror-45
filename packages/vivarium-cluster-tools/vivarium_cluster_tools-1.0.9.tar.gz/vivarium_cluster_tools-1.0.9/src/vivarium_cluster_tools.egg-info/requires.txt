@@ -1,0 +1,11 @@
+pandas
+numpy<=1.15.4
+table<=3.4.0
+loguru
+pyyaml
+drmaa
+redis<=3.0.1
+rq>=1.0
+vivarium
+vivarium_public_health
+click
