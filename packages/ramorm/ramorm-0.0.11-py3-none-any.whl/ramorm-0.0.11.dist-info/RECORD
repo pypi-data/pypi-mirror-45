@@ -1,0 +1,10 @@
+ramorm/__init__.py,sha256=4L7qLb-R9skYd2ONOJpIBxtD1xPTmYFN10uthYqjQwc,118
+ramorm/fields.py,sha256=IhgcsOvNF_sY0yko6zdJfjK2Htv1RedDIJpbCKRzPoM,2627
+ramorm/model.py,sha256=SDEL27DDQx-1U0y3JoVsa6xT1fs4CEvv59tm1G24FPQ,822
+ramorm/orm.py,sha256=-KwqiO91n9Iig5bPmsDbpUvcboY06D1IZsL75JwGXMY,7337
+ramorm/primitives.py,sha256=5ufojxQE9cy8rNcIGvwqezeKaiaDDdi5BEJawCOkHEA,59
+ramorm-0.0.11.dist-info/LICENSE,sha256=_5CuisWekca7T-3F9cSmX85O6o6VYwI8zB18ZeO18rM,1048
+ramorm-0.0.11.dist-info/METADATA,sha256=9BamNMepc-QtFFGDZ1WjYGTUfCC-vjzHDQbU-9tqWRo,2445
+ramorm-0.0.11.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ramorm-0.0.11.dist-info/top_level.txt,sha256=ZZ6IHmMnEgRfY-MP0T-bU7sxricRbnsyynw_khdqIHA,7
+ramorm-0.0.11.dist-info/RECORD,,
