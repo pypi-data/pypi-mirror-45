@@ -1,0 +1,6 @@
+README.md
+setup.py
+shucks.egg-info/PKG-INFO
+shucks.egg-info/SOURCES.txt
+shucks.egg-info/dependency_links.txt
+shucks.egg-info/top_level.txt
