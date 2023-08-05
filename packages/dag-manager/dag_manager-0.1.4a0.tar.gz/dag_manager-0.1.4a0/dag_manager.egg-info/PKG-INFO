@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dag-manager
+Version: 0.1.4a0
+Summary: Manage airflow dags, synchronize updates to scheduler and webserver, so airflow does not depend on shared file system
+Home-page: http://gitlab.aibee.cn/platform/dag-manager
+Author: wutong
+Author-email: twu@aibee.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
