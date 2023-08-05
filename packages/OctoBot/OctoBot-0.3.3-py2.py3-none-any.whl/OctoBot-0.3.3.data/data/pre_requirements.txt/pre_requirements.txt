@@ -1,0 +1,4 @@
+numpy
+Cython
+lxml
+Twisted # to be removed (python-binance)
