@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bigimg2019
+Version: 0.3
+Summary: A compilation of functions for Big Imaging 2019
+Home-page: https://github.com/thomasnilsson/big-imaging-project
+Author: Thomas Nilsson
+Author-email: tnni@dtu.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Python Big Imaging 2019 Package
+
+
