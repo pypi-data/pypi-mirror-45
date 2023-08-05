@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: TakeSpellChecker
+Version: 0.0.0
+Summary: Machine learning spell check package that combines word's context with characters similarity.
+Home-page: https://github.com/karinatk/spellcheck
+Author: Karina Tiemi Kato
+Author-email: karinatkato@gmail.com
+License: UNKNOWN
+Description: # SpellCheck
+        
+        SpellCheck is a package that checks the spelling of words in any language using machine learning. It corrects the misspelled word by combining the context of the surrounding words to predict a list of the probable words and finds the one with the highest character similarity. The solution uses word embedding to learn the context. So, it's required to pass the path of the word embedding file. Also supports optionally to pass a configuration file (if the file is in an Azure fileshare, in other words, if the parameter from_azure is true).
+        
+        #### SpellChecker.SpellCheck: create constructor
+        
+        <ul>
+        <li>path: str</li>
+        path is the full embedding path to your word embedding model. Optionally, you can also set from_azure as True and pass a configuration file path to path.
+        
+        <li>from_azure: boolean</li>
+        from_azure is an optional argument. If you need to automatically download an embedding model from azure file share, you need to set this argument as True and pass a configuration file to path instead of an embedding file.
+        </ul>
+        
+        #### SpellChecker.set_data: sets the data
+        
+        <ul>
+        <li>data: list, series, dataframe or a string that represents the file path</li>
+        data is the content that needs to be processed. It can be a list, series, string or dataframe.
+        
+        <li>content_column_name: str</li>
+        content_column_name is an optional argument. It's only required when the data's type is a Dataframe or a path to the text file. If the column name is not set, the set_data method uses the first column as content
+        
+        <li>file_sep: str</li>
+        file_sep is an optional argument. It's only required when the data's is a path to the text file. If the file separator is not set, the set_data uses ';'.
+        
+        <li>encoding: str</li>
+        encoding is an optional argument. It's only required when the data's is a path to the text file. If the file encoding is not set, the set_data uses 'utf-8'.
+        </ul>
+        
+        #### SpellChecker.spell_check: checks the spelling of the data
+        
+        <ul>
+        <li>window_limit: int</li>
+        window_limit is an optional argument. Used to determine how many words of the sentence will be used as context.
+        
+        <li>threshold: float</li>
+        threshold is an optional argument. Used to determine how permissive your spell checker will be.
+        
+        <li>save_result: boolean</li>
+        save_result is an optional argument. If save_result is True, a file (output_spell_check.csv) with the columns: Original, SpellChecked and Corrected will be created in the same directory. The last column is an boolean column indicating if any word in the sentence was corrected.
+        </ul>
+        
+        ## config.yml
+        ```
+        account_name: my_account_name
+        account_key: my_key
+        directory: my_directory_name
+        embedding_file: my_embedding_file_name
+        embedding_share: my_file_share_name
+        ```
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install SpellChecker
+        
+        ```bash
+        pip install SpellChecker
+        ```
+        
+        ## Usage
+        
+        ```python
+        import SpellChecker
+        
+        sc = SpellChecker.SpellCheck(path, from_azure = True)
+        sc.set_data(data)
+        sc.spell_check(window_limit = 5, threshold = 0.94, save_result = False)
+        ```
+        
+        ## Author
+        Karina Tiemi Kato
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
