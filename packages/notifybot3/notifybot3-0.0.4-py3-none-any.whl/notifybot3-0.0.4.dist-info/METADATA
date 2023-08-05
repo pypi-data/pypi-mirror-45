@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: notifybot3
+Version: 0.0.4
+Summary: Slack Notifications for Travis Deploys
+Home-page: https://github.com/chuckoy/notifybot
+Author: Daniel Whatmuff
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: travis deployment slack notification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: slackclient
+Requires-Dist: requests
+
+A CLI to notify Slack on Travis CI deployments by API token or Incoming Webhook URL
+
+
