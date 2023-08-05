@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        comet=comet.comet:cli
+    
