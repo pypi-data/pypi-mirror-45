@@ -1,0 +1,8 @@
+setup.py
+ddragon/__init__.py
+ddragon/mirror.py
+ddragon.egg-info/PKG-INFO
+ddragon.egg-info/SOURCES.txt
+ddragon.egg-info/dependency_links.txt
+ddragon.egg-info/requires.txt
+ddragon.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+requests
+
+[image_resize]
+pillow
+python-resize-image
