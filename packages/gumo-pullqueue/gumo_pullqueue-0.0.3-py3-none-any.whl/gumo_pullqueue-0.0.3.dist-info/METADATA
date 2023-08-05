@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gumo-pullqueue
+Version: 0.0.3
+Summary: Gumo PullQueue Library
+Home-page: https://github.com/gumo-py/gumo-pullqueue
+Author: Gumo Project Team
+Author-email: gumo-py@googlegroups.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: gumo-core (>=0.0.18)
+Requires-Dist: gumo-datastore (>=0.0.11)
+
+# gumo-pullqueue
+
+
