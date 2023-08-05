@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: produce
+Version: 0.1
+Summary: Replacement for Make geared towards processing data rather than compiling code
+Home-page: https://github.com/texttheater/produce
+Author: Kilian Evang
+Author-email: kilian@evang.name
+License: MIT
+Keywords: make builder automation
+Platform: UNKNOWN
+
+UNKNOWN
+
+
