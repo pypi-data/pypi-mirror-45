@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: triones-api
+Version: 0.0.1
+Summary: api methods for Triones.
+Home-page: https://git.chengfayun.net/implementation/TrionesAPI
+Author: fankailun
+Author-email: kailunfan@163.com
+License: UNKNOWN
+Description: # triones_api
+        
+        ## description
+        
+        Triones_api provides methods encapsulated HTTP interface used when building a tenant of [TrionesPaaS](https://crm.meiqia.com).
+        
+        
+        ## List the methods
+        
+        ```python
+        from triones_api import Tenant
+        print(Tenant.__doc__)
+        ```
+        
+        Every secondary key in the dict below is a method name and the corresponding value demonstrate argument of the method.Additionally, keyword argument `data` will always be parsed as the request body of a HTTP Request.
+        
+        ```json
+        {
+          "one": {
+            "get_metas": "all-metas?acl=false",
+            "get_meta": "{meta_name}/meta",
+            "get_records": "{meta_name}/query?{query:offset=0&limit=500&order_by=created_at&order_flag=DESC}",
+            "get_record": "{meta_name}/{id}",
+            "create_record": "{meta_name}",
+            "update_record": "{meta_name}/{id}",
+            "delete_record": "{meta_name}/{id}/?version={version}",
+            "dsl_query": "dsl/query?dsl={dsl}",
+            "get_common_scripts": "common-scripts",
+            "get_common_script": "common-scripts/{name}",
+            "create_territory_type": ""
+          },
+          "one/service/territory": {
+            "get_territory_types": "type",
+            "create_territory_type": "type",
+            "update_territory_type": "type/name",
+            "get_territory_models": "model?offset=-1&limit=-1",
+            "create_territory_model": "model",
+            "get_territory_nodes": "node/query?tenant_id={tenant_id}",
+            "add_public_territory_node": "node",
+            "add_private_territory_node": "node/private/{user_id}",
+            "update_territory_node": "node/{territory_id}/config",
+            "get_territory_members_in_node": "node/{territory_id}/member?offset=-1&limit=-1",
+            "get_territory_members": "member?limit=-1&offset=-1",
+            "add_member": "member",
+            "delete_member": "member/{member_id}",
+            "add_territory_permission": "permission",
+            "add_member_to_node": "node/{node_id}/member",
+            "remove_member_from_node": "node/{node_id}/member",
+            "add_member_to_permission": "member-permission",
+            "remove_member_from_permission": "member-permission"
+          }
+        }
+        ```
+        
+        ## Invoke a method
+        
+        ```python
+        from triones_api import Tenant
+        
+        token = "******"
+        t = Tenant(token)
+        
+        # positional argument
+        t.get_meta("User")
+        t.get_record("User", "AQACQqweGRMBAAAAAxqWI4VnaBXazAEA")
+        t.delete_record("Account", "AQACQqweGRMBAAAAnyK7Z6Q-cxVqXQUA", 0)
+        
+        # positional argument with keyword argument
+        t.get_records("Account", query='offset=0&limit=1&order_by=created_at&order_flag=DESC')
+        t.get_records("Account")
+        
+        # keyword argument `data` represent the request body of a HTTP Request.
+        t.create_record("Account", data={"objects": [{"t1": "John"}]})
+        t.update_display_name("Account", data={"display_name": "Customer"})
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
