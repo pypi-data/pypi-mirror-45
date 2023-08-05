@@ -1,0 +1,15 @@
+qtorch/__init__.py,sha256=zhND2-oe6VgPcsdktaSTPStdYLBE0KrG4T5pVyEi5W0,87
+qtorch/number.py,sha256=bJO_zEE-m0c7XKq6DdxLJhFe5nHkCowYOIt36HLRgo8,4654
+qtorch/old_code.py,sha256=frVd4mztbjP7o0Vk8FtvEvbs-eWILjLfy2U7qoVApMI,9184
+qtorch/auto_low/__init__.py,sha256=y6GhRj5yUtnzC0p0PmGnMu70Yw-XYWwapUNwpnBNe0M,66
+qtorch/auto_low/auto_low.py,sha256=uytofQATaKD5aKDWXVf4Cs0RBRmDSbksIfX_OqqVVhc,5925
+qtorch/optim/__init__.py,sha256=M-NpcGqrytQ0W912Oc_4R7ico2JV4gQ_77CMToKllfU,47
+qtorch/optim/optim_low.py,sha256=VqZGqkFzUVUXdViCjZx4ba4OIQaXredGBBiC4aDAK7M,4575
+qtorch/quant/__init__.py,sha256=LnY1PMz1nPQMDwIaubcVGDVy4UpmDDdp9qOeaqSKaUI,156
+qtorch/quant/quant_function.py,sha256=qWQRYguk7YvVDd6BarGf6jYescVLs8UKiCIQySOmPkE,12696
+qtorch/quant/quant_module.py,sha256=VH7auONGIM99QTmBzMm8iGbmNBKZ75ywB1e93lCK0_I,523
+qtorch-0.1.0.dist-info/LICENSE,sha256=F7co3e6xAGjcVLy4P4OZYHPYPHU1Ele-vBZKOWhYN4w,1068
+qtorch-0.1.0.dist-info/METADATA,sha256=TnZ0HVbH4FkQj2wkuoaIFX3_U5TZEin6H7DCK4cC7AM,2891
+qtorch-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+qtorch-0.1.0.dist-info/top_level.txt,sha256=ReBH3WhZ4sK78MWT2DxRNsV_lr2Ed5N4VV2gM2U6GPw,7
+qtorch-0.1.0.dist-info/RECORD,,
