@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: silizium-binerdy
+Version: 0.0.3
+Summary: Source code for the wiki philosopy game in the module swt fs19
+Home-page: https://github.com/binerdy/swt-19fs-silizium
+Author: Alan Meile
+Author-email: alan.meile@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: coverage (==4.5.3)
+Requires-Dist: coveralls (==1.7.0)
+Requires-Dist: pytest-bdd (==3.1.0)
+Requires-Dist: pytest-cov (==2.6.1)
+Requires-Dist: pytest (==4.4.0)
+Requires-Dist: selenium (==3.141.0)
+
+| Travis CI                                   | Coveralls                                            |
+|---------------------------------------------|------------------------------------------------------|
+| [![Build Status][travis-badge]][travis-url] | [![Coverage status][coveralls-badge]][coveralls-url] |
+
+| Travis build history                                  |
+|-------------------------------------------------------|
+| [![Travis build history][travis-history]][travis-url] |
+
+# swt-19fs-silizium
+Source code for the wiki philosopy game in the module swt fs19
+
+## geckodriver
+You need to download and add geckodriver to your path environment. You can get it here: https://github.com/mozilla/geckodriver/releases
+
+## install
+Code is released under https://pypi.org/project/silizium-binerdy/
+```
+pip install silizium-binerdy
+```
+
+## cli usage
+For windows user copy your python.exe and rename the copy to python3.exe in your python installation folder. Then you should be able to execute following command.
+```
+silizium-cli.py -w "Hund" -l 20
+```
+
+[travis-url]: https://travis-ci.org/binerdy/swt-19fs-silizium
+[travis-badge]: https://travis-ci.org/binerdy/swt-19fs-silizium.svg?branch=master
+[travis-history]: https://buildstats.info/travisci/chart/binerdy/swt-19fs-silizium?branch=master&includeBuildsFromPullRequest=false
+
+[coveralls-badge]: https://coveralls.io/repos/github/binerdy/swt-19fs-silizium/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/binerdy/swt-19fs-silizium?branch=master
+
+
