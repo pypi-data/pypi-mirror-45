@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: mac-app-frontmost
+Version: 2019.4.17
+Summary: macOS frontmost app info
+Home-page: https://github.com/looking-for-a-job/mac-app-frontmost
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install mac-app-frontmost
+        ```
+        
+        #### Scripts usage
+        ```bash
+        usage: app-frontmost --bundleid|--name|--path|--pid
+        ```
+        
+        #### Examples
+        ```bash
+        $ app-frontmost --bundleid
+        com.apple.Terminal
+        
+        $ app-frontmost --name
+        Terminal
+        
+        $ app-frontmost --path
+        /Applications/Utilities/Terminal.app
+        
+        $ app-frontmost --pid
+        304
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: mac app
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
