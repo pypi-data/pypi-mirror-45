@@ -1,0 +1,9 @@
+btfxwss/__init__.py,sha256=r5Q2TSH7dDg9Ro-J8Acypt45bpdaIOrNfEPBy8lXJKE,142
+btfxwss/client.py,sha256=3El06PP-bAypcB5j7YLgFpU34hSXPwvkjYiujWs6uZM,12352
+btfxwss/connection.py,sha256=WZDKEjlDZHXUi4k5qcgwSyOICgPMYJrEiijOaP2Zy0s,19290
+btfxwss/queue_processor.py,sha256=bAMJp6LO3lFGTyF5tGZHIzvw_rOIXSouG2zH-6kq79k,11860
+btfxwss2-1.2.1.dist-info/LICENSE.txt,sha256=O6b1G2sMgxO06tvsnu5Gv1aGGWdSsxbyr3721HnDHIc,1082
+btfxwss2-1.2.1.dist-info/METADATA,sha256=3CqSHG8AyFc86NmHIHHRw-9XYzv5iMc1rfS1wV3sIXU,305
+btfxwss2-1.2.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+btfxwss2-1.2.1.dist-info/top_level.txt,sha256=b1D3MkvPSVezja_U_oDfaWaSAE9XJY0sQLtLhVNo0FY,8
+btfxwss2-1.2.1.dist-info/RECORD,,
