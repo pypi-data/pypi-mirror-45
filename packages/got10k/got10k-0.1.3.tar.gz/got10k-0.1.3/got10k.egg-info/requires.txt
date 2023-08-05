@@ -1,0 +1,6 @@
+numpy
+matplotlib
+Pillow
+Shapely
+fire
+wget
