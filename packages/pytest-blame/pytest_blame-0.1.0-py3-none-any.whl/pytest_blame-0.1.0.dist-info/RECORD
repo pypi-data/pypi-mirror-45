@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=OOv2mr0HWyOLFmYQDjoihCQSPs-shH9gwyIzeh8KdHE,4142
+tests/test_blame.py,sha256=Nhr_KcaGE7C5o0PLK79PtZxjNbAmgZJVn_Q7NA4OGlM,119
+tests/test_conftest.py,sha256=URAM93CQP1agxROH4wM_gIaFNf5wZFzWPfMnmhzB8kw,1067
+tests/test_sample.py,sha256=vtrQOri1ejX-xQ5FLwGZmiZBK9BEY8qt6uBUpmUWNnQ,151
+pytest_blame-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytest_blame-0.1.0.dist-info/METADATA,sha256=Bq2dJ997VpUP_w8g6I6gAlOnkvK2XSntPoqI_fJFkX4,2012
+pytest_blame-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pytest_blame-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+pytest_blame-0.1.0.dist-info/RECORD,,
