@@ -1,0 +1,6 @@
+README.md
+setup.py
+martinmymath.egg-info/PKG-INFO
+martinmymath.egg-info/SOURCES.txt
+martinmymath.egg-info/dependency_links.txt
+martinmymath.egg-info/top_level.txt
