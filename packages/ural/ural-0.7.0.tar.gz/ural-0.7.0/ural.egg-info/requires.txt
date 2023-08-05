@@ -1,0 +1,2 @@
+phylactery>=0.2.2
+tld>=0.9.3
