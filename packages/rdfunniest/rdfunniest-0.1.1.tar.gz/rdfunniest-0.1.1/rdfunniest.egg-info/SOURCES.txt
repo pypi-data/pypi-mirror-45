@@ -1,0 +1,8 @@
+README.md
+setup.py
+funniest/__init__.py
+rdfunniest.egg-info/PKG-INFO
+rdfunniest.egg-info/SOURCES.txt
+rdfunniest.egg-info/dependency_links.txt
+rdfunniest.egg-info/not-zip-safe
+rdfunniest.egg-info/top_level.txt
