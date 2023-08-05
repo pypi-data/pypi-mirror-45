@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-log
+Version: 0.0.3
+Summary: Log request, response and erros in file
+Home-page: https://github.com/mandala21/django_log
+Author: Lucas Resende
+Author-email: lucasresone@gmail.com
+License: UNKNOWN
+Description: # Description
+        
+        This middleware log All request(GET,POST), response and errors. This log will save in file.
+        
+        # Get Started
+        
+        Install the project
+        ```
+            pip install django-log
+        ```
+         
+        Set in your settings.py the path you will want store the log. 
+        ```
+            LOG_PATH=/you/path/
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
