@@ -1,0 +1,8 @@
+numpy
+websockets
+nest_asyncio
+beautifulsoup4
+Pillow
+requests
+psutil
+paramiko
