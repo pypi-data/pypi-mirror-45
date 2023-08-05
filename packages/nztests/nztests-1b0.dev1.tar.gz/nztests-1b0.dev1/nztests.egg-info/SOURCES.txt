@@ -1,0 +1,12 @@
+README.rst
+requirements.txt
+setup.py
+nztests/__init__.py
+nztests/__version__.py
+nztests/tempfile.py
+nztests.egg-info/PKG-INFO
+nztests.egg-info/SOURCES.txt
+nztests.egg-info/dependency_links.txt
+nztests.egg-info/entry_points.txt
+nztests.egg-info/requires.txt
+nztests.egg-info/top_level.txt
