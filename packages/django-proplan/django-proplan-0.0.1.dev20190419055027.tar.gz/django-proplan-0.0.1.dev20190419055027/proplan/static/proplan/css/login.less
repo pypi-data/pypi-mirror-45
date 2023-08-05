@@ -1,0 +1,46 @@
+/* Styles for pages: login, logout, signup */
+
+body {
+    &.login,
+    .logout,
+    .signup {
+        .card {
+            background-color: #504C4C;
+            border: 2px solid white;
+            legend {
+                display: block;
+                background: white;
+                &>* {
+                    margin: 0px;
+                    color: rgb(42, 74, 20);
+                    font-size: 22px;
+                    padding: 20px 0px;
+                }
+            }
+            form {
+                padding: 0px 15px 15px;
+                margin: 0 auto;
+
+                .checkbox {
+                    margin-bottom: 10px;
+                    font-weight: normal;
+                }
+                label {
+                    color: #fff;
+                }
+                input{
+                    background: #ffffff;
+                    border-radius: 0px;
+                    border: none;
+                    box-shadow: none;
+                }
+                .form-text {
+                    color: #aaa;
+                }
+            }
+        }
+    }
+    &.login {}
+    &.logout {}
+    &.signup {}
+}
