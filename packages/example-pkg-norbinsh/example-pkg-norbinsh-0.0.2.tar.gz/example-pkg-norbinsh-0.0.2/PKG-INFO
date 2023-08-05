@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: example-pkg-norbinsh
+Version: 0.0.2
+Summary: A very empty example package
+Home-page: https://example.com
+Author: Shay Elmualem
+Author-email: wowshay@gmail.com
+License: UNKNOWN
+Description: # A very empty example package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
