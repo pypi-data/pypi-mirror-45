@@ -1,0 +1,15 @@
+proxytest/__init__.py,sha256=LbQCCe2EnJ1fFd7kxCQldyfyu9XBSu0GOs2XHqmjez8,423
+proxytest/__main__.py,sha256=XnpTzfJc0T-j9tHtdkA8ovTr1c139ffTewcJGhxYDaM,49
+proxytest/backend.py,sha256=3OM1a20E1uGHGGH_UHgYFAQfPDE6M1ZwxgXJfsGm-i8,8313
+proxytest/proxytest.py,sha256=H5GfdMRsPLmoJa0pyCpXWVkogINV81Zy3YUc6XWw3VA,17102
+proxytest/request.py,sha256=Zc5TLDLVAeVMIO_IT3AIAzszleV5pPHproWLyaq97KA,5020
+proxytest/urls.py,sha256=_nwnU2gYDEWtY30qaikG3XfKzgKyudutW7DTwzI-go4,2132
+proxytest/version.py,sha256=ErI91nXgwj2K-gISnpzVmm9qnFRIT7_Cx23EAOTtTjs,115
+proxytest/backends/dummy.py,sha256=LqsRak-70wovcliq4C1A3NNOmaisG1MDPhJRZCZFBCE,709
+proxytest/backends/requests.py,sha256=qRCv3M2AJ5uKC6eVM4jTk-C-eNQhtZh7GGGCMArR5wQ,2130
+proxytest-0.4.0.dist-info/LICENSE.txt,sha256=QkJOZNwlQU4KsgY36YgGgDBlFaTQ79y3qDwq0b-713Q,1079
+proxytest-0.4.0.dist-info/METADATA,sha256=t0w2OInruGqfRSNLgERNfMwRsK5wqx60hgeDf4oGcY4,5724
+proxytest-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+proxytest-0.4.0.dist-info/entry_points.txt,sha256=JYmaBJRXH6hvldhEIiq8YXTT9VHrWQtxwhmsyt0vWhQ,56
+proxytest-0.4.0.dist-info/top_level.txt,sha256=yRolea2GmCXpqzrVJNwKdVg7Z4exuC5YO9geKhtYzs0,10
+proxytest-0.4.0.dist-info/RECORD,,
