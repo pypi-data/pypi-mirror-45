@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sifima
+Version: 0.26
+Summary: This is a project to work with files
+Home-page: https://vk.com/gerod241
+Author: Gerod
+Author-email: maksd241@gmail.com
+License: UNKNOWN
+Description: 
+        ===|simplified file management|===
+        
+        
+        =English:
+        
+        Program simplified file management can make it easier for you to work with files.
+        
+        info: 
+        print(sifima.name); 
+        print(sifima.version); 
+        print(sifima.author); 
+        print(sifima.info). 
+        
+        
+        sifima.create([name_file]) - creates an empty file
+        
+        
+        sifima.write([name_file], [text]) - writes a specific text to a file or creates a file with a specific text.
+        
+        
+        sifima.remove([name_file]) - deletes the file
+        
+        
+        sifima.read([name_file]) - reads the file.
+        
+        
+        that would output the file, it is necessary to make sifima.read into a variable
+        
+        
+        text = sifima.read([name_file])
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

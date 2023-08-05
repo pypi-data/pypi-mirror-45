@@ -1,0 +1,7 @@
+README.md
+setup.py
+sifima/__init__.py
+sifima.egg-info/PKG-INFO
+sifima.egg-info/SOURCES.txt
+sifima.egg-info/dependency_links.txt
+sifima.egg-info/top_level.txt
