@@ -1,0 +1,5 @@
+numpy
+kenlm
+configreader
+imp
+argparse
