@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ch
+Version: 0.1.2
+Summary: utils
+Home-page: https://github.com/chrahunt/ch
+License: MIT
+Author: Chris Hunt
+Author-email: chrahunt@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: more-itertools (>=7.0,<8.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Project-URL: Repository, https://github.com/chrahunt/ch
+Description-Content-Type: text/markdown
+
+# ch
+
+Various utilities to be packaged somewhere else in time.
+
