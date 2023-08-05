@@ -1,0 +1,4 @@
+[console_scripts]
+petal = petal.cli:main
+protoc-gen-extract-streaming = petal.protoc_gen_extract_streaming:main
+
