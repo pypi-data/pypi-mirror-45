@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: enforcer
+Version: 1.0.1
+Summary: AWS SSM Parameter Store Management CLI
+Home-page: https://github.com/PotomacInnovation/enforcer
+Author: @PotomacInnovation/owners-sre
+License: Upside
+Description: AWS SSM Parameter Store Management CLI
+Platform: any
+Provides-Extra: dev
