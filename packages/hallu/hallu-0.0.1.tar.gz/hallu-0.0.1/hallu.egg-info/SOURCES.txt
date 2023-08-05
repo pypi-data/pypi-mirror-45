@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+hallu/__init__.py
+hallu/__version__.py
+hallu/hallu.py
+hallu.egg-info/PKG-INFO
+hallu.egg-info/SOURCES.txt
+hallu.egg-info/dependency_links.txt
+hallu.egg-info/entry_points.txt
+hallu.egg-info/requires.txt
+hallu.egg-info/top_level.txt
