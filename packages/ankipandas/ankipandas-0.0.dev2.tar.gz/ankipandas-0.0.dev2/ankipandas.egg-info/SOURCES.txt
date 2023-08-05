@@ -1,0 +1,14 @@
+README.rst
+setup.py
+ankipandas/__init__.py
+ankipandas/anki_fields.csv
+ankipandas/convenience_functions.py
+ankipandas/core_functions.py
+ankipandas/version.txt
+ankipandas.egg-info/PKG-INFO
+ankipandas.egg-info/SOURCES.txt
+ankipandas.egg-info/dependency_links.txt
+ankipandas.egg-info/requires.txt
+ankipandas.egg-info/top_level.txt
+ankipandas/test/__init__.py
+ankipandas/test/test_ankipandas.py
