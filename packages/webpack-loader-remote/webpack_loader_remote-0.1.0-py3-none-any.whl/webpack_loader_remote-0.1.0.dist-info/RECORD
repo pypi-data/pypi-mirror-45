@@ -1,0 +1,17 @@
+webpack_loader_remote/__init__.py,sha256=KHwu4UL_9gn1QzJrWZMuV1KjbA7O-EZVJ0Q7wWEkdvA,86
+webpack_loader_remote/apps.py,sha256=_9aq4OVfQkrfChzGqblPtprj4bNdV5bg1PBIraoHx4o,744
+webpack_loader_remote/config.py,sha256=XEIPPXK6-116HVAnk0H7TTOGS0bcIIzYfr0AKYLH-Zw,833
+webpack_loader_remote/errors.py,sha256=6VhB-g2ikzHKG5LEp1lU5D6Lg1fevStdDw2f7quyqJ0,251
+webpack_loader_remote/exceptions.py,sha256=NIlHnpBHZfy0-d0BRuOeDAXPUkSckT0afNbkp69Htqs,700
+webpack_loader_remote/loader.py,sha256=w9Kc3vD8vhsEgieY7F7CLrEILhLvKVOwCRQUpq2a9Lo,4295
+webpack_loader_remote/signals.py,sha256=sE2p189K9Ans6l4nLGt2CuAL6LstjEXCxAhCYEsfGWA,31
+webpack_loader_remote/utils.py,sha256=IhIxVI4rkErNm3wEwS1g28Gh2qHLK0ykS6z_6GssjjA,2203
+webpack_loader_remote/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpack_loader_remote/contrib/jinja2ext.py,sha256=U-6BuUSsNuSdTpSO2IPza2EPk9JK6FWDxQKr_3eDbIQ,321
+webpack_loader_remote/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpack_loader_remote/templatetags/webpack_loader.py,sha256=TioO6TlVdam-vdUiCSr-dcpoini3Zm_b6fwZHfTeIG0,1187
+webpack_loader_remote-0.1.0.dist-info/LICENSE.txt,sha256=h6UAireBpkTaj_GWkcIMzmEi7NdEEVfHC-40Dt1eCUI,1071
+webpack_loader_remote-0.1.0.dist-info/METADATA,sha256=pe-ewsFwMMp8gymQ2TvdnJmSR0NBVjjSai8auFle3LY,763
+webpack_loader_remote-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+webpack_loader_remote-0.1.0.dist-info/top_level.txt,sha256=bJcccIA-4rFZ3SD78V6vIPpSR_fqP72EJD4EqjdzNz4,22
+webpack_loader_remote-0.1.0.dist-info/RECORD,,
