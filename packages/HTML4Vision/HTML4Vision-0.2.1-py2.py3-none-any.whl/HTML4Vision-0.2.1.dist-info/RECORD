@@ -1,0 +1,13 @@
+HTML4Vision-0.2.1.dist-info/DESCRIPTION.rst,sha256=iTpsdgMRzvbZTo9oHIaiEMKFRLSswLuIkty4sPgfMVg,8192
+HTML4Vision-0.2.1.dist-info/METADATA,sha256=NWRTq0gsls9Bq8Hh4j3WGTVgibDSnA7aHTWZWUss62c,9137
+HTML4Vision-0.2.1.dist-info/RECORD,,
+HTML4Vision-0.2.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+HTML4Vision-0.2.1.dist-info/metadata.json,sha256=tl35We-Fk7OzeeqakhYUrLSmzBfJMmNQaq167UFYJcY,1094
+HTML4Vision-0.2.1.dist-info/top_level.txt,sha256=iBKycBjI3Tr8dQuIkw3ZG60gRuGT6uBcAVJS3h3caB8,12
+html4vision/__init__.py,sha256=RO4MSPxe-Har7i72QMlwneh_h_xdhAUb4et0UDHvQnI,57
+html4vision/interactive.js,sha256=KtRKVKm_AX47aW8CV9JA3hjVoPPSH0wgBnt5WFQ2bY0,325
+html4vision/matchCol.js,sha256=spICNclwVyr-26J4RRN_o9c936QyDX4mKxBsdUsXzrk,1543
+html4vision/overlayToggle.js,sha256=EANONS9CMsqht_nuknIdTPoXmnoVe9fT9i0qscvcmjk,482
+html4vision/scaleImg.js,sha256=rKPC_D8_4XCRk6wHk7kCXe6O88281L9j40ehQfF5LtQ,502
+html4vision/server.py,sha256=VtRrb78NZ-zj6Vps0Q8kxE8IQ8ADF0_AF_OFbruwR6w,399
+html4vision/table.py,sha256=scu-T7pm16ubUnkw8Bv7-yqY9N_6FlrahhFRSFUw57k,11600
