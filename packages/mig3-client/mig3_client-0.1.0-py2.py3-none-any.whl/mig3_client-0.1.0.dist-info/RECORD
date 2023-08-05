@@ -1,0 +1,8 @@
+mig3_client/__init__.py,sha256=1gmUahDwE7joqnF3MH38N4jBlglGxM7u1vn0BgnCAes,3704
+mig3_client/vendors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mig3_client/vendors/poetry_version.py,sha256=0e2R6HV3pHQcFs2UbNW2K4MhA73-XlapLFcuXVNdmt8,615
+mig3_client-0.1.0.dist-info/entry_points.txt,sha256=amppWvlatpMqaGZoABAMDHu3-S0rN8ArR9ylo9nhJVQ,41
+mig3_client-0.1.0.dist-info/LICENSE,sha256=tqIkQr8oaOZ0iGfOoMUj5u55Rt4EUpbeG6b2aLDIwtw,1078
+mig3_client-0.1.0.dist-info/WHEEL,sha256=EthRfnBj5ANYdZzrVuZTBVjm9L2-CFn01N8eGlrWHnY,89
+mig3_client-0.1.0.dist-info/METADATA,sha256=BVqm-QXokfcVGOPFNuR_walj368tNvNf0PCPhQSVSvM,1251
+mig3_client-0.1.0.dist-info/RECORD,,
