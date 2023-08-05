@@ -1,0 +1,14 @@
+fastai_sparse/__init__.py,sha256=4zALCCxfSyzOKNmB_Y-R1A0iUhPpCOrKbkJ1srJWyxo,7
+fastai_sparse/core.py,sha256=XM6_dI604FL_ZQdLp1HpaA-R3hLDqSLoGGm9Mt-Boxg,3763
+fastai_sparse/data.py,sha256=XNexKK5rGqjFgdBYdl-oIMyiSk11HQt9tOyjAz4I10E,12239
+fastai_sparse/data_items.py,sha256=KsU9znGAD9-zM4GPOMtXMC-7YLN3ufRDnsqlzM67mEU,16600
+fastai_sparse/datasets.py,sha256=L-fZu5AjTNqsgf-uS0cClm8NQZ727PIlAVcrTuozUSo,12616
+fastai_sparse/learner.py,sha256=RWRyCqLv-NUvoIOxBhI47CkNDALd4aJ8jTU5x7J_Zhc,4465
+fastai_sparse/metrics.py,sha256=EQ6MajgioCc52eoCs8N3__BlHEwudd2lgPzoxk98c4c,5740
+fastai_sparse/utils.py,sha256=fieNxh3fUOraZT1jqE7Ebb6MNA8Fb0382oGpPuHmWY0,9606
+fastai_sparse/version.py,sha256=Krpo3AFB586dveWkop8UXWWHI-OgLTl30sFFR_QFVx0,53
+fastai_sparse-0.0.4.dev0.dist-info/LICENSE,sha256=JrakKeCaA4A3imUTg-ssEHcX7vqc9L4MO7LMyLaGUR8,1076
+fastai_sparse-0.0.4.dev0.dist-info/METADATA,sha256=d513yOXSSlvSPQyeT9gzmEWvmy70WXMMFujMAD2oyF8,1423
+fastai_sparse-0.0.4.dev0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fastai_sparse-0.0.4.dev0.dist-info/top_level.txt,sha256=x8tlIl8eMAHLFn9-qteI071EhAZgSOFLuNVj3Y8Z3xw,14
+fastai_sparse-0.0.4.dev0.dist-info/RECORD,,
