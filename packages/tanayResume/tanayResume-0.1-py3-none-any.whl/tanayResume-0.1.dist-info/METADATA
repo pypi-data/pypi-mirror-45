@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tanayResume
+Version: 0.1
+Summary: Python Installable Resume of Tanay Mehta
+Home-page: https://github.com/heytanay
+Author: Tanay Mehta
+Author-email: tanaymehta28@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# This is some normal README.md File
+
+
