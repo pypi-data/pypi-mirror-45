@@ -1,0 +1,14 @@
+ankipandas/__init__.py,sha256=uxKWtmWSxz7N1d2NziqWwDctJmsKYXZLiqZJn698r6s,87
+ankipandas/anki_fields.csv,sha256=J7-73zyoWEfocHr45ZKkOhEHyPFXB6PwcndOii34ACc,2920
+ankipandas/convenience_functions.py,sha256=VHIvQw35A6gUCbHKQMcBaks1UuimrQ88wuDLFrvAYO8,6529
+ankipandas/core_functions.py,sha256=ABr3MCKsxkaBtKehVkybXjOQQlxy3ItIVKwz0QTV41E,13805
+ankipandas/version.txt,sha256=LrORO-_nwGBbwb5YHQX8BRYPZ2VfFZlBdqdLyn37UB0,9
+ankipandas/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ankipandas/test/shared.py,sha256=-BKKsnALJbzRnlISgf7Y011JC9AsXBlO1pyBIZD3fVY,569
+ankipandas/test/test_convenience.py,sha256=q4mjtzNBEEQt8CEq3fsFsSUueKoEVhjNY3E9fqFScdQ,6196
+ankipandas/test/test_core.py,sha256=JmMEH_jP0ObjriR1xeQu7hl5gaFDVqX5ILe6I2V9Rsc,6509
+ankipandas-0.0.dev3.dist-info/LICENSE.txt,sha256=TaSi8EYD_NEO4oaIEOmGPApVFl9CqWm9jDG0LsfgWPc,1082
+ankipandas-0.0.dev3.dist-info/METADATA,sha256=S-mJV0IR70HsNLvvdHu2IpCqPsr8zUW_VV_arvawOxc,4438
+ankipandas-0.0.dev3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ankipandas-0.0.dev3.dist-info/top_level.txt,sha256=8ypB19XIWGJStKyXnu2eQrskT0-oEOB-Kbeyv11x47M,11
+ankipandas-0.0.dev3.dist-info/RECORD,,
