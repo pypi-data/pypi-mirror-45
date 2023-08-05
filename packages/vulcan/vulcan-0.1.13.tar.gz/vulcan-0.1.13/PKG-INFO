@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: vulcan
+Version: 0.1.13
+Summary: Terminal-based flashcard application, for developers, that uses machine learning to schedule reviews
+Home-page: https://www.github.com/shyal/vulcan/
+Author: Shyal
+Author-email: shyal@shyal.com
+License: UNKNOWN
+Description: 
+        # Vulcan
+        
+        [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c05478170d74f6ba28cf5efc379cf69)](https://www.codacy.com/app/shyal/vulcan?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shyal/vulcan&amp;utm_campaign=Badge_Grade)
+        
+        Vulcan is a terminal based flashcard application, for developers, that uses machine learning to schedule reviews.
+        
+        [https://vulcan.sh](https://vulcan.sh)
+        
+        ## running
+        
+        ```
+        $ pip3 install vulcan
+        $ vulcan
+        ```
+Platform: UNKNOWN
