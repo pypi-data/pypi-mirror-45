@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import bot
+import obj
+import os
+
+obj.shell.startup()
+try:
+    k = bot.run.kernel.start("botlib", bot.__version__)
+    k.walk("bot")
+    k.wait()
+except KeyboardInterrupt:
+    print("")
+obj.shell.reset()
+os._exit(0)
