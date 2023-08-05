@@ -1,0 +1,5 @@
+setup.py
+Riddles.egg-info/PKG-INFO
+Riddles.egg-info/SOURCES.txt
+Riddles.egg-info/dependency_links.txt
+Riddles.egg-info/top_level.txt
