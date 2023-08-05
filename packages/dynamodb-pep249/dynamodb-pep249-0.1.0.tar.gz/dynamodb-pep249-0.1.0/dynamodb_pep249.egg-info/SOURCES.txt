@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dynamodb_pep249/__init__.py
+dynamodb_pep249.egg-info/PKG-INFO
+dynamodb_pep249.egg-info/SOURCES.txt
+dynamodb_pep249.egg-info/dependency_links.txt
+dynamodb_pep249.egg-info/requires.txt
+dynamodb_pep249.egg-info/top_level.txt
