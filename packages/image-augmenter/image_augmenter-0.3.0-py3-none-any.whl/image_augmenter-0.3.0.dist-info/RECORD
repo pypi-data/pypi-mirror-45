@@ -1,0 +1,12 @@
+imgaug/__init__.py,sha256=ZEM6H0dmqGX3JZ9ehDWiCmHE0o86V1H6C_5IDAvzeEg,25
+imgaug/computer.py,sha256=kVOpQD1pRzS57K8ZFNZDFtd4eMM0v5vZyYo7jJV6Z70,3586
+imgaug/image.py,sha256=0hAQqn0KhG0GM8ipP58_PMBna7Eg2QRiGo5I6UgxkFY,7315
+imgaug/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imgaug/tests/computer_test.py,sha256=u6rHTp1p2VyNekZOA2rDuwxfHjcAU_V4ayQAFXH5Znc,1068
+imgaug/tests/doc_test.py,sha256=SMJMR-7gZaCV7nvwf11bU6ekcryaUCVkOQTIRA2lcho,264
+imgaug/tests/image_test.py,sha256=vADHsoHZn7z19H1Rg08NOXdlnlGzkGKhLz-jV02FdsY,3185
+image_augmenter-0.3.0.dist-info/LICENSE,sha256=TBh4mh7F9f9QCdC7A0R0RXs-BapBFif4y1CKijUbVPg,1074
+image_augmenter-0.3.0.dist-info/METADATA,sha256=bx5G431XV1_Xn57gfhpiFiovitmlTvghrtSH1XFB-lg,4438
+image_augmenter-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+image_augmenter-0.3.0.dist-info/top_level.txt,sha256=djekU4hSs9OcPzANnjZ6t7Bvc38XXduVeoXKd6mPD84,7
+image_augmenter-0.3.0.dist-info/RECORD,,
