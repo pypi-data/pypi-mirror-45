@@ -1,0 +1,16 @@
+Trello2Kanboard-1.1.dist-info/DESCRIPTION.rst,sha256=y-Ogw1hzZv6_5cPH5mYDzLOmezibljZVlqUWrYDiXIQ,2196
+Trello2Kanboard-1.1.dist-info/METADATA,sha256=4vP8oSNd-g_fUTs-PqtIFuqFT20Xc3RfjF51EIhbS9Y,2617
+Trello2Kanboard-1.1.dist-info/RECORD,,
+Trello2Kanboard-1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+Trello2Kanboard-1.1.dist-info/entry_points.txt,sha256=Cm2S7gcKAqZ_9lYxeMo59TwQ0lArfjLQvbq_FT9p0Mg,79
+Trello2Kanboard-1.1.dist-info/metadata.json,sha256=mMi15MozWHtw9j570nAQxGu0WXpjbjAZxajmOaIpHoo,796
+Trello2Kanboard-1.1.dist-info/top_level.txt,sha256=rQmBqA2VJ0qEaOua8kzXla7pKMHdU4a1igKz9EzmawM,16
+trello2kanboard/__init__.py,sha256=SKJ2UZCNVoQJVgLcLRv5GgPaQaoPiDPyWLap-3hAzl4,221
+trello2kanboard/__main__.py,sha256=pV-PvYjMr_5_MlcmddaZZvZUXr-BNogWij-j9dHccmQ,197
+trello2kanboard/cli.py,sha256=fXGXiOKbd3Ls3pu2WtZlpYAhNyZOI_C-0e_Sm9kEvCE,2294
+trello2kanboard/commands/__init__.py,sha256=5FQ0s_2rPa2Vpj_dOhp6usXXAHPT9X-MBVVZLP2Uoqo,23
+trello2kanboard/commands/cmd_import.py,sha256=RY0iZs2Zz3Olld6wUAUtLY1weZGBWg-jf-6z4_chzLQ,7828
+trello2kanboard/commands/cmd_json.py,sha256=00fCx-XWrhkABAOx_1Ohv6IuWvGyq60ksPPYo9zp46w,591
+trello2kanboard/commands/cmd_show.py,sha256=GtpOFrZYG_DZSYb4zt2Mj0xxpfKh2ZRoX0vYbwaov7M,1657
+trello2kanboard/commands/models.py,sha256=TAKmBcIeiI_2xmVVLnLQnRwR9-VXk9ZtzuWcj7S8bzg,1379
+trello2kanboard/commands/utils.py,sha256=sP1d5xzpfl_WrAuFBaTyg73_VDGTHLG5m_MP582u84g,3164
