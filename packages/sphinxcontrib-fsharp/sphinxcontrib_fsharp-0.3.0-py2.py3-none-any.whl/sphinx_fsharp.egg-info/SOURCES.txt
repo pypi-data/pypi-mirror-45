@@ -1,0 +1,11 @@
+README.rst
+setup.py
+/Users/dbrattli/Developer/GitHub/sphinx-fsharp/build/lib/sphinx_fsharp.egg-info/PKG-INFO
+/Users/dbrattli/Developer/GitHub/sphinx-fsharp/build/lib/sphinx_fsharp.egg-info/SOURCES.txt
+/Users/dbrattli/Developer/GitHub/sphinx-fsharp/build/lib/sphinx_fsharp.egg-info/dependency_links.txt
+/Users/dbrattli/Developer/GitHub/sphinx-fsharp/build/lib/sphinx_fsharp.egg-info/namespace_packages.txt
+/Users/dbrattli/Developer/GitHub/sphinx-fsharp/build/lib/sphinx_fsharp.egg-info/top_level.txt
+sphinxcontrib/__init__.py
+sphinxcontrib/fsharp/__init__.py
+sphinxcontrib/fsharp/autodocumenters.py
+sphinxcontrib/fsharp/domain.py
