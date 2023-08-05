@@ -1,0 +1,15 @@
+copypasta/__init__.py,sha256=YFV8QPnpS49t4nL5b2f08CQrqBhjrpZnx_XVCNthdOo,17
+copypasta/cli.py,sha256=EWwDkzuZ3ekT9dVmlSAkanF9caf-5_4TJFRUHWGoH7k,2580
+copypasta/param_parser.py,sha256=k63iFoy30UOOHO9M3hIkyrxAiiaExjC7hkD1N4QT_p8,105
+copypasta/transformers.py,sha256=u_S4ub8zdrR5JZTFN-DMjNYx7I3X988jFvE6viTGUiA,1150
+copypasta-0.0.2.dist-info/DESCRIPTION.rst,sha256=CF0-tnj957urEU4Bh1xcAMQGGaJ_HiEiN9CpxqF_-hI,47
+copypasta-0.0.2.dist-info/METADATA,sha256=H9xZTvol6kPoni9IJUix1gEZCs7FoYVQpIpo8cv5QKk,500
+copypasta-0.0.2.dist-info/RECORD,,
+copypasta-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+copypasta-0.0.2.dist-info/entry_points.txt,sha256=9poBfJWjmy7pau0bxF7_2gL8ESmSNff4DkG5bifXHlg,49
+copypasta-0.0.2.dist-info/metadata.json,sha256=uy5aeXckdYzh6cDT6F-WEqS9ZXRqJ0gWknLHP7a7MEo,784
+copypasta-0.0.2.dist-info/top_level.txt,sha256=k86HEp40OUeRYczC45bwe-Ped_COHNWFwwanZErlbmU,10
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=10NOiimvuqdX9mxC-7kGpgN_dI7PyumYsxjOlobXz_E,2580
+src/param_parser.py,sha256=k63iFoy30UOOHO9M3hIkyrxAiiaExjC7hkD1N4QT_p8,105
+src/transformers.py,sha256=u_S4ub8zdrR5JZTFN-DMjNYx7I3X988jFvE6viTGUiA,1150
