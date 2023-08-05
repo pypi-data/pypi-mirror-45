@@ -1,0 +1,8 @@
+futhark_ffi/__init__.py,sha256=m8hGX3R5yzwlo1CP3LaRejREP5AQC8lI5c27R215Td4,5211
+futhark_ffi/build.py,sha256=QIJfm1MMupw_GNb5AubV2YKf09dS--dxmoZ42TXo1bc,689
+futhark_ffi/compat.py,sha256=-H8vcnTf3QzfrFpi4ThfgoJg-JJMjcNxMRfpx0sPBJ4,1285
+futhark_ffi-0.10.2.dist-info/METADATA,sha256=qwsnL1aBDBNESzg0aJ0YUuUMI4RchRkRQyK_fsk8trg,1651
+futhark_ffi-0.10.2.dist-info/RECORD,,
+futhark_ffi-0.10.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+futhark_ffi-0.10.2.dist-info/entry_points.txt,sha256=slFO2Agf6IqGLUSPpTQN5fNvt_XhrxI5qA6_6MlNbHQ,62
+futhark_ffi-0.10.2.dist-info/top_level.txt,sha256=Y6vQsothKzMDFfoOVZAl4fNoMTV4drHRAEHau4yh_fE,12
