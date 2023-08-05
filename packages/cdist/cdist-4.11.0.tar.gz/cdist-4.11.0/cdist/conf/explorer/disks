@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+uname_s="$(uname -s)"
+
+case "${uname_s}" in
+    FreeBSD)
+        sysctl -n kern.disks
+    ;;
+    OpenBSD|NetBSD)
+        sysctl -n hw.disknames | grep -Eo '[lsw]d[0-9]+' | xargs
+    ;;
+    Linux)
+        if command -v lsblk > /dev/null
+        then
+            # exclude ram disks, floppies and cdroms
+            # https://www.kernel.org/doc/Documentation/admin-guide/devices.txt
+            lsblk -e 1,2,11 -dno name | xargs
+        else
+            printf "%s operating system without lsblk is not supported, if you can please submit a patch\n" "${uname_s}" >&2
+            exit 1
+        fi
+    ;;
+    *)
+        printf "%s operating system is not supported, if you can please submit a patch\n" "${uname_s}" >&2
+        exit 1
+    ;;
+esac
