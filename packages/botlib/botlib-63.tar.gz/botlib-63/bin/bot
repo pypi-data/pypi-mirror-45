@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+import logging
+import os
+
+from bot.run import kernel
+from obj.shell import get_shell, start, startup, reset
+from obj.utils import get_exception
+
+startup()
+try:
+    k = kernel.start("botlib")
+    k.walk("bot")
+    s = get_shell()
+    s.wait()
+except KeyboardInterrupt:
+    print("")
+except Exception as ex:
+    logging.error(get_exception())
+
+reset()
+os._exit(0)
