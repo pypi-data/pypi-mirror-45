@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: dnstest
+Version: 0.1.0a0
+Summary: A cli tool for testing DNS records match a provided yaml config file
+Home-page: https://github.com/leonsmith/dnstest
+Keywords: dns,test,dnstest
+Author: Leon Smith
+Author-email: _@leonmarksmith.com
+Requires-Python: >=3.5,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Requires-Dist: PyYaml (>=5.1,<6.0)
+Requires-Dist: cerberus (>=1.2,<2.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pydig (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://github.com/leonsmith/dnstest
+Description-Content-Type: text/markdown
+
+# dnstest
+
+A cli tool for testing DNS records match a provided yaml config file.
+
+[![Build Status](https://travis-ci.org/leonsmith/dnstest.svg?branch=master)](https://travis-ci.org/leonsmith/dnstest)
+[![Python Versions](https://img.shields.io/pypi/pyversions/dnstest.svg)](https://pypi.org/project/dnstest/)
+[![License](https://img.shields.io/pypi/l/dnstest.svg?color=informational)](https://pypi.org/project/dnstest/)
+
+## Versioning
+
+dnstest follows [SemVer](https://semver.org/) (MAJOR.MINOR.PATCH) to track what is in each release.
+
+* Major version number will be bumped when there is an incompatible API change
+* Minor version number will be bumped when there is functionality added in a backwards-compatible manner.
+* Patch version number will be bumped when there is backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+
+## Installation
+
+Installation the package from pypi with your tool of choice `pip`, `poetry`
+or `pipenv`.
+
+```bash
+pip install dnstest
+```
+
+## Usage
+
+TODO:
+
+`dnstest ./example-config.yml`
+
+
+## Documentation
+
+TODO:
+
+https://github.com/leonsmith/dnstest/
+
+
+## Support
+*If you’re interested in financially supporting open source, consider donating.*
+
+
+[![XLM Wallet](https://img.shields.io/keybase/xlm/leonsmith.svg)](https://keybase.io/leonsmith)
+[![BTC Wallet](https://img.shields.io/keybase/btc/leonsmith.svg)](https://keybase.io/leonsmith)
+
