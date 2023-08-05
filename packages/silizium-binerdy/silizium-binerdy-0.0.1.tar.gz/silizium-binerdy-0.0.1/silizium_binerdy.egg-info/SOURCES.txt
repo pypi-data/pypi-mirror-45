@@ -1,0 +1,13 @@
+README.md
+setup.py
+silizium/__init__.py
+silizium/domain/__init__.py
+silizium/domain/language.py
+silizium/domain/wiki_parser.py
+silizium/use_cases/__init__.py
+silizium/use_cases/silizium_use_cases.py
+silizium_binerdy.egg-info/PKG-INFO
+silizium_binerdy.egg-info/SOURCES.txt
+silizium_binerdy.egg-info/dependency_links.txt
+silizium_binerdy.egg-info/requires.txt
+silizium_binerdy.egg-info/top_level.txt
