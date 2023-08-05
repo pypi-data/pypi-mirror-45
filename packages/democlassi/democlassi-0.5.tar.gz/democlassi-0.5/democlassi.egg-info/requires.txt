@@ -1,0 +1,7 @@
+torch
+torchvision
+pytorch-ignite
+opencv-python
+pillow
+imutils
+tensorboardX
