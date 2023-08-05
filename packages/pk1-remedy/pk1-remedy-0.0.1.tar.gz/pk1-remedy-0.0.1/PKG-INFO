@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: pk1-remedy
+Version: 0.0.1
+Summary: Scripts to remedy vm images (of packone)
+Home-page: https://github.com/cas-bigdatalab/packone_remedy
+Author: Excel Wang
+Author-email: wanghj@cnic.com
+License: Apache-2.0 Licence
+Description: # Install
+        pip install pk1-remedy
+        
+        # Remedy Amabri
+        ambari-host-clone <ambari-server-host:port> <from-host> <to-host>
+Keywords: pip,packone
+Platform: any
