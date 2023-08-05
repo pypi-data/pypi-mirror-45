@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<ns1:log count="3" start="0" total="3" xmlns:ns1="http://ns.dataone.org/service/types/v2.0">
+  <logEntry>
+    <entryId>[ENTRY-ID]</entryId>
+    <identifier>PID_GMNFXT_joxoaqfkrafj</identifier>
+    <ipAddress>127.0.0.1</ipAddress>
+    <userAgent>DataONE-Python[VERSION] +http://dataone.org/</userAgent>
+    <subject>trusted_subj</subject>
+    <event>create</event>
+    <dateLogged>1991-08-23T12:36:06Z</dateLogged>
+    <nodeIdentifier>urn:node:GMNUnitTestInstance</nodeIdentifier>
+  </logEntry>
+  <logEntry>
+    <entryId>[ENTRY-ID]</entryId>
+    <identifier>PID_GMNFXT_qdvmvuapzxwc</identifier>
+    <ipAddress>127.0.0.1</ipAddress>
+    <userAgent>DataONE-Python[VERSION] +http://dataone.org/</userAgent>
+    <subject>trusted_subj</subject>
+    <event>create</event>
+    <dateLogged>2035-06-21T03:11:39Z</dateLogged>
+    <nodeIdentifier>urn:node:GMNUnitTestInstance</nodeIdentifier>
+  </logEntry>
+  <logEntry>
+    <entryId>[ENTRY-ID]</entryId>
+    <identifier>PID_GMNFXT_joxoaqfkrafj</identifier>
+    <ipAddress>127.0.0.1</ipAddress>
+    <userAgent>DataONE-Python[VERSION] +http://dataone.org/</userAgent>
+    <subject>trusted_subj</subject>
+    <event>update</event>
+    <dateLogged>2035-06-21T03:11:39Z</dateLogged>
+    <nodeIdentifier>urn:node:GMNUnitTestInstance</nodeIdentifier>
+  </logEntry>
+</ns1:log>
