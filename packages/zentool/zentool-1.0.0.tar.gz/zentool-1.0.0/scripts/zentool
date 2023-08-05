@@ -1,0 +1,75 @@
+#!/usr/bin/env python3.6
+
+"""
+ZenHub Utility
+
+    zentool -r <repo> comment <epic_id> "comment"                  Add comment to all issues attached to epic
+    zentool -r <repo> release <epic_id> "Release Name"             Assign all tickets attached to epic to release
+    zentool -r <repo> spreadsheet <spreadsheet_id> make            Dump epics to a blank spreadsheet
+    zentool -r <repo> spreadsheet <spreadsheet_id> sync            Update spreadsheet with issue status
+    zentool -r <repo> spreadsheet <spreadsheet_id> create-issues   Create issues where instructed to by sheet
+"""
+
+from __future__ import print_function
+import argparse
+import os.path
+
+from zentool.lib.combo import Combo
+from zentool.tools.commentator import Commentator
+from zentool.tools.release_assigner import ReleaseAssigner
+from zentool.tools.spreadsheet_tools import SpreadsheetTools
+
+
+class ZenTool:
+    def __init__(self):
+        parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
+        parser.add_argument('-r', '--repo-name', type=str, default="HumanCellAtlas/dcp",
+                            help="Name of repo that contains epic(s), default=HumanCellAtlas/dcp")
+        parser.add_argument('-z', '--zenhub-api-token', help="ZenHub API token")
+        parser.add_argument('-g', '--github-api-token', help="GitHub API token")
+        subparsers = parser.add_subparsers()
+
+        Commentator.configure(subparsers)
+        ReleaseAssigner.configure(subparsers)
+        SpreadsheetTools.configure(subparsers)
+
+        args = parser.parse_args()
+
+        zh_api_token = self._get_config_param_from_cmdline_or_environ(args, 'zenhub-api-token')
+        gh_api_token = self._get_config_param_from_cmdline_or_environ(args, 'github-api-token')
+
+        combo = Combo(gh_token=gh_api_token, zh_token=zh_api_token)
+
+        if 'command' not in args:
+            parser.print_help()
+            exit(1)
+
+        try:
+            if args.command == 'comment':
+                Commentator(combo=combo).run(args)
+            elif args.command == 'release':
+                ReleaseAssigner(combo=combo).run(args)
+            elif args.command == 'spreadsheet':
+                SpreadsheetTools(combo=combo).run(args)
+        except (AssertionError, RuntimeError) as e:
+            print("Error: " + str(e) + "\nAborting...")
+            exit(1)
+
+    @staticmethod
+    def _get_config_param_from_cmdline_or_environ(args, param_name):
+        """
+        Get config parameter from command-line arguments or environment.
+        """
+        arg_name = param_name.replace('-', '_')
+        env_var = arg_name.upper()
+        if getattr(args, arg_name):
+            return getattr(args, arg_name)
+        elif env_var in os.environ:
+            return os.environ[env_var]
+        else:
+            print(f"You must provide command option --{param_name} or set environment variable {env_var}")
+            exit(1)
+
+
+if __name__ == '__main__':
+    ZenTool()
