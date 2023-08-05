@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyflunt
+Version: 0.0.1
+Summary: Python implementation of Domain Notification Pattern based in Flunt(.NET) developed by @andrebaltieri
+Home-page: https://github.com/flaviogf/pyflunt/
+Author: Flavio Fernandes
+Author-email: flavio.fernandes6@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
