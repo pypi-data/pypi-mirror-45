@@ -1,0 +1,12 @@
+dodoo/__init__.py,sha256=ynZFEOE6hLMrnKcsZ4Gn-DeUJOOKIsvDx8Zd17FPwnk,335
+dodoo/cli.py,sha256=goFZRh8-esVIiX7Nk8wDSdtATg8942FVqeP8VBT3eB4,2223
+dodoo/commands.py,sha256=LOd1DpLtZR5MtHLpavkxQk84uMZioTlc4KBRVwH5-Z8,5587
+dodoo/console.py,sha256=qq2FMksHHubvewcle3T8QmYJzuERCdqmFDqGQ7IW5jE,1620
+dodoo/env.py,sha256=sI774JosPN9pDJOxGnu6DCmO1cgg8rM5p3ZT3ne54IM,1862
+dodoo/options.py,sha256=LTUi178Y77EEDP50QLH11Wj4c7epfVNVkcVV5goGpoM,2293
+dodoo-2.0.0rc8.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+dodoo-2.0.0rc8.dist-info/METADATA,sha256=ygHgKlXV_gJboGXQayonEDF4JtM_dYSapLwDsyi1M7k,16362
+dodoo-2.0.0rc8.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+dodoo-2.0.0rc8.dist-info/entry_points.txt,sha256=GdGxo1-Dpw9k68eoawhqIwf3Y46I4m3mGUoTgJExL10,60
+dodoo-2.0.0rc8.dist-info/top_level.txt,sha256=hJ8AbBLYrKMp4mcMIrefSDgTQv2kTURBE0fXzXjF4CA,6
+dodoo-2.0.0rc8.dist-info/RECORD,,
