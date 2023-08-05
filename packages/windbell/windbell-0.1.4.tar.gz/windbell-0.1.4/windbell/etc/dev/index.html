@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Windbell Playground</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.5.10/split.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <div id="test-modal" class="ui tiny modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Send Testing Email
+        </div>
+        <div class="content">
+            <p>Select a receiver.</p>
+            <select id="receiver-dropdown" class="ui fluid dropdown receiver-list">
+                <option value="">Receiver</option>
+            </select>
+        </div>
+        <div class="actions">
+            <div class="ui button cancel">Cancel</div>
+            <div class="ui button primary approve">OK</div>
+        </div>
+    </div>
+
+    <div class="float-message ui transition hidden">
+        <div class="ui icon floating message">
+            <i class="notched circle loading icon float-message-icon"></i>
+            <div class="content">
+                <div class="header float-message-title">
+                    Just one second
+                </div>
+                <p class="float-message-content">We're saving content for you.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted menu navbar">
+        <div class="windbell">
+            Windbell
+        </div>
+        <a class="item" onclick="onSaveButtonClick()">
+            <i class="save icon"></i>
+            <u>S</u>ave
+        </a>
+        <a class="item" onclick="onTestButtonClick()">
+            <i class="play icon"></i>
+            T<u>e</u>st
+        </a>
+    </div>
+
+    <div class="ui two column grid main-grid">
+        <div class="row">
+            <div id="left" class="column split">
+                <div class="ui top attached menu config-menu">
+                    <a class="item" data-idx="0" onclick="onMenuClick(0)">Environments</a>
+                    <a class="active item" data-idx="1" onclick="onMenuClick(1)">Config</a>
+                    <a class="item" data-idx="2" onclick="onMenuClick(2)">Template</a>
+                </div>
+                <div class="ui attached segment" data-idx="0">
+                    <table id="env-table" class="ui compact celled definition table hide">
+                        <thead class="full-width">
+                            <tr>
+                                <th></th>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="env-table-body"></tbody>
+                        <tfoot class="full-width">
+                            <tr>
+                                <th></th>
+                                <th colspan="2">
+                                    <div class="ui right floated small primary labeled icon button"
+                                        onclick="onEnvAddClick()">
+                                        <i class="add icon"></i> Add
+                                    </div>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div id="editor" class="editor">loading</div>
+                </div>
+            </div>
+            <div id="right" class="column split">
+                <div class="ui top attached menu preview-menu">
+                    <h4 class="preview-title">Preview</h4>
+                    <!-- <div class="right menu">
+                        <div class="ui dropdown item">
+                            <i class="arrows alternate horizontal icon"></i>Responsive <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item"><i class="arrows alternate horizontal icon"></i>Responsive</a>
+                                <a class="item"><i class="mobile alternate icon"></i>Mobile</a>
+                                <a class="item"><i class="desktop icon"></i>Desktop</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="ui attached segment">
+                    <iframe id="preview-frame" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="assets/js/app.js"></script>
+</html>
