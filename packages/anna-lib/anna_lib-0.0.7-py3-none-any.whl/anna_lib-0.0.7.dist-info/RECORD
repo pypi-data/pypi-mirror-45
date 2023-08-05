@@ -1,0 +1,8 @@
+anna_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anna_lib/task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anna_lib/task/abstract_task.py,sha256=ZmDAFYafCfxWh28NdpD4IiEF5dJ4vXcE1zDC1bVp37w,1683
+anna_lib/task/factory.py,sha256=_78PFudRhaJ_fgmSgYEVovE50beuOsPD1z_tMTPbOU0,1120
+anna_lib-0.0.7.dist-info/METADATA,sha256=6swXgSLsbEUbV39ICxvWoDkrO-NexIl_aJOsMr0UL1g,2579
+anna_lib-0.0.7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+anna_lib-0.0.7.dist-info/top_level.txt,sha256=JmLRy2GpkA-5Muz7Jf2T2JXLuT-Cwo0j-sNkkvrJxF8,9
+anna_lib-0.0.7.dist-info/RECORD,,
