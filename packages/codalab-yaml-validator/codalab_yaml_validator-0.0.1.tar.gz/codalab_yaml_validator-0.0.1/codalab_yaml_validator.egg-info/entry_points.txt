@@ -1,0 +1,3 @@
+[console_scripts]
+existence = codalab_yaml_validator.yaml_validator:main
+
