@@ -1,0 +1,15 @@
+aux_functions/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+aux_functions/getvertices.py,sha256=lIlidBWZosDJuCa84LmHKF9EhyRrBqm3IonEbyg-wNg,1356
+aux_functions/lhsdesign.py,sha256=ur2Zq4Fm6VGog4GgNIBgyO-B3Ps3KGILvt5TE3aC3jk,2657
+aux_functions/matrixdivide.py,sha256=gxwFY35FCTIp8AgQwC16BHxm6jUWxPayFGGpendfv-s,1951
+pydace/__init__.py,sha256=qyAvX9NF1MkxgTbQ0AOvPb5T7RQQbUHBv79r51Ps7VE,12576
+pydace/boxmin.py,sha256=vzcMyNrlPGlhrTRCyDdFVZqTkdorFTYeJ5R3LTWIEeY,7222
+pydace/corr.py,sha256=TtCY8JZp8sNzZAwqtBsNxUTOmBQMfCISKxPYN-HT2yA,2444
+pydace/regr.py,sha256=bzSaPWDb9JEfC1SR6XVU8Sdb_jm8270j9EIesvakGA8,3104
+tests/csv_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/csv_data/csv_read.py,sha256=iYLqs_333Q1lW_e57I8ooV8DKMBdsmrpEgLyMFOBs54,1002
+pydace-0.0.3.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+pydace-0.0.3.dist-info/METADATA,sha256=F-EOL-MDVdFNp_jU-uiJ6rC6JnwYlOjGmpioNjnML5U,1497
+pydace-0.0.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pydace-0.0.3.dist-info/top_level.txt,sha256=VVf_9nEAM5niT1TrLhMtgEZP2B0Tjgjk204isitmq7Q,27
+pydace-0.0.3.dist-info/RECORD,,
