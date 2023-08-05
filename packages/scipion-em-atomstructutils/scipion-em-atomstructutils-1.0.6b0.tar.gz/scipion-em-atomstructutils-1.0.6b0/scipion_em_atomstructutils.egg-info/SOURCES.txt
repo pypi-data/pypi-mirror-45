@@ -1,0 +1,16 @@
+CHANGES.txt
+MANIFEST.in
+README.rst
+setup.py
+atomstructutils/__init__.py
+atomstructutils/bibtex.py
+atomstructutils/constants.py
+atomstructutils/wizards.py
+atomstructutils/protocols/__init__.py
+atomstructutils/protocols/protocol_operate.py
+atomstructutils/tests/__init__.py
+atomstructutils/tests/test_protocol_operate.py
+scipion_em_atomstructutils.egg-info/PKG-INFO
+scipion_em_atomstructutils.egg-info/SOURCES.txt
+scipion_em_atomstructutils.egg-info/dependency_links.txt
+scipion_em_atomstructutils.egg-info/top_level.txt
