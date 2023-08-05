@@ -1,0 +1,14 @@
+CHANGES
+=======
+
+1.0.1
+-----
+
+* MAINT: Adjust dependencies to be compatible with pyfolio
+
+1.0.0
+-----
+
+* FIX: Docker build badge should point to cloud category
+* ENH: Initial add of flexfolio
+* Initial commit
