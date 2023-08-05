@@ -1,0 +1,4 @@
+compat
+doom
+fslib
+utils
