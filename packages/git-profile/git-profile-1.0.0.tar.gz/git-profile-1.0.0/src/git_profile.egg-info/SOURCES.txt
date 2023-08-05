@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/git_profile.egg-info/PKG-INFO
+src/git_profile.egg-info/SOURCES.txt
+src/git_profile.egg-info/dependency_links.txt
+src/git_profile.egg-info/entry_points.txt
+src/git_profile.egg-info/requires.txt
+src/git_profile.egg-info/top_level.txt
+src/git_profile_command/__init__.py
+src/git_profile_command/_vendor/__init__.py
+src/git_profile_command/_vendor/gitconfigparser.py

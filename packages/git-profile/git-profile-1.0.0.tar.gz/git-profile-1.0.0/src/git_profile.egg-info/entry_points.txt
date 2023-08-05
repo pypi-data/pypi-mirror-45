@@ -1,0 +1,3 @@
+[console_scripts]
+git-profile = git_profile_command:main
+
