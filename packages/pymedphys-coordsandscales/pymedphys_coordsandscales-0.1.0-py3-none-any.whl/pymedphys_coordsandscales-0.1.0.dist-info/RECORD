@@ -1,0 +1,13 @@
+pymedphys_coordsandscales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymedphys_coordsandscales/_install_requires.py,sha256=_Lo1dxIsn3lcSpvKaQxOOhGNJVvdSNU21ve6i1Avbic,82
+pymedphys_coordsandscales/_version.py,sha256=Ivbj0uXi7_YgoUWl6J9hRH70duvRFVTBmMwiDIN4VJ8,135
+pymedphys_coordsandscales/coordinates/__init__.py,sha256=eSONS-K6YfJtE1gWZUQpy6ju3U5LqKuFfSpMTsl8NpA,1680
+pymedphys_coordsandscales/coordinates/_level1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymedphys_coordsandscales/coordinates/_level1/coordinatestransforms.py,sha256=PNeaA-c3zslrHnS0WMu5Nka74lXWVbxJxAcWrfc-Na8,4716
+pymedphys_coordsandscales/deliverydata/__init__.py,sha256=Emcv3TmQZ_t6LoOReidF4faTHMZwq8iM0VDWvXu3QJI,1654
+pymedphys_coordsandscales/deliverydata/_level1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymedphys_coordsandscales/deliverydata/_level1/deliverydatacore.py,sha256=WNWoye0TNj6ReYLa1G8YAtW_TVHvycH8tBXO5BxZ8A8,3751
+pymedphys_coordsandscales-0.1.0.dist-info/METADATA,sha256=KHnC4WmzCVITq1zEle8iGKG8dEIYhbh-OAquWKVN6KQ,767
+pymedphys_coordsandscales-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pymedphys_coordsandscales-0.1.0.dist-info/top_level.txt,sha256=ykLyuf6-X-HISybrcSSqcKkskwz3xuY2htkDDVezDTs,26
+pymedphys_coordsandscales-0.1.0.dist-info/RECORD,,
