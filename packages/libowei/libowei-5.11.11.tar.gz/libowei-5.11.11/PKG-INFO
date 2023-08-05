@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: libowei
+Version: 5.11.11
+Summary: 数学工程库
+Home-page: https://github.com/
+Author: Libowei
+Author-email: 913911037@qq.com
+License: MIT Licence
+Description: 基础数学,统计学,物理
+Keywords: math
+Platform: any
