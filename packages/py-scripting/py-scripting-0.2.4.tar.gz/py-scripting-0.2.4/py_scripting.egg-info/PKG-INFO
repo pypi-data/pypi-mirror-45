@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: py-scripting
+Version: 0.2.4
+Summary: Python utilities for scripting
+Home-page: http://csdms.colorado.edu
+Author: Eric Hutton
+Author-email: huttone@colorado.edu
+License: UNKNOWN
+Description: # py-scripting
+        Python scripting utilities
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
