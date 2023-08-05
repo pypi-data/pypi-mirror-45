@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: protobrain
+Version: 0.0.2
+Summary: Experimental project for machine learning.
+Home-page: https://github.com/Ariel-Perez/protobrain
+Author: Ariel Perez
+Author-email: arielperezch@gmail.com
+License: MIT
+Description: 
+        # protobrain
+        This is an experimental project for machine learning techniques.
+        
+        Loosely based on Hierarchical Temporal Memory by [Numenta](http://numenta.org/).
+        
+        ## Building the protobuf files
+        To use this project you'll need to build the protobuf files.
+        ```
+        protoc -I=. --python_out=. protobrain/proto/*.proto
+        ```
+        
+        For more information on Protocol buffers, read the [official documentation](https://developers.google.com/protocol-buffers/).
+        
+        ## Testing
+        This project uses pytest and the tests can be run from the repository root.
+        ```
+        python -m pytest
+        ```
+        
+        ## License
+        protobrain is a project licensed under GNU GPLv3.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
