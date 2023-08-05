@@ -1,0 +1,9 @@
+numpy
+bokeh
+pandas
+joblib
+photutils
+astropy
+pysynphot
+sphinx
+scipy
