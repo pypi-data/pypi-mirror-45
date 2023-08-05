@@ -1,0 +1,10 @@
+README.md
+setup.py
+proxytest/__init__.py
+proxytest/proxytest.py
+proxytest.egg-info/PKG-INFO
+proxytest.egg-info/SOURCES.txt
+proxytest.egg-info/dependency_links.txt
+proxytest.egg-info/entry_points.txt
+proxytest.egg-info/requires.txt
+proxytest.egg-info/top_level.txt
