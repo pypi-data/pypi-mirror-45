@@ -1,0 +1,5 @@
+ipyparallel>=6.1.1
+dill>=0.2.9
+
+[remote_arrays]
+numpy>=1.6
