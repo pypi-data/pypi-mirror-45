@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: iris_python_client
+Version: 0.1
+Summary: Iris message bus
+Home-page: https://github.com/digirati-co-uk/iris4py
+Author: John Root
+Author-email: john.root@digirati.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
