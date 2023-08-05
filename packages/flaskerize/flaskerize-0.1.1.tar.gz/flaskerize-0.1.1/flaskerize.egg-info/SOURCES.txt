@@ -1,0 +1,7 @@
+README.md
+setup.py
+bin/flaskerize
+flaskerize.egg-info/PKG-INFO
+flaskerize.egg-info/SOURCES.txt
+flaskerize.egg-info/dependency_links.txt
+flaskerize.egg-info/top_level.txt
