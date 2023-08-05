@@ -1,0 +1,3 @@
+autokeras==0.3.7
+lightgbm==2.2.3
+numpy==1.16.1

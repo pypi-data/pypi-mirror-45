@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: autokeras_tabular
+Version: 0.3.7
+Summary: AutoML Tabular addon for deep learning
+Home-page: http://github.com/bolkedebruin/autokeras-tabular
+Author: Original Author: DATA Lab at Texas A&M University
+Author-email: bdbruin@gmail.com
+License: MIT
+Download-URL: https://github.com/bolkedebruin/autokeras_tabular/archive/0.3.7.tar.gz
+Description: UNKNOWN
+Keywords: AutoML,keras,tabular
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
