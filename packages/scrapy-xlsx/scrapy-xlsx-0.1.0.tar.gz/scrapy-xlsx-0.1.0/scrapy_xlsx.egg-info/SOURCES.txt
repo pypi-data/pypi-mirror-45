@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+scrapy_xlsx/__init__.py
+scrapy_xlsx/exporters.py
+scrapy_xlsx.egg-info/PKG-INFO
+scrapy_xlsx.egg-info/SOURCES.txt
+scrapy_xlsx.egg-info/dependency_links.txt
+scrapy_xlsx.egg-info/requires.txt
+scrapy_xlsx.egg-info/top_level.txt
+tests/__init__.py
+tests/test_exporters.py
