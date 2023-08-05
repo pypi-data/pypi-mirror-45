@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: file_organizer_cli
+Version: 0.0.4
+Summary: interactive file extension manager cli
+Home-page: https://gitlab.com/philsupertramp/file-organizer-cli
+Author: Philipp Zettl
+Author-email: philipp.zettl@time-dev.de
+License: gpl-3.0
+Download-URL: https://gitlab.com/philsupertramp/file-organizer-cli/-/archive/master/file-organizer-cli-master.tar.gz
+Description: Soon to be file extension manager. 
+        - [x] Edit django `.json` export using `./manage.py dumpdata > [filename].json`
+            - can also edit other `.json` files with schema (see underneath)
+        - [x] interactive cli elements
+        - [ ] Convert `.json` files as required through cli
+        - [ ] Convert and edit `.css` files
+        
+        ## for usage type `[h|?]`
+        
+        #### currently supported schema
+        
+        ```json
+        [{"model": [string value], "pk": [int value], "fields": {"[field name]": [string value]}},...]
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires: PyInquirer
