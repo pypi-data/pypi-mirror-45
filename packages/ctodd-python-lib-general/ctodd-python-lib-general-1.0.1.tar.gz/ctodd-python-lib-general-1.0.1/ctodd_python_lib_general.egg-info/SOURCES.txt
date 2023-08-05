@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ctodd_python_lib_general.egg-info/PKG-INFO
+ctodd_python_lib_general.egg-info/SOURCES.txt
+ctodd_python_lib_general.egg-info/dependency_links.txt
+ctodd_python_lib_general.egg-info/requires.txt
+ctodd_python_lib_general.egg-info/top_level.txt
+general_helpers/__init__.py
+general_helpers/downloader.py
+general_helpers/user_input_helpers.py
+general_helpers/tests/__init__.py
+general_helpers/tests/test_downloader.py
+general_helpers/tests/test_user_input_helpers.py
