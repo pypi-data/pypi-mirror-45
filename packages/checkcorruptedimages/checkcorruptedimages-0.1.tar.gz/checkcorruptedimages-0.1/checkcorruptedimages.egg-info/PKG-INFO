@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: checkcorruptedimages
+Version: 0.1
+Summary: Python3 module to check for corrupted images using "identify" from ImageMagick as underlying mechanism.
+Home-page: https://github.com/carlosplanchon/checkcorruptedimages
+Author: Carlos A. Planchón
+Author-email: bubbledoloresuruguay2@gmail.com
+License: GPL3
+Download-URL: https://github.com/carlosplanchon/checkcorruptedimages/archive/v0.1.tar.gz
+Description: # checkcorruptedimages
+        *Python3 module to check for corrupted images using "identify" from ImageMagick as underlying mechanism.*
+        
+        ## Installation
+        ### Install with pip
+        ```
+        pip3 install -U checkcorruptedimages
+        ```
+        
+        ## Usage
+        ```
+        In [1]: import checkcorruptedimages
+        
+        In [2]: from pathlib import Path
+        
+        In [3]: checkcorruptedimages.get_corrupted_images(
+            folder_to_check=Path("/home/user/Pictures"),
+            file_extensions_list=["jpg"]
+            )
+        
+        Out[3]: [PosixPath('/home/user/Pictures/corruptedimage.jpg'),
+            PosixPath('/home/user/Pictures/corruptedimage2.jpg'
+            ]
+        ```
+        
+Keywords: check,corrupted,images
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

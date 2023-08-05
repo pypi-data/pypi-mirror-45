@@ -1,0 +1,8 @@
+README.md
+setup.py
+checkcorruptedimages/__init__.py
+checkcorruptedimages/checkcorruptedimages.py
+checkcorruptedimages.egg-info/PKG-INFO
+checkcorruptedimages.egg-info/SOURCES.txt
+checkcorruptedimages.egg-info/dependency_links.txt
+checkcorruptedimages.egg-info/top_level.txt
