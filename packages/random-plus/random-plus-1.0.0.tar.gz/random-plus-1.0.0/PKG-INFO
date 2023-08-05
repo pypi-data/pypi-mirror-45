@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: random-plus
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: doesdoing
+Author-email: doesdong@hotmail.com.com
+License: UNKNOWN
+Description: Example:  
+                import random_plus  
+            
+                a = ramdon_plus().aa(EN='t', En='t', Many=100)  
+                print(a)
+                option:  
+                    EN = Capital English  
+                    En =  Lower case English  
+                    Num = number 
+                    Mark = Punctuation  
+                    Many = Returns string length  
+                
+                 The default return string length is 8
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
