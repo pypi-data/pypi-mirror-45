@@ -1,0 +1,14 @@
+camaraPy/__init__.py,sha256=7a7__Nj4lQhSduzAuS4MkBW7_2w8qKmRcpP4mzFd2SQ,17
+camaraPy/api_original/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+camaraPy/api_original/deputados.py,sha256=3dd1ASt24eoG3owBx9AJW9iNFY69Nind1gwLpMN_xGc,645
+camaraPy/api_original/orgaos.py,sha256=nVgWhwecBAIOOwQ3_gU0qcHKcVVEmpE72-7vyO4BaMs,1152
+camaraPy/api_original/proposicoes.py,sha256=A42iuW9tMp5T_CJVxFLvCSHYfEUWbR2imeDnM8TFGOQ,1399
+camaraPy/api_original/sessoes_reunioes.py,sha256=tJatVgZUAzkaZw6m_Pgo_th84z1AyHZyEs8yFxS_kYI,600
+camaraPy/api_original/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+camaraPy/api_original/core/core.py,sha256=XwkNsCS8zZprTzGgcg4UWB_48NQjqkkqj-ZxZbHBtGk,17680
+camaraPy/api_original/core/custom_exceptions.py,sha256=mvyZUz9J0IDD0S2Q5nL1fbDbmPIIr73ttFmKNMebGcg,476
+camaraPy-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+camaraPy-0.0.4.dist-info/METADATA,sha256=wHOYgjmD2xPYD6_uu3POIJuZCA8mPGrAbn2-MPExkmw,3191
+camaraPy-0.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+camaraPy-0.0.4.dist-info/top_level.txt,sha256=GQFU0pSagdof0-pSQBUMUilIoaNUI8uyT76rYG1yBXg,9
+camaraPy-0.0.4.dist-info/RECORD,,
