@@ -1,0 +1,10 @@
+cython
+numpy
+scipy
+scikit-learn
+scikit-image
+matplotlib
+annoy
+numba
+pandas
+umap-learn

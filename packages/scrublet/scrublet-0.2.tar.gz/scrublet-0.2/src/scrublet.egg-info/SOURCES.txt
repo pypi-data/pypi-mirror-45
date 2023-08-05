@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/scrublet/__init__.py
+src/scrublet/helper_functions.py
+src/scrublet/scrublet.py
+src/scrublet.egg-info/PKG-INFO
+src/scrublet.egg-info/SOURCES.txt
+src/scrublet.egg-info/dependency_links.txt
+src/scrublet.egg-info/requires.txt
+src/scrublet.egg-info/top_level.txt
