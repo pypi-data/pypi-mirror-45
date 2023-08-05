@@ -1,0 +1,6 @@
+include README.md LICENSE.txt
+include ./opennn/*.cpp ./opennn/*.h
+include ./CMakeLists.txt ./pybind11/CMakeLists.txt 
+include ./*.cmake ./pybind11/*.cmake
+recursive-include eigen *
+recursive-include pybind11 *

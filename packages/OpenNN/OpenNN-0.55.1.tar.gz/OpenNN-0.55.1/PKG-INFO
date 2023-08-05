@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: OpenNN
+Version: 0.55.1
+Summary: Open neural network library
+Home-page: https://github.com/Artelnics/opennn
+Author: Artificial Intelligence Techchiques SL (Artelnics)
+Author-email: info@opennn.net
+License: UNKNOWN
+Description: OpenNN is an open source neural networks library.
+        
+        It is develop by Artelnics (https://www.artelnics.com/), written in C++ and ported to Python using pybind11 (https://github.com/pybind/pybind11).
+        
+        For more info go to the OpenNN web www.opennn.net
+Keywords: neural,analytics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
