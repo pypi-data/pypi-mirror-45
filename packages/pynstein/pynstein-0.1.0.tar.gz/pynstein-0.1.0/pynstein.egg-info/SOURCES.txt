@@ -1,0 +1,9 @@
+README.md
+setup.py
+pynstein/__init__.py
+pynstein.egg-info/PKG-INFO
+pynstein.egg-info/SOURCES.txt
+pynstein.egg-info/dependency_links.txt
+pynstein.egg-info/not-zip-safe
+pynstein.egg-info/requires.txt
+pynstein.egg-info/top_level.txt
