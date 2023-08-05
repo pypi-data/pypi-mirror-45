@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyroyale
+Version: 0.1.0
+Summary: Clash Royale API wrapper for Python 3
+Home-page: https://github.com/AaronTraas/pyroyale
+Author: Aaron Traas
+Author-email: aaron@traas.org
+License: LGPLv3+
+Project-URL: Bug Reports, https://github.com/AaronTraas/pyroyale/issues
+Project-URL: Source, https://github.com/AaronTraas/pyroyale
+Keywords: ClashRoyale
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests
+
+==================================================
+pyroyale -- Clash Royale API wrapper
+==================================================
+
+This is a tool for data from the official ClashRoyale developer API.
+See https://developer.clashroyale.com to sign up for a developer account and
+create an API key to use with this.
+
+
