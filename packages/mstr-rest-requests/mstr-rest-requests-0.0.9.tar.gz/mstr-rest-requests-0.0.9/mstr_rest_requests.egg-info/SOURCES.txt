@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+mstr_rest_requests.egg-info/PKG-INFO
+mstr_rest_requests.egg-info/SOURCES.txt
+mstr_rest_requests.egg-info/dependency_links.txt
+mstr_rest_requests.egg-info/top_level.txt
