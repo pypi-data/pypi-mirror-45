@@ -1,0 +1,14 @@
+quaerere-base-flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quaerere-base-flask/schemas/__init__.py,sha256=RTYUzoFNWSH5343vhG0UaCKPi_oxWcBYCz_9enxkwrE,217
+quaerere-base-flask/views/__init__.py,sha256=vjUqPFd3v1XLgX00XiSf9ea5q0HLcdtL62Zo2kqahc8,1053
+quaerere-base-flask/views/base.py,sha256=XAPjH08z2AnjjnkcOVnLLht7f26Ij-g8CO7ZK5MA3fI,1337
+quaerere_base_flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quaerere_base_flask/schemas/__init__.py,sha256=RTYUzoFNWSH5343vhG0UaCKPi_oxWcBYCz_9enxkwrE,217
+quaerere_base_flask/views/__init__.py,sha256=plJDcx9VkPbD_qYyD9VB9YVIQM3H_13g1G9ONwh8bb4,1114
+quaerere_base_flask/views/base.py,sha256=1Zd0wE36dslSPhqbw3lMtn1_WY-eIXwqVZ64MTs2WhU,1433
+quaerere_base_flask-0.1.0a0.dist-info/LICENSE.txt,sha256=TfPDBt3ar0uv_f9cqCDMZ5rIzW3CY8anRRd4PkL6ejs,34522
+quaerere_base_flask-0.1.0a0.dist-info/METADATA,sha256=DnjgMVBRnUXDMid1KAAMur1hzdtfZNNX3K1uOi3nWUI,1592
+quaerere_base_flask-0.1.0a0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+quaerere_base_flask-0.1.0a0.dist-info/entry_points.txt,sha256=1UxpyOr7nB2tVa4OhZPS2FelCx_UwzilnMrPkLviUlA,67
+quaerere_base_flask-0.1.0a0.dist-info/top_level.txt,sha256=szHTAcTOKWzpZc_D6nJ_eUXJd7CP8iEvDZF5sbiEF8c,20
+quaerere_base_flask-0.1.0a0.dist-info/RECORD,,
