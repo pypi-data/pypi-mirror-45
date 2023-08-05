@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    cseffects=vmine.__main__:cseffects
+    
