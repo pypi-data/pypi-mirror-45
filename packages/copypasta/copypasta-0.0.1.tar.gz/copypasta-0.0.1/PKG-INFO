@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: copypasta
+Version: 0.0.1
+Summary: Simple scaffolding tool
+Home-page: https://github.com/zweicoder/copypasta
+Author: zweicoder
+Author-email: zweicoder@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # CopyPasta
+        
+        Simple scaffolding using Jinja2
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
