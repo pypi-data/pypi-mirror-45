@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bula-validator
+Version: 0.0.1
+Summary: A validation utils package
+Home-page: https://github.com/lsnascimento/bula
+Author: Leonardo Nascimento
+Author-email: lnascimento1988@gmail.com
+Maintainer: Leonardo
+License: Apache Softawre License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Bula Validation Project
+
+Validatin library for Python
+
