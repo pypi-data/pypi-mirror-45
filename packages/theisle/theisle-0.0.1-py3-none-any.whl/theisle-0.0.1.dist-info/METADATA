@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: theisle
+Version: 0.0.1
+Summary: A package for manging theisle servers
+Home-page: https://github.com/gquarles/theisle
+Author: Griffin Quarles
+Author-email: griffq@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# theisle
+
+
