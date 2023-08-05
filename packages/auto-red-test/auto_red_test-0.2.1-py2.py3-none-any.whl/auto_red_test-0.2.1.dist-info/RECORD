@@ -1,0 +1,12 @@
+auto_red_test/__init__.py,sha256=oVilRdix_FH0980LsB3z9XrBemAvIob_zfE_ZqUAZeM,49
+auto_red_test/dict_format_print.py,sha256=waPP-BCOTtVQ9XIqrP6nGux9_qT3YLGgTChEJv94LOs,1267
+auto_red_test/dict_replace.py,sha256=faytkiOMZH-CYX6YfDu9R7Hgij3et5zK_GPN9h3pbhk,2497
+auto_red_test/faker_config.py,sha256=_TL1B_pkAQx49lVyp5ARynqBau_R6C0h-w_m5RVi5fE,1111
+auto_red_test/generate_test_case.py,sha256=ML7pvPBO8yO01IM5sS-3PH9cAFdjfckGYcScnx76svo,15198
+auto_red_test/thrift_fake.py,sha256=hwFAPi8nnKQuRqW2FXfLDPatHFpGi4T6HQzszHFr5pk,4049
+auto_red_test-0.2.1.dist-info/LICENSE,sha256=Mx-fKpQOJylrp5UaTTMomCB2sq1R-8LaWWrnD9szmOY,1066
+auto_red_test-0.2.1.dist-info/METADATA,sha256=YZx5tbuASkfSgUSi8ovcBP8yC2XnwPVr5tlR33-qjh8,2051
+auto_red_test-0.2.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+auto_red_test-0.2.1.dist-info/__init__.py,sha256=jJ-bA1Uqvcomc6TSpFAkNP1zNCr2Ekm-Vmqzyr9gueI,44
+auto_red_test-0.2.1.dist-info/top_level.txt,sha256=THKAyGCjKH8PJ_K1fTCzvONGVLxCtWuteKZXjrKl-WA,14
+auto_red_test-0.2.1.dist-info/RECORD,,
