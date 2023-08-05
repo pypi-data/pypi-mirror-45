@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pytest-common-subject
+Version: 1.0.0
+Summary: pytest framework for testing different aspects of a common method
+Home-page: https://github.com/usePF/pytest-common-subject
+License: MIT
+Keywords: pytest
+Author: Zach "theY4Kman" Kanzler
+Author-email: z@perchsecurity.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: lazy-object-proxy (>=1.3.1,<2.0.0)
+Requires-Dist: pytest (>=3.0,<4.0)
+Requires-Dist: pytest-lambda (>=0.1.0)
+Project-URL: Repository, https://github.com/usePF/pytest-common-subject
+Description-Content-Type: text/markdown
+
+# pytest-common-subject
+
