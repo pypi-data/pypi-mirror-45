@@ -1,0 +1,14 @@
+README.md
+setup.py
+igoogle/__init__.py
+igoogle/auth.py
+igoogle/drive.py
+igoogle/gmail.py
+igoogle.egg-info/PKG-INFO
+igoogle.egg-info/SOURCES.txt
+igoogle.egg-info/dependency_links.txt
+igoogle.egg-info/top_level.txt
+tests/__init__.py
+tests/auth.py
+tests/dbg.py
+tests/drive.py
