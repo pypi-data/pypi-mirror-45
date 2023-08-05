@@ -1,0 +1,19 @@
+language: python
+dist: xenial
+python:
+    - 2.7
+    - 3.5
+    - 3.6
+    - 3.7
+    - pypy2.7-6.0.0
+    - pypy3.5-6.0.0
+install:
+    - pip install zope.testrunner coverage coveralls zope.testing mock
+    - pip install -e .
+script:
+    - coverage run --source=irclog2html -m zope.testrunner --test-path=src
+after_script:
+    - coveralls
+    - coverage report -m
+notifications:
+    email: false
