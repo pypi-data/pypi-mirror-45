@@ -1,0 +1,14 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyecharts_extras/__init__.py
+pyecharts_extras/_version.py
+pyecharts_extras/choropleth_map.py
+pyecharts_extras.egg-info/PKG-INFO
+pyecharts_extras.egg-info/SOURCES.txt
+pyecharts_extras.egg-info/dependency_links.txt
+pyecharts_extras.egg-info/not-zip-safe
+pyecharts_extras.egg-info/requires.txt
+pyecharts_extras.egg-info/top_level.txt
