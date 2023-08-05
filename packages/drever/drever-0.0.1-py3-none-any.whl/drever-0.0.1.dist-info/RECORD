@@ -1,0 +1,8 @@
+drever/__init__.py,sha256=bIUzCyJOMjHTgT7lRiPOr0iw8ZhZDNxor75peL05-Nk,135
+drever/base_class.py,sha256=UPVC2biiCOulkYLAXFWXVR4XEly8-PPLc7oWkvtvRdo,773
+drever/file_handler.py,sha256=BaaCLxi2FGf_ZLqMqt2ZApUcixr837-eOMbw1gyHN_Q,2773
+drever/pkg_info.py,sha256=bHAoViFHzreXywsNFtz3X_OgvzG80JevzdtFJ7ZNLl0,472
+drever-0.0.1.dist-info/METADATA,sha256=vQ7-zfdU36DmkVxLFt4qTuDcrXSAyRm6uuH2yL4w1oQ,1229
+drever-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+drever-0.0.1.dist-info/top_level.txt,sha256=haPxPnXQ_t7WIeY6Q4aFyYXnO0_iLz8NXHNB5qVTL5E,7
+drever-0.0.1.dist-info/RECORD,,
