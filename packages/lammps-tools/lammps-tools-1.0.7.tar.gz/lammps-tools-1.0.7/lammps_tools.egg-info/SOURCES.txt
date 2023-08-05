@@ -1,0 +1,14 @@
+README
+setup.py
+data_processing/__init__.py
+data_processing/dump.py
+data_processing/fix.py
+data_processing/log.py
+lammps_tools.egg-info/PKG-INFO
+lammps_tools.egg-info/SOURCES.txt
+lammps_tools.egg-info/dependency_links.txt
+lammps_tools.egg-info/top_level.txt
+model_builder/GP_generator.py
+model_builder/__init__.py
+model_builder/polymer_generator.py
+test/__init__.py
