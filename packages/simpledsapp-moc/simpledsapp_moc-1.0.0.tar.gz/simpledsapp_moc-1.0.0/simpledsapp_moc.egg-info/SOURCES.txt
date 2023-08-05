@@ -1,0 +1,10 @@
+README.rst
+setup.py
+simpledsapp_moc/__init__.py
+simpledsapp_moc/simpledsapp_moc.py
+simpledsapp_moc.egg-info/PKG-INFO
+simpledsapp_moc.egg-info/SOURCES.txt
+simpledsapp_moc.egg-info/dependency_links.txt
+simpledsapp_moc.egg-info/not-zip-safe
+simpledsapp_moc.egg-info/requires.txt
+simpledsapp_moc.egg-info/top_level.txt
