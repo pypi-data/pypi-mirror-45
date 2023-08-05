@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+brewblox_ispindel/__init__.py
+brewblox_ispindel/__main__.py
+brewblox_ispindel.egg-info/PKG-INFO
+brewblox_ispindel.egg-info/SOURCES.txt
+brewblox_ispindel.egg-info/dependency_links.txt
+brewblox_ispindel.egg-info/requires.txt
+brewblox_ispindel.egg-info/top_level.txt
+test/test_ispindel.py
