@@ -1,0 +1,13 @@
+durian/__init__.py,sha256=3YwbI81wzmLCpVqGj2Oa_d0jG17EkjlPxgN8JJYuSqA,355
+durian/console.py,sha256=HOC4B3tV-1pviQIlsIbB6jlrK0qUUt9Vg5rTmBSMr44,10142
+durian/ctools.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+durian/gui.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+durian/network.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+durian/os.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+durian/tools.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+durian/user.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SDurian-1.0.1.dist-info/LICENSE.txt,sha256=2Efi2kgyL3pHhFZrIxhmrF8NcAeJQGmyd0OZEIltY50,35787
+SDurian-1.0.1.dist-info/METADATA,sha256=h70higwns_cixdeLih6voyCquTiu0fQadGcVeDK1zZg,469
+SDurian-1.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+SDurian-1.0.1.dist-info/top_level.txt,sha256=nyGOgY8idb6OaPdGD6sza_XGHgADfKLCN45bpAQjFPw,7
+SDurian-1.0.1.dist-info/RECORD,,
