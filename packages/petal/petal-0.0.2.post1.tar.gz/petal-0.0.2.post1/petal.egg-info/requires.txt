@@ -1,0 +1,6 @@
+loguru
+requests
+grpcio
+grpcio-tools
+click
+mypy-protobuf
