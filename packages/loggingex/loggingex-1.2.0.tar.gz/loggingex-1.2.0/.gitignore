@@ -1,0 +1,10 @@
+.eggs
+.idea
+.nox
+.tox
+.venv
+__pycache__
+build
+dist
+*.egg-info
+_version.py
