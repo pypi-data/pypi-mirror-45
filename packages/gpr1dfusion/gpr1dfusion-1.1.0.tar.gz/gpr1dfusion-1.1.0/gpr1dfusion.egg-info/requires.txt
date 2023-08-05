@@ -1,0 +1,7 @@
+GPR1D>=1.2.0
+numpy
+
+[test]
+coverage
+pytest
+pytest-cov
