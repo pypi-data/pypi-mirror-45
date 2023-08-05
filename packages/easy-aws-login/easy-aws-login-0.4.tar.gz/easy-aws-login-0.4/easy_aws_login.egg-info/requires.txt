@@ -1,0 +1,5 @@
+boto3
+requests
+
+[boto3 code assistance]
+botostubs
