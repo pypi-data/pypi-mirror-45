@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpuz.egg-info/PKG-INFO
+libpuz.egg-info/SOURCES.txt
+libpuz.egg-info/dependency_links.txt
+libpuz.egg-info/requires.txt
+libpuz.egg-info/top_level.txt
+src/__init__.py
+src/example/__init__.py
+src/example/example.py
+src/nonogram/nonogram
+tst/__init__.py
+tst/example/__init__.py
+tst/example/example-test.py
