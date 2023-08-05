@@ -1,0 +1,12 @@
+sgwc/__init__.py,sha256=3pzfHpigl76syAbnAmPgSedyecklzOe1s6EdvNaJkbs,155
+sgwc/setting.py,sha256=Ub2vFQb9IuLU6D6dB2fIeDQ4NxOXsh4SoHr4zXV16CQ,1053
+sgwc/sogou.py,sha256=0ixigZyb3xtV18WxjKjdTGAUl-GygV8iGS3LIeULEtU,7621
+sgwc/wechat.py,sha256=yhfZ3bp_MFHfsYl6Z6KkkQWkGn0HUgFvZO6Aa54VKP0,5976
+trash/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trash/tests/test_sougo.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trash/tests/test_wechat.py,sha256=uBu8NV8iipewxGuD8F6GGjeWXgabF0hvrSgPB-vRnjk,29
+sgwc-2019.4.24.dist-info/LICENSE,sha256=jGLUpo88g5lVCKapMByzROLG6-gGgmzUcs2UvzERaYU,1081
+sgwc-2019.4.24.dist-info/METADATA,sha256=C9YNnWG7bEioNfsmfPCSnitqdR0fJTCdVk3RSBLXeXA,4255
+sgwc-2019.4.24.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+sgwc-2019.4.24.dist-info/top_level.txt,sha256=2DLaITWDmHzNtHXL05M9ap8g_UaSaP_9WpKAaiJ7keI,11
+sgwc-2019.4.24.dist-info/RECORD,,
