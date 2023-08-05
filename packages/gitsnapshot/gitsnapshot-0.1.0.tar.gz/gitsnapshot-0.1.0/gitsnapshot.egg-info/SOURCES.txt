@@ -1,0 +1,6 @@
+README.md
+setup.py
+gitsnapshot.egg-info/PKG-INFO
+gitsnapshot.egg-info/SOURCES.txt
+gitsnapshot.egg-info/dependency_links.txt
+gitsnapshot.egg-info/top_level.txt

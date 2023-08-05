@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gitsnapshot
+Version: 0.1.0
+Summary: Python module to simplify loading of snapshot of git repository
+Home-page: https://github.com/kirillsulim/gitsnapshot
+Author: Kirill Sulim
+Author-email: kirillsulim@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: git snapshot load download delivery config
+Platform: UNKNOWN
