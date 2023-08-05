@@ -1,0 +1,5 @@
+Django>=2.0
+Pillow>=6.0.0
+email-validator>=1.0.3
+requests>=2.21.0
+docutils>=0.14
