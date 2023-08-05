@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) [-p|--private] path" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# == 0 ]] && usage
+
+
+public=true
+[[ $1 == "-p" ]] || [[ $1 == "--private" ]] && { public=false; shift; }
+
+cd "$1" || exit
+description="$(echo ${PWD##*/} | sed 's/"/\\"/g')"
+[ -e .git ] && echo "SKIP ($PWD): .git EXISTS" 1>&2 && exit
+
+[[ -z "$GITHUB_TOKEN" ]] && echo "ERROR: \$GITHUB_TOKEN required" 1>&2 && exit 1
+tmp_data="$(mktemp)" || exit
+tmp_output="$(mktemp)" || exit
+tmp_repo="$(mktemp -d)" || exit
+
+files="$(
+    _files="$(find "$PWD" -type f)" || exit
+    i=0
+    count="$(echo "$_files" | wc -l | tr -d ' ')"
+    [[ -n "$_files" ]] && while IFS= read f; do
+        counter=$((counter+1))
+        [[ $counter == $count ]] && end= || end=","
+        content="$(sed 's/"/\\"/g' "$f" | awk '{printf "%s\\n", $0}')"
+        cat <<EOF
+"${f##*/}":{"content":"$content"}$end
+EOF
+    done <<< "$_files"
+)"
+cat <<EOF > "$tmp_data" || exit
+{
+    "description":"$description",
+    "public":"$public",
+    "files":{
+$files
+    }
+}
+EOF
+output_tmp=/var/folders/t8/6x3s8whx545fr5dx07k81y_r0000gn/T/tmp.N3aP59bw
+curl -fs -H "Authorization: token $GITHUB_TOKEN" --request POST --data "@$tmp_data" -o "$tmp_output" https://api.github.com/gists || exit
+id="$(grep '"id":' "$tmp_output" | head -1 | awk -F'"' '{print $4}')"
+echo "https://gist.github.com/$id"
+git clone -q "git@gist.github.com:$id.git" "$tmp_repo" || exit
+cp -R "$tmp_repo"/.git .git
+
