@@ -1,0 +1,57 @@
+CHANGES
+=======
+
+1.2.1
+-----
+
+* import zuul job settings from project-config
+* Fixes a link issue for pike documentation
+
+1.2.0
+-----
+
+* Lowercase vip\_Address in return
+* Fix missing TLS handling in listener create
+* Updated from global requirements
+* Updated from global requirements
+* Update UPPER\_CONSTRAINTS\_FILE for stable/pike
+* Update .gitreview for stable/pike
+
+1.1.0
+-----
+
+* Remove rogue calls to str.upper in l7rules
+* Replace six.iteritems() with .items()
+* Updated from global requirements
+* Add TLS-HELLO option for HealthMonitors
+* Remove old pep8 ignores that are no longer necessary
+* Updated from global requirements
+
+1.0.0
+-----
+
+* Add check O346 to disallow backslash line continuation
+* Fix command to include PROXY and update metavars
+* Update help text for all commands
+* Add healthmonitor commands to client
+* Add l7rule commands to client
+* Add l7policy commands to client
+* Add member commands to client
+* Updated from global requirements
+* Add hacking checks
+* Add pool commands to client
+* Add Listener commands to client
+* Add loadbalancer commands to client
+* Updated from global requirements
+* Add install information to readme.rst
+* Version name correction to allow installing
+* Optimize the link address
+
+0.1.0
+-----
+
+* Initialize plugin for OSC
+* Update Docs for more information and dummy commands
+* Add mapping documentation between legacy Neutron CLI and Octavia
+* Initial setup of the python-octaviaclient repo
+* Added .gitreview
