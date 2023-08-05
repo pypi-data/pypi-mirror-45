@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: curve25519
+Version: 0.1
+Summary: curve25519 with ed25519 signatures, used by libaxolotl
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPLv3 License
+Description: UNKNOWN
+Platform: any
