@@ -1,0 +1,11 @@
+README.md
+setup.py
+gcea/__init__.py
+gcea/main.py
+gcea.egg-info/PKG-INFO
+gcea.egg-info/SOURCES.txt
+gcea.egg-info/dependency_links.txt
+gcea.egg-info/entry_points.txt
+gcea.egg-info/not-zip-safe
+gcea.egg-info/requires.txt
+gcea.egg-info/top_level.txt
