@@ -1,0 +1,8 @@
+README.md
+setup.py
+tokenizesentences/__init__.py
+tokenizesentences/tokenizesentences.py
+tokenizesentences.egg-info/PKG-INFO
+tokenizesentences.egg-info/SOURCES.txt
+tokenizesentences.egg-info/dependency_links.txt
+tokenizesentences.egg-info/top_level.txt
