@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gitbump
+Version: 1.0.0
+Summary: Git tags version automation
+Home-page: https://gitlab.com/w00/gitbump
+Author: Lukasz Kwiek
+Author-email: spam@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
