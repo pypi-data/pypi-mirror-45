@@ -1,0 +1,9 @@
+jsonpickle~=1.0
+
+[dev]
+pytest~=4.0
+pytest-cov~=2.6
+pylint~=1.0
+
+[mongo]
+pymongo~=3.5
