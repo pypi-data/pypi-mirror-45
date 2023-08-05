@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nester_benny
+Version: 1.3.0
+Summary: A simple printer of nested lists,fix two Argument & init Argument level=0 add indent=False 
+Home-page: UNKNOWN
+Author: benny
+Author-email: benny08118@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
