@@ -1,0 +1,169 @@
+[![pipeline status](https://gitlab.com/s.bhooshi/gitlab-job-guard/badges/master/pipeline.svg)](https://gitlab.com/s.bhooshi/gitlab-job-guard/commits/master)
+
+# gitlab-job-guard
+
+Guard Gitlab CI pipeline jobs from multiple parallel executions.
+
+```bash
+$ PRIVATE_TOKEN="$GITLAB_API_TOKEN" gitlab-job-guard
+$ my-unguarded-deployment-task --to=production
+```
+
+`gitlab-job-guard`  will  block  if  it  detects  other  pipelines  running  for
+the  current  project   to  avoid  multiple  pipelines  from   clobbering  up  a
+deployment/environment. This is  especially a problem when  jobs are distributed
+and picked up by multiple gitlab runners.
+
+While gitlab will _auto-cancel redundant, pending pipelines_ for the same branch
+by  default -  this  is not  the  case for  multiple  pipelines from  _different
+branches_ targeting  a particular deployment/environment.  Gitlab has no  way to
+detect  or control  these user-defined  branch-to-environment mappings  and this
+means  environments  can  easily  be  left  in  an  unsafe/broken  state.  (e.g.
+`terraform apply` or `ansible`, etc from different pipelines running at the same
+time).
+
+`gitlab-job-guard` uses  the Gitlab API  to determine if existing  pipelines are
+scheduled and to backoff-and-retry until it is  safe to proceed even if jobs are
+distributed  across multiple  runners.  Conflicts are  detected by  user-defined
+matches on pipeline ref names (branch, tag, etc) and/or pipeline status.
+
+## Usage
+
+The  simplest  use-case   would  likely  be  placing   `gitlab-job-guard`  in  a
+`before_script` section in your `gitlab-ci.yml` to protect all jobs (though this
+can slow things down and be unfriendly to your local gitlab-ops).
+
+> `$GITLAB_API_TOKEN` is a [Personal Access
+Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
+with at minimum `api` scope.
+
+```yaml
+before_script:
+  - PRIVATE_TOKEN="$GITLAB_API_TOKEN" gitlab-job-guard
+```
+
+Though often,  most pipelines only  need to guard  the critical jobs  that share
+common state/data (i.e. a provisioning/deployment job, an artifact build/release
+job, etc).
+
+```yaml
+deploy-production:
+  stage: deploy
+  script:
+    - PRIVATE_TOKEN="$GITLAB_API_TOKEN" gitlab-job-guard
+    - my-unguarded-deployment-task --to=production
+```
+
+e.g To guard something critical like a `terraform` job running for a `tag`.
+
+```yaml
+provision-infrastructure:
+  stage: provision
+  script:
+    - export PRIVATE_TOKEN="$GITLAB_API_TOKEN"
+    - gitlab-job-guard --guard-ref-regex='^v[0-9\.]+'  # Regex matches tags
+    - terraform plan  ...
+    - terraform apply ...
+  only:
+    - tags
+```
+
+### Other usages
+
+`--guard-ref-regex` takes a regular expression to detect conflicts on other
+pipelines whose ref name (branch, tag) is a (partial) match. This allows for
+guarding of jobs in the complex use-cases.
+
+To hold jobs for a collisions on pattern matches on the branch/tag names.
+
+```bash
+gitlab-job-guard -c=^master$                # Match branch names matching 'master' exactly
+
+gitlab-job-guard -c=^(master|dev(elop)?)$   # Match any of the mainline branches
+
+gitlab-job-guard -c=^(feature|release|hotfix)/  # Match any gitflow transient branch prefixes
+
+gitlab-job-guard -c=^[0-9]\-                # Match branch names beginning with a number
+                                            # and dash ignoring all other text.
+                                            # e.g. a gitlab branch made from an issue
+
+gitlab-job-guard -c=^v?[\d.]+$              # Match (semver) tags like v1.0.9, 2.0
+
+gitlab-job-guard -c=^environment/           # Match any environment deployments?
+
+gitlab-job-guard -c=^environment/dc1.+      # Match environment deployments to DC1?
+
+gitlab-job-guard -c="$CI_BUILD_REF_NAME"    # Match current branch name (partially).
+                                            # i.e. 'master' matches 'feature/master-document'
+
+gitlab-job-guard -c="^$CI_BUILD_REF_NAME$"  # Match current branch name (exactly).
+                                            # i.e. 'master' does not match 'master-deployment'
+
+gitlab-job-guard -c='.+' -s='running|pending'  # Match any pipeline in running or pending state
+```
+
+To hold a job for a collision on part of the ref name (e.g. on branch prefix
+such as `feature/` or `hotfix/` or `release/`, etc _a la_ `gitflow`).
+
+```bash
+# Assuming current pipeline is for the 'feature/foo' branch and that
+# CI_BUILD_REF_NAME=feature/foo
+
+# Extract the branch prefix
+CI_BUILD_REF_PREFIX=$(echo "$CI_BUILD_REF_NAME" | sed -r 's@(.+/)(.+)@\1@')
+
+# CI_BUILD_REF_PREFIX now contains 'feature/'
+# This will now block if there are any other pipelines running or pending
+# for feature/ branches.
+gitlab-job-guard -c="^$CI_BUILD_REF_PREFIX" -s='running|pending'
+```
+
+## Other arguments
+
+Typically  `gitlab-job-guard`  reads  in  the  following  environment  variables
+to  compose   its  arguments.   NOTE:  environment  variables   take  precedence
+over   arguments  passed   at  the   CLI  and   so  only   the  `user-specified`
+arguments/envvars  need  to be  set.  Setting  these as  [protected  environment
+variables](https://docs.gitlab.com/ee/ci/variables/#protected-variables)  avoids
+leaking sensitive information and needing to duplicate them for every call.
+
+```
+envvar              |  argument             | source
+-------------------   ---------------------   ----------------
+GUARD_REF_REGEX     | --guard-ref-regex     | user specified
+GUARD_STATUS_REGEX  | --guard-status-regex  | user specified
+PRIVATE_TOKEN       | --private-token       | user specified
+GUARD_TIMEOUT       | --guard-timeout       | user specified
+CI_PROJECT_ID       | --ci-project-id       | runner environment
+CI_BUILD_REF_NAME   | --ci-build-ref-name   | runner environment
+CI_API_V4_URL       | --ci-api-v4-url       | runner environment
+CI_PIPELINE_ID      | --ci-pipeline-id      | runner environment
+```
+
+See `gitlab-job-guard -h` for the full argument set and current/default values.
+
+## Behaviour
+
+`gitlab-job-guard`  will backoff-and-retry  until it  is  safe to  proceed or  a
+timeout is  reached. An exit code  of `0` indicates no  other pipelines conflict
+and that the job  can continue. On reaching the timeout (`1  hour` by default to
+align with the default timeout for gitlab jobs), it will return an error to fail
+the job. The timeout in seconds can be set via `-w/--guard-timeout`.
+
+If  a  fail-fast  approach  is   needed,  the  `-x/--no-wait`  flag  will  cause
+`gitlab-job-guard` to  exit immediately  on conflicts.  (Though, this  means the
+pipeline run will have to be restarted some other way or abandoned).
+
+# TODO
+
+For  long-running pipelines,  this solution  can have  subtle consequences  with
+growing  queues  and  increased  contention and  unpredictability  as  to  which
+pipeline is  the first-past-the-post. An  older pipeline taking  precedence over
+newer  commits if  often  not  desired and  newer  pipelines  always winning  is
+probably desired.
+
+* Handle existing conflicting pipelines - cancel them or give-way.
+* Narrow down conflicts to jobs (`CI_JOB_NAME`) or stages (`CI_JOB_STAGE`)
+  so that other parts of the pipelines that do not share state are allowed to
+  run freely.
+
