@@ -1,0 +1,9 @@
+django_createuser/__init__.py,sha256=KWguYORmSCfoxyQlC64D9LmN21g2KajPIXPH8OTgQ0Q,62
+django_createuser/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_createuser/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_createuser/management/commands/createuser.py,sha256=AKI6e1_5IwnAn5nz7rMKPu8rPbU_9fbw3bRFYUvY8Bw,5553
+django_createuser-0.1.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+django_createuser-0.1.0.dist-info/METADATA,sha256=elsnI2jHu1Im5zX--pTgRGVCfRv5HVQCJYAmmcABOyM,4217
+django_createuser-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+django_createuser-0.1.0.dist-info/top_level.txt,sha256=Y9CQXfc6ldbHIbhl3zAdT1bfInzkaCyLz00MA1epFLs,18
+django_createuser-0.1.0.dist-info/RECORD,,
