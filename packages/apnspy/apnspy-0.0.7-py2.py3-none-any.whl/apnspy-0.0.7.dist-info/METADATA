@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: apnspy
+Version: 0.0.7
+Summary: Python Distribution Utilities
+Home-page: https://github.com/yehchilai/apnspy
+Author: Yeh-chi Lai
+Author-email: 
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, >=3.7
+Requires-Dist: hyper
+Requires-Dist: PyJWT
+Requires-Dist: cryptography
+
+
+apnspy
+======
+
+.. image:: 	https://img.shields.io/pypi/pyversions/apnspy.svg
+    :target: https://github.com/yehchilai/apnspy
+.. image:: https://travis-ci.org/yehchilai/apnspy.svg?branch=master
+    :target: https://travis-ci.org/yehchilai/apnspy
+.. image:: https://img.shields.io/pypi/v/apnspy.svg?
+   :target: http://badge.fury.io/py/apnspy
+.. image:: https://img.shields.io/hexpm/l/plug.svg
+   :target: https://github.com/yehchilai/apnspy/blob/master/LICENSE
+
+A Python client for Apple Push Notification service
+
+For more information, please read the `document`_
+
+Quick Start
+-----------
+
+Use ``pip`` to install.
+
+.. code-block:: bash
+
+    $ pip install apnspy
+
+
+(Optional) creat a virtual environment and use ``pip`` to install
+
+.. code-block:: bash
+
+    $ virtualenv venv
+    $ source venv/bin/activate
+    (venv) $ pip install apnspy
+
+Check if the package is installed.
+
+.. code-block:: bash
+
+    $ python
+    >>> from apnspy import APNs
+    >>>
+
+There should be no ImportError.
+
+.. _document: https://apnspy.readthedocs.io/en/latest/
+
+
+
