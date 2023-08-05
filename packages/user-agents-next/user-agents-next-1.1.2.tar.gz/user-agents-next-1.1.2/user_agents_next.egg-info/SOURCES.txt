@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+user_agents_next/__init__.py
+user_agents_next/compat.py
+user_agents_next/parsers.py
+user_agents_next/tests.py
+user_agents_next.egg-info/PKG-INFO
+user_agents_next.egg-info/SOURCES.txt
+user_agents_next.egg-info/dependency_links.txt
+user_agents_next.egg-info/not-zip-safe
+user_agents_next.egg-info/requires.txt
+user_agents_next.egg-info/top_level.txt
