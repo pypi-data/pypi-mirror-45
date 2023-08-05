@@ -1,0 +1,14 @@
+chardet
+click
+configparser
+jinja2
+future
+backports.csv
+markdown
+
+[dev]
+pylint
+pydocstyle
+pycodestyle
+pytest
+tox
