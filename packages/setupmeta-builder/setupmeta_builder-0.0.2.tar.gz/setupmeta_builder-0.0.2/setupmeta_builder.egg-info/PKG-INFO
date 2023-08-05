@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: setupmeta-builder
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/Cologler/setupmeta_builder-python
+Author: Cologler
+Author-email: skyoflw@gmail.com
+License: MIT License
+Description: # Setupmeta Builder
+        
+        ## Usage
+        
+        Replace your `setup.py` file to:
+        
+        ```py
+        from setupmeta_builder import setup_it
+        
+        setup_it()
+        ```
+        
+        Done!
+        
+        `setupmeta_builder` try resolve other values like `install_requires` for you.
+        
+        |meta|resolve source|
+        |:-|:-|
+        |`packages`|`find_packages()`|
+        |`name`|packages|
+        |`version`|`git.tag`|
+        |`long_description`|file: `README.[md|rst]`|
+        |`author` and `author_email`|file: `.pkgit.json`|
+        |`url`|`git.origin.url`|
+        |`license`|file: `LICENSE`|
+        |`classifiers`|license and file `.travis.yml`|
+        |`install_requires`|files: `requirements.txt` or `pipfile`|
+        |`tests_require`|file: `pipfile`|
+        
+        Current project is the first example.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
