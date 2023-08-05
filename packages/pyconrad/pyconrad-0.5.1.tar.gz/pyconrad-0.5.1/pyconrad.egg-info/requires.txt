@@ -1,0 +1,12 @@
+cppimport
+jpype1
+numpy
+pathlib
+procbridge
+pyevtk
+setuptools
+urllib3
+vtk
+
+[opencl]
+pyopencl
