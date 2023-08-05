@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poetry-org
+Version: 0.1.8
+Summary: Re-organize a single-file app into a poetry directory for building.
+Home-page: None
+Author: Manny Ochoa
+Author-email: dev@manuelochoa.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: toml (>=0.10.0,<0.11.0)
