@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: rtf
+Version: 0.0.1
+Summary: Remote Tensorflow Execution (rtf): gRPC server and clients generators
+Home-page: https://github.com/galeone/rtf
+Author: Paolo Galeone
+Author-email: nessuno@nerdz.eu
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==0.7.1)
+Requires-Dist: astor (==0.7.1)
+Requires-Dist: better-setuptools-git-version (==1.0.5)
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: future (==0.17.1)
+Requires-Dist: gast (==0.2.2)
+Requires-Dist: google-pasta (==0.1.5)
+Requires-Dist: googleapis-common-protos (==1.5.9)
+Requires-Dist: grpcio-tools (==1.20.0)
+Requires-Dist: grpcio (==1.20.0)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: keras-applications (==1.0.7)
+Requires-Dist: keras-preprocessing (==1.0.9)
+Requires-Dist: markdown (==3.1)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: promise (==2.2.1)
+Requires-Dist: protobuf (==3.7.1)
+Requires-Dist: psutil (==5.6.1)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: tb-nightly (==1.14.0a20190416)
+Requires-Dist: tensorflow-estimator-2.0-preview (==1.14.0.dev2019041600)
+Requires-Dist: tensorflow-metadata (==0.13.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: tf-nightly-2.0-preview (==2.0.0.dev20190416)
+Requires-Dist: tfds-nightly (==1.0.2.dev201904160105)
+Requires-Dist: tqdm (==4.31.1)
+Requires-Dist: urllib3 (==1.24.1)
+Requires-Dist: werkzeug (==0.15.2)
+Requires-Dist: wheel (==0.33.1)
+Requires-Dist: wrapt (==1.11.1)
+
+# Remote Tensorflow Execution (RTF)
+
+Bring the power of the Tensorflow Python API to any language, using gRPC.
+
+This repository contains the code of the RTF server and client generator.
+
+**WARNING**: experimental, unstable, WIP.
+
+## Server
+
+The gRPC server implements the server-side protocol. It accepts the requests of function definitions and executes them.
+The execution is left to the Python interpreter and the output is streamed back to the client.
+
+### Usage
+
+The server waits for messages and sends back the responses.
+
+#### Requirements
+
+Compile the proto definition is required, however the `setup.py` script takes care of everything. There are 2 options
+
+1. `pip install -e .` to work in edit mode, with the compiled protobufs
+2. `pip install .` to install the package (it compiles the proto too)
+3. (future) `pip install rtf` | `pip install rtf-gpu`
+
+#### 1. Start the gRPC server
+
+```
+python -m rtf.server
+```
+
+## Client stub generation
+
+To generate the stub of a client in `DEST_DIR` use the `rtf.generate` module.
+
+```
+python -m rtf.generate  --dest_dir DEST_DIR --module tensorflow --target Go
+
+```
+
+Right now the only generator that is going to be developed is Go.
+
+
