@@ -1,0 +1,2 @@
+# lammps-tools
+This python tools provide a ease way to process the data associated with lammps. You can use this series of tools to create polymer model, extract data and get data draft plot(TO-DO)

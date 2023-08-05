@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: lammps_tools
+Version: 1.0.8
+Summary: lammps data process tools.
+Home-page: https://github.com/Roy-Kid/lammps-tools
+Author: Roy-Kid
+Author-email: lijichen365@126.com
+License: LICENSE
+Description: # lammps-tools
+        This python tools provide a ease way to process the data associated with lammps. You can use this series of tools to create polymer model, extract data and get data draft plot(TO-DO)
+        
+Platform: UNKNOWN
+Requires-Python: >=3
