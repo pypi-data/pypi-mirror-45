@@ -1,0 +1,13 @@
+# dependencies for test
+pytest==3.2.3       # test framework
+pytest-cov==2.5.1   # coverage test
+
+
+# Optional dependencies
+Faker
+sqlalchemy
+pathlib_mate
+marshmallow
+fuzzywuzzy
+atomicwrites
+attrs
