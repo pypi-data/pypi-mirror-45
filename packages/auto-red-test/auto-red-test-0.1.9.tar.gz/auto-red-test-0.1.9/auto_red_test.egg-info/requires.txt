@@ -1,0 +1,4 @@
+pytest
+pyaml
+Faker
+bson
