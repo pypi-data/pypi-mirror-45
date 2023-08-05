@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wisetool
+Version: 0.4.7
+Summary: Wavelet Image Segmentation and Evaluation
+Home-page: https://github.com/flomertens/wise
+Author: Florent Mertens
+Author-email: flomertens@gmail.com
+License: GPL2
+Platform: UNKNOWN
+Requires-Dist: libwise
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: pyregion
+Requires-Dist: uncertainties
+Requires-Dist: pymorph
+Requires-Dist: jsonpickle
+
+UNKNOWN
+
+
