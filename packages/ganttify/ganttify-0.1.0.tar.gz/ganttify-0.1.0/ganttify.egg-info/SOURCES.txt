@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+ganttify/__init__.py
+ganttify/__main__.py
+ganttify/cli.py
+ganttify.egg-info/PKG-INFO
+ganttify.egg-info/SOURCES.txt
+ganttify.egg-info/dependency_links.txt
+ganttify.egg-info/entry_points.txt
+ganttify.egg-info/not-zip-safe
+ganttify.egg-info/requires.txt
+ganttify.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
+tests/test_ganttify.py
