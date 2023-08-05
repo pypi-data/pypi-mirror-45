@@ -1,0 +1,11 @@
+README.md
+setup.py
+ptrait/__init__.py
+ptrait/trait.py
+ptrait.egg-info/PKG-INFO
+ptrait.egg-info/SOURCES.txt
+ptrait.egg-info/dependency_links.txt
+ptrait.egg-info/not-zip-safe
+ptrait.egg-info/top_level.txt
+tests/__init__.py
+tests/test_trait.py
