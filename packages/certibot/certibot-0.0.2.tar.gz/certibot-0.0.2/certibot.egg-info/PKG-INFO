@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: certibot
+Version: 0.0.2
+Summary: Script to validate the corporative or personal domains to get information about ssl certificates, and other more options.
+Home-page: https://github.com/systemico/certibot
+Author: Systemico Software S.A.S
+Author-email: edwin.ariza@systemico.co
+License: UNKNOWN
+Description: # certibot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
