@@ -1,0 +1,16 @@
+doc484/__init__.py,sha256=6f8tdgOnHXbeRHTZDNA7m3saez3b5hanaQW3VNHd_r0,23
+doc484/__main__.py,sha256=RTWvMeeEgn1-0qYN-JwuPvUqvDCkzdA_QOjOikz4-xY,9447
+doc484/compat.py,sha256=HTvDL1mAXD_qzfSn8NGGtc9UbRyJQoyVMKCWVyBM5Og,253
+doc484/formats.py,sha256=6co0mFcM2IaCDUENjOjinvOiSGnnxTbgTndjf-jLTto,9601
+doc484/transforms.py,sha256=JfPIGWoJ8Z9Ie7h8JYW2mjjqMm4q10BHQMz5wjxssVc,1705
+doc484/fixes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doc484/fixes/fix_type_comments.py,sha256=GUzcXKHWoFM11K69iJT_kywlystPyTxtP-roMeYwUzk,6745
+doc484/parsers/__init__.py,sha256=VRvlZdGRdtH3UG1gl11OpnCtVHcpmkhYrKoqtxl_tno,303
+doc484/parsers/other.py,sha256=ORSjEWJ9D-EJzdNMojwGEzrJFZreTY7qJyBzgQANjUc,22796
+doc484/parsers/rest.py,sha256=J07hp-sRkFoVi2lDN8L318Ws0yY3gWSzOQExQzHPdBY,3917
+doc484-0.3.4.dist-info/LICENSE.txt,sha256=v2WaKLSSQGAvVrvfSQy-LsUJsVuY-Z17GaUsdA4yeGM,1082
+doc484-0.3.4.dist-info/METADATA,sha256=zRAM8rfUwHLv-j1xAhIW_aO_VwgwmITI3q1-WDeUrB8,6230
+doc484-0.3.4.dist-info/WHEEL,sha256=aSdOKpzTGLLkKenfdFGiq92od_Dmr98YfEe8iw7iZoo,110
+doc484-0.3.4.dist-info/entry_points.txt,sha256=e4okopoO7_tx1b3SrnVLSTgJUjTJiu9dZfUkuplaXC0,49
+doc484-0.3.4.dist-info/top_level.txt,sha256=kd8KvDrRvt22INK9Rurjlk2RJYfsVf_jIOkfUp9iW_g,7
+doc484-0.3.4.dist-info/RECORD,,
