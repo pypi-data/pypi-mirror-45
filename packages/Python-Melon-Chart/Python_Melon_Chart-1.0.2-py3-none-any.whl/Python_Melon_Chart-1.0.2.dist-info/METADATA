@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Python-Melon-Chart
+Version: 1.0.2
+Summary: Python Melon Music Chart
+Home-page: https://github.com/godmoonl/Python-Melon-Chart
+Author: GODMOONL
+Author-email: himoon345@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/godmoonl/Python-Melon-Chart
+Keywords: music chart,melon,melon music chart
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: requests
+
+UNKNOWN
+
+
