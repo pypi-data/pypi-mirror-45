@@ -1,0 +1,8 @@
+README.md
+setup.py
+guardian_azure/__init__.py
+guardian_azure/guardian_azure.py
+guardian_azure.egg-info/PKG-INFO
+guardian_azure.egg-info/SOURCES.txt
+guardian_azure.egg-info/dependency_links.txt
+guardian_azure.egg-info/top_level.txt
