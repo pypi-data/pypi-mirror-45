@@ -1,0 +1,3 @@
+[console_scripts]
+modsman-gui=modsman_gui:main
+
