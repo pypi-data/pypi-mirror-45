@@ -1,0 +1,11 @@
+prp/__init__.py,sha256=Dkrlbi7xLIE_sKsqY81K7ItbaCb7mhKCbG0JzyrxRAs,51
+prp/__main__.py,sha256=PZtWSfYmWRa5E6s3nfaejCt4Z8AWCwH0UZKfjXXse5c,104
+prp/appdirs.py,sha256=5GJeWiEbU12XjgZyfCPO-XTehhGRfqAm8iNh3ERZECI,8775
+prp/cli.py,sha256=ifCL150AjHvVT1OPaQAdTP4bI18kOmrDLKW54fjw6hk,1582
+prp/config.py,sha256=e1WMho-7BPQXcgcwgJMtP8SNZ3Xnidpj-HHaPVuwZow,486
+prp/utils.py,sha256=-iDIirZuwf0xavfGLWf1eZUj8hvJqo4GcjGQMCK6lq0,718
+prp-0.0.2.dist-info/entry_points.txt,sha256=N6UaQj9vpA_p8HmF-0K1kyGa1xI_p2i1fNDAEJjmpOw,36
+prp-0.0.2.dist-info/LICENSE,sha256=ZzKbH2vt6_RfyuulNNJfvYDMJywqqDAUGa6LAeiTgoM,1104
+prp-0.0.2.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+prp-0.0.2.dist-info/METADATA,sha256=Tn3r88diAJFMpoCgTe2lQ6uqc_xBZ97JcB8heec-CYk,694
+prp-0.0.2.dist-info/RECORD,,

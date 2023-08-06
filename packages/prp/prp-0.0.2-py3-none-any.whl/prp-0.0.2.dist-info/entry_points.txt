@@ -1,0 +1,3 @@
+[console_scripts]
+prp=prp.cli:main
+
