@@ -1,0 +1,8 @@
+devpi_postgresql/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+devpi_postgresql/main.py,sha256=mWbo-CtZ0604x5ZdlOGIKewKcMHOH3WjXQ12G0VGn0o,10093
+pytest_devpi_postgresql/__init__.py,sha256=qADCGSGhpnPe_oM7evaSR4UVwfAKdWcs6I5gSBoimZw,4677
+devpi_postgresql-1.0.0.dist-info/METADATA,sha256=3CZ77IEw5kPZQAM0aSjl5rkIqnP-XLwT_SRviJKQTRc,3282
+devpi_postgresql-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+devpi_postgresql-1.0.0.dist-info/entry_points.txt,sha256=o4Q9YgA3L-NNJG_yYazzIasig5LuZZPsc0LDc6fPTc0,119
+devpi_postgresql-1.0.0.dist-info/top_level.txt,sha256=CELU4V60OQU-xcHUSdtHSRfvCBOWb_fzfyWymJ_SBFs,41
+devpi_postgresql-1.0.0.dist-info/RECORD,,

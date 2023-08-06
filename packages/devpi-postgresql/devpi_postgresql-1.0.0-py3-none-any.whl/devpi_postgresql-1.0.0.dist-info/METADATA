@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: devpi-postgresql
+Version: 1.0.0
+Summary: devpi-postgresql: a PostgreSQL storage backend for devpi-server
+Home-page: http://doc.devpi.net
+Maintainer: Florian Schulze, Holger Krekel
+Maintainer-email: florian.schulze@gmx.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.4
+Requires-Dist: devpi-server (>=3.0.0.dev2)
+Requires-Dist: pg8000
+
+===============================================================
+devpi-postgresql: a PostgreSQL storage backend for devpi-server
+===============================================================
+
+This plugin adds a PostgreSQL storage backend for `devpi-server`_.
+
+.. _devpi-server: https://pypi.org/project/devpi-server/
+
+
+Installation
+============
+
+``devpi-postgresql`` needs to be installed alongside ``devpi-server``.
+
+You can install it with::
+
+    pip install devpi-postgresql
+
+
+Requirements
+============
+
+At least PostgreSQL 9.5 is required for ``ON CONFLICT`` support.
+
+
+Usage
+=====
+
+When using the PostgreSQL storage, ``devpi-server`` expects an empty database.
+You have to create one like this: ``createdb devpi``
+Depending on your PostgreSQL setup you have to create a user and grant it permissions on the new database like this::
+
+    CREATE ROLE devpi WITH LOGIN;
+    GRANT CREATE, CONNECT ON DATABASE devpi TO devpi;
+
+Upon first initialization of ``devpi-server`` use ``--storage pg8000`` to select the PostgreSQL backend.
+
+By default it'll use the ``devpi`` database on ``localhost`` port ``5432``.
+To change that, use ``storage pg8000:host=example.com,port=5433,database=devpi_prod``.
+The possible settings are: ``database``, ``host``, ``port``, ``unix_sock``, ``user`` and ``password``
+
+All user/index files and metadata of ``devpi-server`` are stored in the database.
+A few things and settings are still stored as files in the directory specified by ``--serverdir``.
+
+Plugins like ``devpi-web`` don't or can't use the storage backend.
+They still handle their own storage.
+
+
+=========
+Changelog
+=========
+
+
+
+.. towncrier release notes start
+
+1.0.0 (2019-04-26)
+==================
+
+Deprecations and Removals
+-------------------------
+
+- Requires at least PostgreSQL 9.5 for ``ON CONFLICT`` support.
+
+- Dropped support for Python 2.x and PyPy2.
+
+
+0.3.0 (2018-09-08)
+==================
+
+Bug Fixes
+---------
+
+- Fixes required for bug fixes devpi-server 4.7.0.
+
+
+0.2.0 (2018-01-17)
+==================
+
+Bug Fixes
+---------
+
+- Use advisory locks to serialize writes.
+
+
+0.1.1 (2017-12-12)
+==================
+
+- Add ``unix_sock``, ``user`` and ``password`` to possible connection options.
+  Thanks to Szabolcs Rumi for the patch.
+
+
+0.1.0 (2016-02-11)
+==================
+
+- initial release
+
