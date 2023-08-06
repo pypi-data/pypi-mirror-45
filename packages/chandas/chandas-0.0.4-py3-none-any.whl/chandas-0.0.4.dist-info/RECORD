@@ -1,0 +1,13 @@
+chandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chandas/syllabize.py,sha256=kZZZE_so5AiJLxybcxwrC88rk9DSGc-sM1jxiT730Ag,3402
+chandas/chandas_relation/__init__.py,sha256=sY2qkGDN5xLyzXh-iOm8AniQSUo-7vdI16Sw6z4pIPA,1373
+chandas/chandas_relation/ardhasama.py,sha256=l_cZRretgAPe69TUwqOBgdEta-CAGZ1nqrFNdHoxyQ0,827
+chandas/identify/__init__.py,sha256=2cXxb6BCoWlC2A-vD-swBbA4kWhpXpksJc2dflCuUNk,389
+chandas/identify/pattern.py,sha256=CLewetBVKKdmbINghDreDwVnoWqDd79cF6fDuPXhI_Y,10078
+chandas/metrical_data/__init__.py,sha256=-n38NGFsKKdsj2WC4mDnjnmbu5v0_JQPOraPEGU726Q,17852
+chandas-0.0.4.dist-info/METADATA,sha256=CysFfZ8XLk3NDjAbji_8KesWVnXMhxVMAV09AuN_iro,4898
+chandas-0.0.4.dist-info/RECORD,,
+chandas-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+chandas-0.0.4.dist-info/top_level.txt,sha256=eljFRxuTdYR_BeiH--1AQ75sRnRugBLI8C9ixDgI7ro,8
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/syllabize_test.py,sha256=O5dkmulpNBexhH7ZcEaScqcpYYcX8vDCuMmYNRrou5c,399
