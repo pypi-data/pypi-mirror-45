@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: FlaskIt-starter
+Version: 1.0.0
+Summary: Flask API starter
+Home-page: https://github.com/connormullett/FlaskIt
+Author: Connor Mullett
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/connormullett/FlaskIt/archive/v1.0.tar.gz
+Description: 
+        FlaskIt
+        =======
+        
+        Flask project Builder CLI. Use `flask it start`
+        to build your project
+        
+        Install
+        =======
+        
+        `pip install flaskit`
+        
+        
+Keywords: flask api
+Platform: UNKNOWN

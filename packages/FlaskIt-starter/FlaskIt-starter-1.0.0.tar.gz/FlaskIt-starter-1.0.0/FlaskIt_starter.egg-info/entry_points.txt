@@ -1,0 +1,3 @@
+[console_scripts]
+flaskit-starter=src.main:main
+
