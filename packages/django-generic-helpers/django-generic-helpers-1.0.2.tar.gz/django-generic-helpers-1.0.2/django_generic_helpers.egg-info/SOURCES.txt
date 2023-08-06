@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+django_generic_helpers.egg-info/PKG-INFO
+django_generic_helpers.egg-info/SOURCES.txt
+django_generic_helpers.egg-info/dependency_links.txt
+django_generic_helpers.egg-info/top_level.txt
+django_generic_helpers.egg-info/zip-safe
+generic_helpers/__init__.py
+generic_helpers/checks.py
+generic_helpers/decorators.py
+generic_helpers/fields.py
+generic_helpers/managers.py
+generic_helpers/models.py
+generic_helpers/settings.py
+generic_helpers/utils.py
