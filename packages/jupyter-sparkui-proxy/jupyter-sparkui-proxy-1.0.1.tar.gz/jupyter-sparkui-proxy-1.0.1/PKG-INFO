@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: jupyter-sparkui-proxy
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/yuvipanda/jupyter-sparkui-proxy
+Author: Yuvi Panda
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Requires-Python: >=3.5
