@@ -1,0 +1,7 @@
+requests>=2.21.0
+
+[dev]
+black
+mypy
+prospector
+wheel
