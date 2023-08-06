@@ -1,0 +1,3 @@
+[console_scripts]
+swiggy-analytics = swiggy_analytics.swiggy_analytics:main
+
