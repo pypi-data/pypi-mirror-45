@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: remote-pdb-client
+Version: 1.0.0
+Summary: A client for the RemotePDB debugger
+Home-page: https://github.com/MartyMacGyver/remote-pdb-client
+Author: Martin F. Falatic
+Author-email: martin@falatic.com
+License: MIT License
+Keywords: remotepdb debugging pdb telnet
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: prompt-toolkit (>=2.0.0)
+
+
+`remotepdb_client --help` for more information
+
+This is a development release and is not considered final
+
+For Windows, OS X and Linux
+
+
