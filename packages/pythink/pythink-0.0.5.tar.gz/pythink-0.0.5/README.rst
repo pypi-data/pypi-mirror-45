@@ -1,0 +1,168 @@
+pythink
+=======
+
+|PyPI - Python Version| |PyPI|
+
+灵感来自于ThinkPHP 部分代码实现参考了 records
+
+根据现有业务 实现了简单的增删改查， 可以用作日常助手
+
+依赖：
+
+::
+
+    SQLAlchemy>=1.2.8
+
+    ps：原来基于peewee实现的，不过问题较多，就直接用SQLAlchemy
+
+安装
+====
+
+::
+
+    pip install pythink
+
+快速开始
+========
+
+新建表
+
+.. code:: sql
+
+    CREATE TABLE `student` (
+      `id` int(11) NOT NULL AUTO_INCREMENT,
+      `uid` int(11) DEFAULT NULL,
+      `name` varchar(20) DEFAULT '',
+      `age` int(11),
+      `create_time` datetime DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB  DEFAULT CHARSET=utf8
+
+代码示例
+
+1、连接数据库，创建Model
+
+.. code:: python
+
+    # -*- coding: utf-8 -*-
+
+    from pythink import ThinkModel, ThinkDatabase
+
+    db_url = "mysql://root:123456@127.0.01:3306/demo"
+    db = ThinkDatabase(db_url)
+
+
+    class StudentThinkModel(ThinkModel):
+        table_name = "student"
+        database = db
+
+2、插入操作
+
+.. code:: python
+
+
+    # 1、增加单条记录
+
+    data = {
+        "name": "Tom"
+    }
+
+    >>> StudentThinkModel.insert(data)
+    >>> 1
+
+
+    # 2、增加多条记录
+    data = [
+        {
+            "name": "Tom",
+        },
+        {
+            "name": "Jack"
+        }
+    ]
+
+    >>> StudentThinkModel.insert(data)
+    >>> 2
+
+
+
+    # 3、插入多条 分段插入
+    data = [
+        {
+            "name": "Tom",
+            "age": 24,
+        },
+        {
+            "name": "Tom",
+            "age": 25,
+        },
+        {
+            "name": "Tom",
+            "age": 26,
+        },
+        {
+            "name": "Tom",
+            "age": 27,
+        },
+        {
+            "name": "Tom",
+            "age": 28,
+        },
+        {
+            "name": "Tom",
+            "age": 29,
+        }
+    ]
+
+    # 每次插入3 条数据
+    >>> StudentThinkModel.insert(data, truncate=3)
+    >>> 6
+
+3、查询操作
+
+.. code:: python
+
+
+    # 1、查询数量
+    >>> StudentThinkModel.count()
+    >>> 24
+
+
+
+    # 2、查询记录
+    rows = StudentThinkModel.select(["name", "age"], where="id>25", limit=5)
+    for row in rows:
+        print(row.name, row.age)
+
+
+    # ('Tom', 25L)
+    # ('Tom', 26L)
+    # ('Tom', 27L)
+    # ('Tom', 28L)
+    # ('Tom', 29L)
+
+4、更新操作
+
+.. code:: python
+
+
+    # 条件更新
+    data = {
+        "name": "tom",
+        "age": 30
+    }
+
+    >>> StudentThinkModel.update(data, "id=25")
+    >>> 1
+
+5、删除操作
+
+.. code:: python
+
+
+    # 删除
+    >>> StudentThinkModel.delete("id=13")
+    >>> 1
+
+.. |PyPI - Python Version| image:: https://img.shields.io/pypi/pyversions/pythink.svg
+.. |PyPI| image:: https://img.shields.io/pypi/v/pythink.svg
