@@ -1,0 +1,11 @@
+bpi_13_experimental_frontend/__init__.py,sha256=v_v4G_ovJ1MBXkSxS7XjQEDgFGQDcuzoNdTnERvWUGg,81
+bpi_13_experimental_frontend/run_model.py,sha256=85z4mCMFVZO-DrbsoqvvmzdCthqGS0cz9QTCrrCnWCk,1835
+domain_model/__init__.py,sha256=E1lJFWgPDQjfKmE3LcqMa0OFHaEX30uUTo7ZCx298aI,72
+domain_model/bpi13_actors.py,sha256=PmMXs8hlRtPz6bFmry0Lqv6g-wN1XAHY3u4BpDSTWSA,1854
+domain_model/bpi13_model.py,sha256=HnskO8FRUVgkmGTdf5uT_qGoST-8MvYhJiK45znxBA8,16210
+domain_model/utils.py,sha256=1SiDDaCRr7-T_HJswrLNtP_pRV1EOmxuhLHVibeMgZw,2050
+bpi_13_python-0.1a3.dist-info/LICENSE,sha256=tG3IBv0xfPZToy7ulJEthj615ryXOLPBHQfig-3cnlk,1067
+bpi_13_python-0.1a3.dist-info/METADATA,sha256=jU7eXaW_olFJStWZmMxKOSmm3Oyoub7apK3apKwb5wE,785
+bpi_13_python-0.1a3.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+bpi_13_python-0.1a3.dist-info/top_level.txt,sha256=_I3yRpheSUpGWOIs6SJri0chPt5J5_CBH7zpNIqBhRk,42
+bpi_13_python-0.1a3.dist-info/RECORD,,
