@@ -1,0 +1,36 @@
+Metadata-Version: 1.2
+Name: django-marina
+Version: 0.0.1
+Summary: Reusable Django extensions by Zostera.
+Home-page: https://github.com/zostera/django-marina/
+Author: Dylan Verheul
+Author-email: dylan@zostera.nl
+License: UNKNOWN
+Description: .. -*-restructuredtext-*-
+        
+        .. image:: https://travis-ci.org/zostera/django-marina.svg?branch=master
+            :target: https://travis-ci.org/zostera/django-marina
+        
+        Django extensions by Zostera. Use at your own leisure and peril.
+        
+        Documentation is `available online
+        <https://django-marina.readthedocs.io/>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
