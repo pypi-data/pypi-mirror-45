@@ -1,0 +1,3 @@
+[console_scripts]
+chili = chili_pepper.main:main
+

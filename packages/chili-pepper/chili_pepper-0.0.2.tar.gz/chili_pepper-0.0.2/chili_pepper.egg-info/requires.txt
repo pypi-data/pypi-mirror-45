@@ -1,0 +1,4 @@
+awacs
+boto3
+pathlib2
+troposphere
