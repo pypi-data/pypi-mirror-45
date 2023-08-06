@@ -1,0 +1,3 @@
+[console_scripts]
+torrent_rename = torrent_rename.torrent_rename_script:usage
+
