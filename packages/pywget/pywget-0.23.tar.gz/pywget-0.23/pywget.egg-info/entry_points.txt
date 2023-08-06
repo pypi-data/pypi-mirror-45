@@ -1,0 +1,3 @@
+[console_scripts]
+pywget = pywget.wget:usage
+
