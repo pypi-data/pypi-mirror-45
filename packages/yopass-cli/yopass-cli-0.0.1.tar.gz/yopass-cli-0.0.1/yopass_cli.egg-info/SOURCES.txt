@@ -1,0 +1,9 @@
+README.md
+setup.py
+cli/__init__.py
+yopass_cli.egg-info/PKG-INFO
+yopass_cli.egg-info/SOURCES.txt
+yopass_cli.egg-info/dependency_links.txt
+yopass_cli.egg-info/entry_points.txt
+yopass_cli.egg-info/requires.txt
+yopass_cli.egg-info/top_level.txt

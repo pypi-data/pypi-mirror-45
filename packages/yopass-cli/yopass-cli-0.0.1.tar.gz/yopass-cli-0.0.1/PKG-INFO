@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yopass-cli
+Version: 0.0.1
+Summary: A cli for interacting with yopass backend
+Home-page: https://github.com/zsolt-halo/yopass-cli
+Author: Zsolt Halo
+Author-email: net.zsolt.net@gmail.com
+License: UNKNOWN
+Description: # yopass-cli
+        Yopass CLI
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
