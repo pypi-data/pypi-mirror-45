@@ -1,0 +1,14 @@
+README.md
+setup.py
+dpx2ffv1/__init__.py
+dpx2ffv1/__main__.py
+dpx2ffv1/dpx2ffv1.py
+dpx2ffv1/encode.py
+dpx2ffv1/fileutils.py
+dpx2ffv1/info.py
+dpx2ffv1/test.py
+dpx2ffv1.egg-info/PKG-INFO
+dpx2ffv1.egg-info/SOURCES.txt
+dpx2ffv1.egg-info/dependency_links.txt
+dpx2ffv1.egg-info/entry_points.txt
+dpx2ffv1.egg-info/top_level.txt
