@@ -1,0 +1,10 @@
+pyspa/__init__.py,sha256=T2CnSQZIpZmY7UHeyITEWBWSPeBLvY7zNtOqrtVrBCM,25
+pyspa/pyspa.py,sha256=1BrWFJE3FO3EPZ8GMaGVSUh-b7dalLk-rbgx-EWwIc8,98925
+pyspa/template_input_files/A_matrix_template.csv,sha256=AU4xmt2TJG6N8mfq_lp6rgQqUVcKeHJgGEBKmPJjUAI,144344
+pyspa/template_input_files/Infosheet_template.csv,sha256=mkhiLQ5dJM6YDNWHM348dnxGLm7OsYHvlv19T-3g-z0,9094
+pyspa/template_input_files/Thresholds_template.csv,sha256=2PMj4ZpkXjpxXTpK54fOZUr1150hudLIJFtV0ZWKH8U,35
+pyspa/template_input_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspa-1.4.dist-info/METADATA,sha256=p3ir-mGVVQUsM7bzak69cMfJKk8g5n4YhnvlkqhPc1E,4187
+pyspa-1.4.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pyspa-1.4.dist-info/top_level.txt,sha256=nNjglmy69LjGYGsVOZg5bQbZFNP1W39GX7TqfFFADC4,6
+pyspa-1.4.dist-info/RECORD,,
