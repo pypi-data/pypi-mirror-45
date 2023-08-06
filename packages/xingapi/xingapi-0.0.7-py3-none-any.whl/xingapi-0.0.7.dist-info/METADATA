@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xingapi
+Version: 0.0.7
+Summary: python version of xingapi
+Home-page: https://github.com/jeakwon/xingapi
+Author: Jea Kwon
+Author-email: onlytojay@gmail.com
+License: UNKNOWN
+Keywords: xingapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: pywin32
+
+UNKNOWN
+
+

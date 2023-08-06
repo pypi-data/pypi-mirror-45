@@ -1,0 +1,13 @@
+xingapi/__init__.py,sha256=Z21r2Si0i8ZTZUpyv8AlgDBfiGyS8iL6aoljMyXuR94,191
+xingapi/base.py,sha256=k11X5mx0qZakXUEfIunUTWyNCYQEJ-bw-VhcLCxDHk4,9561
+xingapi/io.py,sha256=_geR4Lsq2Rq4_MvuaZkAV6Q5CbMMTu5IqrcA7ltB7DA,1191
+xingapi/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xingapi/api/xabase.py,sha256=kX_3aUOw-FZsQdybvaqSM9tjbrU8nWnGDSgDgpceu5g,9567
+xingapi/api/xacore.py,sha256=mhJ-4juMxthqtP-QhxVwFLvE3MliBNyq5Q8__JID6M4,2841
+xingapi/api/xaio.py,sha256=jjl2Yi1agaL-xhOqYl7xuAWL850pfaHKIslqT8QNs4Q,2181
+xingapi/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xingapi-0.0.7.dist-info/LICENSE,sha256=6sCIQZ-rIeDozc924uQNbM9qregXoWj7e15Yc9lz7uc,1085
+xingapi-0.0.7.dist-info/METADATA,sha256=ke_zIdtnDOen669EMj88ll_BXccYaVeSFHsuu1bLYyM,639
+xingapi-0.0.7.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+xingapi-0.0.7.dist-info/top_level.txt,sha256=4lJkTT_kTXi2b5mjgS-9Ec591NEeHQMbkc0lbjmYouM,8
+xingapi-0.0.7.dist-info/RECORD,,
