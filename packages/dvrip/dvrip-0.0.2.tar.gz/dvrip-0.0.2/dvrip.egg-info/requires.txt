@@ -1,0 +1,7 @@
+typing_inspect<0.5,>=0.4
+
+[dvr-find]
+dateparser
+
+[dvr-time]
+dateparser
