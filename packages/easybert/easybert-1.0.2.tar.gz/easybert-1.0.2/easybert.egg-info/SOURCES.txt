@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+easybert/VERSION.txt
+easybert/__init__.py
+easybert/__main__.py
+easybert/bert.py
+easybert.egg-info/PKG-INFO
+easybert.egg-info/SOURCES.txt
+easybert.egg-info/dependency_links.txt
+easybert.egg-info/entry_points.txt
+easybert.egg-info/requires.txt
+easybert.egg-info/top_level.txt
+easybert.egg-info/zip-safe
