@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: free-disk
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/fphammerle/free-disk
+Author: Fabian Peter Hammerle
+Author-email: fabian@hammerle.me
+License: MIT
+Keywords: disk,files,cleanup,free,delete,old
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
+
