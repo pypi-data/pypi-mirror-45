@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SwSpotify
+Version: 0.0.2
+Summary: Get currently playing song and artist from Spotify faster without using the API.
+Home-page: https://github.com/SwagLyrics/SwSpotify
+Author: Aadi Bajpai
+Author-email: swspotify@aadibajpai.me
+License: UNKNOWN
+Description: # yeet
+        
+        
+Keywords: spotify swaglyrics python app
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
