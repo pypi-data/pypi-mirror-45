@@ -1,0 +1,7 @@
+amuse-framework>=12.0.0rc3
+docutils>=0.6
+h5py>=1.1.0
+mpi4py>=1.1.0
+nose>=0.11.1
+numpy>=1.2.2
+wheel>=0.32
