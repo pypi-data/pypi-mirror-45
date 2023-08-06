@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_searchly_tables.egg-info/PKG-INFO
+django_searchly_tables.egg-info/SOURCES.txt
+django_searchly_tables.egg-info/dependency_links.txt
+django_searchly_tables.egg-info/top_level.txt
+searchly_tables/__init__.py
+searchly_tables/apps.py
+searchly_tables/tables.py
+searchly_tables/tests.py
+searchly_tables/migrations/__init__.py
