@@ -1,0 +1,9 @@
+README.md
+setup.py
+joysticks/__init__.py
+joysticks/__main__.py
+joysticks/joysticks.py
+joysticks.egg-info/PKG-INFO
+joysticks.egg-info/SOURCES.txt
+joysticks.egg-info/dependency_links.txt
+joysticks.egg-info/top_level.txt
