@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: rika
+Version: 0.1.0
+Summary: This is a python library that make it easy to use technical analysis stock market in China.
+Home-page: https://github.com/lvzhi/rika
+Author: Lv Zhi
+Author-email: 279094354@qq.com
+License: MIT license
+Description: ====
+        rika
+        ====
+        
+        
+        .. image:: https://img.shields.io/pypi/v/rika.svg
+                :target: https://pypi.python.org/pypi/rika
+        
+        .. image:: https://img.shields.io/travis/lvzhi/rika.svg
+                :target: https://travis-ci.org/lvzhi/rika
+        
+        .. image:: https://readthedocs.org/projects/rika/badge/?version=latest
+                :target: https://rika.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        This is a python library that make it easy to use technical analysis stock market in China.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://rika.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-04-28)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: rika
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
