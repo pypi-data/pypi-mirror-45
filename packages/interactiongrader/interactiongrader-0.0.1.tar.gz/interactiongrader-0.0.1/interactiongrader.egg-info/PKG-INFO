@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: interactiongrader
+Version: 0.0.1
+Summary: Grade free form text answers
+Home-page: https://github.com/pypa/sampleproject
+Author: Daniel Brandt
+Author-email: dbbrandt@gmail.com
+License: UNKNOWN
+Description: # interaction-grader
+        Python package to help grade test questions (interactions) using deep learning tools.
+        
+        
+        Required Packages
+        pandas
+        fuzzyWuzzy
+        python-Levenshtein
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
