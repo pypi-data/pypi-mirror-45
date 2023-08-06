@@ -1,0 +1,5 @@
+tornado>=4.0.0
+tornado-botocore>=1.5.0
+boto
+YURL
+six
