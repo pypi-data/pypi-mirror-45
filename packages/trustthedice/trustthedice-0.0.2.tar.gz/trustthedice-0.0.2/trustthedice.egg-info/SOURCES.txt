@@ -1,0 +1,16 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_lib.py
+tests/test_serialise.py
+trustthedice/__init__.py
+trustthedice/cli.py
+trustthedice/exceptions.py
+trustthedice/lib.py
+trustthedice/serialise.py
+trustthedice.egg-info/PKG-INFO
+trustthedice.egg-info/SOURCES.txt
+trustthedice.egg-info/dependency_links.txt
+trustthedice.egg-info/entry_points.txt
+trustthedice.egg-info/requires.txt
+trustthedice.egg-info/top_level.txt
