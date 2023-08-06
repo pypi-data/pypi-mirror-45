@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyAudit/__init__.py
+PyAudit/basics.py
+PyAudit.egg-info/PKG-INFO
+PyAudit.egg-info/SOURCES.txt
+PyAudit.egg-info/dependency_links.txt
+PyAudit.egg-info/requires.txt
+PyAudit.egg-info/top_level.txt
+test/test.py
