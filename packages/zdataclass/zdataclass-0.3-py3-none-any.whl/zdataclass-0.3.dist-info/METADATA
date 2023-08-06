@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: zdataclass
+Version: 0.3
+Summary: Extension for dataclass
+Home-page: https://github.com/zljun/zdataclass
+Author: zuolongjun
+Author-email: zuo.longjun@zgmicro.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# zdataclass
+Python extension for dataclasses which is useful for packing/unpacking data structures
+
+
