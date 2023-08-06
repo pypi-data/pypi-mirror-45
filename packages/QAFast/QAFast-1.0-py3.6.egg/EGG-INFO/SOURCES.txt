@@ -1,0 +1,8 @@
+setup.py
+QAFast/__init__.py
+QAFast.egg-info/PKG-INFO
+QAFast.egg-info/SOURCES.txt
+QAFast.egg-info/dependency_links.txt
+QAFast.egg-info/requires.txt
+QAFast.egg-info/top_level.txt
+QAFast.egg-info/zip-safe

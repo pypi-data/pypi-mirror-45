@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: QAFast
+Version: 1.0
+Summary: QUANTAXIS Fast: easy module
+Home-page: https://github.com/yutiansut/quantaxis_run
+Author: yutiansut
+Author-email: yutiansut@qq.com
+License: MIT
+Description: quantaxis fast
+Keywords: quantaxis,quant,finance,Backtest,Framework
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
