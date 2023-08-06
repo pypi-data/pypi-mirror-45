@@ -1,0 +1,3 @@
+astropy
+psycopg2
+spiceypy
