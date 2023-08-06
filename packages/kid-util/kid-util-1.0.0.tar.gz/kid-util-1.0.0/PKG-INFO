@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: kid-util
+Version: 1.0.0
+Summary: Module for making and verifying KID numbers
+Home-page: https://github.com/Ondkloss/kid-util
+Author: Halvor Holsten Strand
+Author-email: halvor.holsten.strand@gmail.com
+License: WTFPL
+Description: UNKNOWN
+Platform: UNKNOWN
