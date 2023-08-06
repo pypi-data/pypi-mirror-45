@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+crosstrainer/__init__.py
+crosstrainer/crosstrainer.py
+crosstrainer.egg-info/PKG-INFO
+crosstrainer.egg-info/SOURCES.txt
+crosstrainer.egg-info/dependency_links.txt
+crosstrainer.egg-info/top_level.txt
