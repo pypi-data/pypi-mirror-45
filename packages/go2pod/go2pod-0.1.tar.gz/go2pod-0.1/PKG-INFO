@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: go2pod
+Version: 0.1
+Summary: golang project to kubernetes pod
+Home-page: https://github.com/cosven/go2pod
+Author: Cosven
+Author-email: yinshaowen241@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: golang,kubernetes,pod
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only

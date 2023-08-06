@@ -1,0 +1,3 @@
+[console_scripts]
+go2pod = go2pod.cli:main
+
