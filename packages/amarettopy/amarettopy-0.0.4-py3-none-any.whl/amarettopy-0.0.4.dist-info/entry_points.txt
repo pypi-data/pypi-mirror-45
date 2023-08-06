@@ -1,0 +1,6 @@
+[console_scripts]
+amrtctl = amarettopy.cli.amrtctl:main
+
+[gui_scripts]
+amrtctl-gui = amarettopy.gui.amrtctl:main
+
