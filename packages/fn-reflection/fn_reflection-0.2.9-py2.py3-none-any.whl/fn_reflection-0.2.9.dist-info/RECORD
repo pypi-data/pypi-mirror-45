@@ -1,0 +1,12 @@
+fn_reflection/__init__.py,sha256=B4hqMWmHkLoJJvrxFP9z3l_86vQ515_Ku-nWtrcfZGA,177
+fn_reflection/_external.py,sha256=glvf9h0cQSPJ32GRQt4zy_PyKKJ7XW5rW8Wu-3sGbAs,136
+fn_reflection/browse.py,sha256=F8ACHJ283Ka9wEW_83RtdXxxY5THYmsbrlAlMPGPQWg,1506
+fn_reflection/decorator.py,sha256=PcM--HFpbptl_hEbuEWvVwyFoC1gDwuE2Rg4KebvSYY,352
+fn_reflection/func.py,sha256=PyoMO5YHD2NjjbkNadkzltXyPd5q19gHL_ybA0H5Cq4,1051
+fn_reflection/netutil.py,sha256=Xm9Ru0SG-p4inso0wuakvrUDMqtydmuOWZVT_t0uJ1E,766
+fn_reflection/send_mail.py,sha256=Jnj7X8jxHp_HQPelWLVn2FH1aQyoM9ac1-tIoUJufUw,934
+fn_reflection-0.2.9.dist-info/LICENCE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+fn_reflection-0.2.9.dist-info/METADATA,sha256=0UbwvgKdqjSu0uRXwLZ5glsDSNEYS6l7HCPfbEqp2pY,1022
+fn_reflection-0.2.9.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+fn_reflection-0.2.9.dist-info/top_level.txt,sha256=OmR-sTTGcnFZZsFrLhl9WRJ4w1UX1rXJqyiYVy4tGR8,14
+fn_reflection-0.2.9.dist-info/RECORD,,
