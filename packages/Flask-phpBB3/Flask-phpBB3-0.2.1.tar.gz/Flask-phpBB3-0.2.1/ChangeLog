@@ -1,0 +1,126 @@
+CHANGES
+=======
+
+v0.2.1
+------
+
+* Fix caching
+* Add missing interface
+* Install package instead of module
+* Update README
+* Update documentation
+* Add custom statements
+* Add custom user profile fields statements
+* Pin to workable mypy version
+* Extract and test query execution
+* Test case of session storage with invalid session id
+* Test session unread notifications API
+* Test session privileges API
+* Test group membership logic
+* Add coverage settings
+* Remove cache proxy
+* Extract has\_privileges
+* Refactor ACL logic into class
+* Extract acl parsing code
+* Fix typo
+* Test context teardown
+* Move db initialization into module setup
+* Attach cache to app object
+* Remove config from object state
+* Remove excess cast
+* Force explicit ids in data
+* Extract backend code and introduce proper API
+* Break-up package into meaningful modules
+* Move module into package
+* Fix covered bugs
+* Add unit tests
+* Test privilege logic using integration tests
+* Standardize development requirements
+* Add integration tests
+
+v0.1.6
+------
+
+* Typo fix
+* Add linting CI
+* Add typing
+* Fix import order
+* Fix minor linter errors
+* Fix line too long flake8 errors
+* Remove spaces around kewyord = operator
+* Convert to 4 space indet
+* Introduce flake8
+* Add editorconfig
+* Cache ACL options
+* Cache anonymous user data
+* Implement query caching
+* Move to setuptools with pbr
+
+v0.1.5
+------
+
+* Released new patch release v0.1.5
+* Added unread notifications counting. Needs refactoring to have a functional notification list fetching
+* Fixed an issue with flashing messages, pop did not marked session as modified
+
+v0.1.4
+------
+
+* Set default timeout to be little more than one hour. Also prevent modified flag to be set if we set same value to a key
+
+v0.1.3
+------
+
+* Minor patch to fix issues when connection get closed
+
+v0.1.2
+------
+
+* Released patch release, adding new features and removed API support
+* Missing comma :)
+* Added set operation
+* Fixed some corner cases (when having an empty session)
+* Added ACL options query and some minor fixes in privileges testing
+* Made possible to have queries without limit. Also, fetch returns a generator now
+* Moved cache init to extension itself
+* Updated README
+* Removed a mention of custom function registering. Also removed unsupported permission tests
+* Removed API section, too much overhead. Also removed function registering (not needed, actually)
+* Added API implementation
+* Added has operator, it returns true or false
+* Added key prefix for cache backend
+* Session behaves as a dict, replaced attribute getters with item getters
+* Added missing space in SQL query
+* Re-implemented session interface and session. Uses cache backend to store any additional data. Other session related data is read-only
+
+v0.1.1
+------
+
+* First patch release
+* Usernames needs to be in unicode
+
+v0.1.0
+------
+
+* First release
+* Made it to work with psycopg2 and psycopg2cffi
+* Reverting back to psycopg2. Psycopg2cffi needs building
+* Replaces psycopg2 with psycopg2cffi, so it can work with pypy
+* Replaced own session interface with before\_request handlers. Now it is possible to use other session backends with this extension
+* Psycopg2 do not have d in formatter :) 
+* Adding anonymous data to session
+* Fixed an exception when there is no session
+* Specified session class
+* Removed stub reimplementation of storing session. Also using stored sessions
+* There may not be any session in the database. Need to handle that scenario
+* Added session integration
+* Some case fixes
+* Preparing ground for API access, which will have little bit more security and functions compared to direct access
+* Some whitespace fixing (copied from examples page)
+* Converting results into dict
+* Added user data to session fetch
+* Method format accepts kwargs
+* Fixed infinite recursion by implementing \_\_getattr\_\_ instead of \_\_getattribute\_\_
+* Added .gitignore
+* Some fixes and changed get\_autologin function
+* Initial commit
