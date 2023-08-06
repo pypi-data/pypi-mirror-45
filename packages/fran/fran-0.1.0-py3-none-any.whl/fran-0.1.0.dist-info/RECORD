@@ -1,0 +1,13 @@
+fran/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fran/__main__.py,sha256=XMvgye7bJ6cCjCnCzS5IcaZsmwxhloN1meFtAMj1ONE,4432
+fran/config.toml,sha256=BN0BzSUAdEuobPchG5drD65YMcLE2fowX7T11FF-408,166
+fran/constants.py,sha256=2ZG8V-I7TrH7QUaK-riwYBRa-gshMyVUxhFJ6A3O5MI,1595
+fran/events.py,sha256=wMr6ThVtMtKpvPnS5Nmsjf3yiFcZlvHhKIaLb-KhDM8,8023
+fran/frames.py,sha256=7XFld2r4Bmzp1KRigcl_6oWgrOnKk2nXrR6bN9euYbQ,7138
+fran/gui.py,sha256=qLKHeFDEhwhrnqp_M700pdHxB8KEjNJIyxfpTjQyOh4,10420
+fran-0.1.0.dist-info/LICENSE,sha256=LOpE07oD4VOSdudaWFWpkXO7jbX-x45FqHTcXWBE8S0,1069
+fran-0.1.0.dist-info/METADATA,sha256=kulMcKTvNVuuSRcxykvPXyymZAYEeWaEWUzXEidTrP0,4469
+fran-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fran-0.1.0.dist-info/entry_points.txt,sha256=QwlSthLQZC3E30EICMzqUpMPBiC293x7OYzxWxbrMyQ,82
+fran-0.1.0.dist-info/top_level.txt,sha256=osK_wiJMjvmI8hCnzu5RcTbTHFrmPRVWnlVNvvhE1kE,5
+fran-0.1.0.dist-info/RECORD,,
