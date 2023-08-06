@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ffffffff
+Version: 0.0.1
+Summary: A simple set of utilities, to help with building assembly-lines in Python.
+Home-page: https://github.com/viswanathct/al-py
+Author: Viswanath. Ct
+License: ISC
+Keywords: build assembly-line utility FP functional-programming unix-pipes builder-pattern ffffffff
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7.10
+
+A simple set of utilities, to help with building assembly-lines in Python.
+
+
