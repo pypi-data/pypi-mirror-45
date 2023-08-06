@@ -1,0 +1,27 @@
+python-dateutil
+lxml
+numpy>=1.10
+scipy>=1.2.0
+matplotlib>=2.2.0
+astropy>=1.2.1
+lalsuite
+lscsoft-glue>=1.60.0
+ligo-segments
+gwpy>=0.14.2
+gwtrigfind
+gwdatafind
+pygments
+MarkupPy
+gwdetchar>=0.5.1
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version < "3.6"]
+configparser
+
+[docs]
+sphinx
+numpydoc
+sphinx-bootstrap-theme
+astropy_helpers
