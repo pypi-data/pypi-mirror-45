@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tdameritrade-cli
+Version: 0.2.1
+Summary: A CLI built on top of the tdameritrade-client API library
+Home-page: https://gitlab.com/tdameritrade-tools/tdameritrade-cli
+Author: Joe Castagneri
+Author-email: jcastagneri@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pyexcel-ods (>=0.5.6,<0.6.0)
+Requires-Dist: tdameritrade-client (>=0.3,<0.4)
+Project-URL: Documentation, https://tdameritrade-cli.readthedocs.io/en/latest/?#
+Project-URL: Repository, https://gitlab.com/tdameritrade-tools/tdameritrade-cli
+Description-Content-Type: text/markdown
+
+[![pipeline status](https://gitlab.com/tdameritrade-tools/tdameritrade-cli/badges/master/pipeline.svg)](https://gitlab.com/tdameritrade-tools/tdameritrade-cli/commits/master) [![Documentation Status](https://readthedocs.org/projects/tdameritrade-cli/badge/?version=latest)](https://tdameritrade-cli.readthedocs.io/en/latest/?badge=latest) [![coverage report](https://gitlab.com/tdameritrade-tools/tdameritrade-cli/badges/master/coverage.svg)](https://gitlab.com/tdameritrade-tools/tdameritrade-cli/commits/master)
+
+
+
+
+# TDAmeritrade CLI
+A CLI that makes requests of TDA using the TDA API via the TDA client. 
+
+Read the [docs](https://tdameritrade-cli.readthedocs.io/en/latest/?#).
+
+## Installation:
+Follow the instructions [here](https://tdameritrade-cli.readthedocs.io/en/latest/installation.html) to install the 
+package. 
+
+## Usage:
+The CLI has full help text accessible via `tda-cli --help`. For usage examples, consult the 
+[quickstart guide](https://tdameritrade-cli.readthedocs.io/en/latest/quickstart.html).
+
