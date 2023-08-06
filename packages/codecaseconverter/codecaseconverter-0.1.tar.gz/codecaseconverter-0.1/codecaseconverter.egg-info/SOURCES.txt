@@ -1,0 +1,9 @@
+README.md
+setup.py
+codecaseconverter/__init__.py
+codecaseconverter/lowercase_converter.py
+codecaseconverter.egg-info/PKG-INFO
+codecaseconverter.egg-info/SOURCES.txt
+codecaseconverter.egg-info/dependency_links.txt
+codecaseconverter.egg-info/not-zip-safe
+codecaseconverter.egg-info/top_level.txt
