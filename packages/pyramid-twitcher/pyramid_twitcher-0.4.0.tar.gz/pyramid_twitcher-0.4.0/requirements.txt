@@ -1,0 +1,8 @@
+pyramid>=1.10
+pyramid_rpc
+webob
+requests
+requests_oauthlib
+pymongo
+argcomplete
+pytz
