@@ -1,0 +1,7 @@
+README.md
+kv.py
+setup.py
+cloudflarekv.egg-info/PKG-INFO
+cloudflarekv.egg-info/SOURCES.txt
+cloudflarekv.egg-info/dependency_links.txt
+cloudflarekv.egg-info/top_level.txt
