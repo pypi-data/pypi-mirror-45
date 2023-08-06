@@ -1,0 +1,7 @@
+README.rst
+setup.py
+worker.py
+workfrankomik.egg-info/PKG-INFO
+workfrankomik.egg-info/SOURCES.txt
+workfrankomik.egg-info/dependency_links.txt
+workfrankomik.egg-info/top_level.txt
