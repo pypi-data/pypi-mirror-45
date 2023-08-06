@@ -1,0 +1,15 @@
+ipyantd/__init__.py,sha256=CMs-0Ov_kbqSs8hvVDXIvSZa-utJDO05GNQHFXYnM6s,258
+ipyantd/_version.py,sha256=ruegfAIWReaxaMY20GO_P0ryf19MuqX-NYsrGaPxzmY,315
+ipyantd/core.py,sha256=1ylRdyAjAoakP3VZAt7k1wAGxvJKFyRL_EVHCCZ9x88,19968
+ipyantd/mixins.py,sha256=zL7voaSvafBKuCS6rRifrOnL0htt9XhloG8eOk5hm68,1148
+ipyantd/static/extension.js,sha256=htQMYQgl6zlSJG476yHXc17R3r_Q8kfdwVjCZXAUZI4,1190
+ipyantd/static/index.js,sha256=MFYLacZR05lvPoSiWYzemoh8EYmm2J5rsKFUb-teJg0,3406021
+ipyantd/static/index.js.map,sha256=lDUlKCDESqOtrlLYVewGjGdfK5sCsXYkQ7S9PkF5EZg,9951316
+ipyantd-0.1.6.data/data/etc/jupyter/nbconfig/notebook.d/ipyantd.json,sha256=xSN4yM1G6K_XtBZK6ywkzhO_a8zb2Z-8Fff34qKO-GI,66
+ipyantd-0.1.6.data/data/share/jupyter/nbextensions/ipyantd/extension.js,sha256=htQMYQgl6zlSJG476yHXc17R3r_Q8kfdwVjCZXAUZI4,1190
+ipyantd-0.1.6.data/data/share/jupyter/nbextensions/ipyantd/index.js,sha256=MFYLacZR05lvPoSiWYzemoh8EYmm2J5rsKFUb-teJg0,3406021
+ipyantd-0.1.6.data/data/share/jupyter/nbextensions/ipyantd/index.js.map,sha256=lDUlKCDESqOtrlLYVewGjGdfK5sCsXYkQ7S9PkF5EZg,9951316
+ipyantd-0.1.6.dist-info/METADATA,sha256=NEvRNI3ISI0twRmRfzxMMbabCF1UNMm8cr1VJxSTA1M,1904
+ipyantd-0.1.6.dist-info/RECORD,,
+ipyantd-0.1.6.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+ipyantd-0.1.6.dist-info/top_level.txt,sha256=egJ-eKXwbF_ynF6LuuilnEcwUzUGUlt8Ga6MlouoL3o,8
