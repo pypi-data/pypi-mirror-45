@@ -1,0 +1,15 @@
+README.rst
+setup.py
+docopt_sh/__init__.py
+docopt_sh/__main__.py
+docopt_sh/bash_helper.py
+docopt_sh/generator.py
+docopt_sh/parser.py
+docopt_sh/patcher.py
+docopt_sh.egg-info/PKG-INFO
+docopt_sh.egg-info/SOURCES.txt
+docopt_sh.egg-info/dependency_links.txt
+docopt_sh.egg-info/entry_points.txt
+docopt_sh.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
