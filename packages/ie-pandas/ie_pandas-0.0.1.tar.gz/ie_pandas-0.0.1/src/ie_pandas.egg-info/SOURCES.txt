@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+src/ie_pandas/DataFrame.py
+src/ie_pandas/__init__.py
+src/ie_pandas.egg-info/PKG-INFO
+src/ie_pandas.egg-info/SOURCES.txt
+src/ie_pandas.egg-info/dependency_links.txt
+src/ie_pandas.egg-info/requires.txt
+src/ie_pandas.egg-info/top_level.txt

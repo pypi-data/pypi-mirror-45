@@ -1,0 +1,6 @@
+numpy>=1.16
+
+[dev]
+black
+pytest>=4.2
+pytest-cov>=2.6
