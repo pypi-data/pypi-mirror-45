@@ -1,0 +1,7 @@
+requests
+nltk
+argparse
+requests-html
+lxml
+urllib3
+beautifulsoup4
