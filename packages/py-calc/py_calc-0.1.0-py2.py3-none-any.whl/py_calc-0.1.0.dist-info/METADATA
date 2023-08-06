@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: py-calc
+Version: 0.1.0
+Summary: its a simple python math calculator package
+Home-page: https://github.com/dandu1008/py_calc
+Author: Dinesh Kumar Dandu
+Author-email: dandu.8x@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: click
+
+===============================
+py_calc
+===============================
+
+.. image:: https://img.shields.io/travis/dandu1008/py_calc.svg
+        :target: https://travis-ci.org/dandu1008/py_calc
+
+.. image:: https://img.shields.io/pypi/v/py_calc.svg
+        :target: https://pypi.python.org/pypi/py_calc
+
+
+its a simple python math calculator package
+
+* Free software: MIT license
+* Documentation: (COMING SOON!) https://py_calc.readthedocs.org.
+
+Features
+--------
+
+* TODO
+
+
+
+
+History
+-------
+
+Pre-release
+
+

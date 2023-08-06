@@ -1,0 +1,11 @@
+py_calc/__init__.py,sha256=zutES8cCKy03Eji_S8VGZQTLqDl4pOvcsIUGAR9hysE,223
+py_calc/_version.py,sha256=-pt_vAHGXMUOJF7KYuD9nNMWhrdLpvwx4oW-ZFugdew,471
+py_calc/calc.py,sha256=zN58VDnJfk5fOaYHGehmyxzDscFBPRW69jCC2InIc3Q,525
+py_calc/cli.py,sha256=2Hgmd1R3Q3EUmJS2yhhYMJlQmtySyQvlEh7NxmyF50U,434
+py_calc-0.1.0.dist-info/AUTHORS.rst,sha256=zDCtDfLtwyCXLBcmb1iV3G3qQsz-EQHiWQ65Y72nuDo,172
+py_calc-0.1.0.dist-info/LICENSE,sha256=h1OoXbTNdrogDSSp_cmxupMHWfJGXR5_Wlloog8mIMY,1085
+py_calc-0.1.0.dist-info/METADATA,sha256=INkFs5OFiW3VTJT76cskjJiv-2M4elojNGphx2egIb8,1298
+py_calc-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+py_calc-0.1.0.dist-info/entry_points.txt,sha256=q_ERU_r5xNB7c6DqQxDKNMU_JX4qjUpotioQBJY0mbc,139
+py_calc-0.1.0.dist-info/top_level.txt,sha256=pgxBGruez7QTcZJMZ_H-SDPEqVSna7zKGexpQ4UzJRM,8
+py_calc-0.1.0.dist-info/RECORD,,

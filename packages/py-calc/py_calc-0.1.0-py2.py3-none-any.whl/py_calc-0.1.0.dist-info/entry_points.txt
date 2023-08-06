@@ -1,0 +1,6 @@
+[console_scripts]
+add = py_calc.calc:add
+divide = py_calc.calc:divide
+multiply = py_calc.calc:multiply
+substract = py_calc.calc:substract
+
