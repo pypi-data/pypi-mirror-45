@@ -1,0 +1,8 @@
+qiskit-aqua>=0.5.0
+
+[:sys_platform == "darwin"]
+pyobjc-core
+pyobjc-framework-Cocoa
+
+[qiskit_chemistry]
+qiskit-chemistry>=0.5.0
