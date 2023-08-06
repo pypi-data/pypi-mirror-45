@@ -1,0 +1,10 @@
+setup.py
+tdcc/HtmlParser.py
+tdcc/StructuredProductCrawler.py
+tdcc/__init__.py
+tdcc/translation.py
+tdcc.egg-info/PKG-INFO
+tdcc.egg-info/SOURCES.txt
+tdcc.egg-info/dependency_links.txt
+tdcc.egg-info/requires.txt
+tdcc.egg-info/top_level.txt
