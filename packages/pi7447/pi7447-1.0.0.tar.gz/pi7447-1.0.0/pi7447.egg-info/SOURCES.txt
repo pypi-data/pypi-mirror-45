@@ -1,0 +1,8 @@
+README.md
+setup.py
+pi7447/__init__.py
+pi7447/pi7447.py
+pi7447.egg-info/PKG-INFO
+pi7447.egg-info/SOURCES.txt
+pi7447.egg-info/dependency_links.txt
+pi7447.egg-info/top_level.txt
