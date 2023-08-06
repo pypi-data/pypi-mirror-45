@@ -1,0 +1,3 @@
+[console_scripts]
+vincrement = simple_version_manager.simple_version_manager:run
+
