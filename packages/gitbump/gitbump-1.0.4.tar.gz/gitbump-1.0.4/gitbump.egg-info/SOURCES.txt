@@ -1,0 +1,9 @@
+README.md
+gitbump.py
+setup.py
+gitbump.egg-info/PKG-INFO
+gitbump.egg-info/SOURCES.txt
+gitbump.egg-info/dependency_links.txt
+gitbump.egg-info/entry_points.txt
+gitbump.egg-info/requires.txt
+gitbump.egg-info/top_level.txt
