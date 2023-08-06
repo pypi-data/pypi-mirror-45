@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: coco-cli
+Version: 2.1
+Summary: A CLI tool for managing your CLI tools
+Home-page: https://github.com/Treborium/Coco
+Author: Robert Fuchs
+Author-email: RobertFuchs97@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: bullet
+Requires-Dist: click
+
+# COCO
+
+Coco is a tool for collecting commands in an easy and organized way.
+
+## Features
+
+
