@@ -1,0 +1,13 @@
+aiodns
+aiohttp
+async-timeout
+colorlog
+requests
+uvloop
+backoff
+dnspython
+tldextract
+shodan
+tqdm
+colorama
+censys
