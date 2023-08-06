@@ -1,0 +1,11 @@
+asyncio_orvibo/__init__.py,sha256=bPf0GGRlTKQACeYrrKmDNOrnSb02WAcoryk4LW7_65Q,55
+asyncio_orvibo/allone.py,sha256=xAs0U1Rs9nnj4dAj538drJHWWM8o20bRJtZEdm5ub2w,6035
+asyncio_orvibo/asyncio_udp.py,sha256=-MY82u5FwveDuOWZ2m-8E4t8qiKc8lVI--JPtTmnSB4,7705
+asyncio_orvibo/const.py,sha256=MOlTp36hbkgQLy4-77EuL4Vq-2t1lKOs6Q1z09QLAZ4,136
+asyncio_orvibo/orvibo_udp.py,sha256=CAlPWHbl9QtE9kQDG39K7uAOK8Bv0aR1zoSPJOYsDiY,5573
+asyncio_orvibo/s20.py,sha256=Jl8ePaCXB1iO4a5g7OgBbqqc-g5Ys4rl0e6j9txfMpQ,3044
+asyncio_orvibo-1.9.dist-info/LICENSE,sha256=7sJuzbmf5T6HN2kX6CIgSPZwerkp2QXBxVPtD_1qqFA,1065
+asyncio_orvibo-1.9.dist-info/METADATA,sha256=OwR2KDpEidquMve2eZeyYqa9KJFOdI2FbrUrPRvMLuM,3002
+asyncio_orvibo-1.9.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+asyncio_orvibo-1.9.dist-info/top_level.txt,sha256=XFRiho2JptNVzasqW7aTNQbi-xbEMk-flhy6pI7geHQ,15
+asyncio_orvibo-1.9.dist-info/RECORD,,
