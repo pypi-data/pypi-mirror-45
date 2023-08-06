@@ -1,0 +1,8 @@
+tesseract_positional/__init__.py,sha256=XMGERz8umAnuw-TiahgKQtW-J9-2UWAXZK8NyB_eBJA,185
+tesseract_positional/cmd_line.py,sha256=HtEvwlhFLlpwiEGCVHTmzV1TAiIHmhoe7EDAoI_TpZE,850
+tesseract_positional/positional_ocr.py,sha256=HQXVyDMnMS7EO8OKyD960PGx2TmVlMWAq4k0yeLurIQ,4825
+tesseract_positional-0.1.1.dist-info/METADATA,sha256=mQ1NVxmNjENiqGWzFAnJGDclX6eAaUHi5a4V8bxDCoI,336
+tesseract_positional-0.1.1.dist-info/RECORD,,
+tesseract_positional-0.1.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+tesseract_positional-0.1.1.dist-info/entry_points.txt,sha256=FJEwiqxcAQLVd_JkN3CU30ROfHXrToF4vdSNnd2qlKE,77
+tesseract_positional-0.1.1.dist-info/top_level.txt,sha256=F7GuUgJyD5bfmPcQiDLaO_A60b4XYsFiF-ohM0kY4Ts,21
