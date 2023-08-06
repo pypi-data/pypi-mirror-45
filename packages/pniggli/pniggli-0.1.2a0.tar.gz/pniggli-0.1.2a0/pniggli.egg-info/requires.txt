@@ -1,0 +1,9 @@
+numpy
+spglib
+
+[dev]
+pip
+pytest
+pytest-cov
+twine
+ipython
