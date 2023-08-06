@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flaskerize
+Version: 0.1.3
+Summary: Bundle and serve static web applications such as Angular or React with Flask APIs through a single, Flask app
+Home-page: http://alanpryorjr.com/
+Author: AJ Pryor
+Author-email: apryor6@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
+

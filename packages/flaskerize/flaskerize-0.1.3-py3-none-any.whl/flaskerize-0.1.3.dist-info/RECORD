@@ -1,0 +1,13 @@
+demo/__init__.py,sha256=AjyMMm3Xj4Y2igdH-CgJhstq0f8Ql1XLQ8EEsNhGXB8,307
+flaskerize/__init__.py,sha256=JOjwy1vZpY6HxFYKq3Nu-H33XWCsYsobOjzj5q0rWhs,34
+flaskerize/attach.py,sha256=pFZ0Ap60JYREyJCn8HKnSTH1aRPDVIDPTcCH56hS8Ro,3643
+flaskerize/generate.py,sha256=aRzex2DpzZYSFjFzEXBQ0H5S-w2TarzJU2CXK70bsXM,3618
+flaskerize/handlers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaskerize/parser.py,sha256=TorjNbodnlIvGTD7yG6sfK24kyD7_foDvyP2VAqztC0,4382
+flaskerize/parser_test.py,sha256=8zuG2mWHlk-pLyqhoyXqiCrmtyCBncTlD4SfbNfgLU8,585
+flaskerize-0.1.3.data/scripts/flaskerize,sha256=YxyN32X9Snd_4AWIyJeeIT6HkW6JXgtq8ku3Q97Rpig,127
+flaskerize-0.1.3.data/scripts/fz,sha256=YxyN32X9Snd_4AWIyJeeIT6HkW6JXgtq8ku3Q97Rpig,127
+flaskerize-0.1.3.dist-info/METADATA,sha256=eA8ZiSlqCD94tzbEUua8R8q3fYRoOvNp_uw-C-WQpTY,303
+flaskerize-0.1.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+flaskerize-0.1.3.dist-info/top_level.txt,sha256=kakg21msDgy7lg0tDp_ItfnBao6LPqsd1hHBI1IBZAQ,16
+flaskerize-0.1.3.dist-info/RECORD,,
