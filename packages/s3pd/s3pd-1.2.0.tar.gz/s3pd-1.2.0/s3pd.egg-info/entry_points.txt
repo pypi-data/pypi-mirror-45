@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        s3pd = s3pd.cli:main
+    

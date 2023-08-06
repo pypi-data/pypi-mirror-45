@@ -1,0 +1,11 @@
+README.rst
+setup.py
+s3pd/__init__.py
+s3pd/cli.py
+s3pd/version.py
+s3pd.egg-info/PKG-INFO
+s3pd.egg-info/SOURCES.txt
+s3pd.egg-info/dependency_links.txt
+s3pd.egg-info/entry_points.txt
+s3pd.egg-info/requires.txt
+s3pd.egg-info/top_level.txt
