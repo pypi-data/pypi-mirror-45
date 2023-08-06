@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: fleval
+Version: 0.1.1
+Summary: Flask app for grading or rating submissions, applications, etc.
+Home-page: https://github.com/ayanc/fleval
+Author: Ayan Chakrabarti
+Author-email: ayan.chakrabarti@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0, <4
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: markdown
+
+
+fleval
+------
+
+Simple light-weight flask app for grading homeworks, scoring
+applications, reviewing papers, etc. A web-server runs locally and
+starts a browser to allow you to step through documents, showing you a
+two-pane view with the document on the left and a comment+score box on
+the right, with easy insertion of lines from comments in other
+documents (useful for commenting on common mistakes when grading
+homeworks).
+
+* `Website <http://github.com/ayanc/fleval>`_
+
+
+

@@ -1,0 +1,103 @@
+#!python
+# Copyright (C) 2019, Ayan Chakrabarti <ayan.chakrabarti@gmail.com>
+
+# MIT License
+# -----------
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+
+from __future__ import print_function
+import sys
+from glob import glob
+from markdown import markdown
+from flask import json
+
+def load_db(js):
+    js0 = js.split(',')
+    js = []
+    for j in js0:
+        js = js + glob(j)
+    
+    with open(js[0],'r') as f:
+        db = json.load(f)
+    for i in range(1,len(js)):
+        with open(js[1],'r') as f:
+            udb = json.load(f)
+        for k in udb.keys():
+            if k in db.keys():
+                if len(db[k]['comments']) > 0 and len(udb[k]['comments']) > 0:
+                    db[k]['comments'] = db[k]['comments'] + '\n' + udb[k]['comments']
+                else:
+                    db[k]['comments'] = db[k]['comments'] + udb[k]['comments']
+                db[k]['score'] = str(float(db[k]['score']) + float(udb[k]['score']))
+            else:
+                db[k] = udb[k]
+    return db
+
+
+mdfmt=['''
+<html><head><style>body { margin: 0;}.content {-webkit-text-size-adjust:100%;text-size-adjust:100%;color:#333;font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif; font-size:16px;line-height:1.6;word-wrap:break-word; min-width: 200px;max-width: 800px;margin: 0 auto;padding: 45px; padding-top: 15px; font-size: 0.8em;}hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border:0;border-bottom:1px solid #ddd;} hr:before{display:table;content:"";} hr:after{display:table;clear:both;content:"";}h1, h2, h3,.markdown-body h4, h5, h6 {margin-top:15px;margin-bottom:15px;line-height:1.1;}
+h1{font-size:30px;} h2{font-size:21px;} h3{font-size:16px;} h4{font-size:14px;} h5{font-size:12px;} h6{font-size:11px;}ul {padding-left: 15px; margin-left: 0px;}ol {padding-left: 15px; margin-left: 0px;}</style></head><body><div class="content">
+''','</div></body></html>']
+
+def m2html(mark):
+    resp = mdfmt[0] + markdown(mark) + mdfmt[1]
+    return resp
+
+if len(sys.argv) < 3:
+    print('USAGE: flerge out_dir [title]:file.js[,file2.js,...] [title2:file3.js,file4.js ...]')
+    sys.exit()
+
+
+out_dir = sys.argv[1]
+dbs = [sys.argv[i].split(':') for i in range(2,len(sys.argv))]
+dbs = [[d[0],load_db(d[1])] for d in dbs]
+
+
+sys.stdout.write('key,')
+for i in range(len(dbs)):
+    if len(dbs[i][0]) > 0:
+        sys.stdout.write(dbs[i][0]+',')
+sys.stdout.write('Total\n')
+
+for k in sorted(dbs[0][1].keys()):
+    score = 0.
+    md = ''
+
+    sys.stdout.write(k+',')
+    for i in range(len(dbs)):
+        cm = dbs[i][1][k]['comments']
+        sc = dbs[i][1][k]['score']
+        
+        if len(dbs[i][0]) > 0:
+            md=md+'### ' + dbs[i][0] + ': ' + sc + '\n\n'
+            sys.stdout.write(sc+',')
+        md = md + dbs[i][1][k]['comments'] + '\n\n'
+
+        if len(sc) > 0:
+            score = score+float(sc)
+
+    sys.stdout.write(str(score)+'\n')        
+    md = '# Total: ' + str(score) + '\n\n' + md
+    md = m2html(md)
+    with open(out_dir+'/'+k+'.html','w') as f:
+        f.write(md)
+    
+            
+        
