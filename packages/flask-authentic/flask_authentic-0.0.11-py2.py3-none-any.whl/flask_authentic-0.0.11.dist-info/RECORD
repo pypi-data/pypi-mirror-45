@@ -1,0 +1,15 @@
+flask_authentic/__init__.py,sha256=-TjmZCUc_uZBd7BUogK3HiC49aLUceLRh_waPWSDH5o,386
+flask_authentic/__main__.py,sha256=wZ1M2S3YfXfvDM84HqPN6lMNUt8yfY3tofoOs9pPjxA,377
+flask_authentic/cli.py,sha256=mEUeF7oGkR9vNyqQciQ2DNoSq7CsMGgtyV_CAGwmkSE,747
+flask_authentic/config.py,sha256=bSq_35i6kP7ux5k9zLORZMaHy2ABxLpSponEaSDbos4,153
+flask_authentic/decorators.py,sha256=86V84v3VKeOcm4VHvmdTZo7NFa6x0ESTGbtzRq8MlUo,3757
+flask_authentic/account/__init__.py,sha256=WPFj5OYQfQw5hyXhh-ZFI5vyyN_mqld49b7Vx7HKaOk,124
+flask_authentic/account/blueprint.py,sha256=BZdvahM9xp5t5oZkAhItpwfa0oO4SzBGB3WL_D8fKRs,2497
+flask_authentic/account/views.py,sha256=FYVqAWdxC5tODjHr-MBsK05sm3-x9jz9Kty-56p03aM,5893
+flask_authentic-0.0.11.dist-info/AUTHORS.rst,sha256=KzD_bGORzf0XHCLG0btPfk2ub4a3cILXhMSm6LKb1fY,80
+flask_authentic-0.0.11.dist-info/LICENSE,sha256=9LYiczw2Ha75uH_4fLMHVQQM8XA64Fa0cVRIWAuLK5s,1511
+flask_authentic-0.0.11.dist-info/METADATA,sha256=nh3XsHPl6chx5OPVJIlvfq9gI7pUxsnrF0LX3h7P3DA,1820
+flask_authentic-0.0.11.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+flask_authentic-0.0.11.dist-info/entry_points.txt,sha256=UkQmbPF2KiGVO46oAcLX4bQF7ELw1mN-p73i5T0TNIc,62
+flask_authentic-0.0.11.dist-info/top_level.txt,sha256=N4ooKerzdzLVDkGKPl5w1L-TCznjfpKcvZw195ErEjw,16
+flask_authentic-0.0.11.dist-info/RECORD,,
