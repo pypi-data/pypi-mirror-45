@@ -1,0 +1,11 @@
+snowland_authsdk/__init__.py,sha256=qvySdXfpFR7xQoXkjGUQv0ms0EiVThkMsGfJJ9xUfIQ,288
+snowland_authsdk/common.py,sha256=Rp2OVQDLSLxs3QlnmZj1lv1L4exOLfFj7SRdrzCsSrE,1153
+snowland_authsdk/login.py,sha256=ORN29Wg73nSNKLhSdxB1b1jaUEr8IIQpn6F3JyQFAwg,3199
+snowland_authsdk/token_helper.py,sha256=Fo4QNKkAUigrGcoYm_S6jdiDmOAn8iWk9hON5LTXfyU,2901
+snowland_authsdk/util.py,sha256=MjxQEKugUfA7u1Gw-1fTUG2GIxZKxnihGZ6J4wX-pHQ,613
+snowland_authsdk-0.0.3.dist-info/DESCRIPTION.rst,sha256=SbFfENgXFrzgX5FIFzzYneuXNT24Zom2Eh9FemB-B68,953
+snowland_authsdk-0.0.3.dist-info/METADATA,sha256=TnyMRBw8fHlzfJzIce_fxCREfgXsBsvFvLWCtRrj_sg,1766
+snowland_authsdk-0.0.3.dist-info/RECORD,,
+snowland_authsdk-0.0.3.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+snowland_authsdk-0.0.3.dist-info/metadata.json,sha256=CsFVRjHmxTF_um34BffxII6Ynq56FlWNcQiDJYbW43Y,987
+snowland_authsdk-0.0.3.dist-info/top_level.txt,sha256=Pry1VHugXLHNrXt4iE8eigqiqnOr-MHD4_DOAZDHMsk,17
