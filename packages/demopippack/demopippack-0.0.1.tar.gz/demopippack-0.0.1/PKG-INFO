@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: demopippack
+Version: 0.0.1
+Summary: A Simple pip package 
+Home-page: https://github.com/safal321/demopippack.git
+Author: Safal Sigdel
+Author-email: safalsigdel@gmail.com
+License: UNKNOWN
+Description: A simple pip package 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)

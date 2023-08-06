@@ -1,0 +1,7 @@
+README.md
+setup.py
+demopippack.egg-info/PKG-INFO
+demopippack.egg-info/SOURCES.txt
+demopippack.egg-info/dependency_links.txt
+demopippack.egg-info/requires.txt
+demopippack.egg-info/top_level.txt
