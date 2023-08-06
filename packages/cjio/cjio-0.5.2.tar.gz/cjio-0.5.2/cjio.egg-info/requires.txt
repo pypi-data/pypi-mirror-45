@@ -1,0 +1,6 @@
+Click
+jsonschema
+jsonref
+numpy
+strict-rfc3339
+pyproj
