@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: truecase
+Version: 0.0.1
+Summary: A library to restore capitalization for text
+Home-page: https://github.com/daltonfury42/truecase
+Author: Dalton Fury
+Author-email: daltonfury42@disroot.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# truecase
+A python true casing utility
+
+
