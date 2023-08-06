@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pylogfloat
+Version: 0.1.1
+Summary: A numeric type for Python storing floats in log space for increased precision, allowing positive and negative float computations (arithmetic and logical operations)
+Home-page: https://bsennblad@bitbucket.org/bsennblad/pylogfloat.git
+Author: Bengt Sennblad
+Author-email: bengt.sennblad@scilifelab.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+# PyLogFloat
+
+
+
