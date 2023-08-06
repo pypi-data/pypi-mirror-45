@@ -1,0 +1,16 @@
+ticketbis/__init__.py,sha256=HZ3jNUgLk7DMvAcOH_yOqns8ItR7sL09Hc9xr8SRj8g,24096
+ticketbis/tests/__init__.py,sha256=_tyQ0zM-TJ5K0KtFQXH-w4JwBuiG8F34IEbO8k9izfU,2271
+ticketbis/tests/_creds.example.py,sha256=IelR0zAMlxTbwPKbOfcOGUHMWyaTj7GCrrweaMuif8E,224
+ticketbis/tests/test_categories.py,sha256=sx6VzYK0ZONYuNxNwpWJAqRogzu1_GwMAQyOt93HW-s,637
+ticketbis/tests/test_events.py,sha256=I7u9yREqci1jpsmMjK-yw7toizwgwyv7UZl_FlboNck,977
+ticketbis/tests/test_oauth.py,sha256=msZFU4hXG8apNk1w5WELcwjgMcXFyXjQtgJ5B6Ay3k4,460
+ticketbis/tests/test_schemas.py,sha256=v3DBh6-LOutb64cTd2fk74v5NcycduLxY4g4IvUIMQs,762
+ticketbis/tests/test_section_groups.py,sha256=ZiVJLufNZc8UZcmzvOw8NGs_i0Ih0q3kokC8KCJOzSg,546
+ticketbis/tests/test_sites.py,sha256=JL8QPJdX_PU5rj2boZz9hxI9jD6za1PfuzNK-Ce6IUI,609
+ticketbis/tests/test_venues.py,sha256=G7VGokeQJt5jX3IyvFDP0XsupW0vKTfomgCSuKlt6wo,944
+ticketbis-0.3.5.dist-info/LICENSE,sha256=Ih1ktdI4vWZFRscsVE8ZsG4eCVroFCc1u7aDZAW9L9U,550
+ticketbis-0.3.5.dist-info/METADATA,sha256=rOZctj9RbRzTx02iedJwBaBf9-WxFdtcZWH8Kx-lQ5c,793
+ticketbis-0.3.5.dist-info/WHEEL,sha256=MlnUWFZCxbgBkC_PfU2CprVf8-ZZlVOAfry_BsXUBxw,92
+ticketbis-0.3.5.dist-info/top_level.txt,sha256=gSH6_4iyN3DvQFC-CR0mTvdCSr3FCH_o-vG4bQKnYbo,10
+ticketbis-0.3.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ticketbis-0.3.5.dist-info/RECORD,,
