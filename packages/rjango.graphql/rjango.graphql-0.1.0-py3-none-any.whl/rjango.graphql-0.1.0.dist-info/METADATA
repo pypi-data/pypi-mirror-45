@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rjango.graphql
+Version: 0.1.0
+Summary: Tools and utilities to easy graphql API development with Rjango
+Home-page: UNKNOWN
+Author: Nicholas Romero
+Author-email: ncrmro@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: django (>=2)
+Requires-Dist: django-filter (>=2.1.0)
+Requires-Dist: graphene (>=2.1.3)
+Requires-Dist: graphene-django (>=2.2.0)
+
+UNKNOWN
+
+
