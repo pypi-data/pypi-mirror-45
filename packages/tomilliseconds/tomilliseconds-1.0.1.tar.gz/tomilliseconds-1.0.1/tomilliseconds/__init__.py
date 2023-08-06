@@ -1,0 +1,1 @@
+from .tomilliseconds import toMilliseconds

@@ -1,0 +1,8 @@
+README.md
+setup.py
+tomilliseconds/__init__.py
+tomilliseconds/tomilliseconds.py
+tomilliseconds.egg-info/PKG-INFO
+tomilliseconds.egg-info/SOURCES.txt
+tomilliseconds.egg-info/dependency_links.txt
+tomilliseconds.egg-info/top_level.txt
