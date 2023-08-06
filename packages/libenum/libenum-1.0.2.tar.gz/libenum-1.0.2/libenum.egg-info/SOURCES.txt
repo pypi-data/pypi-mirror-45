@@ -1,0 +1,12 @@
+README.md
+setup.py
+libenum/__init__.py
+libenum.egg-info/PKG-INFO
+libenum.egg-info/SOURCES.txt
+libenum.egg-info/dependency_links.txt
+libenum.egg-info/not-zip-safe
+libenum.egg-info/requires.txt
+libenum.egg-info/top_level.txt
+tests/__init__.py
+tests/test_classdict.py
+tests/test_metaclass.py
