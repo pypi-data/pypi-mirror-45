@@ -1,0 +1,3 @@
+paho-mqtt
+feedparser
+html2text
