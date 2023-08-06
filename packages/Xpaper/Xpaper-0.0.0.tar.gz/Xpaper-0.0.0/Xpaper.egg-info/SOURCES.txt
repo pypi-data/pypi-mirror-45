@@ -1,0 +1,10 @@
+README.md
+setup.py
+Xpaper.egg-info/PKG-INFO
+Xpaper.egg-info/SOURCES.txt
+Xpaper.egg-info/dependency_links.txt
+Xpaper.egg-info/top_level.txt
+xpaper/__init__.py
+xpaper/linux.py
+xpaper/wallpaper.py
+xpaper/windows.py

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Xpaper
+Version: 0.0.0
+Summary: Cross platform library for managing desktop wallpaper
+Home-page: https://github.com/spatocode/Xpaper
+Author: Ekene Izukanne
+Author-email: ekeneizukanne@gmail.com
+License: MIT
+Description: # Xpaper
+        
+        Cross-platform library for changing desktop wallpaper
+        
+        Works on windows and Linux
+        
+        Supports all versions of Python
+        
+        
+        ## Install
+        
+        ```
+        $ pip install xpaper
+        ```
+        
+        
+        ## Usage
+        
+        ```py
+        from xpaper import wallpaper
+        
+        wallpaper.change("wallpaper.jpg)
+        
+        wallpaper.get()     # "/Users/Spatocode/wallpaper.jpg"
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
