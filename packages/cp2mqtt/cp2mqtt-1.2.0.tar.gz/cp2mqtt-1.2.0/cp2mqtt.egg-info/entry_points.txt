@@ -1,0 +1,3 @@
+[console_scripts]
+cp2mqtt = cp2mqtt:main
+
