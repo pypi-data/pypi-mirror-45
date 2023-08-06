@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tartiflette_starlette/__init__.py
+tartiflette_starlette/app.py
+tartiflette_starlette/errors.py
+tartiflette_starlette/graphql.py
+tartiflette_starlette/version.py
+tartiflette_starlette.egg-info/PKG-INFO
+tartiflette_starlette.egg-info/SOURCES.txt
+tartiflette_starlette.egg-info/dependency_links.txt
+tartiflette_starlette.egg-info/not-zip-safe
+tartiflette_starlette.egg-info/requires.txt
+tartiflette_starlette.egg-info/top_level.txt
