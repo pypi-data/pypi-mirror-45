@@ -1,0 +1,55 @@
+0.5.0
+-----------------------------------
+- class with testcases is represented with additional directory instead of '.'
+  separating class name and testcase name
+- add the "split logs by outcome" functionality
+
+0.4.0
+-----------------------------------
+- interface-breaking: rename --log to --loggers to maintain operability with newer pytests
+- drop pytest<3.2 from testing
+- add newer pythons and pytests to the testing matrix
+- fix: collect teardown logs
+
+0.3.0
+-----------------------------------
+- LoggerConfig has a new set_formatter_class method to pass a logging.Formatter subclass
+- python2.6 support dropped
+
+0.2.1
+-----------------------------------
+- pytest help bug fixed: help prints properly when pytest_logger_config hook is used in test suite
+
+0.2.0
+-----------------------------------
+- new hook pytest_logger_config allows for terse logging configuration and adds cmdline option --log
+  compatibility with previous hook api fully retained
+
+0.1.5
+-----------------------------------
+- support for python2.6
+
+0.1.4
+-----------------------------------
+- logdirs cmdline/ini option, allowing to set logs directory
+
+0.1.3
+-----------------------------------
+- housekeeping:
+    - tests finished
+    - travis/appveyor with tox added
+    - docs added
+    - plugin is package, not single module
+
+0.1.2
+-----------------------------------
+- log format has short level name
+
+0.1.1
+-----------------------------------
+- logger hooks accept tuples with names and levels
+- cmdline option 'logdirflat' removed (passing [''] from file hook does just that)
+
+0.1
+-----------------------------------
+- initial version
