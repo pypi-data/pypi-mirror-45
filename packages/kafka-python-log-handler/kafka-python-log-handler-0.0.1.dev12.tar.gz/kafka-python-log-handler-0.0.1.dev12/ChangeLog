@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+* Rename pkg in README
+* update package name since the other one is already taken
+* Formatting in README
+* Mock KafkaClient for unit tests
+* License, readme and setup added
+* Kafka host in tests now takes into account en vars for Gitlab CI
+* Fixed: Removed incorrect encoding statement
+* Added unit tests and one integration test
+* Added exploratory tests to get familiar w the lib
+* Create KafkaLogHandler as simplistic as possible
+* Moved to kafka-python from aiokafka for now
+* Initial commit
+* Initial commit
