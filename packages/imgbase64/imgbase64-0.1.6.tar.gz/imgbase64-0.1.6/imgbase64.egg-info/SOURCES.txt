@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+imgbase64/__init__.py
+imgbase64/__main__.py
+imgbase64/imgbase64.py
+imgbase64.egg-info/PKG-INFO
+imgbase64.egg-info/SOURCES.txt
+imgbase64.egg-info/dependency_links.txt
+imgbase64.egg-info/requires.txt
+imgbase64.egg-info/top_level.txt
