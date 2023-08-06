@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+opentabulate/__init__.py
+opentabulate/opentab.py
+opentabulate/tabulate.py
+opentabulate.egg-info/PKG-INFO
+opentabulate.egg-info/SOURCES.txt
+opentabulate.egg-info/dependency_links.txt
+opentabulate.egg-info/entry_points.txt
+opentabulate.egg-info/requires.txt
+opentabulate.egg-info/top_level.txt
