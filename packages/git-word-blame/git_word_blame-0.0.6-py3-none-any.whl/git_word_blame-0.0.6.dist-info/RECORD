@@ -1,0 +1,9 @@
+git_word_blame-0.0.6.data/scripts/git-word-blame,sha256=rd3un0uam2tOUTzQ75kJlFleQI4DujPzmjb6LGRAA6M,8743
+gitwordblame/__init__.py,sha256=0OIVYppv67b8LbuEybGX75Mh7OaTHhoJTSat2qqKub0,24
+gitwordblame/themes.py,sha256=V-0IsWBuIiQKD6-MGd4c56q7G83UV9fwuyZks1-rt6U,927
+gitwordblame/wikiwho_engine.py,sha256=i0ac5diZ0I9SD5ZLxYi-DnFMdcNXMtrPiQWk2vWvmIk,2881
+git_word_blame-0.0.6.dist-info/LICENSE,sha256=fc-FaCuloRRohLCxEOh2UDa7V65h-p_k77jiz5UYHio,35059
+git_word_blame-0.0.6.dist-info/METADATA,sha256=10XrWhJwBDonJ3BYierWEW36QZbXS5TXgjFxPi5VFNo,3621
+git_word_blame-0.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+git_word_blame-0.0.6.dist-info/top_level.txt,sha256=mV9q6Bv_ILM6YD5cVtW4cEbvxxyKZRYOmrtNRvmcnYg,13
+git_word_blame-0.0.6.dist-info/RECORD,,
