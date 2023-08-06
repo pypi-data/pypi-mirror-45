@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: jupyter_innotater
+Version: 0.1.4
+Summary: Jupyter widget to edit data annotations inline.
+Home-page: https://github.com/ideonate/jupyter-innotater
+Author: ideonate
+Author-email: dan@ideonate.com
+License: MIT
+Download-URL: https://github.com/ideonate/jupyter-innotater/tarball/0.1.4
+Description: Annotate data including image bounding boxes inline within your Jupyter notebook in python.
+Keywords: jupyter-widget,javascript,innotater,jupyter_innotater
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
