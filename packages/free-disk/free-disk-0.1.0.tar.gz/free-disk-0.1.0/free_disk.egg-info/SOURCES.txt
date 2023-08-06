@@ -1,0 +1,12 @@
+.travis.yml
+LICENSE
+Pipfile
+Pipfile.lock
+README.md
+free_disk.py
+setup.py
+free_disk.egg-info/PKG-INFO
+free_disk.egg-info/SOURCES.txt
+free_disk.egg-info/dependency_links.txt
+free_disk.egg-info/entry_points.txt
+free_disk.egg-info/top_level.txt
