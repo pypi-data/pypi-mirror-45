@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aliyunswarm
+Version: 0.0.5
+Summary: aliyun swarm api
+Home-page: http://git.zebrablocklabs.com/wandou_svr/aliyunswarm
+Author: rocky
+Author-email: lingyu.cheng@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## 集群接入点地址：
+```
+参考：https://help.aliyun.com/document_detail/26063.html?spm=a2c4g.11186623.6.768.81bb2d05Wmhak0
+```
+
+## 使用指南：
+### 配置环境变量（linux 或 mac 操作系统）：
+```
+export SWARM_URL="https://host:port"
+```
+### 设置当前路径为您保存集群证书的文件路径
+```
+export CA_PEM="/path/ca.pem"
+export CERT_PEM="/path/cert.pem"
+export KEY_PEM="/path/key.pem"
+```
+
+
