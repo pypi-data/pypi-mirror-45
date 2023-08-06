@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: django-health-check-email
+Version: 0.1.0
+Summary: Add email check to django-health-check.
+Home-page: https://www.ubicast.eu
+License: MIT
+Keywords: django,monitoring,health,email
+Author: Nicolas KAROLAK
+Author-email: nicolas.karolak@ubicast.eu
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django-health-check (>=3.9,<4.0)
+Project-URL: Repository, https://github.com/UbiCastTeam/djang-health-check-email
+Description-Content-Type: text/markdown
+
+# django-health-check-email
+
+This is a plugin for [django-health-check](https://github.com/KristianOellegaard/django-health-check), which check that your app can send emails through the email backend configured in your Django settings.
+
+## Installation
+
+Install with pip in your environment:
+
+```bash
+pip install django-health-check django-health-check-email
+```
+
+Add the app to your `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'health_check',                             # required
+    # ...
+    'health_check_email',
+]
+```
+
+Apply migrations:
+
+```bash
+python manage.py migrate
+```
+
+## Configuration
+
+Add your settings to `HEALTH_CHECK`:
+
+```python
+HEALTH_CHECK = {
+    "EMAIL_ENABLED": True,
+    "EMAIL_IS_CRITICAL": True,
+    "EMAIL_SUBJECT": "my email health check",
+    "EMAIL_MESSAGE": "my message",
+    "EMAIL_FROM": "test@example.com",
+    "EMAIL_TO": ["admin@example.com", "dev@example.com"],
+}
+```
+
