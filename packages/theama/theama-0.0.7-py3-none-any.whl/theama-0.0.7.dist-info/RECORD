@@ -1,0 +1,12 @@
+theama/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+theama/feature_encoding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+theama/feature_encoding/bow.py,sha256=21suUMF9vbrIqwomSXeZC3OMWGMi9HgwFVMHxL8lcd0,2320
+theama/feature_encoding/vlad.py,sha256=z9wXovoX1tPLYUPfPi-wrWFXTAbqRgpGoP2DpQA6FYM,3150
+theama/feature_encoding/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+theama/feature_encoding/tests/test_bow.py,sha256=-pw1FblS2HeKKgP_pUEgK3vZkt5Oo7KA8vtgt2ngqPE,1240
+theama/feature_encoding/tests/test_vlad.py,sha256=3mtybLDTKXmuS9ahY6jZslCu4QHMEeu42Rz27a0ZUD4,1241
+theama-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+theama-0.0.7.dist-info/METADATA,sha256=urBuB8AYKNFQVE1qpScc5kAC24u8w0_HNQJbwym6I58,894
+theama-0.0.7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+theama-0.0.7.dist-info/top_level.txt,sha256=0LvfD7GI9qt7_LEirvvk-D2eQjhEMWPD4m9gL0bRImg,7
+theama-0.0.7.dist-info/RECORD,,
