@@ -1,0 +1,13 @@
+stop/__init__.py,sha256=Ys8_n9xPN442Bn4RE30Aqi2dwaxW1ht-K10ahIz-dJg,92
+stop/canvas_object.py,sha256=fDso6td9La540idkZiyOnI8uUe3yC3KXJJrs7MbnNsc,596
+stop/fluid_var.py,sha256=pAHS_uIu9OCHrfbqcOGiZFTxkhPHSaj-L9W13sjYVAM,7000
+stop/project.py,sha256=F2Obc-_36BrblriXdNKhiSqA0sMnAFfPJ8-NzVElt8A,1500
+stop/scratch_math.py,sha256=7CbewIAEMaMepyz5UOhA2Tqkvkz5r-6jOnEGWPf_mto,4316
+stop/sprite.py,sha256=EKo7Iea69l2uQqyDFKedOV6h-2Mu_ygwRDDziEVv9TU,1649
+stop/sprite_canvas.py,sha256=qjeovBcbeyr6FCnq2l4URdOszREiLs46ZQwz7l-j7Do,8974
+stop/sprite_code.py,sha256=8blJrLXboqVwYnlfgxPkcbnH0YBYDlr4qddOsQwP_zM,1274
+stop-0.0.5.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+stop-0.0.5.dist-info/METADATA,sha256=dunp7DzZ8PyFTCMgLARSHB2F8mL04fTNdtqFukzZuaY,500
+stop-0.0.5.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+stop-0.0.5.dist-info/top_level.txt,sha256=oRw9kXohSaS1SCFwOLyPLdITChlm4MevXEIl2B8lqMM,5
+stop-0.0.5.dist-info/RECORD,,
