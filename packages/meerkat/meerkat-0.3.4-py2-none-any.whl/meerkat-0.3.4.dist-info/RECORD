@@ -1,0 +1,10 @@
+.DS_Store,sha256=E9_TW1tZpCrkEHCcUsA26TMzayTFUYcHQZpp0ICcx7A,6148
+meerkat/__init__.py,sha256=OYI2bX4se9-egs6jhoIHUse-maM94-r4CuZXkNbbYnE,59
+meerkat/det2lab_xds.py,sha256=MNSv6-jvVV1OfcsntoQDRQx2i3PyL0JeEEmHNJUG6C0,7597
+meerkat/meerkat.py,sha256=bK6XMLyZW1H3uo2_p_mUArqiHdhjW7-BQP9oeYJLA9c,23489
+meerkat-0.3.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+meerkat-0.3.4.dist-info/METADATA,sha256=6UaZ3M9Gd3OaUfxGqghsIrrXeNzeZN_7v9UQhdirBsA,412
+meerkat-0.3.4.dist-info/RECORD,,
+meerkat-0.3.4.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+meerkat-0.3.4.dist-info/metadata.json,sha256=GENhclvqvOBpeCspMk_QbdGJtOqdptck3pcSPl6Iayw,600
+meerkat-0.3.4.dist-info/top_level.txt,sha256=2sqjY0jwQS6YR9XcZ5lXQpu3AsE6oJuxmYxKbRosPrw,8
