@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: precept
+Version: 0.0.2
+Summary: Async cli application builder.
+Home-page: https://github.com/T4rk1n/precept
+Author: Philippe Duval
+Author-email: t4rk@outlook.com
+License: MIT
+Description: # precept
+        
+        Toolbox to create async command line application.
+        
+Keywords: cli,async
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
