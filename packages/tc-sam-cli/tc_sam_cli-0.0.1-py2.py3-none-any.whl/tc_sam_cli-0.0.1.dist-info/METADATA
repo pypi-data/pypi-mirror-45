@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tc-sam-cli
+Version: 0.0.1
+Summary: Tc sam cli
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Niels Lemmens
+Author-email: draso.odin@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: jinja2
+Requires-Dist: aws-sam-cli==0.15
+Requires-Dist: click~=6.7
+Requires-Dist: sh
+Requires-Dist: toml
+Requires-Dist: tclambda
