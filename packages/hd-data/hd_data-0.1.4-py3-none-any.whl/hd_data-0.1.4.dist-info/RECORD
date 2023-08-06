@@ -1,0 +1,12 @@
+hd_data/__init__.py,sha256=K0nJliLE8urvUSONsZC4x-EeWHUpKHvT74DFSIT6PZI,21
+hd_data/admin.py,sha256=X5JaP0XG2weqml55O8M9rDW7t0ncRK84MYmDzyQiiUU,239
+hd_data/apps.py,sha256=ua-UV_hGlG0t9ry2857ux5DzE2O92UHPqa7GR3Z9r9o,88
+hd_data/models.py,sha256=AP1yk7cvjXfZiQEvduoO7eYAPWjkjaP8gn_ZcpZfw24,2691
+hd_data/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+hd_data/migrations/0001_initial.py,sha256=UUqDIG5utslz4YWgQ6XotGQ-wv8ZdIBBLFeBROt_DVc,4048
+hd_data/migrations/0002_auto_20190503_1219.py,sha256=d4Ka_MHV8Lry2bK_PN89JyOIrJXsxmsBAqXi_HY2BZg,1188
+hd_data/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hd_data-0.1.4.dist-info/METADATA,sha256=v3QTPBdhruvEbkP3pLAfMPKmSR4clBqyWArEnA_DSlM,376
+hd_data-0.1.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+hd_data-0.1.4.dist-info/top_level.txt,sha256=PnC-3HmwVufMrcYLB8pnlW0lR5R7Z16onZLu447L18A,8
+hd_data-0.1.4.dist-info/RECORD,,
