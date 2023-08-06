@@ -1,0 +1,11 @@
+README.md
+interactive_diagrams.py
+setup.py
+idgrms/__init__.py
+idgrms/data.py
+idgrms/plotdgrms.py
+idgrms.egg-info/PKG-INFO
+idgrms.egg-info/SOURCES.txt
+idgrms.egg-info/dependency_links.txt
+idgrms.egg-info/requires.txt
+idgrms.egg-info/top_level.txt
