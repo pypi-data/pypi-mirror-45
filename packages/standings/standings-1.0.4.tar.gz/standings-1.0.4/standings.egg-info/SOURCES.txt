@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+standings/__init__.py
+standings/_match.py
+standings/sportstypes.py
+standings/standings.py
+standings/standingstest.py
+standings/teampoint.py
+standings.egg-info/PKG-INFO
+standings.egg-info/SOURCES.txt
+standings.egg-info/dependency_links.txt
+standings.egg-info/requires.txt
+standings.egg-info/top_level.txt
