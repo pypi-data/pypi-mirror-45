@@ -1,0 +1,11 @@
+modsman/__init__.py,sha256=ppKlxwDyU5Ku0rsjtV1LmA2np1uAIdrIwP9Al-osDE0,52
+modsman/api.py,sha256=tct43k-YJ0dC5xPOHv3dGbt8gbcRp9yNW0fPW0s61io,1523
+modsman/cli.py,sha256=aYiEIWpxsTZKw3XT_zTIScxkmAU3HG9wOpxTDl07BEY,6897
+modsman/common.py,sha256=jBhlno8PUYbJuEgYAbSOWZw3a0ErIHazs80ObHbo-So,622
+modsman/modlist.py,sha256=4cgkJLYk7m1ZyzOIl_dDxrNAgmfzGbMbGKlpF1jJZIU,1695
+modsman/modsman.py,sha256=86qkx_iymYmTm_cPkpho_NFVTSe5BDnb0Me-J72clWA,5593
+modsman/murmur2.py,sha256=_BNTJ9Vc6nMhvxWRayiJM-cIyameaYEja47yZvxGWG4,12716
+modsman-0.6.0.dist-info/entry_points.txt,sha256=9Y66XB1rjz_Ze7MuwBRLtyI-y10iArZEEsyjhhVxRK4,40
+modsman-0.6.0.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+modsman-0.6.0.dist-info/METADATA,sha256=Kb7_6-B7uy2hhlzvKQJywYb45hbxSj3ZDbcK9xC6EZo,1117
+modsman-0.6.0.dist-info/RECORD,,
