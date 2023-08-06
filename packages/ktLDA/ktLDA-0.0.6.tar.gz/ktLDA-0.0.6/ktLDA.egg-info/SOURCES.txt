@@ -1,0 +1,14 @@
+README.md
+setup.py
+ktLDA.egg-info/PKG-INFO
+ktLDA.egg-info/SOURCES.txt
+ktLDA.egg-info/dependency_links.txt
+ktLDA.egg-info/top_level.txt
+ktlda/__init__.py
+ktlda/cgibbs_inf.c
+ktlda/facet.py
+ktlda/model.py
+ktlda/utils.py
+test/__init__.py
+test/test_model.py
+test/test_utils.py
