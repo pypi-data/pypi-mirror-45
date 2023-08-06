@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wordpress_toolbox
+Version: 0.1.1
+Summary: A collection of CLI commands to use for a wordpress website through it's REST API
+Home-page: https://github.com/alexseitsinger/wordpress_toolbox
+Author: Alex Seitsinger
+Author-email: contact@alexseitsinger.com
+License: BSD 2-Clause License
+Description: # Wordpress Toolbox
+        
+        ## Description
+        
+        Command line tools for managing a wordpress website.
+        
+        ## Installation
+        
+        ```pip install wordpress_toolbox```
+        
+        or
+        
+        ```pipenv install wordpress_toolbox```
+        
+        ## Usage
+        
+        ```wpt get-post https://www.hostname.com 9999```
+        
+        ```wpt get-posts https://www.hostname.com```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
