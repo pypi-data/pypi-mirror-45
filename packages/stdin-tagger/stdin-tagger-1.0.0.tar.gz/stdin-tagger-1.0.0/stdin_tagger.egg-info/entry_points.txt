@@ -1,0 +1,3 @@
+[console_scripts]
+stdin-tagger = stdin_tagger:main
+
