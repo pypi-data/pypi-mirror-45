@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% import 'components/block.html' as block with context %}
+
+{% block body %}
+{{ icon_defs('file-image', 'exchange', 'calendar') }}
+<div class='invitation_header'>
+    <h1 class='heading__subtitle'>{% trans %}Welcome {{name}}{% endtrans %}</h1>
+    <p class='instructions--head'>{% trans %}You have been invited to participate with the community, please choose an action below{% endtrans %}</p>
+</div>
+
+{% if interests_map.event %}
+    {{ block.separator(_("events")) }}
+    {{block.interests_grid(interests_map.event, 'calendar')}}
+{% endif %}
+{% if interests_map.photos %}
+    {{ block.separator(_("photo albums")) }}
+    {{block.interests_grid(interests_map.photos, 'file-image')}}
+{% endif %}
+{% if interests_map.files %}
+    {{ block.separator(_("file sharing")) }}
+    {{block.interests_grid(interests_map.fis, 'exchange')}}
+{% endif %}
+
+{% if include_url is defined %}
+<iframe id='include_main' src='{{include_url}}'></iframe>
+{% endif %}
+
+{% endblock body %}

@@ -1,0 +1,814 @@
+# Translations template for sat.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the sat project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# Goffi <goffi@goffi.org>, 2017.
+# Jérôme Poisson <goffi@goffi.org>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sat VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-05-03 23:48+0200\n"
+"PO-Revision-Date: 2019-05-03 23:49+0200\n"
+"Last-Translator: Jérôme Poisson <goffi@goffi.org>\n"
+"Language-Team: fr <>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+"X-Generator: Gtranslator 3.32.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/default/app/app.html:5
+#, python-format
+msgid ""
+"The following link allows you to access %(app_name)s web application, which "
+"is a more feature rich way to use this software (but it is also a bit more "
+"heavy and complex to use)."
+msgstr ""
+"Le lien suivant vous permet d'accéder à l'application web de %(app_name)s, "
+"qui est une façon plus riche en fonctionnalités d'utiliser ce logiciel (mais "
+"qui est aussi plus lourde et difficile à utiliser)."
+
+#: templates/default/app/app.html:10
+msgid ""
+"Please note that current version of web application use legacy technologies "
+"and will be rewritten for next version of Salut à Toi (0.8). It does contain "
+"some bugs and it is under minimal maintenance."
+msgstr ""
+"Veuillez noter que la version actuelle de l'application web utilise une "
+"technologie obsolète pour des raisons historiques, et qu'elle va être ré-"
+"écrite pour la prochaine version de Salut à Toi (0.8). Elle comporte des "
+"bogues et est maintenue à minima."
+
+#: templates/default/app/app.html:15
+msgid "Click here to access the web application"
+msgstr "Cliquez ici pour accéder à l'application web"
+
+#: templates/default/app/app.html:18
+msgid "Next time you can go directly to the above URL."
+msgstr "La prochaine fois vous pouvez aller directement à l'URL ci-dessus."
+
+#: templates/default/base/base.html:63
+msgid "Click to expand…"
+msgstr "Cliquez pour agrandir…"
+
+#: templates/default/base/base.html:63
+msgid "Click to reduce…"
+msgstr "Cliquez pour réduire…"
+
+#: templates/default/base/base.html:88
+msgid "change"
+msgstr "changer"
+
+#: templates/default/base/base.html:102
+msgid "Your data has been sent correctly."
+msgstr "Votre réponse a été correctement envoyée."
+
+#: templates/default/base/base.html:119
+#, python-format
+msgid "Powered by %(app_name)s"
+msgstr "Ce site utilise %(app_name)s"
+
+#: templates/default/blog/articles.html:28
+msgid "No articles found in this blog!"
+msgstr "Aucun article trouvé sur ce blog !"
+
+#: templates/default/blog/articles.html:31 templates/default/forum/view.html:17
+msgid "newer articles"
+msgstr "articles plus récents"
+
+#: templates/default/blog/articles.html:31 templates/default/forum/view.html:17
+msgid "older articles"
+msgstr "articles plus anciens"
+
+#: templates/default/blog/discover.html:11
+msgid "Please select the blog you want to consult"
+msgstr "Merci de choisir le blog que vous voulez consulter"
+
+#: templates/default/blog/discover.html:29
+msgid "Or enter the jid of a blog writer"
+msgstr "Ou indiquez le jid d'un auteur de blog"
+
+#: templates/default/blog/discover.html:32
+msgid "blog writer jid"
+msgstr "jid de l'auteur de blog"
+
+#: templates/default/blog/discover.html:33
+msgid "Consult"
+msgstr "Consulter"
+
+#: templates/default/blog/item.html:21
+#, python-format
+msgid "This message is not in %(language)s, click to display anyway"
+msgstr ""
+"Ce message n'est pas en %(language)s, cliquez pour l'afficher tout de même"
+
+#: templates/default/blog/macros.html:23
+msgid "show comments"
+msgstr "voir les commentaires"
+
+#: templates/default/blog/macros.html:24
+msgid "hide comments"
+msgstr "cacher les commentaires"
+
+#: templates/default/chat/chat.html:17
+msgid "enter your message"
+msgstr "entrez votre message"
+
+#: templates/default/chat/select.html:6
+msgid "Please select the chat room you want to enter"
+msgstr "Merci de choisir le salon de discussion dans lequel vous voulez entrer"
+
+#: templates/default/chat/select.html:12
+msgid "Or enter a room address"
+msgstr "Ou l'adresse d'un salon"
+
+#: templates/default/chat/select.html:14
+msgid "Room address (JID)"
+msgstr "Adresse du salon (JID)"
+
+#: templates/default/chat/select.html:15
+msgid "Join"
+msgstr "Rejoindre"
+
+#: templates/default/components/block.html:50
+msgid "unnamed"
+msgstr "sans nom"
+
+#: templates/default/components/menu_labels.html:3
+msgid "Session"
+msgstr "Session"
+
+#: templates/default/components/menu_labels.html:3
+#: templates/default/login/login.html:43
+msgid "Log in"
+msgstr "Se connecter"
+
+#: templates/default/components/menu_labels.html:4
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/default/components/menu_labels.html:5
+msgid "Forums"
+msgstr "Forums"
+
+#: templates/default/components/menu_labels.html:6
+msgid "Merge requests"
+msgstr "Demandes de « merge »"
+
+#: templates/default/components/menu_labels.html:7
+msgid "Create new merge request"
+msgstr "Créer une nouvelle demande de « merge »"
+
+#: templates/default/components/menu_labels.html:8
+msgid "Tickets"
+msgstr "Tickets"
+
+#: templates/default/components/menu_labels.html:9
+msgid "List tickets"
+msgstr "Lister les tickets"
+
+#: templates/default/components/menu_labels.html:10
+msgid "Create new ticket"
+msgstr "Créer un nouveau ticket"
+
+#: templates/default/components/menu_labels.html:11
+msgid "Chat"
+msgstr "Chat"
+
+#: templates/default/components/menu_labels.html:12
+msgid "Files sharing"
+msgstr "Partage de fichiers"
+
+#: templates/default/components/menu_labels.html:13
+msgid "Events"
+msgstr "Événements"
+
+#: templates/default/components/menu_labels.html:14
+#: templates/default/event/create.html:9
+msgid "Create an event"
+msgstr "Créer un événement"
+
+#: templates/default/components/menu_labels.html:15
+msgid "Photos albums"
+msgstr "Album photos"
+
+#: templates/default/components/menu_labels.html:16
+msgid "Application"
+msgstr "Application"
+
+#: templates/default/error/401.html:4 templates/default/error/403.html:4
+msgid "Unauthorized"
+msgstr "Non autorisé⋅e"
+
+#: templates/default/error/401.html:5
+msgid ""
+"Sorry, you are not authorized to access this page. An authentication is "
+"needed."
+msgstr ""
+"Désolé, vous n'êtes pas autorisé⋅e à accéder à cette page. Une "
+"authentification est nécessaire."
+
+#: templates/default/error/403.html:5
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Désolé, vous n'êtes pas autorisé à accéder à cette page."
+
+#: templates/default/error/404.html:4
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: templates/default/error/404.html:5
+msgid "Sorry, we can't find the resource you are trying to access."
+msgstr ""
+"Désolé, nous ne pouvons trouver la ressource à laquelle vous essayez "
+"d'accéder."
+
+#: templates/default/error/base.html:3
+#, python-format
+msgid "Error %(error_code)s"
+msgstr "Erreur %(error_code)s"
+
+#: templates/default/error/base.html:5
+msgid "An error occured while trying to access the resource."
+msgstr "Une erreur a eu lieu durant la tentative d'accès à la ressource."
+
+#: templates/default/event/admin.html:8
+#, python-format
+msgid "%(name)s administration"
+msgstr "administration de %(name)s"
+
+#: templates/default/event/admin.html:22
+msgid "Invitees"
+msgstr "Invité⋅e⋅s"
+
+#: templates/default/event/admin.html:23 templates/default/event/admin.html:68
+msgid "Invite people"
+msgstr "Inviter du monde"
+
+#: templates/default/event/admin.html:24
+msgid "Write a blog post"
+msgstr "Écrire un billet de blog"
+
+#: templates/default/event/admin.html:25
+msgid "Read event blog"
+msgstr "Lire le blog de l'événement"
+
+#: templates/default/event/admin.html:33 templates/default/event/create.html:13
+msgid "name"
+msgstr "nom"
+
+#: templates/default/event/admin.html:34
+msgid "coming?"
+msgstr "vient?"
+
+#: templates/default/event/admin.html:35
+msgid "guests"
+msgstr "invités"
+
+#: templates/default/event/admin.html:48
+msgid "total expected"
+msgstr "total attendu"
+
+#: templates/default/event/admin.html:53
+msgid "No invitee has answered yet"
+msgstr "Aucun⋅e invité⋅e n'a répondu pour le moment"
+
+#: templates/default/event/admin.html:63
+msgid "enter here a list of jid (one per line) to invite"
+msgstr "veuillez entrer ici une liste de jid (un par ligne) à inviter"
+
+#: templates/default/event/admin.html:66
+msgid "enter here a list of emails addresses (one per line) to invite"
+msgstr ""
+"veuillez entrer ici une liste d'adresses courriel (une par ligne) à inviter"
+
+#: templates/default/event/admin.html:76
+msgid "title"
+msgstr "titre"
+
+#: templates/default/event/admin.html:79
+msgid "body"
+msgstr "corps"
+
+#: templates/default/event/admin.html:82
+msgid "language"
+msgstr "langue"
+
+#: templates/default/event/admin.html:85
+msgid "allow comments"
+msgstr "autoriser les commentaires"
+
+#: templates/default/event/admin.html:87
+msgid "send"
+msgstr "envoyer"
+
+#: templates/default/event/attendance.html:5
+msgid "Please indicate if you plan to attend the event:"
+msgstr "Merci d'indiquer si vous comptez vous rendre à l'évènement :"
+
+#: templates/default/event/attendance.html:11
+msgid "yes"
+msgstr "oui"
+
+#: templates/default/event/attendance.html:11
+msgid "no"
+msgstr "non"
+
+#: templates/default/event/attendance.html:11
+msgid "maybe"
+msgstr "peut-être"
+
+#: templates/default/event/attendance.html:14
+msgid "How many people will come (including you)?"
+msgstr "Combien de personnes vont venir (y compris vous) ?"
+
+#: templates/default/event/counter.html:4
+#, python-format
+msgid "%(days_left)s day left"
+msgid_plural "%(days_left)s days left"
+msgstr[0] "il reste %(days_left)s jour"
+msgstr[1] "il reste %(days_left)s jours"
+
+#: templates/default/event/counter.html:11
+msgid "the event is finished"
+msgstr "l'événement est passé"
+
+#: templates/default/event/create.html:14
+msgid "location"
+msgstr "lieu"
+
+#: templates/default/event/create.html:16
+msgid "description of the event"
+msgstr "description de l'événement"
+
+#: templates/default/event/create.html:19
+msgid "date of the event"
+msgstr "date de l'événement"
+
+#: templates/default/event/create.html:20
+msgid "event image URL (https)"
+msgstr "URL de l'image de l'événement (https)"
+
+#: templates/default/event/create.html:21
+msgid ""
+"you can enter here the URL to a JPEG or PNG image to use as representation "
+"of your event"
+msgstr ""
+"vous pouvez entrer ici l'URL d'une image JPEG ou PNG pour représenter votre "
+"événement"
+
+#: templates/default/event/create.html:22
+#: templates/default/event/create.html:26
+msgid "JPEG or PNG image URL"
+msgstr "URL d'une image JPEG ou PNG"
+
+#: templates/default/event/create.html:24
+msgid "background image URL (https)"
+msgstr "URL de l'image de fond (https)"
+
+#: templates/default/event/create.html:25
+msgid ""
+"you can enter here the URL to a JPEG or PNG image to use repeating background"
+msgstr ""
+"vous pouvez entrer ici l'URL d'une image JPEG ou PNG à utiliser comme fond "
+"(qui se répétera)"
+
+#: templates/default/event/create.html:28
+msgid "Create event"
+msgstr "Créer un événement"
+
+#: templates/default/event/invitation.html:5
+#: templates/default/invitation/welcome.html:7
+#, python-format
+msgid "Welcome %(name)s"
+msgstr "Bienvenue %(name)s"
+
+#: templates/default/event/invitation.html:6
+msgid "You have been invited to participate to an event"
+msgstr "Vous avez été invité à participer à un événement"
+
+#: templates/default/event/overview.html:16
+msgid "There is not events discovery yet, this will come in the future."
+msgstr ""
+"Il n'y a pas encore de page de découverte d'événement, elle va arriver dans "
+"une version future."
+
+#: templates/default/event/overview.html:20
+#, python-format
+msgid "You have currently %(nb_events)s event in your personal list"
+msgid_plural "You have currently %(nb_events)s events in your personal list"
+msgstr[0] ""
+"Vous avez actuellement %(nb_events)s événement dans votre liste personnelle"
+msgstr[1] ""
+"Vous avez actuellement %(nb_events)s événements dans votre liste personnelle"
+
+#: templates/default/file/discover.html:10
+msgid "Please select the device you want to access"
+msgstr "Merci de choisir l'appareil auquel vous voulez accéder"
+
+#: templates/default/file/discover.html:17
+msgid "services"
+msgstr "services"
+
+#: templates/default/file/discover.html:25
+msgid "your server"
+msgstr "votre serveur"
+
+#: templates/default/file/discover.html:38
+msgid "your devices"
+msgstr "vos appareils"
+
+#: templates/default/file/discover.html:53
+msgid "your contacts devices"
+msgstr "les appareils de vos contacts"
+
+#: templates/default/file/discover.html:68
+msgid "Or enter a full jid of a device"
+msgstr "Ou indiquez de jid complet d'un appareil"
+
+#: templates/default/file/discover.html:70
+#: templates/default/photo/discover.html:21
+msgid "device full jid"
+msgstr "jid complet d'un appareil"
+
+#: templates/default/file/discover.html:71
+#: templates/default/merge-request/discover.html:23
+#: templates/default/photo/discover.html:22
+#: templates/default/ticket/discover.html:23
+msgid "Access"
+msgstr "Accès"
+
+#: templates/default/file/overview.html:10
+msgid "parent dir"
+msgstr "répertoire parent"
+
+#: templates/default/file/overview.html:38
+msgid "No files are shared in this directory!"
+msgstr "Au fichier n'est partagé dans ce répertoire !"
+
+#: templates/default/forum/overview.html:29
+msgid "No forums found on this server!"
+msgstr "Aucun forum trouvé sur ce serveur !"
+
+#: templates/default/forum/view.html:14
+msgid "Enter your message here"
+msgstr "Veuillez entrer votre message ici"
+
+#: templates/default/forum/view_topics.html:11
+msgid "There is not message yet in this forum."
+msgstr "Il n'y a pas encore de message dans ce forum."
+
+#: templates/default/forum/view_topics.html:13
+msgid "You can start a topic of interest by filling this form."
+msgstr ""
+"Vous pouvez commencer à discuter d'un sujet d'intérêt en remplissant ce "
+"formulaire."
+
+#: templates/default/forum/view_topics.html:15
+msgid "You can login to create a new topic."
+msgstr "Vous pouvez vous connecter pour créer un nouveau sujet."
+
+#: templates/default/forum/view_topics.html:21
+msgid "Your message"
+msgstr "Votre message"
+
+#: templates/default/forum/view_topics.html:21
+msgid "Create topic"
+msgstr "Créer un sujet"
+
+#: templates/default/forum/view_topics.html:22
+msgid "Your topic (try to be short and explicit)"
+msgstr "Votre sujet (essayez d'être court et explicite)"
+
+#: templates/default/forum/view_topics.html:38
+msgid "older topics"
+msgstr "sujets plus anciens"
+
+#: templates/default/forum/view_topics.html:38
+msgid "newer topics"
+msgstr "sujets plus récents"
+
+#: templates/default/input/field.html:74
+#: templates/default/input/textbox.html:11
+#: templates/default/input/textbox.html:16
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/default/input/navigation.html:1
+msgid "newer"
+msgstr "plus récent"
+
+#: templates/default/input/navigation.html:1
+msgid "older"
+msgstr "plus ancien"
+
+#: templates/default/input/textbox.html:31
+#: templates/default/input/textbox.html:35
+msgid "Your comment"
+msgstr "Votre commentaire"
+
+#: templates/default/input/textbox.html:50
+msgid "You are not logged. You need to log in to comment."
+msgstr "Vous n'êtes pas connecté⋅e. Merci de vous connecter pour commenter."
+
+#: templates/default/input/textbox.html:53
+#, python-format
+msgid "To log in %(link_start)sfollow this link%(link_end)s"
+msgstr "Pour vous connecter %(link_start)ssuivez ce lien%(link_end)s"
+
+#: templates/default/invitation/welcome.html:8
+msgid ""
+"You have been invited to participate with the community, please choose an "
+"action below"
+msgstr ""
+"Vous avez été invité⋅e à participer avec la communauté, merci de choisir une "
+"action ci-dessous"
+
+#: templates/default/invitation/welcome.html:12
+msgid "events"
+msgstr "événements"
+
+#: templates/default/invitation/welcome.html:16
+msgid "photo albums"
+msgstr "albums photos"
+
+#: templates/default/invitation/welcome.html:20
+msgid "file sharing"
+msgstr "partage de fichiers"
+
+#: templates/default/login/logged.html:1 templates/default/login/logged.html:9
+msgid "You have been logged correctly"
+msgstr "Vous êtes bien connecté⋅e"
+
+#: templates/default/login/logged.html:16
+msgid "You are logged as a guest"
+msgstr "Vous être connecté⋅e en tant qu'invité⋅e"
+
+#: templates/default/login/logged.html:18
+#, python-format
+msgid "You are logged under the account %(name)s"
+msgstr "Vous êtes connecté⋅e avec le compte %(name)s "
+
+#: templates/default/login/logged.html:20
+#, python-format
+msgid "You logged %(session_started)s"
+msgstr "Vous vous êtes connecté⋅e %(session_started)s"
+
+#: templates/default/login/logged.html:24
+msgid "Disconnect"
+msgstr "Déconnecter"
+
+#: templates/default/login/login.html:21
+msgid "Your login and/or password is incorrect. Please try again."
+msgstr ""
+"Votre identifiant et/ou mot de passe est incorrect. Merci de ré-essayer."
+
+#: templates/default/login/login.html:23
+msgid ""
+"Your XMPP account failed to connect. Did you enter the good password? If you "
+"have changed your XMPP password since your last connection on Libervia, "
+"please use another SàT frontend to update your profile."
+msgstr ""
+"Votre compte XMPP n'a pu être connecté. Avez-vous entré le bon mot de "
+"passe ? Si vous avez changé votre mot de passe XMPP depuis votre dernière "
+"connection à Libervia, veuillez utiliser un autre frontal SàT pour mettre à "
+"jour votre profil."
+
+#: templates/default/login/login.html:25
+msgid ""
+"Did not received a reply (the timeout expired or the connection is broken)."
+msgstr ""
+"Aucune réponse reçue (le délai d'attente a expiré ou la connexion est "
+"coupée)."
+
+#: templates/default/login/login.html:27
+#: templates/default/login/register.html:15
+msgid "An unknown error occurred, please contact your service administrator."
+msgstr ""
+"Une erreur inconnue s'est produite, merci de contacter l'administrateur⋅ice "
+"de ce service."
+
+#: templates/default/login/login.html:38
+#: templates/default/login/register.html:32
+msgid "Login"
+msgstr "Identifiant"
+
+#: templates/default/login/login.html:42
+#: templates/default/login/register.html:42
+msgid "Password"
+msgstr "Mot de passe"
+
+#: templates/default/login/login.html:51
+msgid "No account yet? Create a new one!"
+msgstr "Pas encore de compte ? Créez-en un !"
+
+#: templates/default/login/register.html:7
+msgid "This login already exists, please choose another one."
+msgstr "Cet identidiant existe déjà, merci d'en choisir un autre."
+
+#: templates/default/login/register.html:9
+msgid ""
+"The certificate of the server is invalid. Please contact your server "
+"administrator."
+msgstr ""
+"Le certificat de ce serveur est invalide. Merci de contacter "
+"l'administrateur⋅ice de ce service."
+
+#: templates/default/login/register.html:11
+msgid "The data you entered are not valid."
+msgstr "Les données que vous avez entrées ne sont pas valides."
+
+#: templates/default/login/register.html:13
+msgid "Bad request, please contact your service administrator."
+msgstr ""
+"Mauvaise requête, merci de contacter l'administrateur⋅ice de ce service."
+
+#: templates/default/login/register.html:23
+msgid "Go to login page"
+msgstr "Aller à la page de connexion"
+
+#: templates/default/login/register.html:35
+msgid ""
+"Login must be lower case, with only plain letters (a-z), numbers (0-9) or "
+"underscore(_)"
+msgstr ""
+"L'identifiant doit être en miniscules, avec uniquement des lettres sans "
+"accents (a-z), des nombres (0-9) ou le signe « souligné » (_)"
+
+#: templates/default/login/register.html:38
+msgid "Email"
+msgstr "Courriel"
+
+#: templates/default/login/register.html:47
+msgid "Register new account"
+msgstr "Enregistrer un nouveau compte"
+
+#: templates/default/merge-request/create.html:7
+msgid ""
+"It is not yet possible to create a merge request from inside Libervia, "
+"please use <pre>jp merge-request set</pre> for now. Merge requests welcome ;)"
+msgstr ""
+"Il n'est pas encore possible de créer une demande de « merge » depuis "
+"Libervia, merci d'utiliser <pre>jp merge-request set</pre> pour le moment. "
+"Une proposition de « merge » est la bienvenue ;)"
+
+#: templates/default/merge-request/discover.html:11
+msgid "Please select a merge-requests handler"
+msgstr "Merci de choisir un gestionnaire de demande de « merge »"
+
+#: templates/default/merge-request/discover.html:22
+msgid "handler jid"
+msgstr "jid du gestionnaire"
+
+#: templates/default/merge-request/edit.html:13
+msgid "Note:"
+msgstr "Note :"
+
+#: templates/default/merge-request/edit.html:14
+msgid ""
+"to modify content of the merge request, you'll have to use command line "
+"(with jp)"
+msgstr ""
+"pour modifier le contenu de la demande de « merge », vous devez utiliserla "
+"ligne de commande (avec jp)"
+
+#: templates/default/merge-request/edit.html:21
+#: templates/default/ticket/create.html:17
+#: templates/default/ticket/edit.html:14
+msgid "Short description of your issue/request"
+msgstr "Description courte de votre problème/demande"
+
+#: templates/default/merge-request/edit.html:23
+#: templates/default/ticket/create.html:19
+#: templates/default/ticket/edit.html:16
+msgid ""
+"Please describe your issue/request with as much details as possible. You can "
+"use Markdown syntax."
+msgstr ""
+"Merci de décrire votre problème/demande avec le plus de détails possible. "
+"Vous pouvez utiliser la syntaxe « Markdown »."
+
+#: templates/default/merge-request/edit.html:24
+#: templates/default/ticket/create.html:20
+#: templates/default/ticket/edit.html:17
+msgid "You can enter one or several labels separated by commas"
+msgstr ""
+"Vous pouvez entrer une ou plusieurs étiquettes séparées par des virgules"
+
+#: templates/default/merge-request/edit.html:26
+#: templates/default/ticket/edit.html:19
+msgid "Modify ticket"
+msgstr "Modifier un ticket"
+
+#: templates/default/merge-request/item.html:19
+#: templates/default/ticket/item.html:20
+msgid "Your comment has been sent"
+msgstr "Votre commentaire a été envoyé"
+
+#: templates/default/merge-request/item.html:27
+msgid "Description"
+msgstr "Description"
+
+#: templates/default/merge-request/item.html:28
+msgid "Patches"
+msgstr "Patches"
+
+#: templates/default/merge-request/item.html:63
+msgid "author:"
+msgstr "auteur:"
+
+#: templates/default/photo/album.html:18
+msgid "comments"
+msgstr "commentaires"
+
+#: templates/default/photo/discover.html:8
+msgid ""
+"Photo discovery is not implemented yet, however you can enter a jid below to "
+"find its albums"
+msgstr ""
+"La découverte de photos n'est pas encore implémentée, mais vous pouvez tout "
+"de même entrer un jid ci-dessous pour trouver ses albums"
+
+#: templates/default/photo/discover.html:11
+#, python-format
+msgid "You have currently %(nb_interests)s album in your personal list"
+msgid_plural "You have currently %(nb_interests)s albums in your personal list"
+msgstr[0] ""
+"Vous avez actuellement %(nb_interests)s album dans votre liste personnelle"
+msgstr[1] ""
+"Vous avez actuellement %(nb_interests)s albums dans votre liste personnelle"
+
+#: templates/default/session/disconnect.html:4
+msgid "You have been disconnected, have a nice day!"
+msgstr "Vous avez été déconnecté, bonne journée !"
+
+#: templates/default/ticket/create.html:11
+#, python-format
+msgid ""
+"This page allows you to report an issue or ask/suggest a new feature for "
+"%(app_name)s"
+msgstr ""
+"Cette pas vous permet de rapporter un problème ou demande/suggérer un "
+"nouvelle fonctionnalité pour %(app_name)s"
+
+#: templates/default/ticket/create.html:22
+msgid "Create ticket"
+msgstr "Créer un ticket"
+
+#: templates/default/ticket/discover.html:11
+msgid "Please select a tickets tracker"
+msgstr "Merci de choisir un groupement de tickets"
+
+#: templates/default/ticket/discover.html:22
+msgid "tickets tracker jid"
+msgstr "jid du groupement de tickets"
+
+#: templates/default/ticket/overview.html:11
+msgid "Id"
+msgstr "Id"
+
+#: templates/default/ticket/overview.html:12
+msgid "Title"
+msgstr "Titre"
+
+#: templates/default/ticket/overview.html:13
+msgid "Labels"
+msgstr "Étiquettes"
+
+#: templates/default/ticket/overview.html:18
+msgid "previous page"
+msgstr "page précedente"
+
+#: templates/default/ticket/overview.html:18
+msgid "next page"
+msgstr "next page"
+
+#, fuzzy
+#~ msgid "exchange"
+#~ msgstr "changer"
+
+#~ msgid "unnamed album"
+#~ msgstr "album sans nom"
+
+#~ msgid ""
+#~ "\n"
+#~ "                %(days_left)s day left\n"
+#~ "            "
+#~ msgid_plural ""
+#~ "\n"
+#~ "                %(days_left)s days left\n"
+#~ "            "
+#~ msgstr[0] ""
+#~ "\n"
+#~ "                il reste %(days_left)s jour(s)\n"
+#~ "            "
+#~ msgstr[1] ""
+#~ "\n"
+#~ "                %(days_left)s days left\n"
+#~ "            "
+
+#~ msgid "%(days)s days ago"
+#~ msgstr "il y a %(days)s jours"

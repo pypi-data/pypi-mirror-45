@@ -1,0 +1,55 @@
+{% macro separator(label, align='center') %}
+{# display a bloc separator
+    @param label(unicode): label to show
+    @param align(unicode): one of "left", "center", "right"
+#}
+    <div class="block_separator">
+        {% if align in ('center', 'right') %}
+            <div class="block_separator__line"></div>
+        {% endif %}
+        <div class="block_separator__label">
+            {{label}}
+        </div>
+        {% if align in ('center', 'left') %}
+            <div class="block_separator__line"></div>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro disco_icon_grid(disco_entities, icon_name) %}
+{# display discovered entities in a grid
+    @param disco_entities: entities which mush have a name and url key or attribute
+    @param icon_name: name of a defined icon
+#}
+    <ul class="grid grid--center">
+        {% for disco_entity in disco_entities %}
+            <li class='grid__item grid__item--medium grid__item--selectable'>
+                <a href="{{disco_entity.url}}" class="items_vert--centered">
+                    {{ icon(icon_name, cls='icon--block icon--medium') }}
+                    <span>{{ disco_entity.name }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro interests_grid(interests, default_icon_name) %}
+{# display list of interests
+    @param interests: list of interests
+    @param default_icon_name: name of a defined icon to use when no thumb_url is available
+#}
+    <ul class="grid grid--center">
+        {% for interest in interests %}
+            <li class='grid__item grid__item--medium grid__item--selectable'>
+                <a href="{{interest.url}}">
+                    {% if interest.thumb_url %}
+                        <img class="img--small" src="{{interest.thumb_url}}">
+                    {% else %}
+                        <div>{{ icon(default_icon_name, cls='icon--medium') }}</div>
+                    {% endif %}
+                    <span><em>{{ interest.name|default(_("unnamed")) }}</em></span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
