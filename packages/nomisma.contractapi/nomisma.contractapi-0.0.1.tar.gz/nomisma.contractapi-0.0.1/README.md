@@ -1,0 +1,57 @@
+# Using the Nomisma Contract API
+Requirements:
+- Python 3.7.x
+- Web3 >= 4.9
+
+The API consists of a set of classes that wrap and enhance the Solidity smart contracts.
+An asynchronous multi-threaded runtime is included and used by these classes.
+Additionally, a test resource is available to make testing your code simpler. 
+
+# Testing your code that uses the API
+
+# Why code generation?
+Web3.py comes with various ways to invoke contracts and it does it without code generation (using
+python's highly dynamic object structure). With code generation, we get the following benefits,
+as compared to web3.py out of the box:
+
+- The contract functions are visible and readable. This is ultimately much better for developers, 
+because both them and their tools (IDE with auto-completion) have access to the method declarations.
+- python 3 type hinting for parameters and return types
+- payable functions have an extra parameter (to_pay_ether) with a sensible unit (ether)
+- The contract functions can be documented from the solidity docs.
+- idiomatic python snake case names, e.g. `getAddress` -> `get_address`
+- user friendly parameter checking, e.g. correct length for `unit256[4]` (python doesn't have fixed length arrays)
+- performant(async)/user friendly call/transaction wrapping 
+
+
+# Development Tool Setup
+Requirements:
+- Python 3.7.x
+- Pipenv: `pip install pipenv`
+- ganache-cli for testing (which usually means installing npm, then `npm install ganache-cli`)
+
+Set `PIPENV_VENV_IN_PROJECT=true` in your environment variables to have a `.venv` directory inside
+the project folder.
+
+`pipenv shell` opens a shell prompt within the virtual environment for the project.
+`pipenv install` will install the project dependencies. `pipenv install --dev` installs 
+the development dependencies.
+
+# Running Tests
+First, run ganache-cli with these parameters:
+`ganache-cli -m "oppose table pumpkin grunt bulb large clock use chase maid shiver furnace once mimic grit" -a 100`
+
+This creates a locally running Ethereum test chain and creates 100 accounts with known addresses.
+Adding `-b 1` to the command line args will result in some transaction batching, which is more realistic, but slows down testing.
+
+The `test_util` package includes the following test resource classes that should be used in your tests.
+
+`CapitalStructureTestResource`
+
+These test resources have methods for deploying the contracts and loading python instances of these contracts.
+The contracts are split into two sets: contracts that have no storage (just code) and should be deployed 
+just once, and contracts that have storage, which should be deployed with each independent test case.
+
+# Technical Notes
+Web3.py converts Solidity `address` type to Python `str`, but we don't type hint addresses as such in the generated
+code, to make it clear they are not arbitrary strings.
