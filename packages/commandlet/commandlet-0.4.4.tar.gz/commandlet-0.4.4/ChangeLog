@@ -1,0 +1,49 @@
+CHANGES
+=======
+
+0.4.4
+-----
+
+* Add word filter to capture single words
+
+0.4.3
+-----
+
+* Add filter decorator
+
+0.4.2
+-----
+
+* Support for keyword arguments and tighter regexp matching
+
+0.4.1
+-----
+
+* Added Parser.copy
+* Ensure generators can be handled properly
+
+0.4.0
+-----
+
+* Added command decorator
+
+0.3.0
+-----
+
+* Added Parser.handle\_command
+
+0.2.0
+-----
+
+* Made it possible to use other variables from context in filters
+* Added Command.call
+* Test unused arguments
+* Modified commands
+
+0.1.0
+-----
+
+* Sort of working
+* Fixed spelling of Werkzeug
+* Added docs
+* Initial commit
