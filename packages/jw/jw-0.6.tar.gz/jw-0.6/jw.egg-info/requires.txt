@@ -1,0 +1,9 @@
+sqlalchemy
+pandas
+Pillow
+pygments
+pyfiglet
+
+[crawl]
+requests
+bs4
