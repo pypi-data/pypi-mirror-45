@@ -1,0 +1,14 @@
+pyrus_nn/__init__.py,sha256=6OkX3mtdKR3zdHudtVO8mvqSL1Ey0D0yI1GSITVpN6w,100
+pyrus_nn/_version.py,sha256=kM8B9tWJzEXX_FdC_0hAClVs4ogvKSGQIOPv8fS6glo,116
+pyrus_nn/layers.py,sha256=In_xy5d9_VDb80PDu2DU8jIJwLzRrYGU85-qeqINnJ8,594
+pyrus_nn/models.py,sha256=WNoxkleirYXl6olpBtZdqlps62euFYSfmwhHc3_VRMM,3046
+pyrus_nn/rust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrus_nn/rust/pyrus_nn.so,sha256=9ayAqESq-BZpg4czBJ2MQtwr5OaW0wczw2tBXDa-oXg,3242642
+pyrus_nn/rust/pyrus_nn.cpython-36m-x86_64-linux-gnu.so,sha256=WRqr4jHxbBtTQ8eEuKhc5moOSUH3eB61PVwm9OAqd9k,3241948
+pyrus_nn/rust/pyrus_nn.cpython-35m-x86_64-linux-gnu.so,sha256=zY0AeQZ95WOvqgG7qtoRSvLhzlZvTAb6wRJl_w9cdwk,3242032
+pyrus_nn-0.2.1.dist-info/RECORD,,
+pyrus_nn-0.2.1.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+pyrus_nn-0.2.1.dist-info/METADATA,sha256=ZybRwlF750jxZCp4_Q7OVl34li9Ec0c7vjoePajy8pU,2742
+pyrus_nn-0.2.1.dist-info/top_level.txt,sha256=a1HawSKqMC3tSuqBuToTJrYgxqyLbMIwWFhFiTWbdhU,15
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pyrus_sequential.py,sha256=Ii2x-awe-BJDJbcbZkZmVWtkh5uZHMeTCn3NMD4rNrA,1868
