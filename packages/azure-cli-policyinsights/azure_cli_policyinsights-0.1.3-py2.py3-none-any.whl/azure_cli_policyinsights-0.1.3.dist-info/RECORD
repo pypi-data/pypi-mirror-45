@@ -1,0 +1,16 @@
+azure/__init__.py,sha256=jwUpEftyp-71KJZRiDO8VY0bF3pPg2gQauDzBT8mzRc,409
+azure/cli/__init__.py,sha256=jwUpEftyp-71KJZRiDO8VY0bF3pPg2gQauDzBT8mzRc,409
+azure/cli/command_modules/__init__.py,sha256=jwUpEftyp-71KJZRiDO8VY0bF3pPg2gQauDzBT8mzRc,409
+azure/cli/command_modules/policyinsights/__init__.py,sha256=5xhKRpTJ-swT3Nw-OX3iBEkss-L6x81lFTlySk8ITBQ,1442
+azure/cli/command_modules/policyinsights/_client_factory.py,sha256=oQb9E9qdQliXWZFu9gkGinZIVGeF-nbDc7HJrtoaKoA,1158
+azure/cli/command_modules/policyinsights/_completers.py,sha256=OVBtJ04yTqZQ4k4IVqb6j_KEXvY65Yqnx3DCluTQkSc,1230
+azure/cli/command_modules/policyinsights/_exception_handler.py,sha256=5T7XvXIWzfkEKfJViM2ktEqQwxsGkFzzNWdLcdaU6wY,735
+azure/cli/command_modules/policyinsights/_help.py,sha256=cX8863BiEd8bfur3-GsMnzZEzyM3p2crPt2UyhNlM8Y,14538
+azure/cli/command_modules/policyinsights/_params.py,sha256=hwxx5bJWDjkfOsQJk3Q5MwBE5Rr7253QsOMy0Nv9p3w,6562
+azure/cli/command_modules/policyinsights/_validators.py,sha256=rZqtSdSJ1ttyjYfoLgg_Iw0cOOV7ZbOsWafurjjIJdc,1187
+azure/cli/command_modules/policyinsights/commands.py,sha256=PK04AfICanR0f1HWjg4cEMUyVuynd5Ip6o339ecZlgc,2319
+azure/cli/command_modules/policyinsights/custom.py,sha256=ApBmGBheVFaiE5H9DoghWXKYVn3HGY9aBWe_oBCEjME,16565
+azure_cli_policyinsights-0.1.3.dist-info/METADATA,sha256=ixND3U6ukyfz-Kg9JtGHeKrfYIHrv_-S5JFFnqQKmbc,1537
+azure_cli_policyinsights-0.1.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+azure_cli_policyinsights-0.1.3.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_cli_policyinsights-0.1.3.dist-info/RECORD,,
