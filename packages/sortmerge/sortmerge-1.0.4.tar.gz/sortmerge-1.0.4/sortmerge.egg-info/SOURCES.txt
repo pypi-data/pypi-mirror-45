@@ -1,0 +1,10 @@
+README.md
+setup.py
+sortmerge/__init__.py
+sortmerge/sortmerge.py
+sortmerge.egg-info/PKG-INFO
+sortmerge.egg-info/SOURCES.txt
+sortmerge.egg-info/dependency_links.txt
+sortmerge.egg-info/entry_points.txt
+sortmerge.egg-info/top_level.txt
+sortmerge.egg-info/zip-safe
