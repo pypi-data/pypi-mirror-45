@@ -1,0 +1,7 @@
+README.md
+setup.py
+gryphio/__init__.py
+gryphio.egg-info/PKG-INFO
+gryphio.egg-info/SOURCES.txt
+gryphio.egg-info/dependency_links.txt
+gryphio.egg-info/top_level.txt
