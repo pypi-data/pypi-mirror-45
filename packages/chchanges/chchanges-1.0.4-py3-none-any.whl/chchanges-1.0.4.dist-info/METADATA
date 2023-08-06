@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chchanges
+Version: 1.0.4
+Summary: Detect statistically meaningful changes in streams of data.
+License: MIT
+Author: Jonathan Ward
+Author-email: jon.ward.me@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: imageio (>=2.5,<3.0)
+Requires-Dist: matplotlib (>=3.0,<4.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: pytest (>=4.4,<5.0)
+Requires-Dist: scipy (>=1.2,<2.0)
