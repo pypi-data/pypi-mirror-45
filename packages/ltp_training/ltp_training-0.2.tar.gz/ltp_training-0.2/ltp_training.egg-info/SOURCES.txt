@@ -1,0 +1,7 @@
+setup.py
+ltp_training/__init__.py
+ltp_training.egg-info/PKG-INFO
+ltp_training.egg-info/SOURCES.txt
+ltp_training.egg-info/dependency_links.txt
+ltp_training.egg-info/not-zip-safe
+ltp_training.egg-info/top_level.txt
