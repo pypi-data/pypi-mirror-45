@@ -1,0 +1,10 @@
+README.md
+detect_licenses
+setup.py
+olc/__init__.py
+olc/license_collector.py
+olc/utils.py
+olc.egg-info/PKG-INFO
+olc.egg-info/SOURCES.txt
+olc.egg-info/dependency_links.txt
+olc.egg-info/top_level.txt
