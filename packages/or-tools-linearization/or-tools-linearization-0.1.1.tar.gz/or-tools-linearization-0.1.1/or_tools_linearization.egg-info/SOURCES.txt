@@ -1,0 +1,8 @@
+README.md
+setup.py
+or_tools_linearization.egg-info/PKG-INFO
+or_tools_linearization.egg-info/SOURCES.txt
+or_tools_linearization.egg-info/dependency_links.txt
+or_tools_linearization.egg-info/top_level.txt
+ortools_linearization/__init__.py
+ortools_linearization/linearization.py
