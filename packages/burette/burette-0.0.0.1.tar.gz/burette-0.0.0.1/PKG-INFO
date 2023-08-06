@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: burette
+Version: 0.0.0.1
+Summary: A micro web framework
+Home-page: https://github.com/yoshinori-akita/burette
+Author: Yoshinori
+Author-email: yoshinori.dev@gmail.com
+License: MIT
+Description: aaa
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

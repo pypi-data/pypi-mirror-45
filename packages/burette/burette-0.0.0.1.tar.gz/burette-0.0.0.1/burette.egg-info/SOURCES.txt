@@ -1,0 +1,7 @@
+README.md
+burette.py
+setup.py
+burette.egg-info/PKG-INFO
+burette.egg-info/SOURCES.txt
+burette.egg-info/dependency_links.txt
+burette.egg-info/top_level.txt
