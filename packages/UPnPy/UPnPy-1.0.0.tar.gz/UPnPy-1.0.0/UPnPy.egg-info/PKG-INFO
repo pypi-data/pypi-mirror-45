@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: UPnPy
+Version: 1.0.0
+Summary: Lightweight UPnP client library for Python.
+Home-page: https://github.com/5kyc0d3r/upnpy
+Author: 5kyc0d3r
+Author-email: 5kyc0d3r@pm.me
+License: MIT
+Description: UNKNOWN
+Keywords: upnp,upnpy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
