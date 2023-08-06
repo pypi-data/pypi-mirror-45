@@ -1,0 +1,10 @@
+bpf2eaf/BPFParser.py,sha256=726NK3lt3ygdAyNFo0gHaVdQXR5IaDGLXK3-eStc1Cs,12640
+bpf2eaf/ErrorCodesBPF2EAF.py,sha256=LxhIdN9Ms7FU9daMgcDOANNXquO1O5fx7FHXbZgv6bc,293
+bpf2eaf/XML_Validation.py,sha256=BGh7n-dCdi9oowjLG-62SvnHoQ1Sp4JvOQXJZbMYV88,2031
+bpf2eaf/__init__.py,sha256=NUMlwFcL0XaVi4nGCFUJVs1tuaCQp2Dhx3fYZuxS4oI,146
+bpf2eaf/bpf2eaf.py,sha256=oDC7VZIkL4pTcGB-PpFYwV6-JLqtLHGCp_g2l1OhX3c,2107
+bpf2eaf-0.0.5.dist-info/LICENSE,sha256=CeywId9S1isMALR2vSpmAyOzvg3P5oNn-VRFiU5VTRY,1056
+bpf2eaf-0.0.5.dist-info/METADATA,sha256=qYqF5ZUVjgNlpFto_3wSZFmNMLyI4vjnejfTaV84Rro,1807
+bpf2eaf-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bpf2eaf-0.0.5.dist-info/top_level.txt,sha256=kRw5GSLn5U7ptzP_nSF_wJmjgUIYPimao-43p5oRMpc,8
+bpf2eaf-0.0.5.dist-info/RECORD,,
