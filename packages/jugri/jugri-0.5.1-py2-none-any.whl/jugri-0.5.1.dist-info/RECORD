@@ -1,0 +1,12 @@
+jugri/__init__.py,sha256=Kiez4_9qs3g-piSHUB-hMp716fUF_nKKYPumLAATidM,1162
+jugri/_version.py,sha256=EYVLnyZa5jcQLwS7V3VqZun9qSKdtD6wNB8tpzcjvPU,497
+jugri/pandify.py,sha256=vmcafWFw5RCp8Mts6-mNkFXVd8vJxYeq_-JLNB7KnbM,3671
+jugri/xify.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri/tests/test_pandify.py,sha256=ROboeIRwDh-4WFBJSBuQDmaxwnx-mqYORwtz8wnOCOw,5790
+jugri/tests/test_xify.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri-0.5.1.dist-info/LICENSE.md,sha256=5mgBJ24CRtz0kk4uSBzYZmwUfy5tCcyrfAvZv96LFVQ,10755
+jugri-0.5.1.dist-info/METADATA,sha256=5X97F5DmHfGJrWvTAvtne5Zyr4F1cnUT2H0vld2I2LM,2004
+jugri-0.5.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+jugri-0.5.1.dist-info/top_level.txt,sha256=rvS3x3Yt1LvNv0g2qplJNB-Ibzni4s8Mm-yrhyBn2Os,6
+jugri-0.5.1.dist-info/RECORD,,
