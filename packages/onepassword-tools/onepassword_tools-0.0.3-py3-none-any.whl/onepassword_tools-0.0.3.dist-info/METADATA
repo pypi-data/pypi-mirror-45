@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: onepassword-tools
+Version: 0.0.3
+Summary: This is a collection of 1Password related CLI tools and helpers
+Home-page: https://github.com/mickaelperrin/onepassword-tools
+Author: Mickaël Perrin
+Author-email: dev@mickaelperrin.fr
+License: GPLv3
+Keywords: onepassword 1password cli password secrets tools
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: French
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: onepassword-local-search (==0.12.0)
+Requires-Dist: Click (==7.0)
+
+
+# 1Password Tools
+
+> This is a collection of 1Password related CLI tools and helpers.
+
