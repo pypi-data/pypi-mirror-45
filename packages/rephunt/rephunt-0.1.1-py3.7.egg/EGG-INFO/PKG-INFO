@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: rephunt
+Version: 0.1.1
+Summary: Reputation enhancer for Stack Exchange
+Home-page: https://github.com/Stefanitsky/rephunt
+Author: stefanitsky
+Author-email: stefanitsky.mozdor@google.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/Stefanitsky/rephunt/wiki
+Project-URL: Say Thanks!, https://saythanks.io/to/Stefanitsky
+Project-URL: Source, https://github.com/Stefanitsky/rephunt
+Project-URL: Tracker, https://github.com/Stefanitsky/rephunt/issues
+Description: # RepHunt
+        
+        RepHunt - is a simple console app for those, who want to increase their
+        reputation on any of the sites, that are included in the Stack Exchange:
+        - stackoverflow
+        - serverfault
+        - superuser
+        - meta
+        - webapps
+        - gaming
+        - webmasters
+        - cooking
+        - gamedev
+        - photo
+        - stats
+        - math
+        - diy
+        - gis
+        - tex
+        - askubuntu
+        
+        ## Installation
+        
+        WIP
+        
+        ## Usage
+        
+        WIP
+        
+        ## Documentation
+        
+        WIP
+        
+        ```bash
+        rephunt.py -h
+        ```
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Keywords: stackexchange stackoverflow reputation enhance raise up
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
