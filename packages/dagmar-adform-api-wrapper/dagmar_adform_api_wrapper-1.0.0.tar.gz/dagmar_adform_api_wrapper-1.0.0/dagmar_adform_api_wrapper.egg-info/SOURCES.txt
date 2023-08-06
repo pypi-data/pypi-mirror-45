@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dagmar_adform_api_wrapper/__init__.py
+dagmar_adform_api_wrapper/__version__.py
+dagmar_adform_api_wrapper/api.py
+dagmar_adform_api_wrapper/status.py
+dagmar_adform_api_wrapper.egg-info/PKG-INFO
+dagmar_adform_api_wrapper.egg-info/SOURCES.txt
+dagmar_adform_api_wrapper.egg-info/dependency_links.txt
+dagmar_adform_api_wrapper.egg-info/requires.txt
+dagmar_adform_api_wrapper.egg-info/top_level.txt
