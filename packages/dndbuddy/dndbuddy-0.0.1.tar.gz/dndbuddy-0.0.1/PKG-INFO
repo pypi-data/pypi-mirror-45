@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dndbuddy
+Version: 0.0.1
+Summary: It's DnDBuddy!
+Home-page: https://github.com/MattCCS/DnDBuddy
+Author: Matt Cotton
+Author-email: matthewcotton.cs@gmail.com
+License: UNKNOWN
+Description: # DnDBuddy
+        The CLI interface for DnDBuddy!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

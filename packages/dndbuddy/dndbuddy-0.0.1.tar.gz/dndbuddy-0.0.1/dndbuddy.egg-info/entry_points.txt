@@ -1,0 +1,3 @@
+[console_scripts]
+dndbuddy = dndbuddy.main:main
+

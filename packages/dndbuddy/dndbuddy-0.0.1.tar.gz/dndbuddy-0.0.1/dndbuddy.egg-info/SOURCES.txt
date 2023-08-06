@@ -1,0 +1,14 @@
+CHANGES.rst
+MANIFEST.in
+README.md
+VERSION.txt
+setup.py
+dndbuddy/__init__.py
+dndbuddy/constants.py
+dndbuddy/main.py
+dndbuddy.egg-info/PKG-INFO
+dndbuddy.egg-info/SOURCES.txt
+dndbuddy.egg-info/dependency_links.txt
+dndbuddy.egg-info/entry_points.txt
+dndbuddy.egg-info/requires.txt
+dndbuddy.egg-info/top_level.txt
