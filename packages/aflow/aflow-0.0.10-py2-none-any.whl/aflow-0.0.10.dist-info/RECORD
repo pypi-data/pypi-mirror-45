@@ -1,0 +1,16 @@
+aflow/__init__.py,sha256=IG63CPAK0XpbHkWtsMCqMiIMxD7qqndPu4zbtfOKj-o,555
+aflow/base.py,sha256=Nt4W06_BBePKmGQRzwmWgvhfbZiaW8MolBiz8b4fBTg,2212
+aflow/caster.py,sha256=Kav7HOYvQQQWaQKnipe4QvK_Yl-8JfZdvO18yrnbw8U,4890
+aflow/control.py,sha256=ZBS0AdaA8TXEZZcOxGCGZ12JaPT8nGuG7O6pIqISkkg,12063
+aflow/entries.py,sha256=T8M4YGOeozvsw_scNwDqWtsYVXobvTwa--_WjC2ANuk,69723
+aflow/generators.py,sha256=HmZvpixZG3pGbUfpLtZCr4N4jn6SeJCcnYKmt-r743M,3398
+aflow/keywords.py,sha256=CSdkA0EedcqHQLBNF0c3AqOVGUR43xx8XNY361OsI-E,40789
+aflow/msg.py,sha256=cmpSPrr9S_22UK4khxBNMZ9YHJQsqlSQNghjOAyeY24,4615
+aflow/utility.py,sha256=fa3LlMMVRVm0oYJAy0iPwi3yuVgCz4WJEG7F2jJlvgY,1336
+aflow/templates/entry.py,sha256=cb3FJMFEMou7ezjsORDlOHLIq4cKpcP6PcRHhd2W0VE,8940
+aflow/templates/keywords.py,sha256=w-bumYJXC-JMSg7Qb8HXoUEa5oJckvvzvKs97vEPgzs,6900
+aflow-0.0.10.dist-info/LICENSE,sha256=gL5nLyQTmQTmP5aelmZrgAFL9ZCQlh465RzC6bwRluk,1074
+aflow-0.0.10.dist-info/METADATA,sha256=UwQlp6sq_0K5_Y62toccv808U-aPSZW989BfdE__lj0,2691
+aflow-0.0.10.dist-info/WHEEL,sha256=_eaHuBxOHdDlLnwQU30U16Q6vfvhsEhxIYEpcPcf8n0,92
+aflow-0.0.10.dist-info/top_level.txt,sha256=47OYBkSBke_IwHvuh4njFcOW1LpG6aJrC7qXU3krfo4,6
+aflow-0.0.10.dist-info/RECORD,,
