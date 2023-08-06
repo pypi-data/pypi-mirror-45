@@ -1,0 +1,2 @@
+shuup_admin_channel
+shuup_admin_channel_tests
