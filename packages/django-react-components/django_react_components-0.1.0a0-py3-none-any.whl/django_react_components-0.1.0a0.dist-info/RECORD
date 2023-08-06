@@ -1,0 +1,10 @@
+django_react_components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_react_components/apps.py,sha256=isD29kd_svz3lm62XM8NiDqDOVMucsS7kbgoh92CYXM,251
+django_react_components/checks.py,sha256=YVWtZyErnxhblX15JqczgyBtcFvBR99w1ieoSiGnBW8,993
+django_react_components/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_react_components/templatetags/django_react_loader.py,sha256=4RQAuf2XdUoQa7YqUPTH6hdgmhPCiQXRF8zz5KuBw8k,1042
+django_react_components-0.1.0a0.dist-info/LICENSE,sha256=UlzMQBZeqZEihfUFbSyguShLjUJYPBNz-gMAH0LgP-A,1091
+django_react_components-0.1.0a0.dist-info/METADATA,sha256=wMF2b9rrP4JqlZCwT7mx30PjiV75s3Y8-gcurcx5kAI,2618
+django_react_components-0.1.0a0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_react_components-0.1.0a0.dist-info/top_level.txt,sha256=6qU59vjbCleKGAVE36RHKUjWijW35xZdEIkCve3Xewc,24
+django_react_components-0.1.0a0.dist-info/RECORD,,
