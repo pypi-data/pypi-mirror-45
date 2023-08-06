@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lib.py,sha256=Hz5nRJhyLXaj2nBT0t5Hp7dqZA1HVscyG19U5DkOf3Y,5259
+tests/test_serialise.py,sha256=7nXGhYR-Rh7dcJq8QgEtb8GsDuOlWb0yiXrCwXxvpBE,874
+trustthedice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustthedice/cli.py,sha256=9OoYk_-e1uh2REXFxFQhB-ZqJRkW45bk1HomNVm8cWg,2922
+trustthedice/exceptions.py,sha256=2gvatNay_ia3xbBHuMIPl0eySUNvszzBmAxctB6OqCg,4016
+trustthedice/lib.py,sha256=tkeqQDn4mDJNfCcXEqKqwZMWQdxYHIOY6xNWSshJsr4,6926
+trustthedice/serialise.py,sha256=cEAkk34kbOLX9nsMwaR5vwA03ZvTh98akdUi5D0iiXk,1098
+trustthedice-0.0.2.dist-info/LICENSE,sha256=qvR7XGR9CfeBEZAkiTnwjtHGk8nniajOZmlTIhWDSHw,1071
+trustthedice-0.0.2.dist-info/METADATA,sha256=eextQdZNN_E6vk_BBUs76bcj3aTWzZgNtJbQGhAyquA,534
+trustthedice-0.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+trustthedice-0.0.2.dist-info/entry_points.txt,sha256=vEFrqMC9ji59shrNOq9bIxP1sVY6fJh2PnjrNCsPYrM,74
+trustthedice-0.0.2.dist-info/top_level.txt,sha256=ganCO5PpDt0ZAnFJlesY-YLyy3Zp1TImqoXv4Q5ESug,19
+trustthedice-0.0.2.dist-info/RECORD,,
