@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+msg91_sms/__init__.py
+msg91_sms.egg-info/PKG-INFO
+msg91_sms.egg-info/SOURCES.txt
+msg91_sms.egg-info/dependency_links.txt
+msg91_sms.egg-info/requires.txt
+msg91_sms.egg-info/top_level.txt
