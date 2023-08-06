@@ -1,0 +1,8 @@
+README.md
+setup.py
+getfoldersize/__init__.py
+getfoldersize/getfoldersize.py
+getfoldersize.egg-info/PKG-INFO
+getfoldersize.egg-info/SOURCES.txt
+getfoldersize.egg-info/dependency_links.txt
+getfoldersize.egg-info/top_level.txt

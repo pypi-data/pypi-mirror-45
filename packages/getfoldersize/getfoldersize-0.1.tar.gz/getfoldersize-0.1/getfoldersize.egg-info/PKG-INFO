@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: getfoldersize
+Version: 0.1
+Summary: Python3 module to easily get a folder size.
+Home-page: https://github.com/carlosplanchon/getfoldersize
+Author: Carlos A. Planchón
+Author-email: bubbledoloresuruguay2@gmail.com
+License: GPL3
+Download-URL: https://github.com/carlosplanchon/getfoldersize/archive/v0.1.tar.gz
+Description: # getfoldersize
+        *Python3 module to easily get a folder size.*
+        
+        ## Installation
+        ### Install with pip
+        ```
+        pip3 install -U getfoldersize
+        ```
+        
+        ## Usage
+        ```
+        In [1]: import getfoldersize
+        
+        In [2]: from pathlib import Path
+        
+        In [3]: getfoldersize.get_folder_size(
+            Path("/home/user/Documents")
+            )
+        Out[3]: 954460474
+        
+        In [4]: getfoldersize.get_folders_size(
+            Path("/home/user/Documents")
+            )
+        Out[4]: 466944
+        
+        In [5]: getfoldersize.get_files_size(
+            Path("/home/user/Documents")
+            )
+        Out[5]: 953993530
+        ```
+        
+Keywords: get,folder,size
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
