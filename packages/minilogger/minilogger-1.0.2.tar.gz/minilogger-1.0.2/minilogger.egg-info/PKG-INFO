@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: minilogger
+Version: 1.0.2
+Summary: Mini pretty logger for Python3
+Home-page: UNKNOWN
+Author: Nofix
+Author-email: contact@no-fix.fr
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.3
