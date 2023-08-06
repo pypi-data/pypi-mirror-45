@@ -1,0 +1,15 @@
+coroICA-0.1.22.dist-info/DESCRIPTION.rst,sha256=ULU90tYS_O5KR3HF54NHcDx7Pux6CsWt7cHMJUi88xE,1600
+coroICA-0.1.22.dist-info/METADATA,sha256=wUUHHT3TD7nto14BxIZ5xB6qtVNKK5ijOg6jvsgF3jk,2289
+coroICA-0.1.22.dist-info/RECORD,,
+coroICA-0.1.22.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+coroICA-0.1.22.dist-info/metadata.json,sha256=MiH_spMFKU1VwCKVK7yIYwNxAuOcIUlModnND7idKws,835
+coroICA-0.1.22.dist-info/pbr.json,sha256=NqQgl9DdIq23wgim422wasej-e_TKJw6VipbZQVK9lg,46
+coroICA-0.1.22.dist-info/top_level.txt,sha256=qi79q2_KClSRVLGWYUCD0MVFTxI1IBVe79-9xpLFF54,8
+coroica/__init__.py,sha256=XBzlK1imwxM6D6XRBnsNzzhim4RzfGB90rt1UOMA8zE,98
+coroica/coroica.py,sha256=E5C-uzLJs9WnTrJr6qcMtghQ3dbeReG7sJwdP3oAYLE,16515
+coroica/utils.py,sha256=N-PN8hPT4ZKVCd7HiExOEfYtaoRfWCSffiymkZKStak,1432
+coroica/uwedge.py,sha256=K2E7z_m2lVp1Dy1yGtn9RFTlJMBreTWFXlk-C2t7scQ,3843
+coroica/uwedgeica.py,sha256=WCsruoDbC-pkuSzUDF7yTolnYRGcOequZ4whPFA_OLc,9348
+coroica/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coroica/tests/test_common.py,sha256=33vwdCSiHa71uq1RGwqkbku5zGe9OF_HEncJjieBuoQ,242
+coroica/tests/test_uwedge.py,sha256=8cGW2nJXoZYU5ZCUn13dsTyiYbX3tMZopyea4WkPWn8,892
