@@ -1,0 +1,8 @@
+README.md
+setup.py
+parsems/__init__.py
+parsems/parsems.py
+parsems.egg-info/PKG-INFO
+parsems.egg-info/SOURCES.txt
+parsems.egg-info/dependency_links.txt
+parsems.egg-info/top_level.txt
