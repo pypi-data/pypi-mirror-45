@@ -1,0 +1,16 @@
+[asched.executors]
+asyncio = asched.executors.asyncio:AsyncIOExecutor [asyncio]
+debug = asched.executors.debug:DebugExecutor
+processpool = asched.executors.pool:ProcessPoolExecutor
+threadpool = asched.executors.pool:ThreadPoolExecutor
+
+[asched.jobstores]
+memory = asched.jobstores.memory:MemoryJobStore
+
+[asched.triggers]
+and = asched.triggers.combining:AndTrigger
+cron = asched.triggers.cron:CronTrigger
+date = asched.triggers.date:DateTrigger
+interval = asched.triggers.interval:IntervalTrigger
+or = asched.triggers.combining:OrTrigger
+
