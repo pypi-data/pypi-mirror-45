@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: terraform-utils
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/rkhullar/terraform-utils
+Author: Rajan Khullar
+Author-email: rkhullar@nyit.edu
+License: MIT
+Keywords: terraform terragrunt
+Platform: UNKNOWN
+
+## Terraform Utils
+
+
