@@ -1,0 +1,10 @@
+README.rst
+setup.py
+awstatscleanup/__init__.py
+awstatscleanup/libawstatscleanup.py
+awstatscleanup/example/testcleanup.py
+mds_awstatscleanup.egg-info/PKG-INFO
+mds_awstatscleanup.egg-info/SOURCES.txt
+mds_awstatscleanup.egg-info/dependency_links.txt
+mds_awstatscleanup.egg-info/not-zip-safe
+mds_awstatscleanup.egg-info/top_level.txt
