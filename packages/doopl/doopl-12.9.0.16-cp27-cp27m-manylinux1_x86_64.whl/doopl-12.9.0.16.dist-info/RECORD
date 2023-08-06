@@ -1,0 +1,15 @@
+doopl-12.9.0.16.data/purelib/doopl/__init__.py,sha256=X8utol8AQxDY3THlmxKFB7v1MMIYzFaz64hsC-ztDxw,3664
+doopl-12.9.0.16.data/purelib/doopl/factory.py,sha256=Gotdx3819M0nINHPOmnp21OlGNNp7FyB6AeYz7PvwDM,23617
+doopl-12.9.0.16.data/purelib/doopl/opl.py,sha256=quN7tDlxmkWt7wOlHNCo4TG8aOQu7HV9kyv2ibuZVg0,719
+doopl-12.9.0.16.data/purelib/doopl/version.py,sha256=A1eGr_5GuXvsrL4-I0xj-gJ46BUNYJ2Yx9ogFi0XXew,432
+doopl-12.9.0.16.data/purelib/doopl/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1280/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1280/_opl.so,sha256=Wc8ptzm3uxidmLkjr4eYWcv_7Oh_nz162_cqkQUKg0g,312848
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1280/opl.py,sha256=4NgPoulysSHNutphw3_lYm_ohUeYFCN5Ja3yqA9vNHo,37691
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1290/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1290/_opl.so,sha256=7jDaPymTjcOuBAKKyu22eiVcl_jSBcPiS9T06Rec1bA,312896
+doopl-12.9.0.16.data/purelib/doopl/internal/opl1290/opl.py,sha256=4NgPoulysSHNutphw3_lYm_ohUeYFCN5Ja3yqA9vNHo,37691
+doopl-12.9.0.16.dist-info/License.txt,sha256=QCuWPDbpXayds2bsJyxPY58y-pQSuMipMLi_EOPjrt0,11349
+doopl-12.9.0.16.dist-info/METADATA,sha256=EQQ8VG3IjfxDBqgwiQEDtDEY8W3YJxrSE1ynm-8Sq6I,3284
+doopl-12.9.0.16.dist-info/WHEEL,sha256=FhfcVDV0MpjyBHaRuvoqjjk0pY53w7pSgXGZz-93U2A,109
+doopl-12.9.0.16.dist-info/RECORD,,
