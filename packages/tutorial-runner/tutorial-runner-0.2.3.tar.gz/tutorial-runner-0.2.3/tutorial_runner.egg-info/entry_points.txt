@@ -1,0 +1,4 @@
+[console_scripts]
+tutorial = tutorial_runner.cli:tutorial
+tutorial-runner = tutorial_runner.cli:tutorial
+
