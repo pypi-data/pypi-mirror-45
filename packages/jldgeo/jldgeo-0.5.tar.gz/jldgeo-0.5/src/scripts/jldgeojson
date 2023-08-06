@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+"""
+	GeoJSON Converter
+	
+	Splits Feature Collection geojson files
+	into newline terminated JSON geometry objects
+
+	@author: jldupont
+	2019-04-27
+"""
+import sys
+
+try:
+    import jldgeo #@UnusedImport
+except:
+    ### must be in dev mode then
+    import os
+    op=os.path    
+    this_dir=op.dirname(__file__)
+    lib_path=op.abspath(op.join(this_dir, ".."))
+    sys.path.insert(0, lib_path)
+    import jldgeo #@UnusedImport @Reimport
+
+
+from jldgeo.main import geojson_converter
+
+sys.exit(geojson_converter())
