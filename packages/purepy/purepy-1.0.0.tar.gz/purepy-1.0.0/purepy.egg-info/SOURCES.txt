@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+purepy/__init__.py
+purepy/util.py
+purepy.egg-info/PKG-INFO
+purepy.egg-info/SOURCES.txt
+purepy.egg-info/dependency_links.txt
+purepy.egg-info/top_level.txt
