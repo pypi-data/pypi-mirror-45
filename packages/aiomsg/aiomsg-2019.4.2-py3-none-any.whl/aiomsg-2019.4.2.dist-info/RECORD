@@ -1,0 +1,8 @@
+aiomsg/__init__.py,sha256=q5DH2JHgB4xAv9NeYmhKovEzWg4YR_PDftztpV_QMZU,24805
+aiomsg/header.py,sha256=eB6Pg0p3oqzZXghAkDJvb16zizrNlYVLjulS7-4dBlY,1104
+aiomsg/msgproto.py,sha256=ZUMN4tQTmXKMYKe1Y0oNtG0ZKdNz3j1QEodjJshYJeE,997
+aiomsg-2019.4.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aiomsg-2019.4.2.dist-info/METADATA,sha256=s8yUpOD567mlSRZ8EOM3BUKDO68CWDhAdaebtus64n0,16115
+aiomsg-2019.4.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+aiomsg-2019.4.2.dist-info/top_level.txt,sha256=_GhanU7e5uY9FCghC2_Gf75JTlPjMsXTUn5548VSn_Q,7
+aiomsg-2019.4.2.dist-info/RECORD,,
