@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lixi
+Version: 0.0.1
+Summary: A sample package to demonstrate LIXI2 functionality
+Home-page: https://lixi.org.au
+Author: LIXI
+Author-email: shane.rigby@lixi.org.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/markdown
+
+# LIXI
+
+This is a package that is currently in planning only that will be used to share and demonstrate functionality relevant to LIXI2 standards produced by LIXI Limited.
+
+
