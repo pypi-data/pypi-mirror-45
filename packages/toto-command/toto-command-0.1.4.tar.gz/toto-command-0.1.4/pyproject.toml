@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "toto-command"
+version = "0.1.4"
+description = ""
+authors = ["propaties <sgu02214@nifty.com>"]
+
+[tool.poetry.scripts]
+toto-command = "toto_command.cli:cli_root"
+
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
