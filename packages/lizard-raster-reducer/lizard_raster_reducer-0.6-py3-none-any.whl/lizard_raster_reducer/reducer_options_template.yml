@@ -1,0 +1,64 @@
+# 1. List raster(s) to reduce. Lizard will be searched for each element (specified via indented dash).
+raster_layers:
+    - ea434e56-edad-4a16-a703-909bf53748d7
+    - Elevation
+#   - The first list element is used as scope for the spatial extent and temporal behaviour.
+#   - The list elements can be raster UUIDs
+#   - or search queries (the best match will be used)
+# 2. List region hierarchy. This will reduce the rasters according to the indicated hierarchy.
+region_hierarchy:
+    - [0, Country]
+    - [1, Province]
+#   - The last level in the hierarchy is used for the result(s).
+#   - When multiple levels are indicated, the regional context per region will be identified.
+#   - E.g. when supplying [0, Country, 1, Province, 3, Municipality] the result(s) will be
+#     per municipality & indicate the province and country they are located in.
+#   - Boundary IDs can be chosen from Lizard boundaries below, e.g. 1 for PROVINCE.
+#   - Furthermore, boundary name aliases can be specified. 
+#   - E.g. instead of [1, PROVINCE, you can use [1, Provinsi]
+# 3. Specify spatial reduce options)
+stats_type: areas
+# stats_type options: areas, portions (default)
+# TODO add other spatial aggregation options.
+# Defaults are now mean for continuous and counts for classes.
+# reduce: mean
+# TODO add option to normalize count results.
+# i.e. scale coverage fractions to sum to 1
+# normalize: False
+# 4. Specify temporal reducer options
+temporal_type: last_timesteps
+# temporal_type options: range, last_timesteps (default)
+temporal_options:
+    timesteps: 5
+    start_date: 2015-01-01
+    end_date: 2016-01-01
+    custom_interval: False
+    interval_days: 30
+# 5. Set alarm levels for scope raster
+alarms: True
+raster_less_equal: 0.4
+raster_greater_equal: 0.2
+# 6. Specify export options
+export_json: True
+export_html: True
+export_csv: True
+export_name: dataframe
+###########################################    
+# Lizard boundary types
+# DO NOT CHANGE 
+boundaries:
+    0: COUNTRY
+    1: PROVINCE
+    2: WATER_BOARD
+    3: MUNICIPALITY
+    4: CATCHMENT
+    5: POLDER
+    6: FIXED_DRAINAGE_LEVEL_AREA
+    7: PUMPED_DRAINAGE_AREA
+    8: MAIN_PUMPED_DRAINAGE_AREA
+    9: DISTRICT
+    10: NEIGHBOURHOOD
+    11: CADASTRE
+    12: PLANTATION
+    13: FIELD
+    14: CITY
