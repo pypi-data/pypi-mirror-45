@@ -1,0 +1,15 @@
+logquacious/__init__.py,sha256=eLZ8HFQM9U7Cl9lebMet9bRnE124BdMMKPoUWKjyeXc,208
+logquacious/_compat.py,sha256=90wGWoyctBmnzmXQAGWdhHsWhcDvRF_zFP8MndrILNY,488
+logquacious/backport_configurable_stacklevel.py,sha256=XRUUWN3i50n0QHTKxnoOuEcjcnBEDh6NQKuh3tiUpRg,5522
+logquacious/cascading_config.py,sha256=zn_nl3En_335dB7yQGm5xkK9XSUrPZY4DDhBQZSbtDg,4733
+logquacious/constants.py,sha256=qTBu_F5oGEMWNch8mJ4Wr3Z2PJkWmmBSgyo9IE8EfwI,176
+logquacious/context_templates.py,sha256=P1KwPZNumoujFbeuee-JBpEIQiUKjoX8K5lU4do799g,2695
+logquacious/log_context.py,sha256=unmIHrWefHBG8ut1YvlF4Vz8e5PNVUGRy-RzD6pdJ4I,5142
+logquacious/log_manager.py,sha256=03pbfNgNZdau-H4WToVpWGCMfCTuS9rZXZYiOGofwhQ,3442
+logquacious/utils.py,sha256=mbX4AoUKShC4krUkTuhpoppiPCW7lb9yR48qy7sr158,1561
+logquacious-0.5.0.dist-info/AUTHORS.rst,sha256=xz4ZDlPajRTp8rXHs-JGGFB5TgLY742okGiSaEA51eE,151
+logquacious-0.5.0.dist-info/LICENSE,sha256=b7eepb4k5tAMWICZKc4X869yV0taL46AawgUc7kD2Ys,1068
+logquacious-0.5.0.dist-info/METADATA,sha256=iiCGuDdLsQPIerNIU4_04XzrADS9V-IYeN3UqqOeLcw,9485
+logquacious-0.5.0.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+logquacious-0.5.0.dist-info/top_level.txt,sha256=0r87Fli9o00jBa8iFtdNNZgeR_CqJb5fN6G6mSMbeJA,12
+logquacious-0.5.0.dist-info/RECORD,,
