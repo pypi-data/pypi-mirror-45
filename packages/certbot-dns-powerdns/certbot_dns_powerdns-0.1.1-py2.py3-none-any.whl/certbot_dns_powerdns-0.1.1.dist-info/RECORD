@@ -1,0 +1,8 @@
+certbot_dns_powerdns/__init__.py,sha256=5AsG7iCSWbwPAiFBVhlNPGSdtl44xxxjgskHrg8gqH0,869
+certbot_dns_powerdns/dns_powerdns.py,sha256=XnBpdHME5QxTswX_uBUBjN7v0_nwnbPdHTAvMqUeOzU,3058
+certbot_dns_powerdns/dns_powerdns_test.py,sha256=b2GO9C5NhAf_063pUJUOvql9nDbm0Sh3kxwPmTpExcE,2013
+certbot_dns_powerdns-0.1.1.dist-info/METADATA,sha256=RH51pBtfHtN6GhUb2afcyquyScNRukcq3XcCD0MCX1k,4298
+certbot_dns_powerdns-0.1.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+certbot_dns_powerdns-0.1.1.dist-info/entry_points.txt,sha256=mpj0VovgV0R3BeWHmVrUjgdIuRPWUSSL5gw1m35bXdg,82
+certbot_dns_powerdns-0.1.1.dist-info/top_level.txt,sha256=vA-bmonIIdfwFgt0GcVtoZ3IjWZOAw6XHHLSGdN7cKw,21
+certbot_dns_powerdns-0.1.1.dist-info/RECORD,,
