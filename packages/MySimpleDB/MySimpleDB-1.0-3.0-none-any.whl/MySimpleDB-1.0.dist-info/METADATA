@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: MySimpleDB
+Version: 1.0
+Summary: UNKNOWN
+Home-page: http://github.com/artolabs/mysimpledb
+Author: ArtoLabs
+Author-email: artopium@gmail.com
+License: MIT
+Keywords: pymysql,mysql,database
+Platform: UNKNOWN
+Requires-Dist: pymysql (==0.8.0)
+Requires-Dist: screenlogger (==1.3.1)
+
+UNKNOWN
+
+
