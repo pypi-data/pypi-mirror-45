@@ -1,0 +1,16 @@
+ipython
+bumpversion
+twine
+sphinx
+recommonmark
+pylint
+autopep8
+requests
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
+pytest-travis-fold
+detox
+tox-travis
+coveralls
