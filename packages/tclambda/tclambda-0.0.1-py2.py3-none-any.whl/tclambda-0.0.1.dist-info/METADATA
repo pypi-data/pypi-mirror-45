@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tclambda
+Version: 0.0.1
+Summary: AWS Lambda Library
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Niels Lemmens
+Author-email: draso.odin@gmail.com
+Classifier: License :: OSI Approved :: MIT License
