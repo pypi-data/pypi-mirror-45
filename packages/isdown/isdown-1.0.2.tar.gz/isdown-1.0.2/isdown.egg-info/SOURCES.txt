@@ -1,0 +1,8 @@
+README.md
+setup.py
+isdown/__init__.py
+isdown.egg-info/PKG-INFO
+isdown.egg-info/SOURCES.txt
+isdown.egg-info/dependency_links.txt
+isdown.egg-info/requires.txt
+isdown.egg-info/top_level.txt
