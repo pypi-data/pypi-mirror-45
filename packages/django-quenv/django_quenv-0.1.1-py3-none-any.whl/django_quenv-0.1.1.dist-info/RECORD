@@ -1,0 +1,16 @@
+quenv/__init__.py,sha256=1Syoz3GPnWokC1Z5xU0rAWjj7v7m834mbC2SbXSKP_0,387
+quenv/admin.py,sha256=fy6Kb-Ys_Rnv2WlwdDOeyW8xU-JbnJkKbaMfy490WSY,7062
+quenv/apps.py,sha256=rEdmpK4s3q5gJWooeszFTMTvlz6Xi6kMt8N4f7ZuWjk,467
+quenv/licenses.py,sha256=4hjlYOuoimu8oxL-O7viZsmkxgsVmq29Do_daL_48kI,11895
+quenv/managers.py,sha256=mWoPOdd816wkSgWlW4AsgL5xzVpO458irtayn_lsd9U,1586
+quenv/models.py,sha256=_mq8pzduwR5Hlt4MTJXR4SVfO1-CtawlqQOM6gD7jwA,5165
+quenv/tests.py,sha256=1S1_AuERBAVCLXj7hQTJdPSJyAFuN4W_pXXOGvKEvSc,418
+quenv/views.py,sha256=IAXpknOxrIVD5ANoE9Nl6CbCDWJzhN3uFC46KVmdsRo,420
+quenv/management/commands/quenv.py,sha256=RhaO_4jwfoA9gnMdZR_h10kFkGUlAiHzvPdeu6TywKQ,793
+quenv/migrations/0001_initial.py,sha256=VI7hxVmliaTiswopoNqf2pfhlVNCi2HOMQXi426QIT8,4832
+quenv/migrations/__init__.py,sha256=p_DkGuVDjVByyW91PVNtElryyYGTE-1i9kY1gbnhvIM,398
+django_quenv-0.1.1.dist-info/LICENSE,sha256=gIsKbANEDE26nBwORto1yKO-5MgnAQhO4AodEnhEc74,1523
+django_quenv-0.1.1.dist-info/METADATA,sha256=LBEg5kVF2Ov4ZumfJX4vor18cKkngUYwslZ7z20NlpA,2283
+django_quenv-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_quenv-0.1.1.dist-info/top_level.txt,sha256=ltwiA-_Q-up_aFhSEs0HQEgMyTXDu7nJnPkr-_lDU1I,6
+django_quenv-0.1.1.dist-info/RECORD,,
