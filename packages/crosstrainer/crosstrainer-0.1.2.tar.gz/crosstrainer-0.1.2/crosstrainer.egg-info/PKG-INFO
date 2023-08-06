@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: crosstrainer
+Version: 0.1.2
+Summary: CrossTrainer: Practical Domain Adaptation with Loss Reweighting
+Home-page: https://github.com/stanford-futuredata/crosstrainer
+Author: Justin Yu-wei Chen
+Author-email: jyc8889@gmail.com
+License: MIT
+Description: # CrossTrainer: Practical Domain Adaptation with Loss Reweighting
+        
+        ### Install
+        The crosstrainer package can be installed using pip.
+        
+        ```
+        pip install crosstrainer
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
