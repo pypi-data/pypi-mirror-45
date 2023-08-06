@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pytraccar
+Version: 0.9.0
+Summary: UNKNOWN
+Home-page: https://github.com/ludeeus/pytraccar
+Author: Joakim Sorensen
+Author-email: ludeeus@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pytest-runner
+Requires-Dist: aiohttp
+Requires-Dist: async-timeout
+
+# [pytraccar](https://pypi.org/project/pytraccar/)
+
+Documentation for this package can be found here:  
+[https://ludeeus.github.io/pytraccar/index.html](https://ludeeus.github.io/pytraccar/index.html)  
+
+
+## Installation
+
+```bash
+python3 -m install pytraccar
+```
+
+## CLI test
+
+```bash
+traccar
+```
+
+Look at the file `example.py` for a usage example.
+
+
+## Test
+
+```bash
+git clone https://github.com/ludeeus/pytraccar.git
+cd pytraccar
+python3 -m venv .
+source bin/activate
+python setup.py develop
+```
+
+change the content of `example.py` to match your IP, PORT, USERNAME and PASSWORD.
+
+```bash
+python example.py
+```
+
