@@ -1,0 +1,97 @@
+BlackHoles
+---
+
+Black Holes is a simple way to handle your projects secrets using a `database` or `Consul.io`.
+
+**IMPORTANT**: `Work-in-Progress. Beta version. Non production software.`
+
++ [Installing BlackHoles](#install)
++ [Using BlackHoles](#usage)
+    - [Plain Keys](#simple-usage)
+    - [Encrypted Keys](#advanced-usage)
+    
+# Install
+
+Installing from `Pip`
+
+```bash
+(pyenv) $ pip install blackhole
+```
+    
+
+Installing from `sources`:
+
+```bash
+(pyenv) $ cd black_holes
+(pyenv) $ python setup.py install
+```
+
+# Usage:
+
+## `SqliteBlackHole` Database BlackHole based 
+
+### simple usage
+
+Plain `{'key': 'values'}` storage.
+
+```python
+from black_holes import SqliteBlackHole
+
+# Create a new SqliteBlackHole instance
+near_black_hole = SqliteBlackHole()
+
+# Create a key called "key" with value "value"
+near_black_hole['key'] = 'value'
+
+# print key
+print(near_black_hole['key'])
+# >>> value
+```
+
+###  Advanced usage:
+
+Encrypted `{'key': 'values'}` storage.
+
+```python
+from black_holes import SqliteBlackHole
+
+# Create a new SqliteBlackHole instance
+near_black_hole = SqliteBlackHole()
+
+# Create a AES Encrypted key
+near_black_hole['encrypted_key'] = 'it is a secret'
+
+# Encrypted value
+print(near_black_hole['key'])
+# >>> Encrypted Value
+
+# Decrypted value
+print(near_black_hole['decrypted_key'])
+# >>> Decrypted Value
+```
+
+## `ConsulBlackHole` Consul.io BlackHole based 
+
+### Simple usage
+
+Plain `{'key': 'values'}` storage.
+
+```python
+from black_holes import ConsulBlackHole
+
+# Create a new DEV ConsulBlackHole instance
+remote_black_hole = ConsulBlackHole()
+
+# You can also creates a new ConsulBlackHole instance using consul auth token
+# remote_black_hole = ConsulBlackHole(token='{consul-io-token}')
+
+# Create a key called "key" with value "value"
+remote_black_hole['key']= 'value'
+
+# print key
+print(remote_black_hole['key'])
+# >>> value
+```
+
+
+_Made it with ❤ by __DTecDeal___
