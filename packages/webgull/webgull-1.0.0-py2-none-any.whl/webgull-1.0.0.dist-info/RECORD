@@ -1,0 +1,9 @@
+webgull/__init__.py,sha256=aHPwPHvLjVaPOtJbL-OU8asZA1T9s31jCPsfpwl6VlU,50
+webgull/build.py,sha256=aXTSwM_IlQWqI-CDFie2Nr1PKr_3ubmoBVfB7u4zcy8,4610
+webgull/main.py,sha256=igq9vAqRamyLdU5SoCatcXaG7IAXgxsNA5OYcbhNSfg,1549
+webgull/watch.py,sha256=Sa-tdYHMQT4jhpu6tLyLaZoBog5dm333XErC3j7O1z0,3191
+webgull-1.0.0.dist-info/METADATA,sha256=RGavLvTlqt6263s6RAhJEBJTsHDRBR1VnQkARUI7BCc,168
+webgull-1.0.0.dist-info/RECORD,,
+webgull-1.0.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+webgull-1.0.0.dist-info/entry_points.txt,sha256=czQSlw9_2TlJeoFM27g5grrR4skF7mJcE_QNM9o8Usc,48
+webgull-1.0.0.dist-info/top_level.txt,sha256=1r0Updh1aDzbX4m3BF0-Gur52aND1-QByvBBsILXAig,8

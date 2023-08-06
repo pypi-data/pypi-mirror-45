@@ -1,0 +1,3 @@
+[console_scripts]
+webgull = webgull.main:entry
+
