@@ -1,0 +1,6 @@
+numpy
+sympy
+scipy
+mpi4py
+psutil
+pandas
