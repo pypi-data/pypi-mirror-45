@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: roadwatch-data-processor
+Version: 0.2b0
+Summary: A library for processing csv files on road accidents in France.                 Built for Project Roadwatch
+Home-page: https://github.com/daniel-sasu/roadwatch-data-processor
+Author: Daniel SASU
+Author-email: daniel.sasu@mail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==0.24.1)
+Requires-Dist: numpy (==1.12.1)
+
+Roadwatch Data Processor
+=========================
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/daniel-sasu/roadwatch-data-processor.svg?branch=master)](https://travis-ci.com/daniel-sasu/roadwatch-data-processor)
+
+This is a small library build specifically for Project Roadwatch. This package is used to process, format and clean up the csv data on road accidents in France in order
+to be integrated in a SQL database.   
+
+
+
+
+Generate documentation
+-----------------------
+```
+$ make doc
+```
+
+> **Note:** The documentation is generated using [sphinx](http://www.sphinx-doc.org/en/master/).
+
+Run tests
+------------
+```
+$ make test
+```
+
+About
+------
+
+This module is a part of a bigger project called 'Project Roadwatch'. Which is was in individual assignment as a part in the first year graduate program in Computer Science at Lille University, Faculty of Science and Technology.
+
+**Supervising Professor:** Mickael Salson
+
+**Author:** Daniel SASU
+
+References
+-----------
+* [Base de données accidents corporels de la circulation](https://www.data.gouv.fr/fr/datasets/base-de-donnees-accidents-corporels-de-la-circulation/).
+
+
