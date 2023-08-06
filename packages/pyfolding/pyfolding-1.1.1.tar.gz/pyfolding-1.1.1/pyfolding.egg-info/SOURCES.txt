@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyfolding/__init__.py
+pyfolding/batch.py
+pyfolding/libfolding.py
+pyfolding/pvalues.py
+pyfolding/results.py
+pyfolding/stream.py
+pyfolding.egg-info/PKG-INFO
+pyfolding.egg-info/SOURCES.txt
+pyfolding.egg-info/dependency_links.txt
+pyfolding.egg-info/not-zip-safe
+pyfolding.egg-info/top_level.txt
