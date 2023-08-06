@@ -1,0 +1,16 @@
+README.rst
+setup.py
+test/test_nn.py
+test/test_swa.py
+torchcontrib/__init__.py
+torchcontrib.egg-info/PKG-INFO
+torchcontrib.egg-info/SOURCES.txt
+torchcontrib.egg-info/dependency_links.txt
+torchcontrib.egg-info/top_level.txt
+torchcontrib.egg-info/zip-safe
+torchcontrib/nn/__init__.py
+torchcontrib/nn/functional.py
+torchcontrib/nn/modules/__init__.py
+torchcontrib/nn/modules/linear.py
+torchcontrib/optim/__init__.py
+torchcontrib/optim/swa.py

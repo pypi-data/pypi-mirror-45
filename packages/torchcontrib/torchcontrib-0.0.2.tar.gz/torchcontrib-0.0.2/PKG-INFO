@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: torchcontrib
+Version: 0.0.2
+Summary: implementations of ideas from recent papers
+Home-page: https://github.com/pytorch/contrib
+Author: PyTorch Core Team and Contributors
+Author-email: soumith@pytorch.org
+License: BSD
+Description: torch-contrib
+        =============
+        
+        This repository contains reviewed implementations of ideas from recent machine learning papers.
+        
+        Installation
+        ============
+        
+        pip:
+        
+        .. code:: bash
+        
+            pip install torchcontrib
+        
+        From source:
+        
+        .. code:: bash
+        
+            python setup.py install
+        
+Platform: UNKNOWN
