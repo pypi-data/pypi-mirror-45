@@ -1,0 +1,8 @@
+README.md
+setup.py
+mystracher/__init__.py
+mystracher.egg-info/PKG-INFO
+mystracher.egg-info/SOURCES.txt
+mystracher.egg-info/dependency_links.txt
+mystracher.egg-info/not-zip-safe
+mystracher.egg-info/top_level.txt
