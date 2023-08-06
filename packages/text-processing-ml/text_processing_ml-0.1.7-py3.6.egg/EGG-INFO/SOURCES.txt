@@ -1,0 +1,14 @@
+README.md
+setup.py
+text_processing_ml/__init__.py
+text_processing_ml.egg-info/PKG-INFO
+text_processing_ml.egg-info/SOURCES.txt
+text_processing_ml.egg-info/dependency_links.txt
+text_processing_ml.egg-info/requires.txt
+text_processing_ml.egg-info/top_level.txt
+text_processing_ml/matching/__init__.py
+text_processing_ml/matching/matching.py
+text_processing_ml/normalization/__init__.py
+text_processing_ml/normalization/normalization.py
+text_processing_ml/parsing/__init__.py
+text_processing_ml/parsing/parsing.py
