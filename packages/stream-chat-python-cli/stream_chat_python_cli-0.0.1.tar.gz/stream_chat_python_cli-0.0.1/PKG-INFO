@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: stream_chat_python_cli
+Version: 0.0.1
+Summary: CLI for Stream Chat
+Home-page: http://github.com/GetStream/stream-chat-python-cli
+Author: Nick Parsons
+Author-email: nick@getstream.io
+License: UNKNOWN
+Description: ### Setup for development
+        
+        ```bash
+        virtualenv . -p /usr/local/bin/python3.7
+        source bin/activate
+        pip install -e .
+        ```
+        
+        after this ```stream-cli``` is available and changes to cli.py will reflect immediately.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
