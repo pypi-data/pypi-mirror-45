@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+dscleaner/IFileInfo.py
+dscleaner/__init__.py
+dscleaner/csvfileinfo.py
+dscleaner/fileinfo.py
+dscleaner/fileutil.py
+dscleaner/filewriter.py
+dscleaner/ifileinfo.py
+dscleaner.egg-info/PKG-INFO
+dscleaner.egg-info/SOURCES.txt
+dscleaner.egg-info/dependency_links.txt
+dscleaner.egg-info/requires.txt
+dscleaner.egg-info/top_level.txt
