@@ -1,0 +1,12 @@
+pyvacy/__init__.py,sha256=h32pWVa_GGpyUQAIcgEaldh_usWwbFE8nxxG3twNFS0,43
+pyvacy/analysis/__init__.py,sha256=XAsHTN9DgBmZ9THsdvhgb0ABVOj-5VTzpVwjupR0M-Y,33
+pyvacy/analysis/analytical_moments_accountant.py,sha256=BnA_TKD7vc_P_wkfJGL51kw19H2BCoPEmQwR2bislX8,816
+pyvacy/analysis/moments_accountant.py,sha256=B_f1KuVvCovGV8utsomI9wQmlYYy4LitvMLQX-WSPqQ,1944
+pyvacy/analysis/rdp_accountant.py,sha256=D1d7Ybzk_OgVZVeb9x1ZSqVlnLvtyFjz6sSP34kGGoc,9769
+pyvacy/optim/__init__.py,sha256=G_iGs9qLw1CcxqQbjR7ITZ6ol98pPZujuQnQWHWGvo8,62
+pyvacy/optim/dp_optimizer.py,sha256=aGC0glVjH5xBT1kgZHqwOR8yqyz-VJdspM0Z4DG_xxg,2211
+pyvacy-0.0.31.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyvacy-0.0.31.dist-info/METADATA,sha256=vjA35t7iO8M8RewKP0c4XfT2Oh7jniO87JzV9GvoFOQ,1380
+pyvacy-0.0.31.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pyvacy-0.0.31.dist-info/top_level.txt,sha256=SuUK828hpiUOyHELMjsdLEJ49EKolJxUIys0H68UKZE,7
+pyvacy-0.0.31.dist-info/RECORD,,
