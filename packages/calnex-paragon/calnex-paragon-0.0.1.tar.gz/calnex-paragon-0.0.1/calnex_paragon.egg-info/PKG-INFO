@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: calnex-paragon
+Version: 0.0.1
+Summary: Calnex Paragon Libraries. Content is copyright of calnexThis is just a pip version of the same
+Home-page: http://packages.python.org/calnex-paragon
+Author: Manali Gupta
+Author-email: manligup@cisco.com
+License: BSD
+Description: ################################################################################
+        #                                                                              #
+        #   calnexRest.py                                                              #
+        #                                                                              #
+        #   Python interface to the new line of Calnex products                        #
+        #                                                                              #
+        #   Copyright (c) Calnex Solutions Ltd 2008 - 2018                             #
+        #                                                                              #
+        #   The contents of this file should not be copied or distributed              #
+        #   without permission being granted by Calnex Solutions Ltd.                  #
+        #                                                                              #
+        #   All rights reserved.                                                       #
+        #                                                                              #
+        ################################################################################
+        
+Keywords: Calnex Paragon Timing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
