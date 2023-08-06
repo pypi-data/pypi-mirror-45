@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: imgbase64
+Version: 0.1.6
+Summary: transform images into base64
+Home-page: https://github.com/Ronnasayd/imgbase64
+Author: Ronnasayd de Sousa Machado
+Author-email: ronnasayd@hotmail.com
+License: MIT License
+Keywords: image bas64 url
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+Requires-Dist: requests
+
+﻿# **imgbase64**
+![enter image description here](https://img.shields.io/pypi/v/imgbase64.svg?color=gree)
+
+transform images into base64
+
+**Command line usage**
+
+    python3 -m imgbase64 --url <url to image>
+    python3 -m imgbase64 --file <path to file>
+**Import usage**
+
+    import imagbase64
+    imgbase64.url2base64(<url to image>)
+    imgbase64.file2base64(<path to file>)
+
+
+
