@@ -1,0 +1,10 @@
+README.md
+setup.py
+compdevkit/__init__.py
+compdevkit/cli.py
+compdevkit.egg-info/PKG-INFO
+compdevkit.egg-info/SOURCES.txt
+compdevkit.egg-info/dependency_links.txt
+compdevkit.egg-info/entry_points.txt
+compdevkit.egg-info/requires.txt
+compdevkit.egg-info/top_level.txt
