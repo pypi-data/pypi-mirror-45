@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cpython/csvmonkey.cpp
+cpython/file_stream_cursor.hpp
+cpython/iterator_stream_cursor.hpp
+csvmonkey.egg-info/PKG-INFO
+csvmonkey.egg-info/SOURCES.txt
+csvmonkey.egg-info/dependency_links.txt
+csvmonkey.egg-info/not-zip-safe
+csvmonkey.egg-info/top_level.txt
+include/csvmonkey.hpp
+third_party/cpuid.py
+third_party/picosha2.h
