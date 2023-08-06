@@ -1,0 +1,18 @@
+jsonschema>=2.5
+numpy
+pandas
+six
+
+[:platform_system=="Windows" or platform_system=="Darwin"]
+xlwings
+
+[:python_version == "2.7"]
+mock
+
+[excel]
+xlwings
+
+[plot]
+matplotlib
+
+[wltpdb]
