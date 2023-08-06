@@ -1,0 +1,3 @@
+[console_scripts]
+editty = editty.editty:main
+
