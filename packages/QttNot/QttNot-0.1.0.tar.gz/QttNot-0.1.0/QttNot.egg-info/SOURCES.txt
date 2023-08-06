@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+QttNot/__main__.py
+QttNot.egg-info/PKG-INFO
+QttNot.egg-info/SOURCES.txt
+QttNot.egg-info/dependency_links.txt
+QttNot.egg-info/entry_points.txt
+QttNot.egg-info/not-zip-safe
+QttNot.egg-info/pbr.json
+QttNot.egg-info/top_level.txt
