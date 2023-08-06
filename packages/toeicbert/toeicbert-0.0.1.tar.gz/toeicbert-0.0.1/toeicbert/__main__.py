@@ -1,0 +1,3 @@
+import toeicbert
+
+toeicbert.main()
