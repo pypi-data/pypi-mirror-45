@@ -1,0 +1,13 @@
+django_walletpass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_walletpass/admin.py,sha256=p03_Qgi_nEWzrw8u12lW7LE7gfYTiDzESkOTMFMjS3k,811
+django_walletpass/apps.py,sha256=va_ZQPMm3PfaoZVlIAquaWD9E8ALFE14vtwLJ_f2r4o,108
+django_walletpass/models.py,sha256=MA4wIUODaryp-OLr5ZKUJ-osLrS90g3K2tM0imw9qwQ,1075
+django_walletpass/settings.py,sha256=aBSw0r_AkmxH5Qo0m8DSJDTI98Q673rH9sD2y91uS4U,160
+django_walletpass/tests.py,sha256=XBDamP62rVOP0zco5YqfJ0-h8EH17N2qWKnDrc7oyU8,383
+django_walletpass/urls.py,sha256=auTbd8ByLgB8GKQwlyMjSISfzw8qLPeQXhwwTFKWvYc,706
+django_walletpass/views.py,sha256=KAjZi0q4IjmTwh25EpNM2UqKhwSTAwBIctEErk98Cyc,3460
+django_walletpass-0.1.dist-info/LICENSE.txt,sha256=VF4Khgwa7ch_d951hoNqEJdUSSVGR4mWl028CKx4U70,1052
+django_walletpass-0.1.dist-info/METADATA,sha256=KfWEFYjfqgczjaK-cEqASzQ0NQmdRxbzX3uy5Vctga8,3384
+django_walletpass-0.1.dist-info/WHEEL,sha256=MlnUWFZCxbgBkC_PfU2CprVf8-ZZlVOAfry_BsXUBxw,92
+django_walletpass-0.1.dist-info/top_level.txt,sha256=aFmWNc7xmGlACAM218L3-lMGPi7bbiCXlZ4z-1Q_qhA,18
+django_walletpass-0.1.dist-info/RECORD,,
