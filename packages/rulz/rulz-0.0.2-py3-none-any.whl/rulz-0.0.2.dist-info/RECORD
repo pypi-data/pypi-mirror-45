@@ -1,0 +1,12 @@
+rulz/__init__.py,sha256=j40sL9B1vO0Au5F7_DBjg0EZqc28Q7IMFvolhL0glU4,317
+rulz/dr.py,sha256=jjdEs2OivBJjpplFyMck1_4iOS0x-ATu0l_VMJZLlWA,9068
+rulz/loader.py,sha256=qV8k-2S0JfQGFjft_CrTo8glw4aTPD1r9Jj33HAhTO8,1945
+rulz/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rulz/plugins/demo.py,sha256=yRVZsUZfGvZ4D7jXykDrsWOEvGomKIcwyh1EDPN2chs,233
+rulz/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rulz/tests/test_dependencies.py,sha256=wgTDk6B8VCikVrPk1vNoABEhQXug_mJqTDVwP2BpakI,1635
+rulz-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rulz-0.0.2.dist-info/METADATA,sha256=fuO5rDNanor7pVTb3Tj5sghv-pUcuIeLmdh-72BICes,1437
+rulz-0.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rulz-0.0.2.dist-info/top_level.txt,sha256=OV62nFGtfhpffcZ6SopfDlaLAk5OvUZaNRYo-1mF5Cg,5
+rulz-0.0.2.dist-info/RECORD,,
