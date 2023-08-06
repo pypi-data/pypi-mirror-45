@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: myhn
+Version: 0.0.1.dev1
+Summary: MyHN - Get my Hacker News submissions.
+Home-page: https://github.com/sunainapai/myhn
+Author: Sunaina Pai
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: MyHN
+        ====
+        
+        Get my Hacker News submissions.
+        
+        Usage::
+        
+           python3 myhn.py <user>
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
