@@ -1,0 +1,12 @@
+sgwc/__init__.py,sha256=BQ1G8se0jcN_Onwn1sji5GkPtw2Sdji4W4FoA_YcrUg,148
+sgwc/setting.py,sha256=HPvOUk6fIN-Pyqh_iVYfhes2ToDdQF1_iI7IrZ-nDNU,1352
+sgwc/sogou.py,sha256=SWHZlf_2YZf94eD2AxjqKvuowjeMM3pKI993k8CUUew,9180
+sgwc/wechat.py,sha256=U5Dc15FqvFBk02Ns8Ij3iIUBXXaXDQ-PbdFdfT9tVcQ,6677
+trash/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trash/tests/test_sougo.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trash/tests/test_wechat.py,sha256=uBu8NV8iipewxGuD8F6GGjeWXgabF0hvrSgPB-vRnjk,29
+sgwc-2019.5.4.dist-info/LICENSE,sha256=jGLUpo88g5lVCKapMByzROLG6-gGgmzUcs2UvzERaYU,1081
+sgwc-2019.5.4.dist-info/METADATA,sha256=fxOnmWWSbC6BuyHAPTjD0PuYXIu0qMTssAncJYbjwZE,4708
+sgwc-2019.5.4.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+sgwc-2019.5.4.dist-info/top_level.txt,sha256=2DLaITWDmHzNtHXL05M9ap8g_UaSaP_9WpKAaiJ7keI,11
+sgwc-2019.5.4.dist-info/RECORD,,
