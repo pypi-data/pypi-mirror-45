@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+prison/__init__.py
+prison/__version__.py
+prison/constants.py
+prison/decoder.py
+prison/encoder.py
+prison/utils.py
+prison.egg-info/PKG-INFO
+prison.egg-info/SOURCES.txt
+prison.egg-info/dependency_links.txt
+prison.egg-info/requires.txt
+prison.egg-info/top_level.txt
