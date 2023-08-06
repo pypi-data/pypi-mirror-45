@@ -1,0 +1,3 @@
+[console_scripts]
+domplus = domplus.cli:main
+
