@@ -1,0 +1,14 @@
+LICENSE.rst
+README.rst
+__version__.py
+setup.cfg
+setup.py
+pywget/__init__.py
+pywget/__main__.py
+pywget/__version__.py
+pywget/wget.py
+pywget.egg-info/PKG-INFO
+pywget.egg-info/SOURCES.txt
+pywget.egg-info/dependency_links.txt
+pywget.egg-info/entry_points.txt
+pywget.egg-info/top_level.txt
