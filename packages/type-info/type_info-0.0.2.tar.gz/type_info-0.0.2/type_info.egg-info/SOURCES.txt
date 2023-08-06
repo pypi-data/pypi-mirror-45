@@ -1,0 +1,11 @@
+README.md
+setup.py
+type_info/__init__.py
+type_info/_core.py
+type_info/_py36_impl.py
+type_info/_py37_impl.py
+type_info.egg-info/PKG-INFO
+type_info.egg-info/SOURCES.txt
+type_info.egg-info/dependency_links.txt
+type_info.egg-info/not-zip-safe
+type_info.egg-info/top_level.txt
