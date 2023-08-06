@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sylvia
+Version: 0.2
+Summary: A tool for searching pronunciations in the CMU Pronouncing Dictionary with a regular-expression-like syntax.
+Home-page: https://github.com/bgutter/sylvia
+Author: Brandon Guttersohn
+Author-email: bguttersohn@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/bgutter/sylvia/archive/development/0.2.tar.gz
+Description: UNKNOWN
+Keywords: cmudict,phoneme,phonetic,rhyme,regex
+Platform: UNKNOWN
