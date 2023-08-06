@@ -1,0 +1,38 @@
+arrow
+bitstruct
+canmatrix
+click>=7
+python-dotenv
+natsort
+pint
+pyelftools
+qt5reactor
+gitpython
+graham
+PyQt5
+python-docx
+python-can
+
+[:platform_system != "Darwin" and platform_system != "Windows"]
+Twisted==18.9.0
+
+[:platform_system == "Darwin"]
+Twisted[osx_platform]==18.9.0
+
+[:platform_system == "Windows"]
+Twisted[windows_platform]==18.9.0
+
+[deploy]
+gitpython
+requests
+
+[dss]
+ccstudiodss>=0.2.7
+
+[dulwich]
+dulwich
+
+[test]
+pytest
+pytest-qt
+pytest-rerunfailures
