@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/apt-manage
+data/apt-manage
+repolib/__init__.py
+repolib/__version__.py
+repolib/deb.py
+repolib/ppa.py
+repolib/source.py
+repolib/util.py
+repolib.egg-info/PKG-INFO
+repolib.egg-info/SOURCES.txt
+repolib.egg-info/dependency_links.txt
+repolib.egg-info/top_level.txt
