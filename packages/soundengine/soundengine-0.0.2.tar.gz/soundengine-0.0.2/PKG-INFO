@@ -1,0 +1,34 @@
+Metadata-Version: 1.2
+Name: soundengine
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/SimLeek/pysoundengine
+Author: SimLeek
+Author-email: Simulator.Leek@gmail.com
+Maintainer: SimLeek
+Maintainer-email: Simulator.Leek@gmail.com
+License: MIT
+Description: # soundengine
+        
+        ## Installation
+        
+            $ pip install soundengine
+        
+        ## License
+        
+        soundengine is distributed under the terms of the
+        [MIT License](https://choosealicense.com/licenses/mit).
+        
+Keywords: python,soundengine,sound,audio
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
