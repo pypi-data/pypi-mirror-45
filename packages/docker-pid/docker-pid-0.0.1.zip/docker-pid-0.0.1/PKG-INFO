@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: docker-pid
+Version: 0.0.1
+Summary: docker-pid: Listing process IDs in docker containers.
+Home-page: https://github.com/masatanish/docker-pid
+Author: Masata Nishida
+Author-email: masatanish@gmail.com
+License: MIT
+Description: # Docker pid
+        Listing process IDs which run in all docker containers.
+        
+        ## Requirements
+        - docker
+        
+        ## Install Prepare
+        ```
+        pip install docker-pid
+        ```
+        
+        ## Usage
+        ```
+        % docker-pid
+        ```
+        
+        ## LICENSE
+        MIT (See [LICENSE.txt](/LICENSE.txt).)
+        
+Platform: UNKNOWN
