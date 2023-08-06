@@ -1,0 +1,3 @@
+[console_scripts]
+singer-runner = singer_runner:main
+
