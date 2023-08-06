@@ -1,0 +1,14 @@
+README.md
+setup.py
+glockr/__init__.py
+glockr/client.py
+glockr/manager.py
+glockr/server.py
+glockr.egg-info/PKG-INFO
+glockr.egg-info/SOURCES.txt
+glockr.egg-info/dependency_links.txt
+glockr.egg-info/entry_points.txt
+glockr.egg-info/requires.txt
+glockr.egg-info/top_level.txt
+test/test_client.py
+test/test_server.py
