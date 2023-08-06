@@ -1,0 +1,13 @@
+click
+docker
+outdated
+pydash
+PyMySQL
+pytest
+pytest-cov
+pytest-mock
+PyYAML
+six
+
+[:python_version < "3.4"]
+enum34
