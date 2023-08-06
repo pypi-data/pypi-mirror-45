@@ -1,0 +1,3 @@
+[console_scripts]
+sesame2 = pysesame2.cli:main
+
