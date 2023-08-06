@@ -1,0 +1,12 @@
+README.md
+setup.py
+Embeddings2Image.egg-info/PKG-INFO
+Embeddings2Image.egg-info/SOURCES.txt
+Embeddings2Image.egg-info/dependency_links.txt
+Embeddings2Image.egg-info/requires.txt
+Embeddings2Image.egg-info/top_level.txt
+e2i/Maatens_tsne.py
+e2i/__init__.py
+e2i/consts.py
+e2i/img_tools.py
+e2i/modules.py
