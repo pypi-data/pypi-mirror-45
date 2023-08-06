@@ -1,0 +1,3 @@
+[console_scripts]
+eventsflow = eventsflow.cli:launch_new_instance
+
