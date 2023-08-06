@@ -1,0 +1,4 @@
+azure-cosmos>=3.0.0
+botbuilder-schema>=4.4.0b1
+botframework-connector>=4.4.0b1
+aiounittest>=1.1.0
