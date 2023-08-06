@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: misspell
+Version: 0.6
+Summary: Some functions that introduce random typographical errors in provided text.
+Home-page: https://github.com/MrMebelMan/misspell
+Author: Vladyslav Burzakovskyy
+Author-email: mutex-lock@protonmail.com
+License: UNKNOWN
+Description: 
+        [![PyPI version](https://badge.fury.io/py/misspell.svg)](https://badge.fury.io/py/misspell)
+        [![GitHub license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/MrMebelMan/misspell/blob/master/LICENSE)
+        # misspell
+        Some functions that introduce random typographical errors in provided text.
+        
+        ### make one typo:
+        ```python
+        from misspell import make_typo
+        
+        make_typo('test')  # tedt, tesw etc...
+        ```
+        
+        ### make typos in 50% of the characters:
+        
+        ```python
+        from misspell import make_typos
+        make_typos('Hello, world!', percent=50)  # 'Jell8, woelf!', 'Hdllo, sorld!' etc...
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
