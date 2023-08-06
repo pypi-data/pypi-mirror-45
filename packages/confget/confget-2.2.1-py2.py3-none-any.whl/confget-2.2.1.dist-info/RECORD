@@ -1,0 +1,15 @@
+confget/__init__.py,sha256=YwL-kDRZZjac6g6Ki--BeFXCOQpDZ16uTVEazagaPAE,4761
+confget/__main__.py,sha256=_-jhBvulcpdJ44zLXs41-B5P7phmm5pUoMRY-1ZN41I,11158
+confget/defs.py,sha256=AFL8y9kKwpRhmqLgjtdozmNlHZc0iEoeg91iHSiSPdA,2363
+confget/format.py,sha256=xP_zZSeC4MTNwKNjuwCn0xKuH4wFHewUlceO6DQ5RbI,8156
+confget/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confget/backend/__init__.py,sha256=n5GE1pv9UqgBNLoaWZtbqfRnpgaq0eheGELIZHptXXA,1702
+confget/backend/abstract.py,sha256=yEQY_4_LmDPKVMWr8hRFJJkqKRHmJn4ldo5kL032orI,2022
+confget/backend/http_get.py,sha256=3nkNNjr02Tx6s0a6RIETOcU66tVeWHZsiGJsx_kX-BA,3920
+confget/backend/ini.py,sha256=KHf-HdDXUmscdL5Elll43M576IuhthYQcsAhqDpTOfc,6366
+confget-2.2.1.dist-info/METADATA,sha256=7rCOboChykQl0A2vTT-dyac3nGAnQfaEZ_diuJjEKNI,4636
+confget-2.2.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+confget-2.2.1.dist-info/entry_points.txt,sha256=mEbYcClhxp5mEYC4S6sDSbUee1z76M-GWqyrrPxrJ68,51
+confget-2.2.1.dist-info/top_level.txt,sha256=qhRztpUIc51peVJDR7oqhqChPaa1PSxeMxQtWwz2nSQ,8
+confget-2.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+confget-2.2.1.dist-info/RECORD,,
