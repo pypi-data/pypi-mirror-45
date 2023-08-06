@@ -1,0 +1,12 @@
+spaudio.py,sha256=dmtjar8cpWPidZYvOqTxJeGGZ-wxhwOOooC4BKuUrno,45338
+spplugin.py,sha256=vKpKfA-jB9Ay5R8y5uZjnpQ2m3KeijAclxHGd-YVNTg,56956
+_spaudio/_spaudio_c.cpython-37m-x86_64-linux-gnu.so,sha256=NUXEMKu1pdMPDSF3M-Xcq0OJYKNkkmwNMGCi7Rd6uUw,1143089
+_spaudio/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+_spaudio/spaudio_c.py,sha256=wvEkW3GbPxq_RbL7fVUEtp69NqcIHvvDs-XXhGwyO1o,8355
+spaudio-0.7.16.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+spaudio-0.7.16.dist-info/RECORD,,
+spaudio-0.7.16.dist-info/METADATA,sha256=lV5eIzhK-awzkM0Fhej11Lb-WNB_uQlHriCt1eDwJDg,4803
+spaudio-0.7.16.dist-info/top_level.txt,sha256=Br0i3Yv0wM4Q-o24mjm5coDkYiHcfGS1xcdMALcQJKY,36
+_spplugin/_spplugin_c.cpython-37m-x86_64-linux-gnu.so,sha256=NKJD-IQ2ltysI4M_J5Avflrrz0fs-RvwBDfwQFN6CG4,1245331
+_spplugin/spplugin_c.py,sha256=vXIlZX2YK8S5vHOw30nWrNNETC5d4SOhvn8PWfph4ak,12197
+_spplugin/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
