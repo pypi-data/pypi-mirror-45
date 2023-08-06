@@ -1,0 +1,12 @@
+README.md
+setup.py
+DuelistAlgorithmPython.egg-info/PKG-INFO
+DuelistAlgorithmPython.egg-info/SOURCES.txt
+DuelistAlgorithmPython.egg-info/dependency_links.txt
+DuelistAlgorithmPython.egg-info/top_level.txt
+examples/1_solve_simple.py
+examples/2_solve_multivariate.py
+examples/3_solve_stochastic.py
+examples/__init__.py
+solver/Duelist_Algorithm.py
+solver/__init__.py
