@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tutti-language-detector
+Version: 1.0.4
+Summary: A tutti specific language detector.
+Home-page: UNKNOWN
+Author: Oscar Saleta
+Author-email: oscar@tutti.ch
+License: Proprietary
+Keywords: language,detector
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+A pre-trained language detection model for tutti.ch ads.
+
+

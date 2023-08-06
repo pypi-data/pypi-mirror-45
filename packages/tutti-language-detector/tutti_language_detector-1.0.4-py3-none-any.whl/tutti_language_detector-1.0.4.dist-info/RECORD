@@ -1,0 +1,10 @@
+tutti_language_detector/__init__.py,sha256=thGZHY6pLPhJc6CwYBjUaQ6pGxLhwPMp_pjoYsiwvI4,22
+tutti_language_detector/wrapper.py,sha256=JfUtnTHOp5ow0AF5KMijz6_F2PqqxNWwNu6zg_NJJtE,15656
+tutti_language_detector/models/vw-0.0.1.model,sha256=mZmK4V_fBB34mGX51tigy3ScpTeNWyck3WW4JP4lOCI,26970297
+tutti_language_detector/models/vw-0.0.2.model,sha256=BhaRUnI4B-x5YQoDzMN9pPbeulBgZ66SjwPj3Z5anhk,6282558
+tutti_language_detector-1.0.4.dist-info/LICENSE,sha256=0hTKG5tZR25PGf1PJsyuGHKVGUxH8gMmRye92JISZ8c,26
+tutti_language_detector-1.0.4.dist-info/METADATA,sha256=34KxLC6Nup-zovYUK7VdmQp7PMB_v4rj_0gfDR-poqM,499
+tutti_language_detector-1.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tutti_language_detector-1.0.4.dist-info/top_level.txt,sha256=VSyLF7R9M1JjdVNY8_DIFFVx-ENXHQ5uE-KkQel-sTI,24
+tutti_language_detector-1.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tutti_language_detector-1.0.4.dist-info/RECORD,,
