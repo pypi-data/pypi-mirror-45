@@ -1,0 +1,3 @@
+graft PyCharactACDC16
+include LICENSE README.md
+global-exclude *.pyc

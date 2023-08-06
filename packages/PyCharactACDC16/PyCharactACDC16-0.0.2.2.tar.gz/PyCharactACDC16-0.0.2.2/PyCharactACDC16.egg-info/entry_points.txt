@@ -1,0 +1,3 @@
+[console_scripts]
+GFETCharactGui16 = PyCharactACDC16.GuiCharact16:main
+
