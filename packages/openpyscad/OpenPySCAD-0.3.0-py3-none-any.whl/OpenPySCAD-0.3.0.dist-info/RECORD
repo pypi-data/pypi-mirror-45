@@ -1,0 +1,14 @@
+openpyscad/__init__.py,sha256=YAvK9OX-9-COizEn9ZCIo-odzkjEaWMuX5LINikvRgA,407
+openpyscad/base.py,sha256=iy4aHike2D208nt3KQZM6Tnxpf-YAmYnzuZiyH9C_Q8,10960
+openpyscad/boolean.py,sha256=i3_RSLfOS_Imd2IqeIKZJtdeRbY6f1lTz7zUm3B0DT4,281
+openpyscad/custom2dshapes.py,sha256=1aX96UpnJHbYu1MifIZcaGt2T4kcIYd-firqCmBg_8E,739
+openpyscad/custom3dshapes.py,sha256=uJbHYlwjgJgRxWT4bIojPt1NJQ-26rUcsQFWs14bFy0,1516
+openpyscad/modifiers.py,sha256=Do685faQUUUqGJJ8HniUKuItMoxvyhr7P1DWJ9iEMlo,2148
+openpyscad/shapes_2d.py,sha256=aJcRcdvwFOQV_tLNuGs_uhciLvcokQIz5k7cYjey2xk,362
+openpyscad/shapes_3d.py,sha256=_y3xLrGNyN5DrtrUsfrRkpkD623z5s0Q3SHuJZgh7OA,398
+openpyscad/transformations.py,sha256=_rTQZzfhbUjIDVjWkXIffDZ_LK6Ds-wKmTiSZm2aEOA,1445
+OpenPySCAD-0.3.0.dist-info/LICENSE,sha256=OuH7hDRLog53f3zD4tyAJ5AKOssO7LTWEZuqO5xiQzU,1084
+OpenPySCAD-0.3.0.dist-info/METADATA,sha256=LJPIhO1O9OZIowL45MZSMxzq_Z9x7pcG13LYrt-swoI,460
+OpenPySCAD-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+OpenPySCAD-0.3.0.dist-info/top_level.txt,sha256=M6bFcmNryJ7s04tgeIlwh7hDmf7MYE3skU6TAjHw1X0,11
+OpenPySCAD-0.3.0.dist-info/RECORD,,
