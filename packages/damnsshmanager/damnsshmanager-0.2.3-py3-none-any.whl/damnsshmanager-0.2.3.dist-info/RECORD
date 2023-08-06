@@ -1,0 +1,15 @@
+damnsshmanager/__init__.py,sha256=sFBp8-KWJvlyuHDlisraVuGeueDQA-qHA1nMiDn_YcI,24
+damnsshmanager/cli.py,sha256=1KWgVYCRV12q9BGVPAxBESIAMK1Edp0LyfSHQ6xbhUg,6834
+damnsshmanager/config.py,sha256=ZSy50nfzqXKTX22g2kIZRukYKburTIQaot7TDbYWIa8,367
+damnsshmanager/hosts.py,sha256=gBqMNQ_SXjbfTB4XmlTbJGwt1C8gWQQDe52RFAtzkc8,1929
+damnsshmanager/localtunnel.py,sha256=nxbIDmIXMtTz-stx7Eu9YoHX9eKpRZgbWn6UJvyOCFQ,2795
+damnsshmanager/messages.py,sha256=Kbvmbgoj0p0cv0VTUca7IgFcKdzG3wNpRrdV75FaajY,772
+damnsshmanager/ssh.py,sha256=_w_6QntM2eJ-FTAvKd5o4N4-N3DiPexgDIhL_UJbnp8,1986
+damnsshmanager/storage.py,sha256=n0RbR1ewcl6gbFZoCO8QvIxZsvRmje5q0c11C69Fj8g,6314
+damnsshmanager/damnfiles/messages.ini,sha256=Q5rcJBQsVIMy3ixMdZ-crWqTrAzWI_cnjvm2aWKEn6o,3019
+damnsshmanager-0.2.3.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+damnsshmanager-0.2.3.dist-info/METADATA,sha256=bj9N2NVptatj238eow4bliqE6FXSjH7b9cQ3_UKgmek,281
+damnsshmanager-0.2.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+damnsshmanager-0.2.3.dist-info/entry_points.txt,sha256=5boPdKy5wKYJly3xMvXwySfQL8KvTOwnGRcF5ylLU48,49
+damnsshmanager-0.2.3.dist-info/top_level.txt,sha256=AxY1anCj7MRd0kNqcJe58c_A5ixaGeIozCpcDHV_q24,15
+damnsshmanager-0.2.3.dist-info/RECORD,,
