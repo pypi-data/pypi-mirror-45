@@ -1,0 +1,10 @@
+README.md
+setup.py
+TSL/TSLCore.py
+TSL/TSLEngine.py
+TSL/TSLHelpers.py
+TSL/__init__.py
+tsl_compiler.egg-info/PKG-INFO
+tsl_compiler.egg-info/SOURCES.txt
+tsl_compiler.egg-info/dependency_links.txt
+tsl_compiler.egg-info/top_level.txt
