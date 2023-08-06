@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: aaaahorodatage
+Version: 0.0.1
+Summary: Module python 3 de gestion d'horodatages. Chaque horodatage embarque son époque de référence et son fuseau horaire. L'époque de référence est configurable et peut être différente de l'époque Unix (1970-01-01T00:00:00) .
+Home-page: https://framagit.org/zenjo/AaaaHorodatage
+Author: Robert Sebille
+Author-email: robert@sebille.name
+Maintainer: Robert Sebille
+Maintainer-email: robert@sebille.name
+License: GNU GPL
+Download-URL: https://framagit.org/zenjo/AaaaHorodatage/tree/master
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# AaaaHorodatage
+This program is under GNU General Public License, version 3, see LICENCE text file.
+
+This program needs python 3 and modules aaaa.ahordat, aaaa.ahordattools.
+
+## AaaaHorodatage format
+[0-9]+AAAAZ+/-HH:MM where [0-9]+ = the number of seconds from the epoch until the date entered, AAAA = the epoch of the timestamp, and Z+/-HH:MM the UTC offset (e.g for CEST summertime: Z+02:00).  The timezone and epoch are embedded.
+
+__Below, in the same directory as this README.md file__
+## Usage
+### In a file.py:
+    from aaaa.ahordat import AaaaHorodatageTools
+    <your code>
+### Démo
+in python shel, eg:
+
+	from aaaa.demo import demo
+	demo()
+### Init:
+
+    from aaaa.ahordattools import AaaaHorodatageTools
+
+    new_ts_object = AaaaHorodatageTools()
+    or
+    new_ts_object = AaaaHorodatageTools(AaaaTimestamp)
+    or
+    new_ts_object = AaaaHorodatageTools("server")
+
+    ... your code ...
+
+Exemples:
+
+- _new_ts_object_ =  _AaaaHorodatageTools()_ will create 2000Z+02:00 = 2000-01-01T00:00:00+02:00, embedded epoch = 2000, (Default).
+- _new_ts_object_ =  _AaaaHorodatageTools("server")_ will create ts_object with time server UTC.
+
+### Modifiers
+An AaaaHordatage instance has one public instance attibutes: _self.ts_ (its timestamp). 
+
+Some methods, i call modifiers, can change this attribute; they will be documented with _update self.ts_.
+
+### Generate timestamps
+
+    encode(d="", utc=False) # possible inputs:
+        update and return self.ts
+        d="": keyboard input
+        d= list, tuple or dictionary.
+        utc=False: Local UTC offset encoding (see "Setting your timezone")
+        utc=True: UTC encoding
+
+    decode("typ", ts="") 
+        return typ = "string", "list", "dict" ou "dictionary"
+        ts = timestamp (e.g.: ts_object.get_ts()): use ts.
+        ts = none or "": use self.ts.
+
+NB: encode year > 9999 with an epoch = 1000 can causes long calculations.
+
+### timestamps copy
+Shallow copy, but it's enough, here.
+
+    new_ts_object = ts_object.copy()
+
+### Harmonize epoch and UTC offset
+Convert ts_object_to_harmonize to same epoch and UTC offset than ts_object
+
+    ts_object.set_ts_same_epoch_offset(ts_object_to_harmonize)
+        ts_object_to_harmonize.ts is updated
+
+
+## Timezones
+### Setting your timezone
+Your local timezone is stored in _utc_local_offset_ class attribute
+Default is +7200 seconds, that is to say +02:00; Europe/Brussels summertime
+_utc_local_offset_ range: -43200 >= _utc_seconds_ <= +50400<br />
+Timestamps embbed their own UTC offset, then this attribute is just for encoding timestamp. 
+
+You can use public methods to get or set it.
+
+    get_utc_local_offset(typ="") # instance method
+        typ="": default, seconds (integer); typ="string": "+/-HH:MM"
+        Return _utc_local_offset
+
+    set_utc_local_offset(*offset) # class method
+        work with encode(). Default +02:00
+        -43200 >= *offset <= +50400 or '-12:00' >= *offset <= '+14:00'
+
+Get the embedded UTC offset (the UTC offset embedded in self.ts)
+
+    get_utc_ts_offset(typ=""):
+        typ="": default, seconds (integer); typ="string": "+/-HH:MM" 
+        return the embedded UTC offset
+
+### Converting timezone
+You can use methods to convert timestamp from utc to a specific timezone and from a specific timezone to utc.
+
+    tz2utc()
+        update and return self.ts
+
+    utc2tz(*new_offset) 
+        update and return self.ts
+
+        -43200 >= *new_offset <= +50400 or 
+        '-12:00' >= *new_offset <= '+14:00'. 
+
+### Converting offset
+You can use this utility methods to convert offset from seconds to string and from string to seconds.
+
+    offset_seconds2string(offset_seconds)  # -43200 >= *new_offset <= +50400
+    offset_string2seconds(offset_string)  # no control
+
+### Timezones sites
+Some timezones sites can help you to determine tour timezone.
+
+* [24timezones](https://24timezones.com/);
+* [Time.is](https://time.is/time_zones)
+* [Time_zone](https://en.wikipedia.org/wiki/Time_zone) on Wikipedia.
+
+## Epoch
+the reference epoch of the AaaaHorodatage class stored in _epoch_ class attribute<br />
+Default is 2000. Range: 1000 <= _epoch_ <= 9999.<br />
+The epoch attribute is used for encoding timestamps only. For decoding, the script uses the embedded epoch. Timestamp epoch lesser than epoch class attribute are accepted on decoding.
+
+### Setting epoch
+You can use this class methods to get or set it.
+
+    get_epoch() 
+    set_epoch(num)  #  1000 <= epoch <= 9999, return epoch
+
+### Converting epoch
+You can change and adapt the embedded epoch of a timestamp.
+
+    convert2epoch(epoch) 
+        update and return self.ts
+        Convert an embedded epoch to an other. 
+        1000 <= epoch <= 9999.
+
+## Operations
+Operations relate to timestamps of the same UTC offset and at the same epoch only.
+
+### diffDays
+_See &laquo; - operator &raquo; too_
+
+    ts1_object.diffDays(typ="string", ts2=0) 
+        return ts2 - self.ts1 in days, hours, minutes, seconds.
+        Offset UTC timestamp 1 must match offset UTC timestamp 2 and epoch timestamp 1 must match epoch timestamp 2.
+        Return typ =
+            - "seconds": return the number of seconds.
+            - "string": return a string (+/-DDTHH:MM:SS). Default.
+            - "list": return a list (fixed order).
+            fixed order: sens_difference, day, hour, minutes, seconds.
+            - "dict" or "dictionary": return a dict (any order).
+        ts2 = 0 or none: keyboard input.
+        ts2 eg: ts2_object.get_ts()
+
+Tips with _ts1_object.diffDays(typ="string", ts2=0)_<br />
+I want diffDays between ts1_object, epoch 2000 and offset +02:00, and ts2_object, epoch 1900 and offset +08:00, but not update ts2_object.<br />
+Consider this tips:
+
+    ts3_object = ts2_object.copy()
+    ts1_object.set_ts_same_epoch_offset(ts_object3)
+    diff_ts2_ts1 = ts1_object.diffDays("string", ts3_object.get_ts())
+    del ts3_object
+
+### + operator
+
+    + operator: ts_object = ts_object + nb_seconds
+        update self.ts and return ts_object + nb_seconds
+        Add nb_seconds at timestamp
+        Tips: 
+        - use dhms2second(d=0, h=0, m=0, s=0) utility method 
+        to convert days + hours + minutes + seconds in seconds
+        - To add seconds to a new timestamp instance:
+        new_ts_object = ts_object.copy()
+        new_ts_object - nb_seconds
+
+### - operator
+
+    - operator: new_ts = ts_object - *nb_seconds_or_ts_object
+        if *nb_seconds_or_ts_object is a nb_seconds integer
+        update self.ts and return ts_object - *nb_seconds
+        self.ts seconds - seconds must be >= 0 (epoch-01-01)
+
+        if *nb_seconds_or_ts_object is ts_object, call
+        self.ts.diffDays("string", *nb_seconds_or_ts_object.get_ts())
+        self.ts is NOT updated. See diffDays() method above.
+
+        Tips: 
+        - use dhms2second(d=0, h=0, m=0, s=0) utility method 
+        to convert days + hours + minutes + seconds in seconds
+        - To add seconds to a new timestamp instance:
+        new_ts_object = ts_object.copy()
+        new_ts_object - seconds
+
+### Comparison operators
+
+	ts_object1 == ts_object2
+	ts_object1 != ts_object2
+	ts_object1 < ts_object2
+	ts_object1 <= ts_object2
+	ts_object1 > ts_object2
+	ts_object1 >= ts_object2
+
+### Conversion to and from Posix
+
+    ts_object.convert_aaaa2posix(aaaa_ts)
+        Return a Posix timestamp (UTC) from an Aaaa timestamp
+
+    ts_object.convert_posix2aaaa(posix_ts):
+        Return an Aaaa timestamp from a Posix timestamp
+        update self.ts
+        posix_ts will be considered at UTC time.
+
+## Help:
+    import aaaa.ahordattools
+    help(aaaa.ahordattools)
+
+## Short demo
+
+    python3 main.py
+
+__You can find some thoughts about algorithms in this [pdf document](https://bit.ly/2seHHvU "Horodatage").__
+
+
+
