@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mastodon.py &#8212; Mastodon.py 0.9 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Mastodon.py 0.9 documentation" href="#" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mastodon-py">
+<h1>Mastodon.py<a class="headerlink" href="#mastodon-py" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mastodon</span> <span class="kn">import</span> <span class="n">Mastodon</span>
+
+<span class="c1"># Register app - only once!</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Mastodon.create_app(</span>
+<span class="sd">     &#39;pytooterapp&#39;,</span>
+<span class="sd">      to_file = &#39;pytooter_clientcred.txt&#39;</span>
+<span class="sd">)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># Log in - either every time, or use persisted</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">mastodon = Mastodon(client_id = &#39;pytooter_clientcred.txt&#39;)</span>
+<span class="sd">mastodon.log_in(</span>
+<span class="sd">    &#39;pytooter&#39;,</span>
+<span class="sd">    &#39;incrediblygoodpassword&#39;,</span>
+<span class="sd">    to_file = &#39;pytooter_usercred.txt&#39;</span>
+<span class="sd">)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># Create actual instance</span>
+<span class="n">mastodon</span> <span class="o">=</span> <span class="n">Mastodon</span><span class="p">(</span>
+    <span class="n">client_id</span> <span class="o">=</span> <span class="s1">&#39;pytooter_clientcred.txt&#39;</span><span class="p">,</span>
+    <span class="n">access_token</span> <span class="o">=</span> <span class="s1">&#39;pytooter_usercred.txt&#39;</span>
+<span class="p">)</span>
+<span class="n">mastodon</span><span class="o">.</span><span class="n">toot</span><span class="p">(</span><span class="s1">&#39;Tooting from python!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://github.com/Gargron/mastodon">Mastodon</a> is an ostatus based twitter-like federated social
+network node. It has an API that allows you to interact with its
+every aspect. This is a simple python wrapper for that api, provided
+as a single python module. By default, it talks to the
+<a class="reference external" href="http://mastodon.social/">Mastodon flagship instance</a>, but it can be set to talk to any
+node running Mastodon.</p>
+<p>For complete documentation on what every function returns,
+check the <a class="reference external" href="https://github.com/Gargron/mastodon/wiki/API">Mastodon API docs</a>, or just play around a bit.</p>
+<span class="target" id="module-mastodon"></span><div class="section" id="app-registration-and-user-authentication">
+<h2>App registration and user authentication<a class="headerlink" href="#app-registration-and-user-authentication" title="Permalink to this headline">¶</a></h2>
+<p>Before you can use the mastodon API, you have to register your
+application (which gets you a client key and client secret)
+and then log in (which gets you an access token). These functions
+allow you to do those things.
+For convenience, once you have a client id, secret and access token,
+you can simply pass them to the constructor of the class, too!</p>
+<p>Note that while it is perfectly reasonable to log back in whenever
+your app starts, registering a new application on every
+startup is not, so don&#8217;t do that - instead, register an application
+once, and then persist your client id and secret. Convenience
+methods for this are provided.</p>
+<dl class="staticmethod">
+<dt id="mastodon.Mastodon.create_app">
+<em class="property">static </em><code class="descclassname">Mastodon.</code><code class="descname">create_app</code><span class="sig-paren">(</span><em>client_name, scopes=['read', 'write', 'follow'], redirect_uris=None, to_file=None, api_base_url='https://mastodon.social'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.create_app"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.create_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new app with given client_name and scopes (read, write, follow)</p>
+<p>Specify redirect_uris if you want users to be redirected to a certain page after authenticating.
+Specify to_file to persist your apps info to a file so you can use them in the constructor.
+Specify api_base_url if you want to register an app on an instance different from the flagship one.</p>
+<p>Returns client_id and client_secret.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.__init__">
+<code class="descclassname">Mastodon.</code><code class="descname">__init__</code><span class="sig-paren">(</span><em>client_id</em>, <em>client_secret=None</em>, <em>access_token=None</em>, <em>api_base_url='https://mastodon.social'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new API wrapper instance based on the given client_secret and client_id. If you
+give a client_id and it is not a file, you must also give a secret.</p>
+<p>You can also directly specify an access_token, directly or as a file.</p>
+<p>Specify api_base_url if you wish to talk to an instance other than the flagship one.
+If a file is given as client_id, read client ID and secret from that file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.log_in">
+<code class="descclassname">Mastodon.</code><code class="descname">log_in</code><span class="sig-paren">(</span><em>username, password, scopes=['read', 'write', 'follow'], to_file=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.log_in"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.log_in" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs in and sets access_token to what was returned.
+Can persist access token to file.</p>
+<p>Will throw an exception if username / password are wrong, scopes are not
+valid or granted scopes differ from requested.</p>
+<p>Returns the access_token, as well.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="reading-data-timelines">
+<h2>Reading data: Timelines<a class="headerlink" href="#reading-data-timelines" title="Permalink to this headline">¶</a></h2>
+<p>This function allows you to access the timelines a logged in
+user could see, as well as hashtag timelines and the public timeline.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.timeline">
+<code class="descclassname">Mastodon.</code><code class="descname">timeline</code><span class="sig-paren">(</span><em>timeline='home'</em>, <em>max_id=None</em>, <em>since_id=None</em>, <em>limit=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.timeline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.timeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns statuses, most recent ones first. Timeline can be home, mentions, public
+or tag/:hashtag</p>
+</dd></dl>
+
+</div>
+<div class="section" id="reading-data-statuses">
+<h2>Reading data: Statuses<a class="headerlink" href="#reading-data-statuses" title="Permalink to this headline">¶</a></h2>
+<p>These functions allow you to get information about single statuses.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.status">
+<code class="descclassname">Mastodon.</code><code class="descname">status</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a status.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_context">
+<code class="descclassname">Mastodon.</code><code class="descname">status_context</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_context"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns ancestors and descendants of the status.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_reblogged_by">
+<code class="descclassname">Mastodon.</code><code class="descname">status_reblogged_by</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_reblogged_by"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_reblogged_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of users that have reblogged a status.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_favourited_by">
+<code class="descclassname">Mastodon.</code><code class="descname">status_favourited_by</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_favourited_by"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_favourited_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of users that have favourited a status.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="reading-data-accounts">
+<h2>Reading data: Accounts<a class="headerlink" href="#reading-data-accounts" title="Permalink to this headline">¶</a></h2>
+<p>These functions allow you to get information about accounts and
+their relationships.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.account">
+<code class="descclassname">Mastodon.</code><code class="descname">account</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns account.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_verify_credentials">
+<code class="descclassname">Mastodon.</code><code class="descname">account_verify_credentials</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_verify_credentials"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_verify_credentials" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns authenticated user&#8217;s account.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_statuses">
+<code class="descclassname">Mastodon.</code><code class="descname">account_statuses</code><span class="sig-paren">(</span><em>id</em>, <em>max_id=None</em>, <em>since_id=None</em>, <em>limit=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_statuses"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_statuses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns statuses by user. Same options as timeline are permitted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_following">
+<code class="descclassname">Mastodon.</code><code class="descname">account_following</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_following"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_following" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns users the given user is following.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_followers">
+<code class="descclassname">Mastodon.</code><code class="descname">account_followers</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_followers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_followers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns users the given user is followed by.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_relationships">
+<code class="descclassname">Mastodon.</code><code class="descname">account_relationships</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_relationships"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_relationships" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns relationships (following, followed_by, blocking) of the logged in user to 
+a given account. id can be a list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_suggestions">
+<code class="descclassname">Mastodon.</code><code class="descname">account_suggestions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_suggestions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_suggestions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns accounts that the system suggests the authenticated user to follow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_search">
+<code class="descclassname">Mastodon.</code><code class="descname">account_search</code><span class="sig-paren">(</span><em>q</em>, <em>limit=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns matching accounts. Will lookup an account remotely if the search term is 
+in the <a class="reference external" href="mailto:username&#37;&#52;&#48;domain">username<span>&#64;</span>domain</a> format and not yet in the database.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="writing-data-statuses">
+<h2>Writing data: Statuses<a class="headerlink" href="#writing-data-statuses" title="Permalink to this headline">¶</a></h2>
+<p>These functions allow you to post statuses to Mastodon and to
+interact with already posted statuses.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.status_post">
+<code class="descclassname">Mastodon.</code><code class="descname">status_post</code><span class="sig-paren">(</span><em>status</em>, <em>in_reply_to_id=None</em>, <em>media_ids=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts a status. Can optionally be in reply to another status and contain
+up to four pieces of media (Uploaded via media_post()).</p>
+<p>Returns the new status.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.toot">
+<code class="descclassname">Mastodon.</code><code class="descname">toot</code><span class="sig-paren">(</span><em>status</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.toot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.toot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Synonym for status_post that only takes the status text as input.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_delete">
+<code class="descclassname">Mastodon.</code><code class="descname">status_delete</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a status</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_reblog">
+<code class="descclassname">Mastodon.</code><code class="descname">status_reblog</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_reblog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_reblog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reblogs a status.</p>
+<p>Returns a new status that wraps around the reblogged one.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_unreblog">
+<code class="descclassname">Mastodon.</code><code class="descname">status_unreblog</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_unreblog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_unreblog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Un-reblogs a status.</p>
+<p>Returns the status that used to be reblogged.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_favourite">
+<code class="descclassname">Mastodon.</code><code class="descname">status_favourite</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_favourite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_favourite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Favourites a status.</p>
+<p>Returns the favourited status.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.status_unfavourite">
+<code class="descclassname">Mastodon.</code><code class="descname">status_unfavourite</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.status_unfavourite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.status_unfavourite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Favourites a status.</p>
+<p>Returns the un-favourited status.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="writing-data-accounts">
+<h2>Writing data: Accounts<a class="headerlink" href="#writing-data-accounts" title="Permalink to this headline">¶</a></h2>
+<p>These functions allow you to interact with other accounts: To (un)follow and
+(un)block.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.account_follow">
+<code class="descclassname">Mastodon.</code><code class="descname">account_follow</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_follow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_follow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follows a user.</p>
+<p>Returns the updated relationship to the user.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_unfollow">
+<code class="descclassname">Mastodon.</code><code class="descname">account_unfollow</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_unfollow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_unfollow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unfollows a user.</p>
+<p>Returns the updated relationship to the user.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_block">
+<code class="descclassname">Mastodon.</code><code class="descname">account_block</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_block"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blocks a user.</p>
+<p>Returns the updated relationship to the user.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mastodon.Mastodon.account_unblock">
+<code class="descclassname">Mastodon.</code><code class="descname">account_unblock</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.account_unblock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.account_unblock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unblocks a user.</p>
+<p>Returns the updated relationship to the user.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="writing-data-media">
+<h2>Writing data: Media<a class="headerlink" href="#writing-data-media" title="Permalink to this headline">¶</a></h2>
+<p>This function allows you to upload media to Mastodon. The returned
+media IDs (Up to 4 at the same time) can then be used with post_status
+to attach media to statuses.</p>
+<dl class="method">
+<dt id="mastodon.Mastodon.media_post">
+<code class="descclassname">Mastodon.</code><code class="descname">media_post</code><span class="sig-paren">(</span><em>media_file</em>, <em>mime_type=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mastodon/Mastodon.html#Mastodon.media_post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mastodon.Mastodon.media_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posts an image. media_file can either be image data or
+a file name. If image data is passed directly, the mime
+type has to be specified manually, otherwise, it is
+determined from the file name.</p>
+<p>Returns the ID of the media that can then be used in status_post().</p>
+<p>Throws a ValueError if the mime type of the passed data or file can
+not be determined properly.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Mastodon.py</a><ul>
+<li><a class="reference internal" href="#app-registration-and-user-authentication">App registration and user authentication</a></li>
+<li><a class="reference internal" href="#reading-data-timelines">Reading data: Timelines</a></li>
+<li><a class="reference internal" href="#reading-data-statuses">Reading data: Statuses</a></li>
+<li><a class="reference internal" href="#reading-data-accounts">Reading data: Accounts</a></li>
+<li><a class="reference internal" href="#writing-data-statuses">Writing data: Statuses</a></li>
+<li><a class="reference internal" href="#writing-data-accounts">Writing data: Accounts</a></li>
+<li><a class="reference internal" href="#writing-data-media">Writing data: Media</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Lorenz Diener.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

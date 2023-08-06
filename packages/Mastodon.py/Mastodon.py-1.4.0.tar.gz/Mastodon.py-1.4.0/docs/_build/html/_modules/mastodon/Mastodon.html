@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>mastodon.Mastodon &#8212; Mastodon.py 0.9 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="Mastodon.py 0.9 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for mastodon.Mastodon</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">mimetypes</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="k">class</span> <span class="nc">Mastodon</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">    Super basic but thorough and easy to use mastodon.social </span>
+<span class="sd">    api wrapper in python.</span>
+<span class="sd">        </span>
+<span class="sd">    If anything is unclear, check the official API docs at</span>
+<span class="sd">    https://github.com/Gargron/mastodon/wiki/API</span>
+<span class="sd">        </span>
+<span class="sd">    Presently, only username-password login is supported, somebody please</span>
+<span class="sd">    patch in Real Proper OAuth if desired.</span>
+<span class="sd">        </span>
+<span class="sd">    KNOWN BUGS: Media api does not work, reason unclear.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">__DEFAULT_BASE_URL</span> <span class="o">=</span> <span class="s1">&#39;https://mastodon.social&#39;</span>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Registering apps</span>
+    <span class="c1">###</span>
+    <span class="nd">@staticmethod</span>    
+<div class="viewcode-block" id="Mastodon.create_app"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.create_app">[docs]</a>    <span class="k">def</span> <span class="nf">create_app</span><span class="p">(</span><span class="n">client_name</span><span class="p">,</span> <span class="n">scopes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="s1">&#39;write&#39;</span><span class="p">,</span> <span class="s1">&#39;follow&#39;</span><span class="p">],</span> <span class="n">redirect_uris</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">to_file</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">api_base_url</span> <span class="o">=</span> <span class="n">__DEFAULT_BASE_URL</span><span class="p">):</span>                 
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates a new app with given client_name and scopes (read, write, follow)</span>
+<span class="sd">        </span>
+<span class="sd">        Specify redirect_uris if you want users to be redirected to a certain page after authenticating.</span>
+<span class="sd">        Specify to_file to persist your apps info to a file so you can use them in the constructor.</span>
+<span class="sd">        Specify api_base_url if you want to register an app on an instance different from the flagship one.</span>
+<span class="sd">           </span>
+<span class="sd">        Returns client_id and client_secret.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">request_data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;client_name&#39;</span><span class="p">:</span> <span class="n">client_name</span><span class="p">,</span>
+            <span class="s1">&#39;scopes&#39;</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">scopes</span><span class="p">)</span>
+        <span class="p">}</span>
+        
+        <span class="k">if</span> <span class="n">redirect_uris</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">request_data</span><span class="p">[</span><span class="s1">&#39;redirect_uris&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">redirect_uris</span><span class="p">;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">request_data</span><span class="p">[</span><span class="s1">&#39;redirect_uris&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;urn:ietf:wg:oauth:2.0:oob&#39;</span><span class="p">;</span>
+        
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">api_base_url</span> <span class="o">+</span> <span class="s1">&#39;/api/v1/apps&#39;</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">request_data</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="n">to_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">to_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">secret_file</span><span class="p">:</span>
+                <span class="n">secret_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;client_id&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">secret_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;client_secret&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;client_id&#39;</span><span class="p">],</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;client_secret&#39;</span><span class="p">])</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Authentication, including constructor</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.__init__"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client_id</span><span class="p">,</span> <span class="n">client_secret</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">access_token</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">api_base_url</span> <span class="o">=</span> <span class="n">__DEFAULT_BASE_URL</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates a new API wrapper instance based on the given client_secret and client_id. If you</span>
+<span class="sd">        give a client_id and it is not a file, you must also give a secret.</span>
+<span class="sd">           </span>
+<span class="sd">        You can also directly specify an access_token, directly or as a file.</span>
+<span class="sd">            </span>
+<span class="sd">        Specify api_base_url if you wish to talk to an instance other than the flagship one.</span>
+<span class="sd">        If a file is given as client_id, read client ID and secret from that file</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span> <span class="o">=</span> <span class="n">api_base_url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client_id</span> <span class="o">=</span> <span class="n">client_id</span>                      
+        <span class="bp">self</span><span class="o">.</span><span class="n">client_secret</span> <span class="o">=</span> <span class="n">client_secret</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">=</span> <span class="n">access_token</span>
+        
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">client_id</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">client_id</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">secret_file</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">client_id</span> <span class="o">=</span> <span class="n">secret_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">client_secret</span> <span class="o">=</span> <span class="n">secret_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_secret</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Specified client id directly, but did not supply secret&#39;</span><span class="p">)</span>
+                
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">access_token</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">access_token</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">token_file</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">=</span> <span class="n">token_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span></div>
+                
+<div class="viewcode-block" id="Mastodon.log_in"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.log_in">[docs]</a>    <span class="k">def</span> <span class="nf">log_in</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">scopes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="s1">&#39;write&#39;</span><span class="p">,</span> <span class="s1">&#39;follow&#39;</span><span class="p">],</span> <span class="n">to_file</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Logs in and sets access_token to what was returned.</span>
+<span class="sd">        Can persist access token to file.</span>
+<span class="sd">        </span>
+<span class="sd">        Will throw an exception if username / password are wrong, scopes are not</span>
+<span class="sd">        valid or granted scopes differ from requested.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the access_token, as well.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+        <span class="n">params</span><span class="p">[</span><span class="s1">&#39;client_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_id</span>
+        <span class="n">params</span><span class="p">[</span><span class="s1">&#39;client_secret&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_secret</span>
+        <span class="n">params</span><span class="p">[</span><span class="s1">&#39;grant_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;password&#39;</span>
+        <span class="n">params</span><span class="p">[</span><span class="s1">&#39;scope&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">scopes</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/oauth/token&#39;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>      
+            <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Invalid user name, password or scopes.&#39;</span><span class="p">)</span>
+        
+        <span class="n">requested_scopes</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">scopes</span><span class="p">))</span>
+        <span class="n">received_scopes</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s2">&quot;scope&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)))</span>
+        
+        <span class="k">if</span> <span class="n">requested_scopes</span> <span class="o">!=</span> <span class="n">received_scopes</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Granted scopes &quot;&#39;</span> <span class="o">+</span> <span class="n">received_scopes</span> <span class="o">+</span> <span class="s1">&#39;&quot; differ from requested scopes &quot;&#39;</span> <span class="o">+</span> <span class="n">requested_scopes</span> <span class="o">+</span> <span class="s1">&#39;&quot;.&#39;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">to_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">to_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">token_file</span><span class="p">:</span>
+                <span class="n">token_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Reading data: Timelines</span>
+    <span class="c1">##</span>
+<div class="viewcode-block" id="Mastodon.timeline"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.timeline">[docs]</a>    <span class="k">def</span> <span class="nf">timeline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeline</span> <span class="o">=</span> <span class="s1">&#39;home&#39;</span><span class="p">,</span> <span class="n">max_id</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">since_id</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns statuses, most recent ones first. Timeline can be home, mentions, public</span>
+<span class="sd">        or tag/:hashtag</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">(),</span> <span class="p">[</span><span class="s1">&#39;timeline&#39;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/timelines/&#39;</span> <span class="o">+</span> <span class="n">timeline</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Reading data: Statuses</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.status"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status">[docs]</a>    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Mastodon.status_context"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_context">[docs]</a>    <span class="k">def</span> <span class="nf">status_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns ancestors and descendants of the status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/context&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.status_reblogged_by"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_reblogged_by">[docs]</a>    <span class="k">def</span> <span class="nf">status_reblogged_by</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of users that have reblogged a status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/reblogged_by&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.status_favourited_by"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_favourited_by">[docs]</a>    <span class="k">def</span> <span class="nf">status_favourited_by</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of users that have favourited a status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/favourited_by&#39;</span><span class="p">)</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Reading data: Accounts</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.account"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account">[docs]</a>    <span class="k">def</span> <span class="nf">account</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns account.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Mastodon.account_verify_credentials"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_verify_credentials">[docs]</a>    <span class="k">def</span> <span class="nf">account_verify_credentials</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns authenticated user&#39;s account.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/verify_credentials&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.account_statuses"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_statuses">[docs]</a>    <span class="k">def</span> <span class="nf">account_statuses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">max_id</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">since_id</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns statuses by user. Same options as timeline are permitted.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">(),</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/statuses&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Mastodon.account_following"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_following">[docs]</a>    <span class="k">def</span> <span class="nf">account_following</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns users the given user is following.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/following&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Mastodon.account_followers"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_followers">[docs]</a>    <span class="k">def</span> <span class="nf">account_followers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns users the given user is followed by.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/followers&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Mastodon.account_relationships"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_relationships">[docs]</a>    <span class="k">def</span> <span class="nf">account_relationships</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns relationships (following, followed_by, blocking) of the logged in user to </span>
+<span class="sd">        a given account. id can be a list.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/relationships&#39;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.account_suggestions"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_suggestions">[docs]</a>    <span class="k">def</span> <span class="nf">account_suggestions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns accounts that the system suggests the authenticated user to follow.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/suggestions&#39;</span><span class="p">)</span> </div>
+
+<div class="viewcode-block" id="Mastodon.account_search"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_search">[docs]</a>    <span class="k">def</span> <span class="nf">account_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns matching accounts. Will lookup an account remotely if the search term is </span>
+<span class="sd">        in the username@domain format and not yet in the database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/search&#39;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Writing data: Statuses</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.status_post"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_post">[docs]</a>    <span class="k">def</span> <span class="nf">status_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">in_reply_to_id</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">media_ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Posts a status. Can optionally be in reply to another status and contain</span>
+<span class="sd">        up to four pieces of media (Uploaded via media_post()).</span>
+<span class="sd">           </span>
+<span class="sd">        Returns the new status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__generate_params</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses&#39;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.toot"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.toot">[docs]</a>    <span class="k">def</span> <span class="nf">toot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Synonym for status_post that only takes the status text as input.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status_post</span><span class="p">(</span><span class="n">status</span><span class="p">)</span></div>
+        
+<div class="viewcode-block" id="Mastodon.status_delete"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_delete">[docs]</a>    <span class="k">def</span> <span class="nf">status_delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Deletes a status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;DELETE&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Mastodon.status_reblog"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_reblog">[docs]</a>    <span class="k">def</span> <span class="nf">status_reblog</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reblogs a status.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns a new status that wraps around the reblogged one.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/reblog&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Mastodon.status_unreblog"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_unreblog">[docs]</a>    <span class="k">def</span> <span class="nf">status_unreblog</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Un-reblogs a status.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the status that used to be reblogged.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/unreblog&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Mastodon.status_favourite"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_favourite">[docs]</a>    <span class="k">def</span> <span class="nf">status_favourite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Favourites a status.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the favourited status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/favourite&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.status_unfavourite"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.status_unfavourite">[docs]</a>    <span class="k">def</span> <span class="nf">status_unfavourite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Favourites a status.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the un-favourited status.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/statuses/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/unfavourite&quot;</span><span class="p">)</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Writing data: Accounts</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.account_follow"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_follow">[docs]</a>    <span class="k">def</span> <span class="nf">account_follow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Follows a user.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the updated relationship to the user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/follow&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.account_unfollow"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_unfollow">[docs]</a>    <span class="k">def</span> <span class="nf">account_unfollow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Unfollows a user.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the updated relationship to the user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/unfollow&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.account_block"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_block">[docs]</a>    <span class="k">def</span> <span class="nf">account_block</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Blocks a user.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the updated relationship to the user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/block&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Mastodon.account_unblock"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.account_unblock">[docs]</a>    <span class="k">def</span> <span class="nf">account_unblock</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Unblocks a user.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the updated relationship to the user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/accounts/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/unblock&quot;</span><span class="p">)</span></div>
+
+    <span class="c1">###</span>
+    <span class="c1"># Writing data: Media</span>
+    <span class="c1">###</span>
+<div class="viewcode-block" id="Mastodon.media_post"><a class="viewcode-back" href="../../index.html#mastodon.Mastodon.media_post">[docs]</a>    <span class="k">def</span> <span class="nf">media_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">media_file</span><span class="p">,</span> <span class="n">mime_type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Posts an image. media_file can either be image data or</span>
+<span class="sd">        a file name. If image data is passed directly, the mime</span>
+<span class="sd">        type has to be specified manually, otherwise, it is</span>
+<span class="sd">        determined from the file name.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns the ID of the media that can then be used in status_post().</span>
+<span class="sd">        </span>
+<span class="sd">        Throws a ValueError if the mime type of the passed data or file can</span>
+<span class="sd">        not be determined properly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">media_file</span><span class="p">):</span>
+            <span class="n">mime_type</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_type</span><span class="p">(</span><span class="n">media_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">media_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">media_file</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+            
+        <span class="k">if</span> <span class="n">mime_type</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Could not determine mime type or data passed directly without mime type.&#39;</span><span class="p">)</span>
+        
+        <span class="n">random_suffix</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+        <span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;mastodonpyupload_&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">random_suffix</span><span class="p">)</span> <span class="o">+</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_extension</span><span class="p">(</span><span class="n">mime_type</span><span class="p">)</span>
+        
+        <span class="n">media_file_description</span> <span class="o">=</span> <span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">media_file</span><span class="p">,</span> <span class="n">mime_type</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__api_request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;/api/v1/media&#39;</span><span class="p">,</span> <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="n">media_file_description</span><span class="p">})</span></div>
+    
+    <span class="c1">###</span>
+    <span class="c1"># Internal helpers, dragons probably</span>
+    <span class="c1">###</span>
+    <span class="k">def</span> <span class="nf">__api_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="p">{},</span> <span class="n">files</span> <span class="o">=</span> <span class="p">{}):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Internal API request helper.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="s1">&#39;Bearer &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span><span class="p">}</span>
+        
+        <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span> <span class="o">+</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">params</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">,</span> <span class="n">files</span> <span class="o">=</span> <span class="n">files</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span> <span class="o">+</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">params</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">,</span> <span class="n">files</span> <span class="o">=</span> <span class="n">files</span><span class="p">)</span>
+            
+        <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;DELETE&#39;</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span> <span class="o">+</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">params</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">,</span> <span class="n">files</span> <span class="o">=</span> <span class="n">files</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;Endpoint not found.&#39;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;General API problem.&#39;</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Could not parse response as JSON, respose code was &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">))</span>
+        
+        <span class="k">return</span> <span class="n">response</span>
+    
+    <span class="k">def</span> <span class="nf">__generate_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">exclude</span> <span class="o">=</span> <span class="p">[]):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Internal named-parameters-to-dict helper.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+        
+        <span class="k">del</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;self&#39;</span><span class="p">]</span>
+        <span class="n">param_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">param_keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">params</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">exclude</span><span class="p">:</span>
+                <span class="k">del</span> <span class="n">params</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+        
+        <span class="n">param_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">param_keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">params</span><span class="p">[</span><span class="n">key</span> <span class="o">+</span> <span class="s2">&quot;[]&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+                <span class="k">del</span> <span class="n">params</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+                
+        <span class="k">return</span> <span class="n">params</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Lorenz Diener.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
