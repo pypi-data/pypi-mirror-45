@@ -1,0 +1,275 @@
+Metadata-Version: 2.1
+Name: gnsq
+Version: 1.0.0
+Summary: A gevent based python client for NSQ.
+Home-page: https://github.com/wtolson/gnsq
+Author: Trevor Olson
+Author-email: trevor@heytrevor.com
+License: BSD
+Keywords: gnsq
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: blinker
+Requires-Dist: gevent
+Requires-Dist: six
+Requires-Dist: urllib3
+Provides-Extra: snappy
+Requires-Dist: python-snappy ; extra == 'snappy'
+
+===============================
+gnsq
+===============================
+
+.. image:: https://img.shields.io/pypi/v/gnsq.svg
+        :target: https://pypi.python.org/pypi/gnsq
+
+.. image:: https://img.shields.io/travis/wtolson/gnsq.svg
+        :target: https://travis-ci.org/wtolson/gnsq
+
+.. image:: https://readthedocs.org/projects/gnsq/badge/?version=latest
+        :target: https://gnsq.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+A `gevent`_ based python client for `NSQ`_ distributed messaging platform.
+
+Features include:
+
+* Free software: BSD license
+* Documentation: https://gnsq.readthedocs.org
+* Battle tested on billions and billions of messages `</sagan>`
+* Based on `gevent`_ for fast concurrent networking
+* Fast and flexible signals with `Blinker`_
+* Automatic nsqlookupd discovery and back-off
+* Support for TLS, DEFLATE, and Snappy
+* Full HTTP clients for both nsqd and nsqlookupd
+
+Installation
+------------
+
+At the command line::
+
+    $ easy_install gnsq
+
+Or even better, if you have virtualenvwrapper installed::
+
+    $ mkvirtualenv gnsq
+    $ pip install gnsq
+
+Currently there is support for Python 2.7+, Python 3.4+ and PyPy.
+
+Usage
+-----
+
+First make sure nsq is `installed and running`_. Next create a producer and
+publish some messages to your topic::
+
+    import gnsq
+
+    producer = gnsq.Producer('localhost:4150')
+
+    producer.publish('topic', 'hello gevent!')
+    producer.publish('topic', 'hello nsq!')
+
+Then create a Consumer to consume messages from your topic::
+
+    consumer = gnsq.Consumer('topic', 'channel', 'localhost:4150')
+
+    @consumer.on_message.connect
+    def handler(consumer, message):
+        print 'got message:', message.body
+
+    consumer.start()
+
+Compatibility
+-------------
+
+For **NSQ 1.0** and later, use the major version 1 (``1.x.y``) of gnsq.
+
+For **NSQ 0.3.8** and earlier, use the major version 0 (``0.x.y``) of the
+library.
+
+The recommended way to set your requirements in your `setup.py` or
+`requirements.txt` is::
+
+    # NSQ 1.x.y
+    gnsq>=1.0.0
+
+    # NSQ 0.x.y
+    gnsq<1.0.0
+
+Dependencies
+------------
+
+Optional snappy support depends on the `python-snappy` package which in turn
+depends on libsnappy::
+
+    # Debian
+    $ sudo apt-get install libsnappy-dev
+
+    # Or OS X
+    $ brew install snappy
+
+    # And then install python-snappy
+    $ pip install python-snappy
+
+Contributing
+------------
+
+Feedback, issues, and contributions are always gratefully welcomed. See the
+`contributing guide`_ for details on how to help and setup a development
+environment.
+
+
+.. _gevent: http://gevent.org/
+.. _NSQ: http://nsq.io/
+.. _Blinker: http://pythonhosted.org/blinker/
+.. _installed and running: http://nsq.io/overview/quick_start.html
+.. _contributing guide: https://github.com/wtolson/gnsq/blob/master/CONTRIBUTING.rst
+
+
+
+
+History
+-------
+
+
+1.0.0 (2019-04-24)
+~~~~~~~~~~~~~~~~~~
+
+* Drop support for python 2.6 and python 3.3, add support for python 3.7
+* Drop support for nsq < 1.0.0
+* Handle changing connections during redistribute ready
+* Add create topic and create channel to LookupdClient
+* Add pause and unpause topic to NsqdHTTPClient
+* Add ability to filter NsqdHTTPClient stats by topic/channel
+* Add text format for NsqdHTTPClient stats
+* Add binary multipublish over http
+* Add queue handler to the contrib package
+* Add Producer class, a high level tcp message writer
+* Fixed detecting if consumer is starved
+* Optimizations to better distribute ready state among the nsqd connections
+* Detect starved consumers when batching messages
+* [DEPRECATED] :class:`~gnsq.Nsqd` is deprecated. Use
+  :class:`~gnsq.NsqdTCPClient` or :class:`~gnsq.NsqdHTTPClient` instead. See
+  :ref:`upgrading-to-100` for more information.
+* [DEPRECATED] :class:`~gnsq.Lookupd` is deprecated. Use
+  :class:`~gnsq.LookupdClient` instead. See :ref:`upgrading-to-100` for more
+  information.
+* [DEPRECATED] :class:`~gnsq.Reader` is deprecated. Use :class:`~gnsq.Consumer`
+  instead.  See :ref:`upgrading-to-100` for more information.
+
+
+0.4.0 (2017-06-13)
+~~~~~~~~~~~~~~~~~~
+
+* #13 - Allow use with nsq v1.0.0 (thanks @daroot)
+* Add contrib package with utilities.
+
+
+0.3.3 (2016-09-25)
+~~~~~~~~~~~~~~~~~~
+
+* #11 - Make sure all socket data is sent.
+* #5 - Add support for DPUB (defered publish).
+
+
+0.3.2 (2016-04-10)
+~~~~~~~~~~~~~~~~~~
+
+* Add support for Python 3 and PyPy.
+* #7 - Fix undeclared variable in compression socket.
+
+
+0.3.1 (2015-11-06)
+~~~~~~~~~~~~~~~~~~
+
+* Fix negative in flight causing not throttling after backoff.
+
+
+0.3.0 (2015-06-14)
+~~~~~~~~~~~~~~~~~~
+
+* Fix extra backoff success/failures during backoff period.
+* Fix case where handle_backoff is never called.
+* Add backoff parameter to message.requeue().
+* Allow overriding backoff on NSQRequeueMessage error.
+* Handle connection failures while starting/completing backoff.
+
+
+0.2.3 (2015-02-16)
+~~~~~~~~~~~~~~~~~~
+
+* Remove disconnected nsqd messages from the worker queue.
+* #4 - Fix crash in Reader.random_ready_conn (thanks @ianpreston).
+
+
+0.2.2 (2015-01-12)
+~~~~~~~~~~~~~~~~~~
+
+* Allow finishing and requeuing in sync handlers.
+
+
+0.2.1 (2015-01-12)
+~~~~~~~~~~~~~~~~~~
+
+* Topics and channels are now valid to 64 characters.
+* Ephemeral topics are now valid.
+* Adjustable backoff behavior.
+
+
+0.2.0 (2014-08-03)
+~~~~~~~~~~~~~~~~~~
+
+* Warn on connection failure.
+* Add extra requires for snappy.
+* Add support for nsq auth protocol.
+
+
+0.1.4 (2014-07-24)
+~~~~~~~~~~~~~~~~~~
+
+* Preemptively update ready count.
+* Dependency and contributing documentation.
+* Support for nsq back to 0.2.24.
+
+
+0.1.3 (2014-07-08)
+~~~~~~~~~~~~~~~~~~
+
+* Block as expected on start, even if already started.
+* Raise runtime error if starting the reader without a message handler.
+* Add on_close signal to the reader.
+* Allow upgrading to tls+snappy or tls+deflate.
+
+
+0.1.2 (2014-07-08)
+~~~~~~~~~~~~~~~~~~
+
+* Flush delfate buffer for each message.
+
+
+0.1.1 (2014-07-07)
+~~~~~~~~~~~~~~~~~~
+
+* Fix packaging stream submodule.
+* Send queued messages before closing socket.
+* Continue to read from socket on EAGAIN
+
+
+0.1.0 (2014-07-07)
+~~~~~~~~~~~~~~~~~~
+
+* First release on PyPI.
+
+
