@@ -1,0 +1,10 @@
+parsik/__init__.py,sha256=KHN-sLoi0bM3_80AUgImki8dzXTcKgqq3z6jUFnncOI,1937
+parsik/logutils.py,sha256=DBrerVQyLx5FTIs3TwiLA-5f6vQ1bF19a0A8OGsDWe8,732
+parsik/matchers.py,sha256=58lkjDHqYVfHkAm-FXxFuMe2FUxlRtxRnUzrOiFzjXM,9332
+parsik/parser.py,sha256=RLu9BZC7Q9xV8ET8QouKTIA75uGTNoat1_N4JHgmvfw,13972
+parsik/parsik.py,sha256=PB7y2AsfwFQWJgAPTNzRQpULN7xHbLZKJihCa_hZBqw,22952
+parsik-0.9.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+parsik-0.9.3.dist-info/METADATA,sha256=DsRwQ01XOBnw7XIcAVJDBZ2Ivh8sPuOaytLlDsRCemw,7644
+parsik-0.9.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+parsik-0.9.3.dist-info/top_level.txt,sha256=er8HKSp7s6msz-c3VcMDEK-kHykxSY7svRGdvdSGGuY,7
+parsik-0.9.3.dist-info/RECORD,,
