@@ -1,0 +1,11 @@
+thumbor_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thumbor_extras/detectors/__init__.py,sha256=qj_POu0My-KZHi7XWpvC_Rz3eWKDX_Wg3uD25P7JUCs,1358
+thumbor_extras/detectors/dnn_face_detector.py,sha256=srvGsJibT50T3rzpZjfgTDaSO7vdhEKRpGdAPuqzW_k,1995
+thumbor_extras/detectors/dnn_object_detector.py,sha256=tyo0a6O3DwnRWJxwaY69SSpOei3owcnyXd0t5cx9ziU,2897
+thumbor_extras/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thumbor_extras/filters/draw_center_of_mass.py,sha256=armgYUTOYLrb17xMpSvXB0II90ksRd9BoT_wBqJZUqA,585
+thumbor_extras/filters/draw_focal_points.py,sha256=nhBPvlNmBCsyMzEueYj-nq0ceqQb3F4sBkJHTjJCANI,2038
+thumbor_extras-0.1.0.dist-info/METADATA,sha256=AVeCaP68BmnpMDTdm6ppcPSTQYBw6IByfcf43qWC6L0,3262
+thumbor_extras-0.1.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+thumbor_extras-0.1.0.dist-info/top_level.txt,sha256=aMuxfplUyBFa7eVrtgcdwRRbQRS42I1x8Grl4NorGvo,15
+thumbor_extras-0.1.0.dist-info/RECORD,,
