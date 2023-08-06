@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+reader/__init__.py
+reader/__main__.py
+reader/config.cfg
+reader/feed.py
+reader/viewer.py
+sipian_test_package_1.egg-info/PKG-INFO
+sipian_test_package_1.egg-info/SOURCES.txt
+sipian_test_package_1.egg-info/dependency_links.txt
+sipian_test_package_1.egg-info/entry_points.txt
+sipian_test_package_1.egg-info/requires.txt
+sipian_test_package_1.egg-info/top_level.txt
