@@ -1,0 +1,3 @@
+[console_scripts]
+dvr = dvrip.__main__:run
+
