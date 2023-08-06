@@ -1,0 +1,3 @@
+[console_scripts]
+cpxConfigDemo = pcpxlog.cpxUtils:create_conf_py_file
+
