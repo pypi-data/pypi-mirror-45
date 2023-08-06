@@ -1,0 +1,8 @@
+ibmcloud/IBMCloud.py,sha256=29AT37ZRZjD5Io-aJdMPr1YFSfggUKcr2U-Kxd_Gios,8747
+ibmcloud/__init__.py,sha256=AyfMgdrfjFnYS45K6SUWf-RT1oKXsaP_010AsLmHrmQ,766
+ibmcloud/test.py,sha256=cpeQhvYRr00ViJV1s8iLQ1XQPqolk-pCNfACHGsWuV0,1194
+ibmcloud/test_credentials.py,sha256=moEVt_3chT5fJWhpqMNmPGhUANLnB-05-KvLR-RQuRw,54
+ibmcloud-0.1.0.dist-info/METADATA,sha256=eZT9LQN7MPR6Nk7CgtYtZZwaDnhrUpg98GLA3bQLVbI,551
+ibmcloud-0.1.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ibmcloud-0.1.0.dist-info/top_level.txt,sha256=lWiify35nYBmpR4r9nJbMV2YY6M_JEhNyuL6aRXhC1g,9
+ibmcloud-0.1.0.dist-info/RECORD,,
