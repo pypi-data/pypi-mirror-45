@@ -1,0 +1,17 @@
+mathMB/__init__.py,sha256=zfv3NQC49Lhtpb99f7qEP7Y72dUGA8U0xVLlYMr4MXc,326
+mathMB/interpu.py,sha256=h7-vOfgmdVkvZtkz4-ZW-8ILelfZ42omaOTn8LrOhEw,991
+mathMB/minmaxmean.py,sha256=l_s9zGK5kFTxrFcC02hJwJyye3cQeHOw1bUakWgkT7s,217
+mathMB/randomdeviates.py,sha256=ciH-1CmFH7jTxemZ65mOxIkONKVOuZRkvDwfYRGo8WQ,1423
+mathMB/rotation_matrix.py,sha256=kNrEON7BuufyhSxPl4GXmdjQr4fio_NRI7TC6ZUOfg4,586
+mathMB/version.py,sha256=CdyLdfQSozeT4Gkh2WzYvm-lwRA6QxrLwA_FDPaAoDQ,7405
+mymath/RotationMatrix.py,sha256=rYjrJtHUBX17jqEP8OEuVJo95Y268gprEM50VMbuBBI,401
+mymath/__init__.py,sha256=wSu1fcenB3B1UPlh2ulmK_FszQOx4zTNcY5KFxVtpB0,326
+mymath/interpu.py,sha256=zhGSKqgjR0PlNk1R5hHLpEN-VeTNVpSfaWvY8LiofGc,377
+mymath/minmaxmean.py,sha256=jYb4c6rGSqdtYwKUq15CxoNO-aIdUoNCBkMrtsQ4lmg,148
+mymath/randomdeviates.py,sha256=d8m7GvkMo-FlthPYUQwPHWpE-XSTrn22Jw4YnO-yFYU,2936
+mymath/rotation_matrix.py,sha256=39-sMe-CBcPJpIu-91ASE387e9ukoFbO1KvDNPq_m7c,472
+mathMB-1.0.1.dist-info/METADATA,sha256=tDMxfrdd_cufGmzCY1uZzl3nwcHBysvNvZEOkiVyEws,2732
+mathMB-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mathMB-1.0.1.dist-info/entry_points.txt,sha256=CoFJ61t_m_9lca1ix8rdyqN0b0yGCGX82PKOe2S8VgY,83
+mathMB-1.0.1.dist-info/top_level.txt,sha256=0ho0I__EVzNlQtu1TppTmZBaSLtzHCyF_o7oy21mYkQ,7
+mathMB-1.0.1.dist-info/RECORD,,
