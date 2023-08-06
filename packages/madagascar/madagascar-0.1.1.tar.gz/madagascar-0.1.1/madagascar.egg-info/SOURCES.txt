@@ -1,0 +1,8 @@
+README.md
+setup.py
+madagascar.egg-info/PKG-INFO
+madagascar.egg-info/SOURCES.txt
+madagascar.egg-info/dependency_links.txt
+madagascar.egg-info/requires.txt
+madagascar.egg-info/top_level.txt
+madagscar/__init__.py

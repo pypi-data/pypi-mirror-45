@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: madagascar
+Version: 0.1.1
+Summary: A package for geophysical data processing
+Home-page: https://github.com/pyahay/madagascar
+Author: Madagascar develop team
+License: GPLv3
+Description:  Madagascar
+        ==========
+        
+        ## Features
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
