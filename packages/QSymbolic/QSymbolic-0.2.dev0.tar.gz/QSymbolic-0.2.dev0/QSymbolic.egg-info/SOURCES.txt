@@ -1,0 +1,9 @@
+README.txt
+setup.py
+QSymbolic.egg-info/PKG-INFO
+QSymbolic.egg-info/SOURCES.txt
+QSymbolic.egg-info/dependency_links.txt
+QSymbolic.egg-info/top_level.txt
+qsymbolic/__init__.py
+qsymbolic/qsimu.py
+qsymbolic/qsymb.py
