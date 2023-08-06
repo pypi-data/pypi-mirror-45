@@ -1,0 +1,53 @@
+[tool.poetry]
+name = 'pyvid'
+version = "0.1.2"
+description = 'Video shrinker that uses ffmpeg.'
+
+authors = [
+    'jdxt <jytrn@protonmail.com>'
+]
+readme = 'README.md'
+license = 'MIT'
+
+homepage = 'https://github.com/0jdxt/pyvid'
+repository = 'https://github.com/0jdxt/pyvid'
+documentation = 'https://pyvid.readthedocs.io/en/latest/'
+
+classifiers = [
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'License :: Freeware',
+    'Natural Language :: English',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Topic :: Multimedia :: Video :: Conversion',
+    'Topic :: Utilities'
+]
+keywords = ['cli', 'video', 'conversion', 'ffmpeg', 'tools']
+packages = [{include = 'pyvid.py'}]
+
+[tool.poetry.dev-dependencies]
+pytest = '^3.8'
+prospector = '^1.1'
+mypy = '^0.630.0'
+sphinx-click = "^1.3"
+hypothesis = "^3.75"
+python-coveralls = "^2.9"
+
+[tool.poetry.dependencies]
+python = '^3.6'
+ffmpeg-python = '^0.1.16'
+click = '^7.0'
+'hurry.filesize' = '^0.9.0'
+click-spinner = '^0.1.8'
+colorama = "^0.4.1"
+
+[tool.poetry.scripts]
+pyvid = 'pyvid:main'
+
+[tool.black]
+py36 = true
+include = '\.py$'
+exclude = '^(\.vscode|build)$'
