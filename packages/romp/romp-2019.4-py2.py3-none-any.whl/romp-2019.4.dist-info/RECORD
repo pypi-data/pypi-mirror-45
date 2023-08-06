@@ -1,0 +1,15 @@
+romp/__init__.py,sha256=PiUSiFLCm0YX5rbHS4xOLGdqdPDC8j3etV3nmEaelzI,92
+romp/__main__.py,sha256=chtb2qkmosqESi9f3-D4IYvFMhUfJT07mXx32BzzP5M,33
+romp/_core.py,sha256=4fkaZ0IPm4bBYwQ8R-yi07KgiQ_cytHyyuVoRrqC-zE,5169
+romp/_matrix.py,sha256=r_6jSUtLvo1g0jRhRyrp2Gm6rZO9AFoxZdyOszOBo7c,6930
+romp/_version.py,sha256=xtWAqAVByPqbA1UgQcCVEOyWqyjDG-KXlxSbo3FzKro,498
+romp/cli.py,sha256=0axLgg6-Bo16gysEx5vYZxgy9UD1Ty_FTi3ryoWrJSk,14923
+romp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+romp/tests/print_sys_version.py,sha256=41K24CyH3enRhoCBKItp7oNDcTAWjPQ21CUR8ONo9fg,155
+romp/tests/test_integration.py,sha256=4ZMMxh7v_MGISDv46jX5kfDlvLAd4BeZSdROvoTElTA,1673
+romp-2019.4.dist-info/LICENSE,sha256=siL8rptM-HFf6aOSRcr_OhVPrAfv0vWuU4NKf39oyw8,1071
+romp-2019.4.dist-info/METADATA,sha256=Sz6Gqx2XQjVmeiA4Mr2fg1EvBFR2IQZQQcvDsjPnNGA,9117
+romp-2019.4.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+romp-2019.4.dist-info/entry_points.txt,sha256=oVJ2QNbHFR70I-8AznI60pbw-u53MuMbUyB77Q6LavQ,40
+romp-2019.4.dist-info/top_level.txt,sha256=OVEFyZ4dRUSzy-UjshilkHPszBI-uIOoiPYwctPohpM,5
+romp-2019.4.dist-info/RECORD,,

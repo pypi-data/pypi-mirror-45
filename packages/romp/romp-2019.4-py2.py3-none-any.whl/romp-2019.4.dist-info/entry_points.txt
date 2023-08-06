@@ -1,0 +1,3 @@
+[console_scripts]
+romp = romp.cli:main
+
