@@ -1,0 +1,16 @@
+setup.py
+NeuralNetworkCommon.egg-info/PKG-INFO
+NeuralNetworkCommon.egg-info/SOURCES.txt
+NeuralNetworkCommon.egg-info/dependency_links.txt
+NeuralNetworkCommon.egg-info/requires.txt
+NeuralNetworkCommon.egg-info/top_level.txt
+neuralnetworkcommon/__init__.py
+neuralnetworkcommon/perceptron.py
+neuralnetworkcommon/service.py
+neuralnetworkcommon/trainingElement.py
+neuralnetworkcommon/trainingSession.py
+neuralnetworkcommon/trainingSet.py
+neuralnetworkcommon/workspace.py
+test/__init__.py
+test/testPerceptron.py
+test/testTrainingSession.py
