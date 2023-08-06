@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: msiem
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/tristanlatr/msiem
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: The MIT License
+Description: # msiem
+        ### McAfee SIEM Command Line Interface and Python Library
+        (Dev)
+        
+        ```
+        python3 setup.py install
+        msiem config --set auth
+        python3 setup.py test
+        ```
+Platform: UNKNOWN
