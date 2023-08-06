@@ -1,0 +1,181 @@
+Metadata-Version: 2.1
+Name: dhd
+Version: 0.1.0
+Summary: Graph theory and evolutionary algorithm applied to city district heating network design
+Home-page: https://gitlab.com/crem-repository/dhd
+Author: Pablo Puerto
+Author-email: info@crem.ch
+License: Apache Software License 2.0
+Keywords: dhd
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: sphinx (>=1.8)
+Requires-Dist: sphinxcontrib-napoleon
+Requires-Dist: click (>=6.0)
+Requires-Dist: osmnx (>=0.9)
+
+=====================
+DistrictHeatingDesign
+=====================
+
+
+.. image:: https://img.shields.io/pypi/v/dhd.svg
+        :target: https://pypi.python.org/pypi/dhd
+
+.. image:: https://img.shields.io/travis/jonas.paccolat/dhd.svg
+        :target: https://travis-ci.org/jonas.paccolat/dhd
+
+.. image:: https://readthedocs.org/projects/dhd/badge/?version=latest
+        :target: https://dhd.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+Graph theory and evolutionary algorithm applied to city district heating network
+design.
+
+Motivation
+----------
+
+This project belongs to a series of numerical tools developed by the CREM
+(https://www.crem.ch/) in the perspective of a better energy distribution and
+consumption at the city scale.
+
+Description
+-----------
+
+The design of a district heating network is closely related to the problem of
+finding the Terminal Steiner Tree (TST) of a graph. Indeed for a given connected
+graph and a given subset of nodes, called terminals, the TST is the network of
+smallest weight connecting all terminals only once. This is the exact structure
+needed for a district heating network connecting heat sinks (buildings) to a
+heating source via a streets network.
+
+This package implement a systematic way of finding the best possible network
+within a given amount of numerical computation. Indeed the TST problem being
+NP complete, an heuristic evolutive algorithm is used.
+
+The heating load of the buildings is then distributed throughout all the
+pipelines belonging to the district heating network.
+
+Additional tools are available to download city geometries from the Open Street
+Map (OSM) dataset, modify their content, reshape their structure or visualize
+them as well as for obtaining information on the network characteristics.
+
+Package structure
+-----------------
+
+The package is organized in modules as represented on the figure below. The
+information on the city geometries and the district heating network is stored
+in dataframes (*streets, sinks, sources, terminals, vertices, tst, pipelines,
+...*) which evolve along with the design process.
+
+.. figure::  images/structure.png
+   :align:   center
+
+The package functionalities may be classified into four sets:
+  * **Network Design**:
+    This is the core of the package. It takes the streets, sinks and source(s)
+    as input and returns the district heating network.
+      - The first module, *dhd.connect*, connects the terminals (sinks and
+      source(s)) to the streets and store the updated network in the dataframe
+      *vertices*. The multiple possible connections of each terminal are stored
+      in the dataframe *terminals*.
+      - The second module, *dhd.evolve*, implements the evolutive algorithm
+      which seeks the best connection network and store it into the data frame
+      *tst*.
+      - The last module, *dhd.load*, spreads the sinks heating loads throughout
+      the heating network and merge neighbour pipes of equal load into single
+      pipelines, which are stored in the dataframe *pipelines*.
+  * **Data Generation**:
+    This set allows to download any city geometries from the OSM dataset and to
+    modify some of its data.
+      - The module *dhd.city* defines a class associated to any given city. It
+      automatically loads the geometries of its streets and buildings.
+      Additional information such as the source location or the presence of
+      natural barriers may be provided. All this information is organized into
+      dataframes.
+      - The module *dhd.modify* allows to easily select and modify rows and
+      columns of the previously defined dataframes. Note that despite its being
+      in the same set as *dhd.city* it may naturally be applied to dataframes of
+      different origins.
+  * **Graphical Interface**
+    The module *dhd.plot* is used to define a background interface displaying
+    the provided streets, buildings, source(s) and natural barrier(s). The
+    different geometries constructed along the design process can be plotted
+    onto the background.
+  * **Network Properties**
+    The module *dhd.features* computes and displays properties of the designed
+    network.
+
+How to use ?
+------------
+
+DHD is a Python package so you need [Python 3.X]
+(https://www.python.org/downloads/).
+
+DHD may be installed with pip by running the command:
+
+```
+$ pip install dhd
+```
+If you prefer to install it from source (git is required) run the following
+commands:
+
+```
+$ git clone https://gitlab.com/crem-repository/dhd.git
+$ pip install -r requirements.txt
+$ pip install .
+```
+
+We recommend to use a virtual environment for the installation.
+Also jupyter notebooks ([Jupyter Notebook](http://jupyter.org/)) are necessary
+to run the learning examples and are practical when using the package.
+
+Reference
+---------
+
+https://dhd.readthedocs.io/en/latest/
+
+
+Further developments
+--------------------
+
+Here is a list of features eager to be implemented. Please refer to the
+CONTRIBUTING file if you either want to append or pop this list.
+
+* *dhd.city*
+  - Function to simply add a street to the streets network, accounting for the
+  different connection options: street node, street edge, no street.
+* *dhd.connect*
+  - Treat the source(s) and sinks separately when connecting them.
+  - So far the natural barriers completely forbid any connection crossing them.
+  This criterion could be adjusted to a connection weight enhancement.
+
+License
+-------
+
+Free software: Apache Software License 2.0
+
+Credits
+-------
+
+Research and implementation work for this tool has been carried out within the
+project IntegrCiTy (ERA-NET Cofund Smart Cities and Communities call). In
+Switzerland, it is funded by the Swiss Federal Office of Energy (contract
+SI/501404-2), as well as by the industrial and institutional partners of the
+project .
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
