@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: libmodel
+Version: 0.0.3
+Summary: model libs
+Home-page: https://github.com/caser789/libmodel
+Author: Xue Jiao
+Author-email: jiao.xuejiao@gmail.com
+License: MIT
+Keywords: model,lib,django,flask
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+model libs
+
+
