@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: okta-cmd
+Version: 0.0.1
+Summary: okta cli
+Home-page: https://github.com/stevenQiang/okta-cmd
+Author: steven
+Author-email: qianggao7@gmail.com
+License: MIT Licence
+Description: cusmom okta cli
+Keywords: pip,okta,cli,cmd,steven
+Platform: any
