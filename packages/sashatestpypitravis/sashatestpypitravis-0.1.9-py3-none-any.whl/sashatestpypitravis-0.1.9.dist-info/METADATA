@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sashatestpypitravis
+Version: 0.1.9
+Summary: Validation packages for Eric's rooms
+Home-page: https://github.com/Kristinita/Erichek
+Author: Sasha Chernykh
+Author-email: SashaChernykhEmpressOfUniverse@kristinita.ru
+License: MIT
+Keywords: gingerinas erichek erics_rooms validation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: beautifulsoup4
+Requires-Dist: chardet
+Requires-Dist: clize
+Requires-Dist: colorama
+Requires-Dist: delegator.py
+Requires-Dist: fake-useragent
+Requires-Dist: grequests
+Requires-Dist: logbook
+Requires-Dist: lxml
+Requires-Dist: pyfancy
+Requires-Dist: pyfiglet
+Requires-Dist: pyperclip
+Requires-Dist: regex
+Requires-Dist: sorcery
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
