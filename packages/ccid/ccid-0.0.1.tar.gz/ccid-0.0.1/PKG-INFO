@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: ccid
+Version: 0.0.1
+Summary: Python library for SoloKeys.
+Home-page: https://github.com/solokeys/ccid
+Author: SoloKeys
+Author-email: hello@solokeys.com
