@@ -1,0 +1,4 @@
+numpy>=1.14.6
+tqdm>=4.29.1
+matplotlib
+pandas>=0.22

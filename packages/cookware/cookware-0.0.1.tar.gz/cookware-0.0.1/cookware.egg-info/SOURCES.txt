@@ -1,0 +1,9 @@
+README.md
+setup.py
+cookware/__init__.py
+cookware/__version__.py
+cookware.egg-info/PKG-INFO
+cookware.egg-info/SOURCES.txt
+cookware.egg-info/dependency_links.txt
+cookware.egg-info/requires.txt
+cookware.egg-info/top_level.txt
