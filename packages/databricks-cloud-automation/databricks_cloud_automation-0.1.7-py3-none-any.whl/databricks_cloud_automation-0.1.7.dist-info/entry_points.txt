@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        databricks-cloud-manager=dca_ui.cli:cli
+    
