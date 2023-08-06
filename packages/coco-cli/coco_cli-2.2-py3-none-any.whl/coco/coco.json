@@ -1,0 +1,9 @@
+{
+    "prompt": "Select command to run:",
+    "choices": {
+        "Add prompt": "coco add {path} {name}",
+        "Remove prompt": "coco rm {name}",
+        "list prompts": "coco ls",
+        "Create default config": "coco new {path} {name}"
+    }
+}
