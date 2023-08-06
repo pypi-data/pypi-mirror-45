@@ -1,0 +1,10 @@
+pyparsing
+argparse
+termcolor
+six
+numpy
+scipy
+numba
+PyWavelets
+numpy-quaternion
+spherical_functions

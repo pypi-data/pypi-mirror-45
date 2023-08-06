@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+dsnet/__init__.py
+dsnet/base.py
+dsnet/msg.py
+dsnet.egg-info/PKG-INFO
+dsnet.egg-info/SOURCES.txt
+dsnet.egg-info/dependency_links.txt
+dsnet.egg-info/not-zip-safe
+dsnet.egg-info/requires.txt
+dsnet.egg-info/top_level.txt
