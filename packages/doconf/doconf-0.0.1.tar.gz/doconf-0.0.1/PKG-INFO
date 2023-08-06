@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: doconf
+Version: 0.0.1
+Summary: Configuration specified through documentation, supporting multiple formats.
+Home-page: https://github.com/johannestaas/doconf
+Author: Johan Nestaas
+Author-email: johannestaas@gmail.com
+License: GPLv3
+Description: doconf
+        ======
+        
+        Configuration specified through documentation, supporting multiple formats.
+        
+        Installation
+        ------------
+        
+        From the project root directory::
+        
+            $ python setup.py install
+        
+        Usage
+        -----
+        
+        Simply run it::
+        
+            $ doconf
+        
+        Use --help/-h to view info on the arguments::
+        
+            $ doconf --help
+        
+        Release Notes
+        -------------
+        
+        :0.0.1:
+            Project created
+        
+Keywords: documentation configuration config conf cfg
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
