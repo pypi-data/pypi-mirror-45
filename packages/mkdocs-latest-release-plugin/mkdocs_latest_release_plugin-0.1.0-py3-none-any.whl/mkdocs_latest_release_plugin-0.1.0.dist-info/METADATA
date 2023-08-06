@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mkdocs-latest-release-plugin
+Version: 0.1.0
+Summary: 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Andrew Garner
+Author-email: andrew@kaizenit.ltd
+Requires-Python: >=3.4,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: GitPython (>=2.1.11,<3.0.0)
+Requires-Dist: jinja2 (>=2.10.1,<3.0.0)
+Requires-Dist: mkdocs (>=1.0.4,<2.0.0)
+Requires-Dist: natsort (>=6.0.0,<7.0.0)
