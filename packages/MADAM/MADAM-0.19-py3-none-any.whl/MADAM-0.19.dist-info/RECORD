@@ -1,0 +1,15 @@
+madam/__init__.py,sha256=rLCvC8f3A4-6oz3qmSoSlNbr6BVFHOYkVyurJJhXCX8,127
+madam/_version.py,sha256=k6kiy_cvLXmIdTRlbyWQHaCC6pbnsM09xpVq_1M1CW4,470
+madam/audio.py,sha256=fPseXELCVvY-OrQBmFyLIS-3h_xv0GpxLCWbaeK1X9k,66
+madam/core.py,sha256=ld8n2nNY54HF7Xz2kd1Z8_TSk3a8bX-WdlS4ZiMZVpI,25807
+madam/exif.py,sha256=2Lnl-D3eO4-54iUZjO35zgAcAsx7ymEy3y9Ul_tdMTc,8322
+madam/ffmpeg.py,sha256=au0F7FhlYNYWOjnTu2xULf0_W7Wj5KST0wE6nqCBv7U,45671
+madam/image.py,sha256=wYKpiMjbqk-f8gwDe1lmV0q4n-1Ts46CHuMPohAIAtM,14533
+madam/mime.py,sha256=SDpoFysb7zL9A7LvpXjDcQ5dCsXJrWTLfe9ABeEt0M0,3867
+madam/vector.py,sha256=b0T0E_Ia9zItkdx92FxsjJHsq05nibc2ahHm3iLL3lk,9017
+madam/video.py,sha256=k3cSD5q14vtl-zO_6v6coexeDMV0PyRs1rJfXY0zwTU,41
+MADAM-0.19.dist-info/LICENSE.AGPL,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+MADAM-0.19.dist-info/METADATA,sha256=4HVkjj9_eb_sOHzlwBEXazf4PHHzj5XX9Hj0u_IcCPI,3492
+MADAM-0.19.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+MADAM-0.19.dist-info/top_level.txt,sha256=EwSxuQr-dKlvbDQ8QSw-RnP65ytX0VMrGe24vPM4U6A,6
+MADAM-0.19.dist-info/RECORD,,
