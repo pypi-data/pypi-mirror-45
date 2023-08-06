@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: acapture
+Version: 1.0
+Summary: Async web camera/video/images/screenshot capturing library.
+Home-page: https://github.com/aieater/python_acapture
+Author: Pegara, Inc.
+Author-email: info@pegara.com
+License: MIT
+Description: See https://github.com/aieater/python_acapture
+Keywords: opencv python screenshot video mp4 capture async web camera image
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
