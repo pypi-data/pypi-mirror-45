@@ -1,0 +1,10 @@
+dockerCompose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockerCompose/compose.py,sha256=iCbhio3T3JBRK9Ev24vtE1BqNevhUQYmfFSTZ3c5QG8,31322
+dockerCompose/service.py,sha256=npLluVUgyFbRKIgGKnYmjHKIysjSR9vhP7xUsqUbNQw,21743
+dockercomposeHelp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockercomposeHelp/compose.py,sha256=iCbhio3T3JBRK9Ev24vtE1BqNevhUQYmfFSTZ3c5QG8,31322
+dockercomposeHelp-0.1.1.dist-info/LICENSE,sha256=xHFuVNhi5GHOUhdI-k3kwduTMx1spyIpTvduW4FMYbQ,1073
+dockercomposeHelp-0.1.1.dist-info/METADATA,sha256=XpxeeanJAZSy2DVYYy21etMEEHor9IVBoiOGCb5s9nM,1778
+dockercomposeHelp-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dockercomposeHelp-0.1.1.dist-info/top_level.txt,sha256=Y8H-azJ728Gxl5AqVMQvhGuDrR9eOrew_TuIssq2b0A,18
+dockercomposeHelp-0.1.1.dist-info/RECORD,,
