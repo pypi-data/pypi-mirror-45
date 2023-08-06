@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: python-sped
+Version: 1.0.1
+Summary: Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python.
+Home-page: https://github.com/Trust-Code/python-sped
+Author: Sergio Garcia
+Author-email: sergio@ginx.com.br
+License: MIT
+Download-URL: https://github.com/Trust-Code/python-sped/releases
+Keywords: sped fiscal contábil contabilidade receita federal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: six
+Provides-Extra: dev
+Requires-Dist: pylint (>=1.9.1) ; extra == 'dev'
+Provides-Extra: leiaute
+Requires-Dist: jupyter (>=1.0.0) ; extra == 'leiaute'
+Requires-Dist: pyquery (>=1.4.0) ; extra == 'leiaute'
+
+Biblioteca para geração dos arquivos do Sistema Público de Escrituração Digital (SPED) para Python.
+
+
