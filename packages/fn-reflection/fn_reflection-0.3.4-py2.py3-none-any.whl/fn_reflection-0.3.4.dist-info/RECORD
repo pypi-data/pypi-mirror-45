@@ -1,0 +1,11 @@
+fn_reflection/__init__.py,sha256=qUB-qkG_kBeqhUfMGP2HesDf259uIkTE-BkbddkqMkc,103
+fn_reflection/_external.py,sha256=rRXu8R3G4C1oFhI7YkudEFrcb-TTRRzJy0xzMjM0UVI,103
+fn_reflection/cls.py,sha256=KTet_tiQ-Y1omN8r8b0yHt2ixq4ArAfiJVMwC2ygMe0,332
+fn_reflection/decorator.py,sha256=NV1shVUazQ40q9BveOtSbgxCTBlkYAunJ99J4Jb9_8k,296
+fn_reflection/func.py,sha256=J_wrm6X-E4KDYHbyUvs73PJpZq5vpeEYLpTmUXNDh4o,1643
+fn_reflection/send_mail.py,sha256=lSHYF1hDxUcksXV0M3p4BLzI1OLPKqUZb6dKfSrn4mo,861
+fn_reflection-0.3.4.dist-info/LICENCE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+fn_reflection-0.3.4.dist-info/METADATA,sha256=NHVo6ycDgMXVXJJRoGlCX96UqUC7YtKYfBkWi0t93vY,1017
+fn_reflection-0.3.4.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+fn_reflection-0.3.4.dist-info/top_level.txt,sha256=OmR-sTTGcnFZZsFrLhl9WRJ4w1UX1rXJqyiYVy4tGR8,14
+fn_reflection-0.3.4.dist-info/RECORD,,
