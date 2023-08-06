@@ -1,0 +1,10 @@
+xin/__init__.py,sha256=znFJA-Lp_w-2Eug2WVDryb56I05Xs15DDw2yfsOs-2A,83
+xin/bing.py,sha256=SNf27c6sDxg9E4tp2H5L7vhTclHKHLaoOnOkp78zTfQ,1456
+xin/http.py,sha256=pNAxKSF3yCTepOs7c6O6eD2Wju_0QMCyQ_B_85mqYas,1609
+xin/image.py,sha256=C6QGxt2PeYAVU2UNkQ_cBA_rqa1vzPAbk6tzMP9faCg,87
+xin/os.py,sha256=3XyADDq9lD5IEC7K0XWmZmBHatJFV-Xm8ImlleC9NaE,690
+xin-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+xin-0.0.1.dist-info/METADATA,sha256=ibu_l3RCrAFCs_xuEHWyZGxa20APmlCSggsf3Y7I1QM,852
+xin-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+xin-0.0.1.dist-info/top_level.txt,sha256=XPgMWISnKrhfhHRhikYYzBJq5iOe2PSYJEUEeG5Pp08,4
+xin-0.0.1.dist-info/RECORD,,
