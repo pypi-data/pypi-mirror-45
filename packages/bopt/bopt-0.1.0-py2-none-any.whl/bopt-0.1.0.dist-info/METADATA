@@ -1,0 +1,57 @@
+Metadata-Version: 2.0
+Name: bopt
+Version: 0.1.0
+Summary: Bayesian Optimization
+Home-page: https://github.com/darthdeus/bopt
+Author: Jakub Arnold
+Author-email: darthdeus@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: plotting
+Requires-Dist: GPy[plotting] (~=1.9.6)
+Requires-Dist: filelock (~=3.0.10)
+Requires-Dist: flask (~=1.0.2)
+Requires-Dist: ipdb (~=0.11)
+Requires-Dist: jsonpickle (~=1.0)
+Requires-Dist: livereload (==2.5.1)
+Requires-Dist: numpy (>=1.15.4)
+Requires-Dist: psutil (~=5.4.8)
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: tqdm (~=4.28.1)
+Provides-Extra: plotting
+Requires-Dist: matplotlib (~=3.0.2); extra == 'plotting'
+
+# Bayesian Optimization of HyperParameters - `bopt` [![Build Status](https://travis-ci.com/darthdeus/bopt.svg?branch=master)](https://travis-ci.com/darthdeus/bopt)
+
+Available commands:
+
+```python
+# Create a new experiment.
+bopt init -C META_DIR
+
+# Start tuning hyperparameters.
+bopt run -C META_DIR
+
+# Get an overview status of an experiment.
+bopt exp -C META_DIR
+
+# Start web visualizations of the results.
+bopt web -C META_DIR
+```
+
+# Installation
+
+```
+pip install bopt
+```
+
+

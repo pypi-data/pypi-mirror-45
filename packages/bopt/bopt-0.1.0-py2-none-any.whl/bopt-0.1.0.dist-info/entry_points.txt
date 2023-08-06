@@ -1,0 +1,3 @@
+[console_scripts]
+bopt = bopt.cli.cli:main
+
