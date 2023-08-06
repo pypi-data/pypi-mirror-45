@@ -1,0 +1,7 @@
+[console_scripts]
+check_expect = bcca.test:main
+what_have_i_done = bcca.what_have_i_done:main
+
+[pytest11]
+bcca = bcca.pytest_plugin
+
