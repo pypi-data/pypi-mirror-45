@@ -1,0 +1,7 @@
+setup.py
+dyaiapi/__init__.py
+dyaiapi.egg-info/PKG-INFO
+dyaiapi.egg-info/SOURCES.txt
+dyaiapi.egg-info/dependency_links.txt
+dyaiapi.egg-info/not-zip-safe
+dyaiapi.egg-info/top_level.txt
