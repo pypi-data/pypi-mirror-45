@@ -1,0 +1,9 @@
+packaging_tutorial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simulating_pkg_taking_2mins/__init__.py,sha256=OtI9wPZTJFCpKUv4O_qyv0l--6pe0YygdH77zGuHsIc,55
+simulating_pkg_taking_5mins/__init__.py,sha256=OtI9wPZTJFCpKUv4O_qyv0l--6pe0YygdH77zGuHsIc,55
+simulating_test_pkg/__init__.py,sha256=OtI9wPZTJFCpKUv4O_qyv0l--6pe0YygdH77zGuHsIc,55
+test/__init__.py,sha256=Tb2eOGt-jVAsmRL-L7sqUU5DD7tyDO3pkGg7sUrH_Ns,54
+simulating_pkg_taking_5mins_to_install-0.0.1.dist-info/METADATA,sha256=eSUOFPfBQNT2HvQcVhOWdQo022_1zy9gF-Ik-u5ZncY,411
+simulating_pkg_taking_5mins_to_install-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+simulating_pkg_taking_5mins_to_install-0.0.1.dist-info/top_level.txt,sha256=_T_K-OoyvyG1h2r3QhJcKwWsrfHYoKr5uD965j_IU3Y,28
+simulating_pkg_taking_5mins_to_install-0.0.1.dist-info/RECORD,,
