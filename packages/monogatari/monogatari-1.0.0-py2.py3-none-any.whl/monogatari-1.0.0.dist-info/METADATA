@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: monogatari
+Version: 1.0.0
+Summary: Tool for handling dictionaries
+Home-page: https://github.com/brunotoshio/monogatari
+Author: Bruno Toshio Sugano
+Author-email: brunotoshio@gmail.com
+License: MIT license
+Project-URL: Documentation, https://monogatari.readthedocs.io/
+Project-URL: Changelog, https://monogatari.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/brunotoshio/monogatari/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.6
+
+========
+Overview
+========
+
+
+
+Tool for handling dictionaries.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install monogatari
+
+Documentation
+=============
+
+
+https://monogatari.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+
+
+Changelog
+=========
+
+0.0.0 (2019-04-26)
+------------------
+
+* First release on PyPI.
+
+0.0.1 (2019-04-26)
+------------------
+
+* DictHandler
+
+
