@@ -1,0 +1,13 @@
+pysudoers/__init__.py,sha256=J_v1qBeyMaIOxHnVtdmGSADuTJtd5kWVTom9lKiV7BY,8936
+tests/__init__.py,sha256=5qj9dFgpovvEqgHJbqm_aWViSQWc5DGVLi7SPu-xQkA,58
+tests/test_sudoers.py,sha256=jj2VQYWs3zHSs77GEiwZdo1aVTND_tPNGdYdhj01FK8,8014
+tests/data/bad_alias1.txt,sha256=b4trEJVOGSRpu9njJCqARcoJM9PG04dKXJlYM3zNwe8,11
+tests/data/bad_alias2.txt,sha256=eB1xVhzGPNnZTpZGsoCbiNplBFSwrsfn2Wr6ny1nh14,23
+tests/data/bad_rule.txt,sha256=kSonbZreiaP_nzTvLTUefIiEIWJcxdAMrjNbiweoATw,41
+tests/data/correct.txt,sha256=DO4Jli2A7tpyBMH2odMkgK2MB-VRCG4ntL-fbJVtUIc,485
+tests/data/dup_alias.txt,sha256=2v8yhT4RSG3IAPI6X7gSmMXLPCNmuh3eA7zKhkj_cpQ,78
+pysudoers-1.1.0.dist-info/LICENSE.txt,sha256=ZOD9EsK7ui85mHHJsDms3J8VyjDCVVrd_xjsmSQkWC4,1496
+pysudoers-1.1.0.dist-info/METADATA,sha256=WbpRtE3OzlUZQ6hnKXTeLMydEDoxCFrwskhG1xOsL_o,4726
+pysudoers-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pysudoers-1.1.0.dist-info/top_level.txt,sha256=cMlsfPyzAGC_R_KhLCe2JQelNp6FyVufIxqrl-iLxIM,16
+pysudoers-1.1.0.dist-info/RECORD,,
