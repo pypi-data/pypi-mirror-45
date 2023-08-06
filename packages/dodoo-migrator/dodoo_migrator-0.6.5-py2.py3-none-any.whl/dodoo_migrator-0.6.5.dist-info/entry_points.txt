@@ -1,0 +1,4 @@
+
+        [core_package.cli_plugins]
+        migrate=dodoo_migrator.cli:migrate
+    
