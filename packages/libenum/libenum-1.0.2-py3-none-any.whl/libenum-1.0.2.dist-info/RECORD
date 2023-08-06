@@ -1,0 +1,9 @@
+libenum/__init__.py,sha256=vOhP7RtgXNXsymgTrNe2tqHrQSieCVYZf4aKIh3_Fyw,1181
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classdict.py,sha256=R9rueGDIl_Tg6HudMknkvH2ABuSS_nxupoiLsf5AZCw,2499
+tests/test_metaclass.py,sha256=jfMGqsPMJft64bTnf_XjCX606c-smuvMpTAbDt0X7hM,616
+libenum-1.0.2.dist-info/LICENSE,sha256=6w3npeDOBBAUCO_NABHQZroE_XLtildSud9BZmYqcWE,1061
+libenum-1.0.2.dist-info/METADATA,sha256=u9fAjq0gIxRDaVl_qtNF7te7o4SK4K8MfI7hhYgETGU,664
+libenum-1.0.2.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+libenum-1.0.2.dist-info/top_level.txt,sha256=ewUymH0syxrUxNgpzCr9BJr06Kk2N_fuS99awkoc-7g,8
+libenum-1.0.2.dist-info/RECORD,,
