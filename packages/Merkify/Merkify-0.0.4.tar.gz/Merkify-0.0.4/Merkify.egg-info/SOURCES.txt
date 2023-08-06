@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+Merkify.egg-info/PKG-INFO
+Merkify.egg-info/SOURCES.txt
+Merkify.egg-info/dependency_links.txt
+Merkify.egg-info/top_level.txt
+merkify/__init__.py
+merkify/merkify.py
