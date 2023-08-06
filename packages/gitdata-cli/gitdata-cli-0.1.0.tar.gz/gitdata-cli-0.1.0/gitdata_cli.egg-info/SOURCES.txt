@@ -1,0 +1,15 @@
+README.md
+setup.py
+gitdata/__init__.py
+gitdata/__version__.py
+gitdata/database.py
+gitdata/repositories.py
+gitdata/utils.py
+gitdata/cli/__init__.py
+gitdata/cli/cli.py
+gitdata/sql/create_respository_sqlite3.sql
+gitdata_cli.egg-info/PKG-INFO
+gitdata_cli.egg-info/SOURCES.txt
+gitdata_cli.egg-info/dependency_links.txt
+gitdata_cli.egg-info/entry_points.txt
+gitdata_cli.egg-info/top_level.txt
