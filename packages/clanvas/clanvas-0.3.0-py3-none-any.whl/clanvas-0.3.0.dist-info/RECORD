@@ -1,0 +1,16 @@
+clanvas/__init__.py,sha256=wpsKRo2tZqagJn3cVGEIjjCiZbe0gbW38MYqKm9o3Pc,85
+clanvas/clanvas.py,sha256=lokHJ7_lUz65DZRfN9Of4PoiVHvlp86v2mIHcbd0m_0,10147
+clanvas/completion.py,sha256=PpI6h3wtd9COsKN0x_4BIIOKXqanl7d-LVXXy04ucAc,4056
+clanvas/config.py,sha256=tnXMhyYP1HM5YDRjBLTpMikWIKmxRItTM6Waq-Y0Bj4,1905
+clanvas/filesynchronizer.py,sha256=4xs_zJdyO4wVqypeU6jPCHkucJ7jtXIEPp-BlS0cCqM,1968
+clanvas/interfaces.py,sha256=TiiRj6YoXUu32KV15ElivJk9DXSGDq11P9ORjj_-Yn0,5129
+clanvas/lister.py,sha256=cS0eNg9B0Swo0FPKtGzzpCVx3rTB0zuLHERZz5Kt0Nw,10492
+clanvas/outputter.py,sha256=LJJDZ2mCJTPrjEhkhN1xbkG46w5YBRHxFJnp_L1yV3g,1426
+clanvas/runner.py,sha256=vR8oGJ77-os0z9L3l590wUIQTQXPAgeYsUt5c6FKclo,316
+clanvas/utils.py,sha256=XeYNXzgxHjAQvykjqD39GQK27tkcee8uMtrOQFavrYc,5590
+clanvas-0.3.0.dist-info/LICENSE,sha256=KJncWWz2SdMh9zDNYIX5q0sZH07BJW6zlC_zDXDNCJM,1067
+clanvas-0.3.0.dist-info/METADATA,sha256=agkQY4S_zbb8XW5a4TlMYBfgRewhtYCQfL9WFS2fQ-Y,9930
+clanvas-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+clanvas-0.3.0.dist-info/entry_points.txt,sha256=b_oW0DoIFQMfIXwg7xKhqFP4oCC_oAQk87GUWrejGMw,50
+clanvas-0.3.0.dist-info/top_level.txt,sha256=tBoIKsW9HU2thR35Dy-sP2n9bk9wIVHhid9lPcl0-nA,8
+clanvas-0.3.0.dist-info/RECORD,,
