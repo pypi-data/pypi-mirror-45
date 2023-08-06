@@ -1,0 +1,4 @@
+astropy
+psycopg2
+pandas
+solarsystemMB
