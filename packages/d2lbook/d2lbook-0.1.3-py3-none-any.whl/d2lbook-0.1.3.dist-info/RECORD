@@ -1,0 +1,16 @@
+d2lbook/__init__.py,sha256=uZsygMXMKRw-7qhWojAjnpm8GFPXU92xW6XA8O5GwFY,22
+d2lbook/build.py,sha256=8DmkGUW1BLGLOQmGrYDq3CNgf7rN7oR4NnVVyk_4rLo,13761
+d2lbook/clear.py,sha256=qfaR5lvGNxLbRHufVPXfA1MLAhn2cWZ6foJJPk-e4Xs,192
+d2lbook/config.py,sha256=BtVG3T2YtoFFRKSTKKpWxt9KA1VPb17ICKpLJa1FEAE,1116
+d2lbook/config_default.ini,sha256=W08pwdX91GKXu4mLwJdjNs07Q6msCDZwOIF65svuMZ8,717
+d2lbook/deploy.py,sha256=Jz3xzo8jIQTeCzNNrGoHyurDnNJCnv6Hz_oUk1GXxBA,1195
+d2lbook/main.py,sha256=i7Y_KEYC67F5KzMK9nJvsKi_boJ4_KyopBr43pNEe1w,701
+d2lbook/template.py,sha256=PLdmZv9H1pIW7U9ZbxVuZLX9YhKDTh0x_zilLcRq9aQ,1424
+d2lbook/upload_doc_s3.sh,sha256=1zTM7D_GgU1-hyrmxgzUYMewu9hI77WqrsxtRh3CKNU,1280
+d2lbook/utils.py,sha256=mtUD8mYwQYiYBXeoH27bVT6-pg7ngxgXwdqKz0HymvU,1354
+d2lbook-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+d2lbook-0.1.3.dist-info/METADATA,sha256=0wGkrPIbpXwd1Q88zHq4YxGW3prgMPG7q6n6JscOoPw,511
+d2lbook-0.1.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+d2lbook-0.1.3.dist-info/entry_points.txt,sha256=PURsDTt2Rx3ucVge4HgPW6vC_Nu7sqIPaBj82jLNgKI,47
+d2lbook-0.1.3.dist-info/top_level.txt,sha256=DQSlR2JAQ3rN5WBlr9ES1_5y9N4f4Iuoz69ahE0bPGs,8
+d2lbook-0.1.3.dist-info/RECORD,,
