@@ -1,0 +1,9 @@
+README.md
+setup.py
+pytorch_lamb/__init__.py
+pytorch_lamb/lamb.py
+pytorch_lamb.egg-info/PKG-INFO
+pytorch_lamb.egg-info/SOURCES.txt
+pytorch_lamb.egg-info/dependency_links.txt
+pytorch_lamb.egg-info/requires.txt
+pytorch_lamb.egg-info/top_level.txt
