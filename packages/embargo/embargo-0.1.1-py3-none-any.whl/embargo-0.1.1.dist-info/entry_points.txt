@@ -1,0 +1,3 @@
+[console_scripts]
+embargo = embargo.cli:main
+
