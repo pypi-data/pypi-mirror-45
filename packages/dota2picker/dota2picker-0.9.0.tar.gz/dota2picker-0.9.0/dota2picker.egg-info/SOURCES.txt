@@ -1,0 +1,325 @@
+.gitignore
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dota2picker/__init__.py
+dota2picker/checker.py
+dota2picker/csv2pkl.py
+dota2picker/database.py
+dota2picker/editor.py
+dota2picker/model.py
+dota2picker/picker.py
+dota2picker/pkl2csv.py
+dota2picker/version.py
+dota2picker/view.py
+dota2picker.egg-info/PKG-INFO
+dota2picker.egg-info/SOURCES.txt
+dota2picker.egg-info/dependency_links.txt
+dota2picker.egg-info/entry_points.txt
+dota2picker.egg-info/requires.txt
+dota2picker.egg-info/top_level.txt
+dota2picker/database/Database.csv
+dota2picker/database/Database.pkl
+dota2picker/images/heroes/Abaddon.png
+dota2picker/images/heroes/Alchemist.png
+dota2picker/images/heroes/Ancient Apparition.png
+dota2picker/images/heroes/Anti-Mage.png
+dota2picker/images/heroes/Arc Warden.png
+dota2picker/images/heroes/Axe.png
+dota2picker/images/heroes/Bane.png
+dota2picker/images/heroes/Batrider.png
+dota2picker/images/heroes/Beastmaster.png
+dota2picker/images/heroes/Bloodseeker.png
+dota2picker/images/heroes/Bounty Hunter.png
+dota2picker/images/heroes/Brewmaster.png
+dota2picker/images/heroes/Bristleback.png
+dota2picker/images/heroes/Broodmother.png
+dota2picker/images/heroes/Centaur Warrunner.png
+dota2picker/images/heroes/Chaos Knight.png
+dota2picker/images/heroes/Chen.png
+dota2picker/images/heroes/Clinkz.png
+dota2picker/images/heroes/Clockwerk.png
+dota2picker/images/heroes/Crystal Maiden.png
+dota2picker/images/heroes/Dark Seer.png
+dota2picker/images/heroes/Dark Willow.png
+dota2picker/images/heroes/Dazzle.png
+dota2picker/images/heroes/Death Prophet.png
+dota2picker/images/heroes/Disruptor.png
+dota2picker/images/heroes/Doom.png
+dota2picker/images/heroes/Dragon Knight.png
+dota2picker/images/heroes/Drow Ranger.png
+dota2picker/images/heroes/Earth Spirit.png
+dota2picker/images/heroes/Earthshaker.png
+dota2picker/images/heroes/Elder Titan.png
+dota2picker/images/heroes/Ember Spirit.png
+dota2picker/images/heroes/Enchantress.png
+dota2picker/images/heroes/Enigma.png
+dota2picker/images/heroes/Faceless Void.png
+dota2picker/images/heroes/Grimstroke.png
+dota2picker/images/heroes/Gyrocopter.png
+dota2picker/images/heroes/Huskar.png
+dota2picker/images/heroes/Invoker.png
+dota2picker/images/heroes/Io.png
+dota2picker/images/heroes/Jakiro.png
+dota2picker/images/heroes/Juggernaut.png
+dota2picker/images/heroes/Keeper of the Light.png
+dota2picker/images/heroes/Kunkka.png
+dota2picker/images/heroes/Legion Commander.png
+dota2picker/images/heroes/Leshrac.png
+dota2picker/images/heroes/Lich.png
+dota2picker/images/heroes/Lifestealer.png
+dota2picker/images/heroes/Lina.png
+dota2picker/images/heroes/Lion.png
+dota2picker/images/heroes/Lone Druid.png
+dota2picker/images/heroes/Luna.png
+dota2picker/images/heroes/Lycan.png
+dota2picker/images/heroes/Magnus.png
+dota2picker/images/heroes/Mars.png
+dota2picker/images/heroes/Medusa.png
+dota2picker/images/heroes/Meepo.png
+dota2picker/images/heroes/Mirana.png
+dota2picker/images/heroes/Monkey King.png
+dota2picker/images/heroes/Morphling.png
+dota2picker/images/heroes/Naga Siren.png
+dota2picker/images/heroes/Natures Prophet.png
+dota2picker/images/heroes/Necrophos.png
+dota2picker/images/heroes/Night Stalker.png
+dota2picker/images/heroes/Nyx Assassin.png
+dota2picker/images/heroes/Ogre Magi.png
+dota2picker/images/heroes/Omniknight.png
+dota2picker/images/heroes/Oracle.png
+dota2picker/images/heroes/Outworld Devourer.png
+dota2picker/images/heroes/Pangolier.png
+dota2picker/images/heroes/Phantom Assassin.png
+dota2picker/images/heroes/Phantom Lancer.png
+dota2picker/images/heroes/Phoenix.png
+dota2picker/images/heroes/Puck.png
+dota2picker/images/heroes/Pudge.png
+dota2picker/images/heroes/Pugna.png
+dota2picker/images/heroes/Queen of Pain.png
+dota2picker/images/heroes/Razor.png
+dota2picker/images/heroes/Riki.png
+dota2picker/images/heroes/Rubick.png
+dota2picker/images/heroes/Sand King.png
+dota2picker/images/heroes/Shadow Demon.png
+dota2picker/images/heroes/Shadow Fiend.png
+dota2picker/images/heroes/Shadow Shaman.png
+dota2picker/images/heroes/Silencer.png
+dota2picker/images/heroes/Skywrath Mage.png
+dota2picker/images/heroes/Slardar.png
+dota2picker/images/heroes/Slark.png
+dota2picker/images/heroes/Sniper.png
+dota2picker/images/heroes/Spectre.png
+dota2picker/images/heroes/Spirit Breaker.png
+dota2picker/images/heroes/Storm Spirit.png
+dota2picker/images/heroes/Sven.png
+dota2picker/images/heroes/Techies.png
+dota2picker/images/heroes/Templar Assassin.png
+dota2picker/images/heroes/Terrorblade.png
+dota2picker/images/heroes/Tidehunter.png
+dota2picker/images/heroes/Timbersaw.png
+dota2picker/images/heroes/Tinker.png
+dota2picker/images/heroes/Tiny.png
+dota2picker/images/heroes/Treant Protector.png
+dota2picker/images/heroes/Troll Warlord.png
+dota2picker/images/heroes/Tusk.png
+dota2picker/images/heroes/Underlord.png
+dota2picker/images/heroes/Undying.png
+dota2picker/images/heroes/Ursa.png
+dota2picker/images/heroes/Vengeful Spirit.png
+dota2picker/images/heroes/Venomancer.png
+dota2picker/images/heroes/Viper.png
+dota2picker/images/heroes/Visage.png
+dota2picker/images/heroes/Warlock.png
+dota2picker/images/heroes/Weaver.png
+dota2picker/images/heroes/Windranger.png
+dota2picker/images/heroes/Winter Wyvern.png
+dota2picker/images/heroes/Witch Doctor.png
+dota2picker/images/heroes/Wraith King.png
+dota2picker/images/heroes/Zeus.png
+dota2picker/images/readme/editor-window.png
+dota2picker/images/readme/picker-window.png
+dota2picker/parser/heroes_list.txt
+dota2picker/parser/images-parser.py
+dota2picker/parser/wiki-downloader.sh
+dota2picker/parser/wiki-parser.py
+dota2picker/parser/html/Abaddon
+dota2picker/parser/html/Alchemist
+dota2picker/parser/html/Ancient Apparition
+dota2picker/parser/html/Anti-Mage
+dota2picker/parser/html/Arc Warden
+dota2picker/parser/html/Axe
+dota2picker/parser/html/Bane
+dota2picker/parser/html/Batrider
+dota2picker/parser/html/Beastmaster
+dota2picker/parser/html/Bloodseeker
+dota2picker/parser/html/Bounty Hunter
+dota2picker/parser/html/Brewmaster
+dota2picker/parser/html/Bristleback
+dota2picker/parser/html/Broodmother
+dota2picker/parser/html/Centaur Warrunner
+dota2picker/parser/html/Chaos Knight
+dota2picker/parser/html/Chen
+dota2picker/parser/html/Clinkz
+dota2picker/parser/html/Clockwerk
+dota2picker/parser/html/Crystal Maiden
+dota2picker/parser/html/Dark Seer
+dota2picker/parser/html/Dark Willow
+dota2picker/parser/html/Dazzle
+dota2picker/parser/html/Death Prophet
+dota2picker/parser/html/Disruptor
+dota2picker/parser/html/Doom
+dota2picker/parser/html/Dragon Knight
+dota2picker/parser/html/Drow Ranger
+dota2picker/parser/html/Earth Spirit
+dota2picker/parser/html/Earthshaker
+dota2picker/parser/html/Elder Titan
+dota2picker/parser/html/Ember Spirit
+dota2picker/parser/html/Enchantress
+dota2picker/parser/html/Enigma
+dota2picker/parser/html/Faceless Void
+dota2picker/parser/html/Grimstroke
+dota2picker/parser/html/Gyrocopter
+dota2picker/parser/html/Huskar
+dota2picker/parser/html/Invoker
+dota2picker/parser/html/Io
+dota2picker/parser/html/Jakiro
+dota2picker/parser/html/Juggernaut
+dota2picker/parser/html/Keeper of the Light
+dota2picker/parser/html/Kunkka
+dota2picker/parser/html/Legion Commander
+dota2picker/parser/html/Leshrac
+dota2picker/parser/html/Lich
+dota2picker/parser/html/Lifestealer
+dota2picker/parser/html/Lina
+dota2picker/parser/html/Lion
+dota2picker/parser/html/Lone Druid
+dota2picker/parser/html/Luna
+dota2picker/parser/html/Lycan
+dota2picker/parser/html/Magnus
+dota2picker/parser/html/Mars
+dota2picker/parser/html/Medusa
+dota2picker/parser/html/Meepo
+dota2picker/parser/html/Mirana
+dota2picker/parser/html/Monkey King
+dota2picker/parser/html/Morphling
+dota2picker/parser/html/Naga Siren
+dota2picker/parser/html/Nature's Prophet
+dota2picker/parser/html/Necrophos
+dota2picker/parser/html/Night Stalker
+dota2picker/parser/html/Nyx Assassin
+dota2picker/parser/html/Ogre Magi
+dota2picker/parser/html/Omniknight
+dota2picker/parser/html/Oracle
+dota2picker/parser/html/Outworld Devourer
+dota2picker/parser/html/Pangolier
+dota2picker/parser/html/Phantom Assassin
+dota2picker/parser/html/Phantom Lancer
+dota2picker/parser/html/Phoenix
+dota2picker/parser/html/Puck
+dota2picker/parser/html/Pudge
+dota2picker/parser/html/Pugna
+dota2picker/parser/html/Queen of Pain
+dota2picker/parser/html/Razor
+dota2picker/parser/html/Riki
+dota2picker/parser/html/Rubick
+dota2picker/parser/html/Sand King
+dota2picker/parser/html/Shadow Demon
+dota2picker/parser/html/Shadow Fiend
+dota2picker/parser/html/Shadow Shaman
+dota2picker/parser/html/Silencer
+dota2picker/parser/html/Skywrath Mage
+dota2picker/parser/html/Slardar
+dota2picker/parser/html/Slark
+dota2picker/parser/html/Sniper
+dota2picker/parser/html/Spectre
+dota2picker/parser/html/Spirit Breaker
+dota2picker/parser/html/Storm Spirit
+dota2picker/parser/html/Sven
+dota2picker/parser/html/Techies
+dota2picker/parser/html/Templar Assassin
+dota2picker/parser/html/Terrorblade
+dota2picker/parser/html/Tidehunter
+dota2picker/parser/html/Timbersaw
+dota2picker/parser/html/Tinker
+dota2picker/parser/html/Tiny
+dota2picker/parser/html/Treant Protector
+dota2picker/parser/html/Troll Warlord
+dota2picker/parser/html/Tusk
+dota2picker/parser/html/Underlord
+dota2picker/parser/html/Undying
+dota2picker/parser/html/Ursa
+dota2picker/parser/html/Vengeful Spirit
+dota2picker/parser/html/Venomancer
+dota2picker/parser/html/Viper
+dota2picker/parser/html/Visage
+dota2picker/parser/html/Warlock
+dota2picker/parser/html/Weaver
+dota2picker/parser/html/Windranger
+dota2picker/parser/html/Winter Wyvern
+dota2picker/parser/html/Witch Doctor
+dota2picker/parser/html/Wraith King
+dota2picker/parser/html/Zeus
+dota2picker/parser/images/Ancient Apparition.png
+dota2picker/parser/images/Arc Warden.png
+dota2picker/parser/images/Bane.png
+dota2picker/parser/images/Bloodseeker.png
+dota2picker/parser/images/Brewmaster.png
+dota2picker/parser/images/Bristleback.png
+dota2picker/parser/images/Broodmother.png
+dota2picker/parser/images/Centaur Warrunner.png
+dota2picker/parser/images/Chen.png
+dota2picker/parser/images/Clinkz.png
+dota2picker/parser/images/Dark Seer.png
+dota2picker/parser/images/Dark Willow.png
+dota2picker/parser/images/Dazzle.png
+dota2picker/parser/images/Earth Spirit.png
+dota2picker/parser/images/Earthshaker.png
+dota2picker/parser/images/Elder Titan.png
+dota2picker/parser/images/Ember Spirit.png
+dota2picker/parser/images/Faceless Void.png
+dota2picker/parser/images/Grimstroke.png
+dota2picker/parser/images/Huskar.png
+dota2picker/parser/images/Invoker.png
+dota2picker/parser/images/Io.png
+dota2picker/parser/images/Jakiro.png
+dota2picker/parser/images/Legion Commander.png
+dota2picker/parser/images/Leshrac.png
+dota2picker/parser/images/Lifestealer.png
+dota2picker/parser/images/Lion.png
+dota2picker/parser/images/Lone Druid.png
+dota2picker/parser/images/Magnus.png
+dota2picker/parser/images/Mars.png
+dota2picker/parser/images/Meepo.png
+dota2picker/parser/images/Monkey King.png
+dota2picker/parser/images/Naga Siren.png
+dota2picker/parser/images/Night Stalker.png
+dota2picker/parser/images/Nyx Assassin.png
+dota2picker/parser/images/Oracle.png
+dota2picker/parser/images/Outworld Devourer.png
+dota2picker/parser/images/Pangolier.png
+dota2picker/parser/images/Phantom Lancer.png
+dota2picker/parser/images/Phoenix.png
+dota2picker/parser/images/Pudge.png
+dota2picker/parser/images/Pugna.png
+dota2picker/parser/images/Riki.png
+dota2picker/parser/images/Rubick.png
+dota2picker/parser/images/Shadow Demon.png
+dota2picker/parser/images/Silencer.png
+dota2picker/parser/images/Skywrath Mage.png
+dota2picker/parser/images/Spectre.png
+dota2picker/parser/images/Spirit Breaker.png
+dota2picker/parser/images/Storm Spirit.png
+dota2picker/parser/images/Sven.png
+dota2picker/parser/images/Underlord.png
+dota2picker/parser/images/Undying.png
+dota2picker/parser/images/Ursa.png
+dota2picker/parser/images/Vengeful Spirit.png
+dota2picker/parser/images/Visage.png
+dota2picker/parser/images/Warlock.png
+dota2picker/parser/images/Weaver.png
+dota2picker/parser/images/Winter Wyvern.png
+dota2picker/parser/images/Wraith King.png

@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+import os
+from pathlib import Path
+from setuptools import setup, find_packages
+from dota2picker.version import VERSION
+
+PACKAGE_DIR = Path(os.path.join(os.path.dirname(__file__), 'dota2picker'))
+
+if __name__ == '__main__':
+    setup(
+        name='dota2picker',
+        version=VERSION,
+        packages=find_packages(),
+        include_package_data=True,
+        install_requires=['setuptools', 'setuptools-git', 'Pillow'],
+        license='gpl-3.0',
+        url='https://github.com/ellysh/dota2-counter-picker',
+        author='Ilya Shpigor',
+        author_email='petrsum@gmail.com',
+        description='Set of utilities for choosing the best combinations of heroes and counter picks in Dota 2.',
+        long_description=open("README.md").read(),
+        long_description_content_type='text/markdown',
+        download_url = 'https://github.com/ellysh/dota2-counter-picker/archive/master.zip',
+        keywords=['dota2', 'counter-pick'],
+        entry_points={
+            'console_scripts': [
+                'd2-checker=dota2picker.checker:main',
+                'd2-csv2pkl=dota2picker.csv2pkl:main',
+                'd2-editor=dota2picker.editor:main',
+                'd2-pkl2csv=dota2picker.pkl2csv:main',
+                'd2-picker=dota2picker.picker:main',
+            ],
+        },
+        classifiers=[
+            'Development Status :: 4 - Beta',
+
+            'Intended Audience :: End Users/Desktop',
+            'Topic :: Games/Entertainment :: Real Time Strategy',
+
+            'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.4',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+          ],
+
+    )
