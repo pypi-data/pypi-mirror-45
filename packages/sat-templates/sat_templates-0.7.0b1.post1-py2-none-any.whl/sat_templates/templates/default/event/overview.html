@@ -1,0 +1,30 @@
+{# overview of current events
+
+    @variable item(xmlui_item): ticket to display
+    @variable comments(data_object.BlogItems): comments of the ticket
+    @variable comments_service(unicode): service for adding comments
+    @variable comments_node(unicode): node for adding comments
+#}
+
+{% set category_menu = [('event_new', url_event_new)] %}
+{% if not embedded %}{% extends 'base/base.html' %}{% endif %}
+{% import 'components/block.html' as block with context %}
+
+{% block body %}
+{{ icon_defs('calendar') }}
+<div class="box message--info">
+    <p>{% trans %}There is not events discovery yet, this will come in the future.{% endtrans %}</p>
+</div>
+{% if events is defined %}
+    <p class="message--note">
+        {% trans nb_events=events|length%}
+            You have currently {{nb_events}} event in your personal list
+        {% pluralize %}
+            You have currently {{nb_events}} events in your personal list
+        {% endtrans %}
+    </p>
+
+    {{block.interests_grid(events, 'calendar')}}
+
+{% endif %}
+{% endblock body %}

@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% import 'components/block.html' as block with context %}
+{% import 'input/form.html' as form with context %}
+{% import 'input/field.html' as field with context %}
+
+{% block body %}
+{{ icon_defs('file-image') }}
+<p class="instructions--alt">{% trans %}Photo discovery is not implemented yet, however you can enter a jid below to find its albums{% endtrans %}</p>
+{% if interests is defined %}
+    <p class="message--note">
+        {% trans nb_interests=interests|length%}
+            You have currently {{nb_interests}} album in your personal list
+        {% pluralize %}
+            You have currently {{nb_interests}} albums in your personal list
+        {% endtrans %}
+    </p>
+
+    {{block.interests_grid(interests, 'file-image')}}
+{% endif %}
+{% call form.form(class="form--single") %}
+    {{ field.text("jid", _("device full jid"), required=true)}}
+    {{ field.submit(_("Access")) }}
+{% endcall %}
+{% endblock body %}
