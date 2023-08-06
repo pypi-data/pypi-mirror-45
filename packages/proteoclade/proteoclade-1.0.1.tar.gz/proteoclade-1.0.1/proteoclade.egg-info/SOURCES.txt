@@ -1,0 +1,12 @@
+README.md
+setup.py
+proteoclade/__init__.py
+proteoclade/pcannotate.py
+proteoclade/pcconstants.py
+proteoclade/pcdb.py
+proteoclade/pcquant.py
+proteoclade/pcutilities.py
+proteoclade.egg-info/PKG-INFO
+proteoclade.egg-info/SOURCES.txt
+proteoclade.egg-info/dependency_links.txt
+proteoclade.egg-info/top_level.txt
