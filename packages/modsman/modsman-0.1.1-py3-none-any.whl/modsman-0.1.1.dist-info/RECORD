@@ -1,0 +1,9 @@
+modsman/__init__.py,sha256=Bl4aZgwTPclkRMQW511-EAsNOJZjyuhayt0z6eyYVDI,75
+modsman/cli.py,sha256=Lp-Jp30Mkn69Lbj9g2427Ryz9LNs59aVEAr5RfpGUWA,3276
+modsman/common.py,sha256=ksT8yEVFk-_PVl631qgdqKCG14no35aEsgMQA8k0mFY,893
+modsman/modlist.py,sha256=q-uzt0v3MAMfTFl8BCLSKDzgNsZ9hQUk5pvAdtJte3g,4188
+modsman/network.py,sha256=n_CK9X691Ct0rKRHUQkHHiuUemIG-v5PKKIUoOA2XVQ,1852
+modsman-0.1.1.dist-info/entry_points.txt,sha256=9Y66XB1rjz_Ze7MuwBRLtyI-y10iArZEEsyjhhVxRK4,40
+modsman-0.1.1.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+modsman-0.1.1.dist-info/METADATA,sha256=Tqe3CaIxxDRASEO0bTDDHKs3uz2iiFq_OR_038KrtXo,868
+modsman-0.1.1.dist-info/RECORD,,
