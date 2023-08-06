@@ -1,0 +1,6 @@
+astropy
+psycopg2
+solarsystemMB
+atomicdataMB
+mathMB
+MESSENGERUVVS
