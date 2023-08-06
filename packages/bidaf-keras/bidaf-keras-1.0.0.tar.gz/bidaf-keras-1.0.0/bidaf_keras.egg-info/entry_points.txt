@@ -1,0 +1,3 @@
+[console_scripts]
+bidaf-keras = bidaf.__main__:main
+

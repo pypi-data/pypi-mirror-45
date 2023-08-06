@@ -1,0 +1,10 @@
+pymagnitude
+keras
+tqdm
+nltk
+
+[cpu]
+tensorflow
+
+[gpu]
+tensorflow-gpu
