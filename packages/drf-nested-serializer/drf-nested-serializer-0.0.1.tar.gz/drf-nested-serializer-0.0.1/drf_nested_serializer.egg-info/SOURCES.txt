@@ -1,0 +1,15 @@
+README.md
+setup.py
+drf_nested_serializer/__init__.py
+drf_nested_serializer/serializers.py
+drf_nested_serializer.egg-info/PKG-INFO
+drf_nested_serializer.egg-info/SOURCES.txt
+drf_nested_serializer.egg-info/dependency_links.txt
+drf_nested_serializer.egg-info/not-zip-safe
+drf_nested_serializer.egg-info/top_level.txt
+drf_nested_serializer/tests/__init__.py
+drf_nested_serializer/tests/models.py
+drf_nested_serializer/tests/serializers.py
+drf_nested_serializer/tests/tests.py
+drf_nested_serializer/tests/urls.py
+drf_nested_serializer/tests/views.py
