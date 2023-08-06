@@ -1,0 +1,3 @@
+[console_scripts]
+booking-sites-parser = booking_sites_parser.__main__:run
+
