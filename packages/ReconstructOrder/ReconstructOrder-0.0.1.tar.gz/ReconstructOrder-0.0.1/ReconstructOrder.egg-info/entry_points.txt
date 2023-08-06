@@ -1,0 +1,3 @@
+[console_scripts]
+runReconstruction = ReconstructOrder.cli_module:main
+
