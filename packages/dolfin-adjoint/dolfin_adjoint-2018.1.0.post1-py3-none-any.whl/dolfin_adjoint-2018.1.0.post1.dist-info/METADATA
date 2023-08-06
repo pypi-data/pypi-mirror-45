@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dolfin-adjoint
+Version: 2018.1.0.post1
+Summary: High-level automatic differentiation library for FEniCS and Firedrake.
+Home-page: UNKNOWN
+Author: Sebastian Kenji Mitusch
+Author-email: sebastkm@math.uio.no
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scipy
+Requires-Dist: pytest
+Requires-Dist: sphinx
+Requires-Dist: sphinxcontrib-bibtex
+Requires-Dist: moola (>=0.1.6)
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
