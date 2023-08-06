@@ -1,0 +1,9 @@
+requests
+urllib3
+Deprecated
+
+# For client
+pyyaml
+
+# For CLI
+click
