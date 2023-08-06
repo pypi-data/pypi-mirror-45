@@ -1,0 +1,11 @@
+pyyaml
+numpy
+scipy
+fabio
+pyfai
+xrsdkit
+tzlocal
+pyserial
+paramiko
+pypif
+citrination_client
