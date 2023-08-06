@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mosquito
+Version: 0.0.0
+Summary: a request obfuscator and web scraping toolkit
+Home-page: https://luoc.eu
+Author: luoc
+Author-email: luoc@posteo.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: tqdm
+Provides-Extra: develop
+Requires-Dist: nose ; extra == 'develop'
+
+# mosquito
+**a request obfuscator and web scraping toolkit**
+
