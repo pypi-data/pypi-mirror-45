@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyramid_forksafe
+Version: 0.1.0
+Summary: provides for a unified fork events
+Home-page: https://github.com/jvanasco/pyramid_forksafe
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: pyramid_forksafe
+        ================
+        
+Keywords: web pyramid fork
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
