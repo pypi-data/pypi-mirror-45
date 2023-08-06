@@ -1,0 +1,9 @@
+oceandata/__init__.py,sha256=LWeB6Zc4Pgh4Yhjhaa-JLA3DLFpD5pGr_SjsC2tCdXc,51
+oceandata/gdp.py,sha256=Dy62cq1oUFbOiYH3Z4mQKcO8GU1uLUvkchog6eBfeTY,3747
+oceandata/mapps.py,sha256=ByGak_3tnIi8q11eiJcs86ELrqUqkCkrFGJ7t4P4ITs,3625
+oceandata/socat.py,sha256=4PNZBEx0BwiaOo0zIImcdQ2zljcTKrUgPIDHLvdD_kA,2516
+oceandata/test.h5,sha256=fs7GrSMbWxEqnGuDBx-dhtTx1qOJQ1Srd3DB3XFNonc,7032
+oceandata-0.2.0.dist-info/LICENSE,sha256=K_eVD2sHcfxshO5hJ-GMGlC8BZKW2vLdDA1y_b332rQ,1069
+oceandata-0.2.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+oceandata-0.2.0.dist-info/METADATA,sha256=kspS1YYxEFgFAtwSpkcyFQGsO4N_RPyLS-cJeFSKLTs,477
+oceandata-0.2.0.dist-info/RECORD,,
