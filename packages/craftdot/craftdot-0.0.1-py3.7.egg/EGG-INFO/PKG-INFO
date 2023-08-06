@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: craftdot
+Version: 0.0.1
+Summary: easily to make pretty graphviz diagram
+Home-page: https://github.com/kaleocheng/craftdot
+Author: Kaleo Cheng
+Author-email: kaleocheng@gmail.com
+License: UNKNOWN
+Description: # craftdot
+        
+        craftdot is a wapper of graphviz to get pretty diagram for your architecture/services diagrams.
+        
+        
+        ## Install
+        
+        ```bash
+        $ pip install craftdot
+        ```
+        
+        > craftdot just output the graphviz code(dot file), you need to render the dot file by yourself. install graphviz on local or use graphviz online tools.
+        
+        
+        ## Useage
+        
+        you can find example in `example/`, then
+        
+        ```bash
+        $ craftdot example/multi-groups.yml > example/multi-groups.dot
+        
+        # render the dot file to pdf
+        $ dot -Tpdf example/multi-groups.dot -o example/multi-groups.pdf
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

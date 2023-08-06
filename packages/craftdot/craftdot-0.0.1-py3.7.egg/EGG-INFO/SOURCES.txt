@@ -1,0 +1,11 @@
+README.md
+setup.py
+craftdot/__init__.py
+craftdot/cli.py
+craftdot/render.py
+craftdot.egg-info/PKG-INFO
+craftdot.egg-info/SOURCES.txt
+craftdot.egg-info/dependency_links.txt
+craftdot.egg-info/entry_points.txt
+craftdot.egg-info/requires.txt
+craftdot.egg-info/top_level.txt
