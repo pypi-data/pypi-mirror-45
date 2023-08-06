@@ -1,0 +1,2 @@
+kubernetes
+urrllib3<1.25
