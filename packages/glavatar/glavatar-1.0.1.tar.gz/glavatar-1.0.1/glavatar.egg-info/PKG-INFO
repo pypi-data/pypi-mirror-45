@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: glavatar
+Version: 1.0.1
+Summary: Get the avatar of a GitLab user
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: me@yoginth.com
+License: UNKNOWN
+Project-URL: Patreon, https://www.patreon.com/yoginth
+Project-URL: Source, https://gitlab.com/yoginth/glavatar
+Description: ## GitLab Avatar
+        
+        > Get the avatar of a GitLab user
+        
+        ## Screenshot
+        
+        <img src="https://gitlab.com/yoginth/glavatar/raw/master/Screenshot.png" width="550">
+        
+        ## Install
+        
+        ```
+        $ pip install glavatar
+        ```
+        
+        ## Usage
+        
+        ```python
+        import glavatar as avatar
+        
+        avatar.get('yoginth')
+        #=> https://secure.gravatar.com/avatar/554506e208edaf6c95dc896105b898f0?s=80&d=identicon
+        ```
+        
+        ## License
+        
+        [MIT][license] Yoginth
+        
+        [LICENSE]: https://mit.yoginth.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.md
+setup.py
+glavatar/__init__.py
+glavatar.egg-info/PKG-INFO
+glavatar.egg-info/SOURCES.txt
+glavatar.egg-info/dependency_links.txt
+glavatar.egg-info/requires.txt
+glavatar.egg-info/top_level.txt
