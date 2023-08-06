@@ -1,0 +1,3 @@
+[console_scripts]
+QttNot = QttNot.__main__:run
+
