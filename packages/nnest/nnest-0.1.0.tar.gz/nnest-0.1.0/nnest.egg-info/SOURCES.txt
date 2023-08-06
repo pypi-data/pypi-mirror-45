@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+nnest/__init__.py
+nnest/mcmc.py
+nnest/nested.py
+nnest/networks.py
+nnest/sampler.py
+nnest/trainer.py
+nnest.egg-info/PKG-INFO
+nnest.egg-info/SOURCES.txt
+nnest.egg-info/dependency_links.txt
+nnest.egg-info/top_level.txt
