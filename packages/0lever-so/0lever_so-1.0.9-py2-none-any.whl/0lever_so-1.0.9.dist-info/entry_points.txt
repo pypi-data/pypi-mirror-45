@@ -1,0 +1,4 @@
+[console_scripts]
+so = so.so:run
+so_install = so.so:run_install
+
