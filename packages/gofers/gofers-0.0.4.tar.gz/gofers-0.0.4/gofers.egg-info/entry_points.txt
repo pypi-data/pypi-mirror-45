@@ -1,0 +1,3 @@
+[console_scripts]
+gofers = gofers.main:cmd
+
