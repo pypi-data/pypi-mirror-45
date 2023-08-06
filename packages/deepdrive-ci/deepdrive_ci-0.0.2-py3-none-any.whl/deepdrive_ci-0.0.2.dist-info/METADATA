@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: deepdrive-ci
+Version: 0.0.2
+Summary: Common code for Deepdrive CI scripts
+Home-page: http://github.com/deepdrive/deepdrive-ci
+Author: Deepdrive
+Author-email: craig@deepdrive.io
+License: MIT
+Keywords: deepdrive ci
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Environment :: Console
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: arrow
+Requires-Dist: boto3
+Requires-Dist: docker (>=3.7.0)
+Requires-Dist: setuptools (>=38.6.0)
+Requires-Dist: tenacity
+Requires-Dist: termcolor
+Requires-Dist: twine (>=1.11.0)
+Requires-Dist: ue4-ci-helpers (>=0.0.6)
+Requires-Dist: wheel (>=0.31.0)
+
+Deepdrive Continuous Integration infrastructure
+===============================================
+
+This package contains common code used by the CI scripts for various components of Deepdrive.
+
+To install the package, run: `pip3 install deepdrive-ci`
+
+
+## Legal
+
+Copyright &copy; 2019, [Deepdrive](https://deepdrive.io/). Licensed under the MIT License, see the file [LICENSE](https://github.com/deepdrive/deepdrive-ci/blob/master/LICENSE) for details.
+
+
