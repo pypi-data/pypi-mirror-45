@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+* fix: accept non-numpy arrays for anisotropy
+* chore: add manylinux Dockerfile
+* nova: initial commit
+* Initial commit
