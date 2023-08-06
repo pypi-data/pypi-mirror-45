@@ -1,0 +1,4 @@
+include AUTHORS
+include LICENSE
+include versioneer.py
+include src/spines/_version.py
