@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: databricks-cloud-automation
+Version: 0.1.4
+Summary: Databricks Cloud Automation
+Home-page: http://www.databricks.com
+Author: Databricks
+Author-email: sales@databricks.com
+License: Apache License 2.0
+Description: Databricks Cloud Automation uses Terraform to provision cloud infrastructure. You may use a prepackaged GUI or terraform directly to deploy these modules
+Platform: UNKNOWN
