@@ -1,0 +1,8 @@
+tcsamcli/__init__.py,sha256=VfZXmznjyvA4cZ_In3d37LAeZkw36I_xDlntCFoVOv4,40
+tcsamcli/__main__.py,sha256=rC49TU7OHO3xAXpjgq3XMAhSMMZrTTpOcC9gvDU5vmE,3936
+tcsamcli/templates/template.yaml.j2,sha256=097AwcisVmE9uwPHHllIAJlrDy4Q0PZeN5hBgaOrUu0,3481
+tc_sam_cli-0.0.3.dist-info/entry_points.txt,sha256=6z4n4dNmYypiht_I4wrXk3tQ6vLDWii4rAxTe8NN0H4,48
+tc_sam_cli-0.0.3.dist-info/LICENSE,sha256=57EkSz9LKl5LmIz23rb3Gf2nmvz-uCgEgyA7n8k0BFg,1070
+tc_sam_cli-0.0.3.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+tc_sam_cli-0.0.3.dist-info/METADATA,sha256=2oiSxfJFCS89vcxX_v85foKHlmQDU_F6-FJLnjJ8cRs,2253
+tc_sam_cli-0.0.3.dist-info/RECORD,,
