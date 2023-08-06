@@ -1,0 +1,12 @@
+fuzzychinese/__init__.py,sha256=3cQ7kS23aTWAmAbN-8SBu9ZKN0xpgEAXMFgUrof7as0,848
+fuzzychinese/_character_to_radical.py,sha256=HikzEWdbwQwx7fKC_iXSrXuWc810iV7dhCfcqtz42cs,3829
+fuzzychinese/_character_to_stroke.py,sha256=YjQbPJNOzcOvB7qoFD0_-a-TUiBwtGHP5XysGacu6Hk,3393
+fuzzychinese/_fuzzy_chinese_match.py,sha256=jXgvoSWGdvJGUZPEKcvAT-SH4Pk84kNtG9pEuOcUcMY,13250
+fuzzychinese/_utils.py,sha256=Y961cSJeAAfdcPQ6MnNsoJMqh-cRwmyT5bC0dqeIZbQ,735
+fuzzychinese/dict_chinese_radical.txt,sha256=KMWVrWwI2UT1C1XADO9qQdTXBVjxjHxpbgstAbeT4kc,310921
+fuzzychinese/dict_chinese_stroke.txt,sha256=WYseBYFz28b_87Zj2Ruhsc6ByvO73VAGDQ6PGtCsHrY,913260
+fuzzychinese-0.1.5.dist-info/LICENSE,sha256=HRZrF07IwignmpeQ6aGIfiAYpu47fFR4afHe4SgqqjU,1493
+fuzzychinese-0.1.5.dist-info/METADATA,sha256=zXZ3OkZYehfw1UPL9HMKRg9cewsWyVlT_CuxLpqAl-E,6203
+fuzzychinese-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fuzzychinese-0.1.5.dist-info/top_level.txt,sha256=KuebVmnhyLJn0l9MBY6BMImcnEWo4_5QcEd124TU74E,13
+fuzzychinese-0.1.5.dist-info/RECORD,,
