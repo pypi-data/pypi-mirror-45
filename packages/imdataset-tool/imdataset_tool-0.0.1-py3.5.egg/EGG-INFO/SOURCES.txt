@@ -1,0 +1,7 @@
+setup.py
+imdataset_tool/__init__.py
+imdataset_tool/paths.py
+imdataset_tool.egg-info/PKG-INFO
+imdataset_tool.egg-info/SOURCES.txt
+imdataset_tool.egg-info/dependency_links.txt
+imdataset_tool.egg-info/top_level.txt
