@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "yynb"
+author = "YY"
+author-email = "2907047490@qq.com"
+home-page = "https://github.com/yytql/YYNB"
+classifiers = ["License :: OSI Approved :: MIT License"]
+description-file = "README.md"
