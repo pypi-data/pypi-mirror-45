@@ -1,0 +1,10 @@
+README.md
+setup.py
+cork/__init__.py
+cork/__main__.py
+cork.egg-info/PKG-INFO
+cork.egg-info/SOURCES.txt
+cork.egg-info/dependency_links.txt
+cork.egg-info/entry_points.txt
+cork.egg-info/requires.txt
+cork.egg-info/top_level.txt
