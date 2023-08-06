@@ -1,0 +1,8 @@
+drf_rbac/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+drf_rbac/mixins.py,sha256=ISvK19ePcbAIzwFQ4SiVIs_wOi1-atxjXsINAB18g9M,2118
+drf_rbac/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_rbac-0.1.dist-info/LICENSE,sha256=7JaT0cRKkNDrpwHm7ecVyyS1o287PvTkMFw-0Q73VxQ,1295
+drf_rbac-0.1.dist-info/METADATA,sha256=u7fUbcOacoTFqq9qh8LAJvU19sszVN30T7_-Cf_Z-8c,463
+drf_rbac-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+drf_rbac-0.1.dist-info/top_level.txt,sha256=O6BDq_2nLhSvr1EPKl3Rw6qndK_tE48hRiKOLyYTw_E,9
+drf_rbac-0.1.dist-info/RECORD,,
