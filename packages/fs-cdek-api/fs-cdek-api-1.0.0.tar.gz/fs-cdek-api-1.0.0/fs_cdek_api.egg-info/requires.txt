@@ -1,0 +1,7 @@
+requests
+boltons
+
+[for_tests]
+pytest>=4.4.0
+pytest-cov
+pytest-xdist
