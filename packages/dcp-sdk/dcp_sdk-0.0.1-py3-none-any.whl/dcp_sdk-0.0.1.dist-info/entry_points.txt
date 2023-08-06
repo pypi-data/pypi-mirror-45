@@ -1,0 +1,3 @@
+[console_scripts]
+dcp_run = dcp.cli.main:main
+
