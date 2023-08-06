@@ -1,0 +1,17 @@
+README.md
+fakear
+setup.cfg
+setup.py
+fakear/__init__.py
+fakear/templates.py
+fakear.egg-info/PKG-INFO
+fakear.egg-info/SOURCES.txt
+fakear.egg-info/dependency_links.txt
+fakear.egg-info/requires.txt
+fakear.egg-info/top_level.txt
+tests/__init__.py
+tests/run_py27.py
+tests/run_py3.py
+tests/test_basic.py
+tests/test_e2e.py
+tests/test_errors.py
