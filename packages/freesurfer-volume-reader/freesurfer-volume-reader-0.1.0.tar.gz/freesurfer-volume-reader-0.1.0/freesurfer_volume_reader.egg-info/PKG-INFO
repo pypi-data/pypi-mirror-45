@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: freesurfer-volume-reader
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/fphammerle/freesurfer-volumes-reader
+Author: Fabian Peter Hammerle
+Author-email: fabian@hammerle.me
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: brain,freesurfer,hippocampus,neuroimaging,reader,subfields
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
