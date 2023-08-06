@@ -1,0 +1,6 @@
+requests
+datacite
+progressbar2
+caltechdata_api
+py_dataset
+pandas
