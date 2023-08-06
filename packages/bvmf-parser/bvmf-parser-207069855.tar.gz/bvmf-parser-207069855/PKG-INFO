@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: bvmf-parser
+Version: 207069855
+Summary: Parser of the Sao Paulo Stock Exchange historical data
+Home-page: https://gitlab.com/willianpaixao/bvmf-parser
+Author: Willian Paixao
+Author-email: willian@ufpa.br
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
