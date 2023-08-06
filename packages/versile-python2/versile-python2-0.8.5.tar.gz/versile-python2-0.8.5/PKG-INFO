@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: versile-python2
+Version: 0.8.5
+Summary: Versile Python
+Home-page: https://github.com/versiledev/versile-python
+Author: Versile AS
+Author-email: 48810296+versiledev@users.noreply.github.com
+License: GNU Lesser GPL v3 License
+Description: Versile Python
+        --------------
+        
+        Versile Python is an implementation of Versile Platform for python
+        v2.6 and v2.7. Lates source code is on
+        `GitHub <https://github.com/versiledev/versile-python>`__ .
+        See `website <http://www.sci4all.org/versile/>`__
+        for documentation and additional information.
+        
+        Versile Platform
+        ----------------
+        
+        Versile Platform is a set of open protocols enabling object-level
+        service interaction between heterogenous technologies. The protocols
+        are designed to enable simple yet flexible and powerful patterns for
+        interacting with remote services or running services.
+        
+Keywords: versile
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Provides: versile_python2
