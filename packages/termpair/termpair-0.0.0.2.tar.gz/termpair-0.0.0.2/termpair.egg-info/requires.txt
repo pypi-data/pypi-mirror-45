@@ -1,0 +1,7 @@
+bocadillo<0.14,>=0.13.1
+
+[dev]
+mkdocs
+mkdocs-material
+mypy
+black
