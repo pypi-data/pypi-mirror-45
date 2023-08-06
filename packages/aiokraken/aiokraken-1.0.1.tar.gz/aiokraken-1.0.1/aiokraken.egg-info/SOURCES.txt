@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiokraken/__init__.py
+aiokraken.egg-info/PKG-INFO
+aiokraken.egg-info/SOURCES.txt
+aiokraken.egg-info/dependency_links.txt
+aiokraken.egg-info/requires.txt
+aiokraken.egg-info/top_level.txt
