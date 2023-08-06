@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+airc/__init__.py
+airc/bot.py
+airc/client.py
+airc/enums.py
+airc/errors.py
+airc/events.py
+airc/server.py
+airc/utils.py
+airc.egg-info/PKG-INFO
+airc.egg-info/SOURCES.txt
+airc.egg-info/dependency_links.txt
+airc.egg-info/requires.txt
+airc.egg-info/top_level.txt
