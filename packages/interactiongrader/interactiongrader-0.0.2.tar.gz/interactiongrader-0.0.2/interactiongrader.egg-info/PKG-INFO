@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: interactiongrader
+Version: 0.0.2
+Summary: Grade free form text answers
+Home-page: https://github.com/pypa/sampleproject
+Author: Daniel Brandt
+Author-email: dbbrandt@gmail.com
+License: UNKNOWN
+Description: # interaction-grader
+        Python package to help grade test questions (interactions) using fuzzy match and phoneme replacement.
+        
+        The Answer class can be used to check if an answer is basically identical to the desired answer except 
+        for misspellings.
+        
+        ex. 
+        ans = Answer(Joaquim Phoenix')
+        if ans.is_misspelling('Joakim Pheonix'):
+            print('Correct Answer')
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
