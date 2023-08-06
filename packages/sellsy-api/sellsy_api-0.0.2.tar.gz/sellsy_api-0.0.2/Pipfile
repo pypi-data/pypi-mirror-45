@@ -1,0 +1,17 @@
+[[source]]
+
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+requests = ">=2.21.0"
+requests-oauthlib = ">=1.2.0"
+
+
+[dev-packages]
+
+pytest = "*"
+"flake8" = "*"
