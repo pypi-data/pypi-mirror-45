@@ -1,0 +1,60 @@
+Metadata-Version: 1.0
+Name: Cortecx
+Version: 0.0.6
+Summary: Cortecx is a NLP library
+Home-page: UNKNOWN
+Author: Lleyton Ariton
+Author-email: lleyton.ariton@gmail.com
+License: MIT
+Description: # Cortecx
+        
+        Cortecx is a Python NLP library to be used in conjunction with deep learning model creation.
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Cortecx.
+        
+        ```bash
+        pip install cortecx
+        ```
+        ## Requirements
+        
+        - Numpy
+        - Psutil
+        
+        For Models:
+        - Keras
+        - Tensorflow
+        
+        ## Usage
+        
+        ```python
+        from cortecx import session
+        from cortecx.constrcution import tools as t
+        from cortecx.constrcution.materials import Parser
+        ```
+        
+        ## Suport
+        
+        If there are any issues feel free to email me at [lleyton.ariton@gmail.com]()
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        
+        ## Project Status
+        
+        Work in Progress
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+        ## Author
+        Lleyton Ariton
+        
+        [lleyton.ariton@gmail.com]()
+        
+Keywords: artificial intelligence
+Platform: UNKNOWN
