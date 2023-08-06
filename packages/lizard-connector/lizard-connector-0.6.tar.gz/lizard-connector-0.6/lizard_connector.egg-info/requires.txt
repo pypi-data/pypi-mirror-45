@@ -1,0 +1,7 @@
+setuptools
+six
+
+[test]
+coverage
+mock
+nose
