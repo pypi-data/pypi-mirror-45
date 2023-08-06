@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+amuse_hermite.egg-info/PKG-INFO
+amuse_hermite.egg-info/SOURCES.txt
+amuse_hermite.egg-info/dependency_links.txt
+amuse_hermite.egg-info/requires.txt
+amuse_hermite.egg-info/top_level.txt
+src/amuse/community/hermite0/Makefile
+src/amuse/community/hermite0/__init__.py
+src/amuse/community/hermite0/interface.cc
+src/amuse/community/hermite0/interface.h
+src/amuse/community/hermite0/interface.py
+src/amuse/community/hermite0/vec3.h
+support/__init__.py
+support/setup_codes.py
