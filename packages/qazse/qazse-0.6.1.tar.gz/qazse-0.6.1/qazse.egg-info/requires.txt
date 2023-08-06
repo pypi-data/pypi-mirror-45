@@ -1,0 +1,5 @@
+redis
+requests
+aiohttp
+asyncio
+bs4
