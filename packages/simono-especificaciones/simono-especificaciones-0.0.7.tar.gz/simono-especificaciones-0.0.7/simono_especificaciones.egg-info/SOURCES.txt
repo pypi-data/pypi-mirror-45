@@ -1,0 +1,5 @@
+setup.py
+simono_especificaciones.egg-info/PKG-INFO
+simono_especificaciones.egg-info/SOURCES.txt
+simono_especificaciones.egg-info/dependency_links.txt
+simono_especificaciones.egg-info/top_level.txt
