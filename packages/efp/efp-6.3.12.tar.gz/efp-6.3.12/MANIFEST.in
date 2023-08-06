@@ -1,0 +1,8 @@
+include README.md
+
+recursive-include ctp     *
+recursive-include pymysql *
+recursive-include ptp  *.h   *.pyx *.pxd
+recursive-exclude ptp  *.cpp *.xml *.dtd
+global-exclude    __pycache__ *.pyc *.pyo
+
