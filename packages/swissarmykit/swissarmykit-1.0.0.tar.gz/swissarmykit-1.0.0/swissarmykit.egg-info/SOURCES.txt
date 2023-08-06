@@ -1,0 +1,8 @@
+README.md
+setup.py
+swissarmykit/__init__.py
+swissarmykit.egg-info/PKG-INFO
+swissarmykit.egg-info/SOURCES.txt
+swissarmykit.egg-info/dependency_links.txt
+swissarmykit.egg-info/requires.txt
+swissarmykit.egg-info/top_level.txt
