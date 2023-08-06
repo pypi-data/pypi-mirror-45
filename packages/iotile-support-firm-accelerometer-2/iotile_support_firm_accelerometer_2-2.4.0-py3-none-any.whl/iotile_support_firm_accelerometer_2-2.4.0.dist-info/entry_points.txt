@@ -1,0 +1,9 @@
+[iotile.emulated_tile]
+accel1_1 = iotile_support_firm_accelerometer_2.accel1_1
+
+[iotile.proxy]
+accel1_proxy = iotile_support_firm_accelerometer_2.accel1_proxy
+
+[iotile.virtual_device]
+dev_accel1_1 = iotile_support_firm_accelerometer_2.dev_accel1_1
+
