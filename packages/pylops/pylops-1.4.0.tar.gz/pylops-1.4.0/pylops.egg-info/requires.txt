@@ -1,0 +1,8 @@
+numpy>=1.15.0
+scipy
+
+[advanced]
+llvmlite
+numba
+pyfftw
+scikit-fmm
