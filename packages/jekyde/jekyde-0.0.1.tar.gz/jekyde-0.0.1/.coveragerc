@@ -1,0 +1,15 @@
+[paths]
+source =
+   jekyde
+   */site-packages
+
+[run]
+branch = true
+source =
+    jekyde
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
