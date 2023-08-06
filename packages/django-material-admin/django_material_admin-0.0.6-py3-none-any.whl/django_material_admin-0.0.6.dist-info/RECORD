@@ -1,0 +1,10 @@
+material_admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+material_admin/sites.py,sha256=r9J-HHl2uofxbvVV9BUbT6yIiQ1TTV3DlVpk-CkH4EU,466
+material_admin/urls.py,sha256=nonYzi-2__LS1-oEEVWbTw1hDmB3S-9GC82-0rT3B84,130
+material_admin/views.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+material_admin/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+material_admin/templatetags/material_admin.py,sha256=JJf7cC6CSQJ-ks4SIwJq_ppNPzos4kEnNzvbdNhoH70,345
+django_material_admin-0.0.6.dist-info/METADATA,sha256=DVhIOd3IjAaAWXE-mbSL_hc4fJZuB-1cj2S8UwW0Uk8,1014
+django_material_admin-0.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_material_admin-0.0.6.dist-info/top_level.txt,sha256=iOXyDMOno_y_9wrvipXc8ydvNxHGApjQ3eT7syQizs4,15
+django_material_admin-0.0.6.dist-info/RECORD,,
