@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spellchecker-ml
+Version: 0.1.4
+Summary: Spellchecker that makes use of a hidden markov model
+Home-page: https://github.com/EricSchles/spellchecker_ml
+Author: Eric Schles
+Author-email: ericschles@gmail.com
+License: MIT
+Description: # Spell Checker ML
+        
+        The goal of this library is to provide a spell checker trained on a language model.  The interface is the same as pyspellchecker, however the language model adds context to the spell checker, for an improved likely correct spelling.
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
