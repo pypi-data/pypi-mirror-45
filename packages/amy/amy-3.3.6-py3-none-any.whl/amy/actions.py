@@ -1,0 +1,8 @@
+CREATE_USER = 'create'
+AUTHORIZE_USER = 'authorize'
+START_USER = 'start'
+STOP_USER = 'stop'
+STATUS_USER = 'status'
+LOAD_USER = 'load'
+SEND_MESSAGE = 'send'
+REMOVE_USER = 'remove'
