@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+legend_assistant.egg-info/PKG-INFO
+legend_assistant.egg-info/SOURCES.txt
+legend_assistant.egg-info/dependency_links.txt
+legend_assistant.egg-info/top_level.txt
+legendassistant/__init__.py
+legendassistant/legend_assistant.py
