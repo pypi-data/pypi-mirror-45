@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: pynnotate
+Version: 0.2
+Summary: Annotate models based database
+Home-page: https://github.com/abhsag24/orator-annotate
+Author: Abhay Raizada
+Author-email: toabhayraizada@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/abhsag24/orator-annotate/
+Project-URL: Bug Tracker, https://github.com/abhsag24/orator-annotate/issues
+Project-URL: Source Code, https://github.com/abhsag24/orator-annotate/
+Description: UNKNOWN
+Keywords: hello world example examples
+Platform: UNKNOWN

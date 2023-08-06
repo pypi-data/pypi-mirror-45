@@ -1,0 +1,11 @@
+README.md
+annotate.py
+pynnotate.py
+requirements.txt
+setup.py
+pynnotate.egg-info/PKG-INFO
+pynnotate.egg-info/SOURCES.txt
+pynnotate.egg-info/dependency_links.txt
+pynnotate.egg-info/entry_points.txt
+pynnotate.egg-info/requires.txt
+pynnotate.egg-info/top_level.txt
