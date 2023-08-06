@@ -1,0 +1,11 @@
+README.md
+setup.py
+pypwdless/__init__.py
+pypwdless/config.py
+pypwdless/pwdless.py
+pypwdless.egg-info/PKG-INFO
+pypwdless.egg-info/SOURCES.txt
+pypwdless.egg-info/dependency_links.txt
+pypwdless.egg-info/not-zip-safe
+pypwdless.egg-info/requires.txt
+pypwdless.egg-info/top_level.txt
