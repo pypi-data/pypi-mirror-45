@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+akashIsAwesome/__init__.py
+akashIsAwesome.egg-info/PKG-INFO
+akashIsAwesome.egg-info/SOURCES.txt
+akashIsAwesome.egg-info/dependency_links.txt
+akashIsAwesome.egg-info/top_level.txt
