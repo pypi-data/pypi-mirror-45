@@ -1,0 +1,10 @@
+aiohttp
+bech32
+bitcoinlib
+click
+eth_keyfile
+protobuf
+pyee
+secp256k1
+varint
+wheel
