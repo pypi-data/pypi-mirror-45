@@ -1,0 +1,2 @@
+pyyaml>=5.1
+tensorflow==1.13.1
