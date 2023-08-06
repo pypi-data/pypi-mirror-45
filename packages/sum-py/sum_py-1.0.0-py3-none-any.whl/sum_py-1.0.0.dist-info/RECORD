@@ -1,0 +1,9 @@
+sumpy/__init__.py,sha256=VrhJCMxL-sI_nlRZwNk-wdC58r3sFn64F-HB1uwLudE,3210
+sumpy/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sumpy/proto/sum_pb2.py,sha256=lND4xQdEGUqakYVJ9TCGoL4VXFhd7WRVxlcV9crpd30,32585
+sumpy/proto/sum_pb2_grpc.py,sha256=vrfMpgIw3SJjaifa-brmUkaPynBUxKNqyjdBRAKSBTU,9899
+sum_py-1.0.0.dist-info/LICENSE.md,sha256=estZ0YLn2bwtHpuPDj_l7K6T-VGZuR2D0zr7LHVURdI,35187
+sum_py-1.0.0.dist-info/METADATA,sha256=29EtIMFi7Mxr3N_AIRNNnmG2hUN2rH6d2ol2nDbKLc0,706
+sum_py-1.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sum_py-1.0.0.dist-info/top_level.txt,sha256=KY_t8MaQJ0jt8DyaFCdL5HB8abzlS3N5AdRGvRoOEUs,6
+sum_py-1.0.0.dist-info/RECORD,,
