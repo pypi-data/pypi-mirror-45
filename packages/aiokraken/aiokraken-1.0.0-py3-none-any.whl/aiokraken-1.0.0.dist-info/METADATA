@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aiokraken
+Version: 1.0.0
+Summary: backend app
+Home-page: http://arcane.no
+Author: Dan Timofte
+Author-email: dan@arcane.no
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+Requires-Dist: aiodns
+Requires-Dist: cchardet
+
+UNKNOWN
+
+
