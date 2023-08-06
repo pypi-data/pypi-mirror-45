@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+miniseq/__init__.py
+miniseq/fasta.py
+miniseq/msclasses.py
+miniseq/msfunctions.py
+miniseq/seqdata.py
+miniseq.egg-info/PKG-INFO
+miniseq.egg-info/SOURCES.txt
+miniseq.egg-info/dependency_links.txt
+miniseq.egg-info/not-zip-safe
+miniseq.egg-info/top_level.txt
