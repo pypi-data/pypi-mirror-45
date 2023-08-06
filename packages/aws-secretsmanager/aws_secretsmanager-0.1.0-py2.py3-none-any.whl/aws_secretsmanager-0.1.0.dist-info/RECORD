@@ -1,0 +1,7 @@
+aws_secretsmanager/__init__.py,sha256=Ba6Efnhj81_R57NlOEXDxBM8ZX8l3MWIMYxDrXygyxs,73
+aws_secretsmanager/secretsmanager.py,sha256=RpmP9fjSvJKqrPHD856ydrUmJunug3knAie3zMTVfak,1511
+aws_secretsmanager-0.1.0.dist-info/LICENSE,sha256=u8IP35FYiA8EbS9qA3bCgBvTWQLO4gZQuEU8bhYZC-I,742
+aws_secretsmanager-0.1.0.dist-info/METADATA,sha256=wCrQFasEjeAkzgGPFe4OQnY39ditfT6RIYDLT3JDmE0,941
+aws_secretsmanager-0.1.0.dist-info/WHEEL,sha256=aSdOKpzTGLLkKenfdFGiq92od_Dmr98YfEe8iw7iZoo,110
+aws_secretsmanager-0.1.0.dist-info/top_level.txt,sha256=15VsSJZLQ1jBYb1fp_hLlFHk9LGEhR6lGZU-i486u-g,19
+aws_secretsmanager-0.1.0.dist-info/RECORD,,
