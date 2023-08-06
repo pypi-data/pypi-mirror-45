@@ -1,0 +1,12 @@
+apachelogs/__init__.py,sha256=oQPacxiNCFxnnFVDP3ADEuKh_MKgIuqaa-OpiTXFijw,2902
+apachelogs/directives.py,sha256=kQLksmPzUAoS-ZrlDhwNJbhhT0GgaLU6ykzhnYgtUN8,7744
+apachelogs/errors.py,sha256=a0ciheoahQhxTMh9CPvk_1AFuvwD7Pb0ZrlqtrKEPbU,1578
+apachelogs/parser.py,sha256=t_GvmX_O1w7hPsRlauyxNbqOuIUzJbG4K-k24GhgMzE,5230
+apachelogs/strftime.py,sha256=5DcBttCtUj4GhNJmwZR5cQzmp94FSolbCnFolqqok8o,4911
+apachelogs/types.py,sha256=FdniPjUqmWa49uqPEYTTFEGjox85ZSoZl7F8S1nLqng,3005
+apachelogs/util.py,sha256=E7b2qtwqFALEUcQlSBEhi274WCNjGTa619cV_eX-TWQ,6815
+apachelogs-0.1.0.dist-info/LICENSE,sha256=jIkfpuuPgYKynIUDgG5Xw8lKyeUfJGqOnkHgSb5rRfI,1095
+apachelogs-0.1.0.dist-info/METADATA,sha256=H-Pvj6xsSll5nQcsR-oM6E4bg3t99gPC5_QUZElCtvk,4398
+apachelogs-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+apachelogs-0.1.0.dist-info/top_level.txt,sha256=8o0iTeOzSWWamw7DprFVuXAJe0DN86hCpcAk6XsTvRs,11
+apachelogs-0.1.0.dist-info/RECORD,,
