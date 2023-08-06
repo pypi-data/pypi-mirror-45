@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+vkdelivery/__init__.py
+vkdelivery.egg-info/PKG-INFO
+vkdelivery.egg-info/SOURCES.txt
+vkdelivery.egg-info/dependency_links.txt
+vkdelivery.egg-info/top_level.txt
