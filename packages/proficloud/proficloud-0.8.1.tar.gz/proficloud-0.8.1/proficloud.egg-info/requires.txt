@@ -1,0 +1,10 @@
+requests
+pandas
+numpy
+streamz
+ntplib
+somoclu
+sklearn
+bokeh
+matplotlib
+paho-mqtt
