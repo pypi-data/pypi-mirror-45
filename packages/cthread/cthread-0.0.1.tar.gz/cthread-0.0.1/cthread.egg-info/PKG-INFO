@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cthread
+Version: 0.0.1
+Summary: Python implementation of a thread that can be started, stopped, paused, resumed, and reset.
+Home-page: https://github.com/ksonter95/ControllableThread.git
+Author: Kieran Sonter
+Author-email: ksonter95@gmail.com
+License: UNKNOWN
+Description: # ControllableThread
+        Python implementation of a thread that can be started, stopped, paused, resumed, and reset.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
