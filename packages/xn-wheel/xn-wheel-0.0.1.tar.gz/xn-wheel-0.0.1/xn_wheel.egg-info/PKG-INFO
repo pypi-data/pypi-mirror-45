@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xn-wheel
+Version: 0.0.1
+Summary: 自用python工具库
+Home-page: https://github.com/xiangning17/wheel
+Author: Xiang Ning
+Author-email: xiangning17@foxmail.com
+License: UNKNOWN
+Description: 
+        # wheel 自用python工具库
+        ===============
+        
+        
+Keywords: wheel,xiangning,向宁
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
