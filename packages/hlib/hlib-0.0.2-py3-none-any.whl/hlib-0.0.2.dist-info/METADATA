@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hlib
+Version: 0.0.2
+Summary: supplemental algorithms and data structures
+Home-page: https://github.com/hlatourette/hlib
+Author: Hunter LaTourette
+Author-email: hlatourette@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# hlib
+
+supplemental algorithms and data structures
+
