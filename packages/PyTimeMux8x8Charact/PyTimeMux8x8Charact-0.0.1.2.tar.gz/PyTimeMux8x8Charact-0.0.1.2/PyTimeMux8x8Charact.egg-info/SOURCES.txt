@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PyTimeMux8x8Charact/MuxTimeCharactCore.py
+PyTimeMux8x8Charact/MuxTimeCharactGui.py
+PyTimeMux8x8Charact/MuxTimeCharactGui.ui
+PyTimeMux8x8Charact/__init__.py
+PyTimeMux8x8Charact.egg-info/PKG-INFO
+PyTimeMux8x8Charact.egg-info/SOURCES.txt
+PyTimeMux8x8Charact.egg-info/dependency_links.txt
+PyTimeMux8x8Charact.egg-info/entry_points.txt
+PyTimeMux8x8Charact.egg-info/requires.txt
+PyTimeMux8x8Charact.egg-info/top_level.txt

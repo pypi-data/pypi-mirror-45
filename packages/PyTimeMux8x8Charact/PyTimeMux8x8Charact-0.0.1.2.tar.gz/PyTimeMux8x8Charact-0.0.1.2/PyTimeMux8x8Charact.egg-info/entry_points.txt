@@ -1,0 +1,3 @@
+[console_scripts]
+GFETTimeMux8x8Char = PyTimeMux8x8Charact.MuxTimeCharactGui:main
+
