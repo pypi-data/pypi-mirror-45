@@ -1,0 +1,6 @@
+README.md
+setup.py
+Jurry_nester.egg-info/PKG-INFO
+Jurry_nester.egg-info/SOURCES.txt
+Jurry_nester.egg-info/dependency_links.txt
+Jurry_nester.egg-info/top_level.txt
