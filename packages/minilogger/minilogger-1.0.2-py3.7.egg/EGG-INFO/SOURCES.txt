@@ -1,0 +1,7 @@
+setup.py
+minilogger/__init__.py
+minilogger/logger.py
+minilogger.egg-info/PKG-INFO
+minilogger.egg-info/SOURCES.txt
+minilogger.egg-info/dependency_links.txt
+minilogger.egg-info/top_level.txt
