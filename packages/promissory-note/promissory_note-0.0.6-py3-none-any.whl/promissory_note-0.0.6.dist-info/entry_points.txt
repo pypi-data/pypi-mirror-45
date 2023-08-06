@@ -1,0 +1,3 @@
+[console_scripts]
+promissory-note-cli = promissory_note.gateways.cli:main
+
