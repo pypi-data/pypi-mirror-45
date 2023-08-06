@@ -1,0 +1,11 @@
+bindit/__init__.py,sha256=970DnllpY29OdlZR7ByGAa2vvPAiwr574rsWhotxwkI,5897
+bindit/cli.py,sha256=5nEhsPSzOwgFTo335uWSd9BeFs8i2TEZBMdF30OnN9Y,1220
+bindit/docker.py,sha256=GUdVI5ZeftWE9AHn_zsk9LEFJxJfTqI8VUKJdEesLnA,4590
+bindit/shell.py,sha256=utdGcBVsAeQg-ZzNjWAs23HwvTtSFe6l9JV5JPAKOdQ,803
+bindit-0.1.0.dist-info/AUTHORS.rst,sha256=NjzCgMZ0aNAIZQizMQX9scKBMuH5et5Kl47i-zXqJpI,160
+bindit-0.1.0.dist-info/LICENSE,sha256=bMV_vH-SFPjLPx20l_7eSx9Yr4FJ6EHtXt7xhCZx1b0,1071
+bindit-0.1.0.dist-info/METADATA,sha256=TFBCtbHk31ReX-RcV89ROZYtKXhvK-z139HY_e8typ0,2435
+bindit-0.1.0.dist-info/WHEEL,sha256=aSdOKpzTGLLkKenfdFGiq92od_Dmr98YfEe8iw7iZoo,110
+bindit-0.1.0.dist-info/entry_points.txt,sha256=WvoEpDbRt_Nxj2hHET_q7aJ4gUx5i3oYtzPwlsFit84,44
+bindit-0.1.0.dist-info/top_level.txt,sha256=6b1Uw8mjRIRJCRSU6bVk6nCqXeuYP46LznLJRFlWITs,7
+bindit-0.1.0.dist-info/RECORD,,
