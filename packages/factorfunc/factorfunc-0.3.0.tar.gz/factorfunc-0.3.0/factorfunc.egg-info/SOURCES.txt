@@ -1,0 +1,6 @@
+factorfunc.py
+setup.py
+factorfunc.egg-info/PKG-INFO
+factorfunc.egg-info/SOURCES.txt
+factorfunc.egg-info/dependency_links.txt
+factorfunc.egg-info/top_level.txt
