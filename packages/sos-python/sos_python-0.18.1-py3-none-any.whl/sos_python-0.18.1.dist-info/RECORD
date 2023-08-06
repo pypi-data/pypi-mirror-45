@@ -1,0 +1,15 @@
+sos_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sos_python/__init__.py.bak,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sos_python/_version.py,sha256=iWizjQUDlnC0RVE2g_K2q8MNCtFCQgg6kW0PzUPhSuU,1045
+sos_python/_version.py.bak,sha256=QLgd-ZSrbTgTEhHDkf8YpFfW0mLUV9--iGzNaBJ-F78,1716
+sos_python/actions.py,sha256=7amUTm9ZjjEUHAc5cu5zOI056vDU9TNxrCwX7qi15zs,2594
+sos_python/actions.py.bak,sha256=7amUTm9ZjjEUHAc5cu5zOI056vDU9TNxrCwX7qi15zs,2594
+sos_python/kernel.py,sha256=soYUEeZ3DC9G15Q1DFlm3k4sHEw6rbeFKzBGcZ2oOrA,7652
+sos_python/kernel.py.bak,sha256=3AW7JF9Xs59lWAMwc54EPzIVIJ2dauqsrhoTGKEex-I,4439
+sos_python/target.py,sha256=j0w2eGKoiLfms0ankhC59E733muA9z6KgNEQENkbjcQ,2064
+sos_python/target.py.bak,sha256=j0w2eGKoiLfms0ankhC59E733muA9z6KgNEQENkbjcQ,2064
+sos_python-0.18.1.dist-info/METADATA,sha256=-Fu5d6VQjJ47Y2AndVigLN9rIVBZzn7yp8l0rQIMImk,946
+sos_python-0.18.1.dist-info/RECORD,,
+sos_python-0.18.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sos_python-0.18.1.dist-info/entry_points.txt,sha256=0WUY4dq4K5lYtU2Bgr1NnJMZfHkeXhIC74wbx7H2QqE,95
+sos_python-0.18.1.dist-info/top_level.txt,sha256=urbS41tXe5XaeepyJvHAIDsbAW-59SIoCmThK3vzEfs,11
