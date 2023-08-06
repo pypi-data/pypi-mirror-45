@@ -1,0 +1,15 @@
+wirerope>=0.2.1
+
+[dev]
+pytest>=3.0.2
+pytest-cov
+functools32>=3.2.3-2
+sphinx
+
+[docs]
+sphinx
+
+[tests]
+pytest>=3.0.2
+pytest-cov
+functools32>=3.2.3-2
