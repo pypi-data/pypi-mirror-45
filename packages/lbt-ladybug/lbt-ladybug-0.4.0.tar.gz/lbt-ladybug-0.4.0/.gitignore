@@ -1,0 +1,15 @@
+*.pyc
+test.py
+ladybug/dotnet.py
+ladybug/geometry.py
+ladybug/output.py
+ladybug/sunpathplus.py
+.coverage
+.pytest_cache
+.ipynb_checkpoints
+*.ipynb
+.tox
+*.egg-info
+build
+dist
+venv
