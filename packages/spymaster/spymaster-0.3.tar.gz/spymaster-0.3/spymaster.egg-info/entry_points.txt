@@ -1,0 +1,3 @@
+[console_scripts]
+spymaster = spymaster.spymaster:main
+
