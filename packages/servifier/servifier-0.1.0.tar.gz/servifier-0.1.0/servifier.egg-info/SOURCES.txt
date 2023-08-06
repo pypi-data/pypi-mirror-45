@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+servifier/__init__.py
+servifier/app_factory.py
+servifier/auth.py
+servifier/constants.py
+servifier/servification.py
+servifier/utils.py
+servifier/validation.py
+servifier.egg-info/PKG-INFO
+servifier.egg-info/SOURCES.txt
+servifier.egg-info/dependency_links.txt
+servifier.egg-info/requires.txt
+servifier.egg-info/top_level.txt
