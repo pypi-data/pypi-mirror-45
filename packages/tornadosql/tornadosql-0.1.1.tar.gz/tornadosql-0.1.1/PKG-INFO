@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: tornadosql
+Version: 0.1.1
+Summary: A lightweight wrapper around pymysql to support python3
+Home-page: https://github.com/oouxx/tornadosql
+Author: wxx
+Author-email: wangxinxing961129@gmail.com
+License: https://www.apache.org/licenses/LICENSE-2.0
+Download-URL: https://codeload.github.com/oouxx/tornadosql/tar.gz/v0.1.1
+Description: UNKNOWN
+Platform: UNKNOWN
