@@ -1,0 +1,7 @@
+attrs
+twisted
+emote-utils
+autobahn
+commandlet
+passlib
+pyyaml
