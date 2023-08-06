@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sphinx_materialdesign_theme_nopyc
+Version: 0.1.11
+Summary: Sphinx Material Design Theme WITHOUT ITS MAJOR FLAW
+Home-page: https://github.com/myyasuda/sphinx_materialdesign_theme
+Author: Masahiko Yasuda
+Author-email: myasuda@uchida.co.jp
+License: MIT License
+Download-URL: https://github.com/ir-3/sphinx_materialdesign_theme/archive/v1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
