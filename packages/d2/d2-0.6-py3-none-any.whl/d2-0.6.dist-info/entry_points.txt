@@ -1,0 +1,3 @@
+[console_scripts]
+d2 = d2:main
+

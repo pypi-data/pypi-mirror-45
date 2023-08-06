@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: d2
+Version: 0.6
+Summary: CLI to get API JSON data and show as table
+Home-page: https://github.com/weaming/d2
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Keywords: tools,api
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: tabulate
+
+# d2
+
+CLI to get API JSON data and show as table
+
+
