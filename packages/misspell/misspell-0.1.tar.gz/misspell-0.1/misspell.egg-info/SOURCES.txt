@@ -1,0 +1,7 @@
+README.md
+setup.py
+misspell/__init__.py
+misspell.egg-info/PKG-INFO
+misspell.egg-info/SOURCES.txt
+misspell.egg-info/dependency_links.txt
+misspell.egg-info/top_level.txt
