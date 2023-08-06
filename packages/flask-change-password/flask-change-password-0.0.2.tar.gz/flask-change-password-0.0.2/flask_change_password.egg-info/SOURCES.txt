@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+__init__.py
+app.py
+flask_change_password.py
+pageChangePassword.js
+setup.cfg
+setup.py
+test.py
+flask_change_password.egg-info/PKG-INFO
+flask_change_password.egg-info/SOURCES.txt
+flask_change_password.egg-info/dependency_links.txt
+flask_change_password.egg-info/requires.txt
+flask_change_password.egg-info/top_level.txt
