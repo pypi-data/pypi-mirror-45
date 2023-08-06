@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+octconv/__init__.py
+octconv/octconv.py
+octconv.egg-info/PKG-INFO
+octconv.egg-info/SOURCES.txt
+octconv.egg-info/dependency_links.txt
+octconv.egg-info/requires.txt
+octconv.egg-info/top_level.txt

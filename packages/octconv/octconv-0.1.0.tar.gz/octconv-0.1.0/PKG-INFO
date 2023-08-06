@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: octconv
+Version: 0.1.0
+Summary: Octave Convolution Implementation in PyTorch
+Home-page: https://github.com/braincreators/octconv
+Author: BrainCreators
+Author-email: miguel@braincreators.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
