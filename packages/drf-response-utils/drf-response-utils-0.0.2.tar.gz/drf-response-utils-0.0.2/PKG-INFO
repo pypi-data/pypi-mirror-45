@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: drf-response-utils
+Version: 0.0.2
+Summary: Response Utilities for Django Rest Framework
+Home-page: https://github.com/BRZangado/responseutils
+Author: Bruno Rodrigues Santos
+Author-email: bruesmanbruesman@hotmail.com
+License: UNKNOWN
+Description: A small package of utilities for Django Rest Framework
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
