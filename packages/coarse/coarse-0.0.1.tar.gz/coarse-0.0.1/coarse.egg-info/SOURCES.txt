@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+instructions.md
+requirements.txt
+setup.py
+coarse/__init__.py
+coarse/base_model.py
+coarse.egg-info/PKG-INFO
+coarse.egg-info/SOURCES.txt
+coarse.egg-info/dependency_links.txt
+coarse.egg-info/requires.txt
+coarse.egg-info/top_level.txt
