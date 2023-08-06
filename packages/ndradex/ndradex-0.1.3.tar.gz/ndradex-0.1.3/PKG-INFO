@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: ndradex
+Version: 0.1.3
+Summary: Python package for RADEX grid calculation
+Home-page: https://github.com/astropenguin/ndradex
+Author: astropenguin
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+License: MIT
+Description: # ndRADEX
+        :zap: Python package for RADEX grid calculation (i.e., N-dimension RADEX)
+        
+Keywords: radio-astronomy,python,radex,xarray
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
