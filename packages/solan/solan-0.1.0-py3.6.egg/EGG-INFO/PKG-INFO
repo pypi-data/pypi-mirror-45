@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: solan
+Version: 0.1.0
+Summary: Solan
+Home-page: https://github.com/OpenCode/solan
+Author: Francesco Apruzzese
+Author-email: cescoap@gmail.com
+License: AGPL
+Description: UNKNOWN
+Keywords: solan share sharing lan
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
