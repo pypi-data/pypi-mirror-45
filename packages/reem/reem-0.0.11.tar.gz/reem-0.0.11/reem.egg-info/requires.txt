@@ -1,0 +1,4 @@
+rejson
+redis
+six
+numpy
