@@ -1,0 +1,13 @@
+README.md
+setup.py
+fuzzychinese/__init__.py
+fuzzychinese/_character_to_radical.py
+fuzzychinese/_character_to_stroke.py
+fuzzychinese/_fuzzy_chinese_match.py
+fuzzychinese/_utils.py
+fuzzychinese/dict_chinese_radical.txt
+fuzzychinese/dict_chinese_stroke.txt
+fuzzychinese.egg-info/PKG-INFO
+fuzzychinese.egg-info/SOURCES.txt
+fuzzychinese.egg-info/dependency_links.txt
+fuzzychinese.egg-info/top_level.txt
