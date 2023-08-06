@@ -1,0 +1,36 @@
+name: dev
+channels:
+  - conda-forge
+dependencies:
+  - autopep8
+  - black
+  - bottleneck
+  - codecov
+  - dask
+  - distributed
+  - esmlab
+  - esmpy
+  - flake8
+  - git
+  - ipykernel
+  - isort
+  - make
+  - matplotlib
+  - nbsphinx
+  - netcdf4
+  - numpy
+  - numpydoc
+  - pytest
+  - pytest-cov
+  - python=3.7
+  - recommonmark
+  - scipy
+  - sphinx_rtd_theme
+  - sphinx>=1.6
+  - tornado
+  - xarray>=0.12
+  - xesmf
+  - pip:
+    - pytest-lazy-fixture
+    - sphinx_copybutton
+    - pytest-xdist
