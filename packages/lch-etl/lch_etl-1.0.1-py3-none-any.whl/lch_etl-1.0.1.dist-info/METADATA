@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: lch-etl
+Version: 1.0.1
+Summary: 数据库etl包
+Home-page: https://github.com/
+Author: lichanghua
+Author-email: 1371214116@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: mysqlclient
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlite3
+Requires-Dist: pandas
+Requires-Dist: psycopg2
+Requires-Dist: pymssql
+Requires-Dist: cx-Oracle
+
+UNKNOWN
+
+
