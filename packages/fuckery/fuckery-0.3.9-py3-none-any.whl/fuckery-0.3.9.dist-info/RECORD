@@ -1,0 +1,15 @@
+fuckery/__init__.py,sha256=Bp1sRRQhF8Rzvw8Rz0SQZCyHoY7NrsC4_UDgmGjPJLg,211
+fuckery/__main__.py,sha256=-duMWnxUJHgMjiXDxat2jKU8S0sZDImZIO6cKD2F6v4,418
+fuckery/cli.py,sha256=Xk9KXjv9YTQDQwoVXrubNNohSmbmk3t88Rch40_CQ0I,2582
+fuckery/constants.py,sha256=Vf7y2FhS3naYmsryb-ZQqDIr7iSaP3EVv7sHOtNX5Ag,2157
+fuckery/exc.py,sha256=RP-u32eokYRNnnD4Bk8Vc3SBfaLAtNXrwbqJoD2uTO8,562
+fuckery/memory.py,sha256=mtwC-8Ix9DlPnreCyTGFf8iUpReuc2oM6LgYn-vKcKg,3333
+fuckery/parser.py,sha256=Qb4liOWgxAAvSLMtKQo1yqqhpOpXdkCwlM6x6Sa3w7w,1737
+fuckery/vm.py,sha256=31i4vqJiyJrZhnbEF1nqWUcgeGYeIWJ39Hz7FNOTGbQ,8279
+fuckery-0.3.9.dist-info/AUTHORS.rst,sha256=eOg_NGlQsOj1azrRl1zZf-4YorKRwZbMoSK7gin1ZyM,67
+fuckery-0.3.9.dist-info/LICENSE,sha256=QDwU8leY9mCSVYYsucTWkmrZWNCYilHo234hbZ_DQaU,1057
+fuckery-0.3.9.dist-info/METADATA,sha256=0R4W1vYFLLiIXtVgJ0h5qKGGMnaDxsUjNJX_vxeKNSs,3304
+fuckery-0.3.9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fuckery-0.3.9.dist-info/entry_points.txt,sha256=HoYl-iv1SHzVlu864l8YVgvOqaHXbR04Wlfyo9WycFY,47
+fuckery-0.3.9.dist-info/top_level.txt,sha256=zR-IV4Cp97mjZMLRvqXXX3Rnd3HbP1isfjUJ65MjCnw,8
+fuckery-0.3.9.dist-info/RECORD,,
