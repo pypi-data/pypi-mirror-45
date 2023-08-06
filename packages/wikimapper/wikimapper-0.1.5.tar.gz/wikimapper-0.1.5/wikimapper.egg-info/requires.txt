@@ -1,0 +1,14 @@
+
+[dev]
+black
+twine
+pygments
+wheel
+
+[doc]
+
+[test]
+tox
+pytest
+codecov
+pytest-cov
