@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mapper-interactive
+Version: 0.0.1
+Summary: Mapper Interactive is a highly customizable visualization framework for you to visualize and explore Mapper algorithm.
+Home-page: https://github.com/MapperInteractive/MapperInteractive
+Author: Yaodong Zhao
+Author-email: yaodong.zhao@utah.edu
+License: MIT
+Keywords: mapper
+Platform: any
+Requires-Dist: gunicorn
+Requires-Dist: Flask
+Requires-Dist: Flask-HTTPAuth (==3.2.4)
+Requires-Dist: kmapper (==1.2.0)
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+UNKNOWN
+
+
