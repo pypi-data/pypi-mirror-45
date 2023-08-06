@@ -1,0 +1,7 @@
+botbuilder/azure/__init__.py,sha256=GkV89xKUWcnP7pWlnAVoxeEU1fAo1FT5zCrLwj-W8u8,506
+botbuilder/azure/about.py,sha256=CYAMzHWFc8my0towz1W3b8PKPAv45Oe-qC1L7jLIxKE,461
+botbuilder/azure/cosmosdb_storage.py,sha256=e935XniIhuJvgucb_hxoOBQ4Die2zEwG-6bBh2IJaDs,10321
+botbuilder_azure-4.4.0b1.dist-info/METADATA,sha256=TltzR51WoYfmMdElOkZt0-901UKCMccPn-WwZABVBtU,836
+botbuilder_azure-4.4.0b1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+botbuilder_azure-4.4.0b1.dist-info/top_level.txt,sha256=2p3tapzF5j-vDQrnQjnuJZvvXStR_qu8i9Tqq-0ThZg,11
+botbuilder_azure-4.4.0b1.dist-info/RECORD,,
