@@ -1,0 +1,2 @@
+include README.md LICENSE
+include pageplanner_selenium/controls.js
