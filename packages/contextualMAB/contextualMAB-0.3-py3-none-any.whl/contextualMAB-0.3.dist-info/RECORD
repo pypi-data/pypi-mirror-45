@@ -1,0 +1,14 @@
+contextualMAB/Thompson.py,sha256=frlsBqGJmqAVx0tT95XbwoZ8uwyaqGBZMi09Haz6JT0,1316
+contextualMAB/UCB.py,sha256=OWbovQCdl8X2wrlI0ocQQmAE9VbmsRRljEXWYjlVmac,1718
+contextualMAB/__init__.py,sha256=XP--xCJaY4gzLXK_LUPGuQZ7ZrNW4B_lMW9wXvF723A,91
+contextualMAB/contextualMAB.py,sha256=UkE9YA8DQgPMBCaRUXjDtEA9lwIvcqjq0xNrzhJbDa0,494
+contextualMAB/eGreedy.py,sha256=dN1rOD8RIGnyRoT8aIgWR3auB54F0KDK8WSMiSvKTso,2035
+contextualMAB/linThompson.py,sha256=1YjAJhPvBK0Oa4Vj6wut3BUiKSy2RKUdIDldUTWq83E,2318
+contextualMAB/linUCB.py,sha256=wqktCubA0EiotebBqUKQ9IBCL6JmzFdG38_Mnd1AARU,2719
+contextualMAB/test.py,sha256=C4yXL7o_gDXDdHmjqVOSg0YAX7fdT0ktnizWNFbiQ70,597
+contextualMAB/utilMAB.py,sha256=WKmrCpqYc2EhX5tyxeoHPZ_12ekW0S3f5hFr4db2j_k,1073
+contextualMAB-0.3.dist-info/LICENSES.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+contextualMAB-0.3.dist-info/METADATA,sha256=fnR3IXY9bP4aijYsSbZpqXgpA_8os9D8gFC3-EClPAo,349
+contextualMAB-0.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+contextualMAB-0.3.dist-info/top_level.txt,sha256=IYDnc6PrWVWBwCkBZ70lNrDovH1-mqFebpbPbVfyF58,14
+contextualMAB-0.3.dist-info/RECORD,,
