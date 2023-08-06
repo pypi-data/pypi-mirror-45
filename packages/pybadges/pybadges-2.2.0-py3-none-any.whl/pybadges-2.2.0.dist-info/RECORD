@@ -1,0 +1,13 @@
+pybadges/__init__.py,sha256=7UWDFpIi_KPZ0RLAUpyOEB8luLe9AuZ8DjiG1yd_u0o,8164
+pybadges/__main__.py,sha256=ETZGpvWlmJoCOrtE1J7P9oPQ9FHB3xJifiNc9t2spzQ,5595
+pybadges/badge-template-full.svg,sha256=4w8Z4ap6XXWsc9p6i3XeCHZiNwnWvDygvZr7xZAyUOM,2648
+pybadges/default-widths.json,sha256=FaP9nBcFNRKlkHcmu3ORBquH2Vu-_x-7q9D7GUVP-3k,201097
+pybadges/pil_text_measurer.py,sha256=elQJGgPz-mxXhvYFtzzS4yBQbsfUqSfei3m7-ppFSLE,1362
+pybadges/precalculate_text.py,sha256=UPu9zivDTBRvcXZK_afHVoZeVQ-rPzFau014mh87m_w,7968
+pybadges/precalculated_text_measurer.py,sha256=ypUhZbojKk3kjtCEY6Nz2DwvMLK2yzHFAFq-demELas,3862
+pybadges/text_measurer.py,sha256=Tn2x_otg62BVELqozfNQQtkHtplNpF9UpFFnsKvznFE,981
+pybadges-2.2.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pybadges-2.2.0.dist-info/METADATA,sha256=C7g3veriSaepkoyQI_thlkTE-Ns5P74VG790Qo1dV18,7233
+pybadges-2.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pybadges-2.2.0.dist-info/top_level.txt,sha256=6nzowp7I2eefEPdvYuxNxAP45B-NOrvRnQVLntaW3G0,9
+pybadges-2.2.0.dist-info/RECORD,,
