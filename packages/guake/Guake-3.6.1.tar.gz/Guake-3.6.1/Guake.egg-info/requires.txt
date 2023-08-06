@@ -1,0 +1,6 @@
+pbr
+pycairo
+pygobject
+
+[:(python_version < '3.5')]
+typing
