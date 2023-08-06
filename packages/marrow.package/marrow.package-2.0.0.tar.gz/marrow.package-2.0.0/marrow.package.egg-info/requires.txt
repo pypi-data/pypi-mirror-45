@@ -1,0 +1,11 @@
+typeguard<=2.3
+
+[:python_version < "3.5"]
+typing
+
+[development]
+pytest
+pytest-cov
+pytest-flakes
+pytest-isort
+pre-commit
