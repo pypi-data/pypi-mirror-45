@@ -1,0 +1,8 @@
+stats_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stats_scraper/__main__.py,sha256=Qx2ZD2qOtnksaN6-hbJYJw-xM_rg2KzcuQmhxkPc_gk,994
+stats_scraper/player.py,sha256=vZGvRGCZC7areRtGM1BTDHCqYwi92lBa4JQqgJcABfM,3994
+stats_scraper/scraper.py,sha256=mjUQUnIZFiXoWoFcI0Vj9Akq2cjElau4Wh7DqQXpFFo,6148
+stats_scraper-1.0.0.dist-info/METADATA,sha256=ogOpsMp4WDI4oRM-Z7ZjkHkXO0MrbQ6OsTDz-fWcplQ,2152
+stats_scraper-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+stats_scraper-1.0.0.dist-info/top_level.txt,sha256=RgqD5gBfvHZoXExF9ucAa7C9Q9mQMTSP5cVfW8qhCNI,14
+stats_scraper-1.0.0.dist-info/RECORD,,
