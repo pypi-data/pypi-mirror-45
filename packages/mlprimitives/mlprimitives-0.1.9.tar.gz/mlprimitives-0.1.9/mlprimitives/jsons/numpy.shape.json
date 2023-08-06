@@ -1,0 +1,27 @@
+{
+    "name": "numpy.ma.shape",
+    "contributors": [
+        "Carles Sala <csala@csail.mit.edu>"
+    ],
+    "documentation": "https://docs.scipy.org/doc/numpy/reference/generated/numpy.ma.shape.html",
+    "description": "Return the shape of an array.",
+    "classifiers": {
+        "type": "preprocessor"
+    },
+    "modalities": [],
+    "primitive": "numpy.ma.shape",
+    "produce": {
+        "args": [
+            {
+                "name": "X",
+                "type": "ndarray"
+            }
+        ],
+        "output": [
+            {
+                "name": "shape",
+                "type": "ndarray"
+            }
+        ]
+    }
+}
