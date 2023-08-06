@@ -1,0 +1,9 @@
+README.rst
+setup.py
+X11Client.egg-info/PKG-INFO
+X11Client.egg-info/SOURCES.txt
+X11Client.egg-info/dependency_links.txt
+X11Client.egg-info/top_level.txt
+ext/x11_client.c
+ext/x11_client.h
+x11/__init__.py
