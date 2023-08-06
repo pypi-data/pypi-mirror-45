@@ -1,0 +1,13 @@
+{
+  "name": "nutrient-database-usda",
+  "urls": [
+    {
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/dnload/sr28asc.zip",
+      "bytes": 6231932
+    }
+  ],
+  "type": "zip",
+  "tags": ["gov", "usda", "agriculture"],
+  "description": "",
+  "source": ""
+}

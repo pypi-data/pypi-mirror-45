@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dafter
+Version: 0.2
+Summary: dafter CLI
+Home-page: https://github.com/vinzeebreak/dafter
+Author: Vincent Houlbreque
+Author-email: UNKNOWN
+License: MIT
+Description: Dafter is a command line downloader of public datasets. It takes care of downloading and formatting the datasets files so that you can spend hours building models instead of looking for datasets and their urls.
+Keywords: dataset,datasets,cli,downloader
+Platform: UNKNOWN

@@ -1,0 +1,13 @@
+{
+  "name": "sentiment140",
+  "urls": [
+    {
+      "url": "https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip",
+      "bytes": 81363704
+    }
+  ],
+  "type": "zip",
+  "tags": ["nlp", "sentiment", "stanford"],
+  "description": "",
+  "source": "http://help.sentiment140.com/for-students/"
+}
