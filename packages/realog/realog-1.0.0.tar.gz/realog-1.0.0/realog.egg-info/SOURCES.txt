@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+realog/__init__.py
+realog/debug.py
+realog.egg-info/PKG-INFO
+realog.egg-info/SOURCES.txt
+realog.egg-info/dependency_links.txt
+realog.egg-info/not-zip-safe
+realog.egg-info/top_level.txt
