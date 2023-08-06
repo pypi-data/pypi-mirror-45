@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+test-requirements.txt
+aioerl/__init__.py
+aioerl/aioerl.py
+aioerl.egg-info/PKG-INFO
+aioerl.egg-info/SOURCES.txt
+aioerl.egg-info/dependency_links.txt
+aioerl.egg-info/not-zip-safe
+aioerl.egg-info/requires.txt
+aioerl.egg-info/top_level.txt
