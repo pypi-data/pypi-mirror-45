@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pygelf4ovh
+Version: 0.2
+Summary: pygelf adaptation that work for OVH Logs Data Platform
+Home-page: https://github.com/olopost/pygelf4ovh
+Author: Samuel MEYNARD
+Author-email: samuel@meyn.fr
+License: UNKNOWN
+Description: # pygelf4ovh
+        pygelf adaptation that work for OVH Logs Data Platform
+        
+        ## Release note
+         - Version 0.2
+           * Test done on OVH  Platform 
+           * Thanks to : Ivan Mukhin for PyGelf : [PyGelf GitHub project](https://github.com/keeprocking/pygelf)
+           
+         - Version 0.1
+           * Initial commit - first working version
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
