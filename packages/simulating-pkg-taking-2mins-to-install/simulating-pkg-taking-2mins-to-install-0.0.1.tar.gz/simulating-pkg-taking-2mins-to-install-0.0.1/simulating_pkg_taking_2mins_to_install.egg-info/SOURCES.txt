@@ -1,0 +1,6 @@
+setup.py
+simulating_pkg_taking_2mins/__init__.py
+simulating_pkg_taking_2mins_to_install.egg-info/PKG-INFO
+simulating_pkg_taking_2mins_to_install.egg-info/SOURCES.txt
+simulating_pkg_taking_2mins_to_install.egg-info/dependency_links.txt
+simulating_pkg_taking_2mins_to_install.egg-info/top_level.txt
