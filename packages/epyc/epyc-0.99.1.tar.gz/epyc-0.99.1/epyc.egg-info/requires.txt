@@ -1,0 +1,7 @@
+six
+future
+ipython
+pyzmq
+ipyparallel
+dill
+pandas
