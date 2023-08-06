@@ -1,0 +1,40 @@
+[tool.poetry]
+name="autohooks-plugin-autopep8"
+version="0.0.4"
+description="Autohooks plugin for code formatting via autopep8"
+authors=["Leonard Papenmeier <leonard.papenmeier@posteo.de>"]
+readme="README.md"
+packages = [
+    { include = "autohooks" }
+]
+license = "GPL-3.0"
+classifiers=[
+   'Development Status :: 4 - Beta',
+   'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+   'Environment :: Console',
+   'Intended Audience :: Developers',
+   'Intended Audience :: System Administrators',
+   'Programming Language :: Python :: 3.5',
+   'Programming Language :: Python :: 3.6',
+   'Programming Language :: Python :: 3.7',
+   'Programming Language :: Python :: 3.8',
+   'Operating System :: OS Independent',
+   'Topic :: Software Development :: Libraries :: Python Modules',
+   'Topic :: Software Development :: Version Control :: Git',
+]
+include = ["CHANGELOG.md","README.md","RELEASE.md"]
+
+[tool.poetry.dependencies]
+python = ">=3.5"
+autopep8 = "*"
+autohooks = ">=1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+twine = "*"
+wheel = "*"
+setuptools="*"
+
+
+[tool.autohooks]
+pre-commit = ['autohooks.plugins.autopep8']
