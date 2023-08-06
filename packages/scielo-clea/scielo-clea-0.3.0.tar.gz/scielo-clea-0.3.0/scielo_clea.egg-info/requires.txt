@@ -1,0 +1,8 @@
+lxml
+numpy
+python-Levenshtein
+regex
+unidecode
+
+[server]
+flask
