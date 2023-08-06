@@ -1,0 +1,15 @@
+LICENSE
+README.md
+__init__.py
+setup.cfg
+setup.py
+wexpect.py
+examples/cmd.py
+examples/foo.py
+examples/python.py
+wexpect.egg-info/PKG-INFO
+wexpect.egg-info/SOURCES.txt
+wexpect.egg-info/dependency_links.txt
+wexpect.egg-info/not-zip-safe
+wexpect.egg-info/pbr.json
+wexpect.egg-info/top_level.txt
