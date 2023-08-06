@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+yipy/__init__.py
+yipy/api.py
+yipy/config.py
