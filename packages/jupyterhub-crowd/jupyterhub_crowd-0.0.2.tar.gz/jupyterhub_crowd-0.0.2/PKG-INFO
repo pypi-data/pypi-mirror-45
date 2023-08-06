@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: jupyterhub_crowd
+Version: 0.0.2
+Summary: Crowd authenticator for JupyterHub
+Home-page: https://github.com/hkjinlee/jupyterhub_crowd
+Author: Jin, Heonkyu
+Author-email: heonkyu.jin@gmail.com
+License: UNKNOWN
+Description: # JupyterHub Crowd Authenticator
+        
+        [Crowd](https://www.atlassian.com/software/crowd) authenticator for [JupyterHub](https://github.com/jupyterhub).
+        
+        ## Installation
+        Install with pip:
+        ```
+        pip install jupyterhub_crowd
+        ```
+        
+        ## Setup
+        
+        In ```jupyterhub_config.py```, add:
+        ```
+        c.JupyterHub.authenticator_class = 'jupyterhub_crowd.Crowthenticator'
+        c.Crowthenticator.server_url = 'https://crowd.xxx.yyy/'
+        c.Crowthenticator.server_appname = 'foo'
+        c.Crowthenticator.server_password = 'bar'
+        c.Crowthenticator.username_from_email = True
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

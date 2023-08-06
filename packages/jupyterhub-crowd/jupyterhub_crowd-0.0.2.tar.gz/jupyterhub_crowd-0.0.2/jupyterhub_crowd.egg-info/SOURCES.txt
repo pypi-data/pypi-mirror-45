@@ -1,0 +1,9 @@
+README.md
+setup.py
+jupyterhub_crowd/__init__.py
+jupyterhub_crowd/auth.py
+jupyterhub_crowd.egg-info/PKG-INFO
+jupyterhub_crowd.egg-info/SOURCES.txt
+jupyterhub_crowd.egg-info/dependency_links.txt
+jupyterhub_crowd.egg-info/requires.txt
+jupyterhub_crowd.egg-info/top_level.txt
