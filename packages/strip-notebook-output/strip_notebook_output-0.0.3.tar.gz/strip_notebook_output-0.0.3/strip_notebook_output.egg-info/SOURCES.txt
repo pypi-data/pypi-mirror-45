@@ -1,0 +1,12 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.rst
+setup.py
+strip_notebook_output/__init__.py
+strip_notebook_output/strip_output.py
+strip_notebook_output.egg-info/PKG-INFO
+strip_notebook_output.egg-info/SOURCES.txt
+strip_notebook_output.egg-info/dependency_links.txt
+strip_notebook_output.egg-info/top_level.txt
+tests/__init__.py
