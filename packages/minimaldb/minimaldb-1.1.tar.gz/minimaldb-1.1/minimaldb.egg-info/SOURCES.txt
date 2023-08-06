@@ -1,0 +1,7 @@
+README.md
+setup.py
+minimaldb/__init__.py
+minimaldb.egg-info/PKG-INFO
+minimaldb.egg-info/SOURCES.txt
+minimaldb.egg-info/dependency_links.txt
+minimaldb.egg-info/top_level.txt
