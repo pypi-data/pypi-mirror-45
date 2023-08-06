@@ -1,0 +1,11 @@
+htmldate/__init__.py,sha256=0Aw1j3AnCPE5jxBzW1ZrBjY5TdDuOyP5EEu83iW8E3g,714
+htmldate/cli.py,sha256=4p1On_x1pV6v0Yu46F3LKk5CqqXCCX-8FoOHHQDwNsI,2398
+htmldate/core.py,sha256=98y_ETfxhvG4FY9Fd4srwgA3E8p1yAyWeBp5R4aZmes,44001
+htmldate/download.py,sha256=rWnH4wH-Omr7-ZYguwrskC5LZkMQ2nW9IGr8n1Q8Akg,1988
+htmldate-0.5.0.dist-info/DESCRIPTION.rst,sha256=_VaGdN_HMa1ovZvtnusyl5KDTxu0ND65EjKJBTyV-Ds,8165
+htmldate-0.5.0.dist-info/METADATA,sha256=9K2xH_GYgTSodh1VGc10mOR10kA5LqSB7tXwZ2yRhPw,9835
+htmldate-0.5.0.dist-info/RECORD,,
+htmldate-0.5.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+htmldate-0.5.0.dist-info/entry_points.txt,sha256=fzeseZNJKiqt6TH6YxT-FHGlALFPwwaFUn9wMbu4joA,48
+htmldate-0.5.0.dist-info/metadata.json,sha256=EiqOjENNyTaZGPY63_wSOiZnb2YjnAvCg4BF3W1tOlI,1943
+htmldate-0.5.0.dist-info/top_level.txt,sha256=GFImTOY3FZ6KpdZgak4SW7KdhpB42SBD7bepFhBOvqY,9
