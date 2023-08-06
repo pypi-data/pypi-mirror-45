@@ -1,0 +1,6 @@
+README.md
+setup.py
+scikit_gaze.egg-info/PKG-INFO
+scikit_gaze.egg-info/SOURCES.txt
+scikit_gaze.egg-info/dependency_links.txt
+scikit_gaze.egg-info/top_level.txt
