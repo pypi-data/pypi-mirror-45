@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sghmcmc
+Version: 0.1.3
+Summary: long description
+Home-page: https://github.com/jiangxiaoyuww/sghmc-
+Author: Xiaoyu Jiang & Luman Huang
+Author-email: xj35@duke.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.20.0)
+Requires-Dist: numpy
+Requires-Dist: matplotlib.pyplot
+Requires-Dist: numba
+Requires-Dist: functools
+Requires-Dist: multiprocess
+Requires-Dist: random
+
+# sghmc-
+sghmc 
+
+
