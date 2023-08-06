@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+src/pytabby/__init__.py
+src/pytabby/_version.py
+src/pytabby/formatting.py
+src/pytabby/menu.py
+src/pytabby/normalizer.py
+src/pytabby/tab.py
+src/pytabby/validators.py
+src/pytabby.egg-info/PKG-INFO
+src/pytabby.egg-info/SOURCES.txt
+src/pytabby.egg-info/dependency_links.txt
+src/pytabby.egg-info/entry_points.txt
+src/pytabby.egg-info/not-zip-safe
+src/pytabby.egg-info/requires.txt
+src/pytabby.egg-info/top_level.txt
