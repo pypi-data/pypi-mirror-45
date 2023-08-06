@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tailf/__init__.py
+tailf/basic.py
+tailf/basic_async.py
+tailf/const.py
+tailf.egg-info/PKG-INFO
+tailf.egg-info/SOURCES.txt
+tailf.egg-info/dependency_links.txt
+tailf.egg-info/not-zip-safe
+tailf.egg-info/top_level.txt
+test/__init__.py
+test/impl_async.py
+test/test_async.py
+test/test_functionality.py
