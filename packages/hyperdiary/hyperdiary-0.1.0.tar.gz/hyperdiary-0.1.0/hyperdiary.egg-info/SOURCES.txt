@@ -1,0 +1,9 @@
+README.rst
+setup.py
+hyperdiary.egg-info/PKG-INFO
+hyperdiary.egg-info/SOURCES.txt
+hyperdiary.egg-info/dependency_links.txt
+hyperdiary.egg-info/entry_points.txt
+hyperdiary.egg-info/not-zip-safe
+hyperdiary.egg-info/requires.txt
+hyperdiary.egg-info/top_level.txt
