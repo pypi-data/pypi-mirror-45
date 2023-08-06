@@ -1,0 +1,3 @@
+[console_scripts]
+portable-wisdom = portable_wisdom.wisdom:main
+
