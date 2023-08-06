@@ -1,0 +1,28 @@
+data:
+- brief: How to write commit messages
+  category: reference
+  created: '2018-06-22T13:10:33.295299+00:00'
+  data: []
+  description: ''
+  digest: 6d221115da7b95409c59164632893a57419666135c08151ddbf0be976f3b20a3
+  filename: ''
+  groups:
+  - git
+  links:
+  - https://writingfordevelopers.substack.com/p/how-to-write-commit-messages
+  - https://chris.beams.io/posts/git-commit/
+  name: ''
+  source: ''
+  tags:
+  - commit
+  - git
+  - howto
+  - message
+  - scm
+  updated: '2018-06-27T10:10:16.553052+00:00'
+  uuid: 33da9768-1257-4419-b6df-881e19f07bbc
+  versions: []
+meta:
+  homepage: https://github.com/heilaaks/snippy
+  updated: '2019-05-01T09:14:27.981704+00:00'
+  version: 0.10.0

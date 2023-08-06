@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: snippy
+Version: 0.10.0
+Summary: Command, solution, reference and code snippet manager.
+Home-page: https://github.com/heilaaks/snippy
+Author: Heikki J. Laaksonen
+Author-email: laaksonen.heikki.j@gmail.com
+License: GNU Affero General Public License v3 or later
+Description: |badge-pypiv| |badge-pys| |badge-pyv| |badge-cov| |badge-docs| |badge-build| |badge-docker|
+        
+        Snippy
+        ======
+        
+          I can't remember how - I just remember what.
+        
+        Snippy is a software development and maintenance notes manager. It allows
+        organizing and sharing examples and solutions from self hosted or shared
+        storage through command line interface or via REST API server. Snippy may
+        be able to help you when working with different open source components that
+        all have different commands, settings and issues.
+        
+        Features
+        ========
+        
+        Main features include:
+        
+        - Linux command line tool or a `REST API server`_.
+        - Manage notes in three categories.
+        - Supports Markdown, YAML, JSON and text formats.
+        - Organize notes with metadata like groups and links.
+        
+        Installation
+        ============
+        
+        To install as a tool, run:
+        
+        .. code:: text
+        
+            pip install snippy --user
+        
+        To install as a server, run:
+        
+        .. code:: text
+        
+            docker pull docker.io/heilaaks/snippy
+        
+        Usage
+        =====
+        
+        .. image:: https://asciinema.org/a/pRd8Cf6WUGb1ioB7TPFdTq8Fb.png
+            :target: https://asciinema.org/a/pRd8Cf6WUGb1ioB7TPFdTq8Fb
+            :alt: Snippy in action!
+        
+        Contributing
+        ============
+        
+        Author is happy to receive bug reports and feature requests.
+        
+        Development
+        ===========
+        
+        See the `development`_ chapter from the documentation.
+        
+        Related work
+        ============
+        
+        - `tldr <https://github.com/tldr-pages/tldr>`_
+        - `cheat <https://github.com/cheat/cheat>`_
+        - `Buku <https://github.com/jarun/Buku>`_
+        - `CRUD in 2 minutes <https://www.youtube.com/watch?v=kMs-Tltf_Og>`_
+        
+        
+        .. |badge-pypiv| image:: https://img.shields.io/pypi/v/snippy.svg
+           :target: https://pypi.python.org/pypi/snippy
+        
+        .. |badge-pys| image:: https://img.shields.io/pypi/status/snippy.svg
+           :target: https://pypi.python.org/pypi/snippy
+        
+        .. |badge-pyv| image:: https://img.shields.io/pypi/pyversions/snippy.svg
+           :target: https://pypi.python.org/pypi/snippy
+        
+        .. |badge-cov| image:: https://codecov.io/gh/heilaaks/snippy/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/heilaaks/snippy
+        
+        .. |badge-docs| image:: https://readthedocs.org/projects/snippy/badge/?version=latest
+           :target: http://snippy.readthedocs.io/en/latest/?badge=latest
+        
+        .. |badge-build| image:: https://travis-ci.org/heilaaks/snippy.svg?branch=master
+           :target: https://travis-ci.org/heilaaks/snippy
+        
+        .. |badge-pyup| image:: https://pyup.io/repos/github/heilaaks/snippy/shield.svg
+           :target: https://pyup.io/repos/github/heilaaks/snippy/
+        
+        .. |badge-docker| image:: https://images.microbadger.com/badges/image/heilaaks/snippy.svg
+           :target: https://hub.docker.com/r/heilaaks/snippy
+        
+        .. _REST API server: https://app.swaggerhub.com/apis/heilaaks/snippy/0.10.0
+        
+        .. _development: https://snippy.readthedocs.io/en/latest/development.html
+        
+Keywords: command solution snippet reference link snippet manager server console
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/x-rst
+Provides-Extra: devel
+Provides-Extra: docker
+Provides-Extra: develpypy
+Provides-Extra: test
+Provides-Extra: server
+Provides-Extra: docs
+Provides-Extra: serverpypy
