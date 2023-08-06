@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+hydrosdk/__init__.py
+hydrosdk/sdk.py
+hydrosdk.egg-info/PKG-INFO
+hydrosdk.egg-info/SOURCES.txt
+hydrosdk.egg-info/dependency_links.txt
+hydrosdk.egg-info/requires.txt
+hydrosdk.egg-info/top_level.txt
+tests/sdk/__init__.py
+tests/sdk/test_model.py
