@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: djangohttpbench
+Version: 0.0.2
+Summary: HTTP load testing tools for Django. Like an apache bench but requests are sent from authenticated users.
+Home-page: https://github.com/c-bata/django-httpbench
+Author: Masashi Shibata
+Author-email: contact@c-bata.link
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Django
+Requires-Dist: requests
+
+django-httpbench
+================
+
+HTTP load testing tools for Django.
+Like an apache bench but requests are sent from authenticated users without having to know their password.
+
+Usage
+-----
+
+Requirements
+~~~~~~~~~~~~
+
+Supported python versions are python 3.6 or later.
+
+* django (>= 2.0)
+* requests
+
+Installation
+~~~~~~~~~~~~
+
+.. code-block:: console
+
+   $ python3 -m pip install djangohttpbench
+
+PyPI
+~~~~
+
+* PyPI: https://pypi.org/project/djangohttpbench/
+
+HeaderAuthBackend
+~~~~~~~~~~~~~~~~~
+
+Django authentication backend that allows one to login without having to know their password.
+This backend is useful for testing scenarios.
+
+.. code-block:: python
+
+    HTTP_BENCH_USERNAME_KEY = "X-USERNAME"  # default: X-USERNAME
+
+    INSTALLED_APPS += [
+        'httpbench.apps.HttpbenchConfig',
+    ]
+
+    MIDDLEWARE += [
+        'httpbench.middlewares.HeaderAuthMiddleware',
+    ]
+
+    AUTHENTICATION_BACKENDS += [
+        'httpbench.backends.UsernameBackend',
+    ]
+
+
+.. code-block:: console
+
+   $ curl -H 'X-USERNAME: c-bata' https://localhost:8000/path/to/page/require/auth
+
+
+'httpbench' management command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`httpbench` management command acts like an apache bench but requests are sent from authenticated users.
+
+.. code-block:: console
+
+   $ python manage.py httpbench -n 1000 -c 50 \
+   > --username c-bata \
+   > https://localhost:8000/
+   Response time:
+     mean: 3.862 secs
+     min: 1.173 secs
+     max: 11.097 secs
+   Status:
+     2xx: 1000
+     3xx: 0
+     4xx: 0
+     5xx: 0
+     fail: 0
+
+Development
+-----------
+
+* lint: ``tox -e flake8`` or ``flake8``
+* test: ``tox -e py37`` or ``DJANGO_SETTINGS_MODULE=test_settings python -m django test``
+
+License
+~~~~~~~
+
+This software is licensed under the MIT License (See `LICENSE <./LICENSE>`_ ).
+
+
