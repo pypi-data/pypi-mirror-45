@@ -1,0 +1,93 @@
+Metadata-Version: 1.1
+Name: docsbackup
+Version: 0.0.3
+Summary: Downloader for Google documents mentioned in an input file
+Home-page: https://github.com/INM-6/docsbackup
+Author: Dennis Terhorst
+Author-email: d.terhorst@fz-juelich.de
+License: BSD
+Description: 
+        # docsbackup
+        
+           This tool can take a list of URLs to google documents and saves them with a
+           timestamp. It can be used to include shared documents in backups and/or
+           extract reference versions at specific points in time.
+           The list of URLs can be provided in different formats or can be extracted by
+           scanning through documents. The extraction is based on a prior conversion 
+           with [Pandoc](http://pandoc.org).
+        
+        
+        # Install
+        
+           The fastest way to install docsbackup is to use your systems tools:
+        
+            pip install docsbackup
+        
+           To use the latest test version check out the test.pypi server:
+        
+            pip install --index-url https://test.pypi.org/simple docsbackup
+        
+        
+        ## Requirements
+        
+           All required packages are listed in `environment.yaml`. In case you
+           installed docsbackup via a package management system like pip, anaconda,
+           miniconda, ... all dependencies should already be installed automatically.
+        
+        
+        # Getting Started
+        
+           After installation run `docsbackup --help` to get a first overview of
+           command line options and usage.
+        
+        
+        ## Further reading
+        
+           For details about the used tools and formats following links may provide
+           more details.
+        
+           * [Pandoc](http://pandoc.org/)
+           * [YAML specification](http://yaml.org/spec/)) and the
+             [ruamel.yaml](https://yaml.readthedocs.io/en/latest/basicuse.html)
+             package.
+        
+        
+        # Developing docsbackup
+        
+           Contributions are very welcome! Write issues for feature requests or
+           directly file a pull-request with your contribution and/or contact me
+           directly!
+        
+        
+        ## Tests
+        
+           This project uses the [PyTest framework](https://docs.pytest.org/en/latest/)
+           with tests defined in the [tests/](tests/) sudirectory. It is added into the
+           setuptools config, so that it can be run with
+        
+            python setup.py test
+        
+           This automatically tests a temporarily packaged version.
+        
+           Alternatively you can run `pytest` manually with all it [glory
+           details](https://docs.pytest.org/en/latest/usage.html).
+        
+        
+        ## Releases
+        
+           The release workflow is mostly automated and is in the [release/](release/)
+           folder.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Archiving :: Backup

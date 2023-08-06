@@ -1,0 +1,3 @@
+[console_scripts]
+docsbackup = docsbackup.docsbackup:main
+

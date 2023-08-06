@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+docsbackup/__init__.py
+docsbackup/docsbackup.py
+docsbackup.egg-info/PKG-INFO
+docsbackup.egg-info/SOURCES.txt
+docsbackup.egg-info/dependency_links.txt
+docsbackup.egg-info/entry_points.txt
+docsbackup.egg-info/requires.txt
+docsbackup.egg-info/top_level.txt

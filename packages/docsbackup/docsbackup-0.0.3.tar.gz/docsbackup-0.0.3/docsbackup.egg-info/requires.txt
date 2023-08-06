@@ -1,0 +1,3 @@
+pandoc
+docopt
+ruamel-yaml
