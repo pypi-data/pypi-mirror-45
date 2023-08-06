@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: linux-touchpad
+Version: 0.1.2
+Summary: Auto-disable laptop touchpad when a mouse is detected.
+Home-page: https://github.com/Zer0897/linux-touchpad
+License: MIT
+Keywords: linux,touchpad,auto,disable,mouse
+Author: Noah
+Author-email: noah@coronasoftware.net
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: uvloop (>=0.12.2,<0.13.0)
+Project-URL: Repository, https://github.com/Zer0897/linux-touchpad
+Description-Content-Type: text/markdown
+
+# Linux Touchpad
+
+This is a simple tool with one job: disable the touchpad on my laptop when a mouse is plugged in.
+
+
