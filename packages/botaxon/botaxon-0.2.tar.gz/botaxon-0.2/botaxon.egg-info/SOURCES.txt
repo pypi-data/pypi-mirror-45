@@ -1,0 +1,7 @@
+README.md
+setup.py
+botaxon/__init__.py
+botaxon.egg-info/PKG-INFO
+botaxon.egg-info/SOURCES.txt
+botaxon.egg-info/dependency_links.txt
+botaxon.egg-info/top_level.txt
