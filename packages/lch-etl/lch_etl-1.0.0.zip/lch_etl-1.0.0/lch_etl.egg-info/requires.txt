@@ -1,0 +1,7 @@
+MySQLdb
+sqlalchemy
+sqlite3
+pandas
+psycopg2
+pymssql
+cx_Oracle
