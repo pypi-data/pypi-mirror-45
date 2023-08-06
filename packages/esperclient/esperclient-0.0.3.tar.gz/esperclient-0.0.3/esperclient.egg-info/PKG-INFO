@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: esperclient
+Version: 0.0.3
+Summary: Esper Manage API
+Home-page: UNKNOWN
+Author-email: developer@esper.io
+License: UNKNOWN
+Description:     Esper Manage python SDK
+        
+            Python client library for Esper Manage APIs. You can find out more about Esper at https://shoonya.io.
+        
+            - API version: 1.0.0
+            - Package version: 0.0.3
+        
+            For usage instructions and API documentation please visit: https://github.com/esper-io/esper-client-py
+        
+            
+Keywords: Swagger,Esper Manage API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
