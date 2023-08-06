@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: wechat-sdk-gmdzy2010
+Version: 0.2.2
+Summary: The non-official sdk of wechat
+Home-page: https://github.com/gmdzy2010/wechat_sdk_gmdzy2010
+Author: gmdzy2010
+Author-email: gmdzy2010@126.com
+License: MIT License
+Description-Content-Type: text/markdown
+Keywords: wechat
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# 微信Python SDK（非官方版）
+[![PyPI](https://img.shields.io/pypi/v/wechat_sdk_gmdzy2010.svg)](https://pypi.org/project/wechat_sdk_gmdzy2010/)  
+本SDK非官方提供，又开始造轮子了，持续更新。
+
+
