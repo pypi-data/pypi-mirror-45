@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: QuantStats
+Version: 0.0.1
+Summary: Portfolio analytics for quants
+Home-page: https://github.com/ranaroussi/quantstats
+Author: Ran Aroussi
+Author-email: ran@aroussi.com
+License: Apache Software License
+Description: QuantStats: Portfolio analytics for quants
+        ==========================================
+        
+        *** Project placeholder. Actual code will be released soon. ***
+        
+        QuantStats performs portfolio profiling, to allow quants and
+        portfolio managers to understand their performance better,
+        by providing them with in-depth analytics and risk metrics.
+        
+        
+Keywords: ezibpy interactive brokers tws,ibgw,ibpy
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
