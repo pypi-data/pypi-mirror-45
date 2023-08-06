@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+git-latest-release = mkdocs_latest_release_plugin.plugin:GitLatestReleasePlugin
+

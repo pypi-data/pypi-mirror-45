@@ -1,0 +1,1 @@
+mkdocs_latest_release_plugin
