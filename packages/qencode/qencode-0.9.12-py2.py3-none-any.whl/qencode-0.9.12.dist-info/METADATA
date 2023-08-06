@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: qencode
+Version: 0.9.12
+Summary: Qencode Python SDK
+Home-page: https://github.com/qencode-dev/qencode-api-python-client
+Author: Qencode Developer
+Author-email: team@qencode.com
+License: proprietary
+Description-Content-Type: UNKNOWN
+Keywords: qencode,qencode.com,cloud.qencode.com
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2.7
+
+UNKNOWN
+
+
