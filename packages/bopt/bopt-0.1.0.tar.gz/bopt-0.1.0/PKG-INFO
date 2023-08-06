@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bopt
+Version: 0.1.0
+Summary: Bayesian Optimization
+Home-page: https://github.com/darthdeus/bopt
+Author: Jakub Arnold
+Author-email: darthdeus@gmail.com
+License: UNKNOWN
+Description: # Bayesian Optimization of HyperParameters - `bopt` [![Build Status](https://travis-ci.com/darthdeus/bopt.svg?branch=master)](https://travis-ci.com/darthdeus/bopt)
+        
+        Available commands:
+        
+        ```python
+        # Create a new experiment.
+        bopt init -C META_DIR
+        
+        # Start tuning hyperparameters.
+        bopt run -C META_DIR
+        
+        # Get an overview status of an experiment.
+        bopt exp -C META_DIR
+        
+        # Start web visualizations of the results.
+        bopt web -C META_DIR
+        ```
+        
+        # Installation
+        
+        ```
+        pip install bopt
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: plotting

@@ -1,0 +1,14 @@
+GPy[plotting]~=1.9.6
+filelock~=3.0.10
+flask~=1.0.2
+ipdb~=0.11
+jsonpickle~=1.0
+livereload==2.5.1
+numpy>=1.15.4
+psutil~=5.4.8
+pyyaml>=5.1
+scipy>=1.1.0
+tqdm~=4.28.1
+
+[plotting]
+matplotlib~=3.0.2
