@@ -1,0 +1,202 @@
+ 	cmd_arp_ping.py 	stupid setup.py typo (snamp vs snmp) 	3 months ago
+	cmd_arp_poison.py 	config management and fernet encryption 	9 months ago
+	cmd_arp_sniff.py 	config management and fernet encryption 	9 months ago
+	cmd_asydns.py 	README.md is now generated automagically 	9 months ago
+	cmd_certclone.py 	README.md is now generated automagically 	9 months ago
+	cmd_contest.py 	README.md is now generated automagically 	9 months ago
+	cmd_crack_luhn.py 	README.md is now generated automagically 	9 months ago
+	cmd_crack_snmp.py 	fixes 	3 months ago
+	cmd_crtsh.py 	removed unnecesary print 	14 days ago
+	cmd_cve_2018_9995.py 	README.md is now generated automagically 	9 months ago
+	cmd_cymon_ip.py 	doc 	6 months ago
+	cmd_cymon_ip_timeline.py 	doc 	6 months ago
+	cmd_decrypt_gppref.py 	stupid setup.py typo (snamp vs snmp) 	3 months ago
+	cmd_dhcp_discover.py 	README.md is now generated automagically 	9 months ago
+	cmd_dhcp_starvation.py 	README.md is now generated automagically 	9 months ago
+	cmd_eicar.py 	README.md is now generated automagically 	9 months ago
+	cmd_extract_email.py 	docs 	9 months ago
+	cmd_extract_hostname.py 	new command habu.extract.hostname 	5 months ago
+	cmd_extract_ipv4.py 	better docs and --help options and minor fixes 	9 months ago
+	cmd_fernet.py 	better help - hasher+sha256 	9 months ago
+	cmd_fernet_genkey.py 	config management and fernet encryption 	9 months ago
+	cmd_forkbomb.py 	better help - hasher+sha256 	9 months ago
+	cmd_gateway_find.py 	gateway.find, web.report, web.screenshot 	4 months ago
+	cmd_isn.py 	README.md is now generated automagically 	9 months ago
+	cmd_jshell.py 	README.md is now generated automagically 	9 months ago
+	cmd_karma.py 	README.md is now generated automagically 	9 months ago
+	cmd_karma_bulk.py 	minor fix 	5 months ago
+	cmd_land.py 	README.md is now generated automagically 	9 months ago
+	cmd_nc.py 	README.md is now generated automagically 	9 months ago
+	cmd_nmap_excluded.py 	habu.nmap.excluded 	3 months ago
+	cmd_nmap_open.py 	new commands habu.nmap.ports habu.nmap.open 	7 months ago
+	cmd_nmap_ports.py 	new commands habu.nmap.ports habu.nmap.open 	7 months ago
+	cmd_ping.py 	README.md is now generated automagically 	9 months ago
+	cmd_protoscan.py 	protoscan small error and added dnspython to help 	9 months ago
+	cmd_server_ftp.py 	README.md is now generated automagically 	9 months ago
+	cmd_shodan.py 	shodan functions to a lib and new habu.shodan.open 	4 months ago
+	cmd_shodan_open.py 	shodan functions to a lib and new habu.shodan.open 	4 months ago
+	cmd_synflood.py 	README.md is now generated automagically 	9 months ago
+	cmd_tcpflags.py 	README.md is now generated automagically 	9 months ago
+	cmd_tcpscan.py 	README.md is now generated automagically 	9 months ago
+	cmd_traceroute.py 	README.md is now generated automagically 	9 months ago
+	cmd_usercheck.py 	better docs and --help options and minor fixes 	9 months ago
+	cmd_vhosts.py 	better docs and --help options and minor fixes 	9 months ago
+	cmd_virustotal.py 	README.md is now generated automagically 	9 months ago
+	cmd_web_report.py 	support for chromium browser 	3 days ago
+	cmd_web_screenshot.py 	support for chromium browser 	3 days ago
+	cmd_xor.py
+
+
+ 	sfp__stor_db.py 	No database storage if desired. 	5 months ago
+	sfp__stor_stdout.py 	Many bug fixes and CLI improvements. 	4 months ago
+	sfp_abusech.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_abuseipdb.py 	New Whois modules - ViewDNS.info, Whoisology.com, plus improvements t… 	8 months ago
+	sfp_accounts.py 	Footprinting names and reduced false positives with name detection. 	6 months ago
+	sfp_adblock.py 	Updated use cases. 	a year ago
+	sfp_ahmia.py 	Bug fixes. 	12 days ago
+	sfp_alienvault.py 	Bug fixes and tweaks. 	8 months ago
+	sfp_alienvaultiprep.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_archiveorg.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_arin.py 	Footprinting names and reduced false positives with name detection. 	6 months ago
+	sfp_badipscom.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_bambenek.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_base64.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_binaryedge.py 	Another bug fix. 	6 hours ago
+	sfp_bingsearch.py 	Better classification of modules. 	a year ago
+	sfp_bingsharedip.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_binstring.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_bitcoin.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_blockchain.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_blocklistde.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_botscout.py 	Updated use cases. 	a year ago
+	sfp_builtwith.py 	Filter junk e-mails. 	4 months ago
+	sfp_censys.py 	Only accept Unicode events, no dicts or lists. 	4 months ago
+	sfp_cinsscore.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_circllu.py 	Print host and IP when host no longer resolves to IP 	6 months ago
+	sfp_citadel.py 	Changed so that stored empty configs with no API key won't overwrite … 	2 months ago
+	sfp_cleanbrowsing.py 	New modules to use DNS reputation systems. 	11 months ago
+	sfp_cleantalk.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_clearbit.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_coinblocker.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_commoncrawl.py 	Bug fix. 	22 days ago
+	sfp_comodo.py 	New modules to use DNS reputation systems. 	11 months ago
+	sfp_company.py 	Speed up and avoid scanning JS/CSS by default. 	6 months ago
+	sfp_cookie.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_crossref.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_crt.py 	crt module doesn't generate internet names. 	5 months ago
+	sfp_cryptoioc.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_customfeed.py 	Missing return satement on errorState = True. 	6 months ago
+	sfp_cybercrimetracker.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_digitaloceanspace.py 	Bug fixes. 	5 months ago
+	sfp_dnsbrute.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_dnscommonsrv.py 	Added some DNS modules to the Passive use case 	6 months ago
+	sfp_dnsneighbor.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_dnsraw.py 	Added some DNS modules to the Passive use case 	6 months ago
+	sfp_dnsresolve.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_dnszonexfer.py 	New module to perform DNS zone transfers. 	8 months ago
+	sfp_dronebl.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_duckduckgo.py 	Bug fixes. 	11 months ago
+	sfp_email.py 	Only accept Unicode events, no dicts or lists. 	4 months ago
+	sfp_emailformat.py 	Filter junk e-mails. 	4 months ago
+	sfp_errors.py 	Bug fix. 	2 years ago
+	sfp_ethereum.py 	Find Ethereum addresses. 	8 months ago
+	sfp_filemeta.py 	Bug fixes, tweaks. 	6 months ago
+	sfp_flickr.py 	Minor adjustments. 	6 months ago
+	sfp_fortinet.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_fraudguard.py 	Better classification of modules. 	a year ago
+	sfp_fullcontact.py 	Less error-prone. 	6 months ago
+	sfp_github.py 	Bug fixes. 	a month ago
+	sfp_googlemaps.py 	Fix Google Maps to use API now, as old API doesn't work without a key… 	6 months ago
+	sfp_googlesearch.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_googlesearchdomain.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_greynoise.py 	Greynoise module. 	5 months ago
+	sfp_h1nobbdde.py 	Renamed file, re-structured output and fixed regex. 	6 months ago
+	sfp_hackertarget.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_haveibeenpwned.py 	Better classification of modules. 	a year ago
+	sfp_honeypot.py 	Better classification of modules. 	a year ago
+	sfp_hosting.py 	Bug fixes. 	11 months ago
+	sfp_hostsfilenet.py 	Better classification of modules. 	a year ago
+	sfp_hunter.py 	Don't run if errorState == True. 	6 months ago
+	sfp_iknowwhatyoudownload.py 	Added module for iknowwhatyoudownload.com. 	8 months ago
+	sfp_intfiles.py 	Removed old pages config reference. 	8 months ago
+	sfp_ipinfo.py 	Better classification of modules. 	a year ago
+	sfp_ipstack.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_isc.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_junkfiles.py 	Massive reduction in false positives for junk files through better va… 	13 days ago
+	sfp_malc0de.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_malwaredomainlist.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_malwaredomains.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_malwarepatrol.py 	Better classification of modules. 	a year ago
+	sfp_mnemonic.py 	Many bug fixes and CLI improvements. 	4 months ago
+	sfp_multiproxy.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_myspace.py 	Fixed bug I introduced in the regex. 	6 months ago
+	sfp_names.py 	Look for names in file meta data. 	6 months ago
+	sfp_neutrinoapi.py 	Set errorState when auth fails. 	12 days ago
+	sfp_norton.py 	New modules to use DNS reputation systems. 	11 months ago
+	sfp_nothink.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_onioncity.py 	Better classification of modules. 	a year ago
+	sfp_onionsearchengine.py 	Bug fixes. 	12 days ago
+	sfp_openbugbounty.py 	Better classification of modules. 	a year ago
+	sfp_opencorporates.py 	Bug fixes. 	a month ago
+	sfp_opendns.py 	New modules to use DNS reputation systems. 	11 months ago
+	sfp_openphish.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_openstreetmap.py 	Handle failures. 	5 months ago
+	sfp_pageinfo.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_pastebin.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_pgp.py 	Bug fixes. 	a month ago
+	sfp_phishtank.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_phone.py 	Add sfp_phone module to Passive category 	6 months ago
+	sfp_portscan_tcp.py 	Bug fixes. 	5 months ago
+	sfp_psbdmp.py 	Collect paste data. 	5 months ago
+	sfp_pulsedive.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_quad9.py 	Check co-hosted sites. 	a year ago
+	sfp_ripe.py 	Bug fix. 	23 days ago
+	sfp_riskiq.py 	Bug fix. 	13 days ago
+	sfp_robtex.py 	Various improvements/tweaks to improve data quality. 	4 months ago
+	sfp_s3bucket.py 	Bug fixes and tweaks. 	8 months ago
+	sfp_securitytrails.py 	Meaningful error. 	5 months ago
+	sfp_shodan.py 	Obtain the ASN and product. 	5 months ago
+	sfp_similar.py 	Bug fixes and tweaks. 	8 months ago
+	sfp_skymem.py 	Minor adjustments. 	6 months ago
+	sfp_slideshare.py 	Fixes issue when there are no matches (won't be None but an empty list). 	6 months ago
+	sfp_social.py 	Add sfp_myspace module 	7 months ago
+	sfp_socialprofiles.py 	Bug fixes. 	5 months ago
+	sfp_sorbs.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_spamcop.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_spamhaus.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_spider.py 	Only accept Unicode events, no dicts or lists. 	4 months ago
+	sfp_spyonweb.py 	Move API queries into a query method 	6 months ago
+	sfp_sslcert.py 	Fetch SSL certs from IP addresses too. 	4 months ago
+	sfp_strangeheaders.py 	Only accept Unicode events, no dicts or lists. 	4 months ago
+	sfp_sublist3r.py 	More unicode fixes. 	6 months ago
+	sfp_talosintel.py 	New module for Talos Intelligence. 	a month ago
+	sfp_template.py 	Updated categories and cleaned formatting. 	2 years ago
+	sfp_threatcrowd.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_threatexpert.py 	Tidied up space. 	5 months ago
+	sfp_tldsearch.py 	Fixes/improvements. 	a year ago
+	sfp_tool_cmseek.py 	New module to use CMSeeK tool. 	4 months ago
+	sfp_tool_dnstwist.py 	Many bug fixes and CLI improvements. 	4 months ago
+	sfp_torch.py 	Bug fixes. 	12 days ago
+	sfp_torexits.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_torserver.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_totalhash.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_twitter.py 	Twitter seems to behave better with a non-browser User-Agent. 	6 months ago
+	sfp_uceprotect.py 	Removed dead code, fixed bug degrading performance when user opts to … 	2 years ago
+	sfp_viewdns.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_virustotal.py 	More unicode fixes. 	6 months ago
+	sfp_voipbl.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_vxvault.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_watchguard.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_webanalytics.py 	Add sfp_webanalytics 	6 months ago
+	sfp_webframework.py 	Data source tracking and rename of sfp_pwned. 	2 years ago
+	sfp_websvr.py 	Only accept Unicode events, no dicts or lists. 	4 months ago
+	sfp_whois.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_whoisology.py 	Loads of bug fixes and better error handling. 	4 months ago
+	sfp_whoxy.py 	Added Whoxy.com module. 	8 months ago
+	sfp_wigle.py 	Unicode support and more tolerant error handling. 	6 months ago
+	sfp_wikileaks.py 	Bug fixes. 	15 days ago
+	sfp_wikipediaedits.py 	Modules for Wigle.net and searching for edits on wikipedia by a given… 	2 years ago
+	sfp_xforce.py 	Less false positives for co-host reporting and DNS brute-forcing upda… 	8 months ago
+	sfp_yahoosearch.py 	Fixed yahoo search handling and other bugs. 	2 years ago
+	sfp_yandex.py 	New modules to use DNS reputation systems. 	11 months ago
+	sfp_zoneh.py 	If Zone-H is down, don't keep trying. 	11 days ago

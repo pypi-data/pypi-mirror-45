@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: penin
+Version: 0.1.0
+Summary: Information gathering and penetration testing framework
+Home-page: https://github.com/fabaff/penin
+Author: Fabian Affolter
+Author-email: fabian@affolter-engineering.ch
+License: Apache 2.0
+Description: # Information gathering and penetration testing framework
+        
+        PenIn (Information gathering and penetration testing framework) is a 
+        collection of tools to perform various tasks of an assessment.
+        
+        ## Installation
+        
+        One requirements is that you have Python 3 installed.
+        
+        ```bash
+        $ pip3 install -r requirements.txt
+        
+        $ pip3 install setup.py
+        ```
+        
+        ## Usage
+        
+        All available commands are grouped.
+        to execute.
+        
+        ```bash
+        $ penin --help
+        ```
+        
+        Some commands require elevated permission. Those are only working if executed
+        as root.
+        
+        ```bash
+        $ sudo bin/penin --help
+        ```
+        
+        ## Documentation
+        
+        At the current state there is no documentation beside the README available.
+        
+        ## Deployments
+        
+        ### Docker
+        
+        Included is a basic `Dockerfile` for building and distributing `PenIn`,
+        and can be built with the included `make` helper:
+        
+        ```bash
+        $ make docker
+        $ docker run -it penin --help
+        ```
+        
+        This requires that you have `docker` installed.
+        
+        ## License
+        
+        `penin` is licensed under the Apache Software License 2.0.
+Keywords: home,automation
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown
