@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: knlm
+Version: 0.1.1
+Summary: Modified Kneser-ney Smoothing Language Model
+Home-page: https://github.com/bab2min/knlm
+Author: bab2min
+Author-email: bab2min@gmail.com
+License: LGPL v3 License
+
+== knlm ==
+
+
