@@ -1,0 +1,8 @@
+logsense/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logsense/handler.py,sha256=vIQaiHYXjTlXFXKRWRn1rvLzbc1_S2P1Gzt50h5ou10,2397
+logsense/metrics.py,sha256=7w3E2RL5Qsm13wuH8dNxCq8eW8Fot-FL5yygJhcjeGs,2777
+logsense/sender.py,sha256=MOg84GqA8sYCnhTarwmYdKH4TLdtq0suYxL4Z_pc9FU,3495
+logsense_logger-0.2.0.dist-info/METADATA,sha256=hPDxPMDs4ftgOYK40Wg90DAtIo51vOdcoZ67sofE9rA,2711
+logsense_logger-0.2.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+logsense_logger-0.2.0.dist-info/top_level.txt,sha256=meIuaKB9Sti7Yqt-CSUXE6SpyNvwTUGEVo9hbho8LFo,9
+logsense_logger-0.2.0.dist-info/RECORD,,
