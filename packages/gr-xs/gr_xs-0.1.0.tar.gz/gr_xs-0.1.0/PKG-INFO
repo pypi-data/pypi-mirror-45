@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: gr_xs
+Version: 0.1.0
+Summary: Implementation of arxiv:1407.4415 for nu-e W-Boson resonance
+Home-page: https://github.com/tianluyuan/gr_xs.git
+Author: T. Yuan
+Author-email: tyuan@icecube.wisc.edu
+License: UNKNOWN
+Description: # gr_xs
+        Implementation of arxiv:1407.4415 for nu-e W-Boson resonance
+        
+Platform: UNKNOWN
