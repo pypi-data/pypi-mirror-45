@@ -1,0 +1,6 @@
+include *.in
+include *.rst
+include *.txt
+include version
+recursive-include marv_ludwig/static *
+global-exclude *~
