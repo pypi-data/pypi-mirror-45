@@ -1,0 +1,8 @@
+jenkins_backup_s3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jenkins_backup_s3/backup.py,sha256=7VDjGIGJq1Zwi9WC1KDtfc4adgfwJdAdBeP1mg8YCPg,11234
+jenkins_backup_s3-0.1.9.dist-info/LICENSE,sha256=pM63tUW_NuzUc_Eqrv1CVU58LZ16Qkd8-jwHEq5vmsI,1073
+jenkins_backup_s3-0.1.9.dist-info/METADATA,sha256=9pda5YqgNIYZTfopA7R54QGnUmDCTPVPN53yhUZftRA,1843
+jenkins_backup_s3-0.1.9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jenkins_backup_s3-0.1.9.dist-info/entry_points.txt,sha256=-SpRFkC2iA29JkmCizIOJJGzhCk_QXZP4FN5D8OYQW0,66
+jenkins_backup_s3-0.1.9.dist-info/top_level.txt,sha256=debh2IHZv6rhlODboUTSeb1_uLNK8qzrHnbWx4TMbpY,18
+jenkins_backup_s3-0.1.9.dist-info/RECORD,,
