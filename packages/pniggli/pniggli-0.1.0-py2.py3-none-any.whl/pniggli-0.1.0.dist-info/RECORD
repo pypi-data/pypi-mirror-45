@@ -1,0 +1,11 @@
+pniggli/__init__.py,sha256=F5Sfc1ldxBoC0AThHR1E45--5UeGlGObK3h--reN_Fc,70
+pniggli/niggli_reduce_3d.py,sha256=GKpq8jSyf9LSFV6HG9KA86F-H5SzTRIIU2BJ867PYy0,6379
+pniggli/utils.py,sha256=5qvUWnGeu-aWoDAkSZ_u7ugTrqKQajXAmXSGFG-bwj0,1035
+pniggli/version.py,sha256=HwqS6F2AXmr6yJodB-1EAQvRAg5dfKWVx_1NrgPXvhs,49
+pniggli-0.1.0.dist-info/LICENSE,sha256=XcPpjaLmMR9qxZ6HQTfr2nGKWlb7Sk5IqyAAdBstGbQ,1065
+pniggli-0.1.0.dist-info/LICENSE.txt,sha256=bXy3XLzUqkwvVP5Q4SLlO3hTfrTTIQLDaK8M6IvPSb4,1511
+pniggli-0.1.0.dist-info/METADATA,sha256=xIGhQE6puhlqt6IuFx1RriWGWED50K1SdpaooF69KcM,1051
+pniggli-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+pniggli-0.1.0.dist-info/entry_points.txt,sha256=yhhQZOk5SoW8v6u2JXRYv5i3lGAZUVNn0Iq3-eqw0Ww,45
+pniggli-0.1.0.dist-info/top_level.txt,sha256=RNgYI5g8wRI-M9259_osIiOzlmGKCY60U_7gAADAPzs,8
+pniggli-0.1.0.dist-info/RECORD,,
