@@ -1,0 +1,3 @@
+[console_scripts]
+iqdb-tagger = iqdb_tagger.__main__:cli
+
