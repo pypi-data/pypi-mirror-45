@@ -1,0 +1,7 @@
+ffmpeg
+pyqtgraph
+PyQt5
+numpy==1.14.0
+scipy
+matplotlib
+pims
