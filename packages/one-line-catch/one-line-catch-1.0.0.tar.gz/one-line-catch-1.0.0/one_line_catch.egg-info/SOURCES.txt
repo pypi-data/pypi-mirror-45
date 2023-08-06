@@ -1,0 +1,7 @@
+setup.py
+hack/__init__.py
+one_line_catch.egg-info/PKG-INFO
+one_line_catch.egg-info/SOURCES.txt
+one_line_catch.egg-info/dependency_links.txt
+one_line_catch.egg-info/requires.txt
+one_line_catch.egg-info/top_level.txt

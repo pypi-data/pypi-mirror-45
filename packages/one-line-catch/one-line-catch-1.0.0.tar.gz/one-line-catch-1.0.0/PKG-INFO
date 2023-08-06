@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: one-line-catch
+Version: 1.0.0
+Summary: try except and set-trace in one line with content manager
+Home-page: UNKNOWN
+Author: Primus Zhao
+Author-email: python4699680@gmail.com
+Maintainer: Primus Zhao
+Maintainer-email: python4699680@gmail.com
+License: BSD License
+Description: using context manager to achieve one line set_trace,    since there is no local variable recorded, inspect module is used to     recover nonlocal variable in dict variable: nonlocals
+Platform: all
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
