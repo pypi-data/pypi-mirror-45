@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+botbuilder/applicationinsights/__init__.py
+botbuilder/applicationinsights/about.py
+botbuilder/applicationinsights/appinsights_bot_telemetry_client.py
+botbuilder/applicationinsights/application_insights_telemetry_client.py
+botbuilder/applicationinsights/integration_post_data.py
+botbuilder/applicationinsights/django/__init__.py
+botbuilder/applicationinsights/django/bot_telemetry_middleware.py
+botbuilder_applicationinsights.egg-info/PKG-INFO
+botbuilder_applicationinsights.egg-info/SOURCES.txt
+botbuilder_applicationinsights.egg-info/dependency_links.txt
+botbuilder_applicationinsights.egg-info/requires.txt
+botbuilder_applicationinsights.egg-info/top_level.txt
