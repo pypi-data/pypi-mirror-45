@@ -1,0 +1,10 @@
+h_annot/__init__.py,sha256=3WquheiPeaTxPuYl6pLmpcIuSmRytPpCVjpfs6U7xjA,679
+h_annot/annotation.py,sha256=nEZpf--NDRGK8TdeUOz_bjN6d_2xHFf3BKVPp2j0zeA,6185
+h_annot/api.py,sha256=be8eT3_tO7g_8Lt4x1mV0MaW9iyKpW35Z2i7Ni_n6Zk,3259
+h_annot/exceptions.py,sha256=hTQe2I99s3cBe9iiMoO2BXOdm78_MmuWLv1EHGVyC2w,608
+h_annot/oauth.py,sha256=szJrq0sJ-DZ853xRaiW-HIDegkLO2QCfNM9C16BAYf0,2084
+python_hypothesis-0.4.0.dist-info/COPYING,sha256=OwSXqnDvdyYBwJt877xSEA29qsw_JgU0JHEoDoBI7gU,1585
+python_hypothesis-0.4.0.dist-info/METADATA,sha256=bWr0ZIPoaSAaMcEpQJ5eDpqMenWeO7OpVw4ZVoKowJA,4502
+python_hypothesis-0.4.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+python_hypothesis-0.4.0.dist-info/top_level.txt,sha256=5IgDnSDYgBgEgl5LJcHoYKozbhLN3p2HrsJS5X_UimY,8
+python_hypothesis-0.4.0.dist-info/RECORD,,
