@@ -1,0 +1,9 @@
+rjango/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rjango/core/__init__.py,sha256=2vuYctPClt3KJedbBkrCRjhY73eyAGmYAfH4wAKQHKA,14
+rjango/core/routes.py,sha256=X29kAO0eBC4wNpVVz82rA8gQsWBlRIY3lguSiyvtD_Y,45
+rjango/core/settings/__init__.py,sha256=2vuYctPClt3KJedbBkrCRjhY73eyAGmYAfH4wAKQHKA,14
+rjango/core/settings/head.py,sha256=vfXAgRlqLg4jMgDaSMVlCn8GWOARRmMg0GHn6m9BKdo,3138
+rjango.core-0.1.9.dist-info/METADATA,sha256=Lm1IXO4C4HdUIwfxG7JzQ9GnqqjnIPs6z_HfAJdUOvs,417
+rjango.core-0.1.9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rjango.core-0.1.9.dist-info/top_level.txt,sha256=BXdonX6t2LT7_cjijLQ5YNyuXW66HxRnr6ofOyyW5qo,7
+rjango.core-0.1.9.dist-info/RECORD,,
