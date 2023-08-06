@@ -1,0 +1,10 @@
+README.md
+setup.py
+phonetisch/__init__.py
+phonetisch/algorithms.py
+phonetisch/utils.py
+phonetisch.egg-info/PKG-INFO
+phonetisch.egg-info/SOURCES.txt
+phonetisch.egg-info/dependency_links.txt
+phonetisch.egg-info/not-zip-safe
+phonetisch.egg-info/top_level.txt
