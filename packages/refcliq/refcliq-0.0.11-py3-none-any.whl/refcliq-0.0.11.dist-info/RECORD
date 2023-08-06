@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+refcliq/__init__.py,sha256=WsJuioedS5zroepnAdfF2tlmFMIAsc6TfdLCv_19NJA,20
+refcliq/bibtex.py,sha256=lMfqiVddpi46pVAITC_GrhCScdZM6Bdg4nE-3edca14,1584
+refcliq/citations.py,sha256=fubGZTbjGR6cKjA_B8M1ywVKTcdYdh5NDRSJKtls8jc,22982
+refcliq/geocoding.py,sha256=k_ehU4dJn9BqN4vDp-vs818NtBemvDcdkp36RyS8Z44,12126
+refcliq/preprocess.py,sha256=S36C3y2R--XrV8dgMzFxWZmVzUK5qkltgDXg-xerx-0,6376
+refcliq/util.py,sha256=tQvNbbBj4gpj6lb5y9yo3V6AgOWIXzIsY1FB8vBKWOY,242
+refcliq-0.0.11.data/scripts/refcliq.py,sha256=zxrxuXleftfI9d5cY1cDpte-XjIKfrKgQzL2aC_2kIw,4646
+refcliq-0.0.11.data/scripts/refcliqvis.py,sha256=LaYYqI7M4ZW87gqfDe-QdSYM3YaPjNmlpxicclRGGLU,1058
+refcliq-0.0.11.dist-info/METADATA,sha256=5cn91RjjU874up7vXHU88oGWCthRzDSvr-SqPzyRfuE,12075
+refcliq-0.0.11.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+refcliq-0.0.11.dist-info/top_level.txt,sha256=4yYVn5oglTg5nGVnLuZ_xGSgktCsaHg5_-Nr24JT-wQ,17
+refcliq-0.0.11.dist-info/RECORD,,
