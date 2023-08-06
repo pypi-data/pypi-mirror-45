@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tmp
+spec:
+  backOffLimit: 1
+  ttlSecondsAfterFinished: 600
+  template:
+    metadata:
+      annotations:
+        tf-version.cloud-tpus.google.com: "1.13"
+    spec:
+      restartPolicy: Never
+      volumes:
+        - name: storage-credential
+          secret:
+            secretName: storage-credential
+      containers:
+      - name: container
+        image: dudaji/dcp-job:1.13.1-tpu
+        command: ['sleep', '200']
+        env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: "/var/secret/account.json"
+        volumeMounts:
+          - name: storage-credential
+            mountPath: "/var/secret"
+            readOnly: true
+        resources:
+          limits:
+            cpu: 4
+            cloud-tpus.google.com/preemptible-v2: 8

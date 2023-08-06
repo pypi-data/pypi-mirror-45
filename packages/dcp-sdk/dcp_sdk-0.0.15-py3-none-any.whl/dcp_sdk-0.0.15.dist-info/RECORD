@@ -1,0 +1,14 @@
+dcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcp/estimator.py,sha256=MlMOP-dvHYCQTEW8y_ss78X6jNhnHbe5Q5_cZLcDA08,1725
+dcp/job.py,sha256=DU0neevdIcDt16Tl95yBbtmcdFYRLAlrrNQfF2Ybdw0,3532
+dcp/storage.py,sha256=zaFSQ3WrHo5jBCSLthBbmmohobsq9Y1dTBudwOQBKp0,1000
+dcp/utils.py,sha256=Gn2Eg7GCJAU2awYgXf5zv_rO5XyHYoGJ8qfL5OhCEHg,423
+dcp/tf_job_yaml/tf_job_base.yaml,sha256=8q3nMvm4nnfdlxDRMKyi3Bv2TrtuiCixJfAYi-GZaJo,335
+dcp/tf_job_yaml/tf_job_dke.yaml,sha256=oFFzbNgMEiVUODgOnxwMit1jFq0ZghwqbG3RxSNgGPE,974
+dcp/tf_job_yaml/tf_job_gke.yaml,sha256=O_il-ZmRZy3b6VXQQaU-wly4xqFNN3DJbar3eKscQjg,677
+dcp/tf_job_yaml/tf_job_tpu.yaml,sha256=eqMTjJVsc8GNWhuhPRYvIeP-qPY5IGf-75WKyHmM8gg,806
+dcp_sdk-0.0.15.dist-info/LICENSE,sha256=ji5t6685z3igi6slTBl0vuQ4ogUEg6UzKQjdd6QdAvs,1062
+dcp_sdk-0.0.15.dist-info/METADATA,sha256=cobd_kJJKQW6FlKJ6jyU_xghuBUdzxuWKtve7F30L4c,276
+dcp_sdk-0.0.15.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dcp_sdk-0.0.15.dist-info/top_level.txt,sha256=2X_AHobJRBByPkYjaeJpM25GAprsYA96tuo2JuNiqYc,4
+dcp_sdk-0.0.15.dist-info/RECORD,,

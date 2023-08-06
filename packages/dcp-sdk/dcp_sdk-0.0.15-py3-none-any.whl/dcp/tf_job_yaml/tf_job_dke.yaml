@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tmp
+spec:
+  backOffLimit: 1
+  ttlSecondsAfterFinished: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: container
+        image: dudaji/dcp-job:1.13.1
+        command: ['sleep', '200']
+        env:
+        - name: S3_USE_HTTPS
+          value: "0"
+        - name: S3_VERIFY_SSL
+          value: "0"
+        - name: TF_CPP_MIN_LOG_LEVEL
+          value: "3"
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: storage-credential
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: storage-credential
+              key: AWS_SECRET_ACCESS_KEY
+        - name: S3_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: storage-credential
+              key: S3_ENDPOINT
+        resources:
+          limits:
+            nvidia.com/gpu: 0
