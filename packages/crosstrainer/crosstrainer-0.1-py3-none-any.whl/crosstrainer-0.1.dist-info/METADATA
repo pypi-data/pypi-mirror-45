@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: crosstrainer
+Version: 0.1
+Summary: CrossTrainer: Practical Domain Adaptation with Loss Reweighting
+Home-page: https://github.com/stanford-futuredata/crosstrainer
+Author: Justin Yu-wei Chen
+Author-email: jyc8889@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# CrossTrainer: Practical Domain Adaptation with Loss Reweighting
+
+
