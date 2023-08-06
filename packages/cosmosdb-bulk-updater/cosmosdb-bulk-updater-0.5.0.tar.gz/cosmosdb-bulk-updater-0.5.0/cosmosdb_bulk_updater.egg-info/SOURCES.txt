@@ -1,0 +1,8 @@
+README.md
+setup.py
+cosmosdb_bulk_updater/__init__.py
+cosmosdb_bulk_updater/bulk_updater.py
+cosmosdb_bulk_updater.egg-info/PKG-INFO
+cosmosdb_bulk_updater.egg-info/SOURCES.txt
+cosmosdb_bulk_updater.egg-info/dependency_links.txt
+cosmosdb_bulk_updater.egg-info/top_level.txt
