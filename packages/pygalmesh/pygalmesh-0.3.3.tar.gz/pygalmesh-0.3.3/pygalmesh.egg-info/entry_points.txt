@@ -1,0 +1,3 @@
+[console_scripts]
+pygalmesh-volume-from-surface = pygalmesh.cli:volume_from_surface
+
