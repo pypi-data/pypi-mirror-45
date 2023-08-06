@@ -1,0 +1,9 @@
+starlette<0.13,>=0.12.0.b3
+
+[dev]
+tartiflette
+uvicorn<0.8,>=0.7
+requests
+pytest
+black
+pylint
