@@ -1,0 +1,85 @@
+Metadata-Version: 1.1
+Name: django-walletpass
+Version: 0.1
+Summary: Django Passbook server app
+Home-page: http://github.com/develatio/django-walletpass/
+Author: Develatio Technologies S.L.
+Author-email: contacto@develat.io
+License: Copyright (c) 2012 devartis
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions of
+the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Description: django-walletpass
+        ===============
+        
+        This application implements the specified API for passbook webservices. It handles pass registration, updates and logging. It may be easily plugged to you django application by just adding the installed app and importing the urls. It is based on Apple's specification and Mattt's rails example
+        
+        > If you need to create passes (.pkpass files) in python you should check http.//github.com/devartis/passbook.
+        
+        Requirements
+        ============
+        
+        - Django 2.*
+        
+        Getting Started
+        ===============
+        
+        ```
+        $ pip install django-walletpassv
+        ```
+        
+        Add 'django_walletpass' to you installed apps in the settings.py file.
+        
+        To use push notifications you need to specify the path to your certificate and key files in your settings.py file.
+        
+        ```
+        WALLETPASS_CERT = '/home/faramendi/my-site/cert.pem'
+        WALLETPASS_CERT_KEY = '/home/faramendi/my-site/key-nopass.pem'
+        ```
+        
+        You should also import the urls in your site urls.
+        ```
+        urlpatterns = [
+            url(r'^api/', include('django_walletpass.urls')),
+        ```
+        
+        django-walletpass signals certain events that might come handy in your application.
+        ```
+        from django_walletpass.views import pass_registered, pass_unregistered
+        @receiver(pass_registered)
+        def pass_registered(sender, **kwargs):
+            pass
+        
+        @receiver(pass_unregistered)
+        def pass_unregistered(sender, **kwargs):
+            pass
+        ```
+        
+        Specification
+        =============
+        
+        The complete specification can be found in the [Passbook Web Service Reference](https://developer.apple.com/library/prerelease/ios/#documentation/PassKit/Reference/PassKit_WebService/WebService.html).
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

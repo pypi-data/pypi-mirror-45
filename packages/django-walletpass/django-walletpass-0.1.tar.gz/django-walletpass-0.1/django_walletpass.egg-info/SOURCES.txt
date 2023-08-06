@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+django_walletpass/__init__.py
+django_walletpass/admin.py
+django_walletpass/apps.py
+django_walletpass/models.py
+django_walletpass/settings.py
+django_walletpass/tests.py
+django_walletpass/urls.py
+django_walletpass/views.py
+django_walletpass.egg-info/PKG-INFO
+django_walletpass.egg-info/SOURCES.txt
+django_walletpass.egg-info/dependency_links.txt
+django_walletpass.egg-info/top_level.txt
