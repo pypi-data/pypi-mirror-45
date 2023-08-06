@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tricle
+Version: 1.6
+Summary: An async programming framework with a blocking look-alike syntax
+Home-page: http://github.com/saucelabs/tricle
+Author: Greg Hazel and Steven Hazel
+Author-email: sah@awesame.org
+Maintainer: Steven Hazel
+Maintainer-email: sah@awesame.org
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: multidict
+Requires-Dist: yarl
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+

@@ -1,0 +1,14 @@
+monocle/__init__.py,sha256=Nm4TtLK8FJ4Xeb_Fb4TjVah7I9yWg0GKfYDB1SBPKUY,210
+monocle/callback.py,sha256=xcI-1hqItqNXhf_3kJInAsJs_6nz1CgIcK05xbEge9g,1103
+monocle/core.py,sha256=wghyZGjN3ODWiQWTO7kb-oI6HH_FGLjadTzYQHKHboY,3288
+monocle/experimental.py,sha256=8N9l5FYEu7mCpuacXKf5mXxwsJuZ-y8QKOJbFLzZeh8,2224
+monocle/monocle_mock.py,sha256=rjbBufESFgA5NQLNM3vr-gqrF0H4tYaxH0FySqP4mgQ,1932
+monocle/script_util.py,sha256=j82P_oGvPxuQSRrHXfglBzlURydw6wAK3QBUs9QzFD0,442
+monocle/util.py,sha256=Vrjlwv7qvCPWhG2Hdk2lHVnTIyuo49bHevbVYneC670,368
+monocle/stack/eventloop.py,sha256=95RuxXnekjbNlzthT0i2mZCNuLSFIttmNYqVzffLVPs,895
+monocle/stack/network/__init__.py,sha256=gyA3VJjkC9c0IV8n2JPSNp5E51g7RIGeFM1DYTZA4QQ,4815
+monocle/stack/network/http.py,sha256=I2OsKcMmSNZYHJLRy54I1Ze3zUCS6T1V9I0_E7scDfI,11382
+tricle-1.6.dist-info/METADATA,sha256=f_Mq67N9ViVAVUe3ljaJzudqzrJC0c4Jr1R9W5tiJd0,403
+tricle-1.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tricle-1.6.dist-info/top_level.txt,sha256=ukTyqryaaNL7ceqHIKEqajjaLFozoAtgz3ZzrkMOfmQ,8
+tricle-1.6.dist-info/RECORD,,
