@@ -1,0 +1,8 @@
+setup.py
+YMMNlpUtils/YMMNlpUtils.py
+YMMNlpUtils/__init__.py
+YMMNlpUtils.egg-info/PKG-INFO
+YMMNlpUtils.egg-info/SOURCES.txt
+YMMNlpUtils.egg-info/dependency_links.txt
+YMMNlpUtils.egg-info/requires.txt
+YMMNlpUtils.egg-info/top_level.txt
