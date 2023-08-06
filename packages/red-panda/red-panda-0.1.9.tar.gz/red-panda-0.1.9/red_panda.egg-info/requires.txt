@@ -1,0 +1,11 @@
+pandas
+psycopg2-binary
+boto3
+awscli
+oss2
+click
+python-dotenv
+
+[dev]
+pytest
+tox
