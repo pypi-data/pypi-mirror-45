@@ -1,0 +1,15 @@
+pyats.tcl-19.4.0-py3.4-nspkg.pth,sha256=e0Aa4MZQ9F423CwtNHHpsEDtEBEJtZolebDzazoPJyI,534
+pyats/tcl/__init__.py,sha256=oDlrR9cJFN7TCN78KbSKWd-1wqLAzA9uy83pV2caMLI,1480
+pyats/tcl/array.cpython-34m.so,sha256=FwaEMw_2SflXMsk25HoV8E-S6qgXQhRiHaw3xJU2oDg,256896
+pyats/tcl/history.cpython-34m.so,sha256=YbK02QYna8dll-JHRT8JBoFwmnd3RGoVnFtaCi9L2h8,461760
+pyats/tcl/internal.cpython-34m.so,sha256=9f1xtLdByRJFfGbd8cKZhpd45_M0aIaOt-FjUA998xs,829432
+pyats/tcl/interpreter.cpython-34m.so,sha256=kVqedNY8K-MOXkxvSUjVI_w3llnVg2niCJW2G2J0fAc,959488
+pyats/tcl/keyedlist.cpython-34m.so,sha256=JK9FTwJBxqM2xsNweqthjorEvXsgiOJpeIC8530GPx8,700168
+pyats/tcl/namespace.cpython-34m.so,sha256=LrQzmzqGcPTsEFmTV1WwAHPf9FZgxtnbAJ4NsFAOwEg,2867800
+pyats/tcl/q.cpython-34m.so,sha256=TUlAwEktwiJt2qy5X4xsfcFYrCZVqZd_pjA5QT0J4YE,322424
+pyats/tcl/tclstr.cpython-34m.so,sha256=ggfZENjRm9puFy47E8nd6pR6k9zHghW_rUfuR5rLyu8,495472
+pyats.tcl-19.4.0.dist-info/METADATA,sha256=ckHOdsbPaYJQSFzejm4UUIJyLX9bdP6y5Kg4Tfvn0D8,2910
+pyats.tcl-19.4.0.dist-info/WHEEL,sha256=V_MGp6VoWiaL7l8dzKfjvVX1Gp0sDyBpHHY38KllpeI,109
+pyats.tcl-19.4.0.dist-info/namespace_packages.txt,sha256=jGeyqyHwW1slwU9TmXM_iib2O5fPdh4peKwkj0m-bZU,6
+pyats.tcl-19.4.0.dist-info/top_level.txt,sha256=jGeyqyHwW1slwU9TmXM_iib2O5fPdh4peKwkj0m-bZU,6
+pyats.tcl-19.4.0.dist-info/RECORD,,
