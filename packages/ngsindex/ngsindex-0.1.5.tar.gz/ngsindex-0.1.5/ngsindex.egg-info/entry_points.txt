@@ -1,0 +1,3 @@
+[console_script]
+summarize-index = ngsindex.cli:summarize
+
