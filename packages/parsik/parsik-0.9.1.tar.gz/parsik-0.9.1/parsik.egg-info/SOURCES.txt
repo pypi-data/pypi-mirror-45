@@ -1,0 +1,10 @@
+README.md
+setup.py
+parsik/__init__.py
+parsik/logutils.py
+parsik/parsik.py
+parsik.egg-info/PKG-INFO
+parsik.egg-info/SOURCES.txt
+parsik.egg-info/dependency_links.txt
+parsik.egg-info/top_level.txt
+test/test_parsik.py
