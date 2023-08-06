@@ -1,0 +1,97 @@
+# Cagou: desktop/mobile frontend for Salut à Toi XMPP client
+# Copyright (C) 2016-2019 Jérôme Poisson (goffi@goffi.org)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+<RemoteControl>:
+    float_layout: float_layout
+    layout: layout
+    FloatLayout:
+        id: float_layout
+        ScrollView:
+            size_hint: 1, 1
+            pos_hint: {'x': 0, 'y': 0}
+            do_scroll_x: False
+            scroll_type: ['bars', 'content']
+            bar_width: dp(6)
+            StackLayout:
+                id: layout
+                size_hint: 1, None
+                height: self.minimum_height
+                spacing: 0
+
+
+<RemoteItemWidget>:
+    shared: False
+    Symbol:
+        size_hint: 1, None
+        height: dp(80)
+        symbol: 'video'
+        color: 0, 0, 0, 1
+    Label:
+        size_hint: None, None
+        width: dp(100)
+        font_size: sp(14)
+        text_size: dp(95), None
+        size: self.texture_size
+        text: root.name
+        halign: 'center'
+
+
+<PlayerLabel@Label>:
+    size_hint: 1, None
+    text_size: self.width, None
+    size: self.texture_size
+    halign: 'center'
+
+
+<PlayerButton@SymbolButton>:
+    size_hint: None, 1
+
+
+<MediaPlayerControlWidget>:
+    orientation: 'vertical'
+    PlayerLabel:
+        text: root.title
+        bold: True
+        font_size: '20sp'
+    PlayerLabel:
+        text: root.identity
+        font_size: '15sp'
+    Widget:
+        size_hint: 1, None
+        height: dp(50)
+    BoxLayout:
+        size_hint: 1, None
+        spacing: dp(20)
+        height: dp(30)
+        Widget:
+        PlayerButton:
+            symbol: "previous"
+            on_release: root.do_cmd("Previous")
+        PlayerButton:
+            symbol: "fast-bw"
+            on_release: root.do_cmd("GoBack")
+        PlayerButton:
+            symbol: root.status
+            on_release: root.do_cmd("PlayPause")
+        PlayerButton
+            symbol: "fast-fw"
+            on_release: root.do_cmd("GoFW")
+        PlayerButton
+            symbol: "next"
+            on_release: root.do_cmd("Next")
+        Widget:
+    Widget:

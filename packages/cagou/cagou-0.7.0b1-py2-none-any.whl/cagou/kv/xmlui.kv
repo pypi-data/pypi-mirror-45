@@ -1,0 +1,206 @@
+# Cagou: desktop/mobile frontend for Salut à Toi XMPP client
+# Copyright (C) 2016-2019 Jérôme Poisson (goffi@goffi.org)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#:set common_height 30
+#:set button_height 50
+
+
+<EmptyWidget,StringWidget,PasswordWidget,JidInputWidget>:
+    size_hint: 1, None
+    height: dp(common_height)
+
+
+<TextWidget,LabelWidget,JidWidget>:
+    size_hint: 1, 1
+    size_hint_min_y: max(dp(common_height), self.texture_size[1])
+    text_size: self.width, None
+
+
+<StringWidget,PasswordWidget,IntWidget>:
+    multiline: False
+    background_normal: app.expand('atlas://data/images/defaulttheme/textinput')
+
+
+<TextBoxWidget>:
+    multiline: True
+    height: dp(common_height) * 5
+
+
+<ButtonWidget>:
+    size_hint: 1, None
+    height: dp(button_height)
+
+
+<BoolWidget>:
+    size_hint: 1, 1
+
+
+<DividerWidget>:
+    size_hint: 1, None
+    height: dp(12)
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Line
+            points: self.x, self.y + dp(5), self.x + self.width, self.y + dp(5)
+            width: dp(2)
+
+
+<ListWidgetItem>:
+    size_hint_y: None
+    height: dp(button_height)
+
+
+<ListWidget>:
+    size_hint: 1, None
+    layout: layout
+    height: min(layout.minimum_height, dp(250))
+    do_scroll_x: False
+    scroll_type: ['bars', 'content']
+    bar_width: dp(6)
+    BoxLayout:
+        id: layout
+        size_hint: 1, None
+        height: self.minimum_height
+        orientation: "vertical"
+        padding: dp(10)
+
+
+<AdvancedListRow>:
+    orientation: "horizontal"
+    size_hint: 1, None
+    height: self.minimum_height
+    canvas.before:
+        Color:
+            rgba: app.c_prim_light if self.global_index%2 else app.c_prim_dark
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    canvas.after:
+        Color:
+            rgba: 0, 0, 1, 0.5 if self.selected else 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<AdvancedListContainer>:
+    size_hint: 1, None
+    height: self.minimum_height
+    orientation: "vertical"
+
+
+<VerticalContainer>:
+    orientation: "vertical"
+    size_hint: 1, None
+    height: self.minimum_height
+
+<PairsContainer>:
+    cols: 2
+    size_hint: 1, None
+    height: self.minimum_height
+    padding: dp(10)
+
+
+<TabsContainer>:
+    size_hint: 1, None
+    height: dp(200)
+
+<TabsPanelContainer>:
+    layout: layout
+    ScrollView:
+        do_scroll_x: False
+        scroll_type: ['bars', 'content']
+        bar_width: dp(6)
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            id: layout
+            orientation: "vertical"
+            size_hint: 1, None
+            height: self.minimum_height
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+
+<FormButton>:
+    size_hint: 1, None
+    height: dp(button_height)
+    color: 0, 0, 0, 1
+    bold: True
+
+
+<SubmitButton>:
+    text: _(u"Submit")
+    background_normal: ''
+    background_color: 0.33, 0.67, 0.0, 1
+
+
+<CancelButton>:
+    text: _(u"Cancel")
+    color: 1, 1, 1, 1
+    bold: False
+
+
+<SaveButton>:
+    text: _(u"Save")
+    background_normal: ''
+    background_color: 0.33, 0.67, 0.0, 1
+
+
+<FileDialog>:
+    orientation: "vertical"
+    message: message
+    file_chooser: file_chooser
+    Label:
+        id: message
+        size_hint: 1, None
+        text_size: root.width, None
+        size: self.texture_size
+    FileChooserListView:
+        id: file_chooser
+    Button:
+        size_hint: 1, None
+        height: dp(50)
+        text: "choose"
+        on_release: root.onSelect(file_chooser.selection)
+    Button:
+        size_hint: 1, None
+        height: dp(50)
+        text: "cancel"
+        on_release: root.onCancel()
+
+
+<XMLUIPanel>:
+    size_hint: 1, 1
+    layout: layout
+    do_scroll_x: False
+    scroll_type: ['bars', 'content']
+    bar_width: dp(6)
+    BoxLayout:
+        id: layout
+        orientation: "vertical"
+        size_hint: 1, None
+        padding: app.MARGIN_LEFT, 0, app.MARGIN_RIGHT, 0
+        height: self.minimum_height

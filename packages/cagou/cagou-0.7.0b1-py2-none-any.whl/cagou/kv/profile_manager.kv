@@ -1,0 +1,197 @@
+# Cagou: desktop/mobile frontend for Salut à Toi XMPP client
+# Copyright (C) 2016-2019 Jérôme Poisson (goffi@goffi.org)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+<ProfileManager>:
+    Label:
+        size_hint: 1, None
+        text_size: root.width, None
+        width: self.texture_size[0]
+        height: self.texture_size[1] + dp(20)
+        text: "Profile Manager"
+        halign: "center"
+        bold: True
+
+<PMLabel@Label>:
+    size_hint: 1, None
+    height: sp(30)
+
+<PMInput@TextInput>:
+    multiline: False
+    size_hint: 1, None
+    height: sp(30)
+    write_tab: False
+
+<PMButton@Button>:
+    size_hint: 1, None
+    height: dp(40)
+
+
+<NewProfileScreen>:
+    profile_name: profile_name
+    jid: jid
+    password: password
+
+    BoxLayout:
+        orientation: "vertical"
+
+        Label:
+            size_hint: 1, None
+            text_size: root.width, None
+            size: self.texture_size
+            text: "Creation of a new profile"
+            halign: "center"
+        Label:
+            text: root.error_msg
+            bold: True
+            size_hint: 1, None
+            height: dp(40)
+            color: 1,0,0,1
+        GridLayout:
+            cols: 2
+
+            PMLabel:
+                text: "Profile name"
+            PMInput:
+                id: profile_name
+
+            PMLabel:
+                text: "JID"
+            PMInput:
+                id: jid
+
+            PMLabel:
+                text: "Password"
+            PMInput:
+                id: password
+                password: True
+
+            Widget:
+                size_hint: 1, None
+                height: dp(50)
+
+            Widget:
+                size_hint: 1, None
+                height: dp(50)
+
+            PMButton:
+                text: "OK"
+                on_press: root.doCreate()
+
+            PMButton:
+                text: "Cancel"
+                on_press:
+                    root.pm.screen_manager.transition.direction = 'right'
+                    root.pm.screen_manager.current = 'profiles'
+
+            Widget:
+
+
+<DeleteProfilesScreen>:
+    BoxLayout:
+        orientation: "vertical"
+
+        Label:
+            size_hint: 1, None
+            text_size: root.width, None
+            size: self.texture_size
+            text: "Are you sure you want to delete the following profiles?"
+            halign: "center"
+
+        Label:
+            size_hint: 1, None
+            text_size: root.width, None
+            height: self.texture_size[1] + dp(60)
+            width: self.texture_size[0]
+            halign: "center"
+            # for now we only handle single selection
+            text: u'\n'.join([i.text for i in [root.pm.selected]]) if root.pm.selected else u''
+            bold: True
+
+        Label:
+            size_hint: 1, None
+            text_size:  root.width, dp(30)
+            height: self.texture_size[1]
+            text: u'/!\\ WARNING: this operation is irreversible'
+            color: 1,0,0,1
+            bold: True
+            halign: "center"
+            valign: "top"
+        GridLayout:
+            cols: 2
+            PMButton:
+                text: "Delete"
+                on_press: root.doDelete()
+
+            PMButton:
+                text: "Cancel"
+                on_press:
+                    root.pm.screen_manager.transition.direction = 'right'
+                    root.pm.screen_manager.current = 'profiles'
+
+
+<ProfilesScreen>:
+    layout: layout
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            size_hint: 1, None
+            text_size: root.width, None
+            size: self.texture_size
+            text: "Select a profile or create a new one"
+            halign: "center"
+
+        GridLayout:
+            cols: 2
+            size_hint: 1, None
+            height: dp(40)
+            Button:
+                text: "New"
+                on_press:
+                    root.pm.screen_manager.transition.direction = 'left'
+                    root.pm.screen_manager.current = 'new_profile'
+            Button:
+                disabled: not root.pm.selected
+                text: "Delete"
+                on_press:
+                    root.pm.screen_manager.transition.direction = 'left'
+                    root.pm.screen_manager.current = 'delete_profiles'
+        ScrollView
+            BoxLayout:
+                size_hint: 1, None
+                height: self.minimum_height
+                orientation: "vertical"
+                id: layout
+        Button
+            text: "Connect"
+            size_hint: 1, None
+            height: dp(40)
+            disabled: not root.pm.selected
+            on_press: root.pm._onConnectProfiles()
+
+
+<ProfileItem>:
+    size_hint: 1, None
+    background_normal: ""
+    background_down: ""
+    deselected_color: (1,1,1,1) if self.index%2 else (0.87,0.87,0.87,1)
+    selected_color: 0.67,1.0,1.0,1
+    selected: self.state == 'down'
+    color: 0,0,0,1
+    background_color: self.selected_color if self.selected else self.deselected_color
+    on_press: self.ps.pm.selected = self if self.selected else ''
+    height: dp(30)
