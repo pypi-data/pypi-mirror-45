@@ -1,0 +1,6 @@
+prettytable~=0.7
+argcomplete~=1.0
+voidpp-tools~=1.5
+PyYAML~=3.11
+GitPython~=2.0
+virtualenv-api~=2.1
