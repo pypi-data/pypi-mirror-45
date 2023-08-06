@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: metadata_utils
+Version: 0.1.0
+Summary: Lightweight Metadata Support
+Home-page: https://github.com/jvanasco/metadata_utils
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: metadata_utils
+        ==============
+        
+Keywords: web
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
