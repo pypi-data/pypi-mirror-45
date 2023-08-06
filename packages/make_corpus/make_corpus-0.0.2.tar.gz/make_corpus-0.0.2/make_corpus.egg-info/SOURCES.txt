@@ -1,0 +1,11 @@
+README.md
+README.txt
+setup.py
+corpus/__init__.py
+corpus/corpus.py
+corpus/test_all.py
+make_corpus.egg-info/PKG-INFO
+make_corpus.egg-info/SOURCES.txt
+make_corpus.egg-info/dependency_links.txt
+make_corpus.egg-info/requires.txt
+make_corpus.egg-info/top_level.txt
