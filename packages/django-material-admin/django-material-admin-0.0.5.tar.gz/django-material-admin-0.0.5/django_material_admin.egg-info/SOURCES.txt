@@ -1,0 +1,11 @@
+setup.py
+django_material_admin.egg-info/PKG-INFO
+django_material_admin.egg-info/SOURCES.txt
+django_material_admin.egg-info/dependency_links.txt
+django_material_admin.egg-info/top_level.txt
+material_admin/__init__.py
+material_admin/sites.py
+material_admin/urls.py
+material_admin/views.py
+material_admin/templatetags/__init__.py
+material_admin/templatetags/material_admin.py
