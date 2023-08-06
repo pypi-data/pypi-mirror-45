@@ -1,0 +1,7 @@
+pyyaml<5,>=3
+Jinja2<3,>=2.7.0
+setuptools
+colorama<0.4,>=0.3
+pyOCD<1.0,>=0.3
+project_generator<0.9.0,>=0.8.0
+pyelftools==0.23
