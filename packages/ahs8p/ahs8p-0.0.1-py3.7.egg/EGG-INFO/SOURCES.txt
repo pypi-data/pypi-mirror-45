@@ -1,0 +1,9 @@
+setup.py
+ahrs8p/__init__.py
+ahrs8p/ahrs8p.py
+ahs8p.egg-info/PKG-INFO
+ahs8p.egg-info/SOURCES.txt
+ahs8p.egg-info/dependency_links.txt
+ahs8p.egg-info/requires.txt
+ahs8p.egg-info/top_level.txt
+ahs8p.egg-info/zip-safe
