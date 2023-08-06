@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: POSPairWordEmbeddings
+Version: 0.0.4
+Summary: POSPair Word Embeddings- Python framework for fast Vector Space Modelling
+Home-page: https://github.com/jmacwan/POSPair
+Author: Jim Macwan
+Author-email: jimmacwan94@gmail.com
+License: LGPLv2.1
+Download-URL: https://github.com/jmacwan/POSPair
+Description: 
+        ==============================================
+        POSPair Word Embeddings
+        ==============================================
+        
+        Gensim is a Python library for *topic modelling*, *document indexing* and *similarity retrieval* with large corpora.
+        Target audience is the *natural language processing* (NLP) and *information retrieval* (IR) community.
+        
+        POSPair Word Embedding is created by modifying Gensim library according to POSPair, generating more meaningful and efficient word embeddings.
+        
+        
+Keywords: Singular Value Decomposition,SVD,Latent Semantic Indexing,LSA,LSI,Latent Dirichlet Allocation,LDA,Hierarchical Dirichlet Process,HDP,Random Projections,TFIDF,word2vec
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: distributed
+Provides-Extra: test-win
+Provides-Extra: docs
+Provides-Extra: test
