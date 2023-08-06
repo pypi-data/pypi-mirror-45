@@ -1,0 +1,11 @@
+markov362m/__init__.py,sha256=VPmKMpX85LtMyCDnonfIPOi0byQSwAOIyPg26X23ZoQ,65
+markov362m/_classes.py,sha256=oFl8fV1Y1C66vbi3cmHGAu93cZyXIHtx8MF45yQ4iYY,4588
+markov362m/_representation.py,sha256=fqHczwVRhOmvSwMwBJ8QA-cXnjT0FwQK5ULB_lrq_1U,2854
+markov362m/base.py,sha256=DDX6uvTAnlObqjpurChYvSNVxqm0gDx04AqmeqR1Hfg,14838
+markov362m/examples.py,sha256=ERuoZV14DkJIeAeqJs1yy-kN7IMTo_C-CRutbmR-zBA,17093
+markov362m/io.py,sha256=DIhqcz0ih8RZ1YcxH01jYXpe-dti7AyMs6nDv0C36QI,4605
+markov362m-0.0.5.dist-info/LICENSE,sha256=8B5aFkSSKudJxSIT3g2Ikvxsm1idpEzSWyv29yDc4E4,1072
+markov362m-0.0.5.dist-info/METADATA,sha256=TqHbFpOPkHc1E8EQX3GQ1dFsVG-9M99k5jXug-VtlZw,532
+markov362m-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+markov362m-0.0.5.dist-info/top_level.txt,sha256=KnWz8lDQVTUM_oOe1bPTFgNUpfTwgKb3Lx5zxtGtfS4,11
+markov362m-0.0.5.dist-info/RECORD,,
