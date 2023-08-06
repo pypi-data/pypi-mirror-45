@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: clav
+Version: 0.0.4
+Summary: helper modules
+Home-page: UNKNOWN
+Author: clav developers
+Author-email: eckso@eckso.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >= 3.6
+Requires-Dist: Jinja2 (>=2.10)
+Requires-Dist: PyYAML (>=3.13)
+Requires-Dist: ptyprocess (>=0.5.2)
+Requires-Dist: requests (>=2.19.1)
+
+UNKNOWN
+
+
