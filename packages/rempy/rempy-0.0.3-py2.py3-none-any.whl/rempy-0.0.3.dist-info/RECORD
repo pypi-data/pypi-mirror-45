@@ -1,0 +1,11 @@
+rempy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rempy/__main__.py,sha256=2JXkasULZ6t97bKRLaO2zak-DYEboxjjvk10_jRmptQ,555
+rempy/client.py,sha256=YyQrR_vn_k7zOyjr4RfoiPQVCPoZ4wJdRw-96fEO3DA,2389
+rempy/server.py,sha256=7yU8egjqr84LA_n_9-Llhg46hRSNx3-r-qUgDiJCG6g,4439
+rempy/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rempy/lib/compute_patch.py,sha256=hzYvrEoactTTAQkPusKSgIOic8JubxijtHuwlUcogjM,4066
+rempy-0.0.3.dist-info/LICENSE,sha256=YK1j6lxa5vSK3qsH5F_1EMUnYeg1RjhL74uYPYDIxWk,1088
+rempy-0.0.3.dist-info/METADATA,sha256=vb1EsLyKTKyFmB_6ZamlpKax6IjWC-dUC8OP3uhiO_g,1146
+rempy-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+rempy-0.0.3.dist-info/top_level.txt,sha256=tkTphd6McR8KZsZlmM9_B-AaBTeqBYX5LYBEADn_5bc,6
+rempy-0.0.3.dist-info/RECORD,,
