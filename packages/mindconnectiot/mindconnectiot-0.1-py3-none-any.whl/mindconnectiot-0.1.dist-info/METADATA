@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mindconnectiot
+Version: 0.1
+Summary: Wrapper around the MindConnect IoT Extention.
+Home-page: https://gitlab.com/Addono/mindconnect-iot-extention-python
+Author: Adriaan Knapen
+Author-email: hi@aknapen.nl
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: paho-mqtt
+
+UNKNOWN
+
+
