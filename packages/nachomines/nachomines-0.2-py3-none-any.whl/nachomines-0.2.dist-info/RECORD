@@ -1,0 +1,17 @@
+nachomines/__init__.py,sha256=GgVASZ44-q-j9NzTKKJHVjdYomtYE7YzE8IuQcZkPCk,98
+nachomines/__main__.py,sha256=9Ty6ljZKOd_I9LdibkikV-beYQw5bS7AnXosd_UMbV0,102
+nachomines/icon.png,sha256=UvLuHQ297UkCkrYrXQZ5x83cb7OQX1nMvjQ-mQSn-kw,3683
+nachomines/resources/images/bitmap/MainMenu.png,sha256=mD8lhwoO8eqMWh4r5c4SxiIRJPXz2VaoJ_xK_xs76FM,232019
+nachomines/resources/images/bitmap/background.png,sha256=6XgJuombgDnmonX2LUlWreyeqAcRiILR59ae0nxm83c,1817173
+nachomines/resources/images/bitmap/flag.png,sha256=kdvRQUTbrQN1mNTbnz_ZwReQ5X8aTmvt5mDu7hCQSEE,16335
+nachomines/resources/images/bitmap/mine.png,sha256=ljGOieghSaR3BWVYHx3fsJTSEcH7RkgiTDPJv3F9Rpw,48661
+nachomines/scripts/Utils.py,sha256=C5_qxbyQsNb7k6XSiczGu6iD_qtxf5xFmvvnFCsHmVw,4701
+nachomines/scripts/auto_load.py,sha256=M-bjY7yIGIvcpMOf4uufnP1ctcAgLZKslIJh4zeYl5M,835
+nachomines/scripts/button.py,sha256=mPRrJrlGFLXVSYTKy3xVX4J52NdHvOittE5Vh9swm6E,2604
+nachomines/scripts/main.py,sha256=SuC0m9A3EBg9Mwo0uaNsQ97e1ro53_qr7dPyCIu0Qu0,12845
+nachomines-0.2.dist-info/LICENSE,sha256=MFeZREht88FksAeNLKk_eD--FgoRn8lc2klwqBGT7cI,1068
+nachomines-0.2.dist-info/METADATA,sha256=j8Jsu3gnmstJ9l5QblO-3yc3miBMKldyD3pq3ipWicA,1859
+nachomines-0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+nachomines-0.2.dist-info/entry_points.txt,sha256=5pX9TCY9oy87k3y1chTPfvjvgajCvvIsezJOyOPnEyo,60
+nachomines-0.2.dist-info/top_level.txt,sha256=s-Zfen_87dxi44JsnSlThDhlbdkYQUgq1C__ywhaoxU,11
+nachomines-0.2.dist-info/RECORD,,
