@@ -1,0 +1,15 @@
+lineage/__init__.py,sha256=V0w-asrPM7GaqMem-t2UIlOx_OQaBAxpG6xeg5nan14,32269
+lineage/_version.py,sha256=ALxaODCMnNbCrUSrN1okHcCkOskceMWVS8KRNM-nv-Y,497
+lineage/ensembl.py,sha256=LbnX75HH4nYvjFFbDVvpRbp10CRcZwf__k2IcaeuBcM,3520
+lineage/individual.py,sha256=HzeiL18vCLCMLQoeaM0XfUgpR8T1L8bMdcyrrifqzNU,4380
+lineage/resources.py,sha256=3_lZRNeJw8Lc5xc4KsU0o02GJ35oD4Pjwk0MPyUOW_E,23750
+lineage/utils.py,sha256=_x8ZSTB2UR95_VPDts-WdfrC0qimGw3jEIVFpDymZOk,3742
+lineage/visualization.py,sha256=SH-8IpFJO_tjmI_16LwQxCF9hYXXiaK1QNBKt2WQXTo,9433
+lineage/snps/__init__.py,sha256=-LF-SNdeXMWaxHZS-cZt2seT8XjXtNa3YAHwyCgjt7U,29818
+lineage/snps/reader.py,sha256=hxoqbky6beBAv6FrJ0HI8jjO8l1FK0cwBzhxSKTlw-g,10007
+lineage-2.0.0.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+lineage-2.0.0.dist-info/LICENSES-3RD-PARTY.txt,sha256=jwapRhLdCTi09p3Nh7nSIRazwp6K4vOTCF4URVxIZfg,13393
+lineage-2.0.0.dist-info/METADATA,sha256=C_ZuoBT-bRnK6ShuAGMap2nn3HWUEjoR8-LF_7p7yMM,13611
+lineage-2.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+lineage-2.0.0.dist-info/top_level.txt,sha256=4L38VKFKYPutIm0rsgZs3AoQ3elRUxwwEwyBJftLzEo,8
+lineage-2.0.0.dist-info/RECORD,,
