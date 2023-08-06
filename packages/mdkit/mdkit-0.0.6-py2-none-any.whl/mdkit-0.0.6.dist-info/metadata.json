@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.29.0)", "license": "LICENSE.txt", "metadata_version": "2.0", "name": "mdkit", "run_requires": [{"requires": ["networkx (==2.2)"]}], "summary": "Tools to prepare and analyze MD simulations conducted with popular MD packages", "version": "0.0.6"}
