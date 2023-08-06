@@ -1,0 +1,12 @@
+README.md
+setup.py
+futile/__init__.py
+futile/borg.py
+futile/cli.py
+futile/util.py
+futile.egg-info/PKG-INFO
+futile.egg-info/SOURCES.txt
+futile.egg-info/dependency_links.txt
+futile.egg-info/entry_points.txt
+futile.egg-info/requires.txt
+futile.egg-info/top_level.txt

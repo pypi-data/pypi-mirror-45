@@ -1,0 +1,11 @@
+click
+pyyaml
+halo
+sh
+python-dateutil
+apscheduler
+SQLAlchemy
+coloredlogs
+
+[dev]
+black
