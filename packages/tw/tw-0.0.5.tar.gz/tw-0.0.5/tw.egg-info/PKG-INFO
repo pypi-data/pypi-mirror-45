@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: tw
+Version: 0.0.5
+Summary: TensorWrapper is a deep learning helper.
+Home-page: https://github.com/atranitell/TensorWrapper
+Author: Kai Jin
+Author-email: atranitell@gmail.com
+License: Apache 2.0 Licence
+Description: 
+        # TensorWrapper
+        A collections of frameworks with inferences modules.
+        
+        #### v0.0.5
+        - add `data.kv`, a kv FastDb to manage statistic values.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
