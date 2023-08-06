@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plotly-heatmap
+Version: 0.1
+Summary: Plotly Heatmap helper fn
+Home-page: https://github.com/walkerlangley/plotly_heatmap
+Author: Walker Langley
+Author-email: walkerlangley@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Testing
+
+
