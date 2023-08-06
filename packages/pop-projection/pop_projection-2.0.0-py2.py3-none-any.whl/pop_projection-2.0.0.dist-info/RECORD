@@ -1,0 +1,13 @@
+pop_projection/Actuariat.py,sha256=7GxkiCYsDrTOBsfl6e22SgVUXeotUvuToHMUhmGa_5M,6105
+pop_projection/Effectifs.py,sha256=AHs3tYaPKz5VqKn_C07ZirgA8ZsKts_V1hHob14psm8,39502
+pop_projection/__init__.py,sha256=mdrMdbCXmcHPVO-cDKFijshBiVDsJZ8xC1axJ5Vh7iQ,21
+pop_projection/sample_laws.py,sha256=KeWOPB1pi521ULclrapxzetP0PvPyLrGOuT2jpkIO-Y,2284
+pop_projection/table_usa_2009.csv,sha256=ftw6UDeBoI8phY6Xiy9Or7OJLGaDFvuD_NMdGU0Kyew,1144
+pop_projection/tests.py,sha256=9c_lbhmugwatvt4QVEp4uDZnm62GEgv6XkbT8eEXijU,4194
+pop_projection/data/children.csv,sha256=oU6HXWqyJqxocDYvR_bTgoahBVp9_e5HgWsOUXo_FjQ,3136
+pop_projection/data/employees.csv,sha256=pkUik5vQF6jcscicR5w2UliTaB2m0h-E5m3TsqAJV8M,3896
+pop_projection/data/spouses.csv,sha256=_dJRzFO4Kcja3ujE60Kf4nS_QKayBRESrSo6in4jIg0,3029
+pop_projection-2.0.0.dist-info/METADATA,sha256=KdaWjAXIPySUaE6IfGoXLtzJzGFmSlAKdcICEs8rImg,8028
+pop_projection-2.0.0.dist-info/RECORD,,
+pop_projection-2.0.0.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+pop_projection-2.0.0.dist-info/top_level.txt,sha256=LSgt_OMbkIJlZ3fZTNmBugSNth6QtThDrnK-jiBSCNA,15
