@@ -1,0 +1,13 @@
+CHANGES.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/basicserial/__init__.py
+src/basicserial.egg-info/PKG-INFO
+src/basicserial.egg-info/SOURCES.txt
+src/basicserial.egg-info/dependency_links.txt
+src/basicserial.egg-info/requires.txt
+src/basicserial.egg-info/top_level.txt
+src/basicserial.egg-info/zip-safe
