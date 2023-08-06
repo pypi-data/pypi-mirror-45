@@ -1,0 +1,9 @@
+DiceLib/__init__.py,sha256=LJaEuDBm_zrBTbI6UwjIvll3kbITT7G2pa7qxsOT0xg,77
+DiceLib/die.py,sha256=KYMFXgeFCb2oTS2PzJDOzQlkhyl-ETkxZDtjuiAiYfU,517
+DiceLib/exceptions.py,sha256=CIXOv_5JC0xfRpkg3K6xUFZxzC15HRJKBXYQv_RE3-A,140
+DiceLib/rolls.py,sha256=6jOImgimC53VPUgaKBERtujUkXfXweqV6QA2uWheRp4,2392
+DiceLib-0.1.0.dist-info/LICENSE,sha256=4B2fJP05hPfCoPqI32y-HqQsVHPm30f47CImagqo2Z8,1066
+DiceLib-0.1.0.dist-info/METADATA,sha256=D2Amm8mS89uBT_LvO53zz3fuE5f6uh_A2MroDTmgQ10,1923
+DiceLib-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+DiceLib-0.1.0.dist-info/top_level.txt,sha256=ECImqK6hYj41o1WAqm0sU6m5BNUp4G1U3Nra6wBmiO0,8
+DiceLib-0.1.0.dist-info/RECORD,,
