@@ -1,0 +1,9 @@
+lzham/__init__.py,sha256=YDHGTa9QA67sUZ-ZXJ66UND4uVsNno13BNSvmgTMVJU,104
+lzham/_lzham.cp36-win_amd64.pyd,sha256=Kn4LXdBhCHRPcZpbmV9cK6CsqrCHbGzfqcMZ9BgoNjw,171520
+lzham/compress.py,sha256=OsQTmP1Zzu4HEr20quRCtjGEgowAOTUaNdYZg9aO96g,1203
+lzham/decompress.py,sha256=jNLnMGsSesJfpQyGprC6qZ1yPoZHoynexnbLRDQfFNk,1402
+pylzham-0.1.1.dist-info/LICENSE,sha256=BJYjun5a1nSow1IxPdJjzXefodM0MyUqF7UiSGXGfGY,1099
+pylzham-0.1.1.dist-info/METADATA,sha256=VxZawK0uYrDQc0_5D4AmFXA_38p5_bl2I0G_dqVFgBM,4337
+pylzham-0.1.1.dist-info/WHEEL,sha256=1b1CGTcUmCiwm5ijwFxEsvudoBmSYVFVLf6KbgC4Sbk,106
+pylzham-0.1.1.dist-info/top_level.txt,sha256=zt73jJCxQ8shQxzfisD6BPAoN6Xm_NuVIyReHQbhi6A,14
+pylzham-0.1.1.dist-info/RECORD,,
