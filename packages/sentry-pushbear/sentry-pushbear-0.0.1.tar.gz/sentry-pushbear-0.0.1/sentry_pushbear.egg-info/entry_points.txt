@@ -1,0 +1,3 @@
+[sentry.plugins]
+pushbear = sentry_pushbear.plugin:PushBearNotifications
+

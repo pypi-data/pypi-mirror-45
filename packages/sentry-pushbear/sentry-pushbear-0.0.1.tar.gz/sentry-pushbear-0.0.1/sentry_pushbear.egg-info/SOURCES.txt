@@ -1,0 +1,10 @@
+README.md
+setup.py
+sentry_pushbear/__init__.py
+sentry_pushbear/plugin.py
+sentry_pushbear.egg-info/PKG-INFO
+sentry_pushbear.egg-info/SOURCES.txt
+sentry_pushbear.egg-info/dependency_links.txt
+sentry_pushbear.egg-info/entry_points.txt
+sentry_pushbear.egg-info/requires.txt
+sentry_pushbear.egg-info/top_level.txt
