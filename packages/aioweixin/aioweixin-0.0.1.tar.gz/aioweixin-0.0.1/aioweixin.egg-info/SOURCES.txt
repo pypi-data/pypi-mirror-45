@@ -1,0 +1,10 @@
+setup.py
+aioweixin.egg-info/PKG-INFO
+aioweixin.egg-info/SOURCES.txt
+aioweixin.egg-info/dependency_links.txt
+aioweixin.egg-info/not-zip-safe
+aioweixin.egg-info/requires.txt
+aioweixin.egg-info/top_level.txt
+weixin/__init__.py
+weixin/client.py
+weixin/dotdict.py
