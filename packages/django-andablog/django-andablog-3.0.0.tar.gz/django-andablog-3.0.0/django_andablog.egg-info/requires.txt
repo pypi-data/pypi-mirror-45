@@ -1,0 +1,6 @@
+Django<2.1,>=1.11
+django-markupfield<2,>=1.5
+django-model-utils<4.0,>=3.0
+django-taggit<1.0.0,>=0.22.2
+pillow<5.0.0,>=4.0.0
+six
