@@ -1,0 +1,9 @@
+lambdawarmer/__init__.py,sha256=gvS0__QW1uX6e_Dgn7y9cbFZc_B-pTMbG7eO1dXG0CU,3813
+lambdawarmer/fakes.py,sha256=BD_RdN0YEEr0WJxRvB3XZy7oggprGoO7ozZjK5fS5CU,1091
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_warmer.py,sha256=TixLVoiiMRffq3zwVX8BRIDQYS-eTolof3UC00Z3jDs,4231
+lambda_warmer_py-0.3.1.dist-info/LICENSE,sha256=7nl_sYiS0s3NAf3WyXTa36YLLxNcj_3NC0fSfrDq_9M,1067
+lambda_warmer_py-0.3.1.dist-info/METADATA,sha256=wVXOUwFovkcq6fmv1d-KVkWBWmA2BkMYEyUO9j7oANU,5094
+lambda_warmer_py-0.3.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+lambda_warmer_py-0.3.1.dist-info/top_level.txt,sha256=KJusWlXdW1Um2toJn06t7HKa3Y0qiVOqRd3b2GEegU4,19
+lambda_warmer_py-0.3.1.dist-info/RECORD,,
