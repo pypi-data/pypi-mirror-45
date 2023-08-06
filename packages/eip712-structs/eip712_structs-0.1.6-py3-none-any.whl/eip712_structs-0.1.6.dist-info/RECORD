@@ -1,0 +1,9 @@
+eip712_structs/__init__.py,sha256=2p0wWdM3X7MaqxKQ2e1bl8pQRpmrxYYkrrfE_5qGtc8,269
+eip712_structs/domain_separator.py,sha256=caPMNmbUSGyqXDHobQQdE7kGgooTZ7VMvBiJbrPhYOM,1197
+eip712_structs/struct.py,sha256=z-Ykal_GTK5TAvbZmPO0j0DFHcBisAN53U_k5il5ix0,7698
+eip712_structs/types.py,sha256=ZGQ3n6XteBd7sOIAZNS8NU5TIndIfXQS0Wccv2c0fZ8,5489
+eip712_structs-0.1.6.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+eip712_structs-0.1.6.dist-info/METADATA,sha256=Y67snSwYHJcTJ24XHzsQkGkhJ5o_d6bUmrtDFNJIA48,4918
+eip712_structs-0.1.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+eip712_structs-0.1.6.dist-info/top_level.txt,sha256=Q1qzPQMymFFm5ZVEZ0QA7MFEp9xPm4w4opu2TVS7vxs,15
+eip712_structs-0.1.6.dist-info/RECORD,,
