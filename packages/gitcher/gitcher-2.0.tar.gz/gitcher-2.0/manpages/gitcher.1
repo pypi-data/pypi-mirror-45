@@ -1,0 +1,34 @@
+.\" Manpage for gitcher.
+.\" Contact dev@glezseoane.com to any requirement.
+.TH man 1 "28 Apr 2019" "2.0" "gitcher man page"
+.SH NAME
+gitcher \- the git profile switcher
+.SH SYNOPSIS
+\fBgitcher\fR [\fB-l\fR|\fB-o\fR|\fB-s\fR|\fB-g\fR|\fB-a\fR|\fB-d\fR ...]
+.SH DESCRIPTION
+\fBgitcher\fR is a git switcher. It facilitates the switching between git profiles, importing configuration settings such as name, email and user signatures.
+.SH OPTIONS
+.IP "\fINONE\fR"
+Opens the interactive mode. It is possible to access to all the operations with this mode, that offers you inline help.
+.IP "\fB\-l\fR"
+Shows a list with all the \fBgitcher\fR saved profiles.
+.IP "\fB\-o\fR"
+Displays the activated (ON) gitcher profile for the current working directory.
+.IP "\fB\-s\fR \fIprofname\fR"
+Set into the existing repository of the current working directory the selected profile.
+.IP "\fB\-g\fR \fIprofname\fR"
+Set globally the selected gitcher profile.
+.IP "\fB\-a\fR \fIprofname\fR \fIname\fR \fIemail\fR \fIsignkey\fR|\fINone\fR \fITrue\fR|\fIFalse\fR
+Add a new profile. Inputs profname, git user name, git user email, GPG sign key or None (depending if you want to use one), and True or False depending if you want to use your GPG key to autosign every commit.
+.IP "\fB\-d\fR \fIprofname\fR"
+Delete the selected profile.
+.SH SAVED DATA
+\fBgitcher\fR works with a dotfile saved on user $HOME directory. It is \fI~/.cherfile\fR. It is not recommended to edit it manually.
+.SH EXIT STATUS
+Exits 0 on success and 1 on error.
+.SH SEE ALSO
+\fBgit\fR(1).
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Borja Gonzalez Seoane <dev@glezseoane.com> is the author of \fBgitcher\fR.
