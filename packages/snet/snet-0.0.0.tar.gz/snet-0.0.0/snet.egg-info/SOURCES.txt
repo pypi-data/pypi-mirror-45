@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+snet/__init__.py
+snet/base.py
+snet/msg.py
+snet.egg-info/PKG-INFO
+snet.egg-info/SOURCES.txt
+snet.egg-info/dependency_links.txt
+snet.egg-info/not-zip-safe
+snet.egg-info/requires.txt
+snet.egg-info/top_level.txt
