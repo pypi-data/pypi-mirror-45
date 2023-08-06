@@ -1,0 +1,9 @@
+README.md
+setup.py
+table2excel/__init__.py
+table2excel.egg-info/PKG-INFO
+table2excel.egg-info/SOURCES.txt
+table2excel.egg-info/dependency_links.txt
+table2excel.egg-info/not-zip-safe
+table2excel.egg-info/requires.txt
+table2excel.egg-info/top_level.txt
