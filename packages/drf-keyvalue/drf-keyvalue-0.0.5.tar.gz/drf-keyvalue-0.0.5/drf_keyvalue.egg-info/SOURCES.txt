@@ -1,0 +1,11 @@
+README.md
+setup.py
+drf_keyvalue/__init__.py
+drf_keyvalue/backends.py
+drf_keyvalue/keyvalue.py
+drf_keyvalue/test_redis_backend.py
+drf_keyvalue.egg-info/PKG-INFO
+drf_keyvalue.egg-info/SOURCES.txt
+drf_keyvalue.egg-info/dependency_links.txt
+drf_keyvalue.egg-info/requires.txt
+drf_keyvalue.egg-info/top_level.txt
