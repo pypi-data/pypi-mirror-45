@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ktLDA
+Version: 0.0.5
+Summary: An implementation of latent Dirichlet allocation
+Home-page: https://github.com/cPolaris/ktLDA
+Author: Kehan (kehanLyu) & Tiangang (cPolaris)
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ktLDA
+
+This is an implementation of Latent Dirichlet Allocation for pedagogical purposes.
+
+### Dependencies
+
+- numpy
+- tqdm
+
+### Examples
+
+```python
+from ktlda import KtLDA
+import pickle
+
+with open('ourdata-cleaned.pickle', 'rb') as f:
+    comp, rec = pickle.load(f)
+X = comp + rec
+Y = [0] * len(comp) + [1] * len(rec)
+
+lda = KtLDA(n_components=2, alpha=0.5, beta=0.5, iterations=10, max_vocab=5000, random_state=663)
+lda.fit(X)
+print(lda.doc_topic_dist)
+```
+
+

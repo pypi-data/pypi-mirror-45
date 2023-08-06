@@ -1,0 +1,15 @@
+cgibbs_inf.cpython-37m-darwin.so,sha256=DSDFJn8tLpcRRj4zW0lGxFSYJeHJrV7M0atiEHcbGbQ,190164
+ktlda/__init__.py,sha256=jPe5dsAv40BSwrxmBKhap5NsFdNfAsz_mm3gYGpt3Ew,45
+ktlda/cgibbs_inf.cpython-37m-darwin.so,sha256=31TIG6PQpIcu1hH_nMeZiBR85NhKt7T0VGJta0rWPc4,190164
+ktlda/facet.py,sha256=1lhtJJC5y-DRDIUrvWDutzByI679PzoGgWS6sXr6-0Y,2712
+ktlda/model.py,sha256=ikO7QpDaX4ReJwAhgzxamTZDWLjlXa6hwie9vDeggic,2411
+ktlda/original.py,sha256=Cqdc5kNPuS77T1RFKD4m36T1DWo2iWdT6CkpQ5-TPjc,4457
+ktlda/utils.py,sha256=Zly5V7tu2SouONNouVqu1KkbOdiygq1heMMbD_GT_7E,1923
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_model.py,sha256=LK_bNj_DU23q4ECBi5tSOtma5mEp0XugGlcl1G8Ye6g,659
+test/test_utils.py,sha256=4x9O0TqcJtz2U5QVtaRZRyT7kRQ7M1LovuJIbtiL_Vg,583
+ktLDA-0.0.5.dist-info/LICENSE,sha256=4WC_Y1R5k8NCvq5SXfnfpsUYpj8HiMafR36rQA9GLxA,1098
+ktLDA-0.0.5.dist-info/METADATA,sha256=DT5rLoB-cO3uk34k2LFovh3DYmgVKmhdK1-eepXjEtg,899
+ktLDA-0.0.5.dist-info/WHEEL,sha256=_uoWPaJXp5yifocrNR768t5d8yZtv3Vvo6JhoyR73JI,111
+ktLDA-0.0.5.dist-info/top_level.txt,sha256=KAUlmVZI92Z59BqXLCBMV3cTTlkfYB-52qM1P44MgQo,22
+ktLDA-0.0.5.dist-info/RECORD,,
