@@ -1,0 +1,16 @@
+libinput_gestures_qt/__init__.py,sha256=tLZJ0t7uSEZy5OnB3iVH3I86DJ_bCxVt7CxFHoY1YVM,43
+libinput_gestures_qt/edit_window.py,sha256=b9NS2v-rtezqbuJZGecDCZk734Nmw-0hD3wB3D-Mf-w,4246
+libinput_gestures_qt/main.py,sha256=4Bd9aY66l8yYuE6uYtwKjSR6KEwlavF-awJ5KBdr9c8,30197
+libinput_gestures_qt/main_window.py,sha256=_vG5V5-227xGWaEcz2Cr5SdFWx2IpNSaNn23k55C1L4,7740
+libinput_gestures_qt/logo/libinput-gestures-qt.desktop,sha256=beLswVBVggpSNgfpkSxTEeVE_miLwu0r75JAeXXAons,255
+libinput_gestures_qt/logo/libinput-gestures-qt.png,sha256=daJAa4QTitFNxiC274gyN97AKrc8YuZN86Eez3XtyFU,7479
+libinput_gestures_qt-0.4.data/data/local/share/applications/libinput-gestures-qt.desktop,sha256=beLswVBVggpSNgfpkSxTEeVE_miLwu0r75JAeXXAons,255
+libinput_gestures_qt-0.4.data/data/local/share/pixmaps/libinput-gestures-qt.png,sha256=daJAa4QTitFNxiC274gyN97AKrc8YuZN86Eez3XtyFU,7479
+libinput_gestures_qt-0.4.data/data/share/applications/libinput-gestures-qt.desktop,sha256=beLswVBVggpSNgfpkSxTEeVE_miLwu0r75JAeXXAons,255
+libinput_gestures_qt-0.4.data/data/share/pixmaps/libinput-gestures-qt.png,sha256=daJAa4QTitFNxiC274gyN97AKrc8YuZN86Eez3XtyFU,7479
+libinput_gestures_qt-0.4.data/scripts/libinput-gestures-qt,sha256=2_oHQ5LfKfZ2arLqCAucJ8xYbQfCaRA3E-O7lDGpkmo,85
+libinput_gestures_qt-0.4.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+libinput_gestures_qt-0.4.dist-info/METADATA,sha256=X3SUkxZzIhLOzktxUKDkKiyUT4X8gKKBRgj_WmLvVSM,288
+libinput_gestures_qt-0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+libinput_gestures_qt-0.4.dist-info/top_level.txt,sha256=RSXPfrJ9k4GJXznFgYconDgtfRyxkLEF1MNaCYrTsVU,21
+libinput_gestures_qt-0.4.dist-info/RECORD,,
