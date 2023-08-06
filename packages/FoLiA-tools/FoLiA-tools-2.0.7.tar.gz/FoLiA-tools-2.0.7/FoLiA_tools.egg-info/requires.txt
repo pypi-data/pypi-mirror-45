@@ -1,0 +1,4 @@
+folia>=2.0.8
+lxml>=2.2
+docutils
+pyyaml
