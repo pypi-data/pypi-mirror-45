@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mira
+Version: 0.1a10
+Summary: A package for simplifying object detection
+Home-page: UNKNOWN
+Author: Fausto Morales
+Author-email: faustomorales@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: keras-retinanet (==0.5.0)
+Requires-Dist: opencv-python (>=4.0.0)
+Requires-Dist: imgaug (>=0.2.7)
+Requires-Dist: validators (>=0.12.4)
+Requires-Dist: nms (>=0.1.6)
+Requires-Dist: numpy
+Requires-Dist: keras
+Requires-Dist: scikit-learn
+Provides-Extra: docs
+Requires-Dist: sphinx-autodoc-typehints (==1.6.0) ; extra == 'docs'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx (==1.8.3) ; extra == 'docs'
+Requires-Dist: m2r (==0.2.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.4.2) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-mermaid (==0.3.1) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest (==4.0.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.6.0) ; extra == 'tests'
+
+# mira
+
+**IMPORTANT**: mira is in pre-release. The API is still under development and subject to change. In addition, there are likely bugs in implementations of some of the object detection models. As with all works-in-progress, please use at your own risk.
+
+mira provides tooling for simple object detection projects. The package spans three areas of focus.
+
+- **Core** object detection abstractions for images and annotations
+- Access to **datasets** from common formats (e.g., VOC, COCO) and image sets (e.g., VOC 2012)
+- A common API to for **well-known models** (e.g., RetinaNet and YOLO)
+
+Check out [the docs](http://faustomorales.github.io/mira).
+
+##  Installation
+
+```
+pip install mira
+```
+
+
