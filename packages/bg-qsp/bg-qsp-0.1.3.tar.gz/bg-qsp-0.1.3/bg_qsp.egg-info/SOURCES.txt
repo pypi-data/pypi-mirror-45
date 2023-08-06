@@ -1,0 +1,8 @@
+README.md
+setup.py
+bg_qsp.egg-info/PKG-INFO
+bg_qsp.egg-info/SOURCES.txt
+bg_qsp.egg-info/dependency_links.txt
+bg_qsp.egg-info/top_level.txt
+bgqsp/__init__.py
+bgqsp/cusip.py
