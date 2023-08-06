@@ -1,0 +1,6 @@
+-r prod.txt
+
+selenium==3.141.0
+pyvirtualdisplay==0.2.1
+beautifulsoup4==4.6.0
+xvfbwrapper==0.2.9
