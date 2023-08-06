@@ -1,0 +1,13 @@
+screamshot/__init__.py,sha256=vvwECGsIAITi9Di323b4a6llY-dDAILAvKf5rLTYnLY,504
+screamshot/browser_manager_script.py,sha256=3fNu9St8o87kuQPYiOIFzJ_JZ0zHwgxAPx8roXC0wIE,1099
+screamshot/generate_bytes_img_functions.py,sha256=Nwt1PuSYOyd38IAAq345UG1DAr13h8ICX7lRWPJcHPY,8300
+screamshot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+screamshot/screamshot_script.py,sha256=MmyyjKqc7SDVgNjCdVrHzlHfbSAOS-RfJWtfugTS6W4,4599
+screamshot/serializer.py,sha256=PC2dGfkZT3NtrCvFyxzy0uaWLNtKRSm_nShZMVh0f1Q,1407
+screamshot/utils.py,sha256=nNcPcA9D-sLXNcvfUYxACCyuFY9udF0XjEG4HANfLhk,6340
+screamshot-0.1.8.dist-info/LICENSE,sha256=vNU32a6TooVBNokpZKHwWMB8-XeYLWFoYrM8huQhuVM,1323
+screamshot-0.1.8.dist-info/METADATA,sha256=VK1Q7JVonfjkAxGfT_zFI8P56Tx-T7AdrxMHSgjsM14,4955
+screamshot-0.1.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+screamshot-0.1.8.dist-info/entry_points.txt,sha256=sIenTLgJ2jNWGBet19YbuPhxddNmSt97kwPS7rouYY8,123
+screamshot-0.1.8.dist-info/top_level.txt,sha256=On9U1t_YlbocfNRltIoO9gq_Y1ncLmkVrUG_MERvBi8,11
+screamshot-0.1.8.dist-info/RECORD,,
