@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: intellexer
+Version: 1.0
+Summary: Intellexer python SDK
+Home-page: https://github.com/kai3341/intellexer-python
+Author: Effective Soft
+Author-email: kai3341@mail.ru
+License: MIT
+Download-URL: https://github.com/kai3341/intellexer-python/archive/1.0.zip
+Description: UNKNOWN
+Keywords: API,NLP,INTELLEXER
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
