@@ -1,0 +1,4 @@
+tbx >= 1.9.4
+six >= 1.8.0
+pysnmp >= 4.2.5
+bottle
