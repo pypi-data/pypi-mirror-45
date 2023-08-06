@@ -1,0 +1,13 @@
+monogatari/__init__.py,sha256=KSyZOczodvbN2LbPi8CuxBxFMBKxBsNEGpt8yekCuA4,157
+monogatari/dict_counter.py,sha256=Y9GyBMVg7ZhMvkv3hJ6Hi5FyS4gbSWXw8tjUtpeWW8Y,1311
+monogatari/dict_handler.py,sha256=Gku7RJAA4pTB1zWt6XGnRevCNriiYv3zTExoJu6qqj8,1651
+monogatari/jmfd_counter.py,sha256=Z_wku7QPX_II71aPOPCpH_F27YkkuPW9zMGFN2O8KXo,289
+monogatari/mfd_counter.py,sha256=ZNBI2nZCIEmn_SNcZ2mnBN5LliGsmjhZOH4X3LmVL0g,281
+monogatari/data/J-MFD_2018.dic,sha256=qMM9PwzREKj1SzaujKn-6lvYx_OgpJbBFyBF61UnbDU,9386
+monogatari/data/MFD.dic,sha256=RAHjfSrhgGUktlGDMn-apNug5jDthIJetcw1nvPZd_A,4942
+monogatari-1.2.0.dist-info/AUTHORS.rst,sha256=0VCuKRTUKG4dvHhOFf40xMCnq0axLAqtBltYDBwLKJ0,40
+monogatari-1.2.0.dist-info/LICENSE,sha256=zKHgCNpD4jJ7VUsrExe3QhIVkcbW9yc0cQzFZ6FVndU,1076
+monogatari-1.2.0.dist-info/METADATA,sha256=XSWypwmXq9zYOS4mLLs9FQoxLXrGZRuhI53qpv6Tc_M,1512
+monogatari-1.2.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+monogatari-1.2.0.dist-info/top_level.txt,sha256=JvwGW4r0rjmTK8bW98U1oVQ6z6XYXb7EcZtyoIjAty4,11
+monogatari-1.2.0.dist-info/RECORD,,
