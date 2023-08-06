@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gp-lib
+Version: 0.0.3
+Summary: Lightweight Python library for GP regression.
+Home-page: https://github.com/tonyduan/gp-lib
+Author: Tony Duan
+Author-email: tonyduan@cs.stanford.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Please see Github for full description.
+
+
