@@ -1,0 +1,12 @@
+footprint/__init__.py,sha256=oPswspFxAXNlLuTZyMi9XRnaPJZToIRg6GOAdbA5WuM,27
+footprint/cli.py,sha256=uKCJrLNqt3v4i9aZxA3WuHK4lzHX8qEKmnDG5EFE1TM,2251
+footprint/modules/__init__.py,sha256=89JMt-KmDrkvfwcSuyzFRXOsa6wE70pICo5VCmH1wWA,72
+footprint/modules/config.py,sha256=BEpZejvGHMWMzmZ1-n3MWSBR26PMa2T1c52z7QDp5rE,603
+footprint/modules/github.py,sha256=T_c46S-4tj_tko_H9VMLcmjN90qfyjq43uVgXsqN5jI,3385
+footprint/modules/gitlab.py,sha256=aKYej9HW-r_sG0OtB7KOYa1396SuRh81g-8NYodL0nM,7127
+footprint-0.1.1.dev0.dist-info/LICENSE,sha256=HMyHwvklMyIxzD_oyORDG0baBqQJfzgOPh0q4kQpomk,1068
+footprint-0.1.1.dev0.dist-info/METADATA,sha256=6ve1Vi7ySgV6vhwK2GbEs_B2QSL6sXKG7F8oZl16Pxg,1889
+footprint-0.1.1.dev0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+footprint-0.1.1.dev0.dist-info/entry_points.txt,sha256=J5BYkxf1LgXE_apmCOAZGb3AoqsjK5izEU1jvQ28ibw,65
+footprint-0.1.1.dev0.dist-info/top_level.txt,sha256=otmvbxgwp0yoiQp7kpkYbRMU2ylAyuMWkmjkD9CSqtY,10
+footprint-0.1.1.dev0.dist-info/RECORD,,
