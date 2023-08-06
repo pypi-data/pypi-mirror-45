@@ -1,0 +1,1348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>voca package &mdash; voca version = release = version = release = 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="voca.plugins package" href="voca.plugins.html" />
+    <link rel="prev" title="src" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> voca
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version = release = version = release = 0.1.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">voca package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="voca.plugins.html">voca.plugins package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.app">voca.app module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.caster_adapter">voca.caster_adapter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.cli">voca.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.config">voca.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.context">voca.context module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.listen">voca.listen module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.log">voca.log module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.manager">voca.manager module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.mic">voca.mic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.parsing">voca.parsing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.patching">voca.patching module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.platforms">voca.platforms module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.streaming">voca.streaming module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.utils">voca.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca.worker">voca.worker module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-voca">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">voca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">src</a> &raquo;</li>
+        
+      <li>voca package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reference/voca.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="voca-package">
+<h1>voca package<a class="headerlink" href="#voca-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="voca.plugins.html">voca.plugins package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.basic">voca.plugins.basic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.math">voca.plugins.math module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.no">voca.plugins.no module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.python">voca.plugins.python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.stopstart">voca.plugins.stopstart module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.terminator">voca.plugins.terminator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.turtle_context">voca.plugins.turtle_context module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins.yes">voca.plugins.yes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voca.plugins.html#module-voca.plugins">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-voca.app">
+<span id="voca-app-module"></span><h2>voca.app module<a class="headerlink" href="#module-voca.app" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="voca.app.main">
+<code class="descclassname">voca.app.</code><code class="descname">main</code><span class="sig-paren">(</span><em>should_log: bool</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/app.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.app.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up the app execution environment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>should_log</strong> – Enable or disable logging.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.caster_adapter">
+<span id="voca-caster-adapter-module"></span><h2>voca.caster_adapter module<a class="headerlink" href="#module-voca.caster_adapter" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.caster_adapter.ActionSequence">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">ActionSequence</code><span class="sig-paren">(</span><em>actions: List[AsyncActionType]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#ActionSequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.ActionSequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.ActionSequence.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#ActionSequence.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.ActionSequence.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.AsyncActionType">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">AsyncActionType</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#AsyncActionType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.AsyncActionType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.AsyncActionType.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/caster_adapter.html#AsyncActionType.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.AsyncActionType.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.AttributeHaver">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">AttributeHaver</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#AttributeHaver"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.AttributeHaver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.CCRMerger">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">CCRMerger</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#CCRMerger"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.CCRMerger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="voca.caster_adapter.CCRMerger.CORE">
+<code class="descname">CORE</code><em class="property"> = 1</em><a class="headerlink" href="#voca.caster_adapter.CCRMerger.CORE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.CasterTransformer">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">CasterTransformer</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#CasterTransformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.CasterTransformer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">lark.visitors.Transformer</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.CasterTransformer.n">
+<code class="descname">n</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#CasterTransformer.n"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.CasterTransformer.n" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Choice">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Choice</code><span class="sig-paren">(</span><em>name: str</em>, <em>mapping: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Choice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Choice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.Choice.make_definitions">
+<code class="descname">make_definitions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Choice.make_definitions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Choice.make_definitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.ConditionalAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">ConditionalAction</code><span class="sig-paren">(</span><em>condition: types.FunctionType</em>, <em>action: RegisteredAction</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#ConditionalAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.ConditionalAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.ConditionalAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#ConditionalAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.ConditionalAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.DelayAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">DelayAction</code><span class="sig-paren">(</span><em>duration: float</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#DelayAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.DelayAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.DelayAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#DelayAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.DelayAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Dictation">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Dictation</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Dictation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Dictation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.Dictation.make_definitions">
+<code class="descname">make_definitions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Dictation.make_definitions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Dictation.make_definitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.FunctionAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">FunctionAction</code><span class="sig-paren">(</span><em>callable: types.FunctionType</em>, <em>positional_arguments: tuple</em>, <em>keyword_arguments: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#FunctionAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.FunctionAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.FunctionAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#FunctionAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.FunctionAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Grammar">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Grammar</code><span class="sig-paren">(</span><em>name: str</em>, <em>context: AppContext</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Grammar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Grammar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.IntegerRefST">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">IntegerRefST</code><span class="sig-paren">(</span><em>name: str</em>, <em>start: int</em>, <em>end: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#IntegerRefST"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.IntegerRefST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.IntegerRefST.make_definitions">
+<code class="descname">make_definitions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#IntegerRefST.make_definitions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.IntegerRefST.make_definitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.Key">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">Key</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#voca.caster_adapter.Key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.KeyAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">KeyAction</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#KeyAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.KeyAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.KeyAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#KeyAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.KeyAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.LazyLoader">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">LazyLoader</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#LazyLoader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.LazyLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.MergeRule">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">MergeRule</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#MergeRule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.MergeRule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.MyRepeat">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">MyRepeat</code><span class="sig-paren">(</span><em>extra: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#MyRepeat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.MyRepeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Patch">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Patch</code><span class="sig-paren">(</span><em>module: types.ModuleType</em>, <em>name: str</em>, <em>new: object</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#Patch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Placeholder">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Placeholder</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#Placeholder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Placeholder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="voca.caster_adapter.R">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">R</code><a class="headerlink" href="#voca.caster_adapter.R" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#voca.caster_adapter.RegisteredAction" title="voca.caster_adapter.RegisteredAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">voca.caster_adapter.RegisteredAction</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.RegisteredAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">RegisteredAction</code><span class="sig-paren">(</span><em>instruction: AsyncActionType</em>, <em>rdescript: Optional[str] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#RegisteredAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.RegisteredAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.RegisteredAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/caster_adapter.html#RegisteredAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.RegisteredAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.RepeatedAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">RepeatedAction</code><span class="sig-paren">(</span><em>action: AsyncActionType</em>, <em>extra: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#RepeatedAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.RepeatedAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.RepeatedAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#RepeatedAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.RepeatedAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.Settings">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">Settings</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#Settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.Settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.SpecTransformer">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">SpecTransformer</code><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">lark.visitors.Transformer</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.angled_name">
+<code class="descname">angled_name</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.angled_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.angled_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.component">
+<code class="descname">component</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.component"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.group">
+<code class="descname">group</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.literal_name">
+<code class="descname">literal_name</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.literal_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.literal_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.name">
+<code class="descname">name</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.optional_component">
+<code class="descname">optional_component</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.optional_component"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.optional_component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.phrase_component">
+<code class="descname">phrase_component</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.phrase_component"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.phrase_component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.caster_adapter.SpecTransformer.spec">
+<code class="descname">spec</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#SpecTransformer.spec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.SpecTransformer.spec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.Text">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">Text</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#voca.caster_adapter.Text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.TextAction">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">TextAction</code><span class="sig-paren">(</span><em>text: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#TextAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.TextAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.caster_adapter.TextAction.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>arg=None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/caster_adapter.html#TextAction.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.TextAction.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.VirtualModule">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">VirtualModule</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#VirtualModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.VirtualModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.caster_adapter.VirtualPackage">
+<em class="property">class </em><code class="descclassname">voca.caster_adapter.</code><code class="descname">VirtualPackage</code><span class="sig-paren">(</span><em>path</em>, <em>contents</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#VirtualPackage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.VirtualPackage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.adapt_AppContext">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">adapt_AppContext</code><span class="sig-paren">(</span><em>title=None</em>, <em>executable=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#adapt_AppContext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.adapt_AppContext" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.adapt_Dictation">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">adapt_Dictation</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#adapt_Dictation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.adapt_Dictation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.adapt_Key">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">adapt_Key</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#adapt_Key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.adapt_Key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.adapt_Text">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">adapt_Text</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#adapt_Text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.adapt_Text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.add_to_registry">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">add_to_registry</code><span class="sig-paren">(</span><em>mapping</em>, <em>registry</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#add_to_registry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.add_to_registry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.add_wrapper">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">add_wrapper</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#add_wrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.add_wrapper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.convert_key_name">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">convert_key_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#convert_key_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.convert_key_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.convert_spec">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">convert_spec</code><span class="sig-paren">(</span><em>spec</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#convert_spec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.convert_spec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.find_merge_rule_classes">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">find_merge_rule_classes</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#find_merge_rule_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.find_merge_rule_classes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.monkeypatch">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">monkeypatch</code><span class="sig-paren">(</span><em>module</em>, <em>name</em>, <em>new</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#monkeypatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.monkeypatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.monkeypatch_each">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">monkeypatch_each</code><span class="sig-paren">(</span><em>patches</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#monkeypatch_each"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.monkeypatch_each" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.patch_all">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">patch_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#patch_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.patch_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.caster_adapter.transform_tree">
+<code class="descclassname">voca.caster_adapter.</code><code class="descname">transform_tree</code><span class="sig-paren">(</span><em>tree</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/caster_adapter.html#transform_tree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.caster_adapter.transform_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-voca.cli">
+<span id="voca-cli-module"></span><h2>voca.cli module<a class="headerlink" href="#module-voca.cli" title="Permalink to this headline">¶</a></h2>
+<p>Module that contains the command line app.</p>
+<p>Why does this file exist, and why not put this in __main__?</p>
+<blockquote>
+<div><p>You might be tempted to import things from __main__ later, but that will cause
+problems: the code will get executed twice:</p>
+<ul class="simple">
+<li><p>When you run <cite>python -mvoca</cite> python will execute
+<code class="docutils literal notranslate"><span class="pre">__main__.py</span></code> as a script. That means there won’t be any
+<code class="docutils literal notranslate"><span class="pre">voca.__main__</span></code> in <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code>.</p></li>
+<li><p>When you import __main__ it will get executed again (as a module) because
+there’s no <code class="docutils literal notranslate"><span class="pre">voca.__main__</span></code> in <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code>.</p></li>
+</ul>
+<p>Also see (1) from <a class="reference external" href="http://click.pocoo.org/5/setuptools/#setuptools-integration">http://click.pocoo.org/5/setuptools/#setuptools-integration</a></p>
+</div></blockquote>
+<dl class="function">
+<dt id="voca.cli.log_cli_call">
+<code class="descclassname">voca.cli.</code><code class="descname">log_cli_call</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/cli.html#log_cli_call"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.cli.log_cli_call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-voca.config">
+<span id="voca-config-module"></span><h2>voca.config module<a class="headerlink" href="#module-voca.config" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="voca.config.get_config_dir">
+<code class="descclassname">voca.config.</code><code class="descname">get_config_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pathlib.Path<a class="reference internal" href="../_modules/voca/config.html#get_config_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.config.get_config_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the location of voca user config directory.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.context">
+<span id="voca-context-module"></span><h2>voca.context module<a class="headerlink" href="#module-voca.context" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.context.AlwaysContext">
+<em class="property">class </em><code class="descclassname">voca.context.</code><code class="descname">AlwaysContext</code><a class="reference internal" href="../_modules/voca/context.html#AlwaysContext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.AlwaysContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.context.AlwaysContext.check">
+<code class="descname">check</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/voca/context.html#AlwaysContext.check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.AlwaysContext.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always True.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.context.NeverContext">
+<em class="property">class </em><code class="descclassname">voca.context.</code><code class="descname">NeverContext</code><a class="reference internal" href="../_modules/voca/context.html#NeverContext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.NeverContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.context.NeverContext.check">
+<code class="descname">check</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/voca/context.html#NeverContext.check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.NeverContext.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always False.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.context.WindowContext">
+<em class="property">class </em><code class="descclassname">voca.context.</code><code class="descname">WindowContext</code><span class="sig-paren">(</span><em>title: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/context.html#WindowContext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.WindowContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.context.WindowContext.check">
+<code class="descname">check</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/voca/context.html#WindowContext.check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.WindowContext.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the required name occurs within the current window title.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.context.filter_wrappers">
+<code class="descclassname">voca.context.</code><code class="descname">filter_wrappers</code><span class="sig-paren">(</span><em>wrapper_group: utils.WrapperGroup</em>, <em>data: dict</em><span class="sig-paren">)</span> &#x2192; utils.WrapperGroup<a class="reference internal" href="../_modules/voca/context.html#filter_wrappers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.filter_wrappers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exclude wrappers that fail to match the current context.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.context.get_current_window_title">
+<code class="descclassname">voca.context.</code><code class="descname">get_current_window_title</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/context.html#get_current_window_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.context.get_current_window_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the title of the current window.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.listen">
+<span id="voca-listen-module"></span><h2>voca.listen module<a class="headerlink" href="#module-voca.listen" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.listen.MyClient">
+<em class="property">class </em><code class="descclassname">voca.listen.</code><code class="descname">MyClient</code><span class="sig-paren">(</span><em>url</em>, <em>mic=1</em>, <em>protocols=None</em>, <em>extensions=None</em>, <em>heartbeat_freq=None</em>, <em>byterate=16000</em>, <em>show_hypotheses=True</em>, <em>save_adaptation_state_filename=None</em>, <em>send_adaptation_state_filename=None</em>, <em>audio_gate=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#MyClient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.MyClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ws4py.client.threadedclient.WebSocketClient</span></code></p>
+<dl class="method">
+<dt id="voca.listen.MyClient.closed">
+<code class="descname">closed</code><span class="sig-paren">(</span><em>code</em>, <em>reason=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#MyClient.closed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.MyClient.closed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called  when the websocket stream and connection are finally closed.
+The provided <code class="docutils literal notranslate"><span class="pre">code</span></code> is status set by the other point and
+<code class="docutils literal notranslate"><span class="pre">reason</span></code> is a human readable message.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Defined Status Codes <a class="reference external" href="http://tools.ietf.org/html/rfc6455#section-7.4.1">http://tools.ietf.org/html/rfc6455#section-7.4.1</a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.listen.MyClient.opened">
+<code class="descname">opened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#MyClient.opened"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.MyClient.opened" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by the server when the upgrade handshake
+has succeeded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.listen.MyClient.received_message">
+<code class="descname">received_message</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#MyClient.received_message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.MyClient.received_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called whenever a complete <code class="docutils literal notranslate"><span class="pre">message</span></code>, binary or text,
+is received and ready for application’s processing.</p>
+<p>The passed message is an instance of <code class="xref py py-class docutils literal notranslate"><span class="pre">messaging.TextMessage</span></code>
+or <code class="xref py py-class docutils literal notranslate"><span class="pre">messaging.BinaryMessage</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You should override this method in your subclass.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.listen.MyClient.send_data">
+<code class="descname">send_data</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#MyClient.send_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.MyClient.send_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.listen.main">
+<code class="descclassname">voca.listen.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.listen.run">
+<code class="descclassname">voca.listen.</code><code class="descname">run</code><span class="sig-paren">(</span><em>args</em>, <em>content_type</em>, <em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.listen.setup">
+<code class="descclassname">voca.listen.</code><code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/listen.html#setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.listen.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-voca.log">
+<span id="voca-log-module"></span><h2>voca.log module<a class="headerlink" href="#module-voca.log" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="voca.log.json_to_file">
+<code class="descclassname">voca.log.</code><code class="descname">json_to_file</code><span class="sig-paren">(</span><em>file: Optional[_io.TextIOWrapper] = None</em><span class="sig-paren">)</span> &#x2192; Callable<a class="reference internal" href="../_modules/voca/log.html#json_to_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.log.json_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize to json and print into a file, defaulting to stdout.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.log.log_async_call">
+<code class="descclassname">voca.log.</code><code class="descname">log_async_call</code><span class="sig-paren">(</span><em>wrapped_function: Optional[Callable] = None</em>, <em>action_type: Optional[str] = None</em>, <em>include_args: Optional[Iterable[str]] = None</em>, <em>include_result: bool = True</em><span class="sig-paren">)</span> &#x2192; Callable<a class="reference internal" href="../_modules/voca/log.html#log_async_call"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.log.log_async_call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator/decorator factory that logs inputs and the return result.
+If used with inputs (i.e. as a decorator factory), it accepts the following
+parameters:
+&#64;param action_type: The action type to use.  If not given the function name</p>
+<blockquote>
+<div><p>will be used.</p>
+</div></blockquote>
+<p>&#64;param include_args: If given, should be a list of strings, the arguments to log.
+&#64;param include_result: True by default. If False, the return result isn’t logged.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.log.log_call">
+<code class="descclassname">voca.log.</code><code class="descname">log_call</code><span class="sig-paren">(</span><em>wrapped_function: Optional[Callable] = None</em>, <em>action_type: Optional[str] = None</em>, <em>include_args: Optional[Iterable[str]] = None</em>, <em>include_result: bool = True</em><span class="sig-paren">)</span> &#x2192; Callable<a class="reference internal" href="../_modules/voca/log.html#log_call"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.log.log_call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator/decorator factory that logs inputs and the return result.
+If used with inputs (i.e. as a decorator factory), it accepts the following
+parameters:
+&#64;param action_type: The action type to use.  If not given the function name</p>
+<blockquote>
+<div><p>will be used.</p>
+</div></blockquote>
+<p>&#64;param include_args: If given, should be a list of strings, the arguments to log.
+&#64;param include_result: True by default. If False, the return result isn’t logged.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.log.summarize_exception">
+<code class="descclassname">voca.log.</code><code class="descname">summarize_exception</code><span class="sig-paren">(</span><em>exc: BaseException</em><span class="sig-paren">)</span> &#x2192; Dict[str, dict]<a class="reference internal" href="../_modules/voca/log.html#summarize_exception"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.log.summarize_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine exception data with traceback into a dict for logging.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.log.to_serializable">
+<code class="descclassname">voca.log.</code><code class="descname">to_serializable</code><span class="sig-paren">(</span><em>obj: Any</em><span class="sig-paren">)</span> &#x2192; Union[str, list, dict, int, float]<a class="reference internal" href="../_modules/voca/log.html#to_serializable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.log.to_serializable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-voca.manager">
+<span id="voca-manager-module"></span><h2>voca.manager module<a class="headerlink" href="#module-voca.manager" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.manager.Pool">
+<em class="property">class </em><code class="descclassname">voca.manager.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>num_workers: int = 1</em>, <em>should_log: bool = True</em>, <em>module_names: List[str] = NOTHING</em>, <em>processes: Set[trio.Process] = NOTHING</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#Pool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.Pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.manager.Pool.add_new_process">
+<code class="descname">add_new_process</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/manager.html#Pool.add_new_process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.Pool.add_new_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start a new process and add it to the pool.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.manager.Pool.get_process">
+<code class="descname">get_process</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; trio.Process<a class="reference internal" href="../_modules/voca/manager.html#Pool.get_process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.Pool.get_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pop an process outof the pool and return it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.manager.Pool.start">
+<code class="descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/manager.html#Pool.start"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.Pool.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start a new process.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.async_main">
+<code class="descclassname">voca.manager.</code><code class="descname">async_main</code><span class="sig-paren">(</span><em>should_log, module_names: Optional[List[str]], num_workers: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#async_main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.async_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read newline-separated inputs on stdin, and process them.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.delegate_task">
+<code class="descclassname">voca.manager.</code><code class="descname">delegate_task</code><span class="sig-paren">(</span><em>data: Dict</em>, <em>worker: trio.Process</em>, <em>state: dict</em>, <em>action: eliot.Action</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#delegate_task"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.delegate_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send input data to worker process over std streams.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.handle_unexpected_worker_bytes">
+<code class="descclassname">voca.manager.</code><code class="descname">handle_unexpected_worker_bytes</code><span class="sig-paren">(</span><em>message: bytes</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#handle_unexpected_worker_bytes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.handle_unexpected_worker_bytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.main">
+<code class="descclassname">voca.manager.</code><code class="descname">main</code><span class="sig-paren">(</span><em>should_log: bool, module_names: Optional[List[str]], num_workers: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the event loop.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.process_stream">
+<code class="descclassname">voca.manager.</code><code class="descname">process_stream</code><span class="sig-paren">(</span><em>receiver, num_workers: int, should_log: bool, module_names: Optional[List[str]]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#process_stream"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.process_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle all the commands coming in by delegating them to workers.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.replay_child_messages">
+<code class="descclassname">voca.manager.</code><code class="descname">replay_child_messages</code><span class="sig-paren">(</span><em>child: trio.Process</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/manager.html#replay_child_messages"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.replay_child_messages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log the child’s messages to the parent’s stdout.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.run_worker">
+<code class="descclassname">voca.manager.</code><code class="descname">run_worker</code><span class="sig-paren">(</span><em>data: dict</em>, <em>state: dict</em>, <em>pool: Pool</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#run_worker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.run_worker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a process from the pool, send a job to it. Replace that worker when it quits.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.set_state">
+<code class="descclassname">voca.manager.</code><code class="descname">set_state</code><span class="sig-paren">(</span><em>data: Dict[str, dict], state: Dict[str, dict]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/manager.html#set_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle switching between <code class="docutils literal notranslate"><span class="pre">eager</span></code> and <code class="docutils literal notranslate"><span class="pre">strict</span></code> mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.manager.worker_cli">
+<code class="descclassname">voca.manager.</code><code class="descname">worker_cli</code><span class="sig-paren">(</span><em>should_log</em>, <em>module_names: Optional[List[str]] = None</em><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="../_modules/voca/manager.html#worker_cli"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.manager.worker_cli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the list of strings for invoking a worker subprocess.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.mic">
+<span id="voca-mic-module"></span><h2>voca.mic module<a class="headerlink" href="#module-voca.mic" title="Permalink to this headline">¶</a></h2>
+<p>Plot the live microphone signal(s) with matplotlib.</p>
+<p>Matplotlib and NumPy have to be installed.</p>
+<p>This module is from the sounddevice docs.</p>
+<dl class="function">
+<dt id="voca.mic.audio_callback">
+<code class="descclassname">voca.mic.</code><code class="descname">audio_callback</code><span class="sig-paren">(</span><em>indata</em>, <em>frames</em>, <em>time</em>, <em>status</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/mic.html#audio_callback"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.mic.audio_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called (from a separate thread) for each audio block.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.mic.int_or_str">
+<code class="descclassname">voca.mic.</code><code class="descname">int_or_str</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/mic.html#int_or_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.mic.int_or_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for argument parsing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.mic.update_plot">
+<code class="descclassname">voca.mic.</code><code class="descname">update_plot</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/mic.html#update_plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.mic.update_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called by matplotlib for each plot update.</p>
+<p>Typically, audio callbacks happen more frequently than plot updates,
+therefore the queue tends to contain multiple blocks of audio data.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.parsing">
+<span id="voca-parsing-module"></span><h2>voca.parsing module<a class="headerlink" href="#module-voca.parsing" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.parsing.Transformer">
+<em class="property">class </em><code class="descclassname">voca.parsing.</code><code class="descname">Transformer</code><a class="reference internal" href="../_modules/voca/parsing.html#Transformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.Transformer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">lark.visitors.Transformer</span></code></p>
+<dl class="method">
+<dt id="voca.parsing.Transformer.chord">
+<code class="descname">chord</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/parsing.html#Transformer.chord"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.Transformer.chord" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="voca.parsing.Transformer.key">
+<code class="descname">key</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/parsing.html#Transformer.key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.Transformer.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="voca.parsing.Transformer.text">
+<code class="descname">text</code><a class="headerlink" href="#voca.parsing.Transformer.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">builtins.list</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.build_grammar">
+<code class="descclassname">voca.parsing.</code><code class="descname">build_grammar</code><span class="sig-paren">(</span><em>registry: utils.Registry, rules: List[utils.Rule]</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/voca/parsing.html#build_grammar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.build_grammar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a lark grammar string by combining rules and definitions in the registry.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.build_rules">
+<code class="descclassname">voca.parsing.</code><code class="descname">build_rules</code><span class="sig-paren">(</span><em>registry: utils.Registry</em><span class="sig-paren">)</span> &#x2192; List[utils.Rule]<a class="reference internal" href="../_modules/voca/parsing.html#build_rules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.build_rules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a list of rules and attach human-readable names.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.combine_modules">
+<code class="descclassname">voca.parsing.</code><code class="descname">combine_modules</code><span class="sig-paren">(</span><em>modules: Iterable[utils.PluginModule]</em><span class="sig-paren">)</span> &#x2192; utils.WrapperGroup<a class="reference internal" href="../_modules/voca/parsing.html#combine_modules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.combine_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine the wrappers of multiple modules into a single WrapperGroup.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.combine_registries">
+<code class="descclassname">voca.parsing.</code><code class="descname">combine_registries</code><span class="sig-paren">(</span><em>registries</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/parsing.html#combine_registries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.combine_registries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine several registries together into a single registry.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.extract">
+<code class="descclassname">voca.parsing.</code><code class="descname">extract</code><span class="sig-paren">(</span><em>tree: lark.Tree</em><span class="sig-paren">)</span> &#x2192; Tuple[str, List]<a class="reference internal" href="../_modules/voca/parsing.html#extract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform the parse tree to extract node type and children.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.extract_commands">
+<code class="descclassname">voca.parsing.</code><code class="descname">extract_commands</code><span class="sig-paren">(</span><em>tree: lark.Tree</em><span class="sig-paren">)</span> &#x2192; Tuple[str, List]<a class="reference internal" href="../_modules/voca/parsing.html#extract_commands"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.extract_commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform the parse tree to extract the node’s children.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.parsing.normalize_pattern">
+<code class="descclassname">voca.parsing.</code><code class="descname">normalize_pattern</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/parsing.html#normalize_pattern"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.parsing.normalize_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a human-readable ascii-lowercase form of the rule.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.patching">
+<span id="voca-patching-module"></span><h2>voca.patching module<a class="headerlink" href="#module-voca.patching" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.patching.PathFinder">
+<em class="property">class </em><code class="descclassname">voca.patching.</code><code class="descname">PathFinder</code><span class="sig-paren">(</span><em>modules_to_handle: List[str], fullname_to_vars: Dict[str, Dict[str, Any]]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/patching.html#PathFinder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.PathFinder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.patching.PathFinder.find_spec">
+<code class="descname">find_spec</code><span class="sig-paren">(</span><em>fullname: str, path: Optional[str], target=typing.Union[module, NoneType]</em><span class="sig-paren">)</span> &#x2192; voca.patching.Spec<a class="reference internal" href="../_modules/voca/patching.html#PathFinder.find_spec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.PathFinder.find_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a spec for modules in <code class="docutils literal notranslate"><span class="pre">self.modules_to_handle</span></code>, behave normally otherwise.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.patching.PathLoader">
+<em class="property">class </em><code class="descclassname">voca.patching.</code><code class="descname">PathLoader</code><span class="sig-paren">(</span><em>namespace: dict, fullname: str, path: Optional[str], target: types.ModuleType</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/patching.html#PathLoader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.PathLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.patching.PathLoader.create_module">
+<code class="descname">create_module</code><span class="sig-paren">(</span><em>spec: _frozen_importlib.ModuleSpec</em><span class="sig-paren">)</span> &#x2192; module<a class="reference internal" href="../_modules/voca/patching.html#PathLoader.create_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.PathLoader.create_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a module with the name and namespace.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.patching.PathLoader.exec_module">
+<code class="descname">exec_module</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/patching.html#PathLoader.exec_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.PathLoader.exec_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>No-op to match the Loader interface.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.patching.Spec">
+<em class="property">class </em><code class="descclassname">voca.patching.</code><code class="descname">Spec</code><span class="sig-paren">(</span><em>name</em>, <em>loader</em>, <em>submodule_search_locations=NOTHING</em>, <em>has_location=True</em>, <em>cached=False</em>, <em>origin=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/patching.html#Spec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.Spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.ancestors">
+<code class="descclassname">voca.patching.</code><code class="descname">ancestors</code><span class="sig-paren">(</span><em>items: List[T]</em><span class="sig-paren">)</span> &#x2192; Generator[T, List[T], None]<a class="reference internal" href="../_modules/voca/patching.html#ancestors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.ancestors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.finder_patch">
+<code class="descclassname">voca.patching.</code><code class="descname">finder_patch</code><span class="sig-paren">(</span><em>finder: importlib.abc.MetaPathFinder</em><span class="sig-paren">)</span> &#x2192; Generator<a class="reference internal" href="../_modules/voca/patching.html#finder_patch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.finder_patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Context manager for importing modules with <code class="docutils literal notranslate"><span class="pre">finder</span></code> on <code class="docutils literal notranslate"><span class="pre">sys.meta_path</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.get_package_map">
+<code class="descclassname">voca.patching.</code><code class="descname">get_package_map</code><span class="sig-paren">(</span><em>strings: List[str]</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[str]]<a class="reference internal" href="../_modules/voca/patching.html#get_package_map"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.get_package_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dict mapping packages to the modules they contain.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.make_finder">
+<code class="descclassname">voca.patching.</code><code class="descname">make_finder</code><span class="sig-paren">(</span><em>mapping: Dict[str, Dict[str, Any]]</em><span class="sig-paren">)</span> &#x2192; voca.patching.PathFinder<a class="reference internal" href="../_modules/voca/patching.html#make_finder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.make_finder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a Finder that handles modules in <code class="docutils literal notranslate"><span class="pre">mapping</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.skipping_finder">
+<code class="descclassname">voca.patching.</code><code class="descname">skipping_finder</code><span class="sig-paren">(</span><em>finder: importlib.abc.MetaPathFinder</em><span class="sig-paren">)</span> &#x2192; Generator<a class="reference internal" href="../_modules/voca/patching.html#skipping_finder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.skipping_finder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Context manager for importing modules while excluding the <code class="docutils literal notranslate"><span class="pre">finder</span></code> from <code class="docutils literal notranslate"><span class="pre">sys.meta_path</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.patching.skipping_module_in_sys_modules">
+<code class="descclassname">voca.patching.</code><code class="descname">skipping_module_in_sys_modules</code><span class="sig-paren">(</span><em>module_name: star</em><span class="sig-paren">)</span> &#x2192; Generator<a class="reference internal" href="../_modules/voca/patching.html#skipping_module_in_sys_modules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.patching.skipping_module_in_sys_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Context manager for importing modules while skipping any cached entry in <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.platforms">
+<span id="voca-platforms-module"></span><h2>voca.platforms module<a class="headerlink" href="#module-voca.platforms" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.platforms.System">
+<em class="property">class </em><code class="descclassname">voca.platforms.</code><code class="descname">System</code><a class="reference internal" href="../_modules/voca/platforms.html#System"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.platforms.System" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="voca.platforms.System.DARWIN">
+<code class="descname">DARWIN</code><em class="property"> = 3</em><a class="headerlink" href="#voca.platforms.System.DARWIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="voca.platforms.System.LINUX">
+<code class="descname">LINUX</code><em class="property"> = 1</em><a class="headerlink" href="#voca.platforms.System.LINUX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="voca.platforms.System.WINDOWS">
+<code class="descname">WINDOWS</code><em class="property"> = 2</em><a class="headerlink" href="#voca.platforms.System.WINDOWS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.platforms.implementation">
+<code class="descclassname">voca.platforms.</code><code class="descname">implementation</code><span class="sig-paren">(</span><em>*which</em><span class="sig-paren">)</span> &#x2192; Callable<a class="reference internal" href="../_modules/voca/platforms.html#implementation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.platforms.implementation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for functions that provide a platform-specific functionality.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.streaming">
+<span id="voca-streaming-module"></span><h2>voca.streaming module<a class="headerlink" href="#module-voca.streaming" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.streaming.TerminatedFrameReceiver">
+<em class="property">class </em><code class="descclassname">voca.streaming.</code><code class="descname">TerminatedFrameReceiver</code><span class="sig-paren">(</span><em>stream: trio.abc.ReceiveStream</em>, <em>terminator: bytes</em>, <em>max_frame_length: int = 1048576</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/streaming.html#TerminatedFrameReceiver"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.streaming.TerminatedFrameReceiver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl>
+<dt>Parse frames out of a Trio stream, where each frame is terminated by a</dt><dd><p>fixed byte sequence.</p>
+<p>For example, you can parse newline-terminated lines by setting the
+terminator to b”</p>
+</dd>
+</dl>
+<p>“.</p>
+<blockquote>
+<div><p>This uses some tricks to protect against denial of service attacks:</p>
+<ul class="simple">
+<li><p>It puts a limit on the maximum frame size, to avoid memory overflow; you</p></li>
+</ul>
+<p>might want to adjust the limit for your situation.</p>
+<ul class="simple">
+<li><p>It uses some algorithmic trickiness to avoid “slow loris” attacks. All
+algorithms are amortized O(n) in the length of the input.</p></li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="voca.streaming.TerminatedFrameReceiver.receive">
+<code class="descname">receive</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bytearray<a class="reference internal" href="../_modules/voca/streaming.html#TerminatedFrameReceiver.receive"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.streaming.TerminatedFrameReceiver.receive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.streaming.handle_stream">
+<code class="descclassname">voca.streaming.</code><code class="descname">handle_stream</code><span class="sig-paren">(</span><em>handle_message: Callable</em>, <em>stream: trio.abc.ReceiveStream</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/streaming.html#handle_stream"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.streaming.handle_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle each line as a separate task.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.utils">
+<span id="voca-utils-module"></span><h2>voca.utils module<a class="headerlink" href="#module-voca.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="voca.utils.Context">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">Context</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Context"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<dl class="method">
+<dt id="voca.utils.Context.check">
+<code class="descname">check</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/voca/utils.html#Context.check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Context.check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.Handler">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">Handler</code><span class="sig-paren">(</span><em>registry: voca.utils.Registry</em>, <em>parser: lark.lark.Lark</em>, <em>rule_name_to_function: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Handler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.HandlerGroup">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">HandlerGroup</code><span class="sig-paren">(</span><em>handlers: List[voca.utils.Handler]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#HandlerGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.HandlerGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.utils.HandlerGroup.pick_handler">
+<code class="descname">pick_handler</code><span class="sig-paren">(</span><em>data: dict</em><span class="sig-paren">)</span> &#x2192; voca.utils.Handler<a class="reference internal" href="../_modules/voca/utils.html#HandlerGroup.pick_handler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.HandlerGroup.pick_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the first handler.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.KeyChord">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">KeyChord</code><span class="sig-paren">(</span><em>modifiers: List[voca.utils.KeyModifier], name: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#KeyChord"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.KeyChord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.KeyModifier">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">KeyModifier</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#KeyModifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.KeyModifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.ModuleLazyRaise">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">ModuleLazyRaise</code><span class="sig-paren">(</span><em>owner_name: str</em>, <em>exc: Exception</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#ModuleLazyRaise"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.ModuleLazyRaise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.PluginModule">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">PluginModule</code><span class="sig-paren">(</span><em>wrapper: voca.utils.Wrapper</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#PluginModule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.PluginModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.Registry">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">Registry</code><span class="sig-paren">(</span><em>pattern_to_function: MutableMapping[str</em>, <em>Callable] = NOTHING</em>, <em>patterns: MutableMapping[KT</em>, <em>VT] = NOTHING</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Registry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="voca.utils.Registry.define">
+<code class="descname">define</code><span class="sig-paren">(</span><em>patterns: Optional[Mapping[str</em>, <em>str]] = None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Registry.define"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Registry.define" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define a rule to map to a combination of other known rules.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="voca.utils.Registry.register">
+<code class="descname">register</code><span class="sig-paren">(</span><em>pattern: str</em><span class="sig-paren">)</span> &#x2192; Callable<a class="reference internal" href="../_modules/voca/utils.html#Registry.register"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Registry.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator registering a pattern to map to a function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.Rule">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">Rule</code><span class="sig-paren">(</span><em>name: str</em>, <em>pattern: str</em>, <em>function: Callable</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Rule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Rule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.SimpleKey">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">SimpleKey</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#SimpleKey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.SimpleKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.Wrapper">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">Wrapper</code><span class="sig-paren">(</span><em>registry: voca.utils.Registry</em>, <em>context: voca.utils.Context = &lt;class 'voca.context.AlwaysContext'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#Wrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.Wrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="voca.utils.WrapperGroup">
+<em class="property">class </em><code class="descclassname">voca.utils.</code><code class="descname">WrapperGroup</code><span class="sig-paren">(</span><em>wrappers: List[voca.utils.Wrapper] = NOTHING</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#WrapperGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.WrapperGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.async_runner">
+<code class="descclassname">voca.utils.</code><code class="descname">async_runner</code><span class="sig-paren">(</span><em>async_function: Callable</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#async_runner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.async_runner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.plugin_module_paths">
+<code class="descclassname">voca.utils.</code><code class="descname">plugin_module_paths</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="../_modules/voca/utils.html#plugin_module_paths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.plugin_module_paths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the import paths of the plugin modules.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.pronunciation_to_value">
+<code class="descclassname">voca.utils.</code><code class="descname">pronunciation_to_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; MutableMapping[str, Any]<a class="reference internal" href="../_modules/voca/utils.html#pronunciation_to_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.pronunciation_to_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dict of pronunciation to value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.quote">
+<code class="descclassname">voca.utils.</code><code class="descname">quote</code><span class="sig-paren">(</span><em>word: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/voca/utils.html#quote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.quote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format a word in single or double quotation marks for lark.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.regex">
+<code class="descclassname">voca.utils.</code><code class="descname">regex</code><span class="sig-paren">(</span><em>word: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/voca/utils.html#regex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format a word in slashes for lark.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.replace">
+<code class="descclassname">voca.utils.</code><code class="descname">replace</code><span class="sig-paren">(</span><em>message: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/voca/utils.html#replace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace pronunciation with its value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.run_subprocess">
+<code class="descclassname">voca.utils.</code><code class="descname">run_subprocess</code><span class="sig-paren">(</span><em>command: List[str], *, input=None, capture_output=False, **options</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/utils.html#run_subprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.run_subprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a subprocess an wait for it to exit.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.transform_module">
+<code class="descclassname">voca.utils.</code><code class="descname">transform_module</code><span class="sig-paren">(</span><em>module: module</em><span class="sig-paren">)</span> &#x2192; module<a class="reference internal" href="../_modules/voca/utils.html#transform_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.transform_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call each function in MODULE_TRANSFORMERS on the module.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.utils.value_to_pronunciation">
+<code class="descclassname">voca.utils.</code><code class="descname">value_to_pronunciation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict[Any, str]<a class="reference internal" href="../_modules/voca/utils.html#value_to_pronunciation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.utils.value_to_pronunciation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dict of value to pronunciation.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca.worker">
+<span id="voca-worker-module"></span><h2>voca.worker module<a class="headerlink" href="#module-voca.worker" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="voca.worker.async_main">
+<code class="descclassname">voca.worker.</code><code class="descname">async_main</code><span class="sig-paren">(</span><em>wrapper_group: voca.utils.WrapperGroup</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/worker.html#async_main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.async_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process input commands as newline-separated json on stdin.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.collect_modules">
+<code class="descclassname">voca.worker.</code><code class="descname">collect_modules</code><span class="sig-paren">(</span><em>import_paths: Iterable[str], use_backup_modules: bool</em><span class="sig-paren">)</span> &#x2192; List[module]<a class="reference internal" href="../_modules/voca/worker.html#collect_modules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.collect_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect modules from import paths, optionally defaulting to backup modules on failure.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.combine_registries">
+<code class="descclassname">voca.worker.</code><code class="descname">combine_registries</code><span class="sig-paren">(</span><em>registries: voca.utils.Registry</em><span class="sig-paren">)</span> &#x2192; voca.utils.Registry<a class="reference internal" href="../_modules/voca/worker.html#combine_registries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.combine_registries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine multiple registries into a single one.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.get_backup_module">
+<code class="descclassname">voca.worker.</code><code class="descname">get_backup_module</code><span class="sig-paren">(</span><em>import_path: str</em>, <em>backup_dir: pathlib.Path</em><span class="sig-paren">)</span> &#x2192; module<a class="reference internal" href="../_modules/voca/worker.html#get_backup_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.get_backup_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import a module from the backup directory.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.get_module">
+<code class="descclassname">voca.worker.</code><code class="descname">get_module</code><span class="sig-paren">(</span><em>import_path: str</em>, <em>backup_dir: pathlib.Path</em>, <em>use_backup_modules: bool</em><span class="sig-paren">)</span> &#x2192; module<a class="reference internal" href="../_modules/voca/worker.html#get_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.get_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import module and cache it in backup_dir, returning backup on failure.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.handle_message">
+<code class="descclassname">voca.worker.</code><code class="descname">handle_message</code><span class="sig-paren">(</span><em>wrapper_group: voca.utils.WrapperGroup</em>, <em>data: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/worker.html#handle_message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.handle_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute the command in <code class="docutils literal notranslate"><span class="pre">data</span></code> with the <code class="docutils literal notranslate"><span class="pre">wrapper_group</span></code> containing the grammar.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.load_from_path">
+<code class="descclassname">voca.worker.</code><code class="descname">load_from_path</code><span class="sig-paren">(</span><em>import_path: str</em>, <em>filename: str</em><span class="sig-paren">)</span> &#x2192; module<a class="reference internal" href="../_modules/voca/worker.html#load_from_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.load_from_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a module from a filesystem path.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.main">
+<code class="descclassname">voca.worker.</code><code class="descname">main</code><span class="sig-paren">(</span><em>import_paths: Tuple[str], use_backup_modules: bool</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/worker.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the wrapper group and start the event loop.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.make_specific_handler">
+<code class="descclassname">voca.worker.</code><code class="descname">make_specific_handler</code><span class="sig-paren">(</span><em>wrapper_group: voca.utils.WrapperGroup</em>, <em>data: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/voca/worker.html#make_specific_handler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.make_specific_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the command handler for the specific context.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="voca.worker.save_backup_module">
+<code class="descclassname">voca.worker.</code><code class="descname">save_backup_module</code><span class="sig-paren">(</span><em>module: module</em>, <em>import_path: str</em>, <em>backup_dir: pathlib.Path</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/voca/worker.html#save_backup_module"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#voca.worker.save_backup_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save a module in the backup directory.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-voca">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-voca" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="voca.plugins.html" class="btn btn-neutral float-right" title="voca.plugins package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="src" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Full Name
+      <span class="lastupdated">
+        Last updated on May 04, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>voca.manager &mdash; voca version = release = version = release = 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> voca
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version = release = version = release = 0.1.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/modules.html">src</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">voca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>voca.manager</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for voca.manager</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">contextlib</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Optional</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Dict</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Set</span>
+
+<span class="kn">import</span> <span class="nn">attr</span>
+<span class="kn">import</span> <span class="nn">trio</span>
+<span class="kn">import</span> <span class="nn">eliot</span>
+
+
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">plugins</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">utils</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">streaming</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">log</span>
+
+
+<div class="viewcode-block" id="handle_unexpected_worker_bytes"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.handle_unexpected_worker_bytes">[docs]</a><span class="k">def</span> <span class="nf">handle_unexpected_worker_bytes</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">):</span>
+    <span class="n">eliot</span><span class="o">.</span><span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;unexpected_worker_output&quot;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="n">message</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="worker_cli"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.worker_cli">[docs]</a><span class="k">def</span> <span class="nf">worker_cli</span><span class="p">(</span><span class="n">should_log</span><span class="p">,</span> <span class="n">module_names</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Build the list of strings for invoking a worker subprocess.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">module_names</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">module_names</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">plugin_module_paths</span><span class="p">()</span>
+
+    <span class="n">log_arg</span> <span class="o">=</span> <span class="s2">&quot;--log&quot;</span> <span class="k">if</span> <span class="n">should_log</span> <span class="k">else</span> <span class="s2">&quot;--no-log&quot;</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="p">[</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span> <span class="s2">&quot;-m&quot;</span><span class="p">,</span> <span class="s2">&quot;voca&quot;</span><span class="p">,</span> <span class="n">log_arg</span><span class="p">,</span> <span class="s2">&quot;worker&quot;</span><span class="p">]</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">module_name</span> <span class="ow">in</span> <span class="n">module_names</span><span class="p">:</span>
+        <span class="n">command</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="n">module_name</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">command</span></div>
+
+
+<div class="viewcode-block" id="replay_child_messages"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.replay_child_messages">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_async_call</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">replay_child_messages</span><span class="p">(</span><span class="n">child</span><span class="p">:</span> <span class="n">trio</span><span class="o">.</span><span class="n">Process</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Log the child&#39;s messages to the parent&#39;s stdout.&quot;&quot;&quot;</span>
+    <span class="k">async</span> <span class="k">for</span> <span class="n">message_from_child</span> <span class="ow">in</span> <span class="n">streaming</span><span class="o">.</span><span class="n">TerminatedFrameReceiver</span><span class="p">(</span>
+        <span class="n">child</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="p">):</span>
+        <span class="n">message_str</span> <span class="o">=</span> <span class="n">message_from_child</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">message_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">message_str</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">decoder</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">:</span>
+            <span class="n">handle_unexpected_worker_bytes</span><span class="p">(</span><span class="n">message_from_child</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">message_dict</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="set_state"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.set_state">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">],</span> <span class="n">state</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]):</span>
+    <span class="sd">&quot;&quot;&quot;Handle switching between ``eager`` and ``strict`` mode.&quot;&quot;&quot;</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;hypotheses&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;transcript&quot;</span><span class="p">]</span>
+    <span class="n">command</span><span class="p">,</span> <span class="n">_space</span><span class="p">,</span> <span class="n">_args</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span>
+        <span class="n">state</span><span class="p">[</span><span class="s2">&quot;modes&quot;</span><span class="p">][</span><span class="s2">&quot;strict&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;modes&quot;</span><span class="p">][</span><span class="s2">&quot;strict&quot;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">state</span>
+
+    <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="delegate_task"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.delegate_task">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_async_call</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">delegate_task</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">worker</span><span class="p">:</span> <span class="n">trio</span><span class="o">.</span><span class="n">Process</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">action</span><span class="p">:</span> <span class="n">eliot</span><span class="o">.</span><span class="n">Action</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Send input data to worker process over std streams.&quot;&quot;&quot;</span>
+
+    <span class="n">wrapped_data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="o">**</span><span class="n">data</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span> <span class="n">eliot_task_id</span><span class="o">=</span><span class="n">action</span><span class="o">.</span><span class="n">serialize_task_id</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="p">)</span>
+    <span class="k">await</span> <span class="n">worker</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">send_all</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">wrapped_data</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span> <span class="o">+</span> <span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Pool"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.Pool">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span>
+<span class="k">class</span> <span class="nc">Pool</span><span class="p">:</span>
+    <span class="n">num_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">should_log</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">module_names</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+    <span class="n">processes</span><span class="p">:</span> <span class="n">Set</span><span class="p">[</span><span class="n">trio</span><span class="o">.</span><span class="n">Process</span><span class="p">]</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">factory</span><span class="o">=</span><span class="nb">set</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Pool.start"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.Pool.start">[docs]</a>    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Start a new process.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_workers</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_new_process</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Pool.get_process"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.Pool.get_process">[docs]</a>    <span class="k">def</span> <span class="nf">get_process</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">trio</span><span class="o">.</span><span class="n">Process</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Pop an process outof the pool and return it.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">processes</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Pool.add_new_process"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.Pool.add_new_process">[docs]</a>    <span class="k">def</span> <span class="nf">add_new_process</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Start a new process and add it to the pool.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">processes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+            <span class="n">trio</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span>
+                <span class="n">worker_cli</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">should_log</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">module_names</span><span class="p">),</span>
+                <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+                <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="run_worker"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.run_worker">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_async_call</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">run_worker</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">pool</span><span class="p">:</span> <span class="n">Pool</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get a process from the pool, send a job to it. Replace that worker when it quits.&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="n">eliot</span><span class="o">.</span><span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;run_with_work&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+        <span class="n">worker</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">get_process</span><span class="p">()</span>
+
+        <span class="k">await</span> <span class="n">delegate_task</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span> <span class="n">worker</span><span class="o">=</span><span class="n">worker</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="n">action</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">replay_child_messages</span><span class="p">(</span><span class="n">worker</span><span class="p">)</span>
+
+        <span class="k">await</span> <span class="n">worker</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="n">pool</span><span class="o">.</span><span class="n">add_new_process</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="process_stream"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.process_stream">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_async_call</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">process_stream</span><span class="p">(</span>
+    <span class="n">receiver</span><span class="p">,</span> <span class="n">num_workers</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">should_log</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">module_names</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Handle all the commands coming in by delegating them to workers.&quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;modes&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;strict&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}}</span>
+
+    <span class="n">pool</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="n">num_workers</span><span class="p">,</span> <span class="n">should_log</span><span class="o">=</span><span class="n">should_log</span><span class="p">,</span> <span class="n">module_names</span><span class="o">=</span><span class="n">module_names</span><span class="p">)</span>
+    <span class="n">pool</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">async</span> <span class="k">for</span> <span class="n">message_bytes</span> <span class="ow">in</span> <span class="n">receiver</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">message_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+
+        <span class="k">with</span> <span class="n">eliot</span><span class="o">.</span><span class="n">start_action</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">:</span>
+                <span class="n">handle_unexpected_worker_bytes</span><span class="p">(</span><span class="n">message_bytes</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="s2">&quot;result&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="c1"># Received a log, not a command.</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="c1"># Handle state changes.</span>
+            <span class="n">maybe_new_state</span> <span class="o">=</span> <span class="n">set_state</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">maybe_new_state</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">state</span> <span class="o">=</span> <span class="n">maybe_new_state</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># This logic could be moved into worker/plugin to allow for more modes.</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;final&quot;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;modes&quot;</span><span class="p">][</span><span class="s2">&quot;strict&quot;</span><span class="p">]:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;final&quot;</span><span class="p">]</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;modes&quot;</span><span class="p">][</span><span class="s2">&quot;strict&quot;</span><span class="p">]:</span>
+                <span class="k">continue</span>
+
+            <span class="k">await</span> <span class="n">run_worker</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span> <span class="n">pool</span><span class="o">=</span><span class="n">pool</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="async_main"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.async_main">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_async_call</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">async_main</span><span class="p">(</span><span class="n">should_log</span><span class="p">,</span> <span class="n">module_names</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">num_workers</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read newline-separated inputs on stdin, and process them.&quot;&quot;&quot;</span>
+
+    <span class="n">stream</span> <span class="o">=</span> <span class="n">trio</span><span class="o">.</span><span class="n">_unix_pipes</span><span class="o">.</span><span class="n">PipeReceiveStream</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">dup</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">receiver</span> <span class="o">=</span> <span class="n">streaming</span><span class="o">.</span><span class="n">TerminatedFrameReceiver</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">await</span> <span class="n">process_stream</span><span class="p">(</span>
+        <span class="n">receiver</span><span class="p">,</span>
+        <span class="n">num_workers</span><span class="o">=</span><span class="n">num_workers</span><span class="p">,</span>
+        <span class="n">should_log</span><span class="o">=</span><span class="n">should_log</span><span class="p">,</span>
+        <span class="n">module_names</span><span class="o">=</span><span class="n">module_names</span><span class="p">,</span>
+    <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../reference/voca.html#voca.manager.main">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">should_log</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">module_names</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">num_workers</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Start the event loop.&quot;&quot;&quot;</span>
+    <span class="n">trio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">functools</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="n">async_main</span><span class="p">,</span> <span class="n">should_log</span><span class="p">,</span> <span class="n">module_names</span><span class="p">,</span> <span class="n">num_workers</span><span class="p">))</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Full Name
+      <span class="lastupdated">
+        Last updated on May 04, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

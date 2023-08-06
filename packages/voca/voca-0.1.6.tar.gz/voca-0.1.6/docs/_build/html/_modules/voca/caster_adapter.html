@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>voca.caster_adapter &mdash; voca version = release = version = release = 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> voca
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version = release = version = release = 0.1.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/modules.html">src</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">voca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>voca.caster_adapter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for voca.caster_adapter</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">contextlib</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">types</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Optional</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="k">import</span> <span class="n">Protocol</span>
+
+
+<span class="kn">import</span> <span class="nn">attr</span>
+<span class="kn">import</span> <span class="nn">trio</span>
+<span class="kn">import</span> <span class="nn">lark</span>
+
+<span class="kn">import</span> <span class="nn">voca.plugins</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">utils</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">context</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">log</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">patching</span>
+
+
+<div class="viewcode-block" id="LazyLoader"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.LazyLoader">[docs]</a><span class="k">class</span> <span class="nc">LazyLoader</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="kn">from</span> <span class="nn">voca.plugins</span> <span class="k">import</span> <span class="n">basic</span>
+
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">basic</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
+
+
+<span class="n">basic</span> <span class="o">=</span> <span class="n">LazyLoader</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="AsyncActionType"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.AsyncActionType">[docs]</a><span class="k">class</span> <span class="nc">AsyncActionType</span><span class="p">(</span><span class="n">Protocol</span><span class="p">):</span>
+<div class="viewcode-block" id="AsyncActionType.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.AsyncActionType.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="o">...</span></div></div>
+
+
+<div class="viewcode-block" id="TextAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.TextAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">TextAction</span><span class="p">:</span>
+    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span>
+
+<div class="viewcode-block" id="TextAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.TextAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">basic</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">format_map</span><span class="p">(</span><span class="n">arg</span><span class="p">))</span></div></div>
+
+
+<div class="viewcode-block" id="KeyAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.KeyAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">KeyAction</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+
+<div class="viewcode-block" id="KeyAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.KeyAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">basic</span><span class="o">.</span><span class="n">press</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="RegisteredAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.RegisteredAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">RegisteredAction</span><span class="p">:</span>
+    <span class="n">instruction</span><span class="p">:</span> <span class="n">AsyncActionType</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
+    <span class="n">rdescript</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<div class="viewcode-block" id="RegisteredAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.RegisteredAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">instruction</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ActionSequence"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.ActionSequence">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">ActionSequence</span><span class="p">:</span>
+    <span class="n">actions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">AsyncActionType</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">attr</span><span class="o">.</span><span class="n">evolve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">actions</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">actions</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">actions</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ActionSequence.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.ActionSequence.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+        <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">actions</span><span class="p">:</span>
+            <span class="k">await</span> <span class="n">action</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ConditionalAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.ConditionalAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">ConditionalAction</span><span class="p">:</span>
+    <span class="n">condition</span><span class="p">:</span> <span class="n">types</span><span class="o">.</span><span class="n">FunctionType</span>
+    <span class="n">action</span><span class="p">:</span> <span class="n">RegisteredAction</span>
+
+<div class="viewcode-block" id="ConditionalAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.ConditionalAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span></div></div>
+
+
+<span class="c1"># @attr.dataclass</span>
+<span class="c1"># class AppContext:</span>
+<span class="c1">#     title: str</span>
+<span class="c1">#     executable: str</span>
+
+
+<div class="viewcode-block" id="Dictation"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Dictation">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">Dictation</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+
+<div class="viewcode-block" id="Dictation.make_definitions"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Dictation.make_definitions">[docs]</a>    <span class="k">def</span> <span class="nf">make_definitions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;/\w+/&quot;</span><span class="p">}</span></div></div>
+
+
+<div class="viewcode-block" id="IntegerRefST"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.IntegerRefST">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">IntegerRefST</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">start</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">end</span><span class="p">:</span> <span class="nb">int</span>
+
+<div class="viewcode-block" id="IntegerRefST.make_definitions"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.IntegerRefST.make_definitions">[docs]</a>    <span class="k">def</span> <span class="nf">make_definitions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">mapping</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">value_to_pronunciation</span><span class="p">()</span>
+        <span class="n">alternatives</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">start</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">end</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+        <span class="p">]</span>
+        <span class="k">return</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">alternatives</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span><span class="p">}</span></div></div>
+
+
+<div class="viewcode-block" id="RepeatedAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.RepeatedAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">RepeatedAction</span><span class="p">:</span>
+    <span class="n">action</span><span class="p">:</span> <span class="n">AsyncActionType</span>
+    <span class="n">extra</span><span class="p">:</span> <span class="nb">str</span>
+
+<div class="viewcode-block" id="RepeatedAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.RepeatedAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+        <span class="c1"># self.extra should be the name of the extra, like &#39;n&#39;</span>
+        <span class="c1"># arg should be a mapping of values said</span>
+        <span class="n">times</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">arg</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">extra</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">times</span><span class="p">):</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="DelayAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.DelayAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">DelayAction</span><span class="p">:</span>
+    <span class="n">duration</span><span class="p">:</span> <span class="nb">float</span>
+
+<div class="viewcode-block" id="DelayAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.DelayAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">trio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">duration</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="Choice"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Choice">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">Choice</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">mapping</span><span class="p">:</span> <span class="nb">dict</span>
+
+<div class="viewcode-block" id="Choice.make_definitions"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Choice.make_definitions">[docs]</a>    <span class="k">def</span> <span class="nf">make_definitions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">definitions</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">utils</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="n">definitions</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">definitions</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">definitions</span></div></div>
+
+
+<div class="viewcode-block" id="MyRepeat"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.MyRepeat">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">MyRepeat</span><span class="p">:</span>
+    <span class="n">extra</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="k">def</span> <span class="nf">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">RepeatedAction</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">extra</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__rmul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span> <span class="o">*</span> <span class="n">action</span></div>
+
+
+<div class="viewcode-block" id="FunctionAction"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.FunctionAction">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">FunctionAction</span><span class="p">:</span>
+    <span class="n">callable</span><span class="p">:</span> <span class="n">types</span><span class="o">.</span><span class="n">FunctionType</span>
+    <span class="n">positional_arguments</span><span class="p">:</span> <span class="nb">tuple</span>
+    <span class="n">keyword_arguments</span><span class="p">:</span> <span class="nb">dict</span>
+
+<div class="viewcode-block" id="FunctionAction.execute"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.FunctionAction.execute">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">callable</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">positional_arguments</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_arguments</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="CasterTransformer"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.CasterTransformer">[docs]</a><span class="k">class</span> <span class="nc">CasterTransformer</span><span class="p">(</span><span class="n">lark</span><span class="o">.</span><span class="n">Transformer</span><span class="p">):</span>
+<div class="viewcode-block" id="CasterTransformer.n"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.CasterTransformer.n">[docs]</a>    <span class="k">def</span> <span class="nf">n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="n">pronunciation</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">pronunciation_to_value</span><span class="p">()[</span><span class="n">pronunciation</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;n&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)}</span></div></div>
+
+
+<div class="viewcode-block" id="transform_tree"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.transform_tree">[docs]</a><span class="k">def</span> <span class="nf">transform_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">tree</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">tree</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">CasterTransformer</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">result</span></div>
+
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">transform_tree</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">await</span> <span class="n">action</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="add_to_registry"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.add_to_registry">[docs]</a><span class="k">def</span> <span class="nf">add_to_registry</span><span class="p">(</span><span class="n">mapping</span><span class="p">,</span> <span class="n">registry</span><span class="p">):</span>
+    <span class="c1"># TODO don&#39;t mutate registry</span>
+    <span class="k">for</span> <span class="n">pattern</span><span class="p">,</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">mapping</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">utils</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">pattern</span><span class="p">))(</span><span class="k">lambda</span> <span class="n">data</span><span class="p">:</span> <span class="n">_run</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">registry</span></div>
+
+
+<span class="k">def</span> <span class="nf">_function</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">FunctionAction</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">positional_arguments</span><span class="o">=</span><span class="p">(),</span> <span class="n">keyword_arguments</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="MergeRule"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.MergeRule">[docs]</a><span class="k">class</span> <span class="nc">MergeRule</span><span class="p">:</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="CCRMerger"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.CCRMerger">[docs]</a><span class="k">class</span> <span class="nc">CCRMerger</span><span class="p">:</span>
+    <span class="n">CORE</span> <span class="o">=</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="Grammar"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Grammar">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">Grammar</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">context</span><span class="p">:</span> <span class="n">AppContext</span></div>
+
+
+<div class="viewcode-block" id="Settings"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Settings">[docs]</a><span class="k">class</span> <span class="nc">Settings</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Settings</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__bool__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="SpecTransformer"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer">[docs]</a><span class="k">class</span> <span class="nc">SpecTransformer</span><span class="p">(</span><span class="n">lark</span><span class="o">.</span><span class="n">Transformer</span><span class="p">):</span>
+<div class="viewcode-block" id="SpecTransformer.name"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.name">[docs]</a>    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.literal_name"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.literal_name">[docs]</a>    <span class="k">def</span> <span class="nf">literal_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">utils</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.angled_name"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.angled_name">[docs]</a>    <span class="k">def</span> <span class="nf">angled_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.optional_component"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.optional_component">[docs]</a>    <span class="k">def</span> <span class="nf">optional_component</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">f</span><span class="s2">&quot;[</span><span class="si">{args[0]}</span><span class="s2">]&quot;</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.phrase_component"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.phrase_component">[docs]</a>    <span class="k">def</span> <span class="nf">phrase_component</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.component"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.component">[docs]</a>    <span class="k">def</span> <span class="nf">component</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.spec"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.spec">[docs]</a>    <span class="k">def</span> <span class="nf">spec</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SpecTransformer.group"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.SpecTransformer.group">[docs]</a>    <span class="k">def</span> <span class="nf">group</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span></div></div>
+
+
+<div class="viewcode-block" id="convert_spec"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.convert_spec">[docs]</a><span class="k">def</span> <span class="nf">convert_spec</span><span class="p">(</span><span class="n">spec</span><span class="p">):</span>
+
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+
+<span class="s2">    ?start : spec</span>
+<span class="s2">    spec : component+</span>
+<span class="s2">    component : optional_component | phrase_component | group</span>
+<span class="s2">    optional_component : &quot;[&quot; component &quot;]&quot;</span>
+<span class="s2">    group : &quot;(&quot; component (&quot;|&quot; component)+ &quot;)&quot;</span>
+<span class="s2">    phrase_component : angled_name | literal_name</span>
+<span class="s2">    angled_name : &quot;&lt;&quot; name &quot;&gt;&quot;</span>
+<span class="s2">    literal_name : /[\w ]+/</span>
+<span class="s2">    name : /\w+/</span>
+
+
+<span class="s2">    </span><span class="si">%i</span><span class="s2">mport common.WS</span>
+
+<span class="s2">    </span><span class="si">%i</span><span class="s2">gnore WS</span>
+
+<span class="s2">    &quot;&quot;&quot;</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">lark</span><span class="o">.</span><span class="n">Lark</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">maybe_placeholders</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">spec</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">SpecTransformer</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="c1"># XXX</span>
+    <span class="c1"># if result.startswith(&quot;[&quot;) and result.endswith(&quot;]&quot;):</span>
+    <span class="c1">#     raise NotImplementedError(result + &quot;: Buggy translator&quot;)</span>
+    <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="adapt_AppContext"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.adapt_AppContext">[docs]</a><span class="k">def</span> <span class="nf">adapt_AppContext</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">executable</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="n">WindowContext</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="adapt_Dictation"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.adapt_Dictation">[docs]</a><span class="k">def</span> <span class="nf">adapt_Dictation</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Dictation</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="convert_key_name"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.convert_key_name">[docs]</a><span class="k">def</span> <span class="nf">convert_key_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">modifiers</span><span class="p">,</span> <span class="n">_dash</span><span class="p">,</span> <span class="n">simple</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">rpartition</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+    <span class="n">modifier_map</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="s2">&quot;ctrl_l&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="s2">&quot;alt&quot;</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="s2">&quot;shift&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="s2">&quot;cmd&quot;</span><span class="p">}</span>
+    <span class="n">key_map</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;pgup&quot;</span><span class="p">:</span> <span class="s2">&quot;page_up&quot;</span><span class="p">,</span> <span class="s2">&quot;pgdown&quot;</span><span class="p">:</span> <span class="s2">&quot;page_down&quot;</span><span class="p">}</span>
+    <span class="n">new_modifiers</span> <span class="o">=</span> <span class="p">[</span><span class="n">utils</span><span class="o">.</span><span class="n">KeyModifier</span><span class="p">(</span><span class="n">modifier_map</span><span class="p">[</span><span class="n">m</span><span class="p">])</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">modifiers</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">utils</span><span class="o">.</span><span class="n">KeyChord</span><span class="p">(</span><span class="n">new_modifiers</span><span class="p">,</span> <span class="n">key_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">simple</span><span class="p">,</span> <span class="n">simple</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="adapt_Key"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.adapt_Key">[docs]</a><span class="k">def</span> <span class="nf">adapt_Key</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+
+    <span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)]</span>
+    <span class="n">actions</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+        <span class="n">name</span><span class="p">,</span> <span class="n">_slash</span><span class="p">,</span> <span class="n">delay</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+
+        <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">KeyAction</span><span class="p">(</span><span class="n">convert_key_name</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+        <span class="k">if</span> <span class="n">delay</span><span class="p">:</span>
+            <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DelayAction</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">delay</span><span class="p">)))</span>
+
+    <span class="k">return</span> <span class="n">ActionSequence</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="adapt_Text"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.adapt_Text">[docs]</a><span class="k">def</span> <span class="nf">adapt_Text</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">ActionSequence</span><span class="p">([</span><span class="n">TextAction</span><span class="p">(</span><span class="n">name</span><span class="p">)])</span></div>
+
+
+<div class="viewcode-block" id="find_merge_rule_classes"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.find_merge_rule_classes">[docs]</a><span class="k">def</span> <span class="nf">find_merge_rule_classes</span><span class="p">(</span><span class="n">module</span><span class="p">):</span>
+    <span class="n">rules</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">module</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+            <span class="ow">and</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">Placeholder</span><span class="p">)</span>
+            <span class="ow">and</span> <span class="n">obj</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">Placeholder</span>
+        <span class="p">):</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">rules</span></div>
+
+
+<div class="viewcode-block" id="Patch"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Patch">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">Patch</span><span class="p">:</span>
+    <span class="n">module</span><span class="p">:</span> <span class="n">types</span><span class="o">.</span><span class="n">ModuleType</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">new</span><span class="p">:</span> <span class="nb">object</span></div>
+
+
+<div class="viewcode-block" id="monkeypatch"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.monkeypatch">[docs]</a><span class="nd">@contextlib</span><span class="o">.</span><span class="n">contextmanager</span>
+<span class="k">def</span> <span class="nf">monkeypatch</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">new</span><span class="p">):</span>
+    <span class="n">original</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="nb">setattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">new</span><span class="p">)</span>
+    <span class="k">yield</span>
+    <span class="nb">setattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">original</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="monkeypatch_each"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.monkeypatch_each">[docs]</a><span class="k">def</span> <span class="nf">monkeypatch_each</span><span class="p">(</span><span class="n">patches</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">patches</span><span class="p">:</span>
+        <span class="n">monkeypatch</span><span class="p">(</span><span class="n">patch</span><span class="o">.</span><span class="n">module</span><span class="p">,</span> <span class="n">patch</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">patch</span><span class="o">.</span><span class="n">new</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="add_wrapper"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.add_wrapper">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">add_wrapper</span><span class="p">(</span><span class="n">module</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="s2">&quot;wrapper&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">module</span>
+
+    <span class="n">rules</span> <span class="o">=</span> <span class="n">find_merge_rule_classes</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
+
+    <span class="n">registry</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">Registry</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">spec</span><span class="p">,</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">rule</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+
+                <span class="n">converted_spec</span> <span class="o">=</span> <span class="n">convert_spec</span><span class="p">(</span><span class="n">spec</span><span class="p">)</span>
+            <span class="k">except</span> <span class="p">(</span><span class="n">lark</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">UnexpectedCharacters</span><span class="p">,</span> <span class="ne">NotImplementedError</span><span class="p">):</span>
+                <span class="c1"># XXX</span>
+                <span class="n">converted_spec</span> <span class="o">=</span> <span class="s1">&#39;&quot;aklsdjfkldjfk&quot;&#39;</span>
+            <span class="c1"># TODO Make this easier to read.</span>
+            <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">converted_spec</span><span class="p">)(</span>
+                <span class="k">lambda</span> <span class="n">data</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="n">action</span><span class="p">:</span> <span class="n">_run</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">for</span> <span class="n">extra</span> <span class="ow">in</span> <span class="n">rule</span><span class="o">.</span><span class="n">extras</span><span class="p">:</span>
+            <span class="n">registry</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">extra</span><span class="o">.</span><span class="n">make_definitions</span><span class="p">())</span>
+
+    <span class="c1"># TODO use module.context</span>
+    <span class="n">wrapper</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">Wrapper</span><span class="p">(</span><span class="n">registry</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">context</span><span class="o">.</span><span class="n">AlwaysContext</span><span class="p">())</span>
+    <span class="n">module</span><span class="o">.</span><span class="n">wrapper</span> <span class="o">=</span> <span class="n">wrapper</span>
+    <span class="c1"># XXX Avoid mutate-and-return.</span>
+    <span class="k">return</span> <span class="n">module</span></div>
+
+
+<div class="viewcode-block" id="patch_all"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.patch_all">[docs]</a><span class="k">def</span> <span class="nf">patch_all</span><span class="p">():</span>
+
+    <span class="c1"># XXX Should fix this to avoid having to actually import castervoice.</span>
+    <span class="c1"># Currently sys.modules is used to find castervoice in order to find its submodules.</span>
+    <span class="kn">import</span> <span class="nn">castervoice</span>
+
+    <span class="n">finder</span> <span class="o">=</span> <span class="n">patching</span><span class="o">.</span><span class="n">make_finder</span><span class="p">(</span><span class="n">module_mapping</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">meta_path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">finder</span><span class="p">)</span>
+
+    <span class="c1"># XXX Maybe replace this with an import hook.</span>
+    <span class="n">utils</span><span class="o">.</span><span class="n">MODULE_TRANSFORMERS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">add_wrapper</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AttributeHaver"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.AttributeHaver">[docs]</a><span class="k">class</span> <span class="nc">AttributeHaver</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">AttributeHaver</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Placeholder"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.Placeholder">[docs]</a><span class="k">class</span> <span class="nc">Placeholder</span><span class="p">:</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="VirtualModule"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.VirtualModule">[docs]</a><span class="k">class</span> <span class="nc">VirtualModule</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="VirtualPackage"><a class="viewcode-back" href="../../reference/voca.html#voca.caster_adapter.VirtualPackage">[docs]</a><span class="k">class</span> <span class="nc">VirtualPackage</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">contents</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__path__</span> <span class="o">=</span> <span class="n">path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span></div>
+
+
+<span class="n">R</span> <span class="o">=</span> <span class="n">RegisteredAction</span>
+<span class="n">Text</span> <span class="o">=</span> <span class="n">adapt_Text</span>
+<span class="n">Key</span> <span class="o">=</span> <span class="n">adapt_Key</span>
+
+<span class="n">module_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;dragonfly.__init__&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;dragonfly&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;Grammar&quot;</span><span class="p">:</span> <span class="n">Grammar</span><span class="p">,</span>
+        <span class="s2">&quot;Context&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;AppContext&quot;</span><span class="p">:</span> <span class="n">adapt_AppContext</span><span class="p">,</span>
+        <span class="s2">&quot;Dictation&quot;</span><span class="p">:</span> <span class="n">adapt_Dictation</span><span class="p">,</span>
+        <span class="s2">&quot;Repeat&quot;</span><span class="p">:</span> <span class="n">MyRepeat</span><span class="p">,</span>
+        <span class="s2">&quot;Function&quot;</span><span class="p">:</span> <span class="n">_function</span><span class="p">,</span>
+        <span class="s2">&quot;Choice&quot;</span><span class="p">:</span> <span class="n">Choice</span><span class="p">,</span>
+        <span class="s2">&quot;Mouse&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;Pause&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="c1"># &quot;castervoice.lib&quot;: {},</span>
+    <span class="s2">&quot;castervoice.lib.control&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;castervoice.lib.utilities&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;simple_log&quot;</span><span class="p">:</span> <span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">},</span>
+    <span class="c1"># &quot;castervoice.apps&quot;: {},</span>
+    <span class="c1"># &quot;castervoice.apps.__init__&quot;: {},</span>
+    <span class="s2">&quot;castervoice.lib.settings&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;SETTINGS&quot;</span><span class="p">:</span> <span class="n">Settings</span><span class="p">()},</span>
+    <span class="s2">&quot;castervoice.lib.actions&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="n">adapt_Key</span><span class="p">,</span> <span class="s2">&quot;Text&quot;</span><span class="p">:</span> <span class="n">adapt_Text</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.context&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;AppContext&quot;</span><span class="p">:</span> <span class="n">adapt_AppContext</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.dfplus.additions&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;IntegerRefST&quot;</span><span class="p">:</span> <span class="n">IntegerRefST</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.dfplus.merge&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;gfilter&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.dfplus.merge.mergerule&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;MergeRule&quot;</span><span class="p">:</span> <span class="n">Placeholder</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.dfplus.state.short&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;R&quot;</span><span class="p">:</span> <span class="n">RegisteredAction</span><span class="p">},</span>
+    <span class="s2">&quot;castervoice.lib.dfplus.merge.ccrmerger&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;CCRMerger&quot;</span><span class="p">:</span> <span class="n">AttributeHaver</span><span class="p">()},</span>
+<span class="p">}</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Full Name
+      <span class="lastupdated">
+        Last updated on May 04, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

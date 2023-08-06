@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>voca.parsing &mdash; voca version = release = version = release = 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> voca
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version = release = version = release = 0.1.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/modules.html">src</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">voca</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>voca.parsing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for voca.parsing</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">textwrap</span>
+<span class="kn">import</span> <span class="nn">types</span>
+<span class="kn">import</span> <span class="nn">unicodedata</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Tuple</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Iterable</span>
+
+
+<span class="kn">import</span> <span class="nn">lark</span>
+
+
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">log</span>
+<span class="kn">from</span> <span class="nn">voca</span> <span class="k">import</span> <span class="n">utils</span>
+
+
+<div class="viewcode-block" id="Transformer"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.Transformer">[docs]</a><span class="k">class</span> <span class="nc">Transformer</span><span class="p">(</span><span class="n">lark</span><span class="o">.</span><span class="n">Transformer</span><span class="p">):</span>
+<div class="viewcode-block" id="Transformer.chord"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.Transformer.chord">[docs]</a>    <span class="k">def</span> <span class="nf">chord</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Transformer.key"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.Transformer.key">[docs]</a>    <span class="k">def</span> <span class="nf">key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">list</span></div>
+
+
+<div class="viewcode-block" id="extract"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.extract">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">lark</span><span class="o">.</span><span class="n">Tree</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Transform the parse tree to extract node type and children.&quot;&quot;&quot;</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">Transformer</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span></div>
+
+
+<div class="viewcode-block" id="extract_commands"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.extract_commands">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">extract_commands</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">lark</span><span class="o">.</span><span class="n">Tree</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Transform the parse tree to extract the node&#39;s children.&quot;&quot;&quot;</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">Transformer</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span></div>
+
+
+<span class="k">def</span> <span class="nf">_replace_match</span><span class="p">(</span><span class="n">match</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">Match</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Replace a symbol with its name.&quot;&quot;&quot;</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">f</span><span class="s2">&quot;_</span><span class="si">{body}</span><span class="s2">_&quot;</span>
+
+
+<div class="viewcode-block" id="normalize_pattern"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.normalize_pattern">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">normalize_pattern</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create a human-readable ascii-lowercase form of the rule.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">_replace_match</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="build_rules"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.build_rules">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">build_rules</span><span class="p">(</span><span class="n">registry</span><span class="p">:</span> <span class="n">utils</span><span class="o">.</span><span class="n">Registry</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">utils</span><span class="o">.</span><span class="n">Rule</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Build a list of rules and attach human-readable names.&quot;&quot;&quot;</span>
+    <span class="n">rules</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">function</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">pattern_to_function</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">normalized_pattern</span> <span class="o">=</span> <span class="n">normalize_pattern</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;rule_</span><span class="si">{i}</span><span class="s2">__</span><span class="si">{normalized_pattern}</span><span class="s2">&quot;</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">utils</span><span class="o">.</span><span class="n">Rule</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">pattern</span><span class="o">=</span><span class="n">pattern</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">rules</span></div>
+
+
+<div class="viewcode-block" id="build_grammar"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.build_grammar">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">build_grammar</span><span class="p">(</span><span class="n">registry</span><span class="p">:</span> <span class="n">utils</span><span class="o">.</span><span class="n">Registry</span><span class="p">,</span> <span class="n">rules</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">utils</span><span class="o">.</span><span class="n">Rule</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Build a lark grammar string by combining rules and definitions in the registry.&quot;&quot;&quot;</span>
+
+    <span class="n">start</span> <span class="o">=</span> <span class="s2">&quot;?start : message_group&quot;</span>
+
+    <span class="n">message_group</span> <span class="o">=</span> <span class="s2">&quot;message_group : message+&quot;</span>
+
+    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;?message : &quot;</span> <span class="o">+</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">)</span>
+
+    <span class="n">rules_segment</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{rule.name}</span><span class="s2"> : </span><span class="si">{rule.pattern}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">])</span>
+    <span class="n">patterns_segment</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{k}</span><span class="s2"> : </span><span class="si">{v}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">registry</span><span class="o">.</span><span class="n">patterns</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">message_group</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">rules_segment</span><span class="p">,</span> <span class="n">patterns_segment</span><span class="p">])</span>
+
+    <span class="n">imports</span> <span class="o">=</span> <span class="n">textwrap</span><span class="o">.</span><span class="n">dedent</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;\</span>
+
+
+<span class="sd">        %import common.ESCAPED_STRING</span>
+<span class="sd">        %import common.SIGNED_NUMBER</span>
+<span class="sd">        %import common.WS</span>
+<span class="sd">        %import common.CNAME -&gt; NAME</span>
+<span class="sd">        %import common.NUMBER</span>
+<span class="sd">        %import common.WS_INLINE</span>
+
+<span class="sd">        %ignore WS</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">start</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">imports</span><span class="p">])</span></div>
+
+
+<div class="viewcode-block" id="combine_modules"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.combine_modules">[docs]</a><span class="nd">@log</span><span class="o">.</span><span class="n">log_call</span>
+<span class="k">def</span> <span class="nf">combine_modules</span><span class="p">(</span><span class="n">modules</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">utils</span><span class="o">.</span><span class="n">PluginModule</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">utils</span><span class="o">.</span><span class="n">WrapperGroup</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Combine the wrappers of multiple modules into a single WrapperGroup.&quot;&quot;&quot;</span>
+    <span class="n">wrapper_group</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">WrapperGroup</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">module</span> <span class="ow">in</span> <span class="n">modules</span><span class="p">:</span>
+        <span class="n">wrapper_group</span><span class="o">.</span><span class="n">wrappers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="n">wrapper</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">wrapper_group</span></div>
+
+
+<div class="viewcode-block" id="combine_registries"><a class="viewcode-back" href="../../reference/voca.html#voca.parsing.combine_registries">[docs]</a><span class="k">def</span> <span class="nf">combine_registries</span><span class="p">(</span><span class="n">registries</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Combine several registries together into a single registry.&quot;&quot;&quot;</span>
+    <span class="n">combined</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">Registry</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">registry</span> <span class="ow">in</span> <span class="n">registries</span><span class="p">:</span>
+        <span class="n">combined</span><span class="o">.</span><span class="n">pattern_to_function</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">pattern_to_function</span><span class="p">)</span>
+        <span class="n">combined</span><span class="o">.</span><span class="n">patterns</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">patterns</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">combined</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Full Name
+      <span class="lastupdated">
+        Last updated on May 04, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
