@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rft
+Version: 0.1
+Summary: RFT is a collection of tools and libraries around RobotFramework
+Home-page: https://github.com/christophettat/RFT
+Author: Christophe Bolle
+Author-email: christophe_xxx@yahoo.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: robotframework (==3.1.1)
+Requires-Dist: robotframework-seleniumlibrary (==3.3.1)
+
+# RFT
+a python installer to setup a complete RobotFramework test environment with core, ide, libraries
+
+Compile with python setup.py bdist_wheel
+
+
