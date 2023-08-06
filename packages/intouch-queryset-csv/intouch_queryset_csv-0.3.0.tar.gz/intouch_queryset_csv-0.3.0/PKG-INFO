@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: intouch_queryset_csv
+Version: 0.3.0
+Summary: Module to export django querysets as csv files
+Home-page: https://github.com/intouch-smartwater/queryset-csv
+Maintainer: James Cheese
+Maintainer-email: james.cheese@intouch-ltd.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: django queryset csv
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
