@@ -1,0 +1,13 @@
+docutils
+nbformat
+pylint
+pyflakes
+sphinx
+future
+six
+
+[:python_version >= "3.0"]
+PyQt5
+
+[:python_version >= "3.5"]
+flexx
