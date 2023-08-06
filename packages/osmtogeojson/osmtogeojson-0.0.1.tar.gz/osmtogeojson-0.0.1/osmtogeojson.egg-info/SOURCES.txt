@@ -1,0 +1,9 @@
+README.md
+setup.py
+osmtogeojson/__init__.py
+osmtogeojson/merge.py
+osmtogeojson/osmtogeojson.py
+osmtogeojson.egg-info/PKG-INFO
+osmtogeojson.egg-info/SOURCES.txt
+osmtogeojson.egg-info/dependency_links.txt
+osmtogeojson.egg-info/top_level.txt
