@@ -1,0 +1,10 @@
+cnxcommon/__init__.py,sha256=GcCmUD_J3vCYfUHHlCMLCcYWdtmKiFTCXx_IUjqtA1M,295
+cnxcommon/_version.py,sha256=Z8bhdbiavErzzh4yrx7-JcLWfdV91FXWN24q4J5_gr0,497
+cnxcommon/urlslug.py,sha256=4xiorUgLl5Ffrb4B10abBg8u8LQKu1071gcp__ucrsw,1626
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_urlslug.py,sha256=kZF3g_EK89__TckSn50gKu4tCxLFeeq2jk0wNXKnM78,5449
+cnx_common-1.0.0.dist-info/LICENSE.txt,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+cnx_common-1.0.0.dist-info/METADATA,sha256=UbrEz53s7M7E7HmOklhUM806JKHJ5MG8GjY29qV4s80,829
+cnx_common-1.0.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+cnx_common-1.0.0.dist-info/top_level.txt,sha256=_KoQQiWa1oKUG_Skvox3GR4G9N3jAYtz9aXFXSgjQFA,16
+cnx_common-1.0.0.dist-info/RECORD,,
