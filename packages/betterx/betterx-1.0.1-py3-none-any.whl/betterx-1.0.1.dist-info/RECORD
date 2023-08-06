@@ -1,0 +1,14 @@
+betterx/__init__.py,sha256=319nUTzJU9piGdm2RhnUuDrHb_xFAwQbYbVQ_XWumy4,100
+betterx/_lsx.py,sha256=RLA5NBWdMoPiCgPAuAjfBJi4LYZfA6VhMb70i8MbLvc,591
+betterx/_rme.py,sha256=0SS2pczcdmloUDy_gcsWhvvAlmWKWIkx_8578jE5lbM,2015
+betterx/_tshift.py,sha256=XgBRJK7tpRKwxfOTp5brnBDFVuvhiXzGtRd5Pf4K_wM,1513
+betterx/utils.py,sha256=ulxaNHmTTS4uIjFajZ-M94imk3R8JMWGCfEHaVwgktA,337
+betterx-1.0.1.data/scripts/lsx,sha256=qH3cwTImgz63Py6hwAsQCx-k6lFJZaIEx96TYABEKKA,1219
+betterx-1.0.1.data/scripts/rme,sha256=AOZGqIzK81PJ-MCK39AqQsVcULk9YM195z_IMRbEr7I,773
+betterx-1.0.1.data/scripts/tshift,sha256=9U5JBijKz4nGDM47DrV3Z3Y5ZmuZ0fJQw9eXt9iC3UU,788
+betterx-1.0.1.dist-info/DESCRIPTION.rst,sha256=liHa1jZA-dAGxHwnS4HwGd6qHDMYSerfoRWaKppTx30,678
+betterx-1.0.1.dist-info/METADATA,sha256=5yGmC33b_0ARWVPzRGxIX2Uz_zJCCpOcQj1K7Lt9eKg,948
+betterx-1.0.1.dist-info/RECORD,,
+betterx-1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+betterx-1.0.1.dist-info/metadata.json,sha256=8qLy-siLTP-RbPDU-M_IwH6qoO41yfrHOx_Kqd2d780,461
+betterx-1.0.1.dist-info/top_level.txt,sha256=38ooM2q8I0LvZ1TY9bAtKadGcTFYrlke3nZHil4t9Qc,8
