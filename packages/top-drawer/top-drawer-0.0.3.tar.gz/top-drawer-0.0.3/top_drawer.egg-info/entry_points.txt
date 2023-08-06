@@ -1,0 +1,3 @@
+[console_scripts]
+top-drawer = top_drawer._cli:cli
+
