@@ -1,0 +1,15 @@
+drongo/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+drongo/email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drongo/email/api.py,sha256=53wR0clgsmgTlbRzvkjBQpwnsNQoxE2dV7YvMSes-rA,1206
+drongo/email/app.py,sha256=1azKBWW6mlpmqsEDVKbDpLQpC2lKLzKVfxqKvC7IQc0,386
+drongo/email/module.py,sha256=aY_vBBm4hYqOixlOeQ3brMAvjTRQP_FtIbaV9-Fz6Us,929
+drongo/email/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drongo/email/backends/_smtp.py,sha256=rBKodH5HwjnzGAhWiMvqOKY2k7pAQ-Gcv7-gEhD-MD8,2253
+drongo_client/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+drongo_client/email.py,sha256=jMq1aBA_d-0OT0256X9mQ52B_WxXy5CvuywHMYsFAvU,991
+drongopy_email_client-0.0.2.dist-info/LICENSE,sha256=MhIIkngr9qAavHNOasE84w980vodqPeZSS1Kqpe0mwI,1066
+drongopy_email_client-0.0.2.dist-info/METADATA,sha256=ubseZNneGp1okwzsvN3aX6x1qJ7_Pmeeeq_pa0Alr0A,726
+drongopy_email_client-0.0.2.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+drongopy_email_client-0.0.2.dist-info/top_level.txt,sha256=D1gmu3ov6eiceRUrNDaI1gQflRqkE4oA3HwcH8051t8,14
+drongopy_email_client-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+drongopy_email_client-0.0.2.dist-info/RECORD,,
