@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: codecaseconverter
+Version: 0.2
+Summary: Code converter from one case to another
+Home-page: https://github.com/kirillkuzin/codecaseconverter
+Author: Kirill Kuzin
+Author-email: offkirillkuzin@gmail.com
+License: MIT
+Description: Code converter from one case to another
+Keywords: camelcase lowercase constcase case converter caseconverter code
+Platform: UNKNOWN
