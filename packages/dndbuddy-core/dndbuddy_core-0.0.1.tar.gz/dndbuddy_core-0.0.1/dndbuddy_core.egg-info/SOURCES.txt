@@ -1,0 +1,15 @@
+CHANGES.rst
+MANIFEST.in
+README.md
+VERSION.txt
+setup.py
+dndbuddy_core/__init__.py
+dndbuddy_core/colors.py
+dndbuddy_core/command.py
+dndbuddy_core/pager.py
+dndbuddy_core/settings.py
+dndbuddy_core/terms.py
+dndbuddy_core.egg-info/PKG-INFO
+dndbuddy_core.egg-info/SOURCES.txt
+dndbuddy_core.egg-info/dependency_links.txt
+dndbuddy_core.egg-info/top_level.txt

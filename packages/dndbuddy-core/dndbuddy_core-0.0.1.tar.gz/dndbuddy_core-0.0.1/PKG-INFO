@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dndbuddy_core
+Version: 0.0.1
+Summary: The core libraries for DnDBuddy
+Home-page: https://github.com/MattCCS/DnDBuddy-Core
+Author: Matt Cotton
+Author-email: matthewcotton.cs@gmail.com
+License: UNKNOWN
+Description: # DnDBuddy-Core
+        The core libraries for DnDBuddy
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
