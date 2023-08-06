@@ -1,0 +1,71 @@
+Metadata-Version: 1.1
+Name: temprint
+Version: 1.0.1
+Summary: An easy way to print messages intended to be overwritten.
+Home-page: https://github.com/arthurpaulino/temprint
+Author: Arthur Leonardo de Alencar Paulino
+Author-email: arthurleonardo.ap@gmail.com
+License: UNKNOWN
+Description: .. -*- mode: rst -*-
+        
+        |license|_ |pypi|_
+        
+        .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+        .. _license: https://opensource.org/licenses/MIT
+        
+        .. |pypi| image:: https://badge.fury.io/py/temprint.svg
+        .. _pypi: https://pypi.org/project/temprint/
+        
+        temprint
+        ========
+        
+            *temprint* is an acronym for *temporary print*
+        
+        This package provides an easy way to output temporary prints intended to be
+        overwritten by other messages. Use it if you want to avoid flooding your terminal
+        with old prints.
+        
+        Usage
+        -----
+        
+        1. Install it with ``$ pip install temprint``
+        
+        2. Now you can use the ``temprint`` function, as in:
+        
+        .. code:: python
+        
+            from time import sleep
+            from temprint import temprint
+        
+            msgs = [
+                'a short message',
+                'a slightly longer message',
+                'a tiny msg',
+                'a very big message. it is so big that it cannot fit in your ' +
+                'terminal width and temprint will behave as a regular print',
+                'now a short message again',
+                'and a shorter message'
+            ]
+        
+            for msg in msgs:
+                temprint(msg)
+                sleep(2)
+        
+        You should see the messages being printed and then erased iteratively.
+        
+        If the message is longer than your terminal width, ``temprint`` will behave as
+        the regular built-in ``print`` function.
+        
+        The ``temprint`` function can receive a series of objects to be printed and a
+        separator:
+        
+        >>> temprint('first', 'second', 'third', sep='/')
+        first/second/third
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
