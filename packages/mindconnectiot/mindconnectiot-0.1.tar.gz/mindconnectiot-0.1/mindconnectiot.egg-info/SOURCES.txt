@@ -1,0 +1,10 @@
+README.md
+setup.py
+mindconnectiot/__init__.py
+mindconnectiot/mindconnectiot.py
+mindconnectiot.egg-info/PKG-INFO
+mindconnectiot.egg-info/SOURCES.txt
+mindconnectiot.egg-info/dependency_links.txt
+mindconnectiot.egg-info/not-zip-safe
+mindconnectiot.egg-info/requires.txt
+mindconnectiot.egg-info/top_level.txt
