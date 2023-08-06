@@ -1,0 +1,9 @@
+README.md
+setup.py
+copyscape_api/__init__.py
+copyscape_api/copyscape.py
+copyscape_api.egg-info/PKG-INFO
+copyscape_api.egg-info/SOURCES.txt
+copyscape_api.egg-info/dependency_links.txt
+copyscape_api.egg-info/requires.txt
+copyscape_api.egg-info/top_level.txt

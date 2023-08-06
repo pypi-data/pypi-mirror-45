@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: copyscape-api
+Version: 0.2
+Summary: Python client for Copyscape API
+Home-page: https://github.com/selentium/copyscape-api-client
+Author: Vladimir Kadalashvili
+Author-email: Kadalashvili.Vladimir@gmail.com
+License: MIT
+Description: # Copyscape API Client
+        Python Client for [Copyscape API](https://www.copyscape.com/api-guide.php)
+        
+        ## Installation
+        `pip install copyscape-api`
+        
+        ## Usage example
+        ```
+        import copyscape_api
+        
+        client = copyscape_api.Client("your_username", "your_api_key")
+        result = client.search(url="http://example.org/")
+        ```    
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
