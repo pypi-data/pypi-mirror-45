@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: google-play-reviews-scraper
+Version: 0.1.0
+Summary: Google-play-reviews-scraper is a command-line application written in Python that scrapes and downloads an apps user reviews.
+Home-page: https://github.com/mohamedali92/google-play-reviews-scraper
+Author: Mohamed Ali
+Author-email: mohamed.ali@alumni.ubc.ca
+License: Public domain
+Description: UNKNOWN
+Platform: UNKNOWN

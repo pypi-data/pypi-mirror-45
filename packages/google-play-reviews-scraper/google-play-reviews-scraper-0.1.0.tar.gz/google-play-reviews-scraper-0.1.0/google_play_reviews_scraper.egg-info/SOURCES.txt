@@ -1,0 +1,10 @@
+README.md
+setup.py
+google_play_reviews_scraper/__init__.py
+google_play_reviews_scraper/app.py
+google_play_reviews_scraper.egg-info/PKG-INFO
+google_play_reviews_scraper.egg-info/SOURCES.txt
+google_play_reviews_scraper.egg-info/dependency_links.txt
+google_play_reviews_scraper.egg-info/not-zip-safe
+google_play_reviews_scraper.egg-info/requires.txt
+google_play_reviews_scraper.egg-info/top_level.txt
