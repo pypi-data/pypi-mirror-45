@@ -1,0 +1,7 @@
+README.md
+setup.py
+pygcards/__init__.py
+pygcards_pygdev.egg-info/PKG-INFO
+pygcards_pygdev.egg-info/SOURCES.txt
+pygcards_pygdev.egg-info/dependency_links.txt
+pygcards_pygdev.egg-info/top_level.txt
