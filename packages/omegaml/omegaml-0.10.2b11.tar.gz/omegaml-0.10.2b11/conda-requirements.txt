@@ -1,0 +1,11 @@
+# conda-requirements.txt
+pandas=0.24.1
+scikit-learn=0.20.3
+jupyter=1.0.0
+pytables=3.4.4
+nose=1.3.7
+nosexcover=1.0.11
+distributed=1.26.0
+dask=1.1.4
+notebook=5.7.6
+tornado=6.0.1
