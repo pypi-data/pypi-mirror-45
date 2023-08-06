@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+ah_bootstrap.py
+setup.cfg
+setup.py
+atomicdataMB/__init__.py
+atomicdataMB/configure_database.py
+atomicdataMB/g_values.py
+atomicdataMB/make_photo_table.py
+atomicdataMB/version.py
+atomicdataMB.egg-info/PKG-INFO
+atomicdataMB.egg-info/SOURCES.txt
+atomicdataMB.egg-info/dependency_links.txt
+atomicdataMB.egg-info/entry_points.txt
+atomicdataMB.egg-info/not-zip-safe
+atomicdataMB.egg-info/requires.txt
+atomicdataMB.egg-info/top_level.txt
