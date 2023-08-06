@@ -1,0 +1,9 @@
+lpfgopt/VERSION.txt,sha256=Tod6O4oWSxO5hym1qaEnuM04Dr5NSmcj_Vk2KkAitfA,7
+lpfgopt/__init__.py,sha256=MWzNKs1Rn_ywdgSoYgG_9T8Wb2vU5_-4nv_QvuYlFU4,5092
+lpfgopt/leapfrog.py,sha256=Y9aq4DXeOTXVLCySuxEZDnD7_mKE9AYDuKozNqzn_X4,15556
+lpfgopt/scipy_min.py,sha256=obmpoJ7VvENk_wT29JTTyLN3y8H-2M09bzDB5io_cwE,1699
+lpfgopt_lite-0.9.1.dist-info/LICENCE.txt,sha256=yo8ShVvob1wyuSHs6pnzAGKY7gq3B1VbX8sKAeSibkA,1114
+lpfgopt_lite-0.9.1.dist-info/METADATA,sha256=FPGmKLK_obNjaLg8xKu9jkqjeMzpULj7iblcFIpTYdM,8167
+lpfgopt_lite-0.9.1.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+lpfgopt_lite-0.9.1.dist-info/top_level.txt,sha256=-R4nCk2yibOYuKiuHLmrvwMa8FQh8GVeg9NuFwGKmds,8
+lpfgopt_lite-0.9.1.dist-info/RECORD,,
