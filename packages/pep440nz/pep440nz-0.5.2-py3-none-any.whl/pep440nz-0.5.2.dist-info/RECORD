@@ -1,0 +1,10 @@
+pep440nz/__init__.py,sha256=ZF7Shz7V_oknjGSsxuXj1w7mJ0C_i33GuBER72XATY8,139
+pep440nz/__version__.py,sha256=23wiypc2lkNO2EylLHIKOhbQ1bML304gQterTmkWvMg,16
+pep440nz/git.py,sha256=_Bh_Qv5aoY2PcBQcYkTs4vYdbV--nQxowFTrqQ9J_WE,5746
+pep440nz/version.py,sha256=oYXoZOgyMLh0d4FE10ATuu77jbD10bFspl_9GANwLpM,21055
+pep440nz-0.5.2.data/data/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pep440nz-0.5.2.dist-info/METADATA,sha256=J5rCUQ8i9Tx5QA_mRA9Jzk_UmsEhixSnDI2LwP1NuwQ,818
+pep440nz-0.5.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pep440nz-0.5.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pep440nz-0.5.2.dist-info/top_level.txt,sha256=SSATnEtHT0i43sHGVkF2UQmFHKvSG7JS45EUVymkeEI,9
+pep440nz-0.5.2.dist-info/RECORD,,
