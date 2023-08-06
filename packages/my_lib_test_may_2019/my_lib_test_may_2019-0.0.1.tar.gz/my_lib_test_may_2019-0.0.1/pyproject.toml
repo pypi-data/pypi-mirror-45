@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "my_lib_test_may_2019"
+author = "Matthias Bussonnier"
+author-email = "mbussonnier@ucmerced.edu"
+home-page = "https://github.com/Carreau/my_lib_test_may_2019"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
