@@ -1,0 +1,12 @@
+numpy
+torch>=1.0.0
+
+[all]
+obspy
+scipy
+tqdm
+
+[testing]
+pytest
+pytest-cov
+obspy
