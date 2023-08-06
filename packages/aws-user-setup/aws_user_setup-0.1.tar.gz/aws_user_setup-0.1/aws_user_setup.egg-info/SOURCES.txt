@@ -1,0 +1,7 @@
+setup.py
+aws_user_setup/__init__.py
+aws_user_setup.egg-info/PKG-INFO
+aws_user_setup.egg-info/SOURCES.txt
+aws_user_setup.egg-info/dependency_links.txt
+aws_user_setup.egg-info/not-zip-safe
+aws_user_setup.egg-info/top_level.txt

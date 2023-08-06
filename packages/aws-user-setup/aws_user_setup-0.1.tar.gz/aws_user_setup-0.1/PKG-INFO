@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aws_user_setup
+Version: 0.1
+Summary: Setup users defined in a yml file
+Home-page: http://www.advantest.com
+Author: Alexander von Renteln
+Author-email: alexander.vonrenteln@advantest.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
