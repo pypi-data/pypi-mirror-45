@@ -1,0 +1,13 @@
+coinor.dippy-1.92.3-py3.7-nspkg.pth,sha256=Fmbts1gCq_YPfy4Sc72GmybBeiN4mdxeSpKixoZwm90,540
+coinor/dippy/__init__.py,sha256=5AO5_OW06FJ4pfTId0n04VRMsO6W0tmgjh23CeZFjSI,134
+coinor/dippy/_dippy.cp37-win_amd64.pyd,sha256=R5YDaK8yGnIS1xnFmcie3PoHst3La8Ztn7euK_bRRr0,4892672
+coinor/dippy/dipapi.py,sha256=Mx9ivQNo2-41oei2l5eOxv5kPBXqv3_ybRl9cEwFgYg,6161
+coinor/dippy/dippy.py,sha256=-7NguN2dFum_JLb9Hns2rPQpVnR3KgLJ7t2xoJpTeTQ,40570
+coinor/dippy/examples/__init__.py,sha256=Il5Q9ATdX8yXqVxtP_nYqUhExzxPC_qk_WXQ_4h0exg,16
+coinor.dippy-1.92.3.dist-info/AUTHORS,sha256=KkCc-S5j4WqXCitQfoaGE8hKBmoNZ91HL6lcPXZEW0w,161
+coinor.dippy-1.92.3.dist-info/LICENSE,sha256=4cz4u3biYvZWWF9Q-NkRlcamgvVUxQaGUA7yPHk1BWg,11356
+coinor.dippy-1.92.3.dist-info/METADATA,sha256=kxihbdV7AWO7ThWOtJ-N3SMNB_P5rEl-rXBJzri20i4,12088
+coinor.dippy-1.92.3.dist-info/WHEEL,sha256=qpJVJz3f_oih5sb10CVod9jCddHwxilziZPn0B8tgFQ,106
+coinor.dippy-1.92.3.dist-info/namespace_packages.txt,sha256=t0qxgzTiMvX83xCQZlBA4QORwdYfnVd5rJUTT7X3pLI,7
+coinor.dippy-1.92.3.dist-info/top_level.txt,sha256=t0qxgzTiMvX83xCQZlBA4QORwdYfnVd5rJUTT7X3pLI,7
+coinor.dippy-1.92.3.dist-info/RECORD,,
