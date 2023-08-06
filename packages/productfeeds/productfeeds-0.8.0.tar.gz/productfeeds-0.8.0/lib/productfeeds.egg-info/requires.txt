@@ -1,0 +1,7 @@
+setuptools
+pyyaml
+requests
+nose
+mock
+requests_mock
+pymysql
