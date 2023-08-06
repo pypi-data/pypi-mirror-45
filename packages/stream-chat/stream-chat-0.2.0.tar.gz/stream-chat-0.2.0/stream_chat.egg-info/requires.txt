@@ -1,0 +1,9 @@
+pycryptodomex==3.4.7
+requests<3,>=2.3.0
+pyjwt==1.7.1
+six>=1.8.0
+
+[test]
+pytest==4.4.1
+pytest-cov
+codecov
