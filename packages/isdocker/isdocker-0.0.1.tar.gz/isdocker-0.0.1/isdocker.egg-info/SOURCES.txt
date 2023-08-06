@@ -1,0 +1,8 @@
+README.md
+setup.py
+isdocker/__init__.py
+isdocker/check.py
+isdocker.egg-info/PKG-INFO
+isdocker.egg-info/SOURCES.txt
+isdocker.egg-info/dependency_links.txt
+isdocker.egg-info/top_level.txt
