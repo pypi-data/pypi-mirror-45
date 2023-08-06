@@ -1,0 +1,9 @@
+asvprotobuf/__init__.py,sha256=J0SoA7FZTTpbZH_g6htYbBGehQi8yHV8l7Z87d82fGo,89
+asvprotobuf/nav_pb2.py,sha256=E5knEbLjFjNe0MGVb72TRtTdJdDNExmRLnymMjQdIZ0,8521
+asvprotobuf/sensor_pb2.py,sha256=QKQBUMsHgBtRQI2w7EKa0JtFdMxufpwdCP0zGxeEMU4,22423
+asvprotobuf/std_pb2.py,sha256=oR7qLdXho4NOtpnQr1N9V-PW4IacxV34V75WaPASJVc,13519
+asvprotobuf-0.3.15.dist-info/METADATA,sha256=_QMkgnq_aw-77Im8phcJleC8YH4R2CG0ppUsD9B63gg,1094
+asvprotobuf-0.3.15.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+asvprotobuf-0.3.15.dist-info/top_level.txt,sha256=NGCU-rjYdr_vuthyCwrnT0-Uo7DOSN6sZjsI1rDTkS4,12
+asvprotobuf-0.3.15.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+asvprotobuf-0.3.15.dist-info/RECORD,,
