@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: integer-lang
+Version: 1.0.2
+Summary: A terrible interpreter for the INTEGER programming language
+Home-page: UNKNOWN
+Author: Prof Apex
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
