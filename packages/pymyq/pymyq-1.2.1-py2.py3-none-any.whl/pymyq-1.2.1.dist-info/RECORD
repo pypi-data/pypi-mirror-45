@@ -1,0 +1,10 @@
+pymyq/__init__.py,sha256=_ROcidOWunMV1jB--ge_zo7sQRfzgKisYmUq8EjVzj8,66
+pymyq/__version__.py,sha256=sdGOJ2H4x6M65ERch8Ow1Wa75Kbunux_yCTNZF31ovM,55
+pymyq/api.py,sha256=GJOigUdzdmZ1VKd_UgjWOb5wgKyGvm9ruA6bsE8Almg,10430
+pymyq/device.py,sha256=eOEJiPZUE7PbGGJX6SKh79ktYm2qa5LW59phjVbFZzE,6957
+pymyq/errors.py,sha256=zQ4b52NPtp1aHd3SOzlawP_mJo8MKmz45w6nXIfru2M,313
+pymyq-1.2.1.dist-info/LICENSE,sha256=7LEjGXNen8aN_340xfVIysz2ZIQHxBVk2XofUO209fQ,1066
+pymyq-1.2.1.dist-info/METADATA,sha256=WNTWwPS0RY_5DckYW7ogM-39N1FOKzk5sZFaB2Mfieo,3205
+pymyq-1.2.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+pymyq-1.2.1.dist-info/top_level.txt,sha256=Fyn4VerTHBnB1DVLIxYpzieJficnIlgyr-7lXJf4wXg,6
+pymyq-1.2.1.dist-info/RECORD,,
