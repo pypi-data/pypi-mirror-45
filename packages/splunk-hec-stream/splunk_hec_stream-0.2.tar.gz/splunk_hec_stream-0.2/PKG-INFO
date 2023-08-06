@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: splunk_hec_stream
+Version: 0.2
+Summary: Splunk HEC Stream
+Home-page: https://github.com/shuichiro-makigaki/splunk_hec_stream
+Author: Shuichiro MAKIGAKI
+Author-email: shuichiro.makigaki@gmail.com
+License: MIT License
+Description: # Splunk HEC Stream
+        
+        Streaming logging handler for Splunk HEC
+        
+        ## Example
+        
+        ```python
+        import logging
+        import json
+        from datetime import datetime
+        
+        from splunk_hec_stream.logging import SplunkHECStreamHandler
+        
+        
+        logging.basicConfig(
+            level=logging.INFO,
+            handlers=[SplunkHECStreamHandler("main", "splunk-logger-test", "aws:lambda", "_json")]
+        )
+        
+        logging.info({"key1": "value1"})
+        logging.info("test")
+        logging.info('''test
+        ln''')
+        logging.info(json.dumps({"key1": "value1"}))
+        # You can overwrite logging time by _time extra key (must be float)
+        logging.info({"key": "value"}, extra={'_time': datetime.utcnow().timestamp()})
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
