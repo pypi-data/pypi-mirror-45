@@ -1,0 +1,7 @@
+README.md
+setup.py
+dockercomposeHelp.egg-info/PKG-INFO
+dockercomposeHelp.egg-info/SOURCES.txt
+dockercomposeHelp.egg-info/dependency_links.txt
+dockercomposeHelp.egg-info/requires.txt
+dockercomposeHelp.egg-info/top_level.txt
