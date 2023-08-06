@@ -1,0 +1,11 @@
+user_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_sdk/domain.py,sha256=mZgU2nh5lrTigfB1ms_RgJLydCwkvSZ1BrPoFwZyweY,2289
+user_sdk/error.py,sha256=zQ4w2g_CMdzBbmuIv2kWGvYQOHNCmrjXEAlLk70RSlw,769
+user_sdk/log.py,sha256=QA_LFH6G625VHhdSua2ZOHZBNhURNdNIPfd6il9NNJY,422
+user_sdk/test_user.py,sha256=q3l9Lx0u9DjIS8J_wveXmrmKyBIYOsypmi1bE1VXS3A,4384
+user_sdk/user.py,sha256=JXwMmYEETJwCWz50-akeynq9ZihyKQnNLreb_KFrmWc,12007
+user_sdk/user_service.py,sha256=gIVKbJWZ4j6MSzKJPBvbmDCPsUMYdX9kGOmTP5PV0tI,11299
+user_sdk-0.0.23.dist-info/METADATA,sha256=Z2kuF3fsqoJC8g7012q8ZE69HJ5EvGC0ev0q57afIZ8,709
+user_sdk-0.0.23.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+user_sdk-0.0.23.dist-info/top_level.txt,sha256=EQcvEoOJHPSSg7JRFP2oQxRDQiidMHiaA2F0n6y-aqM,9
+user_sdk-0.0.23.dist-info/RECORD,,
