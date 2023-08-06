@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: yamlargparse
+Version: 1.0.0
+Summary: Parsing of command line options, yaml config files and/or environment variables based on argparse.
+Home-page: UNKNOWN
+Author: Mauricio Villegas
+Author-email: mauricio@omnius.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyYAML (>=3.13)
+
+yamlargparse python module
+==========================
+
+This module is an extension to python's argparse which simplifies parsing of
+configuration options from command line arguments, yaml configuration files,
+environment variables and hard-coded defaults.
+
+The aim is similar to other projects such as `configargparse
+<https://pypi.org/project/ConfigArgParse/>`_, `yconf
+<https://pypi.org/project/yconf/>`_ and `confuse
+<https://pypi.org/project/confuse/>`_. The obvious question is, why yet another
+module similar to many already existing ones? The answer is simply that none of
+the existing projects had the exact features we wanted and after analyzing the
+alternatives it seemed simpler to create a new module.
+
+
+Contact
+-------
+
+- Mauricio Villegas <mauricio@omnius.com>
+
+
