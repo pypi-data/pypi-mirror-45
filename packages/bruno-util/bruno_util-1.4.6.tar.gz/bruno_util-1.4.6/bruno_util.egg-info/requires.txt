@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+numba
+pscan
+multi_locus_analysis
