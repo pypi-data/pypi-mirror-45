@@ -1,0 +1,1 @@
+from pardec.base import ParallelDecoder
