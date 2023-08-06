@@ -1,0 +1,3 @@
+[console_scripts]
+test_mrb-configure = test_mrb.configure:main
+

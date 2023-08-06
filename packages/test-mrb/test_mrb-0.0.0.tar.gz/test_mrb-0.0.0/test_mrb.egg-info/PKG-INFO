@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: test-mrb
+Version: 0.0.0
+Summary: My test package
+Home-page: https://mbarney.me
+Author: Michael Barney
+Author-email: mbarneyme@gmail.com
+License: MIT
+Description: # Test MRB
+        
+        This is my test package!
+        
+        ```
+        Look at me go!
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
