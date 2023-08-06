@@ -1,0 +1,9 @@
+jsii~=0.10.3
+publication>=0.0.3
+aws-cdk.aws-cloudformation~=0.30.0
+aws-cdk.aws-codebuild~=0.30.0
+aws-cdk.aws-codepipeline~=0.30.0
+aws-cdk.aws-codepipeline-actions~=0.30.0
+aws-cdk.aws-iam~=0.30.0
+aws-cdk.cdk~=0.30.0
+aws-cdk.cx-api~=0.30.0
