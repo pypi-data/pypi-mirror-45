@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: easy_logging
+Version: 0.0.1
+Summary: A quick Log Package
+Home-page: https://github.com/ganeshraja10/easy_logging
+Author: Ganesh
+Author-email: ganeshraja1010@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ganeshraja10/easy_logging/archive/0.0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
