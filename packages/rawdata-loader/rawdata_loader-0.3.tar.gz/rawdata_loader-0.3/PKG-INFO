@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: rawdata_loader
+Version: 0.3
+Summary: Tools for Guardian raw data handling
+Home-page: UNKNOWN
+Author: Noam Nisenholz
+Author-email: noamholz@guardian-optech.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
