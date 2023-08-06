@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: testbench
+Version: 0.1.2
+Summary: Integration Testing with Python and VirtualBox 
+Home-page: https://github.com/aheck/testbench
+Author: Andreas Heck
+Author-email: aheck@gmx.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pyvbox
+Requires-Dist: paramiko
+
+UNKNOWN
+
+
