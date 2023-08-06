@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: balsam-flow
+Version: 0.3.5
+Summary: HPC Workflows & Edge Service
+Home-page: https://balsam.readthedocs.io
+Author: Misha Salim, Thomas Uram, Taylor Childers
+Author-email: msalim@anl.gov
+License: BSD 3-Clause License
+Project-URL: Source, https://github.com/balsam-alcf/balsam
+Project-URL: Documentation, https://balsam.readthedocs.io
+Keywords: workflows,hpc,scientific,workflow
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: django (==2.1.1)
+Requires-Dist: jinja2
+Requires-Dist: psycopg2-binary
+Requires-Dist: mpi4py
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: numpy
+
+<p align="center">
+<img align="center" src="docs/_static/logo/small3.png">
+</p>
+
+# Balsam: HPC Workflows & Edge Service
+
+![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/balsam-alcf/balsam.svg?label=version)
+[![Documentation Status](https://readthedocs.org/projects/balsam/badge/?version=latest)](https://balsam.readthedocs.io/en/latest/?badge=latest)
+![PyPI - License](https://img.shields.io/pypi/l/deephyper.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/deephyper.svg?label=Pypi%20downloads)
+
+
+Balsam makes it easy to manage large compute campaigns on a supercomputer:
+- Many independent application runs (i.e. classic ensemble jobs)
+- Many instances of workflows, with inter-task dependencies forming graphs
+- Dynamic workflows, where some tasks spawn other tasks with the Python API
+- Remotely submit workflows and track their progress
+- Multi-user workflow management
+
+Use a command-line interface or Python API to fill a database with a few dozen
+or million tasks.  The Balsam components will automatically bundle your work
+and talk to the system scheduler to allocate resources.  On the inside, a pilot
+*launcher* process executes your workflows and keeps you informed of what's
+going on.
+
+**Read the Balsam Documentation online at** [balsam.readthedocs.io](https://balsam.readthedocs.io/en/latest/)!
+
+
+## Installation
+
+#### Prerequisites
+Balsam requires Python 3.6 or later.  You will need setuptools 39.2 or newer:
+
+```console
+$ pip install --upgrade pip setuptools
+```
+
+Some Balsam components require `mpi4py`, so it is best to install Balsam in an
+environment with [mpi4py](https://github.com/mpi4py/mpi4py) already in place
+and configured for your platform.  At the very least, a working MPI
+implementation and `mpicc` compiler wrapper should be in the search path so
+that the dependency can be automatically installed.
+
+Cython is also used to compile some CPU-intensive portions of the Balsam
+service.  While the Cython dependency will also be installed if it's absent, it
+is preferable to have an existing version built with your platform-tuned compiler wrappers.
+
+
+#### Quick setup
+
+```console
+$ pip insall balsam-flow
+$ balsam init ~/myWorkflow
+$ source balsamactivate myWorkflow
+```
+
+## Citing Balsam
+If you are referencing Balsam in a publication, please cite the following paper:
+
+-  M. Salim, T. Uram, J.T. Childers, P. Balaprakash, V. Vishwanath, M. Papka. *Balsam: Automated Scheduling and Execution of Dynamic, Data-Intensive HPC Workflows*. In Proceedings of the 8th Workshop on Python for High-Performance and Scientific Computing. ACM Press, 2018.
+
+BSD 3-Clause License
+
+Copyright (c) 2019, UChicago Argonne LLC
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of UChicago Argonne LLC nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
