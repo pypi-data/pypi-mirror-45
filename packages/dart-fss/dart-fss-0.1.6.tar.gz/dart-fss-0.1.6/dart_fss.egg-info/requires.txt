@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+lxml
+tqdm
+beautifulsoup4
+isodate
+arelle
+fake-useragent
