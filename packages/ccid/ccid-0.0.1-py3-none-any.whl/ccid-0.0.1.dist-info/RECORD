@@ -1,0 +1,9 @@
+ccid/VERSION,sha256=5mNQReHSR47EynEtjA4d_O-Lt7Wx6OO7Vg03_jmannI,6
+ccid/__init__.py,sha256=pjaPcdnsLoxB83uNRuTsC6muxCsMrvok-fCiVEnSINk,514
+ccid/cli/__init__.py,sha256=VbRxawHIM1uYncKXH9CX-QibWKOVF-dTU7g_ELEwcFo,562
+ccid-0.0.1.dist-info/entry_points.txt,sha256=HDEAulFGULjDqZAnrdLDyjp5l_dp4DRjBP_i05-BjM0,42
+ccid-0.0.1.dist-info/LICENSE-APACHE,sha256=TRD-XzqhdrBbIpokiGa61wuDTBc_ElKoFP9HSNihODc,10255
+ccid-0.0.1.dist-info/LICENSE-MIT,sha256=I_GOA9xJ35FiL-KnYXZJdATkbO2KcV2dK2enRGVxzKM,1023
+ccid-0.0.1.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+ccid-0.0.1.dist-info/METADATA,sha256=TYK2rcpgfPRE4SoRAeOavYdottOwyAqOVmlVvwjKvFw,613
+ccid-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+ccid=ccid.cli:ccid_cli
+
