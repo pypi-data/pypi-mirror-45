@@ -1,0 +1,8 @@
+README.md
+setup.py
+dervilopdf/__init__.py
+dervilopdf/pdf2text.py
+dervilopdf.egg-info/PKG-INFO
+dervilopdf.egg-info/SOURCES.txt
+dervilopdf.egg-info/dependency_links.txt
+dervilopdf.egg-info/top_level.txt
