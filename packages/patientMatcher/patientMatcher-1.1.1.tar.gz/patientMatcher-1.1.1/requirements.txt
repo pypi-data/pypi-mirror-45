@@ -1,0 +1,13 @@
+## server
+Flask
+Flask-Mail
+Flask-Negotiate
+requests
+jsonschema
+
+## database connection
+pymongo<3.7
+
+##backend
+enlighten
+clint
