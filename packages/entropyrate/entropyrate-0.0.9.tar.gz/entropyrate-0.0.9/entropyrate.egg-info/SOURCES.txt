@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+version.py
+entropyrate/__init__.py
+entropyrate/entropyrate.py
+entropyrate.egg-info/PKG-INFO
+entropyrate.egg-info/SOURCES.txt
+entropyrate.egg-info/dependency_links.txt
+entropyrate.egg-info/requires.txt
+entropyrate.egg-info/top_level.txt
+entropyrate/bin/entropy
+entropyrate/bin/entropy.cfg
+example/script.py
+example/test.dat
