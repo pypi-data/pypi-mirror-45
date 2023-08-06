@@ -1,0 +1,12 @@
+plz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plz/config.py,sha256=c3L0DX5eTSLQUPoM9UVpTX9TNbaAxucEicbA1N5ofvE,834
+plz/glob_tools.py,sha256=rrKlLnHu1nkHg2C1SbzWjgdD9AzwNNJ6AbmKgZl_cO4,1378
+plz/main.py,sha256=FnEMQ0u6Uspy4O7akr_q7EDR8CO_MX7UjCS_bfkEzjQ,897
+plz/runner.py,sha256=U3eO6PCn08Fo0FU2p3EbyxT2nzZVz5XrNzt8THyWoo4,2225
+plz/util.py,sha256=wnc0knqITZ3DhAWHVCpwsi2a8UbdhQVzSoxDvvFmqqk,2946
+plz_cmd-0.5.2.dist-info/LICENSE,sha256=6iyifLp8w1gi2VpG1ZvNPMiOGWWS5jkNGUmjWf_JkOg,1092
+plz_cmd-0.5.2.dist-info/METADATA,sha256=yHw3nog4Zzj609Pveozl48mRH-hWLNh9qxXyG3OhuTo,3435
+plz_cmd-0.5.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+plz_cmd-0.5.2.dist-info/entry_points.txt,sha256=_-N7EpMZK05W4Bk6cU_NxOk1Q4JzgHrZIzW8f4Ig60w,39
+plz_cmd-0.5.2.dist-info/top_level.txt,sha256=Nc47eSmiN8zpKP6Ov4-UsNxRGLFv3Pmzj9E75AtfM84,4
+plz_cmd-0.5.2.dist-info/RECORD,,
