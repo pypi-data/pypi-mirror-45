@@ -1,0 +1,1062 @@
+# coding: utf-8
+# 因素空间模块
+
+import os
+import numpy as np
+import itertools
+#####################################
+
+#样例数据
+data=np.array([[1,1,3,2],[2,1,1,2],[3,2,2,3],[2,1,3,2],[1,3,2,3],[1,3,2,1],[3,2,4,3],[2,2,4,3],[2,1,1,1]])
+label=np.array([2,1,1,1,2,1,2,2,1])
+
+#####################################
+
+#因果排序
+def causal_order(rules_set,weights):
+
+    #返回概念格
+    weights=np.array(weights)
+    weights=np.append(weights,-1)    
+    zero_index=np.where(weights==0)
+    weight_index=np.argsort(weights)
+    zero_mask=np.in1d(weight_index,zero_index)
+    filter_mask=np.where(zero_mask==True)
+    rules_set=np.array(rules_set)
+    rules_set=rules_set[:,weight_index]
+    rules_set=rules_set[np.lexsort(rules_set.T)]
+    weight_index=np.delete(weight_index,filter_mask)
+    rules_set=np.delete(rules_set,filter_mask,axis=1)
+    rules_set=rules_set[:,::-1]
+    weight_index=weight_index[::-1]
+    weight_index=np.delete(weight_index,-1)
+    causality=rules_set.tolist()
+    weights=weight_index.tolist()
+    return causality,weights 
+
+#####################################
+
+#阶乘函数
+def func(n):
+
+    #递归计算
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return (n * func(n - 1))
+
+#####################################
+
+#读取UCI数据集
+def load(filename,start_index=2,none_value='0'):
+
+    #判断文件不存在
+    if not os.path.exists(filename):  
+        print("ERROR: file not exit: %s" % (filename))  
+        return None  
+
+    #判断不是文件
+    if not os.path.isfile(filename):  
+        print("ERROR: %s not a filename." % (filename))  
+        return None  
+
+    #定义变量  
+    data = []
+    label = []
+    file = open(filename)
+    si=start_index-1
+
+    #生成数据集
+    for line in file:
+        line = line.strip('\n')
+        line = line.replace(',?',','+none_value)
+        split_data = line.split(',')
+        data_len=len(split_data)-start_index+1
+        data.append(list(map(float,split_data[si:data_len])))
+        label.append(float(split_data[-1]))
+
+    #返回数据集
+    file.close()  
+    data = np.array(data)
+    label = np.array(label)
+    return data,label
+
+#####################################
+
+#精度
+def accuracy(rules_set,test_data,test_label,none_value=-1,reverse=False,number=False,similar=False,weights=[],knn=False):
+
+    #定义变量
+    correct=0
+    total=0
+
+    #判断使用相似规则推理
+    if similar==False and knn==False:
+
+        #遍历测试数据
+        for i in range(len(test_data)):
+
+            #进行规则推理
+            if predict(rules_set,test_data[i],none_value=none_value,reverse=reverse)==test_label[i]:
+                correct+=1
+            total+=1
+            
+    elif similar==True:
+
+        if len(weights)==0 or len(weights)!=(len(rules_set[0])-1):
+            return 0.
+
+        #遍历测试数据
+        for i in range(len(test_data)):            
+
+            #进行规则推理
+            if similar_predict(rules_set,test_data[i],none_value=none_value,reverse=reverse,weights=weights)==test_label[i]:
+                correct+=1
+            total+=1
+            
+    elif knn==True:
+
+        #遍历测试数据
+        for i in range(len(test_data)):            
+
+            #进行规则推理
+            if knn_predict(rules_set,test_data[i],none_value=none_value,reverse=reverse)==test_label[i]:
+                correct+=1
+            total+=1
+        
+
+    #判断返回正确数量    
+    if number==True:
+        return correct
+
+    #返回精度
+    if total==0:
+        return 0.
+    return correct/total
+
+    
+
+#####################################
+
+#规则推理
+def predict(rules_set,data,none_value=-1,reverse=False):
+
+    #定义临时变量
+    np_data=np.asarray(data)    
+    count=len(rules_set)
+    
+    #判断反向规则集推理
+    if reverse==True:
+        reverse_count=count
+
+        #遍历规则集
+        for i in range(count):
+            reverse_count-=1
+            rule=np.asarray(rules_set[reverse_count])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[reverse_count][-1]    
+    else:
+
+        #遍历规则集
+        for i in range(count):
+            rule=np.asarray(rules_set[i])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[i][-1]
+    
+#####################################
+
+#相似规则推理
+def similar_predict(rules_set,data,none_value=-1,reverse=False,weights=[]):
+
+    #定义临时变量
+    similar_results=[0]*len(rules_set)
+    weights=np.array(weights)
+    np_data=np.asarray(data)    
+    count=len(rules_set)    
+    
+    #判断反向规则集推理
+    if reverse==True:
+        reverse_count=count
+
+        #遍历规则集
+        for i in range(count):
+            reverse_count-=1
+            rule=np.asarray(rules_set[reverse_count])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            similar_results[reverse_count]=np.sum(weights[np_data==rule])
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[reverse_count][-1]
+        return rules_set[np.argmax(similar_results)][-1]
+            
+    else:
+
+        #遍历规则集
+        for i in range(count):
+            rule=np.asarray(rules_set[i])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            similar_results[i]=np.sum(weights[np_data==rule])
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[i][-1]
+        return rules_set[np.argmax(similar_results)][-1]
+    
+#####################################
+
+#最邻近规则推理
+def knn_predict(rules_set,data,none_value=-1,reverse=False):
+
+    #定义临时变量
+    knn_results=[0]*len(rules_set)
+    np_data=np.asarray(data)    
+    count=len(rules_set)    
+    
+    #判断反向规则集推理
+    if reverse==True:
+        reverse_count=count
+
+        #遍历规则集
+        for i in range(count):
+            reverse_count-=1
+            rule=np.asarray(rules_set[reverse_count])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            knn_results[reverse_count]=np.sqrt(np.sum((np_data[rule!=none_value]-rule[rule!=none_value])**2))
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[reverse_count][-1]
+        return rules_set[np.argmin(knn_results)][-1]
+            
+    else:
+
+        #遍历规则集
+        for i in range(count):
+            rule=np.asarray(rules_set[i])
+            rule=np.delete(rule,-1)
+
+            #返回匹配结果
+            
+            knn_results[i]=np.sqrt(np.sum((np_data[rule!=none_value]-rule[rule!=none_value])**2))
+            if np.sum(np_data==rule)==np.sum(rule!=none_value):
+                return rules_set[i][-1]
+        return rules_set[np.argmin(knn_results)][-1]
+    
+#####################################
+
+#删除缺失值数集
+def delete_none_value(train_data,train_label,none_value):
+
+    train_data=np.array(train_data)
+    train_label=np.array(train_label)
+    delete_index=[]
+    
+    for i in range(len(train_data)):
+        if np.sum(train_data[i]==none_value)>0:
+            delete_index.append(i)
+
+    train_data=np.delete(train_data,delete_index,axis=0)
+    train_label=np.delete(train_label,delete_index,axis=0)
+
+    return train_data,train_label
+    
+    
+        
+        
+
+#####################################
+
+#整理数据集
+def clean_data(train_data,train_label,data_num=-1):
+
+    #数据集去重
+    train_data=np.array(train_data)
+    train_label=np.array(train_label)
+    train_data,indexes=np.unique(train_data,axis=0,return_index=True)
+    train_label=train_label[indexes]
+
+    #返回数据集
+    if data_num<=0:
+        return train_data,train_label
+
+    #随机返回部分数据集
+    if data_num<=len(train_data):
+        batch_mask = np.random.choice(len(train_data), data_num, replace=False)
+        train_data = train_data[batch_mask]
+        train_label = train_label[batch_mask]
+        return train_data,train_label
+
+    #随机返回重复数据集
+    if data_num>len(train_data):
+        batch_mask = np.random.choice(len(train_data), data_num, replace=True)
+        train_data = train_data[batch_mask]
+        train_label = train_label[batch_mask]
+        return train_data,train_label
+        
+        
+
+#####################################
+
+#最大规则算法
+def max_rules(train_data,train_label,none_value=-1,train_times=10000,used_factors=False,full_rules=False,simple=False,strict=False,expand=False,similar_first=False):
+
+    #初始化变量
+    data=np.array(train_data)
+    label=np.array(train_label)
+    factor_num=data.shape[1]
+    factor_classes=[]
+    trained_factors=np.array([])
+    used_factor_set=np.array([])
+    delete_list=[]
+    rule=[none_value]*(factor_num+1)
+    rules_set=[]
+    rules_set_part=[]
+    decide_data=np.full(data.shape,none_value)
+    decide_label=np.full(label.shape,none_value)
+
+    #判断不启用全规则算法
+    if full_rules==False:
+        comb_num=1
+        
+        #一次数据收敛
+        for i in range(train_times):
+            delete_list=[]
+            rules_set_part=[]
+            trained_factors=np.array([])
+            last_data_num=len(data)
+            decide_data=np.full(data.shape,none_value)
+            decide_label=np.full(label.shape,none_value)
+            final_count=len(used_factor_set)
+            rules=[]
+
+            ###
+            factor_index=list(range(factor_num))
+            combinations=list(itertools.combinations(factor_index,comb_num))
+                        
+            #生成因素分类构建决定表    
+            for j in range(len(combinations)):
+                factor_classes=[]
+
+                ###
+                factor_count=len(combinations[j])
+                factor_value=[0.]*len(data)
+                factor_value=np.array(factor_value)
+                rule=[none_value]*(factor_num+1)
+
+                #确定分类值
+                for k in range(factor_count):
+                    factor_value+=data[:,combinations[j][k]]**(1/(k+1))
+                    
+                #按照一个因素分类
+                for k in np.unique(factor_value):
+                    factor_classes.append(np.where(factor_value==k))
+
+                #遍历一个因素的每个类
+                for k in range(len(factor_classes)):
+
+                    #判断一个类是决定类
+                    if len(np.unique(label[factor_classes[k]]))==1:
+
+                        #生成推理规则
+                        for l in range(factor_count):
+                            rule[combinations[j][l]]=data[factor_classes[k][0][0]][combinations[j][l]]
+                            rule[-1]=label[factor_classes[k][0][0]]
+                            trained_factors=np.append(trained_factors,combinations[j][l])
+                            trained_factors=np.unique(trained_factors)
+
+                        #构建推理规则集
+                        rules.append(rule.copy())
+                
+                        #构建收敛表和决定表
+                        for l in range(factor_count): 
+
+                            for m in range(len(factor_classes[k][0])):
+                                delete_list.append(factor_classes[k][0][m])
+                                decide_data[factor_classes[k][0][m]][combinations[j][l]]=data[factor_classes[k][0][m]][combinations[j][l]]
+                                decide_label[factor_classes[k][0][m]]=label[factor_classes[k][0][m]]
+
+            
+            #遍历全部因素组合数量
+            if comb_num==1 and simple==False:
+                for j in range(2,factor_num+1):
+                
+                    #遍历决定表
+                    for k in range(len(decide_data)):
+                        data_factor_use=np.where(decide_data[k]!=none_value)[0]
+                        decide_num=len(data_factor_use)
+
+                        #判断无生成规则
+                        if decide_num==0:
+                            continue
+
+                        #构建当前数据所有组合                    
+                        combinations=list(itertools.combinations(data_factor_use,j))
+                    
+                        #遍历所有组合
+                        for l in combinations:
+                            factor_count=len(l)
+                            rule=[none_value]*(factor_num+1)
+
+                            #判断严格规则集
+                            if strict==False:
+                        
+                                #生成当前因素规则
+                                for m in range(factor_count):
+                                    rule[l[m]]=decide_data[k][l[m]]
+                                    rule[-1]=decide_label[k]
+                                    trained_factors=np.append(trained_factors,l[m])
+                                    trained_factors=np.unique(trained_factors)
+
+                                #加入生成规则
+                                rules.append(rule.copy())
+
+                            else:
+
+                                #停止扩大规则集
+                                expand=False
+                            
+                                #生成之前因素规则
+                                for m in range(final_count):
+                                    rule[int(used_factor_set[m])] = data[k][int(used_factor_set[m])]
+
+                                #生成当前因素规则
+                                for m in range(factor_count):
+                                    rule[l[m]]=decide_data[k][l[m]]
+                                    rule[-1]=decide_label[k]
+                                    trained_factors=np.append(trained_factors,l[m])
+                                    trained_factors=np.unique(trained_factors)
+
+                                #加入生成规则    
+                                rules.append(rule.copy())
+                            
+
+                            #判断扩大规则集
+                            if expand==True:
+
+                                #生成之前因素规则
+                                for m in range(final_count):
+                                    rule[int(used_factor_set[m])] = data[k][int(used_factor_set[m])]
+
+                                #生成当前因素规则
+                                for m in range(factor_count):
+                                    rule[l[m]]=decide_data[k][l[m]]
+                                    rule[-1]=decide_label[k]
+
+                                #加入生成规则    
+                                rules.append(rule.copy())
+
+            if comb_num>1 and simple==False:
+
+                #遍历决定表
+                for k in range(len(decide_data)):
+                    data_factor_use=np.where(decide_data[k]!=none_value)[0]
+                    decide_num=len(data_factor_use)
+
+                    #判断无生成规则
+                    if decide_num==0:
+                        continue
+
+                    #构建当前数据所有组合                    
+                    combinations=list(itertools.combinations(data_factor_use,decide_num))
+
+                    #遍历所有组合
+                    for l in combinations:
+                        factor_count=len(l)
+                        rule=[none_value]*(factor_num+1)
+
+                        #判断严格规则集
+                        if strict==False:
+                        
+                            #生成当前因素规则
+                            for m in range(factor_count):
+                                rule[l[m]]=decide_data[k][l[m]]
+                                rule[-1]=decide_label[k]
+                                trained_factors=np.append(trained_factors,l[m])
+                                trained_factors=np.unique(trained_factors)
+
+                            #加入生成规则
+                            rules.append(rule.copy())
+
+                        else:
+
+                            #停止扩大规则集
+                            expand=False
+                            
+                            #生成之前因素规则
+                            for m in range(final_count):
+                                rule[int(used_factor_set[m])] = data[k][int(used_factor_set[m])]
+
+                            #生成当前因素规则
+                            for m in range(factor_count):
+                                rule[l[m]]=decide_data[k][l[m]]
+                                rule[-1]=decide_label[k]
+                                trained_factors=np.append(trained_factors,l[m])
+                                trained_factors=np.unique(trained_factors)
+
+                            #加入生成规则    
+                            rules.append(rule.copy())
+
+                        #判断扩大规则集
+                        if expand==True:
+
+                            #生成之前因素规则
+                            for m in range(final_count):
+                                rule[int(used_factor_set[m])] = data[k][int(used_factor_set[m])]
+
+                            #生成当前因素规则
+                            for m in range(factor_count):
+                                rule[l[m]]=decide_data[k][l[m]]
+                                rule[-1]=decide_label[k]
+
+                            #加入生成规则    
+                            rules.append(rule.copy())
+
+            #构建规则集
+            rules_set_part+=rules
+                
+            #构建约简因素集和收敛数据    
+            used_factor_set=np.append(used_factor_set,trained_factors)
+            used_factor_set=np.unique(used_factor_set)
+            data=np.delete(data,delete_list,axis=0)
+            label=np.delete(label,delete_list,axis=0)
+            #print('remain data:',len(data))
+
+            if comb_num>1:
+                comb_num=1
+
+            #判断规则库排序
+            if similar_first==True and len(rules_set_part)!=0:
+                rules_set_part=np.array(rules_set_part)
+                order_index=[0]*len(rules_set_part)
+                
+                #生成排序索引
+                for i in range(len(order_index)):
+                    order_index[i]=np.sum(rules_set_part[i]!=none_value)
+                    
+                #生成排序规则库
+                rules_set_part=rules_set_part[np.argsort(order_index)[::-1]].tolist()
+
+            #合并规则集
+            rules_set+=rules_set_part
+
+            #判断收敛完成
+            if len(data)==0:
+                break
+
+            #判断无法收敛改用多因素组合
+            if len(data)==last_data_num:
+                #print('use more f')
+                comb_num+=1
+
+                   
+
+        
+
+    #判断使用全规则算法
+    if full_rules==True:
+        
+        #遍历每一个因素
+        for i in range(factor_num):
+            factor_index=list(range(factor_num))
+            combinations=list(itertools.combinations(factor_index,i+1))
+
+            #构建每一种因素组合
+            for j in combinations:
+                factor_classes=[]
+                factor_count=len(j)
+                factor_value=[0.]*len(data)
+                factor_value=np.array(factor_value)
+                rule=[none_value]*(factor_num+1)
+
+                #确定分类值
+                for k in range(factor_count):
+                    factor_value+=data[:,j[k]]**(1/(k+1))
+
+                #构建分类表
+                for k in np.unique(factor_value):
+                    factor_classes.append(np.where(factor_value==k))
+
+                #遍历分类表
+                for k in range(len(factor_classes)):
+
+                    #判断决定类
+                    if len(np.unique(label[factor_classes[k]]))==1:
+
+                        #生成推理规则
+                        for l in range(factor_count):
+                            rule[j[l]]=data[factor_classes[k][0][0]][j[l]]
+                            rule[-1]=label[factor_classes[k][0][0]]
+
+                        #构建推理规则集    
+                        rules_set.append(rule.copy())
+
+                        #构建收敛表
+                        for l in range(len(factor_classes[k][0])):
+                            delete_list.append(factor_classes[k][0][l])
+
+        #生成约简因素集
+        used_factor_set=factor_index
+
+    #转换成整数因素集
+    used_factor_set=list(map(int,used_factor_set))
+
+    #判断返回约简因素集
+    if used_factors==True:
+        return rules_set,used_factor_set
+   
+    #返回规则集
+    return rules_set
+
+#####################################
+
+#差转算法
+def sub_rotate(train_data,train_label,none_value=-1,train_times=10000,used_factors=False,fast=False):
+
+    #初始化变量
+    data=np.array(train_data)
+    label=np.array(train_label)
+    factor_num=data.shape[1]
+    factor_classes=[]
+    trained_factors=np.array([])
+    used_factor_set=np.array([])
+    delete_list=[]
+    rule=[none_value]*(factor_num+1)
+    rules_set=[]
+
+    #判断不使用快速收敛
+    if fast==False:
+        comb_num=1
+        #comb_total=func(factor_num)/(func(factor_num-comb_num)*func(comb_num))
+        #decide_num=[0]*com_total
+
+        #一次数据收敛
+        for i in range(train_times):
+            delete_list=[]
+            trained_factors=np.array([])
+            last_data_num=len(data)
+            final_count=len(used_factor_set)            
+            factor_index=list(range(factor_num))
+            combinations=list(itertools.combinations(factor_index,comb_num))
+            decide_num=[0]*len(combinations)
+
+            #构建因素组合
+            for j in range(len(combinations)):
+                delete_list=[]
+                factor_classes=[]
+                factor_count=len(combinations[j])
+                factor_value=[0.]*len(data)
+                factor_value=np.array(factor_value)
+                rule=[none_value]*(factor_num+1)
+
+                #确定分类值
+                for k in range(factor_count):
+                    factor_value+=data[:,combinations[j][k]]**(1/(k+1))
+
+                #构建分类表
+                for k in np.unique(factor_value):
+                    factor_classes.append(np.where(factor_value==k))
+
+                #遍历分类表
+                for k in range(len(factor_classes)):
+
+                    #判断决定类
+                    if len(np.unique(label[factor_classes[k]]))==1:
+                        decide_num[j]+=len(label[factor_classes[k]])
+
+            #定位核因素
+            argmax=np.argmax(decide_num)
+
+            #启动多因素组合分类
+            if decide_num[argmax]==0:
+                comb_num+=1
+                #print('use more factors')
+                continue
+
+            #生成一条规则    
+            delete_list=[]
+            factor_classes=[]
+            factor_count=len(combinations[argmax])
+            factor_value=[0.]*len(data)
+            factor_value=np.array(factor_value)
+            rule=[none_value]*(factor_num+1)
+            
+            #确定分类值
+            for k in range(factor_count):
+                factor_value+=data[:,combinations[argmax][k]]**(1/(k+1))
+
+            #构建分类表
+            for k in np.unique(factor_value):
+                factor_classes.append(np.where(factor_value==k))
+
+            #遍历分类表
+            for k in range(len(factor_classes)):
+
+                #判断决定类
+                if len(np.unique(label[factor_classes[k]]))==1:
+
+                    #生成推理规则
+                    for l in range(factor_count):
+                        rule[combinations[argmax][l]]=data[factor_classes[k][0][0]][combinations[argmax][l]]
+                        rule[-1]=label[factor_classes[k][0][0]]
+                        trained_factors=np.append(trained_factors,combinations[argmax][l])
+                        trained_factors=np.unique(trained_factors)
+
+                    #构建推理规则集    
+                    rules_set.append(rule.copy())
+
+                    #构建收敛集
+                    for l in range(len(factor_classes[k][0])):
+                        delete_list.append(factor_classes[k][0][l])
+
+            #收敛数据
+            if len(delete_list)!=0:
+                used_factor_set=np.append(used_factor_set,trained_factors)
+                used_factor_set=np.unique(used_factor_set)
+                data=np.delete(data,delete_list,axis=0)
+                label=np.delete(label,delete_list,axis=0)
+                #print('remain data:',len(data))
+
+                if comb_num>1:
+                    comb_num=1
+
+            #判断收敛完成        
+            if len(data)==0:
+                break
+
+    #判断使用快速收敛
+    if fast==True:
+        comb_num=1
+        
+        #一次数据收敛
+        for i in range(train_times):
+            delete_list=[]
+            trained_factors=np.array([])
+            last_data_num=len(data)
+            final_count=len(used_factor_set)            
+            factor_index=list(range(factor_num))
+            combinations=list(itertools.combinations(factor_index,comb_num))
+
+            #构建因素组合
+            for j in combinations:
+                delete_list=[]
+                factor_classes=[]
+                factor_count=len(j)
+                factor_value=[0.]*len(data)
+                factor_value=np.array(factor_value)
+                rule=[none_value]*(factor_num+1)
+
+                #确定分类值
+                for k in range(factor_count):
+                    factor_value+=data[:,j[k]]**(1/(k+1))
+
+                #构建分类表
+                for k in np.unique(factor_value):
+                    factor_classes.append(np.where(factor_value==k))
+
+                #遍历分类表
+                for k in range(len(factor_classes)):
+
+                    #判断决定类
+                    if len(np.unique(label[factor_classes[k]]))==1:
+
+                        #生成推理规则
+                        for l in range(factor_count):
+                            rule[j[l]]=data[factor_classes[k][0][0]][j[l]]
+                            rule[-1]=label[factor_classes[k][0][0]]
+                            trained_factors=np.append(trained_factors,j[l])
+                            trained_factors=np.unique(trained_factors)
+
+                        #构建推理规则集    
+                        rules_set.append(rule.copy())
+
+                        #构建收敛表
+                        for l in range(len(factor_classes[k][0])):
+                            delete_list.append(factor_classes[k][0][l])
+
+                #收敛数据
+                if len(delete_list)!=0:
+                    used_factor_set=np.append(used_factor_set,trained_factors)
+                    used_factor_set=np.unique(used_factor_set)
+                    data=np.delete(data,delete_list,axis=0)
+                    label=np.delete(label,delete_list,axis=0)
+                    #print('remain data:',len(data))
+
+                    if comb_num>1:
+                        comb_num=1
+                        break
+
+            #启动多因素组合分类
+            if last_data_num==len(data):
+                comb_num+=1
+                #print('use more factors')
+
+            #判断收敛完成   
+            if len(data)==0:
+                break
+                
+    #转换成整数因素集
+    used_factor_set=list(map(int,used_factor_set))
+    
+    #判断返回约简因素集
+    if used_factors==True:
+        return rules_set,used_factor_set
+   
+    #返回规则集
+    return rules_set
+                
+
+
+#####################################
+
+def factor_analy(train_data,train_label,none_value=-1,train_times=10000,used_factors=False,zero_decide_random=False,factor_weight=False,strict=False):
+
+    #初始化变量
+    data_num=len(train_data)
+    data=np.array(train_data)
+    label=np.array(train_label)
+    factor_num=data.shape[1]
+    factor_classes=[]
+    used_factor_set=np.array([])
+    delete_list=[]
+    factor_weights=[0]*factor_num
+    last_factor=-1
+    rule=[none_value]*(factor_num+1)
+    rules_set=[]
+    class_num=1
+
+    #一次数据收敛
+    for i in range(train_times):
+        delete_list=[]
+        final_count=len(used_factor_set)            
+        decide_num=[0]*factor_num
+
+        #判断第一次收敛
+        if last_factor==-1:
+
+            #构建因素组合
+            for j in range(factor_num):
+                delete_list=[]
+                factor_classes=[]
+                rule=[none_value]*(factor_num+1)
+
+                #构建分类表
+                for k in np.unique(data[:,j]):
+                    factor_classes.append(np.where(data[:,j]==k))
+
+                #遍历分类表
+                for k in range(len(factor_classes)):
+
+                    #判断决定类
+                    if len(np.unique(label[factor_classes[k]]))==1:
+                        decide_num[j]+=len(label[factor_classes[k]])
+
+            #定位核因素
+            argmax=np.argmax(decide_num)
+
+            #判断零决定度开启随机索引
+            if zero_decide_random==True and decide_num[argmax]==0:
+                argmax=np.random.randint(factor_num)
+
+            #生成规则        
+            delete_list=[]
+            factor_classes=[]
+            rule=[none_value]*(factor_num+1)
+
+            #构建分类表
+            for k in np.unique(data[:,argmax]):
+                factor_classes.append(np.where(data[:,argmax]==k))
+
+            #遍历分类表
+            for k in range(len(factor_classes)):
+
+                #判断决定类
+                if len(np.unique(label[factor_classes[k]]))==1:
+                    rule[argmax]=data[factor_classes[k][0][0]][argmax]
+                    rule[-1]=label[factor_classes[k][0][0]]
+                    
+                    #构建推理规则集    
+                    rules_set.append(rule.copy())
+
+                    #构建收敛表
+                    for l in range(len(factor_classes[k][0])):
+                        delete_list.append(factor_classes[k][0][l])
+
+            #收敛数据
+            if len(delete_list)!=0:                
+                data=np.delete(data,delete_list,axis=0)
+                label=np.delete(label,delete_list,axis=0)
+                delete_list=np.unique(delete_list).tolist()
+                factor_weights[argmax]+=len(delete_list)/data_num
+                #print('remain data:',len(data))
+
+            #生成约简因素集
+            last_factor=argmax
+            used_factor_set=np.append(used_factor_set,last_factor)
+            used_factor_set=np.unique(used_factor_set)
+                              
+            #判断收敛完成
+            if len(data)==0:
+                break
+
+        else:
+
+            #定义上一次核因素分类变量
+            last_classes=[]
+            
+            #构建上一次核因素分类
+            for j in np.unique(data[:, last_factor]):
+                last_classes.append(np.where(data[:,int(last_factor)]==j))
+
+            #定义部分数据集
+            class_num=len(last_classes)
+            data_part=[0]*class_num
+            label_part=[0]*class_num
+            
+            #创建部分数据集
+            for j in range(class_num):
+                data_part[j]=data[last_classes[j]]
+                label_part[j]=label[last_classes[j]]
+
+            #遍历每一部分数据集
+            for j in range(class_num):
+
+                #构建因素组合
+                for k in range(factor_num):
+                    delete_list=[]
+                    factor_classes=[]
+                    rule=[none_value]*(factor_num+1)
+                    
+                    #构建分类表
+                    for l in np.unique(data_part[j][:,k]):
+                        factor_classes.append(np.where(data_part[j][:,k]==l))
+                        
+                    #遍历分类表
+                    for l in range(len(factor_classes)):
+
+                        #判断决定类
+                        if len(np.unique(label_part[j][factor_classes[l]]))==1:
+                            decide_num[k]+=len(label_part[j][factor_classes[l]])
+
+            #定位核因素
+            argmax=np.argmax(decide_num)
+
+            #判断零决定度顺延索引
+            if decide_num[argmax]==0:
+                if strict==False:
+                    argmax=last_factor+1
+
+                    #索引到结尾重置
+                    if argmax>=factor_num:
+                        argmax=0
+                else:
+                    for i in range(factor_num):
+                        argmax=last_factor+1
+                        if np.sum(np.in1d(argamx,used_factor_set))>0:
+                            argmax+=1
+
+                        #索引到结尾重置
+                        if argmax==factor_num:
+                            argmax=0
+                    
+
+            #判断开启随机索引
+            if zero_decide_random==True and decide_num[argmax]==0:
+                
+                #选择与上一因素不重复索引
+                for i in range(factor_num):
+                    argmax=np.random.randint(factor_num)
+                    if strict==False:
+                        #不重复退出选择
+                        if argmax!=last_factor:
+                            break
+                    else:
+                        #不重复退出选择
+                        if np.sum(np.in1d(argamx,used_factor_set))==0:
+                            break
+
+            #遍历每一部分数据集
+            for j in range(class_num):
+                delete_list=[]
+                factor_classes=[]
+                rule=[none_value]*(factor_num+1)
+
+                #构建分类表
+                for k in np.unique(data_part[j][:,argmax]):
+                    factor_classes.append(np.where(data_part[j][:,argmax]==k))
+                    
+                #遍历分类表
+                for k in range(len(factor_classes)):
+
+                    #判断决定类
+                    if len(np.unique(label_part[j][factor_classes[k]]))==1:
+                        
+                        #生成之前因素规则
+                        for l in range(final_count):
+                            rule[int(used_factor_set[l])] = data_part[j][factor_classes[k][0][0]][int(used_factor_set[l])]
+
+                        #生成当前因素规则
+                        rule[argmax]=data_part[j][factor_classes[k][0][0]][argmax]
+                        rule[-1]=label_part[j][factor_classes[k][0][0]]
+                        
+                        #构建推理规则集    
+                        rules_set.append(rule.copy())
+
+                        #构建收敛表
+                        for l in range(len(factor_classes[k][0])):
+                            delete_list.append(factor_classes[k][0][l])
+                        
+                #收敛数据
+                if len(delete_list)!=0:                    
+                    data_part[j]=np.delete(data_part[j],delete_list,axis=0)
+                    label_part[j]=np.delete(label_part[j],delete_list,axis=0)
+                    delete_list=np.unique(delete_list).tolist()
+                    factor_weights[argmax]+=len(delete_list)/data_num
+                
+            #定义初始完整数据
+            data=data_part[0]
+            label=label_part[0]
+
+            #组合完整数据
+            for j in range(1,class_num):
+                data=np.append(data,data_part[j],axis=0)
+                label=np.append(label,label_part[j],axis=0)
+
+            #print('remain data:',len(data))
+            
+            #生成约简因素集
+            last_factor=argmax
+            used_factor_set=np.append(used_factor_set,last_factor)
+            used_factor_set=np.unique(used_factor_set)            
+                    
+            #判断收敛完成
+            if len(data)==0:
+                break       
+
+    #转换成整数因素集
+    used_factor_set=list(map(int,used_factor_set))
+
+    #判断同时返回约简因素集和因素权重
+    if used_factors==True and factor_weight==True:
+        return rules_set,used_factor_set,factor_weights
+   
+    #判断返回约简因素集
+    if used_factors==True:
+        return rules_set,used_factor_set
+
+    #判断返回因素权重
+    if factor_weight==True:
+        return rules_set,factor_weights
+
+    #返回规则集
+    return rules_set
+
+
+
+###############################################################################
