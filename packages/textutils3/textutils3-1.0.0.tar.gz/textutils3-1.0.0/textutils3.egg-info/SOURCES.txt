@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+find_bad_characters.py
+setup.cfg
+setup.py
+spellcheck.py
+textutils3.egg-info/PKG-INFO
+textutils3.egg-info/SOURCES.txt
+textutils3.egg-info/SOURCES.txt.bak
+textutils3.egg-info/dependency_links.txt
+textutils3.egg-info/dependency_links.txt.bak
+textutils3.egg-info/entry_points.txt
+textutils3.egg-info/entry_points.txt.bak
+textutils3.egg-info/requires.txt
+textutils3.egg-info/requires.txt.bak
+textutils3.egg-info/top_level.txt
+textutils3.egg-info/top_level.txt.bak

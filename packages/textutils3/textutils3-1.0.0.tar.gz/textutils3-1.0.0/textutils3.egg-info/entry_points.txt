@@ -1,0 +1,4 @@
+[console_scripts]
+find_bad_char = find_bad_characters:main
+spellcheck = spellcheck:main
+
