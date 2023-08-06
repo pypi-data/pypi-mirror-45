@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scikit_rest
+Version: 0.0.1
+Summary: Automatically serve ML model as a REST API
+Home-page: https://github.com/AdityaSidharta/scikit_rest
+License: UNKNOWN
+Author: Aditya Kelvianto Sidharta
+Author-email: aditya.sdrt@gmail.com
+Classifier: License :: OSI Approved :: MIT License
