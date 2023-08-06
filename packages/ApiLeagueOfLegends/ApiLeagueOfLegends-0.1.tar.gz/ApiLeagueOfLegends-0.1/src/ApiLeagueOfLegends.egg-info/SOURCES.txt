@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/ApiLeagueOfLegends.egg-info/PKG-INFO
+src/ApiLeagueOfLegends.egg-info/SOURCES.txt
+src/ApiLeagueOfLegends.egg-info/dependency_links.txt
+src/ApiLeagueOfLegends.egg-info/not-zip-safe
+src/ApiLeagueOfLegends.egg-info/requires.txt
+src/ApiLeagueOfLegends.egg-info/top_level.txt
+src/league_of_legends_api/__init__.py
+src/league_of_legends_api/test.py
