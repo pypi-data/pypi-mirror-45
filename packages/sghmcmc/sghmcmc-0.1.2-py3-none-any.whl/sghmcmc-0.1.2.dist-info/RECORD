@@ -1,0 +1,7 @@
+sghmcmc/__init__.py,sha256=7Ld8wq1L6cjgxkNN1sd0PyifIVWxndf8uNbwD38oVsE,210
+sghmcmc/sghmc_jit.py,sha256=mfF5KKUEi6EjHypIni7MerMGUJKPvwwyxkybIBivhzY,6836
+sghmcmc/sghmcmc.py,sha256=rGJMXcwekdE2WvDe3hzHSlWiIuLFF2fSqRFbdl_oXcw,4210
+sghmcmc-0.1.2.dist-info/METADATA,sha256=EiRe1FrGbVPf2e5E3s-v1TbF6UvriptIHCaw_bPwKso,617
+sghmcmc-0.1.2.dist-info/RECORD,,
+sghmcmc-0.1.2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+sghmcmc-0.1.2.dist-info/top_level.txt,sha256=RE76MF-ThaOfc77ERU68bOiEJ8wxH4F01JvVTPMDX-I,8
