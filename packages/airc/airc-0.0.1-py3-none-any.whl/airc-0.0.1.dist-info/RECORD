@@ -1,0 +1,13 @@
+airc/__init__.py,sha256=85Z4p_DVJAwn6nBwC8PVRTuNjeOiXyZkgpsK7xQF9Uo,704
+airc/bot.py,sha256=mFyIq50dZwKwrgr6b5wCS8dBxQcBcDISzo7s2I2LI5w,14163
+airc/client.py,sha256=mTTFfz7UIMFbCRLOG7IrpFopEe-qt2tCSo3Sm-vCKWE,2847
+airc/enums.py,sha256=82NBaop8WLfrl9CI71VAN8Am1Q8hxFMgCpwPGLZf_WQ,3915
+airc/errors.py,sha256=JnFFxLfFCU-BcFt7tCOz_ILQUd3AwFPVUFEI9-H7qwo,355
+airc/events.py,sha256=W5F77SBMZ4E-C6j548aSXQlYfF_Y-ah-Mt-Q8bVaf-g,6198
+airc/server.py,sha256=miKrPOJ402ttEJOM5yz4E6ZmD3oqgt-SIXXcT_1yNiU,13373
+airc/utils.py,sha256=nIiOHa91H7W2emVFGwGRsl5x0asOe0LVj7A4cyt1Vqk,3162
+airc-0.0.1.dist-info/LICENSE.txt,sha256=ekVvF4lH50bFlTU-ybZJOh-ZCfm08BYxVSwcmxC5x3Q,1072
+airc-0.0.1.dist-info/METADATA,sha256=Pi3WFhGBAKBAVPN1Jo0cDUUZbBXqLPV1h-rfbw7h7Xg,990
+airc-0.0.1.dist-info/WHEEL,sha256=UpB-bp5SQQdekLv3_zfFAhrQBtaQjJZABvUiavkhjZ0,97
+airc-0.0.1.dist-info/top_level.txt,sha256=tGFtpG9RH5YTsCUOgA4t3w7pL8NivqbS4sMc1hRp_Nw,5
+airc-0.0.1.dist-info/RECORD,,
