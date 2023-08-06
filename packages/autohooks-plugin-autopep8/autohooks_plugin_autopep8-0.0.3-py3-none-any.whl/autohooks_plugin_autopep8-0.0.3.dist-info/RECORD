@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=F_SM8XOfDejUOmZF6QCeb5hNKkl5QC172FXQSimypVI,494
+README.md,sha256=R6PZww2_bzUI3krFn-mdJe0f991_s8rULMm2jT1KyNc,2662
+RELEASE.md,sha256=G7GuIujYl-ghHGd0M-adQdbwSWA5syssbK9fgI-rWxA,2769
+autohooks/plugins/autopep8/__init__.py,sha256=Cp4ZzPnNXrWDc_3cz_TucVp9rQiWtNq3Csd4E4A2NPo,713
+autohooks/plugins/autopep8/autopep8.py,sha256=i42Y9zkmSQaUcwyGYoFlY0FQrjSYOYHi9FGWtuaVHAQ,3990
+autohooks_plugin_autopep8-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autohooks_plugin_autopep8-0.0.3.dist-info/WHEEL,sha256=7rgPGIJCk4vUc5grLXztusALWdGCgLy7UJ52dff4Pnc,85
+autohooks_plugin_autopep8-0.0.3.dist-info/METADATA,sha256=EaLIB-ztCGr24BN_WR1Yr3PkOUejyOJRbvZWiqPOmwg,985
+autohooks_plugin_autopep8-0.0.3.dist-info/RECORD,,
