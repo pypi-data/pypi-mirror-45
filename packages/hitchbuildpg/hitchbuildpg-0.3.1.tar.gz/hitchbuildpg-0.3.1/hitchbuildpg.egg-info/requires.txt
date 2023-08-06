@@ -1,0 +1,5 @@
+hitchbuild>=0.4.0
+pathquery
+patool
+pexpect
+commandlib
