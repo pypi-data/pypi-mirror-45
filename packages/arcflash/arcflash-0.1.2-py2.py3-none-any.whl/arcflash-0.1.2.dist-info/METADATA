@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: arcflash
+Version: 0.1.2
+Summary: Python support libraries for Arcflash flash ROM board for Acorn computers
+Home-page: https://github.com/google/myelin-acorn-electron-hardware/tree/master/a3000_rom_emulator/python_lib
+Author: Phillip Pearson
+Author-email: pp@myelin.nz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf
+Requires-Dist: PySerial
+
+Python support libraries for the Arcflash flash ROM board for Acorn computers.
+
+Included:
+
+- Download tool, to program ROM images into the flash banks on an
+  Arcflash board connected by USB.
+
+
