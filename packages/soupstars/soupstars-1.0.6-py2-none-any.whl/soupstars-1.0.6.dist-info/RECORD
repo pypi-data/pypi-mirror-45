@@ -1,0 +1,10 @@
+soupstars/__init__.py,sha256=iRyexluQFoNY7bTa10-8uhc-Dt0AnqKnD00mhFr0Ldw,85
+soupstars/models.py,sha256=nl1aP030W4PJyh9izfsPGwKn-YFx0LLCYnJLXaeUU44,1404
+soupstars/serializers.py,sha256=rBouJrpjM7mlZ75GPftu2_-DI-gaKT_dYuaWZoWONQc,889
+soupstars/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soupstars/examples/nytimes.py,sha256=OjcrBY4XKZ_PXwwtL0kd5vM4G-QorlXPEbM3Gbc8UsE,2190
+soupstars-1.0.6.dist-info/LICENSE,sha256=W7wsWLoRMSL78VAQG7iA-u_71pnz-mb3q8qzATGGES0,1069
+soupstars-1.0.6.dist-info/METADATA,sha256=U5qrsMiLuUcaIf97XeyBkv6xSEEl6LbuVlBfqPp5SZ0,2425
+soupstars-1.0.6.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+soupstars-1.0.6.dist-info/top_level.txt,sha256=l0Z0JR7vVjotkU8Wjv-613alI7mzIc-WdiaY5jaG51Q,10
+soupstars-1.0.6.dist-info/RECORD,,
