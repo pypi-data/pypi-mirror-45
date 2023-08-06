@@ -1,0 +1,3 @@
+
+        [console_scripts]
+        ket=ket.cli:ket
