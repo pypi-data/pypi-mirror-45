@@ -1,0 +1,9 @@
+README.md
+setup.py
+normalizeurl/__init__.py
+normalizeurl/normalize.py
+normalizeurl.egg-info/PKG-INFO
+normalizeurl.egg-info/SOURCES.txt
+normalizeurl.egg-info/dependency_links.txt
+normalizeurl.egg-info/requires.txt
+normalizeurl.egg-info/top_level.txt
