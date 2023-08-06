@@ -1,0 +1,6 @@
+setup.py
+tgan.egg-info/PKG-INFO
+tgan.egg-info/SOURCES.txt
+tgan.egg-info/dependency_links.txt
+tgan.egg-info/not-zip-safe
+tgan.egg-info/top_level.txt
