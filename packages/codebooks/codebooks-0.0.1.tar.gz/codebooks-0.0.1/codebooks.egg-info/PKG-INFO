@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: codebooks
+Version: 0.0.1
+Summary: Automatic generation of codebooks from dataframes.
+Home-page: https://github.com/mhowison/codebooks
+Author: Mark Howison
+Author-email: mark@howison.org
+License: BSD
+Description: # Codebooks
+        
+        Automatically generate codebooks from dataframes. Includes methods to:
+        * Infer variable type (as unique key, indicator, categorical, or continuous).
+        * Summarize values with histograms and KDEs.
+        * Generate a self-contained HTML report (may be extended to PDF or other formats in the future).
+        
+        Usage:
+        
+            codebooks -o output.html input.csv
+        
+        ## Adding variable descriptions
+        
+        You can specify a csv file that maps variable names to descriptions using:
+        
+            codebooks --desc descriptions.csv -o output.html input.csv
+        
+        The csv file is expected to have two columns (variable name, description).
+        
+        ## License
+        
+        3-Clause BSD (see LICENSE)
+        
+        ## Authors
+        
+        Mark Howison  
+        [http://mark.howison.org](http://mark.howison.org)
+        
+Keywords: data,data analysis,data frame,data science,codebook
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Provides: codebooks
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+README.md
+setup.py
+codebooks/__init__.py
+codebooks/html.py
+codebooks/variable.py
+codebooks.egg-info/PKG-INFO
+codebooks.egg-info/SOURCES.txt
+codebooks.egg-info/dependency_links.txt
+codebooks.egg-info/requires.txt
+codebooks.egg-info/top_level.txt
+codebooks/css/bootstrap.min.css
+scripts/codebooks
