@@ -1,0 +1,9 @@
+README.md
+setup.py
+csv2opd/__init__.py
+csv2opd/csv2opd.py
+csv2opd.egg-info/PKG-INFO
+csv2opd.egg-info/SOURCES.txt
+csv2opd.egg-info/dependency_links.txt
+csv2opd.egg-info/entry_points.txt
+csv2opd.egg-info/top_level.txt
