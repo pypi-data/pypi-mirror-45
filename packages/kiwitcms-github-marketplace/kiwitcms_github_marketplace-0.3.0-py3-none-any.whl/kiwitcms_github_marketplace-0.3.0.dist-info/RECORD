@@ -1,0 +1,13 @@
+kiwitcms_github_marketplace-0.3.0.dist-info/DESCRIPTION.rst,sha256=PRsa0n_eQzgc2f8-4FjDbxAiFsIxMjPVBOSAolRt2-E,1714
+kiwitcms_github_marketplace-0.3.0.dist-info/METADATA,sha256=qs3NrgFCSvGGYbr4YGIaJHgw8j1wwCAS3qU91coasV4,2459
+kiwitcms_github_marketplace-0.3.0.dist-info/RECORD,,
+kiwitcms_github_marketplace-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+kiwitcms_github_marketplace-0.3.0.dist-info/metadata.json,sha256=lqRbT4cBldBQH9i4ONg5n7Gb0g7MtthmXvJMVqdbf2U,867
+kiwitcms_github_marketplace-0.3.0.dist-info/top_level.txt,sha256=vd2Ll7vZOd67SKLiZSp4rdgz6O6G2xky5-wWnulPuSM,24
+tcms_github_marketplace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcms_github_marketplace/models.py,sha256=CYUTxq6Jvxt-EflfZbDmTe3NbemUhqKoh790VWp-WmE,1204
+tcms_github_marketplace/urls.py,sha256=j2lXDAtYtQduqjPn7bAymMuCfp51sUuLrnUr2mgxhbw,415
+tcms_github_marketplace/utils.py,sha256=2L5D4aLWW01wWlOgQPvpuMbF3o4OBD9H5xDBhB0o594,3204
+tcms_github_marketplace/views.py,sha256=21Tr62icXvWYSVoPO80jLR34zlRTaEw2ajo95ftPGX8,4112
+tcms_github_marketplace/migrations/0001_initial.py,sha256=oYKAhczvwGPZg9EoeVH52jFiDpxoujAbIU704FRYUpI,1288
+tcms_github_marketplace/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
