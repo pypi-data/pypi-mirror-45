@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytest-capture-deprecatedwarnings
+Version: 0.1
+Summary: pytest plugin to capture all deprecatedwarnings and put them in one file
+Home-page: https://github.com/psycojoker/pytest-capture-deprecatedwarnings
+Author: Laurent Peuch
+Author-email: cortex@worlddomination.be
+License: gplv3+
+Description: UNKNOWN
+Platform: UNKNOWN
