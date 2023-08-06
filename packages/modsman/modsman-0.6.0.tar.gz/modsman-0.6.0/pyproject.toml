@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "modsman"
+version = "0.6.0"
+description = "A Minecraft mod manager for the command line."
+authors = ["Sargun Vohra <sargun.vohra@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://gitlab.com/sargunv-mc-mods/modsman"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pathlib = "^1.0"
+aiofiles = "^0.4.0"
+aiohttp = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+modsman = 'modsman:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
