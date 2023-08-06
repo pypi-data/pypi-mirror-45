@@ -1,0 +1,17 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pydataclasses/__init__.py
+pydataclasses/data.py
+pydataclasses/utils.py
+pydataclasses.egg-info/PKG-INFO
+pydataclasses.egg-info/SOURCES.txt
+pydataclasses.egg-info/dependency_links.txt
+pydataclasses.egg-info/not-zip-safe
+pydataclasses.egg-info/requires.txt
+pydataclasses.egg-info/top_level.txt
+tests/__init__.py
+tests/test_data_easy.py
+tests/test_data_hard.py
