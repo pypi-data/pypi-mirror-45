@@ -1,0 +1,4 @@
+[console_scripts]
+github-release-notifier = github_release_notifier.cli:main
+grn = github_release_notifier.cli:main
+
