@@ -1,0 +1,3 @@
+[console_scripts]
+fileshash = fileshash.fileshash_cli:main
+
