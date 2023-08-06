@@ -1,0 +1,12 @@
+wikimapper/__init__.py,sha256=TmY_ruZ9BICzIkAqVJ7Fjz6HRkvYRrxyjxAWMpqySyY,138
+wikimapper/__version__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+wikimapper/cli.py,sha256=y8EPweTsj02COKBMLqfOJa4BIotsfAEJyhFLOVQta3A,5160
+wikimapper/download.py,sha256=ibg9CFJCuUc85FWAXnS90073nnIW-4NiAYiVwr9EWYU,1982
+wikimapper/mapper.py,sha256=PChayN1oxfzdIiOa0o_PNV1sx3wJ16dSG8Xr9LBijgM,2553
+wikimapper/processor.py,sha256=oWu6yUvg78eb1ZJLRnsylNURdXYrWaXK7iRaiEN5bGU,7820
+wikimapper-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wikimapper-0.1.5.dist-info/METADATA,sha256=EfSNJxULQhXo_s0BKmpf0K-EhhtOS5A8dB70Wtkz8kM,10117
+wikimapper-0.1.5.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+wikimapper-0.1.5.dist-info/entry_points.txt,sha256=gQJDmy7vpoE1I6lfC73lv4kqmffntdUhWIEaEQHC77M,52
+wikimapper-0.1.5.dist-info/top_level.txt,sha256=CbrpwCx4SZy3_sNpgXcnee3a4cIcIfmI4aMXM8-Djhw,11
+wikimapper-0.1.5.dist-info/RECORD,,
