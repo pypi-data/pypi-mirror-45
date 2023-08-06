@@ -1,0 +1,16 @@
+click>=7.0
+refuse==0.0.2
+xmltodict
+
+[dev]
+coverage
+psutil
+pytest
+python-language-server
+PyYAML
+setuptools
+Sphinx
+sphinx_rtd_theme
+tap.py
+twine
+wheel
