@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+skhk/__init__.py
+skhk.egg-info/PKG-INFO
+skhk.egg-info/SOURCES.txt
+skhk.egg-info/dependency_links.txt
+skhk.egg-info/top_level.txt
