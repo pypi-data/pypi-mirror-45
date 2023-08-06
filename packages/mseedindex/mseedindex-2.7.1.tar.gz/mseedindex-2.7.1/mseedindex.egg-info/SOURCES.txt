@@ -1,0 +1,6 @@
+README.md
+setup.py
+mseedindex.egg-info/PKG-INFO
+mseedindex.egg-info/SOURCES.txt
+mseedindex.egg-info/dependency_links.txt
+mseedindex.egg-info/top_level.txt
