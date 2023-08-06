@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        redcli=red_panda.scripts.redcli:cli
+    
