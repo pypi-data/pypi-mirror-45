@@ -1,0 +1,17 @@
+libpuz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpuz/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpuz/example/example.py,sha256=CgFHJEZHz013Bbs62tJg2REmPkuyXu-1z6lNoKIl9vE,236
+libpuz/nonogram/example.columns.csv,sha256=eQ1puPFPZoUgmR0LztnhNoLg3WhsEy3s0ZVYBcFxGPQ,18
+libpuz/nonogram/example.json,sha256=_iB2_Cvi7es_PrG3ZqYqa39zL0sHFXrfimgel2rBzQQ,127
+libpuz/nonogram/example.rows.csv,sha256=UAYiWa2KtXfzM_h04j284mV-XaHf5d3bM12bxiFI_1k,24
+libpuz/nonogram/nonogram,sha256=EOq82XLTggF1A5ROZz2Z9Q9fDyUIGxfSZnJWRgGI3Fk,3846
+libpuz/tst/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpuz/tst/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpuz/tst/example/example-test.py,sha256=GI9Hr3bR6dRZYb8FtM2aifhwDNn2qW7nTwXwagoA1D8,741
+libpuz-0.3.data/scripts/nonogram,sha256=pNwxQJdscpo33Knu7Qzez2aYtZ_sYppqfiUUquMfml4,3842
+libpuz-0.3.dist-info/DESCRIPTION.rst,sha256=qS3zoMlpi_OGwPiw2vA7DB3FqhEFRPR3cDRFEIw6e9o,29
+libpuz-0.3.dist-info/METADATA,sha256=szeWJziT7Bc_fT9YtdioR_3g1hiPCx_JL1tzK9Q97xQ,729
+libpuz-0.3.dist-info/RECORD,,
+libpuz-0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+libpuz-0.3.dist-info/metadata.json,sha256=c4pjYdVshd9XNd8maQ9ugDAPX7-QR0Yii7oakLy09T8,871
+libpuz-0.3.dist-info/top_level.txt,sha256=7OReAJqcnScMkHDGoHWunP5lafXnVFU3OohB1i6aXZw,7
