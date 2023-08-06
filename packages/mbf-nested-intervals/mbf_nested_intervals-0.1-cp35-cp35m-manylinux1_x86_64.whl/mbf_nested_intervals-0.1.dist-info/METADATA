@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mbf-nested-intervals
+Version: 0.1
+Summary: wrapper around https://crates.io/crates/nested_intervals
+Home-page: https://github.com/TyberiusPrime/mbf_nested_intervals
+Author: Florian Finkernagel
+Author-email: finkernagel@imt.uni-marburg.de
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+Provides-Extra: testing
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: mbf-externals
+Requires-Dist: pyBigWig
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinx-bootstrap-theme; extra == 'doc'
+Requires-Dist: numpydoc; extra == 'doc'
+Provides-Extra: testing
+Requires-Dist: pytest; extra == 'testing'
+Requires-Dist: pytest-cov; extra == 'testing'
+Requires-Dist: pytest-icdiff; extra == 'testing'
+Requires-Dist: requests-mock; extra == 'testing'
+
+# mbf_nested_intervals
+
+| Build status: | [![Build
+Status](https://travis-ci.com/TyberiusPrime/mbf_nested_intervals.svg?branch=master)](https://travis-ci.com/TyberiusPrime/mbf_nested_intervals)|
+|---------------|-----------------------------------------------------------------------------|
+| Documentation | https://mbf_nested_intervals.readthedocs.io/en/latest/
+
+
+A wrapper around https://crates.io/crates/nested_intervals
+which also generalizes to pandas Dataframes with genomic data
+(ie. those with [chr, start, stop]...)
+
+
