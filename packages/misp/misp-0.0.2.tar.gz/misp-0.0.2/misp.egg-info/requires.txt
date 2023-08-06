@@ -1,0 +1,7 @@
+numpy
+matplotlib
+scikit-learn
+tqdm
+openslide-python
+torch==1.0.1
+torchvision==0.2.2

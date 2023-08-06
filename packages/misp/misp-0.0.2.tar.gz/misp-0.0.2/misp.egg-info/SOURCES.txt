@@ -1,0 +1,14 @@
+README.md
+setup.py
+misp/__init__.py
+misp/_version.py
+misp/transforms.py
+misp/utils.py
+misp/visual_utils.py
+misp/wsi_utils.py
+misp.egg-info/PKG-INFO
+misp.egg-info/SOURCES.txt
+misp.egg-info/dependency_links.txt
+misp.egg-info/not-zip-safe
+misp.egg-info/requires.txt
+misp.egg-info/top_level.txt
