@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: opalart
+Version: 0.0.3
+Summary: Asynchronous hentai scraper.
+Home-page: https://gitlab.com/Shifty/opalart.git
+Author: Daniel Preston
+Author-email: prestondj.2001@yahoo.com
+License: GPL
+Description: # Opal Art
+        
+        Gathers beautiful art. Perhaps as beautiful as [Opal](https://en.wikipedia.org/wiki/Opal).
+        
+        ## Installing
+        
+        ```bash
+        $ pip install opalart
+        ```
+        
+        ## Quick Start
+        
+        ```python
+        >>> import opalart
+        >>> client = opalart.yandere()
+        >>> image = await client.randpost(['thighhighs'])
+        # Do stuff with the image
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
