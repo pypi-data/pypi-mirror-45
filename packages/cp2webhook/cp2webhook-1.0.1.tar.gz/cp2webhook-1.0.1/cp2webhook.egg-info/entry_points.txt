@@ -1,0 +1,3 @@
+[console_scripts]
+cp2webhook = cp2webhook:main
+
