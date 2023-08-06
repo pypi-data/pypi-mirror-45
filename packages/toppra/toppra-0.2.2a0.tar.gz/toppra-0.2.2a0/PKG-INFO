@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: toppra
+Version: 0.2.2a0
+Summary: An implementation of TOPP-RA (TOPP via Reachability Analysis) for time-parametrizingtrajectories for robots subject to kinematic (velocity and acceleration) and dynamic(torque) constraints. Some other kinds of constraints are also supported.
+Home-page: https://github.com/hungpham2511/toppra
+Author: Hung Pham
+Author-email: hungpham2511@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
