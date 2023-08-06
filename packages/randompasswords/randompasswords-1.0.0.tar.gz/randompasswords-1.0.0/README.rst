@@ -1,0 +1,63 @@
+randompasswords
+===============
+A simple CLI program that takes user input for keywords, minimum password length,
+maximum password length, and any special characters to generate random password possibilities
+derived from the input. Also utilizes the Faker module
+to input dummy info.
+
+Installation
+------------
+Save the .py files under randompasswords and run it with python3. See requirements.txt for any module requirements and install them with pip
+
+Or use pip to install randompasswords directly
+
+::
+
+    pip install randompasswords
+
+Usage
+-----
+Code excerpt from __main__.py
+::
+
+    from randompasswords.passwordgenerator import *
+    from faker import Faker
+
+
+    def main():
+
+        # import pdb
+        # pdb.set_trace()
+
+        fake = Faker()
+
+        with open("pw.txt", "w+") as fh:    # open or create a textfile to store inputted keywords
+            inputKeywords(fh)
+            fh.write(fake.email() + "\n")
+            fh.write(fake.address() + "\n")
+            fh.write(str(fake.longitude()) + "\n")
+            fh.write(str(fake.latitude()) + "\n")
+
+        with open("pw.txt", "r+") as fh:    # takes keywords and puts them in data structures to prepare for generating pws
+            storage = storeKeywords(fh)
+
+        passwords = generatePasswords(storage)
+        print("\nPrinting passwords now\n\n")
+
+        with open("pw.txt", "a") as fh:
+            storePasswords(fh, passwords)
+
+
+    if __name__ == "__main__":
+        main()
+
+
+Acknowledgment
+--------------
+Thank you to Brett Beekley, my mentor for encouraging me and
+helping me think up this idea for a side project
+
+License
+-------
+`MIT
+<https://choosealicense.com/licenses/mit/>`_

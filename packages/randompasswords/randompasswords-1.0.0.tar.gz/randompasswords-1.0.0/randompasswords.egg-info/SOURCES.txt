@@ -1,0 +1,10 @@
+README.rst
+setup.py
+randompasswords/__init__.py
+randompasswords/__main__.py
+randompasswords/passwordgenerator.py
+randompasswords.egg-info/PKG-INFO
+randompasswords.egg-info/SOURCES.txt
+randompasswords.egg-info/dependency_links.txt
+randompasswords.egg-info/requires.txt
+randompasswords.egg-info/top_level.txt
