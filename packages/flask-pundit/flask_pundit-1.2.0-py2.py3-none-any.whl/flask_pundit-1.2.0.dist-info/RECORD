@@ -1,0 +1,14 @@
+flask_pundit/__init__.py,sha256=-6rboFNZVD_Uqm9dak3BY0JSrlKRlbucPlm2u-7veHY,5226
+flask_pundit/application_policy.py,sha256=r1-vzJEZKLtOqPVu0k42Uh1qtUQKeJtLMMVMKV4W8_I,153
+flask_pundit/helpers.py,sha256=kCgjCF25FloH7BFn6wkzUPqysXirPFj-fzxQFXtnKBQ,344
+tests/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models/comment.py,sha256=1XLr4oTzgsIY4uLEVo5HQylWUizFioyLhSKLfwmjSMU,163
+tests/models/post.py,sha256=i2ROVn6XIufuyVmoI4V6vlhruhk6_2C10IDrekcBvDQ,61
+tests/policies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/policies/commenting.py,sha256=CVu3igCsr9ti28P0M1ATluTJCgb0TpC8z601jZjoaas,295
+tests/policies/post.py,sha256=1xi0FsKrEo5yPII2y73Enz4FYT95YqYmOvXy6ujdykg,436
+flask_pundit-1.2.0.dist-info/LICENSE,sha256=SmvfxhXHSi7EdK6FSdZpoudQSFsHmJC4C0IAOx9QWBM,1089
+flask_pundit-1.2.0.dist-info/METADATA,sha256=EChSWXBuwaUGz8R4nJYPDq3716rN9LVbyitVd1XRXZk,544
+flask_pundit-1.2.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+flask_pundit-1.2.0.dist-info/top_level.txt,sha256=6W-wOr8iJ0DGfGNzDaGOG3_Z_K3AbUXdGlTk3qxw-zA,19
+flask_pundit-1.2.0.dist-info/RECORD,,
