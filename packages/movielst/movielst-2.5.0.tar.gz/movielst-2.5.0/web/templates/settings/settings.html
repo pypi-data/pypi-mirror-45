@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% include 'includes/_navbar_settings.html' %}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <br />
+        <h3>General</h3>
+        <p>{{ form.log_level_field.label }} : {{ form.log_level_field(class_='form-control') }}</p>
+        <p>{{ form.log_location_field.label }} : {{ form.log_location_field(size=32, class_='form-control') }}</p>
+        <hr>
+        <h3>Index</h3>
+        <p>{{ form.location_field.label }} : {{ form.location_field(size=32, class_='form-control') }}</p>
+        <p>{{ form.min_index_field.label }} : {{ form.min_index_field(size=32, class_='form-control') }}</p>
+        <hr>
+        <h3>API</h3>
+        <p>{{ form.use_external_api_field.label }} : {{ form.use_external_api_field(class_='form-control') }}</p>
+        <p>{{ form.omdb_api_key_field.label }} : {{ form.omdb_api_key_field(size=32, class_='form-control') }}</p>
+        <p>{{ form.tmdb_api_key_field.label }} : {{ form.tmdb_api_key_field(size=32, class_='form-control') }}</p>
+        <hr>
+        <h3>Web</h3>
+        <p>{{ form.web_host_field.label }} : {{ form.web_host_field(size=32, class_='form-control') }}</p>
+        <p>{{ form.web_port_field.label }} : {{ form.web_port_field(size=32, class_='form-control') }}</p>
+        <p>{{ form.web_require_login_field.label }} : {{ form.web_require_login_field(class_='form-control') }}</p>
+        {{ form.submit(class_='btn btn-lg btn-primary') }}
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#deleteIndexModal">Delete Index</button>
+        <div class="modal fade" id="deleteIndexModal" tabindex="-1" role="dialog" aria-labelledby="deleteIndexModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteIndexModalLabel">Delete Index</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete the movie index? <br />
+                        <strong>THIS CANNOT BE  UNDONE!</strong>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        {{ form.delete_index(class_='btn btn-danger') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+{% endblock %}
