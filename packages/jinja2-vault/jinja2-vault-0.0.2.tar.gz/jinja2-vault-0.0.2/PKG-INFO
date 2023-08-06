@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: jinja2-vault
+Version: 0.0.2
+Summary: Extentsion to load vault screts in jinja templates
+Home-page: https://github.com/derBroBro/jinja2-vault
+Author: Malte Brodersen
+Author-email: malte.brodersen@exoit.de
+License: UNKNOWN
+Description: # Jinja2 library for loading Vault screts
+        The idea behind this project is to allow dynamically loading [vault](vaultproject.io) secrets in applications like [cookiecutter](https://github.com/audreyr/cookiecutter). 
+        
+        ## Installation
+        To install just run ```pip install jinja2-vault```
+        
+        ## Usage 
+        Add the jinja2 `secret` function like this:
+        
+        ```python
+        from jinja2 import Environment, Template
+        env = Environment(
+            extensions=['jinja2-vault.VaultExtension']
+        )
+        
+        template = env.from_string('password={% secret "password", path="database", mount="app1/secret" %}')
+        result = template.render()
+        print(result)
+        
+        ```
+        This example load key `password` from `app1/secret/database` where `app1/secret` is the mount and `database` the path.
+        
+        ## Setup for cookiecutter
+        TBB
+        
+        ## Todo
+        [ ] Add some unit tests
+        
+        ## Build
+        To build and push the package:
+        ```python setup.py sdist```
+        ```python -m twine upload dist/*```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
