@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+lpfgopt/VERSION.txt
+lpfgopt/__init__.py
+lpfgopt/leapfrog.py
+lpfgopt/scipy_min.py
+lpfgopt_lite.egg-info/PKG-INFO
+lpfgopt_lite.egg-info/SOURCES.txt
+lpfgopt_lite.egg-info/dependency_links.txt
+lpfgopt_lite.egg-info/requires.txt
+lpfgopt_lite.egg-info/top_level.txt
