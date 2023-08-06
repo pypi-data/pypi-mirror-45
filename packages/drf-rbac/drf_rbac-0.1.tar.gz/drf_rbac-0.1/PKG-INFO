@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: drf_rbac
+Version: 0.1
+Summary: Django rest framework user based access control.
+Home-page: https://github.com/jtao15/drf-rbac
+Author: Jiapeng Tao
+Author-email: jiapengtao0@gmail.com
+License: UNKNOWN
+Description: Modified from django-rest-framework-roles to allow default function overriding.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
