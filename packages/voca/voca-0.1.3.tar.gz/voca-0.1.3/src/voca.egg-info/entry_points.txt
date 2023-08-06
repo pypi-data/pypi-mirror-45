@@ -1,0 +1,12 @@
+[console_scripts]
+voca = voca.cli:cli
+
+[voca_plugins]
+basic = voca.plugins:basic
+math = voca.plugins:math
+no = voca.plugins:no
+python = voca.plugins:python
+turtle_context = voca.plugins:turtle_context
+vscode = voca.plugins:vscode
+yes = voca.plugins:yes
+
