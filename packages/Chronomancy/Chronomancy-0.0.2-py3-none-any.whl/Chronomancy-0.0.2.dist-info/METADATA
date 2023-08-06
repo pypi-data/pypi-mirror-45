@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Chronomancy
+Version: 0.0.2
+Summary: The power of Time itself, for Python
+Home-page: https://github.com/IAmTheBlurr/Chronomancy
+Author: Jonathan Craig
+Author-email: blurr@iamtheblurr.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# Chronomancy
+A Python library for re-calling methods (or class properties) from within a method that they were initially passed in as an argument for.
+
+For those who fancy dramatic and poetic descriptions (like me)...
+
+_"We are piercing the veil of the Stack, using echos in time to reconstruct a pathway through memory, finding their source and recasting the spell."_
+
+## There Be Dragons
+Conventional wisdom states that one should avoid doing what this library does.
+
+This library has specific and unique aims that fall outside of convention.
+
+## The Reason for Being
+
+## How to Use
+
+## Limitations
+
+## Examples
+
+## Future Expectations
+
+## Not Safe for Human Consumption
+Use this library at your own peril.  You have been warned.
+
+
