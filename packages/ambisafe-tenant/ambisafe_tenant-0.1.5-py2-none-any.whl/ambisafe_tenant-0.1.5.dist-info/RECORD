@@ -1,0 +1,16 @@
+ambisafe_tenant/__init__.py,sha256=rC7_x7YUnPUvAHwxFOmSNuqf1WUv4JbHOt1_8vhsdc4,280
+ambisafe_tenant/account.py,sha256=CHOk4nb1d3kYpO8PbKS3ii0O82G-pFNqusD9MfzTO6s,756
+ambisafe_tenant/auth.py,sha256=2o1ZklHN3jU2pjk_PXGw1yoZeQEGw3D5IpwyB78PVq0,1492
+ambisafe_tenant/client.py,sha256=6DPykF5GZEw476YkhNiNBAhxkbrWQkp0R8i5muoXeio,6065
+ambisafe_tenant/crypt.py,sha256=nqQD9GPLT7bEQW-FbJf8bVSBwv-O_7Fr-CgXf3gbIRQ,2562
+ambisafe_tenant/exc.py,sha256=HOEBt8n-zDh02Jxr1YGQ0C6WTBSShbLUgEjQ2J-SnjA,547
+ambisafe_tenant/icap.py,sha256=kMM5dHuQiV5M78G1sWXx6ICI04ZcnzFIMhKp6bVIywY,1074
+ambisafe_tenant/recovery.py,sha256=XrRXY7nZ_YNmOCDyVXIBRnUaMp-n-karKEY1TlDRL6s,7552
+ambisafe_tenant/utils.py,sha256=XOZPt1gR0qr3df0z8FRS4_cKrcEwB3o2VxucP_6CQw8,171
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=3T7UfbFL2P8KDDaFU7QmMWX4QKwRyFBE2as4PdvTwQs,1615
+ambisafe_tenant-0.1.5.dist-info/LICENSE,sha256=8MqqvOT8OPaysyxzRriSP2JIBtSzYlitzzR5ideqHHs,990
+ambisafe_tenant-0.1.5.dist-info/METADATA,sha256=BYT052UW22I2AEjQ2HVjLU5vl0OjStUI_k-XZVW_gQU,625
+ambisafe_tenant-0.1.5.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ambisafe_tenant-0.1.5.dist-info/top_level.txt,sha256=542-xb9N3GMO6hfXUTONf5onjdcNrn1LazAZO5G2d3I,21
+ambisafe_tenant-0.1.5.dist-info/RECORD,,
