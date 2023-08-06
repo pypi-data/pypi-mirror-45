@@ -1,0 +1,36 @@
+app_group: ubuntu
+app_s3_bucket: '{{ company }}-{{ owner }}-artifacts-{{ env }}'
+app_user: ubuntu
+cloud_type: ec2
+company: eatatmaudes
+default_ami_id: ami-0d96d570269578cd7
+default_ami_os_type: ubuntu
+default_aws_region: us-east-1
+default_azs:
+- '{{ default_aws_region }}a'
+- '{{ default_aws_region }}b'
+- '{{ default_aws_region }}c'
+- '{{ default_aws_region }}d'
+- '{{ default_aws_region }}e'
+default_cidr_block: 10.100.0.0/16
+default_jupyter_local_port: 9000
+default_jupyter_remote_port: 8888
+default_private_key_file_name: pkey.pem
+default_subnet_cidr_blocks:
+- 10.100.0.0/20
+- 10.100.16.0/20
+- 10.100.32.0/20
+- 10.100.48.0/20
+- 10.100.64.0/20
+env: stage
+igw_name: '{{ company }}-{{ owner }}-igw'
+key_pair_name: '{{ company }}-{{ owner }}-keypair'
+owner: maude
+route_table_name: '{{ company }}-{{ owner }}-routing'
+spot_type: one-time
+subnet_name: '{{ company }}-{{ owner }}-subnet'
+vpc_name: '{{ company }}-{{ owner }}-vpc'
+
+#root_volume_type: io1
+root_volume_size: 50
+#root_volume_iops: 200
