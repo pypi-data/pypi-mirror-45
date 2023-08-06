@@ -1,0 +1,23 @@
+{# **REQUIRED** #}
+{% import "kolibri.macros" as Kolibri with context %}
+
+{# This is the default layout #}
+
+{% include "layouts/header.html" %}
+
+{% block __PAGE_COMPONENT_STYLE__ %}{% endblock %}
+
+{% block __MAIN_CONTENT__ %}{% endblock %}
+
+{% include "layouts/footer.html" %}
+
+{{ Kolibri.script_tag('main.js') }}
+
+{% block __PAGE_COMPONENT_SCRIPT__ %}{% endblock %}
+
+</body>
+</html>
+
+
+
+
