@@ -1,0 +1,7 @@
+absl-py
+dm-sonnet<2
+future
+networkx
+numpy
+setuptools
+six
