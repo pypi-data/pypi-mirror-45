@@ -1,0 +1,13 @@
+setuptools
+Products.CMFPlone
+Products.PloneGlossary>=1.5.0
+
+[archetypes]
+archetypes.schemaextender
+
+[dexterity]
+plone.behavior
+plone.dexterity
+
+[test]
+plone.app.testing
