@@ -1,0 +1,2 @@
+https://github.com/ping/instagram_private_api/archive/1.6.0.tar.gz#egg=instagram_private_api-1.6.0
+https://github.com/ping/instagram_private_api_extensions/archive/0.3.8.tar.gz#egg=instagram_private_api_extensions-0.3.8
