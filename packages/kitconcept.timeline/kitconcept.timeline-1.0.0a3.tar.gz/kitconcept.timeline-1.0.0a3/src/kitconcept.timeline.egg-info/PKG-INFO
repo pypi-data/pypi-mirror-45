@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: kitconcept.timeline
+Version: 1.0.0a3
+Summary: Plone add-on that allows to create a timeline.
+Home-page: https://github.com/kitconcept/kitconcept.timeline
+Author: kitconcept GmbH
+Author-email: info@kitconcept.com
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ==============================================================================
+        kitconcept.timeline
+        ==============================================================================
+        
+        .. image:: https://kitconcept.com/logo.svg
+           :alt: kitconcept
+           :target: https://kitconcept.com/
+        
+        
+        .. image:: https://secure.travis-ci.org/kitconcept/kitconcept.timeline.png
+            :target: http://travis-ci.org/kitconcept/kitconcept.timeline
+        
+        Development
+        -----------
+        
+        Requirements:
+        
+        - Python 2.7
+        - Virtualenv
+        
+        Setup::
+        
+          make
+        
+        Run Static Code Analysis::
+        
+          make code-Analysis
+        
+        Run Unit / Integration Tests::
+        
+          make test
+        
+        Run Robot Framework based acceptance tests::
+        
+          make test-acceptance
+        
+        
+        Contributors
+        ============
+        
+        - kitconcept GmbH, info@kitconcept.com
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0.0a3 (2019-05-03)
+        --------------------
+        
+        - Add complete date information.
+          [rodfersou]
+        
+        
+        1.0.0a2 (2019-04-26)
+        --------------------
+        
+        - Re-release 1.0.0a1 with missing pt/css/js resources.
+          [timo]
+        
+        
+        1.0.0a1 (2019-04-17)
+        --------------------
+        
+        - Initial release.
+          [kitconcept]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test

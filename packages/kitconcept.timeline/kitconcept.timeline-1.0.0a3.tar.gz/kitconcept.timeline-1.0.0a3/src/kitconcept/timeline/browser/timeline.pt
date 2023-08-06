@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="kitconcept.timeline">
+  <body>
+    <metal:css fill-slot="style_slot">
+      <link rel="stylesheet" type="text/css"
+            tal:attributes="href python: '/{}'.format(view.manifest['main']['css'])">
+    </metal:css>
+    <metal:content-core fill-slot="content-core">
+      <ul class="timeline">
+        <tal:repeat repeat="item view/results">
+          <li tal:define="obj item/getObject;
+                          date obj/get_date;"
+              tal:attributes="class python:'timeline-inverted'
+                                           if repeat.item.odd else
+                                           None">
+            <div class="timeline-badge primary">
+              <a tal:attributes="href item/getURL">
+                <i tal:attributes="class python:' invert'
+                                                if repeat.item.odd else
+                                                '';" />
+              </a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-date"
+                   tal:condition="date">
+                <a tal:attributes="href item/getURL"
+                   tal:content="date" />
+              </div>
+              <div class="timeline-heading">
+                <tal:image define="scales obj/@@images;
+                                   thumbnail python:scales.scale('image', scale='large')"
+                           condition="thumbnail">
+                  <img class="img-responsive"
+                       tal:attributes="src thumbnail/url;"
+                       />
+                </tal:image>
+                <p class="intro small"
+                   tal:condition="obj/copyright"
+                   tal:content="obj/copyright" />
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-title"
+                    tal:content="item/Title" />
+                <p tal:content="item/Description" />
+              </div>
+            </div>
+          </li>
+        </tal:repeat>
+        <li class="clearfix" />
+      </ul>
+
+      <script tal:attributes="src python: '/{}'.format(view.manifest['main']['js'])" />
+    </metal:content-core>
+  </body>
+</html>
