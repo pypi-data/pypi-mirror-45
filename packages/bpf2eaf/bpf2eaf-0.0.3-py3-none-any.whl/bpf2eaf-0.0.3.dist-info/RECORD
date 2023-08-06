@@ -1,0 +1,10 @@
+bpf2eaf/ErrorCodesBPF2EAF.py,sha256=Jcjn4SNoK4e6evzHCJCDNU_MMHM6xzD1IvE3XlwZV6Q,231
+bpf2eaf/__init__.py,sha256=WhulHCNKxaCqwesiPpf90bjQHCKA_XNp6yvSpcu490E,68
+bpf2eaf/bpf2eaf.py,sha256=ynsAyo30-XZyWF-O21wdYz1YaSdKKNC8eSPSxuYZpAc,2156
+bpf2eaf/bpfFileHandling.py,sha256=gD42rsiaS4jGCl6ex-kdudftJ0Mb2FDoodERrAiZF74,12707
+bpf2eaf/xml_validation.py,sha256=BGh7n-dCdi9oowjLG-62SvnHoQ1Sp4JvOQXJZbMYV88,2031
+bpf2eaf-0.0.3.dist-info/LICENSE,sha256=CeywId9S1isMALR2vSpmAyOzvg3P5oNn-VRFiU5VTRY,1056
+bpf2eaf-0.0.3.dist-info/METADATA,sha256=L6rSntYS9vFEOpI7dPqPAgjGw7Q-Vy1Tb5EDAxH0iIE,699
+bpf2eaf-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bpf2eaf-0.0.3.dist-info/top_level.txt,sha256=kRw5GSLn5U7ptzP_nSF_wJmjgUIYPimao-43p5oRMpc,8
+bpf2eaf-0.0.3.dist-info/RECORD,,
