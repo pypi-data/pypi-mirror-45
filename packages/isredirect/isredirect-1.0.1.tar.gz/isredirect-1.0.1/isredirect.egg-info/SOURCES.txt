@@ -1,0 +1,8 @@
+README.md
+setup.py
+isredirect/__init__.py
+isredirect/isredirect.py
+isredirect.egg-info/PKG-INFO
+isredirect.egg-info/SOURCES.txt
+isredirect.egg-info/dependency_links.txt
+isredirect.egg-info/top_level.txt

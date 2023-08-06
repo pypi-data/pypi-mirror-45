@@ -1,0 +1,1 @@
+from .isredirect import isRedirect
