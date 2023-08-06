@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sentry-eve
+Version: 0.0.0.1rc2
+Summary: Eve Sentry support
+Home-page: https://github.com/standart-ag/sentry-eve
+Author: Standart AG, LLC
+Author-email: it@standart.lv
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: eve
+Requires-Dist: raven[flask]
+
+# Sentry Eve support
+
+Easy to use package for Eve framework with support for Sentry
+
+## Install
+
+```bash
+pip install sentry-eve
+```
+
+## Configuration
+
+`SENTRY_DSN` - Your sentry DSN url
+
+Add it in your `settings.py`:
+```python
+SENTRY_DSN = "<Your sentry dsn url>"
+```
+
+## Use
+```python
+from SentryEve import SentryEve
+
+app = SentryEve(__name__)
+```
+
