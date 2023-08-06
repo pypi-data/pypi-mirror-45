@@ -1,0 +1,15 @@
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/web_switch_company_warning/README.rst,sha256=O5qH2FFXHC7y_g187CH2otwOhQJd_ZdoeWo_8Uutqtw,1721
+odoo/addons/web_switch_company_warning/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+odoo/addons/web_switch_company_warning/__manifest__.py,sha256=lPWtcrnu_hE-ePhotVLF54DgR-2cLcQcT2bijBz49FI,723
+odoo/addons/web_switch_company_warning/i18n/web_switch_company_warning.pot,sha256=oS_LZjeJvNyg_37--iFdXDz9ZtfgO_pqvy12ZNAw_1o,1006
+odoo/addons/web_switch_company_warning/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_switch_company_warning/static/src/js/switch_company_warning.js,sha256=B5kAZyhJTmZbkfEo-iSKBA9oe3tyoJMDZ_cvfwTcLhY,1572
+odoo/addons/web_switch_company_warning/static/src/js/switch_company_warning_worker.js,sha256=Uf8rzkQ3NIMlHGR8ZYo1K1p_2xw4Nhkf9QVYJfhnYOM,581
+odoo/addons/web_switch_company_warning/static/src/xml/switch_company_warning.xml,sha256=pghJttaCc_PsW8Q-87OhmWu3sLG0cMn50hsfYvrbBEo,443
+odoo/addons/web_switch_company_warning/view/view.xml,sha256=7uqKBy-WrFfHxNW2zi04KOaSIdy0BHH6Y5uTf7zmUEc,414
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1.dist-info/METADATA,sha256=IUnsj0X1H5WFw1q11vDH6dbZ6ZbNZEKu7c_ItalfF3k,2274
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1.dist-info/RECORD,,
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_web_switch_company_warning-10.0.0.1.1.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
