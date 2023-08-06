@@ -1,0 +1,3 @@
+[console_scripts]
+dnsdb=dnsdb.cli.cli:main
+
