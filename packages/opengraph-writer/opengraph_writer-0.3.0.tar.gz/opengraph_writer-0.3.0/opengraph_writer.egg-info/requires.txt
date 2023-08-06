@@ -1,0 +1,2 @@
+metadata_utils>=0.1.1
+six
