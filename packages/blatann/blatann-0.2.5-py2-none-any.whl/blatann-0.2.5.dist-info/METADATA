@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: blatann
+Version: 0.2.5
+Summary: API for controlling nRF52 connectivity devices through pc-ble-driver-py
+Home-page: https://github.com/ThomasGerstenberg/blatann
+Author: Thomas Gerstenberg
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: ble bluetooth nrf52 nordic
+Platform: UNKNOWN
+Requires-Dist: cryptography
+Requires-Dist: enum34
+Requires-Dist: pc-ble-driver-py
+Requires-Dist: pytz
+
+UNKNOWN
+
+
