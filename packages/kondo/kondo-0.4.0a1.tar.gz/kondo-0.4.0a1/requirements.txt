@@ -1,0 +1,7 @@
+future
+numpy
+ruamel.yaml
+Pillow
+torch>=1.1
+tensorflow>=1.13
+tb-nightly
