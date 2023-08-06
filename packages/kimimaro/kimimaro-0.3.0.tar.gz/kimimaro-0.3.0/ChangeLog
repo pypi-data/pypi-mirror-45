@@ -1,0 +1,53 @@
+CHANGES
+=======
+
+0.3.0
+-----
+
+* docs: updated credits with fix\_borders
+* feat: add fix\_borders parameter & max\_paths parameter (#9)
+* test+fix: remove "cd python"
+* docs: add Travis CI badge
+* chore: add Travis CI
+* test: add basic test for skeletonizing diagonal of square and cube
+* perf: improve memory consumption of object masking
+* perf: introduce in\_place flag to make it safe to modify input data
+* perf: use fastremap's new in\_place flag for lower memory and perf
+* docs: updated credits
+
+0.2.2
+-----
+
+* fix: accept C order arrays (#7)
+* docs: reduce redundancy in example vs performance
+* docs: add benchmark description
+* docs: added benchmark photo
+* docs: add link to citation 4
+* docs: use citations 3 and 4
+* docs: described "roll invalidation cube"
+* docs: described algorithm in steps
+* docs: describing the algorithm
+
+0.2.1
+-----
+
+* fix: black volumes should return dict not None
+
+0.2.0
+-----
+
+* docs: add PyPI badge
+* feat: fix branching (#1)
+* docs: adding sections to README
+
+0.1.0
+-----
+
+* chore: clean up dockerfile and metadata
+* docs: draft discussion of motivation and usage
+* feat: export DimensionError exception (so it can be caught)
+* refactor: remove path\_downsample from trace function
+* docs: described parameters of skeletonize function
+* chore: files required for building distributions
+* wip: importing skeletonization procedure
+* Initial commit
