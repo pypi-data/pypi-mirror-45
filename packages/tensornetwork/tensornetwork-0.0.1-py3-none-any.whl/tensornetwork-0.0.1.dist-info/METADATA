@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tensornetwork
+Version: 0.0.1
+Summary: A high level tensor network API for tensorflow.
+Home-page: http://github.com/google/TensorNetwork
+Author: The TensorNetwork Developers
+Author-email: chaseriley@googleg.com
+License: Apache 2
+Platform: UNKNOWN
+Requires-Python: >=3.5.0
+Requires-Dist: numpy (==1.16)
+Requires-Dist: tensorflow (==1.13.1)
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+tensornetwork/__init__.py,sha256=sqFXlqtW1PNmoBv8WebT7oTEh8Is8d1Y1SV6i2H6f_w,144
+tensornetwork/decompositions.py,sha256=xfgwICAjK1sZxiCgErd0bDG1cvkF3wI9Oeo8dKt2gF4,4708
+tensornetwork/decompositions_test.py,sha256=3pyPdLbvizyIKcvdV0u11WzRhTYWxHrBszmHpGJSo5A,1779
+tensornetwork/ncon.py,sha256=ZH-jhdrqX7ume2sH2PTXH70JSuv7Fuq8rlNwhdVkCwI,6248
+tensornetwork/tensornetwork.py,sha256=pfDVVGOczQh7xIAladj3QDKJULX5X_IrmGpphx73uSw,38952
+tensornetwork/tensornetwork_test.py,sha256=EBygaWxjlFg8qc4wA9MU-skkb6ine-t6k17HGKxfOAA,28303
+tensornetwork-0.0.1.dist-info/AUTHORS.md,sha256=5hi1Pb4ikb8kC8pZaZN-5mUwewy9vrWoobQWYbl3orQ,301
+tensornetwork-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tensornetwork-0.0.1.dist-info/METADATA,sha256=q9TK21_9_xaHqUK8KqGYzgqNFR3ed977iQmKFt_aUB8,377
+tensornetwork-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tensornetwork-0.0.1.dist-info/top_level.txt,sha256=jgKqnyQm2Dybd8jY176wUjNIymbHLRLSDqnqSAMa_3Q,14
+tensornetwork-0.0.1.dist-info/RECORD,,
