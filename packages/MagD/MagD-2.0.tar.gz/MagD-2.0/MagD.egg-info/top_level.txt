@@ -1,0 +1,3 @@
+magD
+obs
+test
