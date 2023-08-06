@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: ragnar
+Version: 0.1.1
+Summary: lightweight Extract-Transform-Load (ETL) framework for Python 3+
+Home-page: https://github.com/vikilab/ragnar
+Author: vikilab
+Author-email: vikilab.library@gmail.com
+License: MIT license
+Keywords: ragnar
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Text Processing
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+======
+ragnar
+======
+
+
+.. image:: https://img.shields.io/pypi/v/ragnar.svg
+        :target: https://pypi.python.org/pypi/ragnar
+
+.. image:: https://img.shields.io/travis/vikilab/ragnar.svg
+        :target: https://travis-ci.org/vikilab/ragnar
+
+.. image:: https://readthedocs.org/projects/ragnar/badge/?version=latest
+        :target: https://ragnar.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://coveralls.io/repos/github/vikilab/ragnar/badge.svg?branch=master
+	:target: https://coveralls.io/github/vikilab/ragnar?branch=master
+
+
+
+Ragnar is a lightweight Extract-Transform-Load (ETL) framework for Python 3.5+.
+
+
+* Free software: MIT license
+* Documentation: https://ragnar.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+
+
+
+=======
+History
+=======
+
+0.1.0 (2019-04-11)
+------------------
+
+* First release on PyPI.
+
+
