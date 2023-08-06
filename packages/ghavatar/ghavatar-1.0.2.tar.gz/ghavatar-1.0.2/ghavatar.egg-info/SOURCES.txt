@@ -1,0 +1,8 @@
+README.md
+setup.py
+ghavatar/__init__.py
+ghavatar.egg-info/PKG-INFO
+ghavatar.egg-info/SOURCES.txt
+ghavatar.egg-info/dependency_links.txt
+ghavatar.egg-info/requires.txt
+ghavatar.egg-info/top_level.txt
