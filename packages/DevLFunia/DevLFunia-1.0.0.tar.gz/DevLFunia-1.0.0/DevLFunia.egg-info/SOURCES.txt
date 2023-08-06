@@ -1,0 +1,13 @@
+setup.py
+DevLFunia/__init__.py
+DevLFunia/config.py
+DevLFunia/exceptions.py
+DevLFunia/main.py
+DevLFunia/photofunia.py
+DevLFunia/utils.py
+DevLFunia.egg-info/PKG-INFO
+DevLFunia.egg-info/SOURCES.txt
+DevLFunia.egg-info/dependency_links.txt
+DevLFunia.egg-info/not-zip-safe
+DevLFunia.egg-info/requires.txt
+DevLFunia.egg-info/top_level.txt
