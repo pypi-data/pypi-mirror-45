@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>copr.client.responses &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>copr.client.responses</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for copr.client.responses</h1><div class="highlight"><pre>
+<span></span><span class="c1"># pylint: disable=R0903</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Wrappers for Copr api response.</span>
+<span class="sd">Response classes provide convenient representation of received data</span>
+<span class="sd">and offer actions based on response content.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">unicode_literals</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">import</span> <span class="nn">weakref</span>
+
+<span class="c1">#</span>
+<span class="c1"># TODO:  Add Response for collections?</span>
+<span class="c1"># TODO:  what about copr_project-&gt; chroot_list, build_list, repos_list</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">..util</span> <span class="k">import</span> <span class="n">UnicodeMixin</span>
+
+
+<div class="viewcode-block" id="CoprResponse"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.CoprResponse">[docs]</a><span class="k">class</span> <span class="nc">CoprResponse</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Wrapper for Copr api responses</span>
+
+<span class="sd">        :ivar handle: handle object which provide shortcuts</span>
+<span class="sd">            based on request and/or response data</span>
+<span class="sd">            (:py:class:`~.responses.BaseHandle` and its derivatives)</span>
+<span class="sd">        :ivar dict data: json structure from Copr api</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+                 <span class="n">request_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parsers</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            :param method: what method was used to query api</span>
+<span class="sd">            :param data: json structure returned from Copr</span>
+
+<span class="sd">            :param parsers: list of parser to process response data</span>
+<span class="sd">            :type parsers: list of client.parsers.IParser</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="n">method</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">request_kwargs</span> <span class="o">=</span> <span class="n">request_kwargs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parsers</span> <span class="o">=</span> <span class="n">parsers</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_parsed_data</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;No response data to access sub-item&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parsed_data</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parsed_data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">parser</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">parsers</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">provided_fields</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span>
+                                         <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span>
+                                         <span class="n">request_kwargs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">request_kwargs</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_parsed_data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+                    <span class="k">return</span> <span class="n">value</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BaseHandle"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.BaseHandle">[docs]</a><span class="k">class</span> <span class="nc">BaseHandle</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Handles provide convenient shortcut methods. Useful methods</span>
+<span class="sd">    provided by derived classes.</span>
+
+<span class="sd">    Example::</span>
+
+<span class="sd">        response = client.create_project(&quot;copr&quot;)</span>
+<span class="sd">        response.handle # &lt;-- ProjectHandle object</span>
+<span class="sd">        print(response.handle.get_project_details().data)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            :param client: client instance used for request</span>
+<span class="sd">            :type client: CoprClient</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">response</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">proxy</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">response</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="ProjectHandle"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectHandle">[docs]</a><span class="k">class</span> <span class="nc">ProjectHandle</span><span class="p">(</span><span class="n">BaseHandle</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Handle to deal with a single Copr project</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            :param client: client instance used for request</span>
+<span class="sd">            :type client: CoprClient</span>
+
+<span class="sd">            :param projectname: Copr project name</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">ProjectHandle</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+
+<div class="viewcode-block" id="ProjectHandle.get_project_details"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectHandle.get_project_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_project_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth:`~.client.CoprClient.get_project_details`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get_project_details</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectHandle.modify_project"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectHandle.modify_project">[docs]</a>    <span class="k">def</span> <span class="nf">modify_project</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth:`~.client.CoprClient.modify_project`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">modify_project</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectHandle.delete_project"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectHandle.delete_project">[docs]</a>    <span class="k">def</span> <span class="nf">delete_project</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth:`~.client.CoprClient.delete_project`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete_project</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectHandle.create_new_build"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectHandle.create_new_build">[docs]</a>    <span class="k">def</span> <span class="nf">create_new_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src_pkgs</span><span class="p">,</span> <span class="n">chroots</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth&quot;`~.client.CoprClient.create_new_build&#39;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">create_new_build</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span>
+                                            <span class="n">src_pkgs</span><span class="p">,</span> <span class="n">chroots</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="BuildHandle"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.BuildHandle">[docs]</a><span class="k">class</span> <span class="nc">BuildHandle</span><span class="p">(</span><span class="n">BaseHandle</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Handle to deal with a single build</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">build_id</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            :param client: client instance used for request</span>
+<span class="sd">            :type client: CoprClient</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">BuildHandle</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">build_id</span> <span class="o">=</span> <span class="n">build_id</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;projectname&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">project_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut for :py:class:`.responses.ProjectHandle`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Project name for build </span><span class="si">{0}</span><span class="s2"> is unknown&quot;</span><span class="o">.</span>
+                            <span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_id</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Project owner for build </span><span class="si">{0}</span><span class="s2"> is unknown&quot;</span><span class="o">.</span>
+                            <span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_id</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span>
+                             <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+                             <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">)</span>
+
+<div class="viewcode-block" id="BuildHandle.get_build_details"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.BuildHandle.get_build_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_build_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth:`~.client.CoprClient.get_build_details`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get_build_details</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_id</span><span class="p">,</span>
+                                             <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+                                             <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildHandle.cancel_build"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.BuildHandle.cancel_build">[docs]</a>    <span class="k">def</span> <span class="nf">cancel_build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Shortcut to :meth:`~.client.CoprClient.cancel_build`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">cancel_build</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_id</span><span class="p">,</span>
+                                        <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+                                        <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ProjectChrootHandle"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectChrootHandle">[docs]</a><span class="k">class</span> <span class="nc">ProjectChrootHandle</span><span class="p">(</span><span class="n">BaseHandle</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Handle to deal with a single project chroot</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">ProjectChrootHandle</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">chrootname</span> <span class="o">=</span> <span class="n">chrootname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;projectname&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">project_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Project name  is unknown&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Project owner for build </span><span class="si">{0}</span><span class="s2"> is unknown&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span>
+                             <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+                             <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ProjectChrootHandle.get_project_chroot_details"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectChrootHandle.get_project_chroot_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_project_chroot_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Shortcut to :meth:`~.client.CoprClient.get_project_chroot_details`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get_project_chroot_details</span><span class="p">(</span>
+            <span class="n">chrootname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chrootname</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span>
+            <span class="n">username</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectChrootHandle.modify_project_chroot_details"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectChrootHandle.modify_project_chroot_details">[docs]</a>    <span class="k">def</span> <span class="nf">modify_project_chroot_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pkgs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Shortcut to :meth:`~.client.CoprClient.modify_project_chroot_details`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">modify_project_chroot_details</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">chrootname</span><span class="p">,</span> <span class="n">pkgs</span><span class="o">=</span><span class="n">pkgs</span><span class="p">)</span></div></div>
+
+
+<span class="k">class</span> <span class="nc">PackageHandle</span><span class="p">(</span><span class="n">BaseHandle</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">PackageHandle</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ownername</span> <span class="o">=</span> <span class="n">ownername</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+
+<span class="c1">############################################################</span>
+
+<div class="viewcode-block" id="ProjectWrapper"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectWrapper">[docs]</a><span class="k">class</span> <span class="nc">ProjectWrapper</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Helper class to represent project objects</span>
+
+<span class="sd">        ``__str__`` overridden to produces pretty formatted representation</span>
+
+<span class="sd">        :ivar handle: :py:class:`.responses.ProjectHandle`</span>
+
+<span class="sd">        :ivar username: project owner</span>
+<span class="sd">        :ivar projectname: project names</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span>
+                 <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">yum_repos</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_repos</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">instructions</span> <span class="o">=</span> <span class="n">instructions</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">yum_repos</span> <span class="o">=</span> <span class="n">yum_repos</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">additional_repos</span> <span class="o">=</span> <span class="n">additional_repos</span> <span class="ow">or</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="n">client</span><span class="p">,</span> <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+                                    <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;Name: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">))</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;  Description: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">description</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">yum_repos</span><span class="p">:</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;  Yum repo(s):&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yum_repos</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+                <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;    </span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">yum_repos</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">additional_repos</span><span class="p">:</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;  Additional repo: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">additional_repos</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">instructions</span><span class="p">:</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;  Instructions: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">instructions</span><span class="p">))</span>
+
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BuildWrapper"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.BuildWrapper">[docs]</a><span class="k">class</span> <span class="nc">BuildWrapper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Helper class to represent build objects</span>
+
+<span class="sd">        :ivar handle: :py:class:`.responses.BuildHandle`</span>
+
+<span class="sd">        :ivar username: project owner</span>
+<span class="sd">        :ivar projectname: project names</span>
+<span class="sd">        :ivar int build_id: build identifier</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">build_id</span><span class="p">,</span>
+                 <span class="n">status</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">build_id</span> <span class="o">=</span> <span class="n">build_id</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">status</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BuildHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="n">client</span><span class="p">,</span> <span class="n">build_id</span><span class="o">=</span><span class="n">build_id</span><span class="p">,</span>
+                                  <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+                                  <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ProjectChrootWrapper"><a class="viewcode-back" href="../../../client_v1/Responses.html#copr.client.responses.ProjectChrootWrapper">[docs]</a><span class="k">class</span> <span class="nc">ProjectChrootWrapper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Helper class to represent project chroot objects</span>
+
+<span class="sd">        :ivar handle: :py:class:`.responses.ProjectChrootHandle`</span>
+
+<span class="sd">        :ivar username: project owner</span>
+<span class="sd">        :ivar projectname: project names</span>
+<span class="sd">        :ivar chrootname: chroot name</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">,</span>
+                 <span class="n">repo_url</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chrootname</span> <span class="o">=</span> <span class="n">chrootname</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">repo_url</span> <span class="o">=</span> <span class="n">repo_url</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectChrootHandle</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="n">client</span><span class="p">,</span> <span class="n">chrootname</span><span class="o">=</span><span class="n">chrootname</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+            <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">PackageWrapper</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ownername</span> <span class="o">=</span> <span class="n">ownername</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">PackageHandle</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span>
+            <span class="n">ownername</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">projectname</span><span class="p">,</span>
+            <span class="n">copr_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">copr_id</span><span class="p">,</span> <span class="n">enable_net</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">enable_net</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="nb">id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">source_json</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">source_json</span><span class="p">,</span>
+            <span class="n">source_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">source_type</span><span class="p">,</span> <span class="n">webhook_rebuild</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">webhook_rebuild</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">for_json</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+
+
+<span class="k">class</span> <span class="nc">CoprChrootWrapper</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="o">**</span><span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ownername</span> <span class="o">=</span> <span class="n">ownername</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">projectname</span> <span class="o">=</span> <span class="n">projectname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">for_json</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

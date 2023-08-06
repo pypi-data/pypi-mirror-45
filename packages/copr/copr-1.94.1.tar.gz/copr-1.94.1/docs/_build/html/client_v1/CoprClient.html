@@ -1,0 +1,620 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CoprClient &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Responses" href="Responses.html" />
+    <link rel="prev" title="Create client" href="Examples.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV1.html">Legacy client</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Examples.html">Create client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#get-projects-list">Get projects list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#search-for-projects">Search for projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#create-update-delete-project">Create/update/delete project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#work-with-builds">Work with builds</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CoprClient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Responses.html">Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Responses.html#data-wrappers">Data wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV1.html">Legacy client</a> &raquo;</li>
+        
+      <li>CoprClient</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v1/CoprClient.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="coprclient">
+<h1>CoprClient<a class="headerlink" href="#coprclient" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="copr.client.client.CoprClient">
+<em class="property">class </em><code class="descclassname">copr.client.client.</code><code class="descname">CoprClient</code><span class="sig-paren">(</span><em>username=None</em>, <em>login=None</em>, <em>token=None</em>, <em>copr_url=None</em>, <em>no_config=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main interface to the copr service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>unicode</em>) – username used by default for all requests</li>
+<li><strong>login</strong> (<em>unicode</em>) – user login, used for identification</li>
+<li><strong>token</strong> (<em>unicode</em>) – copr api token</li>
+<li><strong>copr_url</strong> (<em>unicode</em>) – used as copr projects root</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Could be created:</dt>
+<dd><ul class="first last simple">
+<li>directly</li>
+<li>using static method <a class="reference internal" href="#copr.client.client.CoprClient.create_from_file_config" title="copr.client.client.CoprClient.create_from_file_config"><code class="xref py py-meth docutils literal notranslate"><span class="pre">CoprClient.create_from_file_config()</span></code></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="staticmethod">
+<dt id="copr.client.client.CoprClient.create_from_file_config">
+<em class="property">static </em><code class="descname">create_from_file_config</code><span class="sig-paren">(</span><em>filepath=None</em>, <em>ignore_error=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.create_from_file_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.create_from_file_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates Copr client using the information from the config file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filepath</strong> (<code class="xref any docutils literal notranslate"><span class="pre">str</span></code>) – specifies config location,
+default: “~/.config/copr”</li>
+<li><strong>ignore_error</strong> (<em>bool</em>) – When true creates default Client
+without credentionals</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#copr.client.client.CoprClient" title="copr.client.client.CoprClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprClient</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.get_build_details">
+<code class="descname">get_build_details</code><span class="sig-paren">(</span><em>build_id</em>, <em>projectname=None</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.get_build_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.get_build_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns build details.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>build_id</strong> (<em>int</em>) – Build identifier</li>
+<li><strong>projectname</strong> – [optional] Copr project name</li>
+<li><strong>username</strong> – [optional] Copr project owner</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a> with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.BuildHandle" title="copr.client.responses.BuildHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildHandle</span></code></a></li>
+<li>text fields: “project”, “owner”, “status”, “results”,</li>
+</ul>
+<p>”submitted_on”, “started_on”, “ended_on”,
+“built_pkgs”, “src_pkg”, “src_version”</p>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.cancel_build">
+<code class="descname">cancel_build</code><span class="sig-paren">(</span><em>build_id</em>, <em>projectname=None</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.cancel_build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.cancel_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels build.
+Auth required.
+If build can’t be canceled do nothing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>build_id</strong> (<em>int</em>) – Build identifier</li>
+<li><strong>projectname</strong> – [optional] Copr project name</li>
+<li><strong>username</strong> – [optional] Copr project owner</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a> with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.BuildHandle" title="copr.client.responses.BuildHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildHandle</span></code></a></li>
+<li>text fields: “status”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.create_new_build">
+<code class="descname">create_new_build</code><span class="sig-paren">(</span><em>projectname</em>, <em>pkgs</em>, <em>username=None</em>, <em>timeout=None</em>, <em>memory=None</em>, <em>chroots=None</em>, <em>background=False</em>, <em>progress_callback=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.create_new_build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.create_new_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates new build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>projectname</strong> – name of Copr project (without user namespace)</li>
+<li><strong>pkgs</strong> – list of packages to include in build</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+<li><strong>timeout</strong> – [optional] build timeout</li>
+<li><strong>memory</strong> – [optional] amount of required memory for build process</li>
+<li><strong>chroots</strong> – [optional] build only with given chroots</li>
+<li><strong>background</strong> – [optional] mark the build as a background job.</li>
+<li><strong>progress_callback</strong> – [optional] a function that received a</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>MultipartEncoderMonitor instance for each chunck of uploaded data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a> with additional fields:<ul class="simple">
+<li><strong>builds_list</strong>: list of <a class="reference internal" href="Responses.html#copr.client.responses.BuildWrapper" title="copr.client.responses.BuildWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildWrapper</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.get_project_details">
+<code class="descname">get_project_details</code><span class="sig-paren">(</span><em>projectname</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.get_project_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.get_project_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns project details</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – Copr projectname</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li>text fields: “description”, “instructions”, “last_modified”,</li>
+</ul>
+<p>”name”</p>
+<ul class="simple">
+<li><strong>chroots</strong>: list of
+<a class="reference internal" href="Responses.html#copr.client.responses.ProjectChrootWrapper" title="copr.client.responses.ProjectChrootWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChrootWrapper</span></code></a></li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.delete_project">
+<code class="descname">delete_project</code><span class="sig-paren">(</span><em>projectname</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.delete_project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.delete_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the entire project.
+Auth required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – Copr projectname</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li>text fields: “message”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.create_project">
+<code class="descname">create_project</code><span class="sig-paren">(</span><em>username</em>, <em>projectname</em>, <em>chroots</em>, <em>description=None</em>, <em>instructions=None</em>, <em>repos=None</em>, <em>initial_pkgs=None</em>, <em>disable_createrepo=None</em>, <em>unlisted_on_hp=False</em>, <em>enable_net=True</em>, <em>persistent=False</em>, <em>auto_prune=True</em>, <em>use_bootstrap_container=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.create_project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.create_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new copr project
+Auth required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – User or group name</li>
+<li><strong>projectname</strong> – Copr project name</li>
+<li><strong>chroots</strong> – List of target chroots</li>
+<li><strong>description</strong> – [optional] Project description</li>
+<li><strong>instructions</strong> – [optional] Instructions for end users</li>
+<li><strong>disable_createrepo</strong> – [optional] disables automatic repo meta-data regeneration, “true”/”false” string</li>
+<li><strong>unlisted_on_hp</strong> – [optional] Project will not be shown on COPR HP</li>
+<li><strong>enable_net</strong> – [optional] If builder can access net for builds in this project</li>
+<li><strong>persistent</strong> – [optional] If builds and the project are undeletable</li>
+<li><strong>auto_prune</strong> – [optional] If backend auto-deletion script should be run for the project</li>
+<li><strong>use_bootstrap_container</strong> – [optional] If mock bootstrap container is used to initialize the buildroot</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.ProjectHandle" title="copr.client.responses.ProjectHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectHandle</span></code></a></li>
+<li>text fields: “message”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.modify_project">
+<code class="descname">modify_project</code><span class="sig-paren">(</span><em>projectname</em>, <em>username=None</em>, <em>description=None</em>, <em>instructions=None</em>, <em>repos=None</em>, <em>disable_createrepo=None</em>, <em>unlisted_on_hp=None</em>, <em>enable_net=None</em>, <em>auto_prune=None</em>, <em>use_bootstrap_container=None</em>, <em>chroots=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.modify_project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.modify_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifies main project configuration.
+Auth required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – Copr project name</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+<li><strong>description</strong> – [optional] project description</li>
+<li><strong>instructions</strong> – [optional] instructions for end users</li>
+<li><strong>repos</strong> – [optional] list of additional repos to be used during
+the build process</li>
+<li><strong>repos</strong> – [optional] list of additional repos to be used during</li>
+<li><strong>disable_createrepo</strong> – [optional] disables automatic repo meta-data regeneration</li>
+<li><strong>unlisted_on_hp</strong> – [optional] Project will not be shown on COPR HP</li>
+<li><strong>enable_net</strong> – [optional] If builder can access net for builds in this project</li>
+<li><strong>auto_prune</strong> – [optional] If backend auto-deletion script should be run for the project</li>
+<li><strong>use_bootstrap_container</strong> – [optional] If mock bootstrap container is used to initialize the buildroot</li>
+<li><strong>chroots</strong> – [optional] list of chroots that should be enabled in the project. When not <code class="docutils literal notranslate"><span class="pre">None</span></code>,
+selected chroots will be enabled while current chroots
+will not remain enabled if they are not specified.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.ProjectHandle" title="copr.client.responses.ProjectHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectHandle</span></code></a></li>
+<li>text fields: “buildroot_pkgs”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.get_projects_list">
+<code class="descname">get_projects_list</code><span class="sig-paren">(</span><em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.get_projects_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.get_projects_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of projects created by the user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> – [optional] use alternative username</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:<ul class="simple">
+<li><strong>projects_list</strong>: list of
+<a class="reference internal" href="Responses.html#copr.client.responses.ProjectWrapper" title="copr.client.responses.ProjectWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectWrapper</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.get_project_chroot_details">
+<code class="descname">get_project_chroot_details</code><span class="sig-paren">(</span><em>projectname</em>, <em>chrootname</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.get_project_chroot_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.get_project_chroot_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns details of chroot used in project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – Copr project name</li>
+<li><strong>chrootname</strong> – chroot name</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.ProjectChrootHandle" title="copr.client.responses.ProjectChrootHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChrootHandle</span></code></a></li>
+<li>text fields: “buildroot_pkgs”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.modify_project_chroot_details">
+<code class="descname">modify_project_chroot_details</code><span class="sig-paren">(</span><em>projectname</em>, <em>chrootname</em>, <em>pkgs=None</em>, <em>username=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.modify_project_chroot_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.modify_project_chroot_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#64;deprecated to edit_chroot
+Modifies chroot used in project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>projectname</strong> – Copr project name</li>
+<li><strong>chrootname</strong> – chroot name</li>
+<li><strong>username</strong> – [optional] use alternative username</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:</p>
+<ul class="simple">
+<li><strong>handle:</strong> <a class="reference internal" href="Responses.html#copr.client.responses.ProjectChrootHandle" title="copr.client.responses.ProjectChrootHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChrootHandle</span></code></a></li>
+<li>text fields: “buildroot_pkgs”</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.client.CoprClient.search_projects">
+<code class="descname">search_projects</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/client.html#CoprClient.search_projects"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.client.CoprClient.search_projects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search projects by substring</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> – substring to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="Responses.html#copr.client.responses.CoprResponse" title="copr.client.responses.CoprResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprResponse</span></code></a>
+with additional fields:<ul class="simple">
+<li><strong>projects_list</strong>: list of
+<a class="reference internal" href="Responses.html#copr.client.responses.ProjectWrapper" title="copr.client.responses.ProjectWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectWrapper</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Responses.html" class="btn btn-neutral float-right" title="Responses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Examples.html" class="btn btn-neutral" title="Create client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

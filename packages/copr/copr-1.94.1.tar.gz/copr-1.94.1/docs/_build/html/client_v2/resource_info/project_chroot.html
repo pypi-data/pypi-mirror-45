@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Project chroot &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Build" href="build.html" />
+    <link rel="prev" title="Project" href="project.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../ClientV2.html">Client version 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../initialization.html">Client initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources_usage.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errors.html">Error handling</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ClientV2.html#resources-info">Resources info</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="project.html">Project</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Project chroot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#project-chroot-entity-attributes">Project chroot entity attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-project-chroots-list">Get project chroots list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-one-project-chroot">Get one project chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modify-project-chroot">Modify project chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disable-project-chroot">Disable project chroot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="build.html">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_task.html">Build task</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mock_chroot.html">Mock chroot</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ClientV2.html#autodoc">Autodoc</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../ClientV2.html">Client version 2</a> &raquo;</li>
+        
+      <li>Project chroot</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/client_v2/resource_info/project_chroot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="project-chroot">
+<span id="project-chroot-info"></span><h1>Project chroot<a class="headerlink" href="#project-chroot" title="Permalink to this headline">¶</a></h1>
+<p>Projects Chroots allows to enable and disable target chroots and
+modify project settings dedicated for specific chroots.</p>
+<p>Access to the project chroots is done through <a class="reference internal" href="../general.html#copr.client_v2.client.CoprClient.project_chroots" title="copr.client_v2.client.CoprClient.project_chroots"><code class="xref py py-meth docutils literal notranslate"><span class="pre">project_chroots()</span></code></a>.
+property of initialized <a class="reference internal" href="../general.html#copr.client_v2.client.CoprClient" title="copr.client_v2.client.CoprClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoprClient</span></code></a>. That property is an instance of
+<a class="reference internal" href="../handlers.html#copr.client_v2.handlers.ProjectChrootHandle" title="copr.client_v2.handlers.ProjectChrootHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChrootHandle</span></code></a>.</p>
+<p>However it’s usually more convenient to access project chroots
+from an instance of <a class="reference internal" href="../resources.html#copr.client_v2.resources.Project" title="copr.client_v2.resources.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code></a>
+using methods <a class="reference internal" href="../resources.html#copr.client_v2.resources.Project.get_project_chroot_list" title="copr.client_v2.resources.Project.get_project_chroot_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_project_chroot_list()</span></code></a> or
+<a class="reference internal" href="../resources.html#copr.client_v2.resources.Project.get_project_chroot" title="copr.client_v2.resources.Project.get_project_chroot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_project_chroot()</span></code></a>.</p>
+<p>Chroot are represented by
+<a class="reference internal" href="../resources.html#copr.client_v2.resources.ProjectChroot" title="copr.client_v2.resources.ProjectChroot"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChroot</span></code></a> class.</p>
+<div class="section" id="project-chroot-entity-attributes">
+<span id="project-chroot-attributes"></span><h2>Project chroot entity attributes<a class="headerlink" href="#project-chroot-entity-attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="22%" />
+<col width="10%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Can edit?</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>name</td>
+<td>string</td>
+<td>no</td>
+<td>chroot name</td>
+</tr>
+<tr class="row-odd"><td>buildroot_pkgs</td>
+<td>list of strings</td>
+<td>yes</td>
+<td>packages to be installed into the buildroot</td>
+</tr>
+<tr class="row-even"><td>comps</td>
+<td>string</td>
+<td>yes</td>
+<td>content of the <a class="reference external" href="https://fedorahosted.org/comps/">comps.xml</a></td>
+</tr>
+<tr class="row-odd"><td>comps_name</td>
+<td>string</td>
+<td>yes</td>
+<td>name of the uploaded comps file</td>
+</tr>
+<tr class="row-even"><td>comps_len</td>
+<td>int</td>
+<td>no</td>
+<td>size of the uploaded comps file (bytes)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">all following examples assume that we use <code class="docutils literal notranslate"><span class="pre">cl</span></code>
+as an instance of <a class="reference internal" href="../general.html#copr.client_v2.client.CoprClient" title="copr.client_v2.client.CoprClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">client_v2.client.CoprClient</span></code></a>
+and <code class="docutils literal notranslate"><span class="pre">p</span></code> as an instance of <a class="reference internal" href="../resources.html#copr.client_v2.resources.Project" title="copr.client_v2.resources.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code></a></p>
+</div>
+</div>
+<div class="section" id="get-project-chroots-list">
+<h2>Get project chroots list<a class="headerlink" href="#get-project-chroots-list" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pc_list</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">project_chroots</span><span class="o">.</span><span class="n">get_list</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
+<span class="go"># or more simple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pc_list</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_project_chroot_list</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pc_list</span><span class="p">)</span>
+<span class="go">[&#39;&lt;Project chroot: fedora-21-x86_64, additional packages: [], comps size if any: 0&gt;&#39;,</span>
+<span class="go"> &#39;&lt;Project chroot: epel-7-x86_64, additional packages: [], comps size if any: 0&gt;&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-one-project-chroot">
+<h2>Get one project chroot<a class="headerlink" href="#get-one-project-chroot" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pc</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">project_chroots</span><span class="o">.</span><span class="n">get_one</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fedora-23-x86_64&quot;</span><span class="p">)</span>
+<span class="go"># or</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pc</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_project_chroot</span><span class="p">(</span><span class="s2">&quot;fedora-23-x86_64&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">pc</span><span class="p">)</span>
+<span class="go">&lt;Project chroot: fedora-23-x86_64, additional packages: [], comps size if any: 0&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modify-project-chroot">
+<h2>Modify project chroot<a class="headerlink" href="#modify-project-chroot" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pc</span><span class="o">.</span><span class="n">buildroot_pkgs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;scl-utils&quot;</span><span class="p">,]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pc</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="disable-project-chroot">
+<h2>Disable project chroot<a class="headerlink" href="#disable-project-chroot" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pc</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="build.html" class="btn btn-neutral float-right" title="Build" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="project.html" class="btn btn-neutral" title="Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

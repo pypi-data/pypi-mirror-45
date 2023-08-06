@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Client initialization &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data structures" href="data_structures.html" />
+    <link rel="prev" title="Client version 3" href="../ClientV3.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV3.html">Client version 3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#example-usage">Example usage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV3.html#quick-overview">Quick overview</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Client initialization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_structures.html">Data structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="error_handling.html">Error handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pagination.html">Pagination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="working_with_proxies_directly.html">Working with proxies directly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#resources-info">Resources info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV3.html">Client version 3</a> &raquo;</li>
+        
+      <li>Client initialization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/client_initialization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="client-initialization">
+<h1>Client initialization<a class="headerlink" href="#client-initialization" title="Permalink to this headline">¶</a></h1>
+<p>Before an API client can be used, it needs to be initialized with a configuration. There are several ways to do it.
+The most standard option is reading the <code class="docutils literal notranslate"><span class="pre">~/.config/copr</span></code> file and providing it to the <code class="docutils literal notranslate"><span class="pre">Client</span></code> class. Please read
+<a class="reference external" href="https://copr.fedorainfracloud.org/api/">https://copr.fedorainfracloud.org/api/</a> for more information about API token.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.v3</span> <span class="k">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="o">.</span><span class="n">create_from_config_file</span><span class="p">()</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">config</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;copr_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;https://copr.fedorainfracloud.org&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;login&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secretlogin&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secrettoken&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>A different config file can be easily used by passing its path to <code class="docutils literal notranslate"><span class="pre">create_from_config_file</span></code> method.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="o">.</span><span class="n">create_from_config_file</span><span class="p">(</span><span class="s2">&quot;/some/alternative/copr&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is not required to use a configuration stored in a file though. Configuration <code class="docutils literal notranslate"><span class="pre">dict</span></code> can be
+passed to the <code class="docutils literal notranslate"><span class="pre">Client</span></code> constructor.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;copr_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;https://copr.fedorainfracloud.org&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;login&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secretlogin&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secrettoken&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">}</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">client</span><span class="o">.</span><span class="n">config</span> <span class="o">==</span> <span class="n">config</span>
+</pre></div>
+</div>
+<p>Similarly it can be done when using proxies directly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.v3</span> <span class="k">import</span> <span class="n">BuildProxy</span>
+<span class="n">build_proxy</span> <span class="o">=</span> <span class="n">BuildProxy</span><span class="o">.</span><span class="n">create_from_config_file</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Or even without configuration file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;copr_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;https://copr.fedorainfracloud.org&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;login&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secretlogin&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;secrettoken&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;username&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">}</span>
+
+<span class="n">build_proxy</span> <span class="o">=</span> <span class="n">BuildProxy</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And finally, it is possible to just read the configuration file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.v3</span> <span class="k">import</span> <span class="n">config_from_file</span>
+<span class="n">config</span> <span class="o">=</span> <span class="n">config_from_file</span><span class="p">()</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_structures.html" class="btn btn-neutral float-right" title="Data structures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ClientV3.html" class="btn btn-neutral" title="Client version 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

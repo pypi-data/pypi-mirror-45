@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>copr.v3.proxies.build &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../proxies.html">copr.v3.proxies</a> &raquo;</li>
+        
+      <li>copr.v3.proxies.build</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for copr.v3.proxies.build</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">BaseProxy</span>
+<span class="kn">from</span> <span class="nn">..requests</span> <span class="k">import</span> <span class="n">Request</span><span class="p">,</span> <span class="n">FileRequest</span><span class="p">,</span> <span class="n">munchify</span><span class="p">,</span> <span class="n">POST</span>
+<span class="kn">from</span> <span class="nn">..exceptions</span> <span class="k">import</span> <span class="n">CoprValidationException</span>
+
+
+<div class="viewcode-block" id="BuildProxy"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy">[docs]</a><span class="k">class</span> <span class="nc">BuildProxy</span><span class="p">(</span><span class="n">BaseProxy</span><span class="p">):</span>
+<div class="viewcode-block" id="BuildProxy.get"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a build</span>
+
+<span class="sd">        :param int build_id:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build_id</span><span class="p">)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.get_source_chroot"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.get_source_chroot">[docs]</a>    <span class="k">def</span> <span class="nf">get_source_chroot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a source build</span>
+
+<span class="sd">        :param int build_id:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/source-chroot/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build_id</span><span class="p">)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.get_source_build_config"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.get_source_build_config">[docs]</a>    <span class="k">def</span> <span class="nf">get_source_build_config</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a config for source build</span>
+
+<span class="sd">        :param int build_id:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/source-build-config/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build_id</span><span class="p">)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.get_list"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.get_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">packagename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pagination</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of packages</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str packagename:</span>
+<span class="sd">        :param str status:</span>
+<span class="sd">        :param pagination:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/list&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;packagename&quot;</span><span class="p">:</span> <span class="n">packagename</span><span class="p">,</span>
+            <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">status</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pagination</span> <span class="ow">or</span> <span class="p">{})</span>
+
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.cancel"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.cancel">[docs]</a>    <span class="k">def</span> <span class="nf">cancel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cancel a build</span>
+
+<span class="sd">        :param int build_id:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/cancel/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build_id</span><span class="p">)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_urls"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_urls">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_urls</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create builds from a list of URLs</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param list urls:</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/url&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;pkgs&quot;</span><span class="p">:</span> <span class="n">urls</span><span class="p">,</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_url"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_url">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from URL</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str url:</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprValidationException</span><span class="p">(</span><span class="s2">&quot;This method doesn&#39;t allow submitting multiple URLs at once. &quot;</span>
+                                          <span class="s2">&quot;Use `create_from_urls` instead.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_from_urls</span><span class="p">(</span><span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="p">[</span><span class="n">url</span><span class="p">],</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">,</span>
+                                     <span class="n">project_dirname</span><span class="o">=</span><span class="n">project_dirname</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_file"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_file">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from local SRPM file</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str path:</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/upload&quot;</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;pkgs&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">name</span><span class="p">),</span> <span class="n">f</span><span class="p">,</span> <span class="s2">&quot;application/x-rpm&quot;</span><span class="p">),</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_scm"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_scm">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_scm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">clone_url</span><span class="p">,</span> <span class="n">committish</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">subdirectory</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">spec</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                        <span class="n">scm_type</span><span class="o">=</span><span class="s2">&quot;git&quot;</span><span class="p">,</span> <span class="n">source_build_method</span><span class="o">=</span><span class="s2">&quot;rpkg&quot;</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from SCM repository</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str clone_url: url to a project versioned by Git or SVN</span>
+<span class="sd">        :param str committish: name of a branch, tag, or a git hash</span>
+<span class="sd">        :param str subdirectory: path to a subdirectory with package content</span>
+<span class="sd">        :param str spec: path to spec file, relative to &#39;subdirectory&#39;</span>
+<span class="sd">        :param str scm_type:</span>
+<span class="sd">        :param str source_build_method:</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/scm&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;clone_url&quot;</span><span class="p">:</span> <span class="n">clone_url</span><span class="p">,</span>
+            <span class="s2">&quot;committish&quot;</span><span class="p">:</span> <span class="n">committish</span><span class="p">,</span>
+            <span class="s2">&quot;subdirectory&quot;</span><span class="p">:</span> <span class="n">subdirectory</span><span class="p">,</span>
+            <span class="s2">&quot;spec&quot;</span><span class="p">:</span> <span class="n">spec</span><span class="p">,</span>
+            <span class="s2">&quot;scm_type&quot;</span><span class="p">:</span> <span class="n">scm_type</span><span class="p">,</span>
+            <span class="s2">&quot;source_build_method&quot;</span><span class="p">:</span> <span class="n">source_build_method</span><span class="p">,</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_pypi"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_pypi">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_pypi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">pypi_package_name</span><span class="p">,</span> <span class="n">pypi_package_version</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">spec_template</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">python_versions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from PyPI - https://pypi.org/</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str pypi_package_name:</span>
+<span class="sd">        :param str pypi_package_version: PyPI package version (None means &quot;latest&quot;)</span>
+<span class="sd">        :param str spec_template: what pyp2rpm spec template to use</span>
+<span class="sd">        :param list python_versions: list of python versions to build for</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/pypi&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;pypi_package_name&quot;</span><span class="p">:</span> <span class="n">pypi_package_name</span><span class="p">,</span>
+            <span class="s2">&quot;pypi_package_version&quot;</span><span class="p">:</span> <span class="n">pypi_package_version</span><span class="p">,</span>
+            <span class="s2">&quot;spec_template&quot;</span><span class="p">:</span> <span class="n">spec_template</span><span class="p">,</span>
+            <span class="s2">&quot;python_versions&quot;</span><span class="p">:</span> <span class="n">python_versions</span> <span class="ow">or</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_rubygems"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_rubygems">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_rubygems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">gem_name</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from RubyGems - https://rubygems.org/</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str gem_name:</span>
+<span class="sd">        :param buildopts: http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/rubygems&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;gem_name&quot;</span><span class="p">:</span> <span class="n">gem_name</span><span class="p">,</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="BuildProxy.create_from_custom"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.create_from_custom">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_custom</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">script_chroot</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                           <span class="n">script_builddeps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">script_resultdir</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                           <span class="n">project_dirname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a build from custom script.</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param script: script to execute to generate sources</span>
+<span class="sd">        :param script_chroot: [optional] what chroot to use to generate</span>
+<span class="sd">            sources (defaults to fedora-latest-x86_64)</span>
+<span class="sd">        :param script_builddeps: [optional] list of script&#39;s dependencies</span>
+<span class="sd">        :param script_resultdir: [optional] where script generates results</span>
+<span class="sd">            (relative to cwd)</span>
+<span class="sd">        :param str project_dirname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/create/custom&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;script&quot;</span><span class="p">:</span> <span class="n">script</span><span class="p">,</span>
+            <span class="s2">&quot;chroot&quot;</span><span class="p">:</span> <span class="n">script_chroot</span><span class="p">,</span>
+            <span class="s2">&quot;builddeps&quot;</span><span class="p">:</span> <span class="n">script_builddeps</span><span class="p">,</span>
+            <span class="s2">&quot;resultdir&quot;</span><span class="p">:</span> <span class="n">script_resultdir</span><span class="p">,</span>
+            <span class="s2">&quot;project_dirname&quot;</span><span class="p">:</span> <span class="n">project_dirname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="n">buildopts</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">buildopts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="n">request_class</span> <span class="o">=</span> <span class="n">Request</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;endpoint&quot;</span><span class="p">:</span> <span class="n">endpoint</span><span class="p">,</span> <span class="s2">&quot;api_base_url&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span>
+                  <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span><span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="n">POST</span><span class="p">,</span> <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">}</span>
+        <span class="k">if</span> <span class="n">files</span><span class="p">:</span>
+            <span class="n">request_class</span> <span class="o">=</span> <span class="n">FileRequest</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;files&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">files</span>
+
+        <span class="k">if</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">buildopts</span> <span class="ow">and</span> <span class="s2">&quot;progress_callback&quot;</span> <span class="ow">in</span> <span class="n">buildopts</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;progress_callback&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">buildopts</span><span class="p">[</span><span class="s2">&quot;progress_callback&quot;</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">buildopts</span><span class="p">[</span><span class="s2">&quot;progress_callback&quot;</span><span class="p">]</span>
+
+        <span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">buildopts</span> <span class="ow">or</span> <span class="p">{})</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">request_class</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+<div class="viewcode-block" id="BuildProxy.delete"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.build.BuildProxy.delete">[docs]</a>    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete a build</span>
+
+<span class="sd">        :param int build_id:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/build/delete/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build_id</span><span class="p">)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create client &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CoprClient" href="CoprClient.html" />
+    <link rel="prev" title="Legacy client" href="../ClientV1.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV1.html">Legacy client</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-projects-list">Get projects list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-for-projects">Search for projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-update-delete-project">Create/update/delete project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#work-with-builds">Work with builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CoprClient.html">CoprClient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Responses.html">Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Responses.html#data-wrappers">Data wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV1.html">Legacy client</a> &raquo;</li>
+        
+      <li>Create client</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v1/Examples.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-client">
+<h1>Create client<a class="headerlink" href="#create-client" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.client</span> <span class="k">import</span> <span class="n">CoprClient</span>
+
+<span class="c1"># using default config location  ~/.config/copr</span>
+<span class="n">cl</span> <span class="o">=</span> <span class="n">CoprClient</span><span class="o">.</span><span class="n">create_from_file_config</span><span class="p">()</span>
+
+<span class="c1"># using config at ~/.config/alt_copr</span>
+<span class="n">cl</span> <span class="o">=</span> <span class="n">CoprClient</span><span class="o">.</span><span class="n">create_from_file_config</span><span class="p">(</span><span class="s2">&quot;~/.config/alt_copr&quot;</span><span class="p">)</span>
+
+<span class="c1"># directly</span>
+<span class="n">cl</span> <span class="o">=</span> <span class="n">CoprClient</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="n">login</span><span class="o">=</span><span class="s2">&quot;abcd&quot;</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="s2">&quot;efgk&quot;</span><span class="p">,</span> <span class="n">copr_url</span><span class="o">=</span><span class="s2">&quot;http://example.com/&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-projects-list">
+<h1>Get projects list<a class="headerlink" href="#get-projects-list" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># your projects</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">get_projects_list</span><span class="p">()</span><span class="o">.</span><span class="n">projects_list</span>
+
+<span class="c1"># other user projects</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">get_projects_list</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">&quot;rhscl&quot;</span><span class="p">)</span>
+
+<span class="c1"># print list for humans and machines</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
+<span class="k">for</span> <span class="n">prj</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">projects_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">prj</span><span class="p">)</span>
+    <span class="n">pprint</span><span class="p">(</span><span class="n">prj</span><span class="o">.</span><span class="n">get_project_details</span><span class="p">()</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="search-for-projects">
+<h1>Search for projects<a class="headerlink" href="#search-for-projects" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">search_projects</span><span class="p">(</span><span class="s2">&quot;python&quot;</span><span class="p">)</span>
+<span class="c1"># print list for humans</span>
+<span class="k">for</span> <span class="n">prj</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">projects_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">prj</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-update-delete-project">
+<h1>Create/update/delete project<a class="headerlink" href="#create-update-delete-project" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">create_project</span><span class="p">(</span><span class="s2">&quot;hello_world&quot;</span><span class="p">,</span> <span class="n">chroots</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;fedora-20-x86_64&quot;</span><span class="p">],</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;My cool app&quot;</span><span class="p">)</span>
+
+<span class="c1"># assert correct description</span>
+<span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">get_project_details</span><span class="p">()</span><span class="o">.</span><span class="n">description</span> <span class="o">==</span> <span class="s2">&quot;My cool app&quot;</span>
+
+<span class="c1"># add instruction</span>
+<span class="n">result</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">modify_project</span><span class="p">(</span><span class="n">instructions</span><span class="o">=</span><span class="s2">&quot;How does one patch KDE2 under FreeBSD?&quot;</span><span class="p">)</span>
+<span class="c1"># which is shorter than</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">modify_project</span><span class="p">(</span><span class="s2">&quot;hello_world&quot;</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+
+<span class="c1"># delete project</span>
+<span class="n">result</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">delete_project</span><span class="p">()</span>
+<span class="c1"># again shortcut for</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">delete_project</span><span class="p">(</span><span class="s2">&quot;hello_world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="work-with-builds">
+<h1>Work with builds<a class="headerlink" href="#work-with-builds" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># building new package</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">create_new_build</span><span class="p">(</span><span class="s2">&quot;hello_world&quot;</span><span class="p">,</span>
+    <span class="n">pkgs</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;http://example.com/pkg.src.rpm&quot;</span><span class="p">,])</span>
+
+<span class="c1"># retrieve build statuses</span>
+<span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">builds_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">:</span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bw</span><span class="o">.</span><span class="n">build_id</span><span class="p">,</span> <span class="n">bw</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">get_build_details</span><span class="p">()</span><span class="o">.</span><span class="n">status</span><span class="p">))</span>
+
+<span class="c1"># cancel all created build</span>
+<span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">builds_list</span><span class="p">:</span>
+    <span class="n">bw</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">cancel_build</span><span class="p">()</span>
+
+<span class="c1"># get build status for each chroot</span>
+<span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">builds_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;build: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bw</span><span class="o">.</span><span class="n">build_id</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">ch</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">bw</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">get_build_details</span><span class="p">()</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;chroots&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2"> chroot </span><span class="si">{0}</span><span class="s2">:</span><span class="se">\t</span><span class="s2"> </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="n">status</span><span class="p">))</span>
+
+<span class="c1"># simple build progress:</span>
+<span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">datetime</span>
+<span class="n">watched</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">builds_list</span><span class="p">)</span>
+<span class="n">done</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">watched</span> <span class="o">!=</span> <span class="n">done</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;time: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()))</span>
+    <span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">watched</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">done</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="n">bw</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">get_build_details</span><span class="p">()</span><span class="o">.</span><span class="n">status</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bw</span><span class="o">.</span><span class="n">build_id</span><span class="p">,</span> <span class="n">status</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">status</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;skipped&quot;</span><span class="p">,</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span> <span class="s2">&quot;succeeded&quot;</span><span class="p">]:</span>
+            <span class="n">done</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">bw</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># cancel all created build</span>
+<span class="k">for</span> <span class="n">bw</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">builds_list</span><span class="p">:</span>
+    <span class="n">bw</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">cancel_build</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="CoprClient.html" class="btn btn-neutral float-right" title="CoprClient" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ClientV1.html" class="btn btn-neutral" title="Legacy client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

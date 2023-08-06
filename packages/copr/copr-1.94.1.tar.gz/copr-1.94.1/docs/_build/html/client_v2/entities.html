@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Entities &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Client version 3" href="../ClientV3.html" />
+    <link rel="prev" title="Resources" href="resources.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV2.html">Client version 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="initialization.html">Client initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources_usage.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV2.html#resources-info">Resources info</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV2.html#autodoc">Autodoc</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#coprclient">CoprClient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html">Handlers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Entities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV2.html">Client version 2</a> &raquo;</li>
+        
+      <li>Entities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v2/entities.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entities">
+<h1>Entities<a class="headerlink" href="#entities" title="Permalink to this headline">¶</a></h1>
+<p>Represents domain objects like project or build.
+The user of <code class="docutils literal notranslate"><span class="pre">python-copr</span></code> is not expected to use the directly.</p>
+<span class="target" id="module-copr.client_v2.entities"></span><dl class="class">
+<dt id="copr.client_v2.entities.Link">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">Link</code><span class="sig-paren">(</span><em>role</em>, <em>href</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">copr.util.UnicodeMixin</span></code></p>
+<dl class="classmethod">
+<dt id="copr.client_v2.entities.Link.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>data_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Link.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Link.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.Entity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">Entity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Entity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Entity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">copr.util.UnicodeMixin</span></code></p>
+<dl class="method">
+<dt id="copr.client_v2.entities.Entity.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Entity.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Entity.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.entities.Entity.to_json">
+<code class="descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Entity.to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Entity.to_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="copr.client_v2.entities.Entity.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>raw_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#Entity.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.Entity.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.ProjectEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">ProjectEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#ProjectEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.ProjectEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.ProjectCreateEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">ProjectCreateEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#ProjectCreateEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.ProjectCreateEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.ProjectChrootEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">ProjectChrootEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#ProjectChrootEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.ProjectChrootEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.BuildEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">BuildEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#BuildEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.BuildEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+<dl class="method">
+<dt id="copr.client_v2.entities.BuildEntity.is_finished">
+<code class="descname">is_finished</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#BuildEntity.is_finished"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.BuildEntity.is_finished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check is the build was finished</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.BuildTaskEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">BuildTaskEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#BuildTaskEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.BuildTaskEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.entities.MockChrootEntity">
+<em class="property">class </em><code class="descclassname">copr.client_v2.entities.</code><code class="descname">MockChrootEntity</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/entities.html#MockChrootEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.entities.MockChrootEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.client_v2.entities.Entity" title="copr.client_v2.entities.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.client_v2.entities.Entity</span></code></a></p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ClientV3.html" class="btn btn-neutral float-right" title="Client version 3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="resources.html" class="btn btn-neutral" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

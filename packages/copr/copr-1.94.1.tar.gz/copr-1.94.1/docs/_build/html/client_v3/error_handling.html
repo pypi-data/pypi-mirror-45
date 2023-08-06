@@ -1,0 +1,381 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Error handling &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Pagination" href="pagination.html" />
+    <link rel="prev" title="Data structures" href="data_structures.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV3.html">Client version 3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#example-usage">Example usage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV3.html#quick-overview">Quick overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="client_initialization.html">Client initialization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_structures.html">Data structures</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Error handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#status-codes">Status codes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-copr.v3.exceptions">Exception hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pagination.html">Pagination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="working_with_proxies_directly.html">Working with proxies directly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#resources-info">Resources info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV3.html">Client version 3</a> &raquo;</li>
+        
+      <li>Error handling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/error_handling.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="error-handling">
+<h1>Error handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">¶</a></h1>
+<p>All methods from proxy classes return Munch with data only when the API call succeeds. Otherwise, an exception is raised.</p>
+<p>This example code tries to cancel a build. Such thing is possible only when the build is not already finished.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.v3</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="o">.</span><span class="n">create_from_config_file</span><span class="p">()</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">build</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">build_proxy</span><span class="o">.</span><span class="n">cancel</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Build {} is {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">build</span><span class="o">.</span><span class="n">state</span><span class="p">))</span>
+<span class="k">except</span> <span class="n">CoprRequestException</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In case that the build can be canceled, we get this output.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Build</span> <span class="mi">123</span> <span class="ow">is</span> <span class="n">canceled</span>
+</pre></div>
+</div>
+<p>Otherwise, an exception is raised and handled.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cannot</span> <span class="n">cancel</span> <span class="n">build</span> <span class="mi">123</span>
+</pre></div>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes it is useful to dig deeper and examine the failure. Exceptions contain a <code class="docutils literal notranslate"><span class="pre">result</span></code> attribute
+returning a Munch with additional information.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">except</span> <span class="n">CoprRequestException</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cannot</span> <span class="n">cancel</span> <span class="n">build</span> <span class="mi">123</span>
+<span class="n">Munch</span><span class="p">({</span><span class="s1">&#39;__response__&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">500</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Cannot cancel build 123&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>The stored response is a standard <code class="docutils literal notranslate"><span class="pre">requests.Reponse</span></code> so every possible detail like
+status code or headers can be examined.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">except</span> <span class="n">CoprRequestException</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">__response__</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">__response__</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">__response__</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">__response__</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;requests.models.Response&#39;&gt;
+&lt;Response [500]&gt;
+500
+{&#39;Date&#39;: &#39;Wed, 25 Jul 2018 21:40:48 GMT&#39;, &#39;Content-Length&#39;: &#39;42&#39;, &#39;Content-Type&#39;: &#39;application/json&#39;, &#39;Server&#39;: &#39;Werkzeug/0.12.2 Python/3.6.4&#39;}
+</pre></div>
+</div>
+</div>
+<div class="section" id="status-codes">
+<h2>Status codes<a class="headerlink" href="#status-codes" title="Permalink to this headline">¶</a></h2>
+<p>An apropriate status codes are used for specific situations.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Status code</th>
+<th class="head">Reason</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>Successful request</td>
+</tr>
+<tr class="row-odd"><td>401</td>
+<td>Unauthorized request when login is required</td>
+</tr>
+<tr class="row-even"><td>403</td>
+<td>Insufficient permissions, e.g. modifying a project of someone else</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>API endpoint or requested object was not found</td>
+</tr>
+<tr class="row-even"><td>500</td>
+<td>General frontend error</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="module-copr.v3.exceptions">
+<span id="exception-hierarchy"></span><h2>Exception hierarchy<a class="headerlink" href="#module-copr.v3.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base Copr exception</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprRequestException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprRequestException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprRequestException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprRequestException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Raised when the API request doesn’t proceed successfully</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprNoResultException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprNoResultException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprNoResultException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprNoResultException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Raised when no result data is returned</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprTimeoutException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprTimeoutException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprTimeoutException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprTimeoutException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Raised when the API request timeouted</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprValidationException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprValidationException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprValidationException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprValidationException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Raised when the data sent from client to API are not valid</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprNoConfigException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprNoConfigException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprNoConfigException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprNoConfigException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Exception thrown when no config file is found</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="copr.v3.exceptions.CoprConfigException">
+<em class="property">exception </em><code class="descclassname">copr.v3.exceptions.</code><code class="descname">CoprConfigException</code><span class="sig-paren">(</span><em>msg=None</em>, <em>response=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/exceptions.html#CoprConfigException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.exceptions.CoprConfigException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#copr.v3.exceptions.CoprException" title="copr.v3.exceptions.CoprException"><code class="xref py py-class docutils literal notranslate"><span class="pre">copr.v3.exceptions.CoprException</span></code></a></p>
+<p>Exception thrown when the config file is incomplete or malformed.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pagination.html" class="btn btn-neutral float-right" title="Pagination" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_structures.html" class="btn btn-neutral" title="Data structures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

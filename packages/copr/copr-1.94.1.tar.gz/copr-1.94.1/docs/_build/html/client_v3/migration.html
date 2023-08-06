@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Migration &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Migration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/migration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="migration">
+<span id="id1"></span><h1>Migration<a class="headerlink" href="#migration" title="Permalink to this headline">¶</a></h1>
+<p>This document should simplify the process of migration from Legacy API (version 1) to the APIv3.
+It provides a table of Legacy API client functions and their APIv3 alternatives. Some of the functions got removed
+because they were obsolete for a long time, but on the other hand, some functions did more than just one thing,
+so they split into multiple smaller functions.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Legacy API function</th>
+<th class="head">APIv3 alternative</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">authentication_check(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">general_proxy.auth_check</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">get_build_details(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.get</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">cancel_build(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.cancel</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">delete_build(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.delete</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">create_new_build(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_url</span></code>,
+<code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_urls</span></code>,
+<code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_file</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_pypi(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_pypi</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_tito(...)</span></code></td>
+<td>Removed, use <code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_scm</span></code> instead</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_mock(...)</span></code></td>
+<td>Removed, use <code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_scm</span></code> instead</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_scm(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_scm</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_rubygems(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_rubygems</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_distgit(...)</span></code></td>
+<td>Removed, use <code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_scm</span></code> instead</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">create_new_build_custom(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">build_proxy.create_from_custom</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">edit_package_tito(...)</span></code></td>
+<td>Removed, tito packages are now SCM packages</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">add_package_tito(...)</span></code></td>
+<td>Removed, tito packages are now SCM packages</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">edit_package_pypi(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.edit</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">add_package_pypi(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.add</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">edit_package_mockscm(...)</span></code></td>
+<td>Removed, mock packages are now SCM packages</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">add_package_mockscm(...)</span></code></td>
+<td>Removed, mock packages are now SCM packages</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">edit_package_scm(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.edit</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">add_package_scm(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.add</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">edit_package_rubygems(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.edit</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">add_package_rubygems(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.add</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">get_packages_list(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.get_list</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">get_package(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.get</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">delete_package(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.delete</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">reset_package(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.reset</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">build_package(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">package_proxy.build</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">get_project_details(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.get</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">delete_project(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.delete</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fork_project(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.fork</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">create_project(..)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.add</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">modify_project(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.edit</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">get_projects_list(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.get_list</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">edit_chroot(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_chroot_proxy.edit</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">get_chroot(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_chroot_proxy.get</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">get_project_chroot_details(...)</span></code></td>
+<td>Removed, use <code class="docutils literal notranslate"><span class="pre">project_chroot_proxy.get</span></code> instead</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">search_projects(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_proxy.search</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">get_build_config(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">project_chroot_proxy.get_build_config</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">get_module_repo(...)</span></code></td>
+<td>Removed</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">build_module(...)</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">module_proxy.build_from_url</span></code>,
+<code class="docutils literal notranslate"><span class="pre">module_proxy.build_from_file</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

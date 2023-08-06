@@ -1,0 +1,1223 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Proxies &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Build Options" href="build_options.html" />
+    <link rel="prev" title="Working with proxies directly" href="working_with_proxies_directly.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV3.html">Client version 3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#example-usage">Example usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#quick-overview">Quick overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV3.html#resources-info">Resources info</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Proxies</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#base">Base</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#project">Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#package">Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module">Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#project-chroot">Project Chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-chroot">Build Chroot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV3.html">Client version 3</a> &raquo;</li>
+        
+      <li>Proxies</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/proxies.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="proxies">
+<h1>Proxies<a class="headerlink" href="#proxies" title="Permalink to this headline">¶</a></h1>
+<p>User interface is separated among multiple proxy classes such as <code class="docutils literal notranslate"><span class="pre">ProjectProxy</span></code>, <code class="docutils literal notranslate"><span class="pre">BuildProxy</span></code>, etc,
+which provide API operations on given resource.</p>
+<p>There are several methods available across majority (there are some corner cases where it wouldn’t make sense)
+of proxies. Naturally, all methods (e.g. <code class="docutils literal notranslate"><span class="pre">auth_check</span></code>) from <code class="docutils literal notranslate"><span class="pre">BaseProxy</span></code> are available everywhere. Moreover,
+proxies implement <code class="docutils literal notranslate"><span class="pre">get</span></code> method to get one specific object and <code class="docutils literal notranslate"><span class="pre">get_list</span></code> to get multiple objects that meet some
+criteria (e.g. all successful builds from a project). When it makes sense, proxies also implement an <code class="docutils literal notranslate"><span class="pre">edit</span></code> method
+that modifies an object. Exception for this is for example, a <code class="docutils literal notranslate"><span class="pre">BuildProxy</span></code> because it shouldn’t be possible to
+change a build. Similarly, most of the proxies have a <code class="docutils literal notranslate"><span class="pre">delete</span></code> method except for e.g. <code class="docutils literal notranslate"><span class="pre">BuildChrootProxy</span></code>.</p>
+<div class="section" id="base">
+<h2>Base<a class="headerlink" href="#base" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.BaseProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.</code><code class="descname">BaseProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies.html#BaseProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.BaseProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parent class for all other proxies</p>
+<dl class="method">
+<dt id="copr.v3.proxies.BaseProxy.home">
+<code class="descname">home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies.html#BaseProxy.home"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.BaseProxy.home" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the Copr APIv3 base URL</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.BaseProxy.auth_check">
+<code class="descname">auth_check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies.html#BaseProxy.auth_check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.BaseProxy.auth_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call an endpoint protected by login to check whether the user auth key is valid</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="project">
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.project.ProjectProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.project.</code><code class="descname">ProjectProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><em>ownername=None</em>, <em>pagination=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.get_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of projects</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>pagination</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>query</em>, <em>pagination=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of projects based on fulltext search</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> (<em>str</em>) – </li>
+<li><strong>pagination</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>chroots</em>, <em>description=None</em>, <em>instructions=None</em>, <em>homepage=None</em>, <em>contact=None</em>, <em>additional_repos=None</em>, <em>unlisted_on_hp=False</em>, <em>enable_net=True</em>, <em>persistent=False</em>, <em>auto_prune=True</em>, <em>use_bootstrap_container=False</em>, <em>devel_mode=False</em>, <em>delete_after_days=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>chroots</strong> (<em>list</em>) – </li>
+<li><strong>description</strong> (<em>str</em>) – </li>
+<li><strong>instructions</strong> (<em>str</em>) – </li>
+<li><strong>homepage</strong> (<em>str</em>) – </li>
+<li><strong>contact</strong> (<em>str</em>) – </li>
+<li><strong>additional_repos</strong> (<em>list</em>) – </li>
+<li><strong>unlisted_on_hp</strong> (<em>bool</em>) – project will not be shown on Copr homepage</li>
+<li><strong>enable_net</strong> (<em>bool</em>) – if builder can access net for builds in this project</li>
+<li><strong>persistent</strong> (<em>bool</em>) – if builds and the project are undeletable</li>
+<li><strong>auto_prune</strong> (<em>bool</em>) – if backend auto-deletion script should be run for the project</li>
+<li><strong>use_bootstrap_container</strong> (<em>bool</em>) – if mock bootstrap container is used to initialize the buildroot</li>
+<li><strong>devel_mode</strong> (<em>bool</em>) – if createrepo should run automatically</li>
+<li><strong>delete_after_days</strong> (<em>int</em>) – delete the project after the specfied period of time</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>chroots=None</em>, <em>description=None</em>, <em>instructions=None</em>, <em>homepage=None</em>, <em>contact=None</em>, <em>additional_repos=None</em>, <em>unlisted_on_hp=None</em>, <em>enable_net=None</em>, <em>auto_prune=None</em>, <em>use_bootstrap_container=None</em>, <em>devel_mode=None</em>, <em>delete_after_days=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.edit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>chroots</strong> (<em>list</em>) – </li>
+<li><strong>description</strong> (<em>str</em>) – </li>
+<li><strong>instructions</strong> (<em>str</em>) – </li>
+<li><strong>homepage</strong> (<em>str</em>) – </li>
+<li><strong>contact</strong> (<em>str</em>) – </li>
+<li><strong>repos</strong> (<em>list</em>) – </li>
+<li><strong>unlisted_on_hp</strong> (<em>bool</em>) – project will not be shown on Copr homepage</li>
+<li><strong>enable_net</strong> (<em>bool</em>) – if builder can access net for builds in this project</li>
+<li><strong>auto_prune</strong> (<em>bool</em>) – if backend auto-deletion script should be run for the project</li>
+<li><strong>use_bootstrap_container</strong> (<em>bool</em>) – if mock bootstrap container is used to initialize the buildroot</li>
+<li><strong>devel_mode</strong> (<em>bool</em>) – if createrepo should run automatically</li>
+<li><strong>delete_after_days</strong> (<em>int</em>) – delete the project after the specfied period of time</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.fork">
+<code class="descname">fork</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>dstownername</em>, <em>dstprojectname</em>, <em>confirm=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.fork"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.fork" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fork a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – owner of a source project</li>
+<li><strong>projectname</strong> (<em>str</em>) – name of a source project</li>
+<li><strong>dstownername</strong> (<em>str</em>) – owner of a destination project</li>
+<li><strong>dstprojectname</strong> (<em>str</em>) – name of a destination project</li>
+<li><strong>confirm</strong> (<em>bool</em>) – if forking into a existing project, this needs to be set to True,
+to confirm that user is aware of that</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.get_permissions">
+<code class="descname">get_permissions</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.get_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.get_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get project permissions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – owner of the project</li>
+<li><strong>projectname</strong> (<em>str</em>) – name of the project</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return Munch:</th><td class="field-body"><p class="first last">a dictionary in format
+<code class="docutils literal notranslate"><span class="pre">{username:</span> <span class="pre">{permission:</span> <span class="pre">state,</span> <span class="pre">...</span> <span class="pre">},</span> <span class="pre">...}</span></code> where <code class="docutils literal notranslate"><span class="pre">username</span></code>
+identifies an existing copr user, <code class="docutils literal notranslate"><span class="pre">permission</span></code> is one of
+<code class="docutils literal notranslate"><span class="pre">admin|builder</span></code> and state is one of <code class="docutils literal notranslate"><span class="pre">nothing|approved|request</span></code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.set_permissions">
+<code class="descname">set_permissions</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>permissions</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.set_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.set_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set (or change) permissions for a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ownername</strong> (<em>str</em>) – owner of the updated project</li>
+<li><strong>projectname</strong> (<em>str</em>) – name of the updated project</li>
+<li><strong>permissions</strong> (<em>dict</em>) – the expected format is
+<code class="docutils literal notranslate"><span class="pre">{username:</span> <span class="pre">{permission:</span> <span class="pre">state,</span> <span class="pre">...},</span> <span class="pre">...}</span></code>
+where <code class="docutils literal notranslate"><span class="pre">username</span></code> identifies an existing copr user, <code class="docutils literal notranslate"><span class="pre">permission</span></code>
+is one of <code class="docutils literal notranslate"><span class="pre">builder|admin</span></code> and <code class="docutils literal notranslate"><span class="pre">state</span></code> value is one of
+<code class="docutils literal notranslate"><span class="pre">nothing|request|approved</span></code>.  It is OK to set only <code class="docutils literal notranslate"><span class="pre">bulider</span></code> or
+only <code class="docutils literal notranslate"><span class="pre">admin</span></code> permission; any unspecified <code class="docutils literal notranslate"><span class="pre">permission</span></code> is then
+(a) set to <code class="docutils literal notranslate"><span class="pre">nothing</span></code> (if the permission entry is newly created),
+or (b) kept unchanged (if an existing permission entry is edited).
+If more than one <code class="docutils literal notranslate"><span class="pre">username</span></code> is specified in single
+<code class="docutils literal notranslate"><span class="pre">set_permissions()</span></code> request, the approach is to configure
+<em>all-or-nothing</em> (any error makes the whole operation fail and
+no-op).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project.ProjectProxy.request_permissions">
+<code class="descname">request_permissions</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>permissions</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project.html#ProjectProxy.request_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project.ProjectProxy.request_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request/cancel request/drop your permissions on project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ownername</strong> (<em>str</em>) – owner of the requested project</li>
+<li><strong>projectname</strong> (<em>str</em>) – name of the requested project</li>
+<li><strong>permissions</strong> (<em>dict</em>) – the desired permissions user wants to have on
+the requested copr project.  The format is
+<code class="docutils literal notranslate"><span class="pre">{permission:</span> <span class="pre">bool,</span> <span class="pre">...}</span></code>, where <code class="docutils literal notranslate"><span class="pre">permission</span></code> is one of
+<code class="docutils literal notranslate"><span class="pre">builder|admin</span></code> and <code class="docutils literal notranslate"><span class="pre">bool</span></code> is
+(a) <code class="docutils literal notranslate"><span class="pre">True</span></code> for <em>requesting</em> the role or
+(b) <code class="docutils literal notranslate"><span class="pre">False</span></code> for <em>dropping</em> the role (or for <em>cancelling</em> of
+previous request).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.build.BuildProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.build.</code><code class="descname">BuildProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>build_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_id</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.get_source_chroot">
+<code class="descname">get_source_chroot</code><span class="sig-paren">(</span><em>build_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.get_source_chroot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.get_source_chroot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a source build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_id</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.get_source_build_config">
+<code class="descname">get_source_build_config</code><span class="sig-paren">(</span><em>build_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.get_source_build_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.get_source_build_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a config for source build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_id</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename=None</em>, <em>status=None</em>, <em>pagination=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.get_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of packages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+<li><strong>status</strong> (<em>str</em>) – </li>
+<li><strong>pagination</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.cancel">
+<code class="descname">cancel</code><span class="sig-paren">(</span><em>build_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.cancel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel a build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_id</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_urls">
+<code class="descname">create_from_urls</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>urls</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_urls"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create builds from a list of URLs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>urls</strong> (<em>list</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_url">
+<code class="descname">create_from_url</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>url</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from URL</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>url</strong> (<em>str</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_file">
+<code class="descname">create_from_file</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>path</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from local SRPM file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>path</strong> (<em>str</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_scm">
+<code class="descname">create_from_scm</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>clone_url</em>, <em>committish=''</em>, <em>subdirectory=''</em>, <em>spec=''</em>, <em>scm_type='git'</em>, <em>source_build_method='rpkg'</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_scm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_scm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from SCM repository</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>clone_url</strong> (<em>str</em>) – url to a project versioned by Git or SVN</li>
+<li><strong>committish</strong> (<em>str</em>) – name of a branch, tag, or a git hash</li>
+<li><strong>subdirectory</strong> (<em>str</em>) – path to a subdirectory with package content</li>
+<li><strong>spec</strong> (<em>str</em>) – path to spec file, relative to ‘subdirectory’</li>
+<li><strong>scm_type</strong> (<em>str</em>) – </li>
+<li><strong>source_build_method</strong> (<em>str</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_pypi">
+<code class="descname">create_from_pypi</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>pypi_package_name</em>, <em>pypi_package_version=None</em>, <em>spec_template=''</em>, <em>python_versions=None</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_pypi"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_pypi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from PyPI - <a class="reference external" href="https://pypi.org/">https://pypi.org/</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>pypi_package_name</strong> (<em>str</em>) – </li>
+<li><strong>pypi_package_version</strong> (<em>str</em>) – PyPI package version (None means “latest”)</li>
+<li><strong>spec_template</strong> (<em>str</em>) – what pyp2rpm spec template to use</li>
+<li><strong>python_versions</strong> (<em>list</em>) – list of python versions to build for</li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_rubygems">
+<code class="descname">create_from_rubygems</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>gem_name</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_rubygems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_rubygems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from RubyGems - <a class="reference external" href="https://rubygems.org/">https://rubygems.org/</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>gem_name</strong> (<em>str</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.create_from_custom">
+<code class="descname">create_from_custom</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>script</em>, <em>script_chroot=None</em>, <em>script_builddeps=None</em>, <em>script_resultdir=None</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.create_from_custom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.create_from_custom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from custom script.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>script</strong> – script to execute to generate sources</li>
+<li><strong>script_chroot</strong> – [optional] what chroot to use to generate
+sources (defaults to fedora-latest-x86_64)</li>
+<li><strong>script_builddeps</strong> – [optional] list of script’s dependencies</li>
+<li><strong>script_resultdir</strong> – [optional] where script generates results
+(relative to cwd)</li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build.BuildProxy.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>build_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build.html#BuildProxy.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build.BuildProxy.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_id</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Munch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="package">
+<h2>Package<a class="headerlink" href="#package" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.package.PackageProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.package.</code><code class="descname">PackageProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a package</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>pagination=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.get_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of packages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>pagination</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em>, <em>source_type</em>, <em>source_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a package to a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+<li><strong>source_type</strong> (<em>str</em>) – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html">http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html</a></li>
+<li><strong>source_dict</strong> (<em>dict</em>) – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html">http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em>, <em>source_type=None</em>, <em>source_dict=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.edit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit a package in a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+<li><strong>source_type</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html">http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html</a></li>
+<li><strong>source_dict</strong> (<em>dict</em>) – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html">http://python-copr.readthedocs.io/en/latest/client_v3/package_source_types.html</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset a package configuration, meaning that previously selected <code class="xref any docutils literal notranslate"><span class="pre">source_type</span></code>
+for the package and also all the source configuration previously defined by
+<code class="xref any docutils literal notranslate"><span class="pre">source_dict</span></code> will be nulled.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.build">
+<code class="descname">build</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em>, <em>buildopts=None</em>, <em>project_dirname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a build from a package configuration</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+<li><strong>buildopts</strong> – <a class="reference external" href="http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html">http://python-copr.readthedocs.io/en/latest/client_v3/build_options.html</a></li>
+<li><strong>project_dirname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.package.PackageProxy.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>packagename</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/package.html#PackageProxy.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.package.PackageProxy.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a package from a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>packagename</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module">
+<h2>Module<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.module.ModuleProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.module.</code><code class="descname">ModuleProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/module.html#ModuleProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.module.ModuleProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.module.ModuleProxy.build_from_url">
+<code class="descname">build_from_url</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>url</em>, <em>branch='master'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/module.html#ModuleProxy.build_from_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.module.ModuleProxy.build_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a module from a URL pointing to a modulemd YAML file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>url</strong> (<em>str</em>) – URL pointing to a raw .yaml file</li>
+<li><strong>branch</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.module.ModuleProxy.build_from_file">
+<code class="descname">build_from_file</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/module.html#ModuleProxy.build_from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.module.ModuleProxy.build_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a module from a local modulemd YAML file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>path</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="project-chroot">
+<h2>Project Chroot<a class="headerlink" href="#project-chroot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.project_chroot.ProjectChrootProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.project_chroot.</code><code class="descname">ProjectChrootProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project_chroot.html#ProjectChrootProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project_chroot.ProjectChrootProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.project_chroot.ProjectChrootProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>chrootname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project_chroot.html#ProjectChrootProxy.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project_chroot.ProjectChrootProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a configuration of a chroot in a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project_chroot.ProjectChrootProxy.get_build_config">
+<code class="descname">get_build_config</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>chrootname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project_chroot.html#ProjectChrootProxy.get_build_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project_chroot.ProjectChrootProxy.get_build_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a build configuration of a chroot in a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.project_chroot.ProjectChrootProxy.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>ownername</em>, <em>projectname</em>, <em>chrootname</em>, <em>additional_packages=None</em>, <em>additional_repos=None</em>, <em>comps=None</em>, <em>delete_comps=False</em>, <em>with_opts=None</em>, <em>without_opts=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/project_chroot.html#ProjectChrootProxy.edit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.project_chroot.ProjectChrootProxy.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit a chroot configuration in a project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ownername</strong> (<em>str</em>) – </li>
+<li><strong>projectname</strong> (<em>str</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+<li><strong>additional_packages</strong> (<em>list</em>) – buildroot packages for the chroot</li>
+<li><strong>additional_repos</strong> (<em>list</em>) – buildroot additional additional_repos</li>
+<li><strong>comps</strong> (<em>str</em>) – file path to the comps.xml file</li>
+<li><strong>delete_comps</strong> (<em>bool</em>) – if True, current comps.xml will be removed</li>
+<li><strong>with_opts</strong> (<em>list</em>) – Mock –with option</li>
+<li><strong>without_opts</strong> (<em>list</em>) – Mock –without option</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="build-chroot">
+<h2>Build Chroot<a class="headerlink" href="#build-chroot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.v3.proxies.build_chroot.BuildChrootProxy">
+<em class="property">class </em><code class="descclassname">copr.v3.proxies.build_chroot.</code><code class="descname">BuildChrootProxy</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build_chroot.html#BuildChrootProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build_chroot.BuildChrootProxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="copr.v3.proxies.build_chroot.BuildChrootProxy.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>build_id</em>, <em>chrootname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build_chroot.html#BuildChrootProxy.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build_chroot.BuildChrootProxy.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a build chroot</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>build_id</strong> (<em>int</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build_chroot.BuildChrootProxy.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><em>build_id</em>, <em>pagination=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build_chroot.html#BuildChrootProxy.get_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build_chroot.BuildChrootProxy.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of build chroots</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>build_id</strong> (<em>int</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+<li><strong>pagination</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.v3.proxies.build_chroot.BuildChrootProxy.get_build_config">
+<code class="descname">get_build_config</code><span class="sig-paren">(</span><em>build_id</em>, <em>chrootname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/v3/proxies/build_chroot.html#BuildChrootProxy.get_build_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.v3.proxies.build_chroot.BuildChrootProxy.get_build_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a build config for a build chroot</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>build_id</strong> (<em>int</em>) – </li>
+<li><strong>chrootname</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Munch</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="build_options.html" class="btn btn-neutral float-right" title="Build Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="working_with_proxies_directly.html" class="btn btn-neutral" title="Working with proxies directly" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

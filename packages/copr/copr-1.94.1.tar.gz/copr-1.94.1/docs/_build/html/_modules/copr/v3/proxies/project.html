@@ -1,0 +1,508 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>copr.v3.proxies.project &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../proxies.html">copr.v3.proxies</a> &raquo;</li>
+        
+      <li>copr.v3.proxies.project</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for copr.v3.proxies.project</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">BaseProxy</span>
+<span class="kn">from</span> <span class="nn">..requests</span> <span class="k">import</span> <span class="n">Request</span><span class="p">,</span> <span class="n">munchify</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">GET</span><span class="p">,</span> <span class="n">PUT</span>
+
+
+<div class="viewcode-block" id="ProjectProxy"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy">[docs]</a><span class="k">class</span> <span class="nc">ProjectProxy</span><span class="p">(</span><span class="n">BaseProxy</span><span class="p">):</span>
+
+<div class="viewcode-block" id="ProjectProxy.get"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.get_list"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.get_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pagination</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of projects</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param pagination:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/list&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pagination</span> <span class="ow">or</span> <span class="p">{})</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.search"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">pagination</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of projects based on fulltext search</span>
+
+<span class="sd">        :param str query:</span>
+<span class="sd">        :param pagination:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/search&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">params</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">pagination</span> <span class="ow">or</span> <span class="p">{})</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.add"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.add">[docs]</a>    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chroots</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">homepage</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">contact</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_repos</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unlisted_on_hp</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">enable_net</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">persistent</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">auto_prune</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use_bootstrap_container</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">devel_mode</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">delete_after_days</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param list chroots:</span>
+<span class="sd">        :param str description:</span>
+<span class="sd">        :param str instructions:</span>
+<span class="sd">        :param str homepage:</span>
+<span class="sd">        :param str contact:</span>
+<span class="sd">        :param list additional_repos:</span>
+<span class="sd">        :param bool unlisted_on_hp: project will not be shown on Copr homepage</span>
+<span class="sd">        :param bool enable_net: if builder can access net for builds in this project</span>
+<span class="sd">        :param bool persistent: if builds and the project are undeletable</span>
+<span class="sd">        :param bool auto_prune: if backend auto-deletion script should be run for the project</span>
+<span class="sd">        :param bool use_bootstrap_container: if mock bootstrap container is used to initialize the buildroot</span>
+<span class="sd">        :param bool devel_mode: if createrepo should run automatically</span>
+<span class="sd">        :param int delete_after_days: delete the project after the specfied period of time</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/add/</span><span class="si">{ownername}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;chroots&quot;</span><span class="p">:</span> <span class="n">chroots</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span>
+            <span class="s2">&quot;instructions&quot;</span><span class="p">:</span> <span class="n">instructions</span><span class="p">,</span>
+            <span class="s2">&quot;homepage&quot;</span><span class="p">:</span> <span class="n">homepage</span><span class="p">,</span>
+            <span class="s2">&quot;contact&quot;</span><span class="p">:</span> <span class="n">contact</span><span class="p">,</span>
+            <span class="s2">&quot;additional_repos&quot;</span><span class="p">:</span> <span class="n">additional_repos</span><span class="p">,</span>
+            <span class="s2">&quot;unlisted_on_hp&quot;</span><span class="p">:</span> <span class="n">unlisted_on_hp</span><span class="p">,</span>
+            <span class="s2">&quot;enable_net&quot;</span><span class="p">:</span> <span class="n">enable_net</span><span class="p">,</span>
+            <span class="s2">&quot;persistent&quot;</span><span class="p">:</span> <span class="n">persistent</span><span class="p">,</span>
+            <span class="s2">&quot;auto_prune&quot;</span><span class="p">:</span> <span class="n">auto_prune</span><span class="p">,</span>
+            <span class="s2">&quot;use_bootstrap_container&quot;</span><span class="p">:</span> <span class="n">use_bootstrap_container</span><span class="p">,</span>
+            <span class="s2">&quot;devel_mode&quot;</span><span class="p">:</span> <span class="n">devel_mode</span><span class="p">,</span>
+            <span class="s2">&quot;delete_after_days&quot;</span><span class="p">:</span> <span class="n">delete_after_days</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span>
+                          <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.edit"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.edit">[docs]</a>    <span class="k">def</span> <span class="nf">edit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chroots</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">homepage</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+             <span class="n">contact</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_repos</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unlisted_on_hp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">enable_net</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+             <span class="n">auto_prune</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">use_bootstrap_container</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">devel_mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+             <span class="n">delete_after_days</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Edit a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param list chroots:</span>
+<span class="sd">        :param str description:</span>
+<span class="sd">        :param str instructions:</span>
+<span class="sd">        :param str homepage:</span>
+<span class="sd">        :param str contact:</span>
+<span class="sd">        :param list repos:</span>
+<span class="sd">        :param bool unlisted_on_hp: project will not be shown on Copr homepage</span>
+<span class="sd">        :param bool enable_net: if builder can access net for builds in this project</span>
+<span class="sd">        :param bool auto_prune: if backend auto-deletion script should be run for the project</span>
+<span class="sd">        :param bool use_bootstrap_container: if mock bootstrap container is used to initialize the buildroot</span>
+<span class="sd">        :param bool devel_mode: if createrepo should run automatically</span>
+<span class="sd">        :param int delete_after_days: delete the project after the specfied period of time</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/edit/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;chroots&quot;</span><span class="p">:</span> <span class="n">chroots</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span>
+            <span class="s2">&quot;instructions&quot;</span><span class="p">:</span> <span class="n">instructions</span><span class="p">,</span>
+            <span class="s2">&quot;homepage&quot;</span><span class="p">:</span> <span class="n">homepage</span><span class="p">,</span>
+            <span class="s2">&quot;contact&quot;</span><span class="p">:</span> <span class="n">contact</span><span class="p">,</span>
+            <span class="s2">&quot;repos&quot;</span><span class="p">:</span> <span class="n">additional_repos</span><span class="p">,</span>
+            <span class="s2">&quot;unlisted_on_hp&quot;</span><span class="p">:</span> <span class="n">unlisted_on_hp</span><span class="p">,</span>
+            <span class="s2">&quot;enable_net&quot;</span><span class="p">:</span> <span class="n">enable_net</span><span class="p">,</span>
+            <span class="s2">&quot;auto_prune&quot;</span><span class="p">:</span> <span class="n">auto_prune</span><span class="p">,</span>
+            <span class="s2">&quot;use_bootstrap_container&quot;</span><span class="p">:</span> <span class="n">use_bootstrap_container</span><span class="p">,</span>
+            <span class="s2">&quot;devel_mode&quot;</span><span class="p">:</span> <span class="n">devel_mode</span><span class="p">,</span>
+            <span class="s2">&quot;delete_after_days&quot;</span><span class="p">:</span> <span class="n">delete_after_days</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span>
+                          <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.delete"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.delete">[docs]</a>    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/delete/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;verify&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span>
+                          <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.fork"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.fork">[docs]</a>    <span class="k">def</span> <span class="nf">fork</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">dstownername</span><span class="p">,</span> <span class="n">dstprojectname</span><span class="p">,</span> <span class="n">confirm</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Fork a project</span>
+
+<span class="sd">        :param str ownername: owner of a source project</span>
+<span class="sd">        :param str projectname: name of a source project</span>
+<span class="sd">        :param str dstownername: owner of a destination project</span>
+<span class="sd">        :param str dstprojectname: name of a destination project</span>
+<span class="sd">        :param bool confirm: if forking into a existing project, this needs to be set to True,</span>
+<span class="sd">                             to confirm that user is aware of that</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/fork/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">dstprojectname</span><span class="p">,</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">dstownername</span><span class="p">,</span>
+            <span class="s2">&quot;confirm&quot;</span><span class="p">:</span> <span class="n">confirm</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span>
+                          <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.get_permissions"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.get_permissions">[docs]</a>    <span class="k">def</span> <span class="nf">get_permissions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get project permissions</span>
+
+<span class="sd">        :param str ownername: owner of the project</span>
+<span class="sd">        :param str projectname: name of the project</span>
+<span class="sd">        :return Munch: a dictionary in format</span>
+<span class="sd">            ``{username: {permission: state, ... }, ...}`` where ``username``</span>
+<span class="sd">            identifies an existing copr user, ``permission`` is one of</span>
+<span class="sd">            ``admin|builder`` and state is one of ``nothing|approved|request``.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/permissions/get/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">/&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span>
+                <span class="n">endpoint</span><span class="p">,</span>
+                <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span>
+                <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">GET</span><span class="p">,</span>
+                <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.set_permissions"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.set_permissions">[docs]</a>    <span class="k">def</span> <span class="nf">set_permissions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">permissions</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set (or change) permissions for a project</span>
+
+<span class="sd">        :param str ownername: owner of the updated project</span>
+<span class="sd">        :param str projectname: name of the updated project</span>
+<span class="sd">        :param dict permissions: the expected format is</span>
+<span class="sd">            ``{username: {permission: state, ...}, ...}``</span>
+<span class="sd">            where ``username`` identifies an existing copr user, ``permission``</span>
+<span class="sd">            is one of ``builder|admin`` and ``state`` value is one of</span>
+<span class="sd">            ``nothing|request|approved``.  It is OK to set only ``bulider`` or</span>
+<span class="sd">            only ``admin`` permission; any unspecified ``permission`` is then</span>
+<span class="sd">            (a) set to ``nothing`` (if the permission entry is newly created),</span>
+<span class="sd">            or (b) kept unchanged (if an existing permission entry is edited).</span>
+<span class="sd">            If more than one ``username`` is specified in single</span>
+<span class="sd">            ``set_permissions()`` request, the approach is to configure</span>
+<span class="sd">            *all-or-nothing* (any error makes the whole operation fail and</span>
+<span class="sd">            no-op).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/permissions/set/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">/&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span>
+                <span class="n">endpoint</span><span class="p">,</span>
+                <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span>
+                <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">PUT</span><span class="p">,</span>
+                <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+                <span class="n">data</span><span class="o">=</span><span class="n">permissions</span><span class="p">)</span>
+
+        <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ProjectProxy.request_permissions"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project.ProjectProxy.request_permissions">[docs]</a>    <span class="k">def</span> <span class="nf">request_permissions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">permissions</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Request/cancel request/drop your permissions on project</span>
+
+<span class="sd">        :param str ownername: owner of the requested project</span>
+<span class="sd">        :param str projectname: name of the requested project</span>
+<span class="sd">        :param dict permissions: the desired permissions user wants to have on</span>
+<span class="sd">            the requested copr project.  The format is</span>
+<span class="sd">            ``{permission: bool, ...}``, where ``permission`` is one of</span>
+<span class="sd">            ``builder|admin`` and ``bool`` is</span>
+<span class="sd">            (a) ``True`` for *requesting* the role or</span>
+<span class="sd">            (b) ``False`` for *dropping* the role (or for *cancelling* of</span>
+<span class="sd">            previous request).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project/permissions/request/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">/&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span>
+                <span class="n">endpoint</span><span class="p">,</span>
+                <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span>
+                <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">PUT</span><span class="p">,</span>
+                <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+                <span class="n">data</span><span class="o">=</span><span class="n">permissions</span><span class="p">)</span>
+
+        <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

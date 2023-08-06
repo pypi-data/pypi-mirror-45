@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>copr.v3.proxies.project_chroot &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../proxies.html">copr.v3.proxies</a> &raquo;</li>
+        
+      <li>copr.v3.proxies.project_chroot</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for copr.v3.proxies.project_chroot</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">BaseProxy</span>
+<span class="kn">from</span> <span class="nn">..requests</span> <span class="k">import</span> <span class="n">Request</span><span class="p">,</span> <span class="n">FileRequest</span><span class="p">,</span> <span class="n">munchify</span><span class="p">,</span> <span class="n">POST</span>
+
+
+<div class="viewcode-block" id="ProjectChrootProxy"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project_chroot.ProjectChrootProxy">[docs]</a><span class="k">class</span> <span class="nc">ProjectChrootProxy</span><span class="p">(</span><span class="n">BaseProxy</span><span class="p">):</span>
+
+<div class="viewcode-block" id="ProjectChrootProxy.get"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project_chroot.ProjectChrootProxy.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a configuration of a chroot in a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str chrootname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project-chroot&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;chrootname&quot;</span><span class="p">:</span> <span class="n">chrootname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectChrootProxy.get_build_config"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project_chroot.ProjectChrootProxy.get_build_config">[docs]</a>    <span class="k">def</span> <span class="nf">get_build_config</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a build configuration of a chroot in a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str chrootname:</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project-chroot/build-config&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;chrootname&quot;</span><span class="p">:</span> <span class="n">chrootname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">Request</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectChrootProxy.edit"><a class="viewcode-back" href="../../../../client_v3/proxies.html#copr.v3.proxies.project_chroot.ProjectChrootProxy.edit">[docs]</a>    <span class="k">def</span> <span class="nf">edit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ownername</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">,</span> <span class="n">additional_packages</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_repos</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+             <span class="n">comps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delete_comps</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">with_opts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">without_opts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Edit a chroot configuration in a project</span>
+
+<span class="sd">        :param str ownername:</span>
+<span class="sd">        :param str projectname:</span>
+<span class="sd">        :param str chrootname:</span>
+<span class="sd">        :param list additional_packages: buildroot packages for the chroot</span>
+<span class="sd">        :param list additional_repos: buildroot additional additional_repos</span>
+<span class="sd">        :param str comps: file path to the comps.xml file</span>
+<span class="sd">        :param bool delete_comps: if True, current comps.xml will be removed</span>
+<span class="sd">        :param list with_opts: Mock --with option</span>
+<span class="sd">        :param list without_opts: Mock --without option</span>
+<span class="sd">        :return: Munch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/project-chroot/edit/</span><span class="si">{ownername}</span><span class="s2">/</span><span class="si">{projectname}</span><span class="s2">/</span><span class="si">{chrootname}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ownername&quot;</span><span class="p">:</span> <span class="n">ownername</span><span class="p">,</span>
+            <span class="s2">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s2">&quot;chrootname&quot;</span><span class="p">:</span> <span class="n">chrootname</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;additional_repos&quot;</span><span class="p">:</span> <span class="n">additional_repos</span><span class="p">,</span>
+            <span class="s2">&quot;additional_packages&quot;</span><span class="p">:</span> <span class="n">additional_packages</span><span class="p">,</span>
+            <span class="s2">&quot;delete_comps&quot;</span><span class="p">:</span> <span class="n">delete_comps</span><span class="p">,</span>
+            <span class="s2">&quot;with_opts&quot;</span><span class="p">:</span> <span class="n">with_opts</span><span class="p">,</span>
+            <span class="s2">&quot;without_opts&quot;</span><span class="p">:</span> <span class="n">without_opts</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">comps</span><span class="p">:</span>
+            <span class="n">comps_f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">comps</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+            <span class="n">files</span><span class="p">[</span><span class="s2">&quot;upload_comps&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">comps_f</span><span class="o">.</span><span class="n">name</span><span class="p">),</span> <span class="n">comps_f</span><span class="p">,</span> <span class="s2">&quot;application/text&quot;</span><span class="p">)</span>
+
+        <span class="n">request</span> <span class="o">=</span> <span class="n">FileRequest</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">api_base_url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">api_base_url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">POST</span><span class="p">,</span>
+                              <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">munchify</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

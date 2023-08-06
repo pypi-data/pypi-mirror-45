@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>copr.client_v2.entities &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>copr.client_v2.entities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for copr.client_v2.entities</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+<span class="kn">from</span> <span class="nn">..util</span> <span class="k">import</span> <span class="n">UnicodeMixin</span>
+
+<span class="kn">from</span> <span class="nn">.schemas</span> <span class="k">import</span> <span class="n">ProjectSchema</span><span class="p">,</span> <span class="n">EmptySchema</span><span class="p">,</span> <span class="n">ProjectChrootSchema</span><span class="p">,</span> <span class="n">BuildSchema</span><span class="p">,</span> <span class="n">BuildTaskSchema</span><span class="p">,</span> <span class="n">MockChrootSchema</span><span class="p">,</span> \
+    <span class="n">ProjectCreateSchema</span>
+
+
+<div class="viewcode-block" id="Link"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Link">[docs]</a><span class="k">class</span> <span class="nc">Link</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">href</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="n">role</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">href</span> <span class="o">=</span> <span class="n">href</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">u</span><span class="s2">&quot;&lt;Link: role: </span><span class="si">{0}</span><span class="s2">, href: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">role</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">href</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Link.from_dict"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Link.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">):</span>
+        <span class="n">retval</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">role_name</span><span class="p">,</span> <span class="n">definition</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">retval</span><span class="p">[</span><span class="n">role_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">role_name</span><span class="p">,</span> <span class="n">definition</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">retval</span></div></div>
+
+
+<span class="c1"># pylint: disable=E1101</span>
+<div class="viewcode-block" id="Entity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Entity">[docs]</a><span class="k">class</span> <span class="nc">Entity</span><span class="p">(</span><span class="n">UnicodeMixin</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">EmptySchema</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_schema</span><span class="o">.</span><span class="n">fields</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">))</span>
+
+<div class="viewcode-block" id="Entity.to_dict"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Entity.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_schema</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">data</span></div>
+
+<div class="viewcode-block" id="Entity.to_json"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Entity.to_json">[docs]</a>    <span class="k">def</span> <span class="nf">to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_schema</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">data</span></div>
+
+<div class="viewcode-block" id="Entity.from_dict"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.Entity.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">raw_dict</span><span class="p">):</span>
+        <span class="n">parsed</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_schema</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">raw_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="o">**</span><span class="n">parsed</span><span class="o">.</span><span class="n">data</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ProjectEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.ProjectEntity">[docs]</a><span class="k">class</span> <span class="nc">ProjectEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">ProjectSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Project #</span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1}</span><span class="s2">/</span><span class="si">{2}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">owner</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ProjectCreateEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.ProjectCreateEntity">[docs]</a><span class="k">class</span> <span class="nc">ProjectCreateEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">ProjectCreateSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;New project </span><span class="si">{0}</span><span class="s2">/</span><span class="si">{1}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">owner</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProjectChrootEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.ProjectChrootEntity">[docs]</a><span class="k">class</span> <span class="nc">ProjectChrootEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">ProjectChrootSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Project chroot: </span><span class="si">{0}</span><span class="s2">, additional &quot;</span> \
+               <span class="s2">&quot;packages: </span><span class="si">{1}</span><span class="s2">, comps size if any: </span><span class="si">{2}</span><span class="s2">&gt;&quot;</span>\
+            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">buildroot_pkgs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">comps_len</span><span class="p">,)</span></div>
+
+
+<div class="viewcode-block" id="BuildEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.BuildEntity">[docs]</a><span class="k">class</span> <span class="nc">BuildEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">BuildSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Build #</span><span class="si">{0}</span><span class="s2"> state: </span><span class="si">{1}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
+
+<div class="viewcode-block" id="BuildEntity.is_finished"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.BuildEntity.is_finished">[docs]</a>    <span class="k">def</span> <span class="nf">is_finished</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check is the build was finished</span>
+
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="ow">in</span> <span class="p">[</span>
+                <span class="s2">&quot;failed&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;skipped&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;succeeded&quot;</span>
+        <span class="p">]</span></div></div>
+
+
+<div class="viewcode-block" id="BuildTaskEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.BuildTaskEntity">[docs]</a><span class="k">class</span> <span class="nc">BuildTaskEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">BuildTaskSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Build task #</span><span class="si">{0}</span><span class="s2">-</span><span class="si">{1}</span><span class="s2">, state: </span><span class="si">{2}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">build_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">chroot_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MockChrootEntity"><a class="viewcode-back" href="../../../client_v2/entities.html#copr.client_v2.entities.MockChrootEntity">[docs]</a><span class="k">class</span> <span class="nc">MockChrootEntity</span><span class="p">(</span><span class="n">Entity</span><span class="p">):</span>
+    <span class="n">_schema</span> <span class="o">=</span> <span class="n">MockChrootSchema</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;Mock chroot: </span><span class="si">{0}</span><span class="s2"> is active: </span><span class="si">{1}</span><span class="s2">&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_active</span>
+        <span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data structures &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Error handling" href="error_handling.html" />
+    <link rel="prev" title="Client initialization" href="client_initialization.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV3.html">Client version 3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#example-usage">Example usage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV3.html#quick-overview">Quick overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="client_initialization.html">Client initialization</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Data structures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lists-of-objects">Lists of objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modifying-data">Modifying data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="error_handling.html">Error handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pagination.html">Pagination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="working_with_proxies_directly.html">Working with proxies directly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#resources-info">Resources info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV3.html">Client version 3</a> &raquo;</li>
+        
+      <li>Data structures</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/data_structures.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-structures">
+<h1>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h1>
+<p>A data returned from successful API calls are transformed and presented to you as a Munch (it is a subclass of a
+<code class="docutils literal notranslate"><span class="pre">dict</span></code> with all its features, with an additional support of accessing its attributes like object properties, etc).
+This page shows how to work with the results, how to access the original responses from frontend and what are the
+specifics for lists of results.</p>
+<p>First, let’s just initialize an API client, and obtain some object (in this example a build) to be examined.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">copr.v3</span> <span class="k">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="o">.</span><span class="n">create_from_config_file</span><span class="p">()</span>
+<span class="n">build</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">build_proxy</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2545</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">build</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As advertised, the data is represented as a Munch.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Munch</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;source_package&#39;</span><span class="p">:</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results//@copr/copr/srpm-builds/00002545/ed-1.14.2-3.fc26.src.rpm&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;1.14.2-3.fc26&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;ed&#39;</span><span class="p">},</span> <span class="s1">&#39;__response__&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;projectname&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;started_on&#39;</span><span class="p">:</span> <span class="mi">1526406595</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitted_on&#39;</span><span class="p">:</span> <span class="mi">1525635534</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;succeeded&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ended_on&#39;</span><span class="p">:</span> <span class="mi">1526408106</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ownername&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;@copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;repo_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results/@copr/copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitter&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;chroots&#39;</span><span class="p">:</span> <span class="p">[</span><span class="sa">u</span><span class="s1">&#39;fedora-27-x86_64&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;fedora-rawhide-x86_64&#39;</span><span class="p">],</span> <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2545</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>What exactly it is? It is a structure that extends <code class="docutils literal notranslate"><span class="pre">dict</span></code> and add more features to it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">build</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">build</span><span class="p">,</span> <span class="nb">dict</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;munch.Munch&#39;&gt;
+True
+</pre></div>
+</div>
+<p>In the first example, it is quite hard to see, what attributes are available and what are their values. It is possible
+to print the structure in more human-readable format.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">build</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;__response__&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;chroots&#39;</span><span class="p">:</span> <span class="p">[</span><span class="sa">u</span><span class="s1">&#39;fedora-27-x86_64&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;fedora-rawhide-x86_64&#39;</span><span class="p">],</span>
+ <span class="sa">u</span><span class="s1">&#39;ended_on&#39;</span><span class="p">:</span> <span class="mi">1526408106</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2545</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;ownername&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;@copr&#39;</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;projectname&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;copr&#39;</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;repo_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results/@copr/foo&#39;</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;source_package&#39;</span><span class="p">:</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;ed&#39;</span><span class="p">,</span>
+                     <span class="sa">u</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results//@copr/copr/srpm-builds/00002545/ed-1.14.2-3.fc26.src.rpm&#39;</span><span class="p">,</span>
+                     <span class="sa">u</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;1.14.2-3.fc26&#39;</span><span class="p">},</span>
+ <span class="sa">u</span><span class="s1">&#39;started_on&#39;</span><span class="p">:</span> <span class="mi">1526406595</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;succeeded&#39;</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;submitted_on&#39;</span><span class="p">:</span> <span class="mi">1525635534</span><span class="p">,</span>
+ <span class="sa">u</span><span class="s1">&#39;submitter&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Attributes are accessible through standard dict bracket-style, but also through object like property-style.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">build</span><span class="o">.</span><span class="n">ownername</span> <span class="o">==</span> <span class="n">build</span><span class="p">[</span><span class="s2">&quot;ownername&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">ownername</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@copr</span>
+</pre></div>
+</div>
+<p>Every data munch also stores the original response from frontend.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">__response__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">__response__</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">__response__</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span>
+<span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+<span class="mi">200</span>
+</pre></div>
+</div>
+<div class="section" id="lists-of-objects">
+<h2>Lists of objects<a class="headerlink" href="#lists-of-objects" title="Permalink to this headline">¶</a></h2>
+<p>Now, it should be clear how a single data object is represented. Let’s see how the situation looks like
+when multiple objects are returned.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">builds</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">build_proxy</span><span class="o">.</span><span class="n">get_list</span><span class="p">(</span><span class="s2">&quot;@copr&quot;</span><span class="p">,</span> <span class="s2">&quot;copr&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">builds</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>At the first sight, it is just a list of munches.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Munch</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;source_package&#39;</span><span class="p">:</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results//@copr/copr/srpm-builds/00002544/mksh-56c-3.fc26.src.rpm&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;56c-3.fc26&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;mksh&#39;</span><span class="p">},</span> <span class="sa">u</span><span class="s1">&#39;projectname&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;started_on&#39;</span><span class="p">:</span> <span class="mi">1519063348</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitted_on&#39;</span><span class="p">:</span> <span class="mi">1519062565</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;succeeded&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ended_on&#39;</span><span class="p">:</span> <span class="mi">1519064069</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ownername&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;repo_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results/@copr/copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitter&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;chroots&#39;</span><span class="p">:</span> <span class="p">[</span><span class="sa">u</span><span class="s1">&#39;fedora-rawhide-i386&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;fedora-rawhide-x86_64&#39;</span><span class="p">],</span> <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2544</span><span class="p">}),</span>
+ <span class="n">Munch</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;source_package&#39;</span><span class="p">:</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results//@copr/copr/srpm-builds/00002545/ed-1.14.2-3.fc26.src.rpm&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;1.14.2-3.fc26&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;ed&#39;</span><span class="p">},</span> <span class="sa">u</span><span class="s1">&#39;projectname&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;started_on&#39;</span><span class="p">:</span> <span class="mi">1526406595</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitted_on&#39;</span><span class="p">:</span> <span class="mi">1525635534</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;succeeded&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ended_on&#39;</span><span class="p">:</span> <span class="mi">1526408106</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ownername&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;@copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;repo_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results/@copr/copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitter&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;chroots&#39;</span><span class="p">:</span> <span class="p">[</span><span class="sa">u</span><span class="s1">&#39;fedora-27-x86_64&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;fedora-rawhide-x86_64&#39;</span><span class="p">],</span> <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2545</span><span class="p">})]</span>
+</pre></div>
+</div>
+<p>Not exactly. It is a subclass of a <code class="docutils literal notranslate"><span class="pre">list</span></code> created in the <code class="docutils literal notranslate"><span class="pre">copr</span></code> package.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">builds</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">builds</span><span class="p">,</span> <span class="nb">list</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;copr.v3.helpers.List&#39;&gt;
+True
+</pre></div>
+</div>
+<p>Let’s answer the anticipated question, why do we need a modified implementation of a list. It can provide the frontned
+response in a <code class="docutils literal notranslate"><span class="pre">__response__</span></code> attribute the same way that single munch does.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">builds</span><span class="o">.</span><span class="n">__response__</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">Response</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>It also provides a <code class="docutils literal notranslate"><span class="pre">meta</span></code> attribute, that has information about ordering results in the list and possibly limiting
+their number. Please read more about the pagination.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">builds</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span>
+<span class="n">Munch</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;offset&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;limit&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;order_type&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;ASC&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;order&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>Iterating through all objects in the response looks as expected.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">build</span> <span class="ow">in</span> <span class="n">builds</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Build </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">build</span><span class="o">.</span><span class="n">state</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Build</span> <span class="mi">2544</span> <span class="n">succeeded</span>
+<span class="n">Build</span> <span class="mi">2545</span> <span class="n">succeeded</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modifying-data">
+<h2>Modifying data<a class="headerlink" href="#modifying-data" title="Permalink to this headline">¶</a></h2>
+<p>Previous examples show the data structures when the object was explicitly queried
+(i.e. <code class="docutils literal notranslate"><span class="pre">get</span></code> or <code class="docutils literal notranslate"><span class="pre">get_list</span></code> method was used). It remains to be explained, how the responses look like when a user
+tries to add, modify, or delete some object. Simply enough, the operation is executed and the object is implicitly
+queried afterward.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">build</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">build_proxy</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2545</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">build</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Munch</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;source_package&#39;</span><span class="p">:</span> <span class="p">{</span><span class="sa">u</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results//@copr/copr/srpm-builds/00002545/ed-1.14.2-3.fc26.src.rpm&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;1.14.2-3.fc26&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;ed&#39;</span><span class="p">},</span> <span class="sa">u</span><span class="s1">&#39;projectname&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;started_on&#39;</span><span class="p">:</span> <span class="mi">1526406595</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitted_on&#39;</span><span class="p">:</span> <span class="mi">1525635534</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;succeeded&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ended_on&#39;</span><span class="p">:</span> <span class="mi">1526408106</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;ownername&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;@copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;repo_url&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;http://backend/results/@copr/copr&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;submitter&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;frostyx&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;chroots&#39;</span><span class="p">:</span> <span class="p">[</span><span class="sa">u</span><span class="s1">&#39;fedora-27-x86_64&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;fedora-rawhide-x86_64&#39;</span><span class="p">],</span> <span class="sa">u</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2545</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>The object was deleted, so it obviously can’t be queried one more time</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">build_proxy</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">build</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CoprNoResultException</span><span class="p">:</span> <span class="n">Build</span> <span class="mi">2545</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">exist</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="error_handling.html" class="btn btn-neutral float-right" title="Error handling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="client_initialization.html" class="btn btn-neutral" title="Client initialization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

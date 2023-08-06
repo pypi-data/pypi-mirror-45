@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Package Source Type &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Build Options" href="build_options.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV3.html">Client version 3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#example-usage">Example usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#quick-overview">Quick overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV3.html#resources-info">Resources info</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV3.html#parameters">Parameters</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="build_options.html">Build Options</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Package Source Type</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scm">SCM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rubygems">Rubygems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pypi">PyPI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom">Custom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-usage">Example Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV3.html">Client version 3</a> &raquo;</li>
+        
+      <li>Package Source Type</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v3/package_source_types.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="package-source-type">
+<h1>Package Source Type<a class="headerlink" href="#package-source-type" title="Permalink to this headline">¶</a></h1>
+<p>Read more about source types in the
+<a class="reference external" href="https://docs.pagure.org/copr.copr/user_documentation.html#build-source-types">User Documentation</a>.</p>
+<div class="section" id="scm">
+<h2>SCM<a class="headerlink" href="#scm" title="Permalink to this headline">¶</a></h2>
+<p>Parameters when <code class="docutils literal notranslate"><span class="pre">source_type=scm</span></code> is used.
+See <a class="reference external" href="https://docs.pagure.org/copr.copr/user_documentation.html#scm">User Documentation</a> for more information.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="14%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>clone_url</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>committish</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>subdirectory</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>spec</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>scm_type</td>
+<td>str</td>
+<td>“git”, “svn”</td>
+</tr>
+<tr class="row-odd"><td>source_build_method</td>
+<td>str</td>
+<td>See <a class="reference external" href="https://docs.pagure.org/copr.copr/user_documentation.html#scm">User documentation</a> for more info</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rubygems">
+<h2>Rubygems<a class="headerlink" href="#rubygems" title="Permalink to this headline">¶</a></h2>
+<p>Parameters when <code class="docutils literal notranslate"><span class="pre">source_type=rubygems</span></code> is used.
+See <a class="reference external" href="https://docs.pagure.org/copr.copr/user_documentation.html#rubygems">User Documentation</a> for more information.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="38%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>gem_name</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pypi">
+<h2>PyPI<a class="headerlink" href="#pypi" title="Permalink to this headline">¶</a></h2>
+<p>Parameters when <code class="docutils literal notranslate"><span class="pre">source_type=pypi</span></code> is used.
+See <a class="reference external" href="https://docs.pagure.org/copr.copr/user_documentation.html#pypi">User Documentation</a> for more information.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="36%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>pypi_package_name</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>pypi_package_version</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>spec_template</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>python_versions</td>
+<td>list of int</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="custom">
+<h2>Custom<a class="headerlink" href="#custom" title="Permalink to this headline">¶</a></h2>
+<p>Parameters when <code class="docutils literal notranslate"><span class="pre">source_type=custom</span></code> is used.
+See <a class="reference external" href="https://docs.pagure.org/copr.copr/custom_source_method.html#custom-source-method">User Documentation</a> for more information.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="36%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>script</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>builddeps</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>resultdir</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>chroot</td>
+<td>str</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">package_proxy</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;@copr&quot;</span><span class="p">,</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;mypackage&quot;</span><span class="p">,</span>
+                         <span class="n">source_type</span><span class="o">=</span><span class="s2">&quot;rubygems&quot;</span><span class="p">,</span>
+                         <span class="n">source</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;gem_name&quot;</span><span class="p">:</span> <span class="s2">&quot;mygem&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="build_options.html" class="btn btn-neutral" title="Build Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

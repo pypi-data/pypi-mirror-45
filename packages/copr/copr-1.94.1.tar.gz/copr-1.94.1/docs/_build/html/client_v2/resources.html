@@ -1,0 +1,767 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Resources &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Entities" href="entities.html" />
+    <link rel="prev" title="Handlers" href="handlers.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ClientV1.html">Legacy client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV2.html">Client version 2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="initialization.html">Client initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources_usage.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClientV2.html#resources-info">Resources info</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ClientV2.html#autodoc">Autodoc</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#coprclient">CoprClient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html">Handlers</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#project">Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#project-chroot">Project chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build">Build</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-task">Build task</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mock-chroot">Mock chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operation-result">Operation result</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="entities.html">Entities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV2.html">Client version 2</a> &raquo;</li>
+        
+      <li>Resources</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v2/resources.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="project">
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h2>
+<p>see entity attributes at <a class="reference internal" href="resource_info/project.html#project-attributes"><span class="std std-ref">Project entity attributes</span></a>.</p>
+<dl class="class">
+<dt id="copr.client_v2.resources.Project">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">Project</code><span class="sig-paren">(</span><em>entity</em>, <em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.update">
+<code class="descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates project using the current state.</p>
+<p>Shortcut for for <a class="reference internal" href="handlers.html#copr.client_v2.handlers.ProjectHandle.update" title="copr.client_v2.handlers.ProjectHandle.update"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ProjectHandle.update()</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates project using the current state</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.get_self">
+<code class="descname">get_self</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.get_self"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.get_self" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves fresh project object from the service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.Project" title="copr.client_v2.resources.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.get_builds">
+<code class="descname">get_builds</code><span class="sig-paren">(</span><em>**query_options</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.get_builds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.get_builds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get builds owned by this project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query_options</strong> – see <a class="reference internal" href="handlers.html#copr.client_v2.handlers.BuildHandle.get_list" title="copr.client_v2.handlers.BuildHandle.get_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">handlers.BuildHandle.get_list()</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildsList</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.get_build_tasks">
+<code class="descname">get_build_tasks</code><span class="sig-paren">(</span><em>**query_options</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.get_build_tasks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.get_build_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get build tasks owned by this project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query_options</strong> – see <a class="reference internal" href="handlers.html#copr.client_v2.handlers.BuildHandle.get_list" title="copr.client_v2.handlers.BuildHandle.get_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">handlers.BuildHandle.get_list()</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildTasksList</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.get_project_chroot">
+<code class="descname">get_project_chroot</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.get_project_chroot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.get_project_chroot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves project chroot object by the given name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – mock chroot name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.ProjectChroot" title="copr.client_v2.resources.ProjectChroot"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChroot</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.get_project_chroot_list">
+<code class="descname">get_project_chroot_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.get_project_chroot_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.get_project_chroot_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves project chroots list</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.ProjectChrootList" title="copr.client_v2.resources.ProjectChrootList"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChrootList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.enable_project_chroot">
+<code class="descname">enable_project_chroot</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.enable_project_chroot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.enable_project_chroot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables given chroot for this project</p>
+<p>Shortcut for for <a class="reference internal" href="handlers.html#copr.client_v2.handlers.ProjectChrootHandle.enable" title="copr.client_v2.handlers.ProjectChrootHandle.enable"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ProjectChrootHandle.enable()</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – mock chroot name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.create_build_from_file">
+<code class="descname">create_build_from_file</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.create_build_from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.create_build_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut for <a class="reference internal" href="handlers.html#copr.client_v2.handlers.BuildHandle.create_from_file" title="copr.client_v2.handlers.BuildHandle.create_from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BuildHandle.create_from_file()</span></code></a>
+(here you don’t need to specify project_id)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Project.create_build_from_url">
+<code class="descname">create_build_from_url</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Project.create_build_from_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Project.create_build_from_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut for <a class="reference internal" href="handlers.html#copr.client_v2.handlers.BuildHandle.create_from_file" title="copr.client_v2.handlers.BuildHandle.create_from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BuildHandle.create_from_file()</span></code></a>
+(here you don’t need to specify project_id)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.resources.ProjectList">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">ProjectList</code><span class="sig-paren">(</span><em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.ProjectList.next_page">
+<code class="descname">next_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectList.next_page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectList.next_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves next chunk of the Project list for the same query options</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.ProjectList" title="copr.client_v2.resources.ProjectList"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="copr.client_v2.resources.ProjectList.projects">
+<code class="descname">projects</code><a class="headerlink" href="#copr.client_v2.resources.ProjectList.projects" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="#copr.client_v2.resources.Project" title="copr.client_v2.resources.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="project-chroot">
+<h2>Project chroot<a class="headerlink" href="#project-chroot" title="Permalink to this headline">¶</a></h2>
+<p>see entity attributes at <a class="reference internal" href="resource_info/project_chroot.html#project-chroot-attributes"><span class="std std-ref">Project chroot entity attributes</span></a>.</p>
+<dl class="class">
+<dt id="copr.client_v2.resources.ProjectChroot">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">ProjectChroot</code><span class="sig-paren">(</span><em>entity</em>, <em>handle</em>, <em>project</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectChroot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectChroot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.ProjectChroot.disable">
+<code class="descname">disable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectChroot.disable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectChroot.disable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disables chroot for the bound project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.ProjectChroot.update">
+<code class="descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectChroot.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectChroot.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates chroot with the current entity state</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.resources.ProjectChrootList">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">ProjectChrootList</code><span class="sig-paren">(</span><em>handle</em>, <em>project</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectChrootList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectChrootList" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of the <a class="reference internal" href="#copr.client_v2.resources.ProjectChroot" title="copr.client_v2.resources.ProjectChroot"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChroot</span></code></a> in the one Project.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="copr.client_v2.resources.ProjectChrootList.chroots">
+<code class="descname">chroots</code><a class="headerlink" href="#copr.client_v2.resources.ProjectChrootList.chroots" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="#copr.client_v2.resources.ProjectChroot" title="copr.client_v2.resources.ProjectChroot"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectChroot</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.ProjectChrootList.enable">
+<code class="descname">enable</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#ProjectChrootList.enable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.ProjectChrootList.enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables mock chroot for the current project</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<p>see entity attributes at <a class="reference internal" href="resource_info/build.html#build-attributes"><span class="std std-ref">Build entity attributes</span></a>.</p>
+<dl class="class">
+<dt id="copr.client_v2.resources.Build">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">Build</code><span class="sig-paren">(</span><em>entity</em>, <em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Build" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.Build.get_self">
+<code class="descname">get_self</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Build.get_self"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Build.get_self" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves fresh build object from the service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.Build" title="copr.client_v2.resources.Build"><code class="xref py py-class docutils literal notranslate"><span class="pre">Build</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Build.cancel">
+<code class="descname">cancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Build.cancel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Build.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the current build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Build.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Build.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Build.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the current build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.OperationResult" title="copr.client_v2.resources.OperationResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">OperationResult</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.Build.get_build_tasks">
+<code class="descname">get_build_tasks</code><span class="sig-paren">(</span><em>**query_options</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#Build.get_build_tasks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.Build.get_build_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get build tasks owned by this build</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query_options</strong> – see <a class="reference internal" href="handlers.html#copr.client_v2.handlers.BuildHandle.get_list" title="copr.client_v2.handlers.BuildHandle.get_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">handlers.BuildHandle.get_list()</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildTasksList</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.resources.BuildList">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">BuildList</code><span class="sig-paren">(</span><em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#BuildList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.BuildList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.BuildList.next_page">
+<code class="descname">next_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#BuildList.next_page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.BuildList.next_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves next chunk of the Build list for the same query options</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.BuildList" title="copr.client_v2.resources.BuildList"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="copr.client_v2.resources.BuildList.builds">
+<code class="descname">builds</code><a class="headerlink" href="#copr.client_v2.resources.BuildList.builds" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.BuildList" title="copr.client_v2.resources.BuildList"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildList</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="build-task">
+<h2>Build task<a class="headerlink" href="#build-task" title="Permalink to this headline">¶</a></h2>
+<p>see entity attributes at <a class="reference internal" href="resource_info/build_task.html#build-task-attributes"><span class="std std-ref">Build task entity attributes</span></a>.</p>
+<dl class="class">
+<dt id="copr.client_v2.resources.BuildTask">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">BuildTask</code><span class="sig-paren">(</span><em>entity</em>, <em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#BuildTask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.BuildTask" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="method">
+<dt id="copr.client_v2.resources.BuildTask.get_self">
+<code class="descname">get_self</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#BuildTask.get_self"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.BuildTask.get_self" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves fresh build task object from the service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#copr.client_v2.resources.Build" title="copr.client_v2.resources.Build"><code class="xref py py-class docutils literal notranslate"><span class="pre">Build</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.resources.BuildTaskList">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">BuildTaskList</code><span class="sig-paren">(</span><em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#BuildTaskList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.BuildTaskList" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of build tasks</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="copr.client_v2.resources.BuildTaskList.build_tasks">
+<code class="descname">build_tasks</code><a class="headerlink" href="#copr.client_v2.resources.BuildTaskList.build_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="#copr.client_v2.resources.BuildTask" title="copr.client_v2.resources.BuildTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">BuildTask</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="mock-chroot">
+<h2>Mock chroot<a class="headerlink" href="#mock-chroot" title="Permalink to this headline">¶</a></h2>
+<p>see entity attributes at <a class="reference internal" href="resource_info/mock_chroot.html#mock-chroot-attributes"><span class="std std-ref">Mock chroot entity attributes</span></a>.</p>
+<dl class="class">
+<dt id="copr.client_v2.resources.MockChroot">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">MockChroot</code><span class="sig-paren">(</span><em>entity</em>, <em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#MockChroot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.MockChroot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client_v2.resources.MockChrootList">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">MockChrootList</code><span class="sig-paren">(</span><em>handle</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#MockChrootList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.MockChrootList" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of the mock chroots supported by the service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="copr.client_v2.resources.MockChrootList.chroots">
+<code class="descname">chroots</code><a class="headerlink" href="#copr.client_v2.resources.MockChrootList.chroots" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of <a class="reference internal" href="#copr.client_v2.resources.MockChroot" title="copr.client_v2.resources.MockChroot"><code class="xref py py-class docutils literal notranslate"><span class="pre">MockChroot</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="operation-result">
+<h2>Operation result<a class="headerlink" href="#operation-result" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="copr.client_v2.resources.OperationResult">
+<em class="property">class </em><code class="descclassname">copr.client_v2.resources.</code><code class="descname">OperationResult</code><span class="sig-paren">(</span><em>handle</em>, <em>response=None</em>, <em>entity=None</em>, <em>options=None</em>, <em>expected_status=200</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#OperationResult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.OperationResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fake resource to represent results of the requested operation</p>
+<dl class="attribute">
+<dt id="copr.client_v2.resources.OperationResult.new_location">
+<code class="descname">new_location</code><a class="headerlink" href="#copr.client_v2.resources.OperationResult.new_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains an url to the new location produced by an operation
+If operation doesn’t produce a new location would contain None</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client_v2.resources.OperationResult.is_successful">
+<code class="descname">is_successful</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client_v2/resources.html#OperationResult.is_successful"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client_v2.resources.OperationResult.is_successful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs check if status code is equal to the expected value
+of particular request.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="entities.html" class="btn btn-neutral float-right" title="Entities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="handlers.html" class="btn btn-neutral" title="Handlers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

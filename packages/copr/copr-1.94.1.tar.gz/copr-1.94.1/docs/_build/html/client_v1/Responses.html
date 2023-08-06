@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Responses &mdash; python-copr 1.63 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Client version 2" href="../ClientV2.html" />
+    <link rel="prev" title="CoprClient" href="CoprClient.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> python-copr
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.63
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ClientV1.html">Legacy client</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Examples.html">Create client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#get-projects-list">Get projects list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#search-for-projects">Search for projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#create-update-delete-project">Create/update/delete project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples.html#work-with-builds">Work with builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CoprClient.html">CoprClient</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-wrappers">Data wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV2.html">Client version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClientV3.html">Client version 3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python-copr</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ClientV1.html">Legacy client</a> &raquo;</li>
+        
+      <li>Responses</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/client_v1/Responses.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="responses">
+<h1>Responses<a class="headerlink" href="#responses" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="copr.client.responses.CoprResponse">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">CoprResponse</code><span class="sig-paren">(</span><em>client</em>, <em>method</em>, <em>data</em>, <em>request_kwargs=None</em>, <em>parsers=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#CoprResponse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.CoprResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for Copr api responses</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>handle</strong> – handle object which provide shortcuts
+based on request and/or response data
+(<a class="reference internal" href="#copr.client.responses.BaseHandle" title="copr.client.responses.BaseHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseHandle</span></code></a> and its derivatives)</li>
+<li><strong>data</strong> (<em>dict</em>) – json structure from Copr api</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.BaseHandle">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">BaseHandle</code><span class="sig-paren">(</span><em>client</em>, <em>username=None</em>, <em>response=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#BaseHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.BaseHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles provide convenient shortcut methods. Useful methods
+provided by derived classes.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_project</span><span class="p">(</span><span class="s2">&quot;copr&quot;</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="c1"># &lt;-- ProjectHandle object</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">handle</span><span class="o">.</span><span class="n">get_project_details</span><span class="p">()</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.ProjectHandle">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">ProjectHandle</code><span class="sig-paren">(</span><em>client</em>, <em>projectname</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle to deal with a single Copr project</p>
+<dl class="method">
+<dt id="copr.client.responses.ProjectHandle.get_project_details">
+<code class="descname">get_project_details</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectHandle.get_project_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectHandle.get_project_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.get_project_details" title="copr.client.client.CoprClient.get_project_details"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_project_details()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.ProjectHandle.modify_project">
+<code class="descname">modify_project</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectHandle.modify_project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectHandle.modify_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.modify_project" title="copr.client.client.CoprClient.modify_project"><code class="xref py py-meth docutils literal notranslate"><span class="pre">modify_project()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.ProjectHandle.delete_project">
+<code class="descname">delete_project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectHandle.delete_project"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectHandle.delete_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.delete_project" title="copr.client.client.CoprClient.delete_project"><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_project()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.ProjectHandle.create_new_build">
+<code class="descname">create_new_build</code><span class="sig-paren">(</span><em>src_pkgs</em>, <em>chroots=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectHandle.create_new_build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectHandle.create_new_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to :meth”<a href="#id1"><span class="problematic" id="id2">`</span></a>~.client.CoprClient.create_new_build’</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.BuildHandle">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">BuildHandle</code><span class="sig-paren">(</span><em>client</em>, <em>build_id</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#BuildHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.BuildHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle to deal with a single build</p>
+<dl class="attribute">
+<dt id="copr.client.responses.BuildHandle.project_handle">
+<code class="descname">project_handle</code><a class="headerlink" href="#copr.client.responses.BuildHandle.project_handle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut for <a class="reference internal" href="#copr.client.responses.ProjectHandle" title="copr.client.responses.ProjectHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">responses.ProjectHandle</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.BuildHandle.get_build_details">
+<code class="descname">get_build_details</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#BuildHandle.get_build_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.BuildHandle.get_build_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.get_build_details" title="copr.client.client.CoprClient.get_build_details"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_build_details()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.BuildHandle.cancel_build">
+<code class="descname">cancel_build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#BuildHandle.cancel_build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.BuildHandle.cancel_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.cancel_build" title="copr.client.client.CoprClient.cancel_build"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cancel_build()</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.ProjectChrootHandle">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">ProjectChrootHandle</code><span class="sig-paren">(</span><em>client</em>, <em>chrootname</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectChrootHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectChrootHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle to deal with a single project chroot</p>
+<dl class="method">
+<dt id="copr.client.responses.ProjectChrootHandle.get_project_chroot_details">
+<code class="descname">get_project_chroot_details</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectChrootHandle.get_project_chroot_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectChrootHandle.get_project_chroot_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.get_project_chroot_details" title="copr.client.client.CoprClient.get_project_chroot_details"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_project_chroot_details()</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="copr.client.responses.ProjectChrootHandle.modify_project_chroot_details">
+<code class="descname">modify_project_chroot_details</code><span class="sig-paren">(</span><em>pkgs=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectChrootHandle.modify_project_chroot_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectChrootHandle.modify_project_chroot_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to <a class="reference internal" href="CoprClient.html#copr.client.client.CoprClient.modify_project_chroot_details" title="copr.client.client.CoprClient.modify_project_chroot_details"><code class="xref py py-meth docutils literal notranslate"><span class="pre">modify_project_chroot_details()</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="data-wrappers">
+<h1>Data wrappers<a class="headerlink" href="#data-wrappers" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="copr.client.responses.ProjectWrapper">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">ProjectWrapper</code><span class="sig-paren">(</span><em>client</em>, <em>username</em>, <em>projectname</em>, <em>description=None</em>, <em>instructions=None</em>, <em>yum_repos=None</em>, <em>additional_repos=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper class to represent project objects</p>
+<p><code class="docutils literal notranslate"><span class="pre">__str__</span></code> overridden to produces pretty formatted representation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>handle</strong> – <a class="reference internal" href="#copr.client.responses.ProjectHandle" title="copr.client.responses.ProjectHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">responses.ProjectHandle</span></code></a></li>
+<li><strong>username</strong> – project owner</li>
+<li><strong>projectname</strong> – project names</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.BuildWrapper">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">BuildWrapper</code><span class="sig-paren">(</span><em>client</em>, <em>username</em>, <em>projectname</em>, <em>build_id</em>, <em>status=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#BuildWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.BuildWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper class to represent build objects</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>handle</strong> – <a class="reference internal" href="#copr.client.responses.BuildHandle" title="copr.client.responses.BuildHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">responses.BuildHandle</span></code></a></li>
+<li><strong>username</strong> – project owner</li>
+<li><strong>projectname</strong> – project names</li>
+<li><strong>build_id</strong> (<em>int</em>) – build identifier</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="copr.client.responses.ProjectChrootWrapper">
+<em class="property">class </em><code class="descclassname">copr.client.responses.</code><code class="descname">ProjectChrootWrapper</code><span class="sig-paren">(</span><em>client</em>, <em>username</em>, <em>projectname</em>, <em>chrootname</em>, <em>repo_url=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/copr/client/responses.html#ProjectChrootWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#copr.client.responses.ProjectChrootWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper class to represent project chroot objects</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>handle</strong> – <a class="reference internal" href="#copr.client.responses.ProjectChrootHandle" title="copr.client.responses.ProjectChrootHandle"><code class="xref py py-class docutils literal notranslate"><span class="pre">responses.ProjectChrootHandle</span></code></a></li>
+<li><strong>username</strong> – project owner</li>
+<li><strong>projectname</strong> – project names</li>
+<li><strong>chrootname</strong> – chroot name</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ClientV2.html" class="btn btn-neutral float-right" title="Client version 2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="CoprClient.html" class="btn btn-neutral" title="CoprClient" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Red Hat, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1.63',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
