@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pynstein
+Version: 0.2.0
+Summary: Basic functions for doing Special Relativity in Python
+Home-page: https://github.com/jbredall/pynstein
+Author: John Bredall
+Author-email: jbredall@hawaii.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numpy
+Requires-Dist: astropy
+
+UNKNOWN
+
+
