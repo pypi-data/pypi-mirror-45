@@ -1,0 +1,2 @@
+dodoo_migrator
+odoo
