@@ -1,0 +1,12 @@
+django-jfu-pyforms
+orquestra
+numpy
+opencv-python
+django>2.0
+simplejson
+sorl-thumbnail
+dill
+filelock
+Pillow
+python-dateutil
+confapp
