@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PyUpdater-s3-Plugin
+Version: 4.0.0
+Summary: Amazon S3 plugin for PyUpdater
+Home-page: https://github.com/JMSwag/PyUpdater-s3-Plugin
+Author: Digital Sapphire
+Author-email: info@digitalsapphire.io
+License: UNKNOWN
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Requires-Dist: boto3 (>=1.8.0)
+
+UNKNOWN
+
+
