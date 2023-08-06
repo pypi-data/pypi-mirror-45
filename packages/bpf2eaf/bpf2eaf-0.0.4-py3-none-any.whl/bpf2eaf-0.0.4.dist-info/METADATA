@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bpf2eaf
+Version: 0.0.4
+Summary: Package converting bpf to eaf.
+Home-page: UNKNOWN
+Author: Thomas Kisler
+Author-email: kisler@bas.uni-muenchen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# BPF2EAF
+
+This package provices code to convert BAS Partitur Formate (BPF) files to 
+ELAN files. Internally the [pympi](https://github.com/dopefishh/pympi) package is used for the file handling.
+
+If you have any problems using this package, contact [Thomas Kisler](mailto:kisler@bas.uni-muenchen.de).
+
+
