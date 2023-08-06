@@ -1,0 +1,15 @@
+django_ltree/__init__.py,sha256=LY7_yR6ppTUl1AJ3hEiGweqtIi3tLeHhED0RJ8AB5tU,59
+django_ltree/apps.py,sha256=vM7H95c3aAKMSrfRT2TVfdUQa246UEyfTDkRx7uHAns,249
+django_ltree/checks.py,sha256=dEWsVxYLiwvcGZCvA2k87tk4KHABwsYd75RM4pbSHw4,533
+django_ltree/fields.py,sha256=wYFtEYEDaJMdPZtwGjhonohih84H4WTnM5Aoj5mCjr0,2675
+django_ltree/functions.py,sha256=9mHGqe41LNALqCK5Vu8J9Dm-CSuKcwis3rMaLMWuSds,216
+django_ltree/lookups.py,sha256=7lEIl5XLRg-8wxQOmjowWE97GC1cvpjt7I74uCNBr9k,1131
+django_ltree/managers.py,sha256=owzlINTS_DtIGA23iMR6I0ejigPGCiDm_vPeC8Fq1_8,438
+django_ltree/models.py,sha256=SRZApVV1S6osva6rpZlhWB2xv7ImMp3La08QJ3rNAoI,1290
+django_ltree/migrations/0001_create_extension.py,sha256=tS50eY3j3juMBEDZdeDBa-xFrGlBLjNlCjnkqt-B_Sc,273
+django_ltree/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ltree-0.3.1.dist-info/LICENSE,sha256=tW4neltx6FT73mShlvUP-IzI0crNpB41X575qyObAqg,1069
+django_ltree-0.3.1.dist-info/METADATA,sha256=4ZExPrOOMOKitha1WluUDQ7TsEtAoqGe6UPW_qlnhdE,1628
+django_ltree-0.3.1.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+django_ltree-0.3.1.dist-info/top_level.txt,sha256=wahoePZiIQuajCPWS4pDwnW5lVB6XEZX74FIgg-MLA4,13
+django_ltree-0.3.1.dist-info/RECORD,,

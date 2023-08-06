@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-ltree
+Version: 0.3.1
+Summary: A django that implements in a model the ltree postgres extension
+Home-page: https://github.com/mariocesar/django-ltree
+Author: Mario César Señoranis Ayala
+Author-email: mariocesar@humanzilla.com
+License: MIT
+Project-URL: Source, https://github.com/mariocesar/django_ltree
+Project-URL: Tracker, https://github.com/mariocesar/django_ltree/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# django-ltree
+
+An ltree extension implementation to support hierarchical tree-like data in django models
+
+Postgresql has already a optimized and very useful tree implementation for data.
+The extension is [ltree](https://www.postgresql.org/docs/9.6/static/ltree.html)
+
+[![PyPI version](https://badge.fury.io/py/django-ltree.svg)](https://badge.fury.io/py/django-ltree)
+
+## Install
+
+    pip install django-ltree
+
+Then add `django_ltree` to `INSTALLED_APPS` in your Django project settings.
+
+And make sure to run `django_ltree` migrations before you added the `PathField`
+
+    python manage.py migrations django_ltree
+
+This will install the `ltree` extension
+
+Requires:
+
+- Django 2.0 or superior
+- Python 3.6 or superior
+
+
+
