@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyclrs/__init__.py
+pyclrs/color.py
+pyclrs.egg-info/PKG-INFO
+pyclrs.egg-info/SOURCES.txt
+pyclrs.egg-info/dependency_links.txt
+pyclrs.egg-info/top_level.txt
