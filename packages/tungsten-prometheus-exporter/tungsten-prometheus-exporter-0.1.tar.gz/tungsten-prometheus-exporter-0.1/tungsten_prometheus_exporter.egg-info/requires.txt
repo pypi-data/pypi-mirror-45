@@ -1,0 +1,5 @@
+requests
+prometheus_client~=0.6
+jsonpath-rw~=1.4
+confuse
+gevent~=1.4
