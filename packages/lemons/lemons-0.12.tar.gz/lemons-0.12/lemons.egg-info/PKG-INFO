@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lemons
+Version: 0.12
+Summary: A GUI and common function utility package
+Home-page: https://github.com/jakebrehm/lemons
+Author: Jake Brehm
+Author-email: mail@jakebrehm.com
+License: UNKNOWN
+Description: # EZPZ Lemon Squeezy
+        
+        A package that makes things easy.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
