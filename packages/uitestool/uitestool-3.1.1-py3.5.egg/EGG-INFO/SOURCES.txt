@@ -1,0 +1,9 @@
+README.md
+setup.py
+autotest/basepage.py
+autotest/decorator.py
+autotest/switch.py
+uitestool.egg-info/PKG-INFO
+uitestool.egg-info/SOURCES.txt
+uitestool.egg-info/dependency_links.txt
+uitestool.egg-info/top_level.txt
