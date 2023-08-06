@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: consul_utils
+Version: 0.1.1
+Summary: Useful tools to handle Consul.
+Home-page: UNKNOWN
+Author: wuwentao
+Author-email: wwtg99@126.com
+License: MIT
+Description: Consul Utils
+        ============
+        
+Keywords: consul,key_value,search,diff
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
