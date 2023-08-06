@@ -1,0 +1,10 @@
+# new-grand-schmidt
+Grand Schmidt and Cholesky Factorization
+
+## Instalación
+
+Instala el paquete con `pip`
+
+```
+pip install new-grand-schmidt
+```
