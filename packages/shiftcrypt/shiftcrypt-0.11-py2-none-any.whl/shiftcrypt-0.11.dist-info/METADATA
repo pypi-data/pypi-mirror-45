@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: shiftcrypt
+Version: 0.11
+Summary: Auto-encoding NMR chemical shifts from their native vector space to a residue-level biophysical index
+Home-page: https://bitbucket.org/grogdrinker/shiftcryp
+Author: Gabriele Orlando
+Author-email: orlando.gabriele89@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+### INSTALLATION ###
+ShiftCrypt have been tested on Linux machines only. It may require additional installation steps in order to work on other operating systems. If you need support, please contact gabriele.orlando@vub.be or wim.vranken@vub.be.
+
+Please note that the PyPI package have limited functionalities. For the full shiftcrypt version, that allows custom encoding schemes and retraining of the neural network, please refer to:
+```
+https://bitbucket.org/grogdrinker/shiftcrypt
+```
+to install the package simply run
+```
+sudo pip install shiftcrypt
+```
+The aforementioned command will install:
+ - A command line based standalone (shiftcrypt)
+ - A python2 package (shiftcrypt_pkg)
+
+### DEPENDENCIES:
+
+the following python packages are required:
+
+- python2.7
+- scipy (tested with version 0.19.1)
+- numpy (tested with version 1.14.3)
+- sklearn (tested with version 0.19.1)
+- pytorch (see https://pytorch.org/ for an easy installation guide. Tested with version 0.3.1)
+
+@@ if you experience a memory error when installing pytorch, please use the --no-cache-dir installation option (for example pip --no-cache-dir  install  http://download.pytorch.org/whl/cpu/torch-0.4.1-cp27-cp27mu-linux_x86_64.whl) @@
+
+all these packages are available using pip or anaconda. See also the requirements.txt file.
+
+### USAGE ###
+
+The tool takes as input NMR Exchange Format (NEF) or NMR-STAR v2.1 files.
+
+#### ShiftCrypt Standaolne
+```
+shiftcrypt [options] -i inputFile
+```
+to test the example input, run
+```
+shiftcrypt -i TEST_SA
+```
+The tool should generate the results in a couple of seconds.
+@@@ please remember that if you have several missing chemical shift values, you should use the reduced model (option -m 2)
+
+- -h  --> show the help
+- -i  --> input nef file file
+- -o  --> output file
+- -m --> model to use
+
+ShiftCrypt can be used with different encoding schemes:
+- -m 1 --> the model that uses the full set of chemical shifts as described in the paper. It may fail to transform some of the residues due to missing chemical shifts data
+- -m 2 --> the model that uses only H,CA,N,CB,C chemical shifts data (H,CA,N and HA,CA,CB for Gly and Pro respectively). It is a good alternative when dealing with experiments wit ha lot of missing data
+- -m 3 --> the model that uses only N and H atoms (HA,CA,CB for Pro). It has not been used for this work
+
+With the GIT version, it is possible to build a custom encoding scheme and to train a custom model
+
+the output is made of two columns: the first one contains the residue name, the second one the ShiftCrypt index. 
+If the ShiftCrypt output value is equal to -10, it means that the chemical shifts for that residues were not sufficient to perform the transformation
+
+#### ShiftCrypt Python package
+
+to use the python package, import ShiftCrypt with:
+```
+from shiftcrypt_pkg.main_class import shiftcript
+```
+The class has the followng args:
+- [optional] model= 1, 2 or 3 (default=2). The model to use
+
+The class has the following Methods:
+- transform ( STAR_File ) : Calculates the ShiftCrypt values. Output: list. ith value corresponds to the ShiftCrypt value of ith residue. -10 means there are too many missing values for that specific residue
+- test() : Tests the package
+example:
+```
+from shiftcrypt_pkg.main_class import shiftcript
+sci=shiftcript()
+sci.test()
+```
+
+

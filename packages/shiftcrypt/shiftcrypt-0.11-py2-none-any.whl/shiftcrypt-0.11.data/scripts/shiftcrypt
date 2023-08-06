@@ -1,0 +1,51 @@
+#!python
+# -*- coding: utf-8 -*-
+#
+#  shiftcrypt.py
+#  
+#  Copyright 2018  <@gmail.com>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+import warnings,sys
+warnings.filterwarnings("ignore")
+import parser
+import torch
+import argparse
+from shiftcrypt_pkg.shiftcrypt_cmd import run_shiftcrypt
+args=sys.argv[1:]
+pa = argparse.ArgumentParser()
+
+
+
+pa.add_argument('-i', '--infile',
+					help='the input Nmr Exchange Format (NEF) file',
+					)
+pa.add_argument('-o', '--outfile',
+					help='output file. Residues with a shiftcrypt value of -10 highlight residues with too many missing values',
+					default=None)
+pa.add_argument('-t', '--test',
+					help='tests the tool',
+					action='store_true',
+					default=False
+					)
+pa.add_argument('-m', '--model',
+					help='model to use:\n\t1 --> full model\n\n\t2 --> model that uses just the most common atoms (default) \n\n\t3 --> the method with only N, H  and CA CS. Used for dimers. if you want to load a custom model,use -m NameOfTheModel. Please remember the model is required to be in ./marshalled/ and can be generated with python shiftcrypt.py --fit MOdelName ',
+					default='2')
+results = pa.parse_args(args)
+run_shiftcrypt(results)
+
