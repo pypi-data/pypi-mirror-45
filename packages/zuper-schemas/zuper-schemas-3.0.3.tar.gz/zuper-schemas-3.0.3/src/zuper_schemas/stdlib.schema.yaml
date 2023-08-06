@@ -1,0 +1,34 @@
+
+
+^API:
+  github: ^GithubAPI
+  stdlib: ^Stdlib
+
+^Stdlib:
+  get_url: @Function
+
+$API:
+  ~API:
+    github: $GithubAPI
+    stdlib: $Stdlib
+
+$Stdlib:
+  ~Stdlib:
+    get_url: $stdlib_get_url
+
+$stdlib_get_url:
+  ~Function:
+    executables:
+      python: $stdlib_get_url_python
+    interface:
+      ~FunctionInterface:
+        parameter_types:
+          url: ^url
+          timeout: ^duration
+        return_type: ^
+        volatile: true
+
+$stdlib_get_url_python:
+  ~PythonExecutable:
+    requirements:
+      -
