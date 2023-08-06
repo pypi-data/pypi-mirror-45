@@ -1,0 +1,8 @@
+setup.py
+zjy_demo.egg-info/PKG-INFO
+zjy_demo.egg-info/SOURCES.txt
+zjy_demo.egg-info/dependency_links.txt
+zjy_demo.egg-info/not-zip-safe
+zjy_demo.egg-info/top_level.txt
+zjy_pack/__init__.py
+zjy_pack2/__init__.py
