@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: mudmaker
+Version: 0.4.8
+Summary: Make MUDs with Python classes.
+Home-page: https://github.com/chrisnorman7/
+Author: Chris Norman
+Author-email: chris.norman2@googlemail.com
+License: MPL-2
+Description: # mudmaker
+        Make MUDs with Python classes.
+        
+        
+Platform: UNKNOWN

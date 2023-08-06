@@ -1,0 +1,161 @@
+CHANGES
+=======
+
+0.4.8
+-----
+
+* Fixed some dig bugs
+* Add move commands dynamically with Game.add\_direction
+* Make sure room.coordinates works
+* Removed movement commands
+* Added @dig command
+* Added opposite property for directions
+* Don't fail to get zone if there is no location
+* Added zone to context
+* Added a movement command
+* Added Room.link method
+* Made lots of exit stuff
+* Added Room.match\_exit
+* Add a direction\_name attribute, along with a direction property
+* Rebuilt documentation
+* Documentation fixes
+
+0.1.7
+-----
+
+* Log loaded objects
+* Added a delete method for database objects
+* Added @edit-socials command
+* Remove debug printing
+* Remove code from mudpatch
+* Grabbed menu code from another project
+* Vastly improve socials
+* Add \_\_repr\_\_ method
+* Fixed documentation
+* Updated documentation
+
+0.1.6
+-----
+
+* Added Sphinx documentation
+* Fix name in docstring
+* Ignore \_build
+
+0.1.5
+-----
+
+* Added a test
+* MudMakerParser.social now returns the generated Social insance
+* Add socials to main\_parser with main\_parser.social
+* Fix linelength
+* Fix linelength
+* Add say\_msg to tests
+* Added do\_social and do\_say methods. Aso a say\_msg Attribute
+* Moved the tests into the right place, and ensure that game.socials\_factory is indeed the right thing
+* Added a master socials factory
+* Add copy method for all objects
+* Handle command errors with huh method
+* Add a parser attribute to objects and rooms
+* Ensure presence of the connection, not that it is the only one
+* Add @broadcast command
+* Add open connections to game.connections
+* Fixed broadcast utility function
+* Fix the look command to use object filter
+* Show command names, don't traceback
+* Fixed some filename problems with tests
+* Added match functions
+* Move finish\_login to Game
+* Fix up tests for Object.look\_self
+* Make default room and zone and move players to them when connected
+
+0.1.3
+-----
+
+* Get default values without initialising a Game instance
+
+0.1.2
+-----
+
+* Add mudmaker script
+
+0.1.1
+-----
+
+* Renamed a file
+
+0.1.0
+-----
+
+* Add default error handler
+* Remove references to get\_name
+* Fixed the look commands for locations
+* Add dump task with Game.run
+* Added a task framework
+* Only dump accounts if there are accounts to be dumpd
+* Added AccountStore.number\_of\_accounts methods
+* Actually dump the database
+* Add the result of con.get\_context to the shell locals
+* Split the budiling of the command execution context into a separate method
+* Add more locals to the shell
+* Add dumping and loading code
+* Expand dump and load tests
+* Use dump\_value with as\_dict
+* Use dump\_value and load\_value for from\_dict
+* Added Game.load\_value method
+* Added Game.dump\_value method
+* Added yaml\_filename fixture
+* Added Game.load method
+* Added Game.dump method
+* Added as\_dict method
+* Add on\_dump event
+* Add Object.dump method
+* Hold references to real class names when registering bases
+* Added attributes property
+* Fix logging in
+* Return appropriate string
+* Fix the @shell command
+* Fixed attribute name and added a test for is\_staff
+* Fixed spelling mistake in new direction log message
+* Add account-related stuff to context
+* Added players property to the Game class
+* Add admin and builder flags to Account
+* Added proper login machinery
+* Added the account store to the execution context
+* Add AccountStore.account\_exists
+* Added account property to Object
+* Login now responds to any command which isn't otherwise handled
+* Moved accounts loading logic to account store
+* Fixed argument name
+* Added a say command
+* Added extra parsers for hypothetical builders and admins
+* Added a basic accounts system
+* Added Object class
+* User get\_login to get username and password
+* Hopefully support iterators as commands
+* Import WebSocketConnection class into module namespace
+* Added get\_login utility method
+* Added connection fixture
+* Updated commands framework
+* Updated minimal example
+* Stop tracking game.py
+* Copy utility methods from elsewhere
+* Added directions
+* Add all objects to Game.\_objects
+* Add exit tests, and fix Room.exits and Room.entrances
+* Add zones and rooms to their respective Game attributes
+* Removed debug printing
+* Added Exit class (no tests yet)
+* Started adding an events framework
+* Changed the way objects are handled
+* Added Attribute
+* Don't use attrs for class creation
+* Add uptime command
+* Added uptime command
+* Added parsers and fixed up websockets
+* Added Game.make\_object
+* Added Game.register\_base
+* Updated code
+* Log additional goodness
+* Start logging
+* Started adding websockets
+* Added a Game class
