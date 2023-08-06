@@ -1,0 +1,10 @@
+flaskerize/__init__.py,sha256=JOjwy1vZpY6HxFYKq3Nu-H33XWCsYsobOjzj5q0rWhs,34
+flaskerize/generate.py,sha256=6ib10gvXNvBzfPbuu_jwjo4GR-DrhKwBTG5RACNO4A8,1792
+flaskerize/handlers.py,sha256=e2ptB2UTvIQADUmVGnT_QVqvTzZqfr6E3FXvny08HBY,868
+flaskerize/parser.py,sha256=-lEy9j7wfMDpt-nu6yFSzFbhTL-Uwp8KirkijlrPEm0,720
+flaskerize/parser_test.py,sha256=kdbUXdE8ADdHGKRmq27fxBmOHV6jCKUorR49iKi593o,319
+flaskerize-0.1.2.data/scripts/flaskerize,sha256=BZlR_ekrCgOSHyxjuvSQYZh2hQ_DX8nYFwjC_aKzTqA,284
+flaskerize-0.1.2.dist-info/METADATA,sha256=oBMJC4a3-48zZ7GFGgM3Ze7acYXhAzU71aaWRmuxCIA,303
+flaskerize-0.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+flaskerize-0.1.2.dist-info/top_level.txt,sha256=4Kv_H4NWXQasESNOSDmM6c6XsOK5K15CCLpuhw7_Psc,11
+flaskerize-0.1.2.dist-info/RECORD,,
