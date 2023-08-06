@@ -1,0 +1,6 @@
+numpy
+scipy
+mpmath
+matplotlib
+cython
+fcc_fourier
