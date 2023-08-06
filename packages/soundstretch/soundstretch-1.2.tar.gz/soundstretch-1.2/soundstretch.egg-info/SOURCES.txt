@@ -1,0 +1,8 @@
+setup.py
+soundstretch/__init__.py
+soundstretch.egg-info/PKG-INFO
+soundstretch.egg-info/SOURCES.txt
+soundstretch.egg-info/dependency_links.txt
+soundstretch.egg-info/not-zip-safe
+soundstretch.egg-info/requires.txt
+soundstretch.egg-info/top_level.txt

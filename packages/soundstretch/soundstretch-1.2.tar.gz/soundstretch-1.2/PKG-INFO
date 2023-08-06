@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: soundstretch
+Version: 1.2
+Summary: SoundStretch based on Paulstretch algorithm
+Home-page: https://github.com/jbvolmer/soundstretch
+Author: J. Volmer
+Author-email: josephbvolmer@gmail.com
+License: Public Domain
+Description: 
+        # sound stretch 1.2
+        
+        This uses the Paulstretch algorithm that is released under Public Domain
+        
+        ## usage:
+        
+        from soundstretch import SoundStretch
+        
+        #### use default settings
+        
+        SoundStretch("input.wav","result.wav")
+        
+        #### use specific stretch factor and window size settings
+        
+        SoundStretch("input.wav", "result.wav", 8.0, 0.25)
+        
+        ## Requirements
+        
+        - Numpy
+        
+        - Scipy
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
