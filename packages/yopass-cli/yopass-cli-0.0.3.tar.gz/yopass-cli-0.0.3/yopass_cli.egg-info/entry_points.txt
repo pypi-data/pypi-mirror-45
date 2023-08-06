@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        yopass-cli=cli.cli:cli
+    
