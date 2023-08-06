@@ -1,0 +1,8 @@
+README.md
+setup.py
+BitGov.egg-info/PKG-INFO
+BitGov.egg-info/SOURCES.txt
+BitGov.egg-info/dependency_links.txt
+BitGov.egg-info/top_level.txt
+bitgov/__init__.py
+bitgov/protocol.py
