@@ -1,0 +1,10 @@
+requests
+selenium
+
+[devel]
+pylint
+pytest
+pyvirtualdisplay
+
+[suggestion]
+python-Levenshtein
