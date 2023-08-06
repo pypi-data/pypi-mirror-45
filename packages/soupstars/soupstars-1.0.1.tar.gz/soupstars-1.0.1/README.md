@@ -1,0 +1,64 @@
+# Soupstars :stew: :star: :boom:
+
+[![Build Status](https://travis-ci.org/tjwaterman99/soupstars.svg?branch=master)](https://travis-ci.org/tjwaterman99/soupstars)
+[![Coverage Status](https://coveralls.io/repos/github/tjwaterman99/soupstars/badge.svg?branch=master)](https://coveralls.io/github/tjwaterman99/soupstars?branch=master)
+[![Docs](https://readthedocs.org/projects/soupstars/badge/?version=latest)](https://soupstars.readthedocs.io/en/latest/?badge=latest)
+[![Version](https://badge.fury.io/py/soupstars.svg)](https://badge.fury.io/py/soupstars)
+[![Image](https://img.shields.io/pypi/pyversions/soupstars.svg)](https://pypi.org/project/soupstars/)
+
+Soupstars makes it easier than ever to build web parsers in Python.
+
+Install it with pip.
+
+```
+pip install soupstars
+```
+
+Let's go!
+
+## Quickstart
+
+You need two objects to get started.
+
+```python
+>>> from soupstars import Parser, serialize
+
+```
+
+We'll build a parser to extract data from a github page.
+
+```python
+>>> class GithubParser(Parser):
+...    "Parse data from a github page"
+...
+...    @serialize
+...    def title(self):
+...        return str(self.h1.text.strip())
+
+```
+
+Now all we need is a github web page to parse.
+
+```python
+>>> parser = GithubParser("https://github.com/tjwaterman99/soupstars")
+
+```
+
+Let's see what we've got!
+
+```python
+>>> parser.to_dict()
+{'title': 'tjwaterman99/soupstars'}
+
+```
+
+You're now ready to start building your own web parsers with `soupstars`. Nice job. :beers:
+
+## Going further
+
+- Check out [some more examples](https://github.com/tjwaterman99/soupstars/tree/master/soupstars/examples).
+- Review the [API documentation](https://soupstars.readthedocs.io/en/latest/).
+
+## Contributing
+
+We're thrilled you asked! Just open a PR on github, and we'll take a look.
