@@ -1,0 +1,16 @@
+oauth1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oauth1/authenticationutils.py,sha256=GHxW9GvxIdgCfal4ctQ7UmIP8RAr-Q8YiCRC715fQ1A,1915
+oauth1/coreutils.py,sha256=GsZaKe496uXK5vSpIdOzlJDCiUw81z4dPG39ufXsljo,4835
+oauth1/oauth.py,sha256=1YWQFlBADuHvJH-uMVszj7BJcMLEolIRO5HyhDjXz_k,7090
+oauth1/signer.py,sha256=eHxza0Jh2BpmgYxTNXyjfjLWgG5Um94Y4nsjnyNAm70,2161
+oauth1/version.py,sha256=L_FoV2D3mMuVNSnQC5oLjuIT13db7YQ-d0lDhOx4s-M,69
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_from_readme.py,sha256=WJU5mJ7-6ddGIOnqOXz0NYlD_sQqrr36wDSfTFOGpgQ,2595
+tests/test_oauth.py,sha256=Lf-v-ylS40ri9YXDMokV1blPPVk_Bvnc1UEtyAX5vak,16436
+tests/test_signer.py,sha256=qLquDvQN4h6dMuUzn1bit7axtm2ciuU6WTzwYfagEOk,2658
+tests/test_utils.py,sha256=Eez2Sf5zPId8pQWRdh9la5T5Zv3kQ6mSG_wx0d9DyvY,2872
+mastercard_oauth1_signer-0.4.0.dist-info/LICENSE,sha256=SNCv2scHzWrpN55gh-Afc5e45YJRPEH29YhuAMsrpms,1067
+mastercard_oauth1_signer-0.4.0.dist-info/METADATA,sha256=EABMIRmmEqB_d6-V9qbYvcEz2-3AB7jS9LGAA8kkgFw,757
+mastercard_oauth1_signer-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mastercard_oauth1_signer-0.4.0.dist-info/top_level.txt,sha256=RP5z4khDRr4NhTv5MbQXhWwf1W2hwSCpPT15mOZODLY,13
+mastercard_oauth1_signer-0.4.0.dist-info/RECORD,,
