@@ -1,0 +1,11 @@
+README.rst
+flake8_mock.py
+setup.cfg
+setup.py
+verve_flake8_mock.egg-info/PKG-INFO
+verve_flake8_mock.egg-info/SOURCES.txt
+verve_flake8_mock.egg-info/dependency_links.txt
+verve_flake8_mock.egg-info/entry_points.txt
+verve_flake8_mock.egg-info/not-zip-safe
+verve_flake8_mock.egg-info/requires.txt
+verve_flake8_mock.egg-info/top_level.txt
