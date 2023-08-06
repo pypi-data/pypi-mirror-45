@@ -1,0 +1,13 @@
+csvw/__init__.py,sha256=I0ShAXyFV9SdwfW-joQk48s6ylFgLNpd_BWpyxh4rbA,741
+csvw/_compat.py,sha256=nDMEVm23CdjcBaJcUpQk4f_sD3t4Z4eohrESVY2ZojA,2186
+csvw/datatypes.py,sha256=YAhXoZij8IJ0Qmj7TQM-vCQkamc0Zo7l-VKOkw8zn9A,14626
+csvw/db.py,sha256=qKvhsGv5ZvXrHN8HLZb-NHXYbWeQmso15efy5hvsgWY,16589
+csvw/dsv.py,sha256=ZqruredalpU_irc7V1FMwE7AAYV9akdAT0IW9cIAV44,15258
+csvw/dsv_dialects.py,sha256=_2it7f757vuv3B0ySiJWQnwEvzQbC3zZNhhrpIbjVd4,3262
+csvw/metadata.py,sha256=HF_Yu5x9TwpyXFePlAs4sQvPf2mU6xfUG5FxPuPbUG0,26964
+csvw/utils.py,sha256=LFPUaoyEq9Jm9xCp-g5gSAlOiP-KadBPyyI2b34C7Uw,3817
+csvw-1.5.2.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+csvw-1.5.2.dist-info/METADATA,sha256=1ixsjGiPC_gHzwAl4HhWol05_7ElBcVVsp-p_sFuc4c,3738
+csvw-1.5.2.dist-info/RECORD,,
+csvw-1.5.2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+csvw-1.5.2.dist-info/top_level.txt,sha256=mkl3l5vQaigdnccNcB3IT5J_Puu2Rp5PVYHqoUOh0Vo,5
