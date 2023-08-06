@@ -1,0 +1,448 @@
+.donemark {
+    width: 20px;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+
+#messagediv {
+    position: absolute; 
+    width: 100%; 
+    text-align: center; 
+    font-size: 14px; 
+    height: 20px; 
+    z-index: 1; 
+    display: none;
+    top: 104px;
+}
+
+.newmoduleicon {
+    width: 25px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+}
+
+.modulepanel-typesizedate-div {
+    font-size: 14px;
+    bottom: 2px;
+    left: 9px;
+    position: absolute;
+}
+
+.modulepanel-title-span {
+    font-weight: bold;
+    width: 195px;
+    word-break: break-word;
+}
+
+.modulepanel-org-span {
+    color: green;
+    font-size: 12px;
+    width: 183px;
+    word-break: break-word;
+    display: block;
+    height: 37px;
+    overflow: auto;
+}
+
+.modulepanel-type-span {
+    color: lightcoral;
+}
+
+.modulepanel-size-span {
+    color: black;
+}
+
+.modulepanel-datasource-span {
+    color: #467444;
+    position: absolute;
+    right: 10px;
+    top: 191px;
+    font-size: 13px;
+    width: 70px;
+    text-align: right;
+    cursor: default;
+}
+
+.modulepanel-divider-span {
+    color: #d4d4d4;
+}
+
+.modulepanel-update-button {
+    position: absolute;
+    bottom: 3px;
+    right: 9px;
+}
+
+.modulepanel-uninstall-button {
+    position: absolute;
+    bottom: 3px;
+    right: 9px;
+    font-size: 13px;
+    background-color: #d6e9f9;
+}
+
+.modulepanel-install-button {
+    position: absolute;
+    bottom: 3px;
+    right: 9px;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+
+.moduletile {
+    display: inline-block;
+    width: 250px;
+    height: 230px;
+    border-width: 1px;
+    border-color: #dddddd;
+    border-style: groove;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.moduletile-title {
+    position: absolute;
+    font-weight: bold;
+    width: calc(100% - 25px);
+    font-weight: auto;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 42px;
+}
+
+.moduletile-logodiv {
+    width: 250px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.moduletile-logo {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.moduletile-nologo {
+    background-image: url('/store/genericmodulelogo.png');
+}
+
+.panelinstallstatusspan {
+    background-color: white;
+    font-size: 12px;
+}
+
+.panelinstallprogressspan {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+}
+
+#storebodydiv {
+    position: absolute;
+    top: 92px;
+    width: 100%;
+}
+
+#storemenudiv {
+    position: fixed;
+    top: 108px;
+    width: 200px;
+}
+
+.store-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+}
+
+.store-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.store-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #a1a1a1;
+    transition: .1s;
+    border-radius: 14px;
+}
+
+.store-switch-slider:before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .1s;
+    border-radius: 9px;
+}
+
+input:checked + .store-switch-slider {
+    background-color: #a1a1a1;
+}
+
+input:focus + .store-switch-slider {
+    box-shadow: 0 0 1px #a1a1a1;
+}
+
+input:checked + .store-switch-slider:before {
+    transform: translateX(15px);
+}
+
+.store-switch-text {
+    font-size: 13px;
+}
+
+#store-sort-div {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+#remotemodulepanels {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    position: absolute; 
+    top: 36px; 
+    background-color: white;
+    left: 0px;
+    width: 100%;
+}
+
+#store-allmodule-div {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: calc(100% - 210px);
+}
+
+#store-home-div {
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    width: calc(100% - 240px);
+}
+
+.store-home-sectiontitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.store-home-carouseldiv {
+    height: 319px;
+    width: calc(100% - 66px);
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.store-carousel-arrow {
+    height: 39px;
+    cursor: pointer;
+}
+
+.store-front-all-button-on {
+    background-color: rgb(214, 212, 212, 0.93);
+}
+
+.store-front-all-button-off {
+    background-color: '';
+}
+
+.moduledetaildiv {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    z-index: 300;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 6px;
+    padding: 10px;
+    padding-bottom: 23px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px;
+}
+
+#store-namefilter {
+    font-size: 16px;
+    width: 180px;
+}
+
+.moduledetail-output-table {
+    border-spacing: 12px;
+}
+
+.moduledetail-output-table thead td {
+    border-bottom: 1px dotted #aaaaaa;
+}
+
+#moduledetaildiv-infodiv {
+    height: 100%;
+    overflow: auto;
+    line-height: 18px;
+}
+
+#moduledetaildiv-infodiv>div {
+    margin-top: 12px;
+}
+
+#yesnodialog {
+	position: fixed;
+    font-size: 14px;
+    width: 500px;
+    max-height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    text-align: center;
+    box-shadow: 3px 3px 12px 0px;
+    z-index: 300;
+    padding: 10px;
+}
+
+#yesnodialog .buttondiv {
+    /*
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    */
+    font-size: 16px;
+}
+
+#yesnodialog .buttondiv button {
+    width: 100px;
+    height: 40px;
+}
+
+#yesnodialog-contentdiv {
+    font-size: 16px;
+    max-height: 300px;
+    overflow: auto;
+    padding: 10px;
+    /*position: absolute;
+    height: calc(100% - 80px);
+    width: calc(100% - 20px);
+    */
+}
+
+#store-systemmodule-div {
+    display: none;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 94px);
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(100, 100, 100, 0.77);
+}
+
+#store-systemmodule-missing-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #cddc39;
+}
+
+#store-systemmoduleupdate-announce-div {
+    position: fixed;
+    top: 48px;
+    right: 10px;
+    font-size: 12px;
+    color: #f7684b;
+    z-index: 201;
+    display: none;
+}
+
+#store-systemmodule-update-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #cddc39;
+}
+
+#store-systemmodule-msg-div {
+    position: absolute;
+    top: calc(50% + 200px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    min-height: 100px;
+    color: white;
+}
+
+#store-noconnect-div {
+    display: none;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 94px);
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(100, 100, 100, 0.77);
+}
+
+#store-noconnect-msg-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #cddc39;
+}
+
+#pageselect {
+    display: none;
+}
+
+#store-update-all-div {
+    position: relative;
+    left: 240px;
+    top: 13px;
+    display: none;
+    color: #f7684b;
+}
+
+#verdiv {
+    position: fixed;
+    top: 74px;
+    right: 10px;
+    height: 15px;
+    font-size: 13px;
+    vertical-align: bottom;
+    z-index: 201;
+}
+
