@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fprintw.egg-info/PKG-INFO
+fprintw.egg-info/SOURCES.txt
+fprintw.egg-info/dependency_links.txt
+fprintw.egg-info/top_level.txt
+lib/fprint.c
+lib/fprint.pxd
+lib/fprint.pyx
