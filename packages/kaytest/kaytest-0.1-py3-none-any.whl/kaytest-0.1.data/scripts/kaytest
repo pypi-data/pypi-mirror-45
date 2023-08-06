@@ -1,0 +1,3 @@
+#!python
+
+echo "kaytest, my first pip package!"
