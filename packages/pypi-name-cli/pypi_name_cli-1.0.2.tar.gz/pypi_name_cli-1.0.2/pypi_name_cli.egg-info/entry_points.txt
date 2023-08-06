@@ -1,0 +1,3 @@
+[console_scripts]
+pypi = pypi_name_cli.checkname:main
+
