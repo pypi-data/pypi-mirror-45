@@ -1,0 +1,2 @@
+include aiida-export-migration-tests/fixtures/*.aiida
+include .qm/*.py
