@@ -1,0 +1,8 @@
+README.md
+setup.py
+pydelegate/__init__.py
+pydelegate.egg-info/PKG-INFO
+pydelegate.egg-info/SOURCES.txt
+pydelegate.egg-info/dependency_links.txt
+pydelegate.egg-info/not-zip-safe
+pydelegate.egg-info/top_level.txt
