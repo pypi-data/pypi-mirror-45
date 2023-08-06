@@ -1,0 +1,4 @@
+bash2_magic
+configure
+nbfancy
+pdflatex_magic
