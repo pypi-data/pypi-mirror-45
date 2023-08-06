@@ -1,0 +1,10 @@
+simplejson
+pyaml
+pyserial
+pycryptodome
+
+[:python_version < "3.3"]
+future
+
+[:python_version < "3.4"]
+enum34
