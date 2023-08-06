@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: limmat
+Version: 2019.5.1.315.34049503
+Summary: I sat by the river and thought about WSGI...
+Home-page: https://pypi.org/project/limmat/
+Author: Tobias Ammann
+License: MIT
+Description: # Limmat
+        
+        I sat by the river and thought about WSGI...
+        
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Description-Content-Type: text/markdown
