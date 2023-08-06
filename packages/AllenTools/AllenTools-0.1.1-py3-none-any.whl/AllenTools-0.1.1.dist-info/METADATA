@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AllenTools
+Version: 0.1.1
+Summary: 个人工具
+Home-page: https://github.com/AlllenShen/AllenTools
+Author: Allen Shen
+Author-email: 932142511@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: rsa (==4.0)
+Requires-Dist: itsdangerous (==1.1.0)
+
+UNKNOWN
+
+
