@@ -1,0 +1,4 @@
+bitstruct
+
+[:platform_system == "Windows"]
+windows-curses
