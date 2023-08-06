@@ -1,0 +1,10 @@
+README.md
+setup.py
+novation_launchpad/__init__.py
+novation_launchpad/charset.py
+novation_launchpad/launchpad.py
+novation_launchpad.egg-info/PKG-INFO
+novation_launchpad.egg-info/SOURCES.txt
+novation_launchpad.egg-info/dependency_links.txt
+novation_launchpad.egg-info/requires.txt
+novation_launchpad.egg-info/top_level.txt
