@@ -1,0 +1,7 @@
+README.md
+setup.py
+divine/__init__.py
+divine.egg-info/PKG-INFO
+divine.egg-info/SOURCES.txt
+divine.egg-info/dependency_links.txt
+divine.egg-info/top_level.txt
