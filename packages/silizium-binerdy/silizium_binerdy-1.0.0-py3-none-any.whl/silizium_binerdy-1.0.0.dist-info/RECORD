@@ -1,0 +1,14 @@
+silizium/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silizium/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silizium/domain/csv_parser.py,sha256=pRDVs5lKDecCJv4lcKwJ4baBJlTJ_vO82PN3wZAK9GM,1215
+silizium/domain/language.py,sha256=-X3IRSkM8SjdjhnIcMx06o1so6AcKgDtXxiBbdKCClI,370
+silizium/domain/wiki_parser.py,sha256=h8J8paLSSZX3JyS_8hR19gQ44HnCWKEAQdqqOzC4XFI,1050
+silizium/domain/data/words.csv,sha256=7FC5XwbUYUsONKqOH59hO2jC-yrpnqeVnt8uEXVMedk,52
+silizium/use_cases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silizium/use_cases/silizium_use_cases.py,sha256=YvjW_5-m0Dnpny0rfFB70siFlO1_pWwCeo_FpCy14vs,2256
+silizium_binerdy-1.0.0.data/scripts/silizium-cli.py,sha256=ofxVbRfbB1eww_qR-jIeHuNfKVl8SSPDFarx7OcZ1yU,1537
+silizium_binerdy-1.0.0.dist-info/LICENSE,sha256=fOXa-m9sqyFxFxvGMSFe2js-7udCH9eZbXlw6aKpqNE,1067
+silizium_binerdy-1.0.0.dist-info/METADATA,sha256=Pyh9lr-WBB4G3-7COcpp-pubTEt7C6O_82Fs1EJFMqo,2277
+silizium_binerdy-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+silizium_binerdy-1.0.0.dist-info/top_level.txt,sha256=m5BhbM1NkCSDqH88RnDT9rtiddfbHTXfIUERRuDF1tI,9
+silizium_binerdy-1.0.0.dist-info/RECORD,,
