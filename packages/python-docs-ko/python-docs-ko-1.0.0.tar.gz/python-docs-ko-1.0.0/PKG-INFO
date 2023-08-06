@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: python-docs-ko
+Version: 1.0.0
+Summary: The toolkit for Korean translation of the Python documentation.
+Home-page: https://www.flowdas.com/pages/python-docs-ko.html
+Author: Flowdas Inc.
+Author-email: prospero@flowdas.com
+License: UNKNOWN
+Project-URL: Code, https://github.com/flowdas/python-docs-ko
+Project-URL: Issue tracker, https://github.com/flowdas/python-docs-ko/issues
+Description: python-docs-ko
+        ==============
+        
+        The toolkit for Korean translation of the Python documentation.
+        
+        Prerequisite
+        ------------
+        
+        - Git
+        - Docker
+        
+        Install
+        -------
+        
+        ::
+        
+            python3.7 -m venv <work-dir>
+            cd <work-dir>
+            source bin/activate
+            pip install python-docs-ko
+            pdk init <your-python-docs-ko-fork>
+        
+            # translate *.po files in python-docs-ko/
+        
+        Build
+        -----
+        
+        ::
+        
+            pdk build
+            open html/index.html
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Provides-Extra: docker
+Provides-Extra: dev

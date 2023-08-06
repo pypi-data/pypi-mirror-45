@@ -1,0 +1,13 @@
+flowdas
+
+[dev]
+twine
+flowdas
+
+[docker]
+blurb
+python-docs-theme
+requests
+sentry-sdk
+sphinx
+flowdas
