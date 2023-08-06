@@ -1,0 +1,9 @@
+userpath
+
+[dev]
+black
+flake8
+mypy
+jinja2
+mkdocs
+mkdocs-material
