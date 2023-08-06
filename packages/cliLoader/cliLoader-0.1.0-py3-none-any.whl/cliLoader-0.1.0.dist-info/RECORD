@@ -1,0 +1,9 @@
+cliLoader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliLoader/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliLoader/components/loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliLoader/components/loader/config.py,sha256=_5sc1JDsZ4lWS9qCw5HO18wEGUyLkqu3qpUKAZ79-ZQ,532
+cliLoader/components/loader/loader.py,sha256=TaXXWF8bQnsucIWFuIjB9pCZj7w4W-1Pfbr2lWwvMjk,1942
+cliLoader-0.1.0.dist-info/METADATA,sha256=GtXOd-n7b69oCBG3RBNBroc2HsF1JSJBEwYHr4cN6Fc,484
+cliLoader-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+cliLoader-0.1.0.dist-info/top_level.txt,sha256=nK8nen_bZ-zCb2ri5zRK-SIf2Kvlqgmht0APBJftYOc,10
+cliLoader-0.1.0.dist-info/RECORD,,
