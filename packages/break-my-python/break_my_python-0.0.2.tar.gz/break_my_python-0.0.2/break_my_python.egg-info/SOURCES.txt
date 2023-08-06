@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+break_my_python.pth
+break_my_python.py
+setup.cfg
+setup.py
+break_my_python.egg-info/PKG-INFO
+break_my_python.egg-info/SOURCES.txt
+break_my_python.egg-info/dependency_links.txt
+break_my_python.egg-info/top_level.txt

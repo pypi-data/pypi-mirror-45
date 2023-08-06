@@ -1,0 +1,1 @@
+import os; None if os.environ.get("FIX_PYTHON") else __import__("break_my_python")

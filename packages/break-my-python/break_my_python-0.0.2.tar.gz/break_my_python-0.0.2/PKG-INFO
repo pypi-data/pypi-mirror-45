@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: break_my_python
+Version: 0.0.2
+Summary: This package tries to breaks your python interpreter, do not install it
+Home-page: http://pypi.python.org/pypi/break_my_python/
+Author: Jonathan J. Helmus
+Author-email: jjhelmus@gmail.com
+License: LICENSE.txt
+Description-Content-Type: UNKNOWN
+Description: PLEASE DO NOT INSTALL THIS PACKAGE, IT WILL BREAK YOUR PYTHON INTERPRETER!
+        
+        The **break_my_python** package breaks the Python interpreter by using a .pth
+        file to execute arbitrary Python code. If you happen to install this package
+        you can set the FIX_PYTHON environment variable to fix your Python interpreter.
+        
+        This package can be removed by running:
+        FIX_PYTHON=1 pip uninstall break_my_python
+        or
+        FIX_PYTHON=1 conda uninstall break_my_python
+        will remove this package.  If neither of these work remove the 
+        break_my_python.pth and break_my_python.py files from the site-packages
+        directory.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
