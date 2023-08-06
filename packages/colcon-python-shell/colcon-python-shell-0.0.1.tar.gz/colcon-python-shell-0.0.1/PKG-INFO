@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: colcon-python-shell
+Version: 0.0.1
+Summary: Extension for colcon to create setup hooks for the python interpreter
+Home-page: https://github.com/RoverRobotics/colcon-venv
+Author: RoverRobotics
+Author-email: info@roverrobotics.com
+Maintainer: Dan Rose
+Maintainer-email: dan@digilabs.io
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: colcon,ROS,ROS2,RoverRobotics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development
+Requires-Python: >=3.5

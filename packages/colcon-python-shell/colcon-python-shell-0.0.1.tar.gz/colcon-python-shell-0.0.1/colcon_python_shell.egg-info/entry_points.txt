@@ -1,0 +1,3 @@
+[colcon_core.shell]
+python_shell = colcon_python_shell.shell.python_shell:PythonShell
+

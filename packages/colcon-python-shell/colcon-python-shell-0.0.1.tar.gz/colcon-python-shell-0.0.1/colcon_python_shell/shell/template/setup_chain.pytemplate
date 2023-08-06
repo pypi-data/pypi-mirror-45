@@ -1,0 +1,14 @@
+# This script extends the environment with the environment of other prefix
+# paths which were sourced when this file was generated as well as all packages
+# contained in this prefix path.
+
+from pathlib import Path
+from runpy import run_path
+
+# source chained prefixes
+for prefix in reversed(${prefixes}):
+    a_prefix_py = Path(prefix, ${prefix_script_name})
+    run_path(a_prefix_py)
+
+# source this prefix
+run_path(Path(__file__).parent / ${prefix_script_name})
