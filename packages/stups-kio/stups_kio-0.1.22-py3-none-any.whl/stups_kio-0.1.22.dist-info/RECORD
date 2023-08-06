@@ -1,0 +1,12 @@
+kio/__init__.py,sha256=HBE7jjIEGN88DX2EPw_fPMAPodqT9IQWI14zfqXwK9w,23
+kio/__main__.py,sha256=KmmBGz6dU4rmidxwMLEszq2Wo_LJmllrlt2DlF2U-TI,64
+kio/api.py,sha256=B0tl15CvST6KEnpj6SJ_1Xv2GzTOdERVoDBhk6qYaGs,430
+kio/cli.py,sha256=z9Oi_BJuuoxFgediMetiN7beGMjl-sZ_sLkewcl-V4w,5288
+kio/time.py,sha256=R6ZsMxxTsAHiAR8qXSN9XC7RkiQvzbRo4NvtYGVqAIs,1909
+stups_kio-0.1.22.dist-info/DESCRIPTION.rst,sha256=hXaDx91WmCisqQv-WUBVONTdjx2fKQDVVgDtHDHnUCc,1171
+stups_kio-0.1.22.dist-info/METADATA,sha256=KNSehgCfuLvz74nuHrx8WX60NVXWDe-fyxvMWHBRjwA,2130
+stups_kio-0.1.22.dist-info/RECORD,,
+stups_kio-0.1.22.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+stups_kio-0.1.22.dist-info/entry_points.txt,sha256=wKfROwQ-D2bPyCyGU7uPzQd4Va6eYMTRv4o4scXW6Yc,38
+stups_kio-0.1.22.dist-info/metadata.json,sha256=fYbSSSR3DmbrZ35D5KoAjbPx-PCZA9Kz44ar1Lyp1pE,1273
+stups_kio-0.1.22.dist-info/top_level.txt,sha256=msxloqPfb5KyC4_KGJtuOhEG5OcwT5h0jxTt9DdFSCU,4
