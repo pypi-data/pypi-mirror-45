@@ -1,0 +1,7 @@
+weixin/__init__.py,sha256=NIHfJ3vUxSNIR9UKW3XxKrufV4q2zAZaoWzxVg3qlbw,49
+weixin/client.py,sha256=l8Ofa3_2YkgkpLjoFnepFkT8U9kBT6PtOvTiqa03doc,2164
+weixin/dotdict.py,sha256=IRzxwTxbWtqewScVCAKOiaB0-GVD90T85vuSc12Y1Gc,433
+aioweixin-0.0.1.dist-info/METADATA,sha256=zkQmcQ3cFi8rN3fjERuStFjiL4Lbgxsfi5PgYbaqf14,343
+aioweixin-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+aioweixin-0.0.1.dist-info/top_level.txt,sha256=-Xy56WNT3J2FNuFu32768IAEgiASVPrxQZ6s-0NkRf4,7
+aioweixin-0.0.1.dist-info/RECORD,,

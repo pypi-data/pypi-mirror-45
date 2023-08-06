@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aioweixin
+Version: 0.0.1
+Summary: Asyncio Weixin for Python
+Home-page: https://github.com/zwczou/aioweixin
+Author: zwczou
+Author-email: zwczou@gmail.com
+License: BSD
+Keywords: async weixin,weixin,weixin pay,weixin login,weixin mp,weixin python
+Platform: any
+Requires-Dist: asyncio
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
