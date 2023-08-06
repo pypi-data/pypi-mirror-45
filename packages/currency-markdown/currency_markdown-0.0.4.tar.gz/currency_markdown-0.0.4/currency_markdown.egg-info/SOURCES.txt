@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+currency_markdown/__init__.py
+currency_markdown/md.py
+currency_markdown.egg-info/PKG-INFO
+currency_markdown.egg-info/SOURCES.txt
+currency_markdown.egg-info/dependency_links.txt
+currency_markdown.egg-info/requires.txt
+currency_markdown.egg-info/top_level.txt
+test/__init__.py
+test/test_main.py
