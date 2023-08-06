@@ -1,0 +1,3 @@
+[console_scripts]
+heatwave = heatwave.heatwave:cli
+
