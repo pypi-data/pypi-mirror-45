@@ -1,0 +1,9 @@
+wenku_dl/__init__.py,sha256=K4Dftxq4ie_HetVaU03FTYondt_oVzTl32ZCHEAXKm0,1406
+wenku_dl/__main__.py,sha256=oak9xekV4fdRNVN63GTgDsN0A5ktvvsyN2h7ESUrzbU,125
+wenku_dl/download.py,sha256=J7l_Qf16CYqHeDERdwMqqmpcj8Lgs3UdBSoyspUpjI8,938
+wenku_dl/wenku.py,sha256=gA_2N0lymDnvMGvq1i1OXvbjB1z-8nKhRP-psKTpshs,2088
+wenku_dl-2019.4.28.0.dist-info/METADATA,sha256=1i19pqrzNcXMOdB_A-GQGHzzWVFixnbdz7NQyMf9CwU,259
+wenku_dl-2019.4.28.0.dist-info/WHEEL,sha256=NvLheO0f8_uAcwoMijaCN7IVIIaldpzEnN1plXS6P6E,97
+wenku_dl-2019.4.28.0.dist-info/entry_points.txt,sha256=Z527WimgeWHt-HKB7lrpD5UqcRkdz8RwhV7-GAH0tbg,44
+wenku_dl-2019.4.28.0.dist-info/top_level.txt,sha256=uwymVJb4lp5cbFS1kECk8d1MB4Nm5BotrYmuEvDohkY,9
+wenku_dl-2019.4.28.0.dist-info/RECORD,,

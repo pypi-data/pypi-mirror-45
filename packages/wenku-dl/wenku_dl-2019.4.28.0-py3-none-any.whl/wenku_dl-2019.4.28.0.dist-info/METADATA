@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wenku-dl
+Version: 2019.4.28.0
+Summary: 百度文库下载
+Home-page: UNKNOWN
+Author: YaronH
+Author-email: yaronhuang@qq.com
+License: MIT Licence
+Platform: any
+Requires-Dist: aigpy (>=2019.4.28.1)
+Requires-Dist: requests
+
+UNKNOWN
+
+
