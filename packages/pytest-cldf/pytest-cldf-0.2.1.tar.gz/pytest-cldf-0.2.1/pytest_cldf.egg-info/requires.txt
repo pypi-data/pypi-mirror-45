@@ -1,0 +1,3 @@
+attrs>=18.2
+pytest>=3.6
+pycldf>=1.6.1
