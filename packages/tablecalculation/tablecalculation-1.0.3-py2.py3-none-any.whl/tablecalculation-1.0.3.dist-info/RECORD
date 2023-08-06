@@ -1,0 +1,11 @@
+tablecalculation/__init__.py,sha256=Ne45tRwbMxbHSRz7VkO9r07bJG6SjK8PzA2sDPWDITk,242
+tablecalculation/_match.py,sha256=FIlI9gSYGXbho6QtmzXLBLWNKdNhZBZ0zjr_zpWKQU4,402
+tablecalculation/sportstypes.py,sha256=5qskEEtrK0i9efhd2mPdGMVbejI5HysfygYG3xbWQ4g,314
+tablecalculation/tablecalculation.py,sha256=KowmZETfg1iaqNi3K4RxZL451CNWs8ZccBaH8egVZFg,5441
+tablecalculation/tablecalculationtest.py,sha256=2HV5z9a2C7dV_Ac8vWbDWXa8112_9AuXj4uz_aiKW0c,13899
+tablecalculation/teampoint.py,sha256=9rDN6BBtoRK6tYRoWbAoXeMTSG8llfxWKX9RApKh1IQ,7211
+tablecalculation-1.0.3.dist-info/LICENSE.txt,sha256=De-ZO9BtL0x-Ls4RfCxLIFxTJYmoCs5Kof2YHjJn7gg,1069
+tablecalculation-1.0.3.dist-info/METADATA,sha256=qeT4p_1ge4Hy2NArDY65Uu2K8jYXhRdH2IrRV85LBEM,2896
+tablecalculation-1.0.3.dist-info/WHEEL,sha256=CrDFromy0BmNYzyZFyVIlKdTa5Zg2RBBtjMkE7goq78,110
+tablecalculation-1.0.3.dist-info/top_level.txt,sha256=M1CPZbZyS39Ia9wJVWtlp7Nt8qKLDrqhDBVSjTFUHxE,17
+tablecalculation-1.0.3.dist-info/RECORD,,
