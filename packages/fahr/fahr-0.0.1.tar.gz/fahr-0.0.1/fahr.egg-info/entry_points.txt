@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        fahr=fahr.cli:cli
+    

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fahr
+Version: 0.0.1
+Summary: Tool for running remote machine learning jobs remotely.
+Home-page: https://github.com/ResidentMario/fahr
+Author: Aleksey Bilogur
+Author-email: aleksey.bilogur@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ResidentMario/fahr/tarball/0.0.1
+Description: UNKNOWN
+Keywords: data,machine learning,data engineering
+Platform: UNKNOWN
+Provides-Extra: all
+Provides-Extra: kaggle
+Provides-Extra: sagemaker
+Provides-Extra: develop

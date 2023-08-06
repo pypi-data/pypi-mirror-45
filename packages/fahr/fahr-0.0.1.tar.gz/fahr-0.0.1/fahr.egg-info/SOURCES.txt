@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+fahr/__init__.py
+fahr/cli.py
+fahr/fahr.py
+fahr.egg-info/PKG-INFO
+fahr.egg-info/SOURCES.txt
+fahr.egg-info/dependency_links.txt
+fahr.egg-info/entry_points.txt
+fahr.egg-info/requires.txt
+fahr.egg-info/top_level.txt
