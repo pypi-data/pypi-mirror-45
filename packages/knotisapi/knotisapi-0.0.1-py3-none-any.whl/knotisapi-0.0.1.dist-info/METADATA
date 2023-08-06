@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: knotisapi
+Version: 0.0.1
+Summary: Python interface for the Knotis REST API.
+Home-page: https://github.com/Knotis/knotisapi-py
+Author: Knotis Inc.
+Author-email: seth@knotis.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: librestapi
+
+UNKNOWN
+
+
