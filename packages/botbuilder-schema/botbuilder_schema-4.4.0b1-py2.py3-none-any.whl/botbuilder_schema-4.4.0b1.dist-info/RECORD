@@ -1,0 +1,8 @@
+botbuilder/schema/__init__.py,sha256=B33piusMe3TkG9g4T-PcMJu5oPxCSSvfhHLXOPudoIs,7686
+botbuilder/schema/_connector_client_enums.py,sha256=GbneDoGGNKw2VLfhnmuhPdTmPDxD2gLXnWXPdAjlX_M,2508
+botbuilder/schema/_models.py,sha256=qm0NQh2kBhsWzCB2_gj1IE7WHN43nHMpO1ooCrHw6Jc,80166
+botbuilder/schema/_models_py3.py,sha256=4F0FE1hwQPtDm9Tgt2YmxthCRa2aXTPwz56YcwzvNpI,80268
+botbuilder_schema-4.4.0b1.dist-info/METADATA,sha256=Hvld1A1u7TcpYn9G7Q7LgcLVKqkwyq9MIAdAckbtB-4,690
+botbuilder_schema-4.4.0b1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+botbuilder_schema-4.4.0b1.dist-info/top_level.txt,sha256=2p3tapzF5j-vDQrnQjnuJZvvXStR_qu8i9Tqq-0ThZg,11
+botbuilder_schema-4.4.0b1.dist-info/RECORD,,
