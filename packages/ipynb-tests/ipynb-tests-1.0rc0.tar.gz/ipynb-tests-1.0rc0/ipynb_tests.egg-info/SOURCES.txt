@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version.ini
+ipynb_tests/__init__.py
+ipynb_tests/tester.py
+ipynb_tests.egg-info/PKG-INFO
+ipynb_tests.egg-info/SOURCES.txt
+ipynb_tests.egg-info/dependency_links.txt
+ipynb_tests.egg-info/requires.txt
+ipynb_tests.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+jupyter
+bs4
+
+[dev]
+ipdb
+ipython
+
+[test]
+pytest-cov
