@@ -1,0 +1,4 @@
+beckett==0.8.*
+fcache==0.4.*
+requests==2.21.*
+urllib3~=1.24.3
