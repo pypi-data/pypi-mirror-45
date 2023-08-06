@@ -1,0 +1,10 @@
+README.md
+setup.py
+Calculus/__init__.py
+Calculus/main.py
+Calculus/DefiniteIntegral/__init__.py
+Calculus/DefiniteIntegral/definite_integral.py
+PyCalculus.egg-info/PKG-INFO
+PyCalculus.egg-info/SOURCES.txt
+PyCalculus.egg-info/dependency_links.txt
+PyCalculus.egg-info/top_level.txt

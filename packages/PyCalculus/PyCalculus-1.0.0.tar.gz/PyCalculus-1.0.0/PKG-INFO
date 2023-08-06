@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyCalculus
+Version: 1.0.0
+Summary: Calculus using Python 3
+Home-page: https://github.com/Rickiarty/PyCalculus
+Author: Rei-Chi Lin
+Author-email: fatalframe0719@gmail.com
+License: UNKNOWN
+Description: some python modules for calculus
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
