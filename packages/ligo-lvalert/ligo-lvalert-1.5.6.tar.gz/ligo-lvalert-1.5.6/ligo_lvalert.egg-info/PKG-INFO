@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ligo-lvalert
+Version: 1.5.6
+Summary: LIGO-Virgo Alert Network
+Home-page: https://wiki.ligo.org/DASWG/LVAlert
+Author: Alexander Pace, Leo Singer, Tanner Prestegard, Branson Stephens, Patrick Brady
+Author-email: alexander.pace@ligo.org
+Maintainer: Tanner Prestegard, Alexander Pace, Leo Singer
+Maintainer-email: tanner.prestegard@ligo.org, alexander.pace@ligo.org, leo.singer@ligo.org
+License: GPLv2+
+Description: The LIGO-Virgo Alert Network (LVAlert) is a prototype notification service built XMPP to provide a basic notification tool which allows multiple producers and consumers of notifications.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
