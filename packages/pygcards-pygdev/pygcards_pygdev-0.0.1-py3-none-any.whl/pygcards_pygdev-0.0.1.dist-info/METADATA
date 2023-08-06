@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pygcards-pygdev
+Version: 0.0.1
+Summary: A cards framework for python
+Home-page: https://github.com/g4k13/pygcards
+Author: pygdev
+Author-email: gdev5@fastmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+#PYGCARDS
+* A python command line playing cards library
+* Allows you to install via pip and play blackjack
+
+
