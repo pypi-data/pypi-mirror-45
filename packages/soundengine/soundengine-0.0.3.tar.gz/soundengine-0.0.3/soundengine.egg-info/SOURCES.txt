@@ -1,0 +1,13 @@
+LICENSE-MIT
+MANIFEST.in
+README.md
+setup.py
+soundengine/__init__.py
+soundengine.egg-info/PKG-INFO
+soundengine.egg-info/SOURCES.txt
+soundengine.egg-info/dependency_links.txt
+soundengine.egg-info/top_level.txt
+soundengine/soundengine/__init__.py
+soundengine/soundengine/soundengine.py
+tests/__init__.py
+tests/test_plays.py
