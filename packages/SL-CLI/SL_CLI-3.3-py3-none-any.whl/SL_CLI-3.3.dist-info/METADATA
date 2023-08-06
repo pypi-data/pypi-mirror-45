@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SL-CLI
+Version: 3.3
+Summary: Command-line interface to APIs used by sl.se.
+Home-page: https://github.com/Sebelino/SL-CLI
+Author: Sebelino
+Author-email: sebelino7@gmail.com
+License: MIT
+Download-URL: https://github.com/Sebelino/SL-CLI/tarball/3.3
+Platform: UNKNOWN
+Requires-Dist: xmltodict
+
+UNKNOWN
+
+
