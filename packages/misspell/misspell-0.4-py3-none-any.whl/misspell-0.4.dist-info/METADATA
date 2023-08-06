@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: misspell
+Version: 0.4
+Summary: Some functions that introduce typographical errors in provided text.
+Home-page: https://github.com/MrMebelMan/misspell
+Author: Vladyslav Burzakovskyy
+Author-email: mutex-lock@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
