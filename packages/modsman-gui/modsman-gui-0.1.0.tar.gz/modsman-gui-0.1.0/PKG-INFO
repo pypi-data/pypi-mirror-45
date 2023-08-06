@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: modsman-gui
+Version: 0.1.0
+Summary: 
+Author: Sargun Vohra
+Author-email: sargun.vohra@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: modsman (>=0.5.0,<0.6.0)
+Requires-Dist: pygments (>=2.3,<3.0)
+Requires-Dist: pyqt5 (>=5.12,<6.0)
+Requires-Dist: traitsui (>=6.0,<7.0)
