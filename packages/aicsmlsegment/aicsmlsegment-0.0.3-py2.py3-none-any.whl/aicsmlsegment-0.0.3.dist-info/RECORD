@@ -1,0 +1,17 @@
+aicsmlsegment/__init__.py,sha256=VuKRsH2B8rug7OkkYWOsHyqyzbpOEJSt_xaEIf8hzdI,92
+aicsmlsegment/custom_loss.py,sha256=S-F44u72otIaRtQKJ-pGtVfdMi67Rk0bXxhr5X61P0Y,12219
+aicsmlsegment/custom_metrics.py,sha256=JKpX7TRyEuGp5l8Vjnjp6T7v_EiC5W57oCyo_jA1wQc,11994
+aicsmlsegment/model_utils.py,sha256=GW7JhZxz0df5IZUfEu3_khjV-rDfwApiPjFE7yBkKT0,8527
+aicsmlsegment/training_utils.py,sha256=YrTfXS49nbuvJJqUl3KpRSagbsqCSyA0w0OCySN3f4s,19481
+aicsmlsegment/utils.py,sha256=I-dcwt1dJnCzvONmWwPhT277efwnK8IdLo_6amiz1bY,7452
+aicsmlsegment/version.py,sha256=yaNiU0KCJRAo-dGA7wAiG-ttbGDRkIeh1w1979Sd1Po,501
+aicsmlsegment/Net3D/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicsmlsegment/Net3D/uNet_original.py,sha256=f4MNZ-x_wdAqdc197coZKPK80Bte1BUuChDoYH3Bb7g,4018
+aicsmlsegment/Net3D/unet_xy.py,sha256=BeDyR0MdUCYIs0atiLK9-x9pzeNw-jJFpkYlUnRdN1k,6279
+aicsmlsegment/Net3D/unet_xy_enlarge.py,sha256=MBduZUk-7-5wzVLRXcq1MsEcuPvlierFvrb_hZblvH8,6714
+aicsmlsegment-0.0.3.dist-info/LICENSE.txt,sha256=gsctuOxqO29keJMGsxNOdf0pduImJEaupoyeOv3vnNg,1854
+aicsmlsegment-0.0.3.dist-info/METADATA,sha256=VQqggciqr6EC_jn8xuIF6-LG6rlvqAkyqtY1XmE17Yo,5243
+aicsmlsegment-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+aicsmlsegment-0.0.3.dist-info/entry_points.txt,sha256=ucknXIO7SCxhdvysE4x8iiIDbeH5uvxFWIDtjFO0B9U,298
+aicsmlsegment-0.0.3.dist-info/top_level.txt,sha256=Lp-uBcg4-d0ipLJrwYeaIzIA6JKbPtsa-MAt4WBOZo8,14
+aicsmlsegment-0.0.3.dist-info/RECORD,,
