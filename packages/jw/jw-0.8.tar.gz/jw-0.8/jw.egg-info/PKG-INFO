@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jw
+Version: 0.8
+Summary: I just want to search and write my notesregardless of their file name ...
+Home-page: https://github.com/jongwony/jw
+Author: jongwony
+Author-email: lastone9182@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: google
+Provides-Extra: crawl
+Provides-Extra: clipboard
