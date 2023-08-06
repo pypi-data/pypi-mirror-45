@@ -1,0 +1,15 @@
+s3_parquetifier/__init__.py,sha256=197AN5gKvj7M8LD12bM-KftxgrioE6fCGw2fEhaweh0,35
+s3_parquetifier/models.py,sha256=7XQyhXT7tZCRgrI4GJlDpmmELT2-55NDfHrcecxfjEA,6068
+s3_parquetifier/aws_client/__init__.py,sha256=d0Q6Fn44e7wFfLabDOBxpcJ1DPKWlFunGYDUBmO-4hA,22
+s3_parquetifier/aws_client/client.py,sha256=-JGjTHy5VFYHFL3ROuNs30rSJTiI_LWLAIx4EWofovQ,7079
+s3_parquetifier/utils/__init__.py,sha256=KTL49uDG7ym5AzCgBp7z7R_NlDxulNA0uCnPX83rFIw,42
+s3_parquetifier/utils/logger.py,sha256=JmO-fCWoQ6L87LVsj7LFAtEtseiaOJr7ZpliTLeGcAE,336
+s3_parquetifier/utils/utils.py,sha256=cnnNOXCNhkFgZmgJH300EpjILJwxOlZFCFRfdzn2wjI,4725
+s3_parquetifier-0.0.2.dist-info/DESCRIPTION.rst,sha256=MGArAwCBuP1MvNhvXBGmlnm2EisTNWUmkjHE3d-LhmQ,4256
+s3_parquetifier-0.0.2.dist-info/METADATA,sha256=tUVJdEWquHMzl3laQO9gdxbTo63OoQ19u7WH-iw9UCc,4652
+s3_parquetifier-0.0.2.dist-info/RECORD,,
+s3_parquetifier-0.0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+s3_parquetifier-0.0.2.dist-info/metadata.json,sha256=-DnIj0NhhlYjDYcpaZZWi0_5pnuBf1Anr_OgZ0aBr-s,587
+s3_parquetifier-0.0.2.dist-info/top_level.txt,sha256=rBtPgrdY3vyZcl8DVxJjkorjYyyAqJ5l5ru7aZyAPO4,21
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_utils.py,sha256=Y4vhXIBqGazlaxW_t5ZGXYWaHrpLTZ4mubitzPtvCfw,6017
