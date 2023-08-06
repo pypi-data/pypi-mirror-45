@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysixtrack/__init__.py
+pysixtrack/helpers.py
+pysixtrack/particles.py
+pysixtrack/track.py
+pysixtrack.egg-info/PKG-INFO
+pysixtrack.egg-info/SOURCES.txt
+pysixtrack.egg-info/dependency_links.txt
+pysixtrack.egg-info/requires.txt
+pysixtrack.egg-info/top_level.txt
