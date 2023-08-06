@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ectp
+Version: 6.3.12
+Summary: 利用python封装了CTP的动态链接库，方便python的童鞋调用
+Home-page: https://github.com/datamgr/ptp
+Author: liu.changsheng
+Author-email: 19578602@qq.com
+License: LGPLv3
+Description: 1：ctp
+        存放CTP的发行版本，注意按照版本存放，要求和
+        setup.py
+        中的 CTP_Version="6.3.11" 一致，这样可以连接正确的版本
+        
+        2：
+Keywords: SimNow,CTP,Future,SHFE,Shanghai Future Exchange
+Platform: win32
+Platform: linux
+Classifier: Development Status ::  - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: ('text/markdown',)
