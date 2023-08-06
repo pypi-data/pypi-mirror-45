@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+mapper_interactive/__init__.py
+mapper_interactive/server.py
+mapper_interactive.egg-info/PKG-INFO
+mapper_interactive.egg-info/SOURCES.txt
+mapper_interactive.egg-info/dependency_links.txt
+mapper_interactive.egg-info/requires.txt
+mapper_interactive.egg-info/top_level.txt
+mapper_interactive/conf/__init__.py
+mapper_interactive/conf/kepler_mapper.py

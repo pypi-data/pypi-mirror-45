@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mapper-interactive
+Version: 0.0.1
+Summary: Mapper Interactive is a highly customizable visualization framework for you to visualize and explore Mapper algorithm.
+Home-page: https://github.com/MapperInteractive/MapperInteractive
+Author: Yaodong Zhao
+Author-email: yaodong.zhao@utah.edu
+License: MIT
+Description: UNKNOWN
+Keywords: mapper
+Platform: any
+Provides-Extra: testing
