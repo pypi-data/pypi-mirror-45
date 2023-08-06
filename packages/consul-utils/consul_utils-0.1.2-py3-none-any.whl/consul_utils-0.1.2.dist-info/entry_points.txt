@@ -1,0 +1,3 @@
+[console_scripts]
+consul_utils = consul_utils.application:cli
+
