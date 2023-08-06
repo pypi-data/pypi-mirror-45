@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: astep-forms-utils
+Version: 0.1
+Summary: A package for utilities regarding the aSTEP 2019 rendering architecture
+Home-page: https://daisy-git.cs.aau.dk/aSTEP-2019/python_form_utils
+Author: Casper Weiss Bang
+Author-email: master@thecdk.net
+License: UNKNOWN
+Description: Module helps with generating field sets and fields for usage in the architecture
+        aSTEP-2019. This can be used for any service written in flask, to make sure you don't 
+        create too much duplicate code. it's strongly inspired by Django. 
+        
+        
+        ## Example
+        An implementation can be seen in the
+        implementation of the [chart type test](https://daisy-git.cs.aau.dk/aSTEP-2019/charttypetest/)
+        microservice. worth noting is the requirements, and how you import it.
+        
+        BETTER README TO COME
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
