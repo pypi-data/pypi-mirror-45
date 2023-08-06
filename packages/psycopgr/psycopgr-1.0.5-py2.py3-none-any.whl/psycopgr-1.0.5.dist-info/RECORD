@@ -1,0 +1,8 @@
+psycopgr/__init__.py,sha256=hqkppQnd6vwb8DmW1D0cXC66NGDZOSf_0GuJMYFzOao,249
+psycopgr/__version__.py,sha256=DML3-lMBfDAAeHTs183kcnY1BYsOPCTZsWaQJCrI4ro,63
+psycopgr/psycopgr.py,sha256=9SaVxnf3FSrVTMYqdx3i6d3U7jW3wJzUqEAqB0EhBVs,20556
+psycopgr-1.0.5.dist-info/LICENSE,sha256=reiLtDgjR1I9tSV49BXkGPmRz9wnlbclNBSa063dt4Y,1073
+psycopgr-1.0.5.dist-info/METADATA,sha256=eQtLh9Z8RxCdtLTJ54sHjHSlDtP81LyMsnT42hhm8qI,1105
+psycopgr-1.0.5.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+psycopgr-1.0.5.dist-info/top_level.txt,sha256=oSF3BNCA14tolgFdzx1HkzJQ7fvoylv6-aIRp3EKQJc,9
+psycopgr-1.0.5.dist-info/RECORD,,
