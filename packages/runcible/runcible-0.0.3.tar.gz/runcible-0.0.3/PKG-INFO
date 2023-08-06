@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: runcible
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/graysonhead/runcible
+Author: Grayson Head
+Author-email: grayson@graysonhead.net
+License: GPL V3
+Description: # Runcible
+        
+        Runcible is an agentless configuration management system for network devices.
+Platform: UNKNOWN
