@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: easysql2pd
+Version: 0.0.1.5
+Summary: sql for pandas
+Home-page: https://github.com/StevenSunnySun/JT
+Author: SSS
+Author-email: steven_sunny_316@163.com
+License: GPL Licence
+Description: a simple tools for pandas to use sql
+Keywords: pip,sql,pandas,pd
+Platform: any
