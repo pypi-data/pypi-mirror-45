@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: laziter
+Version: 0.0.6
+Summary: A lazy iterator wrapper with multiprocessing powers!
+Home-page: https://github.com/jeffmomo/laziter
+Author: Jeff Mo
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # laziter
+        Lazy iterators for Python 3, in the spirit of LINQ or Java Stream. Has easy multithreading built in
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
