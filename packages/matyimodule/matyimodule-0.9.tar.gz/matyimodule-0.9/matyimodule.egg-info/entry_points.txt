@@ -1,0 +1,3 @@
+[console_scripts]
+matyicommand = matyimodule.app:main
+
