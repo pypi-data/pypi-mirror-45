@@ -1,0 +1,16 @@
+README.md
+setup.py
+simplabel/__init__.py
+simplabel/flow_to_directory.py
+simplabel/simplabel.py
+simplabel.egg-info/PKG-INFO
+simplabel.egg-info/SOURCES.txt
+simplabel.egg-info/dependency_links.txt
+simplabel.egg-info/entry_points.txt
+simplabel.egg-info/not-zip-safe
+simplabel.egg-info/requires.txt
+simplabel.egg-info/top_level.txt
+tests/__init__.py
+tests/integration/__init__.py
+tests/unit/__init__.py
+tests/unit/test_interactions.py
