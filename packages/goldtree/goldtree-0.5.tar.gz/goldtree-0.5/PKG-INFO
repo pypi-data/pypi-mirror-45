@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: goldtree
+Version: 0.5
+Summary: SDK to interact with the Gold Tree Solar Farm API.
+Home-page: https://github.com/JonScott20/gold_tree_sdk
+Author: Jonathon Scott
+Author-email: jonscott20@gmail.com
+License: MIT
+Download-URL: https://github.com/JonScott20/gold_tree_sdk/archive/v_05.tar.gz
+Description: UNKNOWN
+Keywords: Data,SDK,Solar,API,Cal Poly
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
