@@ -1,0 +1,13 @@
+slurmqueen/__init__.py,sha256=3PJxhiebnmr-HEDs--vnWwkZKaG6UEJryEIzCVbHfRM,167
+slurmqueen/dashboard.py,sha256=Ne47UQpJFwnlmph_88NUAyeqPWDX1cRf0w_6FSWhUPM,8135
+slurmqueen/experiment.py,sha256=PTZac5g3pFtyRgf_XvDAw0vT33sdYCwl6NupeZe0fOA,8782
+slurmqueen/interactive.py,sha256=g5T6yFruz4lo_RUG0P0f8_tWAFF4-OiJB5eDX5WD6tw,2949
+slurmqueen/slurm_experiment.py,sha256=WZLlNBmNZB5MWY7UIBj9Q1BFR737oW9YodeDPK2VVdI,19010
+slurmqueen/slurm_script.py,sha256=_2r7mVSTO6wbXpa4GD1tWaaLrqxeeIqkK0-3X9QFQ_c,1376
+slurmqueen/ssh_client.py,sha256=Pq758MPFeiNNKtGQQYctqYnwhXyL9zb80DrcseE_tuo,2949
+slurmqueen-1.2.2.dist-info/DESCRIPTION.rst,sha256=qHkjTDTpNj6nWxiT35Na0htPS2lQAMU6V2Gza5FMc6c,678
+slurmqueen-1.2.2.dist-info/METADATA,sha256=jj5zCV0NOzjZpUXvCQqHSWdsg-5u-Xt8KDAcT7UQ1mI,1209
+slurmqueen-1.2.2.dist-info/RECORD,,
+slurmqueen-1.2.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+slurmqueen-1.2.2.dist-info/metadata.json,sha256=Q9AP-Pjalqv1NAhiVvU8jBLHG3HsiBckHRLrtcWRR3U,759
+slurmqueen-1.2.2.dist-info/top_level.txt,sha256=T9p9Rt9j-kAN84Nh9XGKH2fLIf_RQarMo-rjgzf9sEc,11
