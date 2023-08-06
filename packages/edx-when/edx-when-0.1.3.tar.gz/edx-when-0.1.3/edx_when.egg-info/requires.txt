@@ -1,0 +1,7 @@
+django-model-utils
+django-waffle
+edx-opaque-keys
+Django<2.0,>=1.11
+django-crum
+edx-drf-extensions
+xblock
