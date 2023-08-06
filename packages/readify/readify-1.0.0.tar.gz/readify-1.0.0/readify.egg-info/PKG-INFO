@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: readify
+Version: 1.0.0
+Summary: Convert Integer to Human Readable format
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: me@yoginth.com
+Maintainer: Yoginth
+Maintainer-email: me@yoginth.com
+License: MIT
+Project-URL: Source, https://gitlab.com/yoginth/readify
+Description: ## Readify [![pipeline status](https://gitlab.com/yoginth/readify/badges/master/pipeline.svg)](https://gitlab.com/yoginth/readify/commits/master)
+        
+        > Convert Integer to Human Readable format
+        
+        ## Demo
+        
+        Demo on [Repl.it](https://repl.it/@yoginth/readify)
+        
+        ## Install
+        
+        ```
+        $ pip install readify
+        ```
+        
+        ## Usage
+        
+        ```python
+        from readify import readify
+        
+        print(readify(1545451548515484)) 
+        #=> 1545.5T
+        
+        print(readify(736572365, 5)) 
+        #=> 736.57236M
+        ```
+        ## API
+        
+        ### readify(input)
+        
+        Type: `number`
+        
+        ### readify(input, fraction_point)
+        
+        Type: `number` and `number`
+        
+        Number to humanize.
+        Fraction Point
+        
+        ## License
+        
+        [MIT][LICENSE] Yoginth
+        
+        [LICENSE]: https://mit.yoginth.com
+        
+Keywords: Humanize,Readable
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

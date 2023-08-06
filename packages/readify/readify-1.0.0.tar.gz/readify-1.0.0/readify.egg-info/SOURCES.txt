@@ -1,0 +1,8 @@
+README.md
+setup.py
+readify/__init__.py
+readify/readify.py
+readify.egg-info/PKG-INFO
+readify.egg-info/SOURCES.txt
+readify.egg-info/dependency_links.txt
+readify.egg-info/top_level.txt
