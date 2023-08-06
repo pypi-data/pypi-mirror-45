@@ -1,0 +1,3 @@
+[pytest11]
+focus = pytest_focus
+
