@@ -1,0 +1,9 @@
+clickatell/__init__.py,sha256=T6J5yd7PqE7NH2Yz1fGXfeS1NGs3OlEryAm06XJgRqs,2347
+clickatell/controller.py,sha256=Do8fdg6obzocSiKafr01CszaDNhdjTPzTI6ySd9eCxc,527
+clickatell/http/__init__.py,sha256=makWlyoy6KQvARKfbQ9jrodPh6v1OZn0Pi0P7Ui8BsA,1143
+clickatell/rest/__init__.py,sha256=tF_RORw0m9qxvAA-C5WJIYJFdOHBPswrJv_8BR91qGE,1265
+clickatell_platform-2.0.1.dist-info/LICENSE.md,sha256=ZMWyXamggJevOpXVOUwDU87zNQu66QbmfKP31lKxAAA,1077
+clickatell_platform-2.0.1.dist-info/METADATA,sha256=_NtTIGiOttLkCVYhF6JZlO6CrrLDNqmeryEtFk1aaLM,4513
+clickatell_platform-2.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+clickatell_platform-2.0.1.dist-info/top_level.txt,sha256=PLzjtM9X6p-XlqtEx7AO3MxM4sw6nv1_ynTq8JUGupk,11
+clickatell_platform-2.0.1.dist-info/RECORD,,
