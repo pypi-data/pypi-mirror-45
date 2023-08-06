@@ -1,0 +1,9 @@
+README.md
+setup.py
+notebookcforall.egg-info/PKG-INFO
+notebookcforall.egg-info/SOURCES.txt
+notebookcforall.egg-info/dependency_links.txt
+notebookcforall.egg-info/requires.txt
+notebookcforall.egg-info/top_level.txt
+notebookpc/__init__.py
+notebookpc/notebookpc.py

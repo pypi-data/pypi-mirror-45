@@ -1,0 +1,4 @@
+ipython>=6
+nbconvert>=5
+nbformat>=4
+requests>=2

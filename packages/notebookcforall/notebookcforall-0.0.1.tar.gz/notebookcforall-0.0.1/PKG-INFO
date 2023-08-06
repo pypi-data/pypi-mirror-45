@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: notebookcforall
+Version: 0.0.1
+Summary: A package to convert your Jupyter Notebook
+Home-page: https://github.com/your_package/homepage/
+Author: Jeff Hale
+Author-email: jeffmshale@gmail.com
+License: UNKNOWN
+Description: # notebookpc
+        convert notebook to a python script or or HTML
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
