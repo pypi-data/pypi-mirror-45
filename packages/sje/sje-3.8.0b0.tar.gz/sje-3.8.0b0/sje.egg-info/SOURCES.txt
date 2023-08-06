@@ -1,0 +1,6 @@
+setup.py
+sje.egg-info/PKG-INFO
+sje.egg-info/SOURCES.txt
+sje.egg-info/dependency_links.txt
+sje.egg-info/requires.txt
+sje.egg-info/top_level.txt
