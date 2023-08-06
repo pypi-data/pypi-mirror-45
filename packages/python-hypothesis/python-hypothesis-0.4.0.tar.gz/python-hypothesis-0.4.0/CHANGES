@@ -1,0 +1,37 @@
+change log for python-hypothesis
+https://github.com/chaselgrove/python-hypothesis
+
+0.1.0 -- 2 September 2016
+
+    Initial version.
+
+    Added API module and Annotation class with TagSet class for tags.
+
+0.1.1 -- 13 February 2018
+
+    Added Annotation.search().
+
+    Added unit tests.
+
+0.2.0 -- 21 August 2018
+
+    Added support for Python 3 (Charles Reid and John David Pressman).
+
+0.2.1 -- 20 February 2019
+
+    Added api.profile().
+
+0.3.0 -- 5 March 2019
+
+    Added a context manager to switch servers.
+
+    Added OAuth API calls and classes.
+
+0.4.0 -- 30 April 2019
+
+    Added h_annot.search() and deprecated Annotation.search().
+
+    Added authentication context manager h_annot.auth() and deprecated 
+    the use of authentication tokens stored with annotations.
+
+    Added TagSet.remove().
