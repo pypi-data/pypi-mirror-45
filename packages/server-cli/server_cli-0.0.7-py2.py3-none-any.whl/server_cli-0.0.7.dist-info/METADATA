@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: server-cli
+Version: 0.0.7
+Summary: A server management tool which help you memorize ssh command
+Home-page: https://github.com/yjxkwp/server-cli
+Author: kwp
+Author-email: i@emmm.wtf
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PrettyTable
+
+UNKNOWN
+
+
