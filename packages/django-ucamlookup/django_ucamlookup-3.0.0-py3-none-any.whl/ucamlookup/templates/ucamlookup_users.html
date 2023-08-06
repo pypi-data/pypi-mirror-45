@@ -1,0 +1,75 @@
+{% load dictionary_tag %}
+<script>
+  $(document).ready(function() {
+
+    /**
+     * Creates an object defining the user in a format expected by select2
+     */
+    var create_data = function(username, full_name) {
+      return {
+        id: username,
+        text: full_name + ' (' + username + ')'
+      }
+    };
+
+    /**
+     * The id of the last AJAX search request we sent.
+     */
+    var searchId_u = 0;
+
+    var $select = $("select#{{ input_tag_id }}").select2({
+      placeholder: '{{ placeholder|default:"Search for user" }}',
+      minimumInputLength: 3,
+      multiple: {{ multiple }},
+      ajax: {
+        delay: 250,
+        url: "{% url 'ucamlookup_find_people' %}",
+        dataType: 'json',
+        data: function (params) {
+          return {
+            query: params.term,
+            searchId_u: ++searchId_u
+          };
+        },
+        processResults: function (data) {
+          if (data.searchId_u != searchId_u)
+            return;
+          return {
+            results: $.map(data.persons, function(person) {
+              return create_data(person.crsid, person.visibleName)
+            })
+          };
+        }
+      },
+      containerCssClass: 'ucamlookup-user-container',
+      dropdownCssClass: 'ucamlookup-user-dropdown',
+      disabled: {{ disabled|default:'false' }},
+      width: 'auto'
+    });
+
+    /**
+     * Add an option to the select and triggers select2 change and select events.
+     */
+    var add_option = function(username, full_name) {
+      var data = create_data(username, full_name);
+      $select.append(
+        new Option(data.text, data.id, true, true)
+      ).trigger('change').trigger({
+        type: 'select2:select',
+        params: {data: data}
+      })
+    };
+
+    // Define the initial selections (deprecated - <option> should be used instead).
+
+    {% if user_list %}
+      {% for user in lookup_lists|get_item:user_list %}
+        add_option('{{ user.username }}', '{{ user.last_name }}');
+      {% endfor %}
+    {% endif %}
+
+    {% if single_user %}
+      add_option('{{ single_user.username }}', '{{ single_user.last_name }}');
+    {% endif %}
+  });
+</script>
