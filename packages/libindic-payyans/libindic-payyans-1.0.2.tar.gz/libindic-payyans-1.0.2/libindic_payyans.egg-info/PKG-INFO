@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: libindic-payyans
+Version: 1.0.2
+Summary: ASCII to Unicode converter
+Home-page: https://libindic.org/payyans
+Author: Santhosh Thottingal
+Author-email: santhosh.thottingal@gmail.com
+License: LGPL-3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: DFSG approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
