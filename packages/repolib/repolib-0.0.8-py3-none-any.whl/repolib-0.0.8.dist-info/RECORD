@@ -1,0 +1,13 @@
+repolib/__init__.py,sha256=7LgQhjYLg2kqC8RGgV8PP8iJ-qlVOECTaaO2Rusqtj0,1560
+repolib/__version__.py,sha256=PAbkKvkrJCU2H0FEAn9719KHz_Tw-8C85PowpLmo2yU,1349
+repolib/deb.py,sha256=5uZNFqv-msFijVmDHTywMhkpyK6DliEzpy_HhqsDmTU,4708
+repolib/ppa.py,sha256=vLz3t86MD7T-NmwTTKFNI4wlLohR4Mxq2OljwAnGc84,5074
+repolib/source.py,sha256=uumlhuhS-66xX7OX5MEassmhDV5ra46BimCHTHNRpGQ,7573
+repolib/util.py,sha256=S-CnSRvy-LS5vHRls96YUdEbn8CTwrtUBeEZY7GaXQo,2194
+repolib-0.0.8.data/scripts/apt-manage,sha256=hOojFiogaMtcOkH3lfrn7ma5WEc7sUgPaIo1OIaIZcQ,15823
+usr/share/bash-completion/completions/apt-manage,sha256=ONS2ecSZVmAAyh6s5WV7pYahIxNPe2AAVAoVpT779rA,2212
+repolib-0.0.8.dist-info/LICENSE,sha256=oYuoCC4QAVSK7WXRjCMEUgJSfH3CELH1wG7MZVpKIHM,1325
+repolib-0.0.8.dist-info/METADATA,sha256=8xMHZ-53qgIcLz1OfUmYeMhjfADyZkRdUcePR3zTSRA,638
+repolib-0.0.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+repolib-0.0.8.dist-info/top_level.txt,sha256=ELOnf3eZP4zbR6_i8E-RKm-V2SYN7ZA3PepJUjob074,8
+repolib-0.0.8.dist-info/RECORD,,
