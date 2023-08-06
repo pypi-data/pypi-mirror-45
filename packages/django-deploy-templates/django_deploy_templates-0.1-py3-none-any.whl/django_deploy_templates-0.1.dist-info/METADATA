@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-deploy-templates
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: Django (>=2)
+Requires-Dist: Jinja2 (>=2.10)
+
+Description
+===========
+
+Django management command for generate deploy configs
+
+
+
