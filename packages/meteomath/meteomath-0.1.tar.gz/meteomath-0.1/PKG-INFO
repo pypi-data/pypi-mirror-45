@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: meteomath
+Version: 0.1
+Summary: Fluid dynamics methods
+Home-page: https://github.com/gabrielmpp/meteomath
+Author: Gabriel Perez
+Author-email: gabrielmpp2@gmail.com
+License: MIT
+Download-URL: https://github.com/gabrielmpp/meteomath/archive/v_0.1.tar.gz
+Description: UNKNOWN
+Keywords: METEOROLOGY,FLUIDS,XARRAY
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
