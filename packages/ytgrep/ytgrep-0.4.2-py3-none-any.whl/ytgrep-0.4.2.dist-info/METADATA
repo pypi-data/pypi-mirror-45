@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: ytgrep
+Version: 0.4.2
+Summary: CLI tool to search youtube captions
+Home-page: UNKNOWN
+Author: Alex Kohler
+Author-email: alexjohnkohler@gmail.com
+License: Copyright 2018 Alex Kohler 
+Requires-Dist: astroid (==2.1.0)
+Requires-Dist: autopep8 (==1.4.3)
+Requires-Dist: beautifulsoup4 (==4.4.1)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: certifi (==2018.11.29)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: cssutils (==1.0.1)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: enum34 (==1.1.6)
+Requires-Dist: future (==0.16.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: isort (==4.3.4)
+Requires-Dist: lazy-object-proxy (==1.3.1)
+Requires-Dist: lxml (==4.3.0)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: pycaption (==1.0.1)
+Requires-Dist: pycodestyle (==2.4.0)
+Requires-Dist: Pygments (==2.3.1)
+Requires-Dist: pylint (==2.2.2)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: tqdm (==4.31.0)
+Requires-Dist: twine (==1.12.1)
+Requires-Dist: urllib3 (==1.22)
+Requires-Dist: vulture (==1.0)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wrapt (==1.11.1)
+Requires-Dist: youtube-dl (==2019.4.24)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Description: ytgrep
+        -----------------------
+        
+        ytgrep is a CLI tool to search youtube closed captions with a grep-like interface.
+        
+        
+        Requirements
+        =============
+        
+        * Requires python >= 3.5
+        
+        Installation
+        =============
+        .. code:: bash
+            
+            pip install ytgrep
+        
+        Purpose
+        =============
+        ytgrep is particularly useful whilst looking for particular topic or keywords in a video. For example, suppose you are  interested in learning more about Breadth First Search. Rather than watching MIT Open Courseware's entire 50 minute video, you can do the following with ytgrep:
+        
+        
+        .. code:: bash
+        
+            python ytgrep.py 'bfs' https://www.youtube.com/watch?v=s-CYnVz-uh4
+            [00:46:22.109 --> 00:46:24.170] compute this shortest we compute this path out of bfs which is follow a parent
+            [00:46:24.170 --> 00:46:24.180] path out of bfs which is follow a parent
+            [00:46:24.180 --> 00:46:26.450] path out of bfs which is follow a parent of v is c prime of c is x parent of x is
+            [00:47:25.799 --> 00:47:28.459] the shortest path thats the cool thing about bfs yeah bfs explores of vertices"
+        
+        Usage
+        ==============
+        
+        .. code:: bash
+        
+            usage: ytgrep.py [-h] [-e] [-v] [-links] pattern urls [urls ...]
+        
+        Flags
+        =============
+        * -e <PATTERN> - specify a regular expression to match
+        * -v - verbose, print debug information
+        * -links - include the time shortcut link with each match (see example below) 
+        
+        
+        More examples
+        =============
+        
+        
+        Development
+        =============
+        
+        Run Tests
+        ~~~~~~~~~
+        
+        *Note:* Functional tests do download directly from Youtube
+        
+        .. code:: bash
+        
+           ## All tests
+           python -m unittest discover
+        
+           ## Unit tests
+           python -m unittest discover test/unit
+        
+           ## Functional tests
+           python -m unittest discover test/functional
+        
+        Related projects
+        ==================
+         * youtube-closed-captions - This project used this library as a starting point https://github.com/mkly/youtube-closed-captions
+         * videogrep - get supercuts of video matching provided seach terms
+            
+        
+        TODO
+        ============
+        * Supporting languages other than English
+        * -e '*' breaks ytgrep - appears to be applying red more than once
+        * Run coverage and see if any tests are missing
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
