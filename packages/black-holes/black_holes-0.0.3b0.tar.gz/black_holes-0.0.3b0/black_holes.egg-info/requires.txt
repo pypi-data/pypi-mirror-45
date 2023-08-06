@@ -1,0 +1,4 @@
+Crypto
+python-consul==1.1.0
+peewee==3.9.2
+pycryptodome==3.7.3
