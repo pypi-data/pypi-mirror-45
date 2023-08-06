@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: parse_it
+Version: 0.1.0
+Summary: A python library for parsing multiple types of config files, envvars and command line arguments which takes the headache out of setting app configurations.
+Home-page: https://github.com/naorlivne/parse_it
+Author: Naor Livne
+Author-email: naorlivne@gmail.com
+License: GPLv3
+Description: # parse_it
+        A python library for parsing multiple types of config files, envvars &amp; command line argumants that takes the headache out of setting app configurations.
+        
+Keywords: parse_it parsing parse config configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
