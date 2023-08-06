@@ -1,0 +1,16 @@
+device.cpp
+fifo.c
+hiddevice.cpp
+libneoradio2.cpp
+neoradio2device.cpp
+setup.py
+hidapi/windows/hid.c
+hidapi/windows/hid.c
+neoradio2.egg-info/PKG-INFO
+neoradio2.egg-info/SOURCES.txt
+neoradio2.egg-info/dependency_links.txt
+neoradio2.egg-info/not-zip-safe
+neoradio2.egg-info/requires.txt
+neoradio2.egg-info/top_level.txt
+python/src/main.cpp
+python/src/main.cpp
