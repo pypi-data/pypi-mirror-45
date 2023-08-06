@@ -1,0 +1,16 @@
+sqlalchemy
+pandas
+
+[all]
+requests
+bs4
+pygments
+pyfiglet
+
+[crawl]
+requests
+bs4
+
+[iterm]
+pygments
+pyfiglet
