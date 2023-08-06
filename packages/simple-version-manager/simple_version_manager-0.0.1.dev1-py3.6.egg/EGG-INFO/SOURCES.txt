@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+simple_version_manager/__init__.py
+simple_version_manager/simple_version_manager.py
+simple_version_manager/version.py
+simple_version_manager.egg-info/PKG-INFO
+simple_version_manager.egg-info/SOURCES.txt
+simple_version_manager.egg-info/dependency_links.txt
+simple_version_manager.egg-info/entry_points.txt
+simple_version_manager.egg-info/top_level.txt
+simple_version_manager/test/__init__.py
