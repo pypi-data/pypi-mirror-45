@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mds-awstatscleanup
+Version: 0.1.0
+Summary: Cleanup statistics directory of AWStats
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Keywords: logging
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+mds-awstatscleanup
+==================
+Cleanup statistics directory of AWStats
+
+Install
+=======
+pip install mds-awstatscleanup
+
+Changes
+=======
+
+*0.1.0 - 29.04.2019*
+
+- public version
+
+
