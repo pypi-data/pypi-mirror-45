@@ -1,0 +1,12 @@
+intake_dcat/__init__.py,sha256=Q8VAE8TbSmMXWcAUCZlj8nfLybJRgmqlYfUeITV1TYY,78
+intake_dcat/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+intake_dcat/catalog.py,sha256=2dpufnPK-fpBxqqzTHKcez83eJVPtOpwbJxhbpgBMJY,4344
+intake_dcat/cli.py,sha256=oonF7eEu01H_aX_stx05N0k7OpcK0A5ubRY18zuOtjw,2504
+intake_dcat/distributions.py,sha256=z5OfmjE3huQXa7JDdrJOTd24z2cnocGuLVNIbW_5GX4,2358
+intake_dcat/util.py,sha256=ap19IkRAo4hG0HIPJEG0Qbuuz83t08ABJJIw2O488Xk,2375
+intake_dcat-0.1.0.dist-info/LICENSE,sha256=4_fMVqY1-xzmy3LvEUIiV0HzNqmdrG33kOnxJPA2RJg,11350
+intake_dcat-0.1.0.dist-info/METADATA,sha256=ZyZaAeStogX0MoIKtuYDDqPiB3hOeCgdInINjhv5h3M,4427
+intake_dcat-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+intake_dcat-0.1.0.dist-info/entry_points.txt,sha256=gSH9PFe_NQYgPHZ6hmwF---Bhn18iRbQAMl0wWXOgKA,54
+intake_dcat-0.1.0.dist-info/top_level.txt,sha256=ANZHTQdCS0kk4Fx4aW1iOftLoTJQ5aBpOZlbimqKjys,12
+intake_dcat-0.1.0.dist-info/RECORD,,
