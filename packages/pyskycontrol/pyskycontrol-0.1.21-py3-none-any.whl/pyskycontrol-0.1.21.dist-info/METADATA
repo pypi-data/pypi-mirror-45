@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyskycontrol
+Version: 0.1.21
+Summary: A Python library to interface with Sky
+Home-page: https://Ktech6@bitbucket.org/Ktech6/pyskycontrol.git
+Author: ktech6
+Author-email: ktech6@outlook.com
+License: MIT
+Keywords: Sky Library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5.*
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+A Python library to interface with the Sky
+
+
