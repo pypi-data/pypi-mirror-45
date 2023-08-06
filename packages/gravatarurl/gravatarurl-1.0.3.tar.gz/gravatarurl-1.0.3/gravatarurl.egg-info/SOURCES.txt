@@ -1,0 +1,8 @@
+README.md
+setup.py
+gravatarurl/__init__.py
+gravatarurl.egg-info/PKG-INFO
+gravatarurl.egg-info/SOURCES.txt
+gravatarurl.egg-info/dependency_links.txt
+gravatarurl.egg-info/requires.txt
+gravatarurl.egg-info/top_level.txt
