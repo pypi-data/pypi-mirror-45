@@ -1,0 +1,14 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+Symqui.egg-info/PKG-INFO
+Symqui.egg-info/SOURCES.txt
+Symqui.egg-info/dependency_links.txt
+Symqui.egg-info/top_level.txt
+symqui/__init__.py
+symqui.egg-info/PKG-INFO
+symqui.egg-info/SOURCES.txt
+symqui.egg-info/dependency_links.txt
+symqui.egg-info/top_level.txt
