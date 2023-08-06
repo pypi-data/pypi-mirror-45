@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: tailf
+Version: 0.1
+Summary: tail -f: functionality for your python code
+Home-page: http://gitlab.com/troonie/tailf
+Author: Sergei Shilovsky
+Author-email: sshilovsky@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
