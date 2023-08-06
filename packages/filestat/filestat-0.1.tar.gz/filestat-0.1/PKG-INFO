@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: filestat
+Version: 0.1
+Summary: A command line library for file monitoring
+Home-page: https://github.com/zxalif/filestat.git
+Author: Alif Jahan
+Author-email: sajeeb162537@gmail.com
+License: MIT
+Description: # filestat
+        A command line library for file monitoring
+        
+        ## Usages
+        There is two way to access `filestat` with command line or with `python interpreter`.
+        
+        `Command Line is under development.`
+        
+        ```python3
+        >>> # to get file size  
+        >>> form filestat import utils
+        >>> utils.get_size('path/to/file.py') # it returns the file size in byte
+        123121
+        >>> 
+        ``` 
+        
+        `The program is still under development`
+Keywords: filestat stats file monitoring details
+Platform: UNKNOWN
