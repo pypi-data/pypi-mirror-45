@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: wopmars
+Version: 0.0.3
+Summary: Workflow Python Manager for Reproducible Science
+Home-page: https://github.com/aitgon/wopmars
+Author: Luc Giffon
+Author-email: luc.giffon@gmail.com
+License: MIT
+Download-URL: https://github.com/aitgon/wopmars/archive/0.0.3.tar.gz
+Description-Content-Type: UNKNOWN
+Description: WopMars: Workflow Python Manager for Reproducible Science
+        ---------------------------------------------
+        
+        .. image:: https://travis-ci.org/aitgon/wopmars.svg?branch=master
+            :target: https://travis-ci.org/aitgon/wopmars
+        
+        .. image:: https://img.shields.io/pypi/pyversions/wopmars.svg
+            :target: https://www.python.org
+        
+        .. image:: https://readthedocs.org/projects/wopmars/badge/?version=latest
+            :target: http://wopmars.readthedocs.io/en/latest/?badge=latest
+        
+        .. image:: https://img.shields.io/pypi/v/wopmars.svg
+            :target: https://pypi.python.org/pypi/wopmarst
+        
+        WopMars is a database-driven workflow manager written in python similar to GNU Makefile or Snakemake. The originality of WopMars is that it is closely connected to a relational database and can take database tables as inputs and outputs in the definition file. WopMars uses SQLAlchemy object relational mapper (ORM) and has been currently tested with SQLite, MariaDB/MySQL and PostgreSQL.
+        
+        
+        Installation
+        --------------
+        
+        To install wopmars, you have to get the sources on the git repository and then go to the source directory and type::
+        
+            pip install .
+        
+        To install wopmars with the --dot option to generate workflow schemes::
+        
+            pip install .[pygraphviz]
+        
+        Documentation
+        -------------
+        
+        The `WopMars documentation <http://wopmars.readthedocs.org/>`_ with user guide and
+        API reference is hosted at Read The Docs.
+        
+        
+Keywords: workflow manager python object-oriented reproducible science database framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
