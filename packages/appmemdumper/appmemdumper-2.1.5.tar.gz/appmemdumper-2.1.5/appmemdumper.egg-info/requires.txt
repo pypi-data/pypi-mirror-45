@@ -1,0 +1,4 @@
+patool
+pyunpack
+tinyscript
+volatility
