@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+djangorestframework_orjson.egg-info/PKG-INFO
+djangorestframework_orjson.egg-info/SOURCES.txt
+djangorestframework_orjson.egg-info/dependency_links.txt
+djangorestframework_orjson.egg-info/requires.txt
+djangorestframework_orjson.egg-info/top_level.txt
+rest_framework_orjson/__init__.py
+rest_framework_orjson/parsers.py
+rest_framework_orjson/renderers.py
