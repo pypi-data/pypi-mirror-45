@@ -1,0 +1,17 @@
+README.md
+setup.py
+soupstars/__init__.py
+soupstars/exceptions.py
+soupstars/models.py
+soupstars/serializers.py
+soupstars/utils.py
+soupstars.egg-info/PKG-INFO
+soupstars.egg-info/SOURCES.txt
+soupstars.egg-info/dependency_links.txt
+soupstars.egg-info/requires.txt
+soupstars.egg-info/top_level.txt
+soupstars/examples/__init__.py
+soupstars/examples/economist.py
+soupstars/examples/nytimes.py
+soupstars/mixins/__init__.py
+soupstars/mixins/sqlalchemy_mixins.py
