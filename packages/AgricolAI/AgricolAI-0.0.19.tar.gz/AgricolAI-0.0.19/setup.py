@@ -1,0 +1,15 @@
+import setuptools
+setuptools.setup(name='AgricolAI',
+      version='0.0.19',
+      description='AI Module for Agricultural application',
+      url='https://github.com/Zhiwu-Zhang-Lab/James_Git',
+      author='James Chen',
+      author_email='chun-peng.chen@wsu.edu',
+      license='MIT',
+      packages=setuptools.find_packages(),
+      install_requires=['numpy',
+                        'pandas>=0.19.2',
+                        'sklearn',
+                        'scipy',
+                        'matplotlib',
+                        'spectral'])
