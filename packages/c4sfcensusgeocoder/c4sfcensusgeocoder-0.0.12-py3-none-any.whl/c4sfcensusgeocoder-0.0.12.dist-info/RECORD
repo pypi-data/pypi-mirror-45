@@ -1,0 +1,9 @@
+c4sfcensusgeocoder/__init__.py,sha256=CFP4mI-GvhuaEz_8x3Qqq-nZs2aNGXUUph2wDP3xMfA,29
+c4sfcensusgeocoder/batch_geocoder.py,sha256=Esn3JqbqlznapTdZp1kd9p8KMVRxIf3edkaOmXppaow,2483
+c4sfcensusgeocoder/cli.py,sha256=FWVZ3KXXOKiBF2PPbwYmMsRr4M3rfwctGr1ncL-nUTQ,686
+c4sfcensusgeocoder-0.0.12.dist-info/LICENSE,sha256=8g5BDbd_Klbm_7SeUC6uXMTUEleOhlPwMpeqgHpD_Nc,1483
+c4sfcensusgeocoder-0.0.12.dist-info/METADATA,sha256=TWiSj7s35bX1PLjOdux18XNoxYRBmK4vIwuz35rEG6w,701
+c4sfcensusgeocoder-0.0.12.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+c4sfcensusgeocoder-0.0.12.dist-info/entry_points.txt,sha256=xeQEv8XNsxRXOKtCIVMYdEBI3EdNt1iRwkEuouFer_k,100
+c4sfcensusgeocoder-0.0.12.dist-info/top_level.txt,sha256=DoleA1xydL3F0Yfc05e102bRYX6741yKqHmoqGnXNi8,23
+c4sfcensusgeocoder-0.0.12.dist-info/RECORD,,
