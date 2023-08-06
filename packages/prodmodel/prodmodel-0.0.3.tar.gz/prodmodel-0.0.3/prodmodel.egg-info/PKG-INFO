@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: prodmodel
+Version: 0.0.3
+Summary: Build data science pipelines and models
+Home-page: https://github.com/prodmodel/prodmodel
+Author: Gergely Svigruha
+Author-email: gergely.svigruha@prodmodel.com
+License: UNKNOWN
+Description: Prodmodel
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
