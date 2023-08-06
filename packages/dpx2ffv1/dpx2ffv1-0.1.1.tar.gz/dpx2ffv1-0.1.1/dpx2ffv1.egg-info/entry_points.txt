@@ -1,0 +1,3 @@
+[console_scripts]
+dpx2ffv1 = dpx2ffv1.__main__:main
+
