@@ -1,0 +1,12 @@
+githubdl/__init__.py,sha256=mg6FxCDw24Xo9ZnIXXzTiMlKNePrONoMhAqwywC0xr8,3925
+githubdl/api.py,sha256=FYnAOiyrxQOZwzknNkspnKpjDDTAaOMHfBivemFBanw,3799
+githubdl/file_processing.py,sha256=a1h8vMn-ni7JJQBWwKvYeqMmwH9qW-pP127xw0f0O8w,769
+githubdl/request_processing.py,sha256=3BS3deY0X_WUHavG4hnnhKX5n7HbjphoR_UT-UA-4sA,2757
+githubdl/url_helpers.py,sha256=UYcZtuGNzciR-OyFeKP84wIM1Q3Vw4wtv91vFN-D074,1470
+githubdl/url_processing.py,sha256=Xc1CCdsPTJAC1-h2-P8tA9YC-8xPrKUoyezaD1KE4CI,1834
+githubdl-0.1.5.dist-info/LICENSE.txt,sha256=Y6axQ-WcUd4CoD5wuIg5mPVbaIuVgXzYcC2LSInw8X0,1058
+githubdl-0.1.5.dist-info/METADATA,sha256=_9gr3cxftWeVkw0FgeIKV5BF43YzbWHEbBiaPSa6Aa4,8573
+githubdl-0.1.5.dist-info/RECORD,,
+githubdl-0.1.5.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+githubdl-0.1.5.dist-info/entry_points.txt,sha256=R5EBi5rFfmOn-MECd2pqAqQpwjiZg8Ed1zdtzL90YuE,44
+githubdl-0.1.5.dist-info/top_level.txt,sha256=a7IR7vV1poXlSdb4qg_aD8XLg_-kQwbQip2pYfeEQR8,9
