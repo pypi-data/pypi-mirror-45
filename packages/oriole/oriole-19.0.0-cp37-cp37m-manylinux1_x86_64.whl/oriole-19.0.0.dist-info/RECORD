@@ -1,0 +1,14 @@
+oriole/__init__.cpython-37m-x86_64-linux-gnu.so,sha256=JeHSJZkZRIY1Fw4EXHC_iIIx1GbbB1co9Lan1WxzKMA,51664
+oriole/cli.cpython-37m-x86_64-linux-gnu.so,sha256=KugImeJpob9hIs8A6jEqumfZWd4PLHKzcuXEI3qFH0c,232016
+oriole/db.cpython-37m-x86_64-linux-gnu.so,sha256=5XlcNZ_VBr_2oXhCCI8Jd_IpmA-Si-fVClF9BS1fHjY,315256
+oriole/fake.cpython-37m-x86_64-linux-gnu.so,sha256=PNsRqVXSj87huLpG5X25Rm3a3-6pU7RGX1Z4b1JktIQ,258880
+oriole/log.cpython-37m-x86_64-linux-gnu.so,sha256=XGp09zQVUH-h1Po5RyRAINQbTmPUWmdlto4OAbsH1q8,215544
+oriole/ops.cpython-37m-x86_64-linux-gnu.so,sha256=k5VSyaNxqqPV1c-kaXeUX_owcHbRQdcMAspfmD7B6yo,268840
+oriole/vos.cpython-37m-x86_64-linux-gnu.so,sha256=mTVWVlfe5uI2wzC1mkSdK1CvAPv3Va7sP2NHCEmGbq0,635824
+oriole/yml.cpython-37m-x86_64-linux-gnu.so,sha256=rFxuWAgaOBrU6-WJjdwJuXP3dR-RC5NKCMrnnS9FtIY,186720
+oriole-19.0.0.dist-info/LICENSE,sha256=TkN8YTrx8SkuhXqxN2CuEZvO2iM3H5Jkhvofx9Vnwog,553
+oriole-19.0.0.dist-info/METADATA,sha256=d3n1vnWCjE-y5TeaBrhicQ-vJLsikezQAP5AodG1vhc,1039
+oriole-19.0.0.dist-info/WHEEL,sha256=9Pyr3MVn97H8lW0JfR-nIdttwMiRxfIYo8evSfxVrx4,109
+oriole-19.0.0.dist-info/top_level.txt,sha256=ZE6H2gM94jB0vpCsXySSHn4Auu5jP9aAo4Wa4AJS6R4,7
+oriole-19.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+oriole-19.0.0.dist-info/RECORD,,
