@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PyUpdater-SCP-Plugin
+Version: 4.0.1
+Summary: SCP plugin for PyUpdater
+Home-page: https://github.com/JMSwag/PyUpdater-SCP-Plugin
+Author: JMSwag
+Author-email: johnymoswag@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
