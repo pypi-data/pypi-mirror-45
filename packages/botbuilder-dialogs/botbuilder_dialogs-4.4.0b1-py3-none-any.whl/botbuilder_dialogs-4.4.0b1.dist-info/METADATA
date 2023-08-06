@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: botbuilder-dialogs
+Version: 4.4.0b1
+Summary: Microsoft Bot Framework Bot Builder
+Home-page: https://www.github.com/Microsoft/botbuilder-python
+Author: Microsoft
+Author-email: UNKNOWN
+License: MIT
+Keywords: BotBuilderDialogs,bots,ai,botframework,botbuilder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: recognizers-date-time (>=1.0.0a1)
+Requires-Dist: recognizers-number-with-unit (>=1.0.0a1)
+Requires-Dist: recognizers-number (>=1.0.0a2)
+Requires-Dist: recognizers-text (>=1.0.0a1)
+Requires-Dist: botbuilder-schema (>=4.4.0b1)
+Requires-Dist: botframework-connector (>=4.4.0b1)
+Requires-Dist: botbuilder-core (>=4.4.0b1)
+Requires-Dist: aiounittest (>=1.1.0)
+
+Microsoft Bot Framework Bot Builder SDK for Python.
+
+
