@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pdfbuilder/Object.py
+pdfbuilder/ObjectReference.py
+pdfbuilder/PDF.py
+pdfbuilder/__init__.py
+pdfbuilder/utils.py
+pdfbuilder.egg-info/PKG-INFO
+pdfbuilder.egg-info/SOURCES.txt
+pdfbuilder.egg-info/dependency_links.txt
+pdfbuilder.egg-info/top_level.txt
