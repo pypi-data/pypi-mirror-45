@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: databricks-cloud-automation
+Version: 0.1.1
+Summary: Databricks Cloud Automation
+Home-page: http://www.databricks.com
+Author: Databricks
+Author-email: sales@databricks.com
+License: TBD
+Platform: UNKNOWN
+Requires-Dist: Flask
+Requires-Dist: flask-WTF
+Requires-Dist: pyyaml
+Requires-Dist: python-terraform
+Requires-Dist: pyhcl
+Requires-Dist: gunicorn
+
+Databricks Cloud Automation
+
+
