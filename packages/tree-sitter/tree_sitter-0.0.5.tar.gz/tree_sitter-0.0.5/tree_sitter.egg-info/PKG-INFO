@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: tree-sitter
+Version: 0.0.5
+Summary: Python bindings to the Tree-sitter parsing library
+Home-page: https://github.com/tree-sitter/py-tree-sitter
+Author: Max Brunsfeld
+Author-email: maxbrunsfeld@gmail.com
+Maintainer: Max Brunsfeld
+Maintainer-email: maxbrunsfeld@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/tree-sitter/py-tree-sitter
+Project-URL: Documentation, http://initd.org/psycopg/docs/
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.3
