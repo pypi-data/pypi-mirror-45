@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: timml
+Version: 6.0.0
+Summary: Steady multi-layer AEM Model
+Home-page: https://github.com/mbakker7/timml
+Author: Mark Bakker
+Author-email: markbak@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.5
+Requires-Dist: numpy (>=1.12)
+Requires-Dist: scipy (>=0.19)
+Requires-Dist: numba (>=0.40)
+Requires-Dist: matplotlib (>=2.0)
+
+UNKNOWN
+
+
