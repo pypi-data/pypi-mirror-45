@@ -1,0 +1,6 @@
+Flask
+flask-WTF
+pyyaml
+python-terraform
+pyhcl
+gunicorn
