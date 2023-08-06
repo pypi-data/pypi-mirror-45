@@ -1,0 +1,9 @@
+README.md
+mgrep.py
+setup.py
+mgrep.egg-info/PKG-INFO
+mgrep.egg-info/SOURCES.txt
+mgrep.egg-info/dependency_links.txt
+mgrep.egg-info/entry_points.txt
+mgrep.egg-info/requires.txt
+mgrep.egg-info/top_level.txt
