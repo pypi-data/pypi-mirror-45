@@ -1,0 +1,13 @@
+odoo/addons/hr_holidays_leave_overlap/README.rst,sha256=-uejo1_bzdPUEj5FVk5Bh9MP_WrwUb9DzqLcncURfC0,1715
+odoo/addons/hr_holidays_leave_overlap/__init__.py,sha256=eShEGRadAlxopoLqIQ4-N42FM7MWPSuBe0h_l1cXTPM,87
+odoo/addons/hr_holidays_leave_overlap/__manifest__.py,sha256=hve65lC3TH4KiKYxsSVQyCFK2SHigPs2NDdiFTslSLs,481
+odoo/addons/hr_holidays_leave_overlap/i18n/hr_holidays_leave_overlap.pot,sha256=JdbUffN37ygoHx-vLPg3f2HrfyKIdTYOsu6mxkz9gvg,745
+odoo/addons/hr_holidays_leave_overlap/models/__init__.py,sha256=4XSwF6FuVbw8zbC1jp86AQZvhLcNq7ToEC5m4xldxxE,92
+odoo/addons/hr_holidays_leave_overlap/models/hr_holidays.py,sha256=-LIxEx1_KMk4hhL42RSH4dJiTMwRzOvJiulSLZXkSqo,4596
+odoo/addons/hr_holidays_leave_overlap/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/hr_holidays_leave_overlap/tests/__init__.py,sha256=EYQxYt6XCOVo2Fg5qF1iDzB5llRlucCPZzz13ZtkrPk,103
+odoo/addons/hr_holidays_leave_overlap/tests/test_leave_overlap.py,sha256=IhjUGCcsqhxInspVBW0TD0hAS9oa40ocNTWyY5eeZXc,9666
+odoo11_addon_hr_holidays_leave_overlap-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=AZrNPShWxBvYbFcr8uyfvJGZ9fLacGG1UgVBGwH_BNg,2273
+odoo11_addon_hr_holidays_leave_overlap-11.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo11_addon_hr_holidays_leave_overlap-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_hr_holidays_leave_overlap-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
