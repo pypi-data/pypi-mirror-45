@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+jsonrpyc.py
+requirements.txt
+setup.py
+jsonrpyc.egg-info/PKG-INFO
+jsonrpyc.egg-info/SOURCES.txt
+jsonrpyc.egg-info/dependency_links.txt
+jsonrpyc.egg-info/not-zip-safe
+jsonrpyc.egg-info/top_level.txt
