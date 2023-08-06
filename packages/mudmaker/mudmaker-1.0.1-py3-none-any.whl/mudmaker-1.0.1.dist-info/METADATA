@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mudmaker
+Version: 1.0.1
+Summary: Make MUDs with Python classes.
+Home-page: https://github.com/chrisnorman7/
+Author: Chris Norman
+Author-email: chris.norman2@googlemail.com
+License: MPL-2
+Platform: UNKNOWN
+Requires-Dist: attrs
+Requires-Dist: twisted
+Requires-Dist: emote-utils
+Requires-Dist: autobahn
+Requires-Dist: commandlet
+Requires-Dist: passlib
+Requires-Dist: pyyaml
+
+# mudmaker
+Make MUDs with Python classes.
+
+
+
