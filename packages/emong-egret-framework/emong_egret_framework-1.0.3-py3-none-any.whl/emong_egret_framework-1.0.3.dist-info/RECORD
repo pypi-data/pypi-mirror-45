@@ -1,0 +1,12 @@
+entry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entry/main.py,sha256=9CSuPJaf70EFjjUT5kBEZFkF2KmCYQCuu8zoyEh97Xg,683
+entry/args/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entry/args/create.py,sha256=DRC0Jfb_BL2usVv-Yvo4CSXX9wfzIO-zsNLbDrRDC3E,5145
+entry/args/platform.py,sha256=DiazydTPdDcjLjxfcHqbBUqbS3VyfXukeoeyaym4aGE,40
+entry/args/template.gitignore,sha256=v115foKZ8V_WcOmZZB966GxSgzz6zmruFWOdpo-g1lM,303
+entry/args/templete.gitignore,sha256=v115foKZ8V_WcOmZZB966GxSgzz6zmruFWOdpo-g1lM,303
+emong_egret_framework-1.0.3.dist-info/METADATA,sha256=LHyiXT1AqIVpDfTCusllj2lHgJjhDHBhKBdnhFCBp4Q,501
+emong_egret_framework-1.0.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+emong_egret_framework-1.0.3.dist-info/entry_points.txt,sha256=rN0C9yLV92xenV1QpKc6SPwHlUJFqATT21nbha0Sg20,41
+emong_egret_framework-1.0.3.dist-info/top_level.txt,sha256=bhwTJvSNDHTn8Induw-tXzo4SPI097oCNdHKKe27sss,6
+emong_egret_framework-1.0.3.dist-info/RECORD,,
