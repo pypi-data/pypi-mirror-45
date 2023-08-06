@@ -1,0 +1,12 @@
+README.md
+setup.py
+metaform/__init__.py
+metaform/converters.py
+metaform/test_.py
+metaform/utils.py
+metaform.egg-info/PKG-INFO
+metaform.egg-info/SOURCES.txt
+metaform.egg-info/dependency_links.txt
+metaform.egg-info/not-zip-safe
+metaform.egg-info/requires.txt
+metaform.egg-info/top_level.txt

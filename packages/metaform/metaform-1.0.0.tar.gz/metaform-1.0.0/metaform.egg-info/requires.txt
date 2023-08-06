@@ -1,0 +1,10 @@
+metawiki
+typology
+metadir
+tinydb
+python-dateutil
+
+[test]
+coverage
+pytest
+pytest-cov
