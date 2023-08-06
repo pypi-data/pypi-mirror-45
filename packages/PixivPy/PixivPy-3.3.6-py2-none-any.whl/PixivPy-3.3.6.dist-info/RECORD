@@ -1,0 +1,10 @@
+pixivpy3/__init__.py,sha256=48l0cLyMDYR50L26ZJJWDYhGnsWPtRFyvKpb6arTQeQ,189
+pixivpy3/aapi.py,sha256=vbzpJRWVlePc6p0RgJJyDxJ1C24ASetoBTDNFigeZgk,14447
+pixivpy3/api.py,sha256=rX8nelFVRdfJR1emWptuyk7MiL0DUbuAoTCOSEQyH6I,4793
+pixivpy3/papi.py,sha256=az_hj3j4qFIBThgIE_GDtwboC2REhZb4cwudCoWsLXc,11737
+pixivpy3/utils.py,sha256=oAjyRj-TdKLuJnQ5kFnzRdlDb7MSUqVJSp-FCrFn6HQ,709
+PixivPy-3.3.6.dist-info/LICENSE,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+PixivPy-3.3.6.dist-info/METADATA,sha256=WtqmMK5heHRfxeB8RsyBLTvoH9OTZL1EzFSCrJwJyYI,612
+PixivPy-3.3.6.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+PixivPy-3.3.6.dist-info/top_level.txt,sha256=M0zvSBrhUS9dWHXb7WH7iMtGa3j-RoQo2WUlzOS2kP4,9
+PixivPy-3.3.6.dist-info/RECORD,,
