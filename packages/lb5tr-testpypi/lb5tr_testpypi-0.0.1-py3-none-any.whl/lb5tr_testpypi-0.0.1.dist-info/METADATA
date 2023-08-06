@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lb5tr-testpypi
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: lb5tr
+Author-email: lb5tr@lbtr.xyz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
