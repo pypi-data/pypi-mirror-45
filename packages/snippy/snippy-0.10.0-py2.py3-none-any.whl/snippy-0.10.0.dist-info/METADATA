@@ -1,0 +1,216 @@
+Metadata-Version: 2.1
+Name: snippy
+Version: 0.10.0
+Summary: Command, solution, reference and code snippet manager.
+Home-page: https://github.com/heilaaks/snippy
+Author: Heikki J. Laaksonen
+Author-email: laaksonen.heikki.j@gmail.com
+License: GNU Affero General Public License v3 or later
+Keywords: command solution snippet reference link snippet manager server console
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/x-rst
+Requires-Dist: pyyaml
+Provides-Extra: devel
+Requires-Dist: logging-tree (==1.8) ; extra == 'devel'
+Requires-Dist: openapi2jsonschema (==0.9.0) ; extra == 'devel'
+Requires-Dist: sphinxcontrib-openapi (==0.4.0) ; extra == 'devel'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'devel'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'devel'
+Requires-Dist: falcon (==1.4.1) ; extra == 'devel'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'devel'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'devel'
+Requires-Dist: psycopg2-binary (==2.8.2) ; extra == 'devel'
+Requires-Dist: docker (==3.7.2) ; extra == 'devel'
+Requires-Dist: flake8 (==3.7.7) ; extra == 'devel'
+Requires-Dist: mock (==2.0.0) ; extra == 'devel'
+Requires-Dist: pprintpp (==0.4.0) ; extra == 'devel'
+Requires-Dist: pyflakes (==2.1.1) ; extra == 'devel'
+Requires-Dist: pytest (==4.4.1) ; extra == 'devel'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'devel'
+Requires-Dist: pytest-mock (==1.10.4) ; extra == 'devel'
+Requires-Dist: pytest-xdist (==1.28.0) ; extra == 'devel'
+Requires-Dist: requests ; extra == 'devel'
+Requires-Dist: tox (==3.9.0) ; extra == 'devel'
+Requires-Dist: sphinx (==1.8.5) ; (python_version == "2.7.*") and extra == 'devel'
+Requires-Dist: pylint (==1.9.4) ; (python_version == "2.7.*") and extra == 'devel'
+Requires-Dist: sphinx (==2.0.1) ; (python_version > "2.7") and extra == 'devel'
+Requires-Dist: pylint (==2.3.1) ; (python_version > "2.7") and extra == 'devel'
+Provides-Extra: develpypy
+Requires-Dist: logging-tree (==1.8) ; extra == 'develpypy'
+Requires-Dist: openapi2jsonschema (==0.9.0) ; extra == 'develpypy'
+Requires-Dist: sphinxcontrib-openapi (==0.4.0) ; extra == 'develpypy'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'develpypy'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'develpypy'
+Requires-Dist: falcon (==1.4.1) ; extra == 'develpypy'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'develpypy'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'develpypy'
+Requires-Dist: psycopg2cffi (==2.8.1) ; extra == 'develpypy'
+Requires-Dist: docker (==3.7.2) ; extra == 'develpypy'
+Requires-Dist: flake8 (==3.7.7) ; extra == 'develpypy'
+Requires-Dist: mock (==2.0.0) ; extra == 'develpypy'
+Requires-Dist: pprintpp (==0.4.0) ; extra == 'develpypy'
+Requires-Dist: pyflakes (==2.1.1) ; extra == 'develpypy'
+Requires-Dist: pytest (==4.4.1) ; extra == 'develpypy'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'develpypy'
+Requires-Dist: pytest-mock (==1.10.4) ; extra == 'develpypy'
+Requires-Dist: pytest-xdist (==1.28.0) ; extra == 'develpypy'
+Requires-Dist: requests ; extra == 'develpypy'
+Requires-Dist: tox (==3.9.0) ; extra == 'develpypy'
+Requires-Dist: sphinx (==1.8.5) ; (python_version == "2.7.*") and extra == 'develpypy'
+Requires-Dist: pylint (==1.9.4) ; (python_version == "2.7.*") and extra == 'develpypy'
+Requires-Dist: sphinx (==2.0.1) ; (python_version > "2.7") and extra == 'develpypy'
+Requires-Dist: pylint (==2.3.1) ; (python_version > "2.7") and extra == 'develpypy'
+Provides-Extra: docker
+Requires-Dist: falcon (==1.4.1) ; extra == 'docker'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'docker'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'docker'
+Requires-Dist: psycopg2 (<=2.8.1,>=2.7.5) ; extra == 'docker'
+Provides-Extra: docs
+Requires-Dist: sphinxcontrib-openapi (==0.4.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'docs'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx (==1.8.5) ; (python_version == "2.7.*") and extra == 'docs'
+Requires-Dist: sphinx (==2.0.1) ; (python_version > "2.7") and extra == 'docs'
+Provides-Extra: server
+Requires-Dist: falcon (==1.4.1) ; extra == 'server'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'server'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'server'
+Requires-Dist: psycopg2-binary (==2.8.2) ; extra == 'server'
+Provides-Extra: serverpypy
+Requires-Dist: falcon (==1.4.1) ; extra == 'serverpypy'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'serverpypy'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'serverpypy'
+Requires-Dist: psycopg2cffi (==2.8.1) ; extra == 'serverpypy'
+Provides-Extra: test
+Requires-Dist: falcon (==1.4.1) ; extra == 'test'
+Requires-Dist: gunicorn (==19.9.0) ; extra == 'test'
+Requires-Dist: jsonschema (==3.0.1) ; extra == 'test'
+Requires-Dist: psycopg2-binary (==2.8.2) ; extra == 'test'
+Requires-Dist: docker (==3.7.2) ; extra == 'test'
+Requires-Dist: flake8 (==3.7.7) ; extra == 'test'
+Requires-Dist: logging-tree (==1.8) ; extra == 'test'
+Requires-Dist: mock (==2.0.0) ; extra == 'test'
+Requires-Dist: pprintpp (==0.4.0) ; extra == 'test'
+Requires-Dist: pyflakes (==2.1.1) ; extra == 'test'
+Requires-Dist: pytest (==4.4.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'test'
+Requires-Dist: pytest-mock (==1.10.4) ; extra == 'test'
+Requires-Dist: pytest-xdist (==1.28.0) ; extra == 'test'
+Requires-Dist: requests ; extra == 'test'
+Requires-Dist: tox (==3.9.0) ; extra == 'test'
+Requires-Dist: pylint (==1.9.4) ; (python_version == "2.7.*") and extra == 'test'
+Requires-Dist: pylint (==2.3.1) ; (python_version > "2.7") and extra == 'test'
+
+|badge-pypiv| |badge-pys| |badge-pyv| |badge-cov| |badge-docs| |badge-build| |badge-docker|
+
+Snippy
+======
+
+  I can't remember how - I just remember what.
+
+Snippy is a software development and maintenance notes manager. It allows
+organizing and sharing examples and solutions from self hosted or shared
+storage through command line interface or via REST API server. Snippy may
+be able to help you when working with different open source components that
+all have different commands, settings and issues.
+
+Features
+========
+
+Main features include:
+
+- Linux command line tool or a `REST API server`_.
+- Manage notes in three categories.
+- Supports Markdown, YAML, JSON and text formats.
+- Organize notes with metadata like groups and links.
+
+Installation
+============
+
+To install as a tool, run:
+
+.. code:: text
+
+    pip install snippy --user
+
+To install as a server, run:
+
+.. code:: text
+
+    docker pull docker.io/heilaaks/snippy
+
+Usage
+=====
+
+.. image:: https://asciinema.org/a/pRd8Cf6WUGb1ioB7TPFdTq8Fb.png
+    :target: https://asciinema.org/a/pRd8Cf6WUGb1ioB7TPFdTq8Fb
+    :alt: Snippy in action!
+
+Contributing
+============
+
+Author is happy to receive bug reports and feature requests.
+
+Development
+===========
+
+See the `development`_ chapter from the documentation.
+
+Related work
+============
+
+- `tldr <https://github.com/tldr-pages/tldr>`_
+- `cheat <https://github.com/cheat/cheat>`_
+- `Buku <https://github.com/jarun/Buku>`_
+- `CRUD in 2 minutes <https://www.youtube.com/watch?v=kMs-Tltf_Og>`_
+
+
+.. |badge-pypiv| image:: https://img.shields.io/pypi/v/snippy.svg
+   :target: https://pypi.python.org/pypi/snippy
+
+.. |badge-pys| image:: https://img.shields.io/pypi/status/snippy.svg
+   :target: https://pypi.python.org/pypi/snippy
+
+.. |badge-pyv| image:: https://img.shields.io/pypi/pyversions/snippy.svg
+   :target: https://pypi.python.org/pypi/snippy
+
+.. |badge-cov| image:: https://codecov.io/gh/heilaaks/snippy/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/heilaaks/snippy
+
+.. |badge-docs| image:: https://readthedocs.org/projects/snippy/badge/?version=latest
+   :target: http://snippy.readthedocs.io/en/latest/?badge=latest
+
+.. |badge-build| image:: https://travis-ci.org/heilaaks/snippy.svg?branch=master
+   :target: https://travis-ci.org/heilaaks/snippy
+
+.. |badge-pyup| image:: https://pyup.io/repos/github/heilaaks/snippy/shield.svg
+   :target: https://pyup.io/repos/github/heilaaks/snippy/
+
+.. |badge-docker| image:: https://images.microbadger.com/badges/image/heilaaks/snippy.svg
+   :target: https://hub.docker.com/r/heilaaks/snippy
+
+.. _REST API server: https://app.swaggerhub.com/apis/heilaaks/snippy/0.10.0
+
+.. _development: https://snippy.readthedocs.io/en/latest/development.html
+
+

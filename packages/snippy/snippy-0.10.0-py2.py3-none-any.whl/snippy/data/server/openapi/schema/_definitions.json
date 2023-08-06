@@ -1,0 +1,456 @@
+{
+  "definitions": {
+    "attributeCategory": {
+      "type": "string",
+      "enum": [
+        "snippet",
+        "solution",
+        "reference"
+      ],
+      "description": "# Brief\n\nAutomatically assigned resource category.\n"
+    },
+    "attributeData": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "# Brief\n\nResource data attribute.\n"
+    },
+    "attributeBrief": {
+      "type": "string",
+      "default": "",
+      "description": "# Brief\n\nOptional brief description of the resource.\n"
+    },
+    "attributeDescription": {
+      "type": "string",
+      "default": "",
+      "description": "# Brief\n\nOptional long description of the resource.\n"
+    },
+    "attributeName": {
+      "type": "string",
+      "default": "",
+      "description": "# Brief\n\nOptional name for the resource.\n"
+    },
+    "attributeGroups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "default"
+      ],
+      "description": "# Brief\n\nOptional list of groups to which the resource belongs.\n"
+    },
+    "attributeTags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "# Brief\n\nOptional list of tags.\n"
+    },
+    "attributeLinks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "# Brief\n\nOptional list of links.\n"
+    },
+    "attributeSource": {
+      "type": "string",
+      "default": "",
+      "description": "# Brief\n\nOptional external source for the resource.\"\n"
+    },
+    "attributeVersions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "# Brief\n\nOptional list of services and versions related to the resource.\n"
+    },
+    "attributeFilename": {
+      "type": "string",
+      "default": "",
+      "description": "# Brief\n\nOptional filename. This attribute can be used for example to export the resource into file\nwhich name is defined by this attribute-\n"
+    },
+    "attributeCreated": {
+      "type": "string",
+      "description": "# Brief\n\nAutomatically generated UTC timestamp when the resource is created. The time is defined with\nRFC 3339 profile of the ISO 8601 specification.\n"
+    },
+    "attributeUpdated": {
+      "type": "string",
+      "description": "# Brief\n\nAutomatically generated UTC timestamp for the latest update. The time is defined with RFC 3339\nprofile of the ISO 8601 specification.\n"
+    },
+    "attributeUuid": {
+      "type": "string",
+      "description": "# Brief\n\nAutomatically assigned UUID for the resource.\n"
+    },
+    "attributeDigest": {
+      "type": "string",
+      "description": "# Brief\n\nAutomatically assigned message digest that uniquely identifies the resource.\n"
+    },
+    "requestAttributes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/attributeData"
+        },
+        "brief": {
+          "$ref": "#/definitions/attributeBrief"
+        },
+        "description": {
+          "$ref": "#/definitions/attributeDescription"
+        },
+        "name": {
+          "$ref": "#/definitions/attributeName"
+        },
+        "groups": {
+          "$ref": "#/definitions/attributeGroups"
+        },
+        "tags": {
+          "$ref": "#/definitions/attributeTags"
+        },
+        "links": {
+          "$ref": "#/definitions/attributeLinks"
+        },
+        "source": {
+          "$ref": "#/definitions/attributeSource"
+        },
+        "versions": {
+          "$ref": "#/definitions/attributeVersions"
+        },
+        "filename": {
+          "$ref": "#/definitions/attributeFilename"
+        }
+      },
+      "description": "# Brief\n\nResource `data` attributes for all API endoints HTTP requests.\n\nDifferent resource categories require different attributes. Creating and updating resources have\ndifferent mandatory resource attribute requirements. For example `snippets` require `data` but\n`references` require `links` attribute. PATCH and PUT can be send without `data` attribute for\n`snippets`.\n\nBecause of these reasons, JSON schema definition does not define the required properties.\n"
+    },
+    "responseAttributes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "$ref": "#/definitions/attributeCategory"
+        },
+        "data": {
+          "$ref": "#/definitions/attributeData"
+        },
+        "brief": {
+          "$ref": "#/definitions/attributeBrief"
+        },
+        "description": {
+          "$ref": "#/definitions/attributeDescription"
+        },
+        "name": {
+          "$ref": "#/definitions/attributeName"
+        },
+        "groups": {
+          "$ref": "#/definitions/attributeGroups"
+        },
+        "tags": {
+          "$ref": "#/definitions/attributeTags"
+        },
+        "links": {
+          "$ref": "#/definitions/attributeLinks"
+        },
+        "source": {
+          "$ref": "#/definitions/attributeSource"
+        },
+        "versions": {
+          "$ref": "#/definitions/attributeVersions"
+        },
+        "filename": {
+          "$ref": "#/definitions/attributeFilename"
+        },
+        "created": {
+          "$ref": "#/definitions/attributeCreated"
+        },
+        "updated": {
+          "$ref": "#/definitions/attributeUpdated"
+        },
+        "uuid": {
+          "$ref": "#/definitions/attributeUuid"
+        },
+        "digest": {
+          "$ref": "#/definitions/attributeDigest"
+        }
+      },
+      "description": "# Brief\n\nResource `data` attributes for all API endoints HTTP responses.\n\nDifferent resource categories require different attributes. Creating and updating resources have\ndifferent mandatory resource attribute requirements. For example `snippets` require `data` but\n`references` require `links` attribute. PATCH and PUT can be send without `data` attribute for\n`snippets`.\n\nBecause of these reasons, JSON schema definition does not define the required properties.\n"
+    },
+    "requestData": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "snippet",
+            "solution",
+            "reference"
+          ]
+        },
+        "attributes": {
+          "$ref": "#/definitions/requestAttributes"
+        }
+      },
+      "required": [
+        "type",
+        "attributes"
+      ]
+    },
+    "requestResource": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/requestData"
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "requestCollection": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/requestData"
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "responseData": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "snippet",
+            "solution",
+            "reference"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "attributes": {
+          "$ref": "#/definitions/responseAttributes"
+        }
+      },
+      "required": [
+        "type",
+        "attributes"
+      ]
+    },
+    "responseResource": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/responseData"
+        },
+        "link": {
+          "$ref": "#/definitions/resourceLink"
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "responseCollectionPost": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/responseData"
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "responseCollectionGet": {
+      "type": "object",
+      "properties": {
+        "meta": {
+          "$ref": "#/definitions/metaResponse"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/responseData"
+          }
+        },
+        "links": {
+          "$ref": "#/definitions/paginationLinks"
+        }
+      },
+      "required": [
+        "meta",
+        "data"
+      ]
+    },
+    "responseErrors": {
+      "type": "object",
+      "properties": {
+        "meta": {
+          "$ref": "#/definitions/metaInfo"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/error"
+          }
+        }
+      },
+      "required": [
+        "meta",
+        "errors"
+      ]
+    },
+    "responseHello": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "meta": {
+          "$ref": "#/definitions/metaInfo"
+        }
+      },
+      "required": [
+        "meta"
+      ]
+    },
+    "resourceLink": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "description": "Link pointing to resource."
+        }
+      }
+    },
+    "paginationLinks": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "uri",
+          "description": "Pagination link to this page."
+        },
+        "first": {
+          "type": "string",
+          "format": "uri",
+          "description": "Pagination link to first page."
+        },
+        "next": {
+          "type": "string",
+          "format": "uri",
+          "description": "Pagination link to next page."
+        },
+        "prev": {
+          "type": "string",
+          "format": "uri",
+          "description": "Pagination link to previous page."
+        },
+        "last": {
+          "type": "string",
+          "format": "uri",
+          "description": "Pagination link to last page."
+        }
+      },
+      "required": [
+        "self",
+        "first",
+        "last"
+      ]
+    },
+    "metaResponse": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "string",
+          "description": "Number of resources in the data object."
+        },
+        "limit": {
+          "type": "string",
+          "description": "The search limit used in request."
+        },
+        "offset": {
+          "type": "string",
+          "description": "The search offset used in request."
+        },
+        "total": {
+          "type": "string",
+          "description": "Total number of search results without limit being applied."
+        }
+      },
+      "required": [
+        "count",
+        "limit",
+        "offset",
+        "total"
+      ]
+    },
+    "metaInfo": {
+      "type": "object",
+      "properties": {
+        "docs": {
+          "type": "string",
+          "description": "Location of the public documentation."
+        },
+        "homepage": {
+          "type": "string",
+          "description": "Server homepage."
+        },
+        "openapi": {
+          "type": "string",
+          "description": "OpenAPI specification."
+        },
+        "version": {
+          "type": "string",
+          "description": "Server version."
+        }
+      },
+      "required": [
+        "docs",
+        "homepage",
+        "openapi",
+        "version"
+      ]
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "HTTP status code."
+        },
+        "statusString": {
+          "type": "string",
+          "description": "HTTP status as text string."
+        },
+        "module": {
+          "type": "string",
+          "description": "Location of error."
+        },
+        "title": {
+          "type": "string",
+          "description": "Message describing the error."
+        }
+      },
+      "required": [
+        "status",
+        "statusString",
+        "module",
+        "title"
+      ]
+    }
+  }
+}
