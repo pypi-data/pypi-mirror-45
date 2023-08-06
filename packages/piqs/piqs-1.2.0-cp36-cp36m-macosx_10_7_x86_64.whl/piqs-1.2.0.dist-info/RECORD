@@ -1,0 +1,14 @@
+piqs/__init__.py,sha256=9fQghqgh8-PDWZurjywcSB6Ct8xnx2GV_cUdRmryDak,137
+piqs/about.py,sha256=tIeXb6C1FL8jBqxhqTAyxtg1R2VOu8xMvkApAx70_4c,1720
+piqs/cite.py,sha256=WW8VJhf2eShwriKVH__7xhtgULHLZuvCFXe78HHCGc4,1290
+piqs/dicke.py,sha256=AH-KnbMq6c5ZUnO8XJbRe0Sa_h913nctF4M1hN9E7YE,49175
+piqs/cy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+piqs/cy/dicke.cpp,sha256=Z24ls9cOrRM4BOFEbpMGR4sHZ5AgT7ujk4Sbdw42hIw,715448
+piqs/cy/dicke.cpython-36m-darwin.so,sha256=yZiFYpBXub0VUFFmwXHajqfAeFxpoPIE0ZQcfq1g7Js,196692
+piqs/cy/dicke.pyx,sha256=xFVspkg4p-urXLIHnABLHqnU8POaLr0LSJ81QroyIEo,17276
+piqs/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+piqs/tests/test_dicke.py,sha256=zhDIabflzd5wcfOwYLzYy1S-ISgGkbhlTF_xxbe9j9c,46016
+piqs-1.2.0.dist-info/METADATA,sha256=034_Zx885fWu_7RhhOWmI92v4cqfsFYTv8tx0rTmWeY,1178
+piqs-1.2.0.dist-info/RECORD,,
+piqs-1.2.0.dist-info/WHEEL,sha256=eXhezAGFSydxXsP-w3mB3uCqyg1QWS2cPWJdPcd3KUY,110
+piqs-1.2.0.dist-info/top_level.txt,sha256=_J9VMzmjD0-uEhi2ZhUrVJzy67fp17fAjZI0uUElR-k,24
