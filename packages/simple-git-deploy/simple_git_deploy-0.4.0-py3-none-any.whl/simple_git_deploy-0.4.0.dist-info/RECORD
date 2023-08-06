@@ -1,0 +1,17 @@
+simple_git_deploy/__init__.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+simple_git_deploy/cli.py,sha256=Yxwp2asxWAL2gtbpKMXMwwIHxN_jDMjf94qNibW0bvk,1309
+simple_git_deploy/cmd_build.py,sha256=Wd63MVsIMKv0zOSjmksQwZLCSurQXvaZa-uaLuhwwpc,874
+simple_git_deploy/cmd_deploy.py,sha256=TAxKNXaEFLk8H7L-mHM4fVOwQdx5_njj_lKbcnAiZIM,916
+simple_git_deploy/cmd_list.py,sha256=-8yDfJcss1LPPzYrpKwOXHnfjlU_n_f70uEIdS03Kvk,497
+simple_git_deploy/cmd_purge.py,sha256=GT-FUxtO2IKpTSQorkRhIzS9TOLWqYY7I5sAbo0UAPo,2591
+simple_git_deploy/cmd_select.py,sha256=xOmcUqEWqjRsnRudxsqyi_Lntc5j5YEgm4C3Hiddw1Q,1085
+simple_git_deploy/core.py,sha256=9_gmykAITB9LZiGySsiqeNTSWnSWQzq1AziNNpWDWqs,6794
+simple_git_deploy/output.py,sha256=O7fsgjyLT17OQ9M7cKnlJN1Mb_bySdHu7UfBuBrtejg,528
+simple_git_deploy/purge.py,sha256=sH1wxzKWPtqAZlAm18vA8JMNJfJj45cvNaW6yZ86Di4,2962
+simple_git_deploy/term_color.py,sha256=UVHxVGRoH9BD1dSN_44qo3AGeBv1z0QUM4ms-_jsrlc,1116
+simple_git_deploy-0.4.0.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_git_deploy-0.4.0.dist-info/METADATA,sha256=XZmxfdxDxsnr6MyenM00xctXLzd93m50n2N6NKvB-iM,5108
+simple_git_deploy-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+simple_git_deploy-0.4.0.dist-info/entry_points.txt,sha256=8B7wyQdi5XUY5_3bHwifUhTgCerpf0M489qVJQ7pUHs,66
+simple_git_deploy-0.4.0.dist-info/top_level.txt,sha256=M3FjZmQ1n4CEVlnKtAFPabr-uKAQNuvQDX9xgQB2Fik,18
+simple_git_deploy-0.4.0.dist-info/RECORD,,
