@@ -1,0 +1,3 @@
+[gui_scripts]
+csv2opd = csv2opd.main:main
+
