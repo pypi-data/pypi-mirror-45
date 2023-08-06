@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: epsie
+Version: 0.2
+Summary: An Embarrassingly Parallel Sampler for Inference Estimation.
+Home-page: https://github.com/cdcapano/epsie
+Author: Collin D. Capano
+Author-email: cdcapano@gmail.com
+License: UNKNOWN
+Description: # EPSIE
+        EPSIE: an Embarrassingly Parallel Sampler for Inference Estimation
+        
+        Quick installation:
+        
+        ```
+        pip install epsie
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
