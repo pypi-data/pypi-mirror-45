@@ -1,0 +1,9 @@
+ortools_linearization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ortools_linearization/linearization.py,sha256=WGUjFT7Bwozo-t8D0z7z4J0nVMjdL220_h8Km0KdGuM,3599
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_linearization.py,sha256=91B1Ocr-3gHsrBPnRgAQtC9wN4PxfjnlI-bAZyK2qec,3692
+or_tools_linearization-0.1.1.dist-info/LICENSE,sha256=YsPEs2E5gXUYh4AYyzot1Kggm9CLZs6JFp7NhuTAdDY,11341
+or_tools_linearization-0.1.1.dist-info/METADATA,sha256=Xe142kWnr_sYsomynGGmKqebnCsPJ5DT-J4af1mlWgc,609
+or_tools_linearization-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+or_tools_linearization-0.1.1.dist-info/top_level.txt,sha256=dtXsWopKyMNGblVn2ti2UxvAECr1uEB5sSx2uJQ0bB8,22
+or_tools_linearization-0.1.1.dist-info/RECORD,,

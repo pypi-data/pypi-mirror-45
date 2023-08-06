@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: or-tools-linearization
+Version: 0.1.1
+Summary: This package allows you to linearize non-linear functions and make use of them with or-tools in constraints or the objective function
+Home-page: https://github.com/Usiel/or-tools-linearization
+Author: Usiel Riedl
+Author-email: usiel.riedl@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# or-tools-linearization
+This package allows you to linearize non-linear functions and make use of them with or-tools in constraints or the objective function
+
+
