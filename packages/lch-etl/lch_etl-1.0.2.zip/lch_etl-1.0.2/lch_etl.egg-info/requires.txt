@@ -1,0 +1,6 @@
+mysqlclient
+sqlalchemy
+pandas
+psycopg2
+pymssql
+cx_Oracle
