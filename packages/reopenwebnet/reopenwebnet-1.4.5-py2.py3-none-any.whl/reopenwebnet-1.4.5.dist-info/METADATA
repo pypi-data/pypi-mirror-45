@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: reopenwebnet
+Version: 1.4.5
+Summary: An OpenWebNet client
+Home-page: https://pyscaffold.org/
+Author: karel1980
+Author-email: karel@vervaeke.info
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Requires-Dist: pytest; extra == 'testing'
+Requires-Dist: pytest-cov; extra == 'testing'
+
+# ReOpenWebNet
+
+ReOpenWebNet is a client library for communicating with an OpenWebNet server over tcp.
+
+OpenWebNet is a communication protocol developed by Bticino, to enable communication between devices of its home automation product suite 'MyHome'
+For more information about OpenWebNet, see https://www.myopen-legrandgroup.com/developers/
+
+ReOpenWebNet provides a synchronous client for so-called command sessions and an asynchronous client for event sessions.
+
+This is a fork from https://github.com/pippocla/openwebnet
+
+## Example usage:
+
+### CommandClient
+
+The CommandClient connects to the gateway and establishes a comand session.
+The CommandClient works synchronously.
+
+```
+from reopenwebnet.client import CommandClient
+
+host, port, password = 'localhost', 20000, '123456'
+
+client = CommandClient(host, port, password)
+
+# Turns on the light with id '10'
+client.normal_request('1', '10', '1')
+
+# Prints the status of the light with id '11'
+print(client.request_state('1', '11'))
+```
+
+### EventClient
+
+The EventClient connects to the gateway and establishes an event session.
+The EventClient works asynchronously.
+
+See `examples/eventclient.py` for an example
+
+## Testing
+
+To run the test suite:
+
+    python setup.py test
+
+## Releasing
+
+    git tag x.y.z
+    python setup.py build
+    twine upload dist/reopenwebnet-x.y.z-py2.py3-none-any.whl
+
+
