@@ -1,0 +1,3 @@
+[flake8.extension]
+DTZ = flake8_datetimez:DateTimeZChecker
+
