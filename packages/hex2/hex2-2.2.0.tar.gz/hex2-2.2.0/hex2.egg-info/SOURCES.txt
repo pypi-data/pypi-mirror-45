@@ -1,0 +1,7 @@
+hex.py
+setup.py
+hex2.egg-info/PKG-INFO
+hex2.egg-info/SOURCES.txt
+hex2.egg-info/dependency_links.txt
+hex2.egg-info/entry_points.txt
+hex2.egg-info/top_level.txt
