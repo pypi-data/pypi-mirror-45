@@ -1,0 +1,7 @@
+setup.py
+logging_transport_json/__init__.py
+logging_transport_json.egg-info/PKG-INFO
+logging_transport_json.egg-info/SOURCES.txt
+logging_transport_json.egg-info/dependency_links.txt
+logging_transport_json.egg-info/not-zip-safe
+logging_transport_json.egg-info/top_level.txt

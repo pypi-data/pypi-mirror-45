@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: logging-transport-json
+Version: 0.1
+Summary: Logging to tcp and udp in json format
+Home-page: https://github.com/qvviko/logging_transport_json
+Author: Vladislav Savchuk
+Author-email: qvviko@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
