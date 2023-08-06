@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: biasMetrics
+Version: 0.2
+Summary: AUC ROC based classification metrics to determine bias in underrepresented subpopulations.
+Home-page: https://github.com/bcwalraven
+Author: Brandon Walraven
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/bcwalraven/biasMetrics/archive/v0.01.tar.gz
+Description: UNKNOWN
+Keywords: AUC,Classification,Metrics
+Platform: UNKNOWN
