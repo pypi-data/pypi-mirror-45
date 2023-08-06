@@ -1,0 +1,13 @@
+dndbuddy_basic/__init__.py,sha256=ZLxuqhJlgd5Sb_ICkaVvLj471U0Qo90lO74fHONAkVM,648
+dndbuddy_basic/alignments.py,sha256=Ty5XU55SuR8X69bqruU3GJZkB97ubGpt2TZmd8es8Mc,2349
+dndbuddy_basic/armor.py,sha256=So5SXm6XXMcWth4nE7PVR5eREq7Dm6Wn-b-aznAlgLA,1392
+dndbuddy_basic/combat.py,sha256=bjF0YqJWWF2ZKL8fjwDO8SG59SHJIWenu9WM3dEJOmc,451
+dndbuddy_basic/createcharacter.py,sha256=pK-3g0Ow2bAW00y51erx4858xE6MNYkIklqQrXtwqHg,386
+dndbuddy_basic/hitdice.py,sha256=jdp1W1WQuzvVpVZLMqVovETgwkDO87K3albRoZH0wK4,666
+dndbuddy_basic/magic.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dndbuddy_basic/rolldice.py,sha256=ui36al9dnyUwmIpckQK5TUIPjFX7zzShKpxLwEkayWY,1883
+dndbuddy_basic/weapons.py,sha256=XQ7MEAG1L_yuGuTCAiV971HsHgY6Hec9qhueFJBMnK4,3831
+dndbuddy_basic-0.0.1.dist-info/METADATA,sha256=4G_mf1P5VnwBjHV5p7-a84OJGAPkCvi-bWeSCehRu-s,395
+dndbuddy_basic-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dndbuddy_basic-0.0.1.dist-info/top_level.txt,sha256=7SmlN9PL7N2MZUmvrxmrapfdTRnmgvg67wV4WoG82os,15
+dndbuddy_basic-0.0.1.dist-info/RECORD,,

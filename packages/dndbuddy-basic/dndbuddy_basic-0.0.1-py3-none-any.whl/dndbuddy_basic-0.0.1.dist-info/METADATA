@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dndbuddy-basic
+Version: 0.0.1
+Summary: The Basic (fair use) module for DnDBuddy
+Home-page: https://github.com/MattCCS/DnDBuddy-Basic
+Author: Matt Cotton
+Author-email: matthewcotton.cs@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dndbuddy-core
+
+# DnDBuddy-Basic
+The Basic (fair use) module for DnDBuddy
+
+
