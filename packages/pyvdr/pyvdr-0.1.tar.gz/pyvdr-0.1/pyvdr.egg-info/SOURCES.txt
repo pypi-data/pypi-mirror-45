@@ -1,0 +1,8 @@
+setup.py
+pyvdr/__init__.py
+pyvdr/pyvdr.py
+pyvdr.egg-info/PKG-INFO
+pyvdr.egg-info/SOURCES.txt
+pyvdr.egg-info/dependency_links.txt
+pyvdr.egg-info/not-zip-safe
+pyvdr.egg-info/top_level.txt
