@@ -1,0 +1,6 @@
+recursive-include . *.py
+recursive-exclude . .DS_Store
+include Docs/SRPAstro.pdf
+include ez_setup.py
+recursive-include SRP/SRPData/ *
+include SRP/SRPCalFlux.data
