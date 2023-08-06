@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: spkcspider
+Version: 0.1
+Summary: Safe online identity
+Home-page: https://spkcspider.net
+Author: Alexander Kaftan
+Author-email: None
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: captcha
+Provides-Extra: celery
+Provides-Extra: fcgi
+Provides-Extra: mysql
+Provides-Extra: pgsql
+Requires-Dist: bleach
+Requires-Dist: certifi
+Requires-Dist: cryptography
+Requires-Dist: django (>=2.2)
+Requires-Dist: django-next-prev
+Requires-Dist: django-ranged-response
+Requires-Dist: django-ratelimit
+Requires-Dist: django-simple-jsonfield (>=0.3)
+Requires-Dist: django-widget-tweaks
+Requires-Dist: html5lib
+Requires-Dist: lru-dict
+Requires-Dist: rdflib
+Requires-Dist: requests
+Project-URL: Repository, https://https://github.com/spkcspider/spkcspider
