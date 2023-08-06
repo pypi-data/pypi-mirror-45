@@ -1,0 +1,8 @@
+setup.py
+easysql2pd/__init__.py
+easysql2pd/esqlk.py
+easysql2pd.egg-info/PKG-INFO
+easysql2pd.egg-info/SOURCES.txt
+easysql2pd.egg-info/dependency_links.txt
+easysql2pd.egg-info/requires.txt
+easysql2pd.egg-info/top_level.txt
