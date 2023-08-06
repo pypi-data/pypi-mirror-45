@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: mqttools
+Version: 0.1.0
+Summary: MQTT tools.
+Home-page: https://github.com/eerimoq/mqttools
+Author: Erik Moqvist
+Author-email: erik.moqvist@gmail.com
+License: MIT
+Description: |buildstatus|_
+        |coverage|_
+        
+        MQTT Tools
+        ==========
+        
+        Features:
+        
+        - ``asyncio`` MQTT client.
+        
+        .. |buildstatus| image:: https://travis-ci.org/eerimoq/mqttools.svg?branch=master
+        .. _buildstatus: https://travis-ci.org/eerimoq/mqttools
+        
+        .. |coverage| image:: https://coveralls.io/repos/github/eerimoq/mqttools/badge.svg?branch=master
+        .. _coverage: https://coveralls.io/github/eerimoq/mqttools
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
