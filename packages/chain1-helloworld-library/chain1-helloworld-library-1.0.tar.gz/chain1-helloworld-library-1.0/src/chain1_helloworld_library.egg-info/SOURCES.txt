@@ -1,0 +1,9 @@
+MANIFEST.in
+README.txt
+setup.py
+src/HelloWorld/HelloWorldKeywords.py
+src/HelloWorld/__init__.py
+src/chain1_helloworld_library.egg-info/PKG-INFO
+src/chain1_helloworld_library.egg-info/SOURCES.txt
+src/chain1_helloworld_library.egg-info/dependency_links.txt
+src/chain1_helloworld_library.egg-info/top_level.txt
