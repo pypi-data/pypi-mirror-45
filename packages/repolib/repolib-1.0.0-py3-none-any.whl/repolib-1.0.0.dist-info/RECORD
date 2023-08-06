@@ -1,0 +1,13 @@
+repolib/__init__.py,sha256=7LgQhjYLg2kqC8RGgV8PP8iJ-qlVOECTaaO2Rusqtj0,1560
+repolib/__version__.py,sha256=iUDeEVKKGr5GFb1R5EVSplWrz4vV57TSb9Ksjc7skCM,1349
+repolib/deb.py,sha256=O4NIF2qWtJAXu_PaEja0kO8dY1JA9pv6TX7PeO352AE,4823
+repolib/ppa.py,sha256=gQOMnj7xWHtqrD9uE6Crj-ApfqCoYL05QICMqAjPDf8,5001
+repolib/source.py,sha256=73iNgOPb7SXDnIwpCz0BqLWCqZpuhzklXj9HZZKljuQ,6908
+repolib/util.py,sha256=ZXXcSTKyJurFR71bgMJu6DbFM0Vp_ChTYbKifaQYkvg,2380
+repolib-1.0.0.data/data/share/bash-completion/completions/apt-manage,sha256=ONS2ecSZVmAAyh6s5WV7pYahIxNPe2AAVAoVpT779rA,2212
+repolib-1.0.0.data/scripts/apt-manage,sha256=hOojFiogaMtcOkH3lfrn7ma5WEc7sUgPaIo1OIaIZcQ,15823
+repolib-1.0.0.dist-info/LICENSE,sha256=oYuoCC4QAVSK7WXRjCMEUgJSfH3CELH1wG7MZVpKIHM,1325
+repolib-1.0.0.dist-info/METADATA,sha256=n10IzgTRsEjMFTnl6Z3gW9gcYfcfbLUIWb0FRZvK7SE,2714
+repolib-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+repolib-1.0.0.dist-info/top_level.txt,sha256=ELOnf3eZP4zbR6_i8E-RKm-V2SYN7ZA3PepJUjob074,8
+repolib-1.0.0.dist-info/RECORD,,
