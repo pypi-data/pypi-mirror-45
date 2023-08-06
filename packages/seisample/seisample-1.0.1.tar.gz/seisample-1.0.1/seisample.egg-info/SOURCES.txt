@@ -1,0 +1,13 @@
+README.rst
+setup.py
+python_segy/download_data.py
+python_segy/gain.py
+python_segy/get_patch.py
+python_segy/main_test_denoise.py
+python_segy/main_test_inter.py
+python_segy/main_train_denoise.py
+python_segy/main_train_inter.py
+seisample.egg-info/PKG-INFO
+seisample.egg-info/SOURCES.txt
+seisample.egg-info/dependency_links.txt
+seisample.egg-info/top_level.txt
