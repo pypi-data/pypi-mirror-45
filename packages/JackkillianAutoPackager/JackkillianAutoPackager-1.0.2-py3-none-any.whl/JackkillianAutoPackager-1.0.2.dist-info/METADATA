@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: JackkillianAutoPackager
+Version: 1.0.2
+Summary: Upload projects to pip with ease!
+Home-page: https://github.com/Jackkillian/Jackkillian-Auto-Packager
+Author: jackkillian
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable 
+Classifier: License :: OSI Approved :: MIT License 
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# JackkillianAutoPackager
+### Make Pip packages with ease!
+
+[On Github](https://github.com/Jackkillian/Jackkillian-Auto-Packager)  
+Install with pip: ```pip install JackkillianAutoPackager```  
+To run:  
+```import AutoPackager```  
+```AutoPackager.main()```  
+[Wiki/Documentation](https://github.com/Jackkillian/Jackkillian-Auto-Packager)  
+Thanks for using!
+
