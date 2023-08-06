@@ -1,0 +1,16 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_db_conn_pool/__init__.py
+django_db_conn_pool.egg-info/PKG-INFO
+django_db_conn_pool.egg-info/SOURCES.txt
+django_db_conn_pool.egg-info/dependency_links.txt
+django_db_conn_pool.egg-info/not-zip-safe
+django_db_conn_pool.egg-info/requires.txt
+django_db_conn_pool.egg-info/top_level.txt
+django_db_conn_pool/mysqlalchemy/__init__.py
+django_db_conn_pool/mysqlalchemy/base.py
+django_db_conn_pool/mysqlalchemy/conf.py
+django_db_conn_pool/mysqlalchemy/pool.py
