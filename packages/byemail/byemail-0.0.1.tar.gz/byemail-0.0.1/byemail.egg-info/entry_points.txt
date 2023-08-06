@@ -1,0 +1,3 @@
+[console_scripts]
+byemail = byemail.commands:run.start
+

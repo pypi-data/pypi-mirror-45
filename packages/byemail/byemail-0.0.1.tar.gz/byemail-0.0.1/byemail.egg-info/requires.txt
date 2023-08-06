@@ -1,0 +1,12 @@
+begins
+python-magic
+aiosmtpd
+arrow
+ujson
+aiodns
+sanic
+sanic-auth
+tortoise-orm
+py-vapid
+pywebpush
+uvloop
