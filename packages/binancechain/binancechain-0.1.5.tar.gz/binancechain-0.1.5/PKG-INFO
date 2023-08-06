@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: binancechain
+Version: 0.1.5
+Summary: Unofficial Binance Chain SDK
+Home-page: https://github.com/lmacken/binance-chain-python
+Author: Luke Macken & Kim Bui
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
