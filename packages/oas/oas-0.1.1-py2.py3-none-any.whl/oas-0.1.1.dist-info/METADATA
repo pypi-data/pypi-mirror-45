@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: oas
+Version: 0.1.1
+Summary: Yet another OpenAPI 3 library
+Home-page: https://github.com/grktsh/python-oas
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: jsonref (~=0.2)
+Requires-Dist: jsonschema (<4,>=2.6)
+Requires-Dist: six (~=1.11)
+Requires-Dist: functools32 (~=3.2) ; python_version == "2.7"
+Provides-Extra: format
+Requires-Dist: pyrfc3339 (~=1.1) ; extra == 'format'
+Requires-Dist: rfc3986 (~=1.1) ; extra == 'format'
+Provides-Extra: test
+Requires-Dist: pytest (~=4.4) ; extra == 'test'
+Requires-Dist: pytest-cov (~=2.6) ; extra == 'test'
+Requires-Dist: pytest-mock (~=1.10) ; extra == 'test'
+Requires-Dist: pytest-xdist (~=1.28) ; extra == 'test'
+Requires-Dist: pyyaml (~=5.1) ; extra == 'test'
+
+python-oas
+==========
+
+.. image:: https://img.shields.io/pypi/v/oas.svg
+   :alt: PyPI
+   :target: https://pypi.org/project/oas
+
+.. image:: https://img.shields.io/travis/grktsh/python-oas/master.svg
+   :alt: Travis
+   :target: https://travis-ci.org/grktsh/python-oas
+
+.. image:: https://img.shields.io/codecov/c/github/grktsh/python-oas/master.svg
+   :alt: Codecov
+   :target: https://codecov.io/gh/grktsh/python-oas
+
+Prerequisites
+-------------
+
+- Validated OpenAPI 3 document
+
+  - python-oas does not validate OpenAPI 3 document itself at runtime.  It should be validated in advance.
+
+
