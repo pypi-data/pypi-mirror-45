@@ -1,0 +1,13 @@
+docdetect/__init__.py,sha256=Zknr0ekn5LzdEMusU-zbow3KkUPVJSmVcdAzQVJUzlM,282
+docdetect/canny_edges.py,sha256=4nOKXwq2ZumjTxA4ghIpKp6ryund2S20vUmpffC-XVs,991
+docdetect/hough_lines.py,sha256=ZAbIpCtZHzlDF3fBSytUCNARqXfYI3YozafOQwtdTGY,944
+docdetect/intersections.py,sha256=JzUgNf9yg5tOjXb4itWsw84N1-6z-Ve5DbwP4kIbK9g,1583
+docdetect/line_utils.py,sha256=YtiqNTS-pd8iSvxx_-hM052TrIOtYKQk7XPugWfby9w,201
+docdetect/processor.py,sha256=klHaRycr5A62Sac6XBJ36ojUflZh3V6My9aPSn9O_Lg,868
+docdetect/quadrilaterals.py,sha256=4BrpyrcD_QmEdxP__HkTIcqNUHmJn3ggjVV0uQcaOJU,1431
+docdetect1-1.0.0.dist-info/LICENSE,sha256=9S_nAg2SQsEOQBIn39X1DiQnJYlozzCwvNqG7dFbKYQ,1088
+docdetect1-1.0.0.dist-info/METADATA,sha256=yo8HVuMcj2ZXcFC8yEykSRBE7mV_Sqrg5o5cw2vrwBs,2754
+docdetect1-1.0.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+docdetect1-1.0.0.dist-info/top_level.txt,sha256=SigIH1U3KtNfdsL5toUO_FLQWDZ9GfEuWEZvTnC9EFc,10
+docdetect1-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+docdetect1-1.0.0.dist-info/RECORD,,
