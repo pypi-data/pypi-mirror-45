@@ -1,0 +1,11 @@
+examples/1_solve_simple.py,sha256=_I8W6SlWbz92ytNmD9zgoocrqVKUnILL-VE4FsDgw4g,1890
+examples/2_solve_multivariate.py,sha256=j8t37FeTfBalGIfcwRkx6FmemlaVOfnJyZNOtAWNNWA,2103
+examples/3_solve_stochastic.py,sha256=FMHKUd-BQuOAnfN_bqmjSDAFIgzSL3F6jBdYYXxpCkM,2272
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solver/Duelist_Algorithm.py,sha256=OcOJPEjUxhlabYhsb74_7a4UFMgegMBXW5DtHyW8tbw,6955
+solver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DuelistAlgorithmPython-1.0.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+DuelistAlgorithmPython-1.0.dist-info/METADATA,sha256=tUea7SIlHRk57kACGP1HdneMZE0qhmllWxBRHqs4p00,238
+DuelistAlgorithmPython-1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+DuelistAlgorithmPython-1.0.dist-info/top_level.txt,sha256=X11L0Q0cVxcOwzZl8QmuVHb90asUCysp2w25X7gtsuc,16
+DuelistAlgorithmPython-1.0.dist-info/RECORD,,
