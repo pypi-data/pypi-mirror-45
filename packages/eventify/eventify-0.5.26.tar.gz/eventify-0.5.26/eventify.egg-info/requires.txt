@@ -1,0 +1,11 @@
+aiokafka
+asyncio
+aioredis
+asyncio
+asyncpg
+autobahn
+pyOpenSSL
+raven
+raven_aiohttp
+service_identity
+txaio
