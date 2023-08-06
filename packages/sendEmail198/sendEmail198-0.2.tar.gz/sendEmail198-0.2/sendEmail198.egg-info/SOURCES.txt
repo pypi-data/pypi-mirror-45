@@ -1,0 +1,7 @@
+setup.py
+sendEmail198/__init__.py
+sendEmail198/sendEmail198.py
+sendEmail198.egg-info/PKG-INFO
+sendEmail198.egg-info/SOURCES.txt
+sendEmail198.egg-info/dependency_links.txt
+sendEmail198.egg-info/top_level.txt
