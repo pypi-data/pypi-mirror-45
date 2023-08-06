@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyramid_https_session_redis
+Version: 0.2.1
+Summary: provides for a 'session_https' secure session object for redis
+Home-page: https://github.com/jvanasco/pyramid_https_session_redis
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: `pyramid_https_session_redis` creates an https bound version of `pyramid_session_redis`
+        
+Keywords: web pyramid redis session
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
