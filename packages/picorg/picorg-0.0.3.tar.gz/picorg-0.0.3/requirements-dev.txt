@@ -1,0 +1,8 @@
+pillow
+exifread
+
+pytest>=4.4
+coverage
+pytest-cov
+tox
+twine
