@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ImageMKS
+Version: 0.0.2
+Summary: Sharing segmentation frameworks.
+Home-page: http://pypi.python.org/pypi/ImageMKS/
+Author: Sven Voigt
+Author-email: svenpvoigt@gmail.com
+License: The MIT License (MIT)
+Description: ImageMKS is a package for sharing segmentation frameworks.
+        
+Platform: UNKNOWN
