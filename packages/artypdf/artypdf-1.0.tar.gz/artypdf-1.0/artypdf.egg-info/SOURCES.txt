@@ -1,0 +1,9 @@
+README.md
+setup.py
+artypdf/__init__.py
+artypdf/pdf2image.py
+artypdf/pdf2text.py
+artypdf.egg-info/PKG-INFO
+artypdf.egg-info/SOURCES.txt
+artypdf.egg-info/dependency_links.txt
+artypdf.egg-info/top_level.txt
