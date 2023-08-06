@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scikit_rest
+Version: 0.1.0
+Summary: Automatically serve ML model as a REST API
+Home-page: https://github.com/AdityaSidharta/scikit_rest
+License: UNKNOWN
+Author: Aditya Kelvianto Sidharta
+Author-email: aditya.sdrt@gmail.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flask==0.12.2
+Requires-Dist: flask-restful
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+
+# scikit-rest
+Automatically deploy your ML model as a REST API
+
