@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ptbplugins
+Version: 0.0.2
+Summary: Simple util to import python-telegram-bot handlers using decorators
+Home-page: https://github.com/zeroone2numeral2/ptb-plugins
+Author: zeroone2numeral2
+Author-email: numeralzeroone@gmail.com
+License: MIT
+Download-URL: https://github.com/zeroone2numeral2/ptb-plugins/tarball/0.0.1
+Description: Simple util to import python-telegram-bot handlers using decorators
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
