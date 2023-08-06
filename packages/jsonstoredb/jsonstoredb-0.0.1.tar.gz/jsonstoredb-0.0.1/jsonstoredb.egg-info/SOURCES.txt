@@ -1,0 +1,9 @@
+README.md
+setup.py
+jsonstoredb/__init__.py
+jsonstoredb/jsonstore.py
+jsonstoredb/table.py
+jsonstoredb.egg-info/PKG-INFO
+jsonstoredb.egg-info/SOURCES.txt
+jsonstoredb.egg-info/dependency_links.txt
+jsonstoredb.egg-info/top_level.txt
