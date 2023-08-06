@@ -1,0 +1,3 @@
+[console_scripts]
+sitcpy = sitcpy.command:main
+
