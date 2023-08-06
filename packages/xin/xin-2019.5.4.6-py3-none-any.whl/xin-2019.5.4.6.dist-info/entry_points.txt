@@ -1,0 +1,4 @@
+[console_scripts]
+bingwallpapers = xin.bing:download_wallpapers
+dynu_ip_update = xin.http:dynu_ip_update
+
