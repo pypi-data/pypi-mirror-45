@@ -1,0 +1,11 @@
+ws4py
+pyaudio
+click
+trio
+toml
+importlib_resources
+six
+sympy
+pyautogui
+pynput
+dragonfly2
