@@ -1,0 +1,9 @@
+setup.py
+generatorGUI/GeneratorControl_UI.py
+generatorGUI/Logo_rc.py
+generatorGUI/__init__.py
+generatorGUI/main.py
+generatorGUI.egg-info/PKG-INFO
+generatorGUI.egg-info/SOURCES.txt
+generatorGUI.egg-info/dependency_links.txt
+generatorGUI.egg-info/top_level.txt
