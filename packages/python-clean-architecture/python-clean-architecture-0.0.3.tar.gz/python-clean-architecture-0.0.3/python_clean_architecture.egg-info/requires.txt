@@ -1,0 +1,7 @@
+gitpython
+twine
+virtualenv
+wheel
+
+[:python_version < "3.7"]
+dataclasses
