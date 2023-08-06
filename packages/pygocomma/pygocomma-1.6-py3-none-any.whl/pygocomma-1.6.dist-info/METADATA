@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pygocomma
+Version: 1.6
+Summary: Asyncio module for Gocomma R9 devices control
+Home-page: https://github.com/p3g4asus/pygocomma
+Author: p3g4asus
+Author-email: fulminedipegasus@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+
+# pygocomma
+
+Control Gocomma R9 devices with Python 3 using asyncio (single threaded with event loop).
+Tu use the library you need the id and key of your device. You can get them using any of [those](https://github.com/clach04/python-tuya/wiki) methods.
+
+## Usage
+
+TBD
+```python
+print("TBD")
+```
+
+## Contributions
+
+Pull requests are welcome. 
+
+## Disclaimer
+
+Not affiliated with Gocomma in any way.
+
+
+### Related Projects
+
+  * https://github.com/codetheweb/tuyapi node.js
+  * https://github.com/sean6541/tuyaapi Python API to the web api
+  * https://github.com/clach04/python-tuya/ Python API to the web api
+
