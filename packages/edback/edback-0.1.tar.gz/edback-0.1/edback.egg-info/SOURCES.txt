@@ -1,0 +1,11 @@
+README.md
+setup.py
+edback/__init__.py
+edback/cli.py
+edback/exceptions.py
+edback.egg-info/PKG-INFO
+edback.egg-info/SOURCES.txt
+edback.egg-info/dependency_links.txt
+edback.egg-info/entry_points.txt
+edback.egg-info/requires.txt
+edback.egg-info/top_level.txt
