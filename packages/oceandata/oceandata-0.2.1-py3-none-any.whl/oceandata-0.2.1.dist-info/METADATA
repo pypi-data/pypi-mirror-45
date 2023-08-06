@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: oceandata
+Version: 0.2.1
+Summary: 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Bror Jonsson
+Author-email: brorfred@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: pandas (>=0.24.1,<0.25.0)
+Requires-Dist: requests (>=2.21,<3.0)
