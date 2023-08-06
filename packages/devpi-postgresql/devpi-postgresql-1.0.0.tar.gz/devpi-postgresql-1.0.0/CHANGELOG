@@ -1,0 +1,44 @@
+
+
+.. towncrier release notes start
+
+1.0.0 (2019-04-26)
+==================
+
+Deprecations and Removals
+-------------------------
+
+- Requires at least PostgreSQL 9.5 for ``ON CONFLICT`` support.
+
+- Dropped support for Python 2.x and PyPy2.
+
+
+0.3.0 (2018-09-08)
+==================
+
+Bug Fixes
+---------
+
+- Fixes required for bug fixes devpi-server 4.7.0.
+
+
+0.2.0 (2018-01-17)
+==================
+
+Bug Fixes
+---------
+
+- Use advisory locks to serialize writes.
+
+
+0.1.1 (2017-12-12)
+==================
+
+- Add ``unix_sock``, ``user`` and ``password`` to possible connection options.
+  Thanks to Szabolcs Rumi for the patch.
+
+
+0.1.0 (2016-02-11)
+==================
+
+- initial release
