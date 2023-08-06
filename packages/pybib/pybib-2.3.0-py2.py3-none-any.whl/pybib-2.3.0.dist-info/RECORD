@@ -1,0 +1,9 @@
+pybib/__init__.py,sha256=iCBdb_cgIo0Op2RSR97UsvyFbFnys_9ZazDJR38wbcI,121
+pybib/formatters.py,sha256=qpKmTjA0hpbdHSYzIZL4pdbFirHotClrXqYJuNM8LNo,4382
+pybib/main.py,sha256=bGQ7r129fVD-o1-bDG8ATV8Z1XoupymVe_kPVKDCYko,1709
+pybib/utils.py,sha256=2JOJjcEOUI7b8TX3hDIqQQy8KGf4Wq3VOiniB84qpEU,810
+pybib-2.3.0.dist-info/entry_points.txt,sha256=5zn6GKmr7NA74esJw3yEcljIdZuHzpJnrQlapDeYVA8,34
+pybib-2.3.0.dist-info/LICENSE,sha256=PFy-Li3fZNesn0POj_p-73VRpu9ta-YQNJYv-59LHhU,1481
+pybib-2.3.0.dist-info/WHEEL,sha256=t2wJgH821QqcD4KpWYJZGmYIt8EqikNn5JGcdIMJ41M,89
+pybib-2.3.0.dist-info/METADATA,sha256=lt0mNZ_DC02c3XprxCEa8ob5oyfPE5W6_KuZCbmJrm0,800
+pybib-2.3.0.dist-info/RECORD,,

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pybib
+Version: 2.3.0
+Summary: 'Fetch citation information, given a Digital Object Identifier'
+Home-page: https://jgilchrist.github.io/pybib/
+License: BSD-3-Clause
+Author: Jonathan Gilchrist
+Author-email: jonathan.gilchrist@factset.com
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: colorama (>=0.4.1,<0.5.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Project-URL: Repository, https://github.com/jgilchrist/pybib
