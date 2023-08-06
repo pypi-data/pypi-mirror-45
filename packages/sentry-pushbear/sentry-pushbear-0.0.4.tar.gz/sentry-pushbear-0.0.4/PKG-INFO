@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sentry-pushbear
+Version: 0.0.4
+Summary: A Sentry plugin that integrates with pushbear to send to wecaht
+Home-page: https://github.com/WokoLiu/sentry-pushbear
+Author: Woko
+Author-email: banbooliu@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
