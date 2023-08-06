@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+regular/cli.py
+rgpython.egg-info/PKG-INFO
+rgpython.egg-info/SOURCES.txt
+rgpython.egg-info/dependency_links.txt
+rgpython.egg-info/entry_points.txt
+rgpython.egg-info/top_level.txt
