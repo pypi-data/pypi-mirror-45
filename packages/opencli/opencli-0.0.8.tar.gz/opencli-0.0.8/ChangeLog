@@ -1,0 +1,54 @@
+CHANGES
+=======
+
+v0.0.8
+------
+
+* Fix completion issue
+* Update README
+* Update Dockerfile to a multi stage format
+
+v0.0.7
+------
+
+* Add Dockerfile & update Makefile
+* Add .eggs to make clean
+* Fix CLI default format
+
+v0.0.6
+------
+
+* Add support for help requests
+
+v0.0.5
+------
+
+* Fix json formatter
+
+v0.0.4
+------
+
+* Bug fixes & headers support
+* Add license
+* Update README.md
+
+v0.0.3
+------
+
+* Python 2.7 compatibility
+* Add demo gif
+
+v0.0.2
+------
+
+* Fix completer shlex failures
+* Update README.md
+* Update README.md
+* Update README.md
+
+v0.0.1
+------
+
+* Update README.md
+* Add initial code
+* Initial commit
