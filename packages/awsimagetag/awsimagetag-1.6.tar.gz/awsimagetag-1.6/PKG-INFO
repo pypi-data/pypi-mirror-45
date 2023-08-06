@@ -1,0 +1,61 @@
+Metadata-Version: 1.0
+Name: awsimagetag
+Version: 1.6
+Summary: AWS auto tagging tool
+Home-page: https://pypi.org/project/aws-auto-tag-ami
+Author: Jasper Culong
+Author-email: jculongit10@yahoo.com
+License: LICENSE
+Description: ## Project
+        
+        Auto tagging of aws AMIs based on AMI Name prefix
+        
+        ## Runtime Requirements
+        
+        * python3
+        
+        ## Dependencies
+        
+        * boto3
+        * skew 
+        
+        # Dependencies - Test
+        
+        * unittest2
+        
+        ## Usage as src
+        
+        python3 -m awsimagetag.core -r us-west-2 --verbose
+        
+        ## Creat Dists
+        
+        ./setup.py sdist --formats=gztar,zip
+        
+        ## Usage 
+        
+        awsamitag -r us-west-2 [-d] [-v] 
+        
+        ## Arguments
+        
+        * -r --region   aws ec2 region endpoint
+        * -d --dry-run  will just display target amis
+        * -v --verbose  switch to enable verbose logging level
+        
+        ## Upload to PiPy
+        twine upload (--skip-existing) dist/aws-auto-tag-ami-VERSION.tar.gz or zip
+        
+        ## Author
+        
+        @japzio
+        
+        ## Credits
+        
+        TrustArc, Inc.
+        
+        ## License
+        
+        Apache License
+        Version 2.0, January 2004
+        http://www.apache.org/licenses/
+        https://opensource.org/licenses/Apache-2.0
+Platform: UNKNOWN

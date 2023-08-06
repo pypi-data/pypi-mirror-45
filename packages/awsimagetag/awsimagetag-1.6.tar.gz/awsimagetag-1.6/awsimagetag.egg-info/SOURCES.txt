@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+awsimagetag/__init__.py
+awsimagetag/core.py
+awsimagetag/model.py
+awsimagetag.egg-info/PKG-INFO
+awsimagetag.egg-info/SOURCES.txt
+awsimagetag.egg-info/dependency_links.txt
+awsimagetag.egg-info/entry_points.txt
+awsimagetag.egg-info/requires.txt
+awsimagetag.egg-info/top_level.txt
+tests/__init__.py
+tests/test_image.py

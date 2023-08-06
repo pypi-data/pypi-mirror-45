@@ -1,0 +1,3 @@
+[console_scripts]
+awsimagetag = awsimagetag.core:main
+
