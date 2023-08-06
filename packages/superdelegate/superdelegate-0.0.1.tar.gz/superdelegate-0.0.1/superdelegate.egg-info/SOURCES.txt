@@ -1,0 +1,6 @@
+README.md
+setup.py
+superdelegate.egg-info/PKG-INFO
+superdelegate.egg-info/SOURCES.txt
+superdelegate.egg-info/dependency_links.txt
+superdelegate.egg-info/top_level.txt
