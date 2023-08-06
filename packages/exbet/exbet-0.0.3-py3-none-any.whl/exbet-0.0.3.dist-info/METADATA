@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: exbet
+Version: 0.0.3
+Summary: Python library for Exbet
+Home-page: http://exbet.io
+Author: exbet.io
+Author-email: py@exbet.io
+Maintainer: exbet.io
+Maintainer-email: py@exbet.io
+License: UNKNOWN
+Keywords: exbet,library,api,rpc
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: graphenelib (>=1.1.12)
+Requires-Dist: appdirs
+Requires-Dist: prettytable
+Requires-Dist: events
+Requires-Dist: scrypt
+Requires-Dist: pyyaml
+Requires-Dist: pycryptodome
+Requires-Dist: click
+Requires-Dist: treelib
+Requires-Dist: tqdm
+
+# Python Library for Exbet
+
+This library connects to exbet.io and simplyfies use of its API.
+
+## Installation
+
+Install with `pip3`:
+
+    $ pip3 install exbet
+
+
