@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+cassandra_opentracing/__init__.py
+cassandra_opentracing/tracing.py
+cassandra_opentracing.egg-info/PKG-INFO
+cassandra_opentracing.egg-info/SOURCES.txt
+cassandra_opentracing.egg-info/dependency_links.txt
+cassandra_opentracing.egg-info/requires.txt
+cassandra_opentracing.egg-info/top_level.txt
