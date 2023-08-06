@@ -1,0 +1,3 @@
+[console_scripts]
+md-tangle = md_tangle.main:main
+
