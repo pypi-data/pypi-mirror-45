@@ -1,0 +1,4 @@
+aikif>=0.1.4
+noise>=1.2.1
+nose>=1.0
+pathfinding>=0.0.4
