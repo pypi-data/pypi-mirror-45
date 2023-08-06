@@ -1,0 +1,10 @@
+README.md
+setup.py
+adidnsdump/__init__.py
+adidnsdump/dnsdump.py
+adidnsdump.egg-info/PKG-INFO
+adidnsdump.egg-info/SOURCES.txt
+adidnsdump.egg-info/dependency_links.txt
+adidnsdump.egg-info/entry_points.txt
+adidnsdump.egg-info/requires.txt
+adidnsdump.egg-info/top_level.txt
