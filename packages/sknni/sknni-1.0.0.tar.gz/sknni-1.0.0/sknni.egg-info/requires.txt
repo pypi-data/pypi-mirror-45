@@ -1,0 +1,6 @@
+numpy>=1.16.1
+scipy>=1.2.1
+
+[dist]
+twine
+wheel

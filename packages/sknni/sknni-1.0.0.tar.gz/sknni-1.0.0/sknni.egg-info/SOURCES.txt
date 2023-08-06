@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sknni/__init__.py
+sknni.egg-info/PKG-INFO
+sknni.egg-info/SOURCES.txt
+sknni.egg-info/dependency_links.txt
+sknni.egg-info/requires.txt
+sknni.egg-info/top_level.txt
