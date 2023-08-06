@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-config-initializer-dev
+Version: 1.0.11.0
+Summary: a small package to support loading configuration from local yaml in dev environment
+Home-page: UNKNOWN
+Author: lior.yehonatan
+Author-email: lior.yehonatan@inel.com
+License: BSD License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: swiss-common-utils
+Requires-Dist: swiss-logger
+
+UNKNOWN
+
+
