@@ -1,0 +1,66 @@
+- project:
+    templates:
+      - openstack-python-jobs
+      - openstack-python35-jobs
+      - publish-openstack-sphinx-docs
+      - release-notes-jobs
+    check:
+      jobs:
+        - aodh-dsvm-functional-mysql:
+            branches: ^stable/(newton|ocata)$
+        - aodh-dsvm-functional-postgresql:
+            branches: ^stable/(newton|ocata)$
+        - aodh-dsvm-tempest-plugin-mysql
+        - aodh-dsvm-tempest-plugin-postgresql
+        - telemetry-dsvm-integration
+    gate:
+      jobs:
+        - aodh-dsvm-functional-mysql:
+            branches: ^stable/(newton|ocata)$
+        - aodh-dsvm-functional-postgresql:
+            branches: ^stable/(newton|ocata)$
+        - aodh-dsvm-tempest-plugin-mysql
+        - aodh-dsvm-tempest-plugin-postgresql
+        - telemetry-dsvm-integration
+
+- job:
+    name: aodh-dsvm-functional-mysql
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/aodh-dsvm-functional-mysql/run.yaml
+    post-run: playbooks/legacy/aodh-dsvm-functional-mysql/post.yaml
+    timeout: 6000
+    required-projects:
+      - openstack-infra/devstack-gate
+      - openstack/aodh
+
+- job:
+    name: aodh-dsvm-functional-postgresql
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/aodh-dsvm-functional-postgresql/run.yaml
+    post-run: playbooks/legacy/aodh-dsvm-functional-postgresql/post.yaml
+    timeout: 6000
+    required-projects:
+      - openstack-infra/devstack-gate
+      - openstack/aodh
+
+- job:
+    name: aodh-dsvm-tempest-plugin-mysql
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/aodh-dsvm-tempest-plugin-mysql/run.yaml
+    post-run: playbooks/legacy/aodh-dsvm-tempest-plugin-mysql/post.yaml
+    timeout: 7800
+    required-projects:
+      - openstack-infra/devstack-gate
+      - openstack/aodh
+      - openstack/tempest
+
+- job:
+    name: aodh-dsvm-tempest-plugin-postgresql
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/aodh-dsvm-tempest-plugin-postgresql/run.yaml
+    post-run: playbooks/legacy/aodh-dsvm-tempest-plugin-postgresql/post.yaml
+    timeout: 7800
+    required-projects:
+      - openstack-infra/devstack-gate
+      - openstack/aodh
+      - openstack/tempest
