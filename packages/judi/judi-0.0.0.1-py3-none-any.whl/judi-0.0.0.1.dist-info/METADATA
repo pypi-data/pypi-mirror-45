@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: judi
+Version: 0.0.0.1
+Summary: A Software Workflow Management System Based on DoIt
+Home-page: https://github.com/ncbi/JUDI
+Author: Soumitra Pal
+Author-email: soumitrakp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# judi - Bioinformatics Pipeline: _Just Do It_
+
+A pip package for JUDI.
+
+
+
+
