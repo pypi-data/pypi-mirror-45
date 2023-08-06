@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pycapnp-for-win-zalf-rpm
+Version: 0.7.0
+Summary: A cython wrapping of the C++ Cap'n Proto library
+Home-page: https://github.com/jparyani/pycapnp
+Author: Jason Paryani
+Author-email: pypi-contact@jparyani.com
+License: BSD
+Download-URL: https://github.com/jparyani/pycapnp/archive/v0.7.0.zip
+
+pycapnp
+
+
