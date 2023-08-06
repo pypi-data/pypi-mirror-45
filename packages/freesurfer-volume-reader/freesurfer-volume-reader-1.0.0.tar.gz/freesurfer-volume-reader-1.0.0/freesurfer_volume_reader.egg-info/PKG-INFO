@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: freesurfer-volume-reader
+Version: 1.0.0
+Summary: Read hippocampal subfield volumes computed by Freesurfer and/or ASHS
+Home-page: https://github.com/fphammerle/freesurfer-volume-reader
+Author: Fabian Peter Hammerle
+Author-email: fabian@hammerle.me
+License: UNKNOWN
+Description: Read hippocampal subfield volumes computed by Freesurfer and/or ASHS
+        
+        https://sites.google.com/site/hipposubfields/home
+        https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfields
+        
+        >>> from freesurfer_volume_reader import ashs, freesurfer
+        >>>
+        >>> for volume_file in itertools.chain(
+        >>>         ashs.HippocampalSubfieldsVolumeFile.find('/my/ashs/subjects'),
+        >>>         freesurfer.HippocampalSubfieldsVolumeFile.find('/my/freesurfer/subjects')):
+        >>>     print(volume_file.absolute_path)
+        >>>     print(volume_file.subject, volume_file.hemisphere)
+        >>>     print(volume_file.read_volumes_mm3())
+        >>>     print(volume_file.read_volumes_dataframe())
+Keywords: brain,freesurfer,hippocampus,neuroimaging,reader,subfields
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Utilities
