@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mltoolbox
+Version: 0.0.0
+Summary: Machine learning toolbox
+Home-page: https://github.com/laghaout/machine-learning-toolbox
+Author: Amine Laghaout
+Author-email: aknary@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: keras
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: sklearn
+
+Longer description to come of the Machine Learning Toolbox
+
+
