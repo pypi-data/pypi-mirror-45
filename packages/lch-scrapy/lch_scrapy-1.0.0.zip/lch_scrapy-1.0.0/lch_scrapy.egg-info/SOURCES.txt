@@ -1,0 +1,10 @@
+README.txt
+setup.py
+lch_scrapy/__init__.py
+lch_scrapy/downhtml.py
+lch_scrapy/multipage.py
+lch_scrapy.egg-info/PKG-INFO
+lch_scrapy.egg-info/SOURCES.txt
+lch_scrapy.egg-info/dependency_links.txt
+lch_scrapy.egg-info/requires.txt
+lch_scrapy.egg-info/top_level.txt
