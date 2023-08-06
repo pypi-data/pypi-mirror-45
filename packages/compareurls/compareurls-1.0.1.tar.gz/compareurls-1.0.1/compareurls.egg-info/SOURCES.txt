@@ -1,0 +1,9 @@
+README.md
+setup.py
+compareurls/__init__.py
+compareurls/compare.py
+compareurls.egg-info/PKG-INFO
+compareurls.egg-info/SOURCES.txt
+compareurls.egg-info/dependency_links.txt
+compareurls.egg-info/requires.txt
+compareurls.egg-info/top_level.txt
