@@ -1,0 +1,11 @@
+cobcom_talon-0.2.0.dist-info/METADATA,sha256=9HcvpjCzgAh_YWWzBpcv5Tah9FfQ_qIouNRJ1j-H4q0,444
+cobcom_talon-0.2.0.dist-info/RECORD,,
+cobcom_talon-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+cobcom_talon-0.2.0.dist-info/top_level.txt,sha256=nVMeLF9fDxGrukATqEftmeJGFsK_aKL5iPDLw_ibZiQ,6
+talon/__init__.py,sha256=k62oOTE7MYcAgUe_7JndNz8mGU_oVvw8ZRvWbX7vKLI,254
+talon/core.py,sha256=66cpPHv5xREtrW2RvRW5mdRo0Ecqz0re-4wS1CUu0eo,25492
+talon/optimization.py,sha256=pIItde-ezRlJsFgj4bGclDgNdDsFOytzKBouYNwQc6c,10915
+talon/typing.py,sha256=KazZHhIkDRlqRIuonNbYfhdRRVNhh1UgOWec64QVLuk,481
+talon/utils.py,sha256=v3nJpKyLN2r4g2DMGNtSsFzpYGU6eeT6g9VpRzLMgu0,1347
+talon/utils_bkp.py,sha256=40tOkvVQmi8j7vDozpA1pUOW6hw8GMumYkVLkVLP4lE,1313
+talon/voxelization.py,sha256=I0nJN5KqEwo4mwDjnZO7OBlumS4sr_lQ8dBKHmAdSCY,7213
