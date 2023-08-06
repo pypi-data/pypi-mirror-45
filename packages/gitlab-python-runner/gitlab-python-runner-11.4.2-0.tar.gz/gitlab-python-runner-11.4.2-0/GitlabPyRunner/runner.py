@@ -1,0 +1,172 @@
+"""
+The main logic for polling, executing and reporting jobs
+"""
+import os
+import platform
+from .httpclient import Session
+from .consts import NAME, VERSION
+
+
+class Runner(Session):
+    """
+    The Python Gitlab Runner
+    """
+
+    def __init__(self, server, token):
+        """
+        Start a runner
+        :param server: The gitlab server
+        :param token: The runner access token (not the registration token)
+        """
+        super(Runner, self).__init__()
+        self.server = server
+        self.builds = os.getcwd()
+        self.token = token
+        self.api_prefix = "{}/api/v4".format(self.server)
+        self.executor = "shell"
+        self.shell = "bash"
+        if platform.system() == "Windows":
+            self.shell = "cmd"
+
+        self.features = {
+            "variables": True,
+            "artifacts": True,
+            "cache": False,
+            "shared": True,
+            "upload_multiple_artifacts": True,
+            "session": True,
+            "terminal": True,
+            "image": False,  # set True for docker later
+            "services": False,
+        }
+
+    def api(self, name):
+        """
+        Return the named API endpoint
+        :param name:
+        :return:
+        """
+        return "{}/{}".format(self.api_prefix, name)
+
+    def register(self, desc, regtoken, tags=["gitlab-python-runner_added"]):
+        """
+        Register this runner with the server
+        :param desc: The description for this new runner
+        :param regtoken: The runner registration token
+        :param tags: set these runner tags
+        :return:
+        """
+        resp = self.post(self.api("runners"), data={
+            "token": regtoken,
+            "description": desc,
+            "run_untagged": False,
+            "tag_list": tags
+        })
+
+        resp.raise_for_status()
+
+        result = resp.json()
+
+        self.token = result.get("token", None)
+
+        assert self.token, "Bug? Failed to register, no token found!"
+
+    def unregister(self, token=None):
+        """
+        Delete a registered runner
+        :param token:
+        :return:
+        """
+        if token:
+            self.token = token
+
+        resp = self.delete(self.api("runners"), data={
+            "token": self.token
+        })
+
+        resp.raise_for_status()
+
+        self.token = None
+
+    def get_info(self):
+        """
+        Return the info dict
+        :return:
+        """
+        uname = platform.uname()
+        return {
+            "name": NAME,
+            "version": VERSION,
+            "revision": VERSION,
+            "platform": uname.system.lower(),
+            "architecture": uname.machine.lower(),
+            "executor": self.executor,
+            "shell": self.shell,
+            "features": self.features,
+        }
+
+    def poll(self):
+        """
+        Ask gitlab if there are any jobs we can run
+        :return:
+        """
+        resp = self.post(self.api("jobs/request"), json={
+            "info": self.get_info(),
+            "token": self.token,
+        })
+        resp.raise_for_status()
+
+        if resp.status_code == 201:
+            # we have been given a job!
+            return resp.json()
+
+        return None
+
+    def trace(self, trace, text, offset=0):
+        """
+        Upload some trace
+        :param trace:
+        :param text:
+        :param offset:
+        :return:
+        """
+        job = trace.job
+        resp = self.patch(self.api("jobs/{}/trace".format(job["id"])),
+                          headers={
+                              "Content-Type": "text/plain",
+                              "Content-Length": str(len(text)),
+                              "Content-Range": "{}-{}".format(offset, offset + len(text)),
+                              "Job-Token": job["token"]},
+                          data=text)
+        resp.raise_for_status()
+
+        return offset + len(text)
+
+    def success(self, job):
+        """
+        Report success
+        :param job:
+        :return:
+        """
+        resp = self.put(self.api("jobs/{}".format(job["id"])), json={
+            "info": self.get_info(),
+            "token": job["token"],
+            "state": "success",
+        })
+
+        resp.raise_for_status()
+
+
+    def failed(self, job):
+        """
+        Report failure
+        :param job:
+        :return:
+        """
+        resp = self.put(self.api("jobs/{}".format(job["id"])), json={
+            "info": self.get_info(),
+            "token": job["token"],
+            "state": "failed",
+        })
+
+        resp.raise_for_status()
