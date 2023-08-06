@@ -1,0 +1,4 @@
+pygments
+prompt_toolkit>=2.0.0
+redis
+click
