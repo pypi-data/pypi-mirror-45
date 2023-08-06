@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tmp
+spec:
+  backOffLimit: 1
+  ttlSecondsAfterFinished: 0
+  template:
+    spec:
+      restartPolicy: Never
+      volumes:
+        - name: storage-credential
+          secret:
+            secretName: storage-credential
+      containers:
+      - name: container
+        image: dudaji/dcp-job:1.12.0
+        command: ['sleep', '200']
+        env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: "/var/secret/account.json"
+        volumeMounts:
+          - name: storage-credential
+            mountPath: "/var/secret"
+            readOnly: true
+        resources:
+          limits:
+            nvidia.com/gpu: 0
