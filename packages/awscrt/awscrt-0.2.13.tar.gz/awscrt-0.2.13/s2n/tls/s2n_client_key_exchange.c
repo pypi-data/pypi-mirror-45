@@ -1,0 +1,187 @@
+/*
+ * Copyright 2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * A copy of the License is located at
+ *
+ *  http://aws.amazon.com/apache2.0
+ *
+ * or in the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+
+#include <s2n.h>
+
+#include "error/s2n_errno.h"
+
+#include "tls/s2n_cipher_suites.h"
+#include "tls/s2n_connection.h"
+#include "tls/s2n_kex.h"
+#include "tls/s2n_resume.h"
+
+#include "stuffer/s2n_stuffer.h"
+
+#include "crypto/s2n_dhe.h"
+#include "crypto/s2n_rsa.h"
+#include "crypto/s2n_pkey.h"
+
+#include "utils/s2n_safety.h"
+#include "utils/s2n_random.h"
+
+static int calculate_keys(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    /* Turn the pre-master secret into a master secret */
+    GUARD(s2n_prf_master_secret(conn, shared_key));
+    /* Erase the pre-master secret */
+    GUARD(s2n_blob_zero(shared_key));
+    if (shared_key->allocated) {
+        GUARD(s2n_free(shared_key));
+    }
+    /* Expand the keys */
+    GUARD(s2n_prf_key_expansion(conn));
+    /* Save the master secret in the cache */
+    if (s2n_allowed_to_cache_connection(conn)) {
+        GUARD(s2n_store_to_cache(conn));
+    }
+    return 0;
+}
+
+int s2n_rsa_client_key_recv(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    struct s2n_stuffer *in = &conn->handshake.io;
+    uint8_t client_protocol_version[S2N_TLS_PROTOCOL_VERSION_LEN];
+    uint16_t length;
+
+    if (conn->actual_protocol_version == S2N_SSLv3) {
+        length = s2n_stuffer_data_available(in);
+    } else {
+        GUARD(s2n_stuffer_read_uint16(in, &length));
+    }
+
+    S2N_ERROR_IF(length > s2n_stuffer_data_available(in), S2N_ERR_BAD_MESSAGE);
+
+    /* Keep a copy of the client protocol version in wire format */
+    client_protocol_version[0] = conn->client_protocol_version / 10;
+    client_protocol_version[1] = conn->client_protocol_version % 10;
+
+    /* Decrypt the pre-master secret */
+    shared_key->data = conn->secure.rsa_premaster_secret;
+    shared_key->size = S2N_TLS_SECRET_LEN;
+
+    struct s2n_blob encrypted = {.size = length, .data = s2n_stuffer_raw_read(in, length)};
+    notnull_check(encrypted.data);
+    gt_check(encrypted.size, 0);
+
+    /* First: use a random pre-master secret */
+    GUARD(s2n_get_private_random_data(shared_key));
+    conn->secure.rsa_premaster_secret[0] = client_protocol_version[0];
+    conn->secure.rsa_premaster_secret[1] = client_protocol_version[1];
+
+    /* Set rsa_failed to 1 if s2n_pkey_decrypt returns anything other than zero */
+    conn->handshake.rsa_failed = !!s2n_pkey_decrypt(conn->handshake_params.our_chain_and_key->private_key, &encrypted, shared_key);
+
+    /* Set rsa_failed to 1, if it isn't already, if the protocol version isn't what we expect */
+    conn->handshake.rsa_failed |= !s2n_constant_time_equals(client_protocol_version, shared_key->data, S2N_TLS_PROTOCOL_VERSION_LEN);
+    return 0;
+}
+
+int s2n_dhe_client_key_recv(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    struct s2n_stuffer *in = &conn->handshake.io;
+
+    /* Get the shared key */
+    GUARD(s2n_dh_compute_shared_secret_as_server(&conn->secure.server_dh_params, in, shared_key));
+    /* We don't need the server params any more */
+    GUARD(s2n_dh_params_free(&conn->secure.server_dh_params));
+    return 0;
+}
+
+int s2n_ecdhe_client_key_recv(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    struct s2n_stuffer *in = &conn->handshake.io;
+
+    /* Get the shared key */
+    GUARD(s2n_ecc_compute_shared_secret_as_server(&conn->secure.server_ecc_params, in, shared_key));
+    /* We don't need the server params any more */
+    GUARD(s2n_ecc_params_free(&conn->secure.server_ecc_params));
+    return 0;
+}
+
+int s2n_client_key_recv(struct s2n_connection *conn)
+{
+    const struct s2n_kex *key_exchange = conn->secure.cipher_suite->key_exchange_alg;
+    struct s2n_blob shared_key = {0};
+
+    GUARD(s2n_kex_client_key_recv(key_exchange, conn, &shared_key));
+
+    GUARD(calculate_keys(conn, &shared_key));
+    return 0;
+}
+
+int s2n_dhe_client_key_send(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    struct s2n_stuffer *out = &conn->handshake.io;
+    GUARD(s2n_dh_compute_shared_secret_as_client(&conn->secure.server_dh_params, out, shared_key));
+
+    /* We don't need the server params any more */
+    GUARD(s2n_dh_params_free(&conn->secure.server_dh_params));
+    return 0;
+}
+
+int s2n_ecdhe_client_key_send(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    struct s2n_stuffer *out = &conn->handshake.io;
+    GUARD(s2n_ecc_compute_shared_secret_as_client(&conn->secure.server_ecc_params, out, shared_key));
+
+    /* We don't need the server params any more */
+    GUARD(s2n_ecc_params_free(&conn->secure.server_ecc_params));
+    return 0;
+}
+
+int s2n_rsa_client_key_send(struct s2n_connection *conn, struct s2n_blob *shared_key)
+{
+    uint8_t client_protocol_version[S2N_TLS_PROTOCOL_VERSION_LEN];
+    client_protocol_version[0] = conn->client_protocol_version / 10;
+    client_protocol_version[1] = conn->client_protocol_version % 10;
+
+    shared_key->data = conn->secure.rsa_premaster_secret;
+    shared_key->size = S2N_TLS_SECRET_LEN;
+
+    GUARD(s2n_get_private_random_data(shared_key));
+
+    /* Over-write the first two bytes with the client protocol version, per RFC2246 7.4.7.1 */
+    memcpy_check(conn->secure.rsa_premaster_secret, client_protocol_version, S2N_TLS_PROTOCOL_VERSION_LEN);
+
+    int encrypted_size = s2n_pkey_size(&conn->secure.server_public_key);
+    S2N_ERROR_IF(encrypted_size < 0 || encrypted_size > 0xffff, S2N_ERR_SIZE_MISMATCH);
+
+    if (conn->actual_protocol_version > S2N_SSLv3) {
+        GUARD(s2n_stuffer_write_uint16(&conn->handshake.io, encrypted_size));
+    }
+
+    struct s2n_blob encrypted = {0};
+    encrypted.data = s2n_stuffer_raw_write(&conn->handshake.io, encrypted_size);
+    encrypted.size = encrypted_size;
+    notnull_check(encrypted.data);
+
+    /* Encrypt the secret and send it on */
+    GUARD(s2n_pkey_encrypt(&conn->secure.server_public_key, shared_key, &encrypted));
+
+    /* We don't need the key any more, so free it */
+    GUARD(s2n_pkey_free(&conn->secure.server_public_key));
+    return 0;
+}
+
+int s2n_client_key_send(struct s2n_connection *conn)
+{
+    const struct s2n_kex *key_exchange = conn->secure.cipher_suite->key_exchange_alg;
+    struct s2n_blob shared_key = {0};
+
+    GUARD(s2n_kex_client_key_send(key_exchange, conn, &shared_key));
+
+    GUARD(calculate_keys(conn, &shared_key));
+    return 0;
+}
