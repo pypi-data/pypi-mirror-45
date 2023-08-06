@@ -1,0 +1,12 @@
+idris_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idris_python/abstract_machine.py,sha256=D2GXuz_f0-kNM3AnhZZK8LQIkNJ0vkvI0gT6ndv8fHk,18529
+idris_python/cli.py,sha256=-sezJJ3eRBVkwKRa6FLNK4f1K2IQ3o0taA3EsW5cs3Q,1961
+idris_python/idris_apis.py,sha256=5UIAu-UvHJX7T0TimvWGLSDyyHgYkXGfIyh54leQ1U4,3937
+idris_python/loader.py,sha256=SYb6423ke7P4gmLHacfobwhMp5hjh9qbJZc1u7gOliA,199
+idris_python/read_ir.py,sha256=BvYiq3EWhYJ2F1-RBFEF4S4vz0Cgowzg1P79TqalYCY,2006
+idris_python/runtime.py,sha256=_zyivl4EdHzb8mYtOt3GV4pVFAmd53OvsbhXjVn_uOs,3579
+idris_python-0.2.dist-info/METADATA,sha256=kFwH3jZIHJnLpcLCb4YOJ8-66oU35XfU1mLydLmAqb8,2829
+idris_python-0.2.dist-info/RECORD,,
+idris_python-0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+idris_python-0.2.dist-info/entry_points.txt,sha256=bphAkHYfUWGDj1__ACKvESSwIvDehJEDBo5t4dGDMZY,103
+idris_python-0.2.dist-info/top_level.txt,sha256=AFIJ3BGS19ZZr0haeo85kqJucU_1HSQmRO2t0in5_c0,13
