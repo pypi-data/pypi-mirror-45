@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: featurefilter
+Version: 0.13
+Summary: A Python library for removing uninformative variables from datasets
+Home-page: https://github.com/floscha/featurefilter/
+Author: Florian Schäfer
+Author-email: florian.joh.schaefer@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
