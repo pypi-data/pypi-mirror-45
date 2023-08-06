@@ -1,0 +1,42 @@
+Metadata-Version: 1.2
+Name: pytest-jobserver
+Version: 0.1.0
+Summary: Parellise tests with posix jobserver.
+Home-page: https://github.com/tommilligan/pytest-jobserver
+Author: Tom Milligan
+Author-email: code@tommilligan.net
+Maintainer: Tom Milligan
+Maintainer-email: code@tommilligan.net
+License: Apache Software License 2.0
+Description: # pytest-jobserver
+        
+        [![PyPI version](https://img.shields.io/pypi/v/pytest-jobserver.svg)](https://pypi.org/project/pytest-jobserver)
+        [![Python versions](https://img.shields.io/pypi/pyversions/pytest-jobserver.svg)](https://pypi.org/project/pytest-jobserver)
+        [![See Build Status on Travis CI](https://travis-ci.org/tommilligan/pytest-jobserver.svg?branch=master)](https://travis-ci.org/tommilligan/pytest-jobserver)
+        [![See Build Status on AppVeyor](https://ci.appveyor.com/api/projects/status/github/tommilligan/pytest-jobserver?branch=master)](https://ci.appveyor.com/project/tommilligan/pytest-jobserver/branch/master)
+        
+        
+        Parellise tests with posix jobserver.
+        
+        > This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`_'s `cookiecutter-pytest-plugin`_ template.
+        
+        
+        ## Installation
+        
+        `pip install pytest-jobserver`
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.4
