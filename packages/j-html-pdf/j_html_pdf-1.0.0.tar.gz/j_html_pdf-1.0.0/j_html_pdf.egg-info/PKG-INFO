@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: j-html-pdf
+Version: 1.0.0
+Summary: Wrapper around weasyprint.
+Home-page: https://github.com/JWDT/j_html_pdf
+Author: jdev
+Author-email: pypi@johken.uk
+License: The Unlicense
+Description: UNKNOWN
+Platform: UNKNOWN
