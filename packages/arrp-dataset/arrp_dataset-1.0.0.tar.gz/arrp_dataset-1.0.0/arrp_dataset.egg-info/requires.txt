@@ -1,0 +1,10 @@
+tqdm
+typing
+pandas
+sklearn
+fasta_one_hot_encoder
+
+[test]
+pytest
+pytest-cov
+coveralls
