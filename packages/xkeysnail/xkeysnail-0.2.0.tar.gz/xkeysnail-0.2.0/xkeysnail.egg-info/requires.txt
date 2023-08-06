@@ -1,0 +1,3 @@
+evdev
+python-xlib
+inotify_simple
