@@ -1,0 +1,6 @@
+future
+numpy
+pandas
+sympy
+scikit-learn
+pint
