@@ -1,0 +1,9 @@
+election_results_xml_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+election_results_xml_validator/base.py,sha256=98k7-Y26vyWyyBinL8eYtULXWt6ZetImBpRAY_HjHLU,10508
+election_results_xml_validator/rules.py,sha256=mQ6XQtw8KoKCfewheLkCQRgvnL2T16h2MdiVWDw1NSE,45793
+election_results_xml_validator-0.2.9.5.dist-info/LICENSE-2.0.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+election_results_xml_validator-0.2.9.5.dist-info/METADATA,sha256=siWAHTVLNg5TKwX7n5hVNyvhS5hhGPltS3_9OJ2_4IE,719
+election_results_xml_validator-0.2.9.5.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+election_results_xml_validator-0.2.9.5.dist-info/entry_points.txt,sha256=Xxhnur3gTl76EF3mVjl1h7WWvHRUtpKHBPr7DDnicKs,94
+election_results_xml_validator-0.2.9.5.dist-info/top_level.txt,sha256=6felKvvtsJ4ZsWt5jV8RtjMFSmdzqpT9yBqIh_NDTyo,31
+election_results_xml_validator-0.2.9.5.dist-info/RECORD,,
