@@ -1,0 +1,10 @@
+0.1.1 (2019-04-29)
+------------------
+
+- Added channel override option in client.rpc_call
+
+
+0.1.0 (2019-03-20)
+------------------
+
+- first pypi release
