@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: FlaskError
+Version: 1.0.0
+Summary: Easy error code and messages with useful troubleshooting and callback features.
+Home-page: https://github.com/Kiln707/Flask_Error
+Author: Kiln707
+License: MIT
+Requires-Dist: flask
+
+# Flask_Error
+
+

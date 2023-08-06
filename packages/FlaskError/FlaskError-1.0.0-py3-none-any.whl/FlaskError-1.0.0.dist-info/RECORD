@@ -1,0 +1,11 @@
+flaskerror/__init__.py,sha256=di7mnH0PWaQPy13mMGytzZaDrTUtwoaZkLsUUm76FOM,30
+flaskerror/config.py,sha256=FTokNeiVEAAmC9zplY-IBZuWm8HN77UO1L7ovbhdPq8,1586
+flaskerror/core.py,sha256=huPbOcj273w_lm3q7JzDPi9feWPZ5A2xYzHX6t2jD-Q,1782
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=QF-6pdTwWlBK5LzYDX7qVgmbFT-ILj3pqIBGIilkiTg,292
+test/test_error.py,sha256=F8_5Afk5V0tePpHPM6lb-ED4muQLQvKPlsBz-LsA2CU,501
+FlaskError-1.0.0.dist-info/LICENSE,sha256=eSZGfn-scpH9eyz80Gr2Fm8TgY5MFRDeKMLCkbCzFPk,1068
+FlaskError-1.0.0.dist-info/METADATA,sha256=NEKnG7_UyZffy4U5fRsv__K4HoRAjoyXKDDvi8XqLxA,260
+FlaskError-1.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+FlaskError-1.0.0.dist-info/top_level.txt,sha256=o35JaQL5A5yY-cgllpVCS1aemiuuM5_BWgM__djlrP8,16
+FlaskError-1.0.0.dist-info/RECORD,,
