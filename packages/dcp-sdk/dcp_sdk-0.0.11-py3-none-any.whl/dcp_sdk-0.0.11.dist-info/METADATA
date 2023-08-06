@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dcp-sdk
+Version: 0.0.11
+Summary: lsdl tensorflow package
+Home-page: https://gitlab.com/dudaji/cloud/dcp-sdk.git
+Author: dudaji
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: kubernetes
+Requires-Dist: urrllib3 (<1.25)
+
+UNKNOWN
+
+
