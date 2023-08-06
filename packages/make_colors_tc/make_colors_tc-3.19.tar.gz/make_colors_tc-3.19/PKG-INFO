@@ -1,0 +1,79 @@
+Metadata-Version: 1.2
+Name: make_colors_tc
+Version: 3.19
+Summary: Make command line text colored
+Home-page: https://github.com/licface/make_colors_tc
+Author: cumulus13 Team
+Author-email: cumulus13@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: make_colors_tc
+        ==================
+        
+        This is make command line text colored
+        
+        
+        Installing
+        ----------
+        
+        Install and update using `pip`_:
+        
+        .. code-block:: text
+        
+            $ pip install make_colors_tc
+        
+        make_colors_tc supports Python 2 and newer, Python 3 and newer, and PyPy.
+        
+        .. _pip: https://pip.pypa.io/en/stable/quickstart/
+        
+        
+        A Simple Example
+        ----------------
+        
+        What does it look like? Here is an example of a simple make_colors_tc program:
+        
+        .. code-block:: python
+        
+            from make_colors_tc import make_colors
+            
+            print make_colors('This is White on Red', 'white', 'red')
+            print make_colors('This is Light White on Light Red', 'lightwhite', 'lightred')
+            print make_colors('This is Light White on Light Magenta', 'lw', 'm')
+        
+        
+        And what it looks like when run:
+        
+        .. code-block:: text
+        
+            $ python hello.py 
+            This is White on Red
+            This is Light White on Light Red
+            This is Light White on Light Magenta
+        
+        
+        Support
+        ------
+        
+        *   Python 2.7 +, Python 3.x
+        *   Windows, Linux
+        
+        Links
+        -----
+        
+        *   License: `BSD <https://github.com/licface/make_colors_tc/blob/master/LICENSE.rst>`_
+        *   Code: https://github.com/licface/make_colors_tc
+        *   Issue tracker: https://github.com/licface/make_color/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
