@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: break-my-python
+Version: 0.0.1
+Summary: This package tries to breaks your python interpreter, do not install it
+Home-page: http://pypi.python.org/pypi/break_my_python/
+Author: Jonathan J. Helmus
+Author-email: jjhelmus@gmail.com
+License: LICENSE.txt
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+UNKNOWN
+
+
