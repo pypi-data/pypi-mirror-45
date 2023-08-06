@@ -1,0 +1,8 @@
+include LICENSE 
+include README.md
+recursive-include django_restframework/exceptions * 
+recursive-include django_restframework/migrations *
+recursive-include django_restframework/mixins *
+recursive-include django_restframework/paginations *
+recursive-include django_restframework/serializers *
+recursive-include django_restframework/utils *
