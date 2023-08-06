@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+pyproject.toml
+setup.py
+autohooks/plugins/autopep8/__init__.py
+autohooks/plugins/autopep8/autopep8.py
+autohooks_plugin_autopep8.egg-info/PKG-INFO
+autohooks_plugin_autopep8.egg-info/SOURCES.txt
+autohooks_plugin_autopep8.egg-info/dependency_links.txt
+autohooks_plugin_autopep8.egg-info/requires.txt
+autohooks_plugin_autopep8.egg-info/top_level.txt
+tests/__init__.py
+tests/test_autopep8.py
