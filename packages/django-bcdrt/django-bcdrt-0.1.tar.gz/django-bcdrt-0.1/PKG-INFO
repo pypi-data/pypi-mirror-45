@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: django-bcdrt
+Version: 0.1
+Summary: A simple Django app to create and subscribe to Dynamic Risk Types.
+Home-page: https://fd0osgpwb5.execute-api.us-west-2.amazonaws.com/bcdrt
+Author: Your Name
+Author-email: yourname@example.com
+License: BSD License
+Description: =====
+        BriteCore Dynamic Risk Types
+        =====
+        
+        This app was built in response to a test requirement
+        Quick start
+        -----------
+        
+        1. Add "main" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'bcdrt',
+            ]
+        
+        2. Include the main URLconf in your project urls.py like this::
+        
+            path('', include('bcdrt.urls')),
+        
+        3. Run `python manage.py migrate` to create the risk models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+           to create a risk (you'll need the Admin app enabled).
+        
+        5. Visit http://127.0.0.1:8000/ to subscribe to a risk type.
+        5. Visit http://127.0.0.1:8000/risks/ to get a specific risktype in Json
+        5. Visit http://127.0.0.1:8000/risks/<risktype> to get a specific risktype in Json
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
