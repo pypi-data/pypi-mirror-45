@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pniggli
+Version: 0.1.1
+Summary: Structures of Alloys Generation And Recognition
+Home-page: UNKNOWN
+Author: Jason Eu
+Author-email: morty.yu@yahoo.com
+License: MIT, with atztogo/niggli LICENSE
+Description: UNKNOWN
+Keywords: niggli material strucutre cell
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Provides-Extra: dev
