@@ -1,0 +1,5 @@
+[console_scripts]
+safeAuth = safenet:Authenticator
+safeConn = safenet:ConnTest
+safenetChat = safenet:crappyChat_reloaded_commandLine
+
