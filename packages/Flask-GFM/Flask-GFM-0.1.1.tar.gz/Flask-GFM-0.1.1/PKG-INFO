@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Flask-GFM
+Version: 0.1.1
+Summary: GitHub Flavored Markdown jinja2 extension for Flask
+Home-page: https://github.com/jckdotim/flask-gfm/
+Author: JC Kim
+Author-email: jckdotim@gmail.com
+License: MIT
+Description: 
+        Flask-GFM
+        -------------
+        
+        GitHub Flavored Markdown jinja2 extension for Flask
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
