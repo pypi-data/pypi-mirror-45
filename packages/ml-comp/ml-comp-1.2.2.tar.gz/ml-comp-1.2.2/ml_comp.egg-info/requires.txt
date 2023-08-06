@@ -1,0 +1,9 @@
+ml-ops
+termcolor
+flask
+flask_cors
+psutil
+py4j
+nbformat
+nbconvert
+uwsgidecorators
