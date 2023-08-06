@@ -1,0 +1,14 @@
+LICENSE.rst
+README.rst
+__version__.py
+setup.cfg
+setup.py
+torrent_rename/__init__.py
+torrent_rename/torrent_rename.py
+torrent_rename/torrent_rename_script.py
+torrent_rename.egg-info/PKG-INFO
+torrent_rename.egg-info/SOURCES.txt
+torrent_rename.egg-info/dependency_links.txt
+torrent_rename.egg-info/entry_points.txt
+torrent_rename.egg-info/requires.txt
+torrent_rename.egg-info/top_level.txt
