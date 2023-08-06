@@ -1,0 +1,3 @@
+[console_scripts]
+wenku-dl = wenku_dl:main
+

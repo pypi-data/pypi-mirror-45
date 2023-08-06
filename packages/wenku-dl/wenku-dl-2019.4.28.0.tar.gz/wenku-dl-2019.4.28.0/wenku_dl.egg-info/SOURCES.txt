@@ -1,0 +1,11 @@
+setup.py
+wenku_dl/__init__.py
+wenku_dl/__main__.py
+wenku_dl/download.py
+wenku_dl/wenku.py
+wenku_dl.egg-info/PKG-INFO
+wenku_dl.egg-info/SOURCES.txt
+wenku_dl.egg-info/dependency_links.txt
+wenku_dl.egg-info/entry_points.txt
+wenku_dl.egg-info/requires.txt
+wenku_dl.egg-info/top_level.txt
