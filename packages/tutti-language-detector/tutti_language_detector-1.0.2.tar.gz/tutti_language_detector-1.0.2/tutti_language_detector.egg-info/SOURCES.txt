@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+tutti_language_detector/__init__.py
+tutti_language_detector/wrapper.py
+tutti_language_detector.egg-info/PKG-INFO
+tutti_language_detector.egg-info/SOURCES.txt
+tutti_language_detector.egg-info/dependency_links.txt
+tutti_language_detector.egg-info/requires.txt
+tutti_language_detector.egg-info/top_level.txt
+tutti_language_detector.egg-info/zip-safe
+tutti_language_detector/models/vw-0.0.1.model
+tutti_language_detector/models/vw-0.0.2.model
