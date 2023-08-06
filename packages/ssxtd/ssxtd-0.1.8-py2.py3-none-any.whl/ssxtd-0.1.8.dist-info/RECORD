@@ -1,0 +1,9 @@
+ssxtd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssxtd/parsers.py,sha256=z8ZrGMyY5cjheynepVGejJAXp127Rfmgp3dpV8JnQ2k,6476
+ssxtd/semi_structured_xml_to_dict.py,sha256=92o6SJLq8pyN6VwewiwXmJ-R_sq0q_8z9tWLAacyiVg,7197
+ssxtd-0.1.8.data/scripts/exemple_with_processors.py,sha256=bIEgK5kKV3fY-RMvbD86IlclJKxJWFMVYhKWlUKuepM,3710
+ssxtd-0.1.8.dist-info/LICENSE,sha256=A5wLKtQi68s71tEnfgyNcHanKvIJLAf8tHu-Drk8JM4,1069
+ssxtd-0.1.8.dist-info/METADATA,sha256=QTXc6102O0lA8iyAkUhQI72BKUAct43c6HydsJKjzsQ,2587
+ssxtd-0.1.8.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+ssxtd-0.1.8.dist-info/top_level.txt,sha256=bOhg1JIo8fLEdd1rmH34bQ_eP_QI7uUzTMBIs1srIIg,6
+ssxtd-0.1.8.dist-info/RECORD,,
