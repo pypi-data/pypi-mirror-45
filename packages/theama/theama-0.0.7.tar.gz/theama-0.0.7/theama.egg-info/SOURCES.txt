@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+theama/__init__.py
+theama.egg-info/PKG-INFO
+theama.egg-info/SOURCES.txt
+theama.egg-info/dependency_links.txt
+theama.egg-info/requires.txt
+theama.egg-info/top_level.txt
+theama/feature_encoding/__init__.py
+theama/feature_encoding/bow.py
+theama/feature_encoding/vlad.py
+theama/feature_encoding/tests/__init__.py
+theama/feature_encoding/tests/test_bow.py
+theama/feature_encoding/tests/test_vlad.py

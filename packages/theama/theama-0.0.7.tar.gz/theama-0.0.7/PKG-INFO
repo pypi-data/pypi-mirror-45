@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: theama
+Version: 0.0.7
+Summary: Simple interface to common computer vision algorithms.
+Home-page: https://github.com/DavidTorpey/theama
+Author: David Torpey
+Author-email: torpey.david93@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/DavidTorpey/theama/archive/0.0.7.tar.gz
+Description: UNKNOWN
+Keywords: bag-of-words,vlad,computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
