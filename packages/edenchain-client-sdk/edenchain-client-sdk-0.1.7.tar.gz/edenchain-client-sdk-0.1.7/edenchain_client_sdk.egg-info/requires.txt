@@ -1,0 +1,6 @@
+requests
+base58
+cryptoconditions
+python-rapidjson
+pysha3
+eth_account
