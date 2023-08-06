@@ -1,0 +1,11 @@
+afenrirpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afenrirpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afenrirpdf/pdf2text.py,sha256=38HRWpEVXKo1tMs4fRO77mS59-SCEzmtHVng-Ov7Hr4,37
+moshpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moshpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moshpdf/pdf2text.py,sha256=38HRWpEVXKo1tMs4fRO77mS59-SCEzmtHVng-Ov7Hr4,37
+afenrirpdf-1.0.dist-info/LICENSE.md,sha256=21Lj2q2SYKHMY4768_a3pr3q0jY2VYamAHipoodhMDc,34273
+afenrirpdf-1.0.dist-info/METADATA,sha256=GJDjFEBpR48p-oStst2aEiMYbTMtCr2KRHGsp0tBsEw,201
+afenrirpdf-1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+afenrirpdf-1.0.dist-info/top_level.txt,sha256=hIZPatw4dCVmnjEQxAKCRJ1khtbp4QhPo08KieErQQo,11
+afenrirpdf-1.0.dist-info/RECORD,,
