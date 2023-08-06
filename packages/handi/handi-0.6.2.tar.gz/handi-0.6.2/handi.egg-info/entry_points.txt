@@ -1,0 +1,6 @@
+[console_scripts]
+chkey = handy.cli.chkey:main
+delkey = handy.cli.delkey:main
+gutils = handy.cli.cli:main
+rmempty = handy.cli.rmempty:main
+
