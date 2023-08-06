@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: text-processing-ml
+Version: 0.1
+Summary: Testing for models confirming to the scikit-learn api
+Home-page: https://github.com/EricSchles/text_processing
+Author: Eric Schles
+Author-email: ericschles@gmail.com
+License: MIT
+Description: # Text Processing (The Library)
+        
+        The goal of this library is to provide a set of common functions for preprocessing text.  Examples include:
+        
+        * spell checking [check]
+        * white space normalization [check]
+        * casing [check]
+        * sub-sequence matching [check]
+        * deduplication
+        * stemming
+        * lemmatization
+        * fuzzy string matching [check]
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
