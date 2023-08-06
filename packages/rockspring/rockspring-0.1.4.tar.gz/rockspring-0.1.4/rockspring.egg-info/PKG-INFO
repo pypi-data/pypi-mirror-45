@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: rockspring
+Version: 0.1.4
+Summary: Request/Reply service generation package
+Home-page: UNKNOWN
+Author: Pawel Burzynski
+Author-email: p.k.burzynski@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
