@@ -1,0 +1,13 @@
+huskarl/__init__.py,sha256=JwhHfh0ofBJ0XiFp3yDurIDQUnDwRh95SwRC38dOUNk,101
+huskarl/core.py,sha256=eJSaibMVUfiJbeJyBM5jB4EpqPkexd5NZemi3jSXOZ0,821
+huskarl/memory.py,sha256=95Bt-Pu-P7LyfCJlrP5oe68xwMxqWqFIaeDu_5EexnY,6430
+huskarl/policy.py,sha256=My-rtN_y2TUAW241SdWOQbLtiFbx-UC9T8VaQ-bMbu8,5035
+huskarl/simulation.py,sha256=VuokmBHXp0f3B3eSBnabSkSPfZgDPQuVIBrxAFgBfNw,8226
+huskarl/agent/__init__.py,sha256=qzDIYLlplfhsCTD5fFk4bAuD91eUrGzZUAFAPvD1mRU,105
+huskarl/agent/a2c.py,sha256=8Urx4RQrPEPv5QAOk4JHCHY4EW2zvpCb6jta3_6ZzZU,4808
+huskarl/agent/ddpg.py,sha256=ruKWamxNQZnkWtPW8Tfjmhwr_M5abMsVuZOWSROp3Is,5050
+huskarl/agent/dqn.py,sha256=VFslDApUzL2O6tzvq7dozWNDolIIt0Il-cTgR6NVOGc,6737
+huskarl-0.4.dist-info/METADATA,sha256=SNqxEHj66QXbTWWp6EcadHpgU05lfaK578zPMkqZXOw,614
+huskarl-0.4.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+huskarl-0.4.dist-info/top_level.txt,sha256=PW1ZulNEZrkjCI6Nr1KHRcbijIK53sk6aFwLLy26z7Y,8
+huskarl-0.4.dist-info/RECORD,,
