@@ -1,0 +1,8 @@
+README.md
+pipe2codeblock.py
+setup.py
+pipe2codeblock.egg-info/PKG-INFO
+pipe2codeblock.egg-info/SOURCES.txt
+pipe2codeblock.egg-info/dependency_links.txt
+pipe2codeblock.egg-info/entry_points.txt
+pipe2codeblock.egg-info/top_level.txt

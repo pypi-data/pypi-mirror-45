@@ -1,0 +1,4 @@
+[console_scripts]
+p2c = pipe2codeblock:main
+pipe2codeblock = pipe2codeblock:main
+
