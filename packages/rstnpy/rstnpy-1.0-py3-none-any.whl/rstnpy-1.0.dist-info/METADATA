@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: rstnpy
+Version: 1.0
+Summary: Library used to work with rstn-1-second data
+Home-page: https://github.com/craam/rstnpy
+Author: Edison Neto
+Author-email: ednetoali@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests (>=2.20)
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: pandas (>=0.21matplotlib>=2.2.2)
+
+* RSTNPy
+
+Library to work with RSTN 1 second data from NOAA's site. Working for data after 2000.
+
+** Installation
+
+#+BEGIN_SRC bash
+pip install rstnpy
+#+END_SRC
+
+** How to use it
+
+#+BEGIN_SRC python
+import matplotlib.pyplot as plt
+
+from rstnpy import RSTN
+
+day = 16
+month = 10
+year = 2014
+path_to_files = "data/"
+station = "San vito"
+
+rstn = RSTN(day, month, year, path_to_files, station)
+
+# Search and download the file.
+filename = rstn.downloader.download_file()
+
+# Decompress the gzipped file into a text file.
+filename = rstn.decompress_file(filename)
+
+# Generate a dataframe from the data.
+df = rstn.create_dataframe()
+
+# Plot the data.
+ax = rstn.plot()
+
+plt.plot()
+#+END_SRC
+
+** Compatibility
+
+The library works with Python 3.5+
+
+
