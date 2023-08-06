@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sib-manager
+Version: 0.1.9
+Summary: StartinBlox Manager
+Home-page: https://git.happy-dev.fr/startinblox/sib-installer
+Author: Plup
+Author-email: plup@plup.io
+License: MIT
+Description: # Startin'Blox Manager
+        
+        ## Requirements
+        
+        You will need both Python3 and Pip3 installed.
+        
+        Install the `sib` command line:
+        ```
+        $ pip3 install --user -U sib-manager
+        ```
+        
+        ## Get started with a development instance
+        
+        Create a new project with your favorite modules. To create a project with `djangoldp_project` and `oidc_provider` :
+        ```
+        $ sib startproject myproject -m djangoldp_project -m oidc_provider:django-oidc-provider
+        $ sib initproject myproject
+        ```
+        
+        And launch it locally !
+        ```
+        $ cd myproject
+        $ python3 manage.py runserver
+        ```
+        
+        For development instance, the administartion interface is available at `http://localhost/admin/` with default `admin` user and password.
+        
+        ## Usage
+        
+        `sib` manager can be used to deploy local development and production instances. Whereas a development instance relies on testing components as a `sqlite` database and comes with default configuration, a production instance needs more parameters to configure the `postgresql` database.
+        
+        A production setup can made by the `--production` switch option.
+        
+        * `startproject`: creates a fresh project tree
+            * `--module` (or `-m`) options gives the startin'blox module with the format `<package>:<distribution>` (distribution is optional)
+            * `--site-url` is used to generate links and ids (default to `http://localhost:8000`)
+            * `--db-host`, `--db-name`, `--db-user` and `--db-pass` are used to configure the database (mandatory with `--production`)
+        * `initproject`: initializes a project tree
+            * `--admin-name`, `--admin-pass` and `--admin-email` give details about the default admin (default to `admin` in development, mandatory in production)
+        
+        Both `startproject` and `initproject` take an optional path for the project as a second argument to define the project directory.
+        
+        ## Contribute
+        
+        Get the last unreleased version of the project:
+        ```
+        $ pip3 install --user -U git+https://git.happy-dev.fr/startinblox/devops/sib
+        ```
+        
+        ## Testing in docker
+        
+        Test production setup with postgres:
+        ```
+        # docker network create sib
+        # docker run --rm --network sib --name db -e POSTGRES_PASSWORD=test -d postgres
+        # docker run --rm --network sib -p 127.0.0.1:80:8000 -v $PWD:/code -it python:3.6 bash
+        # pip install -e .[dev]
+        # sib startproject --production --db-host db --db-name postgres --db-user postgres --db-pass test -m djangoldp_project -m oidc_provider:django-oidc-provider myproject /tmp/test-sib-docker
+        # sib initproject --production --admin-name admin --admin-email 'something' --admin-pass admin myproject /tmp/test-sib-docker
+        # cd /tmp/test-sib-docker/
+        # python manage.py runserver 0.0.0.0:8000
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Provides-Extra: dev
