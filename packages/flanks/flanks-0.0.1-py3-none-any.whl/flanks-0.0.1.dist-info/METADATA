@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: flanks
+Version: 0.0.1
+Summary: Small client for FlanksAPI
+Home-page: https://github.com/flanks-io/python-flanks
+Author: Flanks Team
+Author-email: hello@flanks.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.20) ; python_version >= "3.0"
+
+# Flanks Python Library
+The Flanks Python library provides convenient access to the Flanks API from applications written in the Python language. It includes a pre-defined set of classes for API resources that initialize themselves dynamically from API responses which makes it compatible with a wide range of versions of the Flanks API.
+
+## Documentation
+
+Soon
+
+## Installation
+
+Soon
+
+### Requirements
+* Python 3.4+
+
+## Usage
+
+Soon
+
+
+
