@@ -1,0 +1,9 @@
+README.rst
+bumpymcbumpface.py
+setup.cfg
+setup.py
+bumpymcbumpface.egg-info/PKG-INFO
+bumpymcbumpface.egg-info/SOURCES.txt
+bumpymcbumpface.egg-info/dependency_links.txt
+bumpymcbumpface.egg-info/entry_points.txt
+bumpymcbumpface.egg-info/top_level.txt
