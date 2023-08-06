@@ -1,0 +1,19 @@
+{% extends "spider_base/protections/base.html" %}
+{% load spider_protections i18n spider_rdf %}
+{% block content %}
+{% extract_protections "protections" as protections %}
+<form action="{{ request.get_full_path }}" name="SPKCProtectionForm" method="post">
+  {% csrf_token %}
+  <data hidden="hidden" property="spkc:protections.amount" datatype="xsd:nonNegativeInteger">{{protections|length}}</data>
+  <data hidden="hidden" property="spkc:strength" datatype="xsd:integer">{{uc.strength}}</data>
+  <fieldset rel="protections" style="overflow-y: auto; max-height:600px">
+    <legend><h1>{% trans 'Protections' %}</h1></legend>
+    {% for prot in protections %}
+      {% include "spider_base/protections/protection_item.html" with prot=prot %}
+    {% endfor %}
+  </fieldset>
+  <button class="w3-button w3-grey">
+    {% trans 'Send' %}
+  </button>
+</form>
+{% endblock %}
