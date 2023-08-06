@@ -1,0 +1,11 @@
+wagtail_headless_preview/__init__.py,sha256=r3NfpZ6zO8gUFAot_PHWet0PWBZgqqfztZEkCa_T-h8,145
+wagtail_headless_preview/apps.py,sha256=bdEwOHkM7E3A5UBIAjh7j4XwVokiBwWqRk9TSQKKuKI,121
+wagtail_headless_preview/models.py,sha256=BtgulJflGdrj_3cBxP1lrZapjZbhHnrVfYirONveJZA,2945
+wagtail_headless_preview/migrations/0001_initial.py,sha256=U1zujI7Ygboad3PphWlFK2Qgn82_9zFsq4iu-IjivI0,849
+wagtail_headless_preview/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_headless_preview/templates/wagtail_headless_preview/preview.html,sha256=guJATnHSxHLYWB6SqizDIyzdC9mGCryBPbH0ccBE_fk,194
+wagtail_headless_preview-0.0.2.dist-info/LICENSE,sha256=eE-K5KRcq0kZAfASWTIg6jTPSrufDUGPw9JEX0Yal0U,1545
+wagtail_headless_preview-0.0.2.dist-info/METADATA,sha256=wBUWjgweQge-X_sbvsk39SJlJzKioleNGNYr3WsZe9k,2228
+wagtail_headless_preview-0.0.2.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+wagtail_headless_preview-0.0.2.dist-info/top_level.txt,sha256=Ixs1URchRq-fimhe83Yy2xFh7pPwve8ISXPr823ssOM,25
+wagtail_headless_preview-0.0.2.dist-info/RECORD,,
