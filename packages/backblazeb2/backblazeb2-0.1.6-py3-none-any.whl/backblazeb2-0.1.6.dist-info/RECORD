@@ -1,0 +1,10 @@
+b2py/__init__.py,sha256=f2sy8AHr6l5KfvI9pFcffRF-Vg35mLYP2392FxhGfJc,23
+b2py/b2.py,sha256=aL8gGrX35LvFkBAx2uMjn-9NaSLp15ZGw3faNk_1grg,13879
+b2py/constants.py,sha256=EU-jbvOZNOyP_hS5xSvU6WE-buGvK1EWhysHepbRWbg,225
+b2py/utils.py,sha256=FfRDoQ8OEGdl081jvynt4OZG3unOqZkJTIIq1_qlyYo,1000
+backblazeb2-0.1.6.dist-info/DESCRIPTION.rst,sha256=D8WGC0lt5yKz4sf-LFNHgEzH2MdWsmezIiOZfORV_AQ,46
+backblazeb2-0.1.6.dist-info/METADATA,sha256=TsuCk4g4hxKoBhQNf5Yz4pQEYN7AkgYkfKuu232YeOM,469
+backblazeb2-0.1.6.dist-info/RECORD,,
+backblazeb2-0.1.6.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+backblazeb2-0.1.6.dist-info/metadata.json,sha256=VtCcpUad2oJiuGg13IhS4VuF2ueh7WbLe5jsP3PD50c,623
+backblazeb2-0.1.6.dist-info/top_level.txt,sha256=y99qPdev2O5KzOtlirbQQDl4jU0WQvFIDgpLQ4ipJkU,5
