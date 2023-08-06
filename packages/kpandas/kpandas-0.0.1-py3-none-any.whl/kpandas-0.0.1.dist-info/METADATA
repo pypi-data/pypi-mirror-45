@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kpandas
+Version: 0.0.1
+Summary: Kristjan's helpers for pandas
+Home-page: https://github.com/kristjanstrojan/kpandas
+License: MIT
+Keywords: pandas
+Author: Kristjan Strojan
+Author-email: info@kristjan.strojan.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy (>=1.13.0,<2.0.0)
+Requires-Dist: pandas (>=0.24.0,<0.25.0)
+Requires-Dist: pendulum (>=1.4,<2.0)
+Requires-Dist: toml (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/kristjanstrojan/kpandas
+Description-Content-Type: text/markdown
+
+# kpandas
