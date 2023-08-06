@@ -1,0 +1,12 @@
+marshmallow<3.0.0
+copr
+pyquery
+requests
+six
+GitPython
+ansicolors
+rpm-py-installer
+requests-gssapi
+
+[:python_version < "3.3"]
+backports.lzma
