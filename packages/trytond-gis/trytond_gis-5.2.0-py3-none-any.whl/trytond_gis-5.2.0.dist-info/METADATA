@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: trytond-gis
+Version: 5.2.0
+Summary: Adds Geographic Information System support to trytond
+Home-page: http://www.tryton.org/
+Author: Tryton
+Author-email: bugs@tryton.org
+License: GPL-3
+Download-URL: http://downloads.tryton.org/5.2/
+Project-URL: Bug Tracker, https://bugs.tryton.org/
+Project-URL: Documentation, https://docs.tryton.org/
+Project-URL: Forum, https://www.tryton.org/forum
+Project-URL: Source Code, https://hg.tryton.org/trytond-gis
+Keywords: tryton GIS
+Platform: any
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+Requires-Dist: geomet
+Requires-Dist: psycopg2 (>=2.0.14)
+Requires-Dist: trytond (>=5.2,<5.3)
+
+Tryton GIS backend
+==================
+
+It adds GIS__ support to Tryton.
+
+__ https://en.wikipedia.org/wiki/Geographic_information_system
+
+
