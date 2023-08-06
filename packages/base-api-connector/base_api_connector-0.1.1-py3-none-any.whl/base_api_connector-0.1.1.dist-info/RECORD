@@ -1,0 +1,9 @@
+api-connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api-connector/main.py,sha256=ubnODVqE0YNPJqIWlTTZONXBeSKN7YkrQC9bdVI89wo,4121
+base-api-connector/__init__.py,sha256=vqnRzJjxxTkQP_cXNsbQn7r5jArDLJEvntgXANT2E1w,51
+base-api-connector/main.py,sha256=ubnODVqE0YNPJqIWlTTZONXBeSKN7YkrQC9bdVI89wo,4121
+base_api_connector-0.1.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+base_api_connector-0.1.1.dist-info/METADATA,sha256=Y0QFLMO8Ly0xF_V6so1lP4I8ifiBk64Nr9S13sWg7Y0,435
+base_api_connector-0.1.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+base_api_connector-0.1.1.dist-info/top_level.txt,sha256=ecRtnA-qDMFZOcJFX85fxzxUXDS-CxpgNUxjmAZ5HSA,19
+base_api_connector-0.1.1.dist-info/RECORD,,
