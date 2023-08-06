@@ -1,0 +1,15 @@
+rdflib
+rfc3986
+networkx
+pygraphviz
+numpy
+nltk
+matplotlib
+SPARQLWrapper
+powerlaw
+scipy
+setuptools
+social
+ipython
+python-dateutil
+scikit-learn
