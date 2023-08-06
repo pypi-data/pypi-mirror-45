@@ -1,0 +1,29 @@
+{
+  "definitions": {
+    "check_base": {
+      "definitions": {},
+      "dependencies": {
+        "check_type": {
+          "oneOf": []
+        }
+      },
+      "type": "object",
+      "properties": {
+        "check_type": {
+          "default": "check_volume",
+          "enum": [],
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "this_array": {
+      "items": {
+        "$ref": "#/definitions/check_base"
+      },
+      "type": "array"
+    }
+  }
+}
