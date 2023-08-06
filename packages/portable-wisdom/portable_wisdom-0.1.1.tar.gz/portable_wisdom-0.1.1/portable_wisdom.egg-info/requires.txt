@@ -1,0 +1,7 @@
+ebooklib>=0.17
+pillow>=6.0
+requests>=2.21
+beautifulsoup4>=4.7.1
+html5lib>=1.0.1
+diskcache>=3.1.1
+pyinstapaper>=0.2.2
