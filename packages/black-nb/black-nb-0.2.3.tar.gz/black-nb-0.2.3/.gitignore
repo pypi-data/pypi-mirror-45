@@ -1,0 +1,11 @@
+/.mypy_cache/
+/build/
+/dist/
+/black_nb.egg-info/
+__pycache__/
+.idea/
+.python-version
+.nox/
+.coverage
+*.DS_Store
+.cache
