@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: limmat
+Version: 2019.5.1.870.261467565
+Summary: I sat by the river and thought about WSGI...
+Home-page: https://pypi.org/project/limmat/
+Author: Tobias Ammann
+License: MIT
+Description: # Limmat
+        
+        I sat by the river and thought about WSGI...
+        
+        
+        Limmat is yet another Python web framework building on top of WSGI. Limmat defines itself by the features it lacks.
+        
+        
+        ## Lacking Features
+        
+        - No request object
+        - No response object
+        - No template engine
+        - No built in WSGI server
+        - No router
+        - No Websocket support
+        - No plugin system
+        - No support for multiple apps or blueprints
+        
+        
+        ## Formal Aims
+        
+        - Single file library
+        - As small as possible
+        - Clean library namespace
+        - Thread-safe
+        - WSGI
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Description-Content-Type: text/markdown
