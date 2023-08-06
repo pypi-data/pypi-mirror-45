@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/fx_currency_rates.py,sha256=0CJxU1YCkkm207R_E7OhhSOu_I6i5ClUphZjx4A4-0c,382
+examples/generate_rsa_keys.py,sha256=lP_KU89ZR5jOMWk5kUjN9deh5NnSFsZL1Fac4j2vics,1826
+kuveytturk/__init__.py,sha256=SbETZbQ5z5PEEPKTKa7Iw3rQPhFDuDke7jldLzMMx6U,204
+kuveytturk/api.py,sha256=X5Ml6ZtG2pCmVOPe0wjMihaSsx3cCLfIuyfZwW9sbX0,6217
+kuveytturk/auth.py,sha256=ypTphYig7vtJd_79VSsRRgCXciKGxqUYnj-By8R45Ys,3596
+kuveytturk/binder.py,sha256=D89hp71CHQ1c3BeKxQbSH6PrNqztWDRO-WkTqWAMasA,4490
+kuveytturk/error.py,sha256=1E9X9h7ZZIN7ZU3ei2vc20O378r72ZmNFu3jBGQ-w3I,334
+kuveytturk/models.py,sha256=6MGFtYgo5BxsMbVAeFriasjaUMx9I-Q6Bx_2BBtu-uY,1341
+kuveytturk/parsers.py,sha256=Iq8iMcozSAes0ZHzGE50uNOB9wPXSOmWaBg28ceB0uM,790
+kuveytturk/utils.py,sha256=GrkrTzMXkkyVZFNHMlqVcb5T4suycA8uPR5imlpixyw,129
+kuveytturk-1.0.1.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+kuveytturk-1.0.1.dist-info/METADATA,sha256=2ffNbFYoTgYuGLAkb2ALXgl38vFzUVGo6ofG8hrEY1M,755
+kuveytturk-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+kuveytturk-1.0.1.dist-info/top_level.txt,sha256=Nj3RISh6PJBImXKR-IU0wbfVjbJMVi5Dt_aRPWpwqRQ,20
+kuveytturk-1.0.1.dist-info/RECORD,,
