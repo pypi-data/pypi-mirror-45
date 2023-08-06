@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: md-translate
+Version: 0.0.1
+Summary: CLI tool to translate markdown files
+Home-page: https://github.com/ilyachch/md_docs-trans-app
+Author: Ilya Chichak
+Author-email: ilyachch@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# MD Translate
+
+CLI to translate `.md` files from English to Russian.
+
+Uses Yandex Translation API.
+
+## Installation
+
+Get project and install by: 
+
+```bash
+$ git clone git@github.com:ilyachch/docs-trans-app.git
+$ cd docs-trans-app
+$ ./install.sh
+```
+
+It will check installed Python version, install venv, create venv, load requirements and create file `TRANSLATE_API_KEY` with some dummy. There you should put your API Key, you got from [Yandex Translate](https://translate.yandex.ru/developers/keys).
+
+## Using
+
+To start translation, you should activate venv, by `source venv/bin/activate` and then you can use run it by `python md_translate.py -p <PATH TO FOLDER>`.
+
+It will find all `.md` files in folder you set and line by line, will translate. It will translate only paragraphs, not lists or any other markdown constructions.
+
+## Plans to extend
+
+* Make it translate all needed text blocks, not only paragraphs;
+* Make it translate not only "English" -> "Russian";
+* Make it translate using not only Yandex Translation API;
+
+
