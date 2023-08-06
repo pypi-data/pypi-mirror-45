@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: arcflash
+Version: 0.1.3
+Summary: Python support libraries for Arcflash flash ROM board for Acorn computers
+Home-page: https://github.com/google/myelin-acorn-electron-hardware/tree/master/a3000_rom_emulator/python_lib
+Author: Phillip Pearson
+Author-email: pp@myelin.nz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf
+Requires-Dist: PySerial
+
+# Arcflash
+
+Arcflash is a flash ROM board for the Acorn Archimedes and Risc PC computers.
+
+Project homepage: http://myelin.nz/arcflash
+
+This is the Python support library, which lets you build your own flash
+images, and program them into the memory on an Arcflash board connected over
+USB.
+
+## Usage
+
+
+
