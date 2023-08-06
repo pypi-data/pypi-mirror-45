@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: django-test-timer
+Version: 0.0.2
+Summary: Print the amount of time that each unit test took
+Home-page: https://github.com/unformatt/django-test-timer
+Author: Matt Shaw
+Author-email: m@ttshaw.com
+License: UNKNOWN
+Description: # django-test-timer
+        
+        Print the amount of time that each unit test took. 
+        
+        Tested with Django 1.11, Python 2.7
+        
+        ## Install
+        
+        `pip install django-test-timer`
+        
+        Then in your Django settings
+        
+        ```python
+        TEST_RUNNER = 'django_test_timer.TimedTestRunner'
+        ```
+        
+        Then run your tests as usual.
+        
+        ## Settings
+        
+        By default, all tests will be printed. To only print tests that take a certain amount of time, set the threshold in your settings.py
+        
+        ```python
+        TIMED_TEST_THRESHOLD_SECS = 2.0
+        ```
+        
+        ## Example Output
+        
+        ```
+        >>> ./manage.py test
+        ....
+        ----------------------------------------------------------------------
+        Ran 5 tests
+        
+        Tests Times (>0.0s):
+          [2.09s] test_foo (main.tests.test_general.DemoTestCase)
+          [1.004s] test_bar (main.tests.test_general.DemoTestCase)
+          [0.0s] test_this (main.tests.test_general.DemoTestCase)
+          [0.0s] test_that (main.tests.test_general.DemoTestCase)
+          [0.0s] test_not_implemented_errors (main.tests.test_general.DemoTestCase)
+          
+          Destroying test database for alias 'default'...
+          ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
