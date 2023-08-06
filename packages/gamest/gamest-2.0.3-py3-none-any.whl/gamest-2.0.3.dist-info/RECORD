@@ -1,0 +1,15 @@
+gamest/__init__.py,sha256=2inh9VMJgitVbi3cYwcY4huf7WhEuz2s9sdiulSA9ws,700
+gamest/app.py,sha256=2QGFbCk_FQeUwziOv6rvm7T4F0HKtXhapADqQxiciwo,35498
+gamest/db.py,sha256=OFDcggwvL-RLU8GW5sTtsETS6KjRs1vwkvaATCV4XzU,7714
+gamest/errors.py,sha256=f9ad2v0pGyi7djSqD-VQs--akkc0ANs4ZG5AtjltITA,107
+gamest/gamest.conf.default,sha256=oPsaGRvzRHFc_uMZtdlXkZG_bXev5AstcAJqNIQf1_U,330
+gamest/plugins.py,sha256=7L-Jg3HGRSHDjCNAn3qzRmJcrCWHc7if0TOZcMa7Vz4,6115
+gamest/util.py,sha256=v3OzISqoJ-VXMlc8z8iSS1iKLId3pM0CfIfq6PXab3c,422
+gamest-2.0.3.dist-info/METADATA,sha256=Soor_F8dtOXyfdLKnwxDqpZOZT5L8UW2hN8DZvdfR0I,2082
+gamest-2.0.3.dist-info/RECORD,,
+gamest-2.0.3.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+gamest-2.0.3.dist-info/entry_points.txt,sha256=A8Yo-hGUEnJT_MGpgpY35aoi-1gWQVol_EF8QBj-wlY,40
+gamest-2.0.3.dist-info/top_level.txt,sha256=v5uMAcfur9EuFInT2xMzOyS3TI9nAYbgmrVA-BVp5Hk,22
+gamest_plugins/play_session_notifier/PlaySessionNotificationPlugin.conf.default,sha256=QF5nud6RkNlq44_ad7TiOI3fBajrq1ViL3kaG-xNDVE,402
+gamest_plugins/play_session_notifier/__init__.py,sha256=nhqRw3N7LMfiBkLWXAGgd3gKZPe5WgnpZlhAu8ELaKw,90
+gamest_plugins/play_session_notifier/module.py,sha256=KtTE_l3vz6TWKZiYpXD5087NOELiwDJHscdwrx78Uqs,3192
