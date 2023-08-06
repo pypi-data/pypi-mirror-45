@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: luadata
+Version: 0.0.4
+Summary: Serialize Python list & dictionary to Lua table.
+Home-page: https://github.com/leafvmaple/luadata
+Author: Leafvmaple
+Author-email: leafvmaple@gmail.com
+License: BSD License
+Description: # luadata
+        
+        This is a Python package that can serialize `Python` list &amp; dictionary to `Lua` table.
+        
+        ## Install
+        
+        Binary installers for the latest released version are available at the `Pypi`.
+        ```
+        python -m pip install --upgrade luadata
+        ```
+        
+        ## Use
+        
+        You can use `serialize` to output your Python data into a Lua file on dstpath.
+        ```
+        luadata.serialize(data, dstpath, encoding='utf-8')
+        ```
+        
+        ## License
+        
+        [BSD](https://github.com/leafvmaple/luadata/blob/master/LICENSE)
+Keywords: pip,lua,data
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
