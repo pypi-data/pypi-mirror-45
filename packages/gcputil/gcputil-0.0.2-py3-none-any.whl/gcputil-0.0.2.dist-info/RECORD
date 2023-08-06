@@ -1,0 +1,9 @@
+gcp_utils/__init__.py,sha256=1uwNrezd6qNy5fEi6BIVpM1GruxBb061DkqmJK6AZ6w,26
+gcp_utils/gcp_utils.py,sha256=TEwZt0oxa5YAYSJeDDlxUnYETkYdaWfPSr3INcc8Iqk,2235
+gcputils/__init__.py,sha256=v0J8BUzxErQViukAliLp51BnnecQ157TtDewkbE4_fg,2241
+gcputils/gcputils.py,sha256=v0J8BUzxErQViukAliLp51BnnecQ157TtDewkbE4_fg,2241
+gcputil-0.0.2.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gcputil-0.0.2.dist-info/METADATA,sha256=92VLE88uFojOe_Ble47lBGA4X1Ufy06oVBEAAmjWPs4,403
+gcputil-0.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gcputil-0.0.2.dist-info/top_level.txt,sha256=1v_Uoywr0woRY5IfAezdGbrm-no2v5xxDHloCN9hYcU,9
+gcputil-0.0.2.dist-info/RECORD,,
