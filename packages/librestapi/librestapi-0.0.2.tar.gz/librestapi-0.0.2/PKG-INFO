@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: librestapi
+Version: 0.0.2
+Summary: Package provides a simple interface for implementing REST resource requests.
+Home-page: https://github.com/Knotis/librestapi-py
+Author: Knotis Inc.
+Author-email: seth@knotis.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

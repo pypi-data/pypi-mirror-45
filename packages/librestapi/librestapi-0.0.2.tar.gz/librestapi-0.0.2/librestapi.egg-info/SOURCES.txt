@@ -1,0 +1,13 @@
+README.rst
+setup.py
+librestapi/__init__.py
+librestapi/client.py
+librestapi/resource.py
+librestapi.egg-info/PKG-INFO
+librestapi.egg-info/SOURCES.txt
+librestapi.egg-info/dependency_links.txt
+librestapi.egg-info/requires.txt
+librestapi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
+tests/test_resource.py
