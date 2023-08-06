@@ -1,0 +1,1334 @@
+---
+file-contents:
+  releasenotes/notes/Add-window-displacement-options-to-move-guake-away-from-the-edges-1b2d46997e8dbe91.yaml:
+    features:
+    - 'Add window displacement options to move guake away from the screen edges
+
+      '
+    - 'User can manually enter the name of the GTK theme it wants Guake to use. Note
+      there is no
+
+      Preference settings yet, one needs to manually enter the name using ``dconf-editor``,
+      in the
+
+      key ``/apps/guake/general/gtk-theme-name``. Use a name matching one the folders
+      in
+
+      ``/usr/share/themes``. Please also considere this is a early adopter features
+      and has only
+
+      been tested on Ubuntu systems.
+
+      Dark theme preference can be se with the key ``/apps/guake/general/gtk-prefer-dark-theme``.
+
+      '
+    fixes:
+    - 'fixes issue with vertically stacked dual monitors #1162
+
+      '
+  releasenotes/notes/add-cli-support-option-16c5b10c88d04b06.yaml:
+    features:
+    - Add --support option to Guake CLI for user when need to report issue
+  releasenotes/notes/add-copy-url-b39441ee986bf333.yaml:
+    features:
+    - add a new option in the context menu (copy url)
+  releasenotes/notes/add-libwnck-dep-a64492dc9d26d03e.yaml:
+    fixes:
+    - Add libwnck to bootstrap scripts
+  releasenotes/notes/add-save-restore-tabs-efb4a554a7c0dc30.yaml:
+    features:
+    - 'Add save/restore tabs function.
+
+      '
+    - 'Add label parameter to ``notebook.new_page_with_focus``
+
+      '
+  releasenotes/notes/add-search-terminal-43a0aa5950e79a74.yaml:
+    features:
+    - Add search box for terminal. Default hotkey is ``Ctrl+Shift+F``.
+  releasenotes/notes/auto-edit-648e3609c9aee103.yaml:
+    features:
+    - '[dev env] automatically open reno slug after creation for editing
+
+      '
+  releasenotes/notes/autostart-300343bbe644bd7e.yaml:
+    features:
+    - 'New "start at login" option in the settings (only for GNOME) #251
+
+      '
+    translations:
+    - fr_FR
+    - pl
+  releasenotes/notes/bugfix-1e9b3a5f5997f024.yaml:
+    fixes:
+    - 'Reverse transparency slider (to be more meaningful, #1501
+
+      '
+  releasenotes/notes/bugfix-4e0564c5ad651093.yaml:
+    fixes:
+    - 'Fix command-line select tab behavior #1492
+
+      '
+  releasenotes/notes/bugfix-5b330b910cf335bb.yaml:
+    fixes:
+    - 'Fix duplication in theme list (#1304)
+
+      '
+  releasenotes/notes/bugfix-6096693463dd6c84.yaml:
+    fixes:
+    - 'Fix  hyperlink VTE
+
+      '
+  releasenotes/notes/bugfix-654583b5646cf905.yaml:
+    fixes:
+    - 'Quick Open functionnality is restored #1121
+
+      '
+  releasenotes/notes/bugfix-705c264a6b77f4d3.yaml:
+    fixes:
+    - 'Apply cursor blinking to new tabs as well, not only on settings change.
+
+      '
+  releasenotes/notes/bugfix-78df60050b344c0b.yaml:
+    fixes:
+    - 'delete tab even without libutempter (#1198)
+
+      '
+  releasenotes/notes/bugfix-90bd70c984ad6a73.yaml:
+    fixes:
+    - 'Unusable Guake with "hide on focus lose" option #1152
+
+      '
+  releasenotes/notes/bugfix-abe62750f777873f.yaml:
+    fixes:
+    - 'Fix crash when changing command file #1229
+
+      '
+  releasenotes/notes/bugfix-afa83c6312e2f1a0.yaml:
+    fixes:
+    - 'Fix multiline selection right click (#1413)
+
+      '
+  releasenotes/notes/bugfix-b26aac4094ce8154.yaml:
+    fixes:
+    - 'Fix transparency regression on ubuntu composite (#1333)
+
+      '
+  releasenotes/notes/bugfix-b54670a057197a9f.yaml:
+    fixes:
+    - 'fix ``import sys`` in ``simplegladeapp.py``
+
+      '
+  releasenotes/notes/bugfix-bb8c6dcf8cbd3b20.yaml:
+    fixes:
+    - Fix transparency issue
+    - Fix right-click on link
+    - Fix bad css override on check tab background (#1326)
+  releasenotes/notes/bugfix-c065e1a8b8e41270.yaml:
+    fixes:
+    - 'Fix window losefocus hotkey #1080
+
+      '
+  releasenotes/notes/bugfix-cb51b18bfd3c8da3.yaml:
+    fixes:
+    - 'Fix refocus if open #1188
+
+      '
+  releasenotes/notes/bugfix-ce7825d37bcf2273.yaml:
+    fixes:
+    - 'Fix right click selection in Midnight Commander
+
+      '
+  releasenotes/notes/bugfix-desktop-icon-68a8c2d6d2ef390c.yaml:
+    fixes:
+    - 'Fix Guake application icon not displayed with German locale
+
+      '
+  releasenotes/notes/bugfix-desktop-icons-d138f5862005ec4c.yaml:
+    fixes:
+    - 'Don''t translate application icon (this finally fixes Guake application icon
+      not being displayed with German locale, which was only partially resolved with
+      #1320)
+
+      '
+  releasenotes/notes/bugfix-f11b203584eeeb8e.yaml:
+    fixes:
+    - 'fix ctrl+click on hyperlinks on VTE 0.50 (#1295)
+
+      '
+  releasenotes/notes/bugfix_1225-6eecf165d1d0e732.yaml:
+    fixes:
+    - 'change scope of ``which_align`` variable in ``pref.py`` (#1225)
+
+      '
+  releasenotes/notes/context-menu-b45d815f7feaeecb.yaml:
+    features:
+    - support for per terminal context menus
+    - new more fullscreen handeling
+  releasenotes/notes/credits-17a8ac0624e7a46b.yaml:
+    other:
+    - 'Update about screen''s credits
+
+      '
+  releasenotes/notes/dark_theme-4bb6be4b2cfd92ae.yaml:
+    features:
+    - 'Preliminary Dark theme support. To use it, install the ''numix'' theme in your
+      system.
+
+      For example, Ubuntu/Debian users would use ``sudo apt install numix-gtk-theme``.
+
+      '
+    known_issues:
+    - 'Cannot enable or disable the GTK or Dark theme by a preference setting.
+
+      '
+  releasenotes/notes/dbus-c3861541c24b328a.yaml:
+    fixes:
+    - 'Speed up guake D-Bus communication (command line such as ``guake -t``).
+
+      '
+  releasenotes/notes/debug-d435207215fdcc2e.yaml:
+    features:
+    - 'Add ``--verbose``/``-v`` parameter to enable debug logging. Please note the
+      existing ``-v``
+
+      (for version number) has been renamed ``-V``.
+
+      '
+  releasenotes/notes/dependencies-40d6237664b473cb.yaml:
+    notes_for_package_maintainers:
+    - 'Please note ``libutempter0`` should now be considered as a mandatory dependency
+      of Guake.
+
+      It solves the frozen terminal issue on exit (#1014)
+
+      '
+  releasenotes/notes/dev-env-fb2967d1ba8ee495.yaml:
+    features:
+    - '[dev env]: Add the possibility to terminate guake with ``Ctrl+c`` on terminal
+
+      where Guake has been launched
+
+      '
+  releasenotes/notes/docs-0c95ec1b74cc65d0.yaml:
+    other:
+    - 'Rework the documentation. The README grew up a lot and was hard to use. It
+      has been cut into
+
+      several user manual pages in the official online documentation.
+
+      '
+  releasenotes/notes/double_event_fix-c49129c68ead0b6b.yaml:
+    fixes:
+    - "removed duplicate event bind? previously I had issue where quick-open event\
+      \ would be fired \ntwice because of this.\n"
+  releasenotes/notes/fix-1017-1dec922dcf6e914d.yaml:
+    fixes:
+    - Fix tab name (#1017)
+  releasenotes/notes/fix-1097-b9f4f72778cfe055.yaml:
+    fixes:
+    - fixes
+  releasenotes/notes/fix-1149-b3ba58cf4b8db01b.yaml:
+    fixes:
+    - fixes jumping preference window (#1149)
+  releasenotes/notes/fix-1370-dca809a64dff2e3b.yaml:
+    fixes:
+    - fixes Settings schema 'guake.general' does not contain a key named 'display_n'
+  releasenotes/notes/fix-1421-c2cbf1c5f50da9af.yaml:
+    fixes:
+    - fix no focus after closing a split terminal (#1421)
+  releasenotes/notes/fix-1451-d6ed2b40dc05bcf9.yaml:
+    fixes:
+    - fixes
+  releasenotes/notes/fix-1499-5cd0a55ad7ffe97e.yaml:
+    fixes:
+    - Fix a need for double toggling to hide when using command line with ``--show``
+      and option with ``only_show_hide = False``.
+  releasenotes/notes/fix-1518-4b5de175dfca99f3.yaml:
+    fixes:
+    - Remove unused logging level setup
+  releasenotes/notes/fix-469-f73da051e0bd7181.yaml:
+    fixes:
+    - Add note about shell that does not support --login parameter (#469)
+  releasenotes/notes/fix-guake-showing-up-on-startup-0fdece37dc1616e4.yaml:
+    fixes:
+    - 'Command options do not work, crash when disabling keybinding #1111
+
+      '
+    - 'Do not open Guake window upon startup #1113
+
+      '
+  releasenotes/notes/fix-hyperlink-50901cd04a88876e.yaml:
+    fixes:
+    - 'Corrected usage of ``Vte.Regex.new_for_match`` to fix regular expression matching
+
+      (hyperlinks, quick open) on VTE >0.50 (#1295)
+
+      '
+  releasenotes/notes/fix-in/decrease-height-8176a8313d9a1aba.yaml:
+    fixes:
+    - 'Fix crash on increase/decrease main window height shortcut #1099
+
+      '
+  releasenotes/notes/fix-make-install-system-as-non-root-user-40cdbb0509660741.yaml:
+    features:
+    - 'Allow make install-system to be run as non root user and print a message if
+      so.
+
+      '
+  ? releasenotes/notes/fix-preference-window-header-color,-align-close-button-and-change-borders-to-margins-fa7ffffc45b12ea5.yaml
+  : fixes:
+    - 'fix preferences window header color, align the close button more nicely and
+      change borders to margins
+
+      '
+  releasenotes/notes/fix-rename-tab-shortcut-62ad1410c2958929.yaml:
+    fixes:
+    - 'Resolved conflicting default shortcut for ``Ctrl+F2`` (now, rename current
+      tab is set to
+
+      ``Ctrl+Shift+R``) #1101, #1098
+
+      '
+  releasenotes/notes/fix-save-tabs-on-window-title-change-028035febe6c6f40.yaml:
+    fixes:
+    - Fix window-title-changed didn't save tabs
+  releasenotes/notes/fix-typo-dde86618d8422a65.yaml:
+    fixes:
+    - fix typo
+  releasenotes/notes/fix-vte-warning-ae9a71b84c4fedf3.yaml:
+    fixes:
+    - Fix ``vte-warning`` when using ``Vte.Regex.new_for_match``
+  releasenotes/notes/fix-workspace-save-restore-tabs-853a7118729d8f29.yaml:
+    fixes:
+    - Workspaces can now properly save/restore tabs
+    - Fix ``on_terminal_title_changed`` only searching in current_notebook (it should
+      find every notebook)
+  releasenotes/notes/gtk3-800a345dfd067ae6.yaml:
+    deprecations:
+    - 'Background picture is no more customizable on each terminal
+
+      '
+    - 'Visual Bell has been deprecated
+
+      '
+    features:
+    - "Ported to GTK3:\n\n  - cli arguments\n  - D-Bus\n  - context menu of the terminal,\
+      \ the tab bar and the tray icon\n  - scrollbar of the terminal\n  - ``ctrl+d``\
+      \ on terminal\n  - fix double click on the tab bar\n  - fix double click on\
+      \ tab to rename\n  - fix clipboard from context menu\n  - notification module\n\
+      \  - keyboard shortcuts\n  - preference screen\n  - port ``gconfhandler`` to\
+      \ ``gsettingshandler``\n  - about dialog\n  - pattern matching\n  - ``Guake.accel*``\
+      \ methods\n"
+    - "Guake now use a brand new build system:\n\n  - ``pipenv`` to manage dependencies\
+      \ in `Pipfile`\n  - enforced code styling and checks using Pylint, Flake8, Yapf,\
+      \ ISort.\n  - simpler release management thanks to PBR\n"
+    known_issues:
+    - Translation might be broken in some language, waiting for the translation file
+      to be updated by volunteers
+    - Resizer does not work anymore
+    - Package maintainers have to rework their integration script completely
+    - quick open and open link in terminal is broken
+    release_summary: 'Guake has been ported to GTK-3 thanks to the huge work of @aichingm.
+      This also implies Guake now uses the latest version of the terminal emulator
+      component, VTE 2.91.
+
+      Guake is now only working on Python 3 (version 3.5 or 3.6). Official support
+      for Python 2 has been dropped.
+
+      This enables new features in upcoming releases, such as "find in terminal",
+      or "split screen".
+
+      '
+    translations:
+    - fr-FR
+  releasenotes/notes/gtk3-a429d01811754c42.yaml:
+    release_summary: 'This minor release mainly focus on fixing big problems that
+      was remaining after the migration to GTK3. I would like to akwonledge the work
+      of some contributors that helped testing and reporting issues on Guake 3.0.0.
+      Thanks a lot to @egmontkob and @aichingm.
+
+      '
+  releasenotes/notes/gtk3-ports-676e683e82c3fa77.yaml:
+    features:
+    - load default font via python Gio and not via cli call
+    - add json example for custom commands in the code
+    - port screen selectino (use_mouse) to Gdk
+    - add notification for failed show-hide key rebindings
+    - add one-click key binding editing
+    - port word character exceptions for newer vte versions
+    - use Gtk.Box instead of Gtk.HBox
+    release_summary: 'This release adds a big rewrite of the Terminal underlying mechanism
+      by Mario Aichinger. It will serve as a foundation layer for long-awaiting features
+      such as `Split Terminal <https://github.com/Guake/guake/issues/71>`_, `Find
+      Text <https://github.com/Guake/guake/issues/116>`_, `Save/Load Session <https://github.com/Guake/guake/issues/114>`_,
+      and so on.
+
+      '
+  releasenotes/notes/hotkey-new-tab-home-3942e1e6ba0932af.yaml:
+    features:
+    - new hotkey (CTRL+SHIFT+H) to open new tab in home directory
+  releasenotes/notes/hotkeys-42708e8968fd7b25.yaml:
+    fixes:
+    - 'The hotkey management has been rewriten and is now fully functional
+
+      '
+  releasenotes/notes/hyperlink-e40e87ae4dc83c8e.yaml:
+    features:
+    - 'Support for hyperlink VTE extension
+
+      (`described here <https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda>`_
+      )
+
+      #945 (Untested, as it requires VTE 0.50)
+
+      '
+  releasenotes/notes/hyperlinks-778efab6774df2e6.yaml:
+    fixes:
+    - 'URL with ``''`` (simple quote) and ``()`` (parenthesis) are now captured by
+      hyperlink matcher.
+
+      This may causes some issues with log and so that use parenthesis *around* hyperlinks,
+
+      but since parenthesis and quotes are valid characters inside a URL, like for
+      instance
+
+      URL created by Kibana, they deserve the right to be shown as proper url in Guake.
+
+
+      User can still select the URL in the terminal if he wishes to capture the exact
+      url, before
+
+      doing a Ctrl+click or a right click.
+
+
+      For developers, it is advised to end the URL with a character that cannot be
+      used in URL, such
+
+      as space, tab, new line. Ending with a dot (``.``) or a comma (``,``) will not
+      be seen as part
+
+      of the URL by Guake, so most logs and traces that adds a dot or a comma at the
+      end of the URL
+
+      might still work.
+
+      '
+    known_issues:
+    - Multiline url are sometimes not handled correctly.
+  releasenotes/notes/install-b017d0fe51f8e2ad.yaml:
+    notes_for_package_maintainers:
+    - "The setup mecanism has changed a little bit. Some maintainers used to patch\
+      \ the source code\nof Guake to change the pixmap, Gtk schema or locale paths\
+      \ directly in the ``guake/globals.py``\nfile. This was due to a lack of flexibility\
+      \ of the installation target of the ``Makefile``.\n\nThe ``make install`` target\
+      \ looks now a little bit more familiar, allowing distribution\npackager to set\
+      \ the various paths directly with make flags.\n\nFor example:\n\n.. code-block::\
+      \ bash\n\n    sudo make install \\\n        prefix=/usr \\\n        DESTDIR=/path/for/packager\
+      \ \\\n        PYTHON_SITE_PACKAGE_NAME=site-package \\\n        localedir=/usr/share/locale\n\
+      \nThe main overrides are:\n\n- ``IMAGE_DIR``: where the pixmap should be installed.\
+      \ Default: ``/usr/local/share/guake/pixmaps``\n- ``localedir``: where locales\
+      \ should be installed. Default: ``/usr/local/share/locale``\n- ``GLADE_DIR``:\
+      \ where the Glade files should be installed. Default: ``/usr/local/share/guake``\n\
+      - ``gsettingsschemadir``: where gsettings/dconf schema should be installed.\n\
+      \  Default: ``/usr/local/share/glib-2.0/schemas/``\n\nI invite package maintainers\
+      \ to open tickets on Github about any other difficulties\nencountered when packaging\
+      \ Guake.\n"
+    release_summary: '
+
+      This version of Guake brings mostly bug fixes, and some new features like "Quick
+      Open on selection". I have also reworked internally the Quick Open so that it
+      can automatically open files from logs from pytest and other python development
+      tools output.
+
+      However, there might still some false positive on the hovering of the mouse
+      in the terminal, the most famous being the output of ``ls -l`` which may have
+      the mouse looks like it sees hyperlinks on the terminal everywhere. Click does
+      nothing but its an annoying limitation.
+
+      Package maintainers should read the "Notes for Package Maintainers" of this
+      release note carefully.
+
+      '
+  releasenotes/notes/maintenance-e02e946e15c940ab.yaml:
+    fixes:
+    - 'Code cleaning and GNOME desktop file conformance
+
+      '
+    release_summary: 'Minor maintenance release.
+
+      '
+  releasenotes/notes/make-096ad37e6079df09.yaml:
+    fixes:
+    - 'Fix ``sudo make uninstall/install`` to work only with ``/usr/local``
+
+      '
+    - 'Fix translation ``mo`` file generation
+
+      '
+    - 'Fix crash on Wayland
+
+      '
+  releasenotes/notes/match-b205323a7aa019f9.yaml:
+    fixes:
+    - 'Fix quick open and open link in terminal
+
+      '
+  releasenotes/notes/new-tab-button-df72cfcb9e7d422d.yaml:
+    features:
+    - '"New tab" button #1471
+
+      '
+  releasenotes/notes/new-tab-double-click-249fdf02195bb5db.yaml:
+    features:
+    - Open new tab by double-clicking on the tab bar
+  releasenotes/notes/not_composited_de-505082d1c18eda3c.yaml:
+    fixes:
+    - 'Fixed Guake initialization on desktop environment that does not support compositing.
+
+      '
+  releasenotes/notes/notebook-menu-e562dfd6c62b38c1.yaml:
+    features:
+    - 'Add new context menu on the notebook
+
+      '
+  releasenotes/notes/notebook-tabs-7986ca919d5904b3.yaml:
+    features:
+    - use Gtk.Notebook's tabs implementation
+  releasenotes/notes/packages-55d1017dd708b8de.yaml:
+    known_issues:
+    - 'Quick Edit feature is not working (#1121)
+
+      '
+    other:
+    - 'The dependencies of the Guake executable has been slightly better described
+      in README.
+
+      There is an example for Debian/Ubuntu in the file ``scripts/bootstrap-dev-debian.sh``
+      which is
+
+      the main environment where Guake is developed and tested.
+
+      '
+    - 'Package maintainers are encouraged to submit their ``bootstrap-dev-[distribution].sh``,
+
+      applicable for other distributions, to help users install Guake from source,
+      and other package
+
+      maintainers.
+
+      '
+  releasenotes/notes/palette-008d16139cff7b9c.yaml:
+    fixes:
+    - 'Fixed "Gruvbox Dark" color palette (swapped foreground and background)
+
+      '
+  releasenotes/notes/palette-548f459256895a64.yaml:
+    features:
+    - 'Thanks to @arcticicestudio, a new nice, clean new palette theme is available
+      for Guake users:
+
+      Nord (#1275)
+
+      '
+  releasenotes/notes/palette-7cd39716dc53b84c.yaml:
+    features:
+    - 'Add a CLI option to change palette scheme #1345
+
+      '
+  releasenotes/notes/palette-ac719dfbd2dd49e9.yaml:
+    fixes:
+    - 'Swapped foreground and background colors for palettes added in commit #58842e9.
+
+      '
+  releasenotes/notes/palettes-ec272b2335a1fa06.yaml:
+    features:
+    - "Add great color palettes from\n`Guake Color Scheme <https://github.com/ziyenano/Guake-Color-Schemes>`_,\
+      \ thanks for @ziyenano :\n\n  - `Aci`,\n  - `aco`,\n  - `Azu`,\n  - `Bim`,\n\
+      \  - `Cai`,\n  - `Elementary`,\n  - `Elic`,\n  - `Elio`,\n  - `Freya`,\n  -\
+      \ `Gruvbox Dark`,\n  - `Hemisu Dark`,\n  - `Hemisu Light`,\n  - `Jup`,\n  -\
+      \ `Mar`,\n  - `Material`,\n  - `Miu`,\n  - `Monokai dark`,\n  - `Nep`,\n  -\
+      \ `One Light`,\n  - `Pali`,\n  - `Peppermint`,\n  - `Sat`,\n  - `Shel`,\n  -\
+      \ `Tin`,\n  - `Ura`,\n  - `Vag`.\n"
+  releasenotes/notes/pip-a8c7f5e91190b7ba.yaml:
+    features:
+    - '``pip install guake`` now compiles the gsettings schema and finds its languages
+      automatically.
+
+      '
+  releasenotes/notes/pip-b3c70a8c17ca5533.yaml:
+    fixes:
+    - Install of Guake through pip install was broken (missing ``paths.py``). Now
+      fixed. Discarded generation of bdist. (fix
+  releasenotes/notes/pref-af8621e5c04d973c.yaml:
+    upgrade:
+    - 'Minor rework of the preference window.
+
+      '
+  releasenotes/notes/prefs-032d2ab0c8e2f17a.yaml:
+    fixes:
+    - 'Rework the Preference window and reorganize the settings. Lot of small issues
+
+      has been fixed.
+
+      The Preference window now fits in a 1024x768 screen.
+
+      '
+    release_summary: 'The Preference window has been deeply reworked and the hotkey
+      management has been rewriten. This was one the the major regression in Guake
+      3.0.
+
+      '
+  releasenotes/notes/prefs-startup-tabs-13392d3c186ce2a3.yaml:
+    features:
+    - "Add session save preferences for startup/tabs:\n\n  - \"restore-tabs-startup\"\
+      : when enabled, it will restore tabs when startup\n  - \"restore-tabs-notify\"\
+      : when enabled, it will notify user after tabs restored (except startup)\n \
+      \ - \"save-tabs-when-changed\": when enabled, it will automatically save tabs\
+      \ session\n    when changed (new/del/reorder)\n"
+  releasenotes/notes/quick-open-52d040f5e34e4d35.yaml:
+    features:
+    - 'Quick open displays a combobox with predefined settings for Visual Studio Code,
+      Atom and
+
+      Sublime Text.
+
+      '
+  releasenotes/notes/quick_open-032209b39bb6831f.yaml:
+    features:
+    - 'Quick open can now open file under selection. Simply select a filename in the
+      current terminal
+
+      and do a Ctrl+click, if the file path can be found, it will be open in your
+      editor. It allows
+
+      to virtually open any file path in your terminal (if they are on your local
+      machine), but
+
+      requires the user to select the file path first, compared to the Quick Open
+      feature that
+
+      finds file names using regular expression.
+
+
+      Also notes that is it able to look in the current folder if the selected file
+      name exists,
+
+      allowing Ctrl+click on relative paths as well.
+
+
+      Line number syntax is also supported: ``filename.txt:5`` will directly on the
+      5th line if
+
+      your Quick Open is set for.
+
+      '
+  releasenotes/notes/quick_open-bb22f82761ad564b.yaml:
+    fixes:
+    - "Fix several issues on Quick Edit:\n\n- quick open freezes guake\n- support\
+      \ for systems with PCRE2 (regular expression in terminal) disabled for VTE,\
+      \ like\n  Ubuntu 17.10 and +.\n\n  This might disable quick open and open url\
+      \ on direct Ctrl+click.\n  User can still select the wanted url or text and\
+      \ Cltr+click or use contextual menu.\n\n  See this `discussion on Tilix <https://github.com/gnunn1/tilix/issues/916>`_,\
+      \ another\n  Terminal emulator that suffurs the same issue.\n\n- quick open\
+      \ now appears in contextual menu (#1157)\n- bad translation update on the contextual\
+      \ menu. This causes new strings that was hidden to\n  appear for translators.\n\
+      - Fix quick open on pattern \"File:line\" line that was not opening the wanted\
+      \ file.\n"
+  releasenotes/notes/release-40d6398f70cc1032.yaml:
+    features:
+    - 'Add CLI option to split tab: ``--split-vertical`` and ``--split-horizontal``.
+
+      '
+    notes_for_package_maintainers:
+    - 'Package maintainers should be aware that ``libwnck`` (Window Navigator Construction
+      Kit)
+
+      is now a mandatory dependency of Guake.
+
+      '
+    release_summary: "This release brings three of the most awaited features on Guake:\n\
+      \n   - search in current terminal\n   - session saving\n   - settings export\
+      \ and import\n\nOur MVC (\"Most Valuable Contributor\") for this release is\
+      \ Louie Lu (@mlouielu) who worked hard to build these three features in a row!\
+      \ Thank you very much for your hard work !\n"
+    translations:
+    - fr (French)
+    - pl (Polish)
+    - added zh_Hant (Chinese Traditional). Louie Lu would be very glad to have some
+      help on localizing Guake!
+    - ru (Russian)
+    - nb (Norvegian)
+    - sv (Swedish)
+    - nl (Dutch)
+  releasenotes/notes/relnote-f015e2cd43e71011.yaml:
+    features:
+    - Bold text is also bright (>= VTE 0.52 only)
+    other:
+    - 'For `Guake translators using weblate <https://hosted.weblate.org/projects/guake/guake/>`_,
+
+      I had to force push because of big conflicts. Some may have loose recent translation
+      in your
+
+      language. Sorry for that.
+
+      '
+    release_summary: 'This version is mainly a maintaince release, after the big reworks
+      on Guake from last year. I took some delay in fixing Guake due to a growing
+      family.
+
+      Thanks again for the various contributors who submitted their patches, it helps
+      a lot the whole community. I may be able to find more time in the upcoming months
+      to add even cooler features to our beloved Guake.
+
+      '
+    translations:
+    - fr
+  releasenotes/notes/reno-3b5ad9829b256250.yaml:
+    features:
+    - '[dev env] `reno <https://docs.openstack.org/reno/latest/>`_ will be used to
+      generate
+
+      release notes for Guake starting version 3.0.0.
+
+      It allows developers to write the right chunk that will appear in the release
+
+      note directly from their Pull Request.
+
+      '
+  releasenotes/notes/resizer-d7c6553879852019.yaml:
+    deprecations:
+    - 'Resizer discontinued
+
+      '
+  releasenotes/notes/rework-74bb086447b94d17.yaml:
+    fixes:
+    - fix unnecessary show/hide
+    - fix settings only applied to the active workspace if more the 1 is used
+    - fix prompt quit dialog numbers when more then 1 workspace is used
+  releasenotes/notes/right-clic-f15043342128eb58.yaml:
+    features:
+    - 'Allow application to capture right click (ex: Midnight commander). #1096.
+
+      It is still possible to show the contextual menu with Shift+right click.
+
+      '
+  releasenotes/notes/run-command-517683bd988aa06a.yaml:
+    fixes:
+    - 'Fix ''Failed to execute child process "-"'' - #1119
+
+      '
+  releasenotes/notes/save-prefs-351292e24b6e6bea.yaml:
+    features:
+    - Save and restore Guake settings
+  releasenotes/notes/scroll-959087c80640ceaf.yaml:
+    features:
+    - 'Add "Infinite scrolling" option in "Scrolling" panel #274
+
+      '
+    fixes:
+    - 'History size spin is fixed and now increment by 1000 steps. Default history
+      value is now set to
+
+      1000, because "1024" has no real meaning for end user. #1082
+
+      '
+  releasenotes/notes/show-focus-cab5307b44905f7e.yaml:
+    features:
+    - 'Added hotkey for showing and focusing Guake window when it is opened or closed.
+
+      It is convenient when Guake window are overlapped with another windows and user
+
+      needs to just showing it without closing and opening it again. #1133
+
+      '
+  releasenotes/notes/split-terminal-b924ad9a29f59b8b.yaml:
+    deprecations:
+    - '"New terminal" / "Rename terminal" / "Close terminal" items has been removed
+      from the
+
+      terminal context menu. They are still available on the tab context menu.
+
+      '
+    features:
+    - Split and resize terminals via mouse or keyboard shortcuts.
+    release_summary: 'This major release provides one of the most awaited feature
+      to every Guake adicts: Split terminal. Split easily vertically and horizontally
+      each terminal and have more than one terminal per tab.
+
+      There have been several shortcut changes to help navigate easily on your screen:
+      Ctrl+Shift+Up/Down/Left/Right to switch from terminal to terminal.
+
+      Thanks for you hard work, @aichingm !
+
+      '
+  releasenotes/notes/split_options-7b2e2e469ebcc509.yaml:
+    features:
+    - "`guake --split-vertical` and `--split-horizontal` split the current\n tab just\
+      \ like the context menu does\n"
+  releasenotes/notes/tab-close-buttons-1dfe8cb1049ee4dc.yaml:
+    features:
+    - Optional close buttons for tabs (disabled by default)
+  releasenotes/notes/tab-scroll-switching-6c674056d1394dcd.yaml:
+    features:
+    - enable tab switching by scrolling (mouse wheel) over the tabs/tab-bar
+  releasenotes/notes/terminal-3d38462063ba8bf5.yaml:
+    fixes:
+    - fixes ``guake --fgcolor/--bgcolor`` error (#1376).
+  releasenotes/notes/theme-1c1f13e63e46d98b.yaml:
+    features:
+    - 'Allow user to select the theme within the preference UI
+
+      '
+    translations:
+    - fr
+  releasenotes/notes/theme-a11c5b3cf19de34f.yaml:
+    features:
+    - 'Selected tab use "selected highlight" color from theme (#1036)
+
+      '
+  releasenotes/notes/translation-31e67dc4190a9067.yaml:
+    translations:
+    - de
+    - fr
+    - ru
+  releasenotes/notes/translation-a33ff067822bbfb9.yaml:
+    translations:
+    - sv (thanks to @MorganAntonsson)
+  releasenotes/notes/translation-bd1cd0a5447ee42f.yaml:
+    fixes:
+    - 'Fix user interface translations #1228
+
+      '
+  releasenotes/notes/translation-ccde91d14559d6ab.yaml:
+    fixes:
+    - Some systems such as Ubuntu did displayed Guake with a translated interface
+      (#1209). The locale system has been reworked to fix that.
+    - There might be broken translations, or not up-to-date language support by Guake.
+      A global refresh of all existing translations would be welcomed. Most has not
+      been updated since the transition to Guake 3, so these languages support might
+      probably be unfunctional or at least partialy localized.
+    - 'A big thank you for all the volunteers and Guake enthousiats would often update
+      their own translation to help guake being used world-wide.
+
+      - Help is always welcomed for updating translations !'
+  releasenotes/notes/translation-de-c6495c0ae7523117.yaml:
+    translations:
+    - de (thanks to @rzimmer)
+  releasenotes/notes/translations-4106dec297b04a63.yaml:
+    release_summary: 'This minor release mainly fix some issues when installing Guake
+      though ``pip install --user --upgrade guake``.
+
+      A big thanks also to everyone who contributed to the translations on `Weblate
+      <https://hosted.weblate.org/projects/guake/guake/>`_.'
+    translations:
+    - fr
+    - ru (thanks Igor "f2404" on Weblate)
+    - cz (thanks Pavel Borecki on Weblate)
+    - pl (thanks Piotr Drąg on Weblate)
+    - it (thanks Maurizio De Santis on Weblate)
+  releasenotes/notes/translations-b4a5bede065fcdcc.yaml:
+    translations:
+    - fr (thanks samuelorsi125t and ButterflyOfFire)
+    - ru (thanks Igor)
+    - pl (thanks Piotr Drąg)
+    - cz (thanks Pavel Borecki)
+    - de (thanks Dirk den Hoedt and Mario Aichinger)
+    - gl (thanks Nacho Vidal)
+  releasenotes/notes/translations-bf782198a51d50f3.yaml:
+    translations:
+    - pl (Piotr Drąg on weblate)
+    - nl (Heimen Stoffels on weblate)
+    - nb (Allan Nordhøy on weblate)
+    - ru (Igor on weblate)
+    - zh_CN (庄秋彬 on weblate)
+    - cs (Pavel Borecki on weblate)
+    - de (Robin Bauknecht on weblate)
+    - fr (Gaetan Semet)
+  releasenotes/notes/translations-daa7e7aa85eec3bb.yaml:
+    fixes:
+    - Fix "Grubbox Dark" theme
+    known_issues:
+    - 'Users of Byobu or Tmux as default shell should disable the "login shell" option
+
+      (in the "Shell" panel). This uses an option, ``--login``, that does not exist
+      on these
+
+      two tools.
+
+      '
+    translations:
+    - fr
+    - pl
+    - ru
+  releasenotes/notes/travis-72ba95b09d9d6e67.yaml:
+    fixes:
+    - 'Travis build cleaned build artifacts before deployment, leading to missing
+      files when
+
+      built in the CI.
+
+      '
+  releasenotes/notes/update-bootstrap-scripts-1ba9e40b4ab1bfd4.yaml:
+    other: Add option groupes to the bootstrap scripts
+  releasenotes/notes/update-de-translation-cfcb77e0e6b4543e.yaml:
+    translations:
+    - de
+  releasenotes/notes/update-window-title-c6e6e3917821902d.yaml:
+    features:
+    - "Update Guake window title when:\n\n  - the active tab changes\n  - the active\
+      \ tab is renamed\n  - the vte title changes\n"
+    known_issues:
+    - '**Note for package maintainers**: Guake 3 has a minor limitation regarding
+      Glib/GTK Schemas
+
+      files. Guake looks for the gsettings schema inside its data directory. So you
+      will probably
+
+      need install the schema twice, once in ``/usr/local/lib/python3.5/dist-packages/guake/data/``
+
+      and once in ``/usr/share/glib-2.0/schemas`` (see
+
+      `#1064 <https://github.com/Guake/guake/issues/1064>`_).
+
+      This is planned to be fixed in Guake 3.1
+
+      '
+  releasenotes/notes/visible-bell-12de7acf136d3fa4.yaml:
+    deprecations:
+    - 'Remove visible bell feature #1081
+
+      '
+  releasenotes/notes/vte-d6fd6406c673f71a.yaml:
+    fixes:
+    - 'Support for vte 2.91 (0.52) #1222
+
+      '
+  releasenotes/notes/wayland-3fcce3b30835e66d.yaml:
+    fixes:
+    - 'Wayland is a bit more well supported. The X11 backend is now used by default
+      for
+
+      GDK and it seems to make the shortcut works under most situation.
+
+
+      A more cleaner solution would be to develop a GAction
+
+      (`vote for this feature here <https://feathub.com/Guake/guake/+29>`_])
+
+      '
+    - 'A new command has been added: ``guake-toggle``, should be faster than
+
+      ``guake -t``. You can use it when you register the global shortcut manually
+
+      (X11 or Wayland).'
+  releasenotes/notes/wayland-fa246d324c92fd80.yaml:
+    fixes:
+    - Implements a timestamp for wayland (#1215)
+  releasenotes/notes/workspace_specific_tab_sets-2065f54ceca2ff26.yaml:
+    features:
+    - 'Guake can now provide a set of tabs per workspace
+
+      '
+    translations:
+    - de
+notes:
+- files:
+  - - releasenotes/notes/add-cli-support-option-16c5b10c88d04b06.yaml
+    - !!binary |
+      NmVhZDhkYzUwN2YxNTlhNzgwZTU4MTQ3YTY3NGNlNTNlYjJhZDNjNw==
+  - - releasenotes/notes/add-libwnck-dep-a64492dc9d26d03e.yaml
+    - !!binary |
+      Y2Q4ZmJmMDNkOGY5ZDI4NDEyYjNjYjkwNjVjZjJhMGFhYWVhYjhkNw==
+  - - releasenotes/notes/add-save-restore-tabs-efb4a554a7c0dc30.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/add-search-terminal-43a0aa5950e79a74.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/fix-1499-5cd0a55ad7ffe97e.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/fix-1518-4b5de175dfca99f3.yaml
+    - !!binary |
+      OWEwZDhjYTIzZDYyZjgxNjYwNDBhZDBmYmI0MjBmOWUxYjVlZDY4Ng==
+  - - releasenotes/notes/fix-save-tabs-on-window-title-change-028035febe6c6f40.yaml
+    - !!binary |
+      M2IxZjgxMTEwNDE1N2JjNGE3ZWNkNmMwYmE0NTBjMzg4NzA3MGUxYw==
+  - - releasenotes/notes/fix-typo-dde86618d8422a65.yaml
+    - !!binary |
+      YjY5ZmE3MjBiNTE2OTEzYmNjYjA0YjYzMWJjZjM4MGI5YjAyN2VlZA==
+  - - releasenotes/notes/fix-vte-warning-ae9a71b84c4fedf3.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/fix-workspace-save-restore-tabs-853a7118729d8f29.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/prefs-startup-tabs-13392d3c186ce2a3.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  - - releasenotes/notes/release-40d6398f70cc1032.yaml
+    - !!binary |
+      NmFkOGFlOGE0MTEzM2U3NzI5NGY0OTQyMmY5ZGE3MThiZTJiNGFiNw==
+  - - releasenotes/notes/save-prefs-351292e24b6e6bea.yaml
+    - !!binary |
+      MmE2MjZkYTZhNGMzZGI2NjIyMjY1NjFlOTI5Y2ZkN2ZkNzUzOTYxMQ==
+  version: 3.6.0
+- files:
+  - - releasenotes/notes/bugfix-1e9b3a5f5997f024.yaml
+    - !!binary |
+      NTFkZmYzOTljMzU4YjA5ZjM3ZWY3NmU1MWExMzRhMmZhNTFkOTRjNw==
+  - - releasenotes/notes/bugfix-4e0564c5ad651093.yaml
+    - !!binary |
+      N2M5MWNmZTM5OGIxNzA3Y2FjMzQ4ZTYzYjAxZWJkMDBjZjJhNGMwMQ==
+  - - releasenotes/notes/double_event_fix-c49129c68ead0b6b.yaml
+    - !!binary |
+      MmI5MDQ4OTIwMWZjZjRjNmY1ZDkyYTU3NWUyODBmZjhkZDVkZjI0Mw==
+  - - releasenotes/notes/fix-1097-b9f4f72778cfe055.yaml
+    - !!binary |
+      NGExMTdkZjYzMWE3NjJkZDlhZjFiODEwMzNhZGMyMDhjNDM1NjJiMw==
+  - - releasenotes/notes/fix-1451-d6ed2b40dc05bcf9.yaml
+    - !!binary |
+      N2RmNjVkOGJhZmFjZTA1NTM3NDE3MTdmY2M3NjBlYzRkMTJmN2M5OQ==
+  - - releasenotes/notes/hotkey-new-tab-home-3942e1e6ba0932af.yaml
+    - !!binary |
+      ODlkMzlhYTA2ZjQ4MGE5ZWMxMTNkNGQ3YTI5ZDZmNzE5NTc5YjZlOQ==
+  - - releasenotes/notes/new-tab-button-df72cfcb9e7d422d.yaml
+    - !!binary |
+      YWNkYjkyMjNmN2E4NWFjMWJjNmRhNmViNjQ5NjM0ZTY0Yzg3ZDY0Nw==
+  - - releasenotes/notes/new-tab-double-click-249fdf02195bb5db.yaml
+    - !!binary |
+      YjU1ZTUwNzczZmRmYzY0YmFhMTg1MDAzMWY0NWQ1NjUxN2IwYTM1NA==
+  - - releasenotes/notes/notebook-menu-e562dfd6c62b38c1.yaml
+    - !!binary |
+      YzNjYTIzN2JjNDNjYzQ2YmE1Zjc3NDdlOGE1ZTU4YThmNjU3OTMwZg==
+  - - releasenotes/notes/palette-7cd39716dc53b84c.yaml
+    - !!binary |
+      Y2NlMmI4ZGI5MGQ0MzhiZDE2ODNkMzYzNmUwY2I4NTMwZTAzN2M3OA==
+  - - releasenotes/notes/relnote-f015e2cd43e71011.yaml
+    - !!binary |
+      YTg1YzkwNTQ1OTc1NWJkZjQ5ZTlhODY0ZDZjZTVhMDY5NjcyNDM0Yw==
+  - - releasenotes/notes/rework-74bb086447b94d17.yaml
+    - !!binary |
+      NTFkZmYzOTljMzU4YjA5ZjM3ZWY3NmU1MWExMzRhMmZhNTFkOTRjNw==
+  - - releasenotes/notes/split_options-7b2e2e469ebcc509.yaml
+    - !!binary |
+      NTFkZmYzOTljMzU4YjA5ZjM3ZWY3NmU1MWExMzRhMmZhNTFkOTRjNw==
+  - - releasenotes/notes/tab-close-buttons-1dfe8cb1049ee4dc.yaml
+    - !!binary |
+      ZTBkYmE2NzRlZTgxOTk2MmVmYzFmMjdhMjc0MTdiOTRjM2M2N2ZhMg==
+  - - releasenotes/notes/workspace_specific_tab_sets-2065f54ceca2ff26.yaml
+    - !!binary |
+      NTFkZmYzOTljMzU4YjA5ZjM3ZWY3NmU1MWExMzRhMmZhNTFkOTRjNw==
+  version: 3.5.0
+- files:
+  - - releasenotes/notes/bugfix-afa83c6312e2f1a0.yaml
+    - !!binary |
+      NzY2NWU0ZWI2ZmQ0ZDdmZWYzYWVlMDUyMDZkOWEwNWIxMjM3MTg4MQ==
+  - - releasenotes/notes/fix-1017-1dec922dcf6e914d.yaml
+    - !!binary |
+      NjUzY2QwYjQyNGQzNmJjMjY0MzJjYTBhZGEyODAwZDdlNjE2MzE4NA==
+  - - releasenotes/notes/fix-1149-b3ba58cf4b8db01b.yaml
+    - !!binary |
+      NjUzY2QwYjQyNGQzNmJjMjY0MzJjYTBhZGEyODAwZDdlNjE2MzE4NA==
+  - - releasenotes/notes/fix-1421-c2cbf1c5f50da9af.yaml
+    - !!binary |
+      NjUzY2QwYjQyNGQzNmJjMjY0MzJjYTBhZGEyODAwZDdlNjE2MzE4NA==
+  - - releasenotes/notes/fix-469-f73da051e0bd7181.yaml
+    - !!binary |
+      NjUzY2QwYjQyNGQzNmJjMjY0MzJjYTBhZGEyODAwZDdlNjE2MzE4NA==
+  - - releasenotes/notes/split-terminal-b924ad9a29f59b8b.yaml
+    - !!binary |
+      ODI1MDk4NDc0MDJhYzkwMGQxYzhiNDhkZDkzZjY4MWUyN2UxYjgzZg==
+  - - releasenotes/notes/translations-bf782198a51d50f3.yaml
+    - !!binary |
+      NjUzY2QwYjQyNGQzNmJjMjY0MzJjYTBhZGEyODAwZDdlNjE2MzE4NA==
+  version: 3.4.0
+- files:
+  - - releasenotes/notes/add-copy-url-b39441ee986bf333.yaml
+    - !!binary |
+      NmJjOWU1M2E5MWZjZjc1MWFkMjI1YTQ2MjdmZWU4MjJkNzgyNjY5Ng==
+  - - releasenotes/notes/context-menu-b45d815f7feaeecb.yaml
+    - !!binary |
+      NGZhZjNiNGJjMDMzNDNmNGZkOGJmZDRmODRmYzZiOTVmOTk2MDMwMQ==
+  - - releasenotes/notes/dependencies-40d6237664b473cb.yaml
+    - !!binary |
+      ZGJjYTYyNzExNDFkZWY4MTVlNTAzYWE5NzgyZGZiZDgwZGYwNTFjZA==
+  - - releasenotes/notes/fix-1370-dca809a64dff2e3b.yaml
+    - !!binary |
+      MGIxYWRhNmE4N2I0NDJlYjUwZDZiMDdjYTZhOTliOGZhODBmZDBkNQ==
+  - - releasenotes/notes/gtk3-ports-676e683e82c3fa77.yaml
+    - !!binary |
+      NWI3YWM4YzgzY2VhMDI3Yzg2Y2E1NTY2YThlMmYxNmUxOTU3Mjk5OA==
+  - - releasenotes/notes/notebook-tabs-7986ca919d5904b3.yaml
+    - !!binary |
+      ZDc2NzRiYWQxMmExNDFmYzE2YjdjMThmMTQ5MzE4MzJjNTU3NzBlMQ==
+  - - releasenotes/notes/tab-scroll-switching-6c674056d1394dcd.yaml
+    - !!binary |
+      YmRhYjNhZjVlZjE0YmFmMjJkYWUxNDdkMTkxZjgxODdjNDU2NzkyMg==
+  - - releasenotes/notes/terminal-3d38462063ba8bf5.yaml
+    - !!binary |
+      N2IzZjIyYWMwYTBhZWNkY2ZiNTg4NWJlZTlkNjcxZjVmNmU0MmYyZA==
+  - - releasenotes/notes/translations-b4a5bede065fcdcc.yaml
+    - !!binary |
+      OGQwNWNmMzhkMjc2NTBkMTE1NmVmMTY1ZTU3YTFhYmZlNjMyMmQwYg==
+  version: 3.3.3
+- files:
+  - - releasenotes/notes/travis-72ba95b09d9d6e67.yaml
+    - !!binary |
+      NjZkYzNmMGEzZTYzMWQ5NzFkYjQ0ODZjNDcyNDU4YWYyNjdlOTA5OQ==
+  version: 3.3.2
+- files:
+  - - releasenotes/notes/bugfix-desktop-icons-d138f5862005ec4c.yaml
+    - !!binary |
+      ZTAwNDdmZTc4N2YwNjMwNDJiNDBiMmUxNDU3OGZlOWQyOWViOGJlNw==
+  - - releasenotes/notes/credits-17a8ac0624e7a46b.yaml
+    - !!binary |
+      Zjk0YmY5MTJjODY3MDhhNGNjOWViMzZjY2ExM2Y4YjNiNzgxMGY0MQ==
+  - - releasenotes/notes/pip-b3c70a8c17ca5533.yaml
+    - !!binary |
+      NDVkNmZhZDI1OGU3NGYyOGZhMjk0ZTczZjE4NTg3ZDJiMjAyODMyNw==
+  - - releasenotes/notes/translation-a33ff067822bbfb9.yaml
+    - !!binary |
+      Zjk0YmY5MTJjODY3MDhhNGNjOWViMzZjY2ExM2Y4YjNiNzgxMGY0MQ==
+  - - releasenotes/notes/translation-de-c6495c0ae7523117.yaml
+    - !!binary |
+      Zjk0YmY5MTJjODY3MDhhNGNjOWViMzZjY2ExM2Y4YjNiNzgxMGY0MQ==
+  - - releasenotes/notes/translations-4106dec297b04a63.yaml
+    - !!binary |
+      NDVkNmZhZDI1OGU3NGYyOGZhMjk0ZTczZjE4NTg3ZDJiMjAyODMyNw==
+  version: 3.3.1
+- files:
+  - - releasenotes/notes/pip-a8c7f5e91190b7ba.yaml
+    - !!binary |
+      ODY5OTUzNTliMmVkNzZkNTgyYmY3ZGIzZTM3YTE5YmU0ZDQxMTMxNA==
+  - - releasenotes/notes/wayland-3fcce3b30835e66d.yaml
+    - !!binary |
+      MTUwYTNhNzdmOTM1NWNiNDllM2M0NWE5YmU4NTBiMmYxYWM2ODRlYw==
+  version: 3.3.0
+- files:
+  - - releasenotes/notes/bugfix-b26aac4094ce8154.yaml
+    - !!binary |
+      NDhjZjIzOWU2YWNjZjk4MzM5MjZmMmI5Njk3NzMxYmZhY2E1ODhhYQ==
+  - - releasenotes/notes/bugfix-bb8c6dcf8cbd3b20.yaml
+    - !!binary |
+      MjkwODM1N2JmODUxMDYzZGJhYzdlODEzZGZhNzQ2YTA2ZTBiYTQ2OQ==
+  - - releasenotes/notes/bugfix-desktop-icon-68a8c2d6d2ef390c.yaml
+    - !!binary |
+      YTRjOWYxYTc0ZmI1ZTMzM2NhMGE3ODljY2UzMTg5ZTU1MzVlZTM5MA==
+  - - releasenotes/notes/bugfix-f11b203584eeeb8e.yaml
+    - !!binary |
+      OTllYTBhYjdhYjhkMTRhYmI5MWQ5MTRkYTdiYmM4OGQ3MDQxMTExNw==
+  - - releasenotes/notes/palette-008d16139cff7b9c.yaml
+    - !!binary |
+      MzRiNjI1OWIzODhmNDRkYWI1NzFlNzI5YWUxZTljYzU0ZDNkM2I2Mg==
+  - - releasenotes/notes/palette-ac719dfbd2dd49e9.yaml
+    - !!binary |
+      ZGEwYTVjMjVlNzU4NzI5MjEzMTg5NWIzNGZmMzk0ZTc0MDc1Y2QwNw==
+  - - releasenotes/notes/update-bootstrap-scripts-1ba9e40b4ab1bfd4.yaml
+    - !!binary |
+      MmZhNGM3YjIzOGJhYmM2ZTljZDU4NjljNDcyMDllYTZkYWQ3NTAxNA==
+  version: 3.2.2
+- files:
+  - - releasenotes/notes/bugfix-5b330b910cf335bb.yaml
+    - !!binary |
+      OWE1M2M0MjY4YjI3NjRmYjBhNDk5NDA1ODI0ZThhZGY5NjdhYmRhZg==
+  - - releasenotes/notes/bugfix-ce7825d37bcf2273.yaml
+    - !!binary |
+      NTZmMTZjOWI2MDBmYjIwNDRiOGQzZGIxZmI2ZmUyMjA0MzhhMjU4ZQ==
+  - - releasenotes/notes/docs-0c95ec1b74cc65d0.yaml
+    - !!binary |
+      MzUyYTI1NzBmZjczNDJhNGEyY2Y1MzEwMWI2YWZjYTdmNjUzM2U5ZQ==
+  - - releasenotes/notes/fix-hyperlink-50901cd04a88876e.yaml
+    - !!binary |
+      ZmEyMGVmYTZkMTUzMDE2MmY5Yzk3ZjA1ZDA1NTI1OThhNWQzMWFmYw==
+  - - releasenotes/notes/hyperlinks-778efab6774df2e6.yaml
+    - !!binary |
+      MzcxOGEwYTQxYzRjMjBiZjNlOTY2YzQ4YTliM2FlZmJlODg3NGYwZQ==
+  - - releasenotes/notes/palette-548f459256895a64.yaml
+    - !!binary |
+      ZGU2ODFjODJlYzc3YzdiZWJjOWUyM2E3NmJmMTE0NjQxZThmNTg2Mw==
+  - - releasenotes/notes/translations-daa7e7aa85eec3bb.yaml
+    - !!binary |
+      NDA4NDkxMzBjODUyMDdkMDNiZDA3NzI3MGZmMDllNjMyYWExY2Q1OA==
+  version: 3.2.1
+- files:
+  - - releasenotes/notes/theme-1c1f13e63e46d98b.yaml
+    - !!binary |
+      MDc3OTY1NWZkMzRkZjZmYjk4ZDFiYjQ5ZGIxY2JkNDZkN2I0NGQ2ZA==
+  - - releasenotes/notes/theme-a11c5b3cf19de34f.yaml
+    - !!binary |
+      MjFjZjY1OGJhY2QyYjM1NTllYmRiMzZhMTUyN2QwYzM2MzFlNjMxZg==
+  version: 3.2.0
+- files:
+  - - releasenotes/notes/bugfix-6096693463dd6c84.yaml
+    - !!binary |
+      ODQ5MTQ1MDE2MWUyNGNkZTA1NDhhN2U4NTQxZTg1ZmI3M2FlMDcyMg==
+  - - releasenotes/notes/quick-open-52d040f5e34e4d35.yaml
+    - !!binary |
+      ODQ5MTQ1MDE2MWUyNGNkZTA1NDhhN2U4NTQxZTg1ZmI3M2FlMDcyMg==
+  version: 3.1.1
+- files:
+  - - releasenotes/notes/autostart-300343bbe644bd7e.yaml
+    - !!binary |
+      ZGRjNDVkNmQzMzU5Njc1YjA4YjE2OTU4NWI5N2I1MWExZGMzYjY3NQ==
+  - - releasenotes/notes/bugfix-78df60050b344c0b.yaml
+    - !!binary |
+      M2RkMzQyYzUwMGJkYTllMDM0MDBkMzA5ODA0ODEzMDhiNGUzMDQ3Mg==
+  - - releasenotes/notes/bugfix-abe62750f777873f.yaml
+    - !!binary |
+      Yjg2Yzg0OTIyZmU2ZDY0ODViNTE0MWIyMWJhYzlhY2Q5OTg4NDEyNA==
+  - - releasenotes/notes/bugfix-b54670a057197a9f.yaml
+    - !!binary |
+      MzQ3ZDAyYTY5YjFhZjNjMGEzYmY3ODFkM2QwOWJhNWI3Y2M4YTczZA==
+  - - releasenotes/notes/bugfix_1225-6eecf165d1d0e732.yaml
+    - !!binary |
+      MzQ3ZDAyYTY5YjFhZjNjMGEzYmY3ODFkM2QwOWJhNWI3Y2M4YTczZA==
+  - - releasenotes/notes/debug-d435207215fdcc2e.yaml
+    - !!binary |
+      OGY1YTY2NTE0MWNjMGM2OTUxZDgxMDI2YTA3OTc2MmIwMjM5ODUxYg==
+  - - releasenotes/notes/hyperlink-e40e87ae4dc83c8e.yaml
+    - !!binary |
+      ZWQwMjc4ZWJhOTdhNTZhMTFiNjQwNTBlZjQxZTljNDJjNWFlMTlhYQ==
+  - - releasenotes/notes/install-b017d0fe51f8e2ad.yaml
+    - !!binary |
+      OTdiZjJjYjIyNTg2YmRlOTMwZWExMmIzZWJmYmMxZTYxMTk2NzM1OQ==
+  - - releasenotes/notes/palettes-ec272b2335a1fa06.yaml
+    - !!binary |
+      NTA2NWJkM2Y0MjZhYjc3MTk3ZjljNGViZDk2YmVmMTE4NDBmMGE1Mw==
+  - - releasenotes/notes/quick_open-bb22f82761ad564b.yaml
+    - !!binary |
+      ODI3NGU5NTA4OTNmOWVkMTE5Zjg4Y2E2Yjk5ZWJlMTY3NTcxMTQzYw==
+  - - releasenotes/notes/right-clic-f15043342128eb58.yaml
+    - !!binary |
+      MGZmMjcyYzNmNjVlYTliZTdjNTI1Njk2MmRiYmY4YmU3MjBmOTc2Mw==
+  - - releasenotes/notes/translation-bd1cd0a5447ee42f.yaml
+    - !!binary |
+      NTZmMTZjOWI2MDBmYjIwNDRiOGQzZGIxZmI2ZmUyMjA0MzhhMjU4ZQ==
+  - - releasenotes/notes/translation-ccde91d14559d6ab.yaml
+    - !!binary |
+      MGQ2YmYyMTdjNDBhNTIyYzIzY2M4M2E3ZTA2YWQ5ODI3M2NiZTMyYg==
+  - - releasenotes/notes/update-de-translation-cfcb77e0e6b4543e.yaml
+    - !!binary |
+      MmZlNTY1NjYxMGE3MmQzYTQxZmJmOTdjM2U3NGExNjBiOTgyMTA1Mg==
+  - - releasenotes/notes/vte-d6fd6406c673f71a.yaml
+    - !!binary |
+      NWU2MzM5ODY1MTIwNzc1ZTc3NDM2ZTAzZWQ5MGNlZjZiYzcxNWRjOQ==
+  version: 3.1.0
+- files:
+  - - releasenotes/notes/bugfix-705c264a6b77f4d3.yaml
+    - !!binary |
+      NDU4NjY5NzdhZjYxZmRjMThlMmY4ZTQxNzBmZjZlODY2N2RkZWEzNg==
+  - - releasenotes/notes/bugfix-c065e1a8b8e41270.yaml
+    - !!binary |
+      YTE3YTJiNWE0YWJjZjE4ZGY5NmY4M2MxZGNhOWY5NTE5ZDc1YTVlYg==
+  - - releasenotes/notes/bugfix-cb51b18bfd3c8da3.yaml
+    - !!binary |
+      OTQ2NWExOTE3MzJmMTAxODkxNDMyYmNkYjcwY2UyN2NmNmIzN2Q4YQ==
+  - - releasenotes/notes/fix-preference-window-header-color,-align-close-button-and-change-borders-to-margins-fa7ffffc45b12ea5.yaml
+    - !!binary |
+      MjMzMzYwNmU3YWYzZGViMTY1YmM4ZGUyM2MzOTI0NzI0MjBjZjE2Mw==
+  - - releasenotes/notes/wayland-fa246d324c92fd80.yaml
+    - !!binary |
+      MTJhMDU5MDViMjEzMWRjMDkxMjcxY2RmMjRiM2M4YjA2OWRhNGNiMA==
+  version: 3.0.5
+- files:
+  - - releasenotes/notes/Add-window-displacement-options-to-move-guake-away-from-the-edges-1b2d46997e8dbe91.yaml
+    - !!binary |
+      OTMwOTk5NjFmN2M5MGEyMjA4OWI3NmE4YTlhY2YxNDE0YmVhNTZlNQ==
+  - - releasenotes/notes/bugfix-654583b5646cf905.yaml
+    - !!binary |
+      MTM2N2E2YjdjZGY4NTZlZmVhNTBlMDk1NmY4OTRiZTA4OGQxZjY4MQ==
+  - - releasenotes/notes/bugfix-90bd70c984ad6a73.yaml
+    - !!binary |
+      NjlhZTRmZTgwMzZlYWU4ZTJmNzQxOGNkMDhmY2NiOTVmZTQxZWIwNw==
+  - - releasenotes/notes/dbus-c3861541c24b328a.yaml
+    - !!binary |
+      YzA0NDNkZDdkZjQ5MzQ2YTg3ZjFmYTA4YTUyYzFjNmY3NjcyN2FkOA==
+  - - releasenotes/notes/fix-make-install-system-as-non-root-user-40cdbb0509660741.yaml
+    - !!binary |
+      N2ZiMzk0NTljOWRkODUyNDExZmNkOTY4ZmNmYmJmMzNmNWJmYTRjYQ==
+  - - releasenotes/notes/quick_open-032209b39bb6831f.yaml
+    - !!binary |
+      NDQyM2FmMWMxMzRlODBhODFlNGM2OGZkY2Y1ZWVhMmFkZTk2OWM3NA==
+  version: 3.0.4
+- files:
+  - - releasenotes/notes/auto-edit-648e3609c9aee103.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/dev-env-fb2967d1ba8ee495.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/fix-guake-showing-up-on-startup-0fdece37dc1616e4.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/fix-in/decrease-height-8176a8313d9a1aba.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/fix-rename-tab-shortcut-62ad1410c2958929.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/gtk3-a429d01811754c42.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/hotkeys-42708e8968fd7b25.yaml
+    - !!binary |
+      NDFjNWI4YjQwOGIwMzYwNDgzZjJlNDY3ZjYxNmY4OGE1MzRhY2Y4Mw==
+  - - releasenotes/notes/packages-55d1017dd708b8de.yaml
+    - !!binary |
+      NDA4NDkxMzBjODUyMDdkMDNiZDA3NzI3MGZmMDllNjMyYWExY2Q1OA==
+  - - releasenotes/notes/prefs-032d2ab0c8e2f17a.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/run-command-517683bd988aa06a.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/scroll-959087c80640ceaf.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/show-focus-cab5307b44905f7e.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/translation-31e67dc4190a9067.yaml
+    - !!binary |
+      N2NiOTcxY2YxMjVlNDFmNjI5NGI4YjE3MDAzMjc2YWJiMThhODczNA==
+  - - releasenotes/notes/visible-bell-12de7acf136d3fa4.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  version: 3.0.3
+- files:
+  - - releasenotes/notes/dark_theme-4bb6be4b2cfd92ae.yaml
+    - !!binary |
+      YjBmNzNlNWQ5M2YzYjY4OGNmMzExZjU5MjVlYjBjOTVkOGNjNjRlNA==
+  - - releasenotes/notes/make-096ad37e6079df09.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/match-b205323a7aa019f9.yaml
+    - !!binary |
+      ZGNiMzNjMGY3MDQ4ZjVjOTZjMmQxM2Y3NDdiYmQ2ODZjNjVkZDkxZA==
+  - - releasenotes/notes/not_composited_de-505082d1c18eda3c.yaml
+    - !!binary |
+      NjQ1OWEyYzE0ZmQ1MzY2ZmFlNWQyNDVhYWM5ZGYyMWU3ZTc5NTVkYw==
+  - - releasenotes/notes/resizer-d7c6553879852019.yaml
+    - !!binary |
+      NGI1MGY2NzE0ZjU2ZTcyYjM4ODU2ZWMxOTMzNzkwYzU2MjRlMzM5OQ==
+  version: 3.0.2
+- files:
+  - - releasenotes/notes/maintenance-e02e946e15c940ab.yaml
+    - !!binary |
+      NWNiZjRjZjA2NWYxMTA2NzExODQzMGVkYTMyY2IyZmNiNTUxNjg3NA==
+  version: 3.0.1
+- files:
+  - - releasenotes/notes/gtk3-800a345dfd067ae6.yaml
+    - !!binary |
+      ZGNiMzNjMGY3MDQ4ZjVjOTZjMmQxM2Y3NDdiYmQ2ODZjNjVkZDkxZA==
+  - - releasenotes/notes/pref-af8621e5c04d973c.yaml
+    - !!binary |
+      NWY2OTUyYTgzODVmOTNiZmM2NDliNDM0YjZlNDcyOGIwNDZmNzE0ZA==
+  - - releasenotes/notes/reno-3b5ad9829b256250.yaml
+    - !!binary |
+      OGVhNzAxMTRmYzUxZmZlZjg0MzZkYThjZGU2MzFhODI0NmNjNjc5NA==
+  - - releasenotes/notes/update-window-title-c6e6e3917821902d.yaml
+    - !!binary |
+      N2JlYTMyZGYxNjNjZGU5MGQ0YWVjYTI2YTU4MzA1ZmMyZGIwNWJmZA==
+  version: 3.0.0
