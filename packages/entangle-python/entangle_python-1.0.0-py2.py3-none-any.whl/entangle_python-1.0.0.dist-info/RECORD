@@ -1,0 +1,9 @@
+entangle/__init__.py,sha256=LDUzt-I53NX6SknlgY_o6uzXIoy8rZ0IvQR3yLL8sZQ,97
+entangle/client.py,sha256=1Kp-3lo87Hm6PGOmRw2d48Zj5x43zlTq7UHiaOkjIAw,6015
+entangle/entanglement.py,sha256=b6W_8zpzSP8LM9TYVnhE5f3DoQxX2ImZG9bBwOLJhMY,1708
+entangle/server.py,sha256=Wvv9dImFKktC0GZLb0r1iTWYq3vjj2hgwvJ-elmLXzc,4716
+entangle_python-1.0.0.dist-info/LICENSE,sha256=MRwUZ0szNGncp-bz1PbPfvf6w4KjigwdoJWSnQ_WiHs,1067
+entangle_python-1.0.0.dist-info/METADATA,sha256=5y41iNo9gqVx9qXGTdeGQtQmd4Eq_jjB9XAjb4RYIl4,2673
+entangle_python-1.0.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+entangle_python-1.0.0.dist-info/top_level.txt,sha256=4bnCXAiue_z1JxS6dGNNkIRcekdRr9IqamWAt1CX3kk,9
+entangle_python-1.0.0.dist-info/RECORD,,
