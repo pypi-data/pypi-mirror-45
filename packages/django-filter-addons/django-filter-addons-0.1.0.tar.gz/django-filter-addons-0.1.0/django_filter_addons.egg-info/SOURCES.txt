@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+django_filter_addons.egg-info/PKG-INFO
+django_filter_addons.egg-info/SOURCES.txt
+django_filter_addons.egg-info/dependency_links.txt
+django_filter_addons.egg-info/requires.txt
+django_filter_addons.egg-info/top_level.txt
+django_filters_addons/__init__.py
+django_filters_addons/filters.py
