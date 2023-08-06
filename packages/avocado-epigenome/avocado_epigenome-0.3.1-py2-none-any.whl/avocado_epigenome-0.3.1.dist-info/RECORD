@@ -1,0 +1,8 @@
+avocado/__init__.py,sha256=sZcT3RMvWgd8ILK5mVNBjvX-pLXzkqkZstli_vmpWNI,346
+avocado/io.py,sha256=kl7O-5sAV86gF5dr-t39qBqIYqJlkzTmi57PC57m_ew,2121
+avocado/model.py,sha256=1JpIFKg9T8tD0gE6cQtmE-YUVyEdKSR7zA8kLmkxs-4,36860
+avocado/utils.py,sha256=3lCyaixva3NpOlvxoWDmFAX7mBfexPeObL_LKe3RJjs,4492
+avocado_epigenome-0.3.1.dist-info/METADATA,sha256=169xdNKWlEDaz0IWnNVi9p_cABsFmEA34dVwrtVxDzk,443
+avocado_epigenome-0.3.1.dist-info/RECORD,,
+avocado_epigenome-0.3.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+avocado_epigenome-0.3.1.dist-info/top_level.txt,sha256=9r2TCR1dPfcztTtJD5K4o_GnuJOSiiH4sPltEBW1SQ0,8
