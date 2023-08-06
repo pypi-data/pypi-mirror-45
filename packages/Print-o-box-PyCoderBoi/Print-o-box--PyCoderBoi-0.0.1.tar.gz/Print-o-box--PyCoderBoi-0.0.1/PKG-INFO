@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Print-o-box--PyCoderBoi
+Version: 0.0.1
+Summary: a little playground for printing
+Home-page: https://github.com/PyCoderBoi/print-o-box
+Author: PyCoderBoi
+Author-email: bluejayy350@yahoo.com
+License: UNKNOWN
+Description: 
+        
+        just is fun and enables you to print shapes easier!
+        here is a list of commands: box(height, width, position, clones), triangle(position, "type"(right,left,up,down)), Ask("question", "answer", "getanswer (or) blank(put nothing)"), trapizoid('type', position), Animate(time, "object")
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
