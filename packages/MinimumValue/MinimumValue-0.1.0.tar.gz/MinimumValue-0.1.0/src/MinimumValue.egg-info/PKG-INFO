@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: MinimumValue
+Version: 0.1.0
+Summary: Using gradient descent to find a value  which minimizes the function
+Home-page: UNKNOWN
+Author: Golnaz Abrishami
+Author-email: g_abrishamiosgoui@u.pacific.edu
+License: MIT
+Description: This is just a placeholder file.
+        
+Keywords: GradientDescent
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Mathematics

@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/MinimumValue/MinimumValue.py
+src/MinimumValue/__init__.py
+src/MinimumValue.egg-info/PKG-INFO
+src/MinimumValue.egg-info/SOURCES.txt
+src/MinimumValue.egg-info/dependency_links.txt
+src/MinimumValue.egg-info/not-zip-safe
+src/MinimumValue.egg-info/requires.txt
+src/MinimumValue.egg-info/top_level.txt
