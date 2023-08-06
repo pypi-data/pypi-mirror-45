@@ -1,0 +1,11 @@
+biocircuits/__init__.py,sha256=yOnsBatCt6Ac692M9aaKHL2FUVOBGL908L0aF6Hsk6g,302
+biocircuits/dynsys.py,sha256=Q2olN0EELBYqO5t4JQ7xXFsJ4zZ3nPS6DPmE7YT7Ddk,3968
+biocircuits/gillespie.py,sha256=AJGvcLCOtyEibEJ8hrIptpmnTYZQAAKQbqA0fgcOA7s,8778
+biocircuits/reg.py,sha256=riO-fddRMB7NM6nYV-2QpuIZQqDOoEU2Ii8Y7UB1uZc,3615
+biocircuits/utils.py,sha256=lNHjHGbRf0n1zBxDW-qCLuuXIE-SHFl_Y6QQtnXCPzc,1351
+biocircuits/viz.py,sha256=TdmVmdMQ8uC_7R41GT9onDEW-CMNvIylwWtBSV8MI5o,18297
+biocircuits-0.0.8.dist-info/LICENSE.md,sha256=mpDoPF2CZr6D_LxMgoK6Cy2Hl5e5Q74JlAuQ7q6nGIM,2699
+biocircuits-0.0.8.dist-info/METADATA,sha256=bcfftpJuIgjvjSxrbSZJWkj2LVT6ViIiM8UVkFs1F6A,809
+biocircuits-0.0.8.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+biocircuits-0.0.8.dist-info/top_level.txt,sha256=HhHczd01nFBvc2koX6PJIZRfQavQEZ00Lfcq-2VPAkw,12
+biocircuits-0.0.8.dist-info/RECORD,,
