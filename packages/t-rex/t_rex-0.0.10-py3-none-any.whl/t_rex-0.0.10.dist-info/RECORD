@@ -1,0 +1,15 @@
+t_rex/__init__.py,sha256=-nNlMKS9nph3FR78_ZG9RGKrbxseeNp2K6nMr0pVGaU,23
+t_rex/completer.py,sha256=jabOXT7MYURE_GqVOvSsULSx7YttfZ3DTb1v3w9nBRI,598
+t_rex/executor.py,sha256=mafMFVuMRxmyXsr5OOvhVSe-cj5aBGi39JnBoK1ZNWw,1517
+t_rex/keybindings.py,sha256=I1McfGrtG6CCXi32WB3jTR0ekXgv9H4ERDr5LqhH9ms,2438
+t_rex/layout.py,sha256=ANbhL2wyPcjInYa6NoEFxwmHD5apRNy-5U2UPsXLUDs,7442
+t_rex/main.py,sha256=gKZwM5lis1i5uNHb-I6_ElVlFTEa68m5BYPAHsrZlaQ,1844
+t_rex/postprocessors.py,sha256=psrzhVIkcOCt81Nc9cCjnu3MhlnqGwjYSzwowth5HH8,805
+t_rex/result_processors.py,sha256=cL3QCEEnnPB5iZmaAsxCIXfReIDmsYdI6ETzSIfSM4g,3024
+t_rex/packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+t_rex/packages/completion_engine.py,sha256=eyJy8o5t8P2ovRWqV5kyePD3Yn8rPfv4H6vLzD9Ku64,202
+t_rex-0.0.10.dist-info/METADATA,sha256=Lf2TekjtdvZvFi5EHeDaX8ETOW6FTfn4SDgjbchxNNo,1419
+t_rex-0.0.10.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+t_rex-0.0.10.dist-info/entry_points.txt,sha256=slrXN5J8atztSrpk5rxHfEXSYF3j6r63pvIPMShUOyk,117
+t_rex-0.0.10.dist-info/top_level.txt,sha256=LoJ1L2gCxU5CbGRxmc8eF0Y_9wU7b3rD9T7QV8EkcXc,6
+t_rex-0.0.10.dist-info/RECORD,,
