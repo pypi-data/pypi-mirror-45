@@ -1,0 +1,42 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="here/main_template/macros/master"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns="http://www.w3.org/1999/xhtml"
+      i18n:domain="operun.contactform"
+      lang="en">
+
+<body>
+
+  <metal:fill fill-slot="main">
+    <div id="contactform-wrapper">
+
+      <div class="col-md-4"></div>
+
+      <div class="col-md-4">
+        <div class="success-wrapper">
+
+          <div class="success-icon">
+            <i class="glyphicon glyphicon-check"></i>
+          </div>
+
+          <div class="success-text">
+            <h1 i18n:translate="success_text_sent">Sent!</h1>
+            <p i18n:translate="success_text_message">Your message was successfully sent.</p>
+          </div>
+
+          <div class="success-cta">
+            <a class="contactform-btn" href="${context/absolute_url|nothing}" i18n:translate="success_cta_back">Back to Homepage</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4"></div>
+
+    </div>
+  </metal:fill>
+
+</body>
+
+</html>

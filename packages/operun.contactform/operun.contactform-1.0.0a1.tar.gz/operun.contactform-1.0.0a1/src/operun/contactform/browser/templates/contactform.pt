@@ -1,0 +1,137 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="here/main_template/macros/master"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns="http://www.w3.org/1999/xhtml"
+      i18n:domain="operun.contactform"
+      lang="en">
+
+<body>
+
+  <metal:fill fill-slot="main">
+    <div id="contactform-wrapper">
+      <div class="row">
+
+        <div class="header-section col-md-12 col-lg-offset-1">
+
+          <div class="header-wrapper">
+            <div class="documentFirstHeading">
+              <h1 i18n:translate="contactform_page_title">Contact us</h1>
+            </div>
+
+            <div class="documentDescription">
+              <p i18n:translate="contactform_page_subtitle">If you have a question, your in the right place...</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-section col-md-6 col-md-push-6 col-lg-5">
+
+          <form name="contactform" method="post">
+
+            <div class="row">
+
+              <div class="col-sm-2 col-md-2">
+                <div class="form-group">
+                  <label class="${python:view.get_classname('title')}" for="title" i18n:translate="contactform_title">Title</label>
+                  <div>
+                    <select class="form-control" name="title" value="${request/title|nothing}">
+                      <option i18n:translate="contactform_title_mr" value="mr">Mr</option>
+                      <option i18n:translate="contactform_title_mrs" value="mrs">Mrs</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-5 col-md-5">
+                <div class="form-group">
+                  <label class="${python:view.get_classname('firstname')}" for="firstname" i18n:translate="contactform_firstname">Firstname</label>
+                  <input type="text" class="form-control" name="firstname" value="${request/firstname|nothing}">
+                </div>
+              </div>
+
+              <div class="col-sm-5 col-md-5">
+                <div class="form-group">
+                  <label class="${python:view.get_classname('lastname')}" for="lastname" i18n:translate="contactform_lastname">Lastname</label>
+                  <input type="text" class="form-control" name="lastname" value="${request/lastname|nothing}">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label class="${python:view.get_classname('company')}" for="company" i18n:translate="contactform_company">Company</label>
+              <input type="text" class="form-control" name="company" value="${request/company|nothing}">
+            </div>
+
+            <div class="form-group">
+              <label class="${python:view.get_classname('phone')}" for="phone" i18n:translate="contactform_phone">Phone</label>
+              <input type="text" class="form-control" name="phone" value="${request/phone|nothing}">
+            </div>
+
+            <div class="form-group">
+              <label class="${python:view.get_classname('email')}" for="email" i18n:translate="contactform_email">E-Mail</label>
+              <input type="text" class="form-control" name="email" value="${request/email|nothing}">
+            </div>
+
+            <div class="form-group">
+              <label class="${python:view.get_classname('subject')}" for="subject" i18n:translate="contactform_subject">Subject</label>
+              <input type="text" class="form-control" name="subject" value="${request/subject|nothing}">
+            </div>
+
+            <div class="form-group">
+              <label class="${python:view.get_classname('message')}" for="message" i18n:translate="contactform_message">Message</label>
+              <textarea class="form-control" rows="8" cols="80" name="message">${request/message|nothing}</textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="checkbox" name="dsgvo" value="0" />
+              <div class="checkbox-text">
+                <label class="${python:view.get_classname('dsgvo', 'checkbox-label')}" for="dsgvo" i18n:translate="contactform_dsgvo_checkbox_label">
+                  You acknowledge and accept our privacy policy.
+                </label>
+                <div i18n:translate="contactform_dsgvo_message">By checking this box, you understand and agree that this form collects your name, company, phone and E-Mail, so we can correspond with you.</div>
+              </div>
+            </div>
+
+            <button class="contactform-btn" type="submit" name="form.buttons.submit" value="submit" i18n:translate="contactform_submit_send">Send</button>
+
+          </form>
+
+        </div>
+
+        <div class="info-section col-md-6 col-lg-5 col-lg-offset-1">
+
+          <div class="icon-legend">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <a href="mailto:info@operun.de" i18n:ignore="">info@operun.de</a>
+          </div>
+
+          <div class="icon-legend">
+            <i class="glyphicon glyphicon-phone"></i>
+            <a href="tel:+49 8071 527 23-0" i18n:ignore="">+49 8071 527 23-0</a>
+          </div>
+
+          <div class="icon-legend">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <p i18n:ignore="">
+              operun GmbH
+              <br>Am Burgfrieden 1
+              <br>83512 Wasserburg
+            </p>
+          </div>
+
+          <div class="image-legend">
+            <img src="++resource++operun.contactform/contact_map.png" i18n:ignore-attributes="" alt="operun GmbH">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </metal:fill>
+
+</body>
+
+</html>

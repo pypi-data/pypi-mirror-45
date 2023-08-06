@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-04-29 07:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: operun/contactform/configure.zcml
+msgid "Installs the operun Contact-Form Add-On."
+msgstr "Installiert das operun Contact-Form Add-On."
+
+#: operun/contactform/configure.zcml
+msgid "Uninstalls the operun Contact-Form Add-On."
+msgstr "Deinstalliert das operun Contact-Form Add-On."
+
+#. Default: "Something went wrong, please contact the site administrator."
+#: operun/contactform/browser/contactform.py
+msgid "contact_sendmail_error"
+msgstr "Etwas ist schief gelaufen. Bitte wenden Sie sich an den Site-Administrator."
+
+#. Default: "Something went wrong, please check the input!"
+#: operun/contactform/browser/contactform.py
+msgid "contact_validation_error"
+msgstr "Etwas ist schief gelaufen. Bitte überprüfen Sie die Eingabe!"
+
+#. Default: "Company"
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_company"
+msgstr "Firma"
+
+#. Default: "You acknowledge and accept our privacy policy."
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_dsgvo_checkbox_label"
+msgstr "Datenschutzerklärung zur Kenntnis genommen und akzeptiert."
+
+#. Default: "By checking this box, you understand and agree that this form collects your name, company, phone and E-Mail, so we can correspond with you."
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_dsgvo_message"
+msgstr "Wenn Sie dieses Kontrollkästchen aktivieren, erklären Sie sich damit einverstanden, dass dieses Formular Ihren Namen, Ihr Firma, Ihre Telefonnummer und Ihre E-Mail-Adresse erfasst, just: dass dieses Formular die eingegebenen Daten erfasst, damit wir mit Ihnen korrespondieren können."
+
+#. Default: "E-Mail"
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_email"
+msgstr "E-Mail"
+
+#. Default: "Firstname"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_firstname"
+msgstr "Vorname"
+
+#. Default: "Lastname"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_lastname"
+msgstr "Nachname"
+
+#. Default: "Message"
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_message"
+msgstr "Nachricht"
+
+#. Default: "Name"
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+msgid "contactform_name"
+msgstr "Name"
+
+#. Default: "If you have a question, your in the right place..."
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_page_subtitle"
+msgstr "Wenn Sie Fragen haben, sind Sie hier genau richtig..."
+
+#. Default: "Contact us"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_page_title"
+msgstr "Kontaktieren Sie uns"
+
+#. Default: "Phone"
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_phone"
+msgstr "Telefon"
+
+#. Default: "Subject"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_subject"
+msgstr "Betreff"
+
+#. Default: "Send"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_submit_send"
+msgstr "Absenden"
+
+#. Default: "Title"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_title"
+msgstr "Titel"
+
+#. Default: "Mr"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_title_mr"
+msgstr "Herr"
+
+#. Default: "Mrs"
+#: operun/contactform/browser/templates/contactform.pt
+msgid "contactform_title_mrs"
+msgstr "Frau"
+
+#. Default: "Your Message"
+#: operun/contactform/browser/mail_templates/mailto_user.pt
+msgid "contactform_your_message"
+msgstr "Ihre Nachricht"
+
+#. Default: "You received a new message."
+#: operun/contactform/browser/mail_templates/mailto_admin.pt
+msgid "mailto_admin_message"
+msgstr "Sie haben eine neue Nachricht erhalten."
+
+#. Default: "Hello ${firstname} ${lastname}, we will process your request as quickly as possible. This is an automatically generated E-Mail, please do not answer."
+#: operun/contactform/browser/mail_templates/mailto_user.pt
+msgid "mailto_user_message"
+msgstr "Hallo ${firstname} ${lastname}, wir werden Ihre Anfrage so schnell wie möglich bearbeiten. Dies ist eine automatisch generierte E-Mail, bitte antworten Sie nicht."
+
+#: operun/contactform/configure.zcml
+msgid "operun Contac-Form (uninstall)"
+msgstr "operun Contac-Form (deinstallieren)"
+
+#: operun/contactform/configure.zcml
+msgid "operun Contact-Form"
+msgstr "operun Contact-Form"
+
+#: operun/contactform/configure.zcml
+msgid "operun Contact-Form (testing)"
+msgstr "operun Contact-Form (testing)"
+
+#. Default: "Back to Homepage"
+#: operun/contactform/browser/templates/contactform_success.pt
+msgid "success_cta_back"
+msgstr "Zurück zur Startseite"
+
+#. Default: "Your message was successfully sent."
+#: operun/contactform/browser/templates/contactform_success.pt
+msgid "success_text_message"
+msgstr "Ihre Nachricht wurde erfolgreich gesendet."
+
+#. Default: "Sent!"
+#: operun/contactform/browser/templates/contactform_success.pt
+msgid "success_text_sent"
+msgstr "Gesendet!"

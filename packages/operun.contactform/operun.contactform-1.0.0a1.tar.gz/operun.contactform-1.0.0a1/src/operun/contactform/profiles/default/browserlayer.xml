@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer name="operun.contactform" interface="operun.contactform.interfaces.IOperunContactformLayer" />
+</layers>

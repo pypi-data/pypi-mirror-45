@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records interface='Products.CMFPlone.interfaces.IResourceRegistry' prefix="plone.resources/contactform">
+    <value key="js">++resource++operun.contactform/contactform.js</value>
+    <value key="deps">jquery</value>
+    <value key="css">
+      <element>++resource++operun.contactform/contactform.less</element>
+    </value>
+  </records>
+
+  <records interface='Products.CMFPlone.interfaces.IBundleRegistry' prefix="plone.bundles/contactform">
+    <value key="resources">
+      <element>contactform</element>
+    </value>
+    <value key="jscompilation">++resource++operun.contactform/contactform-compiled.js</value>
+    <value key="csscompilation">++resource++operun.contactform/contactform-compiled.css</value>
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="last_compilation">2018-12-04 17:00:00</value>
+    <value key="depends">plone</value>
+  </records>
+
+  <!-- Configure -->
+
+  <record name="plone.smtp_host">
+    <value>sslout.df.eu</value>
+  </record>
+
+  <record name="plone.smtp_userid">
+    <value>demo@operun.de</value>
+  </record>
+
+  <record name="plone.email_from_name">
+    <value>demo</value>
+  </record>
+
+  <record name="plone.email_from_address">
+    <value>demo@operun.de</value>
+  </record>
+
+</registry>

@@ -1,0 +1,46 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="operun.contactform">
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+      directory="overrides"
+      layer="operun.contactform.interfaces.IOperunContactformLayer"
+      />
+
+  <browser:resourceDirectory
+      directory="static"
+      name="operun.contactform"
+      />
+
+  <!-- Views -->
+
+  <browser:page
+      name="contact"
+      for="*"
+      class=".contactform.ContactFormView"
+      permission="zope2.View"
+      />
+
+  <!-- Mail Views -->
+
+  <browser:page
+    name="mailto_admin"
+    for="*"
+    template="mail_templates/mailto_admin.pt"
+    class=".mail.MailBaseView"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="mailto_user"
+    for="*"
+    template="mail_templates/mailto_user.pt"
+    class=".mail.MailBaseView"
+    permission="zope2.View"
+    />
+
+</configure>

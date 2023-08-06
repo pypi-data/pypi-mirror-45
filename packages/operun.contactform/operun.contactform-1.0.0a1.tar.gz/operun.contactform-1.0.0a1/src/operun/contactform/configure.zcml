@@ -1,0 +1,44 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="operun.contactform">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="operun Contact-Form"
+      directory="profiles/default"
+      description="Installs the operun Contact-Form Add-On."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="testing"
+      title="operun Contact-Form (testing)"
+      directory="profiles/testing"
+      description="Installs the operun Contact-Form Add-On."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.testing"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="operun Contac-Form (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the operun Contact-Form Add-On."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="operun.contactform-hiddenprofiles"
+      />
+
+</configure>
