@@ -1,0 +1,2 @@
+include ndradex/bin/Makefile
+include ndradex/data/config.toml
