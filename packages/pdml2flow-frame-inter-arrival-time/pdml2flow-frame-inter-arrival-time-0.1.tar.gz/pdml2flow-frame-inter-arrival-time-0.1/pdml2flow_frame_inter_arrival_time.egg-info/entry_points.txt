@@ -1,0 +1,3 @@
+[pdml2flow.plugins]
+frame-inter-arrival-time = plugin.plugin:Plugin
+
