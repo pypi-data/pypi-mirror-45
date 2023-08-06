@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: mecan4cna
+Version: 0.17
+Summary: Minimum Error Calibration and Normalization for Copy Number Analysis
+Home-page: https://github.com/baudisgroup/segment-liftover
+Author: Bo Gao
+Author-email: kaye_gao@hotmail.com
+License: MIT
+Description: Mecan4CNA (Minimum Error Calibration and Normalization for Copy Number Analysis)
+        
+        
+Keywords: calibration normalization copy number
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
