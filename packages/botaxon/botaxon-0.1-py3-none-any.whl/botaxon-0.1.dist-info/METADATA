@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: botaxon
+Version: 0.1
+Summary: Taxonomic parser for (sub)species botanical names.
+Home-page: https://github.com/ggueret/botaxon
+Author: Geoffrey GUERET
+Author-email: geoffrey@gueret.tech
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Pelican
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+
+botaxon
+=======
+
+[![License](https://img.shields.io/github/license/ggueret/botaxon.svg)](https://github.com/ggueret/botaxon/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/ggueret/botaxon/master.svg)](https://travis-ci.org/ggueret/botaxon)
+[![Coverage Status](https://img.shields.io/coveralls/github/ggueret/botaxon/master.svg)](https://coveralls.io/github/ggueret/botaxon?branch=master)
+
+botaxon is a taxonomic parser for (sub)species botanical names.
+
+It has been used against 3 million names.
+It aims to be fast and efficient.
+
+
+Usage
+-----
+
+```python
+>>> import botaxon
+
+>>> botaxon.load("Plumeria")
+Genus(name='Plumeria', is_hybrid=False)
+
+>>> botaxon.load("Ocimum × citriodorum")
+Species(genus=Genus(name='Ocimum', is_hybrid=False), name='citriodorum', is_hybrid=True)
+
+>>> botaxon.load("Cannabis sativa var. indica")
+Variety(species=Species(genus=Genus(name='Cannabis', is_hybrid=False), name='sativa', is_hybrid=False), name='indica')
+```
+
