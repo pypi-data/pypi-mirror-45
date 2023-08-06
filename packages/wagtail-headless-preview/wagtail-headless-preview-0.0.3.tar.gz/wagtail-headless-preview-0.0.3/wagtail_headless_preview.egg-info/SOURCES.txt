@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wagtail_headless_preview/__init__.py
+wagtail_headless_preview/apps.py
+wagtail_headless_preview/models.py
+wagtail_headless_preview.egg-info/PKG-INFO
+wagtail_headless_preview.egg-info/SOURCES.txt
+wagtail_headless_preview.egg-info/dependency_links.txt
+wagtail_headless_preview.egg-info/requires.txt
+wagtail_headless_preview.egg-info/top_level.txt
+wagtail_headless_preview/migrations/0001_initial.py
+wagtail_headless_preview/migrations/__init__.py
+wagtail_headless_preview/templates/wagtail_headless_preview/preview.html
