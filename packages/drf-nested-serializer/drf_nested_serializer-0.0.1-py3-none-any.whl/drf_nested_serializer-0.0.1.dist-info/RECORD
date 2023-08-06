@@ -1,0 +1,13 @@
+drf_nested_serializer/__init__.py,sha256=cGV1KgYOjL2THBZZrsgX9VvNCPaTirN51Ec8VllOmEo,77
+drf_nested_serializer/serializers.py,sha256=53LEkM7AKti8q5brGvZExSSIvcdh5xLVo9EsyuBxGJI,5087
+drf_nested_serializer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_nested_serializer/tests/models.py,sha256=pJ_c4A8StkxgQuYU7xpWGY5UPBiyQKRYm9WJFvClN2Q,963
+drf_nested_serializer/tests/serializers.py,sha256=8PrSV5Otsbz1lCgCP1QvZ46YaWcgT8SDCNFdDT0jlDU,807
+drf_nested_serializer/tests/tests.py,sha256=j6aE6FOBWkEEc0fAxUQSkHLf__0c6XO3VXrBjoSkDTc,1946
+drf_nested_serializer/tests/urls.py,sha256=WIrJEM6BdwUkbMmwR9Qcl8QUPwqfV7kY9UOV4alw6TU,155
+drf_nested_serializer/tests/views.py,sha256=oKmCk_R79616yKLTUaB3QsQs3V2H_mg2hfh1l4MMcxk,697
+drf_nested_serializer-0.0.1.dist-info/LICENSE,sha256=SF4jOVxBrmY4DtXB6eZmNGq0JHAgX73j01aUNTeDDfY,1070
+drf_nested_serializer-0.0.1.dist-info/METADATA,sha256=TN6C-DGb3-lu0o4-XbA5zqb2AoOLaqSt60R8LjkhKrE,1808
+drf_nested_serializer-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+drf_nested_serializer-0.0.1.dist-info/top_level.txt,sha256=nQwn-FGQHxtj-96IzKnAAI9vAu87Juu_cFg7P7qVBiM,22
+drf_nested_serializer-0.0.1.dist-info/RECORD,,
