@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: mvp-module-library
+Version: 0.0.1
+Summary: A collection of modules for executing MVP Workflows
+Home-page: https://github.com/NCATS-Tangerine/mvp-module-library
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
