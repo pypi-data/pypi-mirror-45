@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: fastrequest789
+Version: 1.0.0
+Summary: fast requests
+Home-page: https://github.com/ayong1/-
+Author: ayong01
+Author-email: 13026391531@163.com
+License: MIT Licence
+Description: Aiohttp is encapsulated to keep the speed of asynchronism, and it can be used as simple and convenient as requests.
+Keywords: pip,requests,aiohttp,spider
+Platform: any

@@ -1,0 +1,8 @@
+setup.py
+ayong_fastrequests/__init__.py
+ayong_fastrequests/fastrequest.py
+fastrequest789.egg-info/PKG-INFO
+fastrequest789.egg-info/SOURCES.txt
+fastrequest789.egg-info/dependency_links.txt
+fastrequest789.egg-info/requires.txt
+fastrequest789.egg-info/top_level.txt
