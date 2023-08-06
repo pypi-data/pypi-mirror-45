@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: voca
+Version: 0.1.2
+Summary: Control your computer by voice!
+Home-page: https://github.com/githubuser/python-voca
+Author: Full Name
+Author-email: email@example.com
+License: BSD 2-Clause License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: ws4py
+Requires-Dist: pyaudio
+Requires-Dist: click
+Requires-Dist: trio
+Requires-Dist: toml
+Requires-Dist: importlib-resources
+Requires-Dist: six
+Requires-Dist: sympy
+Requires-Dist: pyautogui
+Requires-Dist: pynput
+Requires-Dist: dragonfly2
+
+========
+Overview
+========
+
+
+
+Control your computer by voice!
+
+* Free software: GPLv3 license
+
+Installation
+============
+
+::
+
+    pip install voca
+
+
+Documentation
+=============
+
+* Prerequisites:
+  - kaldi/silvius server via included dockerfile or online
+  - Microphone
+  - Python 3
+
+
+
+Development
+===========
+
+- git clone this repo and cd inside
+- To start the kaldi server and workers in docker, plus a client listening to your mic, run ``./run-kaldi-server.sh``
+- ``./pycli init`` will create a virtualenv and install the package into it
+- ``./venv/bin/voca manage`` to start the manager process which accepts commands on stdin. The manager will start its workers.
+
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.1.0 (2019-04-30)
+------------------
+
+* First release on PyPI.
+
+
