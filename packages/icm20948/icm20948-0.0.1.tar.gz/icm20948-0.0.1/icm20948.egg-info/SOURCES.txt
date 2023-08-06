@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+icm20948/__init__.py
+icm20948.egg-info/PKG-INFO
+icm20948.egg-info/SOURCES.txt
+icm20948.egg-info/dependency_links.txt
+icm20948.egg-info/requires.txt
+icm20948.egg-info/top_level.txt
