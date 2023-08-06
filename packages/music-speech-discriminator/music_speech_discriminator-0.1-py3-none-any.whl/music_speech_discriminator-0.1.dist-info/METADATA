@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: music-speech-discriminator
+Version: 0.1
+Summary: A realtime music-speech discriminator designed for use on the Raspberry Pi.
+Home-page: https://github.com/maxgraf96/bachelorarbeit
+Author: Max Graf
+Author-email: max.graf@live.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Tested on Python 3.5.2(On Raspberry Pi/Ubuntu Mate Xenial) and 3.6.7(On my machine/Ubuntu 18.10)
+Use piwheels for installing packages on the Raspberri Pi!!! (https://www.piwheels.org/)
+Use pip and virtual environments (https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
+
+Install ffmpeg
+
