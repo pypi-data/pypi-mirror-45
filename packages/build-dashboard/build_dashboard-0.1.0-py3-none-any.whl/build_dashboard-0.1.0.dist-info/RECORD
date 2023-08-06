@@ -1,0 +1,11 @@
+build_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+build_dashboard/__main__.py,sha256=qO02guHg9OiVZQgQXuwV8jsAC9yuzxRc0VNsbbDiUcE,76
+build_dashboard/cli.py,sha256=Zu6lr-RTA2-sIeN4t_k9htgyUsNAWF9M7nnnMEUgTIk,1820
+build_dashboard/model.py,sha256=ulgHEHuk8tCHAt19NSQek2ZKrPszht_5d29cgdiVHOA,3671
+build_dashboard/views.py,sha256=G9HiJyIbnNSS9xvIBM31Gso-iibhbYadsHQ1b43mHaw,2469
+build_dashboard-0.1.0.data/scripts/build_dashboard,sha256=6Nk8eJFxIK8gIe5NAx5dCYbtDDAiPWm1btjpndoFadQ,82
+build_dashboard-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+build_dashboard-0.1.0.dist-info/METADATA,sha256=5_UOJdgcYRWOwv8-d_pruELlbbXbHiTiB6l4bYqe5HU,1756
+build_dashboard-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+build_dashboard-0.1.0.dist-info/top_level.txt,sha256=b7Qy1hZt6cUKMgNTtFvhc8tqrj4oBP-NjuN24SG2icg,16
+build_dashboard-0.1.0.dist-info/RECORD,,
