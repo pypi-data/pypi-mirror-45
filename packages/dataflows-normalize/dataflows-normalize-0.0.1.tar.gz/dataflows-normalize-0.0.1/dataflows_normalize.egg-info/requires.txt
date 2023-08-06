@@ -1,0 +1,6 @@
+dataflows>=0.0.51
+psycopg2-binary
+
+[develop]
+pylama
+tox
