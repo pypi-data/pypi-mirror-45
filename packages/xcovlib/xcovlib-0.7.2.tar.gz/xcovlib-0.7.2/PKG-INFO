@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: xcovlib
+Version: 0.7.2
+Summary: XCover API client library for Python
+Home-page: https://github.com/CoverGenius/xcover-python-sdk/
+Author: Udit Agarwal
+Author-email: udit@covergenius.biz
+License: Copyright (c) 2019, Cover Genius
+
+All rights reserved.
+
+Description: Welcome to xCover API SDK
+        =========================
+        
+        * This library communicates with XCover API
+        * Docs available at https://covergenius.github.io/xcover-python-sdk/
+        
+Platform: UNKNOWN
