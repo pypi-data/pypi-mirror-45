@@ -1,0 +1,3 @@
+[console_scripts]
+jpg2png = img2img:jpg2png
+
