@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pypi-name-cli
+Version: 1.0.3
+Summary: Check whether a package name is available on PyPI
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: me@yoginth.com
+Maintainer: Yoginth
+Maintainer-email: me@yoginth.com
+License: MIT
+Project-URL: Source, https://gitlab.com/yoginth/pypi_name_cli
+Description: ## PyPI Name CLI [![pipeline status](https://gitlab.com/yoginth/pypi_name_cli/badges/master/pipeline.svg)](https://gitlab.com/yoginth/pypi_name_cli/commits/master)
+        
+        > Check whether a package name is available on PyPI
+        
+        ## Install
+        
+        ```
+        $ pip install pypi_name_cli
+        ```
+        
+        ## Usage
+        
+        ```
+        $ pypi yoginth
+        
+         😞 This name is already taken
+        
+        $ pypi not_a_package
+        
+         😊 This name is available to use
+        ```
+        
+        ## License
+        
+        [MIT][license] Yoginth
+        
+        [LICENSE]: https://mit.yoginth.com
+        
+Keywords: PyPI,CLI,Name Checker,Package Name
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
