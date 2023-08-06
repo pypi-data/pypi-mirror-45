@@ -1,0 +1,11 @@
+felt/__init__.py,sha256=Wq_wAeoLCTQvdFNGGe814iAlxoBiZP9nNOPvKq_ucMs,174
+felt/__version__.py,sha256=rqyZtt1djmoU2vxYGslRgV4TaBWrxK8uesP_Xai_8-U,19
+felt/estimate.py,sha256=Nh1mW_deJ0edlLWf49saKx6Mi4v4zYcXieIoVtQpgfM,651
+felt/matrix.py,sha256=yIEGWs0yWlibsKQB74-htC5z8JMG4FrZaBDSemUnGZ0,2710
+felt/movement.py,sha256=1hbdukoVL91yetuREg4uqxNRQWTwsrzU_Bd9QS7klHs,3670
+felt/network.py,sha256=Ss1ut4o2zhmnrloZ0osRT0zvWH5B7_ePi9V0U2eo0aY,3894
+felt/routing.py,sha256=qfCIAp6Dyj5n29xD1_SzFGVbCE9sZMgPi_Z6G9hqmJ8,1180
+felt-0.1.dist-info/METADATA,sha256=l-hL7fU31qikywIMyG34FWoZ5m5MSxLdKKwdIezrH_g,536
+felt-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+felt-0.1.dist-info/top_level.txt,sha256=7w7r7B1oTTsI4LYa6sVEUKX5KsMhyL7Udx5hfHu-YyI,5
+felt-0.1.dist-info/RECORD,,
