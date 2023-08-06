@@ -1,0 +1,15 @@
+sigsci_site_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigsci_site_manager/api.py,sha256=qzufanRsfK0vJGHBGznrr0Q1SWC51i5AXHcW2e7xWOA,951
+sigsci_site_manager/backup.py,sha256=3rzNUMhVbcfKskURrWbtiItSUTBJOR9pjZG6CNQ8Z10,3212
+sigsci_site_manager/clone.py,sha256=ACi1SEi1rC2haxaxq7oQyTUu4KglrxvWK6FIXEwSYec,330
+sigsci_site_manager/consts.py,sha256=q1CLraRldVtQKD0eiFm5TJC4yDNsVbRPa9BlXyXqaEE,470
+sigsci_site_manager/deploy.py,sha256=UA1_8209qeldoFWdR-ZmAJuCnoAQVEVRZoEUBskRbrU,5191
+sigsci_site_manager/merge.py,sha256=2JdIFIjXXVFnBPMLZ2Yk58zumHNO3l-1cfWCEbQMX38,12860
+sigsci_site_manager/site_manager.py,sha256=sRZOtfvaV1FHrLCNf-3UdLWlJvj3dzMfCkUWsoeypGE,11925
+sigsci_site_manager/util.py,sha256=VdqSQXa3kkV2J78HNIXp5PmCRdM1O72ftpSRLlI_d9U,3618
+sigsci_site_manager-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sigsci_site_manager-1.1.0.dist-info/METADATA,sha256=bMaJ_vJqAm4d37D1RCJx4EpAHMF0CqQXndifLNPBz7c,6953
+sigsci_site_manager-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+sigsci_site_manager-1.1.0.dist-info/entry_points.txt,sha256=DahFa4kfd4FD4maRJ8mR_5-Am-e-FeWrj5CVqkBsUbY,79
+sigsci_site_manager-1.1.0.dist-info/top_level.txt,sha256=htn3q57-Wl-V83PJXw9u3XSdLMe_dIwY1Ur8cgJOgw8,20
+sigsci_site_manager-1.1.0.dist-info/RECORD,,
