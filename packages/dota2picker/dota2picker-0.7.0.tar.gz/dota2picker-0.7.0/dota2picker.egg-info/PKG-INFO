@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dota2picker
+Version: 0.7.0
+Summary: Set of utilities for choosing the best combinations of heroes and counter picks in Dota 2.
+Home-page: https://github.com/ellysh/dota2-counter-picker
+Author: Ilya Shpigor
+Author-email: petrsum@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/ellysh/dota2-counter-picker/archive/master.zip
+Description: Set of utilities for choosing the best combinations of heroes and counter picks in Dota 2.
+Keywords: dota2,counter-pick
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment :: Real Time Strategy
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
