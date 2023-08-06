@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: txhlf
+Version: 0.2
+Summary: txhlf is the official Python SDK for Traxion HLF
+Home-page: https://github.com/jaarce/txhlf
+Author: JA Arce
+Author-email: johnandrewarce@gmail.com
+License: BSD
+Description: Why should it be long when there's a short description. Simply JAmazing!
+Keywords: txhlf
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.0

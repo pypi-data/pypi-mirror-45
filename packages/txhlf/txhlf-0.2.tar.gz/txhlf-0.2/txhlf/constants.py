@@ -1,0 +1,1 @@
+BASE_URL = 'https://67855FB478D442A3B541C51156D2DF84.blockchain.ocp.oraclecloud.com:443/restproxy1/bcsgw/rest/v1/transaction/'
