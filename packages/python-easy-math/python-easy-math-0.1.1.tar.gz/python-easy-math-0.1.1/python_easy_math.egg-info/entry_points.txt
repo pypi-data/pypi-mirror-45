@@ -1,0 +1,4 @@
+[console_scripts]
+addition = addition:main
+subtraction = subtraction:main
+
