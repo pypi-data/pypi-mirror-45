@@ -1,0 +1,11 @@
+nisse/__init__.py,sha256=6xEusURwLjUl01AD2uezGSmSBTtEp_nZLiTDY_5E_Vw,227
+nisse/data_iterator.py,sha256=df6kdZ7rlAuSzH2tUAEBdskptUpPOQdFXnqJeDj4fJ4,5309
+nisse/version.py,sha256=ZVMu_LLTdvuP8TuG4wiqMtidNwpXwUCNq-7WAouhVJo,2046
+tests/__init__.py,sha256=1zDue9NrcKI7Kt0InvzJG57CBUGf7MwNHubLfTCpAps,72
+tests/test_sanity.py,sha256=Zrh4j4BORVNG2naF5ETK7mpXjrTDSfAAG175jeQAsws,404
+Nisse-0.0.1.20190501114803.dist-info/LICENSE.md,sha256=zLfTHYOYMXxQvg1BpYrGDpKUycNSpDagSnJj52zuK_I,11356
+Nisse-0.0.1.20190501114803.dist-info/METADATA,sha256=-ed-0DL-i5C40xZ-Rl7zx5bEVbd6YspHvWSGJFseoSc,1231
+Nisse-0.0.1.20190501114803.dist-info/WHEEL,sha256=PwTtGSGD30Pr87wigYj7_JpcgwB8snJe9779LqVv8AA,93
+Nisse-0.0.1.20190501114803.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+Nisse-0.0.1.20190501114803.dist-info/top_level.txt,sha256=wjwSj1D9h3vrLO-uanOhj_XZcBiwHP2jzsfmDliqVzQ,12
+Nisse-0.0.1.20190501114803.dist-info/RECORD,,
