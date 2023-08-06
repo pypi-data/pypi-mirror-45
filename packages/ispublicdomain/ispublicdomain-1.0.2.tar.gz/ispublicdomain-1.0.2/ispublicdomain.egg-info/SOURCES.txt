@@ -1,0 +1,8 @@
+README.md
+setup.py
+ispublicdomain/__init__.py
+ispublicdomain.egg-info/PKG-INFO
+ispublicdomain.egg-info/SOURCES.txt
+ispublicdomain.egg-info/dependency_links.txt
+ispublicdomain.egg-info/requires.txt
+ispublicdomain.egg-info/top_level.txt
