@@ -1,0 +1,11 @@
+djangorestframework
+djangorestframework-simplejwt
+django-filter
+psycopg2-binary
+coreapi
+paramiko
+scp
+django-cors-headers
+python-novaclient
+python-cinderclient
+django-autocomplete-light
