@@ -1,0 +1,3 @@
+urllib3
+simplejson
+tornado<=4.5.2

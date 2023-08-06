@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ibmcloud
+Version: 0.1.0
+Summary: Python client for IBM Cloud
+Home-page: https://github.com/IBM-Cloud/ibmcloud-sdk
+Author: IBM Corp.
+Author-email: torsten@de.ibm.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: IBM cloud REST API
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
