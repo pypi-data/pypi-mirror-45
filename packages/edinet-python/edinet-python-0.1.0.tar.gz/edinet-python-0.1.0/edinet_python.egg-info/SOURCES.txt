@@ -1,0 +1,17 @@
+README.md
+setup.py
+edinet/__init__.py
+edinet/facade.py
+edinet/client/base_client.py
+edinet/client/document_client.py
+edinet/client/document_list_client.py
+edinet/models/__init__.py
+edinet/models/document.py
+edinet/models/documents.py
+edinet/models/error_response.py
+edinet/models/metadata.py
+edinet_python.egg-info/PKG-INFO
+edinet_python.egg-info/SOURCES.txt
+edinet_python.egg-info/dependency_links.txt
+edinet_python.egg-info/requires.txt
+edinet_python.egg-info/top_level.txt
