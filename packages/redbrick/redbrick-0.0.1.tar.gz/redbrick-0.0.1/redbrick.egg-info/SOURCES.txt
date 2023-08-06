@@ -1,0 +1,7 @@
+README.md
+setup.py
+redbrick/__init__.py
+redbrick.egg-info/PKG-INFO
+redbrick.egg-info/SOURCES.txt
+redbrick.egg-info/dependency_links.txt
+redbrick.egg-info/top_level.txt
