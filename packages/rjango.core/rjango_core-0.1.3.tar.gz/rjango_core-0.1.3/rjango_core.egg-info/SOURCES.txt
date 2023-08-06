@@ -1,0 +1,10 @@
+setup.py
+rjango/core/__init__.py
+rjango/core/settings/__init__.py
+rjango/core/settings/head.py
+rjango_core.egg-info/PKG-INFO
+rjango_core.egg-info/SOURCES.txt
+rjango_core.egg-info/dependency_links.txt
+rjango_core.egg-info/not-zip-safe
+rjango_core.egg-info/requires.txt
+rjango_core.egg-info/top_level.txt

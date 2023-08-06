@@ -1,0 +1,4 @@
+django>=2
+channels>=2
+daphne<=2.3.0,>=2.2.5
+whitenoise>=4
