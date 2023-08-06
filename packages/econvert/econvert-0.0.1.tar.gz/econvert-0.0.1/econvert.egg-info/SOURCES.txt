@@ -1,0 +1,8 @@
+README.md
+setup.py
+econvert/__init__.py
+econvert/econvert.py
+econvert.egg-info/PKG-INFO
+econvert.egg-info/SOURCES.txt
+econvert.egg-info/dependency_links.txt
+econvert.egg-info/top_level.txt
