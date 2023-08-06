@@ -1,0 +1,3 @@
+[console_scripts]
+multimatch = multimatch_gaze.multimatch_gaze:main
+
