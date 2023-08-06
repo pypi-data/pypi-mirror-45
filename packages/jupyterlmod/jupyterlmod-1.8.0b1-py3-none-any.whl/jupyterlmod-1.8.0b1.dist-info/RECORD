@@ -1,0 +1,14 @@
+jupyterlmod/__init__.py,sha256=ABuQfKR8ewMDCxBn2OxCikWR7iXTTX0iG9tA6pJOyQI,810
+jupyterlmod/handler.py,sha256=euTyLHRTUEIkyxrK7Sx_ev2sGtQhh3xmnkDxZ793zUQ,1725
+jupyterlmod/static/lmod.js,sha256=Xw9s5E2Atca2UXTFdKFDulq-iAYiRTrs_kVQxBfJRmI,1944
+jupyterlmod/static/main.js,sha256=3E2enyXLnq3XCYsGhrlfrB-5MdkUQr3GfDsXCRIBKqU,7631
+jupyterlmod-1.8.0b1.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlmod_serverextension.json,sha256=azg0QIBexarBsMiQaf3JDVeSI7Z-4kynosruw_9eZgQ,104
+jupyterlmod-1.8.0b1.data/data/etc/jupyter/nbconfig/tree.d/jupyterlmod_nbextension.json,sha256=za_Ok9jkuCrMAVOgBoC4L90fiNqLlBzMO7t3YYCwduY,67
+jupyterlmod-1.8.0b1.data/data/share/jupyter/nbextensions/jupyterlmod/lmod.js,sha256=Xw9s5E2Atca2UXTFdKFDulq-iAYiRTrs_kVQxBfJRmI,1944
+jupyterlmod-1.8.0b1.data/data/share/jupyter/nbextensions/jupyterlmod/main.js,sha256=3E2enyXLnq3XCYsGhrlfrB-5MdkUQr3GfDsXCRIBKqU,7631
+lmod/__init__.py,sha256=iuvBjEpXo2eD2teX_WBIZU_s0-c2m56FVK8TUdib1SA,3613
+jupyterlmod-1.8.0b1.dist-info/LICENSE,sha256=PqWfljCq3NiHHFUYlWE844Hm4mgSPdI-8MYhrfnuTDY,1078
+jupyterlmod-1.8.0b1.dist-info/METADATA,sha256=fVWmvMcVLQbzPdk6Q97dKQ5AjumlbnVKbLk3YvwHfXo,812
+jupyterlmod-1.8.0b1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jupyterlmod-1.8.0b1.dist-info/top_level.txt,sha256=H-DN7F7bbp74HIKGe9qqurhHRepKJRt6-Bill_EznmE,17
+jupyterlmod-1.8.0b1.dist-info/RECORD,,
