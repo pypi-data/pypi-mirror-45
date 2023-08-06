@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+download_drivers.sh
+setup.py
+chromedrivers/__init__.py
+chromedrivers/chromedriver
+chromedrivers/headless-chromium
+py_seleniumdrivers_chromedrivers.egg-info/PKG-INFO
+py_seleniumdrivers_chromedrivers.egg-info/SOURCES.txt
+py_seleniumdrivers_chromedrivers.egg-info/dependency_links.txt
+py_seleniumdrivers_chromedrivers.egg-info/top_level.txt
