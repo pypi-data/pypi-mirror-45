@@ -1,0 +1,14 @@
+README.md
+requirements.txt
+setup.py
+src/usps_client/__init__.py
+src/usps_client/base_model.py
+src/usps_client/client.py
+src/usps_client/models.py
+src/usps_client/shims.py
+src/usps_client/version.py
+src/usps_client.egg-info/PKG-INFO
+src/usps_client.egg-info/SOURCES.txt
+src/usps_client.egg-info/dependency_links.txt
+src/usps_client.egg-info/requires.txt
+src/usps_client.egg-info/top_level.txt
