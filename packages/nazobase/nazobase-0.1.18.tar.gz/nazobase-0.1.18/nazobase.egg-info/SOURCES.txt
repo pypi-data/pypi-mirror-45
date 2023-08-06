@@ -1,0 +1,8 @@
+README.md
+nazobase.py
+setup.py
+nazobase.egg-info/PKG-INFO
+nazobase.egg-info/SOURCES.txt
+nazobase.egg-info/dependency_links.txt
+nazobase.egg-info/entry_points.txt
+nazobase.egg-info/top_level.txt
