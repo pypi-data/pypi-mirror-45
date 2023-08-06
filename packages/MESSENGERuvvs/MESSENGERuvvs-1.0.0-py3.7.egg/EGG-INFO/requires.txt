@@ -1,0 +1,4 @@
+astropy
+pyscopg2
+pandas
+solarsystemMB
