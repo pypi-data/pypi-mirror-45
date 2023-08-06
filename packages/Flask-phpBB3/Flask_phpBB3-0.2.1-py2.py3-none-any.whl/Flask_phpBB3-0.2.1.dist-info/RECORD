@@ -1,0 +1,13 @@
+flask_phpbb3/__init__.py,sha256=-gEo1xAHbHHxP5MtugH0TcO0y6JysOeC9snWQ57CCMA,185
+flask_phpbb3/extension.py,sha256=fmqFM-MPC3OyTWqe17P33URUf16Uc-zcXKOXc76KPAk,8674
+flask_phpbb3/sessions.py,sha256=WKI-sScVw4bPElUWI7UDVbIi3mxbFOC8U6W0f7zHVng,7088
+flask_phpbb3/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_phpbb3/backends/base.py,sha256=WrfBIsmQnInfLiPjzmLdXXktgGTtFBo6VBTxKcNXaXc,5666
+flask_phpbb3/backends/psycopg2.py,sha256=bONK_b6UZb3Tq_NGYUMRz-36VonlBKA7nqJWAp6gjMs,8094
+Flask_phpBB3-0.2.1.dist-info/AUTHORS,sha256=Pe9WPgPGUtI5piF6vfTJhd9u4YqWsHNFAMhdqQJfEEE,120
+Flask_phpBB3-0.2.1.dist-info/LICENSE,sha256=uZ9e4Uup9feAv-SHTmG25J0s8AaFWX4mnzChFMZnnTc,1477
+Flask_phpBB3-0.2.1.dist-info/METADATA,sha256=ul2E6-zkEy70BQnAb-u9-ahQYJ1ggHC9n78rfRnzbJw,5794
+Flask_phpBB3-0.2.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+Flask_phpBB3-0.2.1.dist-info/pbr.json,sha256=vpLkeCXrIei2WY5MSf8OnsYiCnN3Hmv39Sli_0L-0fk,47
+Flask_phpBB3-0.2.1.dist-info/top_level.txt,sha256=VKSKpxUAYTz34btZh0iwDg-NUsMZZMEMSO_1zdJ7Rho,13
+Flask_phpBB3-0.2.1.dist-info/RECORD,,
