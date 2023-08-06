@@ -1,0 +1,22 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+include README.rst
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-exclude docs _build _build/*
+
+include Makefile
+include Pipfile
+include Pipfile.lock
+include tox.ini
+include *.toml
+
+exclude .editorconfig
+exclude .github
+exclude .github/ISSUE_TEMPLATE.md
