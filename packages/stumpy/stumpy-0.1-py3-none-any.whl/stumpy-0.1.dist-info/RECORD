@@ -1,0 +1,14 @@
+stumpy/__init__.py,sha256=LSjZarX8gOQVAa_87KHCc7IgGZNKtojYMmUsy67YuG4,337
+stumpy/chains.py,sha256=3vpDV7Vutv5S6zX7--wfc2lNIOHo6CGiTsL7qhFAgfk,2424
+stumpy/core.py,sha256=6UircwOmT9xkCFG-8i8L0jI7JwdFXwSzm18AtriOBZs,8322
+stumpy/mstump.py,sha256=jsqZWfS1Z0cmtQQRKxsU7Dc0Z4gRSrgnVdNAUkEOwVw,12104
+stumpy/mstumped.py,sha256=BiFIeItsushKMSGOFMPNrkw_MlnL5oexKXDOaOipFy4,4282
+stumpy/stamp.py,sha256=TSP70B5Zjb8Sx-ELcoY23tjxkh3TTKwk7AvVXRCKB0w,3718
+stumpy/stomp.py,sha256=lFDin053DgwWQPSUzJOzI7k4UtaRpxwBDHJs4drR3GE,4661
+stumpy/stump.py,sha256=DYXAIrpTWBA27n17u8Gr2yCO2n36d1xnfgVabdeBuD4,13228
+stumpy/stumped.py,sha256=T_YVZ8tNFerIWXhj0jUiZGV2uWFan6c0ujlUtAkWZfg,5949
+stumpy-0.1.dist-info/LICENSE.txt,sha256=Nq8QeQzMj6p0G15IP2SNEB9N-XleSF4rAbCJA5o4ik8,1604
+stumpy-0.1.dist-info/METADATA,sha256=7HbIhzDaSYahlxzL2YuIF_CbPXQ8fV7TPN6mYlOjNjc,13239
+stumpy-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+stumpy-0.1.dist-info/top_level.txt,sha256=01huWzXqUkpAfpKz5tWkb7FzjPQie1wEaeuA57dgDc8,7
+stumpy-0.1.dist-info/RECORD,,
