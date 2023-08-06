@@ -1,0 +1,10 @@
+README.md
+setup.py
+tsic/__init__.py
+tsic/tsic.py
+tsic.egg-info/PKG-INFO
+tsic.egg-info/SOURCES.txt
+tsic.egg-info/dependency_links.txt
+tsic.egg-info/entry_points.txt
+tsic.egg-info/requires.txt
+tsic.egg-info/top_level.txt
