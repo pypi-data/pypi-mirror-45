@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+flask_change_password/10_million_password_list_top_10000.txt
+flask_change_password/__init__.py
+flask_change_password/change_password_template.html
+flask_change_password/flask_change_password.py
+flask_change_password/pageChangePassword.js
+flask_change_password/test.py
+flask_change_password.egg-info/PKG-INFO
+flask_change_password.egg-info/SOURCES.txt
+flask_change_password.egg-info/dependency_links.txt
+flask_change_password.egg-info/requires.txt
+flask_change_password.egg-info/top_level.txt
