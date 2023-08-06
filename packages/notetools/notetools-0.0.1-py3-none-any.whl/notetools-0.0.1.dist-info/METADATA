@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: notetools
+Version: 0.0.1
+Summary: Notebook utility functions
+Home-page: https://github.com/johntd54/notetools
+Author: johntd54
+Author-email: trungduc1992@gmail.com
+License: GNU General Public License (GPL)
+Keywords: notetools deep learning inquire artificial intelligence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+
+notetools
+=========
+
+Working with Jupyter notebook or Google Colab effectively requires knowing the quirks associating with these platforms, which can distract writer from writing process. `notetools` simplifies these interactions by providing and maintaining common support functions.
+

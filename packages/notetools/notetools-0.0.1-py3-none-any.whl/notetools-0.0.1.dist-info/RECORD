@@ -1,0 +1,9 @@
+notetools/__init__.py,sha256=4FSUtcCNoixG482nLWQtOdwoWE7VyKlnbPuFol2Qq9Y,71
+notetools/colab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notetools/colab/constants.py,sha256=8CGmy4FHMsFWD_nQiDhTX4Px5T6gmiY4wcnC3Ze2Xmg,122
+notetools/colab/views.py,sha256=rNNIf93Jx1or9E-I3AVICDFz4SO_FWo8T5lMAkxRVUA,2012
+notetools-0.0.1.dist-info/LICENSE,sha256=TqU08Q0mD3G0D1sK4GDyHqiQvz5scjkyEHHaFqYAW2w,1067
+notetools-0.0.1.dist-info/METADATA,sha256=eOjtUtUWRCJMrpuROSWDWv9X455k9dsIniwAMa3NIpw,859
+notetools-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+notetools-0.0.1.dist-info/top_level.txt,sha256=gUMBjmlVwGOCye--Fi6PPoM6LPSpDMf9tOH8WydxtmU,10
+notetools-0.0.1.dist-info/RECORD,,
