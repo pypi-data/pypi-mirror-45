@@ -1,0 +1,6 @@
+pandas>=0.20.0
+numpy
+matplotlib.pyplot
+numba
+functools
+multiprocess
