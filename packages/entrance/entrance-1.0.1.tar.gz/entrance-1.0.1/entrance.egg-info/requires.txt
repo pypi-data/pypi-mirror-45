@@ -1,0 +1,7 @@
+asyncio
+pyyaml
+sanic
+websockets==6.0
+janus
+ncclient
+paramiko
