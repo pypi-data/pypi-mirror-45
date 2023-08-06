@@ -1,0 +1,7 @@
+README.md
+setup.py
+lixi/__init__.py
+lixi.egg-info/PKG-INFO
+lixi.egg-info/SOURCES.txt
+lixi.egg-info/dependency_links.txt
+lixi.egg-info/top_level.txt
