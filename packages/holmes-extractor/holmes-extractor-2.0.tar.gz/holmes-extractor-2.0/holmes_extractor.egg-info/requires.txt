@@ -1,0 +1,8 @@
+spacy==2.0.12
+neuralcoref==3.1
+numpy
+scipy
+sklearn
+bs4
+rdflib
+jsonpickle

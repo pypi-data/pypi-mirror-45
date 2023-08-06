@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: holmes-extractor
+Version: 2.0
+Summary: Information extraction from English and German texts based on predicate logic
+Home-page: https://github.com/msg-systems/holmes-extractor
+Author: Richard Paul Hudson, msg systems ag
+Author-email: richard.hudson@msg.group
+License: gpl-3.0
+Description: 
+        **Holmes** is a Python 3 library (tested with version 3.7.2) that supports a number of
+        use cases involving information extraction from English and German texts. See
+        [Github](https://github.com/msg-systems/holmes-extractor) for more details.
+        
+Keywords: nlp,information-extraction,spacy,spacy-extension,python,machine-learning,ontology,semantics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown
