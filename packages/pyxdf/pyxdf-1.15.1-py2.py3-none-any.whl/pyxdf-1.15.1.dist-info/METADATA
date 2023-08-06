@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyxdf
+Version: 1.15.1
+Summary: Python library for importing XDF (Extensible Data Format)
+Home-page: https://github.com/sccn/xdf
+Author: Christian Kothe, Alejandro Ojeda, Tristan Stenner, Clemens Brunner
+Author-email: christiankothe@gmail.com
+License: BSD
+Keywords: xdf pyxdf lsl lab streaming layer labstreaminglayer data file
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+Python library for importing Extensible Data Format (XDF)
+========================================================
+
+Python importer for [xdf](https://github.com/sccn/xdf).
+
+Install with `pip install pyxdf`.
+
+For the latest version, use `pip install git+https://github.com/xdf-modules/xdf-Python.git`.
+
+## For maintainers
+
+1. For pypi
+    1. `rm -Rf build dist *.egg-info` or `rmdir /S build dist pyxdf.egg-info`
+    1. `python setup.py sdist bdist_wheel`
+    1. `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+
+* Delete the `--repository-url` part from the above command when ready
+for permanent upload. pypi is unfriendly and requires a version bump
+for any new upload.
+
+
