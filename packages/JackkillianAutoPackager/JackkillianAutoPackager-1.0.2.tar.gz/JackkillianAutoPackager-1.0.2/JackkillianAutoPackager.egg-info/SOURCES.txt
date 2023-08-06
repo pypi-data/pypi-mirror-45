@@ -1,0 +1,8 @@
+README.md
+setup.py
+AutoPackager/code/JackkillianAutoPackager.py
+AutoPackager/code/__init__.py
+JackkillianAutoPackager.egg-info/PKG-INFO
+JackkillianAutoPackager.egg-info/SOURCES.txt
+JackkillianAutoPackager.egg-info/dependency_links.txt
+JackkillianAutoPackager.egg-info/top_level.txt
