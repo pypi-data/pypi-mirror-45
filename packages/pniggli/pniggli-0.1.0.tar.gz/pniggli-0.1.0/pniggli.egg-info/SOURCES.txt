@@ -1,0 +1,14 @@
+README.rst
+setup.py
+pniggli/__init__.py
+pniggli/niggli_reduce_3d.py
+pniggli/utils.py
+pniggli/version.py
+pniggli.egg-info/PKG-INFO
+pniggli.egg-info/SOURCES.txt
+pniggli.egg-info/dependency_links.txt
+pniggli.egg-info/entry_points.txt
+pniggli.egg-info/requires.txt
+pniggli.egg-info/top_level.txt
+test/test_niggli.py
+test/test_niggli_utils.py
