@@ -1,0 +1,41 @@
+# MSG91 SMS Package for Python
+With this Python package you can send SMS using MSG91 SMS API. This Python package allow to send transactional SMS, promotional SMS, OTP SMS, verify OTP and resend OTP.
+
+## How to use?
+This package uses requests and json module. So first you have to import these packages:
+
+```
+import json
+import requests as req
+```
+
+Then import the msg91-sms package:
+
+```
+import msg91_sms as msgsms
+```
+
+# Working with SMS
+
+First start with your SMS auth key:
+msgclass = msgsms.Cspd_msg91(apikey='Your MSG91 AKI Key')
+
+## Send SMS
+```
+msgclass.send(route,sender,phone_number,SMS_text)
+```
+
+## Send OTP
+```
+msgclass.send_otp(sender,phone_number,SMS_text)
+```
+
+## Verify OTP
+```
+msgclass.verify_otp(phone_number,OTP_code)
+```
+
+## Resend OTP
+```
+msgclass.resend_otp(phone_number)
+```
