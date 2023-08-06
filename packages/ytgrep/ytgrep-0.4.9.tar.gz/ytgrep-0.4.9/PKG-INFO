@@ -1,0 +1,108 @@
+Metadata-Version: 1.1
+Name: ytgrep
+Version: 0.4.9
+Summary: CLI tool to search youtube captions
+Home-page: UNKNOWN
+Author: Alex Kohler
+Author-email: alexjohnkohler@gmail.com
+License: UNKNOWN
+Description: ytgrep 
+        -----------------------
+        .. image:: https://travis-ci.com/alexkohler/ytgrep.svg?branch=master
+            :target: https://travis-ci.com/alexkohler/ytgrep
+        
+        ytgrep is a CLI tool to search Youtube closed captions with a grep-like interface.
+        
+        
+        Requirements
+        =============
+        
+        * Requires python >= 3.5
+        
+        Installation
+        =============
+        
+        .. code:: bash
+            
+            pip install ytgrep
+            
+        Note: you must have pip's bin folder on your `PATH`.
+        
+        Purpose
+        =============
+        ytgrep is particularly useful whilst looking for particular topic or keywords mentioned in a video.
+        
+        For example, searching for the word 'topoloigcal sort' in `MIT's Open Courseware Lecture on DFS and topological sort <https://www.youtube.com/watch?v=AfSk24UTFS8>`__:
+        
+        |image0|
+        
+        .. |image0| image:: https://asciinema.org/a/SjG0XTmIPzDfNgx2SxwhCdXwt.svg
+           :target: https://asciinema.org/a/SjG0XTmIPzDfNgx2SxwhCdXwt
+           
+        
+        Usage
+        ==============
+        
+        .. code:: bash
+        
+            usage: ytgrep.py [-h] [-e] [-v] [-links] pattern urls [urls ...]
+        
+        Flags
+        =============
+        * -e <PATTERN> - specify a regular expression to match
+        * -v - verbose, print debug information
+        * -links - include the time shortcut link with each match (see example below) 
+        
+        
+        More examples
+        =============
+        
+        Include timestamped links (e.g. <youtube URL>/&t=196s) to jump directly to part in video where keyword was mentioned.
+        
+        .. code:: bash
+            
+            $ ytgrep -links 'potassium' https://www.youtube.com/watch?v=OIYOshsEqmQ
+        
+        Search with regular expression
+        
+        .. code:: bash
+        
+            ytgrep -e 'banana|potassium' https://www.youtube.com/watch?v=OIYOshsEqmQ
+            
+        
+        Search multiple urls
+        
+        .. code:: bash
+        
+            ytgrep 'banana' https://www.youtube.com/watch?v=LH5ay10RTGY https://www.youtube.com/watch?v=zFQWVN4xip0
+            
+        
+            
+        
+        
+        Development
+        =============
+        
+        Run Tests
+        ~~~~~~~~~
+        
+        *Note:* Functional tests do download directly from Youtube
+        
+        .. code:: bash
+        
+           ## All tests
+           python -m unittest discover
+        
+           ## Unit tests
+           python -m unittest discover test/unit
+        
+           ## Functional tests
+           python -m unittest discover test/functional
+        
+        Related projects
+        ==================
+         * youtube-closed-captions - This project used this library as a starting point https://github.com/mkly/youtube-closed-captions
+         * videogrep - get supercuts of video matching provided seach terms
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
