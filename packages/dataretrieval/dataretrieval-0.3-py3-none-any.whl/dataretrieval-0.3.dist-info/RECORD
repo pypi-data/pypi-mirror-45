@@ -1,0 +1,11 @@
+dataretrieval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataretrieval/nadp.py,sha256=jmFPBH9b0a5aKgGTCGholWhkRBbRu6QXa5fPLug4k1U,4609
+dataretrieval/nwis.py,sha256=rjjTqIEoIez5w7mrPLJopk1-I3spcvgN6kLSsV9j2Nc,16304
+dataretrieval/streamstats.py,sha256=MpqXdQd-iUFG8Kt8VXG4ptL9yNcNcDq-QrgmpRSEpQQ,3698
+dataretrieval/utils.py,sha256=KrXPP8E_e9mNVbemf8DciTY4xcumgEFgxswTnl4VkZs,4253
+dataretrieval/wqp.py,sha256=8LtogcPQGXZCHzyu7sbUFi8afE1dHeKwLMETkN-f0X8,2236
+dataretrieval-0.3.dist-info/LICENSE.md,sha256=LigRS_by7HsCbBfqzhli11C9SFLSPXIhZUhs1BZlQXk,2678
+dataretrieval-0.3.dist-info/METADATA,sha256=1iOZcNqizNfqecyqz8BjELuFShabpznP-ppomJsJFpo,187
+dataretrieval-0.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+dataretrieval-0.3.dist-info/top_level.txt,sha256=n1egWkvPlfgCBkkL0X3kbp9VgDv1VVosvg09X5LkyZk,14
+dataretrieval-0.3.dist-info/RECORD,,
