@@ -1,0 +1,3 @@
+[console_scripts]
+isgithubdown = isgithubdown.isgithubdown:main
+
