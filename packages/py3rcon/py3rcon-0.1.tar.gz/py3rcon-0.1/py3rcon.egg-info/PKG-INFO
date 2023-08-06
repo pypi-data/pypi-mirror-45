@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: py3rcon
+Version: 0.1
+Summary: Python3 wrapper for RCON communication.
+Home-page: https://github.com/Jestemkioskiem/pyRcon
+Author: Wiktor Metryka
+Author-email: jestemkiosk@gmail.com
+License: UNKNOWN
+Description: # pyRcon
+        Python3 RCON API for Python3
+        Built and tested for Quake3, but will work with most RCON systems.
+        
+        ## Installation:
+        
+        `$ pip install pyrcon`
+        
+        ## Examples:
+        
+        Send RCON commands without waiting for a response:
+        ```python
+        from pyrcon import RCON
+        
+        rcon = RCON("127.0.0.1", "secret_password") 
+        rcon.send_command("say Hello, world!")
+        ```
+        
+        Send RCON commands and get their response:
+        ```python
+        from pyrcon import RCON
+        
+        rcon = RCON("127.0.0.1", "secret_password")
+        status = rcon.send_command("status", response=True, port=27960) #port is optional
+        print(status)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
