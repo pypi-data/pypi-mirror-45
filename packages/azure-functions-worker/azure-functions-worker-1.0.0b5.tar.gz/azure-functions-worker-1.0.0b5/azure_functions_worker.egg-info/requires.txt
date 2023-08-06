@@ -1,0 +1,9 @@
+grpcio~=1.19.0
+grpcio-tools~=1.19.0
+azure-functions==1.0.0b4
+
+[dev]
+flake8~=3.5.0
+mypy
+pytest
+requests==2.*
