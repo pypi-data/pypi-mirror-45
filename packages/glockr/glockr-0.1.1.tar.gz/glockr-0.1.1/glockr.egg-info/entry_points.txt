@@ -1,0 +1,3 @@
+[console_scripts]
+glockr = glockr.client.GClient
+
