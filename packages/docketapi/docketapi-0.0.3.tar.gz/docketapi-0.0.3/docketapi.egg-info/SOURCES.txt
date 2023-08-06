@@ -1,0 +1,8 @@
+README.rst
+setup.py
+docketapi/__init__.py
+docketapi.egg-info/PKG-INFO
+docketapi.egg-info/SOURCES.txt
+docketapi.egg-info/dependency_links.txt
+docketapi.egg-info/requires.txt
+docketapi.egg-info/top_level.txt
