@@ -1,0 +1,12 @@
+sogouweixincrawl/SogouWeixinAccountListParser.py,sha256=tmOxV5hocrtgUF8E6oTHoeI_7exFsxTFfE8VHJVOupE,1817
+sogouweixincrawl/SogouWeixinCrawl.py,sha256=SgviQ1_XipCGZv78klMw5iOOjzdIBgQPuZGVj_fILPM,3663
+sogouweixincrawl/SogouWeixinVerify.py,sha256=QmZbLtQ1-q_22VKkEZIHcGu108Uc2h3Ybf5tXnuE-GA,1767
+sogouweixincrawl/__init__.py,sha256=WtZPK2i9_3xn7sXcdWSl_508qXmaiIIHFNpVocHjFJ0,83
+sogouweixincrawl/netcrawl/BaseCrawl.py,sha256=ovuUOZjBdj8nwMxqOh2E4vtoInMM2d_T2OaYkmRGqHE,2852
+sogouweixincrawl/netcrawl/CreateCrawl.py,sha256=bLVcOkmBWom6mgRJ60ui69BPjBHvjGyVRic6GRbsdFU,124
+sogouweixincrawl/netcrawl/__init__.py,sha256=WtZPK2i9_3xn7sXcdWSl_508qXmaiIIHFNpVocHjFJ0,83
+sogouweixincrawl-1.0.2.dist-info/LICENSE,sha256=Ci0Y5pfCJ2ihyQ28oUTbDCwlA_cUvOXhADHlSADE3Mo,1080
+sogouweixincrawl-1.0.2.dist-info/METADATA,sha256=VYJkbrVSNnRiRNjYhdbjfcHbk-wFiwDqZSLQwtWv8ss,356
+sogouweixincrawl-1.0.2.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+sogouweixincrawl-1.0.2.dist-info/top_level.txt,sha256=c_T4Ry7SynmXhzURWH2UlxwwiHwU3-x6vstt7PpQGdI,17
+sogouweixincrawl-1.0.2.dist-info/RECORD,,
