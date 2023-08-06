@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: easybert
+Version: 1.0.0
+Summary: A Dead Simple BERT API (https://github.com/google-research/bert)
+Home-page: https://github.com/robrua/easy-bert
+Author: Rob Rua
+Author-email: robertrua@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: BERT,Natural Language Processing,NLP,Language Model,Language Models,Machine Learning,ML,TensorFlow,Embeddings,Word Embeddings,Sentence Embeddings
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3

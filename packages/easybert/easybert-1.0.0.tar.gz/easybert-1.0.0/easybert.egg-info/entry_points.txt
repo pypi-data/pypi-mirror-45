@@ -1,0 +1,3 @@
+[console_scripts]
+bert = easybert.__main__:_main
+
