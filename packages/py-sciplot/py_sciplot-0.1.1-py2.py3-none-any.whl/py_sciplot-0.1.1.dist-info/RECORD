@@ -1,0 +1,11 @@
+py_sciplot-0.1.1.dist-info/METADATA,sha256=axORRV-ol4OdSQrGRPHbzhLQveEcBCqt4wtNw7M2Pfg,979
+py_sciplot-0.1.1.dist-info/RECORD,,
+py_sciplot-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+py_sciplot-0.1.1.dist-info/top_level.txt,sha256=A_EEeaRAD1t5tO94rMeGAmENWeR0tAgTBRdKmYH29Js,8
+sciplot/__init__.py,sha256=MoDTvbld9DxxE7ru0vdECCZ-3EoiIZaWoX3SDd3Q6ig,827
+sciplot/analysis.py,sha256=9A8_F8MkjJy9IR-xSxQRsh8kNp-AGFXvlfa8ui0EsLY,3396
+sciplot/colors.py,sha256=-3E6UQ1is1WpQreuQy5ZAZkg4a3byBlyAFxDtY0wdvI,547
+sciplot/decorations.py,sha256=xoO7fUBWOMrwawEdJkz-z3ERCCPhrPb5Huu7DdttSfE,2822
+sciplot/functions.py,sha256=JLGkeAdNucHx1pXfazKah0mORzDwZKlqT_cjdgoK32g,8961
+sciplot/helpers.py,sha256=XEgFcR3MjUFzKl-hfSlqqzSemygfebLSbjUvjfDtjL0,3078
+sciplot/skeleton.py,sha256=shn3BSuBmwmigmcqjgdOE3Wout2LASj3tLdgFLRFwlQ,2812
