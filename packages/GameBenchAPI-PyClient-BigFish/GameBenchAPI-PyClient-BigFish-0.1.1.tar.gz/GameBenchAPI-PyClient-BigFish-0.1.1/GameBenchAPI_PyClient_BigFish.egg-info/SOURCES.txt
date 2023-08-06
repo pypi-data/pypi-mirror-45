@@ -1,0 +1,12 @@
+README.md
+setup.py
+GameBenchAPI_PyClient_BigFish.egg-info/PKG-INFO
+GameBenchAPI_PyClient_BigFish.egg-info/SOURCES.txt
+GameBenchAPI_PyClient_BigFish.egg-info/dependency_links.txt
+GameBenchAPI_PyClient_BigFish.egg-info/requires.txt
+GameBenchAPI_PyClient_BigFish.egg-info/top_level.txt
+GameBenchAPI_PyClient_bigfish.egg-info/PKG-INFO
+GameBenchAPI_PyClient_bigfish.egg-info/SOURCES.txt
+GameBenchAPI_PyClient_bigfish.egg-info/dependency_links.txt
+GameBenchAPI_PyClient_bigfish.egg-info/requires.txt
+GameBenchAPI_PyClient_bigfish.egg-info/top_level.txt
