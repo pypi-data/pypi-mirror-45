@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyosu
+Version: 1.1
+Summary: Python lib for OSU API
+Home-page: https://github.com/Hell13Cat/PyOSU/
+Author: HellCatNya
+Author-email: blacktigermaxx@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# PyOSU
+
+[INFO](https://github.com/Hell13Cat/PyOSU/wiki/Mine-page "Information for PyOSU")
+
+
