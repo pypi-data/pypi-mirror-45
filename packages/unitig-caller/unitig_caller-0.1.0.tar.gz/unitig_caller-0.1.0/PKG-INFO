@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: unitig_caller
+Version: 0.1.0
+Summary: unitig-caller: wrapper around mantis to detect presence of sequence elements
+Home-page: https://github.com/johnlees/unitig-caller
+Author: John Lees
+Author-email: john@johnlees.me
+License: Apache Software License
+Description: # unitig-caller
+        A wrapper around mantis to determine unitig presence/absence
+        
+Keywords: gwas bacteria k-mer unitig
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
