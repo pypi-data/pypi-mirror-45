@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iseries
+Version: 1.0
+Summary: An library to help to make an ODBC connection with an iSeries or i5 IBM server
+Home-page: https://github.com/jpmieville/iseries.git
+Author: Jean-Paul Mieville
+Author-email: jpmieville@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# iseries
+
+This package should be used with pyODBC package. It simplifies the coonection to an iSeries or i5 IBM server. 
+
+
