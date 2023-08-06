@@ -1,0 +1,11 @@
+README.md
+setup.py
+bpf2eaf/BPFParser.py
+bpf2eaf/ErrorCodesBPF2EAF.py
+bpf2eaf/XML_Validation.py
+bpf2eaf/__init__.py
+bpf2eaf/bpf2eaf.py
+bpf2eaf.egg-info/PKG-INFO
+bpf2eaf.egg-info/SOURCES.txt
+bpf2eaf.egg-info/dependency_links.txt
+bpf2eaf.egg-info/top_level.txt
