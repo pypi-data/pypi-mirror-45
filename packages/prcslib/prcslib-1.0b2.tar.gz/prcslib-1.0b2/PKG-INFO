@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: prcslib
+Version: 1.0b2
+Summary: Python API for PRCS.
+Home-page: https://vx68k.bitbucket.io/prcslib.py/
+Author: Kaz Nishimura
+Author-email: kazssym@vx68k.org
+License: UNKNOWN
+Description: # Introduction
+        
+        The `prcslib` package provides a Python API for [PRCS][].
+        PRCS (Project Revision Control System) is a legacy version control system
+        which works on a set of files at once.
+        
+        [![(License)](https://img.shields.io/badge/license-MIT-blue.svg)][MIT]
+        [![(Chat)](https://img.shields.io/gitter/room/vx68k/prcslib.py.svg)][Gitter room]
+        [![(Issues)](https://img.shields.io/bitbucket/issues/vx68k/prcslib.py.svg)][open issues]
+        
+        [PRCS]: http://prcs.sourceforge.net/
+        
+        [MIT]: https://spdx.org/licenses/MIT.html "MIT License"
+        [Gitter room]: https://gitter.im/vx68k/prcslib.py
+        [Open issues]: https://bitbucket.org/vx68k/prcslib.py/issues?status=new&status=open
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Obsoletes: prcs2hg (< 2.0)
+Requires-Python: >= 3.4
+Description-Content-Type: text/markdown
