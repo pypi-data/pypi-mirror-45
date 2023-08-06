@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: promissory-note
+Version: 0.0.4
+Summary: Simple promissory note issuance
+Home-page: https://github.com/flaviogf/promissory_note
+Author: Flavio Fernandes
+Author-email: flavio.fernandes6@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyflunt (==1.0.0)
+Requires-Dist: pillow (==6.0.0)
+Requires-Dist: click (==7.0)
+Requires-Dist: pyfiglet (==0.8.post1)
+
+Simple promissory note issuance
+
+
