@@ -1,0 +1,9 @@
+README.txt
+upload.py
+smfiles/__init__.py
+smfiles/edit.py
+smfiles/read.py
+smfiles.egg-info/PKG-INFO
+smfiles.egg-info/SOURCES.txt
+smfiles.egg-info/dependency_links.txt
+smfiles.egg-info/top_level.txt
