@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+
+
+cmd="$1"
+
+([[ -n $ZSH_EVAL_CONTEXT && $ZSH_EVAL_CONTEXT =~ :file$ ]] ||
+     [[ -n $KSH_VERSION && $(cd "$(dirname -- "$0")" &&
+                                 printf '%s' "${PWD%/}/")$(basename -- "$0") != "${.sh.file}" ]] ||
+     [[ -n $BASH_VERSION ]] && (return 0 2>/dev/null)) && sourced=1 || sourced=0
+
+if [ "$cmd" = activate ] || [ "$cmd" = deactivate ]; then
+    if [ $sourced -eq 0 ]; then
+        "$cmd command must be called using 'source' with a supported shell"
+        exit 1;
+    fi
+else
+    if [ $sourced -eq 1 ]; then
+        "source this script only with activate/deactivate commands"
+        return;
+    fi
+fi
+
+pydockenv_entry_point=$(python -c 'from pydockenv.commands import pydockenv; print(pydockenv.__file__)')
+python $pydockenv_entry_point $@
+
+exitCode=$?
+if [ $exitCode -eq 0 ]
+then
+    if [ "$cmd" = "activate" ]
+    then
+        export PYDOCKENV=$2
+        export PS1="($PYDOCKENV) $PS1"
+    elif [ "$cmd" = "deactivate" ]
+    then
+        export PS1="${PS1/\($PYDOCKENV\) /}"
+        export PYDOCKENV=""
+    fi
+fi
+
+if [ -n "$PYDOCKENV_DEBUG" ]
+then
+    env 1>&2
+fi
+
+if ! [ $sourced -eq 1 ]; then
+    exit $exitCode
+fi
+
