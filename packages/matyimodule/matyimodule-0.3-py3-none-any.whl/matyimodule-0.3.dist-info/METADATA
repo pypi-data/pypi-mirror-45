@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: matyimodule
+Version: 0.3
+Summary: Egy minta, hogy hogyan kell Pip csomagot csinálni.
+Home-page: https://github.com/matyifkbt/matyimodule
+Author: Matyi
+Author-email: mmatyi1999@gmail.com
+License: UNKNOWN
+Requires-Dist: markdown
+
+matyimodule
+
+
