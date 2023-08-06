@@ -1,0 +1,9 @@
+README.md
+setup.py
+htfile/__init__.py
+htfile/htfile.py
+htfile.egg-info/PKG-INFO
+htfile.egg-info/SOURCES.txt
+htfile.egg-info/dependency_links.txt
+htfile.egg-info/requires.txt
+htfile.egg-info/top_level.txt

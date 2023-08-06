@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: htfile
+Version: 0.0.1a0
+Summary: HTTP request with Range support as file-like object
+Home-page: https://github.com/marma/htfile
+Author: Martin Malmsten
+Author-email: martin@martinmalmsten.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
