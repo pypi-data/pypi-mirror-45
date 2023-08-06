@@ -1,0 +1,11 @@
+README.rst
+setup.py
+stats_scraper/__init__.py
+stats_scraper/__main__.py
+stats_scraper/player.py
+stats_scraper/scraper.py
+stats_scraper.egg-info/PKG-INFO
+stats_scraper.egg-info/SOURCES.txt
+stats_scraper.egg-info/dependency_links.txt
+stats_scraper.egg-info/requires.txt
+stats_scraper.egg-info/top_level.txt
