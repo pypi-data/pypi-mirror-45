@@ -1,0 +1,12 @@
+kinto_algolia/__init__.py,sha256=sF6nUAzOFqYHYk3CgUgC8lCUgsQQBL_I8xAB8Juo9To,2188
+kinto_algolia/command_reindex.py,sha256=OqfUSiiEzjSw9boBnTUHdN5woybf12uy3CeaIalZBOQ,4036
+kinto_algolia/indexer.py,sha256=Ab5wvABf_L2dhNIrfHAv0dmTnC4FSXeGnl-jpG3oS0c,5265
+kinto_algolia/listener.py,sha256=Xf_X2voD2S1YSOwvPnx-x72SpEx3IU_Wmm9WjFD8h4Y,2890
+kinto_algolia/utils.py,sha256=GFvsSwNQ5D2RQHsVc_EOTymjimkj-XelhXRGYZDBJlQ,815
+kinto_algolia/views.py,sha256=mfXLCif6D95LVymG7SvikvHud70oPsTXL-XVyW3QuxI,3152
+kinto_algolia-1.1.0.dist-info/LICENSE,sha256=fED3jxV-vGTrmkh5XuTb1XPkdN7S0OyCoh__Adp3MTg,551
+kinto_algolia-1.1.0.dist-info/METADATA,sha256=nnuyQKRHNMPRL8xf03UmZNwmG_AUAb2-vAkMO65ESus,5556
+kinto_algolia-1.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+kinto_algolia-1.1.0.dist-info/entry_points.txt,sha256=xT068VvdkyA5c6YDpF1YMYgzIY3HE1pWpXtRva5y014,78
+kinto_algolia-1.1.0.dist-info/top_level.txt,sha256=oWdCdsY9EcEwtrRJTMl8_v6GUHBS_S4AyeWcgI3tWK4,14
+kinto_algolia-1.1.0.dist-info/RECORD,,
