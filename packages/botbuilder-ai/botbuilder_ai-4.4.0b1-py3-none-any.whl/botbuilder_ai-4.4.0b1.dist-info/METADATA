@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: botbuilder-ai
+Version: 4.4.0b1
+Summary: Microsoft Bot Framework Bot Builder
+Home-page: https://www.github.com/Microsoft/botbuilder-python
+Author: Microsoft
+Author-email: UNKNOWN
+License: MIT
+Keywords: botbuilder-ai LUIS QnAMaker bots ai botframework botbuilder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: azure-cognitiveservices-language-luis (==0.2.0)
+Requires-Dist: botbuilder-schema (>=4.4.0b1)
+Requires-Dist: botbuilder-core (>=4.4.0b1)
+Requires-Dist: aiohttp (>=3.5.4)
+Requires-Dist: aiounittest (>=1.1.0)
+
+Microsoft Bot Framework Bot Builder SDK for Python.
+
+
