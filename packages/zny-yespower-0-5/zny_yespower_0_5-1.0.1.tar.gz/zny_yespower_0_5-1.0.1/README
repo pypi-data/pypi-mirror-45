@@ -1,0 +1,11 @@
+コンパイル方法
+
+git clone https://github.com/bitzeny-electrum/zny_yespower_0_5_python3
+
+cd zny_yespower_0_5_python3
+
+sudo python3 setup.py install
+
+使用方法
+
+import zny_yespower_0_5
