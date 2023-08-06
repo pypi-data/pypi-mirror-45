@@ -1,0 +1,4 @@
+[console_scripts]
+glockrc = glockr.client:main
+glockrs = glockr.server:main
+

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: glockr
+Version: 0.1.4
+Summary: Make everything lockable.
+Home-page: https://github.com/williamfzc/glockr
+Author: williamfzc
+Author-email: fengzc@vip.qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
