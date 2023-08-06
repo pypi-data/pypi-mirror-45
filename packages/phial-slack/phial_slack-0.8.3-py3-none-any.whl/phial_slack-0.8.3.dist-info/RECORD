@@ -1,0 +1,14 @@
+phial/__init__.py,sha256=6MoTHoZ1qHJhwysozNRd-NydNI8Fy3lBGhWMAb1wRvg,282
+phial/bot.py,sha256=fBU2To0e2wi-TFmNfLT_vZttT-ptAJ2SjxVRl0rrhbI,17699
+phial/commands.py,sha256=AYmP0IWYkd95N0aZ2L2pIv24m5hqLCrVsYbJoLy94YQ,757
+phial/globals.py,sha256=wYu9Ek3FFNRtmGfaJKb_7TzuhuDEzLGwvjFKh27J6t8,503
+phial/py.typed,sha256=9ZDZLRjkWPCFuXGWlFpYgMhTHQGTtTcQRxVdFq8cncY,65
+phial/scheduler.py,sha256=opT4Z5ifHnyi21aeMF6RpqUqdQCUUIBnRfJEvdES_EU,7124
+phial/types.py,sha256=yY2tBeaUcH6izj_Y0f0Fp8KHpXFABzfNDomG-sIkuRA,256
+phial/utils.py,sha256=7mazf0gn8E0ZWe0L49fnXShA6egY4jYZbK3bT9Ftfl8,1417
+phial/wrappers.py,sha256=OFAl4rhlfDYm8Dv4BvGbr5SXx7boUqh4QKm7ZsyB0Ps,7355
+phial_slack-0.8.3.dist-info/LICENSE,sha256=-HTgPZeaAADMxT45y0eyPfb-uD4bVdJcMaXmoglpY00,1074
+phial_slack-0.8.3.dist-info/METADATA,sha256=xBowso9u-hNipOd0zElK8_lGbZKq7g_Zi9hu69xOQhg,3208
+phial_slack-0.8.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+phial_slack-0.8.3.dist-info/top_level.txt,sha256=VSAMtl8y4MzUfBmKSj0a4CbPHbttlldVk75OC7aOSZk,6
+phial_slack-0.8.3.dist-info/RECORD,,
