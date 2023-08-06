@@ -1,0 +1,10 @@
+README.md
+setup.py
+meltingpot/__init__.py
+meltingpot/ga.py
+meltingpot/penalties.py
+meltingpot.egg-info/PKG-INFO
+meltingpot.egg-info/SOURCES.txt
+meltingpot.egg-info/dependency_links.txt
+meltingpot.egg-info/requires.txt
+meltingpot.egg-info/top_level.txt
