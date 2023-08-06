@@ -1,0 +1,5 @@
+recursive-include . *.py
+exclude .DS_Store
+include ez_setup.py
+include Docs/SRPAstro.FITS.pdf
+recursive-include SRPFITS/Data/ *

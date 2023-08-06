@@ -1,0 +1,4 @@
+SRPAstro>4.2
+sep
+photutils
+astropy

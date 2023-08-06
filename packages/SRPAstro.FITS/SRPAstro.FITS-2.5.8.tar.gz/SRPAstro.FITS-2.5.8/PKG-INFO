@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: SRPAstro.FITS
+Version: 2.5.8
+Summary: Tools for handling FITS files under SRP
+Home-page: https://pypi.python.org/pypi/SRPAstro.FITS
+Author: Stefano Covino
+Author-email: stefano.covino@brera.inaf.it
+License: UNKNOWN
+Description: Set of tools to handle FITS files.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Astronomy
