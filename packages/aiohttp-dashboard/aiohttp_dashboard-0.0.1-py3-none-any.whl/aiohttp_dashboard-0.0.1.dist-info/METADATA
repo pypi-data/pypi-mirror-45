@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aiohttp-dashboard
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp-jinja2
+Requires-Dist: voluptuous
+Provides-Extra: dev
+Requires-Dist: aiohttp ; extra == 'dev'
+Requires-Dist: aiohttp-jinja2 ; extra == 'dev'
+Requires-Dist: voluptuous ; extra == 'dev'
+Requires-Dist: pytest-aiohttp ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+
+UNKNOWN
+
+
