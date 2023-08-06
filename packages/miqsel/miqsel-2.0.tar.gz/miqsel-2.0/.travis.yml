@@ -1,0 +1,20 @@
+language: python
+dist: xenial
+sudo: required
+
+services:
+  - docker
+
+python:
+-   "3.6"
+-   "3.7"
+
+install:
+  - pip install black flake8 pytest pytest-cov
+  - pip install .
+script:
+  - flake8 --max-line-length 100 setup.py miqsel/*.py tests/*.py
+  - black -l 100 setup.py miqsel/*.py tests/*.py
+  - pytest tests -v --cov miqsel
+after_failure:
+  - git diff
