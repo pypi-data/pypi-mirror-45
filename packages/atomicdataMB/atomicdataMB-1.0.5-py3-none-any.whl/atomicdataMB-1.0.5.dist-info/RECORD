@@ -1,0 +1,12 @@
+atomicdataMB/__init__.py,sha256=I9RWEkZS1kiaPttVfEncWWRsZBZxD1LiU26qIMdsaXc,309
+atomicdataMB/atomicmass.py,sha256=vcNTGCsWayKyiGn0inkczjacEk3f02JPBEvCuEviAlw,1347
+atomicdataMB/configure_database.py,sha256=AQvctjgox-1Qk58HgvtWRyORE3LhgWtD-_N_qYSOMRI,678
+atomicdataMB/g_values.py,sha256=jvD-9atbdUoGPrgNsAFIWZQEs-Wl4p3lbNzuVAYcavQ,4846
+atomicdataMB/initialize_atomicdata.py,sha256=38LNWN7dmW8DDHrPAZ3mvmUDpr0czb5oV50gByGfERQ,681
+atomicdataMB/make_photo_table.py,sha256=AkJLDoGbEqlxDxBFJRgNyCU1rib1pz7JIpkk2QuvkfA,2823
+atomicdataMB/version.py,sha256=Im53QUT3BOdaigvKh871x7mwtzmfyR7QtIZTJRihpBw,7422
+atomicdataMB-1.0.5.dist-info/METADATA,sha256=XB-BfWWSYSBBOtXbtzni6mkGBMR1uPb48H5Ch0hZBmo,2841
+atomicdataMB-1.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+atomicdataMB-1.0.5.dist-info/entry_points.txt,sha256=CoFJ61t_m_9lca1ix8rdyqN0b0yGCGX82PKOe2S8VgY,83
+atomicdataMB-1.0.5.dist-info/top_level.txt,sha256=PY8WXpLN4cOtoPGxnMgbc5t3jM5kdYc02zt9GlkKm-8,13
+atomicdataMB-1.0.5.dist-info/RECORD,,
