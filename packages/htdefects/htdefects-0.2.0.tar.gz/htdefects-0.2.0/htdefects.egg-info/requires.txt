@@ -1,0 +1,6 @@
+six
+numpy
+pypif
+dfttopif
+dftinpgen
+ase
