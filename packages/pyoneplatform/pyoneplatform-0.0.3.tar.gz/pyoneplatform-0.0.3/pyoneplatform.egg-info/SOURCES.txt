@@ -1,0 +1,10 @@
+README.rst
+setup.py
+oneid/__about__.py
+oneid/__init__.py
+oneid/api.py
+pyoneplatform.egg-info/PKG-INFO
+pyoneplatform.egg-info/SOURCES.txt
+pyoneplatform.egg-info/dependency_links.txt
+pyoneplatform.egg-info/requires.txt
+pyoneplatform.egg-info/top_level.txt
