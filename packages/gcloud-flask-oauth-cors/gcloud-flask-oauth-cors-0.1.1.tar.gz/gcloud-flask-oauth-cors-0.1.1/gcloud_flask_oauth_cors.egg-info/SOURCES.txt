@@ -1,0 +1,9 @@
+README.md
+setup.py
+gcloud_flask_oauth_cors/__init__.py
+gcloud_flask_oauth_cors/auth.py
+gcloud_flask_oauth_cors.egg-info/PKG-INFO
+gcloud_flask_oauth_cors.egg-info/SOURCES.txt
+gcloud_flask_oauth_cors.egg-info/dependency_links.txt
+gcloud_flask_oauth_cors.egg-info/requires.txt
+gcloud_flask_oauth_cors.egg-info/top_level.txt
