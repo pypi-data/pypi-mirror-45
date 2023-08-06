@@ -1,0 +1,11 @@
+zerofs/cache.py,sha256=ArGbV1U1BOY53o1RDYTX5tfr8wAW1ykBXiivJOfPQSU,3070
+zerofs/file.py,sha256=ub6LXy_2wQD4owbj83VYwjIHdckqYAgaTOkoEX8Uxas,6659
+zerofs/fs.py,sha256=LWU_YMRf7nkKcuS6_v4c9kTryWpn8ejq_vJh4H4hZCk,11146
+zerofs/task_queue.py,sha256=Pa-UjLyCIx537IzJ1uaB0tJjL2WEXu28Qwlep7J-cek,3222
+zerofs-0.1.3.data/scripts/zerofs,sha256=gOR0BKX5f8q-Ze-b4U_n9N4GU8YBz0g0hj_D-lyaZFQ,1863
+zerofs-0.1.3.dist-info/DESCRIPTION.rst,sha256=jAAc_AW6H4p9kgeC44rhpTFdCd9sQnPp1w2GtBpDJ2E,62
+zerofs-0.1.3.dist-info/METADATA,sha256=XWJw9O6EzvaLsoMtpMch-Xj2HCbOSSwhta5YjvjbsAM,549
+zerofs-0.1.3.dist-info/RECORD,,
+zerofs-0.1.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+zerofs-0.1.3.dist-info/metadata.json,sha256=amrZPnzUVrB_5MaxIfRWuZlzQ3bR_2fvY_hRva1RLv4,684
+zerofs-0.1.3.dist-info/top_level.txt,sha256=eeCONVni8dDdB1YZsEv0p_1BusPzaFGz6RPx5bWmlDM,7
