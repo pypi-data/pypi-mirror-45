@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: log2
+Version: 0.2.1
+Summary: Several functions for computing the log base 2 of a unsigned 32-bit length word
+Home-page: https://github.com/bmatthieu3/log2
+Author: Matthieu Baumann
+Author-email: matthieu.baumann@astro.unistra.fr
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Provides: log2
