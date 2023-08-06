@@ -1,0 +1,8 @@
+README.md
+setup.py
+zdataclass/__init__.py
+zdataclass/zdataclass.py
+zdataclass.egg-info/PKG-INFO
+zdataclass.egg-info/SOURCES.txt
+zdataclass.egg-info/dependency_links.txt
+zdataclass.egg-info/top_level.txt
