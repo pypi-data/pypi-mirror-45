@@ -1,0 +1,16 @@
+fastrlock<0.5,>=0.4
+
+[:python_version<'3.5']
+typing
+
+[docs]
+sphinx
+sphinx_autodoc_typehints
+sphinx-rtd-theme
+attrs
+
+[tests]
+pytest
+pytest-cov
+hypothesis
+pretend
