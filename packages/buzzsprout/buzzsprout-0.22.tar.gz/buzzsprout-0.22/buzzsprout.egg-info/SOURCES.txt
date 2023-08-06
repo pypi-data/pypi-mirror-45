@@ -1,0 +1,8 @@
+README.md
+setup.py
+buzzsprout/__init__.py
+buzzsprout.egg-info/PKG-INFO
+buzzsprout.egg-info/SOURCES.txt
+buzzsprout.egg-info/dependency_links.txt
+buzzsprout.egg-info/not-zip-safe
+buzzsprout.egg-info/top_level.txt
