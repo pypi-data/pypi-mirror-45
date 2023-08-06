@@ -1,0 +1,11 @@
+README.md
+setup.py
+dognamescli/__init__.py
+dognamescli/__main__.py
+dognamescli/dognamescli.py
+dognamescli.egg-info/PKG-INFO
+dognamescli.egg-info/SOURCES.txt
+dognamescli.egg-info/dependency_links.txt
+dognamescli.egg-info/entry_points.txt
+dognamescli.egg-info/requires.txt
+dognamescli.egg-info/top_level.txt
