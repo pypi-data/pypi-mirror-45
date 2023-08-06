@@ -1,0 +1,11 @@
+pymemobird/__init__.py,sha256=66IcTYFlzvvkiMICrPsyspyxfy7HDPAh5IEvD9EtcT8,78
+pymemobird/__version__.py,sha256=JkJ3St63mQp20qw6oj8CZTi4kGgfAMNCmqRPl8dzTys,414
+pymemobird/device.py,sha256=VtzF5fgSnfS6WpUcO1xyuB10Rqd7Z4J1mADW6wlk-zI,3339
+pymemobird/paper.py,sha256=iHLiKNnCSiJ2nKThE-f7EOXhffBHQTCqWnCSIk6QrfM,4229
+pymemobird/user.py,sha256=eKhP6G0FFa1UItRmso6oedhih8gDYoSkfwPcz7NIeys,606
+pymemobird/util.py,sha256=oQz4j4A2LWLeh2vqaxjv3NIbVPIsV9jbvGlYmo3669w,2130
+pymemobird-0.0.1.dist-info/LICENSE,sha256=KAKc9oH_F3sq5pPdHflH0PadvRUBI-kOyAqunqLSMpU,1059
+pymemobird-0.0.1.dist-info/METADATA,sha256=e9v4nCz8XrNYSFgsQwxzC4HvP2wJkGdpWnQ4R1K3w8Q,6694
+pymemobird-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pymemobird-0.0.1.dist-info/top_level.txt,sha256=vspUHWE1WTY4qOqDo0nAHpsX7kSujlp46V4aRtR6-Ko,11
+pymemobird-0.0.1.dist-info/RECORD,,
