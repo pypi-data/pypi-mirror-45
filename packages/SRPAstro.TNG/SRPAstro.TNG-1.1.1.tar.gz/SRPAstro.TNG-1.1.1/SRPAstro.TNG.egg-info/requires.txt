@@ -1,0 +1,3 @@
+scipy>=0.11
+SRPAstro.FITS>=2.4
+SRPAstro>=4.2.5

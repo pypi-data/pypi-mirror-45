@@ -1,0 +1,174 @@
+""" Code to correct for instrumnetal polarization
+    
+Context : SRP
+Module  : SRPTNGPAOLOCalStokes
+Author  : Stefano Covino
+Date    : 15/02/2017
+E-mail  : stefano.covino@brera.inaf.it
+URL:    : http://www.merate.mi.astro.it/utenti/covino
+Purpose : Correct for instrumnetal polarization
+
+Usage   : SRPTNGPAOLOCalStokes [-h] -f file -i file -o file [-v] [--version]
+            -f Input fit FITS file
+            -i Input normalized instrumental polarimetry FITS file
+            -o Output fit parameter FITS file
+    
+History : (01/03/2012) First version.
+        : (29/11/2012) Position angle considered.
+        : (31/03/2013) Better management of V instrumental offset.
+        : (12/03/2014) Position angle better managed.
+        : (13/02/2017) Python3 porting.
+        : (14/02/2017) Minor bug.
+        : (15/02/2017) Astropy porting.
+"""
+
+__version__ = '0.3.4'
+
+
+import argparse
+import numpy
+from SRP.SRPPolarimetry.AluminiumRefractiveIndex import AluminiumRefractiveIndex
+import SRPTNG.PAOLO as STP
+from SRPTNG.PAOLO.TNGMuellerMatrix import TNGMuellerMatrix
+from SRPTNG.PAOLO.TNGMuellerMatrixPlate2 import TNGMuellerMatrixPlate2
+from SRPTNG.PAOLO.TNGMuellerMatrixPlate4 import TNGMuellerMatrixPlate4
+from SRPTNG.PAOLO.StokesOffsetVector import StokesOffsetVector
+from SRP.SRPStatistics.GenGaussSet import GenGaussSet
+from SRP.SRPStatistics.ScoreatPercentile import ScoreatPercentile
+from astropy.table import Table, Column
+    
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-f", "--fitsfitfile", action="store", help="Input fit FITS file", required=True, metavar='file')
+parser.add_argument("-i", "--inpolfile", action="store", help="Input normalized instrumental polarimetry FITS file", required=True, metavar='file')
+parser.add_argument("-o", "--outfile", action="store", help="Output fit parameter FITS file", required=True, metavar='file')
+parser.add_argument("-v", "--verbose", action="store_true", help="Fully describe operations")
+parser.add_argument("--version", action="version", version=__version__)
+options = parser.parse_args()
+
+
+
+
+
+#
+q = []
+eq = []
+u = []
+eu = []
+pangle = []
+wave = []
+rot2 = []
+rot4 = []
+plate = []
+poangle = []
+try:
+    ti = Table.read(options.inpolfile,format='fits')
+except IOError:
+    parser.error("Incorrect polarimetry FITS file: %s" % options.inpolfile)
+#
+if options.verbose:
+    print("Reading data from polarimetry FITS file %s" % options.inpolfile)
+#
+for i in ti:
+    try:
+        q.append(i[STP.Q])
+        eq.append(i[STP.eQ])
+        u.append(i[STP.U])
+        eu.append(i[STP.eU])
+        pangle.append(i[STP.PARANG])
+        wave.append(i[STP.WAVE])
+        rot2.append(i[STP.ROTLAM2])
+        rot4.append(i[STP.ROTLAM4])  
+        plate.append(i[STP.POLSLIDE])
+        poangle.append(i[STP.POSANG])
+    except IndexError:
+        parser.error("Polarimetry FITS file %s with incorrect entries." % options.inpolfile)
+#
+try:
+    tf = Table.read(options.fitsfitfile,format='fits')
+except IOError:
+    parser.error("Incorrect fit FITS file: %s" % options.fitsfitfile)
+#
+if options.verbose:
+    print("Reading data from input fit FITS file %s" % options.fitsfitfile)
+#
+nf, kf = AluminiumRefractiveIndex()
+try:
+    n = tf[STP.N][0]
+    k = tf[STP.K][0]
+    detoff = tf[STP.DETOFF][0]
+    q0 = tf[STP.Q0][0]
+    u0 = tf[STP.U0][0]
+    v0 = tf[STP.V0][0]
+except IndexError:
+    parser.error("Fit FITS file %s without the expected entries." % options.fitsfitfile)
+#
+if options.verbose:
+    print("Generating calibrated data...")
+#
+cali = []
+calei = []
+calq = []
+caleq = []
+calu = []
+caleu = []
+calv = []
+calev = []
+for en in range(len(q)):
+    sto = [1.0, q[en], u[en], 0.0]
+    Stokes = numpy.matrix(sto).transpose()
+    StokesNoInstr = Stokes - StokesOffsetVector(q0,u0,0.0)
+    if plate[en].upper().find(STP.LAMBDA2) >= 0:
+        mat = TNGMuellerMatrixPlate2(pangle[en],n*nf(wave[en]),k*kf(wave[en]),rot=rot2[en],offset=detoff-poangle[en])
+    elif plate[en].upper().find(STP.LAMBDA4) >= 0:
+        mat = TNGMuellerMatrixPlate4(pangle[en],n*nf(wave[en]),k*kf(wave[en]),rot=rot4[en],offset=detoff-poangle[en])
+    else:
+        mat = TNGMuellerMatrix(pangle[en],n*nf(wave[en]),k*kf(wave[en]),offset=detoff-poangle[en])
+    OutStokes = mat.I*StokesNoInstr
+    cali.append(OutStokes[0,0])
+    calq.append(OutStokes[1,0])
+    calu.append(OutStokes[2,0])
+    calv.append(OutStokes[3,0])
+    #
+    lsI = []
+    lsQ = []
+    lsU = []
+    lsV = []
+    lQ = GenGaussSet(q[en],eq[en],1000)
+    lU = GenGaussSet(u[en],eu[en],1000)
+    for l in range(len(lQ)):
+        sto = [1.0, lQ[l], lU[l], 0.0]
+        Stokes = numpy.matrix(sto).transpose()
+        StokesNoInstr = Stokes - StokesOffsetVector(q0,u0,0.0)
+        if plate[en].upper().find(STP.LAMBDA2) >= 0:
+            mat = TNGMuellerMatrixPlate2(pangle[en],n*nf(wave[en]),k*kf(wave[en]),rot=rot2[en],offset=detoff-poangle[en])
+        elif plate[en].upper().find(STP.LAMBDA4) >= 0:
+            mat = TNGMuellerMatrixPlate4(pangle[en],n*nf(wave[en]),k*kf(wave[en]),rot=rot4[en],offset=detoff-poangle[en])
+        else:
+            mat = TNGMuellerMatrix(pangle[en],n*nf(wave[en]),k*kf(wave[en]),offset=detoff-poangle[en])
+        OutStokes = mat.I*StokesNoInstr
+        lsI.append(OutStokes[0,0])
+        lsQ.append(OutStokes[1,0])
+        lsU.append(OutStokes[2,0])
+        lsV.append(OutStokes[3,0])
+    calei.append(ScoreatPercentile(lsI)[3])
+    caleq.append(ScoreatPercentile(lsQ)[3])
+    caleu.append(ScoreatPercentile(lsU)[3])
+    calev.append(ScoreatPercentile(lsV)[3])
+#
+ti.add_column(Column(numpy.array(cali),STP.CompI))
+ti.add_column(Column(numpy.array(calei),STP.CompeI))
+ti.add_column(Column(numpy.array(calq),STP.CompQ))
+ti.add_column(Column(numpy.array(caleq),STP.CompeQ))
+ti.add_column(Column(numpy.array(calu),STP.CompU))
+ti.add_column(Column(numpy.array(caleu),STP.CompeU))
+ti.add_column(Column(numpy.array(calv),STP.CompV))
+ti.add_column(Column(numpy.array(calev),STP.CompeV))
+#
+ti.write(options.outfile,format='fits',overwrite=True)
+if options.verbose:
+    print("%d entried saved in file %s" % (len(ti), options.outfile))
+else:
+    print("%d %s" % (len(ti), options.outfile))    
+#
