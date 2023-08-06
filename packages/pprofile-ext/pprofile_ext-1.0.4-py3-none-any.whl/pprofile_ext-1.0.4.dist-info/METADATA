@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pprofile-ext
+Version: 1.0.4
+Summary: UNKNOWN
+Home-page: http://github.com/rohooger/pprofile_ext
+Author: Ronnie Hoogerwerf
+Author-email: rohooger@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
+Requires-Dist: six
+Requires-Dist: pprofile (>=1.7.3)
+Requires-Dist: pygments (>=2.0.0)
+
+UNKNOWN
+
+
