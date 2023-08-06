@@ -1,0 +1,44 @@
+Metadata-Version: 2.0
+Name: snet
+Version: 0.0.0
+Summary: 3D Scattering transform using periodic wavelet.
+Home-page: https://gitlab.com/andrewhuynguyen/snet
+Author: Andrew H Nguyen
+Author-email: andrewhuynguyen10@gmail.com
+License: BSD 3-clause New or Revised License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: C
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: pyparsing
+Requires-Dist: argparse
+Requires-Dist: termcolor
+Requires-Dist: six
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: PyWavelets
+Requires-Dist: numpy-quaternion
+Requires-Dist: spherical-functions
+
+# snet
+
+python package of snet for public release
+
+`snet` performs scattering transform using a 3D periodic wavelet. 
+
+
+
+
