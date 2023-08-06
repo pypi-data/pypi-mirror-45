@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyglview
+Version: 1.1
+Summary: Python OpenGL direct viewer instead of OpenCV imshow/waitKey.
+Home-page: https://github.com/aieater/python_pyglview
+Author: Pegara, Inc.
+Author-email: info@pegara.com
+License: MIT
+Description: See https://github.com/aieater/gpueater_pyglview
+Keywords: opencv opengl python imshow waitkey viewer realtime
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
