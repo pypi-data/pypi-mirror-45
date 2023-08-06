@@ -1,0 +1,3 @@
+numpy>=1.13
+qiskit-terra>=0.8.0
+scipy!=0.19.1,>=0.19
