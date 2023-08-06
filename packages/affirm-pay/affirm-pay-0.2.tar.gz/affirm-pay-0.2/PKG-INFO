@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: affirm-pay
+Version: 0.2
+Summary: Python Client for Affirm
+Home-page: https://github.com/raun/affirm-python-sdk
+Author: Anshul Sharma
+Author-email: anshul.jmi@gmail.com
+License: MIT
+Download-URL: https://github.com/raun/affirm-python-sdk/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: AFFIRM,SDK,CLIENT,INTEGRATION
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
