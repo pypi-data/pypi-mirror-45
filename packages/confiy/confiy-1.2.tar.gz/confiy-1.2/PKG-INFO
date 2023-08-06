@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: confiy
+Version: 1.2
+Summary: With this module you can easy take the value of config file only by key, in python projects
+Home-page: https://github.com/hasansajedi/confiy
+Author: Hasan Sajedi
+Author-email: hassansajedi@gmail.com
+License: UNKNOWN
+Description: # **confiy**
+        
+        Confiy is easiest way to read config file only with key. 
+        
+        #####Caution:
+        You must create a config file where you need to call, with any extension but .cnf is better and then write your configs in file such as following lines:
+        
+        - my_prj
+            - db
+                - conf.cnf
+                ```python
+                    key1=1234
+                    key2="string with value2"
+                    key3="string with value3"
+                ```   
+                - connector.py 
+                ```python
+                    from confiy.confiy import confiy
+                    print(confiy().getValue(key='key1'))
+                ```   
+        
+        Easy to install and easier to use
+        
+        Use python version >= 2.7
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

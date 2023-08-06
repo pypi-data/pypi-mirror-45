@@ -1,0 +1,8 @@
+README.md
+setup.py
+confiy/__init__.py
+confiy/confiy.py
+confiy.egg-info/PKG-INFO
+confiy.egg-info/SOURCES.txt
+confiy.egg-info/dependency_links.txt
+confiy.egg-info/top_level.txt
