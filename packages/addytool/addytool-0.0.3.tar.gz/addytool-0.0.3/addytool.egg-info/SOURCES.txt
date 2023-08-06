@@ -1,0 +1,10 @@
+README.md
+setup.py
+addytool/__init__.py
+addytool/endpoint.py
+addytool/workflow.py
+addytool.egg-info/PKG-INFO
+addytool.egg-info/SOURCES.txt
+addytool.egg-info/dependency_links.txt
+addytool.egg-info/requires.txt
+addytool.egg-info/top_level.txt
