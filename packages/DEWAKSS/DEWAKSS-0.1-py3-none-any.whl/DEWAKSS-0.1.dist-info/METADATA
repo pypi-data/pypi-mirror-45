@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DEWAKSS
+Version: 0.1
+Summary: De-noising Expression by Weighted Affinity-based Kernal with Self Supervision.
+Home-page: https://gitlab.com/Xparx/dewakss
+Author: Andreas Tjärnberg
+Author-email: andreas.tjarnberg@nyu.edu
+License: LGPL
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: scanpy
+Requires-Dist: scvelo
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
