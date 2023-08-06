@@ -1,0 +1,11 @@
+README.md
+setup.py
+encdec8b10b/__init__.py
+encdec8b10b/core.py
+encdec8b10b.egg-info/PKG-INFO
+encdec8b10b.egg-info/SOURCES.txt
+encdec8b10b.egg-info/dependency_links.txt
+encdec8b10b.egg-info/top_level.txt
+tests/__init__.py
+tests/context.py
+tests/test_suite.py
