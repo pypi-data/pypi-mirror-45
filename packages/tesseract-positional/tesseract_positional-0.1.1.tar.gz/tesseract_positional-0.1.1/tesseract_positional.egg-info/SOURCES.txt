@@ -1,0 +1,12 @@
+README.md
+setup.py
+tesseract_positional/__init__.py
+tesseract_positional/cmd_line.py
+tesseract_positional/positional_ocr.py
+tesseract_positional.egg-info/PKG-INFO
+tesseract_positional.egg-info/SOURCES.txt
+tesseract_positional.egg-info/dependency_links.txt
+tesseract_positional.egg-info/entry_points.txt
+tesseract_positional.egg-info/not-zip-safe
+tesseract_positional.egg-info/requires.txt
+tesseract_positional.egg-info/top_level.txt
