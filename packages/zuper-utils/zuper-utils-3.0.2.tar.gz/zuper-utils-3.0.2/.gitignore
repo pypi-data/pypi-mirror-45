@@ -1,0 +1,9 @@
+.registers
+*egg-info
+.coverage
+cover
+.noseids
+sq.db
+__pycache__
+out-comptests
+dist
