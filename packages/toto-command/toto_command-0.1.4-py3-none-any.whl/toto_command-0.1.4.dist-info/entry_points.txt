@@ -1,0 +1,3 @@
+[console_scripts]
+toto-command=toto_command.cli:cli_root
+
