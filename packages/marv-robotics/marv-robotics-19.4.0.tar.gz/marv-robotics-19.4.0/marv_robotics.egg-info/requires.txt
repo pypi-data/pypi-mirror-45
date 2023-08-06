@@ -1,0 +1,5 @@
+marv==19.04.0
+matplotlib
+pillow
+utm
+marv-ludwig==19.04.0
