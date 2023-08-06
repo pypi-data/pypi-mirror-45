@@ -1,0 +1,6 @@
+imgspy.py
+setup.py
+imgspy.egg-info/PKG-INFO
+imgspy.egg-info/SOURCES.txt
+imgspy.egg-info/dependency_links.txt
+imgspy.egg-info/top_level.txt
