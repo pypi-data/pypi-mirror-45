@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: keycdn
+Version: 0.4
+Summary: A Python REST Client for KeyCDN API
+Home-page: https://github.com/keycdn/python-keycdn-api
+Author: KeyCDN
+Author-email: hello@keycdn.com
+License: UNKNOWN
+Download-URL: https://github.com/keycdn/python-keycdn-api/tarball/0.3
+Keywords: cdn,content delivery network,keycdn
+Platform: UNKNOWN
+
+UNKNOWN
+
+
