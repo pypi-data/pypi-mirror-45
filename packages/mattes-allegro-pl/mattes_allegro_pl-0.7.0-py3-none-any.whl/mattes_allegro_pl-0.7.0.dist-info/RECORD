@@ -1,0 +1,9 @@
+allegro_pl/__init__.py,sha256=tHSD09PqTsawHL5fsesjvFKLEJ1CcUSWRsjOV91vvms,307
+allegro_pl/allegro.py,sha256=UK9rim8CzfQwPOMgCa_QmZSYOfLMrz5bTuePsxLcUMo,1640
+allegro_pl/oauth.py,sha256=2mIkc5wCLEZYGllqvYxRhOqDxTp01kJdoG_3ltJiGtM,6585
+allegro_pl/rest.py,sha256=BlRkQVmrrat5v1GQchEj5Fq_z6r9sJYbFWgzBn78GIw,3483
+allegro_pl/soap.py,sha256=OQGi3OdmdM-Z0CW-msGzVtVpYj7XEyaIf0oZBW-O8bk,4170
+allegro_pl/utils.py,sha256=S3nutjWJzu68okLYIZvejXWyRkqsCvIHfq6fYclcjLY,314
+mattes_allegro_pl-0.7.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+mattes_allegro_pl-0.7.0.dist-info/METADATA,sha256=8B1ReOLSxZXVrTmahKNuf3TzNi8JNNdXwt503QRtcUk,1722
+mattes_allegro_pl-0.7.0.dist-info/RECORD,,
