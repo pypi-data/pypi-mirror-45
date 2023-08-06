@@ -1,0 +1,3 @@
+[console_scripts]
+isgitlabdown = isgitlabdown.isgitlabdown:main
+

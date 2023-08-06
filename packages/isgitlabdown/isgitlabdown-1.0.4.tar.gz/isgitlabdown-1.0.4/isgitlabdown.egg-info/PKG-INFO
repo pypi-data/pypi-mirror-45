@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: isgitlabdown
+Version: 1.0.4
+Summary: Check if GitLab is down
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: me@yoginth.com
+License: UNKNOWN
+Project-URL: Patreon, https://www.patreon.com/yoginth
+Project-URL: Source, https://gitlab.com/yoginth/isgitlabdown
+Description: ## Is GitLab Down
+        
+        > Check if GitLab is down
+        
+        ## Inspired From
+        
+        - [Sindresorhus's is-github-down](https://github.com/sindresorhus/is-github-down)
+        
+        ## Install
+        
+        ```
+        $ pip install isgitlabdown
+        ```
+        
+        ## Usage
+        
+        ```
+        $ isgitlabdown
+        
+         😞 It's down.
+        
+        $ isgitlabdown
+        
+         😊 It's up.
+        ```
+        
+        ## License
+        
+        [MIT][license] Yoginth
+        
+        [LICENSE]: https://mit.yoginth.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
