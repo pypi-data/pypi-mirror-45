@@ -1,0 +1,3 @@
+[console_scripts]
+docker-pid = docker_pid.cli:main
+
