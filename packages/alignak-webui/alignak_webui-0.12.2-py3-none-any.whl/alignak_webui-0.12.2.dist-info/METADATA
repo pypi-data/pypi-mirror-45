@@ -1,0 +1,148 @@
+Metadata-Version: 2.1
+Name: alignak-webui
+Version: 0.12.2
+Summary: Alignak - Web User Interface
+Home-page: https://github.com/Alignak-monitoring-contrib/alignak-webui
+Author: Frédéric Mohier
+Author-email: frederic.mohier@alignak.net
+License: GNU Affero General Public License, version 3
+Download-URL: https://github.com/Alignak-monitoring-webui/alignak-webui/archive/master.tar.gz
+Project-URL: Presentation, http://alignak.net
+Project-URL: Documentation, http://docs.alignak.net/en/latest/
+Project-URL: Source, https://github.com/alignak-monitoring-contrib/alignak-webui/
+Project-URL: Tracker, https://github.com/alignak-monitoring-contrib/alignak-webui/issues
+Project-URL: Contributions, https://github.com/alignak-monitoring-contrib/
+Keywords: python monitoring alignak nagios shinken webui
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Bottle
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Description-Content-Type: text/x-rst
+Requires-Dist: future
+Requires-Dist: six
+Requires-Dist: docopt
+Requires-Dist: Bottle (<0.13,>=0.12.9)
+Requires-Dist: Beaker (==1.10.0)
+Requires-Dist: CherryPy (==15.0.0)
+Requires-Dist: requests
+Requires-Dist: python-gettext
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: python-dateutil (>=2.4.2)
+Requires-Dist: pytz
+Requires-Dist: alignak-backend
+Requires-Dist: alignak-backend-client
+Requires-Dist: configparser ; python_version == "2.7"
+Provides-Extra: dev
+Requires-Dist: unittest2 ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: uwsgi ; extra == 'dev'
+Requires-Dist: webtest ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Requires-Dist: coveralls ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pycodestyle ; extra == 'dev'
+Requires-Dist: pep257 ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: unittest2 ; extra == 'tests'
+Requires-Dist: mock ; extra == 'tests'
+Requires-Dist: uwsgi ; extra == 'tests'
+Requires-Dist: webtest ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+Requires-Dist: coveralls ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: pycodestyle ; extra == 'tests'
+Requires-Dist: pep257 ; extra == 'tests'
+
+Alignak Web UI
+##############
+
+*Web User Interface for Alignak monitoring framework ...*
+
+.. image:: https://api.travis-ci.org/Alignak-monitoring-contrib/alignak-webui.svg?branch=develop
+    :target: https://travis-ci.org/Alignak-monitoring-contrib/alignak-webui
+    :alt: Develop branch build status
+
+.. image:: https://landscape.io/github/Alignak-monitoring-contrib/alignak-webui/develop/landscape.svg?style=flat
+    :target: https://landscape.io/github/Alignak-monitoring-contrib/alignak-webui/develop
+    :alt: Development code static analysis
+
+.. image:: https://codecov.io/gh/Alignak-monitoring-contrib/alignak-webui/branch/develop/graph/badge.svg
+    :target: https://codecov.io/gh/Alignak-monitoring-contrib/alignak-webui
+    :alt: Development code tests coverage
+
+.. image:: https://readthedocs.org/projects/alignak-web-ui/badge/?version=develop
+    :target: http://alignak-web-ui.readthedocs.io/?badge=develop
+    :alt: Documentation Status
+
+.. image:: https://badge.fury.io/py/alignak_webui.svg
+    :target: https://badge.fury.io/py/alignak_webui
+    :alt: Most recent PyPi version
+
+.. image:: https://img.shields.io/badge/IRC-%23alignak-1e72ff.svg?style=flat
+    :target: http://webchat.freenode.net/?channels=%23alignak
+    :alt: Join the chat #alignak on freenode.net
+
+.. image:: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
+    :target: http://www.gnu.org/licenses/agpl-3.0
+    :alt: License AGPL v3
+
+
+Screenshots
+===========
+.. image:: docs/source/images/Alignak-WebUI-captures.gif
+
+Documentation
+=============
+
+You can find online documentation on `Read The Docs <http://alignak-web-ui.readthedocs.io/?badge=latest>`_ and in the */docs* directory.
+
+
+Installation
+============
+
+The Alignak WebUI is easily installed and started thanks to the Python Package::
+
+    # Installing...
+    pip install alignak-webui
+    # Running...
+    alignak-webui-uwsgi
+    # Using!
+    http://127.0.0.1:5001
+
+
+**Note**: *Please note that you need to have a running Alignak framework reporting the live state to the Alignak backend.*
+
+
+Bugs, issues and contributing
+=============================
+
+Contributions to this project are welcome and encouraged, but please have a look to the `contributing guidelines <./CONTRIBUTING.md/>`_  before raising an issue, or writing code for the project.
+
+
+License
+=======
+
+Alignak WebUI is available under the `GPL version 3 <http://opensource.org/licenses/GPL-3.0>`_.
+
+
+
