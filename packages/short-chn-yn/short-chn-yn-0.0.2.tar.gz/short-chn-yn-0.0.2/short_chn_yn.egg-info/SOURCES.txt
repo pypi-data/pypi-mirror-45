@@ -1,0 +1,8 @@
+README.md
+setup.py
+short_chn_yn/__init__.py
+short_chn_yn/simple_dict.txt
+short_chn_yn.egg-info/PKG-INFO
+short_chn_yn.egg-info/SOURCES.txt
+short_chn_yn.egg-info/dependency_links.txt
+short_chn_yn.egg-info/top_level.txt
