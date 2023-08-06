@@ -1,0 +1,76 @@
+Metadata-Version: 2.0
+Name: OASYS1
+Version: 1.1.47
+Summary: OrAnge SYnchrotron Suite
+Home-page: https://github.com/oasys-kit/OASYS1
+Author: Luca Rebuffi, Manuel Sanchez del Rio and Bioinformatics Laboratory, FRI UL
+Author-email: lrebuffi@anl.gov
+Maintainer: Luca Rebuffi, Argonne National Lab, USA
+Maintainer-email: lrebuffi@anl.gov
+License: GPLv3
+Download-URL: https://github.com/oasys-kit/OASYS1
+Keywords: ray tracing,simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Dist: setuptools
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: PyQt5 (>=5.11.3)
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: oasys-canvas-core (>=0.0.12)
+Requires-Dist: oasys-widget-core (>=0.0.6)
+Requires-Dist: silx (>=0.10.0)
+Requires-Dist: hdf5plugin
+Requires-Dist: srxraylib (>=1.0.23)
+Requires-Dist: syned (>=1.0.12)
+Requires-Dist: wofry (>=1.0.20)
+
+OASYS
+======
+
+OASYS (OrAnge SYnchrotron Suite) is a graphical environment
+for optic simulation software used in synchrotron facilities,
+based on Orange 3.
+
+OASYS package requires Python 3.3 or newer.
+
+
+Installing
+----------
+
+OASYS is pip installable (https://pip.pypa.io/), simply run::
+
+    pip install oasys
+
+to install it.
+
+OASYS requires PyQt, which is not pip-installable in Python 3. You
+have to download and install it system-wide. If you are installing
+in to a virtual environment make sure it is created with the
+`--system-site-packages` so it will have access to the installed
+PyQt4.
+
+
+Starting OASYS
+--------------
+
+To start OASYS from the command line, run::
+
+     python3 -m oasys.canvas
+
+The OASYS does not itself come with any widget components. Use the
+'Options->Add-ons' menu entry to install the desired widget set.
+
+
