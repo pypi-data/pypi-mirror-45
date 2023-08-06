@@ -1,0 +1,4 @@
+[console_scripts]
+addition = easy_math.addition:main
+subtraction = easy_math.subtraction:main
+
