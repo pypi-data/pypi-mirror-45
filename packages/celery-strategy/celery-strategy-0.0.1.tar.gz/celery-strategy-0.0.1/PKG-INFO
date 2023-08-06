@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: celery-strategy
+Version: 0.0.1
+Summary: Don`t lose any task when celery is offline or not responding.
+Home-page: https://github.com/thinmy/celery-strategy
+Author: Thinmy Patrick Alves
+Author-email: thinmy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
