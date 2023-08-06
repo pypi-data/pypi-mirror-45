@@ -1,0 +1,7 @@
+README.md
+laziter.py
+setup.py
+laziter.egg-info/PKG-INFO
+laziter.egg-info/SOURCES.txt
+laziter.egg-info/dependency_links.txt
+laziter.egg-info/top_level.txt
