@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: snoopdroid
+Version: 1.0
+Summary: Pull all apks from an Android device and check for malicious apps
+Home-page: UNKNOWN
+Author: Claudio Guarnieri
+Author-email: nex@nex.sx
+License: GPLv3
+Description: Pull all apks from an Android device and check for malicious apps
+Keywords: security android
+Platform: UNKNOWN
