@@ -1,0 +1,10 @@
+pelican_dashify/__init__.py,sha256=XjUG6z-kJ5pnYLauZDlHF1Yku6JGVL3TTcY5py0rDf8,323
+pelican_dashify/dashify.py,sha256=PO-yecoasTrg9mEcBTrpX1bF2eZzdQRbZ0eYeENq8OU,9451
+pelican_dashify/exceptions.py,sha256=jpv682o_NPJPl6Z6t8BxNkZRPCh4e9CA8nmQ0HS7K9c,283
+pelican_dashify/filters.py,sha256=U-ea3sKnxm5oPe0SM9EI7TdKShmvDVMSvKii5TGkfPY,407
+pelican_dashify/settings.py,sha256=oFyqha-RaaxAQCQ9pi3biaid3XwmcQtPxKtPiINMieo,2719
+pelican_dashify-0.1.1.dist-info/LICENSE,sha256=nPSTn2wYrGpu4cyPyQmWmBUz_qedOKL_FtgjS_Hp_T8,1071
+pelican_dashify-0.1.1.dist-info/METADATA,sha256=IDHocmE_eikw6UwQwsspmghX2d6_Wtf76R8Iwn81V1M,9337
+pelican_dashify-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pelican_dashify-0.1.1.dist-info/top_level.txt,sha256=C-cDWhZzxyvbiZEBRIvOUn4pReKX1JluspPZTMu4vRs,16
+pelican_dashify-0.1.1.dist-info/RECORD,,
