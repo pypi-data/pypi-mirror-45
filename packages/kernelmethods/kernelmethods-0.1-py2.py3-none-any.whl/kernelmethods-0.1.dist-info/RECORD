@@ -1,0 +1,14 @@
+kernelmethods/__init__.py,sha256=JHDecIBcSUHSIcHwb02AZnpCbst_ee81cz3xn1hQC8o,628
+kernelmethods/_version.py,sha256=Yom44y6au4Nwaye967B3aQU3HRUQXEsQ7ThfrQLngDI,495
+kernelmethods/base.py,sha256=FZpnhI4Qsdn0niAS7REmpUXirJr2mPP9j1Y7HaqC9tw,38447
+kernelmethods/config.py,sha256=S8VcCvQw7nb7ALnXDfmb55imRdiIIVqGrBB6EwXn8z0,678
+kernelmethods/numeric_kernels.py,sha256=e3svbjaoiqyuY8gUrakJxxb_OrwZ3NhyHlYV6Ct6uqk,4571
+kernelmethods/operations.py,sha256=YC6wgdT5vcah6X2TaUyyvkQuAWbBFl1wNKy66NaAmCk,9870
+kernelmethods/ranking.py,sha256=epx1jOfayF4GtiOTXwbzW9HlCxXC3OV9Sqczv_PQJr4,2668
+kernelmethods/sampling.py,sha256=sffNekczRKFcw6cLCSV4w7ipwfqLVWxU6JhxkUS4iJs,4643
+kernelmethods/utils.py,sha256=OQ7iNjxpqPBtvsx-p9rS_dudPg0yvfB_s3v-wT4AFPw,3847
+kernelmethods-0.1.dist-info/LICENSE,sha256=IJ7hGXuD2pLIk7atqmTvY7gUlV8N9WjFzFPsITvroQk,593
+kernelmethods-0.1.dist-info/METADATA,sha256=nrOf-cFhFpnTcqAbtGzAZzUhBwSStBmEeABeigc4qRU,3672
+kernelmethods-0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+kernelmethods-0.1.dist-info/top_level.txt,sha256=Icmi7tHjIZ-zbI4QTR7yGzYQ2H-rSnCQAY_Ob6X3gbE,14
+kernelmethods-0.1.dist-info/RECORD,,
