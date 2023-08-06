@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/dofaucet/__init__.py
+src/dofaucet/ansibleinventory.py
+src/dofaucet/cli.py
+src/dofaucet/dofaucet.py
+src/dofaucet.egg-info/PKG-INFO
+src/dofaucet.egg-info/SOURCES.txt
+src/dofaucet.egg-info/dependency_links.txt
+src/dofaucet.egg-info/entry_points.txt
+src/dofaucet.egg-info/requires.txt
+src/dofaucet.egg-info/top_level.txt
