@@ -1,0 +1,8 @@
+Pillow
+h5py
+matplotlib
+opencv-python
+requests
+scikit-learn
+scipy
+tensorflow==1.7

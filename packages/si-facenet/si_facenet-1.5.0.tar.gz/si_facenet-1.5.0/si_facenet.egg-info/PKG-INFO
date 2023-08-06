@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: si-facenet
+Version: 1.5.0
+Summary: A FaceNet-implementation for SI
+Home-page: https://github.com/DanDyDunder/facenet
+Author: Danny Delic
+Author-email: delic.danny@gmail.com
+License: UNKNOWN
+Description: SI interface for face recognition with Google's FaceNet deep neural network & TensorFlow
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
