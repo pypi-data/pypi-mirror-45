@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AgricolAI
+Version: 0.0.1
+Summary: AI Module for Agricultural application
+Home-page: https://github.com/Zhiwu-Zhang-Lab/James_Git
+Author: James Chen
+Author-email: chun-peng.chen@wsu.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.11)
+Requires-Dist: matplotlib (>=1.5)
+
+UNKNOWN
+
+
