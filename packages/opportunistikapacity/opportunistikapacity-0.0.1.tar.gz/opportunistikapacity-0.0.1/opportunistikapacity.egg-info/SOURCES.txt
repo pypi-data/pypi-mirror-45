@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+opportunistikapacity/__init__.py
+opportunistikapacity/communications.py
+opportunistikapacity/contactcalculator.py
+opportunistikapacity/datasetparser.py
+opportunistikapacity.egg-info/PKG-INFO
+opportunistikapacity.egg-info/SOURCES.txt
+opportunistikapacity.egg-info/dependency_links.txt
+opportunistikapacity.egg-info/requires.txt
+opportunistikapacity.egg-info/top_level.txt
