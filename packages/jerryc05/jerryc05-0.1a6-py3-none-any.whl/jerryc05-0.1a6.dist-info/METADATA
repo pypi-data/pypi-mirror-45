@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jerryc05
+Version: 0.1a6
+Summary: A software collection developed by @jerryc05
+Home-page: https://github.com/jerryc05/jerryc05-Pypi
+Author: Jerry Chen
+Author-email: jerryc05@qq.com
+License: agpl-3.0
+Keywords: jerryc05,tools
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
