@@ -1,0 +1,12 @@
+cv2_tools/Convenience.py,sha256=tGxCv_cgt1oO4BlrSJPT1kDbRlN-jmS2OpP6qt06jVI,3129
+cv2_tools/Management.py,sha256=te_CGF2rcpmjBRVzAxKIO6zQUMNBfogorpCUVz1uE_o,8011
+cv2_tools/Selection.py,sha256=UYnyiCUZOqCcC19yR8Pl4Nyc33RSMMVJXMZ_y5pr1gQ,10365
+cv2_tools/Storage.py,sha256=z6KukzVpn4v69lSWT4ldigN7n1RpXHcE1POF3w_de74,6777
+cv2_tools/Utils.py,sha256=aKkQqZl-m0T4eFT-e_sr8cbh5LRpXUbeMah8mTr5rpg,31092
+cv2_tools/__init__.py,sha256=q2D4P4mnjn7AH0yjDdMjzyWrmFbi_YHI6Yhg8iUxNMM,394
+cv2_tools/tags_constraint.py,sha256=hn2kxfgeo03D15-s_m6d4v1ZM8TVnV4O0njLLZSsVLM,5979
+cv2_tools-2.2.0.dist-info/LICENSE,sha256=yrSS5ItP4FE8Zse9SukXh2-M4FFxmL42T7eDp5WoWZc,1071
+cv2_tools-2.2.0.dist-info/METADATA,sha256=FEnmbda_q0WkpHj-9-VOhl1YhX2UUFXM2E2CNKpilgY,4229
+cv2_tools-2.2.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+cv2_tools-2.2.0.dist-info/top_level.txt,sha256=95KTSQx7WSrzWIuyWW1aoXgGNKaUScKgzQvY1lQ-vMk,10
+cv2_tools-2.2.0.dist-info/RECORD,,
