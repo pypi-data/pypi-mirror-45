@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+qbstyles/__init__.py
+qbstyles/mpl_style.py
+qbstyles.egg-info/PKG-INFO
+qbstyles.egg-info/SOURCES.txt
+qbstyles.egg-info/dependency_links.txt
+qbstyles.egg-info/requires.txt
+qbstyles.egg-info/top_level.txt
+qbstyles/styles/qb-common.mplstyle
+qbstyles/styles/qb-dark.mplstyle
+qbstyles/styles/qb-light.mplstyle
