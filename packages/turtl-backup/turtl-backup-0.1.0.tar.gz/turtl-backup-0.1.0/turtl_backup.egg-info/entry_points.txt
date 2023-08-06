@@ -1,0 +1,4 @@
+[console_scripts]
+turtl-backup = turtl_backup.turtl_backup:main
+turtl-backup-gui = turtl_backup.gui:main
+
