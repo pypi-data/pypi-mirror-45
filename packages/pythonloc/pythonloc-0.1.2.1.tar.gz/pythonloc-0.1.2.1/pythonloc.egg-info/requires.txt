@@ -1,0 +1,3 @@
+
+[:python_version >= "3.6"]
+pipx>=0.12.2.0
