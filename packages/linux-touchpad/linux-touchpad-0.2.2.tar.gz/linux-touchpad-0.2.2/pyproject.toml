@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "linux-touchpad"
+version = "0.2.2"
+description = "Auto-disable laptop touchpad when a mouse is detected."
+license = "MIT"
+authors = ["Noah <noah@coronasoftware.net>"]
+readme = "README.md"
+repository = "https://github.com/Zer0897/linux-touchpad"
+keywords = ["linux", "touchpad", "auto", "disable", "mouse"]
+packages = [{ include = "linux-touchpad" }]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+pyudev = "^0.21.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
