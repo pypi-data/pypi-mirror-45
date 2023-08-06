@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dimsim
+Version: 0.2.1
+Summary: Python implementation of the Chinese soundex project DimSim
+Home-page: https://github.com/System-T/DimSim
+Author: IBM SystemT, IBM CODAIT
+Author-email: qian.kun@ibm.com, karthik.muthuraman@ibm.com, ihjhuo@ibm.com, frreiss@us.ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: pypinyin
+
+UNKNOWN
+
+

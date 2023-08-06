@@ -1,0 +1,17 @@
+dimsim/__init__.py,sha256=BjnVGnVTEc20P5a_3k8R9Og9afBDZD3BaM3vnosei_g,75
+dimsim/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dimsim/core/model.py,sha256=SR_gbGi-NVjJefTzReFuFt98hO3QunpjLhqOCFelZuY,5194
+dimsim/data/.DS_Store,sha256=WjoPIjZRr5sKXdFoBaNGfeEC5QD73zWUiQcuzOfeinM,6148
+dimsim/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dimsim/data/__init__.pyc,sha256=yC0vrj-Zo2d_1quBGC2IHwg2yCREaJuSbJr9quV67Io,145
+dimsim/data/pinyin_to_simplified.pickle,sha256=kFqePp0vtsa-HjbyG9f-dUVGix7y3mTDm2OmssN0m4M,3188241
+dimsim/data/pinyin_to_traditional.pickle,sha256=1O9UzCy_a5KPgytuvGtMyD38dWka08k5vwMT3nK89zo,3188127
+dimsim/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dimsim/utils/maps.py,sha256=914gEJde0EmfW-rbrFTl14dLb110sNLElpc7cdxkcwo,3336
+dimsim/utils/pinyin.py,sha256=zFrFTiN_aF-MuPBePjuZd8ZTSfpu1y9PBLqUOwVm2qw,3114
+dimsim/utils/utils.py,sha256=3Q9ns6_DqoAOAk2UXKDp6YCCwfzsv4J67Dlk5TBHEjQ,2348
+dimsim-0.2.1.dist-info/LICENSE,sha256=8QlAoXmCQTLbTZi-wHHqtW2fmIDcuvzuSs_Qm8kVl-4,11379
+dimsim-0.2.1.dist-info/METADATA,sha256=Gf2tWKvsnfM-G2Bi_NGa5WKT_RuEZnSsOvxT-5Dz5rQ,425
+dimsim-0.2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dimsim-0.2.1.dist-info/top_level.txt,sha256=A71Rsy2OtQzWlcswY9S6yGNkd99iQ3vEPqcF5OYaoq0,7
+dimsim-0.2.1.dist-info/RECORD,,
