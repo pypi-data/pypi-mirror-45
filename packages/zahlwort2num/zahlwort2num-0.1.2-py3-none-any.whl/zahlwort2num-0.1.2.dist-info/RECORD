@@ -1,0 +1,12 @@
+zahlwort2num/__init__.py,sha256=fQyCv67-7HKWSzbk-cFqmHsOODICEhat_pYIXq_2uFg,4033
+zahlwort2num/command_line.py,sha256=TGvOy-DwnH9mEfkJ-j1lH5iSkqWX3J1gwBQAvVI3XQ0,110
+zahlwort2num/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zahlwort2num/tests/test_console.py,sha256=_nRaauXKxeQsLvIaLlfB-eqhgtRJDWCJZKhnOHUxH-s,143
+zahlwort2num/tests/test_convert.py,sha256=yHkiDYadcczw4NrZn_ugHCJU9aj4agcZ_IBzr2QlArA,8082
+zahlwort2num-0.1.2.data/scripts/zahlwort2num-convert,sha256=hbETn4HvaMqgPT6q9XngOqJsGR4AeCMBhhMIWza-1K4,80
+zahlwort2num-0.1.2.dist-info/LICENSE,sha256=WI5JtXXhjcqnIcPllDA1ZtuxNnZ515xjElcILo7z28o,1073
+zahlwort2num-0.1.2.dist-info/METADATA,sha256=y_vKDq6uAj9LlYGVxlrUikP4_0IXB1XsQsPFuuNAt8Y,2312
+zahlwort2num-0.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+zahlwort2num-0.1.2.dist-info/entry_points.txt,sha256=6BzH2oG9Oqkk8iuBaA74iHixGVWfFLWxZceT09VVSs8,72
+zahlwort2num-0.1.2.dist-info/top_level.txt,sha256=uVb1dU3PKth15mILocD7U60m2uJ8zfrb5i-w8EFcdaM,13
+zahlwort2num-0.1.2.dist-info/RECORD,,
