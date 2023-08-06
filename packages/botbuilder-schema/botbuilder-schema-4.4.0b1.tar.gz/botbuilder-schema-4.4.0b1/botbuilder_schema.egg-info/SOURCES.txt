@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+botbuilder/schema/__init__.py
+botbuilder/schema/_connector_client_enums.py
+botbuilder/schema/_models.py
+botbuilder/schema/_models_py3.py
+botbuilder_schema.egg-info/PKG-INFO
+botbuilder_schema.egg-info/SOURCES.txt
+botbuilder_schema.egg-info/dependency_links.txt
+botbuilder_schema.egg-info/requires.txt
+botbuilder_schema.egg-info/top_level.txt
