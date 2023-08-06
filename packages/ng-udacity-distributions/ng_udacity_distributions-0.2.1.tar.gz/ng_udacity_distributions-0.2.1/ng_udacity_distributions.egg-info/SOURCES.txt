@@ -1,0 +1,7 @@
+README.md
+setup.py
+ng_udacity_distributions.egg-info/PKG-INFO
+ng_udacity_distributions.egg-info/SOURCES.txt
+ng_udacity_distributions.egg-info/dependency_links.txt
+ng_udacity_distributions.egg-info/not-zip-safe
+ng_udacity_distributions.egg-info/top_level.txt
