@@ -1,0 +1,6 @@
+setup.py
+packaging_tutorial/__init__.py
+pkg_taking_45_seconds_to_install.egg-info/PKG-INFO
+pkg_taking_45_seconds_to_install.egg-info/SOURCES.txt
+pkg_taking_45_seconds_to_install.egg-info/dependency_links.txt
+pkg_taking_45_seconds_to_install.egg-info/top_level.txt
