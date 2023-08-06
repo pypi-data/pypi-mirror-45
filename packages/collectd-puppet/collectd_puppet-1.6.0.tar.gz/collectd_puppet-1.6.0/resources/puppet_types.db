@@ -1,0 +1,7 @@
+
+# Types for the collectd puppet plugin
+# puppet_run is the count of resourcs, e.g total, failed, ... within a puppet run and also the duration of the puppet run as well as the config_retreival time.
+# puppet_time is all in seconds and is the epoch of the last_run , time since last run in seconds.
+
+puppet_run total:GAUGE:0:u changed:GAUGE:0:u corrective_change:GAUGE:0:u failed:GAUGE:0:u failed_to_restart:GAUGE:0:u out_of_sync:GAUGE:0:u restarted:GAUGE:0:u scheduled:GAUGE:0:u skipped:GAUGE:0:u time:GAUGE:0:u config_retrieval:GAUGE:0:u
+puppet_time last_run:GAUGE:0:u compiled:GAUGE:0:1

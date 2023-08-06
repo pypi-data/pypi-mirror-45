@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+NEWS.rst
+README.rst
+setup.py
+resources/puppet_types.db
+src/collectd_puppet/__init__.py
+src/collectd_puppet.egg-info/PKG-INFO
+src/collectd_puppet.egg-info/SOURCES.txt
+src/collectd_puppet.egg-info/dependency_links.txt
+src/collectd_puppet.egg-info/not-zip-safe
+src/collectd_puppet.egg-info/requires.txt
+src/collectd_puppet.egg-info/top_level.txt
