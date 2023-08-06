@@ -1,0 +1,6 @@
+README.md
+setup.py
+FileChecker_purnimapachori.egg-info/PKG-INFO
+FileChecker_purnimapachori.egg-info/SOURCES.txt
+FileChecker_purnimapachori.egg-info/dependency_links.txt
+FileChecker_purnimapachori.egg-info/top_level.txt
