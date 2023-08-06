@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: python-authorization
+Version: 1.0.1
+Summary: Simple python authorization library.
+Home-page: https://github.com/julio-vaz/python-authorization
+Author: Júlio Vaz
+Author-email: jvaz@stone.com.br
+License: MIT license
+Description: # python-authorization
+Keywords: python_authorization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
