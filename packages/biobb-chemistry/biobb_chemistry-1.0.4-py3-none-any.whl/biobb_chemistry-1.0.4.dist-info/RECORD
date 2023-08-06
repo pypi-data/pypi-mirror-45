@@ -1,0 +1,16 @@
+biobb_chemistry/__init__.py,sha256=bbyAVZxi2LAUAFIX2_xXitedhE7jvu-aNqmf6k4OVZc,25
+biobb_chemistry/acpype/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_chemistry/acpype/acpype_params_gmx.py,sha256=BSkrq9kFLDVZRpazGbmkLyRCABcZ6wJQDHLHraKcAFE,6495
+biobb_chemistry/acpype/common.py,sha256=R6OEb2B3sDZHBBiheqG_frr9n8GYDR_C1yATp47dYMI,3410
+biobb_chemistry/babelm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_chemistry/babelm/babel_add_hydrogens.py,sha256=NUzlXhtUD1DNaniuTAEgabs8WadlMXGmWuOfth9IZ94,10478
+biobb_chemistry/babelm/babel_convert.py,sha256=IvHOpNOnKSAfhA0gZ0xxcJvLYYXu6ylxi6L32fu4uDQ,10396
+biobb_chemistry/babelm/babel_minimize.py,sha256=mMpF-V2nhMzrOVXZKXikw8WnivOf51KQPhNQDVLc8mw,6441
+biobb_chemistry/babelm/babel_remove_hydrogens.py,sha256=4G9ygDo2TVllNFTRHe2CuOgwpmVSZ9IvRr6RNs7nATc,10490
+biobb_chemistry/babelm/common.py,sha256=PYgdYXs13YaaUgKTOKyP-oMGg75uE_S4i0q9hNV1yUI,7994
+biobb_chemistry/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_chemistry-1.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+biobb_chemistry-1.0.4.dist-info/METADATA,sha256=WKlMGMlfTW2Sk912-KliC5le11NLKrb2PSB0QtjRkaA,2354
+biobb_chemistry-1.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+biobb_chemistry-1.0.4.dist-info/top_level.txt,sha256=gutkZn71ctwt166O6gS-7dV9ewYRLnq7iOK0U0NGOWY,16
+biobb_chemistry-1.0.4.dist-info/RECORD,,
