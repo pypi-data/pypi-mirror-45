@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: secretsrandrange
+Version: 0.1
+Summary: Implementation of randrange using secrets.
+Home-page: https://github.com/carlosplanchon/secretsrandrange
+Author: Carlos A. Planchón
+Author-email: bubbledoloresuruguay2@gmail.com
+License: GPL3
+Download-URL: https://github.com/carlosplanchon/secretsrandrange/archive/v0.1.tar.gz
+Description: # secretsrandrange
+        *Implementation of randrange using secrets.*
+        
+        ## Installation
+        ### Install with pip
+        ```
+        pip3 install -U secretsrandrange
+        ```
+        
+        secretsrandrange.randrange(
+        	start:int,
+        	stop=typing.Union[int, NoneType],
+        	step:int=1
+        		) -> int
+            Return a randomly selected element from range(start, stop, step).
+            This is equivalent to choice(range(start, stop, step)),
+            but doesn’t actually build a range object.
+            :param start: int: Start number.
+            :param stop: Stop number. (Default value = Optional[int])
+            :param step: int: Step (Default value = 1)
+        
+Keywords: secrets,random,range
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
