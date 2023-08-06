@@ -1,0 +1,8 @@
+pydynamics/__init__.py,sha256=_Jtzb4EZnPcvkh9OXWwjyPHV2X2sxsLBMuP2YMM3j-E,20
+pydynamics/client.py,sha256=t8ldWDK2b7I3TTFuCYikNyuBISBzW4jkTnqteCPnIWo,4059
+pydynamics/querybuilder.py,sha256=3bzBkB5bl0MWM8fPsbFF8Xhrs2ec_tEfph8hTSlFbGI,6982
+pydynamics/token.py,sha256=hMR1Xqv5RULpB94x8Aqi2meRfluLM7p1FZHb6HZKDNA,3485
+pydynamics-0.0.7.dist-info/METADATA,sha256=JwuCq4KXAmviIXg5JF4BgrbGHWBjk0WltCYOQzo-k3s,2829
+pydynamics-0.0.7.dist-info/RECORD,,
+pydynamics-0.0.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pydynamics-0.0.7.dist-info/top_level.txt,sha256=ZyhdekZlZBf8NL9g0eGj5ZP5-V3Edk-3WzCqQk2rXXA,11
