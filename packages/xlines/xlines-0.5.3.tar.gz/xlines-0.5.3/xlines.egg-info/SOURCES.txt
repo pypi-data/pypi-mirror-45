@@ -1,0 +1,17 @@
+DESCRIPTION.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bash/xlines-completion.bash
+config/exclusions.list
+xlines/__init__.py
+xlines/_version.py
+xlines/about.py
+xlines/cli.py
+xlines/colormap.py
+xlines/common.py
+xlines/help_menu.py
+xlines/menu.py
+xlines/mp.py
+xlines/statics.py
