@@ -1,0 +1,10 @@
+librestapi/__init__.py,sha256=jCuaVN4ZqVD4vyVyMUx55qM59j-WPeQU9qCFZjKmnoU,58
+librestapi/client.py,sha256=I_69Tyg-Tll2zwta7gSHRH4ixhhW0e31dqZAxwWs4p8,3364
+librestapi/resource.py,sha256=Pzyc7l-vtYHedAhN-ypbhKIugufDR569XI2b02DnCvU,2499
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=Jk8-tCEEaNJqF8u8JT7aHREx33Pi_ZOlIJA4W85WeMw,2618
+tests/test_resource.py,sha256=xej93kVg7W5uyCjgCoqZKVdz90v4njoglRsOIVLG3ew,550
+librestapi-0.0.2.dist-info/METADATA,sha256=8SBWV1OJ2KYcV4ZeyzVsj-Tlokl7cfT7QaI-nByvSfo,494
+librestapi-0.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+librestapi-0.0.2.dist-info/top_level.txt,sha256=sPLpgOzqgVhE2_OSExUFR6MxBJ73M1qhGiyfZOz1noQ,17
+librestapi-0.0.2.dist-info/RECORD,,
