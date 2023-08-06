@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pytest_focus.egg-info/PKG-INFO
+pytest_focus.egg-info/SOURCES.txt
+pytest_focus.egg-info/dependency_links.txt
+pytest_focus.egg-info/entry_points.txt
+pytest_focus.egg-info/requires.txt
+pytest_focus.egg-info/top_level.txt
