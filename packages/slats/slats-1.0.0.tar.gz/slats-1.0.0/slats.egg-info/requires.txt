@@ -1,0 +1,2 @@
+PyYAML>=5.1b3
+spotipy>=2.4.4
