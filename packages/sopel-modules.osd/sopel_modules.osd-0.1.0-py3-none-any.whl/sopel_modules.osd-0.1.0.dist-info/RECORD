@@ -1,0 +1,11 @@
+sopel_modules.osd-0.1.0-py3.6-nspkg.pth,sha256=GpO4OWqrcKGJyabPvvsBuBcrUk4pFr3K5HYvSnuQBi8,574
+sopel_modules/osd/__init__.py,sha256=ULyQBW0MyHDCpmiwxBhDehaU6QvD3hjceoOqPB6aRDo,14610
+sopel_modules.osd-0.1.0.dist-info/DESCRIPTION.rst,sha256=BNILDyI22ucZrkuhphI-DelbdUsX-JgEMbaKS1ihN0g,267
+sopel_modules.osd-0.1.0.dist-info/METADATA,sha256=RnJ9TzreZUkAfDCAkwsCdjdFAlt9qU8_Qn7kPHx9N7E,602
+sopel_modules.osd-0.1.0.dist-info/RECORD,,
+sopel_modules.osd-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+sopel_modules.osd-0.1.0.dist-info/metadata.json,sha256=DWDIxWBatLonIxkUk_kAwlQbj7xvlSCr3y-b_Dm9k5Y,596
+sopel_modules.osd-0.1.0.dist-info/namespace_packages.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.osd-0.1.0.dist-info/top_level.txt,sha256=_ZwLN-V1x1etvfwqzYdX0btb7nbM-uSphbb8tSb8fKU,20
+tests/__init__.py,sha256=eoZ6GfifbqhMLNzjlqRDVil-yyBkOmVN9ujSgJWNBlY,15
+tests/test_osd.py,sha256=bXDBSY96sZFBZckFn4YT5dj6Wwubx63t-q082HY1cxs,284
