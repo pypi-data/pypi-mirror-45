@@ -1,0 +1,7 @@
+README.md
+setup.py
+mathavg/__init__.py
+mathavg.egg-info/PKG-INFO
+mathavg.egg-info/SOURCES.txt
+mathavg.egg-info/dependency_links.txt
+mathavg.egg-info/top_level.txt
