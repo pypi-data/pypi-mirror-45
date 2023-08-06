@@ -1,0 +1,5 @@
+include tests/*
+include freesia/*
+include requirements.txt
+include Pipfile
+include Pipfile.lock
