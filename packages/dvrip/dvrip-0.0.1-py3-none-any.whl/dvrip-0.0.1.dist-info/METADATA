@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dvrip
+Version: 0.0.1
+Summary: DVRIP (Xiongmai, XMEye, Sofia protocol) library and tools
+Requires-Dist: typing-inspect (<0.5,>=0.4)
+
+Home-page: https://github.com/alexshpilkin/hattifnatt
+Author: Alexander Shpilkin
+Author-email: ashpilkin@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/x-rst
