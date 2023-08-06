@@ -1,0 +1,8 @@
+ssxtd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssxtd/parsers.py,sha256=iXMOxCvIkRHa83UVfWp1tVkw6xeCt_8ecYE3808XIGQ,6576
+ssxtd/semi_structured_xml_to_dict.py,sha256=lKnRtrAuQw2go5e3VNzemlvPizy2oE7CnXGAgvXX3ww,7373
+ssxtd-0.1.9.dist-info/LICENSE,sha256=A5wLKtQi68s71tEnfgyNcHanKvIJLAf8tHu-Drk8JM4,1069
+ssxtd-0.1.9.dist-info/METADATA,sha256=7jaJzamo2wbMJnPi5oilcHlqx6A99GVPdsD6kE4lJPQ,2587
+ssxtd-0.1.9.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+ssxtd-0.1.9.dist-info/top_level.txt,sha256=bOhg1JIo8fLEdd1rmH34bQ_eP_QI7uUzTMBIs1srIIg,6
+ssxtd-0.1.9.dist-info/RECORD,,
