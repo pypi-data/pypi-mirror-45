@@ -1,0 +1,14 @@
+doku/__init__.py,sha256=rq5OMW-khxQo_5FAvSrPaAS1lRfG9aG2hSuo-KK2Yfk,22
+doku/client.py,sha256=2iFrL6crirGvhCDtW7jV5HjAdW88MJYi4aXmlkOFif4,832
+doku/config_manager.py,sha256=3pb-PZXxwQTElXjXCrJ_kkxHtGOPNQgFpRJyWb3TAaw,917
+doku/context.py,sha256=EejX1QlJMvJMmdFQk5ZmPh6FOrBCvCZiBGVIghRPdYU,4165
+doku/cookie_safe_transport.py,sha256=C0X1zH21JVO2YOyvnqHPDcN-RCGLSeoSxoVLm0ttz1s,859
+doku/cookie_transport.py,sha256=BMRil3sQMTjB04VM6wbGyoJvOMfbplUiySVi06LncDo,880
+doku/main.py,sha256=IojFLa8Wc_j3EvV6EXMSW5PKm95Qijs4UUVPmATBtXo,3554
+doku-0.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+doku-0.1.8.dist-info/METADATA,sha256=j_DHL76zuX14CnuzYTwR6nuZ0xFogmlYGsf8qSBhy4Q,2563
+doku-0.1.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+doku-0.1.8.dist-info/entry_points.txt,sha256=P-w27iEjEC3gw_OxjCFZAbsIFygjJwCV6--xc_bMzOU,58
+doku-0.1.8.dist-info/top_level.txt,sha256=gAiXfvdxeJJKBrY-UlFDOrg0kn3tZinx1c1TK1ju5wA,5
+doku-0.1.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+doku-0.1.8.dist-info/RECORD,,
