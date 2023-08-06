@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mimi_distributions/Binomialdistribution.py
+mimi_distributions/Gaussiandistribution.py
+mimi_distributions/Generaldistribution.py
+mimi_distributions/__init__.py
+mimi_distributions.egg-info/PKG-INFO
+mimi_distributions.egg-info/SOURCES.txt
+mimi_distributions.egg-info/dependency_links.txt
+mimi_distributions.egg-info/not-zip-safe
+mimi_distributions.egg-info/top_level.txt
