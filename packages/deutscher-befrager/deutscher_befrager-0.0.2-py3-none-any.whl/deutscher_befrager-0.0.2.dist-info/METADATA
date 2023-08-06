@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: deutscher-befrager
+Version: 0.0.2
+Summary: CLI Language Learning Tool
+Home-page: https://github.com/pypa/sampleproject
+Author: Travis Shears
+Author-email: t@travisshears.com
+License: UNKNOWN
+Keywords: command line interface cli python language learning interactive tool
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: Click
+
+# Deutscher Befrager
+![Build Status Badge](https://img.shields.io/gitlab/pipeline/BTBTravis/deutscher-befrager.svg)
+
+[![Coverage Status](https://coveralls.io/repos/gitlab/BTBTravis/deutscher-befrager/badge.svg?branch=HEAD)](https://coveralls.io/gitlab/BTBTravis/deutscher-befrager?branch=HEAD)
+
+## Purpose
+
+I'm in the process of learning german but I don't work in german so I made this as a way to practice
+while I'm on the command line. 
+
+## Usage
+
+Ask questions: `$ befrager ask "Wo wohnen Sie?"` 
+
+Answer questions: `$ befrager answer`
+
+# Dev
+
+## Useful links
+
+* click docs: https://click.palletsprojects.com/en/7.x/quickstart/
+* yaml docs: https://pyyaml.org/wiki/PyYAMLDocumentation
+* yaml lang docs: https://yaml.org/
+* yaml loader info: https://github.com/yaml/pyyaml/wiki/PyYAML-yaml.load(input)-Deprecation
+* unittest: https://docs.python.org/2/library/unittest.html
+* guide to unittest: https://realpython.com/python-testing/
+
+## Tips
+
+Remember to write requirements.txt when adding packages:
+
+`$ pipenv run pip freeze > requirements.txt`
+
+Run commands locally with:
+
+`pipenv run python -m interviewer.core --help`
+
+
+
+
+
