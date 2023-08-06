@@ -1,0 +1,11 @@
+LICENSE.rst
+README.rst
+__version__.py
+setup.cfg
+setup.py
+usyslog/__init__.py
+usyslog/syslog.py
+usyslog.egg-info/PKG-INFO
+usyslog.egg-info/SOURCES.txt
+usyslog.egg-info/dependency_links.txt
+usyslog.egg-info/top_level.txt
