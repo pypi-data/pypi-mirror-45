@@ -1,0 +1,3 @@
+import quicktranslate
+
+__version__="0.0.9"

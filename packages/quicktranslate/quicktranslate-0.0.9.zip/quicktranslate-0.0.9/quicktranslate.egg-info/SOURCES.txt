@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+__init__.py
+examples.py
+quicktranslate.py
+setup.cfg
+setup.py
+quicktranslate.egg-info/PKG-INFO
+quicktranslate.egg-info/SOURCES.txt
+quicktranslate.egg-info/dependency_links.txt
+quicktranslate.egg-info/entry_points.txt
+quicktranslate.egg-info/requires.txt
+quicktranslate.egg-info/top_level.txt
