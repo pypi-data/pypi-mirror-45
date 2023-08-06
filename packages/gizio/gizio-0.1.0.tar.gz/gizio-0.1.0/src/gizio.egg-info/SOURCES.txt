@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/gizio/__about__.py
+src/gizio/__init__.py
+src/gizio/core.py
+src/gizio/spec.py
+src/gizio.egg-info/PKG-INFO
+src/gizio.egg-info/SOURCES.txt
+src/gizio.egg-info/dependency_links.txt
+src/gizio.egg-info/requires.txt
+src/gizio.egg-info/top_level.txt
