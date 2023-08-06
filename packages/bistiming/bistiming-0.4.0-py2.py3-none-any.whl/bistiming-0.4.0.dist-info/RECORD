@@ -1,0 +1,13 @@
+bistiming/__init__.py,sha256=BlS5ItQemXe9xdUF2NhoSSi2y1qg8KRzqa_gFMeC8u4,293
+bistiming/multistopwatch.py,sha256=_BwD8n9kmPCQeXq3DXdJm-CxZ-XyXF7fLECfGwvE_5w,3224
+bistiming/stopwatch.py,sha256=SDEghM8DRJOp3qNMgL-EO_OOP-dH693sZjKuiChcsy4,6697
+bistiming/utils.py,sha256=XnHhQINcYZS1hm7QwW5l33fRoNq9Bmy0IYg20iBJ5s0,515
+bistiming/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bistiming/tests/test_multistopwatch.py,sha256=4SGeZiSqI0MtvXXYaEguaJXSPhouA3rXqRp_iRhIMrw,2459
+bistiming/tests/test_stopwatch.py,sha256=IC-_1KzJVNxM-h_LWBLr3eenbbXGGH-NExVrAg7B7u8,1759
+bistiming/tests/utils.py,sha256=23qflEQ0KusN25Euq02K-qd8tmIIyRG5OZNnd4_aAaI,592
+bistiming-0.4.0.dist-info/LICENSE,sha256=gn5tMYPHvBe81dtLd1vkP75jyNjwnpGeq0YXR2DRKKQ,1312
+bistiming-0.4.0.dist-info/METADATA,sha256=TmJqlFIYFYjG6EevFMQ4AdZYyD00llDJobAoYcGAw_0,6552
+bistiming-0.4.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+bistiming-0.4.0.dist-info/top_level.txt,sha256=QFfia69QLrCSZUrJceRqX6RBJVJIoTk2biSmMXYDRgA,10
+bistiming-0.4.0.dist-info/RECORD,,
