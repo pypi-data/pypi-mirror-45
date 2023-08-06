@@ -1,0 +1,9 @@
+pysudoers/__init__.py,sha256=z1PJ2KastPhaNyY0Ps_QRfJOgE5SHY8RqzWQvSzjLpM,10935
+tests/__init__.py,sha256=5qj9dFgpovvEqgHJbqm_aWViSQWc5DGVLi7SPu-xQkA,58
+tests/test_sudoers.py,sha256=BGtD_jOA7NKQy27Il6Q1Yerw1RlKUhQASAPD9-ny49w,13097
+tests/data/correct.txt,sha256=ghpOuXKpkwfSqJ_swJQDqvXplftzUCZWYQE-_QOD7qQ,531
+pysudoers-1.2.0.dist-info/LICENSE.txt,sha256=ZOD9EsK7ui85mHHJsDms3J8VyjDCVVrd_xjsmSQkWC4,1496
+pysudoers-1.2.0.dist-info/METADATA,sha256=DRC7eQQndv61tmx4yFzJVGfm68xZNeoHngkgfrL29dQ,4726
+pysudoers-1.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pysudoers-1.2.0.dist-info/top_level.txt,sha256=cMlsfPyzAGC_R_KhLCe2JQelNp6FyVufIxqrl-iLxIM,16
+pysudoers-1.2.0.dist-info/RECORD,,
