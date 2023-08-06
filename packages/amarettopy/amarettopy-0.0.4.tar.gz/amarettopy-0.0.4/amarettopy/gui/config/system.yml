@@ -1,0 +1,42 @@
+device_id:
+  method: device_id
+  name: Device ID
+  id_name: PARAM_ID_DEVICE_ID
+  unit:  ''
+  message: Input parameter 
+
+firmware_version:
+  method: firmware_version
+  name: Firmware Version
+  id_name: PARAM_ID_FIRMWARE_VERSION
+  unit:  ''
+  message: Input parameter 
+
+calibration_data:
+  method: calibration_data
+  name: Calibration Data
+  id_name: PARAM_ID_CALIBRATION
+  unit:  ''
+  message: Input parameter
+
+position_sys_offset:
+  method: position_sys_offset
+  name: Position System Offset
+  id_name: PARAM_ID_POSITION_SYS_OFFSET
+  unit:  ''
+  message: Input parameter
+
+position:
+  method: raw_position
+  name: Position Sensor Raw Value
+  id_name: PARAM_ID_POSITION
+  unit:  ''
+  message: Input parameter
+
+recorded_calib:
+  method: recorded_calibration_data
+  name: Recorded Calibration Data
+  id_name: PARAM_ID_RECORDED_CALIB
+  unit:  ''
+  message: Input parameter 
+
