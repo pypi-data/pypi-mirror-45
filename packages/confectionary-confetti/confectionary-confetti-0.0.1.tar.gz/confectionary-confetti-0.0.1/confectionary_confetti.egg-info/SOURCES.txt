@@ -1,0 +1,12 @@
+README.md
+setup.py
+confectionary_confetti.egg-info/PKG-INFO
+confectionary_confetti.egg-info/SOURCES.txt
+confectionary_confetti.egg-info/dependency_links.txt
+confectionary_confetti.egg-info/requires.txt
+confectionary_confetti.egg-info/top_level.txt
+confetti/__init__.py
+confetti/parameters.py
+confetti/utils/__init__.py
+confetti/utils/client.py
+confetti/utils/kms.py
