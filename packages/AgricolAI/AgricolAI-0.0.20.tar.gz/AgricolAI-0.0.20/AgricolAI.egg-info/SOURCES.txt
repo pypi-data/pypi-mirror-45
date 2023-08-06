@@ -1,0 +1,11 @@
+README.md
+setup.py
+AgricolAI/__init__.py
+AgricolAI.egg-info/PKG-INFO
+AgricolAI.egg-info/SOURCES.txt
+AgricolAI.egg-info/dependency_links.txt
+AgricolAI.egg-info/requires.txt
+AgricolAI.egg-info/top_level.txt
+AgricolAI/Comp_Finder/__init__.py
+AgricolAI/Field_Segmentation/__init__.py
+AgricolAI/Handy/__init__.py
