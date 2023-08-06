@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: QttNot
+Version: 2.0.1.dev15
+Summary: Notification from Mqtt
+Home-page: UNKNOWN
+Author: Just Me
+Author-email: notme@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# QttNot
+
+Mqtt + Notification
+It a simple plugin to fire notification regarding mqtt broker.
+This code is just to hack
+
+usage
+
+* make 
+* python -mQttNot
+
+
+
