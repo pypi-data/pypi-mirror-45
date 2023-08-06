@@ -1,0 +1,6 @@
+[console_scripts]
+blync=blynclight.scripts.blync:cli
+fli=blynclight.scripts.fli:cli
+rainbow=blynclight.scripts.rainbow:cli
+throbber=blynclight.scripts.throbber:cli
+
