@@ -1,0 +1,4 @@
+py26compat
+py27compat
+py31compat
+py33compat
