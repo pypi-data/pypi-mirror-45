@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: wranglepy
+Version: 0.1
+Summary: A python package containing some easy-to-use tools for data cleaning / Exploration and ML.
+Home-page: https://github.com/pmugenyi/wranglepy-0.1
+Author: Peter Mugenyi
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

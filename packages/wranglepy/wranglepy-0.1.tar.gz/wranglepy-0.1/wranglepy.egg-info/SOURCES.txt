@@ -1,0 +1,7 @@
+README.md
+setup.py
+wranglepy.egg-info/PKG-INFO
+wranglepy.egg-info/SOURCES.txt
+wranglepy.egg-info/dependency_links.txt
+wranglepy.egg-info/not-zip-safe
+wranglepy.egg-info/top_level.txt
