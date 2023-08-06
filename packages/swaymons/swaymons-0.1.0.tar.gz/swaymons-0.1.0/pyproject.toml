@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "swaymons"
+version = "0.1.0"
+description = "Quickly manage monitons on Sway"
+license = "MIT"
+authors = ["Ranieri Althoff <1993083+ranisalt@users.noreply.github.com>"]
+repository = "https://gitlab.com/ranisalt/swaymons"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+i3ipc = "^1.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-cov = "^2.6"
+
+[tool.poetry.scripts]
+swaymons = 'swaymons'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

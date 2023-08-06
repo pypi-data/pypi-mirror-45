@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: swaymons
+Version: 0.1.0
+Summary: Quickly manage monitons on Sway
+Home-page: https://gitlab.com/ranisalt/swaymons
+License: MIT
+Author: Ranieri Althoff
+Author-email: 1993083+ranisalt@users.noreply.github.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: i3ipc (>=1.6,<2.0)
+Project-URL: Repository, https://gitlab.com/ranisalt/swaymons
