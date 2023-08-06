@@ -1,0 +1,13 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/api/notebook.py,sha256=3a9tlSTkOyoE4kAbLVDtvkPJI2F_sVmoORXfHZMYdaE,2286
+gofer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gofer/notebook.py,sha256=-EEJgBB5BXAO1GnemP-KAtgWZpJs8uIpqMwIAUB3h14,6396
+gofer/ok.py,sha256=aO33H2IK4DhsB4vQNoeUQ4ANBLBpfGqAaHfaV-gLrCk,9493
+gofer/utils.py,sha256=IgIkvXzp2Pe931tI0iihHQ4lUY_2O11QM8uJQtWJSXI,1653
+gofer_grader-1.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+gofer_grader-1.1.0.dist-info/METADATA,sha256=LAGw98Hr8q9yV9fQbMnak7nmVgmZxygWDF4OC_oii0Q,311
+gofer_grader-1.1.0.dist-info/RECORD,,
+gofer_grader-1.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+gofer_grader-1.1.0.dist-info/metadata.json,sha256=Ds-5kCSYzBlHeUraJ1rJ9jdUUl-r1vUqm56vndbYLT0,462
+gofer_grader-1.1.0.dist-info/top_level.txt,sha256=0Yykm-EYDRIy7LteoGYU72mGDsYzKWcmiqFZwzvXmY0,13
