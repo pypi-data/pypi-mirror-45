@@ -1,0 +1,12 @@
+baymax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baymax/api.py,sha256=Qk3qVdcrFo5qGjF2r7x0SF3vsI_sSW9mfX7K4TXx5jI,11363
+baymax/args.py,sha256=hr899Fde7KnVnF-YFprFkGEgCE1wVBve0nV163tuGS8,408
+baymax/bot.py,sha256=Hx_zrRZ76mV0hHnE93SzYKt8hE4g3P0NHqsKYERnLfw,10124
+baymax/logger.py,sha256=8yuBLLzO96rT5E5U0c5fPFMy_pF0cegIGf6Xl6C3dbE,924
+baymax/markups.py,sha256=hqsGaGSb1bRHIvA5n8Zve4Xh_xN88ScoAtKnwq6Eb7Y,1748
+baymax/storage.py,sha256=YNP_G6UeSaVi_LIXJJxY67_WBJxCgsKh7CepkxIEDmI,829
+baymax-0.0.5.dist-info/LICENSE,sha256=r0yvtTQcP9a8sK3lzSA85Tl4InlEFg8Olx2EycuTvnA,1103
+baymax-0.0.5.dist-info/METADATA,sha256=RXFqB1tKm8s2UjCelYkocAYeKOasZLXftecVgm8PWr8,2377
+baymax-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+baymax-0.0.5.dist-info/top_level.txt,sha256=5daBDVFh6vV62u5ZKqtbox1hnCtQ3gdB9Eahx-2xreo,7
+baymax-0.0.5.dist-info/RECORD,,
