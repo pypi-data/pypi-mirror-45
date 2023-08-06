@@ -1,0 +1,16 @@
+volunteer-scheduler/__init__.py,sha256=XVPmZAPvxHSayY2vjzLYEcLJV6B_ZhMTdzomvyZUXm4,29
+volunteer-scheduler/config.py,sha256=QzQwkss9XpSFbboGTvFBDdUbRbsI_xhh-nrCKN2QKCo,49
+volunteer-scheduler/schedule.py,sha256=v7FX-EpOn-EAMXiujLy18n81ZO3QrPyKF5bKiIc5_i8,24074
+volunteer-scheduler/data/__init__.py,sha256=XVPmZAPvxHSayY2vjzLYEcLJV6B_ZhMTdzomvyZUXm4,29
+volunteer-scheduler/data/data_CN.csv,sha256=IjI4xsB-TXT3R0l-dZQCuXyFuKYsYSsLaD6_a4DAH6o,1249
+volunteer-scheduler/data/data_EN.csv,sha256=EHDr12IfvdSh-2iGenvgPchyHGZPi36y30WQNaP5MQw,1275
+volunteer-scheduler/data/data_HU.csv,sha256=spliy2CTDRYDb4SVZ7n5CyEPlsACAaGp9HSVRicHxhk,1666
+volunteer-scheduler/lang/__init__.py,sha256=XVPmZAPvxHSayY2vjzLYEcLJV6B_ZhMTdzomvyZUXm4,29
+volunteer-scheduler/lang/language_CN.py,sha256=Wh0H3qBVqIVC1LVGiC1Md1k7Jtq0zd5N2tCFoT1RIlY,1346
+volunteer-scheduler/lang/language_EN.py,sha256=XLd1_sRUOOJEGY857A_m8lP36tDVjfsh5BRjb4sPM8M,1070
+volunteer-scheduler/lang/language_HU.py,sha256=lDi2cKOMRje-s46p2Lox3sC2pjY5f4Wv1zxOr6Jj0m0,1227
+volunteer_scheduler-2019.4.26.dist-info/LICENSE,sha256=DsNMCkDK9WIHNxHkxRDui75YRwu6NsebXoNVT2be2fM,34562
+volunteer_scheduler-2019.4.26.dist-info/METADATA,sha256=Y9WXJGciWiqZ-Ns64d9BEUdZMeeMsS1tXKKKq7LgJX4,2882
+volunteer_scheduler-2019.4.26.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+volunteer_scheduler-2019.4.26.dist-info/top_level.txt,sha256=bNSfwBsB2JZswdbTIgyIFhqSZgBV9aPdHwESnZdhp6g,20
+volunteer_scheduler-2019.4.26.dist-info/RECORD,,
