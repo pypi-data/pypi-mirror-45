@@ -1,0 +1,6 @@
+README.md
+setup.py
+ipng.egg-info/PKG-INFO
+ipng.egg-info/SOURCES.txt
+ipng.egg-info/dependency_links.txt
+ipng.egg-info/top_level.txt
