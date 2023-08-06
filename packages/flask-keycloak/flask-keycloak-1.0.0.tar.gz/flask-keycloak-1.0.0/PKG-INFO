@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: flask-keycloak
+Version: 1.0.0
+Summary: flask integration with keycloak
+Home-page: https://github.com/akhilputhiry/flask-keycloak
+Author: Akhil Lawrence
+Author-email: akhilputhiry@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
