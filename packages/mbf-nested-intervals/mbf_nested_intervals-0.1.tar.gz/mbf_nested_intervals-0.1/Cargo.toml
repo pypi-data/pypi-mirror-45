@@ -1,0 +1,14 @@
+[package]
+name = "mbf_nested_intervals"
+version = "0.1.0"
+authors = ["Florian Finkernagel <finkernagel@imt.uni-marburg.de>"]
+edition = "2018"
+
+[dependencies]
+nested_intervals="0.2.0"
+#nested_intervals={path = "../nested_intervals"}
+pyo3={ version = "0.6.*", features= ["extension-module"]}
+
+[lib]
+name = "mbf_nested_intervals"
+crate-type = ["cdylib"]
