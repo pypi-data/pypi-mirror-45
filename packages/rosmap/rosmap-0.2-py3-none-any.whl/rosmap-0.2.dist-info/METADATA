@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rosmap
+Version: 0.2
+Summary: Clones and analyzes ROS-Packages.
+Home-page: https://github.com/jr-robotics/rosmap
+Author: Marc Pichler
+Author-email: marc.pichler@joanneum.at
+License: MIT
+Project-URL: Source Code, https://github.com/jr-robotics/rosmap
+Platform: UNKNOWN
+Requires-Python: ~=3.5
+Requires-Dist: GitPython (>=2.1.8)
+Requires-Dist: pyyaml (>=4.2b1)
+Requires-Dist: pyquery (>=1.4.0)
+Requires-Dist: urllib3
+Requires-Dist: certifi
+Requires-Dist: python-hglib (>=2.6.1)
+Requires-Dist: svn (>=0.3.46)
+Requires-Dist: python-dateutil (>=2.7.5)
+Requires-Dist: cpplint
+
+UNKNOWN
+
+
