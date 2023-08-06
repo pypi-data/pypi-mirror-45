@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyramid_https_session_core
+Version: 0.0.6
+Summary: provides for a 'session_https' secure session interface
+Home-page: https://github.com/jvanasco/pyramid_https_session_core
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: # pyramid_https_session_core
+        
+Keywords: web pyramid beaker
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
