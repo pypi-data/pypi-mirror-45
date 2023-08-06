@@ -1,0 +1,7 @@
+README.md
+setup.py
+bayesHC1/__init__.py
+bayesHC1.egg-info/PKG-INFO
+bayesHC1.egg-info/SOURCES.txt
+bayesHC1.egg-info/dependency_links.txt
+bayesHC1.egg-info/top_level.txt

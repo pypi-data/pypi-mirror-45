@@ -1,0 +1,90 @@
+## Installation Instructions
+
+Run following code in terminal: 
+python3 -m pip install bayesHC1
+
+Then import package and load cython as follows: 
+import bayesHC1
+
+## Documentation
+bayesHC.bayes_hier_clust(data_vec, alpha, alpha0, beta, kappa, mu)
+
+Given a tuple of datapoints, build a hierarchical cluster tree. Algorithm will continue merging clusters until there is only one overarching cluster. This algorithm is recommended for clustering $<$23 observations.
+
+Parameters:
+    alpha : the expected number of clusters
+    
+    alpha0 : scale hyperparameter for gamma prior 
+
+    beta : location hyperparameter for gamma prior 
+
+    kappa : precision hyperparameter for normal prior
+
+    mu : mean hyperparameer for normal prior
+
+
+
+Returns:nested tuple
+
+Returns a tuple with the following structure:
+    cluster = (c_num,left,right,value,n_k,p_k,d_k)
+    
+    Where:
+        c_num : the number of the cluster
+        left : the entire cluster tuple for one subcluster
+        right : the entire cluster tuple for the other subcluster
+        value : all data values included in the cluster
+        n_k : number of datapoints in the cluster
+        p_k : the prior on merging
+        d_k : a weight on the volume of data in pairs of clusters on the subtree T_k
+    
+
+## Example
+
+<<<import pandas as pd
+<<<df_sim = pd.read_table('simulated_data.csv',delimiter = ",")
+<<<value = tuple([points] for points in df_sim.loc[:4,'values']) 
+<<<mu, kappa = 0, 100 # mean and standard deviation
+<<<alpha, beta = 2,10 # scale and location
+<<<z = bayes_hier_clust(value, alpha, beta, kappa,mu)
+<<<z
+
+[(9,
+  (4, 0, 0, [24.649825190000001], 1, 1, 2.0),
+  (8,
+   (5, 0, 0, [20.543137890000001], 1, 1, 2.0),
+   (7,
+    (1, 0, 0, [19.404575810000001], 1, 1, 2.0),
+    (6,
+     (2, 0, 0, [4.4017292919999997], 1, 1, 2.0),
+     (3, 0, 0, [10.766117830000001], 1, 1, 2.0),
+     [4.4017292919999997, 10.766117830000001],
+     2,
+     0.3333333432674408,
+     6.0),
+    [19.404575810000001, 4.4017292919999997, 10.766117830000001],
+    3,
+    0.25,
+    16.0),
+   [20.543137890000001,
+    19.404575810000001,
+    4.4017292919999997,
+    10.766117830000001],
+   4,
+   0.27272728085517883,
+   44.0),
+  [24.649825190000001,
+   20.543137890000001,
+   19.404575810000001,
+   4.4017292919999997,
+   10.766117830000001],
+  5,
+  0.3529411852359772,
+  136.0)]
+  
+>>>z[1]
+(4, 0, 0, [24.649825190000001], 1, 1, 2.0)
+
+
+
+Last updated on April 30, 2019.  
