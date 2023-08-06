@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: EP_BHC
+Version: 1.4
+Summary: A Python package to generate Bayesian hierarchical clusters to a supplied data
+Home-page: https://github.com/Eric-Su-2718/STA663-Final-Project
+Author: UNKNOWN
+Author-email: minchel93@gmail.com
+License: MIT
+Download-URL: https://github.com/Eric-Su-2718/STA663-Final-Project/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: BHC,merge_nodes,likelihood
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
