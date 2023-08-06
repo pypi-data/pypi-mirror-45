@@ -1,0 +1,14 @@
+Django>=1.10
+python-dateutil
+
+[docs]
+sphinx
+
+[test]
+pytest<4.2
+pytest-django
+pytest-cov
+pytest-pythonpath
+tox
+pyyaml
+django-trackstats
