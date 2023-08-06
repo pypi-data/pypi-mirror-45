@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-cayennelpp
+Version: 0.0.1
+Summary: A package to decode a data encoded in a CayenneLPP format.
+Home-page: https://github.com/OlegSomov/Python-CayenneLPP
+Author: Oleg Zvonarov
+Author-email: oleg.somov84@gmail.com
+License: UNKNOWN
+Description: # Python-CayenneLPP
+        ## Introduction
+        Open source library for python to decode CayenneLPP format payload.
+        The Cayenne Low Power Payload (LPP) provides a convenient and easy way to send data over LPWAN networks such as LoRaWAN.
+        More details on CayenneLPP payload: https://github.com/myDevicesIoT/cayenne-docs
+        
+        ## Usage
+        To decode payload simply use method decode() from this package
+        
+        ```python
+        >>>from python_cayennelpp.decoder import decode
+        >>>print(decode('03670110056700FF'))
+        [{'channel': 3, 'name': 'Temperature Sensor', 'value': 27.2}, {'channel': 5, 'name': 'Temperature Sensor', 'value': 25.5}]
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
