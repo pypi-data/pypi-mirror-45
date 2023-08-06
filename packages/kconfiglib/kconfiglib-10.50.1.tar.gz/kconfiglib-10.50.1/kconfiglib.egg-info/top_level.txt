@@ -1,0 +1,13 @@
+alldefconfig
+allmodconfig
+allnoconfig
+allyesconfig
+defconfig
+genconfig
+kconfiglib
+listnewconfig
+menuconfig
+oldconfig
+olddefconfig
+savedefconfig
+setconfig
