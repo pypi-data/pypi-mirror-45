@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: detoxed
+Version: 0.1.0
+Summary: Integration test harness for Azure IoT deployments
+Home-page: https://github.com/Microsoft/Detoxed
+Author: Nick Iodice
+Author-email: niiodice@microsoft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.*
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: codecov (==2.0.15) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.7) ; extra == 'dev'
+Requires-Dist: isort (==4.3.10) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.670) ; extra == 'dev'
+Requires-Dist: pydocstyle (==3.0.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.3.1) ; extra == 'dev'
+Requires-Dist: pytest (==4.3.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'dev'
+Requires-Dist: setuptools (==41.0.1) ; extra == 'dev'
+
+# About
+
+[![PyPI version](https://badge.fury.io/py/detoxed.svg)](https://badge.fury.io/py/detoxed)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/detoxed.svg)](https://pypi.org/project/detoxed/)
+[![PyPI - License](https://img.shields.io/pypi/l/detoxed.svg)](https://pypi.org/project/detoxed/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/detoxed.svg)](https://pypi.org/project/detoxed/)
+
+Note: how to use in dev ops pipeline with screenshots
+Note: contributing guidelines
+
