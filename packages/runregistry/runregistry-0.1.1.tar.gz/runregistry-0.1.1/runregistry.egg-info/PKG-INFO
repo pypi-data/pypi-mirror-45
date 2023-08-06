@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: runregistry
+Version: 0.1.1
+Summary: CMS Run Registry client
+Home-page: https://github.com/fabioespinosa/runregistryclient
+Author: Fabio Espinosa
+Author-email: f.e@cern.ch
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/fabioespinosa/runregistry_api_client.svg?branch=master)](https://travis-ci.org/fabioespinosa/runregistry_api_client)
+        TODO: documentation :)
+        
+        querying by comments, and cause is not yet possible
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
