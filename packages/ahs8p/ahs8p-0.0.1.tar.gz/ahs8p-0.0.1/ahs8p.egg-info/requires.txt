@@ -1,0 +1,4 @@
+asvmq
+pyserial
+asvprotobuf
+numpy
