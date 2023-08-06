@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+libmodel/__init__.py
+libmodel.egg-info/PKG-INFO
+libmodel.egg-info/SOURCES.txt
+libmodel.egg-info/dependency_links.txt
+libmodel.egg-info/not-zip-safe
+libmodel.egg-info/top_level.txt
