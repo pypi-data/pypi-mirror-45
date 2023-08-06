@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: databricks-cloud-automation
+Version: 0.1.4
+Summary: Databricks Cloud Automation
+Home-page: http://www.databricks.com
+Author: Databricks
+Author-email: sales@databricks.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: PyYAML (==3.13)
+Requires-Dist: python-terraform (==0.10.0)
+Requires-Dist: pyhcl (==0.3.10)
+Requires-Dist: gunicorn (==19.9.0)
+
+Databricks Cloud Automation uses Terraform to provision cloud infrastructure. You may use a prepackaged GUI or terraform directly to deploy these modules
+
+
