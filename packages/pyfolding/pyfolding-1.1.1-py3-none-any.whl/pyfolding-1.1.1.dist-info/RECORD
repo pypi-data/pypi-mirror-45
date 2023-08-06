@@ -1,0 +1,11 @@
+pyfolding/__init__.py,sha256=pJqgHj8LVjjekfrdHh18XrSHqN1y8CPGevBy3vaZVsk,102
+pyfolding/batch.py,sha256=L0nQKEb2Jg0D0o3czhr6VgoQq3zSMF-h-X4e78-eXE4,4052
+pyfolding/libfolding.py,sha256=QMVaurCq2-SSqxu3o5MAbP4YTL0AXkxdFMAP5Yt-EJk,2507
+pyfolding/pvalues.py,sha256=n1eOePlupdazqMid_SVvgK28QqnAYYuVErGiAsHEUAs,1810
+pyfolding/results.py,sha256=OE6bIicLfUD3-b9Vr26G_DO77k8nlBqePpvXE9Kk-s0,1791
+pyfolding/stream.py,sha256=DywjyYpwpPLHRP6EgncdeW5C3PqN44ennPfwHFvt2qM,5945
+pyfolding-1.1.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pyfolding-1.1.1.dist-info/METADATA,sha256=OGr5_kyAmFYIU70E-2gKr5AaGJu8dCXIj3FCJlerUf4,251
+pyfolding-1.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pyfolding-1.1.1.dist-info/top_level.txt,sha256=1JoillI-tsBJf5-vt8rv7sTMXM3p0RBFQ2sZt3Od--M,10
+pyfolding-1.1.1.dist-info/RECORD,,
