@@ -1,0 +1,8 @@
+README.md
+setup.py
+yeardays/__init__.py
+yeardays.egg-info/PKG-INFO
+yeardays.egg-info/SOURCES.txt
+yeardays.egg-info/dependency_links.txt
+yeardays.egg-info/requires.txt
+yeardays.egg-info/top_level.txt

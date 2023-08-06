@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: yeardays
+Version: 1.0.2
+Summary: Get the number of days in a year
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: me@yoginth.com
+License: UNKNOWN
+Project-URL: Patreon, https://www.patreon.com/yoginth
+Project-URL: Source, https://gitlab.com/yoginth/yeardays
+Description: ## Year Days
+        
+        > Get the number of days in a year
+        
+        ## Screenshot
+        
+        <img src="https://gitlab.com/yoginth/leapyear/raw/master/Screenshot.png" width="550">
+        
+        ## Install
+        
+        ```
+        $ pip install yeardays
+        ```
+        
+        ## Usage
+        
+        ```python
+        import yeardays
+        
+        yeardays.get(2016)
+        #=> 366
+        
+        yeardays.get(2018)
+        #=> 365
+        ```
+        
+        ## API
+        
+        ### yeardays.get(input)
+        
+        #### input
+        
+        Type: `string` or `number`
+        
+        Year to get days.
+        
+        ## License
+        
+        [MIT][license]
+        
+        [LICENSE]: https://mit.yoginth.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
