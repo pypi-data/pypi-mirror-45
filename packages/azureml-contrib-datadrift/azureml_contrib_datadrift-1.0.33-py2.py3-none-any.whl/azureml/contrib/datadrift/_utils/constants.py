@@ -1,0 +1,47 @@
+# ---------------------------------------------------------
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# ---------------------------------------------------------
+
+DATADRIFT_KEY = "_datadrift"
+DATADRIFT_SERVICES = "_services"
+DATADRIFT_VERSION = "_version"
+DATADRIFT_VERSION_VALUE = 1.0
+DATADRIFT_SCHEDULES = "_schedules"
+DATADRIFT_SCHEDULE_ID = "_schedule_id"
+DATADRIFT_ENABLE = "_enabled"
+DATADRIFT_FREQUENCY = "_frequency"
+DATADRIFT_DRIFT_THRESHOLD = "_drift_threshold"
+DATADRIFT_INTERVAL = "_interval"
+DATADRIFT_ALERT_CONFIG = "_alert_config"
+DATADRIFT_SCHEDULE_START = "_schedule_start"
+
+METRIC_DATASHIFT_MCC_TEST = "ds_mcc_test"
+METRIC_DATASHIFT_MCC_TRAIN = "ds_mcc_train"
+METRIC_DATASHIFT_MCC_ALL = "ds_mcc_all"
+METRIC_DATASHIFT_FEATURE_IMPORTANCE = "ds_feature_importance"
+METRIC_STATISTICAL_DISTANCE_WASSERSTEIN = "wasserstein_distance"
+METRIC_STATISTICAL_DISTANCE_ENERGY = "energy_distance"
+METRIC_DATASET_METRICS = "dataset_metrics"
+METRIC_COLUMN_METRICS = "column_metrics"
+METRIC_TYPE = "metric_type"
+LOG_FLUSH_LATENCY = 60
+EMAIL_ADDRESSES = "email_addresses"
+
+COLUMN_NAME = "column_name"
+MODEL_NAME = "model_name"
+MODEL_VERSION = "model_version"
+SERVICE_NAME = "service_name"
+SERVICE = "service"
+DRIFT_THRESHOLD = "drift_threshold"
+DATETIME = "datetime"
+HAS_DRIFT = "has_drift"
+RUN_ID = "runid"
+SCORING_DATE = "scoring_date"
+
+RUN_TYPE_ADHOC = "Adhoc"
+RUN_TYPE_SCHEDULE = "Scheduler"
+
+PIPELINE_PARAMETER_ADHOC_RUN = "pipeline_arg_adhoc_run"
+
+FIGURE_FEATURE_IMPORTANCE_TITLE = "Drift Contribution by Feature\n"
+FIGURE_FEATURE_IMPORTANCE_Y_LABEL = "Drift Contribution"
