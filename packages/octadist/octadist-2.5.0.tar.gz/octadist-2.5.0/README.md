@@ -1,0 +1,44 @@
+[![Travis-CI Test](https://img.shields.io/travis/OctaDist/OctaDist/master.svg
+)](https://travis-ci.org/OctaDist/OctaDist)
+[![Code size](https://img.shields.io/github/languages/code-size/OctaDist/OctaDist.svg)](https://github.com/OctaDist/OctaDist)
+[![Repo size](https://img.shields.io/github/repo-size/OctaDist/OctaDist.svg)](https://github.com/OctaDist/OctaDist)
+
+## OctaDist
+Octahedral distortion calculator: A program for determining the structural distortion of the octahedral complexes. https://octadist.github.io/
+
+<p align="center">
+   <img alt="molecule" src="https://raw.githubusercontent.com/OctaDist/OctaDist/master/images/molecule.png" align=middle width="200pt" />
+<p/>
+
+This program is written in Python 3 and tested on PyCharm (Community Edition). 
+
+## Installation
+- Install the latest version: `pip install octadist`
+- Upgrade to the latest version: `pip install --upgrade octadist`
+- Upgrade/downgrade to a specific version: `pip install --upgrade octadist==2.5.0`
+
+## Sample usage
+1. Download `test_octadist.py` python script to your machine
+2. Execute this python script and see the result: `python test_octadist.py`
+
+## Compilation
+Program executables are compiled on Windows and macOS by PyInstaller and are available [here](https://github.com/OctaDist/OctaDist/releases).
+The end-user of Windows and Mac can download the executable file and run it simply on your system.
+
+## Citation
+Please cite this project when you have used OctaDist for scientific publication.
+
+## Bug report
+If you found issues in OctaDist, please report us at [here](https://github.com/OctaDist/OctaDist/issues)
+
+## Project team
+- [Rangsiman Ketkaew](https://sites.google.com/site/rangsiman1993) (Thammasat University) <br/>
+  - E-mail: rangsiman1993@gmail.com <br/>
+- [Yuthana Tantirungrotechai](https://sites.google.com/site/compchem403/people/faculty/yuthana) (Thammasat University)
+  - E-mail: yt203y@gmail.com
+- [David J. Harding](https://www.funtechwu.com/david-j-harding) (Walailak University)
+  - E-mail: hdavid@mail.wu.ac.th
+- [Phimphaka Harding](https://www.funtechwu.com/phimphaka-harding) (Walailak University, Thailand)
+  - E-mail: kphimpha@mail.wu.ac.th
+- [Mathieu Marchivie](http://www.icmcb-bordeaux.cnrs.fr/spip.php?article562&lang=fr) (Université de Bordeaux, France)
+  - E-mail: mathieu.marchivie@icmcb.cnrs.fr
