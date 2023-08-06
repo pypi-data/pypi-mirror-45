@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+bin/build_domains_DB.py
+bin/filter_kraken_db.py
+bin/predict_domain.py
+domain_classifier/__init__.py
+domain_classifier.egg-info/PKG-INFO
+domain_classifier.egg-info/SOURCES.txt
+domain_classifier.egg-info/dependency_links.txt
+domain_classifier.egg-info/not-zip-safe
+domain_classifier.egg-info/requires.txt
+domain_classifier.egg-info/top_level.txt
