@@ -1,0 +1,11 @@
+deepdrive_ci/ContainerSpawner.py,sha256=ZI6na3vHOJFbWFw00inue7_sTkA1tJkU-uF8z98xQhE,8982
+deepdrive_ci/JobRunner.py,sha256=bTvzVBhaTOqfLq_nj6ykU93sJ3crn3kSdKJK7T4dJgQ,2100
+deepdrive_ci/PlatformDefaults.py,sha256=yMbBy2wRSTDP78CshhFkcZ5k8jDprAwCwK7qo9WIUo0,450
+deepdrive_ci/TargetPlatform.py,sha256=I2inSRhpUh-Bdftl76Gz5FcJ1sD5HRd9uh_qP62UQvA,139
+deepdrive_ci/__init__.py,sha256=F2Uogg9giv2eiZCvMLQpTKIRTqiRBimy4MFUPfePZA0,170
+deepdrive_ci-0.0.3.dist-info/LICENSE,sha256=-2BKwM4LkKpams9UJkGLy04aIpamMfPOkrApxV83qFg,1089
+deepdrive_ci-0.0.3.dist-info/METADATA,sha256=IxE8andnD-7_UDarpEC_nAwBCTSB3CkGUJ27VzW-XmY,1333
+deepdrive_ci-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+deepdrive_ci-0.0.3.dist-info/top_level.txt,sha256=bn7x3VcG-D-X3Vf4E4URnCElz4XTFZTZac-m7yR_2_0,13
+deepdrive_ci-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+deepdrive_ci-0.0.3.dist-info/RECORD,,
