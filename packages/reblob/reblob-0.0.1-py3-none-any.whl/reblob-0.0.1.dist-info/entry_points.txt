@@ -1,0 +1,3 @@
+[console_scripts]
+reblob = reblob.__main__:main
+

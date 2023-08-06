@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: reblob
+Version: 0.0.1
+Summary: A tool for formatting a response to a page
+Home-page: https://github.com/PlaidWeb/reblob
+Author: fluffy
+Author-email: fluffy@beesbuzz.biz
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/PlaidWeb/reblob/issues
+Project-URL: Source, https://github.com/PlaidWeb/reblob/
+Project-URL: Discord, https://beesbuzz.biz/discord
+Project-URL: Funding, https://liberapay.com/fluffy
+Keywords: publishing blog webmention publ indieweb
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: pypandoc
+Requires-Dist: requests
+Requires-Dist: mf2py
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+# reblob
+
+Tool for doing a reblog/reply/whatever of an existing webpage.
+
+Given a URL, it will produce a response blog entry with the original content wrapped in a block quote, before using [Pandoc](https://pandoc.org) to convert it to the representation of choice.
+
+Usage:
+
+```bash
+pip install reblob
+reblob http://example.com/ -f rst
+```
+
+It requires Pandoc to be installed; see the [pypandoc](https://github.com/bebraw/pypandoc) manual for some suggestions on how to do this.
+
+
