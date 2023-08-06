@@ -1,0 +1,7 @@
+README.md
+setup.py
+reusegen/__init__.py
+reusegen.egg-info/PKG-INFO
+reusegen.egg-info/SOURCES.txt
+reusegen.egg-info/dependency_links.txt
+reusegen.egg-info/top_level.txt
