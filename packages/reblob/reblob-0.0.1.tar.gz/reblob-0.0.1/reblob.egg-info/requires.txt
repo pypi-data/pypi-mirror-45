@@ -1,0 +1,9 @@
+beautifulsoup4
+pypandoc
+requests
+mf2py
+
+[dev]
+pylint
+twine
+flake8
