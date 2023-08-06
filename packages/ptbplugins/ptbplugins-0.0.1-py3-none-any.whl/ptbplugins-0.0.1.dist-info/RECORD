@@ -1,0 +1,10 @@
+ptbplugins/__init__.py,sha256=Ect-989-fkHDX0jbWyZNcPq5-ULAol8j6JpOCdL7pIE,76
+ptbplugins/jobregistration.py,sha256=7NZIaItcrW3xfH1dfpVa6a_OVRYOnGHraMEH1Npay-Q,3453
+ptbplugins/pluginregistration.py,sha256=oty-2ps5wzdc3dqfSEg3TiU5-o37_I9exmEj4H_3lVg,3955
+ptbplugins/registration.py,sha256=3nwXEdF6uAaKArrCDJli2dYGzYasGhZrbDYn8czitjQ,3108
+ptbplugins-0.0.1.dist-info/DESCRIPTION.rst,sha256=lq0z12RB1vY_rPCfJ3s8LdZoCkiYePAeDIBGl5VvHtc,70
+ptbplugins-0.0.1.dist-info/METADATA,sha256=3yajsIxLdWqvvPwfK21xGMmVw6_kK_bFIZrPhkFDqJw,549
+ptbplugins-0.0.1.dist-info/RECORD,,
+ptbplugins-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ptbplugins-0.0.1.dist-info/metadata.json,sha256=q6XLAOpmuq3tnJw9VbWZ-qDWBOWxGhKs0PVkjCBU7WM,698
+ptbplugins-0.0.1.dist-info/top_level.txt,sha256=ZKFtBO2y60RpZG05jk4MGFm_Z3OlugExNL1M0Kg7bRw,11
