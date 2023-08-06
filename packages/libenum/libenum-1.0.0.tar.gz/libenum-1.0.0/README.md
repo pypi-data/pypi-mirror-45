@@ -1,0 +1,2 @@
+# libenum
+enum lib
