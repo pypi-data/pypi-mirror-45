@@ -1,0 +1,11 @@
+psmatching/__init__.py,sha256=hc5chPF38uEDMDcl3ajAqV0G8Qjcla24RuHiZfaiwws,227
+psmatching/match.py,sha256=w9R9ZQDHl5hL0ImCQUPBoZX6RynIN17FOw17KsBJ34M,9663
+psmatching/psmatching.py,sha256=HDfIztyfsNoZPvEM1NlBz3KMEtPn1dGvOLGq_b5w56U,9644
+psmatching/psmatching_run.py,sha256=sDuEcPdwLiKb_YjfVUz-Klb2CvedP7S7_0d1ieO2HD0,775
+psmatching/psmatching_utilities.py,sha256=uT0vW6JV4pQlWyB7zM_s2gn0qGcwVr-26KAeQbf7VSI,4144
+psmatching/run.py,sha256=sDuEcPdwLiKb_YjfVUz-Klb2CvedP7S7_0d1ieO2HD0,775
+psmatching/utilities.py,sha256=0E3DBxOS3WvnHjm64gND7fELbL2hd-MZiwpsSOGDYGY,4327
+psmatching-0.1.dev9.dist-info/METADATA,sha256=ZvtDTIb38unW3IWcFBN1N5jarwPdTKh4pJ2-U34LLwg,909
+psmatching-0.1.dev9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+psmatching-0.1.dev9.dist-info/top_level.txt,sha256=2aZHgoRq0CRG8Tcv9u1Jmpi2k87_RBSTPbB9lhk4cls,11
+psmatching-0.1.dev9.dist-info/RECORD,,
