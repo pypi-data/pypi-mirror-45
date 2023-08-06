@@ -1,0 +1,6 @@
+README.md
+setup.py
+py_weather_graph_sharris.egg-info/PKG-INFO
+py_weather_graph_sharris.egg-info/SOURCES.txt
+py_weather_graph_sharris.egg-info/dependency_links.txt
+py_weather_graph_sharris.egg-info/top_level.txt

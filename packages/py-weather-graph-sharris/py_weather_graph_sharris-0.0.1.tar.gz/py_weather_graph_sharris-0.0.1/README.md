@@ -1,0 +1,28 @@
+# Py Weather Graph
+
+App for tracking the weather
+
+### Tech
+
+Codewars Dashboard uses a number of open source projects to work properly:
+
+* [Python3] - interpreted high-level programming language
+* [Tornado] - Python web framework and asynchronous networking library
+
+
+### Installation
+
+Py Weather Graph requires
+[python3](https://www.python.org/download/releases/3.0/) to run.
+
+Clone the app from [the main repo](https://github.com/Steph-harris/py_weather_graph).
+
+```sh
+$ mkdir py_weather_graph
+$ cd py_weather_graph
+
+python3 -m venv env
+source env/bin/activate
+(env) pip install -r requirements.txt
+(env) python app.py
+```
