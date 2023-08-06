@@ -1,0 +1,2 @@
+msgpack
+mona-fluent-logger

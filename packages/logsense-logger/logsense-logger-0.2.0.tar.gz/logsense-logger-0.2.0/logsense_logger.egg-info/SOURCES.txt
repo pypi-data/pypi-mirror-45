@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+logsense/__init__.py
+logsense/handler.py
+logsense/metrics.py
+logsense/sender.py
+logsense_logger.egg-info/PKG-INFO
+logsense_logger.egg-info/SOURCES.txt
+logsense_logger.egg-info/dependency_links.txt
+logsense_logger.egg-info/requires.txt
+logsense_logger.egg-info/top_level.txt
