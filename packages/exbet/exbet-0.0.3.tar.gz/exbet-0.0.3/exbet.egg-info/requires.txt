@@ -1,0 +1,10 @@
+graphenelib>=1.1.12
+appdirs
+prettytable
+events
+scrypt
+pyyaml
+pycryptodome
+click
+treelib
+tqdm

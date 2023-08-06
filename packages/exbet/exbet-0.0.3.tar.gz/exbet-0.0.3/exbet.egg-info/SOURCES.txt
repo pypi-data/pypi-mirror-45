@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+exbet.egg-info/PKG-INFO
+exbet.egg-info/SOURCES.txt
+exbet.egg-info/dependency_links.txt
+exbet.egg-info/entry_points.txt
+exbet.egg-info/requires.txt
+exbet.egg-info/top_level.txt
