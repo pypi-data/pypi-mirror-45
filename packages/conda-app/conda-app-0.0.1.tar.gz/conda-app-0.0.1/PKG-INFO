@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: conda-app
+Version: 0.0.1
+Summary: Install applications with conda
+Home-page: UNKNOWN
+Author: Pierre Augier
+Author-email: pierre.augier@univ-grenoble-alpes.fr
+License: BSD
+Description: # Install applications using conda
+        
+Keywords: conda,packaging
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >= 3.6
