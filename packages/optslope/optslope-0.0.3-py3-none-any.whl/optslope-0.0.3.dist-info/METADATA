@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: optslope
+Version: 0.0.3
+Summary: OptSlope - A tool for metabolic engineering, based on the OptSlope algorithm
+Home-page: https://gitlab.com/elad.noor/optslope
+Author: Elad Noor
+Author-email: noor@imsb.biol.ethz.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.16.3)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: optlang (>=1.4.4)
+Requires-Dist: cobra (>=0.15.3)
+Requires-Dist: python-libsbml (>=5.18.0)
+Requires-Dist: pandas (>=0.24.0)
+Requires-Dist: pytest (>=4.4.1)
+Requires-Dist: Escher (>=1.6.0)
+Requires-Dist: matplotlib (>=3.0.3)
+
+# optslope
+
+A tool for metabolic engineering, based on the OptSlope algorithm
+

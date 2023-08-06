@@ -1,0 +1,13 @@
+optslope/__init__.py,sha256=lP9MlGimAle9ah0UNiSPo-kIkavBkqjKlKVThBmgxKc,1341
+optslope/models.py,sha256=vzRQ8CEA_GVlkpc-2vs02iuz8ky6j00FpNqDfZyDKTw,9983
+optslope/plotting.py,sha256=qkmdsQ0ErGIFut3sQCzHEwH84N_S5JVmBrRNx6TYPTI,4982
+optslope/slope.py,sha256=Q11OaimNE-1WYov9o6e9MYDiEj2J6rsdlqpSt8aznoY,5657
+optslope/util.py,sha256=EKO69jmNzSDDWiRocCof9P4hc1ohTgB2ygp2xrR-qu4,6012
+optslope/model/e_coli_core.xml,sha256=ZxwzFX6_B4dOo8Wxkoz9AR0ScnL2K8bIMNqNWMmXXqk,494228
+optslope/model/iJO1366.xml,sha256=ktGSLd8fQ8qhAvpjkn2Fq36iBalpgtL-EfNQIDia96c,3678036
+optslope/model/toymodel.xml,sha256=rFjH8bA3o5qqTIItCBYa05iZ9UMuiBl2rMw8ouqjMeY,6489
+optslope-0.0.3.dist-info/LICENSE,sha256=wbmfQNflyxy8trlKJ5hQ62z4u_zJ3rEFNh4wYVnDFJQ,1076
+optslope-0.0.3.dist-info/METADATA,sha256=w4rgO5AYHkprDFpEBG2MTYyCxqTNUoL1suv9nB_TOFg,1007
+optslope-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+optslope-0.0.3.dist-info/top_level.txt,sha256=P8lVxsjCWCIltzY-DKGhnFAqPsH5eNAvk5TUxwjMIHc,9
+optslope-0.0.3.dist-info/RECORD,,
