@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: laziter
+Version: 0.0.5
+Summary: A lazy iterator wrapper with multiprocessing powers!
+Home-page: https://github.com/jeffmomo/laziter
+Author: Jeff Mo
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
