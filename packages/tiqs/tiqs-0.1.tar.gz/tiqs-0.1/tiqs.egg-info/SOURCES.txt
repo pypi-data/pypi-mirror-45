@@ -1,0 +1,8 @@
+README.md
+setup.py
+tiqs/__init__.py
+tiqs/tiqs.py
+tiqs.egg-info/PKG-INFO
+tiqs.egg-info/SOURCES.txt
+tiqs.egg-info/dependency_links.txt
+tiqs.egg-info/top_level.txt
