@@ -1,0 +1,16 @@
+aiida-export-migration-tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+aiida-export-migration-tests/utils.py,sha256=PN3MXyOI3bPev9EpcVzfeBsWOfhAa2ZhIKRXqSY95ag,5700
+aiida-export-migration-tests/archives/export_v0.2.aiida,sha256=fX_Vj2LwM88MkmuFhLQSW0BPcdilxutsJagd-z4IxQQ,1368587
+aiida-export-migration-tests/archives/export_v0.3.aiida,sha256=be3dQV-QSex22EKOCcHTcR4DvHWP1m7Qjvjr1X_zuj0,575763
+aiida-export-migration-tests/archives/export_v0.3_no_Nodes.aiida,sha256=lR5jphjzdVaQsE_NPCOZv4zi4zW_6U1Xf0wxGT2-cXo,1412
+aiida-export-migration-tests/archives/export_v0.4.aiida,sha256=WP9bCUQHcB9dI5hzl2KOa3K3Ec2M6yEXWRxTb1dnG_s,1383937
+aiida-export-migration-tests/tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+aiida-export-migration-tests/tests/test_migration.py,sha256=uLNQy2TorhiW1gYQzclm4IfKWSCx82f2NLVjnMfPrAA,13443
+aiida-export-migration-tests/tests/test_v01_to_v02.py,sha256=0QJp-dmHohN1Vwd1NJz4VttgyRY-AkFPz5PPyczIjQo,2354
+aiida-export-migration-tests/tests/test_v02_to_v03.py,sha256=t6ZkGQaIVdsf0nGzlF8Lh18XmjDJ7PNM9A4GFtVENsQ,9064
+aiida-export-migration-tests/tests/test_v03_to_v04.py,sha256=yWRE_FNYZ73HSQ_MPe7gvRwUlhi97smgPBTGg6iVNHo,23844
+aiida_export_migration_tests-0.1.1.dist-info/LICENSE,sha256=wbUNkzVc6vdvqchJjqvQQQstCqOqjP0pb7f8jTUTvY8,1067
+aiida_export_migration_tests-0.1.1.dist-info/METADATA,sha256=q65lDlg5fjzk68ywHv6C0DPtIvUd6LvE5tg5xBcXjUM,6856
+aiida_export_migration_tests-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiida_export_migration_tests-0.1.1.dist-info/top_level.txt,sha256=c-6oz6w8qVOmXKCyRThoQyMuXh1j-uVFXtZO2SxauEI,29
+aiida_export_migration_tests-0.1.1.dist-info/RECORD,,
