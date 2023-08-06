@@ -1,0 +1,6 @@
+setup.py
+smfiles/__init__.py
+smfiles.egg-info/PKG-INFO
+smfiles.egg-info/SOURCES.txt
+smfiles.egg-info/dependency_links.txt
+smfiles.egg-info/top_level.txt
