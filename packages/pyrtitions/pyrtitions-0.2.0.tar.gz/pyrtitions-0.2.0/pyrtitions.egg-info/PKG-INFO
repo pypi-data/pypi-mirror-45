@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyrtitions
+Version: 0.2.0
+Summary: A small library to get partition information on Linux
+Home-page: https://github.com/CRImier/pyrtitions
+Author: Arsenijs Picugins
+Author-email: crimier@yandex.ru
+License: UNKNOWN
+Download-URL: https://github.com/CRImier/pyrtitions/archive/0.2.0.tar.gz
+Description: UNKNOWN
+Keywords: linux,partitions
+Platform: UNKNOWN

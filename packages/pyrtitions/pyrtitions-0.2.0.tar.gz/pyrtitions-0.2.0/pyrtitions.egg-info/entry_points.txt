@@ -1,0 +1,3 @@
+[console_scripts]
+pyrtitions = pyrtitions:__main__
+

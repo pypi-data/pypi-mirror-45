@@ -1,0 +1,9 @@
+README.md
+pyrtitions.py
+setup.cfg
+setup.py
+pyrtitions.egg-info/PKG-INFO
+pyrtitions.egg-info/SOURCES.txt
+pyrtitions.egg-info/dependency_links.txt
+pyrtitions.egg-info/entry_points.txt
+pyrtitions.egg-info/top_level.txt
