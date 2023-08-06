@@ -1,0 +1,97 @@
+Metadata-Version: 1.1
+Name: doorda_sdk
+Version: 1.0.1
+Summary: Doorda package for access to host and API platform
+Home-page: https://github.com/doorda/doorda-python-sdk
+Author: Samuel
+Author-email: samuel@doorda.com
+License: Apache License 2.0
+Download-URL: https://github.com/Doorda/doorda-python-sdk/archive/1.0.1.tar.gz
+Description: # Doorda Python SDK
+        
+        ## Installation
+        
+        
+        ### PyPi
+        ```bash
+        $ pip install doorda-sdk
+        ```
+        
+        
+        ### Source
+        #### Download from:
+        1) https://github.com/Doorda/doorda-python-sdk/releases
+        2) git clone git@github.com:doorda/doorda-python-sdk.git
+        
+        #### Install
+        ```bash
+        python setup.py install
+        ```
+        
+        ## Usage
+        
+        ### DoordaHost
+        
+        1) Connect to database
+            ```python
+            from doorda_sdk.host import client
+        
+            
+            conn = client.connect(user="username",
+                                  password="password",
+                                  catalog="catalog_name",
+                                  schema="schema_name")
+            cursor = conn.cursor()
+            ```
+        
+        2) Execute Queries
+            ```python
+            
+            cursor.execute("SELECT * FROM table_name")
+            
+            # Fetch all results
+            rows = cursor.fetchall()
+            
+            # Fetch one results
+            rows = cursor.fetchone()
+            
+            # Fetch multiple results
+            rows = cursor.fetchmany(size=10)
+            
+            # Get list of column names
+            cursor.col_names()
+            
+            # Get column names mapped to data types
+            cursor.col_types()
+            ```
+        
+        3) Simplified Functions
+        
+            ```python
+            
+            # Check database connection
+            
+            results = cursor.is_connected()
+            
+            # List all catalogs
+            rows = cursor.show_catalogs()
+            
+            # Get number of rows
+            rows = cursor.table_stats(catalog="catalog_name", 
+                                      schema="schema_name",
+                                      table="table_name")
+            ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
