@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nondjango-storages
+Version: 0.1.0
+Summary: nondjango-storages - Because the API is great but dependency on Django is not.
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Alan Justino da Silva
+Author-email: alan.justino@yahoo.com.br
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
