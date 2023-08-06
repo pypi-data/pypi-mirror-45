@@ -1,0 +1,11 @@
+README.md
+setup.py
+eip712_structs/__init__.py
+eip712_structs/domain_separator.py
+eip712_structs/struct.py
+eip712_structs/types.py
+eip712_structs.egg-info/PKG-INFO
+eip712_structs.egg-info/SOURCES.txt
+eip712_structs.egg-info/dependency_links.txt
+eip712_structs.egg-info/requires.txt
+eip712_structs.egg-info/top_level.txt
