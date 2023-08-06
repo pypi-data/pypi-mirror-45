@@ -1,0 +1,10 @@
+seagull/__init__.py,sha256=p-YnXfpVaNb3IIwAQ9MATkEIGspieTXGSfjyQVydHA8,142
+seagull/board.py,sha256=Gjv04DAXUFMhFfbWutQE5-qT0YpmqoebuFFhIImbnEc,1290
+seagull/simulator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seagull/automatons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seagull/automatons/base.py,sha256=IEJKiEh-C7Gpi31C1ZpPaeV5TiWGYwT5y26R2QNL4hM,674
+seagull/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyseagull-1.0.0a1.dist-info/METADATA,sha256=Vmr-Luqr_VDaj7kI7Iy2esgZh3hH91X2C1pDCxjiyXY,1329
+pyseagull-1.0.0a1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+pyseagull-1.0.0a1.dist-info/top_level.txt,sha256=ulTV1i067zSAqPksoh2DY0Fj4uyTAYXdsVfz12K4jJY,8
+pyseagull-1.0.0a1.dist-info/RECORD,,
