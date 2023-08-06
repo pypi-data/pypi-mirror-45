@@ -1,0 +1,11 @@
+openstock/__init__.py,sha256=Xl9t1nc6Fkl5u-ie19GxBfbiiayelGbZD5yzacvtZDQ,18
+openstock/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openstock/common/helpers.py,sha256=tMUwDSGcjYsqRX1n8jZd3-1-fHdMxqe-WEqovaA3BsU,85
+openstock/common/params.py,sha256=0n_PqCg764GYAXIH-NCdC56WpSGREm4lCcp3ezFt_bQ,192
+openstock/stock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openstock/stock/client.py,sha256=_FG2EnRHqxcJQbME0v22Gk8g5nCH8ph22IEVEeTPXI0,2689
+openstock-0.0.5.dist-info/LICENSE,sha256=WI5JtXXhjcqnIcPllDA1ZtuxNnZ515xjElcILo7z28o,1073
+openstock-0.0.5.dist-info/METADATA,sha256=y7CB22iEEvQU08unQItFTwwRzxpzVmIOdjlP15Yu8WI,1039
+openstock-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+openstock-0.0.5.dist-info/top_level.txt,sha256=tzxYdzAQjuZq58X9XEz2kB1hKZh0aHrM7IflmRgBvSk,10
+openstock-0.0.5.dist-info/RECORD,,
