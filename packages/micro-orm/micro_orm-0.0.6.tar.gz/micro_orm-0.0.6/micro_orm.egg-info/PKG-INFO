@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: micro-orm
+Version: 0.0.6
+Summary: A small orm for database uses, based on django ORM
+Home-page: https://github.com/RooYnnER/micro-orm
+Author: Royner Chavarría
+Author-email: roynercharo@hotmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
