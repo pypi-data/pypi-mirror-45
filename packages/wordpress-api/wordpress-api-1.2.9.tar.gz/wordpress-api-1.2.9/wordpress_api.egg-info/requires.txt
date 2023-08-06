@@ -1,0 +1,6 @@
+requests
+requests_oauthlib
+ordereddict
+beautifulsoup4
+lxml
+six
