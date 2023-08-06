@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyrvea
+Version: 0.1.0
+Summary: The python version reference vector guided evolutionary algorithm.
+License: MPL-2.0
+Author: Bhupinder Saini
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: diversipy (>=0.8.0,<0.9.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: optproblems (>=1.2,<2.0)
+Requires-Dist: pandas (>=0.24.2,<0.25.0)
+Requires-Dist: plotly (>=3.8,<4.0)
+Requires-Dist: pyDOE (>=0.3.8,<0.4.0)
+Requires-Dist: pygmo (>=2.10,<3.0)
+Requires-Dist: scipy (>=1.2,<2.0)
+Requires-Dist: tqdm (>=4.31,<5.0)
