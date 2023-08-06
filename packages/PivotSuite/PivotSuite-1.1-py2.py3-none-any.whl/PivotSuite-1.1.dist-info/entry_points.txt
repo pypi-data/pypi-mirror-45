@@ -1,0 +1,3 @@
+[console_scripts]
+pivotsuite = pivot_suite.pivotsuite:main
+

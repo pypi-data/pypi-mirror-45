@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PivotSuite
+Version: 1.1
+Summary: PivotSuite : A Network Pivoting Toolkit
+Home-page: https://github.com/RedTeamOperations/PivotSuite
+Author: Manish Gupta
+Author-email: admin@myhacker.online
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking
+
+A Network Pivoting Toolkit for Red Teamers / Penetration Testers. Visit for More Informations: https://github.com/RedTeamOperations/PivotSuite
+
+
