@@ -1,0 +1,14 @@
+README.md
+setup.py
+stop/__init__.py
+stop/canvas_object.py
+stop/fluid_var.py
+stop/project.py
+stop/scratch_math.py
+stop/sprite.py
+stop/sprite_canvas.py
+stop/sprite_code.py
+stop.egg-info/PKG-INFO
+stop.egg-info/SOURCES.txt
+stop.egg-info/dependency_links.txt
+stop.egg-info/top_level.txt
