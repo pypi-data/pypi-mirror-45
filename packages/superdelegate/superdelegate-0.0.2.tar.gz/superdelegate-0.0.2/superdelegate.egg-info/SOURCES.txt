@@ -1,0 +1,9 @@
+README.md
+setup.py
+superdelegate/__init__.py
+superdelegate/__version__.py
+superdelegate/tests.py
+superdelegate.egg-info/PKG-INFO
+superdelegate.egg-info/SOURCES.txt
+superdelegate.egg-info/dependency_links.txt
+superdelegate.egg-info/top_level.txt
