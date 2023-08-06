@@ -1,0 +1,11 @@
+README.md
+setup.py
+pypi_name_cli/__init__.py
+pypi_name_cli/__main__.py
+pypi_name_cli/checkname.py
+pypi_name_cli.egg-info/PKG-INFO
+pypi_name_cli.egg-info/SOURCES.txt
+pypi_name_cli.egg-info/dependency_links.txt
+pypi_name_cli.egg-info/entry_points.txt
+pypi_name_cli.egg-info/requires.txt
+pypi_name_cli.egg-info/top_level.txt
