@@ -1,0 +1,14 @@
+test_django_cookie_app/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+test_django_cookie_app/apps.py,sha256=IvZM1FRMyKnEbN9HnQoeeSqrmPafr4UBbX_rLFWL4Ag,136
+test_django_cookie_app/models.py,sha256=b682dbjl-enQtxFE24VYT7ORW6ho1ZlVMqA6UYpkqAQ,199
+test_django_cookie_app/urls.py,sha256=_OF4NOJDwxEOS5G7RwVl9_zyD8yX84Qjh04ofX8d4Fc,1475
+test_django_cookie_app/views.py,sha256=RKkNVfjopkB5mP4UsOvXEn2mQzd6WNA-NqFdBpQEljs,743
+test_django_cookie_app/static/css/test_django_cookie_app.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_django_cookie_app/static/js/test_django_cookie_app.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_django_cookie_app/templates/test_django_cookie_app/base.html,sha256=zzaUPjEgvwxg-Gn2rZ6gIMWphucmEGvAU_skUXJIcDA,661
+test_django_cookie_app-0.1.0.dist-info/AUTHORS.rst,sha256=K19Qqvmhu77BrX8giEVAE-Q0SeP4lBVFjN90V2eOYSA,167
+test_django_cookie_app-0.1.0.dist-info/LICENSE,sha256=pcdEQIm_61UviK8MI1fEfDSDp9Ic1N0BGPIiYgTx3ck,1080
+test_django_cookie_app-0.1.0.dist-info/METADATA,sha256=-c48jtFLBgr_eJYzMT9YPHYlKJneyn8mjiX73EY7NoQ,2579
+test_django_cookie_app-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+test_django_cookie_app-0.1.0.dist-info/top_level.txt,sha256=zdmnzCDb8leuIwkUueuuyKCZj-Q6nE3SQY7IYQXwA1A,23
+test_django_cookie_app-0.1.0.dist-info/RECORD,,
