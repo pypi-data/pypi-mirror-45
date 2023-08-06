@@ -1,0 +1,21 @@
+CHANGES
+=======
+
+* Fix 1: BaseQuery object has no attribute search
+* Update README
+
+0.1.1
+-----
+
+* Misc changes
+* Project restructure
+* Update README.md
+* Update requirements to include pbr
+
+0.1.0
+-----
+
+* First!
+* update .gitignore
+* Create README.md
+* Initial commit
