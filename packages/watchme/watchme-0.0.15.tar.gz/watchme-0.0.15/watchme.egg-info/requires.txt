@@ -1,0 +1,14 @@
+python-crontab>=2.3.6
+configparser>=3.5.3
+requests>=2.21.0
+
+[all]
+python-crontab>=2.3.6
+configparser>=3.5.3
+requests>=2.21.0
+
+[psutils]
+psutil>=5.4.3
+
+[urls-dynamic]
+beautifulsoup4>=4.6.0
