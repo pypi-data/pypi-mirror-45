@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: strict-interfaces
+Version: 0.1.2
+Summary: A new approach to interfaces in Python
+Home-page: https://github.com/lig/python-interfaces
+Author: Serge Matveenko
+Author-email: lig@countzero.co
