@@ -1,0 +1,191 @@
+CHANGES
+=======
+
+3.0.1
+-----
+
+* Replace openstack.org git:// URLs with https://
+* import zuul job settings from project-config
+* Fix Zaqar-ui with wrong reference pbr version
+* Fix queue create/update without metadata modification
+* Fix js test
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Update UPPER\_CONSTRAINTS\_FILE for stable/pike
+* Update .gitreview for stable/pike
+
+3.0.0
+-----
+
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Imported Translations from Zanata
+
+3.0.0.0b3
+---------
+
+* Add release notes for Pike
+* Fix view messages dialog
+* Updated from global requirements
+* Use pbr autodoc feature rather than custom logic
+* Rearrange existing documentation to fit the new standard layout
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Imported Translations from Zanata
+* Switch from oslosphinx to openstackdocstheme
+* Updated from global requirements
+* Improve docs build
+* Rename pool-flavors module
+* Clean up doc/ and releasenotes/
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Fix translate tag
+* hacking: Specify white list rules in noqa explicity
+* ignore nose test results
+* fix translation extraction
+
+3.0.0.0b2
+---------
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Add signed url action for queue
+* Support post messages and get messages
+* Updated from global requirements
+* Add 'rm -f .testrepository/times.dbm' command in testenv
+* Updated from global requirements
+* Imported Translations from Zanata
+* Use common Angular view for Queues panel
+* Refresh test environment
+* Updated from global requirements
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+
+3.0.0.0b1
+---------
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Support purge queue
+* Updated from global requirements
+* Update to a newer hacking library
+* Support subscriptoin age and confirmed
+* Better looking to show the queue metadata
+* Fix queue metadata update issue
+* Fix filter that doesn't work properly
+* Fix deletion of subscriber
+* Updated from global requirements
+* Clean imports in code
+* Imported Translations from Zanata
+* Update reno for stable/ocata
+* Imported Translations from Zanata
+
+2.0.0
+-----
+
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Add CRUD actions for pool flavor
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+
+2.0.0.0b3
+---------
+
+* Add CRUD actions for pool
+* Imported Translations from Zanata
+* Add release notes for initAction
+* Updated from global requirements
+* Add reno for releasenotes management
+* Add pool flavors panel into admin dashboard
+* Add pools panel into admin dashboard
+* Add REST APIs for pools and flavors
+
+2.0.0.0b2
+---------
+
+* Use initAction instead initScope
+* Updated from global requirements
+* Show team and repo badges on README
+* Remove mox in zaqar\_ui/test/helpers.py
+
+2.0.0.0b1
+---------
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Change "Openstack" to "OpenStack"
+* Imported Translations from Zanata
+* Updated from global requirements
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Add .mo to .gitignore
+* Add Apache 2.0 license to source file
+* Enable test coverage for python in tox
+* Fix eslint errors
+* Setup JavaScript test environment
+* Update homepage with developer documentation page
+* Remove \*openstack/common\* in flake8 exclude list
+* Setup python test environment
+
+1.0.0
+-----
+
+* Imported Translations from Zanata
+
+1.0.0.0b3
+---------
+
+* Updated from global requirements
+* Use upper constraints for all jobs in tox.ini
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* fix use of Horizon's registration service
+
+1.0.0.0b2
+---------
+
+* Subscriber form validation
+* Queue and Subscriptions file renames
+* Imported Translations from Zanata
+* Ability to add and remove subscriptions
+* Imported Translations from Zanata
+* Fix typo
+* Remove obsolote pot files
+* Fix translation setup
+* Add subscriptions API piece
+* Removing unnecessary requirements
+* Replace deprecated library function os.popen() with subprocess
+* tox tests should respect upper-constraints.txt
+* Remove py27dj17 from tox.ini
+* Deprecated tox -downloadcache option removed
+* Remove version number to fix build
+* Add DevStack plugin settings
+* Fix styles of table views
+* Add update queue action
+* New queues does not display message count
+* Update use of action registration service
+* Removed batch action service
+* Remove unused pngmath Sphinx extension
+* Ability to delete queues
+* Enable auto discovery
+* Queues create wizard
+* Update URLs to Django 1.8 style
+* Fix H405 violations
+* Add queues API and table
+* Fixes test settings
+* Fix installation instruction in README.rst
+* Re-enabling checkout and small fixes
+* Zaqar-ui base project with empty queues panel
+* Added .gitreview
