@@ -1,0 +1,2 @@
+trio
+trio-typing>=0.2.0
