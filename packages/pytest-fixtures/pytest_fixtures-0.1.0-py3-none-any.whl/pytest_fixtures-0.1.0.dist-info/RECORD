@@ -1,0 +1,8 @@
+fixtures/__init__.py,sha256=XHoVNQv03saampWQEiNSMPXNW36A_8kaKi5_Ear7i_k,1652
+fixtures/click.py,sha256=Q7jZImT5_0xvOXvs_kq0ABHuCARHNiANCwNOluEy2rI,1826
+pytest_fixtures-0.1.0.dist-info/LICENSE,sha256=BDHKYCIf8WtTJIlu_cdWVgPhsZLyG0kuipPg5m0Iz1k,1066
+pytest_fixtures-0.1.0.dist-info/METADATA,sha256=DA_DPi6qqAHo8jTgKqvVDUm4MSMvbIxZ4YKBrQVHwik,3076
+pytest_fixtures-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pytest_fixtures-0.1.0.dist-info/entry_points.txt,sha256=BLyYJwdvU68Ye16z8Y_ZjuV909Rk7lIvcZQwq_yiNZo,55
+pytest_fixtures-0.1.0.dist-info/top_level.txt,sha256=BYH9bxzMvEsp8-zq3xCPXxnMhqfbGP74WwbbdoibIRI,9
+pytest_fixtures-0.1.0.dist-info/RECORD,,
