@@ -1,0 +1,8 @@
+num2words
+py-marytts
+py-picotts
+py-espeak-ng
+py-kaldi-asr
+numpy
+webrtcvad
+setproctitle
