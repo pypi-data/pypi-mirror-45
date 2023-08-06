@@ -1,0 +1,1 @@
+https://labjack.com/sites/default/files/software/Python_LJM_2018_10_19.zip#egg=LJMPython-1.19.0
