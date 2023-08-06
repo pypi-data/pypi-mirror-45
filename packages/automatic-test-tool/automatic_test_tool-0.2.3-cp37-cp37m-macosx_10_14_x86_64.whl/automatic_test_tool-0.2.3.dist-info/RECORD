@@ -1,0 +1,9 @@
+automatic_test_tool-0.2.3.data/purelib/automatic_test_tool/__init__.py,sha256=yuey5QWQFWRAahwyQ-jkCJUre282FAfnZ7TJTR1LaRU,54
+automatic_test_tool-0.2.3.data/purelib/automatic_test_tool/_base_page.cpython-37m-darwin.so,sha256=AG9RvFDRxnDWlaudtU6e1Lvt5P_pFM89n81dVusxItE,239556
+automatic_test_tool-0.2.3.data/purelib/automatic_test_tool/_custom_logger.cpython-37m-darwin.so,sha256=zZan2t_L15QyUHJ5ubW3_eQHTR9aO_lYmDwi_5bMWps,49400
+automatic_test_tool-0.2.3.data/purelib/automatic_test_tool/_util.cpython-37m-darwin.so,sha256=M-Uv2ORwVtaM92YYqEMUDBlEN912yJlRGniSqlmnt6I,125988
+automatic_test_tool-0.2.3.data/purelib/automatic_test_tool/test_case.py,sha256=_qUqy-Mf7AgDOan7YI9HU3o1zdX94OmaEYUgWRaxu0Y,3656
+automatic_test_tool-0.2.3.dist-info/METADATA,sha256=0lWi1tgkPEvzeJGxY_uHpH4aTQoorXeLH46EkJd95UU,763
+automatic_test_tool-0.2.3.dist-info/WHEEL,sha256=_uoWPaJXp5yifocrNR768t5d8yZtv3Vvo6JhoyR73JI,111
+automatic_test_tool-0.2.3.dist-info/top_level.txt,sha256=sz9RmWluIBA9M_nUnDQPhrGZL947B9PRxzH3uX5UXmU,20
+automatic_test_tool-0.2.3.dist-info/RECORD,,
