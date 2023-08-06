@@ -1,0 +1,10 @@
+README.md
+setup.py
+ldaa/__init__.py
+ldaa/generator.py
+ldaa/ldaa.py
+ldaa.egg-info/PKG-INFO
+ldaa.egg-info/SOURCES.txt
+ldaa.egg-info/dependency_links.txt
+ldaa.egg-info/requires.txt
+ldaa.egg-info/top_level.txt
