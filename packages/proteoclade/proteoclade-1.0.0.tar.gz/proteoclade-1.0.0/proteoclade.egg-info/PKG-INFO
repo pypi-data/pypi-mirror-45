@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: proteoclade
+Version: 1.0.0
+Summary: Package for taxon-specific bottom-up proteomics
+Home-page: https://github.com/heldlab/proteoclade
+Author: Arshag Mooradian
+Author-email: mooradian@wustl.edu
+License: UNKNOWN
+Description: # ProteoClade
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
