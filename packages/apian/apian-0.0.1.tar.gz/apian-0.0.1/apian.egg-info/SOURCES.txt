@@ -1,0 +1,9 @@
+README.md
+VERSION
+setup.cfg
+setup.py
+apian.egg-info/PKG-INFO
+apian.egg-info/SOURCES.txt
+apian.egg-info/dependency_links.txt
+apian.egg-info/requires.txt
+apian.egg-info/top_level.txt
