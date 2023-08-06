@@ -1,0 +1,8 @@
+txlog/__init__.py,sha256=f2WRexxFOQDstxriThNxuR2f9ml13aN5Lf808vL3iRU,311
+txlog/txlog.py,sha256=cHkXOz8sLgPD_ouNCNmPzqm0fG00PVmX5fVC3DGqGv0,6413
+txlog/utils.py,sha256=ZkU8ZzWfRS5ZGxhtArwhN5vW2i0ypZ1MjB1qWZJllas,993
+txlog-0.0.0.20a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+txlog-0.0.0.20a0.dist-info/METADATA,sha256=pN3Js27R0goEYLjjiikFskhlmCUUP11sWgasy-T9Ud0,720
+txlog-0.0.0.20a0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+txlog-0.0.0.20a0.dist-info/top_level.txt,sha256=dloAPVrAChKr-X0CrdmNAo6xjH9B3NmFXbmHTQ3v1LI,6
+txlog-0.0.0.20a0.dist-info/RECORD,,
