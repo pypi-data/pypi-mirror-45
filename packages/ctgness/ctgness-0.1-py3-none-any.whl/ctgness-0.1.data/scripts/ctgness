@@ -1,0 +1,120 @@
+#!python
+
+echo "Contagiousness package"
+
+import pandas as pd
+import json
+from nltk.tokenize import word_tokenize
+from nltk.corpus import wordnet
+from nltk.corpus.reader.wordnet import WordNetError
+from nltk.stem import WordNetLemmatizer
+from stop_words import get_stop_words
+import string
+
+
+def count_words(s):
+    return len(s)
+
+def read_file(file_format, file):
+    if file_format == 'xls':
+        return pd.read_excel(file)
+    if file_format == 'json':
+        with open(file, encoding='utf-8') as f:
+            return f.read()
+
+def load_json(json_data):
+        if json_data[0] != '\x00':
+            return json.loads(json_data)
+        else:
+            return '0'
+        
+# Tokenize
+def tokenize(s):
+    return word_tokenize(str(s).lower())
+
+# remove non printable characters
+def remove_non_printable(s):
+    printable = set(string.printable)
+    printable_sentence = []
+    for w in s:
+        for i in range(0, len(w)): 
+            if w[i] not in printable:
+                break
+            if i+1 == len(w):
+                printable_sentence.append(w)
+    return printable_sentence
+
+# remove punctuation
+def remove_punctuation(s):
+    punctuation = set(string.punctuation)
+    sentence_without_punctuation = []
+    for w in s:
+        for i in range(0, len(w)): 
+            if w[i] in punctuation:
+                break
+            if i+1 == len(w):
+                sentence_without_punctuation.append(w)
+    return sentence_without_punctuation
+
+# remove digits
+def remove_digits(s):
+    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    sentence_without_digits = []
+    for w in s:
+        for i in range(0, len(w)): 
+            if w[i] in digits:
+                break
+            if i+1 == len(w):
+                sentence_without_digits.append(w)
+    return sentence_without_digits
+
+# remove non english words
+def remove_non_english_words(s):
+    sentence_without_non_english_words = []
+    for w in s:
+        try:
+            if not wordnet.synsets(w):
+                continue
+            sentence_without_non_english_words.append(w)
+        except WordNetError:
+            continue
+    return sentence_without_non_english_words
+
+def preprocessor_pipeline(s):
+    return remove_non_english_words(remove_digits(remove_punctuation(remove_non_printable(tokenize(s))))) 
+
+def cleaning(dataframe_to_clean, columns = ['title', 'text']):
+    dataframe_to_clean = dataframe_to_clean.drop_duplicates()
+    if 'title' in columns:
+        dataframe_to_clean['title'] = dataframe_to_clean['title'].map(preprocessor_pipeline)
+    if 'text' in columns:
+        dataframe_to_clean['text'] = dataframe_to_clean['text'].map(preprocessor_pipeline)
+    return dataframe_to_clean
+
+# remove short words
+def remove_short_words(s):
+    sentence_without_short_words = []
+    for w in s: 
+        if len(w) < 3:
+            continue
+        sentence_without_short_words.append(w)
+    return sentence_without_short_words
+
+# remove stop words
+def remove_stop_words(s):
+    stop_words = get_stop_words('en')
+    sentence_without_stop_words = []
+    for w in s: 
+        if w in stop_words:
+            continue
+        sentence_without_stop_words.append(w)
+    return sentence_without_stop_words
+
+# Lemmatize 
+def lemmatize(s):
+    lemmatizer = WordNetLemmatizer()
+    return lemmatizer.lemmatize(' '.join(s)).split(' ')
+
+def preprocessor_second_pipeline(s):
+    return lemmatize(remove_short_words(remove_stop_words(s)))
+
