@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: muni-is-api
+Version: 0.1
+Summary: IS MUNI API Client
+Home-page: https://gitlab.fi.muni.cz/grp-kontr2/is-api
+Author: Peter Stanko
+Author-email: stanko@mail.muni.cz
+Maintainer: Peter Stanko
+License: UNKNOWN
+Description: # IS MUNI API python wrapper
+        
+        
+        ## Getting Started
+        
+        
+        
+        ### Prerequisites
+        
+        - requires Python 3.6 or higher
+        
+        ### Install
+        
+        - Using PIP:
+        [source, sh]
+        ----
+        pip install https://gitlab.fi.muni.cz/grp-kontr2/is-api.git
+        ----
+        
+        - Using Pipenv
+        [source, sh]
+        ----
+        pipenv install https://gitlab.fi.muni.cz/grp-kontr2/is-api.git
+        ----
+        
+        ## Examples
+        
+        [source, python]
+        ----
+        # TBD
+        ----
+        
+        ## Development
+        
+        TBD
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs

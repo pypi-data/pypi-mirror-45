@@ -1,0 +1,11 @@
+requests
+lxml
+
+[dev]
+pytest
+coverage
+mock
+responses
+
+[docs]
+sphinx
