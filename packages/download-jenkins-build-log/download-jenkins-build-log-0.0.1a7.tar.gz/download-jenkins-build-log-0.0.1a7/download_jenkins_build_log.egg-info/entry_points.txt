@@ -1,0 +1,3 @@
+[console_scripts]
+download-jenkins-build-log = DownloadJenkinsBuildLog.downloader:main
+
