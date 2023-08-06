@@ -1,0 +1,24 @@
+name: intake-esm-dev
+channels:
+  - conda-forge
+dependencies:
+  - codecov
+  - coverage
+  - dask
+  - distributed
+  - git
+  - intake
+  - intake-xarray
+  - ipykernel
+  - netcdf4
+  - numpy
+  - pip
+  - pre_commit
+  - pytest
+  - pytest-cov
+  - pytest-icdiff
+  - python=3.6
+  - pytoml
+  - pyyaml
+  - tqdm
+  - xarray
