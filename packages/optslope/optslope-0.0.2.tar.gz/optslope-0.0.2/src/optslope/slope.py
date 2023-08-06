@@ -1,0 +1,151 @@
+# The MIT License (MIT)
+#
+# Copyright (c) 2018 Institute for Molecular Systems Biology, ETH Zurich.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+from copy import deepcopy
+from itertools import combinations
+from typing import Iterable
+
+import numpy as np
+import pandas as pd
+from cobra.core import model
+from optlang.interface import OPTIMAL
+
+EPSILON = 1e-4
+
+
+def calculate_slope(
+        wt_model: model,
+        knockouts: Iterable[str],
+        carbon_sources: Iterable[str],
+        target_reaction: str
+) -> float:
+    """Calculate the slope for a specific combination of KOs and CSs
+
+    :param wt_model: The wild-type model
+    :param knockouts: a list of knockouts
+    :param carbon_sources: a list of carbon sources (that all are provided
+    together)
+    :param target_reaction: the target reaction we wish to couple to growth
+    :return: the slope (i.e. the ratio of target flux to biomass flux required)
+    """
+
+    # we clone the model so we don't change the original object when we knock
+    # out stuff
+    ko_model = deepcopy(wt_model)
+
+    for ko in knockouts:
+        for k in ko.split('|'):
+            ko_model.reactions.get_by_id(k).knock_out()
+
+    for cs in carbon_sources:
+        ko_model.reactions.get_by_id("EX_" + cs + "_e").lower_bound = -1000
+
+    rxn_target = ko_model.reactions.get_by_id(target_reaction)
+
+    # First, try to see if growth depends on the target at all. If there is
+    # growth without it, the slope is 0
+    rxn_target.bounds = (0, 0)
+    solution = ko_model.optimize()
+    if solution.status == OPTIMAL and solution.objective_value > EPSILON:
+        return 0.0
+
+    rxn_target.bounds = (1.0 - EPSILON, 1.0 + EPSILON)
+    solution = ko_model.optimize()
+
+    # If even with the target reaction on, we still can't find solutions
+    # then the slope is undefined
+    if solution.status != OPTIMAL or solution.objective_value < EPSILON:
+        return np.nan
+
+    slope = 1.0 / solution.objective_value
+    return slope
+
+
+def calculate_slope_multi(
+        wt_model: model,
+        carbon_sources: Iterable[str],
+        single_knockouts: Iterable[str],
+        target_reaction: str,
+        max_knockouts: int,
+        verbose:bool = False
+) -> pd.DataFrame:
+    """Calculates the slope for multiple knockouts.
+
+    :param wt_model: The wild-type model
+    :param carbon_sources: a list of carbon sources (that all are provided
+    together)
+    :param single_knockouts: a list of single knockouts
+    :param target_reaction: the target reaction we wish to couple to growth
+    :param max_knockouts: the maximum number of single knockouts to test in
+    each combination
+    :return: a DataFrame with all the slopes of the knockout combinations
+    """
+
+    carbon_sources = tuple(carbon_sources)
+    data = []
+    for n_kos in range(max_knockouts + 1):
+        for knockouts in combinations(single_knockouts, n_kos):
+            slope = calculate_slope(wt_model, knockouts, carbon_sources,
+                                    target_reaction)
+            if verbose:
+                print(f"{knockouts}; {carbon_sources} : {slope:.2f}")
+            data.append((knockouts, carbon_sources, slope))
+
+    return pd.DataFrame(data=list(data), columns=["knockouts",
+                                                  "carbon_sources",
+                                                  "slope"])
+
+
+def filter_redundant_knockouts(df):
+    df = df.pivot("carbon_sources", "knockouts", "slope")
+
+    # only keep columns (knockouts) with at least one positive slope
+    df = df.loc[:, (df > EPSILON).any(axis=0)]
+
+    redundant_kos = set()
+    smallest_slopes = []
+    highest_slopes = []
+
+    for ko_set in df.columns:
+        # iterate through all the subsets to see if there is one with the
+        # same yield and slope
+        smallest_slopes.append(df[ko_set][df[ko_set] > 0].min())
+        highest_slopes.append(df[ko_set].max())
+
+        for ko_subset in [tuple(subset)
+                          for n_kos in range(len(ko_set))
+                          for subset in combinations(ko_set, n_kos)]:
+            if ko_subset not in df.columns:
+                continue
+            if (df[ko_subset] == df[ko_set]).all(axis=0):
+                redundant_kos.add(ko_set)
+                break
+
+    # add another row for the smallest non-zero slope achieved by each KO
+    df = df.transpose()
+    df['smallest_slope'] = smallest_slopes
+    df['highest_slope'] = highest_slopes
+    df['slope_ratio'] = df['highest_slope'] / df['smallest_slope']
+    df['no_knockouts'] = df.index.map(len)
+
+    df.drop(redundant_kos, axis=0, inplace=True)
+
+    return df.sort_values(['smallest_slope', 'no_knockouts'])
