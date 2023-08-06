@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+web2pandas.egg-info/PKG-INFO
+web2pandas.egg-info/SOURCES.txt
+web2pandas.egg-info/dependency_links.txt
+web2pandas.egg-info/entry_points.txt
+web2pandas.egg-info/requires.txt
+web2pandas.egg-info/top_level.txt
+webscrppandas/web2pd.py
