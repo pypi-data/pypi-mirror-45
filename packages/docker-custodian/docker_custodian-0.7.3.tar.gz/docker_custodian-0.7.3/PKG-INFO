@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: docker_custodian
+Version: 0.7.3
+Summary: Keep docker hosts tidy.
+Home-page: UNKNOWN
+Author: Daniel Nephin
+Author-email: dnephin@yelp.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides: docker_custodian

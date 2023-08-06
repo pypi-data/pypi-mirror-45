@@ -1,0 +1,13 @@
+README.rst
+setup.py
+docker_custodian/__about__.py
+docker_custodian/__init__.py
+docker_custodian/args.py
+docker_custodian/docker_autostop.py
+docker_custodian/docker_gc.py
+docker_custodian.egg-info/PKG-INFO
+docker_custodian.egg-info/SOURCES.txt
+docker_custodian.egg-info/dependency_links.txt
+docker_custodian.egg-info/entry_points.txt
+docker_custodian.egg-info/requires.txt
+docker_custodian.egg-info/top_level.txt

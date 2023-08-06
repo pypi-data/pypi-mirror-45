@@ -1,0 +1,4 @@
+[console_scripts]
+dcgc = docker_custodian.docker_gc:main
+dcstop = docker_custodian.docker_autostop:main
+
