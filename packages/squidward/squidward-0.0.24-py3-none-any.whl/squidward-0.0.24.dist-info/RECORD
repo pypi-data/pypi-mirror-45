@@ -1,0 +1,14 @@
+squidward/__init__.py,sha256=H_7rzXzuzR5KWGZeZkLE7Scr3W6bYlMlwhNsYksEaCQ,182
+squidward/gpc.py,sha256=WZ5TU7S69rXjeBLAsjiI1NSV6jM_OsiSdhOj0STks78,9565
+squidward/gpr.py,sha256=d9DnSsue4Jp-IivHEmGVNfbD_hhSZrCLTV4QYa34Gnk,15666
+squidward/utils.py,sha256=mWsneH9m0JyIAxWDlJYmOSXacR6DPWeSEThWzKzwdiY,8519
+squidward/validation.py,sha256=_mSMohz2Kdqx99kydpBX4IjjgoCbOIPKMLxhZZPvSfo,1777
+squidward/kernels/__init__.py,sha256=zbhQ7TFkJb8lCcl5zIWy2PVMGgmZldzi6B_7aNje_nc,203
+squidward/kernels/distance.py,sha256=rR1AAxMDheKvqUCMsxpaUjyMjWc02ui6y83Hshirj4g,3641
+squidward/kernels/kernel_base.py,sha256=rGXwEaxhODu8sR9imUz_zSzuEiwnTs3KTNT8dfEg_00,3503
+squidward/kernels/optimized_kernels.py,sha256=WyilSoF7V52Ga-z71jHC1dI6DN5emrEvINpuybZ7v1k,2515
+squidward-0.0.24.dist-info/LICENSE.md,sha256=pBrL_Zo8_XC51FJHHPpKXaXG969t6GNjaT5GYUBEEbk,1056
+squidward-0.0.24.dist-info/METADATA,sha256=630-dM3v87o2iVMHIUJpQsmztmTnacwr9MtJ9NljRuE,6147
+squidward-0.0.24.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+squidward-0.0.24.dist-info/top_level.txt,sha256=n7zibK129KcX2-2bxdK7OKtrXZzFs2u4292bQU0m-Lw,10
+squidward-0.0.24.dist-info/RECORD,,
