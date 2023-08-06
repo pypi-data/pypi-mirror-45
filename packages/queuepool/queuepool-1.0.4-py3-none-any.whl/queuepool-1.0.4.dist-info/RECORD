@@ -1,0 +1,10 @@
+queuepool/__init__.py,sha256=yOzGtoN4oyL-RL3arIioAO8eyMipWEaCkrEEFCm408Y,1819
+queuepool/pool.py,sha256=Dp1yNKHucyxoAgkWdun3ezsN6uuB3RZshOxaouJoQrc,5971
+queuepool/psycopg2cm.py,sha256=UWZ4abCug7QMHUnZOX2KmVUg3ncmiy_161cEHN3erjM,3925
+queuepool/psycopg2cm_tests.py,sha256=yhCvxli1ksCZiRevPIDraf0WiezMqgQX6HyoLJ6mhIg,4437
+queuepool-1.0.4.dist-info/AUTHORS,sha256=5pwF1kxPehOprqC0GSYSmX9N5BSud1aDRs27JBlKtD0,50
+queuepool-1.0.4.dist-info/LICENSE,sha256=TtZW0Vta1gMXSIg3oqQt4Fcc3oscO66-5e52W6H72UA,1559
+queuepool-1.0.4.dist-info/METADATA,sha256=o5do9kON_UyzBfnj7PRE3-dv5bMx-yjD90HyQsUfZ68,3203
+queuepool-1.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+queuepool-1.0.4.dist-info/top_level.txt,sha256=ALDLNgGiblwNjAkAiVCWxDue7OYKsE-4umc3OKn3bpQ,10
+queuepool-1.0.4.dist-info/RECORD,,
