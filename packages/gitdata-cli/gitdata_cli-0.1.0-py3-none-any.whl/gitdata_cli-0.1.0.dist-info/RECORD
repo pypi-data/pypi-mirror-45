@@ -1,0 +1,14 @@
+gitdata/__init__.py,sha256=4bVJnwrWUU9HoY6TI9NWqfv5E2eqyfyFXZqPxMG1dyI,44
+gitdata/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitdata/__version__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+gitdata/database.py,sha256=_d__0cY8yhcbLaqd2pHpxxjDMyilrzrB_b43Vm1AUgQ,30
+gitdata/repositories.py,sha256=nPcgUt2Co-3x0-LbylQUQtE2SvTpBRqGYIVMHugS2e0,1524
+gitdata/utils.py,sha256=577OnvAdFD6JPOdDjvdUyTnijN-AgGmdgo4h5XF7BZc,319
+gitdata/cli/__init__.py,sha256=vkQYnkqwGo7c2fYVXV5WUag4LmRB099gEwSKd2yAe38,47
+gitdata/cli/cli.py,sha256=_tFEJamV-MMwks-3RS0E7rpUi-2bRNNA_A5ymDN2ejg,1122
+gitdata/sql/create_respository_sqlite3.sql,sha256=I31sTIy3xZG2dYqCTxYdR820LegkQlgQqaUbkCcXi-k,438
+gitdata_cli-0.1.0.dist-info/METADATA,sha256=9YVB82Dz8XDCrtpYr77-9Pf3xVAuKC_i5QrCaYH4js8,1919
+gitdata_cli-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gitdata_cli-0.1.0.dist-info/entry_points.txt,sha256=G0DdRVmkjD7ppscdmFstPb5jZorvzSyRNCwkJKxVJi4,46
+gitdata_cli-0.1.0.dist-info/top_level.txt,sha256=mzPZbk7wtEvRvtLeDoQMbKJnHxt0LyXRsv9ytpFXyv0,8
+gitdata_cli-0.1.0.dist-info/RECORD,,
