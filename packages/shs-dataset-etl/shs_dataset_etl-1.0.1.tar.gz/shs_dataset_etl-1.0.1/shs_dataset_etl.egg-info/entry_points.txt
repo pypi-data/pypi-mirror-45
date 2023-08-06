@@ -1,0 +1,3 @@
+[console_scripts]
+shs_dataset_etl = shs_dataset_etl.cli:main
+

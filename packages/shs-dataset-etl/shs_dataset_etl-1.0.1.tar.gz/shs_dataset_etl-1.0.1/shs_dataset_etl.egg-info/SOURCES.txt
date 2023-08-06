@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+shs_dataset_etl/__init__.py
+shs_dataset_etl/args.py
+shs_dataset_etl/cli.py
+shs_dataset_etl/test.py
+shs_dataset_etl.egg-info/PKG-INFO
+shs_dataset_etl.egg-info/SOURCES.txt
+shs_dataset_etl.egg-info/dependency_links.txt
+shs_dataset_etl.egg-info/entry_points.txt
+shs_dataset_etl.egg-info/requires.txt
+shs_dataset_etl.egg-info/top_level.txt
+shs_dataset_etl/data/dataset.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: shs-dataset-etl
+Version: 1.0.1
+Summary: SHS dataset ETL.
+Home-page: https://github.com/pavelnyaga/shs_dataset_etl
+Author: Pavel Nyaga
+Author-email: pavel.nyaga@gmail.com
+License: MIT
+Description: # shs_dataset_etl
+        simple etl in python
+        
+Keywords: etl
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

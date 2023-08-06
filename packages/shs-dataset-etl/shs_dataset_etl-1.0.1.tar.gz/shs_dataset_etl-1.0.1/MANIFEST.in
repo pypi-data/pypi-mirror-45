@@ -1,0 +1,2 @@
+include README.md
+include shs_dataset_etl/data/dataset.txt
