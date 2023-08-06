@@ -1,0 +1,13 @@
+README.txt
+setup.py
+django_deploy_templates/__init__.py
+django_deploy_templates/apps.py
+django_deploy_templates/tests.py
+django_deploy_templates.egg-info/PKG-INFO
+django_deploy_templates.egg-info/SOURCES.txt
+django_deploy_templates.egg-info/dependency_links.txt
+django_deploy_templates.egg-info/requires.txt
+django_deploy_templates.egg-info/top_level.txt
+django_deploy_templates/management/__init__.py
+django_deploy_templates/management/commands/__init__.py
+django_deploy_templates/management/commands/generate_config.py
