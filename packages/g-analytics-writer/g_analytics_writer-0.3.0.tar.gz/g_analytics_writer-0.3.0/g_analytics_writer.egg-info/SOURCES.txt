@@ -1,0 +1,17 @@
+CHANGES.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+g_analytics_writer/__init__.py
+g_analytics_writer/pyramid_integration.py
+g_analytics_writer.egg-info/PKG-INFO
+g_analytics_writer.egg-info/SOURCES.txt
+g_analytics_writer.egg-info/dependency_links.txt
+g_analytics_writer.egg-info/not-zip-safe
+g_analytics_writer.egg-info/requires.txt
+g_analytics_writer.egg-info/top_level.txt
+g_analytics_writer/tests/__init__.py
+g_analytics_writer/tests/pyramid_integration.py
+g_analytics_writer/tests/writing.py

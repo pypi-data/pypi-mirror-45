@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: g_analytics_writer
+Version: 0.3.0
+Summary: Lightweight Google Analytics support
+Home-page: https://github.com/jvanasco/g_analytics_writer
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: g_analytics_writer gives lightweight support for writing optimized "Google Analytics" tracking code for those times when you need to use The Great Satan, even though you would prefer not to.
+        
+Keywords: web pyramid google analytics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
