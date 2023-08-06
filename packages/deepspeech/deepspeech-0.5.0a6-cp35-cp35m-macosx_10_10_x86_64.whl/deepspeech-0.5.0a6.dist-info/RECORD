@@ -1,0 +1,10 @@
+deepspeech/__init__.py,sha256=EmzG5t-MVUgmqngRkGqzKgJf9x-tJGB9tJMERHwV9IM,2254
+deepspeech/_impl.cpython-35m-darwin.so,sha256=iKEKDYbfqV-S3qSZKJddMD16q1SN7uUE9Tl3Ie5YIio,81040
+deepspeech/client.py,sha256=tgs6n9o_sFVOyfnP4WPZnI3cJbHqFA7XYnhGOIRPDa8,4632
+deepspeech/impl.py,sha256=7B5-7XOb_ahOQa_VBzBKjfscf5qdRANw4_YEqO3nEYQ,8005
+deepspeech/lib/libdeepspeech.so,sha256=hTXhK9NsmfcC4gyE94hBXdR9fYYMRg6Ytyds1uIAWQ8,145889980
+deepspeech-0.5.0a6.dist-info/METADATA,sha256=zYXuq1XvK7t7sb7AYh8axcOlStEaH0syX6LK91sKI4M,25489
+deepspeech-0.5.0a6.dist-info/RECORD,,
+deepspeech-0.5.0a6.dist-info/WHEEL,sha256=OX0eh98b-jNNQaRWtOrSMZgSBfdAT_DMonqACa4eaww,111
+deepspeech-0.5.0a6.dist-info/entry_points.txt,sha256=2LA7LnK4cLU3QjZZzstFv-c9Uehkm1AN1-SgBs2Syf4,55
+deepspeech-0.5.0a6.dist-info/top_level.txt,sha256=B30ih_hZ1TGIRlPsXwDZMBh1XVkFt8cA0T5s3POEE9Q,11
