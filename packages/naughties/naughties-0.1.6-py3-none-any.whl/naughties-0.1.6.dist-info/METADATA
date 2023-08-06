@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: naughties
+Version: 0.1.6
+Summary: Fakers that return naughty strings.
+Home-page: UNKNOWN
+Author: Chad Estioco
+Author-email: chadestioco@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Faker (==0.8.16)
+
+UNKNOWN
+
+
