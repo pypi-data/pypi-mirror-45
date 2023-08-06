@@ -1,0 +1,13 @@
+FaceMap/__init__.py,sha256=o6KuemrMsnb5HS7AWyMl2ElU0yqPpHlxuaiev7Py6z4,36
+FaceMap/__main__.py,sha256=dh5EA_v_VImvr3pL_I55qOrHPlOAdgAl_Tq-Ytmn34Y,688
+FaceMap/facemap.py,sha256=zmsQlmJJIwpIm4889fledeRP-uFlMw8hjzL1DiI36mY,19448
+FaceMap/gui.py,sha256=YFpmusmWev_BAMCsfhIJriZN6q5fuX_FehJZ1MVawCI,42879
+FaceMap/mouse.png,sha256=S37A2Dx_FzBNr_p-lI5fmzhpcAGbTCwWRTnh5fivTRI,20382
+FaceMap/pupil.py,sha256=Lxnnf6w94H7OHt9UHvmOLs-y73Jc43-55eaPqjKDSDE,3193
+FaceMap/roi.py,sha256=le0uxymos7ApScGsVviksRiZ5LETHtUF_z2imCkjNCc,7266
+FaceMap/running.py,sha256=SYsu7OylVBwsV8OswCdjCw2vaMOcxCNh_ix1a7Be0gY,2815
+FaceMap/utils.py,sha256=THtwhHytXXQ_NofKYMCO9TNFHZnL6K8RRSsPY1jQFj4,507
+facemap-0.0.5.dist-info/METADATA,sha256=-aAeothRbWPSV-NrLFvM9E7-E_1QrqeHk8_MRTwDMGM,21225
+facemap-0.0.5.dist-info/RECORD,,
+facemap-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+facemap-0.0.5.dist-info/top_level.txt,sha256=VPm1Lpnqe3JTDsgLXrS-7xBtqSre4l3sRZOmdtNOOic,8
