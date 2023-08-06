@@ -1,0 +1,8 @@
+vcversioner
+Click
+attrs
+hypothesis
+python-dateutil
+
+[testing]
+pytest
