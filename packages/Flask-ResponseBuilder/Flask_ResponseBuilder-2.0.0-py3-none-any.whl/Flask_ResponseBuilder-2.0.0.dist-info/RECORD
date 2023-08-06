@@ -1,0 +1,15 @@
+flask_response_builder/__init__.py,sha256=dDjne0OrNNPKNPQttsrFgLIofKtbDo3qotP07x-c24Y,171
+flask_response_builder/builders.py,sha256=7bCO_SS_iTC8-06IKahL7dO2WG9IFjg9HwF2O4AWQAw,9664
+flask_response_builder/case_notation.py,sha256=P0340HvhVkfl1OxEwO-MwJk2plXG5s5BzfYt_IxAsy4,1857
+flask_response_builder/config.py,sha256=jopno_KAA5PF_90l65yUAy22ww1giYcJzmgs065HmFk,1573
+flask_response_builder/dictutils.py,sha256=aP5_k-RvHHuFDXWrkWZOMAV4hr3GKCxfCrLL19Ku4HQ,1937
+flask_response_builder/notations.py,sha256=XnMzavXHm1pu-BQ8_0_Skq0mdaiccYXHn50Q6AvZcro,1855
+flask_response_builder/response_builder.py,sha256=qhcIhODV5k_vQA1x50I9EBKNhbIPzwYD1ssSdr0yftg,6825
+flask_response_builder/transformers.py,sha256=P6k5mEvhL3TGyTW-fLszs7sk7H556Pu-kDNGWNyDJ4Y,4900
+flask_response_builder/version.py,sha256=sf_assq9NW3y4DzIjYTfRWJNTShrAAabefS8MHP-4w4,214
+flask_response_builder/wrapper.py,sha256=g1oJUD1lU9cYsinVOQ1Nfbt5nR914D80bbw3cfJU8M8,1141
+Flask_ResponseBuilder-2.0.0.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_ResponseBuilder-2.0.0.dist-info/METADATA,sha256=m8b0-9qeo-3Bmx-H5mkddVPTmKJbtnrfSl4uLegBKSg,3704
+Flask_ResponseBuilder-2.0.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_ResponseBuilder-2.0.0.dist-info/top_level.txt,sha256=T_FGlWQpyqoaqhIpoqQq7d5jQx3wWR39_70vmqyQs-U,23
+Flask_ResponseBuilder-2.0.0.dist-info/RECORD,,
