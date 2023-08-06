@@ -1,0 +1,6 @@
+[console_scripts]
+pipenv-run-py = execode.entry_points_console_scripts:pipenv_run_py
+pipenv-run-pym = execode.entry_points_console_scripts:pipenv_run_pym
+run-py = execode.entry_points_console_scripts:run_py
+run-pym = execode.entry_points_console_scripts:run_pym
+
