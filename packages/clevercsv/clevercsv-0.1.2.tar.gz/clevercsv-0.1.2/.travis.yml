@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.6"
+
+env:
+  - CC="gcc"
+
+install:
+  - pip install --upgrade pip
+  - pip install poetry
+  - cd python && poetry install && cd ..
+  - cd python && python setup.py build_ext --inplace && cd ..
+
+script:
+  - cd python && poetry run green -v ./tests/test_unit && cd ..
+
