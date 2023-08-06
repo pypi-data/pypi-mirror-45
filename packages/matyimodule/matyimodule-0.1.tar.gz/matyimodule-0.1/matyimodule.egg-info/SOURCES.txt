@@ -1,0 +1,8 @@
+setup.py
+matyimodule/__init__.py
+matyimodule/matyimodule.py
+matyimodule.egg-info/PKG-INFO
+matyimodule.egg-info/SOURCES.txt
+matyimodule.egg-info/dependency_links.txt
+matyimodule.egg-info/requires.txt
+matyimodule.egg-info/top_level.txt
