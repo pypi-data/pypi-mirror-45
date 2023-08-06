@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: yt-info
+Version: 0.0.1
+Summary: Fetch info from YouTube
+Home-page: https://github.com/superquartet/yt-info
+Author: superquartet
+Author-email: kubamolinski@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: yt-info
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: beautifulsoup4
+Requires-Dist: simplestruct
+
+UNKNOWN
+
+
