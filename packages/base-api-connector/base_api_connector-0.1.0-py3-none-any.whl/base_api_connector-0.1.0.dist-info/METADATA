@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: base-api-connector
+Version: 0.1.0
+Summary: Generic Connector so you can create simple and readable classes for accessing APIs.
+Home-page: https://github.com/I-K0haku-I/base-api-connector
+Author: Andreas Schäfer
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Base API Connector
+
+Inspired by Django's simplicity. 
+
+TODO: Add eample of how to use class
+
