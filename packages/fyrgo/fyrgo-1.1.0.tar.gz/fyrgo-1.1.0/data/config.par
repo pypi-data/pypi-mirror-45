@@ -1,0 +1,60 @@
+# Physical {
+AspectRatio     0.05      %comment1
+AdiabaticIndex  1.4       % comment2
+Adiabatic       No
+MdotValue       2e-8
+AlphaViscosity  0.003
+
+Disk            YES
+IndirectTerm    YES
+# }
+
+# Planets {
+PlanetConfig    ./fixjup_acc0.0.cfg
+RocheSmoothing  0.6              
+MassTaper       1e3              
+AccTaper        1e3
+ConsAcc         NO
+# }
+
+# Boundaries {
+UseOldBoundaries No
+InBound         Fixed
+Outbound        Fixed
+
+WavekillingMode Theo
+DampVelocities  Yes
+DampDensity     Yes
+
+DampingAmpIn    50.0
+DampingAmpOut   50.0
+# }
+
+# Numerical {
+Transport       FARGO            
+Frame           Fixed            
+# }
+
+# Mesh {
+Nrad            231              
+Nsec            628              
+Rmin            0.3              
+Rmax            3.0              
+RadialSpacing 	Logarithmic      
+# }
+
+
+# tracers {
+TracerConfig    ./tracers.cfg
+# }
+
+# optional {
+WriteTorque     Yes
+# }
+
+# Output {
+Ntot            5e3              
+Ninterm         50               
+DT              6.283185307179586
+OutputDir       .
+# }

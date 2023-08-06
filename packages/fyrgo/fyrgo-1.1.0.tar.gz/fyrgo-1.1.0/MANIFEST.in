@@ -1,0 +1,11 @@
+# local testing
+
+include tests/*.py
+include data/*dat
+include data/config.par
+include data/*.cfg
+
+
+# include demo script
+
+include doc/examples/*py

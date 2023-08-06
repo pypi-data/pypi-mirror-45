@@ -1,0 +1,8 @@
+# use Windows .ini formatting
+#
+# this format is based on fargOCA(ADC) as of (jan. 11 2018)
+
+[Planet Files]
+    planet : output x y vx vy mass time
+    orbit  : time e a M V perihelionPA
+    acc    : time mass color

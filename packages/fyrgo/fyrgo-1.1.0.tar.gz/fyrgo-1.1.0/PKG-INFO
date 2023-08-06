@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: fyrgo
+Version: 1.1.0
+Summary: Data frame and tools for FargOCA
+Home-page: https://gitlab.oca.eu/crobert/fyrgo
+Author: Clément Robert
+Author-email: clement.robert@oca.eu
+License: GNU
+Description: UNKNOWN
+Keywords: data analysis simulations
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
