@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: efp
+Version: 6.3.12
+Summary: 利用python封装了CTP的动态链接库，方便python的童鞋调用
+Home-page: https://github.com/datamgr/ptp
+Author: liu.changsheng
+Author-email: 19578602@qq.com
+License: LGPLv3
+
+1：ctp
+
+
