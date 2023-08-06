@@ -1,0 +1,52 @@
+==========================
+Joyous 0.8.2 release notes
+==========================
+
+.. contents::
+    :local:
+    :depth: 3
+
+
+What's new
+==========
+
+Wagtail 2.5
+~~~~~~~~~~~
+ * Support for Wagtail 2.5 (and Django 2.2).
+
+Postponement Page
+~~~~~~~~~~~~~~~~~
+ * Show cancellation details for postponement page in /from/ sub-view.
+
+Other features
+~~~~~~~~~~~~~~
+ * Include version number in calendar table tag.
+ * Add django admin interface.
+ * Restructured templates to use more inheritance and less inclusion.
+ * Refactor ByDayIterables using EventsByDayList.
+
+Bug fixes
+~~~~~~~~~
+ * |version| macro isn't working with ReadTheDocs, so hardcoded it.
+ * Fix display of Cancellations
+
+Upgrade considerations
+======================
+
+ThisEvent
+~~~~~~~~~
+The namedtuple ThisEvent now has this definition
+
+    .. code-block:: python
+
+        ThisEvent = namedtuple("ThisEvent", "title page url")
+
+The extra field, ``url``, is used to customise the url for an event.  This is
+used to link to the /from/ sub-vew of Postponement Pages.
+
+When unpacking the tuple you will have to include this field too, e.g.
+
+    .. code-block:: python
+
+        {% for title, page, url in evod.days_events %}
+
