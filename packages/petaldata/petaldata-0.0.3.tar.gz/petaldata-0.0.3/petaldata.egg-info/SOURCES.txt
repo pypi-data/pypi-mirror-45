@@ -1,0 +1,13 @@
+README.md
+setup.py
+petaldata/__init__.py
+petaldata/util.py
+petaldata.egg-info/PKG-INFO
+petaldata.egg-info/SOURCES.txt
+petaldata.egg-info/dependency_links.txt
+petaldata.egg-info/requires.txt
+petaldata.egg-info/top_level.txt
+petaldata/storage/__init__.py
+petaldata/storage/abstract_storage.py
+petaldata/storage/local.py
+petaldata/storage/s3.py
