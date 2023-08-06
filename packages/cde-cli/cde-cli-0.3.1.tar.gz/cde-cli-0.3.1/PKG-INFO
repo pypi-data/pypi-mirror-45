@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: cde-cli
+Version: 0.3.1
+Summary: cli helper
+Home-page: https://github.com/FlorianLudwig/cde
+Author: Florian Ludwig
+Author-email: f.ludwig@greyrook.com
+License: Apache Software License 2.0
+Description: CLI for CDE
+        ===========
+        
+Keywords: cde
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

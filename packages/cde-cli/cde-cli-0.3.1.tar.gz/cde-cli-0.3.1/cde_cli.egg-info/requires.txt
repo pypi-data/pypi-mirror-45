@@ -1,0 +1,5 @@
+GitPython
+Click>=6.0
+ruamel.yaml
+docker
+dockerpty
