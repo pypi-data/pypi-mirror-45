@@ -1,0 +1,3 @@
+[console_scripts]
+open-cli = open_cli.main:main
+
