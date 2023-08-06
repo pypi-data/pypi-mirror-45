@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: trustthedice
+Version: 0.0.1
+Summary: Let random numbers rule your life!
+Home-page: https://github.com/sujaymansingh/trustthedice
+Author: Sujay Mansingh
+Author-email: info@sujaymansingh.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,8 @@
+README.md
+setup.py
+trustthedice.egg-info/PKG-INFO
+trustthedice.egg-info/SOURCES.txt
+trustthedice.egg-info/dependency_links.txt
+trustthedice.egg-info/entry_points.txt
+trustthedice.egg-info/requires.txt
+trustthedice.egg-info/top_level.txt
