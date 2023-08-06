@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_aioworkers.py
+setup.py
+pytest_aioworkers.egg-info/PKG-INFO
+pytest_aioworkers.egg-info/SOURCES.txt
+pytest_aioworkers.egg-info/dependency_links.txt
+pytest_aioworkers.egg-info/entry_points.txt
+pytest_aioworkers.egg-info/requires.txt
+pytest_aioworkers.egg-info/top_level.txt
