@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-test-timer
+Version: 0.0.1
+Summary: Print the amount of time that each unit test took
+Home-page: https://github.com/unformatt/django-test-timer
+Author: Matt Shaw
+Author-email: m@ttshaw.com
+License: UNKNOWN
+Description: # django-test-timer
+        
+        Print the amount of time that each unit test took
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
