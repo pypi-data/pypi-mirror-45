@@ -1,0 +1,12 @@
+truverifi/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+truverifi/__attr__.py,sha256=HoOazScwQiJ8QpyID-DIp9vCWp_KzCN8h8-Cr_aCDsc,2091
+truverifi/__init__.py,sha256=Aw0xB2dj_lZr63Y81xuGWMTezciN1VD-NBxjDEO5Yrc,108
+truverifi/_compat.py,sha256=_aPEBO5nA9RoOkt9tpjbBqqFY1bk-fwopml8_lh3LaU,694
+truverifi/exception.py,sha256=t1cW3ZpQ09D-3GgXLJ5JoLZgqQ5z-UUAudU_r-S3orw,164
+truverifi/truverifi.py,sha256=Cl22-y1xdEPwjeE1_a952MSqtyAF2O9mJm4EnVhN-yg,1723
+truverifi-0.1.0.dist-info/AUTHORS.md,sha256=0bUitXABoHElK6FjbYvFHwWYx_81P8xpXjGmGKpM9AY,104
+truverifi-0.1.0.dist-info/LICENSE,sha256=YsNLL5QJ-SknsCMpcZOt3JTjyy_T3Swih8bjxXa_9tc,1106
+truverifi-0.1.0.dist-info/METADATA,sha256=TfpEs6Ly9qaU6vVUgvtEYTokycqAksPT4XyAYPzfEgs,3591
+truverifi-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+truverifi-0.1.0.dist-info/top_level.txt,sha256=ZX__kz7xLx3JVKco9-H15t-DK2-pVqh-_Rba-YDJiYg,10
+truverifi-0.1.0.dist-info/RECORD,,
