@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MLB-StatsAPI
+Version: 0.0.3
+Summary: MLB Stats API Wrapper for Python
+Home-page: https://github.com/toddrob99/MLB-StatsAPI
+Author: Todd Roberts
+Author-email: todd@toddrob.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# MLB-StatsAPI
+
+Python wrapper for MLB Stats API
+
+Created by Todd Roberts
+
+https://github.com/toddrob99/MLB-StatsAPI
+
+
