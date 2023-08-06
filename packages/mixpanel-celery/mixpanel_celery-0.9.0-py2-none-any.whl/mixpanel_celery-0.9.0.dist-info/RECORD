@@ -1,0 +1,16 @@
+mixpanel/__init__.py,sha256=cwAgLHYZFqkLmZJYd8bpRGlof9kFv6F6HtJN1di1dl4,318
+mixpanel/context_processors.py,sha256=6ceKnKx_juZsMYSXrflqjk5a34QgxbNintTD1wCDNLM,120
+mixpanel/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mixpanel/tasks.py,sha256=v3vfOig8c6c2zG_fJ939FFBCzFnRO52rpAdaB9pIXLI,10386
+mixpanel/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mixpanel/conf/settings.py,sha256=u3fiMSZDVUAwQPx1KYjbMvo5nUldBftIY9njOG3O2A4,3250
+testproj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testproj/manage.py,sha256=m6F3CTRuGvqBTFhYTl3LncNCDTRIfjTGS7vs3FQISrU,612
+testproj/settings.py,sha256=s5K23f74_5JRzircBekl2KzgiCgalJio_dxmNj8dmdM,1328
+testproj/urls.py,sha256=qe_1T-g3xneWboKQ0Dl5YnGEZMy-JssWUm3PhB2rhTQ,70
+mixpanel_celery-0.9.0.dist-info/AUTHORS,sha256=fLpzwJqvNaY-VcesAs1Z3vnvZoPRBWZ0bS9TR_wR_5k,502
+mixpanel_celery-0.9.0.dist-info/LICENSE,sha256=Y1xW6HW3YnN4VaTB4m7NwQwpLh9dA5I3T3ntZ_eyn2U,1499
+mixpanel_celery-0.9.0.dist-info/METADATA,sha256=mV4Sh53IuoW_KKIjcFDXT6hZJzEneKLuy0Kgsm71Oh4,1632
+mixpanel_celery-0.9.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+mixpanel_celery-0.9.0.dist-info/top_level.txt,sha256=PJ-_chG0e9uubzi4nnK9XABk6GUqYkbu9_Avb4Yz8j0,18
+mixpanel_celery-0.9.0.dist-info/RECORD,,
