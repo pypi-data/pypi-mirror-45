@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gera2ld/pyserve/__init__.py
+gera2ld_pyserve.egg-info/PKG-INFO
+gera2ld_pyserve.egg-info/SOURCES.txt
+gera2ld_pyserve.egg-info/dependency_links.txt
+gera2ld_pyserve.egg-info/top_level.txt
