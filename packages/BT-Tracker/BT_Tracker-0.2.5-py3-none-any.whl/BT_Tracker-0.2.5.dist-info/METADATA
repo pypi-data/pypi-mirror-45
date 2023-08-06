@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: BT-Tracker
+Version: 0.2.5
+Summary: BT Trackers Updater of the Aria2, based on Command Line Interface.
+Home-page: https://github.com/nordwind80/BT-Tracker
+Author: eaglewings
+Author-email: eaglewings.yi@gmail.com
+License: MIT
+Keywords: aria2,Tracker,cli,updater
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# BT Trackers Updater
+
+![Software License](https://img.shields.io/pypi/l/BT-Tracker.svg?style=for-the-badge)
+![Version](https://img.shields.io/pypi/v/BT-Tracker.svg?style=for-the-badge)
+![Platform](https://img.shields.io/pypi/pyversions/BT-Tracker.svg?style=for-the-badge)
+
+BT Trackers Updater of the Aria2, based on Command Line Interface.
+
+## Install
+
+    $ pip3 install BT-Tracker
+
+
