@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: pylufic
+Version: 1.0.0rc1
+Summary: CLI client for lufi service
+Home-page: https://framagit.org/setop/pylufic
+Author: setop
+Author-email: setop@zoocoop.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client
+Requires-Dist: sjcl
+Requires-Dist: baker
+
+
+# What
+
+**pylufic** is a command line tool which allow to interact with [Let's Upload File (Lufi)](https://demo.lufi.io/about) instances, that is to download and upload client-side encrypted files.
+
+# Why
+
+Lufi is a web-application allowing client-side encrypted file transfers between users. Hence you don't have to trust the service provider to protect your data.
+
+However Lufi works in a web browser, like Firefox or Chormium. When you don't want to run a full-featured graphical web browser on your machine to use it, you need a command line.
+
+**pylufic** is a python implementation of a Lufi CLI, useful for those who already have Python in their environments.
+
+# How
+
+**pylufic** use the same software libraries as the Javascript version - websocket client and Standford Javascript Cryptography Library (SJCL) - but in their python implementations.
+
+# Use
+
+## Install
+
+Be sure to have Python 3.6+ installed.
+
+Git clone this repo (or download as zip) :
+
+```
+git clone https://framagit.org/setop/pylufic.git && cd pylufic
+```
+
+Optionally, create python virtual environment :
+
+```
+python3 -m venv .venv && . .venv/bin/activate
+```
+
+Pip install requirements (use sudo if not in a venv) :
+
+```
+pip install -r requirements.txt
+```
+
+If you want to test libraries, run :
+
+```
+./sjcl-test.py && ./ws-test.py
+```
+
+## Run
+
+pylufic uses [baker](https://bitbucket.org/mchaput/baker) library which provide inline help 
+
+### Help
+
+```
+./pylufic.py
+```
+
+### Upload
+
+```
+./pylufic.py file service_url
+```
+
+You may use "https://framadrop.org/" (consider donation).
+
+### download
+
+```
+./pylufic.py url
+```
+
+Be aware a file is opened in the current directory in append mode with the name provided in the metadata of the transfer.
+
+### delete
+
+To delete a file use link provided by upload function.
+
+An example using curl :
+
+```
+curl -s -S 'https://framadrop.org/d/<shortid>/<token>' | html2text
+```
+
+# Limitation
+
+**pylufic** handles only one file at a time ; no multi-files upload or download. 
+
+

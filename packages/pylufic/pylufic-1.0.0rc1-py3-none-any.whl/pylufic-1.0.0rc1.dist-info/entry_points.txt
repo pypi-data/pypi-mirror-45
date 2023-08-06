@@ -1,0 +1,3 @@
+[console_scripts]
+pylufic = pylufic.pylufic:main
+
