@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: creativity
+Version: 1.1.5
+Summary: Quick inspiration
+Home-page: https://github.com/ajaska/creativity
+Author: Arlan Jaska
+Author-email: akjaska@gmail.com
+License: UNKNOWN
+Description: # creativity
+        
+        Fun little toy Python that displays a short, random ASCII movie when you try to
+        install it. Then it uninstalls itself.
+        
+        Contributions appreciated, support available via Twitter: [@ajaska](https://twitter.com/ajaska)
+        
+        ASCII movies powered by [asciinema](https://asciinema.org/)
+        
+        ## Usage:
+        
+        `pip install creativity`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Artistic Software
+Description-Content-Type: text/markdown
