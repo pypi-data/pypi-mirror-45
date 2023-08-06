@@ -1,0 +1,8 @@
+README.md
+setup.py
+amharic_keyboard/__init__.py
+amharic_keyboard/keyboard.py
+amharic_keyboard.egg-info/PKG-INFO
+amharic_keyboard.egg-info/SOURCES.txt
+amharic_keyboard.egg-info/dependency_links.txt
+amharic_keyboard.egg-info/top_level.txt
