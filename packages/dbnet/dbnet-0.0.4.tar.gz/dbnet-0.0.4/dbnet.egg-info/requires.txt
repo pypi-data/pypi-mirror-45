@@ -1,0 +1,8 @@
+python-socketio
+verboselogs
+coloredlogs
+psutil
+jmespath
+eventlet
+flask
+xutil
