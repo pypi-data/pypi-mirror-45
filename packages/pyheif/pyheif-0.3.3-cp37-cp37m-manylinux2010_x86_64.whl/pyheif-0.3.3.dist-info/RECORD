@@ -1,0 +1,13 @@
+_libheif_cffi.abi3.so,sha256=JhTBWFWo9Fw86sy6sMBGQ7MCmmg6LfJ4s8EjC3_PnGc,80560
+pyheif/__init__.py,sha256=srW6fCaQZCZejKolzt9OxIWvhCYV3nEmMI2cbh_QlYs,62
+pyheif/reader.py,sha256=egU_9zq1fgMaGWJmo2nI3fuZ2Jsj0uZvhJokcVVrpeU,5420
+pyheif/error.py,sha256=jTIfm5snCPxPkQsv3bcRAkkZGTsqtkXTJm2t66I8qJc,389
+pyheif/constants.py,sha256=g5sZSLSvn4-dqsZNEPXJdX34_Jw2a7qFCJMkb6horus,781
+pyheif/writer.py,sha256=SmyZXkKJKN2-Q6P0lg6a6po-6y8WxXtCcOcmo_WaFKQ,28
+.libs_libheif_cffi/libx265-17f2a2f3.so.169,sha256=_WUvqdm7ocLjEqM8i-CK_Gsh4H73AxWEKzabvSRKXTo,6497952
+.libs_libheif_cffi/libheif-a9e1eedd.so.1.4.0,sha256=OBSb3TWVIScpsuYDQ7NeAJoIyAfKduDPHdMjULW4HFA,10958520
+.libs_libheif_cffi/libde265-c6b46b0c.so.1.0.0,sha256=WIh0JUUnCxMAtxLq4B0C5fQacZWYwbf_cwI5Rp0TJFg,30537016
+pyheif-0.3.3.dist-info/WHEEL,sha256=Wzr7ustLd3r5KN3AVdAm7EECHYuYQiejXMdpS694wLU,112
+pyheif-0.3.3.dist-info/METADATA,sha256=xsIU0mhexuDFi93nX_sXOxGdXQVu0BP62Gjs5j_YVik,649
+pyheif-0.3.3.dist-info/top_level.txt,sha256=3lyZLCLbAOPPv0umi9gsb8OeN94AhSw3x-8hcIVMbBM,21
+pyheif-0.3.3.dist-info/RECORD,,
