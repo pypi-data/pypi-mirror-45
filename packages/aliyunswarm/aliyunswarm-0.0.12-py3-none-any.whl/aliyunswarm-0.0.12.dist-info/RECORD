@@ -1,0 +1,12 @@
+aliyunswarm/__init__.py,sha256=EFgL8ativWRondIMRFDV04Bt_HM336fnEf_k4hbDZWc,175
+aliyunswarm/common.py,sha256=c1CzZW-BhQhbtIU5wQWoI_VkYSIH0MYli8S7ZrQMWKg,2022
+aliyunswarm/config.py,sha256=s1rvM0HG-PdWAsSOK8bmYK3Hy66d8mLb753FbeT6lMM,163
+aliyunswarm/http_api.py,sha256=84jaqjB__Xe17Nl3HCvJtS0sCInE6q7f3zrwKOg9hEU,1540
+aliyunswarm/swarm_api.py,sha256=soP4hG9X9im7iB9ADh4E6eSAXxczZOOTJAKrKn37n4Q,4758
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=qlvjteLkH4XuGpCLgSr27AYyNTWECxa9EDC_WcFg1RY,1608
+aliyunswarm-0.0.12.dist-info/LICENSE,sha256=qeSuBd60WIMNMhkLjKHqkNNShG1JCvTxZ4XSskMqpXg,1066
+aliyunswarm-0.0.12.dist-info/METADATA,sha256=phWCSRt8kLwaB5Dx55pnSCezxP1mxvEuJyTQtssKQYc,2124
+aliyunswarm-0.0.12.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aliyunswarm-0.0.12.dist-info/top_level.txt,sha256=qmKp2qwhI-VmvO_uun3vmt64-LZOva5bfiOJaUJdxow,17
+aliyunswarm-0.0.12.dist-info/RECORD,,
