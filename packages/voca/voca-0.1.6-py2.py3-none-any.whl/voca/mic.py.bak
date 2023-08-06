@@ -1,0 +1,182 @@
+# #!/usr/bin/env python3
+# """Plot the live microphone signal(s) with matplotlib.
+
+# Matplotlib and NumPy have to be installed.
+
+
+# This module is from the sounddevice docs.
+# """
+
+
+# import argparse
+# import queue
+# import sys
+# import types
+
+
+# def audio_callback(indata, frames, time, status):
+#     """This is called (from a separate thread) for each audio block."""
+#     if status:
+#         print(status, file=sys.stderr)
+#     # Fancy indexing with mapping creates a (necessary!) copy:
+#     q.put(indata[:: args.downsample, mapping])
+
+
+# def update_plot(frame):
+#     """This is called by matplotlib for each plot update.
+
+#     Typically, audio callbacks happen more frequently than plot updates,
+#     therefore the queue tends to contain multiple blocks of audio data.
+
+#     """
+#     global plotdata
+#     while True:
+#         try:
+#             data = q.get_nowait()
+#         except queue.Empty:
+#             break
+#         shift = len(data)
+#         plotdata = np.roll(plotdata, -shift, axis=0)
+#         plotdata[-shift:, :] = data
+#     for column, line in enumerate(lines):
+#         line.set_ydata(plotdata[:, column])
+#     return lines
+
+
+# q = queue.Queue()
+
+
+# def main(**kwargs):
+#     args = types.SimpleNamespace(**kwargs)
+
+#     mapping = [c - 1 for c in args.channels]  # Channel numbers start with 1
+
+#     try:
+#         from matplotlib.animation import FuncAnimation
+#         import matplotlib.pyplot as plt
+#         import numpy as np
+#         import sounddevice as sd
+
+#         if args.list_devices:
+#             print(sd.query_devices())
+#             parser.exit(0)
+#         if args.samplerate is None:
+#             device_info = sd.query_devices(args.device, "input")
+#             args.samplerate = device_info["default_samplerate"]
+
+#         length = int(args.window * args.samplerate / (1000 * args.downsample))
+#         plotdata = np.zeros((length, len(args.channels)))
+
+#         fig, ax = plt.subplots()
+#         lines = ax.plot(plotdata)
+#         if len(args.channels) > 1:
+#             ax.legend(
+#                 ["channel {}".format(c) for c in args.channels],
+#                 loc="lower left",
+#                 ncol=len(args.channels),
+#             )
+#         ax.axis((0, len(plotdata), -1, 1))
+#         ax.set_yticks([0])
+#         ax.yaxis.grid(True)
+#         ax.tick_params(
+#             bottom=False,
+#             top=False,
+#             labelbottom=False,
+#             right=False,
+#             left=False,
+#             labelleft=False,
+#         )
+#         fig.tight_layout(pad=0)
+
+#         stream = sd.InputStream(
+#             device=args.device,
+#             channels=max(args.channels),
+#             samplerate=args.samplerate,
+#             callback=audio_callback,
+#         )
+#         ani = FuncAnimation(fig, update_plot, interval=args.interval, blit=True)
+#         with stream:
+#             plt.show()
+#     except Exception as e:
+#         parser.exit(type(e).__name__ + ": " + str(e))
+
+
+
+import pyaudio
+import struct
+import math
+
+INITIAL_TAP_THRESHOLD = 0.010
+FORMAT = pyaudio.paInt16
+SHORT_NORMALIZE = (1.0/32768.0)
+CHANNELS = 2
+RATE = 44100
+INPUT_BLOCK_TIME = 0.05
+INPUT_FRAMES_PER_BLOCK = int(RATE*INPUT_BLOCK_TIME)
+
+OVERSENSITIVE = 15.0/INPUT_BLOCK_TIME
+
+UNDERSENSITIVE = 120.0/INPUT_BLOCK_TIME # if we get this many quiet blocks in a row, decrease the threshold
+
+MAX_TAP_BLOCKS = 0.15/INPUT_BLOCK_TIME # if the noise was longer than this many blocks, it's not a 'tap'
+
+def get_rms(block):
+
+    # RMS amplitude is defined as the square root of the
+    # mean over time of the square of the amplitude.
+    # so we need to convert this string of bytes into
+    # a string of 16-bit samples...
+
+    # we will get one short out for each
+    # two chars in the string.
+    count = len(block)/2
+    format = "%dh"%(count)
+    shorts = struct.unpack( format, block )
+
+    # iterate over the block.
+    sum_squares = 0.0
+    for sample in shorts:
+    # sample is a signed short in +/- 32768.
+    # normalize it to 1.0
+        n = sample * SHORT_NORMALIZE
+        sum_squares += n*n
+
+    return math.sqrt( sum_squares / count )
+
+def main(**kwargs):
+    pa = pyaudio.PyAudio()                                 #]
+                                                           #|
+    stream = pa.open(format = FORMAT,                      #|
+             channels = CHANNELS,                          #|---- You always use this in pyaudio...
+             rate = RATE,                                  #|
+             input = True,                                 #|
+             frames_per_buffer = INPUT_FRAMES_PER_BLOCK)   #]
+
+    tap_threshold = INITIAL_TAP_THRESHOLD                  #]
+    noisycount = MAX_TAP_BLOCKS+1                          #|---- Variables for noise detector...
+    quietcount = 0                                         #|
+    errorcount = 0                                         #]
+
+    for i in range(1000):
+        try:                                                    #]
+            block = stream.read(INPUT_FRAMES_PER_BLOCK)         #|
+        except IOError, e:                                      #|---- just in case there is an error!
+            errorcount += 1                                     #|
+            print( "(%d) Error recording: %s"%(errorcount,e) )  #|
+            noisycount = 1                                      #]
+
+        amplitude = get_rms(block)
+        if amplitude > tap_threshold: # if its to loud...
+            quietcount = 0
+            noisycount += 1
+            if noisycount > OVERSENSITIVE:
+                tap_threshold *= 1.1 # turn down the sensitivity
+
+        else: # if its to quiet...
+
+            if 1 <= noisycount <= MAX_TAP_BLOCKS:
+                print 'tap!'
+            noisycount = 0
+            quietcount += 1
+            if quietcount > UNDERSENSITIVE:
+                tap_threshold *= 0.9 # turn up the sensitivity
