@@ -1,0 +1,7 @@
+requests
+
+[dev]
+bumpversion
+setuptools
+twine
+wheel
