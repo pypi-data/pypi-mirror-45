@@ -1,0 +1,10 @@
+README.md
+setup.py
+capirs/__init__.py
+capirs/detect_adv.py
+capirs/image_processing.py
+capirs.egg-info/PKG-INFO
+capirs.egg-info/SOURCES.txt
+capirs.egg-info/dependency_links.txt
+capirs.egg-info/not-zip-safe
+capirs.egg-info/top_level.txt
