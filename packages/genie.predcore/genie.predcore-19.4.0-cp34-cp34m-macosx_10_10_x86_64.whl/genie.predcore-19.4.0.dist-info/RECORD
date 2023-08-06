@@ -1,0 +1,9 @@
+genie.predcore-19.4.0-py3.4-nspkg.pth,sha256=55hGpnePXkOAWbNjXAykyxJsVWn9MIFjxHxKb746fn4,352
+genie/predcore/README.rst,sha256=OImZtK87xHPlGHWk5KFQpNhQAZgsmB5nikfJcBa85QA,662
+genie/predcore/__init__.py,sha256=2PfIajo1ifCsu2juHZaX4wH1Tkf5y97bPe-2NjJjm9Y,933
+genie/predcore/_predcore.so,sha256=1TM2gYvMwBMi9T0kKtDg0QYY2XkXPDIIC1sh5MT42SU,498464
+genie.predcore-19.4.0.dist-info/METADATA,sha256=LNvWpTAbZIhoUp1TBeoOYHW2NQEueIeaYhfmGO72Ewg,3186
+genie.predcore-19.4.0.dist-info/WHEEL,sha256=NxJwBTuLPY7ebcEZAvprEKrQPjeP7QDJsmGX_XLjILM,111
+genie.predcore-19.4.0.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.predcore-19.4.0.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.predcore-19.4.0.dist-info/RECORD,,
