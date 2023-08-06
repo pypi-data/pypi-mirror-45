@@ -1,0 +1,12 @@
+README.md
+setup.py
+scitime/__init__.py
+scitime/_log.py
+scitime/_model.py
+scitime/_utils.py
+scitime/estimate.py
+scitime.egg-info/PKG-INFO
+scitime.egg-info/SOURCES.txt
+scitime.egg-info/dependency_links.txt
+scitime.egg-info/requires.txt
+scitime.egg-info/top_level.txt
