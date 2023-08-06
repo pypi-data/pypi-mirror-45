@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyspa.egg-info/PKG-INFO
+pyspa.egg-info/SOURCES.txt
+pyspa.egg-info/dependency_links.txt
+pyspa.egg-info/requires.txt
+pyspa.egg-info/top_level.txt
