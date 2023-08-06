@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    {% if error %}
+        <div class="alert alert-danger" role="alert">
+            ERROR OCCURRED : {{ error }}
+        </div>
+    {% endif %}
+    {% if movie_list is none %}
+        <div class="alert alert-warning" role="alert">
+            No movies found, please <a href="#indexModal" data-toggle="modal" data-target="#indexModal">index!</a>
+        </div>
+    {% else %}
+        <section id="row">
+            {% for movie in movie_list %}
+                <div class="responsive">
+                    <div class="gallery">
+                        <a href="/movie/{{ movie["title"] }} ">
+                            {% if cached %}
+                                <img class="b-lazy" data-src="{{ url_for('cached_image_file', filename=movie['poster'].split('cache/')[1]) }}" onerror="this.src='{{ url_for('static', filename='default-poster.png') }}';" src="{{ url_for('static', filename='default-poster.png') }}" />
+                            {% else %}
+                                <img class="b-lazy" data-src="{{ movie['poster'] }}" onerror="this.src='{{ url_for('static', filename='default-poster.png') }}';" src="{{ url_for('static', filename='default-poster.png') }}" />
+                            {% endif %}
+                        </a>
+                        <div class="desc">{{ movie["title"] }}</div>
+                    </div>
+                </div>
+          {% endfor %}
+        </section>
+    {% endif %}
+    <div class="modal fade" id="indexModal" tabindex="-1" role="dialog" aria-labelledby="indexModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="indexModalLabel">Index movies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" novalidate>
+                        {{ form.hidden_tag() }}
+                        <p>{{ form.index_location.label }} : {{ form.index_location(class_='form-control') }}</p>
+                    run indexation oof movies
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    {{ form.run_index(class_='btn btn-success') }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var bLazy = new Blazy({
+            breakpointgs: [{}], success: function(element) {
+                setTimeout(function() {
+                    var parent = element.parentNode;
+                    parent.className = parent.className.replace(/\bloading\b/,'');
+                }, 200);
+            }
+        });
+
+        $(function() {
+            $.ajax({
+                url: '{{ url_for("autocomplete") }}'
+                    }).done(function (data){
+                        $('#autocomplete').autocomplete({
+                            source: data,
+                            minLength: 2
+                        });
+                    });
+                });
+        </script>
+{% endblock %}
