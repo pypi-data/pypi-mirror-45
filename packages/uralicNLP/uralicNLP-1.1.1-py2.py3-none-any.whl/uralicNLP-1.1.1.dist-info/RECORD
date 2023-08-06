@@ -1,0 +1,14 @@
+uralicNLP/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uralicNLP/cg3.py,sha256=EgeeAIa4siJzwT36mIGsBYNcMK_OoTFzK7c1CX2hZLY,2770
+uralicNLP/dependency.py,sha256=BBchXGEtgbIxtp7MiYIQW2_jUKgGdac0rP_QPhCl6NA,1007
+uralicNLP/semfi.py,sha256=XPr02S7BKqv7NDj6uU128mvjti1CX-5T1Ey1ySFMRBI,5417
+uralicNLP/string_processing.py,sha256=mCrVA8rUgzy0goWvBrUlPICDwn3a9xyPAFLA9x1Hzk8,532
+uralicNLP/translate.py,sha256=4s5wTemJghSLCZ61BMD3fu0OzwmhEpv8F6smkJxWAWE,2527
+uralicNLP/ud_tools.py,sha256=JmDCnHNxCGYmKzqxKiUatibiHG9CrcH-X38sjLINGkA,9690
+uralicNLP/uralicApi.py,sha256=pipJ68myqbi1IYwHrAn2N2x9rqWUHrZFGP16rTYcvKc,8293
+uralicNLP-1.1.1.dist-info/DESCRIPTION.rst,sha256=QVQPpcPYQCp7bVXPOhIwdbFCTGa5N0xEcB983_mSvyo,2169
+uralicNLP-1.1.1.dist-info/METADATA,sha256=vC6D5zu6gqkUEMTDU2RCO830XgsawiiWpwps-NLLOs4,3041
+uralicNLP-1.1.1.dist-info/RECORD,,
+uralicNLP-1.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+uralicNLP-1.1.1.dist-info/metadata.json,sha256=bfs1zKFkWrfwM-PFEKlYg_mlupwB6-BhcFzzVAm7rBw,1064
+uralicNLP-1.1.1.dist-info/top_level.txt,sha256=rnQE8i49FYDovHzyca16NDhP8K-HTg1w3NOFDcCHN5M,10
