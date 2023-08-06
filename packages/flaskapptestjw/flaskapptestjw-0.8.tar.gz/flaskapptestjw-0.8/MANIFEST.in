@@ -1,0 +1,8 @@
+recursive-include flaskapptestjw/templates *
+recursive-include flaskapptestjw/static *
+recursive-include flaskapptestjw/shell_scripts *
+include flaskapptestjw/run.pyc
+include flaskapptestjw/__init__.pyc
+include LICENSE
+include README.md
+include requirements.txt
