@@ -1,0 +1,12 @@
+editty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+editty/editty.py,sha256=58DFGY_wjYqGoOKlSmgTGcEL_02Ogbub1sBh6XSgxg8,41514
+editty/program.py,sha256=pD_aGdcPAJ6ue9xaVy1tFKC0w9tDbtKju2yV3LPu6vQ,16738
+editty/segment.py,sha256=1TQXaM9xmLL3H5tYrX0qMZaIvAKAcToJmuFHNGlsMbs,9590
+editty/source.py,sha256=PKwKobiSaRE6_AiCGwjvLbYAS4lCA8fZmA70P_HSJxk,6107
+editty-0.0.1.dist-info/AUTHORS,sha256=R06Gf3PzNlYRKQ5sbaCkTrsu62J3fDYm7OekTnc9-xs,32
+editty-0.0.1.dist-info/METADATA,sha256=DmoL7i-TOICQHrqX9RFpL8glKgXhVVVQ-EVXvbI5378,2553
+editty-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+editty-0.0.1.dist-info/entry_points.txt,sha256=I3aWI5r4ElY2zbbRXOpJOfizAJfiMgZFkWoFtfDv-G4,47
+editty-0.0.1.dist-info/pbr.json,sha256=eAZnTyj-n_SQq2UhfZ3yPqpA3ZXRwtu2IHrytz-qfYw,46
+editty-0.0.1.dist-info/top_level.txt,sha256=ZBGcktlp5G6D96kgEBNtO1_3ptL3-8OxVz66vh3FGAQ,7
+editty-0.0.1.dist-info/RECORD,,
