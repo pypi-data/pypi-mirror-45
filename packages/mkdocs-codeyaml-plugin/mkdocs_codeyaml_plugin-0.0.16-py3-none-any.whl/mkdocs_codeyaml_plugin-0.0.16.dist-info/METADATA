@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mkdocs-codeyaml-plugin
+Version: 0.0.16
+Summary: A MkDocs plugin that injects the mkdocs.yml extra variables PLUS additional YML files into the markdown template
+Home-page: https://github.com/textileio/mkdocs-codeyaml-plugin/
+Author: textile
+Author-email: contact@textile.io
+License: MIT
+Keywords: mkdocs python markdown extra values PLUS extra yml
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Requires-Dist: mkdocs (>=0.17)
+
+# mkdocs-codeyml-plugin
+
+*A MkDocs plugin that injects the mkdocs.yml extra variables PLUS extra YML files into the markdown template*
+
+based on the great [mkdocs-markdownextradata-plugin](https://pypi.org/project/mkdocs-markdownextradata-plugin/)
+
+**usecase**
+
+```
+We wanted language specific yml files to hold necessary code snippets
+```
+
