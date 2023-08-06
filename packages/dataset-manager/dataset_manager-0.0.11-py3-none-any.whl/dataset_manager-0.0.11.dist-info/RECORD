@@ -1,0 +1,10 @@
+dataset_manager/__init__.py,sha256=zjaXm-ZxSxnk7Rf1COguNicIUzSOUTE7PFAERHPeyrg,5755
+dataset_manager/__pd_func_map.py,sha256=maORpnsDdbRxt1L4K8uRFLCZ0IpxPXODS7z0TWxyVsY,138
+dataset_manager/data_source.py,sha256=fuoeVmS0hNpGq9N35PPJ0Ay2_xg6OVbiObhJbM6Tnfk,5654
+tests/__init__.py,sha256=nUzT-zHaNi8iLfPJaCndfhA0-FstWNhc1nsS0t7muEo,4668
+tests/test_data_source.py,sha256=h0uojw-B0SoysO-o_s9NizknYxhfNuKtRxDBf8zRwPA,6726
+dataset_manager-0.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dataset_manager-0.0.11.dist-info/METADATA,sha256=BBvbGqpZADl9-I1SUPACir0RTdAFbjlR5YfjJt4lZbA,3010
+dataset_manager-0.0.11.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dataset_manager-0.0.11.dist-info/top_level.txt,sha256=xdAFG6A5qq4RApC5_bfqUG_bsjF2GJk1AiimMtUp8WM,22
+dataset_manager-0.0.11.dist-info/RECORD,,
