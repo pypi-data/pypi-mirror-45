@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-binance-chain
+Version: 0.1.17
+Summary: Binance Chain HTTP API python implementation
+Home-page: https://github.com/sammchardy/python-binance-chain
+Author: Sam McHardy
+Author-email: 
+License: MIT
+Keywords: binance dex exchange rest api bitcoin ethereum btc eth bnb ledger
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pywallet (>=0.1.0)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: websockets (>=7.0)
+Requires-Dist: aiohttp (>=3.5.4)
+Requires-Dist: secp256k1 (>=0.13.2)
+Requires-Dist: protobuf (>=3.6.1)
+Requires-Dist: mnemonic (>=0.18)
+Requires-Dist: ujson (>=1.35)
+Provides-Extra: ledger
+Requires-Dist: btchip-python (>=0.1.28) ; extra == 'ledger'
+
+UNKNOWN
+
+
