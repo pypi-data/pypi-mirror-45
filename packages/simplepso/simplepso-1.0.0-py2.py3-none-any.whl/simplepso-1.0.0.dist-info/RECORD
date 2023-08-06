@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=CzRivSxx-334vntuFWI3i8Rk1H6Fg1d5Ash2MZCP5Zg,58
+examples/earm_lopez_embedded_flat.py,sha256=1qIfrkQ-6I853KGj_ty_kXS0UeeW0kd8wTe1U3rSH4c,33590
+examples/example_earm.py,sha256=248t7eYSJXkpiAhLOYxSvgrj4cpSMCPGcsGWYGeUGqs,5068
+examples/robertson_example.py,sha256=3PhsOnPN6NfzNo8LLaJxvIzBqA07fp-b45aU_Of5Y-k,5806
+examples/data/EC-RP_IMS-RP_IC-RP_data_for_models.csv,sha256=cOfk2BfPe_ituRMmaRsmgz4hcusZglsGZTRiZ_RMO2Q,7758
+simplepso/__init__.py,sha256=CzRivSxx-334vntuFWI3i8Rk1H6Fg1d5Ash2MZCP5Zg,58
+simplepso/pso.py,sha256=2yvP40t7aX5ZCkpxQg4mgbHq2jBQzMPH-LiBmHmxuJg,12282
+simplepso/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplepso/tests/test_pso_construction.py,sha256=WN2eWhTzrR2-udqsXGIPSU46oXndUETAQ3DqZzKYuKc,2733
+simplepso/tests/test_robertson.py,sha256=dQe0GrtZfT76NTOp9SoLocOmuoJ4r8uQ6UrIvBm7_sE,673
+simplepso-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+simplepso-1.0.0.dist-info/METADATA,sha256=9Qosdhda3sdEODkjqkCGS7LYf0gyJau9QsQ25HsMzEY,667
+simplepso-1.0.0.dist-info/RECORD,,
+simplepso-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+simplepso-1.0.0.dist-info/metadata.json,sha256=atRCE2vwzOVpgH-2YcAxFJQdtZE2xqBJIzrDFA1Gedc,803
+simplepso-1.0.0.dist-info/top_level.txt,sha256=8j91ZIIXNf8v_k4y_q_jaZKCIQ7m4z4Kzx0VhbSckZs,19
