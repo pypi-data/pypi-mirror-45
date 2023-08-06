@@ -1,0 +1,11 @@
+README.md
+setup.py
+stream_chat_python_cli/__init__.py
+stream_chat_python_cli/cli.py
+stream_chat_python_cli.egg-info/PKG-INFO
+stream_chat_python_cli.egg-info/SOURCES.txt
+stream_chat_python_cli.egg-info/dependency_links.txt
+stream_chat_python_cli.egg-info/entry_points.txt
+stream_chat_python_cli.egg-info/not-zip-safe
+stream_chat_python_cli.egg-info/requires.txt
+stream_chat_python_cli.egg-info/top_level.txt

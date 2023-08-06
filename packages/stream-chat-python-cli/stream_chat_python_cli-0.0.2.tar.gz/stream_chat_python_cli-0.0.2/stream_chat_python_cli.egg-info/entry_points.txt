@@ -1,0 +1,3 @@
+[console_scripts]
+stream-cli = stream_chat_python_cli.cli:main
+
