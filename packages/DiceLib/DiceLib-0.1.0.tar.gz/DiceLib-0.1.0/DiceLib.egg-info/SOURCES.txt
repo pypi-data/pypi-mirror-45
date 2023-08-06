@@ -1,0 +1,11 @@
+README.md
+setup.py
+DiceLib/__init__.py
+DiceLib/die.py
+DiceLib/exceptions.py
+DiceLib/rolls.py
+DiceLib.egg-info/PKG-INFO
+DiceLib.egg-info/SOURCES.txt
+DiceLib.egg-info/dependency_links.txt
+DiceLib.egg-info/not-zip-safe
+DiceLib.egg-info/top_level.txt
