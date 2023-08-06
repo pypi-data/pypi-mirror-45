@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cntnr
+Version: 0.0.1
+Summary: CLI wrapper script to perform basic container management tasks
+Home-page: https://github.com/jwflory/cntnr
+Author: Justin W. Flory
+License: Mozilla Public License 2.0 (MPLv2)
+Keywords: containers,Docker,Podman,libpod,CLI,tool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+cntnr
+=====
+
+CLI wrapper for basic container (Docker/libpod) management tasks
+
+
+## About
+
+This is a Python wrapper script to simplify specific tasks in a container environment.
+It is designed to work with your container runtime of choice (currently `podman` and `docker`).
+A CLI menu makes these selections possible.
+
+This project was created for a lab assignment in NSSA-244 Virtualization at the [Rochester Institute of Technology](https://www.rit.edu/).
+
+
+## Legal
+
+Licensed under Mozilla Public License 2.0.
+Created by Justin W. Flory.
+
+
