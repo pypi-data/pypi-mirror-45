@@ -1,0 +1,105 @@
+prefix P
+    value 10e15
+    name peta
+
+prefix Pi
+    value 2**50
+    name pebi
+
+prefix T
+    value 10e12
+    name tera
+
+prefix Ti
+    value 2**40
+    name tebi
+
+prefix G
+    value 10e9
+    name giga
+
+prefix Gi
+    value 2**30
+    name gibi
+
+prefix M
+    value 10e6
+    name mega
+
+prefix Mi
+    value 2**20
+    name mebi
+
+prefix k
+    value 1000
+    name kilo
+
+prefix Ki
+    value 2**10
+    name kibi
+
+prefix h
+    value 100
+    name hecto
+
+prefix da
+    value 10
+    name deca
+
+prefix d
+    value 0.1
+    name deci
+
+prefix c
+    value 0.01
+    name centi
+
+prefix m
+    value 0.001
+    name milli
+
+prefix μ
+    value 1e-6
+    name micro
+
+prefix n
+    value 1e-9
+    name nano
+
+prefix p
+    value 1e-12
+    name pico
+
+magnitude distance
+    unit m
+
+magnitude volume
+    unit l
+
+magnitude squared
+    unit m_2
+    def unit m_2 factor 100
+
+magnitude cubic
+    unit m_3
+    def unit m_3 factor 1000
+
+magnitude time
+    unit s
+    use prefixes false
+    def unit s
+    def unit min factor 60
+    def unit hour factor 3600
+    def unit day factor 3600 * 24
+
+magnitude temperature
+    unit K
+    use prefixes false
+    def unit K factor 1; offset -273.15
+    def unit C factor 1; offset 0
+    def unit F factor 5/9; offset -32
+
+magnitude file_size
+    unit byte
+    def unit byte
+
