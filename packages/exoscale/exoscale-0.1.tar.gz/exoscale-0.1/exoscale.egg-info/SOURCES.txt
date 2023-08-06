@@ -1,0 +1,8 @@
+README.rst
+setup.py
+exoscale/__init__.py
+exoscale.egg-info/PKG-INFO
+exoscale.egg-info/SOURCES.txt
+exoscale.egg-info/dependency_links.txt
+exoscale.egg-info/not-zip-safe
+exoscale.egg-info/top_level.txt

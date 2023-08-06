@@ -1,0 +1,56 @@
+# coding: utf-8
+"""
+Python bindings for the Exoscale APIs.
+"""
+
+from __future__ import unicode_literals
+
+import sys
+from codecs import open
+from setuptools import find_packages, setup
+
+with open('README.rst', 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
+install_requires = []
+extras_require = {
+}
+tests_require = [
+]
+
+setup(
+    name='exoscale',
+    version='0.1',
+    #url='https://github.com/exoscale/cs',
+    license='BSD',
+    author='Exoscale',
+    description=__doc__.strip(),
+    long_description=long_description,
+    packages=find_packages(exclude=['tests']),
+    zip_safe=False,
+    include_package_data=True,
+    platforms='any',
+    classifiers=(
+        'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+    ),
+    setup_requires=[],
+    install_requires=install_requires,
+    extras_require=extras_require,
+    tests_require=tests_require,
+    #entry_points={
+    #    'console_scripts': [
+    #        'cs = cs:main',
+    #    ],
+    #},
+)
