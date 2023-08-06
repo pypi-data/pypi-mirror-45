@@ -1,0 +1,13 @@
+octadist/__init__.py,sha256=j0wUdcvvMrgVGlnAkO-7jTIodXqON0dpbSyrqfvAUhQ,1710
+octadist/calc.py,sha256=tC5FBi6C9CSbxshvBbgxsJZr3bnN3mfMGXcMx8HqTZE,12702
+octadist/coord.py,sha256=MTqAclwNwiBQjNN-3t2GKAnQ076Ov-Ky7JDDp5ux4KA,11809
+octadist/draw.py,sha256=h-rNJbxmSGurL7mTvu2kuezhSsg7g7zHC_IqM9cocPw,15542
+octadist/elements.py,sha256=rutYpK3T7H9s7LA4gAeRXeQrN3ol1bkU9dyAzSiwuCM,4855
+octadist/linear.py,sha256=kxyAue6I4Pbby1LqEI2x0OeHXChkJJteI3-3806r-Oc,6358
+octadist/plane.py,sha256=SlFwX7paKyItP-n5FXlKHlL1LBDLYhSsIXR_o1OJ8Sc,4226
+octadist/projection.py,sha256=ABQcTFN-B3yLDVt4rEGVhAbBlC8RywnKMkj2aAYg3TY,1826
+octadist-2.5.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+octadist-2.5.1.dist-info/METADATA,sha256=uEYnAxcDBSrZpOZrXtEoUcDQbtsExWvWJZM2-rkD7A4,5069
+octadist-2.5.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+octadist-2.5.1.dist-info/top_level.txt,sha256=JJ2142Af9dwqCNWqHIPJaZmOOMYuFnPsq6IZk4pD3Fs,9
+octadist-2.5.1.dist-info/RECORD,,
