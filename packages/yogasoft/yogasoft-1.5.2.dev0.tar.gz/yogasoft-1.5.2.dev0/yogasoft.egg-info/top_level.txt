@@ -1,0 +1,5 @@
+app
+locale
+logs
+templates
+yogasoft
