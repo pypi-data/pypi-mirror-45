@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: swat-em
+Version: 0.1.0
+Summary: Specific Winding Analysing Tool for Electrical Machines
+Home-page: https://gitlab.com/martinbaun/swat-em
+Author: Martin Baun
+Author-email: mar.baun@googlemail.com
+License: UNKNOWN
+Description: SWAT-EM
+        =======
+        
+        Specific Winding Analyse Tool for Electrical Machines
+        
+        
+        Installation
+        ------------
+        
+        From the project root directory::
+        
+            $ python setup.py install
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
