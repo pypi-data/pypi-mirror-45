@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: smfiles
+Version: 0.4
+Summary: Read and Edit .sm files and Measure BPM of songs.
+Home-page: https://github.com/zhangletao/smfiles
+Author: 张乐涛
+Author-email: 1668151593@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: librosa
+Requires-Dist: numpy
+
+
+# How to use this package
+
+
+from smfiles import read, edit, version, datetime
+
+
+print(read.StepMania('xxx.sm').bpms)
+
+
+>>> 0.000=156.000, 8.000=312.000
+
+
+edit.StepMania('yyy.sm').SetTitle('mytitle')
+
+
+print(version, datetime)
+
+
+>>> 0.4 2019-05-04
+
+
+print(edit.AGBPM('zzz.mp3'))    # Automatic generation of BPM values
+
+
+>>> 150.005
+
+
