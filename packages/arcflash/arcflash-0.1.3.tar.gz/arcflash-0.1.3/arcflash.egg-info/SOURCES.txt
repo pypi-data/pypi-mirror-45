@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+arcflash/__init__.py
+arcflash/afserial.py
+arcflash/arcflash_pb2.py
+arcflash/bootloader.bin
+arcflash/main.py
+arcflash/rombuild.py
+arcflash/uploader.py
+arcflash.egg-info/PKG-INFO
+arcflash.egg-info/SOURCES.txt
+arcflash.egg-info/dependency_links.txt
+arcflash.egg-info/entry_points.txt
+arcflash.egg-info/requires.txt
+arcflash.egg-info/top_level.txt
