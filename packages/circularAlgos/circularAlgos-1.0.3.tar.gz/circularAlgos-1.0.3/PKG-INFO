@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: circularAlgos
+Version: 1.0.3
+Summary: Package with many functions for circular distributions
+Home-page: https://github.com/karthik-sundaram/circularAlgos
+Author: Karthik Sundaram
+Author-email: karthik.sun95@gmail.com
+License: MIT
+Description: A package including many functions for circular distributions:
+        
+        1) r_vonmises() - This function is used for generating random numbers for a von Mises circular distribution
+        2) q_vonmises() - This function is used used to calculate the quantiles for the given probabilities for a von Mises distribution
+        3) p_vonmises() - This function is  used to calculate the CDF value at the given points for a von Mises distribution
+        4) d_vonmises() - This function is for calculating the PDF at the given points for a von Mises circular distribution
+        5) angles_VMF_mix() - This function is used to fit angular data in radians using the expectation maximization algorithm for
+               		      maximum likelihood estimatation of the parameters of the different mixtures
+        6) vmf_clust() - This function is used to: 
+               			1) fit the given data using the expectation maximization algorithm for
+               			   maximum likelihood estimatation of the parameters of the differnt mixtures
+              		        2) Perform probabilistic clustering using the mixtures obtained above
+Keywords: mixture models circular distributions clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
