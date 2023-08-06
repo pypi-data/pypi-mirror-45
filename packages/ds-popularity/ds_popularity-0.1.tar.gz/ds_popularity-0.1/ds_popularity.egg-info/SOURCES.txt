@@ -1,0 +1,11 @@
+README.md
+setup.py
+ds_popularity.egg-info/PKG-INFO
+ds_popularity.egg-info/SOURCES.txt
+ds_popularity.egg-info/dependency_links.txt
+ds_popularity.egg-info/not-zip-safe
+ds_popularity.egg-info/requires.txt
+ds_popularity.egg-info/top_level.txt
+googlesearch/__init__.py
+googlesearch/__main__.py
+googlesearch/gsearch.py
