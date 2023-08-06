@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+__init__.py
+readtime.py
+setup.cfg
+setup.py
+test_readtime.py
+pelican_readtime.egg-info/PKG-INFO
+pelican_readtime.egg-info/SOURCES.txt
+pelican_readtime.egg-info/dependency_links.txt
+pelican_readtime.egg-info/requires.txt
+pelican_readtime.egg-info/top_level.txt
+pelican_readtime.egg-info/zip-safe
