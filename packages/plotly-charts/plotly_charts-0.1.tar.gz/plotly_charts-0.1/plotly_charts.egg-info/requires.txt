@@ -1,0 +1,6 @@
+plotly
+pandas
+datetime
+cufflinks
+json
+numpy

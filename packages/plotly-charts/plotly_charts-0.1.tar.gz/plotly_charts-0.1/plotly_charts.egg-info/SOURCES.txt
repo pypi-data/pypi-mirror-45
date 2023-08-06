@@ -1,0 +1,10 @@
+README.md
+setup.py
+plotly_charts/__init__.py
+plotly_charts/plot.py
+plotly_charts.egg-info/PKG-INFO
+plotly_charts.egg-info/SOURCES.txt
+plotly_charts.egg-info/dependency_links.txt
+plotly_charts.egg-info/not-zip-safe
+plotly_charts.egg-info/requires.txt
+plotly_charts.egg-info/top_level.txt
