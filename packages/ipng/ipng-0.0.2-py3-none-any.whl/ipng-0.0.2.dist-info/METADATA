@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ipng
+Version: 0.0.2
+Summary: Intuitive PNG library.
+Home-page: https://github.com/hanjoes/ipng
+Author: hanjoes
+Author-email: hanzhou87@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Description
+
+Intuitive PNG library. 
+
+# Usage
+
+
+## All-in-1
+```python
+from ipng import PNG
+from binascii import hexlify
+
+def func(bitmap):
+    # do anything with the bytearray, here we just print out the 
+    # first 100 bytes of each row
+    print(hexlify(bitmap)[0:100])
+
+png = PNG(file='path/to/input.png', process=func)
+print(png.metadata) # get info about the image
+png.render(output='path/to/output.png') # only "render" will trigger the process, path can be None
+```
+
+
