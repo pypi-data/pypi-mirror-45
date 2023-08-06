@@ -1,0 +1,8 @@
+keras>=2.2.4
+
+[benchmark]
+click
+sklearn
+
+[test]
+pytest
