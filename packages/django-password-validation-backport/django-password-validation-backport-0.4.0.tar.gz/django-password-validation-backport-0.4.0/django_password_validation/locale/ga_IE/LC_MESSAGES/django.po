@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-29 14:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: validators.py:142
+#, python-format
+msgid ""
+"This password is too short. It must contain at least %(min_length)d "
+"character."
+msgid_plural ""
+"This password is too short. It must contain at least %(min_length)d "
+"characters."
+msgstr[0] ""
+"Tá an pasfhocal seo róghairid. Caithfidh tú pasfhocal le níos mó carachtar (%(min_length)d) "
+"a roghnú." 
+msgstr[1] ""
+"Tá an pasfhocal seo róghairid. Caithfidh tú pasfhocal le níos mó carachtar (%(min_length)d) "
+"a roghnú." 
+
+#: validators.py:152
+#, python-format
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural "Your password must contain at least %(min_length)d characters."
+msgstr[0] "Ní mór ar a laghad %(min_length)d carachtar a bheith i do phasfhocal."
+msgstr[1] "Ní mór ar a laghad %(min_length)d carachtar a bheith i do phasfhocal."
+
+#: validators.py:189
+#, python-format
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr "Tá an pasfhocal róchosúil leis an %(verbose_name)s."
+
+#: validators.py:195
+msgid "Your password can't be too similar to your other personal information."
+msgstr "Ní féidir le do phasfhocal a bheith róchosúil le do shonraí pearsanta eile."
+
+#: validators.py:222
+msgid "This password is too common."
+msgstr "Tá an pasfhocal seo róchoitianta."
+
+#: validators.py:227
+msgid "Your password can't be a commonly used password."
+msgstr "Ní féidir pasfhocal coitianta a bheith mar phasfhocal agat."
+
+#: validators.py:237
+msgid "This password is entirely numeric."
+msgstr "Tá an pasfhocal seo iomlán uimhriúil."
+
+#: validators.py:242
+msgid "Your password can't be entirely numeric."
+msgstr "Ní féidir pasfhocal iomlán uimhriúil a bheith agat."
+
+#: validators.py:252
+msgid "This password does not contain a digit."
+msgstr "Níl uimhir sa phasfhocal seo."
+
+#: validators.py:257
+msgid "Your password must contain at least one digit."
+msgstr "Ní mór ar a laghad uimhir amháin a bheith i do phasfhocal."
+
+#: validators.py:267
+msgid "This password does not contain a punctuation character."
+msgstr "Níl carachtar poncaíochta sa phasfhocal seo."
+
+#: validators.py:272
+msgid "Your password must contain at least one punctuation character."
+msgstr "Ní mór ar a laghad carachtar poncaíochta amháin a bheith i do phasfhocal."
+
+#: validators.py:282
+msgid "This password does not contain an uppercase character."
+msgstr "Níl carachtar i gcás uachtair sa phasfhocal seo."
+
+#: validators.py:287
+msgid "Your password must contain at least one uppercase character."
+msgstr "Ní mór ar a laghad carachtar i gcás uachtair amháin a bheith i do phasfhocal."
+
+#: validators.py:297
+msgid "This password does not contain a lowercase character."
+msgstr "Níl carachtar i gcás íochtair sa phasfhocal seo."
+
+#: validators.py:302
+msgid "Your password must contain at least one lowercase character."
+msgstr "Ní mór ar a laghad carachtar i gcás íochtair amháin a bheith i do phasfhocal."
+
+#: validators.py:317
+#, python-format
+msgid ""
+"This password contains a character repeated more than %d times in a row."
+msgstr ""
+"Tá an carachtar céanna úsáidte níos mó uaireanta i ndiaidh a chéile ná mar atá ceadaithe chun pasfhocal ceart a chruthú (%d)."
+
+#: validators.py:322
+#, python-format
+msgid ""
+"Your password can't contain a character repeated more than %d times in a row."
+msgstr ""
+"Tá an carachtar céanna úsáidte níos mó uaireanta i ndiaidh a chéile ná mar atá ceadaithe chun pasfhocal ceart a chruthú (%d)."
