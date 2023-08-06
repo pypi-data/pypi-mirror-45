@@ -1,0 +1,264 @@
+Metadata-Version: 2.1
+Name: helpdev
+Version: 0.4.2
+Summary: HelpDev - Information collector to help users and developers when reporting
+Home-page: https://gitlab.com/dpizetta/helpdev
+Author: Daniel Cosmo Pizetta
+Author-email: daniel.pizetta@usp.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: psutil (>=5.6)
+
+HelpDev
+=======
+
+Helping users and developers to get information about the environment to
+report bugs or even test your system without spending a day on it. It can
+get information about hardware, OS, paths, Python distribution and packages,
+including Qt-things. Operates in Linux, Windows and Mac. You must run it
+inside your running Python environment along with the application you would
+report something or test!
+
+If you want to get information at runtime of your application, you need
+to call using the same environment (and process) in which your application
+is running. This module can be imported and integrated into your application,
+providing a report about the current environment.
+
+Some information can be depedent or independent of your Python environment,
+and some others can be dependent your running application. So, there are some
+acronymn used to refer to them:
+
+- PEI: Python environment independent;
+
+- PED: Python environment DEPENDENT;
+
+- PEAD: Python environment and application DEPENDENT.
+
+
+**Caution:**
+
+- This script is not supposed to get personal information using the option
+  ``--all``, but you must check the information before using the output.
+
+- Using the option ``--all-for-sure`` it is added information about paths and
+  variables that can show personal information. So, be sure when using this
+  option when publishing in the web.
+
+- I'm not responsible for bad use or problems with the information given by
+  this script, but if pointed in the Issues, I can help fixing it.
+
+
+Installing, updating and uninstalling
+#####################################
+
+
+To install and/or update, do ::
+
+    $ pip install -U helpdev
+
+
+To remove ::
+
+    $ pip uninstall helpdev
+
+
+Running
+#######
+
+
+You just need to run in the terminal the line(s) below.
+
+
+To get a minimalist output ::
+
+    $ helpdev
+
+
+To get a complete output without personal information ::
+
+    $ helpdev --all
+
+
+To get a  complete output WITH PERSONAL INFORMATION ::
+
+    $ helpdev --all-for-sure
+
+
+To get some help information ::
+
+    $ helpdev --help
+
+
+Examples v0.4
+#############
+
+
+Help
+----
+
+
+.. code-block:: bash
+
+    $ helpdev --help
+
+
+.. code-block:: bash
+
+    usage: helpdev [--hardware] [--os] [--thread] [--network [NETWORK]]
+               [--python] [--conda]
+               [--qt] [--qt-bindings] [--qt-abstractions]
+               [--packages] [--packages-pip] [--packages-pip-e] [--packages-conda] [--packages-conda-e]
+               [--numbers] [--float] [--int]
+               [--personal] [--path] [--scope]
+               [--all]
+               [--all-for-sure]
+               [--version]
+               [--help]
+
+    HelpDev - Extracts information about the Python environment (hardware, OS,
+    distribution, packages, paths, etc).
+
+    optional arguments:
+
+    --hardware           CPU, memory and architecture (PEI)
+    --os                 Operating system (PEI)
+    --thread             Threads specification in the system (PEI)
+    --network [NETWORK]  Network information, DNS and load for usual sites
+                         (PEI). NETWORK timeout defaults to 5s. 0 is disabled
+
+    --python             Python distribution (PED)
+    --conda              Conda/Anaconda Python distribution (PED)
+
+    --qt                 All about Qt, all options below 'qt-bindings' and 'qt-abstractions' (PEAD)
+    --qt-bindings        Available Qt bindings (PyQt/Pyside) and Qt version (PEAD)
+    --qt-abstractions    Available Qt abstractions and its configurations (QtPy/Qt.Py/PyQtGraph) (PEAD)
+
+    --packages           All options of packages below (PED)
+    --packages-pip       PIP installed packages + PIP check (PED)
+    --packages-pip-e     PIP locally installed packages + PIP check (PED)
+    --packages-conda     CONDA installed packages (PED)
+    --packages-conda-e   CONDA locally installed packages (PED)
+
+    --numbers            All options below, 'float' and 'int' (PEI)
+    --float              Float representation in the system (PEI)
+    --int                Integer representation in the system (PEI)
+
+    --personal           All options below, 'path' and 'scope' (PEAD)
+    --path               Show Python current paths i.e. 'sys.path' (PEAD)
+    --scope              Show Python current scope i.e. 'dir()' (PEAD)
+
+    --all                Run all options, except 'personal' (PEAD)
+    --all-for-sure       Run all options, INCLUDING 'PERSONAL' folder paths and information (PEAD)
+
+    --version, -v        Show program's version number and exit
+    --help, -h           Show this help message and exit
+
+
+
+With --all option
+-----------------
+
+
+.. code-block:: bash
+
+    $ helpdev --all
+
+
+.. code-block:: bash
+
+
+    * HARDWARE------------------------------------------------------------------------------------------------------
+        - Machine....................... x86_64
+        - Processor..................... Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+        - Total Memory.................. 16689 MB
+        - Free Memory................... 400 MB
+        - Total Swap.................... 19999 MB
+        - Free Swap..................... 19648 MB
+    * OPERATING SYSTEM----------------------------------------------------------------------------------------------
+        - System........................ Linux
+        - Release....................... 4.15.0-47-generic
+        - Platform...................... Linux-4.15.0-47-generic-x86_64-with-debian-buster-sid
+        - Version....................... #50-Ubuntu SMP Wed Mar 13 10:44:52 UTC 2019
+    * THREADS-------------------------------------------------------------------------------------------------------
+        - Version....................... NPTL 2.27
+        - Name.......................... pthread
+        - Lock.......................... semaphore
+    * NETWORK-------------------------------------------------------------------------------------------------------
+        - Timeout....................... 10
+        - PyPI.......................... DNS: 0.0142s LOAD: 0.5517s URL: https://pypi.python.org/pypi/pip
+        - Conda......................... DNS: 0.0296s LOAD: 0.0859s URL: https://repo.continuum.io/pkgs/free/
+        - GitLab........................ DNS: 0.0203s LOAD: 0.8076s URL: https://gitlab.com
+        - GitHub........................ DNS: 0.0212s LOAD: 0.5494s URL: https://github.com
+        - Google........................ DNS: 0.0034s LOAD: 0.3495s URL: https://google.com
+    * PYTHON DISTRIBUTION-------------------------------------------------------------------------------------------
+        - Version....................... 3.6.8
+        - C Compiler.................... GCC 7.3.0
+        - C API Version................. 1013
+        - Implementation................ cpython
+        - Implementation Version........ 3.6.8
+    * CONDA DISTRIBUTION--------------------------------------------------------------------------------------------
+        - Version....................... 4.6.12
+        - Build......................... 3.17.8
+    * QT ABSTRACTIONS-----------------------------------------------------------------------------------------------
+        - qtpy Version.................. 1.7.0
+        - qtpy Binding.................. pyqt5
+        - pyqtgraph Version............. 0.10.0
+        - pyqtgraph Binding............. Not set or inexistent
+        - Qt Version.................... 1.1.0
+        - Qt Binding.................... PySide2
+    * QT BINDINGS---------------------------------------------------------------------------------------------------
+        - PyQt5 Version................. 5.12.1
+        - PyQt5 Qt Version.............. 5.12.2
+        - PySide2 Version............... 5.12.2
+        - PySide2 Qt Version............ 5.12.2
+    * FLOAT---------------------------------------------------------------------------------------------------------
+        - Epsilon....................... 2.220446049250313e-16
+        - Digits........................ 15
+        - Precision..................... 53
+        - Maximum....................... 1.7976931348623157e+308
+        - Maximum Exp................... 1024
+        - Max. 10 Exp................... 308
+        - Minimum....................... 2.2250738585072014e-308
+        - Miminim Exp................... -1021
+        - Min. 10 Exp................... -307
+        - Radix......................... 2
+        - Rounds........................ 1
+    * INTEGER-------------------------------------------------------------------------------------------------------
+        - Bits per Digit................ 30
+        - Size of Digit................. 4
+    * PYTHON PACKAGES-----------------------------------------------------------------------------------------------
+        - alabaster..................... 0.7.12
+        - appdirs....................... 1.4.3
+        - asn1crypto.................... 0.24.0
+        ....
+    * CONDA PACKAGES------------------------------------------------------------------------------------------------
+        - alabaster..................... 0.7.12
+        - appdirs....................... 1.4.3
+        - asn1crypto.................... 0.24.0
+        ...
+
+
+This code is based on many other scripts from:
+
+   - `zhreshold <https://gist.github.com/zhreshold/f4defab409cc0e6f6a0e75237f73ca99>`_
+   - `QDarkStyle <https://github.com/ColinDuquesnoy/QDarkStyleSheet>`_
+   - `QtPy <https://github.com/spyder-ide/qtpy>`_
+
+
