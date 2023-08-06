@@ -1,0 +1,7 @@
+README.md
+setup.py
+Substra.egg-info/PKG-INFO
+Substra.egg-info/SOURCES.txt
+Substra.egg-info/dependency_links.txt
+Substra.egg-info/top_level.txt
+substra/__init__.py
