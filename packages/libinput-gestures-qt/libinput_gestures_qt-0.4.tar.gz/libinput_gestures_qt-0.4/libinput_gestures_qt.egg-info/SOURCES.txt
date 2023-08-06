@@ -1,0 +1,14 @@
+README.md
+libinput-gestures-qt
+setup.py
+libinput_gestures_qt/__init__.py
+libinput_gestures_qt/edit_window.py
+libinput_gestures_qt/main.py
+libinput_gestures_qt/main_window.py
+libinput_gestures_qt.egg-info/PKG-INFO
+libinput_gestures_qt.egg-info/SOURCES.txt
+libinput_gestures_qt.egg-info/dependency_links.txt
+libinput_gestures_qt.egg-info/not-zip-safe
+libinput_gestures_qt.egg-info/top_level.txt
+libinput_gestures_qt/logo/libinput-gestures-qt.desktop
+libinput_gestures_qt/logo/libinput-gestures-qt.png

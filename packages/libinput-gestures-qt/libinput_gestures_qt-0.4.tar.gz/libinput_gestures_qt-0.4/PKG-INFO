@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: libinput_gestures_qt
+Version: 0.4
+Summary: Qt interface for libinput-gestures (works best with Plasma)
+Home-page: https://github.com/OneAdder/libinput_gestures_qt
+Author: Michael Voronov
+Author-email: mikivo@list.ru
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
