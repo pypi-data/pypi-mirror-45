@@ -1,0 +1,12 @@
+.gitignore
+.gitlab-ci.yml
+README.rst
+setup.py
+aiohttp_babel/__init__.py
+aiohttp_babel/locale.py
+aiohttp_babel/middlewares.py
+aiohttpbabel.egg-info/PKG-INFO
+aiohttpbabel.egg-info/SOURCES.txt
+aiohttpbabel.egg-info/dependency_links.txt
+aiohttpbabel.egg-info/requires.txt
+aiohttpbabel.egg-info/top_level.txt

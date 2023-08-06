@@ -1,0 +1,29 @@
+image: python:3.7-alpine
+
+stages:
+  - build
+  - release
+
+package:
+  stage: build
+  only:
+    - tags
+  before_script:
+    - apk add git
+  script:
+    - python setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 day
+
+deploy:
+  stage: release
+  only:
+    - tags
+  before_script:
+    - pip install twine
+  script:
+    - twine upload dist/*
+  dependencies:
+    - package
