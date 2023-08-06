@@ -1,0 +1,8 @@
+certbot_dns_domeneshop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_domeneshop/dns_domeneshop.py,sha256=QeOLc2yfidW_dPclQoNB6fb0OdrCwHiIiKwtFb03jZM,4773
+certbot_dns_domeneshop-0.2.6.dist-info/LICENSE.txt,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+certbot_dns_domeneshop-0.2.6.dist-info/METADATA,sha256=Av02OzFgYI1a_K8R0C9HyA4eQYEd_ntU7KIOIf_Hyj4,4654
+certbot_dns_domeneshop-0.2.6.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+certbot_dns_domeneshop-0.2.6.dist-info/entry_points.txt,sha256=mtMze8Yb1VlqT63vYsSf2rEAkPZjPYpuEtA-Fxl6R_E,88
+certbot_dns_domeneshop-0.2.6.dist-info/top_level.txt,sha256=hCiHzScpHqgH205cS6T6X-adF6d4iwDpGZonoFpH4eM,23
+certbot_dns_domeneshop-0.2.6.dist-info/RECORD,,
