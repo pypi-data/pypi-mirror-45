@@ -1,0 +1,10 @@
+search_torrent-1.0.1.dist-info/DESCRIPTION.rst,sha256=EGxCG5er8YXBMB7dxcJJ43GLr7LprIJ0XmqPtZBQ8JM,482
+search_torrent-1.0.1.dist-info/METADATA,sha256=GlCyhAM12lZLUfoAWganz8m5hWtNB7iwjcRyCa48UuE,1022
+search_torrent-1.0.1.dist-info/RECORD,,
+search_torrent-1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+search_torrent-1.0.1.dist-info/entry_points.txt,sha256=ZK8QseR8HTunLcXUlV-eC3WJZjqHmuPFN7cb4WuOTJI,64
+search_torrent-1.0.1.dist-info/metadata.json,sha256=HxG6JqhhnUe4yui_BqndP0Kx2aC7Kg5t2V1a01J7tzE,914
+search_torrent-1.0.1.dist-info/top_level.txt,sha256=rEa3I1ZUMkTen8v0qYNNuXewFk1VO-u8-QEUhDMhBPA,16
+torrent_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torrent_crawler/crawler.py,sha256=XvWQckkzYM3bl-bsLGk1AZ1NOCR_LeQXdBwfDKmePV4,7848
+torrent_crawler/search.py,sha256=vKaBHFIP_Hb0EECLlzmqNxCLwJQcFzEiCTMigi-P-iE,7571
