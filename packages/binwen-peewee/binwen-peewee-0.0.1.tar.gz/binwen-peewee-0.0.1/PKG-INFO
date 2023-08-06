@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: binwen-peewee
+Version: 0.0.1
+Summary: binwen framework peewee
+Home-page: https://github.com/binwen/binwen-peewee
+Author: caowenbin
+Author-email: cwb201314@qq.com
+License: MIT
+Description: peewee的扩展，添加pre_save等信号及DatetimeTZField等字段，并且支持binwen-framework框架
+        
+Keywords: peewee,python3,binwen-framework
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
