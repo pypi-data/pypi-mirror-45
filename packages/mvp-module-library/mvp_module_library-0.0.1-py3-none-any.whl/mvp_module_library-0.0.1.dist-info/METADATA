@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mvp-module-library
+Version: 0.0.1
+Summary: A collection of modules for executing MVP Workflows
+Home-page: https://github.com/NCATS-Tangerine/mvp-module-library
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: ontobio
+Requires-Dist: mygene
+Requires-Dist: pandas
+Requires-Dist: typing
+Requires-Dist: graphviz
+
+UNKNOWN
+
+
