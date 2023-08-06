@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: simple-dnf
+Version: 0.1.0
+Summary: Simple graphical utility for DNF package management
+Home-page: UNKNOWN
+License: GPL-3.0+
+Author: Arkelis
+Author-email: guillaume.fayard@pycolore.fr
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

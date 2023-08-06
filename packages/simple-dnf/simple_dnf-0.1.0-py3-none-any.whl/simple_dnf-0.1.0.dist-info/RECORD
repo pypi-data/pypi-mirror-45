@@ -1,0 +1,11 @@
+simple_dnf/backend.py,sha256=XFicE3lpDlAZE9Gj3hS2MsvtCbdhHxkTKbsogJCGC_c,6261
+simple_dnf/gtkapp.py,sha256=HqTJuvTZor5noG9FYVzF-oh1W58sqkV-MlqP1g1fPWY,8997
+simple_dnf/locales/fr/LC_MESSAGES/simple_dnf.mo,sha256=eiE-8oOj5Lej3yHiAfpxLAJ7SPFItF4XoRdiQ4D7Q7M,2214
+simple_dnf/locales/fr/LC_MESSAGES/simple_dnf.po,sha256=HlRqJAdBoztSDbL8pvqCIYZUZVW0CEH6Pq63f6urw2I,3725
+simple_dnf/main.py,sha256=ttlC63B9_U4d5lRHA1xSxlbY8s9kbtnSaJ2lhyFyLkI,898
+simple_dnf/ui-classic.glade,sha256=uTg-qFcye5bGFMIOApVJ5odM5NmZawqiDd6ni5ISKgE,33273
+simple_dnf/ui.glade,sha256=xzLGZ4R_irbdMUHleb0qKpxox8pqz8lqQtdfoh3OuZk,30573
+simple_dnf-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+simple_dnf-0.1.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+simple_dnf-0.1.0.dist-info/METADATA,sha256=3OQpEbJ2ktx41bjJCkMlBu8E9uSDwaQpv__f-QvpFwQ,424
+simple_dnf-0.1.0.dist-info/RECORD,,
