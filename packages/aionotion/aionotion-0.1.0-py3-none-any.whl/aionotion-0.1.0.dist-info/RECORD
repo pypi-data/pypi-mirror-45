@@ -1,0 +1,11 @@
+aionotion/__init__.py,sha256=i074H9tZm5ArcgrS5fQgPNJjCAVugNsbtiU40BTg5B4,2788
+aionotion/const.py,sha256=p-8fep3T4K9zu4gD3LeQ1TmjoBL4vPkU5qiPVMnK3qo,54
+aionotion/errors.py,sha256=W2zvXAuZXmLIIHODjaQgVkSN3D6cspe-f0JewPymU2k,202
+tests/fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures/api.py,sha256=IJFc01lR-rED3730iYKpQ8PLqqPGzS4n-tAUtlTiTVw,9228
+aionotion-0.1.0.dist-info/AUTHORS.md,sha256=g45IxOTVPKKotENNOfgNsC9VOVDe--KdSNds3Tg2Ne8,84
+aionotion-0.1.0.dist-info/LICENSE,sha256=ogZsLhC2WGhh3rDMlV1z1IkmEGntLDnclD7h5dC313M,1067
+aionotion-0.1.0.dist-info/METADATA,sha256=Elv-9i58E7ga9xJvfoF9CDUQVfpQ-mVeg_AH3lMJAkk,3973
+aionotion-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aionotion-0.1.0.dist-info/top_level.txt,sha256=rTsRV7UXpUC9Vv1GEselVHffcLZxo-Ner6belSVumMk,16
+aionotion-0.1.0.dist-info/RECORD,,
