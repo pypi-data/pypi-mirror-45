@@ -1,0 +1,8 @@
+appsyncclient/__init__.py,sha256=zjfsr-HQ9ralL85nParqGG93vf3FBt4whLt8xVp39Wc,21
+appsyncclient/awssigner.py,sha256=9z9pEBsoXZCBANngZ9W3CBgh2AF4OTZ4Y_EA2VyUZWs,2699
+appsyncclient/index.py,sha256=o8Bvz_s-H2HFNeWg72aPF3rrHNBRBDl0fYum0x8rZhk,5389
+appsync_client-0.0.13.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+appsync_client-0.0.13.dist-info/METADATA,sha256=QtLolNgKBp46pFbIIcjlb6GoyTfRKJ8lzA16jd_Fokc,720
+appsync_client-0.0.13.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+appsync_client-0.0.13.dist-info/top_level.txt,sha256=GBDH_6Ru7CjrKP0yw96nw2hhKl5NcLwlln_4E3ojUsg,14
+appsync_client-0.0.13.dist-info/RECORD,,
