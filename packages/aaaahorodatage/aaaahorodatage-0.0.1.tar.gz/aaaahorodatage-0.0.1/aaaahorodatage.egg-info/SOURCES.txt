@@ -1,0 +1,10 @@
+README.md
+setup.py
+aaaa/42
+aaaa/__init__.py
+aaaa/ahordat.py
+aaaa/demo.py
+aaaahorodatage.egg-info/PKG-INFO
+aaaahorodatage.egg-info/SOURCES.txt
+aaaahorodatage.egg-info/dependency_links.txt
+aaaahorodatage.egg-info/top_level.txt
