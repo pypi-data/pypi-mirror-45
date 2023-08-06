@@ -1,0 +1,1 @@
+from black_holes.prefabs import DatabaseBlackHole as SqliteBlackHole
