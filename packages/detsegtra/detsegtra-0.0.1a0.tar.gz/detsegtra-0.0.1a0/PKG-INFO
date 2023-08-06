@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: detsegtra
+Version: 0.0.1a0
+Summary: tools for detection, segmentation, tracking of nuclei in 3D fluorescence microsopy data
+Home-page: https://github.com/mpicbg-csbd/detsegtra
+Author: Coleman Broaddus
+Author-email: broaddus@mpi-cbg.de
+License: BSD 3-Clause License
+Description: UNKNOWN
+Platform: UNKNOWN

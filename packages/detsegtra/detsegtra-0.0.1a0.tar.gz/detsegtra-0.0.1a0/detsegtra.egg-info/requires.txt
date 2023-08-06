@@ -1,0 +1,16 @@
+numpy
+matplotlib
+tifffile
+pandas
+pulp
+torch
+torchsummary
+scikit-image
+pykdtree
+termcolor
+sortedcollections
+tabulate
+scikit-learn
+seaborn
+networkx
+numba
