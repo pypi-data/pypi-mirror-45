@@ -1,0 +1,11 @@
+rgwadmin/__init__.py,sha256=HZ1jfkrlolunRi6K0T5_RK3EBxTSfH87kDRvPIUbG98,204
+rgwadmin/compat.py,sha256=Z1zImYBr_kG0rZ_V4ylEj4tTUPrxqWMYLmq7vkvosSs,106
+rgwadmin/exceptions.py,sha256=kJ6Rojn35ECHGVCI-2t7e5KNTgfHrYxxVWJRadO81yE,2633
+rgwadmin/rgw.py,sha256=d-c_Rm20mdysuXZQAn6Vc41c_DKd3YSQkbTj4LWh7XU,20140
+rgwadmin/user.py,sha256=FVCLdVtMXnwcRTlJPqCqDMVnTYvfJRP1DvI5N1CKMVg,9671
+rgwadmin/utils.py,sha256=3zXUgJ7wKKYYh-ULlhURdDyLXPl4DlkP0IVq-YALE9g,1042
+rgwadmin-2.1.0.dist-info/LICENSE,sha256=wSKK5Hpa2gRk6cwvHCU-JDdDKGZXC5rGJEvOtNdcDxA,26443
+rgwadmin-2.1.0.dist-info/METADATA,sha256=ok3eBwJOabw0fNyhZ9ALJ4X8W2uVJc8BXxklbyzBQ5c,3853
+rgwadmin-2.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rgwadmin-2.1.0.dist-info/top_level.txt,sha256=BDLLr1F10E-tHGMxG1Q4wQeEy_YPBUJKZoqI9o_pytk,9
+rgwadmin-2.1.0.dist-info/RECORD,,
