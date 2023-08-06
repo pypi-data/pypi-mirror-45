@@ -1,0 +1,11 @@
+text_processing_ml/__init__.py,sha256=QcV1H4mi4YyTEO7pBAnJkrkNLgVhLqyMrMRTNewR-To,133
+text_processing_ml/matching/__init__.py,sha256=otUWoyGRjauATQ3Lz6PUEgTNDrU9m3T8cjDCbEAxuSo,57
+text_processing_ml/matching/matching.py,sha256=3hxo9HxDFYDC2KffQl351BnnUQ9wT2wfkewRnhOw1NA,4044
+text_processing_ml/normalization/__init__.py,sha256=r5QXbVEIxVflo-aL7Q21eefdoxyr8evjrPDKHxeeyE0,70
+text_processing_ml/normalization/normalization.py,sha256=czArc1Ucr_IFtHI9it-NMJCsvLODjIDBjjUNjDF7FEk,4704
+text_processing_ml/parsing/__init__.py,sha256=E5mJZRpDCf_C-GbokC3VYF1AHsoZkt5LI6irG8_YVU4,56
+text_processing_ml/parsing/parsing.py,sha256=0Y6q0elZuELpjQuQmafKjY_pjYVccJ6VS3IZwYI4RTM,1293
+text_processing_ml-0.1.3.dist-info/METADATA,sha256=q4zPAbPg8sztP3vsX3qK7NWRwwxDPWEj7pRSBkVj8oU,913
+text_processing_ml-0.1.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+text_processing_ml-0.1.3.dist-info/top_level.txt,sha256=J8_uIG145J5twJ0SRZE5rP3TveNBZn-WKf4KyDv1ojM,19
+text_processing_ml-0.1.3.dist-info/RECORD,,
