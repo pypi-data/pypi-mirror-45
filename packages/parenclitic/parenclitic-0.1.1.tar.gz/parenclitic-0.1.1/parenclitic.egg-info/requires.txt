@@ -1,0 +1,7 @@
+numpy
+igraph
+pandas
+sklearn
+scipy
+multiprocessing
+threading
