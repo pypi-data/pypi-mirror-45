@@ -1,0 +1,16 @@
+httpbench/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpbench/apps.py,sha256=2oEnC_6XjCri_YQ-5JoQ6Em5mCQn_W0ozmN1AKpXiYA,93
+httpbench/backends.py,sha256=XgGozisV_jAxkq0WGB0VbyD4VmnLf8TvnKT-UDJ6zK8,637
+httpbench/header.py,sha256=jL4USX3ms_JG9yChlgrhlPrXF0ADU11esQNfSuDiiaI,806
+httpbench/middlewares.py,sha256=pCJ8W79tiWUiUWndEgNx1wxY9zxx3m9ueRRT4ivm1bQ,477
+httpbench/throttle.py,sha256=2p6pEwfXxJVGpkpdnFH03LC5HGWQ3E2BIYzhNcwzATU,906
+httpbench/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpbench/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpbench/management/commands/httpbench.py,sha256=LHznOTQ13lDPqQ0mPmcz1oeHM9q46pYNGGfAE--f1Pk,3582
+httpbench/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpbench/tests/test_header.py,sha256=TRTjKpcNTjD5pJxu_QJ8wGhnMk9mtcibdiZ5z_I9rrs,983
+djangohttpbench-0.0.1.dist-info/LICENSE,sha256=QEyMeLlScY6u64AnIKcQ7lo45bkL3ssPf8l7ZKa4yMo,1072
+djangohttpbench-0.0.1.dist-info/METADATA,sha256=pqBMFq5kh58Y6VOL2EoVxRjZnvYiwU4FNXgW38KbgqA,1859
+djangohttpbench-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+djangohttpbench-0.0.1.dist-info/top_level.txt,sha256=evuChp3Bd3ZRDDhxrmsSMLyDOkp2gT8wwGIp2lfTn94,10
+djangohttpbench-0.0.1.dist-info/RECORD,,
