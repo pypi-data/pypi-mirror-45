@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rjango.rest
+Version: 0.1.0
+Summary: Tools and utilities to easy REST API development with Rjango
+Home-page: UNKNOWN
+Author: Nicholas Romero
+Author-email: ncrmro@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: django (>=2)
+Requires-Dist: djangorestframework (>=3.9.2)
+Requires-Dist: django-filter (>=2.1.0)
+
+UNKNOWN
+
+
