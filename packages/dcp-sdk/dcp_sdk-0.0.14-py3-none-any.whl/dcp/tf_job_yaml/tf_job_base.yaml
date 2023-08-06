@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tmp
+spec:
+  backOffLimit: 1
+  ttlSecondsAfterFinished: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: container
+        image: dudaji/dcp-job:1.13.1
+        command: ['sleep', '200']
+        resources:
+          limits:
+            nvidia.com/gpu: 0
