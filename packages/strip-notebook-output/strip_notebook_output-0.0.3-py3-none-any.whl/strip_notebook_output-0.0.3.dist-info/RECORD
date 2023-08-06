@@ -1,0 +1,9 @@
+strip_notebook_output/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+strip_notebook_output/strip_output.py,sha256=h2CxqqEcd8Rn2JU2xX6NA9pDxtE07H6WnBTjtVovkuA,2021
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strip_notebook_output-0.0.3.dist-info/LICENSE-APACHE,sha256=OntCpht1lMImndkSgiCPic17ZC8tbdjo3YoAzhGkdLo,9744
+strip_notebook_output-0.0.3.dist-info/LICENSE-MIT,sha256=lUMMEIMR5LhK_7kO46czAN8AAvW5JfwISWAc3YbC94I,1061
+strip_notebook_output-0.0.3.dist-info/METADATA,sha256=ZbVp-6nmL0rR0ZoiAVzvY0liBWSwT-LEospTcKQzeP4,1427
+strip_notebook_output-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+strip_notebook_output-0.0.3.dist-info/top_level.txt,sha256=VAn1tYkTCPLAwSKZ7fCLolfebbJxOKZW3oD8-wgbPcQ,28
+strip_notebook_output-0.0.3.dist-info/RECORD,,
