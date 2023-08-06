@@ -1,0 +1,16 @@
+udemy_dl/__init__.py,sha256=9vvYH-4TaYNma1dXDQ8YRF7anvuNUwBTE_-hOk4kMAQ,1366
+udemy_dl/__main__.py,sha256=yNkKBHgPd0pb2XGAjZYTHxoiv6vMaYdrr0to6u5oQ40,104
+udemy_dl/argparser.py,sha256=CwnVkwJC7fmsMKx6qFYgahj0sCly1c3dkYI4uz0UHVY,743
+udemy_dl/cli.py,sha256=vmK2hIKlTJ2QHHp9jxJ1DJq5EYA6uoMFwlpOetiFp8k,2810
+udemy_dl/course.py,sha256=mXzduIYc-v6zFNiDr6nhv7SW1I-ZRna1YLokXHnb9Cw,5498
+udemy_dl/downloader.py,sha256=NU3SqLlLZ9e4CnNIUaRWldaAtPt2tLioBWN3LUnS9pU,2021
+udemy_dl/exceptions.py,sha256=md9aI93C1OftmuAYlDNJr1MVWyw0Ixj073FPXqJQSNo,42
+udemy_dl/session.py,sha256=0smHFltA9SxtkYyluqZjgbRmg58o-2Pn8blAmouGw5U,719
+udemy_dl/udemy_download.py,sha256=miUePzk-9OhEnOY3HFhirkx97hr5jl_m_22nFwOxXco,2444
+udemy_dl/utils.py,sha256=wNNOulXG6Smiyz5y3HbBvuzOzaFNHegkGbUGGoPITpA,932
+udemydl-0.3.0.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+udemydl-0.3.0.dist-info/METADATA,sha256=2cfn6tQbCax7s26GmzOTINUS_aSOy5sZYfPyq61yptU,2044
+udemydl-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+udemydl-0.3.0.dist-info/entry_points.txt,sha256=iK4T05Tp5uOMPHMxp0D_4keOFKkRW69XiChhvScoRpg,52
+udemydl-0.3.0.dist-info/top_level.txt,sha256=lXIZQOpSej8UuZ4H7TLOSHZX79En4Rq6ge8OKoNsrLE,9
+udemydl-0.3.0.dist-info/RECORD,,
