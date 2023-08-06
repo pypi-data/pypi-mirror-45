@@ -1,0 +1,10 @@
+grpcWSGI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpcWSGI/__version__.py,sha256=Odwxa9kz-_V8xcKcdvxXr-wIV7dHYmkcwRW-P9bBlgk,66
+grpcWSGI/client.py,sha256=4OyTKMldnCLKvzdGMf1cFa41r1lfIb1uMbR6CQ-VE1E,3801
+grpcWSGI/protocol.py,sha256=LZFVetYoJjS2lIH3b3w8pfX2fVFQJZNUZQkz_qz5DdI,761
+grpcWSGI/server.py,sha256=IV35-qERHdL1SKmrGzZpnnmhlNEMqgB-D53tjRQrLDM,6552
+grpcWSGI-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+grpcWSGI-0.0.2.dist-info/METADATA,sha256=6oS3RpF-TPwG_tXV8f3PmycQHowAeYl5Srm7-Irw59A,3458
+grpcWSGI-0.0.2.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+grpcWSGI-0.0.2.dist-info/top_level.txt,sha256=Z8uDEktPk5V5msOOGLg4R3L7HPA2957InBkP_A8FHRA,9
+grpcWSGI-0.0.2.dist-info/RECORD,,
