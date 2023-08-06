@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aiobinance"
+version = "0.1.1"
+description = "Binance API async Python wrapper"
+authors = ["ape364 <ape364@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.4"
+pytest-asyncio = "^0.10.0"
+asynctest = "^0.12.3"
+coveralls = "^1.7"
+twine = "^1.13"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
