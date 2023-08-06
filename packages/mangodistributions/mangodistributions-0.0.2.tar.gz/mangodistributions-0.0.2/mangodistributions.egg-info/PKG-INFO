@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mangodistributions
+Version: 0.0.2
+Summary: A distribution package
+Home-page: https://github.com/pypa/sampleproject
+Author: Michael Teckman
+Author-email: michael.teckman@googlemail.com
+License: UNKNOWN
+Description: # Readme for Mango_dist
+        
+        ## Installation
+        Run `pip install -i https://test.pypi.org/simple/ mangodistributions` in the command line
+        
+        ## Importing functionality
+        Import into a python script with `import mangodistributions as mg`
+        
+        ## Example functionality
+        Create a random sample of 10 values from Normal distribution with a mean of 5 and a standard deviation of 1:
+        ```
+        import mangodistributions as mg
+        
+        normal_dist = mg.Normal(n = 10, mean = 5, sd=1)
+        sample = normal_dist.draw()
+         
+        ```
+        Print summary metrics on your sample
+        ```
+        import mangodistributions as mg
+        
+        normal_dist = mg.Normal(n = 10, mean = 5, sd=1)
+        sample = normal_dist.draw()
+        normal_dist.summarise()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
