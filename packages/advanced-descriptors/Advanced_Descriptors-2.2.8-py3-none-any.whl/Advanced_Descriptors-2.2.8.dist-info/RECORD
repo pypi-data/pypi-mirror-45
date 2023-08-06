@@ -1,0 +1,9 @@
+Advanced_Descriptors-2.2.8.dist-info/METADATA,sha256=AWywFZlfixet5AIkN4TSSFFNDz6Y8RKldk5drKFcRRI,8217
+Advanced_Descriptors-2.2.8.dist-info/RECORD,,
+Advanced_Descriptors-2.2.8.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+Advanced_Descriptors-2.2.8.dist-info/top_level.txt,sha256=2g0oA1iN3algEyqt3onbpQ6JXK4mhxSPbEW1CY8Kfsk,21
+advanced_descriptors/__init__.py,sha256=ZKW3irYgyMWHuW8m5TGGdR1UloRbPCRiZTKx-O5Jv08,1706
+advanced_descriptors/advanced_property.py,sha256=1t3ComDMCjbBFOe8ZqOdQlMpvje6y0o3c2hueCxo5Sc,5956
+advanced_descriptors/log_on_access.py,sha256=51VRWiz6jLqdgtvkTQhV7Xp-mxLQSkvJPfU2rJ5Ep8w,15666
+advanced_descriptors/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+advanced_descriptors/separate_class_method.py,sha256=dW660XVu6578dzwtf8Yo6nm0Wxn9mE0eHW1-vez901A,6233
