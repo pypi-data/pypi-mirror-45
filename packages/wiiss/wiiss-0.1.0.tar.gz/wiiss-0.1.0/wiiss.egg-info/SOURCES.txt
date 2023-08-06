@@ -1,0 +1,7 @@
+README.md
+setup.py
+wiiss.py
+wiiss.egg-info/PKG-INFO
+wiiss.egg-info/SOURCES.txt
+wiiss.egg-info/dependency_links.txt
+wiiss.egg-info/top_level.txt
