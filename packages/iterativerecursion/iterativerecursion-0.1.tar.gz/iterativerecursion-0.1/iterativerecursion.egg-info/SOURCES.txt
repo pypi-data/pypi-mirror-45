@@ -1,0 +1,8 @@
+README.md
+setup.py
+iterativerecursion/__init__.py
+iterativerecursion/iterativerecursion.py
+iterativerecursion.egg-info/PKG-INFO
+iterativerecursion.egg-info/SOURCES.txt
+iterativerecursion.egg-info/dependency_links.txt
+iterativerecursion.egg-info/top_level.txt
