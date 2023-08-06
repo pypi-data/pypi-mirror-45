@@ -1,0 +1,9 @@
+lch_etl/__init__.py,sha256=L4uBhDyiF7_7lf9U8c9Xo1dDj6RJ8YtMtwtQUD2JAq0,57
+lch_etl/bigdata.py,sha256=NgaZm84MY6zhQkM9w-qJbpjw9JcNzFy0sF6dUOvY2-M,2319
+lch_etl/db4.py,sha256=z-eDsGe8SGeGSlTN0SbFzruUf8MLX9TPNb1r3WSf7kA,12483
+lch_etl/dbv2.py,sha256=m2dzF4heeqtenT9v75_DJWevgOSkt2cbcQMg7VM-1OQ,11793
+lch_etl/tool.py,sha256=T8Tq94gDqZAeWxx6Gcubi0yWXrk9x07bUsXPlXheXTg,4217
+lch_etl-1.0.0.dist-info/METADATA,sha256=2HCMgboq20Gm7fOkS1lFw23ygVjWCoqE1swoyeieQpE,828
+lch_etl-1.0.0.dist-info/WHEEL,sha256=ekss6qCJcIZ1jvsOZb3ewnzAyJD9JSfQQg87sLq_G8M,97
+lch_etl-1.0.0.dist-info/top_level.txt,sha256=XhS5aS4uA3uFhkff7mkWOW3615dcNdyGveoRWELzv58,8
+lch_etl-1.0.0.dist-info/RECORD,,
