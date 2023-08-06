@@ -1,0 +1,13 @@
+requests
+lxml
+coloredlogs
+defusedxml
+
+[dev]
+pytest
+coverage
+mock
+responses
+
+[docs]
+sphinx
