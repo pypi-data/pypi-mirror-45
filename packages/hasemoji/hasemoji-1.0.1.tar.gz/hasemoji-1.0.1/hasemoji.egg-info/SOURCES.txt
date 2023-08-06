@@ -1,0 +1,8 @@
+README.md
+setup.py
+hasemoji/__init__.py
+hasemoji.egg-info/PKG-INFO
+hasemoji.egg-info/SOURCES.txt
+hasemoji.egg-info/dependency_links.txt
+hasemoji.egg-info/requires.txt
+hasemoji.egg-info/top_level.txt
