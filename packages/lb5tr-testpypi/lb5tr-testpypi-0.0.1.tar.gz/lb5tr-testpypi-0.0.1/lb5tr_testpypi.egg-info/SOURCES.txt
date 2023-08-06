@@ -1,0 +1,7 @@
+README.md
+setup.py
+code/__init__.py
+lb5tr_testpypi.egg-info/PKG-INFO
+lb5tr_testpypi.egg-info/SOURCES.txt
+lb5tr_testpypi.egg-info/dependency_links.txt
+lb5tr_testpypi.egg-info/top_level.txt
