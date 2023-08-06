@@ -1,0 +1,10 @@
+vidl/__init__.py,sha256=9_H4cVzVQgfaSoqDB1Ff6EWpwDwyAfEGnb8SyMgkAOY,2085
+vidl/config.py,sha256=c_UYdkzwdUA1VVwwLlHZOXKgOLZTCxllaQjaGISkHyc,1977
+vidl/default_user_md_parser.py,sha256=G8ekjND89dZFVvOu6N0lherDaWSpFK9gZ_AYcqVakmQ,1156
+vidl/dl.py,sha256=xxO0qsNl0T9NU24moUvGkhN2LwuAVG8cTBufoI3LwZQ,9146
+vidl/md.py,sha256=UQb0F13-p8mdhsFEOEgsKlGFhksNfRatw6tBnkLTTuI,1250
+vidl/run.py,sha256=2sVeHEkNDraUo2yFUhMA47kidIhhz7jzCZa6q9Y_PQE,550
+vidl-3.4.7.dist-info/entry_points.txt,sha256=kYqdHv9FiRCFFvZ_RUTzOBImB50lQUUWdOil_HeM7vs,38
+vidl-3.4.7.dist-info/WHEEL,sha256=7rgPGIJCk4vUc5grLXztusALWdGCgLy7UJ52dff4Pnc,85
+vidl-3.4.7.dist-info/METADATA,sha256=fYbGLRdSuEU7IWtypdENDPJ7frLgPPIh9CBUpe2AB8w,7848
+vidl-3.4.7.dist-info/RECORD,,
