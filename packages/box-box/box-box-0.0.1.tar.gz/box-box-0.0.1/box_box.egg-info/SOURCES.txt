@@ -1,0 +1,7 @@
+README.md
+box.py
+setup.py
+box_box.egg-info/PKG-INFO
+box_box.egg-info/SOURCES.txt
+box_box.egg-info/dependency_links.txt
+box_box.egg-info/top_level.txt
