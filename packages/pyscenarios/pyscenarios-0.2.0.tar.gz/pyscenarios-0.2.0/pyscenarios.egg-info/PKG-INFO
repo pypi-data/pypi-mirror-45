@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: pyscenarios
+Version: 0.2.0
+Summary: Python Monte Carlo Scenario Generator
+Home-page: https://github.com/crusaderky/pyscenarios
+Author: Guido Imperiale
+Author-email: guido.imperiale@gmail.com
+License: Apache
+Description: Python Monte Carlo Scenario Generator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5.0
