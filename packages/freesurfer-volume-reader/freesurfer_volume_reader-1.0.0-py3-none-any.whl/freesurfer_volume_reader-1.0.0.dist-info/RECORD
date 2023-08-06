@@ -1,0 +1,12 @@
+freesurfer_volume_reader/__init__.py,sha256=rdDiasaaPP9VZj4yWohEoHPffX_cLdibz122jK35gPk,2002
+freesurfer_volume_reader/__main__.py,sha256=Vasxk8ipX2T5ldxvYie-cxNR9bi-YULAj466XDSnO2w,3452
+freesurfer_volume_reader/ashs.py,sha256=ElGGXa9Ch2CVAF6OOGSDN4bMbnuubuiNTwSFOO2NAnM,2579
+freesurfer_volume_reader/freesurfer.py,sha256=mlV12oA4RwDxwvx4bgwOac2_m8R-oSpmGLm2Sqnrod0,3136
+freesurfer_volume_reader/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+freesurfer_volume_reader-1.0.0.dist-info/DESCRIPTION.rst,sha256=m30_Ox1rnhrdN9epSc7HqC9uhdSDjiHV4EqKKqgWDq8,648
+freesurfer_volume_reader-1.0.0.dist-info/METADATA,sha256=_9XEfEzZDiIxtvLgYwazkr7CqcKDsWNq5LZkh3RWfBo,1529
+freesurfer_volume_reader-1.0.0.dist-info/RECORD,,
+freesurfer_volume_reader-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+freesurfer_volume_reader-1.0.0.dist-info/entry_points.txt,sha256=M_z1ozu_cK-BTv0F8KHZzMU732JmwG9mEe0Mu8lHKG4,85
+freesurfer_volume_reader-1.0.0.dist-info/metadata.json,sha256=M-tvLJpgtdrLa6eUgItRdTrlP5TAMHhDeOvZOQE-SxA,1378
+freesurfer_volume_reader-1.0.0.dist-info/top_level.txt,sha256=cviv5pq6nZTWGoe0b33yUSw18LWFtV2LvNA7y4GdR4k,25
