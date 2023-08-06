@@ -1,0 +1,10 @@
+django_deploy_templates/__init__.py,sha256=EWDit85I3-A998wED3gKzIqbzCFFDgOZ9wJi-yY7F8E,55
+django_deploy_templates/apps.py,sha256=qmzM_ASItdFcOjrSKm86j7W-jU7EC0INYrAVrw7KsEk,119
+django_deploy_templates/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_deploy_templates/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_deploy_templates/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_deploy_templates/management/commands/generate_config.py,sha256=QBXTpIP94aYAk_Db8JN0ckvlQDyifkia_Tj71GIScIg,1198
+django_deploy_templates-0.1.1.dist-info/METADATA,sha256=voW_nhvTD8LSORh1XZjQ4l5NsZkQTLApozYXBWQ3B5M,317
+django_deploy_templates-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_deploy_templates-0.1.1.dist-info/top_level.txt,sha256=fZSl_RQnjOspQiyq4rhubhnFu7iBNYbt2zcR9GqUprQ,24
+django_deploy_templates-0.1.1.dist-info/RECORD,,
