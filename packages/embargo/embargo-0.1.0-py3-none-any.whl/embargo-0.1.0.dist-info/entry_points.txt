@@ -1,0 +1,3 @@
+[console_scripts]
+embargo = blockade.cli:main
+
