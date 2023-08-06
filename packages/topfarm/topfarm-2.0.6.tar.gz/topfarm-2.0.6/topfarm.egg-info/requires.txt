@@ -1,0 +1,10 @@
+matplotlib
+numpy
+openmdao==2.5.0
+networkx==2.1
+pytest
+pytest-cov
+py_wake
+scipy
+sphinx
+sphinx_rtd_theme
