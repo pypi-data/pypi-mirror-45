@@ -1,0 +1,13 @@
+flask_response_builder/__init__.py,sha256=XASgi49naiZZIvUNRsLqam2DTv9J4L4-Ty_v-gieLkc,213
+flask_response_builder/builders.py,sha256=14ZXQHwD3tkFCZSTJ1xvw5CZknMsF6y9BIfT6DBLOZA,9536
+flask_response_builder/case_notation.py,sha256=P0340HvhVkfl1OxEwO-MwJk2plXG5s5BzfYt_IxAsy4,1857
+flask_response_builder/config.py,sha256=DobDImo3aFkGxmY1vMLfiix7vRgYEGioZhO9UAjw8_8,1087
+flask_response_builder/dictutils.py,sha256=C0fgxHDS2ou3VsNn5s2O_zwWU1hBGMXrBd_GE8R2BcA,1751
+flask_response_builder/transformers.py,sha256=P6k5mEvhL3TGyTW-fLszs7sk7H556Pu-kDNGWNyDJ4Y,4900
+flask_response_builder/version.py,sha256=N3n0lEYyipBwbNTM80s0LimmOEl6euNDS0lNjEsRGKA,214
+flask_response_builder/wrapper.py,sha256=g1oJUD1lU9cYsinVOQ1Nfbt5nR914D80bbw3cfJU8M8,1141
+Flask_ResponseBuilder-1.2.1.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_ResponseBuilder-1.2.1.dist-info/METADATA,sha256=M3xOPO_HB3O4F2UrztR4E0QCWyawe2xiBeAxeLMBmXY,2394
+Flask_ResponseBuilder-1.2.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_ResponseBuilder-1.2.1.dist-info/top_level.txt,sha256=T_FGlWQpyqoaqhIpoqQq7d5jQx3wWR39_70vmqyQs-U,23
+Flask_ResponseBuilder-1.2.1.dist-info/RECORD,,
