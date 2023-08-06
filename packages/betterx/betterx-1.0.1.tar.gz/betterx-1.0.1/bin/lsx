@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import os
+import time
+import argparse
+
+NAME = 'lsx'
+VERSION = '1.0.0'
+
+parser = argparse.ArgumentParser(prog=NAME, description='updates the listing of files after some interval')
+
+parser.add_argument('directory', default='.', help='directory to be listed after interval', nargs='?')
+parser.add_argument('-n', dest='number', default=10, type=int, help='number of times to list directory')
+parser.add_argument('-t', dest='time', default=1, type=float, help='number of seconds to update listing')
+parser.add_argument('-i', '--infinity', action='store_true', help='infinity mode - stops only with manual user exit')
+parser.add_argument('-v', '--version', dest='version', action='version', version='%(prog)s {VERSION}'.format(VERSION=VERSION))
+
+args = parser.parse_args()
+
+def listing():
+    try:
+        for d in sorted(os.listdir(args.directory)):
+            if d[0] != '.': print(d, end='  ')
+        print('')
+        time.sleep(args.time)
+    except KeyboardInterrupt:
+        quit()
+    except Exception as e:
+        print('error : {}'.format(e))
+
+if __name__ == '__main__':
+
+    if args.infinity:
+        while True:
+            listing()
+        exit()
+
+    for n in range(args.number):
+        listing()

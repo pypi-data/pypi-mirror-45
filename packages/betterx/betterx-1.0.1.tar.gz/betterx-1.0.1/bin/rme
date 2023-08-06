@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import argparse
+
+from betterx._rme import rme
+
+NAME = 'rme'
+VERSION = '1.0.0'
+
+parser = argparse.ArgumentParser(prog=NAME, description='remove every file except for the ones mentioned')
+
+parser.add_argument('files', nargs='+', help='files to save or not remove')
+parser.add_argument('-d', dest='directory', default='.', help='directory to remove files from')
+parser.add_argument('-s', dest='supress', action='store_true', help='supress errors for files not found')
+parser.add_argument('-v', '--version', dest='version', action='version', version='%(prog)s {VERSION}'.format(VERSION=VERSION))
+
+args = parser.parse_args()
+
+if __name__ == '__main__':
+    success, error = rme(args.files, args.directory, args.supress)
+    if not success:
+	    print('error :', error)

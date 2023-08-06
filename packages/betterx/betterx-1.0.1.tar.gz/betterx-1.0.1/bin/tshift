@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+import argparse
+
+from betterx._tshift import tshift
+
+NAME = 'tshift'
+VERSION = '1.0.0'
+
+parser = argparse.ArgumentParser(prog=NAME, description='replaces all tab characters in a file with spaces')
+
+parser.add_argument('file', help='file to read for tab characters')
+parser.add_argument('-o', dest='output', default='', help='write tab replaced file into a different file')
+parser.add_argument('-n', dest='number', default=4, type=int, help='number of spaces to convert tab to')
+parser.add_argument('-v', '--version', dest='version', action='version', version='%(prog)s {VERSION}'.format(VERSION=VERSION))
+
+args = parser.parse_args()
+
+if __name__ == '__main__':
+    success, error = tshift(args.file, args.number, args.output)
+
+    if not success:
+        print('error :', error)
