@@ -1,0 +1,3 @@
+[console_scripts]
+fishtank = fishtank.__main__:main
+
