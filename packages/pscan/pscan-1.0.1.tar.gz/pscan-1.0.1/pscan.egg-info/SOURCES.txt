@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.py
+pscan/__init__.py
+pscan.egg-info/PKG-INFO
+pscan.egg-info/SOURCES.txt
+pscan.egg-info/dependency_links.txt
+pscan.egg-info/top_level.txt
