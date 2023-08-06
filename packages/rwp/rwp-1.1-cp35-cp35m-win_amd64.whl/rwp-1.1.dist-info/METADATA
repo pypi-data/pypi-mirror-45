@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rwp
+Version: 1.1
+Summary: Tropospheric radiowave propagation modelling
+Home-page: https://github.com/mikelytaev/wave-propagation
+Author: Mikhail Lytaev
+Author-email: mikelytaev@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: mpmath
+Requires-Dist: matplotlib
+Requires-Dist: cython
+Requires-Dist: fcc-fourier
+
+UNKNOWN
+
+
