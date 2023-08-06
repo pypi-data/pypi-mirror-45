@@ -1,0 +1,17 @@
+README.md
+setup.py
+pystencils_walberla/__init__.py
+pystencils_walberla/cmake_integration.py
+pystencils_walberla/codegen.py
+pystencils_walberla/jinja_filters.py
+pystencils_walberla.egg-info/PKG-INFO
+pystencils_walberla.egg-info/SOURCES.txt
+pystencils_walberla.egg-info/dependency_links.txt
+pystencils_walberla.egg-info/requires.txt
+pystencils_walberla.egg-info/top_level.txt
+pystencils_walberla/templates/GpuPackInfo.tmpl.cpp
+pystencils_walberla/templates/GpuPackInfo.tmpl.h
+pystencils_walberla/templates/Sweep.tmpl.cpp
+pystencils_walberla/templates/Sweep.tmpl.h
+pystencils_walberla/templates/SweepInnerOuter.tmpl.cpp
+pystencils_walberla/templates/SweepInnerOuter.tmpl.h
