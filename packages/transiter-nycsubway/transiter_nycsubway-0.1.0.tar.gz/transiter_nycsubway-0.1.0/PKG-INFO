@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: transiter_nycsubway
+Version: 0.1.0
+Summary: NYC Subway integration for Transiter
+Home-page: https://github.com/jamespfennell/transiter-nycsubway
+Author: James Fennell
+Author-email: jamespfennell@gmail.com
+License: MIT
+Description: 
+        # NYC Subway integration for Transiter
+        
+        This package is used to integrate 
+         [Transiter](https://github.com/jamespfennell/transiter) 
+         with the data feeds for the New York City Subway.
+        The package needs to be used with configuration files provided in
+         [the Github repository](https://github.com/jamespfennell/transiter); 
+         as such, the full usage
+         instructions are over there.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
