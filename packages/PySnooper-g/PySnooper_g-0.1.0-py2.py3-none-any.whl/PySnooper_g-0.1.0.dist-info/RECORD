@@ -1,0 +1,14 @@
+pysnooper/__init__.py,sha256=eVfvnyp00R16hu9I_v5MX3wghOJv08dgWctI82sGVaY,430
+pysnooper/pycompat.py,sha256=NdgN2wC1RAmO8u-1DWS9w2Le29oMweJXMRFrVKiM_lQ,854
+pysnooper/pysnooper.py,sha256=hkTc7bVE-wqEXZBHibZTPCuuZpm71E8GGLcfJCq04OE,2693
+pysnooper/tracer.py,sha256=rvdP8eH0Cg0k0rs0nDZAaTpz9PUhzCa4cqEJfAuuSFo,9976
+pysnooper/utils.py,sha256=M9NeeU84PRZwfx7bk2BUJVH8lDDarJ5kCwxdGV_HnpE,718
+pysnooper/third_party/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysnooper/third_party/decorator.py,sha256=dCGfrfgaTJk9WPgLl979P-FE85vpJhWmo2PF7UWSEvg,16298
+pysnooper/third_party/six.py,sha256=h9jch2pS86y4R36pKRS3LOYUCVFNIJMRwjZ4fJDtJ44,32452
+PySnooper_g-0.1.0.dist-info/AUTHORS,sha256=-XMOhW2RfJ9t7UU_MNZfqOM2uXfrMIQfrO1iHdq6WLI,161
+PySnooper_g-0.1.0.dist-info/LICENSE,sha256=Xbg9Y0f35SlGtzbHHQ1Zu4DIpEhfz6ClFAvdg5FSvog,1085
+PySnooper_g-0.1.0.dist-info/METADATA,sha256=f6LSCZ-77b7Zhu9WYtoM9SUNZYtJKAE7tQVp93lJb2s,5729
+PySnooper_g-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+PySnooper_g-0.1.0.dist-info/top_level.txt,sha256=FSDQVJ8ETZs3IAz1qj6BZasYgd8_zSTx5ZCp8wj_5v4,10
+PySnooper_g-0.1.0.dist-info/RECORD,,
