@@ -1,0 +1,3 @@
+[console_scripts]
+craftdot = craftdot.cli:main
+
