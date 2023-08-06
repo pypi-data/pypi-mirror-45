@@ -1,0 +1,9 @@
+setup.py
+MySimpleDB.egg-info/PKG-INFO
+MySimpleDB.egg-info/SOURCES.txt
+MySimpleDB.egg-info/dependency_links.txt
+MySimpleDB.egg-info/not-zip-safe
+MySimpleDB.egg-info/requires.txt
+MySimpleDB.egg-info/top_level.txt
+mysimpledb/__init__.py
+mysimpledb/db.py
