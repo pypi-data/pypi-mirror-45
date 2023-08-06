@@ -1,0 +1,9 @@
+README.md
+setup.py
+gencedula/__init__.py
+gencedula/gencedula.py
+gencedula.egg-info/PKG-INFO
+gencedula.egg-info/SOURCES.txt
+gencedula.egg-info/dependency_links.txt
+gencedula.egg-info/requires.txt
+gencedula.egg-info/top_level.txt
