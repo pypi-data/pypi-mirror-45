@@ -1,0 +1,70 @@
+Metadata-Version: 1.1
+Name: wagtailgeowidget
+Version: 5.0.2
+Summary: Wagtail-Geo-Widget is the complete map solution for your Wagtail site.
+Home-page: https://github.com/frojd/wagtail-geo-widget
+Author: Fröjd
+Author-email: martin@marteinn.se
+License: MIT
+Description: |Build Status| |PyPI version|
+        
+        Wagtail-Geo-Widget
+        ==================
+        
+        Wagtail-Geo-Widget is the complete map solution for your Wagtail site.
+        
+        .. figure:: https://raw.githubusercontent.com/frojd/wagtail-geo-widget/develop/img/screen1.png
+           :alt: Screen1
+        
+           Screen1
+        
+        Features
+        --------
+        
+        -  Real spatial support (with GeoDjango and PointField)
+        -  Storing coordinates as strings (for no-GeoDjango setups)
+        -  StreamField integration
+        -  Searching with geoencoding
+        -  Inline panel support
+        -  Optional address search field
+        -  Language support
+        
+        Documentation
+        -------------
+        
+        -  `Getting started <./docs/getting-started.md>`__
+        -  `Settings <./docs/settings.md>`__
+        -  `Adding the widget to a Page <./docs/adding-to-a-page.md>`__
+        -  `Integrating with GeoDjango <./docs/integrating-with-geodjango.md>`__
+        -  `Adding to a StreamField <./adding-to-a-streamfield.md>`__
+        -  `FAQ <./docs/faq.md>`__
+        
+        Contributing
+        ------------
+        
+        Want to contribute? Awesome. Just send a pull request.
+        
+        License
+        -------
+        
+        Wagtail-Geo-Widget is released under the `MIT
+        License <http://www.opensource.org/licenses/MIT>`__.
+        
+        .. |Build Status| image:: https://travis-ci.org/Frojd/wagtail-geo-widget.svg?branch=master
+           :target: https://travis-ci.org/Frojd/wagtail-geo-widget
+        .. |PyPI version| image:: https://badge.fury.io/py/wagtailgeowidget.svg
+           :target: https://badge.fury.io/py/wagtailgeowidget
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Topic :: Utilities
