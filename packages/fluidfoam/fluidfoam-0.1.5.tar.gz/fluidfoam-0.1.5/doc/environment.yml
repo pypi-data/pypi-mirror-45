@@ -1,0 +1,17 @@
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - numpy
+  - cython
+  - h5py
+  - sphinx
+  - sphinx-gallery
+  - numpydoc
+  - jupyter
+  - matplotlib
+  - pandas
+  - fftw
+  - mako

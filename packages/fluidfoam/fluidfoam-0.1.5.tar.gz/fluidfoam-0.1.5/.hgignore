@@ -1,0 +1,12 @@
+# use glob syntax.
+syntax: glob
+*pyc
+*~
+.tox
+dist
+fluidfoam.egg-info
+.coverage
+_build
+build
+auto_examples
+generated
