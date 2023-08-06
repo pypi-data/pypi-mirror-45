@@ -1,0 +1,205 @@
+# Cagou: desktop/mobile frontend for Salut à Toi XMPP client
+# Copyright (C) 2016-2019 Jérôme Poisson (goffi@goffi.org)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#:import SimpleXHTMLWidget cagou.core.simple_xhtml.SimpleXHTMLWidget
+#:import _ sat.core.i18n._
+#:import C cagou.core.constants.Const
+#:import escape kivy.utils.escape_markup
+
+
+<MessAvatar>:
+    size_hint: None, None
+    size: dp(30), dp(30)
+    canvas.before:
+        Color:
+            rgba: (0.87,0.87,0.87,1)
+        RoundedRectangle:
+            radius: [dp(5)]
+            pos: self.pos
+            size: self.size
+
+<MessagesWidget>:
+    cols: 1
+    padding: dp(10)
+    spacing: dp(5)
+    size_hint: 1, None
+    height: self.minimum_height
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<MessageWidget>:
+    size_hint: 1, None
+    height: right_part.minimum_height
+    on_width: self.widthAdjust()
+    avatar: avatar
+    delivery: delivery
+    mess_xhtml: mess_xhtml
+    BoxLayout:
+        orientation: 'vertical'
+        width: avatar.width
+        size_hint: None, 1
+        MessAvatar:
+            id: avatar
+        Widget:
+            # use to push the avatar on the top
+            size_hint: 1, 1
+    BoxLayout:
+        orientation: 'vertical'
+        id: right_part
+        BoxLayout:
+            id: header_box
+            size_hint: 1, None
+            height: time_label.height if root.mess_data.type != C.MESS_TYPE_INFO else 0
+            opacity: 1 if root.mess_data.type != C.MESS_TYPE_INFO else 0
+            Label:
+                id: time_label
+                color: (0, 0, 0, 1) if root.mess_data.own_mess else (0.55,0.55,0.55,1)
+                font_size: root.font_size
+                text_size: None, None
+                size_hint: None, None
+                size: self.texture_size
+                padding: dp(5), 0
+                markup: True
+                valign: 'middle'
+                text: u"[b]{}[/b], {}".format(escape(root.mess_data.nick), root.mess_data.time_text)
+            Label:
+                id: delivery
+                color: C.COLOR_BTN_LIGHT
+                font_size: root.font_size
+                text_size: None, None
+                size_hint: None, None
+                size: self.texture_size
+                padding: dp(5), 0
+                # XXX: DejaVuSans font is needed as check mark is not in Roboto
+                # this can be removed when Kivy will be able to handle fallback mechanism
+                # which will allow us to use fonts with more unicode characters
+                font_name: "DejaVuSans"
+                text: u''
+        SimpleXHTMLWidget:
+            id: mess_xhtml
+            size_hint: 1, None
+            height: self.minimum_height
+            xhtml: root.message_xhtml or self.escape(root.message or u' ')
+            color: (0.74,0.74,0.24,1) if root.mess_data.type == "info" else (0, 0, 0, 1)
+            padding: root.mess_padding
+            bold: True if root.mess_data.type == "info" else False
+
+<Chat>:
+    messages_widget: messages_widget
+    ScrollView:
+        scroll_y: 0
+        do_scroll_x: False
+        scroll_type: ['bars', 'content']
+        bar_width: dp(6)
+        MessagesWidget:
+            id: messages_widget
+    MessageInputBox:
+        size_hint: 1, None
+        height: self.minimum_height
+        spacing: dp(10)
+        padding: [app.MARGIN_LEFT, 0, app.MARGIN_RIGHT, dp(10)]
+        message_input: message_input
+        MessageInputWidget:
+            id: message_input
+            size_hint: 1, None
+            height: min(self.minimum_height, dp(250))
+            multiline: True
+            hint_text: _(u"Enter your message here")
+            on_text_validate: root.onSend(args[0])
+
+
+<SendButton>:
+    # SendButton is only shown on touch devices
+    symbol: "forward"
+    size_hint: None, 1
+    width: dp(30)
+    font_size: dp(25)
+    on_release: self.message_input_box.send_text()
+
+# Buttons added in header
+
+<TransferButton>:
+    size_hint: None, 1
+    symbol: "plus-circled"
+    width: dp(30)
+    font_size: dp(25)
+    color: 0.4, 0.4, 0.4, 1
+
+<MenuButton@Button>
+    size_hint_y: None
+    height: dp(30)
+    on_texture_size: self.parent.parent.width = max(self.parent.parent.width, self.texture_size[0] + dp(10))
+
+<ExtraMenu>:
+    size_hint: None, 1
+    width: 10
+    auto_width: False
+    MenuButton:
+        text: _("Bookmarks")
+        on_release: root.select("bookmark")
+
+<ExtraButton>:
+    size_hint: None, 1
+    symbol: "dot-3-vert"
+    width: dp(30)
+    font_size: dp(25)
+    color: 0.4, 0.4, 0.4, 1
+    on_release: self.chat.extra_menu.open(self)
+
+<EncryptionMainButton>:
+    size_hint: None, 1
+    width: dp(30)
+    color: self.getColor()
+    symbol: self.getSymbol()
+
+<TrustManagementButton>:
+    symbol: "shield"
+    padding: dp(5), dp(10)
+    bg_color: app.c_prim_dark
+    size_hint: None, 1
+    width: dp(30)
+    on_release: self.parent.dispatch("on_trust_release")
+
+<EncryptionButton>:
+    size_hint: None, None
+    width: self.parent.parent.best_width if self.parent is not None else 30
+    height: dp(30)
+    on_best_width: self.parent.parent.best_width = max(self.parent.parent.best_width, args[1])
+    Button:
+        text: root.text
+        size_hint: 1, 1
+        padding: dp(5), dp(10)
+        color: 0, 0, 0, 1
+        bold: True
+        background_normal: app.expand('{media}/misc/borders/border_filled_black.png')
+        background_color: app.c_sec if root.selected else app.c_prim_dark
+        on_release: root.dispatch("on_release")
+        on_texture_size: root.best_width = self.texture_size[0] + (dp(30) if root.trust_button else 0)
+
+<EncryptionMenu>:
+    size_hint_x: None
+    width: self.container.minimum_width
+    auto_width: False
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
