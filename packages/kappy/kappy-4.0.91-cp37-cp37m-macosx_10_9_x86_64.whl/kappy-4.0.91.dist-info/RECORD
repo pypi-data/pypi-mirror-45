@@ -1,0 +1,14 @@
+kappy/__init__.py,sha256=CFYw7YKlNcgWTKpGPE0bHg22m71O18qnteuMxX9Ojhc,209
+kappy/dummy.cpython-37m-darwin.so,sha256=MRe3YN5nImCurbnEGr-NExSIlEbaq2adJSj0tuPvF4s,4448
+kappy/kappa_common.py,sha256=99d6RRn9K2jIBra-XCbNySImmJj3ssCpUewjqcxnOTg,15032
+kappy/kappa_rest.py,sha256=3QbYzyCMOOTjKmQ4KXwF5kuIUoSUSWvPa_nG-Xjig3w,8648
+kappy/kappa_std.py,sha256=GI_cys0jnNBR46Ps4GxNNTs6PDhT4K8VMX8npNvSGl8,11206
+kappy/bin/KaMoHa,sha256=TvuSkTIr2d3D8qcuQvKhMZh84a56x5ls6Pv4q9ohsRc,4456820
+kappy/bin/KaSaAgent,sha256=5r4VlSKQriPOABqvCM3tDAciTNI4UMZD28Zh95Bf1Do,10042092
+kappy/bin/KaSimAgent,sha256=PfEl1mQ1ULg0Wo25e7arVIfJHfYq95uHK7PmKs9fsNQ,5989212
+kappy-4.0.91.data/data/python/README.rst,sha256=KvHNxnbcUa3vJ35RHtvJttqXboes8YE5xjsewPx0MRM,1129
+kappy-4.0.91.dist-info/AUTHORS,sha256=ijDCtnsBVz91-cNen9Ug-DRGArwgNmYSykMrIY1P_EE,923
+kappy-4.0.91.dist-info/METADATA,sha256=NNT1yuh48Hh_gsh9xJNFQi_nmqFM-ZhwikwqnZ8J3dI,1589
+kappy-4.0.91.dist-info/WHEEL,sha256=7N6M1ykYIrx0t3uJ-hlnVYi8OLGWgsRo4OtIoqs8ENE,110
+kappy-4.0.91.dist-info/top_level.txt,sha256=BnE8yYSftS6cs45KLC2xdA2DUvk92U-lhzfgjaKVjZ4,6
+kappy-4.0.91.dist-info/RECORD,,
