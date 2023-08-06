@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: caravel
+Version: 0.13.0
+Summary: A 
+Home-page: https://github.com/pepkit/caravel/
+Author: Nathan Sheffield, Vince Reuter, Michal Stolarczyk
+Author-email: UNKNOWN
+License: BSD2
+Description:  caravel
+        =======
+        
+        |PEP compatible|
+        
+        ``caravel`` is a local web GUI for
+        `looper <https://looper.readthedocs.io/>`__. Caravel gives you a slick
+        web interface to interact with your projects formatted as
+        `PEPs <http://pepkit.github.io>`__. You can use it to submit jobs to any
+        cluster resource manager, monitor jobs, summarize results, and browse
+        project summary web pages. ``caravel`` basically builds on top of
+        ``looper``, but uses the lightweight ``flask`` microframework to give
+        you a web interface, making it even easier to manage your jobs for those
+        who like pointy-clicky.
+        
+        Documentation is hosted at
+        `caravel.databio.org <http://caravel.databio.org>`__ (source in the
+        `/docs </docs>`__ folder).
+        
+        .. |PEP compatible| image:: http://pepkit.github.io/img/PEP-compatible-green.svg
+           :target: http://pepkit.github.io
+        
+Keywords: project,bioinformatics,sequencing,ngs,workflow,GUI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
