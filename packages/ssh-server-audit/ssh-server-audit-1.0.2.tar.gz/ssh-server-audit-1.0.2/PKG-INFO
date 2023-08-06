@@ -1,0 +1,69 @@
+Metadata-Version: 1.2
+Name: ssh-server-audit
+Version: 1.0.2
+Summary: Performs validation of remote filesystem integrity and executes health checks. Supports self-repair commands
+Home-page: https://github.com/Wolnosciowiec/ssh-server-audit
+Author: Marek Andrzejczak
+Author-email: marek_andrzejczak@riseup.net
+License: LGPLv3
+Description: ssh-server-audit
+        ================
+        
+        Tiny application for centralized monitoring of remote servers.
+        In comparison to traditional health checks `ssh-server-audit` is executing commands using _SSH_.
+        
+        Functionality:
+        - SOCKS proxy support: Possibility to hide service in the internet using TOR
+        - Health checks: Execute remote command, check exit code. Execute other command on failure to repair simple things
+        - Authenticity check: Check if remote filesystem is untouched by third-party (eg. by hosting provider, by other hosting users, by the government)
+        
+        ### Quick start
+        
+        1. Create a configuration file, example:
+        
+        ```
+        test_vagrant_volume:       # name it as you want
+            socks_host: ""         # (optional) leave empty if not using socks
+            socks_port: 9150       # (optional) but needs to be valid
+            host: "localhost"
+            port: 2422
+            user: root
+            password: "root"
+            auth_method: password
+            public_key: ""
+            passphrase: ""
+            checksum_method: "sha256sum"  # command name on remote server that will be doing checksums (eg. md5sum, sha256 sum)
+        
+            # files to verify on remote server, leave just "[]" without "" to not use checksums validation
+            checksum_files:
+                sh: '/bin/sh'
+                bash: '/bin/bash'
+                losetup: '$(whereis losetup|awk "{print \$2}")'
+        
+            # when at least one checksum would not match, then you can run a "repair command"
+            # for example unmount an encrypted volume with logs, user identities, databases
+            on_security_violation: "echo 'Something on security violation'"
+        
+            # health checks, use "[]" without "" to not use health checks.
+            healthchecks:
+                - command: "ps aux |grep nginx"
+                  on_failure: "echo 'Something on failure'"
+                - command: "ps aux |grep bash"
+                  on_failure: "echo 'This should not show'"
+        
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.5
