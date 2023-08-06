@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyramid_sqlassist
+Version: 0.11.0
+Summary: Efficiently manage multiple SqlAlchemy connections for Pyramid
+Home-page: https://github.com/jvanasco/pyramid_sqlassist
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Description: sqlassist
+        =========
+        
+Keywords: web pyramid sqlalchemy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
