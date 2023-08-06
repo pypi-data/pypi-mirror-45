@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cdatastructs
+Version: 0.1.0
+Summary: Simple data structures accessible from both Python and C.
+Home-page: UNKNOWN
+Author: Jan Seifert
+Author-email: jan.seifert@fotkyzcest.net
+License: BSD
+Description: Simple data structures accessible from both Python and C. Data in structures are stored as a primitive C types, so in C you can compute data without Python overhead.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/plain
