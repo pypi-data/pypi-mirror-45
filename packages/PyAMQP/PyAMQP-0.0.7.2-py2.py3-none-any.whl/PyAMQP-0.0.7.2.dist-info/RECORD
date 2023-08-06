@@ -1,0 +1,12 @@
+PyAMQP-0.0.7.2.dist-info/DESCRIPTION.rst,sha256=facZfTeXIKm46DvAbT-nezs9Eq5D3_tQZD_xxAyeK5k,3145
+PyAMQP-0.0.7.2.dist-info/METADATA,sha256=OA5MpIQ9ZHfN9ihQpXdXAH9sNTQeH5JzFBJ3QLzJE3c,3996
+PyAMQP-0.0.7.2.dist-info/RECORD,,
+PyAMQP-0.0.7.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+PyAMQP-0.0.7.2.dist-info/metadata.json,sha256=QvzwwUIDe3xkZHb8sB9K809DSxuMEOU_1FlC4dG36pQ,1061
+PyAMQP-0.0.7.2.dist-info/top_level.txt,sha256=caeNPvHcIak8-8fTzYW4nQMZE-PMDmu5vgNUcJmOc18,7
+pyamqp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/dispatcher.py,sha256=xR-_iTac_1kC8GD-Kk792C-1M9XGTVFcdhYacma7vmA,3406
+pyamqp/rabbit/receiver.py,sha256=iYXFGjVcXLHTmaxQGzrasCeZ3aEAJIlCb4KHi4ReQiQ,5991
+pyamqp/rabbit/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/core/base_connector.py,sha256=wsSrgRa8_mXzAiqJPws3NbnLrKkYaQ7lOqqGceyzb0g,1441
