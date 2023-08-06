@@ -1,0 +1,14 @@
+ros2dev/__init__.py,sha256=MAV1kVUI7dsI6w_OkXuKk-gNz1sTWmqYCQs0CjPhF9k,56
+ros2dev/ros2_env.py,sha256=Kx68BYk0_lSHb2NJEmFb0Pof841nieTVSFYxZKGaqSY,3752
+ros2dev/templates/Dockerfile,sha256=bPq7UMR5BF9A8i_vcJ5RPtgk0rskvzo5VRuuye-S-9c,2173
+ros2dev/templates/docker-compose.yml,sha256=1NqsMcDJRVbyg1OlVOuffCizIvji_uDvkuW7mq3pyT0,53
+ros2dev/templates/services,sha256=Tffbhk_e7OXh4N7_SjWmWR6DoiWIUeEAKVVtSfBlvQU,1249
+ros2dev/templates/third_party.example,sha256=ca8GdATBHARd5WozE_B9fEM1ajDrSaANhDi3Cc8NDLE,324
+ros2dev/templates/workspace_copy_dir,sha256=-VFfKCGr_IFVdQp0zXU6SX4dIpweczPe1obbbnvVM_o,381
+ros2dev-0.1.1.dist-info/DESCRIPTION.rst,sha256=bhdCe_5GeRpgTR9zXfxbUyiGh4jPAzTf3iNbRxPkGSw,2402
+ros2dev-0.1.1.dist-info/METADATA,sha256=wnt4GqqajdWNfKDoxDhVYOuAunaN_ElO8zn50_MxtfE,2713
+ros2dev-0.1.1.dist-info/RECORD,,
+ros2dev-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ros2dev-0.1.1.dist-info/entry_points.txt,sha256=7ONxNrkUpHPPgD56BdaN32gawCpFfhiXMvHrZzttyaY,42
+ros2dev-0.1.1.dist-info/metadata.json,sha256=TXrms_PeBKxl-5KxkMUn3JuvqMlqXRWNFYjT5EhqRZM,665
+ros2dev-0.1.1.dist-info/top_level.txt,sha256=U_A_9InTadABVVjeAxyGICMZvtuwXOR97MDEyVMcYaw,8
