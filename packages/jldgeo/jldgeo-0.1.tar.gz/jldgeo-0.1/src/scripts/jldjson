@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""
+	JSON Stream Editor
+	
+	@author: jldupont
+	2019-04-28
+"""
+import sys
+
+try:
+    import jldjson #@UnusedImport
+except:
+    ### must be in dev mode then
+    import os
+    op=os.path    
+    this_dir=op.dirname(__file__)
+    lib_path=op.abspath(op.join(this_dir, ".."))
+    sys.path.insert(0, lib_path)
+    import jldjson #@UnusedImport @Reimport
+
+
+from jldjson.main import command
+
+sys.exit(command())
