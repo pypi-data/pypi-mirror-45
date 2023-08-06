@@ -1,0 +1,10 @@
+setup.py
+ershman_distributions/Binomialdistribution.py
+ershman_distributions/Gaussiandistribution.py
+ershman_distributions/Generaldistribution.py
+ershman_distributions/__init__.py
+ershman_distributions.egg-info/PKG-INFO
+ershman_distributions.egg-info/SOURCES.txt
+ershman_distributions.egg-info/dependency_links.txt
+ershman_distributions.egg-info/not-zip-safe
+ershman_distributions.egg-info/top_level.txt
