@@ -1,0 +1,3 @@
+          [console_scripts]
+          pbjson = pbjson.tool:main
+          
