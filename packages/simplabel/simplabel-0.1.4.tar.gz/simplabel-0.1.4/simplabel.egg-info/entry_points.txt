@@ -1,0 +1,4 @@
+[console_scripts]
+flow_to_directory = simplabel.flow_to_dict:main
+simplabel = simplabel.simplabel:main
+
