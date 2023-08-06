@@ -1,0 +1,12 @@
+sparkmanager/__init__.py,sha256=ShBeXyP4gcOVupTMPWCyMmhdYVIry-YwDR60iQGJcMw,242
+sparkmanager/eventlog.py,sha256=kMVVov5Cg6K6NwtE951dUKWUYIeYwvjlSjZc40gIQ0s,3662
+sparkmanager/manager.py,sha256=x2gpkXO1noZcLLN0rV82s3qlT-CR37DbFwmXkEpwgTc,9214
+sparkmanager-0.7.1.data/scripts/sm_cluster,sha256=GpcSsvolg_dbX1y3mip9lI-hdY-iwTDGs0bkWmSnFoM,16703
+sparkmanager-0.7.1.data/scripts/sm_run,sha256=GpcSsvolg_dbX1y3mip9lI-hdY-iwTDGs0bkWmSnFoM,16703
+sparkmanager-0.7.1.data/scripts/sm_shutdown,sha256=GpcSsvolg_dbX1y3mip9lI-hdY-iwTDGs0bkWmSnFoM,16703
+sparkmanager-0.7.1.data/scripts/sm_startup,sha256=GpcSsvolg_dbX1y3mip9lI-hdY-iwTDGs0bkWmSnFoM,16703
+sparkmanager-0.7.1.dist-info/LICENSE,sha256=_gxCoVDzP-mQj_BSc331fhELKcVxQBq197wMM7czdx8,1070
+sparkmanager-0.7.1.dist-info/METADATA,sha256=iAfv0qm4wnITQgSRDxWjB7f-f0Y6QOjgzfYu-tpDveU,3839
+sparkmanager-0.7.1.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+sparkmanager-0.7.1.dist-info/top_level.txt,sha256=GYwSrpqoty3zQqFCqcvrvV5vw7HPzM4EkGveSd8Fjk4,13
+sparkmanager-0.7.1.dist-info/RECORD,,
