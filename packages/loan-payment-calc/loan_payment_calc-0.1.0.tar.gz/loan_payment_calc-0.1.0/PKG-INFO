@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: loan_payment_calc
+Version: 0.1.0
+Summary: Loan payment calculator
+Home-page: UNKNOWN
+Author: Tyler Norlund
+Author-email: t_norlund@u.pacific.edu
+License: MIT
+Description: # Loan Payment Calculator
+        
+        This package can be used to develop a payment plan for a specific loan. 
+        
+Keywords: loan
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
