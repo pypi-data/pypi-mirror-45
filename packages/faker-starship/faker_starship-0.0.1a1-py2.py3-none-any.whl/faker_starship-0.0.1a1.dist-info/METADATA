@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: faker-starship
+Version: 0.0.1a1
+Summary: Provider of various starship data for the Faker Python package.
+Home-page: https://gitlab.com/infinitewarp/faker-starship
+Author: Brad Smith
+Author-email: bradster@infinitewarp.com
+License: MIT
+Keywords: faker provider starship test data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: faker
+
+**faker-starship** is a provider of various starship data for the [Faker](https://faker.readthedocs.io/) Python package. faker-starship pulls randomly from a static library of thousands of fictional starship names, classes, and registry numbers spanning multiple sci-fi universes.
+
+# Installation
+
+Install with pip (or pipenv):
+
+```
+pip install faker-starship
+```
+
+# Usage
+
+## Python
+
+Add the `faker_starship.Provider` to your `faker.Faker` instance:
+
+```python
+import faker
+import faker_starship
+fake = faker.Faker()
+fake.add_provider(faker_starship.Provider)
+```
+
+To get a starship name, class, or registry number from across the multiverse:
+
+```python
+print(fake.starship_name())  # prints "Colonial One" or similar
+print(fake.starship_class())  # prints "K't'inga" or similar
+print(fake.starship_registry())  # prints "ECS-222" or similar
+```
+
+Or to limit to a specific source universe:
+
+```python
+print(fake.starship_name("starwars"))  # prints "Millennium Falcon" or similar
+print(fake.starship_class("eveonline"))  # prints "Nyx" or similar
+print(fake.starship_registry("theorville"))  # prints "ECV-197" or similar
+```
+
+## Command Line
+
+```
+faker starship_name -i faker_starship
+faker starship_class -i faker_starship
+faker starship_registry -i faker_starship
+```
+
+## Additional Information
+
+- License: [MIT](https://gitlab.com/infinitewarp/faker-starship/blob/master/LICENSE)
+- Releases: https://pypi.org/project/faker-starship/
+- Code: https://gitlab.com/infinitewarp/faker-starship
+- Test status: https://gitlab.com/infinitewarp/faker-starship/pipelines/?scope=branches
+- Test coverage: https://codecov.io/gl/infinitewarp/faker-starship/branch/master
+
+
