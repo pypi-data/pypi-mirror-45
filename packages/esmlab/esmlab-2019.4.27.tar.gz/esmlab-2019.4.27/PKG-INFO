@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: esmlab
+Version: 2019.4.27
+Summary: Tools for working with earth system multi-model analyses with xarray
+Home-page: https://github.com/NCAR/esmlab
+Maintainer: Anderson Banihirwe
+Maintainer-email: abanihi@ucar.edu
+License: Apache License 2.0
+Description: ESMLab: Earth System Model Lab
+        ================================
+        
+        .. image:: https://img.shields.io/circleci/project/github/NCAR/esmlab/master.svg?style=for-the-badge&logo=circleci
+            :target: https://circleci.com/gh/NCAR/esmlab/tree/master
+        
+        .. image:: https://img.shields.io/codecov/c/github/NCAR/esmlab.svg?style=for-the-badge
+            :target: https://codecov.io/gh/NCAR/esmlab
+        
+        
+        .. image:: https://img.shields.io/readthedocs/esmlab/latest.svg?style=for-the-badge
+            :target: https://esmlab.readthedocs.io/en/latest/?badge=latest
+            :alt: Documentation Status
+        
+        .. image:: https://img.shields.io/pypi/v/esmlab.svg?style=for-the-badge
+            :target: https://pypi.org/project/esmlab
+            :alt: Python Package Index
+        
+        .. image:: https://img.shields.io/conda/vn/conda-forge/esmlab.svg?style=for-the-badge
+            :target: https://anaconda.org/conda-forge/esmlab
+            :alt: Conda Version
+        
+        .. image:: http://img.shields.io/badge/DOI-10.5281%20%2F%20zenodo.156243509-blue.svg?style=for-the-badge
+            :target: https://zenodo.org/badge/latestdoi/156243509
+            :alt: Zenodo
+        
+        
+        
+        Tools for working with earth system multi-model analyses with xarray. See
+        documentation_ for more information.
+        
+        .. _documentation: https://esmlab.readthedocs.io/en/latest/
+        
+        Installation
+        ------------
+        
+        ESMLab can be installed from PyPI with pip:
+        
+        .. code-block:: bash
+        
+            pip install esmlab
+        
+        
+        It is also available from `conda-forge` for conda installations:
+        
+        .. code-block:: bash
+        
+            conda install -c conda-forge esmlab
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >3.5

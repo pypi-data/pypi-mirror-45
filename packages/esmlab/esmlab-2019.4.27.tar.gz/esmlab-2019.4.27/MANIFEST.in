@@ -1,0 +1,10 @@
+recursive-include esmlab *.py
+recursive-include esmlab *.yaml
+include LICENSE
+include README.rst
+include requirements.txt
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+prune tests*
+prune ci*
