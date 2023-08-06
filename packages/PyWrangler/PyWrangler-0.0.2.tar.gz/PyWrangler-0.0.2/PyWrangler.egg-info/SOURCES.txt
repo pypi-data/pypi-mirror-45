@@ -1,0 +1,6 @@
+README.md
+setup.py
+PyWrangler.egg-info/PKG-INFO
+PyWrangler.egg-info/SOURCES.txt
+PyWrangler.egg-info/dependency_links.txt
+PyWrangler.egg-info/top_level.txt
