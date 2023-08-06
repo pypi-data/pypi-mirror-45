@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rocketbase
+Version: 0.3.0
+Summary: Making Machine Learning Available to everyone
+Home-page: https://rocketbase.ai
+Author: Mirage Technologies AG
+Author-email: hello@mirage.id
+License: Proprietary
+Keywords: Automating,ML,Deployment,PyTorch
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: google-cloud-storage
+
+# RocketBase - library to test and retrain latest pre-trained ML models
+
+Check out the tutorial at [GitHub](https://github.com/LucasVandroux/rockethub-tutorial1) to get started with our library.
+
+Currently, we support Python 3 and Pytorch. More Libraries to come. If there is something you would like to use besides that write us at [hello@mirage.id](mailto:hello@mirage.id)
+
