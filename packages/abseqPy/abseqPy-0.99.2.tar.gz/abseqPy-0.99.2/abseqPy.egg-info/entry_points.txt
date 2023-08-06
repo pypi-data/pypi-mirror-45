@@ -1,0 +1,3 @@
+[console_scripts]
+abseq = abseqPy.abseqQC:main
+
