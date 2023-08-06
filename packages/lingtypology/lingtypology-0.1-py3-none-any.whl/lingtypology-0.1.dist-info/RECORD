@@ -1,0 +1,12 @@
+lingtypology/__init__.py,sha256=V3Y2xedzo3WKRXRVLfiJCqrWZuqQMUS_YptnP9oZ1Ys,112
+lingtypology/db_apis.py,sha256=LybsCRIQIyT8kohx0hAgJFl4BpsQGFc-Pn6iM62i1kw,5649
+lingtypology/glottolog-languoids-v3.4-7-gfa9d1ec7c5.csv,sha256=lO8uT2qDqrdBWj31Oe7QE8Gs1IaWddNWfgTxRL_r-GA,3746978
+lingtypology/glottolog-languoids-v3.4-7-gfa9d1ec7c5.csv-metadata.json,sha256=npqc6WwYpFo-b44wh3c7BlJmhIdPN72cFQAdlx0_ixw,4032
+lingtypology/glottolog.py,sha256=GLxWtY2DcWQ-8k5SbqKy_rNMyBaKbAOVX4bnCfOB65k,5091
+lingtypology/legend.html,sha256=BdM-Puh7Qu4Dzn7XJP2tWLp1MLilsqPcc87PL3rg5ro,4086
+lingtypology/lingtypology.py,sha256=CgB6QXjTMsRUF2romfEEioU9xZFWpIf_NZWJtbW6W6w,33432
+lingtypology-0.1.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+lingtypology-0.1.dist-info/METADATA,sha256=yPk0y6kcCxd2FkFFA_WhqlihxB_JwQsZKrIFrmb4w4A,747
+lingtypology-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+lingtypology-0.1.dist-info/top_level.txt,sha256=vDSJ9Fh26KdHiC-SFuRmbuzz0GHg-PXxMoUE1BueqiU,13
+lingtypology-0.1.dist-info/RECORD,,
