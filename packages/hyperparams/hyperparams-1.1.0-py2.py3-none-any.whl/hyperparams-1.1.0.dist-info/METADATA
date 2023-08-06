@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hyperparams
+Version: 1.1.0
+Summary: A simple hyperparameters handler object.
+Home-page: https://github.com/penguinmenac3/hyperparams
+Author: Michael Fuerst
+Author-email: mail@michaelfuerst.de
+License: BSD
+Download-URL: https://github.com/penguinmenac3/hyperparams/tarball/1.1.0
+Requires-Dist: jsmin
+
+# Hyperparameters made easy
+
+
