@@ -1,0 +1,9 @@
+README.md
+setup.py
+biobb_chemistry/__init__.py
+biobb_chemistry.egg-info/PKG-INFO
+biobb_chemistry.egg-info/SOURCES.txt
+biobb_chemistry.egg-info/dependency_links.txt
+biobb_chemistry.egg-info/requires.txt
+biobb_chemistry.egg-info/top_level.txt
+biobb_chemistry/test/__init__.py
