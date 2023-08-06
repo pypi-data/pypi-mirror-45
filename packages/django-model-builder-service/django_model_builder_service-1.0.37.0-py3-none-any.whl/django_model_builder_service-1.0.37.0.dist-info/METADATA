@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-model-builder-service
+Version: 1.0.37.0
+Summary: Machine learning model builder app
+Home-page: UNKNOWN
+Author: lior.yehonatan
+Author-email: lior.yehonatan@inel.com
+License: BSD License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: swiss-common-utils (==1.0.26.0)
+Requires-Dist: prediction-model-wrapper (==1.0.10.0)
+Requires-Dist: APScheduler (==3.6.0)
+
+UNKNOWN
+
+
