@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+bistiming/__init__.py
+bistiming/multistopwatch.py
+bistiming/stopwatch.py
+bistiming/utils.py
+bistiming.egg-info/PKG-INFO
+bistiming.egg-info/SOURCES.txt
+bistiming.egg-info/dependency_links.txt
+bistiming.egg-info/requires.txt
+bistiming.egg-info/top_level.txt
+bistiming/tests/__init__.py
+bistiming/tests/test_multistopwatch.py
+bistiming/tests/test_stopwatch.py
+bistiming/tests/utils.py
