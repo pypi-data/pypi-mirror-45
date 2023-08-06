@@ -1,0 +1,9 @@
+gsecrets/__init__.py,sha256=W8mfX_sR4Tlui-IiVsKVQPGi5fDcMfBBszBaakMad4I,75
+gsecrets/cli.py,sha256=YAuz8kyq-VvqVd0U72cw6gbFpP_DHgS8qmjKu8XC4mg,961
+gsecrets/client.py,sha256=c-WmdaX1_R2GKSkyZ9saT2ziTdovsZ8ag9F-Ebfnxu4,5403
+gsecrets/exceptions.py,sha256=x2yLJzVNtRukWgTj6AbtT_Xis3k7rXffThqlfgHLmd4,93
+gsecrets-1.1.0.dist-info/METADATA,sha256=rDHvq2Pe4sqUI-i-bfHEtcDZ7OmpLQfZSljFDPpQVpI,452
+gsecrets-1.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+gsecrets-1.1.0.dist-info/entry_points.txt,sha256=hrWLfYiQcW29nglGJgGwcgigoWZaScDLXLC2x_boBOk,47
+gsecrets-1.1.0.dist-info/top_level.txt,sha256=OrShcMnpih_pPw3sTbnuNtaFkXMH-hEFGsNy5CKQG9o,9
+gsecrets-1.1.0.dist-info/RECORD,,
