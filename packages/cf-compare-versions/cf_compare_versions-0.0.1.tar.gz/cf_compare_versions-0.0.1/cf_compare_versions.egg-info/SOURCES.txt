@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cf_compare_versions.egg-info/PKG-INFO
+cf_compare_versions.egg-info/SOURCES.txt
+cf_compare_versions.egg-info/dependency_links.txt
+cf_compare_versions.egg-info/top_level.txt
+compare_versions/__init__.py
+compare_versions/compare_versions.py
