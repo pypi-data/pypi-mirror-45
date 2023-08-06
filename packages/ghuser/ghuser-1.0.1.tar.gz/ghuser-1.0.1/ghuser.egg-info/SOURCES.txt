@@ -1,0 +1,8 @@
+README.md
+setup.py
+ghuser/__init__.py
+ghuser.egg-info/PKG-INFO
+ghuser.egg-info/SOURCES.txt
+ghuser.egg-info/dependency_links.txt
+ghuser.egg-info/requires.txt
+ghuser.egg-info/top_level.txt
