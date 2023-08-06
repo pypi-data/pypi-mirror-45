@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dsversion
+Version: 0.0.1
+Summary: Helper for defining package version strings.
+Home-page: UNKNOWN
+Author: YvesPy
+Author-email: grazhopper+pypi@gmail.com
+License: MIT
+Description: Helper for defining package version strings.
+        
+        ``
+        import dsversion
+        __version__ == dsversion.get_version_str(__file__)
+        ``
+        
+Keywords: version versioning
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
