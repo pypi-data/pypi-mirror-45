@@ -1,0 +1,7 @@
+README.md
+setup.py
+wxy_csv/__init__.py
+wxy_csv.egg-info/PKG-INFO
+wxy_csv.egg-info/SOURCES.txt
+wxy_csv.egg-info/dependency_links.txt
+wxy_csv.egg-info/top_level.txt
