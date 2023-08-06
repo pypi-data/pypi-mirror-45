@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: transiter
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: apscheduler
+Requires-Dist: click
+Requires-Dist: decorator
+Requires-Dist: flask
+Requires-Dist: gtfs-realtime-bindings
+Requires-Dist: psycopg2-binary
+Requires-Dist: pytimeparse
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: rpyc
+Requires-Dist: sqlalchemy
+Requires-Dist: toml
+
+UNKNOWN
+
+
