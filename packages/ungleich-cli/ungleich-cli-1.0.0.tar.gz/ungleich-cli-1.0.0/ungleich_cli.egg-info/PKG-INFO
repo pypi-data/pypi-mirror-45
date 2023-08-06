@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ungleich-cli
+Version: 1.0.0
+Summary: A Python package for ungleich dns administration.
+Home-page: UNKNOWN
+Author: William Colmenares
+Author-email: colmenares.william@gmail.com
+License: MIT
+Description: # Ungleich dns cli tool
+        
+        A python package to set reverse dns in ungleich vm.
+        
+        ## Usage
+        
+        installing the package via pip (python3 required)
+        
+        ```angular2
+        python3 -m pip install ungleich-cli
+        ```
+        after installed you can set the reverse dns by typing
+        
+        ```angular2
+        ungleich-cli dns --set-reverse <ip> --user <username> --token <token> --name mirror.example.com
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

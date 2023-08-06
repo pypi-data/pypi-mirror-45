@@ -1,0 +1,3 @@
+[console_scripts]
+ungleich-cli = ungleichcli:cli
+

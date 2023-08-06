@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ungleichcli.py
+ungleich_cli.egg-info/PKG-INFO
+ungleich_cli.egg-info/SOURCES.txt
+ungleich_cli.egg-info/dependency_links.txt
+ungleich_cli.egg-info/entry_points.txt
+ungleich_cli.egg-info/requires.txt
+ungleich_cli.egg-info/top_level.txt
