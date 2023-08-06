@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+requirements/base.txt
+tabellarius/__init__.py
+tabellarius/imap.py
+tabellarius/mail.py
+tabellarius/mail_filter.py
+tabellarius/main.py
+tabellarius/misc.py
+tabellarius.egg-info/PKG-INFO
+tabellarius.egg-info/SOURCES.txt
+tabellarius.egg-info/dependency_links.txt
+tabellarius.egg-info/requires.txt
+tabellarius.egg-info/top_level.txt
