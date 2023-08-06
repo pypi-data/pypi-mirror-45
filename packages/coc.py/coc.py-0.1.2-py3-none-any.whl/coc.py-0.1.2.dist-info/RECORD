@@ -1,0 +1,15 @@
+coc/__init__.py,sha256=buOJKtuMH23gL4bGKAEfPrRiVNbvyjfkA2BPBoGRV_M,798
+coc/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coc/cache.py,sha256=6B7xNXhyuGeaFx02VVUwWz6jTtTGHfsTJTnP5WisPbE,3694
+coc/client.py,sha256=bMfoaVMHRpy0EAoXJwQQU64xz2fQuuGiPeL6YfldqKc,26818
+coc/dataclasses.py,sha256=wf6SFvlfqxK6NQR_EiY5M8yGyTARRKU3D5qzkgTnj04,40794
+coc/enums.py,sha256=ZLzftGuOZ_6I_K4p2KjtL4nsmyyFcm92j3nCGMrgZVY,531
+coc/errors.py,sha256=XgFL062Na385LrwzywTKBXWCPb9HEiWLNoMQGtpi79k,3492
+coc/http.py,sha256=HEtXNl_HV7mUb0Sj-maLdywsj0-v1m2v5Gi1hcPlHIk,15080
+coc/nest_asyncio.py,sha256=oJ9P7O4o4YzIloqGJ5HEan9HggVybn6RyMgg_mNhkmE,5680
+coc/utils.py,sha256=cIIjT4Lw-myhKRc4VFZmW09k7iqx00jm_PKK6H_LGeo,2091
+coc.py-0.1.2.dist-info/LICENSE,sha256=G-FfMZ44WNn7kwu7NLAbHvHsAK4KWEmaqqIh3r79leU,1090
+coc.py-0.1.2.dist-info/METADATA,sha256=ehAg1cGVdY1DjxIA_QNESyZ0IKguzsrige1x1BHi3D8,1715
+coc.py-0.1.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+coc.py-0.1.2.dist-info/top_level.txt,sha256=kWxFgsh2n6dAvdFzOA4ozEUFDyknG4ul8JwIJhCSFZ4,4
+coc.py-0.1.2.dist-info/RECORD,,
