@@ -1,0 +1,48 @@
+"""AWS Lambda Logging."""
+import logging
+import sys
+import os
+import functools
+import traceback
+import json
+from lambida.ingestion.s3 import S3ResourceClient
+
+
+def logging_setup(aws_request_id):
+    """Basic config."""
+    root = logging.getLogger(os.path.basename(__file__))
+    if not root.handlers:
+        handler = logging.StreamHandler(sys.stdout)
+        formatter = logging.Formatter(
+            "%(levelname)s RequestId: "+aws_request_id+" %(message)s")
+        handler.setFormatter(formatter)
+        root.addHandler(handler)
+        root.setLevel(logging.INFO)
+        root.propagate = False
+        return root
+    return root
+
+
+def log_event_on_error(handler):
+    """Basic Error Logger."""
+    @functools.wraps(handler)
+    def wrapper(event, context):
+        aws_request_id = context.aws_request_id
+        invoked_function_arn = context.invoked_function_arn
+        log = logging_setup(aws_request_id)
+        try:
+            log.info('Event from {}: {}'.format(invoked_function_arn, event))
+            return handler(event, context)
+        except Exception:
+            account_id = context.invoked_function_arn.split(":")[4]
+            account_region = context.invoked_function_arn.split(":")[3]
+            bucket_name = "amaro-da-" + account_id + "-" + account_region
+            s3_resource_client = S3ResourceClient(context, log, bucket_name)
+            s3_resource_client.s3_put_request(json.dumps(event), 'raw_event')
+
+            log.error('Exception from {}: {}'
+                      .format(invoked_function_arn, 
+                              traceback.format_exc()
+                                  .replace('\n', "")
+                                  .replace('  ', ".")))
+    return wrapper
