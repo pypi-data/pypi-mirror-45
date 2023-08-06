@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: normalise
+Version: 0.1.8
+Summary: A module to normalise non-standard words in text
+Home-page: https://github.com/EFord36/normalise
+Author: Elliot Ford, Emma Flint
+Author-email: elliot.ford@hotmail.co.uk
+License: GPL
+Download-URL: https://github.com/EFord36/normalise/tarball/0.1.8
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: roman
+Requires-Dist: scipy
+
+A module for normalising text.
+
+
