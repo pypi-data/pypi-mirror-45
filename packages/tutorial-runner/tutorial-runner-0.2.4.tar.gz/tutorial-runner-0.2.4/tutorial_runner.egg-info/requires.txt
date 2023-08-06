@@ -1,0 +1,4 @@
+Click>=6.0
+pytoml
+pytest
+pytest-clarity
