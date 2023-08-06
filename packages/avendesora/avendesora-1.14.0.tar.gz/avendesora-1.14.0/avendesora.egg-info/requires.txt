@@ -1,0 +1,7 @@
+appdirs
+arrow
+cryptography
+docopt
+inform>=1.16
+python-gnupg>=0.4.3
+pyotp
