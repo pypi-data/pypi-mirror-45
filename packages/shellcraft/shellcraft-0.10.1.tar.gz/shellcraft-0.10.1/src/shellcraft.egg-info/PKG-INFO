@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: shellcraft
+Version: 0.10.1
+Summary: ShellCraft is a command line based crafting game.
+Home-page: https://maebert.github.io/shellcraft
+Author: Manuel Ebert
+Author-email: manuel@1450.me
+License: MIT license
+Description: ![Cover Image](https://raw.githubusercontent.com/maebert/shellcraft/HEAD/docs/img/cover.png)
+        
+        ShellCraft is a game about mining, crafting, and puzzling, loosely based on Ted Chiang's short story *[Seventy-Two Letters](https://maebert.github.io/shellcraft/72letters)*
+        
+        ```sh
+        # Install ShellCraft
+        $ pip install shellcraft
+        
+        # Run ShellCraft:
+        $ shellcraft
+        ```
+        
+        Read the [full documentation here](https://maebert.github.io/shellcraft).
+        
+        ![PYPI](https://img.shields.io/pypi/v/shellcraft.svg)
+        ![Travis](https://img.shields.io/travis/maebert/shellcraft.svg)
+        ![PyUp](https://pyup.io/repos/github/maebert/shellcraft/shield.svg)
+        
+Keywords: shellcraft
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Simulation
+Description-Content-Type: text/markdown

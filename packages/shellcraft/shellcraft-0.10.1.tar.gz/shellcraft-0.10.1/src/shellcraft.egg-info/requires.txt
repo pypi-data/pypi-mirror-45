@@ -1,0 +1,4 @@
+Click>=7.0
+protobuf>=3.7.1
+future>=0.16.0
+PyYAML>=5.1
