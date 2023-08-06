@@ -1,0 +1,8 @@
+black_holes/__init__.py,sha256=SYf7FUPVAB-tsHiv4YDHUqw9hjyFAgB9Fx1d7L_lbwQ,117
+black_holes/core.py,sha256=n7F9RhQibN9kzBr69ICNWwaM8zy1qRduzP1MS987XKk,4312
+black_holes/models.py,sha256=D9mQBSyXLPSG4sNkAC-ols0AHZlApeHepS1vKH7913g,307
+black_holes/prefabs.py,sha256=leF5L9-UAUDMLK37vs3dHe27XsxbwvkcUpfr1_tjec0,2551
+black_holes-0.0.31.dist-info/METADATA,sha256=1WwfEAQkM9bq0oDd_Z-xQi-w4cD7vjLMFDgqehYrsWA,2674
+black_holes-0.0.31.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+black_holes-0.0.31.dist-info/top_level.txt,sha256=kI8wMXbwK1kNAi-ebDebBGbVSFAXLalFdD5nvJUB4PE,12
+black_holes-0.0.31.dist-info/RECORD,,
