@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pytarallo/__init__.py
+pytarallo/tarallo.py
+pytarallo/test.py
+pytarallo.egg-info/PKG-INFO
+pytarallo.egg-info/SOURCES.txt
+pytarallo.egg-info/dependency_links.txt
+pytarallo.egg-info/requires.txt
+pytarallo.egg-info/top_level.txt
