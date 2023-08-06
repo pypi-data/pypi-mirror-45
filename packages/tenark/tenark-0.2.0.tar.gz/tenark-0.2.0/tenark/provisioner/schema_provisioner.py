@@ -1,0 +1,19 @@
+from subprocess import run, PIPE
+from uuid import uuid4
+from ..common import TenantProvisionError
+from ..models import Tenant
+from .provisioner import Provisioner
+
+
+class SchemaProvisioner(Provisioner):
+
+    def __init__(self, uri: str, template='__template__') -> None:
+        self.uri = uri
+        self.template = template
+
+    def provision_tenant(self, tenant: Tenant) -> None:
+        command = (
+            f"pg_dump {self.uri} --schema={self.template} | "
+            f"sed 's/{self.template}/{tenant.slug}/g' | "
+            f"psql {self.uri}")
+        run(command, shell=True, check=True)
