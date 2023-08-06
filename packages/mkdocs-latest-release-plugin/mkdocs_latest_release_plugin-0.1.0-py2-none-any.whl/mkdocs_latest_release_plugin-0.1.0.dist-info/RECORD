@@ -1,0 +1,9 @@
+git_latest_tag_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_latest_tag_plugin/plugin.py,sha256=8ZWnh5tArEcrj75cISs2CwdoQROpkQoAfSOVemH_mrY,1823
+mkdocs_latest_release_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_latest_release_plugin/plugin.py,sha256=HrKoACarOa9mtDTn31PaDkY6T1Wx8GnkDkb6_zFuEVY,1830
+mkdocs_latest_release_plugin-0.1.0.dist-info/METADATA,sha256=2Hl613miXSXVmfHUP53ixGUIXlHmoTC94d84O36fkXU,639
+mkdocs_latest_release_plugin-0.1.0.dist-info/RECORD,,
+mkdocs_latest_release_plugin-0.1.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+mkdocs_latest_release_plugin-0.1.0.dist-info/entry_points.txt,sha256=ABm8JFWY6OUFx9Abud4owFyHkJzEK3_ExRI1vceRE8c,101
+mkdocs_latest_release_plugin-0.1.0.dist-info/top_level.txt,sha256=3rhszLe7wkW1YPj8nLbTnobtgK2Q7VyLG95DDLoSILY,29
