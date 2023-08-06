@@ -1,0 +1,13 @@
+PLC/AudioTools.py,sha256=nKnJ037X8bcbtYtlQKUduk7xpIqqUncs4wpUslajDMM,1090
+PLC/DatabaseTools.py,sha256=lQlnfB9MiZ_iXIkUAUjaHS4hLKCEuCJcY84bKfpOUSk,2369
+PLC/FilmTools.py,sha256=Lc3_tAMHUO7WifFZPVmNQS7w0one6Y5ZlUxXlSo6_Tc,580
+PLC/MovieGenerator.py,sha256=IgJumNnyPkqTEJOS82wdgnlKT7YoZE3YLfGPJRBVoHY,3687
+PLC/PyQtTools.py,sha256=Cj7tU-yGRt6Z6BAaevnv6bIOjGzSme01o1jmtdrVgQk,698
+PLC/TextToVoiceApi.py,sha256=4ydttzVGRJ1ZZrrniQzsd2pQtJ-ARWGdzlqPklDvRUE,5329
+PLC/TextTools.py,sha256=ObE2XAnESz-V8hCdlsbC6iOPhiq1wGjgD71i-nfJ9-8,3033
+PLC/Tools.py,sha256=5VmZqhDa926qtTI_irVaMgu7pU0xbO34tjOdydx7lH8,1131
+PLC/__init__.py,sha256=mobKBCHVsLxQYgTBzWSXx0Ag_2ChHH1_i_766qw5c0E,13
+PLC-0.1.9.dist-info/METADATA,sha256=moS2pTwZVpaXJiCIeXZzqrCm1O_EyZicewS3UNkR2gE,350
+PLC-0.1.9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+PLC-0.1.9.dist-info/top_level.txt,sha256=Wr5aIR5M8dYL8_DkM1SExUUwuH92g-SjJV3ccF6nITk,4
+PLC-0.1.9.dist-info/RECORD,,
