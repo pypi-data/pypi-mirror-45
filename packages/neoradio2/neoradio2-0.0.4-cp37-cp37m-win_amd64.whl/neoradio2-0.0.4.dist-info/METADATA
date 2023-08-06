@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: neoradio2
+Version: 0.0.4
+Summary: neoRADIO2 python bindings
+Home-page: https://github.com/intrepidcs/libneoradio2
+Author: David Rebbe
+Author-email: drebbe@intrepidcs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pybind11 (>=2.2)
+
+UNKNOWN
+
+
