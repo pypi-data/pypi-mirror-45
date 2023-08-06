@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cipherme
+Version: 0.1.1
+Summary: Cipherme is a package that enables you to have fun with the common ciphers such as the Affine Cipher and Caesar Cipher.
+Home-page: https://github.com/KelynPNjeri/Encrypto.git
+Author: Kelyn Paul Njeri
+Author-email: kelynpaul.devtopia@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# CipherMe.
+
+- This is a Python package in the making for people who enjoy toying around with some of the basic encryption schemes such as Affine Cipher, Vigenere Cipher and Caesar Cipher.
+
+## What is Contained.
+
+The Encryption Algorithms contained herein are:
+
+- Affine Cipher.
+- RSA Encryption Algorithm.
+- Caesar Cipher.
+
+### Language Used.
+
+- Python.
+
+### Author.
+
+- Kelyn Paul Njeri.
+
+
