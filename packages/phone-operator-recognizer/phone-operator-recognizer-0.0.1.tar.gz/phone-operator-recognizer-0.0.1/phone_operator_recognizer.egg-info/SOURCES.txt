@@ -1,0 +1,8 @@
+README.md
+setup.py
+phone_operator_recognizer.egg-info/PKG-INFO
+phone_operator_recognizer.egg-info/SOURCES.txt
+phone_operator_recognizer.egg-info/dependency_links.txt
+phone_operator_recognizer.egg-info/top_level.txt
+recognizer/__init__.py
+recognizer/recognizer.py
