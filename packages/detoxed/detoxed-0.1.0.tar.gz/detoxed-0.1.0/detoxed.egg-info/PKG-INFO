@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: detoxed
+Version: 0.1.0
+Summary: Integration test harness for Azure IoT deployments
+Home-page: https://github.com/Microsoft/Detoxed
+Author: Nick Iodice
+Author-email: niiodice@microsoft.com
+License: UNKNOWN
+Description: # About
+        
+        [![PyPI version](https://badge.fury.io/py/detoxed.svg)](https://badge.fury.io/py/detoxed)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/detoxed.svg)](https://pypi.org/project/detoxed/)
+        [![PyPI - License](https://img.shields.io/pypi/l/detoxed.svg)](https://pypi.org/project/detoxed/)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/detoxed.svg)](https://pypi.org/project/detoxed/)
+        
+        Note: how to use in dev ops pipeline with screenshots
+        Note: contributing guidelines
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.*
+Description-Content-Type: text/markdown
+Provides-Extra: dev
