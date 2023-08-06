@@ -1,0 +1,48 @@
+Metadata-Version: 1.2
+Name: pyspectrum2
+Version: 0.2.0
+Summary: pyspectrum2 implements the Protobuf-based interface to Spectrum2 required for building Python-based backends
+Home-page: https://github.com/SpectrumIM/spectrum2
+Author: Steffen Vogel
+Author-email: post@steffenvogel.de
+License: GPL-3+
+Description: pyspectrum2
+        ===========
+        
+        pyspectrum2 implements the Protobuf-based interface to Spectrum2_ required for building Python-based Spectrum2_ backends.
+        
+        Support
+        -------
+        
+        For support and discussions please join the XMPP MUC: **spectrum@conference.spectrum.im**.
+        
+        Example
+        -------
+        
+        For an exampe backend which uses pyspectrum2 checkout transWhat_.
+        
+        Contributors
+        ------------
+        
+        - Steffen Vogel (stv0g_)
+        - Sarang Bharadwaj (sarangbh_)
+        
+        License
+        -------
+        
+        pyspectrum2 is licensed under the GPLv3_ license.
+        
+        .. _Spectrum2: http://www.spectrum.im
+        .. _GPLv3: COPYING.rst
+        .. _transWhat: https://github.com/stv0g/transwhat/
+        .. _stv0g: https://github.com/stv0g
+        .. _sarangbh: https://github.com/sarangbh
+        
+Keywords: spectrum2 xmpp im gateway transport
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Communications :: Chat
+Requires-Python: >=3.0
