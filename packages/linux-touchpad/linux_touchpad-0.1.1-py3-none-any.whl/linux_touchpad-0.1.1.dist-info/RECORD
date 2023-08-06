@@ -1,0 +1,8 @@
+src/__init__.py,sha256=sW1fwAIA6ZTNmg--KnovPYwJGA2VavG7iBdw_j7EdaM,32
+src/__main__.py,sha256=KLieK4wo7w6bKrbSF-Nw52WVG1JozZCFFdUv-4T_33U,894
+src/lock.py,sha256=BZb1xDrDRqmwCNPAowMszjCZKv-_Cg7UMY0K0cqnIxQ,884
+src/process.py,sha256=Oe6hI_aQOBdWH9ImhQn5FPQ9elVbcuf18NxM1NQOgxw,258
+src/touchpad.py,sha256=uNM1ZEvO5DlJrfTMolTX6AZ9TPrRN2KoDI6htldnt2E,2089
+linux_touchpad-0.1.1.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+linux_touchpad-0.1.1.dist-info/METADATA,sha256=1W3PuilR6uP4StSOlWlxRfVVhVzyKLgsWANCHojfGus,772
+linux_touchpad-0.1.1.dist-info/RECORD,,
