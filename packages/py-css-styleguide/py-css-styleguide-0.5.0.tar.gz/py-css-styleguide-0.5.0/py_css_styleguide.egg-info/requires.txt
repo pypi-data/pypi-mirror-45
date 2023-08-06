@@ -1,0 +1,9 @@
+tinycss2>=1.0.2
+
+[dev]
+pytest>=3.0.5
+flake8
+boussole
+sphinx
+sphinx-rtd-theme
+sphinx-autobuild
