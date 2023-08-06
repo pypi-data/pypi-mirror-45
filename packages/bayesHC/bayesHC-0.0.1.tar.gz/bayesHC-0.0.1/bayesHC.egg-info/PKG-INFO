@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bayesHC
+Version: 0.0.1
+Summary: A package for Bayesian Hierarchical Clustering
+Home-page: https://github.com/Jennifer2010/STA-663-Bayesian-Hierarchical-Clustering.git
+Author: Ezinne Nwankwo and Jennifer Wilson
+Author-email: enwankwo17@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
