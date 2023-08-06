@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: autohooks-plugin-autopep8
+Version: 0.0.3
+Summary: Autohooks plugin for code formatting via autopep8
+License: GPL-3.0
+Author: Leonard Papenmeier
+Author-email: leonard.papenmeier@posteo.de
+Requires-Python: >=3.5
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Dist: autohooks (>=1.1)
+Requires-Dist: autopep8
