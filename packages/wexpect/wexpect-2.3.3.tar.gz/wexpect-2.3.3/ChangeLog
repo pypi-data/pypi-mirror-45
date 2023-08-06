@@ -1,0 +1,29 @@
+CHANGES
+=======
+
+v2.3.3
+------
+
+* [ADD] First working version on python-3.x
+* [FIX] setup.cfg
+* uninstall working
+* [FIX] remove bytes encoding: use str everywhere; [STS] cmd.py passes
+* 2to3 runned
+
+v2.3.2
+------
+
+* [ADD] pbr for coherent versioning
+* [FIX] classifiers
+* [ADD] coherent versions using pbr
+* [ADD] common versioning
+* [CLN] Replace wildcard imports to standard import
+* [UDT] version 0.0.2
+* [CLN] README
+* [ADD] examples
+* [UDT] updated wexpect with a working one
+* [ADD] setup script; now can be installed via pip install
+* [ADD] License
+* [ADD] README
+* Added in wexpect.py to repo
+* Initial commit
