@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+jupyterlab_templates/__init__.py
+jupyterlab_templates/extension.py
+jupyterlab_templates.egg-info/PKG-INFO
+jupyterlab_templates.egg-info/SOURCES.txt
+jupyterlab_templates.egg-info/dependency_links.txt
+jupyterlab_templates.egg-info/not-zip-safe
+jupyterlab_templates.egg-info/requires.txt
+jupyterlab_templates.egg-info/top_level.txt
+jupyterlab_templates/templates/Sample.ipynb

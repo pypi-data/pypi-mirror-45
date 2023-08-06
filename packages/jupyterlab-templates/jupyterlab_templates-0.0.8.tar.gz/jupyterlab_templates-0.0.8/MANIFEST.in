@@ -1,0 +1,2 @@
+recursive-include jupyterlab_templates/templates/ *
+include requirements.txt
