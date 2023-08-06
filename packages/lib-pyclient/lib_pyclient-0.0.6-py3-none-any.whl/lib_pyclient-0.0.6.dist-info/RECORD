@@ -1,0 +1,12 @@
+lib_pyclient/__init__.py,sha256=wBs3LznHvTnD2jqIJBtNHMHolexpUtsdorqnw7Vsu10,53
+lib_pyclient/objectmethodresult.py,sha256=BBu5OQFD9woIPGCFoQwCX4VYx-McMdF5Eb-10bbdA7Y,2386
+lib_pyclient/pyconvert.py,sha256=MR6SefsKf35OHZXnkpy3DwVc-yIEjVFue9CI9dfiy-E,2946
+lib_pyclient/pywebapi.py,sha256=dOxuUbDl2IxM-6wZoqBxQbgwGMQgr-ellZhe2e-9s88,4682
+lib_pyclient/pywebapibase.py,sha256=CIb8nlCWEtnDCr81fl5gnJapWMhih-LmOotySnHyS3g,937
+lib_pyclient/test.py,sha256=OlHreYFeHb9GsQ1DMsYw00iBwEN2QENmQSmaIaSAFos,2254
+lib_pyclient-0.0.6.dist-info/LICENSE.txt,sha256=gzxd5RuotBkaXAahSPphRgnqtnFSn58DHelPHV0Vhbc,1069
+lib_pyclient-0.0.6.dist-info/METADATA,sha256=80ClaKl1yy_whtcmPwhNXvVE8ETccxeyYmXR04cuFvQ,207
+lib_pyclient-0.0.6.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+lib_pyclient-0.0.6.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+lib_pyclient-0.0.6.dist-info/top_level.txt,sha256=HvtH9MQAcT7CacUSu6lbAnnHTlZ49eeoaUYslQrs-Ms,13
+lib_pyclient-0.0.6.dist-info/RECORD,,
