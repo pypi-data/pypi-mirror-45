@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: distlimiter
+Version: 0.1
+Summary: Distributed Limiter based on Redis
+Home-page: https://github.com/observerss/distlimiter
+Author: Jingchao Hu
+Author-email: jingchaohu@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
