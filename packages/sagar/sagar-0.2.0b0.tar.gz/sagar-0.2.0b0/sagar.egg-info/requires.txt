@@ -1,0 +1,14 @@
+numpy
+spglib
+click>=6
+pniggli
+
+[ase]
+ase==3.16
+
+[dev]
+pip
+pytest>=3.6
+pytest-cov
+twine
+ipython
