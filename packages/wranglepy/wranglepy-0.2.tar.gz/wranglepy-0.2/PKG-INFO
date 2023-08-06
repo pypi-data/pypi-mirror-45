@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: wranglepy
+Version: 0.2
+Summary: A python package containing some easy-to-use tools for data cleaning / Exploration and ML.
+Home-page: https://github.com/pmugenyi/wranglepy-0.1
+Author: Peter Mugenyi
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: **wranglepy:**
+        
+        A python package containing some easy-to-use functions for cleaning data.
+        >The package contains functions that allow you explore your data easily to:
+        
+        - Find missing/null values visually,
+        - Remove missing values,
+        - Find categorcial variables in your datatset,
+        - Remove highly correlated values,
+        - Plot bar graphs and automatically add the percentages of variables,
+        - Plot twin axis bar graphs,
+        - Adjust size of bars in bar graphs,
+        - Model ML classification algorithms.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
