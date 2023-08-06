@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/hellbox/jobs/dsig/__init__.py
+src/hellbox/jobs/dsig/__version__.py
+src/hellbox/jobs/dsig/insert_dummy_dsig.py
+src/hellbox_dsig.egg-info/PKG-INFO
+src/hellbox_dsig.egg-info/SOURCES.txt
+src/hellbox_dsig.egg-info/dependency_links.txt
+src/hellbox_dsig.egg-info/requires.txt
+src/hellbox_dsig.egg-info/top_level.txt
