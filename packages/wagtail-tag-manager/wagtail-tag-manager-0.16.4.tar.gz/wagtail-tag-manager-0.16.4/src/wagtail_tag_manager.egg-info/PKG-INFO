@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wagtail-tag-manager
+Version: 0.16.4
+Summary: A Wagtail add-on for managing tags.
+Home-page: https://github.com/jberghoef/wagtail-tag-manager
+Author: Jasper Berghoef
+Author-email: jasper.berghoef@gmail.com
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Wagtail :: 2
+Provides-Extra: docs
+Provides-Extra: test
