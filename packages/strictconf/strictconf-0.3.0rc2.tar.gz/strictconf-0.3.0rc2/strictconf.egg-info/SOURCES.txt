@@ -1,0 +1,14 @@
+README.rst
+setup.py
+strictconf/__init__.py
+strictconf/checker.py
+strictconf/compat.py
+strictconf/compose.py
+strictconf/config.py
+strictconf/data.py
+strictconf/toml.py
+strictconf/yaml.py
+strictconf.egg-info/PKG-INFO
+strictconf.egg-info/SOURCES.txt
+strictconf.egg-info/dependency_links.txt
+strictconf.egg-info/top_level.txt
