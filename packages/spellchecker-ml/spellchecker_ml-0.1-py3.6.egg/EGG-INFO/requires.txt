@@ -1,0 +1,4 @@
+pyspellchecker
+scikit-learn
+hmmlearn
+autocomplete
