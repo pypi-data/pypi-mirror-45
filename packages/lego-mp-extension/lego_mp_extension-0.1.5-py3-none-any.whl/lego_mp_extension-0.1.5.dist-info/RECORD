@@ -1,0 +1,11 @@
+pybricks_ext/__init__.py,sha256=iANDRYXV796TLiur-7uLE3E6ph4ig-BqFS9Pzg0wCQI,27
+pybricks_ext/ev3brick_ext.py,sha256=nW7ZuwIBDNmmPQH8ci15lYyADgQOb2v4tavwTe-lO5I,5236
+pybricks_ext/ev3devices_ext.py,sha256=2odwqfrwQggEf8H-NTUvht0J33048d-8m_A3UjRRdWQ,35320
+pybricks_ext/parameters_ext.py,sha256=9PlQtO0acPGEkDc2jkiJIMRmW1xEOfejoq-_s0xt1c4,13378
+pybricks_ext/speed_util.py,sha256=pomvikY2x-w5IRzSex_DyYqSeQ-D1-Y-m0y13gvw9kY,5462
+pybricks_ext/tools_ext.py,sha256=CjFlFySf3D74tZoNlRGCIc2qwU_LRl7jJqbVFaY7HwI,743
+lego_mp_extension-0.1.5.dist-info/LICENSE.txt,sha256=RKlJRf_mXW5Bh5bG_YowaupL6SUZM-v2_6Qun2pt4RI,1071
+lego_mp_extension-0.1.5.dist-info/METADATA,sha256=jkkayBjfZ13BvEaJaV1cEhzHrCYKqoOqQZ-wiJdKd_4,499
+lego_mp_extension-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+lego_mp_extension-0.1.5.dist-info/top_level.txt,sha256=nkYCZ_W39IA773myONuVt35PTHlXYiFpbGlPOeJ1xtc,13
+lego_mp_extension-0.1.5.dist-info/RECORD,,
