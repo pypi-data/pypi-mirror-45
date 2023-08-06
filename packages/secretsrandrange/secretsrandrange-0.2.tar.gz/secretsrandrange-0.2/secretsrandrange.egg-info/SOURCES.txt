@@ -1,0 +1,8 @@
+README.md
+setup.py
+secretsrandrange/__init__.py
+secretsrandrange/secretsrandrange.py
+secretsrandrange.egg-info/PKG-INFO
+secretsrandrange.egg-info/SOURCES.txt
+secretsrandrange.egg-info/dependency_links.txt
+secretsrandrange.egg-info/top_level.txt
