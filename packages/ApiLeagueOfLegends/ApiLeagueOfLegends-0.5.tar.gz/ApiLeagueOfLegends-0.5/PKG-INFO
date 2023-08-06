@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ApiLeagueOfLegends
+Version: 0.5
+Summary: Wrapper for the League of Legends Api
+Home-page: https://github.com/Lkgsr/League-of-Legends-Api
+Author: Lukas Mahr
+Author-email: LukasMahr@gmx.de
+License: MIT
+Description: UNKNOWN
+Keywords: API,Api,api,LeagueOfLegends,LeagueofLegends,league-of-legends,lol,League-of-Legends,League-Of-Legends
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
