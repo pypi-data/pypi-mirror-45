@@ -1,0 +1,14 @@
+numpy>=1.15.0
+biopython>=1.70
+
+[dev]
+check-manifest
+scipy
+scikit-learn
+jupyter
+matplotlib
+seaborn
+
+[test]
+coverage
+pytest
