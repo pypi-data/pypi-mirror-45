@@ -1,0 +1,55 @@
+Metadata-Version: 1.1
+Name: knlm
+Version: 0.1.1
+Summary: Modified Kneser-ney Smoothing Language Model
+Home-page: https://github.com/bab2min/knlm
+Author: bab2min
+Author-email: bab2min@gmail.com
+License: LGPL v3 License
+Description-Content-Type: UNKNOWN
+Description: == knlm ==
+        
+        Modified Kneser-Ney smoothing language model module for Python
+        
+        === Installation ===
+        
+        	pip install knlm
+        	pip3 install knlm
+        
+        
+        === Example ===
+        
+        	from knlm import KneserNey
+        	
+        	mode = 'build'
+        	if mode == 'build':
+        		# build model from corpus text. order = 3, word size = 4 byte
+        		mdl = KneserNey(3, 4)
+        		for line in open('corpus.txt', encoding='utf-8'):
+        			mdl.train(line.lower().strip().split())
+        		mdl.optimize()
+        		mdl.save('language.model')
+        	else:
+        		# load model from binary file
+        		mdl = KneserNey.load('language.model')
+        		print('Loaded')
+        	print('Order: %d, Vocab Size: %d, Vocab Width: %d' % (mdl.order, mdl.vocabs, mdl._wsize))
+        
+        	# evaluate sentence score
+        	print(mdl.evaluateSent('I love kiwi .'.split()))
+        	print(mdl.evaluateSent('ego kiwi amo .'.split()))
+        	
+        	# evaluate scores for each word
+        	print(mdl.evaluateEachWord('I love kiwi .'.split()))
+        	print(mdl.evaluateEachWord('ego kiwi amo .'.split()))
+        
+Keywords: nlp,language model,kneser-ney smoothing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
