@@ -1,0 +1,5 @@
+markdown>=3
+requests
+
+[develop]
+pypandoc

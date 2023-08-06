@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: currency_markdown
+Version: 0.0.2
+Summary: ...
+Home-page: https://github.com/bcaller/currency_markdown
+Author: Ben Caller
+Author-email: bcallergmai@l.com
+License: AGPLv3
+Description: # Currencies and Python and Markdown, together!
+        
+        TODO
+        
+Keywords: currency markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Provides-Extra: develop
