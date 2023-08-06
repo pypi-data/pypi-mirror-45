@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: matsim
+Version: 0.2
+Summary: Package primarily for simulation of MAT model
+Home-page: UNKNOWN
+Author: Tomas Barta
+Author-email: tomas.barta@fgu.cas.cz
+License: UNKNOWN
+Platform: UNKNOWN
+
+======
+MATSim
+======
+
+MATSim is a package for simulation of simple neuronal models.
+
