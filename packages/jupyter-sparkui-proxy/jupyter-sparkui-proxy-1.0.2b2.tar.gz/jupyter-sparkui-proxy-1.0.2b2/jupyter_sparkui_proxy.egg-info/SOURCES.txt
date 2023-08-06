@@ -1,0 +1,10 @@
+README.md
+setup.py
+jupyter_sparkui_proxy/__init__.py
+jupyter_sparkui_proxy.egg-info/PKG-INFO
+jupyter_sparkui_proxy.egg-info/SOURCES.txt
+jupyter_sparkui_proxy.egg-info/dependency_links.txt
+jupyter_sparkui_proxy.egg-info/not-zip-safe
+jupyter_sparkui_proxy.egg-info/requires.txt
+jupyter_sparkui_proxy.egg-info/top_level.txt
+jupyter_sparkui_proxy/etc/jupyter-sparkui-proxy-serverextension.json
