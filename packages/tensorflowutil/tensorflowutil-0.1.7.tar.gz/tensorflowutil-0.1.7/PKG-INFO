@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tensorflowutil
+Version: 0.1.7
+Summary: Collection of some useful tensorflow util functions.
+Home-page: https://github.com/accssharma/tensorflowutil
+Author: Ashish Sharma
+Author-email: accssharma@gmail.com
+License: MIT
+Description: # Tensorflow utility package 
+        
+        - installs and imports tensorflow
+        - will expose several utility api that can be used commonly in multiple other machine learning and tensorflow specific projects.
+        
+        Install package using the main PYPI server (beware of caching problem)
+        
+        ```bash
+        $ pip install tensorflowutil==CURRENT_VERSION
+        ```
+        
+        ### Installation verification
+        
+        Finally, verify installation using the exposed entry point:
+        
+        ```bash
+        $ tfutil --version
+        ```
+        
+        Should print something like:
+        
+        ```
+        Package: tensorflowutil 
+        Version: 0.1.5
+        ```
+          
+        ## Limitations
+        - GPU support?
+        
+        # License
+        > Please refer to LICENSE file for detail.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tensorflowutil/__init__.py
+tensorflowutil/main.py
+tensorflowutil/version.py
+tensorflowutil.egg-info/PKG-INFO
+tensorflowutil.egg-info/SOURCES.txt
+tensorflowutil.egg-info/dependency_links.txt
+tensorflowutil.egg-info/entry_points.txt
+tensorflowutil.egg-info/requires.txt
+tensorflowutil.egg-info/top_level.txt
