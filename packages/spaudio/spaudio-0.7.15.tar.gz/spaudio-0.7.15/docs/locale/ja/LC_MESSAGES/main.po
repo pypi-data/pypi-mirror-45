@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019  Hideki Banno
+# This file is distributed under the same license as the spAudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: spAudio \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-26 23:06+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../main.rst:2
+msgid "Introduction"
+msgstr "はじめに"
+
+#: ../main.rst:4
+msgid ""
+"This package is the Python version of `spAudio library <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html>`_ providing "
+":doc:`spaudio</spaudio>` module which enables fullduplex audio device I/O"
+" and :doc:`spplugin</spplugin>` module which enables plugin-based file "
+"I/O supporting many sound formats including WAV, AIFF, MP3, Ogg Vorbis, "
+"FLAC, ALAC, raw, and more."
+msgstr ""
+"このパッケージは，`spAudio ライブラリ <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index-j.html>`_ "
+"のpython版で，フルデュプレックスのオーディオデバイス入出力を可能とする :doc:`spaudio</spaudio>` "
+"モジュールと，WAV，AIFF，MP3，Ogg "
+"Vorbis，FLAC，ALAC，rawなど，様々なファイル形式の読み書きをプラグインにより可能とする "
+":doc:`spplugin</spplugin>` モジュールが用意されています．"
+
+#: ../main.rst:11
+msgid "Installation"
+msgstr "インストール"
+
+#: ../main.rst:13
+msgid "You can use ``pip`` command to install the binary package::"
+msgstr "バイナリーパッケージをインストールする際には， ``pip`` コマンドを使うことができます． ::"
+
+#: ../main.rst:17
+msgid ""
+"If you use `Anaconda <https://www.anaconda.com/distribution/>`_ or "
+"`Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ , ``conda``"
+" command with \"bannohideki\" channel can be used::"
+msgstr ""
+"もし， `Anaconda <https://www.anaconda.com/distribution/>`_ または `Miniconda "
+"<https://docs.conda.io/en/latest/miniconda.html>`_ "
+"を使用している場合は，\"bannohideki\" チャンネルを指定して ``conda`` コマンドを実行してください::"
+
+#: ../main.rst:23
+msgid "Note that this package doesn't support Python 2."
+msgstr "なお，このパッケージはPython 2はサポートしていないのでご注意ください．"
+
+#: ../main.rst:25
+msgid ""
+"The linux version also requires `spPlugin <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html>`_ installation (audio "
+"device I/O requires the pulsesimple plugin based on `PulseAudio "
+"<https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ ). You can "
+"install it by using ``dpkg`` (Ubuntu) or ``rpm`` (CentOS) command with "
+"one of the following packages."
+msgstr ""
+"Linuxバージョンは，`spPlugin <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html>`_ "
+"のインストール（特に，オーディオデバイス入出力には， `PulseAudio "
+"<https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ を利用した "
+"pulsesimple プラグインが必要になります）も必要になります．これは， ``dpkg`` (Ubuntu) または ``rpm`` "
+"(CentOS) のコマンドを，以下のいずれかのファイルと共に使用してインストールできます．"
+
+#: ../main.rst:31
+msgid "Ubuntu 18"
+msgstr ""
+
+#: ../main.rst:33
+msgid ""
+"amd64: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu18/spplugin_0.8.5-5_amd64.deb"
+msgstr ""
+
+#: ../main.rst:34
+msgid ""
+"i386: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu18/spplugin_0.8.5-5_i386.deb"
+msgstr ""
+
+#: ../main.rst:36
+msgid "Ubuntu 16"
+msgstr ""
+
+#: ../main.rst:38
+msgid ""
+"amd64: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu16/spplugin_0.8.5-5_amd64.deb"
+msgstr ""
+
+#: ../main.rst:39
+msgid ""
+"i386: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu16/spplugin_0.8.5-5_i386.deb"
+msgstr ""
+
+#: ../main.rst:41
+msgid "Ubuntu 14"
+msgstr ""
+
+#: ../main.rst:43
+msgid ""
+"amd64: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu14/spplugin_0.8.5-5_amd64.deb"
+msgstr ""
+
+#: ../main.rst:44
+msgid ""
+"i386: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/deb/ubuntu14/spplugin_0.8.5-5_i386.deb"
+msgstr ""
+
+#: ../main.rst:46
+msgid "CentOS 7"
+msgstr ""
+
+#: ../main.rst:48
+msgid ""
+"http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/rpm/el7/x86_64/spPlugin-0.8.5-5.x86_64.rpm"
+msgstr ""
+
+#: ../main.rst:50
+msgid "CentOS 6"
+msgstr ""
+
+#: ../main.rst:52
+msgid ""
+"http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/archive/rpm/el6/x86_64/spPlugin-0.8.5-5.x86_64.rpm"
+msgstr ""
+
+#: ../main.rst:54
+msgid ""
+"If you want to use ``apt`` (Ubuntu) or ``yum`` (CentOS), see `this page "
+"(for Ubuntu) <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/linux_download.html#apt_dpkg>`_ or "
+"`this page (for CentOS) <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/linux_download.html#yum>`_ ."
+msgstr ""
+"``apt`` (Ubuntu) か ``yum`` (CentOS) を使いたい場合は， `こちらのページ (Ubuntu) <http"
+"://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/linux_download-j.html#apt_dpkg>`_ か "
+"`こちらのページ (CentOS) <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/linux_download-j.html#yum>`_ を見てください．"
+
+#: ../main.rst:60
+msgid "Change Log"
+msgstr "更新履歴"
+
+#: ../main.rst:62
+msgid "Version 0.7.15"
+msgstr ""
+
+#: ../main.rst:64
+msgid "Added spaudio.open function to spaudio module."
+msgstr "spaudio モジュールにおける spaudio.open 関数の追加．"
+
+#: ../main.rst:65
+msgid "Added support for open call of spaudio module with keyword arguments."
+msgstr "spaudio モジュールにおけるキーワード引数を用いたopen関数呼び出しのサポート．"
+
+#: ../main.rst:67
+msgid "Version 0.7.14"
+msgstr ""
+
+#: ../main.rst:69
+msgid ""
+"Added :doc:`spplugin</spplugin>` module which enables plugin-based audio "
+"file I/O."
+msgstr "様々なファイル形式の読み書きをプラグインにより可能とする :doc:`spplugin</spplugin>` モジュールの追加．"
+
+#: ../main.rst:71
+msgid "Version 0.7.13"
+msgstr ""
+
+#: ../main.rst:73
+msgid "Initial public release."
+msgstr "最初の公式リリース．"
+
+#: ../main.rst:77
+msgid "Build"
+msgstr "ビルド"
+
+#: ../main.rst:78
+msgid "To build this package, the following are required."
+msgstr "このパッケージをビルドするには，以下が必要になります．"
+
+#: ../main.rst:80
+msgid "`SWIG <http://www.swig.org/>`_"
+msgstr ""
+
+#: ../main.rst:81
+msgid ""
+"`spBase and spAudio <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html>`_"
+msgstr ""
+"`spBase と spAudio <http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html>`_"
+
+#: ../main.rst:85
+msgid "Official Site"
+msgstr "オフィシャルサイト"
+
+#: ../main.rst:86
+msgid ""
+"The official web site is: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/python/spAudio/en/index.html"
+msgstr ""
+"オフィシャルサイトはこちらです： http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/python/spAudio/en/index.html"
+
+#: ../main.rst:88
+msgid ""
+"Japanese web site is also available: http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/python/spAudio/ja/index.html"
+msgstr ""
+"日本語のページも用意されています： http://www-"
+"ie.meijo-u.ac.jp/labs/rj001/spLibs/python/spAudio/ja/index.html"
+

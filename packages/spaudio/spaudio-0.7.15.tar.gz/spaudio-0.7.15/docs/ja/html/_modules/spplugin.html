@@ -1,0 +1,1328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>spplugin &mdash; spAudio  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/custom_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #1060A0" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> spAudio
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目次</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../main.html">はじめに</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../main.html#installation">インストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../main.html#change-log">更新履歴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../main.html#build">ビルド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../main.html#official-site">オフィシャルサイト</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../apidoc.html">APIドキュメント</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../spaudio.html">spaudioモジュール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spplugin.html">sppluginモジュール</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">サンプルコード</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#spaudio"><span class="xref std std-doc">spaudio</span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#fullduplex-i-o">フルデュプレックスI/O</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#fullduplex-i-o-using-with-statement-version-0-7-15">フルデュプレックスI/O（ <code class="docutils literal notranslate"><span class="pre">with</span></code> 文を使用; バージョン0.7.15以降）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-and-plot-python-array-version">読み込みとプロット（Python配列バージョン）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-and-plot-raw-data-version">読み込みとプロット（生データバージョン）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-and-plot-numpy-ndarray-version">読み込みとプロット（Numpy ndarrayバージョン）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-and-plot-numpy-raw-ndarray-version">読み込みとプロット（Numpy 生ndarrayバージョン）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#play-a-wav-file">Wavファイルの再生</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#play-a-wav-file-using-with-statement-version-0-7-15">Wavファイルの再生（ <code class="docutils literal notranslate"><span class="pre">with</span></code> 文を使用; バージョン0.7.15以降）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#play-a-wav-file-with-callback">Wavファイルの再生（コールバックあり）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#play-a-wav-file-with-callback-using-with-statement-version-0-7-15">Wavファイルの再生（コールバックあり; <code class="docutils literal notranslate"><span class="pre">with</span></code> 文を使用; バージョン0.7.15以降）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#record-to-a-wav-file">Wavファイルへの録音</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#record-to-a-wav-file-using-with-statement-version-0-7-15">Wavファイルへの録音（ <code class="docutils literal notranslate"><span class="pre">with</span></code> 文を使用; バージョン0.7.15以降）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#spplugin"><span class="xref std std-doc">spplugin</span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#plot-an-audio-file-contents-by-plugin">プラグインによる音声ファイルの読み込みと，その内容のプロット</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#play-an-audio-file-contents-by-plugin">プラグインによる音声ファイルの再生</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-an-audio-file-by-plugin-and-write-it">プラグインによる音声ファイルの読み込み</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#read-an-audio-file-and-write-it-by-plugin">プラグインによる音声ファイルの書き込み</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples.html#convert-an-audio-file-by-plugin">プラグインによる音声ファイルの変換</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">spAudio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">モジュールコード</a> &raquo;</li>
+        
+      <li>spplugin</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>spplugin のソースコード</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">A python module for plugin-based audio file I/O based on `spPlugin</span>
+<span class="sd">&lt;http://www-ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html&gt;`_</span>
+<span class="sd">which supports several sound formats including WAV, AIFF, MP3,</span>
+<span class="sd">Ogg Vorbis, FLAC, ALAC, raw, and more.</span>
+
+<span class="sd">Example:</span>
+<span class="sd">    The following is the example plotting the waveform of an input audio file.</span>
+<span class="sd">    ::</span>
+
+<span class="sd">        import os</span>
+<span class="sd">        import sys</span>
+<span class="sd">        import spplugin</span>
+<span class="sd">        import numpy as np</span>
+<span class="sd">        import matplotlib.pyplot as plt</span>
+
+
+<span class="sd">        def plotfilebyplugin(filename):</span>
+<span class="sd">            with spplugin.open(filename, &#39;r&#39;) as pf:</span>
+<span class="sd">                nchannels = pf.getnchannels()</span>
+<span class="sd">                samprate = pf.getsamprate()</span>
+<span class="sd">                sampbit = pf.getsampbit()</span>
+<span class="sd">                nframes = pf.getnframes()</span>
+<span class="sd">                duration = nframes / samprate</span>
+
+<span class="sd">                y = pf.createndarray(nframes * nchannels)</span>
+<span class="sd">                nread = pf.read(y)</span>
+<span class="sd">                print(&#39;nread = %d&#39; % nread)</span>
+
+<span class="sd">                y.resize((nframes, nchannels))</span>
+
+<span class="sd">                x = np.linspace(0.0, duration, nframes)</span>
+<span class="sd">                for i in range(nchannels):</span>
+<span class="sd">                    plt.plot(x, y[:,i])</span>
+<span class="sd">                plt.xlim(0.0, duration)</span>
+<span class="sd">                plt.xlabel(&#39;Time [s]&#39;)</span>
+<span class="sd">                plt.ylabel(&#39;Amplitude (normalized)&#39;)</span>
+<span class="sd">                plt.show()</span>
+
+
+<span class="sd">        if __name__ == &#39;__main__&#39;:</span>
+<span class="sd">            if len(sys.argv) &lt;= 1:</span>
+<span class="sd">                print(&#39;usage: %s filename&#39;</span>
+<span class="sd">                      % os.path.basename(sys.argv[0]), file=sys.stderr)</span>
+<span class="sd">                quit()</span>
+
+<span class="sd">            plotfilebyplugin(sys.argv[1])</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">locale</span>
+<span class="kn">import</span> <span class="nn">array</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">namedtuple</span>
+<span class="kn">from</span> <span class="nn">_spplugin</span> <span class="k">import</span> <span class="n">spplugin_c</span> <span class="k">as</span> <span class="n">_spplugin_c</span>
+
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;0.7.15&#39;</span>
+
+
+<span class="n">_encoding</span> <span class="o">=</span> <span class="n">locale</span><span class="o">.</span><span class="n">getpreferredencoding</span><span class="p">()</span>
+<span class="n">_defaultdir</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetDefaultDir</span><span class="p">()</span>
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">_defaultdir</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+    <span class="n">_ischarbinary</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">_ischarbinary</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="k">def</span> <span class="nf">_encodetocstr</span><span class="p">(</span><span class="n">pstr</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">pstr</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">_ischarbinary</span>
+        <span class="k">if</span> <span class="n">_ischarbinary</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">global</span> <span class="n">_encoding</span>
+                <span class="n">encoding</span> <span class="o">=</span> <span class="n">_encoding</span>
+
+            <span class="n">cstr</span> <span class="o">=</span> <span class="n">pstr</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cstr</span> <span class="o">=</span> <span class="n">pstr</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cstr</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">cstr</span>
+
+
+<span class="k">def</span> <span class="nf">_decodefromcstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">cstr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">global</span> <span class="n">_ischarbinary</span>
+    <span class="k">if</span> <span class="n">_ischarbinary</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">global</span> <span class="n">_encoding</span>
+            <span class="n">encoding</span> <span class="o">=</span> <span class="n">_encoding</span>
+
+        <span class="k">return</span> <span class="n">cstr</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cstr</span>
+
+
+<span class="n">_is_64bits</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">maxsize</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">32</span>
+<span class="n">_sysdirname</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">_py_plugindir</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">_is_64bits</span><span class="p">:</span>
+        <span class="n">_sysdirname</span> <span class="o">=</span> <span class="s1">&#39;win64&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_sysdirname</span> <span class="o">=</span> <span class="s1">&#39;win32&#39;</span>
+<span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+    <span class="n">_sysdirname</span> <span class="o">=</span> <span class="s1">&#39;mac64&#39;</span>
+
+
+<span class="k">def</span> <span class="nf">_listup_plugin_files</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">cstr</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSearchPluginFile</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">cstr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">cstr</span><span class="p">))</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+<span class="k">if</span> <span class="n">_sysdirname</span><span class="p">:</span>
+    <span class="c1"># d = os.path.dirname(sys.modules[&#39;spplugin&#39;].__file__)</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+    <span class="n">_py_plugindir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="s1">&#39;_spplugins&#39;</span><span class="p">,</span> <span class="n">_sysdirname</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">_py_plugindir</span><span class="p">):</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSetPluginSearchPath</span><span class="p">(</span><span class="n">_encodetocstr</span><span class="p">(</span><span class="n">_py_plugindir</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_py_plugindir</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+
+<div class="viewcode-block" id="getplugininfo"><a class="viewcode-back" href="../spplugin.html#spplugin.getplugininfo">[ドキュメント]</a><span class="k">def</span> <span class="nf">getplugininfo</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Gets detailed information of the plugin which has a name specified.&quot;&quot;&quot;</span>
+    <span class="n">cname</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">plugin</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spLoadPlugin</span><span class="p">(</span><span class="n">cname</span><span class="p">)</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="n">plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginInformation</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">info</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">info</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spFreePlugin</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">info</span></div>
+
+
+<div class="viewcode-block" id="getplugindesc"><a class="viewcode-back" href="../spplugin.html#spplugin.getplugindesc">[ドキュメント]</a><span class="k">def</span> <span class="nf">getplugindesc</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Gets short description of the plugin which has a name specified.&quot;&quot;&quot;</span>
+    <span class="n">cname</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">plugin</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spLoadPlugin</span><span class="p">(</span><span class="n">cname</span><span class="p">)</span>
+    <span class="n">desc</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="n">plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">desc</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginDescription</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">desc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">desc</span><span class="p">)</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spFreePlugin</span><span class="p">(</span><span class="n">plugin</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">desc</span></div>
+
+
+<span class="c1"># https://stackoverflow.com/questions/2166818/how-to-check-if-an-object-is-an-instance-of-a-namedtuple</span>
+<span class="k">def</span> <span class="nf">_isnamedtupleinstance</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="vm">__bases__</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">tuple</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="s1">&#39;_fields&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">f</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="Error"><a class="viewcode-back" href="../spplugin.html#spplugin.Error">[ドキュメント]</a><span class="k">class</span> <span class="nc">Error</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Base exception class for spplugin.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="FileError"><a class="viewcode-back" href="../spplugin.html#spplugin.FileError">[ドキュメント]</a><span class="k">class</span> <span class="nc">FileError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised by audio file problems.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="WrongPluginError"><a class="viewcode-back" href="../spplugin.html#spplugin.WrongPluginError">[ドキュメント]</a><span class="k">class</span> <span class="nc">WrongPluginError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised by a wrong plugin.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="SuitableNotFoundError"><a class="viewcode-back" href="../spplugin.html#spplugin.SuitableNotFoundError">[ドキュメント]</a><span class="k">class</span> <span class="nc">SuitableNotFoundError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if no suitable plugin is found.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="BogusFileError"><a class="viewcode-back" href="../spplugin.html#spplugin.BogusFileError">[ドキュメント]</a><span class="k">class</span> <span class="nc">BogusFileError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the audio file is bogus.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="FileTypeError"><a class="viewcode-back" href="../spplugin.html#spplugin.FileTypeError">[ドキュメント]</a><span class="k">class</span> <span class="nc">FileTypeError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the specified file type is not accepted.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="SampleRateError"><a class="viewcode-back" href="../spplugin.html#spplugin.SampleRateError">[ドキュメント]</a><span class="k">class</span> <span class="nc">SampleRateError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the specified sample rate is not accepted.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="SampleBitError"><a class="viewcode-back" href="../spplugin.html#spplugin.SampleBitError">[ドキュメント]</a><span class="k">class</span> <span class="nc">SampleBitError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the specified bits/sample is not accepted.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="NChannelsError"><a class="viewcode-back" href="../spplugin.html#spplugin.NChannelsError">[ドキュメント]</a><span class="k">class</span> <span class="nc">NChannelsError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the specified number of channels is not accepted.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="TotalLengthRequiredError"><a class="viewcode-back" href="../spplugin.html#spplugin.TotalLengthRequiredError">[ドキュメント]</a><span class="k">class</span> <span class="nc">TotalLengthRequiredError</span><span class="p">(</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception raised if the total length is required to use the plugin.&quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<span class="n">_standard_lib_params</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;_standard_lib_params&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;nchannels sampwidth framerate nframes comptype compname&#39;</span><span class="p">)</span>
+<span class="n">_standard_lib_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;nchannels&#39;</span><span class="p">,</span> <span class="s1">&#39;sampwidth&#39;</span><span class="p">,</span> <span class="s1">&#39;framerate&#39;</span><span class="p">,</span>
+                      <span class="s1">&#39;nframes&#39;</span><span class="p">,</span> <span class="s1">&#39;comptype&#39;</span><span class="p">,</span> <span class="s1">&#39;compname&#39;</span><span class="p">]</span>
+
+<span class="n">params_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;nchannels&#39;</span><span class="p">,</span> <span class="s1">&#39;sampbit&#39;</span><span class="p">,</span> <span class="s1">&#39;samprate&#39;</span><span class="p">,</span> <span class="s1">&#39;length&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;pluginid&#39;</span><span class="p">,</span> <span class="s1">&#39;filetype&#39;</span><span class="p">,</span> <span class="s1">&#39;filedesc&#39;</span><span class="p">,</span> <span class="s1">&#39;filefilter&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;songinfo&#39;</span><span class="p">,</span> <span class="s1">&#39;sampwidth&#39;</span><span class="p">,</span> <span class="s1">&#39;framerate&#39;</span><span class="p">,</span> <span class="s1">&#39;nframes&#39;</span><span class="p">]</span>
+
+<span class="n">songinfo_keys_in_number</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;track&#39;</span><span class="p">,</span> <span class="s1">&#39;track_toral&#39;</span><span class="p">,</span> <span class="s1">&#39;disc&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;disc_total&#39;</span><span class="p">,</span> <span class="s1">&#39;tempo&#39;</span><span class="p">]</span>
+<span class="n">songinfo_keys_in_string</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;album&#39;</span><span class="p">,</span> <span class="s1">&#39;genre&#39;</span><span class="p">,</span> <span class="s1">&#39;release&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;copyright&#39;</span><span class="p">,</span> <span class="s1">&#39;engineer&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">,</span> <span class="s1">&#39;software&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="s1">&#39;comment&#39;</span><span class="p">,</span> <span class="s1">&#39;album_artist&#39;</span><span class="p">,</span> <span class="s1">&#39;composer&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;lyricist&#39;</span><span class="p">,</span> <span class="s1">&#39;producer&#39;</span><span class="p">,</span> <span class="s1">&#39;isrc&#39;</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="SpFilePlugin"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin">[ドキュメント]</a><span class="k">class</span> <span class="nc">SpFilePlugin</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;A class for audio file I/O. This class is similar to one provided by</span>
+<span class="sd">        the standard libraries such as aifc, wave, or sunau. The important</span>
+<span class="sd">        difference is that ``set*()`` functions must be called before</span>
+<span class="sd">        :func:`~spplugin.SpFilePlugin.open` in this class. You can set</span>
+<span class="sd">        parameters by using optional arguments of</span>
+<span class="sd">        :func:`~spplugin.open` function.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pluginname</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spWaveInfo</span><span class="p">()</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spInitWaveInfo</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSongInfo</span><span class="p">()</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spInitSongInfo</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setparams_pluginid</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<div class="viewcode-block" id="SpFilePlugin.open"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.open">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">pluginname</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">samprate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+             <span class="n">sampbit</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">nchannels</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">songinfo</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Opens the file associated with the filename by using a plugin.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            filename (str): The name of the file to open.</span>
+<span class="sd">            mode (str): The opening mode. ``&#39;r&#39;`` means read mode, ``&#39;w&#39;`` means</span>
+<span class="sd">                        write mode.</span>
+<span class="sd">            pluginname (str): The name of the plugin used when this function</span>
+<span class="sd">                              cannot find the suitable plugin.</span>
+<span class="sd">            samprate (double): Sample rate.</span>
+<span class="sd">            sampbit (int): Bits/sample.</span>
+<span class="sd">            nchannels (int): The number of channels.</span>
+<span class="sd">            filetype (str): File type string.</span>
+<span class="sd">            songinfo (dict): Song information.</span>
+<span class="sd">            params (dict): All above parameters in dict format.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">pluginname</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_pluginname</span> <span class="o">=</span> <span class="n">pluginname</span>
+        <span class="k">if</span> <span class="n">params</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setparams</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">samprate</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setsamprate</span><span class="p">(</span><span class="n">samprate</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sampbit</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setsampbit</span><span class="p">(</span><span class="n">sampbit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">nchannels</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="n">nchannels</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">filetype</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setfiletype</span><span class="p">(</span><span class="n">filetype</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">songinfo</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setsonginfo</span><span class="p">(</span><span class="n">songinfo</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_setsonginfo_toc</span><span class="p">()</span>
+
+        <span class="n">cpluginname</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_pluginname</span><span class="p">)</span>
+        <span class="n">cfilename</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">cmode</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">errorcode</span> \
+            <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spOpenFilePluginAuto_</span><span class="p">(</span><span class="n">cpluginname</span><span class="p">,</span> <span class="n">cfilename</span><span class="p">,</span> <span class="n">cmode</span><span class="p">,</span>
+                                                <span class="mi">0</span><span class="p">,</span>  <span class="c1"># SP_PLUGIN_DEVICE_FILE</span>
+                                                <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_setparams_pluginid</span> <span class="ow">and</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">11</span><span class="p">:</span>
+            <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spFreePlugin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+            <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSetWaveInfoFileType_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">errorcode</span> \
+                <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spOpenFilePluginAuto_</span><span class="p">(</span><span class="n">cpluginname</span><span class="p">,</span> <span class="n">cfilename</span><span class="p">,</span> <span class="n">cmode</span><span class="p">,</span>
+                                                    <span class="mi">0</span><span class="p">,</span>  <span class="c1"># SP_PLUGIN_DEVICE_FILE</span>
+                                                    <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_procopenerror</span><span class="p">(</span><span class="n">errorcode</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span> <span class="o">=</span> <span class="n">mode</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">=</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.close"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.close">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Closes the current audio file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spCloseFilePlugin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setparams_pluginid</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+    <span class="k">def</span> <span class="nf">_procopenerror</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">errorcode</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">errorcode</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">WrongPluginError</span><span class="p">(</span><span class="s1">&#39;wrong plugin&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">6</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SuitableNotFoundError</span><span class="p">(</span><span class="s1">&#39;no suitable plugin is found&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">10</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">BogusFileError</span><span class="p">(</span><span class="s1">&#39;this audio file is bogus&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">11</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">FileTypeError</span><span class="p">(</span><span class="s1">&#39;the file type is not accepted&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">12</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SampleRateError</span><span class="p">(</span><span class="s1">&#39;the sample rate is not accepted&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">13</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SampleBitError</span><span class="p">(</span><span class="s1">&#39;the bits/sample is not accepted&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">14</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">NChannelsError</span><span class="p">(</span><span class="s1">&#39;the number of channels is not accepted&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">errorcode</span> <span class="o">==</span> <span class="o">-</span><span class="mi">16</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">TotalLengthRequiredError</span><span class="p">(</span><span class="s1">&#39;the total length is required&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">FileError</span><span class="p">(</span><span class="s1">&#39;unknown file error&#39;</span><span class="p">)</span>
+            <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spFreePlugin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="SpFilePlugin.getpluginversion"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getpluginversion">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getpluginversion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the version of the plugin currently used.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="n">flag</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">revision</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginVersion</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;cannot get plugin version&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">version</span><span class="p">,</span> <span class="n">revision</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getpluginname"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getpluginname">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getpluginname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the name of the plugin currently used.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginName</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">name</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getpluginid"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getpluginid">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getpluginid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the ID of the plugin currently used.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="nb">id</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginId</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">id</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">id</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getplugininfo"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getplugininfo">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getplugininfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the detailed information of the plugin currently used.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginInformation</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">info</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">info</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">info</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getplugindesc"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getplugindesc">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getplugindesc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the short description of the plugin currently used.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="n">desc</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetPluginDescription</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">desc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">desc</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">desc</span></div>
+
+    <span class="k">def</span> <span class="nf">_setsonginfo_toc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">ckey</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">str</span><span class="p">:</span>
+                    <span class="n">cvalue</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+                    <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spUpdateSongInfoStringField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">,</span>
+                                                             <span class="n">ckey</span><span class="p">,</span> <span class="n">cvalue</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spUpdateSongInfoNumberField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">,</span>
+                                                             <span class="n">ckey</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_getsonginfo_fromc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">songinfo_keys_in_number</span><span class="p">):</span>
+            <span class="n">ckey</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+            <span class="n">number</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spGetSongInfoNumberField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">,</span> <span class="n">ckey</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">number</span>
+
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">songinfo_keys_in_string</span><span class="p">):</span>
+            <span class="n">ckey</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+            <span class="n">cstring</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">xspGetSongInfoStringField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo_c</span><span class="p">,</span> <span class="n">ckey</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">cstring</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cstring</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">cstring</span><span class="p">)</span>
+
+<div class="viewcode-block" id="SpFilePlugin.setsonginfo"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setsonginfo">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setsonginfo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">songinfo</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets song information to the file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span> <span class="o">=</span> <span class="n">songinfo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setsonginfo_toc</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.appendsonginfo"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.appendsonginfo">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">appendsonginfo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">songinfo</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Appends song information to the current internal information.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="c1"># append dict of &#39;songinfo&#39; arg to &#39;_songinfo&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span><span class="p">,</span> <span class="o">**</span><span class="n">songinfo</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setsonginfo_toc</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getsonginfo"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getsonginfo">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getsonginfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets song information of the current file.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_getsonginfo_fromc</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_songinfo</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setfiletype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setfiletype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setfiletype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filetype</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets file type to the file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="n">cfiletype</span> <span class="o">=</span> <span class="n">_encodetocstr</span><span class="p">(</span><span class="n">filetype</span><span class="p">)</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSetWaveInfoFileType_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="n">cfiletype</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getfiletype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getfiletype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getfiletype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets file type of the current file.&quot;&quot;&quot;</span>
+        <span class="n">cfiletype</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">xspGetWaveInfoStringField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">cfiletype</span><span class="p">:</span>
+            <span class="n">filetype</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">cfiletype</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">filetype</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="n">filetype</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getfiledesc"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getfiledesc">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getfiledesc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets file description of the current file.&quot;&quot;&quot;</span>
+        <span class="n">cfiledesc</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">xspGetWaveInfoStringField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">cfiledesc</span><span class="p">:</span>
+            <span class="n">filedesc</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">cfiledesc</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">filedesc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="n">filedesc</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getfilefilter"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getfilefilter">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getfilefilter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets file filter (e.g. ``&#39;*.wav&#39;``) of the current file.&quot;&quot;&quot;</span>
+        <span class="n">cfilefilter</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">xspGetWaveInfoStringField_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">cfilefilter</span><span class="p">:</span>
+            <span class="n">filefilter</span> <span class="o">=</span> <span class="n">_decodefromcstr</span><span class="p">(</span><span class="n">cfilefilter</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">filefilter</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="n">filefilter</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setsamprate"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setsamprate">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setsamprate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">samprate</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets sample rate to the file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_rate</span> <span class="o">=</span> <span class="n">samprate</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setframerate"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setframerate">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setframerate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">samprate</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets sample rate to the file.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setsamprate</span><span class="p">(</span><span class="n">samprate</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getsamprate"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getsamprate">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getsamprate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets sample rate of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_rate</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getframerate"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getframerate">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getframerate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets sample rate of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getsamprate</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setsampbit"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setsampbit">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setsampbit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sampbit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets bits/sample to the file. sampbit = 33 means</span>
+<span class="sd">        32bit float.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sampbit</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;sampbit &gt;= 8 is required&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_bit</span> <span class="o">=</span> <span class="n">sampbit</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setsampwidth"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setsampwidth">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setsampwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sampwidth</span><span class="p">,</span> <span class="n">floatflag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets bytes/sample of the current file.&quot;&quot;&quot;</span>
+        <span class="n">sampbit</span> <span class="o">=</span> <span class="n">sampwidth</span> <span class="o">*</span> <span class="mi">8</span>
+        <span class="k">if</span> <span class="n">floatflag</span><span class="p">:</span>
+            <span class="n">sampbit</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">setsampbit</span><span class="p">(</span><span class="n">sampbit</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getsampbit"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getsampbit">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getsampbit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets bits/sample of the current file. sampbit = 33 means</span>
+<span class="sd">        32bit float.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_bit</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getsampwidth"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getsampwidth">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getsampwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets bytes/sample of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getsampbit</span><span class="p">()</span> <span class="o">//</span> <span class="mi">8</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getrawsampbit"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getrawsampbit">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getrawsampbit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the bits/sample for a raw buffer.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_bit</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">16</span>
+        <span class="k">elif</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_bit</span> <span class="o">&gt;</span> <span class="mi">16</span><span class="p">)</span>
+              <span class="ow">and</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">samp_bit</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="mi">32</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getsampwidth</span><span class="p">()</span> <span class="o">*</span> <span class="mi">8</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getrawsampwidth"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getrawsampwidth">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getrawsampwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the bytes/sample for a raw buffer.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampbit</span><span class="p">()</span> <span class="o">//</span> <span class="mi">8</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setnchannels"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setnchannels">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setnchannels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nchannels</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets the number of channels to the file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">nchannels</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;nchannels &gt;= 1 is required&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span> <span class="o">=</span> <span class="n">nchannels</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getnchannels"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getnchannels">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getnchannels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the number of channels of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setlength"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setlength">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setlength</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets the total length of the file.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">length</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;length &gt;= 1 is required&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setnframes"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setnframes">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setnframes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets the total number of frames of the current file.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setlength</span><span class="p">(</span><span class="n">length</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getlength"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getlength">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getlength</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the total length of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">length</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getnframes"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getnframes">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getnframes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the total number of frames of the current file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getlength</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getcomptype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getcomptype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getcomptype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">decodebytes</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns compression type. Currently, ``&#39;NONE&#39;`` (decodebytes = ``True``)</span>
+<span class="sd">        or ``b&#39;NONE&#39;`` (decodebytes = ``False``) will be returned.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">decodebytes</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;NONE&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">b</span><span class="s1">&#39;NONE&#39;</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getcompname"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getcompname">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getcompname</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">decodebytes</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns human-readable name of compression type. Currently,</span>
+<span class="sd">        ``&#39;not compressed&#39;`` (decodebytes = ``True``) or ``b&#39;not compressed&#39;``</span>
+<span class="sd">        (decodebytes = ``False``) will be returned.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">decodebytes</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;not compressed&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">b</span><span class="s1">&#39;not compressed&#39;</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setcomptype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setcomptype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setcomptype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">encodestr</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets compression type. Currently, this parameter is ignored.&quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setparams"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setparams">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setparams</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Sets supported all parameters described in dict or</span>
+<span class="sd">        namedtuple object to the file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            params (dict): a dict object of parameters whose keys are</span>
+<span class="sd">                ``&#39;nchannels&#39;``, ``&#39;sampbit&#39;``, ``&#39;samprate&#39;``, ``&#39;length&#39;``,</span>
+<span class="sd">                ``&#39;filetype&#39;``, or ``&#39;songinfo&#39;``.</span>
+<span class="sd">                The namedtuple generated by standard libraries</span>
+<span class="sd">                such as aifc, wave, or sunau is also acceptable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;set before opening file&#39;</span><span class="p">)</span>
+        <span class="c1"># if isinstance(params, namedtuple):</span>
+        <span class="k">if</span> <span class="n">_isnamedtupleinstance</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+            <span class="c1"># some versions of Python include _asdist() bug.</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">_fields</span><span class="p">,</span> <span class="n">params</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">_standard_lib_keys</span><span class="p">,</span> <span class="n">params</span><span class="p">))</span>
+        <span class="n">sampbit</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">pluginid</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setparams_pluginid</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;sampwidth&#39;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">sampbit</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">sampbit</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mi">8</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;sampbit&#39;</span><span class="p">:</span>
+                <span class="n">sampbit</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;nchannels&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;samprate&#39;</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;framerate&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">setsamprate</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;length&#39;</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;nframes&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">setlength</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;pluginid&#39;</span><span class="p">:</span>
+                <span class="n">pluginid</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;filetype&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">setfiletype</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;songinfo&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">setsonginfo</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sampbit</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setsampbit</span><span class="p">(</span><span class="n">sampbit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pluginid</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_setparams_pluginid</span> <span class="o">=</span> <span class="n">pluginid</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getparams"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getparams">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getparams</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets supported all parameters of the current file in dict object.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: A dict object including all parameters of the current file</span>
+<span class="sd">            whose keys are ``&#39;nchannels&#39;``, ``&#39;sampbit&#39;``, ``&#39;samprate&#39;``,</span>
+<span class="sd">            ``&#39;length&#39;``, ``&#39;filetype&#39;``, and ``&#39;songinfo&#39;``.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">nchannels</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">(),</span> <span class="n">sampbit</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getsampbit</span><span class="p">(),</span>
+                    <span class="n">samprate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getsamprate</span><span class="p">(),</span> <span class="n">length</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getlength</span><span class="p">(),</span>
+                    <span class="n">pluginid</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getpluginid</span><span class="p">(),</span> <span class="n">filetype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getfiletype</span><span class="p">(),</span>
+                    <span class="n">filedesc</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getfiledesc</span><span class="p">(),</span> <span class="n">filefilter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getfilefilter</span><span class="p">(),</span>
+                    <span class="n">songinfo</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getsonginfo</span><span class="p">(),</span> <span class="n">sampwidth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">(),</span>
+                    <span class="n">framerate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getframerate</span><span class="p">(),</span> <span class="n">nframes</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getnframes</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getparamstuple"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getparamstuple">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getparamstuple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">decodebytes</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets supported all parameters of the current file in namedtuple object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            decodebytes (bool): ``True`` decodes bytes objects into string objects</span>
+<span class="sd">                obtained by :func:`~spplugin.SpFilePlugin.getcomptype`</span>
+<span class="sd">                and :func:`~spplugin.SpFilePlugin.getcompname` .</span>
+<span class="sd">                The standard libraries of wave and sunau expect a decoded string</span>
+<span class="sd">                object while the standard aifc library expects a bytes object.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            namedtuple: A namedtuple object including all parameters of</span>
+<span class="sd">            the current file whose entries are</span>
+<span class="sd">            ``(nchannels, sampwidth, framerate, nframes, comptype, compname)`` .</span>
+<span class="sd">            This object is compatible with the argument of ``setparams()``</span>
+<span class="sd">            of standard libraries such as aifc, wave, or sunau.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">_standard_lib_params</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">getsampwidth</span><span class="p">(),</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">getframerate</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">getnframes</span><span class="p">(),</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">getcomptype</span><span class="p">(</span><span class="n">decodebytes</span><span class="p">),</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">getcompname</span><span class="p">(</span><span class="n">decodebytes</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getrawarraytypecode"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getrawarraytypecode">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getrawarraytypecode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the type code for python array.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            char: A type code for the current settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sampbit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampbit</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">sampbit</span> <span class="o">&gt;=</span> <span class="mi">64</span><span class="p">:</span>
+            <span class="n">typecode</span> <span class="o">=</span> <span class="s1">&#39;d&#39;</span>
+        <span class="k">elif</span> <span class="n">sampbit</span> <span class="o">&gt;=</span> <span class="mi">33</span><span class="p">:</span>
+            <span class="n">typecode</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span>
+        <span class="k">elif</span> <span class="n">sampbit</span> <span class="o">&gt;</span> <span class="mi">16</span><span class="p">:</span>  <span class="c1"># sampbit &gt;= 32</span>
+            <span class="n">typecode</span> <span class="o">=</span> <span class="s1">&#39;l&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">typecode</span> <span class="o">=</span> <span class="s1">&#39;h&#39;</span>
+        <span class="k">return</span> <span class="n">typecode</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.createrawarray"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.createrawarray">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">createrawarray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">nframesflag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates a raw array for the current file settings.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            length: A length of the array. Note that this length is</span>
+<span class="sd">                    not identical to the number of frames</span>
+<span class="sd">                    (length = nframes * nchannels).</span>
+<span class="sd">                    If you want to specify the number of frames,</span>
+<span class="sd">                    the second argument must be ``True``.</span>
+<span class="sd">            nframesflag (bool): ``True`` makes the first argument be</span>
+<span class="sd">                                treated as the number of frames.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            array.array: An array class object for the current file settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">nframesflag</span><span class="p">:</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span>
+        <span class="n">buffer</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getrawarraytypecode</span><span class="p">(),</span> <span class="n">buffer</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getarraytypecode"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getarraytypecode">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getarraytypecode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the type code for python array to store double array.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            char: A type code of double array for the current settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;d&#39;</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.createarray"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.createarray">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">createarray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">nframesflag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates a double array for the current file settings.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            length: A length of the array. Note that this length is</span>
+<span class="sd">                    not identical to the number of frames</span>
+<span class="sd">                    (length = nframes * nchannels).</span>
+<span class="sd">                    If you want to specify the number of frames,</span>
+<span class="sd">                    the second argument must be ``True``.</span>
+<span class="sd">            nframesflag (bool): ``True`` makes the first argument be</span>
+<span class="sd">                                treated as the number of frames.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            array.array: An array class object for the current file settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">nframesflag</span><span class="p">:</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="mi">8</span>
+        <span class="n">buffer</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getarraytypecode</span><span class="p">(),</span> <span class="n">buffer</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getrawndarraydtype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getrawndarraydtype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getrawndarraydtype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the dtype string for numpy ndarray.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            string: A dtype string for the current settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sampbit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampbit</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">sampbit</span> <span class="o">&gt;=</span> <span class="mi">64</span><span class="p">:</span>
+            <span class="n">dtypestr</span> <span class="o">=</span> <span class="s1">&#39;f8&#39;</span>
+        <span class="k">elif</span> <span class="n">sampbit</span> <span class="o">&gt;=</span> <span class="mi">33</span><span class="p">:</span>
+            <span class="n">dtypestr</span> <span class="o">=</span> <span class="s1">&#39;f4&#39;</span>
+        <span class="k">elif</span> <span class="n">sampbit</span> <span class="o">&gt;</span> <span class="mi">16</span><span class="p">:</span>  <span class="c1"># sampbit &gt;= 32</span>
+            <span class="n">dtypestr</span> <span class="o">=</span> <span class="s1">&#39;i4&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">dtypestr</span> <span class="o">=</span> <span class="s1">&#39;i2&#39;</span>
+        <span class="k">return</span> <span class="n">dtypestr</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.createrawndarray"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.createrawndarray">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">createrawndarray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">nframesflag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates a raw numpy ndarray for the current file settings.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            length: A length of the array. Note that this length is</span>
+<span class="sd">                    not identical to the number of frames</span>
+<span class="sd">                    (length = nframes * nchannels).</span>
+<span class="sd">                    If you want to specify the number of frames,</span>
+<span class="sd">                    the second argument must be ``True``.</span>
+<span class="sd">            nframesflag (bool): ``True`` makes the first argument be</span>
+<span class="sd">                                treated as the number of frames.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            numpy.ndarray: An ndarray class object for the current file settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="k">if</span> <span class="n">nframesflag</span><span class="p">:</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span>
+        <span class="n">buffer</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getrawndarraydtype</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getndarraydtype"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getndarraydtype">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getndarraydtype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the dtype string for numpy ndarray to store double array.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            string: A dtype string for the current settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;f8&#39;</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.createndarray"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.createndarray">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">createndarray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">nframesflag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Creates a numpy double array for the current file settings.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            length: A length of the array. Note that this length is</span>
+<span class="sd">                    not identical to the number of frames</span>
+<span class="sd">                    (length = nframes * nchannels).</span>
+<span class="sd">                    If you want to specify the number of frames,</span>
+<span class="sd">                    the second argument must be ``True``.</span>
+<span class="sd">            nframesflag (bool): ``True`` makes the first argument be</span>
+<span class="sd">                                treated as the number of frames.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            numpy.ndarray: An ndarray class object for the current file settings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="k">if</span> <span class="n">nframesflag</span><span class="p">:</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="mi">8</span>
+        <span class="n">buffer</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">getndarraydtype</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setpos"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setpos">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setpos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Seeks to the specified position.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pos: a position to seek.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">pos</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">getlength</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;position not in range&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened with read mode&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spSeekPlugin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">FileError</span><span class="p">(</span><span class="s1">&#39;seek error&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">=</span> <span class="n">pos</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.rewind"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.rewind">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">rewind</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Rewinds to the beginning of the file.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setpos</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.tell"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.tell">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">tell</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets the current position in the file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.setmark"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.setmark">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">setmark</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Does nothing (for compatibility with standard libraries</span>
+<span class="sd">        such as aifc, wave, and sunau).&quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">Error</span><span class="p">(</span><span class="s1">&#39;setmark() not supported&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getmark"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getmark">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getmark</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Does nothing (for compatibility with standard libraries</span>
+<span class="sd">        such as aifc, wave, and sunau).&quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">Error</span><span class="p">(</span><span class="s1">&#39;no marks&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.getmarkers"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.getmarkers">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">getmarkers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Does nothing (for compatibility with standard libraries</span>
+<span class="sd">        such as aifc, wave, and sunau).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.copyraw2array"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.copyraw2array">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">copyraw2array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rawdata</span><span class="p">,</span> <span class="n">sampwidth</span><span class="p">,</span> <span class="n">bigendian_or_signed8bit</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Copies raw bytes (bytearray) data contents to a new raw array (array.array).</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            rawdata (bytes or bytearray): Input bytes or bytearray object.</span>
+<span class="sd">            sampwidth (int): bytes/sample of rawdata</span>
+<span class="sd">            bigendian_or_signed8bit (bool): Specify ``True`` if endianness</span>
+<span class="sd">                of rawdata is big endian (16- or 32-bit case) or data type</span>
+<span class="sd">                of rawdata (8-bit case) is signed 8-bit.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            array.array: An array class object which contains converted data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">dest_bigendian</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">byteorder</span> <span class="o">==</span> <span class="s1">&#39;big&#39;</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="n">dest_sampwidth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">rawdata</span><span class="p">)</span> <span class="o">//</span> <span class="n">sampwidth</span>
+        <span class="n">outarray</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">createrawarray</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spCopyBuffer_</span><span class="p">(</span><span class="nb">memoryview</span><span class="p">(</span><span class="n">outarray</span><span class="p">),</span> <span class="n">dest_sampwidth</span><span class="p">,</span> <span class="n">dest_bigendian</span><span class="p">,</span>
+                                  <span class="n">rawdata</span><span class="p">,</span> <span class="n">sampwidth</span><span class="p">,</span> <span class="n">bigendian_or_signed8bit</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sampwidth</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+                <span class="n">outarray</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">//=</span> <span class="mi">256</span>
+        <span class="k">return</span> <span class="n">outarray</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.copyarray2raw"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.copyarray2raw">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">copyarray2raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inarray</span><span class="p">,</span> <span class="n">sampwidth</span><span class="p">,</span> <span class="n">bigendian_or_signed8bit</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Copies raw array (array.array) contents to a new raw bytes</span>
+<span class="sd">        (bytearray) data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            inarray (array.array): Input array object.</span>
+<span class="sd">            sampwidth (int): bytes/sample of output data.</span>
+<span class="sd">            bigendian_or_signed8bit (bool): Specify ``True`` if endianness</span>
+<span class="sd">                of output data is big endian (16- or 32-bit case) or</span>
+<span class="sd">                data type of output data is signed 8-bit (8-bit case).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bytearray: A bytearray class object which contains converted data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">inarray</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;input type must be array.array&#39;</span><span class="p">)</span>
+        <span class="n">src_bigendian</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">byteorder</span> <span class="o">==</span> <span class="s1">&#39;big&#39;</span> <span class="k">else</span> <span class="kc">False</span>
+        <span class="n">src_sampwidth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">inarray</span><span class="p">)</span>
+        <span class="n">rawdata</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">length</span> <span class="o">*</span> <span class="n">sampwidth</span><span class="p">)</span>
+        <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spCopyBuffer_</span><span class="p">(</span><span class="n">rawdata</span><span class="p">,</span> <span class="n">sampwidth</span><span class="p">,</span> <span class="n">bigendian_or_signed8bit</span><span class="p">,</span>
+                                  <span class="nb">memoryview</span><span class="p">(</span><span class="n">inarray</span><span class="p">),</span> <span class="n">src_sampwidth</span><span class="p">,</span> <span class="n">src_bigendian</span><span class="p">,</span>
+                                  <span class="mi">1</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">getsampbit</span><span class="p">()</span> <span class="o">==</span> <span class="mi">24</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">rawdata</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.readraw"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.readraw">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">readraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reads raw data from the audio file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (bytearray, array.array or numpy.ndarray):</span>
+<span class="sd">                A buffer to receive raw data from the audio file.</span>
+<span class="sd">            offset (int): Optional offset location for the buffer.</span>
+<span class="sd">            length (int): Optional read length for the buffer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The read size if successful, -1 otherwise.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The keyword arguments of `offset` and `length` were</span>
+<span class="sd">            introduced in Version 0.7.5.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;a valid buffer must be specified&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened with read mode&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="nb">memoryview</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;ndarray&#39;</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;unsupported data type&#39;</span><span class="p">)</span>
+
+        <span class="n">offsetbyte</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">offset</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">offset</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">lengthbyte</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+        <span class="n">nread</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spReadPluginInByte_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span>
+                                                <span class="n">offsetbyte</span><span class="p">,</span> <span class="n">lengthbyte</span><span class="p">)</span>
+        <span class="n">nread2</span> <span class="o">=</span> <span class="n">nread</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">nread</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">nread</span>
+        <span class="k">if</span> <span class="n">nread</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">+=</span> <span class="n">nread2</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span>
+        <span class="k">return</span> <span class="n">nread2</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.read"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.read">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reads data to double array from the audio file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (bytearray, array.array or numpy.ndarray):</span>
+<span class="sd">                A buffer of double array to receive data from the audio file.</span>
+<span class="sd">            weight (double): A weighting factor multiplied to data after reading.</span>
+<span class="sd">            offset (int): Optional offset location for the buffer.</span>
+<span class="sd">            length (int): Optional read length for the buffer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The read size if successful, -1 otherwise.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The keyword arguments of `offset` and `length` were</span>
+<span class="sd">            introduced in Version 0.7.5.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;a valid buffer must be specified&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened with read mode&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">typecode</span> <span class="o">!=</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;the typecode must be </span><span class="se">\&#39;</span><span class="s1">d</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="nb">memoryview</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;ndarray&#39;</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="s1">&#39;f8&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;the dtype must be </span><span class="se">\&#39;</span><span class="s1">f8</span><span class="se">\&#39;</span><span class="s1"> (</span><span class="se">\&#39;</span><span class="s1">float64</span><span class="se">\&#39;</span><span class="s1">)&#39;</span><span class="p">)</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;unsupported data type&#39;</span><span class="p">)</span>
+        <span class="n">nread</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spReadPluginDoubleWeighted_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span>
+                                                        <span class="n">weight</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">nread</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">+=</span> <span class="n">nread</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span>
+        <span class="k">return</span> <span class="n">nread</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.writeraw"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.writeraw">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">writeraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Writes raw data to the audio file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (bytearray, array.array or numpy.ndarray):</span>
+<span class="sd">                A buffer to send raw data to the audio file.</span>
+<span class="sd">            offset (int): Optional offset location for the buffer.</span>
+<span class="sd">            length (int): Optional write length for the buffer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The written size if successful, -1 otherwise.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The keyword arguments of `offset` and `length` were</span>
+<span class="sd">            introduced in Version 0.7.5.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;a valid buffer must be specified&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;w&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened with write mode&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="nb">memoryview</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;ndarray&#39;</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;unsupported data type&#39;</span><span class="p">)</span>
+
+        <span class="n">offsetbyte</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">offset</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">offset</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">lengthbyte</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+        <span class="n">nwrite</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spWritePluginInByte_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span>
+                                                  <span class="n">offsetbyte</span><span class="p">,</span> <span class="n">lengthbyte</span><span class="p">)</span>
+        <span class="n">nwrite2</span> <span class="o">=</span> <span class="n">nwrite</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">getrawsampwidth</span><span class="p">()</span> <span class="k">if</span> <span class="n">nwrite</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">nwrite</span>
+        <span class="k">if</span> <span class="n">nwrite</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">+=</span> <span class="n">nwrite2</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span>
+        <span class="k">return</span> <span class="n">nwrite2</span></div>
+
+<div class="viewcode-block" id="SpFilePlugin.write"><a class="viewcode-back" href="../spplugin.html#spplugin.SpFilePlugin.write">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Writes data of double array to the audio file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (bytearray, array.array or numpy.ndarray):</span>
+<span class="sd">                A buffer of double array to send data to the audio file.</span>
+<span class="sd">            weight (double): A weighting factor multiplied to data before writing.</span>
+<span class="sd">            offset (int): Optional offset location for the buffer.</span>
+<span class="sd">            length (int): Optional write length for the buffer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The written size if successful, -1 otherwise.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The keyword arguments of `offset` and `length` were</span>
+<span class="sd">            introduced in Version 0.7.5.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;a valid buffer must be specified&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;w&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;file must be opened with write mode&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">typecode</span> <span class="o">!=</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;the typecode must be </span><span class="se">\&#39;</span><span class="s1">d</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="nb">memoryview</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;ndarray&#39;</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="s1">&#39;f8&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;the dtype must be </span><span class="se">\&#39;</span><span class="s1">f8</span><span class="se">\&#39;</span><span class="s1"> (</span><span class="se">\&#39;</span><span class="s1">float64</span><span class="se">\&#39;</span><span class="s1">)&#39;</span><span class="p">)</span>
+            <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;unsupported data type&#39;</span><span class="p">)</span>
+        <span class="n">nwrite</span> <span class="o">=</span> <span class="n">_spplugin_c</span><span class="o">.</span><span class="n">spWritePluginDoubleWeighted_</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plugin</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span>
+                                                          <span class="n">weight</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">nwrite</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_currentpos</span> <span class="o">+=</span> <span class="n">nwrite</span> <span class="o">//</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waveinfo_c</span><span class="o">.</span><span class="n">num_channel</span>
+        <span class="k">return</span> <span class="n">nwrite</span></div></div>
+
+
+<div class="viewcode-block" id="open"><a class="viewcode-back" href="../spplugin.html#spplugin.open">[ドキュメント]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">pluginname</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">samprate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+         <span class="n">sampbit</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">nchannels</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">songinfo</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Opens the file associated with the filename by using a plugin.</span>
+<span class="sd">    This function may be used in a ``with`` statement.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        filename (str): The name of the file to open.</span>
+<span class="sd">        mode (str): The opening mode. ``&#39;r&#39;`` means read mode, ``&#39;w&#39;`` means</span>
+<span class="sd">                    write mode.</span>
+<span class="sd">        pluginname (str): The name of the plugin used when this function</span>
+<span class="sd">                          cannot find the suitable plugin.</span>
+<span class="sd">        samprate (double): Sample rate.</span>
+<span class="sd">        sampbit (int): Bits/sample.</span>
+<span class="sd">        nchannels (int): The number of channels.</span>
+<span class="sd">        filetype (str): File type string.</span>
+<span class="sd">        songinfo (dict): Song information.</span>
+<span class="sd">        params (dict): All above parameters in dict format.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        SpFilePlugin: A new instance of :class:`~spplugin.SpFilePlugin` class.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pf</span> <span class="o">=</span> <span class="n">SpFilePlugin</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">pf</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span>
+                <span class="n">pluginname</span><span class="o">=</span><span class="n">pluginname</span><span class="p">,</span> <span class="n">samprate</span><span class="o">=</span><span class="n">samprate</span><span class="p">,</span>
+                <span class="n">sampbit</span><span class="o">=</span><span class="n">sampbit</span><span class="p">,</span> <span class="n">nchannels</span><span class="o">=</span><span class="n">nchannels</span><span class="p">,</span>
+                <span class="n">filetype</span><span class="o">=</span><span class="n">filetype</span><span class="p">,</span> <span class="n">songinfo</span><span class="o">=</span><span class="n">songinfo</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">pf</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">raise</span>
+
+    <span class="k">return</span> <span class="n">pf</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017-2019  Hideki Banno
+      <span class="lastupdated">
+        最終更新: 2019-04-28 18:20:55
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><img src="/cgi-bin/labs/rj001/counter/count.cgi?id=spAudio_python"></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

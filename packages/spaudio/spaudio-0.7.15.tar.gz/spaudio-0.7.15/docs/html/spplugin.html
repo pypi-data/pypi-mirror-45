@@ -1,0 +1,1045 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>spplugin module &mdash; spAudio  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/custom_theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="spaudio module" href="spaudio.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #1060A0" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> spAudio
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#change-log">Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#official-site">Official Site</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="apidoc.html">API Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="spaudio.html">spaudio module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">spplugin module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#spaudio"><span class="xref std std-doc">spaudio</span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#fullduplex-i-o">Fullduplex I/O</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#fullduplex-i-o-using-with-statement-version-0-7-15">Fullduplex I/O (using <code class="docutils literal notranslate"><span class="pre">with</span></code> statement; version 0.7.15+)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-and-plot-python-array-version">Read and plot (Python array version)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-and-plot-raw-data-version">Read and plot (raw data version)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-and-plot-numpy-ndarray-version">Read and plot (Numpy ndarray version)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-and-plot-numpy-raw-ndarray-version">Read and plot (Numpy raw ndarray version)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#play-a-wav-file">Play a Wav file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#play-a-wav-file-using-with-statement-version-0-7-15">Play a Wav file (using <code class="docutils literal notranslate"><span class="pre">with</span></code> statement; version 0.7.15+)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#play-a-wav-file-with-callback">Play a Wav file with callback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#record-to-a-wav-file">Record to a Wav file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#record-to-a-wav-file-using-with-statement-version-0-7-15">Record to a Wav file (using <code class="docutils literal notranslate"><span class="pre">with</span></code> statement; version 0.7.15+)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#spplugin"><span class="xref std std-doc">spplugin</span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#plot-an-audio-file-contents-by-plugin">Plot an Audio File Contents by Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#play-an-audio-file-contents-by-plugin">Play an Audio File Contents by Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-an-audio-file-by-plugin-and-write-it">Read an Audio File by Plugin and Write it</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#read-an-audio-file-and-write-it-by-plugin">Read an Audio File and Write it by Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#convert-an-audio-file-by-plugin">Convert an Audio File by Plugin</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">spAudio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="apidoc.html">API Documentation</a> &raquo;</li>
+        
+      <li>spplugin module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-spplugin">
+<span id="spplugin-module"></span><h1>spplugin module<a class="headerlink" href="#module-spplugin" title="Permalink to this headline">¶</a></h1>
+<p>A python module for plugin-based audio file I/O based on <a class="reference external" href="http://www-ie.meijo-u.ac.jp/labs/rj001/spLibs/index.html">spPlugin</a>
+which supports several sound formats including WAV, AIFF, MP3,
+Ogg Vorbis, FLAC, ALAC, raw, and more.</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>The following is the example plotting the waveform of an input audio file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">spplugin</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+
+<span class="k">def</span> <span class="nf">plotfilebyplugin</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">spplugin</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">pf</span><span class="p">:</span>
+        <span class="n">nchannels</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">getnchannels</span><span class="p">()</span>
+        <span class="n">samprate</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">getsamprate</span><span class="p">()</span>
+        <span class="n">sampbit</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">getsampbit</span><span class="p">()</span>
+        <span class="n">nframes</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">getnframes</span><span class="p">()</span>
+        <span class="n">duration</span> <span class="o">=</span> <span class="n">nframes</span> <span class="o">/</span> <span class="n">samprate</span>
+
+        <span class="n">y</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">createndarray</span><span class="p">(</span><span class="n">nframes</span> <span class="o">*</span> <span class="n">nchannels</span><span class="p">)</span>
+        <span class="n">nread</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nread = </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">nread</span><span class="p">)</span>
+
+        <span class="n">y</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">nframes</span><span class="p">,</span> <span class="n">nchannels</span><span class="p">))</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">nframes</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nchannels</span><span class="p">):</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">[:,</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time [s]&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude (normalized)&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;usage: </span><span class="si">%s</span><span class="s1"> filename&#39;</span>
+              <span class="o">%</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+        <span class="n">quit</span><span class="p">()</span>
+
+    <span class="n">plotfilebyplugin</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<dl class="exception">
+<dt id="spplugin.BogusFileError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">BogusFileError</code><a class="reference internal" href="_modules/spplugin.html#BogusFileError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.BogusFileError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the audio file is bogus.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.Error">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">Error</code><a class="reference internal" href="_modules/spplugin.html#Error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base exception class for spplugin.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.FileError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">FileError</code><a class="reference internal" href="_modules/spplugin.html#FileError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.FileError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised by audio file problems.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.FileTypeError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">FileTypeError</code><a class="reference internal" href="_modules/spplugin.html#FileTypeError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.FileTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the specified file type is not accepted.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.NChannelsError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">NChannelsError</code><a class="reference internal" href="_modules/spplugin.html#NChannelsError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.NChannelsError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the specified number of channels is not accepted.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.SampleBitError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">SampleBitError</code><a class="reference internal" href="_modules/spplugin.html#SampleBitError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SampleBitError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the specified bits/sample is not accepted.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.SampleRateError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">SampleRateError</code><a class="reference internal" href="_modules/spplugin.html#SampleRateError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SampleRateError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the specified sample rate is not accepted.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="spplugin.SpFilePlugin">
+<em class="property">class </em><code class="descclassname">spplugin.</code><code class="descname">SpFilePlugin</code><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class for audio file I/O. This class is similar to one provided by
+the standard libraries such as aifc, wave, or sunau. The important
+difference is that <code class="docutils literal notranslate"><span class="pre">set*()</span></code> functions must be called before
+<a class="reference internal" href="#spplugin.SpFilePlugin.open" title="spplugin.SpFilePlugin.open"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> in this class. You can set
+parameters by using optional arguments of
+<a class="reference internal" href="#spplugin.open" title="spplugin.open"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> function.</p>
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.appendsonginfo">
+<code class="descname">appendsonginfo</code><span class="sig-paren">(</span><em>songinfo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.appendsonginfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.appendsonginfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends song information to the current internal information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the current audio file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.copyarray2raw">
+<code class="descname">copyarray2raw</code><span class="sig-paren">(</span><em>inarray</em>, <em>sampwidth</em>, <em>bigendian_or_signed8bit=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.copyarray2raw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.copyarray2raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies raw array (array.array) contents to a new raw bytes
+(bytearray) data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inarray</strong> (<em>array.array</em>) – Input array object.</p></li>
+<li><p><strong>sampwidth</strong> (<em>int</em>) – bytes/sample of output data.</p></li>
+<li><p><strong>bigendian_or_signed8bit</strong> (<em>bool</em>) – Specify <code class="docutils literal notranslate"><span class="pre">True</span></code> if endianness
+of output data is big endian (16- or 32-bit case) or
+data type of output data is signed 8-bit (8-bit case).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A bytearray class object which contains converted data.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bytearray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.copyraw2array">
+<code class="descname">copyraw2array</code><span class="sig-paren">(</span><em>rawdata</em>, <em>sampwidth</em>, <em>bigendian_or_signed8bit=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.copyraw2array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.copyraw2array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies raw bytes (bytearray) data contents to a new raw array (array.array).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rawdata</strong> (<em>bytes</em><em> or </em><em>bytearray</em>) – Input bytes or bytearray object.</p></li>
+<li><p><strong>sampwidth</strong> (<em>int</em>) – bytes/sample of rawdata</p></li>
+<li><p><strong>bigendian_or_signed8bit</strong> (<em>bool</em>) – Specify <code class="docutils literal notranslate"><span class="pre">True</span></code> if endianness
+of rawdata is big endian (16- or 32-bit case) or data type
+of rawdata (8-bit case) is signed 8-bit.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array class object which contains converted data.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.createarray">
+<code class="descname">createarray</code><span class="sig-paren">(</span><em>length</em>, <em>nframesflag=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.createarray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.createarray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a double array for the current file settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – A length of the array. Note that this length is
+not identical to the number of frames
+(length = nframes * nchannels).
+If you want to specify the number of frames,
+the second argument must be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>nframesflag</strong> (<em>bool</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> makes the first argument be
+treated as the number of frames.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array class object for the current file settings.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.createndarray">
+<code class="descname">createndarray</code><span class="sig-paren">(</span><em>length</em>, <em>nframesflag=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.createndarray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.createndarray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a numpy double array for the current file settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – A length of the array. Note that this length is
+not identical to the number of frames
+(length = nframes * nchannels).
+If you want to specify the number of frames,
+the second argument must be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>nframesflag</strong> (<em>bool</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> makes the first argument be
+treated as the number of frames.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An ndarray class object for the current file settings.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.createrawarray">
+<code class="descname">createrawarray</code><span class="sig-paren">(</span><em>length</em>, <em>nframesflag=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.createrawarray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.createrawarray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a raw array for the current file settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – A length of the array. Note that this length is
+not identical to the number of frames
+(length = nframes * nchannels).
+If you want to specify the number of frames,
+the second argument must be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>nframesflag</strong> (<em>bool</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> makes the first argument be
+treated as the number of frames.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array class object for the current file settings.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.createrawndarray">
+<code class="descname">createrawndarray</code><span class="sig-paren">(</span><em>length</em>, <em>nframesflag=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.createrawndarray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.createrawndarray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a raw numpy ndarray for the current file settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – A length of the array. Note that this length is
+not identical to the number of frames
+(length = nframes * nchannels).
+If you want to specify the number of frames,
+the second argument must be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>nframesflag</strong> (<em>bool</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> makes the first argument be
+treated as the number of frames.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An ndarray class object for the current file settings.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getarraytypecode">
+<code class="descname">getarraytypecode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getarraytypecode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getarraytypecode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the type code for python array to store double array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A type code of double array for the current settings.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>char</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getcompname">
+<code class="descname">getcompname</code><span class="sig-paren">(</span><em>decodebytes=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getcompname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getcompname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns human-readable name of compression type. Currently,
+<code class="docutils literal notranslate"><span class="pre">'not</span> <span class="pre">compressed'</span></code> (decodebytes = <code class="docutils literal notranslate"><span class="pre">True</span></code>) or <code class="docutils literal notranslate"><span class="pre">b'not</span> <span class="pre">compressed'</span></code>
+(decodebytes = <code class="docutils literal notranslate"><span class="pre">False</span></code>) will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getcomptype">
+<code class="descname">getcomptype</code><span class="sig-paren">(</span><em>decodebytes=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getcomptype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getcomptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns compression type. Currently, <code class="docutils literal notranslate"><span class="pre">'NONE'</span></code> (decodebytes = <code class="docutils literal notranslate"><span class="pre">True</span></code>)
+or <code class="docutils literal notranslate"><span class="pre">b'NONE'</span></code> (decodebytes = <code class="docutils literal notranslate"><span class="pre">False</span></code>) will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getfiledesc">
+<code class="descname">getfiledesc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getfiledesc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getfiledesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets file description of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getfilefilter">
+<code class="descname">getfilefilter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getfilefilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getfilefilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets file filter (e.g. <code class="docutils literal notranslate"><span class="pre">'*.wav'</span></code>) of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getfiletype">
+<code class="descname">getfiletype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getfiletype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getfiletype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets file type of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getframerate">
+<code class="descname">getframerate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getframerate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getframerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets sample rate of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getlength">
+<code class="descname">getlength</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getlength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the total length of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getmark">
+<code class="descname">getmark</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getmark"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing (for compatibility with standard libraries
+such as aifc, wave, and sunau).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getmarkers">
+<code class="descname">getmarkers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getmarkers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getmarkers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing (for compatibility with standard libraries
+such as aifc, wave, and sunau).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getnchannels">
+<code class="descname">getnchannels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getnchannels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getnchannels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the number of channels of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getndarraydtype">
+<code class="descname">getndarraydtype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getndarraydtype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getndarraydtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the dtype string for numpy ndarray to store double array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dtype string for the current settings.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getnframes">
+<code class="descname">getnframes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getnframes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getnframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the total number of frames of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getparams">
+<code class="descname">getparams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getparams"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getparams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets supported all parameters of the current file in dict object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dict object including all parameters of the current file
+whose keys are <code class="docutils literal notranslate"><span class="pre">'nchannels'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sampbit'</span></code>, <code class="docutils literal notranslate"><span class="pre">'samprate'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'length'</span></code>, <code class="docutils literal notranslate"><span class="pre">'filetype'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'songinfo'</span></code>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getparamstuple">
+<code class="descname">getparamstuple</code><span class="sig-paren">(</span><em>decodebytes=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getparamstuple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getparamstuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets supported all parameters of the current file in namedtuple object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>decodebytes</strong> (<em>bool</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> decodes bytes objects into string objects
+obtained by <a class="reference internal" href="#spplugin.SpFilePlugin.getcomptype" title="spplugin.SpFilePlugin.getcomptype"><code class="xref py py-func docutils literal notranslate"><span class="pre">getcomptype()</span></code></a>
+and <a class="reference internal" href="#spplugin.SpFilePlugin.getcompname" title="spplugin.SpFilePlugin.getcompname"><code class="xref py py-func docutils literal notranslate"><span class="pre">getcompname()</span></code></a> .
+The standard libraries of wave and sunau expect a decoded string
+object while the standard aifc library expects a bytes object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A namedtuple object including all parameters of
+the current file whose entries are
+<code class="docutils literal notranslate"><span class="pre">(nchannels,</span> <span class="pre">sampwidth,</span> <span class="pre">framerate,</span> <span class="pre">nframes,</span> <span class="pre">comptype,</span> <span class="pre">compname)</span></code> .
+This object is compatible with the argument of <code class="docutils literal notranslate"><span class="pre">setparams()</span></code>
+of standard libraries such as aifc, wave, or sunau.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>namedtuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getplugindesc">
+<code class="descname">getplugindesc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getplugindesc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getplugindesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the short description of the plugin currently used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getpluginid">
+<code class="descname">getpluginid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getpluginid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getpluginid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the ID of the plugin currently used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getplugininfo">
+<code class="descname">getplugininfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getplugininfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getplugininfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the detailed information of the plugin currently used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getpluginname">
+<code class="descname">getpluginname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getpluginname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getpluginname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the name of the plugin currently used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getpluginversion">
+<code class="descname">getpluginversion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getpluginversion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getpluginversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the version of the plugin currently used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getrawarraytypecode">
+<code class="descname">getrawarraytypecode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getrawarraytypecode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getrawarraytypecode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the type code for python array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A type code for the current settings.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>char</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getrawndarraydtype">
+<code class="descname">getrawndarraydtype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getrawndarraydtype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getrawndarraydtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the dtype string for numpy ndarray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dtype string for the current settings.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getrawsampbit">
+<code class="descname">getrawsampbit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getrawsampbit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getrawsampbit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the bits/sample for a raw buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getrawsampwidth">
+<code class="descname">getrawsampwidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getrawsampwidth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getrawsampwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the bytes/sample for a raw buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getsampbit">
+<code class="descname">getsampbit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getsampbit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getsampbit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets bits/sample of the current file. sampbit = 33 means
+32bit float.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getsamprate">
+<code class="descname">getsamprate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getsamprate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getsamprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets sample rate of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getsampwidth">
+<code class="descname">getsampwidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getsampwidth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getsampwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets bytes/sample of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.getsonginfo">
+<code class="descname">getsonginfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.getsonginfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.getsonginfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets song information of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>filename</em>, <em>mode</em>, <em>*</em>, <em>pluginname=None</em>, <em>samprate=0</em>, <em>sampbit=0</em>, <em>nchannels=0</em>, <em>filetype=None</em>, <em>songinfo=None</em>, <em>params=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the file associated with the filename by using a plugin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – The name of the file to open.</p></li>
+<li><p><strong>mode</strong> (<em>str</em>) – The opening mode. <code class="docutils literal notranslate"><span class="pre">'r'</span></code> means read mode, <code class="docutils literal notranslate"><span class="pre">'w'</span></code> means
+write mode.</p></li>
+<li><p><strong>pluginname</strong> (<em>str</em>) – The name of the plugin used when this function
+cannot find the suitable plugin.</p></li>
+<li><p><strong>samprate</strong> (<em>double</em>) – Sample rate.</p></li>
+<li><p><strong>sampbit</strong> (<em>int</em>) – Bits/sample.</p></li>
+<li><p><strong>nchannels</strong> (<em>int</em>) – The number of channels.</p></li>
+<li><p><strong>filetype</strong> (<em>str</em>) – File type string.</p></li>
+<li><p><strong>songinfo</strong> (<em>dict</em>) – Song information.</p></li>
+<li><p><strong>params</strong> (<em>dict</em>) – All above parameters in dict format.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.read">
+<code class="descname">read</code><span class="sig-paren">(</span><em>data</em>, <em>weight=1.0</em>, <em>offset=0</em>, <em>length=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads data to double array from the audio file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>bytearray</em><em>, </em><em>array.array</em><em> or </em><em>numpy.ndarray</em>) – A buffer of double array to receive data from the audio file.</p></li>
+<li><p><strong>weight</strong> (<em>double</em>) – A weighting factor multiplied to data after reading.</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Optional offset location for the buffer.</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – Optional read length for the buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The read size if successful, -1 otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The keyword arguments of <cite>offset</cite> and <cite>length</cite> were
+introduced in Version 0.7.5.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.readraw">
+<code class="descname">readraw</code><span class="sig-paren">(</span><em>data</em>, <em>offset=0</em>, <em>length=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.readraw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.readraw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads raw data from the audio file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>bytearray</em><em>, </em><em>array.array</em><em> or </em><em>numpy.ndarray</em>) – A buffer to receive raw data from the audio file.</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Optional offset location for the buffer.</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – Optional read length for the buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The read size if successful, -1 otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The keyword arguments of <cite>offset</cite> and <cite>length</cite> were
+introduced in Version 0.7.5.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.rewind">
+<code class="descname">rewind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.rewind"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.rewind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rewinds to the beginning of the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setcomptype">
+<code class="descname">setcomptype</code><span class="sig-paren">(</span><em>encodestr=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setcomptype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setcomptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets compression type. Currently, this parameter is ignored.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setfiletype">
+<code class="descname">setfiletype</code><span class="sig-paren">(</span><em>filetype</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setfiletype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setfiletype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets file type to the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setframerate">
+<code class="descname">setframerate</code><span class="sig-paren">(</span><em>samprate</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setframerate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setframerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets sample rate to the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setlength">
+<code class="descname">setlength</code><span class="sig-paren">(</span><em>length</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setlength"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the total length of the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setmark">
+<code class="descname">setmark</code><span class="sig-paren">(</span><em>id</em>, <em>pos</em>, <em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setmark"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing (for compatibility with standard libraries
+such as aifc, wave, and sunau).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setnchannels">
+<code class="descname">setnchannels</code><span class="sig-paren">(</span><em>nchannels</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setnchannels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setnchannels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the number of channels to the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setnframes">
+<code class="descname">setnframes</code><span class="sig-paren">(</span><em>length</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setnframes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setnframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the total number of frames of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setparams">
+<code class="descname">setparams</code><span class="sig-paren">(</span><em>params</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setparams"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setparams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets supported all parameters described in dict or
+namedtuple object to the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>params</strong> (<em>dict</em>) – a dict object of parameters whose keys are
+<code class="docutils literal notranslate"><span class="pre">'nchannels'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sampbit'</span></code>, <code class="docutils literal notranslate"><span class="pre">'samprate'</span></code>, <code class="docutils literal notranslate"><span class="pre">'length'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'filetype'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'songinfo'</span></code>.
+The namedtuple generated by standard libraries
+such as aifc, wave, or sunau is also acceptable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setpos">
+<code class="descname">setpos</code><span class="sig-paren">(</span><em>pos</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setpos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Seeks to the specified position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pos</strong> – a position to seek.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setsampbit">
+<code class="descname">setsampbit</code><span class="sig-paren">(</span><em>sampbit</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setsampbit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setsampbit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets bits/sample to the file. sampbit = 33 means
+32bit float.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setsamprate">
+<code class="descname">setsamprate</code><span class="sig-paren">(</span><em>samprate</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setsamprate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setsamprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets sample rate to the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setsampwidth">
+<code class="descname">setsampwidth</code><span class="sig-paren">(</span><em>sampwidth</em>, <em>floatflag=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setsampwidth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setsampwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets bytes/sample of the current file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.setsonginfo">
+<code class="descname">setsonginfo</code><span class="sig-paren">(</span><em>songinfo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.setsonginfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.setsonginfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets song information to the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.tell">
+<code class="descname">tell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.tell"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.tell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current position in the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>data</em>, <em>weight=1.0</em>, <em>offset=0</em>, <em>length=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes data of double array to the audio file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>bytearray</em><em>, </em><em>array.array</em><em> or </em><em>numpy.ndarray</em>) – A buffer of double array to send data to the audio file.</p></li>
+<li><p><strong>weight</strong> (<em>double</em>) – A weighting factor multiplied to data before writing.</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Optional offset location for the buffer.</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – Optional write length for the buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The written size if successful, -1 otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The keyword arguments of <cite>offset</cite> and <cite>length</cite> were
+introduced in Version 0.7.5.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="spplugin.SpFilePlugin.writeraw">
+<code class="descname">writeraw</code><span class="sig-paren">(</span><em>data</em>, <em>offset=0</em>, <em>length=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#SpFilePlugin.writeraw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SpFilePlugin.writeraw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes raw data to the audio file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>bytearray</em><em>, </em><em>array.array</em><em> or </em><em>numpy.ndarray</em>) – A buffer to send raw data to the audio file.</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Optional offset location for the buffer.</p></li>
+<li><p><strong>length</strong> (<em>int</em>) – Optional write length for the buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The written size if successful, -1 otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The keyword arguments of <cite>offset</cite> and <cite>length</cite> were
+introduced in Version 0.7.5.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.SuitableNotFoundError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">SuitableNotFoundError</code><a class="reference internal" href="_modules/spplugin.html#SuitableNotFoundError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.SuitableNotFoundError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if no suitable plugin is found.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.TotalLengthRequiredError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">TotalLengthRequiredError</code><a class="reference internal" href="_modules/spplugin.html#TotalLengthRequiredError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.TotalLengthRequiredError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised if the total length is required to use the plugin.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="spplugin.WrongPluginError">
+<em class="property">exception </em><code class="descclassname">spplugin.</code><code class="descname">WrongPluginError</code><a class="reference internal" href="_modules/spplugin.html#WrongPluginError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.WrongPluginError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#spplugin.Error" title="spplugin.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">spplugin.Error</span></code></a></p>
+<p>Exception raised by a wrong plugin.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="spplugin.getplugindesc">
+<code class="descclassname">spplugin.</code><code class="descname">getplugindesc</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#getplugindesc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.getplugindesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets short description of the plugin which has a name specified.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="spplugin.getplugininfo">
+<code class="descclassname">spplugin.</code><code class="descname">getplugininfo</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#getplugininfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.getplugininfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets detailed information of the plugin which has a name specified.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="spplugin.open">
+<code class="descclassname">spplugin.</code><code class="descname">open</code><span class="sig-paren">(</span><em>filename</em>, <em>mode</em>, <em>*</em>, <em>pluginname=None</em>, <em>samprate=0</em>, <em>sampbit=0</em>, <em>nchannels=0</em>, <em>filetype=None</em>, <em>songinfo=None</em>, <em>params=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spplugin.html#open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#spplugin.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the file associated with the filename by using a plugin.
+This function may be used in a <code class="docutils literal notranslate"><span class="pre">with</span></code> statement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – The name of the file to open.</p></li>
+<li><p><strong>mode</strong> (<em>str</em>) – The opening mode. <code class="docutils literal notranslate"><span class="pre">'r'</span></code> means read mode, <code class="docutils literal notranslate"><span class="pre">'w'</span></code> means
+write mode.</p></li>
+<li><p><strong>pluginname</strong> (<em>str</em>) – The name of the plugin used when this function
+cannot find the suitable plugin.</p></li>
+<li><p><strong>samprate</strong> (<em>double</em>) – Sample rate.</p></li>
+<li><p><strong>sampbit</strong> (<em>int</em>) – Bits/sample.</p></li>
+<li><p><strong>nchannels</strong> (<em>int</em>) – The number of channels.</p></li>
+<li><p><strong>filetype</strong> (<em>str</em>) – File type string.</p></li>
+<li><p><strong>songinfo</strong> (<em>dict</em>) – Song information.</p></li>
+<li><p><strong>params</strong> (<em>dict</em>) – All above parameters in dict format.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new instance of <a class="reference internal" href="#spplugin.SpFilePlugin" title="spplugin.SpFilePlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpFilePlugin</span></code></a> class.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#spplugin.SpFilePlugin" title="spplugin.SpFilePlugin">SpFilePlugin</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="spaudio.html" class="btn btn-neutral float-left" title="spaudio module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017-2019  Hideki Banno
+      <span class="lastupdated">
+        Last updated on 2019-04-27 9:37:22 PM.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><img src="/cgi-bin/labs/rj001/counter/count.cgi?id=spAudio_python"></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
