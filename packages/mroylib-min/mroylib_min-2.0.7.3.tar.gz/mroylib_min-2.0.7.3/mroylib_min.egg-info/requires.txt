@@ -1,0 +1,15 @@
+bs4
+motor
+pymongo
+pymysql
+pysocks
+redis
+requests
+simplejson
+tabulate
+telethon
+termcolor
+tornado
+tqdm
+xlrd
+xlwt
