@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: zest.ploneglossaryhighlight
+Version: 2.0.0
+Summary: Make highlighting PloneGlossary terms optional per page or folder.
+Home-page: https://github.com/zestsoftware/zest.ploneglossaryhighlight
+Author: Maurits van Rees
+Author-email: m.van.rees@zestsoftware.nl
+License: GPL
+Keywords: plone glossary highlight
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: setuptools
+Requires-Dist: Products.CMFPlone
+Requires-Dist: Products.PloneGlossary (>=1.5.0)
+Provides-Extra: archetypes
+Requires-Dist: archetypes.schemaextender ; extra == 'archetypes'
+Provides-Extra: dexterity
+Requires-Dist: plone.behavior ; extra == 'dexterity'
+Requires-Dist: plone.dexterity ; extra == 'dexterity'
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+
+Introduction
+============
+
+This is an extra package for `Products.PloneGlossary <https://pypi.org/project/Products.PloneGlossary>`_.
+It adds a field ``highlight`` to content types in your site.
+With that field you can specify for a page whether terms on it should be highlighted.
+Values can be yes, no, or use the value of the parent (which is the default).
+
+Support for Archetypes has been there since the first release (with ``archetypes.schemaextender``).
+Support for Dexterity has been there since release 2.0.0 (with ``plone.behavior`` and ``plone.dexterity``).
+
+
+Installation
+============
+
+- Add it to the eggs option of the zope instance in your buildout.
+
+  - When you want Archetypes support, please use ``zest.ploneglossaryhighlight[archetypes]``.
+  - When you want Dexterity support, please use ``zest.ploneglossaryhighlight[dexterity]``.
+  - Or use both: ``zest.ploneglossaryhighlight[archetypes, dexterity]``.
+
+- Run buildout and restart your Zope instance.
+
+- Go to the Add-ons control panel in Plone.
+
+- Install PloneGlossary.
+
+- Install zest.ploneglossaryhighlight.
+
+
+Compatibility
+=============
+
+- Requires Products.PloneGlossary 1.5.0 or later.  Tested with latest 1.7.3.
+
+- Tested with Plone 4.3 on Python 2.7.  Current latest release of PloneGlossary does not work on Plone 5.
+
+Changelog
+=========
+
+2.0.0 (2019-04-26)
+------------------
+
+- Added Dexterity support in a ``[dexterity]`` extra requirement in ``setup.py``.
+  This has ``plone.behavior`` and ``plone.dexterity`` as dependencies.
+  [maurits]
+
+- Moved Archetypes support to an ``[archetypes]`` extra requirement in ``setup.py``.
+  This has ``archetypes.schemaextender`` as dependency.
+  [maurits]
+
+- Register the default adapter only for Archetypes base content, instead of everything.
+  [maurits]
+
+- Test only with Python 2.7 and Plone 4.3.
+  [maurits]
+
+
+1.0 (2011-11-24)
+----------------
+
+- Initial release
+  [maurits]
+
+
