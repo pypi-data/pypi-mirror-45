@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tlimm
+Version: 0.14
+Summary: Image Cropping Library for Object Detection.
+Home-page: https://github.com/gorogoroyasu/tlimm
+Author: gorogoroyasu
+Author-email: gorogoro.yasu@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: object detection
+Platform: UNKNOWN
