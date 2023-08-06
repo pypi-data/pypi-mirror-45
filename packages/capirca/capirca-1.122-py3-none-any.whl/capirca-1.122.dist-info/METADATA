@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: capirca
+Version: 1.122
+Summary: Capirca
+Home-page: https://github.com/google/capirca/
+Maintainer: Rob Ankeny
+Maintainer-email: robankeny@google.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking :: Firewalls
+Requires-Dist: absl-py
+Requires-Dist: ply
+Requires-Dist: ipaddress (>=1.0.22)
+Requires-Dist: mock
+Requires-Dist: six
+
+UNKNOWN
+
+
