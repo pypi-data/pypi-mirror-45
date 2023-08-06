@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: fishtank
+Version: 0.1.1
+Summary: Command line interface (CLI) for redfish
+Home-page: https://github.com/openuado/fishtank/
+Author: openuado
+Author-email: herveberaud.pro@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires: pbr
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (==5.1)
+Requires-Dist: future (==0.17.1)
+Requires-Dist: jmespath (==0.9.4)
+
+# fishtank
+
+[![Build Status](https://travis-ci.org/openuado/fishtank.svg?branch=master)](https://travis-ci.org/openuado/fishtank)
+![PyPI](https://img.shields.io/pypi/v/fishtank.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fishtank.svg)
+![PyPI - Status](https://img.shields.io/pypi/status/fishtank.svg)
+
+Command line interface (CLI) for redfish
+
+## Contribute
+
+If you want to contribute to fishtank [please first read the contribution guidelines](CONTRIBUTING.md)
+
+## Licence
+
+This project is under the MIT License.
+
+[See the license file for more details](LICENSE)
+
+Hervé Beraud <herveberaud.pro@gmail.com>
+
+
+
