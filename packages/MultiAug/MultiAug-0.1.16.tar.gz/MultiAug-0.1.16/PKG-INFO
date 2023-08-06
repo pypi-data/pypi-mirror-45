@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: MultiAug
+Version: 0.1.16
+Summary: Multi-modal data augmentation library for machine learning
+Home-page: http://pypi.python.org/pypi/MultiAug/
+Author: Devin Taylor
+Author-email: dev.t03@gmail.com
+License: LICENSE.txt
+Description: # MultiAug
+        
+        details can be found on https://github.com/Devin-Taylor/MultiAug
+        
+Platform: UNKNOWN
