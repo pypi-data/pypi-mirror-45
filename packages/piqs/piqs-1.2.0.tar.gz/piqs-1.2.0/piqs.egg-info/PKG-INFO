@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: piqs
+Version: 1.2.0
+Summary: PIQS: Permutational Invariant Quantum Solver
+Home-page: UNKNOWN
+Author: Nathan Shammah, Shahnawaz Ahmed
+Author-email: nathan.shammah@gmail.com, shahnawaz.ahmed95@gmail.com
+License: BSD
+Description: PIQS is an open-source Python solver to study the exact Lindbladian
+        dynamics of open quantum systems consisting of identical qubits.
+        
+Keywords: quantum physics dynamics permutational symmetry invariance
+Platform: Linux
+Platform: Mac OSX
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Requires: numpy (>=1.8)
+Requires: scipy (>=0.15)
+Requires: cython (>=0.21)
+Requires: qutip (>=4.2)

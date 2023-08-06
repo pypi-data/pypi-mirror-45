@@ -1,0 +1,16 @@
+README.md
+setup.py
+piqs/__init__.py
+piqs/about.py
+piqs/cite.py
+piqs/dicke.py
+piqs.egg-info/PKG-INFO
+piqs.egg-info/SOURCES.txt
+piqs.egg-info/dependency_links.txt
+piqs.egg-info/not-zip-safe
+piqs.egg-info/requires.txt
+piqs.egg-info/top_level.txt
+piqs/cy/__init__.py
+piqs/cy/dicke.cpp
+piqs/tests/__init__.py
+piqs/tests/test_dicke.py
