@@ -1,0 +1,8 @@
+README.rst
+setup.py
+snails.py
+snails.egg-info/PKG-INFO
+snails.egg-info/SOURCES.txt
+snails.egg-info/dependency_links.txt
+snails.egg-info/requires.txt
+snails.egg-info/top_level.txt
