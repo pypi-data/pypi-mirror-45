@@ -1,0 +1,10 @@
+README.md
+setup.py
+code2read/__init__.py
+code2read/__main__ .py
+code2read.egg-info/PKG-INFO
+code2read.egg-info/SOURCES.txt
+code2read.egg-info/dependency_links.txt
+code2read.egg-info/entry_points.txt
+code2read.egg-info/not-zip-safe
+code2read.egg-info/top_level.txt
