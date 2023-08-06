@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: search-torrent
+Version: 1.0.0
+Summary: Search for torrents using command line
+Home-page: http://github.com/rajat19/torrent-crawler
+Author: Rajat Srivastava
+Author-email: rajatsri94@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/rajat19/torrent-crawler/releases
+Description: ## Torrent Crawler and Search
+        
+        Crawl and store data of around 12,000 movies
+        
+        - Feature to directly download torrent just by clicking movie name in movies.md
+        
+        **As of 15/04/2019 8:28AM IST** crawled around 1000 movies
+        
+        More would be crawled soon
+        
+        ---
+        ### Contributing
+        - Open PR for the torrent-crawler
+        - You can fork my repo and edit the python script as you like
+        
+        ---
+        ### Work To Do
+        - Add animation in readme of search script
+        - Allow user to stop movie search in between
+        - Add as python library
+        - Store search history in cache or something for faster processing
+        
+Keywords: pip,torrent,crawler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
