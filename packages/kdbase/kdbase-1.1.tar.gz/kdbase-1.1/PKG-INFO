@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: kdbase
+Version: 1.1
+Summary: Custom script
+Home-page: http://duquan@git.kuandeng.com/scm/~duquan/kdbase.git
+Author: dq
+Author-email: duquan@kuandeng.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,kdbase,featureextraction
+Platform: any
