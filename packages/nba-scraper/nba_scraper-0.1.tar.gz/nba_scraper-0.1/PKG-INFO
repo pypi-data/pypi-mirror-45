@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: nba_scraper
+Version: 0.1
+Summary: A Python package to scraper the NBA api and return a play by play file
+Home-page: https://https://github.com/mcbarlowe/nba_scraper
+Author: Matthew Barlowe
+Author-email: matt@barloweanalytics.com
+License: GNU General Public License v3.0
+Download-URL: https://github.com/mcbarlowe/nba_scraper/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: basketball,NBA,scraper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
