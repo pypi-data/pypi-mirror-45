@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: tw
+Version: 0.0.3
+Summary: TensorWrapper is a deep learning helper.
+Home-page: https://github.com/atranitell/gate
+Author: Kai Jin
+Author-email: atranitell@gmail.com
+License: Apache 2.0 Licence
+Description: TensorWrapper is a deep learning helper.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
