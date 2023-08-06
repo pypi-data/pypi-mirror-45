@@ -1,0 +1,6 @@
+[trytond.backend]
+postgis = trytond_gis.postgis
+
+[trytond.tests]
+test_geographic_fields = trytond_gis.tests
+
