@@ -1,0 +1,16 @@
+README.md
+refcliq.py
+refcliqvis.py
+setup.py
+src/__init__.py
+src/refcliq/__init__.py
+src/refcliq/bibtex.py
+src/refcliq/citations.py
+src/refcliq/geocoding.py
+src/refcliq/preprocess.py
+src/refcliq/util.py
+src/refcliq.egg-info/PKG-INFO
+src/refcliq.egg-info/SOURCES.txt
+src/refcliq.egg-info/dependency_links.txt
+src/refcliq.egg-info/requires.txt
+src/refcliq.egg-info/top_level.txt
