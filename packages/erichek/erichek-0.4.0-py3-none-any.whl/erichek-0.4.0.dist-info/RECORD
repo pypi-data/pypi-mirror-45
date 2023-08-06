@@ -1,0 +1,14 @@
+erichek/__init__.py,sha256=GwD2V3kJL562B9K_mdhLCMulTZqTVwLNbqFX36rZ17c,153
+erichek/__main__.py,sha256=3HHvAGwfgHr0xqpwdRfDEF-Iqnl67LzRtyc0T5uvkfs,2156
+erichek/eric_body.py,sha256=R6s0fsEnvZkKjFhHbHKAnDPlF4auSllr3FfRrjonnwE,1326
+erichek/eric_config.py,sha256=6oSMjyOZwRVZps5STNKA28aSPCQAu3aOUzFW_yhYHrI,9633
+erichek/eric_encoding.py,sha256=YCrXoSiai7FOZbRTIk6NfaciMaMadwvSid8Jj0k_9Tk,2855
+erichek/eric_head.py,sha256=RNmCk374lLAI9uxsh6VPQJ_SdCDuQ5D3v4M4jYdC47E,2342
+erichek/eric_regex.py,sha256=ryw0d27OjWQAHvdyiIkK1UmbNLnwqOo6GmJvRyQg790,9348
+erichek/eric_summary.py,sha256=SwSoo7aZ2fklG44q0Skc_yCdsegsZ8yjPQpJr5yTMuQ,2887
+erichek-0.4.0.dist-info/LICENSE.md,sha256=PvXPCu8AAyUBETu_HZ4wbS_J5vdCQTRn_bCqHSDTFfA,1056
+erichek-0.4.0.dist-info/METADATA,sha256=bVpzL57Yn5zck0wrxQvbVRJ-zDn-L2g6HHMWLd1uNo8,2282
+erichek-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+erichek-0.4.0.dist-info/entry_points.txt,sha256=ArlsrEegmNISCJ4LQWSE7x5ujspRL43y-yDxmgBiA70,51
+erichek-0.4.0.dist-info/top_level.txt,sha256=hts3F7SY4kT4BceQsgfu_gxotTxfgwdLLaVQiULfzyM,8
+erichek-0.4.0.dist-info/RECORD,,
