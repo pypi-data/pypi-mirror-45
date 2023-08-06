@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+clickatell/__init__.py
+clickatell/controller.py
+clickatell/http/__init__.py
+clickatell/rest/__init__.py
+clickatell_platform.egg-info/PKG-INFO
+clickatell_platform.egg-info/SOURCES.txt
+clickatell_platform.egg-info/dependency_links.txt
+clickatell_platform.egg-info/requires.txt
+clickatell_platform.egg-info/top_level.txt
+test/test_transport.py
