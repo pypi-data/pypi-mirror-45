@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dng-logger
+Version: 1.0.1
+Summary: (DEPRECATED) Lightweight logging in Python without timestamps or info labels.
+Home-page: http://github.com/drgriffis/hedgepig-logger
+Author: Denis Newman-Griffis
+Author-email: denis.newman.griffis@gmail.com
+License: UNKNOWN
+Description: # dng-logger
+        
+        This library is now deprecated, and has been replaced with [hedgepig-logger](https://pypi.org/project/hedgepig-logger/).
+        
+        Python logging without the timestamps/log levels.  Plus some tweaks.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
