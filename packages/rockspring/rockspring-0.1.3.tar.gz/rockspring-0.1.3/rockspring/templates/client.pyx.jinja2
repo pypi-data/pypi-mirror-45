@@ -1,0 +1,178 @@
+# distutils: language = c++
+
+from libcpp.string cimport string
+from libcpp cimport bool
+from libc.stdint cimport uint64_t, uint32_t
+
+cimport cpp_wrapper as c 
+
+{% for msg in messages -%}
+from cpp_wrapper cimport {{ msg.class_name }} as {{ msg.dto_name }}
+{% endfor %}
+
+# *******************************************************************
+# =========================== model =================================
+# *******************************************************************
+
+
+
+
+{% for msg in messages %}
+cdef class {{ msg.class_name }}:
+    {% for field in msg.fields -%}
+    cdef public {{field.python_type}} {{ field.python_name }}
+    {% endfor %}
+
+    def __init__(self {% for field in msg.fields -%}, {{ field.python_name }} {% endfor %}):
+        """
+        Initializes instance of {{ msg.class_name }}
+        Parameters
+        ----------------
+        {% for field in msg.fields -%}
+            {{ field.python_name }}: {{field.doc_type}}
+        {% endfor %}
+        """
+        {% for field in msg.fields -%}
+        self.{{ field.python_name }} = {{ field.python_name }}
+        {% endfor %}
+
+    @staticmethod
+    cdef from_dto({{ msg.dto_name }} dto):
+        cdef uint32_t i = 0
+        {% for field in msg.fields -%}
+        {% if field.kind == 'list' -%}
+        
+        {% if field.list_by_value -%}
+        cdef {{ field.getter_type }} {{ field.python_name }}_curr
+        cdef c.{{field.list_type}}[{{ field.getter_type }}] {{ field.python_name }}_lst = dto.Get{{field.property_name}}()
+        {% else -%}
+        cdef Dto{{ field.getter_type }} {{ field.python_name }}_curr
+        cdef c.{{field.list_type}}[Dto{{ field.getter_type }}] {{ field.python_name }}_lst = dto.Get{{field.property_name}}()
+        {% endif -%}
+        cdef uint64_t {{ field.python_name }}_count = {{ field.python_name }}_lst.count()
+        {{ field.python_name }} = []
+        for i in range(0, {{ field.python_name }}_count):
+            {{ field.python_name }}_curr = {{ field.python_name }}_lst.get(i)
+            {% if field.list_by_value -%}
+            {{ field.python_name }}.append({{ field.python_name }}_curr)
+            {% else -%}
+            {{ field.python_name }}.append({{ field.getter_type }}.from_dto({{ field.python_name }}_curr))
+            {% endif -%}
+        {% endif %}
+        {% endfor -%}
+
+        return {{ msg.class_name }}(
+                    {%- for field in msg.fields -%}
+                    {%- if field.kind == 'reference' -%}
+                    {{ field.getter_type }}.from_dto(dto.Get{{field.property_name}}())
+                    {%- elif field.kind == 'list' -%}
+                    {{field.python_name}}
+                    {%- else -%}
+                    dto.{{field.getter}}{{field.property_name}}()
+                    {%- endif -%}
+                    {%- if not loop.last %}, {% endif -%}
+                    {%- endfor -%})
+
+    cdef to_dto(self, {{ msg.dto_name }} dto):
+        cdef uint32_t i = 0
+
+        {% for field in msg.fields -%}
+        {% if field.kind == 'list' -%}
+        
+        cdef uint32_t {{ field.python_name }}_count = len(self.{{ field.python_name }})
+        dto.Init{{field.property_name}}({{ field.python_name }}_count)
+        cdef {{ field.getter_type }} {{ field.python_name }}_curr
+
+        {% if field.list_by_value -%}
+        cdef c.{{field.list_type}}[{{ field.getter_type }}] {{ field.python_name }}_lst = dto.Get{{field.property_name}}()
+        {% else -%}
+        cdef c.{{field.list_type}}[Dto{{ field.getter_type }}] {{ field.python_name }}_lst = dto.Get{{field.property_name}}()
+        {% endif -%}
+        for i in range(0, {{ field.python_name }}_count):
+            {{ field.python_name }}_curr = self.{{ field.python_name }}[i]
+            {% if field.list_by_value -%}
+            {{ field.python_name }}_lst.set(i, {{ field.python_name }}_curr)
+            {% else -%}
+            {{ field.python_name }}_curr.to_dto({{ field.python_name }}_lst.get(i))
+            {% endif -%}
+        {% elif field.kind == 'reference' %}
+        self.{{ field.python_name }}.to_dto(dto.Get{{field.property_name}}())
+        {% else %}
+        dto.Set{{field.property_name}}(self.{{field.python_name}})
+        {% endif %}
+        {% endfor -%}
+
+{% endfor %}
+
+
+
+{% for service in services %}
+cdef class {{service.name}}:
+    cdef c.Session *_session
+
+    @staticmethod
+    cdef initialize(c.Session *session):
+        service = {{service.name}}()
+        service._session = session
+        return service
+
+    {% for method in service.methods %}
+    def {{method.python_name}}(self, req):
+        return self._{{method.python_name}}_impl(req)
+
+    cdef _{{method.python_name}}_impl(self, {{method.request}} req):
+        cdef c.Arena arena
+        cdef c.ReplyReceiver recv
+        cdef Dto{{method.request}} c_req = Dto{{method.request}}(&arena)
+
+        req.to_dto(c_req)
+
+        self._session.Call({{method.method_id}}, arena, recv)
+        recv.ThrowOnError()
+
+        {% if method.has_reply %}
+        return {{method.reply}}.from_dto(recv.GetContent[Dto{{method.reply}}]())
+        {% else %}
+        return None
+        {% endif %}
+
+    {% endfor %}
+
+{% endfor %}
+
+
+
+
+
+# *******************************************************************
+# ======================= Session manager ===========================
+# *******************************************************************
+
+cdef class Session:
+    cdef c.SessionId _sid
+    cdef c.SessionManager *_manager
+    {% for service in services -%}
+    cdef public {{service.name}} {{service.python_var_name}}
+    {% endfor %}
+
+    @staticmethod
+    cdef initialize(c.SessionId sid, c.SessionManager *manager):
+        cdef c.Session *c_session = &manager.GetSession(sid)
+        session = Session()
+        session._sid = sid
+        session._manager = manager
+        {% for service in services -%}
+        session.{{service.python_var_name}} = {{service.name}}.initialize(c_session)
+        {% endfor %}
+        return session
+
+    def close(self):
+        self._manager.CloseSession(self._sid)
+
+
+cdef class SessionManager:
+    cdef c.SessionManager _manager
+
+    def open(self, address):
+        cdef c.SessionId sid = self._manager.OpenSession(address)
+        return Session.initialize(sid, &self._manager)

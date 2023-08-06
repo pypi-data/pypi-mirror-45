@@ -1,0 +1,76 @@
+from libcpp.string cimport string
+from libcpp cimport bool
+from libc.stdint cimport uint64_t, uint32_t, uint16_t
+
+
+# *******************************************************************
+# ========================== DTO imports ============================
+# *******************************************************************
+
+
+cdef extern from "rockspring/rockspring.h" namespace " ::rs":
+    cdef cppclass Arena:
+        pass
+    cdef cppclass List[T]:
+        T get(uint64_t index)
+        uint64_t count()
+    cdef cppclass ValueList[T]:
+        T get(uint64_t index)
+        void set(uint64_t index, T value)
+        uint64_t count()
+
+cdef extern from "{{dto_header}}" namespace " ::{{namespace}}":
+{% for msg in messages %}
+    cdef cppclass {{ msg.class_name }}:
+        {{msg.class_name}}()
+        {{msg.class_name}}(Arena *arena)
+        {{msg.class_name}}(uint64_t base, Arena *arena)
+        string ToString()
+{% for field in msg.fields %}
+{% if field.kind == 'simple' %}
+        {{field.getter_type}} {{field.getter}}{{field.property_name}}()
+        void Set{{field.property_name}}({{field.getter_type}} value)
+{% elif field.kind == 'string' %}
+        string Get{{field.property_name}}()
+        void Set{{field.property_name}}(string &value)
+{% elif field.kind == 'list' %}
+        void Init{{field.property_name}}(uint64_t count)
+        {{field.list_type}}[{{field.getter_type}}] Get{{field.property_name}}()
+{% elif field.kind == 'reference' %}
+        {{field.getter_type}} Get{{field.property_name}}()
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+# *******************************************************************
+# ========================== Base imports ===========================
+# *******************************************************************
+
+
+ctypedef uint64_t SessionId
+ctypedef uint64_t MethodId
+
+
+cdef extern from "rockspring/rockspring.h" namespace " ::rs":
+    cdef cppclass ReplyReceiver:
+        void ThrowOnError() except +
+        T GetContent[T]()
+
+
+cdef extern from "rockspring/rockspring.h" namespace " ::rs":
+    cdef cppclass Session:
+        void Call(MethodId method, Arena request, ReplyReceiver reply) except +
+
+    cdef cppclass Session:
+        Session() except +
+        int OpenSession(string address) except +
+
+    cdef cppclass SessionManager:
+        SessionManager() except +
+        SessionId OpenSession(string address) except +
+        Session& GetSession(SessionId id) except +
+        void CloseSession(SessionId id) except +
+
+
+
