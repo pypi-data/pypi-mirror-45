@@ -1,0 +1,4 @@
+include *.txt
+recursive-include docs *.txt
+recursive-include ehrzero/predictor/ *
+include ehrzero/predictor/ZERO_example.dat
