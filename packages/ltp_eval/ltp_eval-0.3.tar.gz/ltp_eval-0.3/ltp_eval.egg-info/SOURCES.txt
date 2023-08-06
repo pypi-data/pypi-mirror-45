@@ -1,0 +1,7 @@
+setup.py
+ltp_eval/_init_.py
+ltp_eval.egg-info/PKG-INFO
+ltp_eval.egg-info/SOURCES.txt
+ltp_eval.egg-info/dependency_links.txt
+ltp_eval.egg-info/not-zip-safe
+ltp_eval.egg-info/top_level.txt
