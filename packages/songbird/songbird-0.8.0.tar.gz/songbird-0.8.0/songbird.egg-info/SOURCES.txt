@@ -1,0 +1,13 @@
+README.md
+setup.py
+scripts/songbird
+songbird/__init__.py
+songbird/multinomial.py
+songbird/util.py
+songbird.egg-info/PKG-INFO
+songbird.egg-info/SOURCES.txt
+songbird.egg-info/dependency_links.txt
+songbird.egg-info/entry_points.txt
+songbird.egg-info/not-zip-safe
+songbird.egg-info/requires.txt
+songbird.egg-info/top_level.txt
