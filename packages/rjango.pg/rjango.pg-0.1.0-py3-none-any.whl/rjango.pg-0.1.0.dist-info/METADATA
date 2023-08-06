@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rjango.pg
+Version: 0.1.0
+Summary: Tools and utilities to easy PG API development with Rjango
+Home-page: UNKNOWN
+Author: Nicholas Romero
+Author-email: ncrmro@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: django (>=2)
+Requires-Dist: psycopg2-binary (==2.8.2)
+
+UNKNOWN
+
+
