@@ -1,0 +1,6 @@
+
+[:python_version < "3.6"]
+tokenize-rt
+
+[rewrite]
+tokenize-rt
