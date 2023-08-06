@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pygore
+Version: 0.0.1
+Summary: Placeholder
+Home-page: https://github.com/goretk/pygore
+Author: Go Reverse Engineering Tool Kit
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
