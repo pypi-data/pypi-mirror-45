@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+memstats.c
+memstats.h
+pysecbytes.cpp
+setup.py
+SecureBytes.egg-info/PKG-INFO
+SecureBytes.egg-info/SOURCES.txt
+SecureBytes.egg-info/dependency_links.txt
+SecureBytes.egg-info/top_level.txt
