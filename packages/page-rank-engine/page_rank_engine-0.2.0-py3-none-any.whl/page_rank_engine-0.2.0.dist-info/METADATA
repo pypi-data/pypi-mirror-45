@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: page-rank-engine
+Version: 0.2.0
+Summary: Page Rank Engine
+Home-page: UNKNOWN
+Author: Jason X. Zhang
+Author-email: jason.xing.zhang@gmail.com
+License: MIT License
+Platform: any
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+
+UNKNOWN
+
+
