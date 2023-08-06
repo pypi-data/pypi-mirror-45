@@ -1,0 +1,11 @@
+petaldata/__init__.py,sha256=n1dh74AqZ-F1PNN8Riw7UHDIZ_q9RbjQJDGabrNW5Hk,379
+petaldata/util.py,sha256=zOL0zXaCCenZWXOUtGYNx6T2qeXhZAMblevHiPt9Dfs,165
+petaldata/storage/__init__.py,sha256=G0Z243hJBtPJpzEEfNwCcyFg7FRYxe-tENJi75jz3Nw,140
+petaldata/storage/abstract_storage.py,sha256=ZFYhuX_S3shxiMQuiKhloob9jnODzjgZTs-rPU4tLus,547
+petaldata/storage/local.py,sha256=otZS3g1YYyDpyBSi49wmHdMNP7O9-CiOJWbSpLkVbEk,1619
+petaldata/storage/s3.py,sha256=YO3orQA_g_-ahpow-Vi9p6SgSItvVZFJJriB0jihzm0,3242
+petaldata-0.0.3.dist-info/LICENSE,sha256=l3DahENGJIec4WHQ6AgNBmLqFjPrqWDYC_sdX6gHVa0,1068
+petaldata-0.0.3.dist-info/METADATA,sha256=BHe3ZSws_3b3i9S6tfb1BU_se8E7qlftRpjxeA7KvVA,1385
+petaldata-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+petaldata-0.0.3.dist-info/top_level.txt,sha256=lpSlYE7yU35bDn0hFzXq3mkkU0muXWf34jF6_5l6ZbE,10
+petaldata-0.0.3.dist-info/RECORD,,
