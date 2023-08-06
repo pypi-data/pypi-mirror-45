@@ -1,0 +1,3 @@
+[console_scripts]
+redis_run = RedisRun.redis_run:main
+
