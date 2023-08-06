@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pardec
+Version: 0.4
+Summary: UNKNOWN
+Home-page: https://github.com/wylswz/ParallelDecoder
+Author: Yunlu Wen
+Author-email: looooooeee@gmail.com
+License: MIT
+Download-URL: https://github.com/wylswz/ParallelDecoder/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: parallel,generator,stream
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
