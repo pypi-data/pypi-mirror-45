@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+javaobj/__init__.py
+javaobj/core.py
+javaobj/modifiedutf8.py
+javaobj/utils.py
+javaobj_py3.egg-info/PKG-INFO
+javaobj_py3.egg-info/SOURCES.txt
+javaobj_py3.egg-info/dependency_links.txt
+javaobj_py3.egg-info/top_level.txt
