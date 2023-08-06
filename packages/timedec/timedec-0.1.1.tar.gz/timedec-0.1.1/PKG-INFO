@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: timedec
+Version: 0.1.1
+Summary: Simple decorator for measuring execution time of a function.
+Home-page: https://github.com/BDubas
+Author: Bohdan Dubas
+Author-email: bogdan.dubas@gmail.com
+License: MIT
+Download-URL: https://github.com/BDubas/timedec/archive/v_0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: timeit,timer,profiling,decorator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Benchmark
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
