@@ -1,0 +1,10 @@
+README.md
+setup.py
+fcc_fourier/__init__.py
+fcc_fourier/fcc.py
+fcc_fourier/tests.py
+fcc_fourier.egg-info/PKG-INFO
+fcc_fourier.egg-info/SOURCES.txt
+fcc_fourier.egg-info/dependency_links.txt
+fcc_fourier.egg-info/requires.txt
+fcc_fourier.egg-info/top_level.txt
